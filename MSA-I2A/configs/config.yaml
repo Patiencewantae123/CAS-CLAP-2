@@ -1,23 +1,136 @@
-﻿model:
-  target_sample_rate: 16000
-  n_mels: 64
-  clip_model_name: "openai/clip-vit-base-patch32"
-  latent_dim: 256
-  embed_dim: 512
-  num_heads: 8
-  num_transformer_layers: 4
-  diffusion_steps: 1000
+﻿# ==============================================================================
+# MSA-I2A: Multimodal Semantic-Aware Image-to-Audio Generation Configuration
+# ==============================================================================
 
+system:
+  seed: 42
+  device: "cuda" # "cuda", "cpu", or "mps"
+  mixed_precision: "fp16" # "no", "fp16", or "bf16"
+  num_workers: 8
+  pin_memory: true
+  enable_gradient_checkpointing: true
+  use_ema: true
+  ema_decay: 0.9999
+
+# ------------------------------------------------------------------------------
+# Data Processing & Feature Dimensions
+# ------------------------------------------------------------------------------
+data:
+  sample_rate: 16000
+  audio_duration: 10.0 # seconds
+  n_fft: 1024
+  hop_length: 160
+  win_length: 1024
+  n_mels: 64
+  f_min: 0.0
+  f_max: 8000.0
+  image_size: 224
+  crop_size: 224
+  max_detected_objects: 5
+
+# ------------------------------------------------------------------------------
+# Pretrained Encoders & Backbone Models
+# ------------------------------------------------------------------------------
+models:
+  clip:
+    architecture: "ViT-B/32" # Options: "ViT-B/32", "ViT-L/14"
+    pretrained: "laion2b_s34b_b79k"
+    embedding_dim: 512 # 512 for ViT-B/32, 768 for ViT-L/14
+    freeze_weights: true
+
+  sam:
+    model_type: "vit_h" # Options: "vit_h", "vit_l", "vit_b"
+    checkpoint_path: "./checkpoints/sam_vit_h_4b8939.pth"
+    embedding_dim: 256
+    points_per_side: 32
+    pred_iou_thresh: 0.88
+    stability_score_thresh: 0.95
+    freeze_weights: true
+
+  emotion:
+    cnn_channels: [32, 64, 128, 256]
+    transformer_heads: 4
+    transformer_layers: 2
+    dropout: 0.1
+    embedding_dim: 128
+    va_out_dim: 2 # [Valence, Arousal]
+
+  clap:
+    audio_model_name: "HTSAT-base"
+    text_model_name: "roberta-base"
+    pretrained: true
+    embedding_dim: 512
+    temperature: 0.07
+
+  fusion:
+    embed_dim: 512
+    num_heads: 8
+    num_layers: 6
+    feedforward_dim: 2048
+    dropout: 0.1
+    max_position_embeddings: 64 # Global CLIP + MAX_OBJECTS + Emotion
+
+  audioldm2:
+    model_id: "cvssp/audioldm2"
+    diffusion_steps: 1000
+    guidance_scale: 3.5
+    num_inference_steps: 50
+    scheduler_type: "ddim" # Options: "ddim", "pndm", "euler"
+
+  hifigan:
+    model_id: "speechbrain/hifigan-audiocaps"
+    checkpoint_path: "./checkpoints/hifigan_generator.pt"
+    upsample_rates: [8, 8, 2, 2]
+    upsample_kernel_sizes: [16, 16, 4, 4]
+    upsample_initial_channel: 512
+
+# ------------------------------------------------------------------------------
+# Loss Weighting Configuration
+# ------------------------------------------------------------------------------
+losses:
+  diffusion_loss_weight: 1.0
+  clap_loss_weight: 0.15
+  emotion_loss_weight: 0.10
+  object_loss_weight: 0.05
+
+# ------------------------------------------------------------------------------
+# Training Strategy & Hyperparameters
+# ------------------------------------------------------------------------------
 training:
   batch_size: 16
-  lr: 0.0001
-  epochs: 50
-  num_workers: 4
-  clap_loss_weight: 0.1
-  emotion_loss_weight: 0.05
-  object_loss_weight: 0.1
+  epochs: 100
+  learning_rate: 1.0e-4
+  min_learning_rate: 1.0e-6
+  weight_decay: 0.01
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-8
+  gradient_accumulation_steps: 2
+  max_grad_norm: 1.0
+  warmup_epochs: 5
+  scheduler: "cosine" # Options: "cosine", "linear", "constant"
+  checkpoint_interval: 5
+  validation_interval: 1
+  early_stopping_patience: 10
 
-dataset:
-  vggsound_path: "./data/vggsound"
-  audiocaps_path: "./data/audiocaps"
-  audio_duration: 10.0
+# ------------------------------------------------------------------------------
+# Paths & Output Management
+# ------------------------------------------------------------------------------
+paths:
+  vggsound_root: "./data/VGGSound"
+  vggsound_csv: "./data/VGGSound/vggsound.csv"
+  audiocaps_root: "./data/AudioCaps"
+  audiocaps_json: "./data/AudioCaps/dataset.json"
+  output_dir: "./outputs"
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
+
+# ------------------------------------------------------------------------------
+# Logging & Visualization Setup
+# ------------------------------------------------------------------------------
+logging:
+  use_wandb: true
+  wandb_project: "msa-i2a-research"
+  wandb_entity: "multimodal-ai-lab"
+  use_tensorboard: true
+  log_frequency: 10
