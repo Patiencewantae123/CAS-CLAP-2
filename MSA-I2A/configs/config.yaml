@@ -1,0 +1,23 @@
+﻿model:
+  target_sample_rate: 16000
+  n_mels: 64
+  clip_model_name: "openai/clip-vit-base-patch32"
+  latent_dim: 256
+  embed_dim: 512
+  num_heads: 8
+  num_transformer_layers: 4
+  diffusion_steps: 1000
+
+training:
+  batch_size: 16
+  lr: 0.0001
+  epochs: 50
+  num_workers: 4
+  clap_loss_weight: 0.1
+  emotion_loss_weight: 0.05
+  object_loss_weight: 0.1
+
+dataset:
+  vggsound_path: "./data/vggsound"
+  audiocaps_path: "./data/audiocaps"
+  audio_duration: 10.0
