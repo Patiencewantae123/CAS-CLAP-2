@@ -666,7 +666,7 @@ if page == "Home":
         st.markdown("""
         **The Problem:** Current image-to-audio systems can generate realistic sounds, but they often produce audio that doesn't match the actual content or context of the input image.
         
-        🎹 **Example:** An image of a person playing piano might incorrectly generate car engine or ocean wave sounds.
+        **Example:** An image of a person playing piano might incorrectly generate car engine or ocean wave sounds.
         
         **Root Cause:** Many systems generate audio without a semantic verification step to ensure consistency with the visual scene.
         
@@ -675,7 +675,7 @@ if page == "Home":
         st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown("---")
-        st.markdown("## 🚀 How the CAS-V System Works")
+        st.markdown("## How the CAS-V System Works")
         
         steps = st.columns(5, gap="small")
         
@@ -698,7 +698,7 @@ if page == "Home":
                 ''', unsafe_allow_html=True)
 
         st.markdown("---")
-        st.markdown("## 📋 Workflow Overview")
+        st.markdown("##  Workflow Overview")
         
         st.markdown('''
         <div class="step-box">
@@ -713,7 +713,7 @@ if page == "Home":
         ''', unsafe_allow_html=True)
 
         st.markdown("---")
-        st.markdown("## � Technology Stack & Future Enhancements")
+        st.markdown("##  Technology Stack & Future Enhancements")
         
         col_current, col_future = st.columns(2, gap="medium")
         
@@ -751,7 +751,7 @@ if page == "Home":
             st.markdown('</div>', unsafe_allow_html=True)
 
         st.markdown("---")
-        st.markdown("## �📊 Research Metrics")
+        st.markdown("##  Research Metrics")
         
         results_file = "paper_results/generation_results.json"
         if os.path.exists(results_file):
