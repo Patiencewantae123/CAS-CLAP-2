@@ -21,43 +21,84 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
+    .stApp {
+        background: #f8fafc;
+        color: #0f172a;
+    }
+    .main .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .app-header {
+        background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
+        border: 1px solid rgba(148,163,184,0.25);
+        border-radius: 18px;
+        padding: 1.5rem 1.75rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
     .main-title {
-        text-align: center;
+        text-align: left;
         font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        margin-bottom: 0.25rem;
+        background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 50%, #0ea5e9 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
     .subtitle {
-        text-align: center;
-        font-size: 1.2rem;
-        color: #666;
-        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 1.08rem;
+        color: #475569;
+        margin-bottom: 0;
     }
-    .metric-card {
-        background: #f0f2f6;
-        padding: 1.5rem;
-        border-radius: 10px;
+    .metric-card, .research-card, .info-box, .success-box {
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
         margin: 0.5rem 0;
+        border: 1px solid rgba(148,163,184,0.2);
+        background: white;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
     }
     .success-box {
-        background: #d4edda;
-        border: 1px solid #c3e6cb;
-        color: #155724;
-        padding: 1rem;
-        border-radius: 5px;
-        margin: 1rem 0;
+        background: #ecfdf5;
+        border-color: rgba(34, 197, 94, 0.25);
+        color: #166534;
     }
     .info-box {
-        background: #d1ecf1;
-        border: 1px solid #bee5eb;
-        color: #0c5460;
-        padding: 1rem;
-        border-radius: 5px;
-        margin: 1rem 0;
+        background: #eff6ff;
+        border-color: rgba(59,130,246,0.2);
+        color: #1d4ed8;
+    }
+    div[data-testid="stMetricContainer"] > div {
+        background: white;
+        border: 1px solid rgba(148,163,184,0.2);
+        padding: 0.8rem 1rem;
+        border-radius: 12px;
+    }
+    .stSidebar {
+        background: #f8fafc;
+    }
+    .stSidebar > div {
+        padding-top: 1rem;
+    }
+    .stButton > button {
+        border-radius: 12px;
+        border: 1px solid rgba(99,102,241,0.2);
+        background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+        color: white;
+        font-weight: 600;
+    }
+    .stButton > button:hover {
+        background: linear-gradient(135deg, #4338ca, #7c3aed);
+    }
+    .stDownloadButton > button {
+        border-radius: 12px;
+        border: 1px solid rgba(148,163,184,0.25);
+        background: white;
+        color: #0f172a;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -131,10 +172,12 @@ def load_json_results(filepath):
 # ============================================================================
 
 # Header
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.markdown('<div class="main-title">🎵 CAS-V</div>', unsafe_allow_html=True)
-    st.markdown('<div class="subtitle">Conflict-Aware Semantic Verification for Image-to-Audio Generation</div>', unsafe_allow_html=True)
+st.markdown('''
+<div class="app-header">
+    <div class="main-title">🎵 CAS-V</div>
+    <div class="subtitle">Conflict-Aware Semantic Verification for Image-to-Audio Generation</div>
+</div>
+''', unsafe_allow_html=True)
 
 # Sidebar Navigation
 st.sidebar.markdown("---")
