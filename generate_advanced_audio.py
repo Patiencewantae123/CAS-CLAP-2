@@ -107,8 +107,44 @@ class ImageToAudioPipeline(nn.Module):
         self.eval()
         with torch.no_grad():
             v_embed = self.visual_encoder(image_tensor).unsqueeze(1)
+            B = image_tensor.size(0)
             num_tokens = int(audio_length_secs * 12)
-            latent_seq = torch.randn(image_tensor.size(0), num_tokens, v_embed.size(-1))
+            
+            # Extract image statistics to drive audio generation
+            # This ensures different images produce different sounds
+            brightness = image_tensor.mean(dim=[1, 2, 3])  # Average brightness per batch
+            contrast = image_tensor.std(dim=[1, 2, 3])  # Pixel variance per batch
+            r_mean = image_tensor[:, 0].mean(dim=[1, 2])  # Red channel average
+            g_mean = image_tensor[:, 1].mean(dim=[1, 2])  # Green channel average
+            b_mean = image_tensor[:, 2].mean(dim=[1, 2])  # Blue channel average
+            
+            # Create image-driven latent sequences instead of pure random
+            latent_seq = torch.zeros(B, num_tokens, v_embed.size(-1), device=image_tensor.device)
+            
+            for b in range(B):
+                # Map image properties to audio characteristics
+                freq_scale = 0.5 + 2.0 * brightness[b].clamp(0, 1)  # Bright images → higher freq
+                amp_scale = 0.5 + contrast[b] * 2.0  # High contrast → louder
+                
+                # Create deterministic modulation patterns from image stats
+                time_axis = torch.linspace(0, 1, num_tokens, device=image_tensor.device)
+                
+                # Channel 0: brightness-modulated base tone
+                latent_seq[b, :, 0] = brightness[b] * torch.sin(2.0 * np.pi * freq_scale[b] * time_axis)
+                
+                # Channel 1: contrast-driven amplitude envelope
+                latent_seq[b, :, 1] = amp_scale * torch.cos(2.0 * np.pi * time_axis)
+                
+                # Channel 2-4: RGB color channels as pitch/timbre modulation
+                latent_seq[b, :, 2] = r_mean[b] * torch.sin(torch.linspace(0, 3.0 * np.pi, num_tokens, device=image_tensor.device))
+                latent_seq[b, :, 3] = g_mean[b] * torch.cos(torch.linspace(0, 2.5 * np.pi, num_tokens, device=image_tensor.device))
+                latent_seq[b, :, 4] = b_mean[b] * torch.sin(torch.linspace(0, 2.0 * np.pi, num_tokens, device=image_tensor.device))
+                
+                # Fill remaining dimensions with modulated noise based on image content
+                if v_embed.size(-1) > 5:
+                    noise_scale = (brightness[b] + contrast[b]) / 2.0
+                    latent_seq[b, :, 5:] = noise_scale * torch.randn(num_tokens, v_embed.size(-1) - 5, device=image_tensor.device)
+            
             conditioned_latents = self.conditioner(latent_seq, v_embed)
             mel_spec = self.spectrogram_decoder(conditioned_latents)
             waveform = self.vocoder(mel_spec)
