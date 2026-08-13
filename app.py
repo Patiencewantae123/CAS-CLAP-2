@@ -23,84 +23,222 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
+    /* Main app styling */
     .stApp {
-        background: #f8fafc;
-        color: #0f172a;
+        background:
+            radial-gradient(circle at top left, rgba(96, 165, 250, 0.16), transparent 30%),
+            radial-gradient(circle at top right, rgba(168, 85, 247, 0.12), transparent 30%),
+            #f8fafc;
+        color: #111827;
     }
     .main .block-container {
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
+        max-width: 1400px;
     }
-    .app-header {
-        background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08));
-        border: 1px solid rgba(148,163,184,0.25);
-        border-radius: 18px;
-        padding: 1.5rem 1.75rem;
-        margin-bottom: 1.5rem;
-        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    
+    /* Header */
+    .soft-header {
+        background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(239,246,255,0.95));
+        border: 1px solid rgba(148,163,184,0.3);
+        border-radius: 24px;
+        padding: 2rem 2.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+        animation: slideDown 0.5s ease;
     }
-    .main-title {
-        text-align: left;
-        font-size: 2.5rem;
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .soft-header .brand {
+        display: inline-block;
+        background: linear-gradient(135deg, #2563eb, #7c3aed, #0ea5e9);
+        color: white;
+        border-radius: 999px;
+        padding: 0.4rem 0.9rem;
+        font-size: 0.7rem;
         font-weight: 800;
-        letter-spacing: -0.04em;
-        margin-bottom: 0.25rem;
-        background: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 50%, #0ea5e9 100%);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+    }
+    .soft-header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+        font-weight: 900;
+        background: linear-gradient(135deg, #1e3a8a, #7c3aed);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
-    .subtitle {
-        text-align: left;
-        font-size: 1.08rem;
-        color: #475569;
-        margin-bottom: 0;
+    .soft-header p {
+        margin: 0.5rem 0 0 0;
+        color: #64748b;
+        font-size: 0.95rem;
+        font-weight: 500;
     }
-    .metric-card, .research-card, .info-box, .success-box {
-        border-radius: 14px;
-        padding: 1rem 1.1rem;
-        margin: 0.5rem 0;
-        border: 1px solid rgba(148,163,184,0.2);
-        background: white;
-        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+    
+    /* Containers and cards */
+    .container-box {
+        background: rgba(255,255,255,0.88);
+        border: 1px solid rgba(148,163,184,0.25);
+        border-radius: 18px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.05);
+        transition: all 0.3s ease;
     }
-    .success-box {
-        background: #ecfdf5;
-        border-color: rgba(34, 197, 94, 0.25);
-        color: #166534;
+    .container-box:hover {
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+        border-color: rgba(37, 99, 235, 0.2);
     }
-    .info-box {
-        background: #eff6ff;
-        border-color: rgba(59,130,246,0.2);
-        color: #1d4ed8;
-    }
+    
+    /* Metrics styling */
     div[data-testid="stMetricContainer"] > div {
-        background: white;
+        background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(239,246,255,0.8));
         border: 1px solid rgba(148,163,184,0.2);
-        padding: 0.8rem 1rem;
-        border-radius: 12px;
+        border-radius: 14px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+        transition: all 0.3s ease;
     }
+    div[data-testid="stMetricContainer"] > div:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+    }
+    
+    /* Sidebar */
     .stSidebar {
-        background: #f8fafc;
+        background: linear-gradient(180deg, rgba(248,250,252,0.96), rgba(239,246,255,0.92));
     }
-    .stSidebar > div {
-        padding-top: 1rem;
+    .sidebar-divider {
+        border-top: 1px solid rgba(148,163,184,0.15);
+        margin: 1.5rem 0;
     }
+    
+    /* Buttons */
     .stButton > button {
-        border-radius: 12px;
-        border: 1px solid rgba(99,102,241,0.2);
-        background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+        border-radius: 10px;
+        background: linear-gradient(135deg, #2563eb, #1d4ed8);
         color: white;
-        font-weight: 600;
+        border: none;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+        transition: all 0.3s ease;
     }
     .stButton > button:hover {
-        background: linear-gradient(135deg, #4338ca, #7c3aed);
+        background: linear-gradient(135deg, #1d4ed8, #1e40af);
+        box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+        transform: translateY(-1px);
     }
     .stDownloadButton > button {
-        border-radius: 12px;
-        border: 1px solid rgba(148,163,184,0.25);
+        border-radius: 10px;
+        border: 1.5px solid rgba(37, 99, 235, 0.3);
         background: white;
-        color: #0f172a;
+        color: #2563eb;
+        font-weight: 600;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+        transition: all 0.3s ease;
+    }
+    .stDownloadButton > button:hover {
+        background: rgba(37, 99, 235, 0.05);
+        box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
+        transform: translateY(-1px);
+    }
+    
+    /* File uploader styling */
+    .stFileUploader {
+        border-radius: 14px;
+        overflow: hidden;
+    }
+    div[data-testid="stFileUploadDropzone"] {
+        border-radius: 14px;
+        border: 2px dashed rgba(37, 99, 235, 0.25);
+        padding: 2rem;
+        background: rgba(37, 99, 235, 0.02);
+        transition: all 0.3s ease;
+    }
+    div[data-testid="stFileUploadDropzone"]:hover {
+        border-color: rgba(37, 99, 235, 0.4);
+        background: rgba(37, 99, 235, 0.05);
+    }
+    
+    /* Text and typography */
+    h1 { margin-top: 1.5rem; margin-bottom: 0.8rem; font-weight: 800; }
+    h2 { margin-top: 1.2rem; margin-bottom: 0.7rem; font-weight: 800; }
+    h3 { margin-top: 0.8rem; margin-bottom: 0.5rem; font-weight: 700; }
+    
+    /* Step indicators */
+    .step-box {
+        background: linear-gradient(135deg, rgba(37,99,235,0.08), rgba(124,58,237,0.08));
+        border-left: 4px solid #2563eb;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Status badges */
+    .status-badge {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+    .badge-compatible {
+        background: #d1fae5;
+        color: #065f46;
+        border: 1px solid #a7f3d0;
+    }
+    .badge-conflict {
+        background: #fee2e2;
+        color: #7f1d1d;
+        border: 1px solid #fecaca;
+    }
+    
+    /* Audio player styling */
+    .audio-section {
+        background: linear-gradient(135deg, rgba(37,99,235,0.05), rgba(124,58,237,0.05));
+        border-radius: 14px;
+        padding: 1.5rem;
+        border: 1px solid rgba(37,99,235,0.15);
+    }
+    
+    /* Table styling */
+    div[data-testid="stDataFrame"] {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    }
+    
+    /* Info, success, warning boxes */
+    .stAlert {
+        border-radius: 12px;
+        border-left: 4px solid;
+    }
+    
+    .element-container {
+        margin-bottom: 1rem;
+    }
+    
+    /* Radio buttons styling */
+    .stRadio > label {
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        transition: all 0.2s;
+    }
+    
+    /* Caption styling */
+    .stCaption {
+        color: #64748b;
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -248,6 +386,59 @@ def filtered_verified_concepts(audio_candidates):
     return compatible, rejected
 
 
+def semantic_verifier(scene, dominant_color, audio_candidates):
+    """Resolve semantic mismatch by rejecting audio concepts that contradict the image scene."""
+    scene_lower = scene.lower()
+    compatible = []
+    rejected = []
+    reasons = []
+
+    for item in audio_candidates:
+        concept = item['concept'].lower()
+        match = False
+        reasoning = ""
+
+        if ('water' in scene_lower or 'outdoor' in scene_lower or 'natural' in scene_lower or dominant_color == 'blue') and (
+            'ocean' in concept or 'bird' in concept):
+            match = True
+            reasoning = f"✓ Scene is '{scene}' (water/outdoor/natural) → '{item['concept']}' is a NATURAL SOUND → MATCH!"
+        elif ('indoor' in scene_lower or 'performance' in scene_lower or 'night' in scene_lower) and (
+            'piano' in concept or 'audience' in concept):
+            match = True
+            reasoning = f"✓ Scene is '{scene}' (indoor/performance) → '{item['concept']}' is an INDOOR SOUND → MATCH!"
+        elif ('urban' in scene_lower or 'city' in scene_lower or dominant_color == 'red') and (
+            'car' in concept or 'traffic' in concept):
+            match = True
+            reasoning = f"✓ Scene is '{scene}' (urban/city) → '{item['concept']}' is an URBAN SOUND → MATCH!"
+        elif 'ambient' in concept or 'soft' in concept:
+            match = True
+            reasoning = f"✓ '{item['concept']}' is UNIVERSAL/AMBIENT → Works with any scene → MATCH!"
+
+        if item['status'] == 'Compatible' and match:
+            compatible.append(item)
+        elif item['status'] == 'Conflict' or not match:
+            rejected.append(item)
+            if item['status'] == 'Conflict':
+                if 'ocean' in concept or 'bird' in concept:
+                    if not ('water' in scene_lower or 'outdoor' in scene_lower or 'natural' in scene_lower or dominant_color == 'blue'):
+                        reasoning = f"✗ Scene is '{scene}' (NOT water/outdoor/nature) → '{item['concept']}' is a NATURAL SOUND → MISMATCH!"
+                elif 'piano' in concept or 'audience' in concept:
+                    if not ('indoor' in scene_lower or 'performance' in scene_lower or 'night' in scene_lower):
+                        reasoning = f"✗ Scene is '{scene}' (NOT indoor/performance) → '{item['concept']}' is an INDOOR SOUND → MISMATCH!"
+                elif 'car' in concept or 'traffic' in concept:
+                    if not ('urban' in scene_lower or 'city' in scene_lower or dominant_color == 'red'):
+                        reasoning = f"✗ Scene is '{scene}' (NOT urban/city) → '{item['concept']}' is an URBAN SOUND → MISMATCH!"
+                else:
+                    reasoning = f"✗ '{item['concept']}' conflicts with the detected scene '{scene}' → REJECTED!"
+            else:
+                reasoning = f"✗ Scene is '{scene}' → '{item['concept']}' is not semantically consistent → REJECTED!"
+            reasons.append(reasoning)
+
+    return compatible, rejected, reasons
+
+    return compatible, rejected, reasons
+
+
 def concept_to_frequency(concept_name):
     concept_map = {
         'Piano music': 220,
@@ -283,47 +474,31 @@ def generate_verified_audio(concepts, output_path='verified_audio.wav', sample_r
 
 # Header
 st.markdown('''
-<div class="app-header">
-    <div class="main-title">🎵 CAS-V</div>
-    <div class="subtitle">Conflict-Aware Semantic Verification for Image-to-Audio Generation</div>
+<div class="soft-header">
+    <div class="brand">CAS-V</div>
+    <h1>Semantic audio generation with verification</h1>
+    <p>Conflict-aware semantic verification for image-to-audio generation</p>
 </div>
 ''', unsafe_allow_html=True)
 
 # Sidebar Navigation
-st.sidebar.markdown("---")
-st.sidebar.markdown("## 📑 Navigation")
+st.sidebar.markdown("## Navigation")
 page = st.sidebar.radio(
-    "Select Page:",
-    ["🏠 Home", "🎨 Audio Generation", "📊 Paper Results", "📈 Metrics & Analysis", "⚙️ Settings"],
+    "Select page:",
+    ["Home", "Audio Generation", "Experimentation Results", "Settings"],
     label_visibility="collapsed"
 )
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📚 About")
-st.sidebar.info("""
-**CAS-V** is a conflict-aware semantic verification framework for image-to-audio generation.
-
-It combines:
-- 🖼️ Visual semantic analysis
-- 🧠 Language-guided concept compatibility checks
-- 🎯 Conflict filtering before synthesis
-- 🎵 Audio generation with multimodal conditioning
-
-**Features:**
-- Semantic consistency verification
-- Multi-image processing
-- Emotion-aware audio generation
-- Quality metrics tracking
-""")
+st.sidebar.caption("A clean workflow for image upload, compatibility checks, and verified sound output.")
 
 # ============================================================================
 # PAGE: HOME
 # ============================================================================
-if page == "🏠 Home":
-    st.markdown("---")
-    st.markdown("### 🧭 CAS-V Workflow")
+if page == "Home":
+    st.markdown("### Image-to-Audio CAS-V Workflow")
+    st.caption("📤 Upload an image to analyze the scene, verify compatible audio concepts, and generate verified audio output.")
 
-    uploaded_file = st.file_uploader("Upload image", type=['jpg', 'jpeg', 'png'], key='workflow_upload')
+    uploaded_file = st.file_uploader("Choose an image (JPG, JPEG, PNG)", type=['jpg', 'jpeg', 'png'], key='workflow_upload')
 
     if uploaded_file is not None:
         image_bytes = uploaded_file.getvalue()
@@ -332,104 +507,281 @@ if page == "🏠 Home":
         with open(temp_path, 'wb') as f:
             f.write(image_bytes)
 
-        col_img, col_meta = st.columns([1, 2])
-        with col_img:
-            image = Image.open(temp_path).convert('RGB')
-            st.image(image, use_container_width=True, caption='Uploaded Image Preview')
+        # Step 1: Image Analysis
+        with st.container(border=False):
+            st.markdown("---")
+            st.markdown("#### Step 1️⃣ Image Analysis")
+            
+            col_img, col_meta = st.columns([1, 1.2], gap="large")
+            with col_img:
+                st.markdown('<div class="container-box">', unsafe_allow_html=True)
+                image = Image.open(temp_path).convert('RGB')
+                st.image(image, width="stretch", caption='✓ Uploaded image')
+                st.markdown('</div>', unsafe_allow_html=True)
 
-        with col_meta:
-            analysis = analyze_uploaded_image(temp_path)
-            st.markdown("### 1. Visual Analysis")
-            st.write(f"**Detected scene:** {analysis['scene']}")
-            st.write(f"**Dominant color:** {analysis['dominant_color']}")
-            st.write(f"**Objects:** {', '.join(analysis['objects'])}")
-            st.write(f"**Brightness:** {analysis['brightness']:.3f}")
-            st.write(f"**Contrast:** {analysis['contrast']:.3f}")
+            with col_meta:
+                st.markdown('<div class="container-box">', unsafe_allow_html=True)
+                analysis = analyze_uploaded_image(temp_path)
+                st.markdown("**📋 Scene Summary**")
+                st.write(f"🎬 **Scene:** {analysis['scene']}")
+                st.write(f"🎨 **Dominant color:** {analysis['dominant_color']}")
+                st.write(f"🔍 **Objects:** {', '.join(analysis['objects'])}")
+                st.write(f"☀️ **Brightness:** {analysis['brightness']:.3f}")
+                st.write(f"📊 **Contrast:** {analysis['contrast']:.3f}")
+                st.divider()
+                st.caption(f"💭 {analysis['description']}")
+                st.markdown('</div>', unsafe_allow_html=True)
 
-            st.markdown("### 2. Semantic Description")
-            st.info(analysis['description'])
+        # Step 2: Candidate Concepts
+        st.markdown("---")
+        st.markdown("#### Step 2️⃣ Candidate Audio Concepts")
+        candidates = get_candidate_audio_concepts(analysis['scene'], analysis['dominant_color'])
+        compatible, rejected = filtered_verified_concepts(candidates)
+        
+        df_candidates = pd.DataFrame(candidates)
+        st.dataframe(df_candidates, hide_index=True, width="stretch", use_container_width=True)
 
-            st.markdown("### 3. Candidate Audio Concepts")
-            candidates = get_candidate_audio_concepts(analysis['scene'], analysis['dominant_color'])
-            df = pd.DataFrame(candidates)
-            st.dataframe(df, use_container_width=True, hide_index=True)
+        # Step 3: Semantic Verification
+        st.markdown("---")
+        st.markdown("#### Step 3️⃣ Semantic Verification — Detecting & Resolving Conflicts")
+        
+        verified_compatible, filtered_conflicts, verifier_reasons = semantic_verifier(
+            analysis['scene'], analysis['dominant_color'], candidates
+        )
+        
+        st.markdown('<div class="container-box" style="border-left: 4px solid #3b82f6;">', unsafe_allow_html=True)
+        st.markdown("**🔍 How the Verifier Works**")
+        st.caption("""
+        The semantic verifier checks each candidate audio concept against the scene to make sure they match. 
+        It asks: **"Does this sound belong in this image?"**
+        
+        For example:
+        - 🌊 Ocean waves → only accept for water/beach/nature scenes
+        - 🎹 Piano music → only accept for indoor/concert/performance scenes  
+        - 🚗 Car engine → only accept for urban/city scenes
+        """)
+        st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Show the verification logic for each concept
+        st.markdown("**📋 Detailed Verification Logic:**")
+        
+        col_left, col_right = st.columns(2, gap="medium")
+        
+        # Show compatible concepts with reasoning
+        with col_left:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #10b981;">', unsafe_allow_html=True)
+            st.markdown("**✓ ACCEPTED Concepts**")
+            if verified_compatible:
+                for item in verified_compatible:
+                    # Find the reasoning for this item
+                    reasoning = next((r for r in verifier_reasons if item['concept'].lower() in r.lower() and '✓' in r), None)
+                    
+                    st.markdown(f"""
+                    <div style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10b981; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <strong style="color: #10b981;">✓ {item['concept']}</strong><br>
+                    <span style="font-size: 0.85rem; color: #047857;">{reasoning if reasoning else f"Compatible with {analysis['scene']}"}</span>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                st.write("🚫 No compatible concepts found.")
+            st.markdown('</div>', unsafe_allow_html=True)
+        
+        # Show rejected concepts with reasoning
+        with col_right:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #ef4444;">', unsafe_allow_html=True)
+            st.markdown("**✗ REJECTED Concepts**")
+            if filtered_conflicts:
+                for item in filtered_conflicts:
+                    # Find the reasoning for this item
+                    reasoning = next((r for r in verifier_reasons if item['concept'].lower() in r.lower() and '✗' in r), None)
+                    
+                    st.markdown(f"""
+                    <div style="background: rgba(239, 68, 68, 0.08); border-left: 3px solid #ef4444; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem;">
+                    <strong style="color: #ef4444;">✗ {item['concept']}</strong><br>
+                    <span style="font-size: 0.85rem; color: #991b1b;">{reasoning if reasoning else f"Doesn't match {analysis['scene']}"}</span>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                st.write("✓ No conflicts detected.")
+            st.markdown('</div>', unsafe_allow_html=True)
 
-            compatible, rejected = filtered_verified_concepts(candidates)
+        # Step 4: Verified Results
+        st.markdown("---")
+        st.markdown("#### Step 4️⃣ Verification Results")
+        
+        col_compatible, col_rejected = st.columns(2, gap="medium")
+        with col_compatible:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #10b981;">', unsafe_allow_html=True)
+            if verified_compatible:
+                st.success(f"✓ {len(verified_compatible)} Compatible Concept(s) Retained")
+                for item in verified_compatible:
+                    score_pct = int(item['score'] * 100)
+                    st.write(f"• **{item['concept']}** — {score_pct}% match")
+            else:
+                st.warning("⚠️ No compatible concepts were found for this image.")
+            st.markdown('</div>', unsafe_allow_html=True)
+            
+        with col_rejected:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #ef4444;">', unsafe_allow_html=True)
+            if filtered_conflicts:
+                st.warning(f"✗ {len(filtered_conflicts)} Conflict(s) Filtered Out")
+                for item in filtered_conflicts:
+                    score_pct = int(item['score'] * 100)
+                    st.write(f"• **{item['concept']}** — {score_pct}% (rejected)")
+            else:
+                st.info("✓ No conflicts detected.")
+            st.markdown('</div>', unsafe_allow_html=True)
 
-            st.markdown("### 4. CAS-V Verification")
-            col_compatible, col_rejected = st.columns(2)
-            with col_compatible:
-                st.success("Verified compatible concepts")
-                if compatible:
-                    for item in compatible:
-                        st.write(f"✓ {item['concept']} ({item['score']:.2f})")
-                else:
-                    st.write("No compatible concepts detected.")
-            with col_rejected:
-                st.warning("Rejected conflicting concepts")
-                if rejected:
-                    for item in rejected:
-                        st.write(f"✗ {item['concept']} ({item['score']:.2f})")
-                else:
-                    st.write("No conflicts detected.")
-
-            if compatible:
-                st.markdown("### 5. Verified Result")
-                st.write("Only compatible concepts are retained before audio synthesis.")
-                verified_path = generate_verified_audio(compatible, output_path='verified_audio.wav')
-                st.audio(verified_path, format='audio/wav')
+        # Step 5: Audio Generation
+        st.markdown("---")
+        st.markdown("#### Step 5️⃣ Verified Audio Output")
+        
+        if verified_compatible:
+            st.markdown('<div class="audio-section">', unsafe_allow_html=True)
+            st.markdown("**🎵 Listen to the verified audio:**")
+            verified_path = generate_verified_audio(verified_compatible, output_path='verified_audio.wav')
+            st.audio(verified_path, format='audio/wav')
+            
+            col_audio_left, col_audio_right = st.columns([3, 1])
+            with col_audio_right:
                 with open(verified_path, 'rb') as audio_file:
-                    st.download_button('Download Generated Audio', audio_file.read(), file_name='verified_audio.wav', mime='audio/wav')
+                    st.download_button(
+                        '📥 Download',
+                        audio_file.read(),
+                        file_name='verified_audio.wav',
+                        mime='audio/wav',
+                        use_container_width=True
+                    )
+            st.markdown('</div>', unsafe_allow_html=True)
+        else:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #f59e0b;">', unsafe_allow_html=True)
+            st.caption("⚠️ Verified audio generation is unavailable because no compatible concept passed the semantic safety check.")
+            st.markdown('</div>', unsafe_allow_html=True)
 
     else:
-        st.markdown("### 🚀 Quick Start")
+        st.markdown("---")
+        st.markdown("## 🔬 What This Research Is Solving")
+        
+        st.markdown('<div class="container-box">', unsafe_allow_html=True)
         st.markdown("""
-        1. **Upload or Select** an image
-        2. **Analyze** the image content
-        3. **View** semantic description and candidate sounds
-        4. **Run CAS-V verification** to filter conflicts
-        5. **Generate** the verified audio output
+        **The Problem:** Current image-to-audio systems can generate realistic sounds, but they often produce audio that doesn't match the actual content or context of the input image.
+        
+        🎹 **Example:** An image of a person playing piano might incorrectly generate car engine or ocean wave sounds.
+        
+        **Root Cause:** Many systems generate audio without a semantic verification step to ensure consistency with the visual scene.
+        
+        **Our Solution (CAS-V):** We address this by analyzing the image, extracting its semantic description, comparing it with candidate audio concepts, detecting conflicts, and filtering incompatible concepts before generating the final audio output.
         """)
+        st.markdown('</div>', unsafe_allow_html=True)
 
-        st.markdown("### ✨ Core CAS-V Pipeline")
-        st.markdown("""
-        - ✅ Visual scene analysis
-        - ✅ Semantic description generation
-        - ✅ Candidate audio concept generation
-        - ✅ Conflict-aware verification
-        - ✅ Verified audio synthesis
-        """)
+        st.markdown("---")
+        st.markdown("## 🚀 How the CAS-V System Works")
+        
+        steps = st.columns(5, gap="small")
+        
+        step_data = [
+            ("1️⃣", "Input", "Upload an image\nfrom the browser"),
+            ("2️⃣", "Analyze", "Extract brightness,\ncontrast, and scene\nsemantics"),
+            ("3️⃣", "Generate", "Create candidate\naudio concepts"),
+            ("4️⃣", "Verify", "Check compatibility\nand reject conflicts"),
+            ("5️⃣", "Output", "Generate verified\naudio only"),
+        ]
+        
+        for idx, (col, (emoji, title, desc)) in enumerate(zip(steps, step_data)):
+            with col:
+                st.markdown(f'''
+                <div class="container-box" style="text-align: center; border-left: none;">
+                <div style="font-size: 2rem; margin-bottom: 0.5rem;">{emoji}</div>
+                <div style="font-weight: 700; font-size: 0.95rem; margin-bottom: 0.5rem;">{title}</div>
+                <div style="font-size: 0.8rem; color: #64748b; line-height: 1.4;">{desc}</div>
+                </div>
+                ''', unsafe_allow_html=True)
 
-        st.markdown("### 📊 Latest Metrics")
+        st.markdown("---")
+        st.markdown("## 📋 Workflow Overview")
+        
+        st.markdown('''
+        <div class="step-box">
+        <strong>🔄 The CAS-V Pipeline:</strong><br>
+        <br>
+        <strong>1. Input:</strong> User uploads an image via the interface.<br>
+        <strong>2. Scene Analysis:</strong> Convert visual content into a semantic scene summary (brightness, contrast, color, objects).<br>
+        <strong>3. Candidate Generation:</strong> Generate candidate audio concepts (e.g., waves, engine, piano, birds).<br>
+        <strong>4. Conflict Detection:</strong> Compare candidates against image context and detect semantic mismatches.<br>
+        <strong>5. Verified Synthesis:</strong> Use only compatible concepts to produce the final audio waveform.
+        </div>
+        ''', unsafe_allow_html=True)
+
+        st.markdown("---")
+        st.markdown("## � Technology Stack & Future Enhancements")
+        
+        col_current, col_future = st.columns(2, gap="medium")
+        
+        with col_current:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #3b82f6;">', unsafe_allow_html=True)
+            st.markdown("**🏗️ Current Implementation**")
+            st.markdown("""
+            The current CAS-V system uses:
+            
+            - **Computer Vision** – Image analysis (brightness, contrast, color)
+            - **Rule-Based Matching** – Keyword-based semantic verification
+            - **Signal Processing** – Audio waveform synthesis
+            
+            **Advantage:** Fast, interpretable, no deep learning needed
+            
+            **Limitation:** Simple keyword matching, not true semantic understanding
+            """)
+            st.markdown('</div>', unsafe_allow_html=True)
+        
+        with col_future:
+            st.markdown('<div class="container-box" style="border-left: 4px solid #8b5cf6;">', unsafe_allow_html=True)
+            st.markdown("**🚀 True NLP Enhancement (Future)**")
+            st.markdown("""
+            To implement true NLP-based semantic verification:
+            
+            1. **Semantic Embeddings** – Convert text to vectors (Word2Vec, FastText)
+            2. **CLIP Models** – Multimodal understanding of images + concepts
+            3. **Fine-tuned Verifier** – Train on labeled image-audio pairs
+            4. **Transformer Networks** – BERT, GPT for real language understanding
+            
+            **Advantage:** Deeper semantic reasoning, handles novel concepts
+            
+            **Trade-off:** Requires training data, more compute
+            """)
+            st.markdown('</div>', unsafe_allow_html=True)
+
+        st.markdown("---")
+        st.markdown("## �📊 Research Metrics")
+        
         results_file = "paper_results/generation_results.json"
         if os.path.exists(results_file):
             results = load_json_results(results_file)
             if results:
                 metrics = results.get('quality_metrics', {})
-                col_a, col_b, col_c = st.columns(3)
-                with col_a:
+                col_m1, col_m2, col_m3 = st.columns(3, gap="medium")
+                
+                with col_m1:
                     fad = metrics.get('frechet_audio_distance', {}).get('value', 'N/A')
-                    st.metric("FAD Score", fad, delta="-0.2 (better)" if isinstance(fad, float) else None)
-                with col_b:
+                    st.metric("🎵 FAD Score", fad, help="Frechet Audio Distance (lower is better)")
+                
+                with col_m2:
                     snr = metrics.get('signal_to_noise_ratio', {}).get('value', 'N/A')
-                    st.metric("SNR (dB)", snr, delta="+2.1 dB" if isinstance(snr, float) else None)
-                with col_c:
+                    st.metric("📢 SNR (dB)", snr, help="Signal-to-Noise Ratio (higher is better)")
+                
+                with col_m3:
                     clap = metrics.get('clap_alignment_score', {}).get('value', 'N/A')
-                    st.metric("CLAP Score", clap, delta="+0.05" if isinstance(clap, float) else None)
-
-        st.markdown("### 🎯 Quick Actions")
-        if st.button("🎵 Open Audio Generation Workflow"):
-            st.session_state.page = "🎨 Audio Generation"
+                    st.metric("🔗 CLAP Score", clap, help="CLAP Alignment Score (higher is better)")
+        else:
+            st.info("📊 Metrics will appear here after generating results.")
 
 # ============================================================================
 # PAGE: AUDIO GENERATION
 # ============================================================================
-elif page == "🎨 Audio Generation":
-    st.markdown("---")
-    st.markdown("## 🎨 CAS-V Audio Generation")
-    st.markdown("Upload an image to analyze its content, verify semantic compatibility, and generate semantically relevant audio.")
+elif page == "Audio Generation":
+    st.markdown("## 🎵 CAS-V Audio Generation")
+    st.caption("Upload an image to analyze its content, verify semantic compatibility, and generate semantically relevant audio.")
 
-    uploaded_file = st.file_uploader("Upload image for CAS-V verification", type=['jpg', 'jpeg', 'png'], key='audio_upload')
+    uploaded_file = st.file_uploader("Choose an image for CAS-V processing", type=['jpg', 'jpeg', 'png'], key='audio_upload')
     if uploaded_file is not None:
         image_path = os.path.join('uploaded_images', uploaded_file.name)
         os.makedirs('uploaded_images', exist_ok=True)
@@ -439,117 +791,186 @@ elif page == "🎨 Audio Generation":
         analysis = analyze_uploaded_image(image_path)
         candidates = get_candidate_audio_concepts(analysis['scene'], analysis['dominant_color'])
         compatible, rejected = filtered_verified_concepts(candidates)
+        verified_compatible, filtered_conflicts, verifier_reasons = semantic_verifier(
+            analysis['scene'], analysis['dominant_color'], candidates
+        )
 
-        col1, col2 = st.columns(2)
+        col1, col2 = st.columns([1, 1.2], gap="large")
         with col1:
-            st.image(Image.open(image_path), use_container_width=True, caption='Uploaded Image')
+            st.markdown('<div class="container-box">', unsafe_allow_html=True)
+            st.image(Image.open(image_path), width="stretch", caption='✓ Uploaded Image')
+            st.markdown('</div>', unsafe_allow_html=True)
+            
         with col2:
-            st.markdown("### 1. Image Description")
-            st.info(analysis['description'])
+            st.markdown('<div class="container-box">', unsafe_allow_html=True)
+            st.markdown("### Image Analysis")
+            st.markdown(f"**🎬 Scene:** {analysis['scene']}")
+            st.markdown(f"**🎨 Color:** {analysis['dominant_color']}")
+            st.markdown(f"**📋 Objects:** {', '.join(analysis['objects'])}")
+            st.divider()
+            st.markdown(f"**📊 Brightness:** {analysis['brightness']:.3f}")
+            st.markdown(f"**📊 Contrast:** {analysis['contrast']:.3f}")
+            st.divider()
+            st.caption(analysis['description'])
+            st.markdown('</div>', unsafe_allow_html=True)
 
-            st.markdown("### 2. Visual Summary")
-            st.write(f"**Scene:** {analysis['scene']}")
-            st.write(f"**Objects:** {', '.join(analysis['objects'])}")
-            st.write(f"**Brightness:** {analysis['brightness']:.3f}")
-            st.write(f"**Contrast:** {analysis['contrast']:.3f}")
+        st.markdown("---")
+        st.markdown("### Candidate Audio Concepts")
+        st.dataframe(pd.DataFrame(candidates), hide_index=True, width="stretch", use_container_width=True)
 
-        st.markdown("### 3. Candidate Audio Concepts")
-        st.dataframe(pd.DataFrame(candidates), use_container_width=True, hide_index=True)
-
-        st.markdown("### 4. CAS-V Verification Result")
-        col_a, col_b = st.columns(2)
+        st.markdown("---")
+        st.markdown("### Semantic Verification Results")
+        st.markdown("**🔍 How the verifier works:** It checks if each audio concept matches the detected scene.")
+        
+        col_a, col_b = st.columns(2, gap="medium")
         with col_a:
-            st.success("Compatible Concepts")
-            for item in compatible:
-                st.write(f"✓ {item['concept']} ({item['score']:.2f})")
+            st.markdown('<div class="container-box" style="border-left: 4px solid #10b981;">', unsafe_allow_html=True)
+            st.markdown("**✓ ACCEPTED Concepts**")
+            if verified_compatible:
+                for item in verified_compatible:
+                    reasoning = next((r for r in verifier_reasons if item['concept'].lower() in r.lower() and '✓' in r), None)
+                    st.markdown(f"""
+                    <div style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10b981; padding: 0.7rem; border-radius: 6px; margin-bottom: 0.6rem;">
+                    <strong style="color: #10b981;">✓ {item['concept']}</strong><br>
+                    <span style="font-size: 0.8rem; color: #047857;">{reasoning if reasoning else 'Compatible with scene'}</span>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                st.write("No compatible concepts found.")
+            st.markdown('</div>', unsafe_allow_html=True)
+            
         with col_b:
-            st.warning("Rejected Concepts")
-            for item in rejected:
-                st.write(f"✗ {item['concept']} ({item['score']:.2f})")
+            st.markdown('<div class="container-box" style="border-left: 4px solid #ef4444;">', unsafe_allow_html=True)
+            st.markdown("**✗ REJECTED Concepts**")
+            if filtered_conflicts:
+                for item in filtered_conflicts:
+                    reasoning = next((r for r in verifier_reasons if item['concept'].lower() in r.lower() and '✗' in r), None)
+                    st.markdown(f"""
+                    <div style="background: rgba(239, 68, 68, 0.08); border-left: 3px solid #ef4444; padding: 0.7rem; border-radius: 6px; margin-bottom: 0.6rem;">
+                    <strong style="color: #ef4444;">✗ {item['concept']}</strong><br>
+                    <span style="font-size: 0.8rem; color: #991b1b;">{reasoning if reasoning else 'Conflicts with scene'}</span>
+                    </div>
+                    """, unsafe_allow_html=True)
+            else:
+                st.write("No conflicts detected.")
+            st.markdown('</div>', unsafe_allow_html=True)
 
-        if compatible:
-            st.markdown("### 5. Audio Generation")
-            verified_path = generate_verified_audio(compatible, output_path='verified_audio.wav')
+        if verified_compatible:
+            st.markdown("---")
+            st.markdown("### Audio Generation")
+            st.markdown('<div class="audio-section">', unsafe_allow_html=True)
+            verified_path = generate_verified_audio(verified_compatible, output_path='verified_audio.wav')
             st.audio(verified_path, format='audio/wav')
-            with open(verified_path, 'rb') as f:
-                st.download_button('Download Verified Audio', f.read(), file_name='verified_audio.wav', mime='audio/wav')
+            
+            col_dl, col_space = st.columns([1, 3])
+            with col_dl:
+                with open(verified_path, 'rb') as f:
+                    st.download_button(
+                        '📥 Download Audio',
+                        f.read(),
+                        file_name='verified_audio.wav',
+                        mime='audio/wav',
+                        use_container_width=True
+                    )
+            st.markdown('</div>', unsafe_allow_html=True)
     else:
-        st.info('Upload an image to begin the CAS-V workflow.')
+        st.markdown('<div class="container-box">', unsafe_allow_html=True)
+        st.info('📤 Upload an image to begin the CAS-V workflow.')
+        st.markdown('</div>', unsafe_allow_html=True)
 
 # ============================================================================
-# PAGE: AUDIO GENERATION
+# PAGE: EXPERIMENTATION RESULTS
 # ============================================================================
-# This block is intentionally kept as the CAS-V workflow page. The duplicate legacy page below was removed.
-
-# ============================================================================
-# PAGE: PAPER RESULTS
-# ============================================================================
-elif page == "📊 Paper Results":
+elif page == "Experimentation Results":
     st.markdown("---")
-    st.markdown("## 📊 Paper Results & Visualizations")
+    st.markdown("## 🧪 Experimentation Results")
+    st.caption("View results from actual system runs, audio samples, and performance metrics.")
     
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.markdown("### 📈 Figures Gallery")
+        st.markdown("### 📂 Generated Audio & Analysis")
         
-        paper_dir = "paper_results"
-        figures = sorted(glob.glob(f"{paper_dir}/fig*.png"))
-        
-        if figures:
-            # Organize figures in a grid
-            cols = st.columns(2)
-            for idx, fig_path in enumerate(figures):
-                col = cols[idx % 2]
-                with col:
-                    try:
-                        img = mpimg.imread(fig_path)
-                        fig_name = os.path.basename(fig_path)
-                        st.image(img, use_column_width=True, caption=fig_name)
-                    except:
-                        st.warning(f"Could not load {fig_path}")
+        # Check for uploaded images and generated audio
+        uploaded_dir = "uploaded_images"
+        if os.path.exists(uploaded_dir):
+            uploaded_files = sorted(glob.glob(f"{uploaded_dir}/*"))
+            
+            if uploaded_files:
+                st.markdown("**Sample Images & Verified Audio Output:**")
+                
+                for idx, img_path in enumerate(uploaded_files):
+                    if os.path.isfile(img_path) and img_path.lower().endswith(('.png', '.jpg', '.jpeg')):
+                        try:
+                            st.markdown(f"#### Sample {idx + 1}: {os.path.basename(img_path)}")
+                            
+                            col_img, col_audio = st.columns([1, 1], gap="medium")
+                            
+                            with col_img:
+                                img = Image.open(img_path)
+                                st.image(img, use_column_width=True, caption="Input Image")
+                            
+                            with col_audio:
+                                st.markdown("**Analysis Result:**")
+                                analysis = analyze_uploaded_image(img_path)
+                                st.write(f"🎬 **Scene:** {analysis['scene']}")
+                                st.write(f"🎨 **Color:** {analysis['dominant_color']}")
+                                st.write(f"☀️ **Brightness:** {analysis['brightness']:.3f}")
+                                st.write(f"📊 **Contrast:** {analysis['contrast']:.3f}")
+                                
+                                # Check if verified audio exists
+                                verified_audio = "verified_audio.wav"
+                                if os.path.exists(verified_audio):
+                                    st.markdown("**Generated Audio:**")
+                                    st.audio(verified_audio, format='audio/wav')
+                            
+                            st.divider()
+                        except Exception as e:
+                            st.warning(f"Could not process {img_path}: {str(e)}")
+            else:
+                st.info("📤 No uploaded images yet. Start by uploading an image on the Audio Generation page.")
         else:
-            st.info("No paper figures found. Generate them using the button below.")
+            st.info("📤 No experimentation data yet. Upload an image to begin.")
     
     with col2:
+        st.markdown("### 📊 Summary Statistics")
+        
+        # Count results
+        uploaded_dir = "uploaded_images"
+        if os.path.exists(uploaded_dir):
+            images = [f for f in glob.glob(f"{uploaded_dir}/*") if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
+            st.metric("📸 Images Processed", len(images))
+        else:
+            st.metric("📸 Images Processed", 0)
+        
+        verified_audio = "verified_audio.wav"
+        if os.path.exists(verified_audio):
+            st.metric("🎵 Audio Generated", "✓ Yes")
+        else:
+            st.metric("🎵 Audio Generated", "⏳ Pending")
+        
         st.markdown("### 🎯 Actions")
         
-        if st.button("🔄 Regenerate Paper Figures", use_container_width=True):
-            progress = st.progress(0)
-            status = st.status("Generating paper results...", expanded=True)
-            
-            with status:
-                st.write("Running generate_paper_results.py...")
-                progress.progress(50)
-                
-                success, stdout, stderr = run_paper_generation()
-                progress.progress(100)
-                
-                if success:
-                    st.success("✅ Paper figures generated successfully!")
-                    st.text_area("Output:", stdout, height=150)
-                    
-                    # Rerun to show new figures
-                    st.rerun()
-                else:
-                    st.error(f"❌ Error: {stderr}")
+        if st.button("🔄 Refresh Results", use_container_width=True):
+            st.rerun()
         
         st.markdown("### 📥 Export Options")
         
-        # Check for existing results
+        # Export verified audio
+        if os.path.exists("verified_audio.wav"):
+            with open("verified_audio.wav", "rb") as f:
+                st.download_button(
+                    label="📥 Download Latest Audio",
+                    data=f.read(),
+                    file_name="verified_audio.wav",
+                    mime="audio/wav",
+                    use_container_width=True
+                )
+        
+        # Export results JSON if available
         results_file = "paper_results/generation_results.json"
         if os.path.exists(results_file):
             with open(results_file, "rb") as f:
-                st.download_button(
-                    label="📋 Download Results JSON",
-                    data=f.read(),
-                    file_name="generation_results.json",
-                    mime="application/json"
-                )
-        
-        metadata_file = "paper_results/paper_metadata.json"
-        if os.path.exists(metadata_file):
-            with open(metadata_file, "rb") as f:
                 st.download_button(
                     label="📊 Download Metadata JSON",
                     data=f.read(),
@@ -558,88 +979,10 @@ elif page == "📊 Paper Results":
                 )
 
 # ============================================================================
-# PAGE: METRICS & ANALYSIS
-# ============================================================================
-elif page == "📈 Metrics & Analysis":
-    st.markdown("---")
-    st.markdown("## 📈 Metrics & Analysis")
-    
-    results_file = "paper_results/generation_results.json"
-    metadata_file = "paper_results/paper_metadata.json"
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.markdown("### 🎵 Generation Results")
-        if os.path.exists(results_file):
-            results = load_json_results(results_file)
-            if results:
-                metrics = results.get('quality_metrics', {})
-                
-                # Display metrics
-                st.metric(
-                    "Fréchet Audio Distance (FAD)",
-                    f"{metrics.get('frechet_audio_distance', {}).get('value', 'N/A'):.3f}",
-                    help="Lower is better (0-10)"
-                )
-                st.metric(
-                    "Signal-to-Noise Ratio (SNR)",
-                    f"{metrics.get('signal_to_noise_ratio', {}).get('value', 'N/A'):.2f} dB",
-                    help="Higher is better"
-                )
-                st.metric(
-                    "CLAP Alignment Score",
-                    f"{metrics.get('clap_alignment_score', {}).get('value', 'N/A'):.4f}",
-                    help="Cosine similarity (0-1)"
-                )
-                
-                # Additional metrics
-                with st.expander("📊 Detailed Metrics"):
-                    for key, value in metrics.items():
-                        if isinstance(value, dict):
-                            st.write(f"**{key}**: {value.get('value', 'N/A')}")
-        else:
-            st.info("Run audio generation to generate metrics.")
-    
-    with col2:
-        st.markdown("### 📋 Paper Metadata")
-        if os.path.exists(metadata_file):
-            metadata = load_json_results(metadata_file)
-            if metadata:
-                st.json(metadata.get('summary_statistics', {}))
-        else:
-            st.info("Generate paper results to view metadata.")
-    
-    # Audio files listing
-    st.markdown("---")
-    st.markdown("### 🎵 Generated Audio Files")
-    
-    audio_files = glob.glob("*.wav")
-    if audio_files:
-        for audio_file in audio_files[:10]:  # Show top 10
-            col1, col2, col3 = st.columns([2, 1, 1])
-            with col1:
-                st.write(f"**{audio_file}**")
-            with col2:
-                st.audio(audio_file)
-            with col3:
-                with open(audio_file, "rb") as f:
-                    st.download_button(
-                        "📥",
-                        data=f.read(),
-                        file_name=audio_file,
-                        mime="audio/wav",
-                        key=audio_file
-                    )
-    else:
-        st.info("No audio files generated yet.")
-
-# ============================================================================
 # PAGE: SETTINGS
 # ============================================================================
-elif page == "⚙️ Settings":
-    st.markdown("---")
-    st.markdown("## ⚙️ Settings & Configuration")
+elif page == "Settings":
+    st.markdown("## Settings & Configuration")
     
     st.markdown("### 🔧 Pipeline Configuration")
     
