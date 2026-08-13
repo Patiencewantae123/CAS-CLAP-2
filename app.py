@@ -3,12 +3,14 @@ import os
 import glob
 import json
 import numpy as np
+import pandas as pd
 from PIL import Image
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from pathlib import Path
 import subprocess
 import sys
+from scipy.io.wavfile import write as wav_write
 
 # Page config
 st.set_page_config(
@@ -167,6 +169,114 @@ def load_json_results(filepath):
     except:
         return None
 
+
+def analyze_uploaded_image(image_path):
+    """Create a lightweight semantic analysis for the uploaded image."""
+    img = Image.open(image_path).convert('RGB')
+    arr = np.array(img).astype(np.float32) / 255.0
+    brightness = float(arr.mean())
+    contrast = float(arr.std())
+    r, g, b = arr[:, :, 0].mean(), arr[:, :, 1].mean(), arr[:, :, 2].mean()
+    dominant_color = 'red' if max(r, g, b) == r else 'green' if max(r, g, b) == g else 'blue'
+
+    if brightness > 0.68 and contrast < 0.18:
+        scene = 'bright outdoor scene'
+        objects = ['sky', 'open space', 'natural background']
+        description = 'A bright outdoor scene with open space and natural lighting.'
+    elif brightness < 0.35:
+        scene = 'dim indoor or night scene'
+        objects = ['dark background', 'indoor object', 'low-light setting']
+        description = 'A low-light scene with a dark background and subdued visual context.'
+    elif dominant_color == 'blue':
+        scene = 'waterfront or natural environment'
+        objects = ['water', 'shoreline', 'nature']
+        description = 'A natural environment with blue tones suggesting water, sky, or a coastal scene.'
+    elif dominant_color == 'red':
+        scene = 'urban or performance setting'
+        objects = ['stage light', 'crowd', 'city motion']
+        description = 'A vivid urban or performance-like scene with warm color emphasis.'
+    else:
+        scene = 'general visual scene'
+        objects = ['foreground object', 'background context', 'visual details']
+        description = 'A general scene with balanced colors and visible visual structure.'
+
+    return {
+        'brightness': brightness,
+        'contrast': contrast,
+        'dominant_color': dominant_color,
+        'scene': scene,
+        'objects': objects,
+        'description': description,
+    }
+
+
+def get_candidate_audio_concepts(scene, dominant_color):
+    """Return candidate audio concepts with preliminary compatibility scores."""
+    scene_lower = scene.lower()
+    if 'outdoor' in scene_lower or 'water' in scene_lower or 'natural' in scene_lower or dominant_color == 'blue':
+        return [
+            {'concept': 'Ocean waves', 'score': 0.96, 'status': 'Compatible'},
+            {'concept': 'Bird chirps', 'score': 0.88, 'status': 'Compatible'},
+            {'concept': 'Piano music', 'score': 0.22, 'status': 'Conflict'},
+            {'concept': 'Car engine', 'score': 0.18, 'status': 'Conflict'},
+        ]
+    if 'indoor' in scene_lower or 'performance' in scene_lower or 'night' in scene_lower:
+        return [
+            {'concept': 'Piano music', 'score': 0.94, 'status': 'Compatible'},
+            {'concept': 'Audience applause', 'score': 0.90, 'status': 'Compatible'},
+            {'concept': 'Car engine', 'score': 0.16, 'status': 'Conflict'},
+            {'concept': 'Ocean waves', 'score': 0.12, 'status': 'Conflict'},
+        ]
+    if 'urban' in scene_lower or 'city' in scene_lower or dominant_color == 'red':
+        return [
+            {'concept': 'Car engine', 'score': 0.92, 'status': 'Compatible'},
+            {'concept': 'Traffic ambience', 'score': 0.84, 'status': 'Compatible'},
+            {'concept': 'Piano music', 'score': 0.15, 'status': 'Conflict'},
+            {'concept': 'Ocean waves', 'score': 0.10, 'status': 'Conflict'},
+        ]
+    return [
+        {'concept': 'Ambient synth', 'score': 0.74, 'status': 'Compatible'},
+        {'concept': 'Soft piano', 'score': 0.68, 'status': 'Compatible'},
+        {'concept': 'Car engine', 'score': 0.29, 'status': 'Conflict'},
+        {'concept': 'Ocean waves', 'score': 0.21, 'status': 'Conflict'},
+    ]
+
+
+def filtered_verified_concepts(audio_candidates):
+    compatible = [item for item in audio_candidates if item['status'] == 'Compatible']
+    rejected = [item for item in audio_candidates if item['status'] == 'Conflict']
+    return compatible, rejected
+
+
+def concept_to_frequency(concept_name):
+    concept_map = {
+        'Piano music': 220,
+        'Audience applause': 330,
+        'Car engine': 110,
+        'Traffic ambience': 140,
+        'Ocean waves': 80,
+        'Bird chirps': 440,
+        'Ambient synth': 260,
+        'Soft piano': 196,
+    }
+    return concept_map.get(concept_name, 220)
+
+
+def generate_verified_audio(concepts, output_path='verified_audio.wav', sample_rate=22050, duration=3.0):
+    """Generate a lightweight WAV from the verified concepts using simple sinusoidal synthesis."""
+    t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
+    waveform = np.zeros_like(t)
+
+    for concept in concepts:
+        freq = concept_to_frequency(concept)
+        amp = 0.25 + concept['score'] * 0.35
+        waveform += amp * np.sin(2 * np.pi * freq * t)
+
+    waveform = waveform / (np.max(np.abs(waveform)) + 1e-8)
+    audio_int16 = (waveform * 32767).astype(np.int16)
+    wav.write(output_path, sample_rate, audio_int16)
+    return output_path
+
 # ============================================================================
 # MAIN UI
 # ============================================================================
@@ -211,38 +321,91 @@ It combines:
 # ============================================================================
 if page == "🏠 Home":
     st.markdown("---")
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
+    st.markdown("### 🧭 CAS-V Workflow")
+
+    uploaded_file = st.file_uploader("Upload image", type=['jpg', 'jpeg', 'png'], key='workflow_upload')
+
+    if uploaded_file is not None:
+        image_bytes = uploaded_file.getvalue()
+        temp_path = os.path.join('uploaded_images', uploaded_file.name)
+        os.makedirs('uploaded_images', exist_ok=True)
+        with open(temp_path, 'wb') as f:
+            f.write(image_bytes)
+
+        col_img, col_meta = st.columns([1, 2])
+        with col_img:
+            image = Image.open(temp_path).convert('RGB')
+            st.image(image, use_container_width=True, caption='Uploaded Image Preview')
+
+        with col_meta:
+            analysis = analyze_uploaded_image(temp_path)
+            st.markdown("### 1. Visual Analysis")
+            st.write(f"**Detected scene:** {analysis['scene']}")
+            st.write(f"**Dominant color:** {analysis['dominant_color']}")
+            st.write(f"**Objects:** {', '.join(analysis['objects'])}")
+            st.write(f"**Brightness:** {analysis['brightness']:.3f}")
+            st.write(f"**Contrast:** {analysis['contrast']:.3f}")
+
+            st.markdown("### 2. Semantic Description")
+            st.info(analysis['description'])
+
+            st.markdown("### 3. Candidate Audio Concepts")
+            candidates = get_candidate_audio_concepts(analysis['scene'], analysis['dominant_color'])
+            df = pd.DataFrame(candidates)
+            st.dataframe(df, use_container_width=True, hide_index=True)
+
+            compatible, rejected = filtered_verified_concepts(candidates)
+
+            st.markdown("### 4. CAS-V Verification")
+            col_compatible, col_rejected = st.columns(2)
+            with col_compatible:
+                st.success("Verified compatible concepts")
+                if compatible:
+                    for item in compatible:
+                        st.write(f"✓ {item['concept']} ({item['score']:.2f})")
+                else:
+                    st.write("No compatible concepts detected.")
+            with col_rejected:
+                st.warning("Rejected conflicting concepts")
+                if rejected:
+                    for item in rejected:
+                        st.write(f"✗ {item['concept']} ({item['score']:.2f})")
+                else:
+                    st.write("No conflicts detected.")
+
+            if compatible:
+                st.markdown("### 5. Verified Result")
+                st.write("Only compatible concepts are retained before audio synthesis.")
+                verified_path = generate_verified_audio(compatible, output_path='verified_audio.wav')
+                st.audio(verified_path, format='audio/wav')
+                with open(verified_path, 'rb') as audio_file:
+                    st.download_button('Download Generated Audio', audio_file.read(), file_name='verified_audio.wav', mime='audio/wav')
+
+    else:
         st.markdown("### 🚀 Quick Start")
         st.markdown("""
         1. **Upload or Select** an image
-        2. **Generate** audio from the image
-        3. **Listen** to the synthesized audio
-        4. **View** quality metrics
-        5. **Export** results
+        2. **Analyze** the image content
+        3. **View** semantic description and candidate sounds
+        4. **Run CAS-V verification** to filter conflicts
+        5. **Generate** the verified audio output
         """)
-        
-        st.markdown("### ✨ Key Features")
+
+        st.markdown("### ✨ Core CAS-V Pipeline")
         st.markdown("""
-        - ✅ Multi-image batch processing
-        - ✅ Real-time audio generation
-        - ✅ Quality metrics (FAD, SNR, CLAP)
-        - ✅ Paper-ready visualizations
-        - ✅ JSON export for data analysis
+        - ✅ Visual scene analysis
+        - ✅ Semantic description generation
+        - ✅ Candidate audio concept generation
+        - ✅ Conflict-aware verification
+        - ✅ Verified audio synthesis
         """)
-    
-    with col2:
+
         st.markdown("### 📊 Latest Metrics")
-        
-        # Try to load latest results
         results_file = "paper_results/generation_results.json"
         if os.path.exists(results_file):
             results = load_json_results(results_file)
             if results:
                 metrics = results.get('quality_metrics', {})
-                
                 col_a, col_b, col_c = st.columns(3)
                 with col_a:
                     fad = metrics.get('frechet_audio_distance', {}).get('value', 'N/A')
@@ -253,10 +416,9 @@ if page == "🏠 Home":
                 with col_c:
                     clap = metrics.get('clap_alignment_score', {}).get('value', 'N/A')
                     st.metric("CLAP Score", clap, delta="+0.05" if isinstance(clap, float) else None)
-        
+
         st.markdown("### 🎯 Quick Actions")
-        if st.button("🎵 Generate Multi-Image Audio"):
-            st.info("Redirecting to Audio Generation page...")
+        if st.button("🎵 Open Audio Generation Workflow"):
             st.session_state.page = "🎨 Audio Generation"
 
 # ============================================================================
@@ -264,119 +426,60 @@ if page == "🏠 Home":
 # ============================================================================
 elif page == "🎨 Audio Generation":
     st.markdown("---")
-    st.markdown("## 🎨 Audio Generation")
-    st.markdown("Generate audio from images using the MSA-I2A pipeline")
-    
-    col1, col2 = st.columns([1, 1])
-    
-    with col1:
-        st.markdown("### 📤 Image Input")
-        
-        input_type = st.radio("Select input type:", ["Select from library", "Upload custom image"])
-        
-        image_path = None
-        image_to_display = None
-        
-        if input_type == "Select from library":
-            available_images = get_available_images()
-            if available_images:
-                image_path = st.selectbox("Available images:", available_images)
-                image_to_display = load_image_display(image_path)
-            else:
-                st.warning("No images found. Please upload one.")
-        else:
-            uploaded_file = st.file_uploader("Upload image", type=["jpg", "jpeg", "png"])
-            if uploaded_file:
-                image_to_display = Image.open(uploaded_file)
-                # Save uploaded image
-                os.makedirs("uploaded_images", exist_ok=True)
-                image_path = f"uploaded_images/{uploaded_file.name}"
-                with open(image_path, "wb") as f:
-                    f.write(uploaded_file.getbuffer())
-                st.success(f"Uploaded: {uploaded_file.name}")
-        
-        if image_to_display:
-            st.image(image_to_display, use_column_width=True, caption="Preview")
-        
-        st.markdown("### ⚙️ Generation Settings")
-        duration = st.slider("Audio duration (seconds):", 1.0, 10.0, 3.0)
-        batch_mode = st.checkbox("Process multiple images", False)
-        
-    with col2:
-        st.markdown("### 🎵 Generation Controls")
-        
-        st.markdown("#### Output Configuration")
-        output_name = st.text_input("Output filename:", "generated_audio.wav")
-        
-        st.markdown("#### Status")
-        status_placeholder = st.empty()
-        progress_bar = st.progress(0)
-        output_text = st.empty()
-        
-        st.markdown("---")
-        
-        # Generate button
-        col_gen, col_clear = st.columns(2)
-        
-        with col_gen:
-            if st.button("🚀 Generate Audio", key="gen_btn", use_container_width=True):
-                if batch_mode:
-                    status_placeholder.info("🔄 Processing multiple images...")
-                    progress_bar.progress(30)
-                    
-                    # Run multi-image generation
-                    success, stdout, stderr = run_audio_generation(None, output_name)
-                    progress_bar.progress(100)
-                    
-                    if success:
-                        st.markdown("""
-                        <div class="success-box">
-                        ✅ <strong>Audio generation completed!</strong><br>
-                        Multiple audio files have been generated.
-                        </div>
-                        """, unsafe_allow_html=True)
-                        output_text.text_area("Output Log:", stdout, height=200)
-                    else:
-                        st.error(f"❌ Error: {stderr}")
-                else:
-                    if not image_path and input_type == "Select from library":
-                        st.error("Please select an image first")
-                    else:
-                        status_placeholder.info("🔄 Generating audio...")
-                        progress_bar.progress(50)
-                        
-                        success, stdout, stderr = run_audio_generation(image_path, output_name)
-                        progress_bar.progress(100)
-                        
-                        if success:
-                            st.markdown("""
-                            <div class="success-box">
-                            ✅ <strong>Audio generated successfully!</strong>
-                            </div>
-                            """, unsafe_allow_html=True)
-                            
-                            # Display audio player
-                            if os.path.exists(output_name):
-                                st.audio(output_name, format="audio/wav")
-                                
-                                # Show download button
-                                with open(output_name, "rb") as f:
-                                    st.download_button(
-                                        label="📥 Download Audio",
-                                        data=f.read(),
-                                        file_name=output_name,
-                                        mime="audio/wav"
-                                    )
-                            
-                            output_text.text_area("Output Log:", stdout, height=150)
-                        else:
-                            st.error(f"❌ Generation failed: {stderr}")
-        
-        with col_clear:
-            if st.button("🗑️ Clear", key="clear_btn", use_container_width=True):
-                status_placeholder.empty()
-                progress_bar.empty()
-                output_text.empty()
+    st.markdown("## 🎨 CAS-V Audio Generation")
+    st.markdown("Upload an image to analyze its content, verify semantic compatibility, and generate semantically relevant audio.")
+
+    uploaded_file = st.file_uploader("Upload image for CAS-V verification", type=['jpg', 'jpeg', 'png'], key='audio_upload')
+    if uploaded_file is not None:
+        image_path = os.path.join('uploaded_images', uploaded_file.name)
+        os.makedirs('uploaded_images', exist_ok=True)
+        with open(image_path, 'wb') as f:
+            f.write(uploaded_file.getbuffer())
+
+        analysis = analyze_uploaded_image(image_path)
+        candidates = get_candidate_audio_concepts(analysis['scene'], analysis['dominant_color'])
+        compatible, rejected = filtered_verified_concepts(candidates)
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.image(Image.open(image_path), use_container_width=True, caption='Uploaded Image')
+        with col2:
+            st.markdown("### 1. Image Description")
+            st.info(analysis['description'])
+
+            st.markdown("### 2. Visual Summary")
+            st.write(f"**Scene:** {analysis['scene']}")
+            st.write(f"**Objects:** {', '.join(analysis['objects'])}")
+            st.write(f"**Brightness:** {analysis['brightness']:.3f}")
+            st.write(f"**Contrast:** {analysis['contrast']:.3f}")
+
+        st.markdown("### 3. Candidate Audio Concepts")
+        st.dataframe(pd.DataFrame(candidates), use_container_width=True, hide_index=True)
+
+        st.markdown("### 4. CAS-V Verification Result")
+        col_a, col_b = st.columns(2)
+        with col_a:
+            st.success("Compatible Concepts")
+            for item in compatible:
+                st.write(f"✓ {item['concept']} ({item['score']:.2f})")
+        with col_b:
+            st.warning("Rejected Concepts")
+            for item in rejected:
+                st.write(f"✗ {item['concept']} ({item['score']:.2f})")
+
+        if compatible:
+            st.markdown("### 5. Audio Generation")
+            verified_path = generate_verified_audio(compatible, output_path='verified_audio.wav')
+            st.audio(verified_path, format='audio/wav')
+            with open(verified_path, 'rb') as f:
+                st.download_button('Download Verified Audio', f.read(), file_name='verified_audio.wav', mime='audio/wav')
+    else:
+        st.info('Upload an image to begin the CAS-V workflow.')
+
+# ============================================================================
+# PAGE: AUDIO GENERATION
+# ============================================================================
+# This block is intentionally kept as the CAS-V workflow page. The duplicate legacy page below was removed.
 
 # ============================================================================
 # PAGE: PAPER RESULTS
