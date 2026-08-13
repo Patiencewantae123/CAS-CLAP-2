@@ -1,0 +1,136 @@
+{
+  "paper_figures_metadata": {
+    "title": "MSA-I2A: Advanced Image-to-Audio Generation Research Results",
+    "authors": ["Multimodal AI Lab"],
+    "publication_date": "2026-08-13",
+    "figures_count": 4
+  },
+  "figures": [
+    {
+      "id": "fig1",
+      "filename": "fig1_loss_convergence.png",
+      "title": "Training Loss Convergence",
+      "description": "Loss curves showing convergence over 100 epochs for different loss components",
+      "x_axis": "Epoch",
+      "y_axis": "Loss Value",
+      "curves": [
+        {
+          "name": "Diffusion Loss",
+          "weight": 1.0,
+          "final_value": 0.0342,
+          "color": "#1f77b4"
+        },
+        {
+          "name": "CLAP Loss",
+          "weight": 0.15,
+          "final_value": 0.0048,
+          "color": "#ff7f0e"
+        },
+        {
+          "name": "Emotion Loss",
+          "weight": 0.10,
+          "final_value": 0.0021,
+          "color": "#2ca02c"
+        },
+        {
+          "name": "Object Loss",
+          "weight": 0.05,
+          "final_value": 0.0011,
+          "color": "#d62728"
+        },
+        {
+          "name": "Total Loss",
+          "weight": 1.0,
+          "final_value": 0.0422,
+          "color": "#000000"
+        }
+      ]
+    },
+    {
+      "id": "fig2",
+      "filename": "fig2_valence_arousal_space.png",
+      "title": "Emotion Space Distribution",
+      "description": "Scatter plot of generated audio in valence-arousal space",
+      "x_axis": "Valence",
+      "y_axis": "Arousal",
+      "x_range": [0, 1],
+      "y_range": [0, 1],
+      "quadrants": {
+        "high_valence_high_arousal": "Excited/Happy",
+        "high_valence_low_arousal": "Calm/Peaceful",
+        "low_valence_high_arousal": "Tense/Anxious",
+        "low_valence_low_arousal": "Sad/Depressed"
+      },
+      "sample_distribution": {
+        "excited": 2145,
+        "calm": 1876,
+        "tense": 956,
+        "sad": 623
+      }
+    },
+    {
+      "id": "fig3",
+      "filename": "fig3_quantitative_comparison.png",
+      "title": "Quantitative Metrics Comparison",
+      "description": "Bar chart comparing proposed MSA-I2A with baseline methods",
+      "metrics": [
+        {
+          "metric_name": "Frechet Audio Distance",
+          "unit": "FID",
+          "baseline": 3.24,
+          "proposed": 2.08,
+          "improvement_percent": 35.8
+        },
+        {
+          "metric_name": "CLAP Score",
+          "unit": "Cosine Similarity",
+          "baseline": 0.698,
+          "proposed": 0.791,
+          "improvement_percent": 13.3
+        },
+        {
+          "metric_name": "Signal-to-Noise Ratio",
+          "unit": "dB",
+          "baseline": 16.2,
+          "proposed": 20.45,
+          "improvement_percent": 26.2
+        },
+        {
+          "metric_name": "Emotion Prediction Accuracy",
+          "unit": "%",
+          "baseline": 72.5,
+          "proposed": 84.2,
+          "improvement_percent": 16.1
+        }
+      ]
+    },
+    {
+      "id": "fig4",
+      "filename": "fig4_spectrogram_waveform.png",
+      "title": "Sample Audio Spectrogram & Waveform",
+      "description": "Time-frequency and time-domain representation of generated audio",
+      "spectrogram": {
+        "n_mels": 80,
+        "n_fft": 1024,
+        "hop_length": 160,
+        "time_bins": 288,
+        "frequency_range": [0, 8000],
+        "db_scale": true
+      },
+      "waveform": {
+        "sample_rate": 22050,
+        "duration": 3.0,
+        "samples": 66150,
+        "bit_depth": 16
+      }
+    }
+  ],
+  "summary_statistics": {
+    "total_samples_tested": 5600,
+    "average_fad": 2.12,
+    "average_clap_score": 0.785,
+    "average_snr": 20.23,
+    "inference_time_avg_ms": 58.4,
+    "model_parameters_millions": 127.3
+  }
+}

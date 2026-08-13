@@ -1,0 +1,75 @@
+{
+  "training_config": {
+    "model_name": "MSA-I2A",
+    "version": "2.0",
+    "description": "Multimodal Semantic-Aware Image-to-Audio Generation Pipeline",
+    "timestamp": "2026-08-13T10:30:00Z"
+  },
+  "system": {
+    "seed": 42,
+    "device": "cuda",
+    "mixed_precision": "fp16",
+    "num_workers": 8,
+    "pin_memory": true,
+    "enable_gradient_checkpointing": true,
+    "use_ema": true,
+    "ema_decay": 0.9999
+  },
+  "data": {
+    "sample_rate": 16000,
+    "audio_duration": 10.0,
+    "n_fft": 1024,
+    "hop_length": 160,
+    "win_length": 1024,
+    "n_mels": 64,
+    "f_min": 0.0,
+    "f_max": 8000.0,
+    "image_size": 224,
+    "crop_size": 224,
+    "max_detected_objects": 5
+  },
+  "models": {
+    "clip": {
+      "architecture": "ViT-B/32",
+      "pretrained": "laion2b_s34b_b79k",
+      "embedding_dim": 512,
+      "freeze_weights": true
+    },
+    "sam": {
+      "model_type": "vit_h",
+      "checkpoint_path": "./checkpoints/sam_vit_h_4b8939.pth",
+      "embedding_dim": 256,
+      "freeze_weights": true
+    },
+    "emotion": {
+      "cnn_channels": [32, 64, 128, 256],
+      "transformer_heads": 4,
+      "transformer_layers": 2,
+      "embedding_dim": 128
+    },
+    "fusion": {
+      "embed_dim": 512,
+      "num_heads": 8,
+      "num_layers": 6,
+      "feedforward_dim": 2048,
+      "dropout": 0.1
+    }
+  },
+  "losses": {
+    "diffusion_loss_weight": 1.0,
+    "clap_loss_weight": 0.15,
+    "emotion_loss_weight": 0.10,
+    "object_loss_weight": 0.05
+  },
+  "training": {
+    "batch_size": 16,
+    "epochs": 100,
+    "learning_rate": 0.0001,
+    "min_learning_rate": 0.000001,
+    "weight_decay": 0.01,
+    "gradient_accumulation_steps": 2,
+    "max_grad_norm": 1.0,
+    "warmup_epochs": 5,
+    "scheduler": "cosine"
+  }
+}

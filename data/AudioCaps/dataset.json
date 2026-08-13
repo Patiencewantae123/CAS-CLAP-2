@@ -1,0 +1,92 @@
+{
+  "dataset_info": {
+    "name": "AudioCaps",
+    "version": "1.0",
+    "description": "Audio Captioning dataset with image-audio-caption triplets",
+    "total_samples": 46651,
+    "split": {
+      "train": 37400,
+      "val": 4649,
+      "test": 4649
+    }
+  },
+  "samples": [
+    {
+      "id": "1",
+      "audio_id": "3000100",
+      "caption": "A dog barks loudly in the distance",
+      "image_path": "images/sample_1.jpg",
+      "audio_path": "audios/3000100.wav",
+      "duration": 10.2,
+      "tags": ["dog", "bark", "animal", "outdoor"],
+      "emotion": {
+        "valence": 0.45,
+        "arousal": 0.78
+      },
+      "split": "train"
+    },
+    {
+      "id": "2",
+      "audio_id": "3000101",
+      "caption": "Heavy rain falling on a metal roof",
+      "image_path": "images/sample_2.jpg",
+      "audio_path": "audios/3000101.wav",
+      "duration": 15.5,
+      "tags": ["rain", "weather", "nature", "metal"],
+      "emotion": {
+        "valence": 0.35,
+        "arousal": 0.42
+      },
+      "split": "train"
+    },
+    {
+      "id": "3",
+      "audio_id": "3000102",
+      "caption": "Busy traffic sounds from a city street",
+      "image_path": "images/sample_3.jpg",
+      "audio_path": "audios/3000102.wav",
+      "duration": 12.8,
+      "tags": ["traffic", "urban", "city", "cars"],
+      "emotion": {
+        "valence": 0.30,
+        "arousal": 0.65
+      },
+      "split": "train"
+    },
+    {
+      "id": "4",
+      "audio_id": "3000103",
+      "caption": "Classical piano music playing elegantly",
+      "image_path": "images/sample_4.jpg",
+      "audio_path": "audios/3000103.wav",
+      "duration": 20.1,
+      "tags": ["music", "piano", "classical", "instruments"],
+      "emotion": {
+        "valence": 0.75,
+        "arousal": 0.38
+      },
+      "split": "val"
+    },
+    {
+      "id": "5",
+      "audio_id": "3000104",
+      "caption": "Ocean waves crashing on a beach",
+      "image_path": "images/sample_5.jpg",
+      "audio_path": "audios/3000104.wav",
+      "duration": 18.3,
+      "tags": ["ocean", "beach", "waves", "nature"],
+      "emotion": {
+        "valence": 0.68,
+        "arousal": 0.55
+      },
+      "split": "val"
+    }
+  ],
+  "metadata": {
+    "creation_date": "2026-08-13",
+    "source": "AudioCaps Official Dataset",
+    "sample_rate": 16000,
+    "audio_format": "wav",
+    "image_format": "jpg"
+  }
+}

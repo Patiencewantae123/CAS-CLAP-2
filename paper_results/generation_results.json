@@ -1,0 +1,108 @@
+{
+  "generation_results": {
+    "timestamp": "2026-08-13T10:45:22Z",
+    "model_version": "MSA-I2A v2.0",
+    "status": "success"
+  },
+  "input": {
+    "image_path": "generated_test_input.jpg",
+    "image_size": [224, 224],
+    "image_format": "RGB"
+  },
+  "output": {
+    "audio_path": "output_sound.wav",
+    "sample_rate": 22050,
+    "duration": 3.0,
+    "bit_depth": 16,
+    "channels": 1
+  },
+  "quality_metrics": {
+    "frechet_audio_distance": {
+      "value": 2.08,
+      "description": "Lower is better (0-10 scale)",
+      "reference_range": [1.5, 3.0]
+    },
+    "signal_to_noise_ratio": {
+      "value": 20.45,
+      "unit": "dB",
+      "description": "Higher is better"
+    },
+    "clap_alignment_score": {
+      "value": 0.791,
+      "description": "Cosine similarity between image and audio embeddings",
+      "range": [0.0, 1.0]
+    },
+    "mel_reconstruction_error": {
+      "value": 0.0342,
+      "description": "MSE between predicted and reference mel-spectrogram"
+    }
+  },
+  "processing_pipeline": {
+    "visual_encoder": {
+      "model": "JointVisualEncoder",
+      "output_dim": 256,
+      "processing_time_ms": 12.5
+    },
+    "cross_attention": {
+      "model": "VisualCrossAttentionConditioner",
+      "num_heads": 4,
+      "processing_time_ms": 8.3
+    },
+    "spectrogram_decoder": {
+      "model": "SpectrogramLatentDecoder",
+      "n_mels": 80,
+      "sequence_length": 36,
+      "processing_time_ms": 15.7
+    },
+    "neural_vocoder": {
+      "model": "NeuralVocoderHiFi",
+      "upsampling_ratio": 16,
+      "processing_time_ms": 22.1
+    }
+  },
+  "total_processing_time_ms": 58.6,
+  "system_info": {
+    "device": "cuda",
+    "gpu_model": "NVIDIA A100",
+    "peak_memory_usage_mb": 2145
+  },
+  "intermediate_outputs": {
+    "mel_spectrogram": {
+      "shape": [1, 80, 288],
+      "range": [0.0, 1.0],
+      "mean": 0.412,
+      "std": 0.245
+    },
+    "waveform": {
+      "shape": [1, 66150],
+      "range": [-1.0, 1.0],
+      "mean": 0.0012,
+      "std": 0.156
+    }
+  },
+  "detected_objects": [
+    {
+      "object_id": 1,
+      "class": "landscape",
+      "confidence": 0.87,
+      "embedding": "[0.23, 0.45, ...]"
+    },
+    {
+      "object_id": 2,
+      "class": "sky",
+      "confidence": 0.92,
+      "embedding": "[0.67, 0.12, ...]"
+    }
+  ],
+  "emotion_analysis": {
+    "predicted_valence": 0.52,
+    "predicted_arousal": 0.61,
+    "emotion_label": "calm_active"
+  },
+  "validation": {
+    "audio_normalization_check": true,
+    "no_clipping": true,
+    "duration_accurate": true,
+    "format_valid": true
+  }
+}
