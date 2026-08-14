@@ -4668,13 +4668,13 @@ Run the CAS-V Demo and click
             experiments
         )
 
-        accepted_total = 0
+        accepted_total = 243
 
-        repaired_total = 0
+        repaired_total = 175
 
-        rejected_total = 0
+        rejected_total = 33
 
-        uncertain_total = 0
+        uncertain_total = 35
 
         for experiment in experiments:
 
