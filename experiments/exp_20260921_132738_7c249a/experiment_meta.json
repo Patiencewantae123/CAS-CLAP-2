@@ -1,0 +1,30 @@
+{
+    "experiment_id": "exp_20260921_132738_7c249a",
+    "timestamp": "2026-09-21T13:27:38.908223",
+    "semantic_profile": {
+        "scene": {
+            "label": "visually complex environment",
+            "confidence": 0.9953638911247253
+        },
+        "environment": {
+            "label": "mixed / uncertain",
+            "confidence": 0.5
+        },
+        "mood": {
+            "valence": 0.6708456411957741,
+            "arousal": 0.7377283066511154,
+            "label": "energetic / intense"
+        },
+        "semantic_concepts": [
+            "complex visual structure"
+        ],
+        "semantic_confidence": 0.9953638911247253,
+        "source_method": "Multi-signal visual statistics and heuristic semantic profiling"
+    },
+    "selected_concept": "Audience Applause",
+    "verification_details": {
+        "final_score": 0.6793573947846889,
+        "decision": "REPAIR",
+        "conflicts": []
+    }
+}
