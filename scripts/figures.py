@@ -17,7 +17,6 @@
 import argparse
 import json
 import logging
-import re
 import textwrap
 from pathlib import Path
 
@@ -27,6 +26,7 @@ from PIL import Image
 
 from casv.audio import GENERATOR_SAMPLE_RATE, load_audio, mel_spectrogram_db
 from casv.log import setup_logging
+from casv.text import sound_type, verified_concepts
 
 log = logging.getLogger("casv")
 
@@ -42,68 +42,8 @@ ROWS = [  # (label, colour, height)
 OURS_ROWS = (2, 4)
 DB_RANGE = 80  # every panel: own peak, 80 dB below it
 GT_WINDOW = (2.5, 7.5)  # 5 s of the 10 s recording, centred on the input frame (t = 5 s)
-CLAUSE_SPLIT = r",|;|\band then\b|\bthen\b|\bfollowed by\b|\bwhile\b|\bas\b|\band\b|\balong with\b|\bwith\b"
 
 plt.rcParams.update({"font.family": "serif", "font.serif": ["Times New Roman", "DejaVu Serif"]})
-
-
-LEADING = r"^(a|an|the|some|several|multiple|series of|a series of|sounds? of|noises? of)\s+"
-TRAILING_AUX = r"\s+(is|are|was|were|being|been|occurs|occur)(\s+.*)?$"
-STOP_END = {"on", "of", "in", "by", "to", "its", "the", "a", "an", "is", "are", "at", "into", "from"}
-NOT_A_SOURCE = {
-    "one",
-    "another",
-    "it",
-    "they",
-    "this",
-    "that",
-    "low",
-    "muffled",
-    "continuous",
-    "loud",
-    "soft",
-    "briefly",
-    "repeatedly",
-    "background",
-    "distance",
-}
-
-
-def clean_phrase(phrase):
-    """Lower-case a caption clause and drop leading quantifiers and trailing auxiliaries."""
-    phrase = phrase.strip(" .").lower()
-    for _ in range(2):
-        phrase = re.sub(LEADING, "", phrase)
-    return re.sub(TRAILING_AUX, "", phrase).strip()
-
-
-def verified_concepts(caption, limit=4):
-    """Short concept phrases taken from the verified caption."""
-    parts = [clean_phrase(p) for p in re.split(CLAUSE_SPLIT, caption, flags=re.IGNORECASE)]
-    parts = [p for p in parts if p and p.split()[0] not in NOT_A_SOURCE]
-    return list(dict.fromkeys(parts))[:limit]
-
-
-def short_head(concept, max_words=3, keep_whole=5):
-    """Short form of a concept for the sound-type box."""
-    if len(concept.split()) <= keep_whole:
-        return concept
-    words = concept.split()[:max_words]
-    while words and words[-1] in STOP_END:
-        words.pop()
-    return " ".join(words)
-
-
-def sound_type(concepts):
-    """Sound type shown in the figure: up to two concept heads."""
-    heads = []
-    for concept in concepts:
-        head = short_head(concept)
-        if head and head not in heads:
-            heads.append(head)
-        if len(heads) == 2:
-            break
-    return " / ".join(heads).capitalize()
 
 
 def draw_spectrogram(ax, wav_path, window=None):

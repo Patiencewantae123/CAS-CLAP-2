@@ -3,7 +3,7 @@
 import pytest
 
 from casv import vocab
-from scripts.figures import sound_type, verified_concepts
+from casv.text import sound_type, verified_concepts
 
 
 @pytest.mark.parametrize(
