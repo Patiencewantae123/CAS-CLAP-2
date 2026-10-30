@@ -1,0 +1,291 @@
+{
+  "id": "e2rScj9UyMs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\e2rScj9UyMs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\e2rScj9UyMs.wav",
+  "gt_captions": [
+    "Doves cooing quietly",
+    "Birds cooing with clanging in background",
+    "Pigeons cooing and bird wings flapping as footsteps shuffle on paper",
+    "Pigeons coo with some light rustling",
+    "Light footsteps and doves cooing"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.3189087212085724
+  ],
+  "top_object": [
+    "grey parrot",
+    0.5691673159599304
+  ],
+  "env_probs": {
+    "indoor": 0.790563702583313,
+    "outdoor": 0.209436297416687
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Cooping of pigeons with some scraping and chirping and clicking",
+    "casv": "Cooping of pigeons with some scraping and chirping and clicking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.16271567344665527,
+    "clap_gt_audio_baseline": 0.5961523056030273,
+    "clap_text_casv": 0.16271567344665527,
+    "clap_gt_audio_casv": 0.5961523056030273
+  },
+  "verdicts": [
+    {
+      "caption": "Cooping of pigeons with some scraping and chirping and clicking",
+      "clip_similarity": 0.33427858352661133,
+      "visual": 1.0,
+      "scene_support": 0.7171770170874244,
+      "object_support": 0.6096286411117758,
+      "score": 0.7980416974597601,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pigeon cooing continuously",
+      "clip_similarity": 0.3257251977920532,
+      "visual": 0.6735159116116373,
+      "scene_support": 0.5593800535124713,
+      "object_support": 0.7713340389305601,
+      "score": 0.6686205923775643,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pigeons cooing",
+      "clip_similarity": 0.32239049673080444,
+      "visual": 0.546229843869977,
+      "scene_support": 0.6469053068306649,
+      "object_support": 0.7773540103998896,
+      "score": 0.6457697327171571,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pigeons cooing alongside a series of light metal tapping",
+      "clip_similarity": 0.32161009311676025,
+      "visual": 0.5164417143019652,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.20657668572078608,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons cooing and clacking",
+      "clip_similarity": 0.31929120421409607,
+      "visual": 0.4279293575633478,
+      "scene_support": 0.6305568062282317,
+      "object_support": 0.646350375040265,
+      "score": 0.5542438974058882,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male narration followed by pigeons cooing",
+      "clip_similarity": 0.31746917963027954,
+      "visual": 0.35838239058100846,
+      "scene_support": 1.0,
+      "object_support": 0.6184556624177442,
+      "score": 0.6288896549577265,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple pigeons cooing",
+      "clip_similarity": 0.3155909478664398,
+      "visual": 0.28668998663367745,
+      "scene_support": 0.4028826640560387,
+      "object_support": 0.6406387188808614,
+      "score": 0.42773240953454106,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings with wind blowing",
+      "clip_similarity": 0.315429151058197,
+      "visual": 0.2805141768336035,
+      "scene_support": 0.15200053887251055,
+      "object_support": 0.34141364870461555,
+      "score": 0.2602299270065792,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons cooing as bird wings flap",
+      "clip_similarity": 0.31531184911727905,
+      "visual": 0.27603674316753407,
+      "scene_support": 0.5362480393701067,
+      "object_support": 0.77422760112282,
+      "score": 0.5035573894148916,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons are squawking with other animal noises",
+      "clip_similarity": 0.31504136323928833,
+      "visual": 0.26571225435827434,
+      "scene_support": 0.5703139995938198,
+      "object_support": 0.739422023836915,
+      "score": 0.4992057087725301,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons cooing with wings flapping",
+      "clip_similarity": 0.3123966157436371,
+      "visual": 0.1647618235076643,
+      "scene_support": 0.4167647087125657,
+      "object_support": 0.7708370530578437,
+      "score": 0.42218525793418854,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud cooing of pigeon or doves, with other bird sound in the background",
+      "clip_similarity": 0.3120449185371399,
+      "visual": 0.15133748542502062,
+      "scene_support": 0.7197857880478685,
+      "object_support": 0.5119092540610188,
+      "score": 0.43004350680267445,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Men speak as pigeons coo and flap their wings",
+      "clip_similarity": 0.31204432249069214,
+      "visual": 0.15131473423769304,
+      "scene_support": 0.5121745177116354,
+      "object_support": 0.44221618885463165,
+      "score": 0.34684310566495735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons cooing and flapping",
+      "clip_similarity": 0.3119176924228668,
+      "visual": 0.14648124448994682,
+      "scene_support": 0.5039541796299101,
+      "object_support": 0.6844148911692973,
+      "score": 0.41510321903574093,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of birds, pigeons or doves, are cooing",
+      "clip_similarity": 0.3112115263938904,
+      "visual": 0.11952677530358616,
+      "scene_support": 0.8973954326503056,
+      "object_support": 0.9194579172610556,
+      "score": 0.5928667150948428,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons flap their wings and vocalize",
+      "clip_similarity": 0.3110477924346924,
+      "visual": 0.11327702414469755,
+      "scene_support": 0.4363190955855503,
+      "object_support": 1.0,
+      "score": 0.4762065383335441,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons cooing and cock crowing",
+      "clip_similarity": 0.31072068214416504,
+      "visual": 0.1007911725393169,
+      "scene_support": 0.5268010572840724,
+      "object_support": 0.34769315724080807,
+      "score": 0.3026647333731909,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo as a man talks continuously",
+      "clip_similarity": 0.3096953332424164,
+      "visual": 0.06165344253903251,
+      "scene_support": 0.4832886214334515,
+      "object_support": 0.40603377663246054,
+      "score": 0.2914580964353866,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo and squeal and flap their wings",
+      "clip_similarity": 0.3082173466682434,
+      "visual": 0.005238460882177289,
+      "scene_support": 0.45783347927797163,
+      "object_support": 0.7605080300032212,
+      "score": 0.3675978371372287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo and flutter their wings",
+      "clip_similarity": 0.30808010697364807,
+      "visual": 0.0,
+      "scene_support": 0.4843010332272639,
+      "object_support": 0.58671022962588,
+      "score": 0.3213033788559432,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.3189087212085724
+    ],
+    [
+      "beauty salon",
+      0.06388218700885773
+    ],
+    [
+      "waiting room",
+      0.04836671054363251
+    ],
+    [
+      "veterinarians office",
+      0.044349852949380875
+    ],
+    [
+      "interior balcony",
+      0.028782645240426064
+    ]
+  ],
+  "top_objects": [
+    [
+      "grey parrot",
+      0.5691673159599304
+    ],
+    [
+      "prison",
+      0.0561482310295105
+    ],
+    [
+      "birdhouse",
+      0.03491933271288872
+    ],
+    [
+      "junco",
+      0.030923891812562943
+    ],
+    [
+      "magpie",
+      0.02822847105562687
+    ]
+  ]
+}

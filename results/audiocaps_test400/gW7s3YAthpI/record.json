@@ -1,0 +1,283 @@
+{
+  "id": "gW7s3YAthpI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\gW7s3YAthpI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\gW7s3YAthpI.wav",
+  "gt_captions": [
+    "Chewing as liquid is poured and some light banging on a hard surface",
+    "Some light banging and rattling with liquid pouring and faint chewing",
+    "A person gulping followed by glass tapping then liquid shaking in a container proceeded by liquid pouring before plastic thumps on paper",
+    "Glass placed on table, a container with liquid is shaken and then poured into the glass",
+    "Glass clanking followed by liquid shaking in a plastic container then liquid pouring and filling a container proceeded by plastic rattling as someone chews a loud"
+  ],
+  "top_scene": [
+    "fastfood restaurant",
+    0.6868332028388977
+  ],
+  "top_object": [
+    "tray",
+    0.2781359553337097
+  ],
+  "env_probs": {
+    "indoor": 0.9545993804931641,
+    "outdoor": 0.04540061950683594
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A man speaks and fries food while cutting",
+    "casv": "A man speaks and fries food while cutting"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10217619687318802,
+    "clap_gt_audio_baseline": 0.19173060357570648,
+    "clap_text_casv": 0.10217619687318802,
+    "clap_gt_audio_casv": 0.19173060357570648
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks and fries food while cutting",
+      "clip_similarity": 0.30681973695755005,
+      "visual": 1.0,
+      "scene_support": 0.7663453667843774,
+      "object_support": 0.7690012546415023,
+      "score": 0.8606039864277639,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks and fries food while stirring",
+      "clip_similarity": 0.303547739982605,
+      "visual": 0.8693688441302242,
+      "scene_support": 0.7409832541943032,
+      "object_support": 0.6825016049763966,
+      "score": 0.7747929954032996,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while food fries and oil bubbles",
+      "clip_similarity": 0.29724037647247314,
+      "visual": 0.6175537623533836,
+      "scene_support": 0.39407311150849655,
+      "object_support": 0.3658560479140777,
+      "score": 0.4750002527681257,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks nearby as food fries slightly farther away",
+      "clip_similarity": 0.29425692558288574,
+      "visual": 0.4984425158663491,
+      "scene_support": 0.8219234415761589,
+      "object_support": 0.6811325887038504,
+      "score": 0.6502938154305424,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while cutting food on a plate",
+      "clip_similarity": 0.29164600372314453,
+      "visual": 0.3942041125196024,
+      "scene_support": 0.3059068665458807,
+      "object_support": 0.7896901587472084,
+      "score": 0.4863607525957677,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man narrates as food sizzles",
+      "clip_similarity": 0.29086828231811523,
+      "visual": 0.3631543753524864,
+      "scene_support": 0.6910535272975673,
+      "object_support": 0.7320194158631839,
+      "score": 0.5721836330892199,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays nearby as food fries in a pan",
+      "clip_similarity": 0.2896815836429596,
+      "visual": 0.3157766360722368,
+      "scene_support": 0.3426039521750311,
+      "object_support": 0.4323958083138523,
+      "score": 0.35881058257555976,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man narrates over sizzling food",
+      "clip_similarity": 0.2888795733451843,
+      "visual": 0.283757189532374,
+      "scene_support": 0.43663446797568317,
+      "object_support": 0.603731203376741,
+      "score": 0.42561257721867685,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then removes something from a plate putting it into a frying pan",
+      "clip_similarity": 0.2883922755718231,
+      "visual": 0.26430232087742633,
+      "scene_support": 0.25578329973441477,
+      "object_support": 0.7862817905917303,
+      "score": 0.41834045544881404,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is speaking while food fries",
+      "clip_similarity": 0.28786879777908325,
+      "visual": 0.24340300169669393,
+      "scene_support": 0.9238950143392464,
+      "object_support": 0.7564811955445557,
+      "score": 0.6014740636438183,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while food fries and sizzles",
+      "clip_similarity": 0.28650134801864624,
+      "visual": 0.18880895892477673,
+      "scene_support": 0.9630703064731735,
+      "object_support": 0.8315140285628612,
+      "score": 0.613898884080721,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female voice talking while food is sizzling in the background",
+      "clip_similarity": 0.2852189838886261,
+      "visual": 0.13761187352610124,
+      "scene_support": 1.0,
+      "object_support": 0.8739540302934011,
+      "score": 0.6172309584984608,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Food fries and a metal spoon scrapes against a pan as a man speaks",
+      "clip_similarity": 0.2849287986755371,
+      "visual": 0.12602652363354266,
+      "scene_support": 0.5561782424265028,
+      "object_support": 0.8838036871442261,
+      "score": 0.48240518832463575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and fries food",
+      "clip_similarity": 0.28479766845703125,
+      "visual": 0.12079128284816136,
+      "scene_support": 0.976954642441421,
+      "object_support": 0.8681671641969175,
+      "score": 0.6018530551307661,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sizzling and frying sounds are followed by a man speaking in the background",
+      "clip_similarity": 0.2846291959285736,
+      "visual": 0.11406518826639761,
+      "scene_support": 0.7325863053817812,
+      "object_support": 1.0,
+      "score": 0.5654019669210935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boy talking and objects clicking with food frying in the background",
+      "clip_similarity": 0.28426358103752136,
+      "visual": 0.09946838509479355,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03978735403791742,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.28326842188835144,
+      "visual": 0.059737666843554346,
+      "scene_support": 0.7897327659140116,
+      "object_support": 0.9610041707008637,
+      "score": 0.5491161477218843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A middle-aged man talks the entire time while there is a lid lifted and a sizzle of frying food at the end",
+      "clip_similarity": 0.28206127882003784,
+      "visual": 0.011543705931765775,
+      "scene_support": 0.5270639779680081,
+      "object_support": 0.6153133893570796,
+      "score": 0.34733069257023264,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Men speak and laugh as food sizzles with some brief banging and clinking",
+      "clip_similarity": 0.2819935977458954,
+      "visual": 0.008841607790038288,
+      "scene_support": 0.8082879077263118,
+      "object_support": 0.7433738468661064,
+      "score": 0.46903516949374074,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by sizzle of frying food",
+      "clip_similarity": 0.2817721366882324,
+      "visual": 0.0,
+      "scene_support": 0.8304887121374213,
+      "object_support": 0.9394032521222736,
+      "score": 0.5309675892779084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fastfood restaurant",
+      0.6868332028388977
+    ],
+    [
+      "food court",
+      0.08907098323106766
+    ],
+    [
+      "delicatessen",
+      0.06230194866657257
+    ],
+    [
+      "outdoor diner",
+      0.030520545318722725
+    ],
+    [
+      "restaurant",
+      0.020505579188466072
+    ]
+  ],
+  "top_objects": [
+    [
+      "tray",
+      0.2781359553337097
+    ],
+    [
+      "American lobster",
+      0.1722363531589508
+    ],
+    [
+      "bib",
+      0.05186270922422409
+    ],
+    [
+      "plate",
+      0.04007425531744957
+    ],
+    [
+      "cheeseburger",
+      0.030162004753947258
+    ]
+  ]
+}

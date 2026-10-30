@@ -1,0 +1,308 @@
+{
+  "id": "aZAXO2WZn84",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\aZAXO2WZn84.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\aZAXO2WZn84.wav",
+  "gt_captions": [
+    "Bells chiming followed by a lawn mower engine running then a steam engine running and train whistle blowing while a crowd of people talk in the background",
+    "Humming with some hissing and whistling",
+    "A train running on railroad tracks followed by a lawn mower engine running then a steam engine whistle blowing as a crowd of people are talking in the background",
+    "A train running on railroad tracks as a bell chimes followed by a lawn mower engine running then a steam engine operating as steam hisses and a train whistle blows while a crowd of people talk in the background",
+    "A train engine running as bells chime followed by a lawn mower running then a steam engine running while a steam whistle blows and a crowd of people talk in the background"
+  ],
+  "top_scene": [
+    "platform train station",
+    0.21694067120552063
+  ],
+  "top_object": [
+    "high-speed train",
+    0.17995595932006836
+  ],
+  "env_probs": {
+    "indoor": 0.5152673721313477,
+    "outdoor": 0.48473262786865234
+  },
+  "status": "ACCEPT",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "A train running on railroad tracks as a group of people talk in the background followed by a train horn blowing twice",
+    "casv": "A train running on railroad tracks as a group of people talk in the background followed by a train horn blowing twice"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.32419225573539734,
+    "clap_gt_audio_baseline": 0.12511587142944336,
+    "clap_text_casv": 0.32419225573539734,
+    "clap_gt_audio_casv": 0.12511587142944336
+  },
+  "verdicts": [
+    {
+      "caption": "A train running on railroad tracks as a group of people talk in the background followed by a train horn blowing twice",
+      "clip_similarity": 0.2999696731567383,
+      "visual": 1.0,
+      "scene_support": 0.6620203975668083,
+      "object_support": 0.5827470238175344,
+      "score": 0.7734302264153028,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical humming and metal banging followed by people speaking a train horn blowing",
+      "clip_similarity": 0.29452821612358093,
+      "visual": 0.6869915981368813,
+      "scene_support": 0.7246849546335898,
+      "object_support": 0.7633198127757157,
+      "score": 0.7211980694775442,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train running blowing horn with children crying in the background",
+      "clip_similarity": 0.2923998236656189,
+      "visual": 0.5645602864965037,
+      "scene_support": 0.0,
+      "object_support": 0.06480716383201492,
+      "score": 0.24526626374820598,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train running on railroad tracks followed by a train whistle blowing as a crowd of people talk in the background",
+      "clip_similarity": 0.29074710607528687,
+      "visual": 0.46949117384365097,
+      "scene_support": 1.0,
+      "object_support": 0.8532586607380771,
+      "score": 0.7437740677588836,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man narrates and then a horn sounds and a train goes down a track",
+      "clip_similarity": 0.29057997465133667,
+      "visual": 0.45987728925483823,
+      "scene_support": 0.7348156930201137,
+      "object_support": 0.7699134397213706,
+      "score": 0.6353696555243806,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train moves down a track quickly, and sounds its horn",
+      "clip_similarity": 0.29032695293426514,
+      "visual": 0.44532274571720987,
+      "scene_support": 0.5701731102028906,
+      "object_support": 0.826867330762005,
+      "score": 0.5972412305763526,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An audience claps as a train approaches blowing a horn",
+      "clip_similarity": 0.2888448238372803,
+      "visual": 0.36006637831870164,
+      "scene_support": 0.3410912826976233,
+      "object_support": 0.34116552230892006,
+      "score": 0.34870359282944363,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam engine running on railroad tracks followed by a train whistle blowing as a group of people talk in the background",
+      "clip_similarity": 0.28815972805023193,
+      "visual": 0.32065768022176394,
+      "scene_support": 0.2958339897736308,
+      "object_support": 0.0,
+      "score": 0.21701326902079482,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine idles, then dies followed by cheering briefly before the engine starts back up again",
+      "clip_similarity": 0.28781044483184814,
+      "visual": 0.3005658957387245,
+      "scene_support": 0.5091152737769827,
+      "object_support": 0.4484117157829856,
+      "score": 0.4074844551634803,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy train motor buzzing as water trickles and children talk and laugh in the background",
+      "clip_similarity": 0.28651663661003113,
+      "visual": 0.22614229166345232,
+      "scene_support": 0.3590214513450538,
+      "object_support": 0.37079007786656903,
+      "score": 0.3094003754288678,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.41)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An idle vehicle engine operating then accelerating with a crowd talking in the background",
+      "clip_similarity": 0.28639906644821167,
+      "visual": 0.21937931471928931,
+      "scene_support": 0.8417800086190356,
+      "object_support": 0.5051381707681417,
+      "score": 0.4918271797038689,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.09)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam engine whistle blowing as steam hisses and a group of people talk in the background",
+      "clip_similarity": 0.28613990545272827,
+      "visual": 0.2044716220687338,
+      "scene_support": 0.14897261218692395,
+      "object_support": 0.039469576053809484,
+      "score": 0.13832130529971357,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A scratching rail car runs by on a track and then blows a horn",
+      "clip_similarity": 0.28567367792129517,
+      "visual": 0.17765286127925695,
+      "scene_support": 0.30438559333722803,
+      "object_support": 0.7201062893471105,
+      "score": 0.3784087093170043,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sawing action is followed by a young boy yelling and a young man speaking after that",
+      "clip_similarity": 0.2844697833061218,
+      "visual": 0.10840134882389345,
+      "scene_support": 0.23424160149772602,
+      "object_support": 0.15832779322428964,
+      "score": 0.16113135794616207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train engine rumbles and honks horn as people communicate in the background",
+      "clip_similarity": 0.28444376587867737,
+      "visual": 0.10690475088415852,
+      "scene_support": 0.8107907137554535,
+      "object_support": 0.7297245466755309,
+      "score": 0.5049164784829587,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.09)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle blows several times, an engine is running, rumbling is present, and people speak in the background",
+      "clip_similarity": 0.28414931893348694,
+      "visual": 0.089967307992313,
+      "scene_support": 0.7545383268159285,
+      "object_support": 0.7340680370249749,
+      "score": 0.48256883234919623,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A group chants followed by a train passing and tooting",
+      "clip_similarity": 0.28392547369003296,
+      "visual": 0.07709107989912964,
+      "scene_support": 0.8193245397919293,
+      "object_support": 0.5408072768771549,
+      "score": 0.4388759769603771,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male singing loudly followed by rapid machine gun fire with the voices of several men speaking in the background",
+      "clip_similarity": 0.28385424613952637,
+      "visual": 0.0729938644627419,
+      "scene_support": 0.3884518409855371,
+      "object_support": 0.38277891869632036,
+      "score": 0.260566773689654,
+      "conflicts": [
+        "names 'fire', not visible in image (z=-0.45)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is cheering, while engines rev followed by audience clapping",
+      "clip_similarity": 0.2829219400882721,
+      "visual": 0.01936491446419908,
+      "scene_support": 0.2936124119016253,
+      "object_support": 0.06074695922031152,
+      "score": 0.11405377712226067,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train engine is running and rhythmically chugging",
+      "clip_similarity": 0.2825852930545807,
+      "visual": 0.0,
+      "scene_support": 0.8161871127640805,
+      "object_support": 1.0,
+      "score": 0.5448561338292242,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "platform train station",
+      0.21694067120552063
+    ],
+    [
+      "assembly line",
+      0.14667409658432007
+    ],
+    [
+      "beer garden",
+      0.10865084826946259
+    ],
+    [
+      "outdoor market",
+      0.04071633145213127
+    ],
+    [
+      "raceway",
+      0.03508240357041359
+    ]
+  ],
+  "top_objects": [
+    [
+      "high-speed train",
+      0.17995595932006836
+    ],
+    [
+      "stretcher",
+      0.15418453514575958
+    ],
+    [
+      "electric locomotive",
+      0.052799440920352936
+    ],
+    [
+      "parallel bars",
+      0.043108195066452026
+    ],
+    [
+      "shoji",
+      0.035192277282476425
+    ]
+  ]
+}

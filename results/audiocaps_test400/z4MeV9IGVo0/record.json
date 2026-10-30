@@ -1,0 +1,285 @@
+{
+  "id": "z4MeV9IGVo0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\z4MeV9IGVo0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\z4MeV9IGVo0.wav",
+  "gt_captions": [
+    "A man speaking through a radio as a truck engine runs idle and a vehicle accelerates in the distance",
+    "Distant humming followed by men speaking over a radio",
+    "Humming from loud engines with men speaking over the radio",
+    "A large truck engine running idle as a man speaks over a radio followed by a large truck accelerating while wind blows into a microphone",
+    "An engine roars as someone is speaking over a machine"
+  ],
+  "top_scene": [
+    "highway",
+    0.24190892279148102
+  ],
+  "top_object": [
+    "tow truck",
+    0.34415510296821594
+  ],
+  "env_probs": {
+    "indoor": 0.11105746775865555,
+    "outdoor": 0.8889425322413445
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+    "casv": "Car engine followed by a fire truck siren as the fire truck drives by"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.28302788734436035,
+    "clap_gt_audio_baseline": 0.3990525007247925,
+    "clap_text_casv": 0.47390541434288025,
+    "clap_gt_audio_casv": 0.4240565896034241
+  },
+  "verdicts": [
+    {
+      "caption": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+      "clip_similarity": 0.31028732657432556,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car engine followed by a fire truck siren as the fire truck drives by",
+      "clip_similarity": 0.30194881558418274,
+      "visual": 0.5329511841727483,
+      "scene_support": 0.7995028044229014,
+      "object_support": 0.9602544458733454,
+      "score": 0.7411076487579733,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man is talking followed by metal clanking and crumpling as a muffled truck engine accelerates",
+      "clip_similarity": 0.3011828064918518,
+      "visual": 0.49004620510526353,
+      "scene_support": 0.38350706007995966,
+      "object_support": 0.5134671114927248,
+      "score": 0.46511073351391075,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fire truck runs and blows its siren",
+      "clip_similarity": 0.30038031935691833,
+      "visual": 0.4450980523079183,
+      "scene_support": 0.7403546813037933,
+      "object_support": 1.0,
+      "score": 0.7001456253143052,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An emergency vehicle siren is ongoing, a fire truck horn blows followed by a large motor vehicle engine running, and an adult female speaks momentarily in the background",
+      "clip_similarity": 0.30024322867393494,
+      "visual": 0.4374194582251097,
+      "scene_support": 0.5388158545103321,
+      "object_support": 0.6568983524970367,
+      "score": 0.5336820453922545,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fire truck siren running and the truck accelerating",
+      "clip_similarity": 0.3000086545944214,
+      "visual": 0.4242807160455908,
+      "scene_support": 0.5950270718778208,
+      "object_support": 0.8779160740513057,
+      "score": 0.6115952301969743,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled truck engine running as a man is talking during an emergency siren going off while plastic and metal clacks repeatedly",
+      "clip_similarity": 0.29858362674713135,
+      "visual": 0.34446339981437835,
+      "scene_support": 0.33370849883560944,
+      "object_support": 0.42161295642351176,
+      "score": 0.3643817965034877,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fire truck starts engine and pulls out turning the siren on",
+      "clip_similarity": 0.2977738380432129,
+      "visual": 0.2991062784191444,
+      "scene_support": 0.7224261458753672,
+      "object_support": 0.9659156807379425,
+      "score": 0.6261450593516507,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man briefly speaking followed by another man speaking over a radio intercom as a muffled vehicle engine accelerates and an emergency siren wails",
+      "clip_similarity": 0.2977186441421509,
+      "visual": 0.29601480967102234,
+      "scene_support": 0.6256366874587763,
+      "object_support": 0.5322466632238844,
+      "score": 0.46577092907320716,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water spraying as metal clanks and a group of people talk while an emergency siren wails in the background followed by a vehicle horn honking",
+      "clip_similarity": 0.2968702018260956,
+      "visual": 0.248492658596353,
+      "scene_support": 0.3688136181025863,
+      "object_support": 0.28100923589588345,
+      "score": 0.2943439196380821,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fire engine drives with sirens blasting",
+      "clip_similarity": 0.2949827015399933,
+      "visual": 0.14277177215274392,
+      "scene_support": 0.6615913985813396,
+      "object_support": 0.8451123459361362,
+      "score": 0.5091198322163403,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while cars drive by on a highway and a train blows a horn",
+      "clip_similarity": 0.29485905170440674,
+      "visual": 0.13584601414196718,
+      "scene_support": 1.0,
+      "object_support": 0.6914123743507039,
+      "score": 0.561762117961998,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large motor vehicle engine runs, an emergency vehicle siren and horn blow, an adult male cough, and people speak in the background",
+      "clip_similarity": 0.2947552800178528,
+      "visual": 0.13003365227319771,
+      "scene_support": 0.9441785334026944,
+      "object_support": 0.8637560187396784,
+      "score": 0.594393826551991,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A police siren wailing in the background before fading as two men are speaking while a muffled truck engine accelerates and runs with a woman briefly speaking through a radio",
+      "clip_similarity": 0.29344916343688965,
+      "visual": 0.056876681779030096,
+      "scene_support": 0.3175083176541703,
+      "object_support": 0.36736087507577864,
+      "score": 0.22821143053059673,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple vehicle alarms",
+      "clip_similarity": 0.29334935545921326,
+      "visual": 0.05128633143482877,
+      "scene_support": 0.7998317832434719,
+      "object_support": 0.7476945101042048,
+      "score": 0.4847724205782345,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sirens as emergency fire vehicles drive off",
+      "clip_similarity": 0.2931864261627197,
+      "visual": 0.04216048929336903,
+      "scene_support": 0.7532991065713114,
+      "object_support": 0.7209213288107458,
+      "score": 0.45913032633196477,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency siren wailing as a muffled truck engine runs",
+      "clip_similarity": 0.2931182384490967,
+      "visual": 0.03834122336696335,
+      "scene_support": 0.5090886476377539,
+      "object_support": 0.7393671835743668,
+      "score": 0.3898732387104215,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A series of metal crashing and clanking followed by vehicle engines revving before an emergency siren beeps then a loud explosions and gunshots firing during a whooshing effect alongside vehicle brakes screeching",
+      "clip_similarity": 0.29260191321372986,
+      "visual": 0.009421301087689545,
+      "scene_support": 0.8974068203953904,
+      "object_support": 0.7763843198040247,
+      "score": 0.5059058624949003,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Police sirens going off before a vehicle engine accelerates alongside water flushing",
+      "clip_similarity": 0.29244136810302734,
+      "visual": 0.0004289997128873517,
+      "scene_support": 0.7963074153122625,
+      "object_support": 0.7657598264466073,
+      "score": 0.4687917724128159,
+      "conflicts": [
+        "names 'a toilet', not visible in image (z=-0.23)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking on the radio dispatch with sirens and then a sudden car crash",
+      "clip_similarity": 0.2924337089061737,
+      "visual": 0.0,
+      "scene_support": 0.857338253430374,
+      "object_support": 0.7539228749658367,
+      "score": 0.4833783385188632,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "highway",
+      0.24190892279148102
+    ],
+    [
+      "raceway",
+      0.174857035279274
+    ],
+    [
+      "runway",
+      0.07089592516422272
+    ],
+    [
+      "construction site",
+      0.03926342725753784
+    ],
+    [
+      "junkyard",
+      0.036804672330617905
+    ]
+  ],
+  "top_objects": [
+    [
+      "tow truck",
+      0.34415510296821594
+    ],
+    [
+      "semi-trailer truck",
+      0.19200840592384338
+    ],
+    [
+      "crash helmet",
+      0.058667365461587906
+    ],
+    [
+      "fire engine",
+      0.04619554057717323
+    ],
+    [
+      "plow",
+      0.03971775621175766
+    ]
+  ]
+}

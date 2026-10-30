@@ -1,0 +1,283 @@
+{
+  "id": "mlnUJH4BQnk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\mlnUJH4BQnk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\mlnUJH4BQnk.wav",
+  "gt_captions": [
+    "A woman speaks with some light sanding",
+    "Female speech and rubbing",
+    "Female speech and scratching",
+    "Female speech and rubbing",
+    "Female speech and rubbing simultaneously"
+  ],
+  "top_scene": [
+    "art school",
+    0.1446533352136612
+  ],
+  "top_object": [
+    "menu",
+    0.20402111113071442
+  ],
+  "env_probs": {
+    "indoor": 0.8851985931396484,
+    "outdoor": 0.11480140686035156
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Someone sprays painting an object",
+    "casv": "Someone sprays painting an object"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.013297675177454948,
+    "clap_gt_audio_baseline": 0.09783995151519775,
+    "clap_text_casv": 0.013297675177454948,
+    "clap_gt_audio_casv": 0.09783995151519775
+  },
+  "verdicts": [
+    {
+      "caption": "Someone sprays painting an object",
+      "clip_similarity": 0.3146059513092041,
+      "visual": 1.0,
+      "scene_support": 0.8095725836043172,
+      "object_support": 0.3789190723613945,
+      "score": 0.7565474967897134,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.2943951189517975,
+      "visual": 0.41958771533426453,
+      "scene_support": 0.6977452456568775,
+      "object_support": 0.43469062245635715,
+      "score": 0.5075658465676761,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping noise followed by crinkling of paper",
+      "clip_similarity": 0.2908572852611542,
+      "visual": 0.3179886273382083,
+      "scene_support": 0.8527906064555313,
+      "object_support": 0.8163469616390562,
+      "score": 0.6279367213636595,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone continuously sprays a surface",
+      "clip_similarity": 0.29024195671081543,
+      "visual": 0.3003176950675102,
+      "scene_support": 0.7052939911176344,
+      "object_support": 0.6306158798070112,
+      "score": 0.5209000393043978,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling of paper with a small slap",
+      "clip_similarity": 0.28958332538604736,
+      "visual": 0.28140319886067977,
+      "scene_support": 0.6986695431022484,
+      "object_support": 0.7142065507249105,
+      "score": 0.5364241076924195,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person sprays paint with a spray can, and then an item bangs on a surface",
+      "clip_similarity": 0.28797125816345215,
+      "visual": 0.2351080437104593,
+      "scene_support": 0.0,
+      "object_support": 0.02863047263857152,
+      "score": 0.10263235927575518,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A paintbrush making strokes on a wooden surface",
+      "clip_similarity": 0.287683367729187,
+      "visual": 0.22684044039109358,
+      "scene_support": 0.6044247339718851,
+      "object_support": 0.42572549856053016,
+      "score": 0.39978124591616204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast spraying liquid hits against a solid surface",
+      "clip_similarity": 0.28762030601501465,
+      "visual": 0.22502944156875634,
+      "scene_support": 0.2345963078713955,
+      "object_support": 0.043179913605669425,
+      "score": 0.173344643070622,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rattling of paint spray can while spraying",
+      "clip_similarity": 0.2865891754627228,
+      "visual": 0.19541755676060582,
+      "scene_support": 0.4787550769931548,
+      "object_support": 0.1532670764202447,
+      "score": 0.2677736687282622,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A paper swishes several times, followed by music",
+      "clip_similarity": 0.2850486934185028,
+      "visual": 0.15117817626598745,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.660471270506395,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone uses a paint spray can and sets down the container with a click and finally a little crunching sound",
+      "clip_similarity": 0.2845919728279114,
+      "visual": 0.13806212855695232,
+      "scene_support": 0.8050421975630433,
+      "object_support": 0.1847864215673205,
+      "score": 0.35217343716189003,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person is spraying on a surface with knocking noises",
+      "clip_similarity": 0.2833744287490845,
+      "visual": 0.10309684222057897,
+      "scene_support": 0.4688889451241886,
+      "object_support": 0.43018113742950986,
+      "score": 0.31095976165434114,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Paint gun shooting faster then slower",
+      "clip_similarity": 0.2825780510902405,
+      "visual": 0.08022656314189466,
+      "scene_support": 0.4644344767375653,
+      "object_support": 0.06084511283383964,
+      "score": 0.18967450212817935,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Paint is being sprayed and a woman and then a man speaks",
+      "clip_similarity": 0.2822306156158447,
+      "visual": 0.0702489524279024,
+      "scene_support": 0.5579473131476725,
+      "object_support": 0.2551884432552982,
+      "score": 0.2720403078920522,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person is rubbing paper",
+      "clip_similarity": 0.2820349931716919,
+      "visual": 0.06463109029660669,
+      "scene_support": 0.6833069730365796,
+      "object_support": 0.7897720530076215,
+      "score": 0.46777614393190303,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People talk nearby as a spray can clang and sprays paint on a surface",
+      "clip_similarity": 0.28090745210647583,
+      "visual": 0.032250499821981214,
+      "scene_support": 0.13943858894385888,
+      "object_support": 0.0,
+      "score": 0.05473177661195015,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crinkling and tapping noises followed by an object moving",
+      "clip_similarity": 0.280761182308197,
+      "visual": 0.028049941116862487,
+      "scene_support": 0.928648792276644,
+      "object_support": 0.6435102048924723,
+      "score": 0.4828676755974799,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rubbing and tapping noises on wood",
+      "clip_similarity": 0.2800162434577942,
+      "visual": 0.006656875633336072,
+      "scene_support": 0.878348284893652,
+      "object_support": 0.6894660709085938,
+      "score": 0.47300705699400813,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A continuous spraying",
+      "clip_similarity": 0.2797965705394745,
+      "visual": 0.00034833483964615344,
+      "scene_support": 0.5782546531195829,
+      "object_support": 0.37896194017639584,
+      "score": 0.28730431192465206,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Paper ripping with a child laughing and a woman snickering",
+      "clip_similarity": 0.2797844409942627,
+      "visual": 0.0,
+      "scene_support": 0.2671257575949287,
+      "object_support": 0.38780212007484094,
+      "score": 0.19647836330093088,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art school",
+      0.1446533352136612
+    ],
+    [
+      "art studio",
+      0.06974142789840698
+    ],
+    [
+      "art gallery",
+      0.06695706397294998
+    ],
+    [
+      "childs room",
+      0.06026564538478851
+    ],
+    [
+      "pantry",
+      0.045431237667798996
+    ]
+  ],
+  "top_objects": [
+    [
+      "menu",
+      0.20402111113071442
+    ],
+    [
+      "fire screen sheet",
+      0.08482346683740616
+    ],
+    [
+      "jigsaw puzzle",
+      0.03768644854426384
+    ],
+    [
+      "crossword",
+      0.03053309954702854
+    ],
+    [
+      "envelope",
+      0.030128896236419678
+    ]
+  ]
+}

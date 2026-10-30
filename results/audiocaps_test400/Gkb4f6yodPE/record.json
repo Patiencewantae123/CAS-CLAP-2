@@ -1,0 +1,285 @@
+{
+  "id": "Gkb4f6yodPE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Gkb4f6yodPE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Gkb4f6yodPE.wav",
+  "gt_captions": [
+    "Knocking noises followed by a machine sawing",
+    "Tapping followed by high pitched buzzing",
+    "Sustained industrial sawing noise",
+    "Thumping noise followed by a tool sawing wood",
+    "Hard planks click together and an electric saw cuts material"
+  ],
+  "top_scene": [
+    "storage room",
+    0.1473493129014969
+  ],
+  "top_object": [
+    "guillotine",
+    0.15576615929603577
+  ],
+  "env_probs": {
+    "indoor": 0.763461709022522,
+    "outdoor": 0.23653829097747803
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "An automatic saw working",
+    "casv": "A mechanical door sliding"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2679120898246765,
+    "clap_gt_audio_baseline": 0.4378002882003784,
+    "clap_text_casv": 0.34894272685050964,
+    "clap_gt_audio_casv": 0.33425337076187134
+  },
+  "verdicts": [
+    {
+      "caption": "An automatic saw working",
+      "clip_similarity": 0.3223762512207031,
+      "visual": 1.0,
+      "scene_support": 0.5386625614336829,
+      "object_support": 0.773407269598591,
+      "score": 0.7936209493096822,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw is rubbing a surface",
+      "clip_similarity": 0.31794190406799316,
+      "visual": 0.6154112580967003,
+      "scene_support": 0.5431179422742456,
+      "object_support": 0.8803289968602613,
+      "score": 0.6731985849790322,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A mechanical door sliding",
+      "clip_similarity": 0.317331463098526,
+      "visual": 0.5624680138335324,
+      "scene_support": 1.0,
+      "object_support": 0.9963073159964504,
+      "score": 0.823879400332348,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Nonstop machine buzzing concurrent with oscillating wood filing",
+      "clip_similarity": 0.31702542304992676,
+      "visual": 0.5359253113320203,
+      "scene_support": 0.39783294494027066,
+      "object_support": 0.2688108408823702,
+      "score": 0.41436326027960035,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.30)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power saw cutting",
+      "clip_similarity": 0.31598228216171265,
+      "visual": 0.44545421648754413,
+      "scene_support": 0.5491228109260984,
+      "object_support": 0.8863663493893952,
+      "score": 0.6088284346896657,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw running and then cutting",
+      "clip_similarity": 0.315574049949646,
+      "visual": 0.4100484380411801,
+      "scene_support": 0.6234039124474406,
+      "object_support": 0.8954206889406423,
+      "score": 0.619666755632897,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power saw cutting into wood",
+      "clip_similarity": 0.3153479993343353,
+      "visual": 0.39044317964464986,
+      "scene_support": 0.2698912202374322,
+      "object_support": 0.5435154486853189,
+      "score": 0.40019927253468524,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door sliding close followed by metal clacking together",
+      "clip_similarity": 0.3151038587093353,
+      "visual": 0.3692689836282522,
+      "scene_support": 0.9360788935476253,
+      "object_support": 0.8518646984364372,
+      "score": 0.6840906710465197,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw runs continuously",
+      "clip_similarity": 0.31453031301498413,
+      "visual": 0.31952564838221076,
+      "scene_support": 0.6217537989000234,
+      "object_support": 1.0,
+      "score": 0.6143363990228914,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A mechanical wood saw working",
+      "clip_similarity": 0.3144681453704834,
+      "visual": 0.3141338792305744,
+      "scene_support": 0.41541497162428503,
+      "object_support": 0.7357225227822499,
+      "score": 0.47099480001419025,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks and then an automatic saw starts",
+      "clip_similarity": 0.3143111765384674,
+      "visual": 0.30052004983380115,
+      "scene_support": 0.5667638763261432,
+      "object_support": 0.6526872468951723,
+      "score": 0.48604335689991507,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Electric saw cutting",
+      "clip_similarity": 0.31420400738716125,
+      "visual": 0.29122532218793135,
+      "scene_support": 0.5745759237888152,
+      "object_support": 0.7065256562143851,
+      "score": 0.5008206028761326,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.31416085362434387,
+      "visual": 0.2874826176186267,
+      "scene_support": 0.20298735903114126,
+      "object_support": 0.26959296013838274,
+      "score": 0.25676714279830787,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A circular saw runs continuously",
+      "clip_similarity": 0.3137999176979065,
+      "visual": 0.25617882270229475,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1024715290809179,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power saw cutting some objects",
+      "clip_similarity": 0.3122445344924927,
+      "visual": 0.12128120428239843,
+      "scene_support": 0.33575466331594106,
+      "object_support": 0.5023857734252882,
+      "score": 0.29995461273532814,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw is being used to cut through wood",
+      "clip_similarity": 0.3119421601295471,
+      "visual": 0.09505642489001928,
+      "scene_support": 0.3234367364883029,
+      "object_support": 0.6888556170690067,
+      "score": 0.3417102760232006,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sawing of something wooden by a blade at a steady medium rate",
+      "clip_similarity": 0.31118524074554443,
+      "visual": 0.029409179965157694,
+      "scene_support": 0.4666765435839397,
+      "object_support": 0.7456614622983607,
+      "score": 0.37546507375075316,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An electric saw cutting wood",
+      "clip_similarity": 0.31092149019241333,
+      "visual": 0.006534224551935195,
+      "scene_support": 0.229502054844368,
+      "object_support": 0.4432859369439577,
+      "score": 0.20445008735727177,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.3108765482902527,
+      "visual": 0.002636435539151068,
+      "scene_support": 0.14776128159313934,
+      "object_support": 0.37890609163351996,
+      "score": 0.1590547861836582,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An automatic saw works",
+      "clip_similarity": 0.31084614992141724,
+      "visual": 0.0,
+      "scene_support": 0.662234307212229,
+      "object_support": 0.8326591379007446,
+      "score": 0.4484680335338921,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "storage room",
+      0.1473493129014969
+    ],
+    [
+      "barndoor",
+      0.08759547024965286
+    ],
+    [
+      "assembly line",
+      0.08700750023126602
+    ],
+    [
+      "indoor bow window",
+      0.05419809743762016
+    ],
+    [
+      "door elevator",
+      0.04625387117266655
+    ]
+  ],
+  "top_objects": [
+    [
+      "guillotine",
+      0.15576615929603577
+    ],
+    [
+      "hand plane",
+      0.09088568389415741
+    ],
+    [
+      "tray",
+      0.049948789179325104
+    ],
+    [
+      "sliding door",
+      0.04987919330596924
+    ],
+    [
+      "stretcher",
+      0.04742026701569557
+    ]
+  ]
+}

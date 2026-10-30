@@ -1,0 +1,287 @@
+{
+  "id": "8F-ndyrEWJ8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\8F-ndyrEWJ8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\8F-ndyrEWJ8.wav",
+  "gt_captions": [
+    "Race cars speed on the road, and a man talks",
+    "Passing engines with loud hums and police sirens then a man speaks on a radio",
+    "Car is speeding down road, emergency siren is sounding, and a man speaks",
+    "A distant police siren, then racing car engine noise, and a man calling in police code over his radio",
+    "Sirens and speeding cars along with police chatter"
+  ],
+  "top_scene": [
+    "raceway",
+    0.4745090901851654
+  ],
+  "top_object": [
+    "moving van",
+    0.043339937925338745
+  ],
+  "env_probs": {
+    "indoor": 0.07449761033058167,
+    "outdoor": 0.9255023896694183
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Race car going by with faint sound of male voice in background",
+    "casv": "A vehicle racing by loudly and background voices"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.23063884675502777,
+    "clap_gt_audio_baseline": 0.19506962597370148,
+    "clap_text_casv": 0.34992390871047974,
+    "clap_gt_audio_casv": 0.4341094493865967
+  },
+  "verdicts": [
+    {
+      "caption": "Race car going by with faint sound of male voice in background",
+      "clip_similarity": 0.31371036171913147,
+      "visual": 1.0,
+      "scene_support": 0.5596569073869545,
+      "object_support": 0.4049405183983639,
+      "score": 0.6893792277355955,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle racing by loudly and background voices",
+      "clip_similarity": 0.3118405044078827,
+      "visual": 0.8424347747471729,
+      "scene_support": 0.7718448117361097,
+      "object_support": 0.6973100134210214,
+      "score": 0.7777203574460085,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A race car accelerates loudly nearby, followed by a man yelling",
+      "clip_similarity": 0.3115476071834564,
+      "visual": 0.8177535240094727,
+      "scene_support": 0.6664023932087642,
+      "object_support": 0.4762472267787418,
+      "score": 0.6698962956000408,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicles are racing with extended room sounds",
+      "clip_similarity": 0.3092421293258667,
+      "visual": 0.6234803376218304,
+      "scene_support": 0.5796641843261618,
+      "object_support": 0.6567627035597662,
+      "score": 0.6203202014145106,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicles drive by on a roadway while a clicking sound is made",
+      "clip_similarity": 0.30910801887512207,
+      "visual": 0.612179398639367,
+      "scene_support": 0.5360111608440389,
+      "object_support": 0.6796971292404798,
+      "score": 0.6095842464811023,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cars are racing in the background and skidding around a corner while an announcer talks",
+      "clip_similarity": 0.3081090450286865,
+      "visual": 0.5279999598188836,
+      "scene_support": 0.7732824378176933,
+      "object_support": 0.3702625468290174,
+      "score": 0.5542634793215667,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles pass by while auto racing with a loud room",
+      "clip_similarity": 0.30726832151412964,
+      "visual": 0.4571556289977072,
+      "scene_support": 0.5863598295732226,
+      "object_support": 0.4549598434518502,
+      "score": 0.49525815350660474,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Whooshing sounds followed by auto racing with low speech",
+      "clip_similarity": 0.3068920969963074,
+      "visual": 0.42545272817223634,
+      "scene_support": 0.5795021755464701,
+      "object_support": 0.4591809220637331,
+      "score": 0.4817860205519555,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cars racing with music in the background",
+      "clip_similarity": 0.3064257800579071,
+      "visual": 0.386158107670324,
+      "scene_support": 0.8614878757150454,
+      "object_support": 0.4975145242232698,
+      "score": 0.5621639630496242,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle runs over something as it passes by",
+      "clip_similarity": 0.3063546419143677,
+      "visual": 0.3801635873700706,
+      "scene_support": 0.7824485823962659,
+      "object_support": 0.9752061085428909,
+      "score": 0.6793618422297754,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicles race around as a young man yells out",
+      "clip_similarity": 0.30522361397743225,
+      "visual": 0.2848564906315216,
+      "scene_support": 0.5635709533866832,
+      "object_support": 0.5625854791243773,
+      "score": 0.45178952600592676,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine coming around a corner with faint music in background",
+      "clip_similarity": 0.30406618118286133,
+      "visual": 0.18732436457331422,
+      "scene_support": 0.4316107655641458,
+      "object_support": 0.4987848041169972,
+      "score": 0.3540484167336686,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car racing around corner",
+      "clip_similarity": 0.3035336434841156,
+      "visual": 0.14244959153383877,
+      "scene_support": 1.0,
+      "object_support": 0.6568978267683946,
+      "score": 0.5540491846440538,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles moves nearby followed by someone talking",
+      "clip_similarity": 0.3032738268375397,
+      "visual": 0.12055590574514624,
+      "scene_support": 0.24336786650045966,
+      "object_support": 0.43778519670469795,
+      "score": 0.2525682812596058,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple vehicles speeding, most likely a race",
+      "clip_similarity": 0.30310752987861633,
+      "visual": 0.10654274140689156,
+      "scene_support": 0.49788688880707715,
+      "object_support": 0.595268253045598,
+      "score": 0.37056363911855916,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Siren with a vehicle engine noise and voice in the background",
+      "clip_similarity": 0.3030495345592499,
+      "visual": 0.1016557131269196,
+      "scene_support": 0.0,
+      "object_support": 0.2708398637811978,
+      "score": 0.12191424438512717,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car racing on a road then stops and accelerates",
+      "clip_similarity": 0.3026233911514282,
+      "visual": 0.06574635168019849,
+      "scene_support": 0.7618384820907637,
+      "object_support": 0.5392182939781917,
+      "score": 0.41661557349276596,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High pitched sound of a vehicle racing, with the sound of many voices overlapping",
+      "clip_similarity": 0.3023827373981476,
+      "visual": 0.045467444506111294,
+      "scene_support": 0.5620407508595615,
+      "object_support": 0.5924148404237513,
+      "score": 0.36452365518743834,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle hits something as it passes by",
+      "clip_similarity": 0.30237823724746704,
+      "visual": 0.0450882352202553,
+      "scene_support": 0.7133628716782818,
+      "object_support": 1.0,
+      "score": 0.5320441555915867,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car racing and squealing his tires",
+      "clip_similarity": 0.30184316635131836,
+      "visual": 0.0,
+      "scene_support": 0.40714259571435646,
+      "object_support": 0.0,
+      "score": 0.12214277871430693,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.4745090901851654
+    ],
+    [
+      "highway",
+      0.09119623899459839
+    ],
+    [
+      "field road",
+      0.030283765867352486
+    ],
+    [
+      "desert road",
+      0.028230533003807068
+    ],
+    [
+      "street",
+      0.023647181689739227
+    ]
+  ],
+  "top_objects": [
+    [
+      "moving van",
+      0.043339937925338745
+    ],
+    [
+      "switch",
+      0.025044893845915794
+    ],
+    [
+      "snowmobile",
+      0.02445889450609684
+    ],
+    [
+      "monitor",
+      0.023900600150227547
+    ],
+    [
+      "CRT screen",
+      0.022606372833251953
+    ]
+  ]
+}

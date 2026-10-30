@@ -1,0 +1,283 @@
+{
+  "id": "HZ9O6sc7cLA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\HZ9O6sc7cLA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\HZ9O6sc7cLA.wav",
+  "gt_captions": [
+    "A woman speaks and continues to do so as a dog starts barking",
+    "Female speaking and a dog barking",
+    "A woman speaks followed by a dog barking",
+    "A woman speaks and continues to do so as a dog starts barking",
+    "A woman is speaking followed by a dog growling and barking"
+  ],
+  "top_scene": [
+    "indoor bow window",
+    0.12097233533859253
+  ],
+  "top_object": [
+    "handkerchief",
+    0.3863600194454193
+  ],
+  "env_probs": {
+    "indoor": 0.6696282029151917,
+    "outdoor": 0.33037179708480835
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Stamping and surprised woman",
+    "casv": "Faint crumpling and crinkling with some tapping"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.005299354903399944,
+    "clap_gt_audio_baseline": 0.25762391090393066,
+    "clap_text_casv": -0.018516477197408676,
+    "clap_gt_audio_casv": 0.22595636546611786
+  },
+  "verdicts": [
+    {
+      "caption": "Stamping and surprised woman",
+      "clip_similarity": 0.2907771170139313,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Faint crumpling and crinkling with some tapping",
+      "clip_similarity": 0.28987279534339905,
+      "visual": 0.947470194043829,
+      "scene_support": 0.8315461108515579,
+      "object_support": 0.7288376434567367,
+      "score": 0.84710320391002,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A paper swishes several times, followed by music",
+      "clip_similarity": 0.2840380072593689,
+      "visual": 0.6085418062400784,
+      "scene_support": 1.0,
+      "object_support": 0.9017011396196594,
+      "score": 0.8139270643819292,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Tapping noise followed by crinkling of paper",
+      "clip_similarity": 0.2809244990348816,
+      "visual": 0.4276858252272558,
+      "scene_support": 0.9076244121689134,
+      "object_support": 0.8698366347951014,
+      "score": 0.7043126441801069,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Crinkling of paper with a small slap",
+      "clip_similarity": 0.28048962354660034,
+      "visual": 0.40242498524200515,
+      "scene_support": 0.7982089694754109,
+      "object_support": 1.0,
+      "score": 0.7004326849394253,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boy speaks followed by shuffling cards",
+      "clip_similarity": 0.2802102863788605,
+      "visual": 0.3861989810491766,
+      "scene_support": 0.44675674108832725,
+      "object_support": 0.5748794317020672,
+      "score": 0.46097044425678896,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some rustling with faint tapping",
+      "clip_similarity": 0.27944284677505493,
+      "visual": 0.3416203153104026,
+      "scene_support": 0.8751244718471963,
+      "object_support": 0.5805873901957505,
+      "score": 0.5733616847370451,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Inconsistent scratching clip clops",
+      "clip_similarity": 0.2776377201080322,
+      "visual": 0.23676497828280993,
+      "scene_support": 0.6783080524759667,
+      "object_support": 0.43226519401580993,
+      "score": 0.42787796526065697,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Paper crumpling",
+      "clip_similarity": 0.2771470546722412,
+      "visual": 0.2082634384310304,
+      "scene_support": 0.6028738503405072,
+      "object_support": 0.8574978764057172,
+      "score": 0.5214168933962795,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling and tapping noises followed by an object moving",
+      "clip_similarity": 0.27678483724594116,
+      "visual": 0.18722312530186808,
+      "scene_support": 0.8578795794556658,
+      "object_support": 0.7240777246463294,
+      "score": 0.5494764413513458,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of small pops, a large explosion",
+      "clip_similarity": 0.27614617347717285,
+      "visual": 0.15012472885971337,
+      "scene_support": 0.5187901336452518,
+      "object_support": 0.2987321977794836,
+      "score": 0.30530659097130597,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Light popping and heavy tapping",
+      "clip_similarity": 0.27578824758529663,
+      "visual": 0.12933370033566866,
+      "scene_support": 0.6836620469992054,
+      "object_support": 0.383455027641419,
+      "score": 0.37186860252645476,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A plastic like material is rubbing together and there is an occasional popping sound",
+      "clip_similarity": 0.27569854259490967,
+      "visual": 0.12412295963147425,
+      "scene_support": 0.8653108044973554,
+      "object_support": 0.6557776007000009,
+      "score": 0.5059757054117966,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Moving of objects with a whoosh noise followed by knocking",
+      "clip_similarity": 0.2756897211074829,
+      "visual": 0.12361054127651029,
+      "scene_support": 0.6980875667970495,
+      "object_support": 0.41516724720098225,
+      "score": 0.3834206607100136,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid tapping against a surface",
+      "clip_similarity": 0.27545133233070374,
+      "visual": 0.10976312769084554,
+      "scene_support": 0.8552405205310344,
+      "object_support": 0.5996906089292483,
+      "score": 0.480384589914423,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two different swishing sounds",
+      "clip_similarity": 0.2751319706439972,
+      "visual": 0.09121219832667708,
+      "scene_support": 0.868160016232493,
+      "object_support": 0.5680404720916253,
+      "score": 0.4673450258279064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine tapping and clicking",
+      "clip_similarity": 0.27460572123527527,
+      "visual": 0.06064367362413075,
+      "scene_support": 0.351492298091318,
+      "object_support": 0.23147250721437748,
+      "score": 0.19914691104136095,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic crumpling followed by plastic crinkling then plastic sliding",
+      "clip_similarity": 0.27455976605415344,
+      "visual": 0.05797425097766306,
+      "scene_support": 0.9151417444473621,
+      "object_support": 0.8371997478711104,
+      "score": 0.5488921480866069,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ding sound followed by tapping",
+      "clip_similarity": 0.27366694808006287,
+      "visual": 0.006112666254654611,
+      "scene_support": 0.9526584969939197,
+      "object_support": 0.7602405449840447,
+      "score": 0.5163147790952511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of small pops is followed by an explosion",
+      "clip_similarity": 0.2735617160797119,
+      "visual": 0.0,
+      "scene_support": 0.6542035677382613,
+      "object_support": 0.40570437960735967,
+      "score": 0.3179723842036863,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor bow window",
+      0.12097233533859253
+    ],
+    [
+      "assembly line",
+      0.062311265617609024
+    ],
+    [
+      "ice floe",
+      0.060867588967084885
+    ],
+    [
+      "fabric store",
+      0.034751102328300476
+    ],
+    [
+      "archive",
+      0.032706841826438904
+    ]
+  ],
+  "top_objects": [
+    [
+      "handkerchief",
+      0.3863600194454193
+    ],
+    [
+      "packet",
+      0.1156870424747467
+    ],
+    [
+      "carton",
+      0.06683394312858582
+    ],
+    [
+      "envelope",
+      0.046575985848903656
+    ],
+    [
+      "wallet",
+      0.04311520233750343
+    ]
+  ]
+}

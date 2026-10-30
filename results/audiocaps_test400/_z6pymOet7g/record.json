@@ -1,0 +1,283 @@
+{
+  "id": "_z6pymOet7g",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\_z6pymOet7g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\_z6pymOet7g.wav",
+  "gt_captions": [
+    "A man speaks followed by a toilet flush",
+    "A man speaks followed by a toilet flushing",
+    "A man talking followed by a toilet flushing",
+    "A man speaks before a toilet flush",
+    "A man talking followed by a toilet flushing"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.28372395038604736
+  ],
+  "top_object": [
+    "sink",
+    0.2803789973258972
+  ],
+  "env_probs": {
+    "indoor": 0.7954877614974976,
+    "outdoor": 0.20451223850250244
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Splashing water from a toilet",
+    "casv": "Splashing water from a toilet"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.282905638217926,
+    "clap_gt_audio_baseline": 0.5016694068908691,
+    "clap_text_casv": 0.282905638217926,
+    "clap_gt_audio_casv": 0.5016694068908691
+  },
+  "verdicts": [
+    {
+      "caption": "Splashing water from a toilet",
+      "clip_similarity": 0.341935932636261,
+      "visual": 1.0,
+      "scene_support": 0.9314184084968743,
+      "object_support": 0.5992621699334247,
+      "score": 0.8592041735290897,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flushing down a toilet",
+      "clip_similarity": 0.3377263844013214,
+      "visual": 0.7831422412734285,
+      "scene_support": 0.7525018233924182,
+      "object_support": 0.43625541377174754,
+      "score": 0.6698840676586211,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water finishes flushing down a toilet",
+      "clip_similarity": 0.3350940942764282,
+      "visual": 0.6475380137070427,
+      "scene_support": 0.7167353831650223,
+      "object_support": 0.5221775287342959,
+      "score": 0.6306890790526125,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running in a toilet",
+      "clip_similarity": 0.33489519357681274,
+      "visual": 0.6372915080203395,
+      "scene_support": 0.9634133691078357,
+      "object_support": 0.7280484634294302,
+      "score": 0.7623551529693156,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water rushing down a flushed toilet",
+      "clip_similarity": 0.32982149720191956,
+      "visual": 0.3759165663612469,
+      "scene_support": 0.690283428009995,
+      "object_support": 0.5493867738746717,
+      "score": 0.5222676871098988,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing down a toilet, followed by a child talking",
+      "clip_similarity": 0.32931166887283325,
+      "visual": 0.3496524110147633,
+      "scene_support": 0.5280119835983366,
+      "object_support": 0.0,
+      "score": 0.2982645594854063,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone speaks as water runs into a sink",
+      "clip_similarity": 0.3286120891571045,
+      "visual": 0.31361308310201674,
+      "scene_support": 0.6578955713466444,
+      "object_support": 0.7743509638926878,
+      "score": 0.5551191938126063,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water runs into a sink",
+      "clip_similarity": 0.3281477093696594,
+      "visual": 0.28969024048736153,
+      "scene_support": 0.6507051973536758,
+      "object_support": 1.0,
+      "score": 0.6110876554010474,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flowing down a flushed toilet",
+      "clip_similarity": 0.3278677463531494,
+      "visual": 0.27526775405929893,
+      "scene_support": 0.6271814196178213,
+      "object_support": 0.5581058791782129,
+      "score": 0.4656932912625298,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.32579222321510315,
+      "visual": 0.16834575892308826,
+      "scene_support": 0.6061784113562546,
+      "object_support": 0.24312529371935543,
+      "score": 0.32212941509191834,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something dropping in water and water being added to something in a bowl",
+      "clip_similarity": 0.32554298639297485,
+      "visual": 0.15550615343044535,
+      "scene_support": 0.6193342481200381,
+      "object_support": 0.44901807021363394,
+      "score": 0.38270815687227977,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flushing from a toilet",
+      "clip_similarity": 0.32481005787849426,
+      "visual": 0.11774883932299983,
+      "scene_support": 1.0,
+      "object_support": 0.645298341361956,
+      "score": 0.5406890381377867,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks as water runs into a sink",
+      "clip_similarity": 0.3246896266937256,
+      "visual": 0.11154474440541404,
+      "scene_support": 0.0,
+      "object_support": 0.01172763699211652,
+      "score": 0.048136188859800574,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water spills out of a sink, and then a person talks nearby",
+      "clip_similarity": 0.32426655292510986,
+      "visual": 0.08974980962440737,
+      "scene_support": 0.2936126711395544,
+      "object_support": 0.49176810773220825,
+      "score": 0.2715141575112917,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flows hard down a toilet",
+      "clip_similarity": 0.3242420554161072,
+      "visual": 0.08848780367977598,
+      "scene_support": 0.8390115143804793,
+      "object_support": 0.6800740084703906,
+      "score": 0.49112077832717127,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water is splashing into a sink and woman speaks briefly",
+      "clip_similarity": 0.32403308153152466,
+      "visual": 0.07772237097447739,
+      "scene_support": 0.43743950018892336,
+      "object_support": 0.31237788848986503,
+      "score": 0.25603416499342746,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pouring into a sink",
+      "clip_similarity": 0.3236296772956848,
+      "visual": 0.05694072563806529,
+      "scene_support": 0.12548755927704977,
+      "object_support": 0.4092490859911632,
+      "score": 0.18319728383569,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water slowly splashes into a sink",
+      "clip_similarity": 0.32355624437332153,
+      "visual": 0.0531577783782456,
+      "scene_support": 0.29327621022464945,
+      "object_support": 0.652001659976735,
+      "score": 0.3048464724117136,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water being rapidly flushed down a toilet and eventually ending",
+      "clip_similarity": 0.32275858521461487,
+      "visual": 0.012065820825861603,
+      "scene_support": 0.8147051694048458,
+      "object_support": 0.5854257424626417,
+      "score": 0.42486560189059086,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing in a toilet followed by the handle being released",
+      "clip_similarity": 0.32252436876296997,
+      "visual": 0.0,
+      "scene_support": 0.5822074523405264,
+      "object_support": 0.19375930478257897,
+      "score": 0.2327900271369316,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.28372395038604736
+    ],
+    [
+      "shower",
+      0.16253817081451416
+    ],
+    [
+      "indoor jacuzzi",
+      0.07020343095064163
+    ],
+    [
+      "archaelogical excavation",
+      0.04039479419589043
+    ],
+    [
+      "kitchen",
+      0.03133613243699074
+    ]
+  ],
+  "top_objects": [
+    [
+      "sink",
+      0.2803789973258972
+    ],
+    [
+      "toilet paper",
+      0.1017049103975296
+    ],
+    [
+      "paper towel",
+      0.09005779772996902
+    ],
+    [
+      "tub",
+      0.06518978625535965
+    ],
+    [
+      "toilet seat",
+      0.06443091481924057
+    ]
+  ]
+}

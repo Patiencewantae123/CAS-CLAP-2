@@ -1,0 +1,283 @@
+{
+  "id": "mJ6ZO3xEcgw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\mJ6ZO3xEcgw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\mJ6ZO3xEcgw.wav",
+  "gt_captions": [
+    "A woman coughs and sneezes several times",
+    "A woman repeatedly sneezing and coughing",
+    "A woman sneezing repeatedly",
+    "A woman coughing and sneezing",
+    "A woman sneezing repeatedly"
+  ],
+  "top_scene": [
+    "veterinarians office",
+    0.1536245495080948
+  ],
+  "top_object": [
+    "oxygen mask",
+    0.10359707474708557
+  ],
+  "env_probs": {
+    "indoor": 0.6940301656723022,
+    "outdoor": 0.30596983432769775
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A woman sneezes and sniffles three times",
+    "casv": "A woman sneezes and sniffles three times"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06017080694437027,
+    "clap_gt_audio_baseline": 0.3296920657157898,
+    "clap_text_casv": 0.06017080694437027,
+    "clap_gt_audio_casv": 0.3296920657157898
+  },
+  "verdicts": [
+    {
+      "caption": "A woman sneezes and sniffles three times",
+      "clip_similarity": 0.32249048352241516,
+      "visual": 1.0,
+      "scene_support": 0.6575060868146444,
+      "object_support": 0.6002871806802133,
+      "score": 0.7773379802484572,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman sniffles then sneezes",
+      "clip_similarity": 0.3136069178581238,
+      "visual": 0.6556656682211305,
+      "scene_support": 0.4751055962124611,
+      "object_support": 0.5644285521462833,
+      "score": 0.5741265117960755,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman sneezes and blows her nose",
+      "clip_similarity": 0.3072194457054138,
+      "visual": 0.40808197957903564,
+      "scene_support": 0.2043552196105845,
+      "object_support": 0.46211453647809164,
+      "score": 0.3631737186582171,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman sneezes, sniffs several times, and sneezes again",
+      "clip_similarity": 0.306939959526062,
+      "visual": 0.3972488647639599,
+      "scene_support": 0.6853612635256687,
+      "object_support": 0.7009299079419669,
+      "score": 0.5747868973458746,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman sneezing and breathing",
+      "clip_similarity": 0.30525702238082886,
+      "visual": 0.33201683302933305,
+      "scene_support": 0.22998665190734258,
+      "object_support": 0.3515658864028672,
+      "score": 0.3072724947047962,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Four sneezes occur while two adult females speak",
+      "clip_similarity": 0.30512088537216187,
+      "visual": 0.3267400502957794,
+      "scene_support": 0.3260858863260113,
+      "object_support": 0.27919020973956216,
+      "score": 0.3122788489379838,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cough and a sneeze, a woman talks",
+      "clip_similarity": 0.3024333119392395,
+      "visual": 0.2225674874867012,
+      "scene_support": 0.9905733491053683,
+      "object_support": 0.8299082711766946,
+      "score": 0.6351714810792993,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman sneezing and sniffling and complaining",
+      "clip_similarity": 0.3012325167655945,
+      "visual": 0.1760236762125453,
+      "scene_support": 0.8668763353367194,
+      "object_support": 0.7314630193147388,
+      "score": 0.5499112768804555,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sick woman loudly inhales through her mouth followed by a series of mucous slurping",
+      "clip_similarity": 0.3012027442455292,
+      "visual": 0.17486966878022916,
+      "scene_support": 0.8998970410555823,
+      "object_support": 0.7319458603513985,
+      "score": 0.5595007379341859,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young woman sniffling then sneezing twice",
+      "clip_similarity": 0.3010164797306061,
+      "visual": 0.16764990256203513,
+      "scene_support": 0.25131195294269887,
+      "object_support": 0.42021490815595325,
+      "score": 0.26851801935440966,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person breathing then sneezing then sniffling",
+      "clip_similarity": 0.3001961410045624,
+      "visual": 0.13585289697451364,
+      "scene_support": 0.8115626270284108,
+      "object_support": 0.9496468127553434,
+      "score": 0.5827039907249316,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman sneeze three times",
+      "clip_similarity": 0.2998482584953308,
+      "visual": 0.122368684004117,
+      "scene_support": 0.5000105490721739,
+      "object_support": 0.4708797473424539,
+      "score": 0.34021456252603516,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman sneezes several times",
+      "clip_similarity": 0.29921916127204895,
+      "visual": 0.09798435678813971,
+      "scene_support": 0.8185503324364278,
+      "object_support": 0.7307925286933773,
+      "score": 0.5039966010541974,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman is saying something then sniffles and blows her nose",
+      "clip_similarity": 0.2986329197883606,
+      "visual": 0.07526115338364452,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6301044613534578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person breathing then sneezing",
+      "clip_similarity": 0.2980547845363617,
+      "visual": 0.05285215420496512,
+      "scene_support": 0.6443696788721776,
+      "object_support": 0.8368331992717879,
+      "score": 0.4655017251251757,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is sneezing and sniffling and groaning",
+      "clip_similarity": 0.2978281080722809,
+      "visual": 0.0440659875080717,
+      "scene_support": 0.8139305420957209,
+      "object_support": 0.793948684971463,
+      "score": 0.4999901631233838,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person sniffs and sneezes nearby several times",
+      "clip_similarity": 0.29763346910476685,
+      "visual": 0.036521620600707655,
+      "scene_support": 0.8453126252702321,
+      "object_support": 0.9628645861339028,
+      "score": 0.5570618116615236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming with a person breathing then sneezing",
+      "clip_similarity": 0.2971484661102295,
+      "visual": 0.01772250453112528,
+      "scene_support": 0.8150269423303322,
+      "object_support": 0.7614079425155799,
+      "score": 0.4800194672662237,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman sneezes before describing the side effects of her cold",
+      "clip_similarity": 0.2969970703125,
+      "visual": 0.011854278548977162,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.004741711419590865,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult female is sneezing",
+      "clip_similarity": 0.29669123888015747,
+      "visual": 0.0,
+      "scene_support": 0.21060941286677365,
+      "object_support": 0.3907424010148441,
+      "score": 0.1804055441644853,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "veterinarians office",
+      0.1536245495080948
+    ],
+    [
+      "hospital",
+      0.1400628238916397
+    ],
+    [
+      "hospital room",
+      0.1033942922949791
+    ],
+    [
+      "nursing home",
+      0.09454033523797989
+    ],
+    [
+      "waiting room",
+      0.06794564425945282
+    ]
+  ],
+  "top_objects": [
+    [
+      "oxygen mask",
+      0.10359707474708557
+    ],
+    [
+      "bib",
+      0.10206586867570877
+    ],
+    [
+      "diaper",
+      0.06607437878847122
+    ],
+    [
+      "match",
+      0.041273437440395355
+    ],
+    [
+      "handkerchief",
+      0.03797590360045433
+    ]
+  ]
+}

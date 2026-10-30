@@ -1,0 +1,283 @@
+{
+  "id": "fx4r_KuW6No",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\fx4r_KuW6No.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\fx4r_KuW6No.wav",
+  "gt_captions": [
+    "A woman talking back and forth with a child who is crying",
+    "An adult female speaks, a child cries and speaks, the adult female speaks again, while the child continues to cry and speak, and the adult female speaks once more",
+    "Adult female is speaking and a young child is crying",
+    "A child speaking with crying and an adult female speaking",
+    "A young boy crying as a woman is talking"
+  ],
+  "top_scene": [
+    "childs room",
+    0.14534105360507965
+  ],
+  "top_object": [
+    "diaper",
+    0.08651728183031082
+  ],
+  "env_probs": {
+    "indoor": 0.7210804224014282,
+    "outdoor": 0.2789195775985718
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A child crying with speech in the background",
+    "casv": "A child crying with speech in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4303092956542969,
+    "clap_gt_audio_baseline": 0.7059386968612671,
+    "clap_text_casv": 0.4303092956542969,
+    "clap_gt_audio_casv": 0.7059386968612671
+  },
+  "verdicts": [
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.34458741545677185,
+      "visual": 1.0,
+      "scene_support": 0.7664003090702419,
+      "object_support": 0.6480620556081883,
+      "score": 0.8243387094035292,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child crying with a distant speech",
+      "clip_similarity": 0.33923768997192383,
+      "visual": 0.813086749356502,
+      "scene_support": 0.5319325124809429,
+      "object_support": 0.5721066637350415,
+      "score": 0.6564464526073961,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy coughing then sneezing before talking",
+      "clip_similarity": 0.3271646499633789,
+      "visual": 0.3912686281206527,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1565074512482611,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crying child with laughing and talking in the background",
+      "clip_similarity": 0.3264816403388977,
+      "visual": 0.3674050580189426,
+      "scene_support": 0.560513044288011,
+      "object_support": 0.6018786113149955,
+      "score": 0.4956795198884789,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with a brief speech and rustling",
+      "clip_similarity": 0.32609856128692627,
+      "visual": 0.3540207168858864,
+      "scene_support": 0.8837438749681579,
+      "object_support": 0.8736137562202728,
+      "score": 0.6688155761108838,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid crying and yelling",
+      "clip_similarity": 0.3241279125213623,
+      "visual": 0.28516851733071213,
+      "scene_support": 0.9475788856386234,
+      "object_support": 0.912968884893831,
+      "score": 0.6722317380920211,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant crying with muffled speech in the background",
+      "clip_similarity": 0.32268619537353516,
+      "visual": 0.23479657967296141,
+      "scene_support": 0.4341844308944028,
+      "object_support": 0.7450384937482014,
+      "score": 0.4476855092619658,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young child crying",
+      "clip_similarity": 0.32249966263771057,
+      "visual": 0.22827934059160163,
+      "scene_support": 0.6815345152807375,
+      "object_support": 0.8109328065030346,
+      "score": 0.5390519327717722,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child cries, speaks and then cries again louder",
+      "clip_similarity": 0.3221055567264557,
+      "visual": 0.214509733687639,
+      "scene_support": 0.8188137274594596,
+      "object_support": 0.7921137125692354,
+      "score": 0.569082125483664,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child sneezing and crying",
+      "clip_similarity": 0.3211638927459717,
+      "visual": 0.18160907811107316,
+      "scene_support": 0.05663235032680946,
+      "object_support": 0.23975154476171384,
+      "score": 0.16155879977098625,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young child crying",
+      "clip_similarity": 0.3210827708244324,
+      "visual": 0.17877477154781043,
+      "scene_support": 0.5111564660403685,
+      "object_support": 0.6086991667501964,
+      "score": 0.4074665984562936,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young child speaks followed by a child yelling and sobbing",
+      "clip_similarity": 0.32063227891921997,
+      "visual": 0.16303510291802378,
+      "scene_support": 1.0,
+      "object_support": 0.866228000685483,
+      "score": 0.6250824413728544,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child cries while a man yells",
+      "clip_similarity": 0.32057082653045654,
+      "visual": 0.16088802718935083,
+      "scene_support": 0.6992606479546799,
+      "object_support": 0.735444319059983,
+      "score": 0.4947667009801392,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child crying and then screaming with a high pitch at the close",
+      "clip_similarity": 0.32017844915390015,
+      "visual": 0.1471788132981249,
+      "scene_support": 0.62584338234898,
+      "object_support": 0.43232246153050236,
+      "score": 0.37632127848309466,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries the whole time as a boy talks",
+      "clip_similarity": 0.31849879026412964,
+      "visual": 0.08849346505951836,
+      "scene_support": 0.5955812806251592,
+      "object_support": 0.7526247207141956,
+      "score": 0.43985918642561384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young child crying and screaming",
+      "clip_similarity": 0.3177812993526459,
+      "visual": 0.0634251584795955,
+      "scene_support": 0.4943007478176147,
+      "object_support": 0.5778776542255821,
+      "score": 0.34702358400479727,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child is sobbing and screaming as a man talks",
+      "clip_similarity": 0.3171306550502777,
+      "visual": 0.040692395478437615,
+      "scene_support": 0.9876995276981886,
+      "object_support": 1.0,
+      "score": 0.6125868165008316,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child fakes crying",
+      "clip_similarity": 0.3170566260814667,
+      "visual": 0.038105908519163324,
+      "scene_support": 0.7987972734709835,
+      "object_support": 0.9448069815792622,
+      "score": 0.538323639922739,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby crying and a recorded voice singing",
+      "clip_similarity": 0.3168524503707886,
+      "visual": 0.030972244204353294,
+      "scene_support": 0.562848771838283,
+      "object_support": 0.7653022753507441,
+      "score": 0.4108342118384494,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child cries while several people talks far away",
+      "clip_similarity": 0.3159659802913666,
+      "visual": 0.0,
+      "scene_support": 0.6372418867137506,
+      "object_support": 0.6842911233190309,
+      "score": 0.3964599030098344,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.14534105360507965
+    ],
+    [
+      "door elevator",
+      0.03289063274860382
+    ],
+    [
+      "sauna",
+      0.024304453283548355
+    ],
+    [
+      "sandbox",
+      0.02235962636768818
+    ],
+    [
+      "closet",
+      0.021635595709085464
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.08651728183031082
+    ],
+    [
+      "pajamas",
+      0.029337264597415924
+    ],
+    [
+      "teddy bear",
+      0.022842001169919968
+    ],
+    [
+      "cockroach",
+      0.018782582134008408
+    ],
+    [
+      "titi",
+      0.017747748643159866
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "PO8Nu3F8mkA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\PO8Nu3F8mkA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\PO8Nu3F8mkA.wav",
+  "gt_captions": [
+    "A gunshot firing in the distance followed by steam hissing and fire crackling",
+    "A pop occurs, followed by whooshing, combustion, and hissing",
+    "Several pops and bursts of fireworks exploding",
+    "A distant explosion followed by steam hissing and fire igniting then a person speaking in the background",
+    "A distant explosion followed by steam hissing and fire igniting with a person talking in the background"
+  ],
+  "top_scene": [
+    "manufactured home",
+    0.16210271418094635
+  ],
+  "top_object": [
+    "microwave oven",
+    0.3773581087589264
+  ],
+  "env_probs": {
+    "indoor": 0.6554415225982666,
+    "outdoor": 0.3445584774017334
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A vehicle engine is violently accelerating and being tested out",
+    "casv": "Food frying on hot surface"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3551989793777466,
+    "clap_gt_audio_baseline": 0.3737410008907318,
+    "clap_text_casv": 0.3015744090080261,
+    "clap_gt_audio_casv": 0.22539660334587097
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle engine is violently accelerating and being tested out",
+      "clip_similarity": 0.29992198944091797,
+      "visual": 1.0,
+      "scene_support": 0.533059187403346,
+      "object_support": 0.3073034793417084,
+      "score": 0.6521088000235163,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.23)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying on hot surface",
+      "clip_similarity": 0.2957019805908203,
+      "visual": 0.8021036272616229,
+      "scene_support": 0.5215441796710248,
+      "object_support": 1.0,
+      "score": 0.7773047048059566,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Machine gun fires rapidly into metal",
+      "clip_similarity": 0.29243677854537964,
+      "visual": 0.6489827064285575,
+      "scene_support": 0.4409531843104175,
+      "object_support": 0.32371554610275083,
+      "score": 0.4889937016953735,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Gun fires in automatic and semi-automatic mode",
+      "clip_similarity": 0.2884606122970581,
+      "visual": 0.46252127805278914,
+      "scene_support": 0.7431191128918881,
+      "object_support": 0.5665897408137787,
+      "score": 0.5779211673328157,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An appliance motor is running, and rhythmic clattering is occurring",
+      "clip_similarity": 0.28772830963134766,
+      "visual": 0.428180108060364,
+      "scene_support": 1.0,
+      "object_support": 0.9734002825791722,
+      "score": 0.7632921279978973,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large vehicle engine is running and small explosions occur",
+      "clip_similarity": 0.2872588336467743,
+      "visual": 0.40616413659321954,
+      "scene_support": 0.5882547799803177,
+      "object_support": 0.4756367966868894,
+      "score": 0.4816331276374499,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.23)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A constant sizzle while something wooden hits a metal surface",
+      "clip_similarity": 0.2871876657009125,
+      "visual": 0.40282673166314015,
+      "scene_support": 0.8310022142555884,
+      "object_support": 0.6128864050913586,
+      "score": 0.5942972784693401,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of gunshots and explosions with electronic blooping and whooshing",
+      "clip_similarity": 0.28592607378959656,
+      "visual": 0.3436646606831897,
+      "scene_support": 0.6867302825811894,
+      "object_support": 0.4296751984015502,
+      "score": 0.47238750856809775,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pressurized air releasing once during scrapping on a metal surface",
+      "clip_similarity": 0.285913348197937,
+      "visual": 0.3430678969038162,
+      "scene_support": 0.7024717067341487,
+      "object_support": 0.44758992307871515,
+      "score": 0.4822456477053856,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An explosion with various gunfire sounds",
+      "clip_similarity": 0.2852160334587097,
+      "visual": 0.3103674779113547,
+      "scene_support": 0.7909637283846478,
+      "object_support": 0.6703026009069394,
+      "score": 0.562526889952018,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Compressed air spraying followed by a series of rapid gunfire shots and metal rattling as fire burns and softly crackles in the background",
+      "clip_similarity": 0.283862441778183,
+      "visual": 0.24689109829691724,
+      "scene_support": 0.546960670603121,
+      "object_support": 0.08573167038277008,
+      "score": 0.28856414161453425,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dual explosion goes off and a man narrates over it",
+      "clip_similarity": 0.28346240520477295,
+      "visual": 0.22813147251113167,
+      "scene_support": 0.34450214396176015,
+      "object_support": 0.24685318901970243,
+      "score": 0.2686591888988914,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.28336864709854126,
+      "visual": 0.22373470705467027,
+      "scene_support": 0.34785252354843244,
+      "object_support": 0.6078658968599726,
+      "score": 0.3762094089443896,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A reloading sound then single shot gun fire and an explosion",
+      "clip_similarity": 0.28273093700408936,
+      "visual": 0.19382943456981297,
+      "scene_support": 0.7937570293828202,
+      "object_support": 0.518245679430237,
+      "score": 0.47113258647184236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An explosion, gun fire and laser fire and then a robotic voice",
+      "clip_similarity": 0.2816998362541199,
+      "visual": 0.14547619513476798,
+      "scene_support": 0.5881247363981442,
+      "object_support": 0.3729236529182261,
+      "score": 0.3465049948488183,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "One explosion after another blasts as a helicopter engine runs the whole time",
+      "clip_similarity": 0.2816048562526703,
+      "visual": 0.1410221291749007,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.056408851669960285,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine gun fires followed by an explosion, clicking occurs, and the machine gun fires again",
+      "clip_similarity": 0.2797531485557556,
+      "visual": 0.054186710196414946,
+      "scene_support": 0.6685742654294953,
+      "object_support": 0.4219858107432161,
+      "score": 0.3488427069303794,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pressurized gas is released",
+      "clip_similarity": 0.279176265001297,
+      "visual": 0.027133884722567732,
+      "scene_support": 0.8481837832138338,
+      "object_support": 0.7022277434641575,
+      "score": 0.4759770118924245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food is frying and someone male is talking, while intermittently a camera is flashing",
+      "clip_similarity": 0.2790471613407135,
+      "visual": 0.021079597387097044,
+      "scene_support": 0.6304600731055813,
+      "object_support": 0.5497857359186632,
+      "score": 0.3625055816621121,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A gunshot firing several times with metal lightly clanking on a surface",
+      "clip_similarity": 0.2785976529121399,
+      "visual": 0.0,
+      "scene_support": 0.4158925558835934,
+      "object_support": 0.17633036273463185,
+      "score": 0.17766687558546757,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "manufactured home",
+      0.16210271418094635
+    ],
+    [
+      "server room",
+      0.10010907799005508
+    ],
+    [
+      "galley",
+      0.055969081819057465
+    ],
+    [
+      "physics laboratory",
+      0.045251283794641495
+    ],
+    [
+      "sauna",
+      0.02972075715661049
+    ]
+  ],
+  "top_objects": [
+    [
+      "microwave oven",
+      0.3773581087589264
+    ],
+    [
+      "stove",
+      0.07037452608346939
+    ],
+    [
+      "rotisserie",
+      0.05484088510274887
+    ],
+    [
+      "safe",
+      0.050093069672584534
+    ],
+    [
+      "Dutch oven",
+      0.04286191612482071
+    ]
+  ]
+}

@@ -1,0 +1,293 @@
+{
+  "id": "wFiCblfZ-vg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\wFiCblfZ-vg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\wFiCblfZ-vg.wav",
+  "gt_captions": [
+    "A male speech and static",
+    "A man speaks with some mechanical humming and another man speaking faintly",
+    "A man speaking followed by another man speaking in the background during audio static",
+    "A man speaking softly",
+    "A man speaking with intermittent second man voice and white noise."
+  ],
+  "top_scene": [
+    "television studio",
+    0.06374254077672958
+  ],
+  "top_object": [
+    "bridegroom",
+    0.14253559708595276
+  ],
+  "env_probs": {
+    "indoor": 0.7042519450187683,
+    "outdoor": 0.2957480549812317
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Eructation a TV speech",
+    "casv": "Eructation a TV speech"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.06456561386585236,
+    "clap_gt_audio_baseline": 0.2959872782230377,
+    "clap_text_casv": -0.06456561386585236,
+    "clap_gt_audio_casv": 0.2959872782230377
+  },
+  "verdicts": [
+    {
+      "caption": "Eructation a TV speech",
+      "clip_similarity": 0.2514195144176483,
+      "visual": 1.0,
+      "scene_support": 0.80990187009803,
+      "object_support": 0.3555378408370778,
+      "score": 0.7496319132805322,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man narrates over sizzling food",
+      "clip_similarity": 0.24881945550441742,
+      "visual": 0.7936996255576141,
+      "scene_support": 0.07338334076079697,
+      "object_support": 0.0,
+      "score": 0.33949485245128475,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by food sizzling and glass tapping then stirring and more sizzling",
+      "clip_similarity": 0.24758924543857574,
+      "visual": 0.6960892229877121,
+      "scene_support": 0.5778666576788115,
+      "object_support": 0.37845597111863666,
+      "score": 0.5653324778343194,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks while kitchenware is tapped",
+      "clip_similarity": 0.24750101566314697,
+      "visual": 0.6890886755711517,
+      "scene_support": 0.4851725356112553,
+      "object_support": 0.43952204669994865,
+      "score": 0.5530438449218219,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speak on a police radio",
+      "clip_similarity": 0.2463533580303192,
+      "visual": 0.5980283545225712,
+      "scene_support": 0.7831736116572482,
+      "object_support": 0.5022661776639703,
+      "score": 0.624843278605394,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking expressively",
+      "clip_similarity": 0.24492637813091278,
+      "visual": 0.4848053478932739,
+      "scene_support": 0.7531435647581206,
+      "object_support": 0.720687509498562,
+      "score": 0.6360714614343144,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks while chewing and rustling a wrapper",
+      "clip_similarity": 0.24463310837745667,
+      "visual": 0.4615360059400017,
+      "scene_support": 0.0,
+      "object_support": 0.1289240889266123,
+      "score": 0.22329162905398436,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as computer keys are clicked",
+      "clip_similarity": 0.24323344230651855,
+      "visual": 0.3504802013736254,
+      "scene_support": 0.34747734623589877,
+      "object_support": 0.4754660388774349,
+      "score": 0.38707509608345025,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking continuously with oinking in the background",
+      "clip_similarity": 0.24281327426433563,
+      "visual": 0.31714217815039414,
+      "scene_support": 0.5832568741488064,
+      "object_support": 0.4634965604452639,
+      "score": 0.44088290163837873,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking with clicks in background",
+      "clip_similarity": 0.24245548248291016,
+      "visual": 0.2887533681488689,
+      "scene_support": 0.6624311399221802,
+      "object_support": 0.6918451440483803,
+      "score": 0.5217842324507157,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while sizzling and clanking occur",
+      "clip_similarity": 0.24208462238311768,
+      "visual": 0.25932765896066523,
+      "scene_support": 0.8312642541765439,
+      "object_support": 0.6057642292042428,
+      "score": 0.5348396085985021,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.24011830985546112,
+      "visual": 0.10331157460885727,
+      "scene_support": 0.6402405000243421,
+      "object_support": 0.38724196170753317,
+      "score": 0.3495693683631055,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by camera clicking",
+      "clip_similarity": 0.24006377160549164,
+      "visual": 0.09898426443412144,
+      "scene_support": 0.9610944461296673,
+      "object_support": 1.0,
+      "score": 0.6279220396125487,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man narrates as food sizzles",
+      "clip_similarity": 0.23988156020641327,
+      "visual": 0.08452679207984005,
+      "scene_support": 0.32841685172910107,
+      "object_support": 0.14297192440148307,
+      "score": 0.17522734967111125,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "There is static in the background as a man speaks, a crack and glass breaks",
+      "clip_similarity": 0.23977476358413696,
+      "visual": 0.07605306748357454,
+      "scene_support": 0.5582787508379302,
+      "object_support": 0.5671729698884833,
+      "score": 0.36805674321135384,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking together with clanking",
+      "clip_similarity": 0.2395620495080948,
+      "visual": 0.05917537547692042,
+      "scene_support": 0.8272478064015998,
+      "object_support": 0.7855185999764865,
+      "score": 0.507500072104194,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks continuously as something sizzles",
+      "clip_similarity": 0.2394433319568634,
+      "visual": 0.04975579073317167,
+      "scene_support": 0.8600996653272266,
+      "object_support": 0.6573727479447262,
+      "score": 0.47514404027485446,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young man speaking followed by rapid clicks",
+      "clip_similarity": 0.23905318975448608,
+      "visual": 0.018800152756413818,
+      "scene_support": 1.0,
+      "object_support": 0.8913714346341226,
+      "score": 0.5749314914928023,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking and dishes clanking",
+      "clip_similarity": 0.23881661891937256,
+      "visual": 2.955812960885136e-05,
+      "scene_support": 0.5549207882848302,
+      "object_support": 0.39820208351852543,
+      "score": 0.2859486847928502,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sheep baas and a man speaks",
+      "clip_similarity": 0.2388162463903427,
+      "visual": 0.0,
+      "scene_support": 0.5065892213146985,
+      "object_support": 0.30397290795069065,
+      "score": 0.24316863877961675,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "television studio",
+      0.06374254077672958
+    ],
+    [
+      "kasbah",
+      0.05218037962913513
+    ],
+    [
+      "bedchamber",
+      0.04942807927727699
+    ],
+    [
+      "campus",
+      0.04517006501555443
+    ],
+    [
+      "youth hostel",
+      0.04228824004530907
+    ]
+  ],
+  "top_objects": [
+    [
+      "bridegroom",
+      0.14253559708595276
+    ],
+    [
+      "bolo tie",
+      0.04063000530004501
+    ],
+    [
+      "green mamba",
+      0.03662516921758652
+    ],
+    [
+      "military uniform",
+      0.031190747395157814
+    ],
+    [
+      "barbershop",
+      0.029510200023651123
+    ]
+  ]
+}

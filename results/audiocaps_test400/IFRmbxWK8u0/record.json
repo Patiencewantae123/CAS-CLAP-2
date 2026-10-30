@@ -1,0 +1,285 @@
+{
+  "id": "IFRmbxWK8u0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\IFRmbxWK8u0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\IFRmbxWK8u0.wav",
+  "gt_captions": [
+    "A clock ticking",
+    "A clock ticking",
+    "A clock ticking",
+    "A clock ticking and gears cranking",
+    "Mechanical click clacking"
+  ],
+  "top_scene": [
+    "artists loft",
+    0.0674799457192421
+  ],
+  "top_object": [
+    "crane (machine)",
+    0.2593242824077606
+  ],
+  "env_probs": {
+    "indoor": 0.7335078716278076,
+    "outdoor": 0.2664921283721924
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A continuous mechanical sound of a machine running",
+    "casv": "Mechanical humming mixed with slow vibrations of a sewing machine"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.14387443661689758,
+    "clap_gt_audio_baseline": 0.19123990833759308,
+    "clap_text_casv": 0.10667356103658676,
+    "clap_gt_audio_casv": 0.37603047490119934
+  },
+  "verdicts": [
+    {
+      "caption": "A continuous mechanical sound of a machine running",
+      "clip_similarity": 0.34080663323402405,
+      "visual": 1.0,
+      "scene_support": 0.5805650169015265,
+      "object_support": 0.530533391136355,
+      "score": 0.7333295224113644,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A mechanical winding sound",
+      "clip_similarity": 0.3401336967945099,
+      "visual": 0.9524224916454906,
+      "scene_support": 0.3663933528181563,
+      "object_support": 0.4305134389199351,
+      "score": 0.6200410341796236,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical humming mixed with slow vibrations of a sewing machine",
+      "clip_similarity": 0.33990833163261414,
+      "visual": 0.9364888725942595,
+      "scene_support": 0.6754061038839676,
+      "object_support": 0.7719133836415565,
+      "score": 0.8087913952953611,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine followed by the sound of a clock and music",
+      "clip_similarity": 0.33980637788772583,
+      "visual": 0.9292806061602127,
+      "scene_support": 0.4438423018300051,
+      "object_support": 0.7137422162334172,
+      "score": 0.7189875978831117,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music playing with an engine running continuously",
+      "clip_similarity": 0.3352566957473755,
+      "visual": 0.6076119799238928,
+      "scene_support": 0.5311155651941339,
+      "object_support": 0.217259854162298,
+      "score": 0.46755741777648674,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock making music",
+      "clip_similarity": 0.33462804555892944,
+      "visual": 0.563165568886248,
+      "scene_support": 0.876186248698953,
+      "object_support": 0.44721564841594663,
+      "score": 0.6222867966889691,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A high frequency sound from a sewing machine",
+      "clip_similarity": 0.3336428105831146,
+      "visual": 0.4935081353746571,
+      "scene_support": 0.3303910069056189,
+      "object_support": 0.7315618628926644,
+      "score": 0.5159891150893479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ringing with a mechanical bird cooing",
+      "clip_similarity": 0.33354461193084717,
+      "visual": 0.48656535902265935,
+      "scene_support": 0.0,
+      "object_support": 0.2819915138080077,
+      "score": 0.27922359775146605,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something mechanical is making continuous tapping and buzzing sounds",
+      "clip_similarity": 0.33057600259780884,
+      "visual": 0.27668069971386067,
+      "scene_support": 0.36825429305216756,
+      "object_support": 0.31077866209367144,
+      "score": 0.31438216642929595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine whirring",
+      "clip_similarity": 0.3303720951080322,
+      "visual": 0.26226416684576714,
+      "scene_support": 0.5347891095521821,
+      "object_support": 1.0,
+      "score": 0.5653423996039615,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The ringing of a clock bell with mechanical humming",
+      "clip_similarity": 0.3296658396720886,
+      "visual": 0.21233096077910804,
+      "scene_support": 0.30612950210584317,
+      "object_support": 0.3457306496000796,
+      "score": 0.28049042982342004,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical winding noise",
+      "clip_similarity": 0.3294631838798523,
+      "visual": 0.19800292460503083,
+      "scene_support": 0.39106813135821245,
+      "object_support": 0.42766643285457434,
+      "score": 0.3248215391058483,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock mechanism ticktocks nearby very loudly and then rewinds",
+      "clip_similarity": 0.3292882740497589,
+      "visual": 0.18563656514831625,
+      "scene_support": 0.1488083537687665,
+      "object_support": 0.272756972395289,
+      "score": 0.20072422390854316,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine that is running, tapping and making winding noises",
+      "clip_similarity": 0.3289073407649994,
+      "visual": 0.15870407126933758,
+      "scene_support": 0.7204932216661779,
+      "object_support": 0.8071734152824934,
+      "score": 0.5217816195923365,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chime of a clock and rumpling sounds in background",
+      "clip_similarity": 0.3283117413520813,
+      "visual": 0.1165943943665533,
+      "scene_support": 1.0,
+      "object_support": 0.6193637108183404,
+      "score": 0.5324468709921234,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from a sewing machine",
+      "clip_similarity": 0.32745546102523804,
+      "visual": 0.0560542274027906,
+      "scene_support": 0.3985070586832599,
+      "object_support": 0.6120983909922243,
+      "score": 0.3256033258637615,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from a sewing machine with people speaking in the distance",
+      "clip_similarity": 0.3272738456726074,
+      "visual": 0.043213778513845516,
+      "scene_support": 0.23912195845027986,
+      "object_support": 0.44792104122308785,
+      "score": 0.2233984113075485,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical buzzing that revs up and down",
+      "clip_similarity": 0.3268224000930786,
+      "visual": 0.011295970871945284,
+      "scene_support": 0.6024330786557406,
+      "object_support": 0.5735290044748356,
+      "score": 0.3573070132879509,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Nonstop machine buzzing concurrent with oscillating wood filing",
+      "clip_similarity": 0.3267902731895447,
+      "visual": 0.009024555725525397,
+      "scene_support": 0.1288761532190238,
+      "object_support": 0.0,
+      "score": 0.042272668255917294,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine cutting into an object",
+      "clip_similarity": 0.3266626298427582,
+      "visual": 0.0,
+      "scene_support": 0.8521664244490489,
+      "object_support": 0.8587790034857031,
+      "score": 0.5132836283804256,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "artists loft",
+      0.0674799457192421
+    ],
+    [
+      "art studio",
+      0.0632222592830658
+    ],
+    [
+      "carrousel",
+      0.062231872230768204
+    ],
+    [
+      "jewelry shop",
+      0.038924623280763626
+    ],
+    [
+      "art school",
+      0.027894260361790657
+    ]
+  ],
+  "top_objects": [
+    [
+      "crane (machine)",
+      0.2593242824077606
+    ],
+    [
+      "sewing machine",
+      0.23736460506916046
+    ],
+    [
+      "chime",
+      0.055647533386945724
+    ],
+    [
+      "rotisserie",
+      0.03602515906095505
+    ],
+    [
+      "mousetrap",
+      0.03373430296778679
+    ]
+  ]
+}

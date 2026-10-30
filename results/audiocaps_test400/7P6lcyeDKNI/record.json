@@ -1,0 +1,305 @@
+{
+  "id": "7P6lcyeDKNI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\7P6lcyeDKNI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\7P6lcyeDKNI.wav",
+  "gt_captions": [
+    "Dirt shuffling followed by gears cranking and a branch snapping then a man talking",
+    "Walking on gravel and then a man speaks briefly",
+    "A bicycle peddling on dirt and gravel followed by a man speaking then laughing",
+    "Rustling with rattling followed by a man speaking",
+    "A bicycle pedaling on dirt followed by a twig snapping then a man talking and laughing"
+  ],
+  "top_scene": [
+    "forest road",
+    0.08866114169359207
+  ],
+  "top_object": [
+    "mountain bike",
+    0.8353203535079956
+  ],
+  "env_probs": {
+    "indoor": 0.14803947508335114,
+    "outdoor": 0.8519605249166489
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "Dirt-bike engine revving",
+    "casv": "A dirt bike accelerates and decelerates"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.11167651414871216,
+    "clap_gt_audio_baseline": 0.1265968382358551,
+    "clap_text_casv": 0.023791521787643433,
+    "clap_gt_audio_casv": 0.21977399289608002
+  },
+  "verdicts": [
+    {
+      "caption": "Dirt-bike engine revving",
+      "clip_similarity": 0.3142426013946533,
+      "visual": 1.0,
+      "scene_support": 0.6172862782121035,
+      "object_support": 0.9609630042886138,
+      "score": 0.8734747847502152,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike speeds by, followed by several other dirt bikes racing together",
+      "clip_similarity": 0.31297117471694946,
+      "visual": 0.946876957310551,
+      "scene_support": 0.4342096849722886,
+      "object_support": 0.5030109286063887,
+      "score": 0.6599169669978237,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical whoosh followed by a soft bleep",
+      "clip_similarity": 0.30930832028388977,
+      "visual": 0.7938347285883456,
+      "scene_support": 0.9511266034893583,
+      "object_support": 0.23497770126194087,
+      "score": 0.6733651828607281,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small motor run, some humming",
+      "clip_similarity": 0.3075519800186157,
+      "visual": 0.720450914542654,
+      "scene_support": 0.8317429301658169,
+      "object_support": 0.07283934982835277,
+      "score": 0.5595550498153125,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike motor accelerating",
+      "clip_similarity": 0.3072595000267029,
+      "visual": 0.7082304480630175,
+      "scene_support": 0.3166840940249863,
+      "object_support": 0.5531599861723865,
+      "score": 0.5442454032844188,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike motor, with men yelling in the background",
+      "clip_similarity": 0.30533501505851746,
+      "visual": 0.6278211732594178,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.25112846930376714,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dirt bikes approach and decelerate",
+      "clip_similarity": 0.3042314648628235,
+      "visual": 0.5817123844603084,
+      "scene_support": 0.8385795637267717,
+      "object_support": 0.5761213544215847,
+      "score": 0.6570952292286303,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dirt bike accelerates and decelerates",
+      "clip_similarity": 0.3035613000392914,
+      "visual": 0.5537114032367924,
+      "scene_support": 0.7228504638623665,
+      "object_support": 0.9260380122463369,
+      "score": 0.7161511041273279,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Footsteps on gravel followed by a big crash",
+      "clip_similarity": 0.3018530011177063,
+      "visual": 0.4823348636933602,
+      "scene_support": 0.9183388781169426,
+      "object_support": 0.07165715733017534,
+      "score": 0.48993275611147946,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dirt bike revs its engine and then idles",
+      "clip_similarity": 0.30035650730133057,
+      "visual": 0.41980801390647743,
+      "scene_support": 0.3754431281982807,
+      "object_support": 0.7110610639732483,
+      "score": 0.4938744632140497,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A few clip-clops then a slam into something hard and a fart",
+      "clip_similarity": 0.29717937111854553,
+      "visual": 0.28706017714322,
+      "scene_support": 0.7948201252136888,
+      "object_support": 0.1482525524610756,
+      "score": 0.39774587415971735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike engine rumbles and then revs up",
+      "clip_similarity": 0.2950863838195801,
+      "visual": 0.19961049909162112,
+      "scene_support": 0.5700626820704454,
+      "object_support": 0.707591154434591,
+      "score": 0.4631403505881594,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whooshing followed by a crash and gurgling water",
+      "clip_similarity": 0.2944805324077606,
+      "visual": 0.17429667566951695,
+      "scene_support": 0.8980212739148178,
+      "object_support": 0.27932326838234034,
+      "score": 0.4229220329569542,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle speeds by and away with a small turn in some gravel",
+      "clip_similarity": 0.2936154007911682,
+      "visual": 0.13814954693124837,
+      "scene_support": 0.8603443282411596,
+      "object_support": 0.34449308448192656,
+      "score": 0.4167110425894252,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small motor run with a high pitched squeal",
+      "clip_similarity": 0.2931971251964569,
+      "visual": 0.12067305956201071,
+      "scene_support": 0.9000425026940314,
+      "object_support": 0.21147828825097803,
+      "score": 0.38172546110830713,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some air whooshes",
+      "clip_similarity": 0.2929810881614685,
+      "visual": 0.11164655033938131,
+      "scene_support": 0.8605916337396164,
+      "object_support": 0.005846616170777872,
+      "score": 0.3045900951088708,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike engine is running",
+      "clip_similarity": 0.29263848066329956,
+      "visual": 0.09733164483195302,
+      "scene_support": 0.7232524528379951,
+      "object_support": 1.0,
+      "score": 0.5559083937841798,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small engine revving with single foot step on dirt",
+      "clip_similarity": 0.29107099771499634,
+      "visual": 0.03183871076195493,
+      "scene_support": 1.0,
+      "object_support": 0.4203354907604845,
+      "score": 0.43883613153292733,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical fork revving up and dumping and banging",
+      "clip_similarity": 0.29101505875587463,
+      "visual": 0.029501456270180144,
+      "scene_support": 0.6687845922092186,
+      "object_support": 0.42110764660179556,
+      "score": 0.3387682541513763,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small motor run, something beeps, and then metal hits metal",
+      "clip_similarity": 0.29030898213386536,
+      "visual": 0.0,
+      "scene_support": 0.8593983612014345,
+      "object_support": 0.33897983701214024,
+      "score": 0.3595134594640724,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "forest road",
+      0.08866114169359207
+    ],
+    [
+      "raceway",
+      0.08774662017822266
+    ],
+    [
+      "driveway",
+      0.06093887612223625
+    ],
+    [
+      "mountain path",
+      0.05546960607171059
+    ],
+    [
+      "forest path",
+      0.046777669340372086
+    ]
+  ],
+  "top_objects": [
+    [
+      "mountain bike",
+      0.8353203535079956
+    ],
+    [
+      "unicycle",
+      0.016235630959272385
+    ],
+    [
+      "swing",
+      0.010476414114236832
+    ],
+    [
+      "snowmobile",
+      0.006051891483366489
+    ],
+    [
+      "horizontal bar",
+      0.005261746700853109
+    ]
+  ]
+}

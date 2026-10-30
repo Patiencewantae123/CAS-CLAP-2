@@ -1,0 +1,283 @@
+{
+  "id": "tfOIhQpYYe8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\tfOIhQpYYe8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\tfOIhQpYYe8.wav",
+  "gt_captions": [
+    "A man talking as a helicopter flies by",
+    "An aircraft motor is running and whirring is present, helicopter rotors slap rhythmically, and an adult male speaks in the background",
+    "A helicopter flying as a man talks in the background",
+    "Loud rustling and the chop of a helicopter blade",
+    "A helicopter is flying above while a man is talking"
+  ],
+  "top_scene": [
+    "heliport",
+    0.8128218054771423
+  ],
+  "top_object": [
+    "military aircraft",
+    0.5861647725105286
+  ],
+  "env_probs": {
+    "indoor": 0.046582940965890884,
+    "outdoor": 0.9534170590341091
+  },
+  "status": "ACCEPT",
+  "n_rejected": 2,
+  "prompts": {
+    "baseline": "A helicopter flying by followed by a man faintly talking in the background",
+    "casv": "Aircraft is soaring and strong sounds of wind gusts are heard from the rotor blade"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4686985909938812,
+    "clap_gt_audio_baseline": 0.2638523578643799,
+    "clap_text_casv": 0.13486193120479584,
+    "clap_gt_audio_casv": 0.14929655194282532
+  },
+  "verdicts": [
+    {
+      "caption": "A helicopter flying by followed by a man faintly talking in the background",
+      "clip_similarity": 0.31705909967422485,
+      "visual": 1.0,
+      "scene_support": 0.6582774909090601,
+      "object_support": 0.7597327536317906,
+      "score": 0.8254030733622553,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Aircraft is soaring and strong sounds of wind gusts are heard from the rotor blade",
+      "clip_similarity": 0.31632745265960693,
+      "visual": 0.9538895264426193,
+      "scene_support": 0.6148703229757635,
+      "object_support": 0.9401956492706741,
+      "score": 0.848075602250979,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter flying followed by a man speaking as wind blows into a microphone",
+      "clip_similarity": 0.3149047791957855,
+      "visual": 0.864228602768131,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3456914411072524,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An approaching helicopter with muffled speech in background",
+      "clip_similarity": 0.3110044598579407,
+      "visual": 0.618419396826172,
+      "scene_support": 0.761938839910267,
+      "object_support": 0.7917997210309982,
+      "score": 0.7134893270128484,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter aircraft is taking off",
+      "clip_similarity": 0.3102682828903198,
+      "visual": 0.5720234327604115,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8288093731041646,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.30983492732048035,
+      "visual": 0.5447121335344288,
+      "scene_support": 0.35206379839476215,
+      "object_support": 0.43375265243133354,
+      "score": 0.4536297886616002,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying with a woman speaking in the background",
+      "clip_similarity": 0.3083764910697937,
+      "visual": 0.45279733742536393,
+      "scene_support": 0.6344588459241755,
+      "object_support": 0.5387978365063584,
+      "score": 0.5330959396993057,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An helicopter flies moving further",
+      "clip_similarity": 0.30827581882476807,
+      "visual": 0.4464526865220307,
+      "scene_support": 0.8570121068131297,
+      "object_support": 0.9387288361947441,
+      "score": 0.7173033575111745,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter is flying with loud engine sounds",
+      "clip_similarity": 0.30796167254447937,
+      "visual": 0.42665429541130356,
+      "scene_support": 0.9247887699603575,
+      "object_support": 0.8536176937573267,
+      "score": 0.7041836572798267,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter hovers overhead with loud booming wind",
+      "clip_similarity": 0.30744117498397827,
+      "visual": 0.3938510603530691,
+      "scene_support": 0.7382752144578436,
+      "object_support": 0.6585015061358341,
+      "score": 0.576573440319331,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying followed by wind blowing heavily into a microphone",
+      "clip_similarity": 0.30666476488113403,
+      "visual": 0.3449194897984099,
+      "scene_support": 0.6187131085366071,
+      "object_support": 0.6089266370880385,
+      "score": 0.5062597196067576,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying by as leaves rustle and wind blows into a microphone followed by a kid talking",
+      "clip_similarity": 0.3059098422527313,
+      "visual": 0.29734212093152546,
+      "scene_support": 0.1923792397842128,
+      "object_support": 0.20827039218886795,
+      "score": 0.2391317379645344,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying by in the distance as wind blows into a microphone followed by camera muffling",
+      "clip_similarity": 0.30530279874801636,
+      "visual": 0.2590845145816155,
+      "scene_support": 0.6220513373726185,
+      "object_support": 0.6462339184757608,
+      "score": 0.48411938258716003,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Large helicopter approaching",
+      "clip_similarity": 0.30482131242752075,
+      "visual": 0.22873987870409848,
+      "scene_support": 0.8869797183486215,
+      "object_support": 0.8484641866124557,
+      "score": 0.6121291229699626,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter is buzzing very close by",
+      "clip_similarity": 0.30462485551834106,
+      "visual": 0.21635860613015737,
+      "scene_support": 0.8510793181858722,
+      "object_support": 0.8243545132139306,
+      "score": 0.5891735918720038,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying and a machine gun firing",
+      "clip_similarity": 0.3042775094509125,
+      "visual": 0.1944678701093316,
+      "scene_support": 0.8096644697779866,
+      "object_support": 0.8722399875354275,
+      "score": 0.5823584852377568,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks in the background while a small sized helicopter flies",
+      "clip_similarity": 0.3029903173446655,
+      "visual": 0.11334536650783127,
+      "scene_support": 0.698617820365914,
+      "object_support": 0.7878815420456737,
+      "score": 0.49128795532660885,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying closer and closer followed by a man speaking",
+      "clip_similarity": 0.30295294523239136,
+      "visual": 0.11099006981369866,
+      "scene_support": 0.7322005723406081,
+      "object_support": 0.8116554881215593,
+      "score": 0.5075528460641296,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter running idle as wind blows heavily into a microphone",
+      "clip_similarity": 0.30285000801086426,
+      "visual": 0.10450267365617552,
+      "scene_support": 0.8121651684276603,
+      "object_support": 0.6029870457479486,
+      "score": 0.46634673371515284,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter running continuously",
+      "clip_similarity": 0.3011918365955353,
+      "visual": 0.0,
+      "scene_support": 0.9456493024970462,
+      "object_support": 0.8905380540428247,
+      "score": 0.5508562069619612,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "heliport",
+      0.8128218054771423
+    ],
+    [
+      "airfield",
+      0.02590279094874859
+    ],
+    [
+      "landing deck",
+      0.021581333130598068
+    ],
+    [
+      "embassy",
+      0.013511309400200844
+    ],
+    [
+      "rice paddy",
+      0.009203233756124973
+    ]
+  ],
+  "top_objects": [
+    [
+      "military aircraft",
+      0.5861647725105286
+    ],
+    [
+      "missile",
+      0.03418460860848427
+    ],
+    [
+      "crane (bird)",
+      0.030959773808717728
+    ],
+    [
+      "kite",
+      0.023354601114988327
+    ],
+    [
+      "amphibious vehicle",
+      0.019171399995684624
+    ]
+  ]
+}

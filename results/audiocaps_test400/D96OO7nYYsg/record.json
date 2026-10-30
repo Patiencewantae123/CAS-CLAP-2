@@ -1,0 +1,283 @@
+{
+  "id": "D96OO7nYYsg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\D96OO7nYYsg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\D96OO7nYYsg.wav",
+  "gt_captions": [
+    "A muffled vehicle engine running as police sirens wail in the distance",
+    "A mid-size motor vehicle engine is operating with a whine and accelerates, then it slows and switches gears",
+    "A vehicle accelerating then revving",
+    "A automobile running and then accelerating.",
+    "A muffled vehicle engine accelerating then revving as vehicles pass by"
+  ],
+  "top_scene": [
+    "driveway",
+    0.28220877051353455
+  ],
+  "top_object": [
+    "moving van",
+    0.2687457501888275
+  ],
+  "env_probs": {
+    "indoor": 0.11507980525493622,
+    "outdoor": 0.8849201947450638
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A car driving quickly down a road followed by speaking",
+    "casv": "A car driving quickly down a road followed by speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.33816441893577576,
+    "clap_gt_audio_baseline": 0.531004011631012,
+    "clap_text_casv": 0.33816441893577576,
+    "clap_gt_audio_casv": 0.531004011631012
+  },
+  "verdicts": [
+    {
+      "caption": "A car driving quickly down a road followed by speaking",
+      "clip_similarity": 0.33597254753112793,
+      "visual": 1.0,
+      "scene_support": 0.9532035389029516,
+      "object_support": 0.7646820616352249,
+      "score": 0.915365680161453,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man pretends to scream followed by laughter as a car drives off",
+      "clip_similarity": 0.3342971205711365,
+      "visual": 0.8253763146941336,
+      "scene_support": 0.13021751613525845,
+      "object_support": 0.0,
+      "score": 0.369215780718231,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by a car speeding by",
+      "clip_similarity": 0.33402982354164124,
+      "visual": 0.797516913194466,
+      "scene_support": 0.7617468869022951,
+      "object_support": 0.5158576817986306,
+      "score": 0.702288135888064,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle runs over something as it passes by",
+      "clip_similarity": 0.33305734395980835,
+      "visual": 0.696158887736148,
+      "scene_support": 1.0,
+      "object_support": 0.906814392086934,
+      "score": 0.8505078727205395,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A police car siren running and driving away",
+      "clip_similarity": 0.33251041173934937,
+      "visual": 0.6391541228435289,
+      "scene_support": 0.1554885870331677,
+      "object_support": 0.2798487535667665,
+      "score": 0.38626285131739185,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car driving past",
+      "clip_similarity": 0.3321482539176941,
+      "visual": 0.6014077244686865,
+      "scene_support": 0.869423414499375,
+      "object_support": 1.0,
+      "score": 0.801390114137287,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car accelerating down road",
+      "clip_similarity": 0.33214640617370605,
+      "visual": 0.6012151408035088,
+      "scene_support": 0.8677315528113543,
+      "object_support": 0.5644165929700083,
+      "score": 0.6701305000558123,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car speeds down the road and turns quickly",
+      "clip_similarity": 0.33053097128868103,
+      "visual": 0.43284421223962377,
+      "scene_support": 0.9781627104057435,
+      "object_support": 0.7603663210467478,
+      "score": 0.6946963943315969,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car speeding by",
+      "clip_similarity": 0.3304741084575653,
+      "visual": 0.4269176052531854,
+      "scene_support": 0.9032399512320267,
+      "object_support": 0.9628617050737404,
+      "score": 0.7305975389930042,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle hits something as it passes by",
+      "clip_similarity": 0.3301829397678375,
+      "visual": 0.39657014704694693,
+      "scene_support": 0.9490082995081327,
+      "object_support": 0.9275033786190594,
+      "score": 0.7215815622569364,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Police siren and the engine of several cars running at the same time",
+      "clip_similarity": 0.3299356997013092,
+      "visual": 0.37080121017090245,
+      "scene_support": 0.23260089921365734,
+      "object_support": 0.10235702535825682,
+      "score": 0.24880786143993525,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car speeding then stopping quickly",
+      "clip_similarity": 0.3298770487308502,
+      "visual": 0.36468823189558236,
+      "scene_support": 0.7175606579344462,
+      "object_support": 0.6504550087927121,
+      "score": 0.5562799927763804,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car accelerating at high speed and a man shouts",
+      "clip_similarity": 0.3296009600162506,
+      "visual": 0.33591250489224633,
+      "scene_support": 0.46567783006585023,
+      "object_support": 0.4947830265034788,
+      "score": 0.42250325892769725,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Police car siren",
+      "clip_similarity": 0.3294116258621216,
+      "visual": 0.31617889158782125,
+      "scene_support": 0.0,
+      "object_support": 0.042451417788007526,
+      "score": 0.13920698197153078,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A police car siren sounds slowly and then picks up speed",
+      "clip_similarity": 0.32915523648262024,
+      "visual": 0.28945635495033206,
+      "scene_support": 0.15489799975259833,
+      "object_support": 0.19840783078997282,
+      "score": 0.22177429114290417,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car revving its engine, and then coming to a stop",
+      "clip_similarity": 0.32901617884635925,
+      "visual": 0.2749628810516311,
+      "scene_support": 0.6173422802252414,
+      "object_support": 0.7212707571481295,
+      "score": 0.5115690636326637,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A move of a car heard and a person talk",
+      "clip_similarity": 0.3286727964878082,
+      "visual": 0.23917338121004666,
+      "scene_support": 0.7815053285219964,
+      "object_support": 0.8008406507731856,
+      "score": 0.5703731462725732,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young kid yelling followed by a woman speaking before a vehicle accelerates and drives by",
+      "clip_similarity": 0.32804226875305176,
+      "visual": 0.17345575856220763,
+      "scene_support": 0.4783092742418751,
+      "object_support": 0.19318094774884606,
+      "score": 0.2708293700220994,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A police car siren sounds as it passes by",
+      "clip_similarity": 0.3263973593711853,
+      "visual": 0.0020128099199224697,
+      "scene_support": 0.36381331666019284,
+      "object_support": 0.3715816758057665,
+      "score": 0.22142362170775678,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle speeds by, and a police siren goes off",
+      "clip_similarity": 0.3263780474662781,
+      "visual": 0.0,
+      "scene_support": 0.7349071738304855,
+      "object_support": 0.6369223204189648,
+      "score": 0.41154884827483507,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "driveway",
+      0.28220877051353455
+    ],
+    [
+      "street",
+      0.09614057838916779
+    ],
+    [
+      "field road",
+      0.0873916819691658
+    ],
+    [
+      "forest road",
+      0.08361684530973434
+    ],
+    [
+      "crosswalk",
+      0.06996183842420578
+    ]
+  ],
+  "top_objects": [
+    [
+      "moving van",
+      0.2687457501888275
+    ],
+    [
+      "car mirror",
+      0.11166829615831375
+    ],
+    [
+      "tow truck",
+      0.07091058790683746
+    ],
+    [
+      "pickup truck",
+      0.06701628118753433
+    ],
+    [
+      "convertible",
+      0.03528257831931114
+    ]
+  ]
+}

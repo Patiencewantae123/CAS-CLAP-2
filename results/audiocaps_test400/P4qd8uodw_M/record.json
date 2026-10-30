@@ -1,0 +1,287 @@
+{
+  "id": "P4qd8uodw_M",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\P4qd8uodw_M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\P4qd8uodw_M.wav",
+  "gt_captions": [
+    "Men speak with some light clicks then vibrations and then digital clicks",
+    "A male speaks then a click followed by a whine and a series of loud beeps",
+    "Muffled man speech with tapping and clicks",
+    "A man talking faintly in the background followed by a metal click then a small horn honking twice",
+    "Low speech from a man followed by machine making a beeping noise"
+  ],
+  "top_scene": [
+    "assembly line",
+    0.2293313592672348
+  ],
+  "top_object": [
+    "sewing machine",
+    0.2894187271595001
+  ],
+  "env_probs": {
+    "indoor": 0.7514657974243164,
+    "outdoor": 0.2485342025756836
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "The gentle drone of a fan blows with an echo as a toilet flushes",
+    "casv": "A repetitive mechanical droning is heard"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.24732781946659088,
+    "clap_gt_audio_baseline": 0.3024354875087738,
+    "clap_text_casv": -0.0995212197303772,
+    "clap_gt_audio_casv": 0.13406285643577576
+  },
+  "verdicts": [
+    {
+      "caption": "The gentle drone of a fan blows with an echo as a toilet flushes",
+      "clip_similarity": 0.29826819896698,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine tapping and clicking",
+      "clip_similarity": 0.2970154285430908,
+      "visual": 0.8628452849396058,
+      "scene_support": 0.19245040881914743,
+      "object_support": 0.649428046229101,
+      "score": 0.5977016504903168,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The constant drone of an airplane flying",
+      "clip_similarity": 0.2958924174308777,
+      "visual": 0.7398967652682341,
+      "scene_support": 0.6601340056565479,
+      "object_support": 0.37849723774601296,
+      "score": 0.6075480791280619,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.75)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A repetitive mechanical droning is heard",
+      "clip_similarity": 0.2950504422187805,
+      "visual": 0.6477163720365694,
+      "scene_support": 0.998416497071208,
+      "object_support": 0.395682350514379,
+      "score": 0.6773162030903039,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Something mechanical is making continuous tapping and buzzing sounds",
+      "clip_similarity": 0.2948490381240845,
+      "visual": 0.6256664252200753,
+      "scene_support": 0.8182915242661497,
+      "object_support": 0.4305166057429108,
+      "score": 0.6249090090907483,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Machine drone with conversation",
+      "clip_similarity": 0.29315459728240967,
+      "visual": 0.44015713605189144,
+      "scene_support": 0.68560995155858,
+      "object_support": 0.43459259375058384,
+      "score": 0.5121236180135057,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine actuates multiple times nearby",
+      "clip_similarity": 0.2929471731185913,
+      "visual": 0.41744810529681614,
+      "scene_support": 0.7730920166667126,
+      "object_support": 0.9244051021151289,
+      "score": 0.6762283777532789,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical grinding sound from a device",
+      "clip_similarity": 0.2926947772502899,
+      "visual": 0.38981552175303275,
+      "scene_support": 1.0,
+      "object_support": 0.6027474980716269,
+      "score": 0.6367504581227011,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine actuates multiple times quickly",
+      "clip_similarity": 0.2926734387874603,
+      "visual": 0.38747936284202217,
+      "scene_support": 0.7385341995323847,
+      "object_support": 0.9007201420533295,
+      "score": 0.6467680476125232,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.2926523685455322,
+      "visual": 0.38517256905698793,
+      "scene_support": 0.47858635874190003,
+      "object_support": 0.7394478999892095,
+      "score": 0.519479305242128,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine hums quickly and continuously",
+      "clip_similarity": 0.2924783527851105,
+      "visual": 0.36612112788186085,
+      "scene_support": 0.6254109534339982,
+      "object_support": 0.8675525045592728,
+      "score": 0.5943374885507257,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine stops and starts and something smacks against metal",
+      "clip_similarity": 0.2916089594364166,
+      "visual": 0.27093896621705393,
+      "scene_support": 0.5378198331676393,
+      "object_support": 0.7760944256574485,
+      "score": 0.5025498641343479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming of a sewing machine with short bursts of vibrations",
+      "clip_similarity": 0.2911285161972046,
+      "visual": 0.21833950000978838,
+      "scene_support": 0.897520096717605,
+      "object_support": 0.9158836562794427,
+      "score": 0.6313569259030296,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sewing machine running",
+      "clip_similarity": 0.29086506366729736,
+      "visual": 0.18949642071742265,
+      "scene_support": 0.496826660130701,
+      "object_support": 0.8167353433152462,
+      "score": 0.46986716932075323,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is being used in an articulate way",
+      "clip_similarity": 0.29026544094085693,
+      "visual": 0.12384905020131426,
+      "scene_support": 0.6027291328737961,
+      "object_support": 1.0,
+      "score": 0.5303583599426646,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy helicopter engine starting up then flying",
+      "clip_similarity": 0.28969132900238037,
+      "visual": 0.060994629444738095,
+      "scene_support": 0.14957025107471655,
+      "object_support": 0.23427665701876366,
+      "score": 0.13955192420593932,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.75)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sewing machine running fast then stopping",
+      "clip_similarity": 0.2895106077194214,
+      "visual": 0.04120906012020125,
+      "scene_support": 0.6019343520994495,
+      "object_support": 0.8220360341742425,
+      "score": 0.443674739930188,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A smaller drill is droning on making a hole and then some squeaky mechanical movements",
+      "clip_similarity": 0.28932929039001465,
+      "visual": 0.021358234960161312,
+      "scene_support": 0.5981047535380963,
+      "object_support": 0.27305611785210304,
+      "score": 0.2698915554011243,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sewing machine ending with beeping and female voice",
+      "clip_similarity": 0.2891557514667511,
+      "visual": 0.0023589984534366985,
+      "scene_support": 0.35800440076118295,
+      "object_support": 0.7671219139833079,
+      "score": 0.3384814938047219,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sewing machine running and stopping",
+      "clip_similarity": 0.2891342043876648,
+      "visual": 0.0,
+      "scene_support": 0.626948190538088,
+      "object_support": 0.7920174691736726,
+      "score": 0.4256896979135282,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "assembly line",
+      0.2293313592672348
+    ],
+    [
+      "landing deck",
+      0.08227138221263885
+    ],
+    [
+      "cockpit",
+      0.07651661336421967
+    ],
+    [
+      "home office",
+      0.043458204716444016
+    ],
+    [
+      "repair shop",
+      0.03325263038277626
+    ]
+  ],
+  "top_objects": [
+    [
+      "sewing machine",
+      0.2894187271595001
+    ],
+    [
+      "crane (machine)",
+      0.1757943034172058
+    ],
+    [
+      "printer",
+      0.0716233178973198
+    ],
+    [
+      "sidewinder",
+      0.04837438091635704
+    ],
+    [
+      "ram",
+      0.030524414032697678
+    ]
+  ]
+}

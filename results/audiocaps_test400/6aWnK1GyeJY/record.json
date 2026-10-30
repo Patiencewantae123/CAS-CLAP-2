@@ -1,0 +1,283 @@
+{
+  "id": "6aWnK1GyeJY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\6aWnK1GyeJY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\6aWnK1GyeJY.wav",
+  "gt_captions": [
+    "Crying and then sneezing followed by more crying and a female speech.",
+    "A baby cries and women speak",
+    "A baby is crying and a person sneezes then another person speaks",
+    "Crying and then a sneeze and speech",
+    "A baby cries while electronic speech occurs in the background, an adult female speaks, a sneeze occurs, and an adult female speaks once more"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.10807211697101593
+  ],
+  "top_object": [
+    "sweatshirt",
+    0.0677151158452034
+  ],
+  "env_probs": {
+    "indoor": 0.6788957118988037,
+    "outdoor": 0.3211042881011963
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Girl crying loudly",
+    "casv": "Girl crying loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.04331052675843239,
+    "clap_gt_audio_baseline": 0.45643436908721924,
+    "clap_text_casv": 0.04331052675843239,
+    "clap_gt_audio_casv": 0.45643436908721924
+  },
+  "verdicts": [
+    {
+      "caption": "Girl crying loudly",
+      "clip_similarity": 0.31650492548942566,
+      "visual": 1.0,
+      "scene_support": 0.855293396536137,
+      "object_support": 0.7552226598554287,
+      "score": 0.8831548169174697,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female sneezing",
+      "clip_similarity": 0.3141346275806427,
+      "visual": 0.8706345630537361,
+      "scene_support": 0.40792439383476164,
+      "object_support": 0.4255822374733841,
+      "score": 0.5983058146139382,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female's speech followed by snoring in the background and television playing",
+      "clip_similarity": 0.3073083758354187,
+      "visual": 0.4980733603230964,
+      "scene_support": 0.847404906034078,
+      "object_support": 0.7168580423478667,
+      "score": 0.668508228643822,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Girl crying and talking",
+      "clip_similarity": 0.30725160241127014,
+      "visual": 0.494974796722842,
+      "scene_support": 0.6102580026426146,
+      "object_support": 0.5698993392855511,
+      "score": 0.5520371212675865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female sneezing and talking",
+      "clip_similarity": 0.3055936396121979,
+      "visual": 0.40448698033997993,
+      "scene_support": 0.5617690962872396,
+      "object_support": 0.5262555173768814,
+      "score": 0.4882021762352282,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person crying like a baby then laughing",
+      "clip_similarity": 0.3052299916744232,
+      "visual": 0.3846399078726287,
+      "scene_support": 0.6568417681906176,
+      "object_support": 0.69727478136109,
+      "score": 0.5600909280145637,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman fake sneezing",
+      "clip_similarity": 0.3038262724876404,
+      "visual": 0.3080281261741604,
+      "scene_support": 0.21779522270039423,
+      "object_support": 0.21048450108291372,
+      "score": 0.25169516760465654,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Prelude of gasping air followed by a sneeze",
+      "clip_similarity": 0.30242499709129333,
+      "visual": 0.2315497209666217,
+      "scene_support": 0.8183776545420142,
+      "object_support": 0.7511023330622242,
+      "score": 0.5634638846679202,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice sneezing",
+      "clip_similarity": 0.301780641078949,
+      "visual": 0.19638224401066362,
+      "scene_support": 0.572009093354595,
+      "object_support": 0.5813573204053845,
+      "score": 0.42456282173225934,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A recording of a sneeze repeated",
+      "clip_similarity": 0.3011223077774048,
+      "visual": 0.16045191858829116,
+      "scene_support": 0.632904056699233,
+      "object_support": 0.5719971990459393,
+      "score": 0.4256511441588682,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person crying and talking",
+      "clip_similarity": 0.30080991983413696,
+      "visual": 0.14340249934531663,
+      "scene_support": 0.8145037604158749,
+      "object_support": 0.8496332029572227,
+      "score": 0.5566020887500559,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring followed by a girl giggling",
+      "clip_similarity": 0.30068132281303406,
+      "visual": 0.13638396814579026,
+      "scene_support": 0.47884425770398725,
+      "object_support": 0.40793291418022976,
+      "score": 0.3205867388235812,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Adult female sneezing",
+      "clip_similarity": 0.2998625338077545,
+      "visual": 0.09169633751408993,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03667853500563597,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person crying",
+      "clip_similarity": 0.2991870641708374,
+      "visual": 0.05483075011263807,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6219323000450552,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman sobbing and crying as a man is speaking",
+      "clip_similarity": 0.2989388108253479,
+      "visual": 0.04128165048527898,
+      "scene_support": 0.7239556631577359,
+      "object_support": 0.728422258674733,
+      "score": 0.45222603674385226,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman crying and talking",
+      "clip_similarity": 0.29886314272880554,
+      "visual": 0.03715185889417877,
+      "scene_support": 0.5885726053258766,
+      "object_support": 0.5814858307364728,
+      "score": 0.3658782743763763,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person making snoring noises",
+      "clip_similarity": 0.29865893721580505,
+      "visual": 0.02600678918869683,
+      "scene_support": 0.8853233537162915,
+      "object_support": 0.8447955029380317,
+      "score": 0.5294383726717756,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Young woman makes fake sneeze sound then speaks",
+      "clip_similarity": 0.2985297739505768,
+      "visual": 0.01895735368029655,
+      "scene_support": 0.3167407105517523,
+      "object_support": 0.1847144671790326,
+      "score": 0.15801949479135408,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young infant crying hard",
+      "clip_similarity": 0.2984101176261902,
+      "visual": 0.012426785252463806,
+      "scene_support": 0.7128132309710989,
+      "object_support": 0.5689043837444141,
+      "score": 0.3894859985156394,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Baby crying and female singing",
+      "clip_similarity": 0.2981824278831482,
+      "visual": 0.0,
+      "scene_support": 0.39459595543027126,
+      "object_support": 0.33841396547470004,
+      "score": 0.21990297627149138,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.10807211697101593
+    ],
+    [
+      "berth",
+      0.07978516817092896
+    ],
+    [
+      "closet",
+      0.055301111191511154
+    ],
+    [
+      "bedroom",
+      0.05409006401896477
+    ],
+    [
+      "wild field",
+      0.01843283325433731
+    ]
+  ],
+  "top_objects": [
+    [
+      "sweatshirt",
+      0.0677151158452034
+    ],
+    [
+      "pajamas",
+      0.04967419058084488
+    ],
+    [
+      "harmonica",
+      0.04139105603098869
+    ],
+    [
+      "pillow",
+      0.030354280024766922
+    ],
+    [
+      "pretzel",
+      0.02357923425734043
+    ]
+  ]
+}

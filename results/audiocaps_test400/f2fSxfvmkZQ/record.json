@@ -1,0 +1,285 @@
+{
+  "id": "f2fSxfvmkZQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\f2fSxfvmkZQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\f2fSxfvmkZQ.wav",
+  "gt_captions": [
+    "A man speaks, a power tool starts and increases in frequency, a clunking noise",
+    "A drill is drilling followed by speech",
+    "A man talking as metal thumps followed by plastic rustling then a power tool drilling while a metal pot clangs against a hard surface",
+    "Brief speech followed by rustling and then vibrating",
+    "A man talking as a metal thumps followed by a power tool sanding as a metal pot clanks"
+  ],
+  "top_scene": [
+    "repair shop",
+    0.21645745635032654
+  ],
+  "top_object": [
+    "Dutch oven",
+    0.5800132155418396
+  ],
+  "env_probs": {
+    "indoor": 0.6179497838020325,
+    "outdoor": 0.38205021619796753
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Sharp ringing from metal being drilled into by a power tool",
+    "casv": "Some water running, someone stirs a metal pot with a metal utensil"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07862462103366852,
+    "clap_gt_audio_baseline": 0.4048871397972107,
+    "clap_text_casv": -0.035816337913274765,
+    "clap_gt_audio_casv": 0.1939946413040161
+  },
+  "verdicts": [
+    {
+      "caption": "Sharp ringing from metal being drilled into by a power tool",
+      "clip_similarity": 0.3301904797554016,
+      "visual": 1.0,
+      "scene_support": 0.6244059163648041,
+      "object_support": 0.28555613697191873,
+      "score": 0.6729886160010169,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A light hammer tapping in the background is followed by a slow drill",
+      "clip_similarity": 0.32709747552871704,
+      "visual": 0.7905240934430796,
+      "scene_support": 0.7816782666945273,
+      "object_support": 0.4594825883190021,
+      "score": 0.6885578938812906,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some water running, someone stirs a metal pot with a metal utensil",
+      "clip_similarity": 0.3266069293022156,
+      "visual": 0.7573015020809534,
+      "scene_support": 0.5997071828550513,
+      "object_support": 0.8035769655903507,
+      "score": 0.7239058453660019,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man pours liquid into a pot",
+      "clip_similarity": 0.32404664158821106,
+      "visual": 0.5839041994485776,
+      "scene_support": 0.06685711000136031,
+      "object_support": 0.3132681235165246,
+      "score": 0.34759924983479656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man puts ingredients into a frying pan and it begins to sizzle",
+      "clip_similarity": 0.3239656090736389,
+      "visual": 0.5784162148851741,
+      "scene_support": 0.0,
+      "object_support": 0.4847808274170576,
+      "score": 0.3768007341791869,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sander grinding then a small object falling",
+      "clip_similarity": 0.32299378514289856,
+      "visual": 0.5125987494096228,
+      "scene_support": 0.5522548182303916,
+      "object_support": 0.3932838936715908,
+      "score": 0.4887011133344438,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sizzling sounds are in the background while a series of clanking pots and pans are followed by a low voice male narrating",
+      "clip_similarity": 0.3210863471031189,
+      "visual": 0.3834161543336711,
+      "scene_support": 0.7152376638389992,
+      "object_support": 0.8980811426932531,
+      "score": 0.6373621036931442,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Metal scrapping and clanking as compressed air sprays and pressurized air hisses as a small motor hum in the background",
+      "clip_similarity": 0.3208473026752472,
+      "visual": 0.3672267007908026,
+      "scene_support": 1.0,
+      "object_support": 0.47832259358136076,
+      "score": 0.5903874583907293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A metal grinding and vibrating sound is present",
+      "clip_similarity": 0.32046642899513245,
+      "visual": 0.3414317604744008,
+      "scene_support": 0.9090457779217556,
+      "object_support": 0.8030194263098471,
+      "score": 0.6501922654592411,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A metal pot clacking followed by a man speaking as food and oil sizzles",
+      "clip_similarity": 0.319835364818573,
+      "visual": 0.2986924912099401,
+      "scene_support": 0.5846759962397492,
+      "object_support": 0.6800473273859656,
+      "score": 0.4988939935716905,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool drilling while releasing compressed air",
+      "clip_similarity": 0.3190748989582062,
+      "visual": 0.2471894010648991,
+      "scene_support": 0.4599253278883555,
+      "object_support": 0.0,
+      "score": 0.23685335879246627,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.3188844919204712,
+      "visual": 0.23429394929013456,
+      "scene_support": 0.6981015033991377,
+      "object_support": 0.6663338915776458,
+      "score": 0.5030481982090889,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gas stove is turned on and a skillet begins to sizzle",
+      "clip_similarity": 0.31802356243133545,
+      "visual": 0.17598688858119754,
+      "scene_support": 0.5889093169049078,
+      "object_support": 1.0,
+      "score": 0.5470675505039513,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool motor running as high pressure liquid sprays",
+      "clip_similarity": 0.3173636198043823,
+      "visual": 0.13129180576692515,
+      "scene_support": 0.5346750379460915,
+      "object_support": 0.0843665224312266,
+      "score": 0.2382291904199655,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drill motor stopping and starting followed by a man speaks",
+      "clip_similarity": 0.31733742356300354,
+      "visual": 0.1295176467263839,
+      "scene_support": 0.7434521664214837,
+      "object_support": 0.377294614669713,
+      "score": 0.38803109301791255,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metallic clamping as a power tool engine operates in the background followed by a series of squeaking then metal clanking and padded thuds",
+      "clip_similarity": 0.31732213497161865,
+      "visual": 0.12848221602354243,
+      "scene_support": 0.6560076364318006,
+      "object_support": 0.12055412128552145,
+      "score": 0.2843614137246136,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine motor churning as a power tool drills followed by hammering on wood in the background",
+      "clip_similarity": 0.3167543411254883,
+      "visual": 0.09002797479442765,
+      "scene_support": 0.6237070631852092,
+      "object_support": 0.3027095647597949,
+      "score": 0.3139361783012723,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.31624525785446167,
+      "visual": 0.05554994893489906,
+      "scene_support": 0.5530971817284719,
+      "object_support": 0.341671746421998,
+      "score": 0.2906506580191006,
+      "conflicts": [
+        "names 'a dog', not visible in image (z=-0.71)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High pitched vibrations of a power tool with some rustling and scraping",
+      "clip_similarity": 0.3156980872154236,
+      "visual": 0.018492429043730295,
+      "scene_support": 0.6556677927785795,
+      "object_support": 0.39114849284611114,
+      "score": 0.32144185730489927,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A high pitched drill is being used and clicking",
+      "clip_similarity": 0.3154250383377075,
+      "visual": 0.0,
+      "scene_support": 0.48360266059716184,
+      "object_support": 0.27744347511949236,
+      "score": 0.22831384071499625,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "repair shop",
+      0.21645745635032654
+    ],
+    [
+      "lock chamber",
+      0.10462886840105057
+    ],
+    [
+      "restaurant kitchen",
+      0.09190347790718079
+    ],
+    [
+      "galley",
+      0.051468197256326675
+    ],
+    [
+      "hardware store",
+      0.04064246267080307
+    ]
+  ],
+  "top_objects": [
+    [
+      "Dutch oven",
+      0.5800132155418396
+    ],
+    [
+      "frying pan",
+      0.060420144349336624
+    ],
+    [
+      "oil filter",
+      0.04358853027224541
+    ],
+    [
+      "stove",
+      0.041916679590940475
+    ],
+    [
+      "potter's wheel",
+      0.03280246630311012
+    ]
+  ]
+}

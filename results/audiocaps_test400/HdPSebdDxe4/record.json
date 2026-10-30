@@ -1,0 +1,285 @@
+{
+  "id": "HdPSebdDxe4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\HdPSebdDxe4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\HdPSebdDxe4.wav",
+  "gt_captions": [
+    "Male speech and then growling followed by male speech",
+    "Man speaks followed by buzzing and then a loud burp",
+    "A male speaking and then growling followed by more male speaking",
+    "A beep is followed by retching and muffled speech",
+    "A man is speaking followed by a beep and burping sound"
+  ],
+  "top_scene": [
+    "nursery",
+    0.21459166705608368
+  ],
+  "top_object": [
+    "diaper",
+    0.2289782017469406
+  ],
+  "env_probs": {
+    "indoor": 0.6857501268386841,
+    "outdoor": 0.3142498731613159
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "An infant crying with muffled speech in the background",
+    "casv": "An infant crying with muffled speech in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.20975294709205627,
+    "clap_gt_audio_baseline": 0.5529323220252991,
+    "clap_text_casv": 0.20975294709205627,
+    "clap_gt_audio_casv": 0.5529323220252991
+  },
+  "verdicts": [
+    {
+      "caption": "An infant crying with muffled speech in the background",
+      "clip_similarity": 0.31471192836761475,
+      "visual": 1.0,
+      "scene_support": 0.8343414294569149,
+      "object_support": 0.7916758592955531,
+      "score": 0.8878051866257404,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant crying while a muffled aircraft engine runs",
+      "clip_similarity": 0.3125699758529663,
+      "visual": 0.8664181087917745,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3465672435167098,
+      "conflicts": [
+        "names 'an airplane', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries, and then a helicopter flies closely by, after which a baby cries again",
+      "clip_similarity": 0.3064988851547241,
+      "visual": 0.4877973076201079,
+      "scene_support": 0.7268574762167241,
+      "object_support": 0.6557129536580194,
+      "score": 0.6098900520104662,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant crying as pressurized air releases",
+      "clip_similarity": 0.30634862184524536,
+      "visual": 0.4784262048892548,
+      "scene_support": 0.6723265281610715,
+      "object_support": 0.6906019414261385,
+      "score": 0.6002490228318649,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries nearby, followed by a person talking",
+      "clip_similarity": 0.30505967140197754,
+      "visual": 0.3980413986398705,
+      "scene_support": 0.8098765742278115,
+      "object_support": 0.7252591750522945,
+      "score": 0.61975728423998,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant crying as a man is speaking while an air ventilation system hums in the background",
+      "clip_similarity": 0.30377256870269775,
+      "visual": 0.31777182610117893,
+      "scene_support": 0.5590608696824474,
+      "object_support": 0.4779986260290155,
+      "score": 0.43822657915391044,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks while a zipper opens and a baby cries",
+      "clip_similarity": 0.30347344279289246,
+      "visual": 0.2991169752266108,
+      "scene_support": 0.4182863050185018,
+      "object_support": 0.42510388265248894,
+      "score": 0.3726638463919415,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries with some light rattling",
+      "clip_similarity": 0.30205926299095154,
+      "visual": 0.2109222971654366,
+      "scene_support": 0.89845983583879,
+      "object_support": 0.8624767496652836,
+      "score": 0.6126498945173967,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man laughing as a baby is whimpering during plastic tapping",
+      "clip_similarity": 0.3018730580806732,
+      "visual": 0.19930971290078564,
+      "scene_support": 0.6846795228668434,
+      "object_support": 0.6525426026618047,
+      "score": 0.4808905228189087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries followed by several people laughing and talking",
+      "clip_similarity": 0.3018478751182556,
+      "visual": 0.19773918894053755,
+      "scene_support": 0.8685696147031184,
+      "object_support": 0.7836095593446153,
+      "score": 0.5747494277905352,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and cries followed by a man talking",
+      "clip_similarity": 0.3018166422843933,
+      "visual": 0.19579136750818252,
+      "scene_support": 0.8872163034895824,
+      "object_support": 0.8358552769590432,
+      "score": 0.5952380211378606,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries with faint sounds of people talking",
+      "clip_similarity": 0.30151939392089844,
+      "visual": 0.17725360895254416,
+      "scene_support": 0.8923404814656056,
+      "object_support": 0.8373502624216081,
+      "score": 0.5898086667471818,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and then a woman speaks while pumping something with air",
+      "clip_similarity": 0.3008732199668884,
+      "visual": 0.13695526515834414,
+      "scene_support": 0.6380101006727552,
+      "object_support": 0.5584567000778888,
+      "score": 0.4137221462885309,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries quickly and then slows down a moment",
+      "clip_similarity": 0.3006981313228607,
+      "visual": 0.1260359417660867,
+      "scene_support": 0.8625351322086329,
+      "object_support": 0.8363236372385524,
+      "score": 0.5600720075405903,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and cries as a voice from a TV is in the background",
+      "clip_similarity": 0.3005450367927551,
+      "visual": 0.11648827125272054,
+      "scene_support": 0.9282057441410062,
+      "object_support": 0.8300183262727284,
+      "score": 0.5740625296252087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and a surface is tapped",
+      "clip_similarity": 0.29992949962615967,
+      "visual": 0.07810057672613593,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6312402306904543,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vacuum cleaner works then stops followed by a baby crying and people talking far away",
+      "clip_similarity": 0.299742192029953,
+      "visual": 0.06641922395671673,
+      "scene_support": 0.655886508220776,
+      "object_support": 0.524289232594108,
+      "score": 0.3806204118271519,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries nearby as women talk in the background, and then a woman talks in the foreground as the baby continues to cry",
+      "clip_similarity": 0.298755407333374,
+      "visual": 0.00487884662207246,
+      "scene_support": 0.3986995912361972,
+      "object_support": 0.2639434223065645,
+      "score": 0.20074444271165748,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crying infant followed by a man crying",
+      "clip_similarity": 0.29872703552246094,
+      "visual": 0.0031094515804675144,
+      "scene_support": 0.7182823525014072,
+      "object_support": 0.7132228010684665,
+      "score": 0.4306953267031491,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An auto-tuned infant crying",
+      "clip_similarity": 0.2986771762371063,
+      "visual": 0.0,
+      "scene_support": 0.887612474389068,
+      "object_support": 0.8860848477029939,
+      "score": 0.5321091966276186,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "nursery",
+      0.21459166705608368
+    ],
+    [
+      "sandbox",
+      0.1137266606092453
+    ],
+    [
+      "playroom",
+      0.04607056453824043
+    ],
+    [
+      "beauty salon",
+      0.04552679508924484
+    ],
+    [
+      "ball pit",
+      0.04201258346438408
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.2289782017469406
+    ],
+    [
+      "infant bed",
+      0.21283884346485138
+    ],
+    [
+      "bib",
+      0.08414211124181747
+    ],
+    [
+      "cradle",
+      0.06504976004362106
+    ],
+    [
+      "oxygen mask",
+      0.03295517340302467
+    ]
+  ]
+}

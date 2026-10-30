@@ -1,0 +1,286 @@
+{
+  "id": "8ipe6b1LwHQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\8ipe6b1LwHQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\8ipe6b1LwHQ.wav",
+  "gt_captions": [
+    "The clinking of glasses with some rustling",
+    "Glass clinks, thumps occur, and then silverware clatters",
+    "A glass link occurs, a thump, and then clattering",
+    "Dishes and silverware rattle and click from movement",
+    "Porcelain dishes clank followed by metal rattling"
+  ],
+  "top_scene": [
+    "restaurant kitchen",
+    0.23294498026371002
+  ],
+  "top_object": [
+    "teapot",
+    0.18723976612091064
+  ],
+  "env_probs": {
+    "indoor": 0.9434667825698853,
+    "outdoor": 0.056533217430114746
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A man pours liquid into a pot",
+    "casv": "The person pours a coup of water into the cooking pot"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.12996624410152435,
+    "clap_gt_audio_baseline": 0.09579092264175415,
+    "clap_text_casv": 0.3274727761745453,
+    "clap_gt_audio_casv": 0.11061863601207733
+  },
+  "verdicts": [
+    {
+      "caption": "A man pours liquid into a pot",
+      "clip_similarity": 0.3604171872138977,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.42664753405040257,
+      "score": 0.5279942602151207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A middle aged male speaking while moving pots, pans, and silverware around",
+      "clip_similarity": 0.3444615602493286,
+      "visual": 0.6298865910607071,
+      "scene_support": 0.32713451213218053,
+      "object_support": 0.0,
+      "score": 0.350094990063937,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.3407345116138458,
+      "visual": 0.5434324091708808,
+      "scene_support": 0.36023683642096804,
+      "object_support": 0.2945355493934222,
+      "score": 0.4138046794126694,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man breathing, then talking, followed by shuffling of dishes across a surface",
+      "clip_similarity": 0.3314242362976074,
+      "visual": 0.3274673616607963,
+      "scene_support": 0.8278737007002945,
+      "object_support": 0.1712201831792223,
+      "score": 0.43071510982817357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing while a sanding sound occurs and a man speaking",
+      "clip_similarity": 0.33101075887680054,
+      "visual": 0.3178761661487624,
+      "scene_support": 0.6608628419966772,
+      "object_support": 0.3247213480993742,
+      "score": 0.42282572348832037,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Liquid pours into a basin of some kind and then a man begins talking as the liquid continues",
+      "clip_similarity": 0.3300536274909973,
+      "visual": 0.29567414545793913,
+      "scene_support": 0.6548887718030347,
+      "object_support": 0.6315575080517388,
+      "score": 0.5042035421396077,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man continuously speaks while tap water runs and stops",
+      "clip_similarity": 0.3286179304122925,
+      "visual": 0.2623711144217043,
+      "scene_support": 0.6657542044924631,
+      "object_support": 0.5766377831090617,
+      "score": 0.4776660420491391,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks then spills some liquid and tap an object",
+      "clip_similarity": 0.327414333820343,
+      "visual": 0.23445198353306348,
+      "scene_support": 0.6946871957197718,
+      "object_support": 0.6440317892227289,
+      "score": 0.49539648889597554,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pots and pans rattle as water stream out of a faucet and a woman speaks the entire time",
+      "clip_similarity": 0.3273496627807617,
+      "visual": 0.23295184699989976,
+      "scene_support": 0.4064009625264705,
+      "object_support": 0.2658660509149153,
+      "score": 0.2948608428323756,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.94)",
+        "names 'a stream or river', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pots clank together while a man speaks",
+      "clip_similarity": 0.32502231001853943,
+      "visual": 0.17896559709927518,
+      "scene_support": 0.680774839192,
+      "object_support": 0.8514014237528316,
+      "score": 0.5312391177231595,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The person pours a coup of water into the cooking pot",
+      "clip_similarity": 0.32493701577186584,
+      "visual": 0.17698707601267857,
+      "scene_support": 0.8412558063480721,
+      "object_support": 1.0,
+      "score": 0.623171572309493,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking with dishes clanging together while he talks",
+      "clip_similarity": 0.3234562575817108,
+      "visual": 0.1426387885533361,
+      "scene_support": 1.0,
+      "object_support": 0.5322138791090986,
+      "score": 0.516719679154064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flows rapidly from a faucet while a man speaks with frying sounds",
+      "clip_similarity": 0.32268279790878296,
+      "visual": 0.12469729387812946,
+      "scene_support": 0.5853814946480326,
+      "object_support": 0.3824907712244528,
+      "score": 0.3402405973129974,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water runs as someone stirs a pot",
+      "clip_similarity": 0.32049283385276794,
+      "visual": 0.07389796997653013,
+      "scene_support": 0.7977960943119826,
+      "object_support": 0.9059368808296493,
+      "score": 0.5406790805331017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rapid, continuous tapping followed by a bell and then a woman speaking",
+      "clip_similarity": 0.3197147250175476,
+      "visual": 0.05584863138465367,
+      "scene_support": 0.665283842353991,
+      "object_support": 0.5986477925368949,
+      "score": 0.40151894302112723,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A click and pouring liquid into container",
+      "clip_similarity": 0.31828057765960693,
+      "visual": 0.022581548320642086,
+      "scene_support": 0.4507677534790985,
+      "object_support": 0.7011671126712617,
+      "score": 0.3546130791733649,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water sloshing and being poured within a hard basin",
+      "clip_similarity": 0.3179773688316345,
+      "visual": 0.015548189293726042,
+      "scene_support": 0.8872113312190589,
+      "object_support": 0.6857398541166859,
+      "score": 0.47810463131821385,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then runs water into a sink",
+      "clip_similarity": 0.3175751268863678,
+      "visual": 0.0062176165803108805,
+      "scene_support": 0.9730675619024164,
+      "object_support": 0.6019359945902469,
+      "score": 0.4749881135799233,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking with pots and pans clanging followed by sawing and a woman talking",
+      "clip_similarity": 0.31731081008911133,
+      "visual": 8.641339476749612e-05,
+      "scene_support": 0.7234162960630218,
+      "object_support": 0.24121751753726994,
+      "score": 0.28942470943799453,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water splashes followed by a man speaking then tapping",
+      "clip_similarity": 0.31730708479881287,
+      "visual": 0.0,
+      "scene_support": 0.6659702077062679,
+      "object_support": 0.5125533272635165,
+      "score": 0.3535570604909353,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "restaurant kitchen",
+      0.23294498026371002
+    ],
+    [
+      "kitchen",
+      0.1984560787677765
+    ],
+    [
+      "utility room",
+      0.0725654661655426
+    ],
+    [
+      "galley",
+      0.06246854364871979
+    ],
+    [
+      "archaelogical excavation",
+      0.04101462662220001
+    ]
+  ],
+  "top_objects": [
+    [
+      "teapot",
+      0.18723976612091064
+    ],
+    [
+      "coffeemaker",
+      0.0669902116060257
+    ],
+    [
+      "coffee mug",
+      0.06458096206188202
+    ],
+    [
+      "cup",
+      0.05745670199394226
+    ],
+    [
+      "mixing bowl",
+      0.0534573569893837
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "hDMHIDJdfDA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\hDMHIDJdfDA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\hDMHIDJdfDA.wav",
+  "gt_captions": [
+    "Snoring occurs in a rhythmic pattern",
+    "A man snoring while someone chuckles in background",
+    "Continuous snoring",
+    "A series of snores followed by subdued laughter and another snore",
+    "Loud snoring repeating"
+  ],
+  "top_scene": [
+    "berth",
+    0.4350535273551941
+  ],
+  "top_object": [
+    "titi",
+    0.11599641293287277
+  ],
+  "env_probs": {
+    "indoor": 0.709681510925293,
+    "outdoor": 0.29031848907470703
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Loud heavy snoring",
+    "casv": "Man softly snoring"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.29898738861083984,
+    "clap_gt_audio_baseline": 0.4024432897567749,
+    "clap_text_casv": 0.33552610874176025,
+    "clap_gt_audio_casv": 0.4658721089363098
+  },
+  "verdicts": [
+    {
+      "caption": "Loud heavy snoring",
+      "clip_similarity": 0.2934252917766571,
+      "visual": 1.0,
+      "scene_support": 0.3041188997783238,
+      "object_support": 0.6229869660476347,
+      "score": 0.6781317597477876,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man snoring and breathing hard",
+      "clip_similarity": 0.2929094731807709,
+      "visual": 0.9590800336665312,
+      "scene_support": 0.29755311185076533,
+      "object_support": 0.23497537037589053,
+      "score": 0.5433905581346092,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man snoring",
+      "clip_similarity": 0.29285940527915955,
+      "visual": 0.9551081395458801,
+      "scene_support": 0.5029290570113188,
+      "object_support": 0.44928477211076995,
+      "score": 0.6677074045549787,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is laughing midst loud snoring",
+      "clip_similarity": 0.2923126816749573,
+      "visual": 0.9117364742819856,
+      "scene_support": 0.26182350137507904,
+      "object_support": 0.6372253852803529,
+      "score": 0.6344092557094237,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man softly snoring",
+      "clip_similarity": 0.2920888662338257,
+      "visual": 0.8939811618735992,
+      "scene_support": 0.6338276048274979,
+      "object_support": 0.8409945375145319,
+      "score": 0.8000391074520486,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud deep snoring",
+      "clip_similarity": 0.2915419340133667,
+      "visual": 0.8505929470508686,
+      "scene_support": 0.6084226397556941,
+      "object_support": 0.7594093734164009,
+      "score": 0.750586782771976,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man snoring and gasping",
+      "clip_similarity": 0.29030007123947144,
+      "visual": 0.7520757875225783,
+      "scene_support": 0.0,
+      "object_support": 0.28077119414552715,
+      "score": 0.3850616732526895,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man snoring in his sleep",
+      "clip_similarity": 0.28798916935920715,
+      "visual": 0.5687515958503163,
+      "scene_support": 0.30949114813489637,
+      "object_support": 0.0,
+      "score": 0.32034798278059545,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud snoring at a slow pace",
+      "clip_similarity": 0.28732168674468994,
+      "visual": 0.5158001002430421,
+      "scene_support": 0.5271576462449054,
+      "object_support": 0.8407448877693982,
+      "score": 0.6166908003015079,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man continuously snoring",
+      "clip_similarity": 0.2866690158843994,
+      "visual": 0.46402362331312713,
+      "scene_support": 0.38472110914681723,
+      "object_support": 0.30959362983277194,
+      "score": 0.3939038710191276,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snores lowly",
+      "clip_similarity": 0.28445756435394287,
+      "visual": 0.2885888427602773,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7154355371041109,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Snoring and breathing",
+      "clip_similarity": 0.28367874026298523,
+      "visual": 0.22680461117993625,
+      "scene_support": 0.8047084079845684,
+      "object_support": 0.7128860255760575,
+      "score": 0.5460001745401623,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud continuous snoring",
+      "clip_similarity": 0.28322333097457886,
+      "visual": 0.1906769242408481,
+      "scene_support": 0.18794947525187777,
+      "object_support": 0.4648096327540466,
+      "score": 0.27209850209811653,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snoring faintly",
+      "clip_similarity": 0.2829134166240692,
+      "visual": 0.1660913724785565,
+      "scene_support": 0.7493065191817917,
+      "object_support": 0.641652942140877,
+      "score": 0.48372438738822315,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring",
+      "clip_similarity": 0.28280889987945557,
+      "visual": 0.15780004350169752,
+      "scene_support": 0.9222667745781352,
+      "object_support": 0.6804716144513667,
+      "score": 0.5439415341095296,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores very close by",
+      "clip_similarity": 0.28269803524017334,
+      "visual": 0.14900513509168456,
+      "scene_support": 0.6264775663411278,
+      "object_support": 0.5029697141324112,
+      "score": 0.3984362381787355,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Snoring then a male speaking",
+      "clip_similarity": 0.2824020981788635,
+      "visual": 0.12552840377140803,
+      "scene_support": 0.02537459846767475,
+      "object_support": 0.2523167123736847,
+      "score": 0.13351875476097105,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snoring and breathing deeply",
+      "clip_similarity": 0.2820422649383545,
+      "visual": 0.09698277900191975,
+      "scene_support": 0.820702366350634,
+      "object_support": 0.6677273675738516,
+      "score": 0.4853220317781135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring and breathing heavy",
+      "clip_similarity": 0.28167596459388733,
+      "visual": 0.06792411790851403,
+      "scene_support": 0.6604828818171375,
+      "object_support": 0.4983828658300295,
+      "score": 0.37482937145755574,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snoring continuously",
+      "clip_similarity": 0.28081974387168884,
+      "visual": 0.0,
+      "scene_support": 0.7472033017740698,
+      "object_support": 0.4941136688824634,
+      "score": 0.37239509119695996,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "berth",
+      0.4350535273551941
+    ],
+    [
+      "bedchamber",
+      0.05750935152173042
+    ],
+    [
+      "hayfield",
+      0.03489848971366882
+    ],
+    [
+      "butte",
+      0.026450101286172867
+    ],
+    [
+      "arch",
+      0.025318225845694542
+    ]
+  ],
+  "top_objects": [
+    [
+      "titi",
+      0.11599641293287277
+    ],
+    [
+      "yawl",
+      0.060054536908864975
+    ],
+    [
+      "wild boar",
+      0.04444211721420288
+    ],
+    [
+      "neck brace",
+      0.04185866191983223
+    ],
+    [
+      "poke bonnet",
+      0.02250932715833187
+    ]
+  ]
+}

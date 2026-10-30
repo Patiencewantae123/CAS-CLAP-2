@@ -1,0 +1,287 @@
+{
+  "id": "466ucPGoNSQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\466ucPGoNSQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\466ucPGoNSQ.wav",
+  "gt_captions": [
+    "A cat meowing repeatedly",
+    "A cat meowing repeatedly",
+    "A speech and then a cat vocalizing repeatedly",
+    "A cat meowing as a man talks followed by wood knocking and a person breathing while a machine hums in the background",
+    "A cat meowing and whining"
+  ],
+  "top_scene": [
+    "veterinarians office",
+    0.3266341984272003
+  ],
+  "top_object": [
+    "hyena",
+    0.08270669728517532
+  ],
+  "env_probs": {
+    "indoor": 0.6180765628814697,
+    "outdoor": 0.3819234371185303
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A cat meowing as children laugh and a man talks in the background followed by a goat screaming",
+    "casv": "Clip-clops of a horse with heavy breathing and wind blowing hard"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.17002886533737183,
+    "clap_gt_audio_baseline": 0.41207557916641235,
+    "clap_text_casv": -0.08686812967061996,
+    "clap_gt_audio_casv": 0.2026369571685791
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meowing as children laugh and a man talks in the background followed by a goat screaming",
+      "clip_similarity": 0.32896947860717773,
+      "visual": 1.0,
+      "scene_support": 0.4655059922611785,
+      "object_support": 0.5301127722760421,
+      "score": 0.6986856293611662,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows while a car drives",
+      "clip_similarity": 0.3281220495700836,
+      "visual": 0.9397506118168045,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.37590024472672184,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.75)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clops of a horse with heavy breathing and wind blowing hard",
+      "clip_similarity": 0.3256075084209442,
+      "visual": 0.7609750929643716,
+      "scene_support": 0.8389752407459729,
+      "object_support": 0.6505818235160282,
+      "score": 0.7512571564643489,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meowing with the wind blowing in the background",
+      "clip_similarity": 0.32409876585006714,
+      "visual": 0.653708510345266,
+      "scene_support": 0.33959548171197984,
+      "object_support": 0.7151661796932067,
+      "score": 0.5779119025596624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing with wind noise in background",
+      "clip_similarity": 0.32170435786247253,
+      "visual": 0.48347406002690935,
+      "scene_support": 0.610296063813707,
+      "object_support": 1.0,
+      "score": 0.6764784431548758,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meowing with music playing",
+      "clip_similarity": 0.3216187357902527,
+      "visual": 0.47738661524933523,
+      "scene_support": 0.3631595361809356,
+      "object_support": 0.6079853668466871,
+      "score": 0.48229811700802094,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows while an insect is heard buzzing",
+      "clip_similarity": 0.3205600380897522,
+      "visual": 0.40211672723035036,
+      "scene_support": 0.2301460707336191,
+      "object_support": 0.3815419595492701,
+      "score": 0.3443530999770069,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows while an object clacks",
+      "clip_similarity": 0.320343554019928,
+      "visual": 0.38672542933118625,
+      "scene_support": 0.5652420151549263,
+      "object_support": 0.5157782394711947,
+      "score": 0.47899624812031083,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing and a wind blowing",
+      "clip_similarity": 0.3192400336265564,
+      "visual": 0.3082687968132555,
+      "scene_support": 0.3939158347359177,
+      "object_support": 0.6421665628854375,
+      "score": 0.43413223801170875,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman briefly saying something while an animal is responding in excitement",
+      "clip_similarity": 0.3190838694572449,
+      "visual": 0.2971660433727792,
+      "scene_support": 0.6292081515926321,
+      "object_support": 0.5148277431175083,
+      "score": 0.46207718576215373,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing and singing",
+      "clip_similarity": 0.3190474510192871,
+      "visual": 0.2945768134673857,
+      "scene_support": 0.543378281935713,
+      "object_support": 0.9510329724939827,
+      "score": 0.5661541017158629,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip clops of a horse getting closer and louder",
+      "clip_similarity": 0.3181462287902832,
+      "visual": 0.23050290811623989,
+      "scene_support": 1.0,
+      "object_support": 0.8333645175969058,
+      "score": 0.6422105185255677,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows while some liquid flow",
+      "clip_similarity": 0.3171335458755493,
+      "visual": 0.15850451843925797,
+      "scene_support": 0.22354185972796137,
+      "object_support": 0.267076752206349,
+      "score": 0.21058739095599632,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing while a woman speaks",
+      "clip_similarity": 0.3167358338832855,
+      "visual": 0.13022851754934262,
+      "scene_support": 0.36850158073751593,
+      "object_support": 0.6223909997724796,
+      "score": 0.3493591811727357,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing, a man cries out in pain",
+      "clip_similarity": 0.3165029287338257,
+      "visual": 0.11366973546206736,
+      "scene_support": 0.7002817073878512,
+      "object_support": 0.7101637248679783,
+      "score": 0.46860152386157583,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The clip-clop of a horse riding around",
+      "clip_similarity": 0.31616145372390747,
+      "visual": 0.08939199711836934,
+      "scene_support": 0.7989290399690294,
+      "object_support": 0.5926314828341855,
+      "score": 0.4532249556883122,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip clops of a horse with people speaking and clapping",
+      "clip_similarity": 0.31592100858688354,
+      "visual": 0.0722971469737581,
+      "scene_support": 0.8190886252590184,
+      "object_support": 0.624099647942138,
+      "score": 0.46187534074985015,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing followed by silence",
+      "clip_similarity": 0.3150326907634735,
+      "visual": 0.00914070197370512,
+      "scene_support": 0.8273619062986507,
+      "object_support": 0.8937442371480918,
+      "score": 0.5199881238235048,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows in an odd manner",
+      "clip_similarity": 0.3149759769439697,
+      "visual": 0.005108537890264961,
+      "scene_support": 0.8420404110108876,
+      "object_support": 0.8419504185177645,
+      "score": 0.5072406640147016,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and a vehicle moves",
+      "clip_similarity": 0.314904123544693,
+      "visual": 0.0,
+      "scene_support": 0.7874158369681473,
+      "object_support": 0.6467371780287154,
+      "score": 0.4302459044990588,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.75)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "veterinarians office",
+      0.3266341984272003
+    ],
+    [
+      "pet shop",
+      0.05904952064156532
+    ],
+    [
+      "farm",
+      0.018961291760206223
+    ],
+    [
+      "carrousel",
+      0.018945712596178055
+    ],
+    [
+      "door elevator",
+      0.018435774371027946
+    ]
+  ],
+  "top_objects": [
+    [
+      "hyena",
+      0.08270669728517532
+    ],
+    [
+      "lynx",
+      0.07293273508548737
+    ],
+    [
+      "cougar",
+      0.05892309173941612
+    ],
+    [
+      "cheetah",
+      0.03835778683423996
+    ],
+    [
+      "wombat",
+      0.033871494233608246
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "fmEft49sPfE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\fmEft49sPfE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\fmEft49sPfE.wav",
+  "gt_captions": [
+    "Man speaking with light wind sounds",
+    "A man is speaking as wind is blowing through the leaves",
+    "A man is speaking with the wind blowing in the background",
+    "A man speaking as wind blows through foliage and on a microphone",
+    "A man speaks with wind blowing and leaves rustling"
+  ],
+  "top_scene": [
+    "tree farm",
+    0.26309898495674133
+  ],
+  "top_object": [
+    "jackfruit",
+    0.13511347770690918
+  ],
+  "env_probs": {
+    "indoor": 0.09921225905418396,
+    "outdoor": 0.900787740945816
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A man is talking with a bee buzzing in the background, followed by a tapping sound",
+    "casv": "Rustling leaves with insects buzzing and a man speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06316476315259933,
+    "clap_gt_audio_baseline": 0.27176499366760254,
+    "clap_text_casv": 0.06595518440008163,
+    "clap_gt_audio_casv": 0.2536308169364929
+  },
+  "verdicts": [
+    {
+      "caption": "A man is talking with a bee buzzing in the background, followed by a tapping sound",
+      "clip_similarity": 0.30472296476364136,
+      "visual": 1.0,
+      "scene_support": 0.38067319539977035,
+      "object_support": 0.35869571799242483,
+      "score": 0.6218106740176585,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while bird chirp in the background followed by a swarm of bees buzzing",
+      "clip_similarity": 0.2970218062400818,
+      "visual": 0.5770833401525988,
+      "scene_support": 0.8545026129335958,
+      "object_support": 0.6071069578460075,
+      "score": 0.6693162072949205,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling leaves with insects buzzing and a man speaking",
+      "clip_similarity": 0.29462796449661255,
+      "visual": 0.44562317721034217,
+      "scene_support": 1.0,
+      "object_support": 0.8631266860234522,
+      "score": 0.7371872766911725,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A spraying sound with a man talking",
+      "clip_similarity": 0.29429298639297485,
+      "visual": 0.4272275267015158,
+      "scene_support": 0.9454275953547265,
+      "object_support": 0.852426208562804,
+      "score": 0.7102471518558655,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A swarm of bees are buzzing then a man speaks",
+      "clip_similarity": 0.2942157983779907,
+      "visual": 0.4229886712906742,
+      "scene_support": 0.7848889814207393,
+      "object_support": 0.7681295774306743,
+      "score": 0.6351010361716938,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks with bees buzzing in the background",
+      "clip_similarity": 0.29357489943504333,
+      "visual": 0.3877930783910025,
+      "scene_support": 0.810008105266328,
+      "object_support": 0.6566294971979085,
+      "score": 0.595108512095672,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking while bees buzzing in the background",
+      "clip_similarity": 0.2932024598121643,
+      "visual": 0.36734019187776384,
+      "scene_support": 0.6939803666618218,
+      "object_support": 0.2994370081958527,
+      "score": 0.4449612892084079,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking as bees buzzing in the background",
+      "clip_similarity": 0.29209649562835693,
+      "visual": 0.30660508597184355,
+      "scene_support": 0.9929854746818454,
+      "object_support": 0.7707765017908559,
+      "score": 0.6517706273305478,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks over the buzzing of bees, then a rooster crows",
+      "clip_similarity": 0.2920018136501312,
+      "visual": 0.30140553244279183,
+      "scene_support": 0.6442076152839921,
+      "object_support": 0.5313195413713445,
+      "score": 0.4732203599737177,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks loudly nearby as bees swarm around",
+      "clip_similarity": 0.29160696268081665,
+      "visual": 0.2797219048990694,
+      "scene_support": 0.618508421489562,
+      "object_support": 0.47802606202446946,
+      "score": 0.44084910701383717,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing while man speaking",
+      "clip_similarity": 0.28973260521888733,
+      "visual": 0.1767897298588903,
+      "scene_support": 0.6543693146925302,
+      "object_support": 0.6235713269288411,
+      "score": 0.4540980844299676,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with insects buzzing nearby",
+      "clip_similarity": 0.2895415723323822,
+      "visual": 0.1662989718729849,
+      "scene_support": 0.6914381413668438,
+      "object_support": 0.6221634689620302,
+      "score": 0.4606000718478561,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking in foreign language with insects buzzing in background",
+      "clip_similarity": 0.28912875056266785,
+      "visual": 0.14362846023168047,
+      "scene_support": 0.28144653470402686,
+      "object_support": 0.0,
+      "score": 0.14188534450388024,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking while a can spraying",
+      "clip_similarity": 0.2889350950717926,
+      "visual": 0.1329936793592291,
+      "scene_support": 0.0,
+      "object_support": 0.0662260929065152,
+      "score": 0.0730652996156462,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking then spraying and clicking sound",
+      "clip_similarity": 0.2880874574184418,
+      "visual": 0.08644482777808692,
+      "scene_support": 0.9768299373707773,
+      "object_support": 1.0,
+      "score": 0.6276269123224679,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is talking while bees are buzzing, followed by a metal ding",
+      "clip_similarity": 0.2876996099948883,
+      "visual": 0.06514580680639069,
+      "scene_support": 0.9923157099440749,
+      "object_support": 0.8706087698954552,
+      "score": 0.5849356666744152,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking with insects buzzing",
+      "clip_similarity": 0.28752416372299194,
+      "visual": 0.05551100302120737,
+      "scene_support": 0.528086908358114,
+      "object_support": 0.5348558383718501,
+      "score": 0.3410872252274722,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking with a machine in use, and bees are buzzing",
+      "clip_similarity": 0.2869356870651245,
+      "visual": 0.02319423122874435,
+      "scene_support": 0.4464803633882894,
+      "object_support": 0.5031570836449292,
+      "score": 0.2941689266014633,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking and grunting as a swarm of insects buzz",
+      "clip_similarity": 0.2866404950618744,
+      "visual": 0.00698347337376885,
+      "scene_support": 0.8216121230691069,
+      "object_support": 0.7816495553893711,
+      "score": 0.4837718928870509,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with buzzing of nearby insects",
+      "clip_similarity": 0.2865133285522461,
+      "visual": 0.0,
+      "scene_support": 0.9204348298614248,
+      "object_support": 0.8510917711458753,
+      "score": 0.5314579803021899,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tree farm",
+      0.26309898495674133
+    ],
+    [
+      "orchard",
+      0.22505636513233185
+    ],
+    [
+      "yard",
+      0.05138057470321655
+    ],
+    [
+      "vegetable garden",
+      0.05015799030661583
+    ],
+    [
+      "outdoor greenhouse",
+      0.04359980300068855
+    ]
+  ],
+  "top_objects": [
+    [
+      "jackfruit",
+      0.13511347770690918
+    ],
+    [
+      "harvester",
+      0.11753717064857483
+    ],
+    [
+      "custard apple",
+      0.04573069140315056
+    ],
+    [
+      "maze",
+      0.029710454866290092
+    ],
+    [
+      "sombrero",
+      0.02631272003054619
+    ]
+  ]
+}

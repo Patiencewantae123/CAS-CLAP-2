@@ -1,0 +1,283 @@
+{
+  "id": "7JWHbs3gu1w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\7JWHbs3gu1w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\7JWHbs3gu1w.wav",
+  "gt_captions": [
+    "A train running on railroad tracks followed by a train horn honking and railroad signal bells chiming",
+    "A hum of a train engine passing with a blowing horn",
+    "A train roars and honks it horn",
+    "A train running on railroad tracks drives by followed by a train whistle blowing and warning signals ringing",
+    "A train running and the horn honking and bells chiming"
+  ],
+  "top_scene": [
+    "railroad track",
+    0.5930485129356384
+  ],
+  "top_object": [
+    "freight car",
+    0.6409944295883179
+  ],
+  "env_probs": {
+    "indoor": 0.12231072038412094,
+    "outdoor": 0.8776892796158791
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Railroad and engine noises made by train get louder as it approaches then train passes by",
+    "casv": "Railroad and engine noises made by train get louder as it approaches then train passes by"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4178464412689209,
+    "clap_gt_audio_baseline": 0.44075167179107666,
+    "clap_text_casv": 0.4178464412689209,
+    "clap_gt_audio_casv": 0.44075167179107666
+  },
+  "verdicts": [
+    {
+      "caption": "Railroad and engine noises made by train get louder as it approaches then train passes by",
+      "clip_similarity": 0.3230113089084625,
+      "visual": 1.0,
+      "scene_support": 0.7176369060103318,
+      "object_support": 0.7004109111783309,
+      "score": 0.8254143451565987,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engines idle and a train horn blows as a train approaches quickly",
+      "clip_similarity": 0.31943923234939575,
+      "visual": 0.6884578195504356,
+      "scene_support": 0.680737441571228,
+      "object_support": 0.7513075575442398,
+      "score": 0.7049966275548145,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A scratching rail car runs by on a track and then blows a horn",
+      "clip_similarity": 0.3187081217765808,
+      "visual": 0.6246932898047451,
+      "scene_support": 0.3676727748306417,
+      "object_support": 0.5090430970682754,
+      "score": 0.5128920774915732,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train running on railroad tracks as a train horn blows followed by metal scrapping and scratching",
+      "clip_similarity": 0.3184162378311157,
+      "visual": 0.5992363435985943,
+      "scene_support": 0.8908605978671077,
+      "object_support": 0.7732431613551909,
+      "score": 0.7389256652061272,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train engine running and then train blows horn",
+      "clip_similarity": 0.316794753074646,
+      "visual": 0.45781695119668964,
+      "scene_support": 0.589573194435724,
+      "object_support": 0.8101364713295258,
+      "score": 0.6030396802082507,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine idles as kids yell and a man talks normally close up",
+      "clip_similarity": 0.3166414499282837,
+      "visual": 0.4444464660747333,
+      "scene_support": 0.0,
+      "object_support": 0.10942896047490007,
+      "score": 0.21060727457236333,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine chugging while train horn blares",
+      "clip_similarity": 0.3162059783935547,
+      "visual": 0.40646638664199125,
+      "scene_support": 0.27304454813969736,
+      "object_support": 0.42066703706147773,
+      "score": 0.37070003021714903,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.3152919411659241,
+      "visual": 0.32674772826516396,
+      "scene_support": 0.3090436183557519,
+      "object_support": 0.47913761870195776,
+      "score": 0.36715346242337843,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train running on tracks gets close and then blasts a horn",
+      "clip_similarity": 0.3152608871459961,
+      "visual": 0.32403932128672724,
+      "scene_support": 0.8915826499109625,
+      "object_support": 0.8258832177800862,
+      "score": 0.6448554888220055,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train running then blowing a horn twice",
+      "clip_similarity": 0.31489184498786926,
+      "visual": 0.29185294545757,
+      "scene_support": 0.5157956399010902,
+      "object_support": 0.6235114137657728,
+      "score": 0.45853329428308687,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train horn and bell gets louder as train approaches",
+      "clip_similarity": 0.3141462504863739,
+      "visual": 0.2268251855856605,
+      "scene_support": 0.1511974308039024,
+      "object_support": 0.0,
+      "score": 0.13608930347543494,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A railroad train sounds its bells and horns",
+      "clip_similarity": 0.31372642517089844,
+      "visual": 0.19020970659790815,
+      "scene_support": 1.0,
+      "object_support": 0.7850801848000472,
+      "score": 0.6116079380791775,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train horn blows while chugging along tracks",
+      "clip_similarity": 0.3132808208465576,
+      "visual": 0.15134588592460127,
+      "scene_support": 0.4303991257893478,
+      "object_support": 0.1718937037849099,
+      "score": 0.2412262032421178,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train is hissing and traveling on railroad and makes a loud engine sound",
+      "clip_similarity": 0.31306391954421997,
+      "visual": 0.1324286248986297,
+      "scene_support": 0.8953318433634667,
+      "object_support": 1.0,
+      "score": 0.6215710029684918,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train running on railroad tracks as a train whistle blows twice",
+      "clip_similarity": 0.31279751658439636,
+      "visual": 0.10919402798860493,
+      "scene_support": 0.9945535500780831,
+      "object_support": 0.6613072950038565,
+      "score": 0.5404358647200238,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train horn sounds as it passes the active railroad crossing",
+      "clip_similarity": 0.31240445375442505,
+      "visual": 0.07491266557152065,
+      "scene_support": 0.5766143306958283,
+      "object_support": 0.3647963147845005,
+      "score": 0.3123882598727069,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train engine hissing then running on tracks",
+      "clip_similarity": 0.31198981404304504,
+      "visual": 0.038749454159822005,
+      "scene_support": 0.8388735186577981,
+      "object_support": 0.849476373848991,
+      "score": 0.5220047494159655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large engine goes by with a fancy horn toot and then continues over metal tracks",
+      "clip_similarity": 0.311746746301651,
+      "visual": 0.017550061342039052,
+      "scene_support": 0.5818684115255804,
+      "object_support": 0.6661401667628132,
+      "score": 0.38142259802333367,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running with faint voices in the background",
+      "clip_similarity": 0.31165438890457153,
+      "visual": 0.009495019858185523,
+      "scene_support": 0.24664656587773073,
+      "object_support": 0.3829101820965907,
+      "score": 0.19266503233557064,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train running and blowing a horn",
+      "clip_similarity": 0.3115455210208893,
+      "visual": 0.0,
+      "scene_support": 0.35003894138219865,
+      "object_support": 0.5489059516485763,
+      "score": 0.2696834679092325,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "railroad track",
+      0.5930485129356384
+    ],
+    [
+      "barndoor",
+      0.07795575261116028
+    ],
+    [
+      "assembly line",
+      0.0349508561193943
+    ],
+    [
+      "junkyard",
+      0.030538102611899376
+    ],
+    [
+      "butte",
+      0.021274875849485397
+    ]
+  ],
+  "top_objects": [
+    [
+      "freight car",
+      0.6409944295883179
+    ],
+    [
+      "electric locomotive",
+      0.2248278707265854
+    ],
+    [
+      "steam locomotive",
+      0.09070241451263428
+    ],
+    [
+      "passenger car",
+      0.004616693593561649
+    ],
+    [
+      "high-speed train",
+      0.00418177992105484
+    ]
+  ]
+}

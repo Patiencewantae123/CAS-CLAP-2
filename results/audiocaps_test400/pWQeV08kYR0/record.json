@@ -1,0 +1,283 @@
+{
+  "id": "pWQeV08kYR0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\pWQeV08kYR0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\pWQeV08kYR0.wav",
+  "gt_captions": [
+    "An emergency siren wailing as a truck drives by",
+    "Emergency sirens going off as a vehicle drives by",
+    "An ambulance sounds the siren",
+    "Emergency vehicle siren loudly then fading into the distance",
+    "Sirens ring as an emergency vehicle speeds past"
+  ],
+  "top_scene": [
+    "crosswalk",
+    0.8856727480888367
+  ],
+  "top_object": [
+    "ambulance",
+    0.2252494841814041
+  ],
+  "env_probs": {
+    "indoor": 0.03268066421151161,
+    "outdoor": 0.9673193357884884
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A vehicle runs over something as it passes by",
+    "casv": "A vehicle runs over something as it passes by"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22902709245681763,
+    "clap_gt_audio_baseline": 0.3569336533546448,
+    "clap_text_casv": 0.22902709245681763,
+    "clap_gt_audio_casv": 0.3569336533546448
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle runs over something as it passes by",
+      "clip_similarity": 0.313572496175766,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 0.7198194497976806,
+      "score": 0.9159458349393041,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car speeding past with a large boom",
+      "clip_similarity": 0.308673232793808,
+      "visual": 0.674219048808087,
+      "scene_support": 0.6423554576693342,
+      "object_support": 0.5008726909256741,
+      "score": 0.6126560641017373,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bus runs while people talk in the background",
+      "clip_similarity": 0.3061226010322571,
+      "visual": 0.5046124821396368,
+      "scene_support": 0.6613561149419985,
+      "object_support": 0.6200579018903078,
+      "score": 0.5862691979055467,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An ambulance driving by",
+      "clip_similarity": 0.3052334189414978,
+      "visual": 0.4454855145270893,
+      "scene_support": 0.7030923525748944,
+      "object_support": 1.0,
+      "score": 0.689121911583304,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car accelerates as it passes by",
+      "clip_similarity": 0.30472713708877563,
+      "visual": 0.4118198446718152,
+      "scene_support": 0.8667863979151772,
+      "object_support": 0.6407666928978898,
+      "score": 0.6169938651126462,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A remote-controlled helicopter flies while a man speaks",
+      "clip_similarity": 0.30407437682151794,
+      "visual": 0.3684139601156539,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.14736558404626157,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle speeds by while people are talking in the background",
+      "clip_similarity": 0.3024113178253174,
+      "visual": 0.25782734751064684,
+      "scene_support": 0.908619208505339,
+      "object_support": 0.6249776393532629,
+      "score": 0.5632099933618393,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle hits something as it passes by",
+      "clip_similarity": 0.30216917395591736,
+      "visual": 0.24172577183522292,
+      "scene_support": 0.9433093678651323,
+      "object_support": 0.7178240502290599,
+      "score": 0.5950303341623469,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle runs while people talk in the background",
+      "clip_similarity": 0.30152803659439087,
+      "visual": 0.19909276291148195,
+      "scene_support": 0.7602272203131847,
+      "object_support": 0.5914989760865562,
+      "score": 0.4851549640845151,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus engine accelerates as people talk nearby",
+      "clip_similarity": 0.30150607228279114,
+      "visual": 0.1976322261394466,
+      "scene_support": 0.4991155646779364,
+      "object_support": 0.5071605443062219,
+      "score": 0.3809357231510261,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An ambulance running as a car is driving",
+      "clip_similarity": 0.3009454905986786,
+      "visual": 0.1603558398680959,
+      "scene_support": 0.48572709347109155,
+      "object_support": 0.8275191260919175,
+      "score": 0.4581162018161411,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus passes on a street",
+      "clip_similarity": 0.3008168935775757,
+      "visual": 0.15180466460170153,
+      "scene_support": 0.8350481999953876,
+      "object_support": 0.6505964200308189,
+      "score": 0.5064152518485425,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle moves to pass by",
+      "clip_similarity": 0.3000008165836334,
+      "visual": 0.0975388865438389,
+      "scene_support": 0.7490204331080925,
+      "object_support": 0.5699165720647749,
+      "score": 0.4346966561693958,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle driving by twice as wind blows into a microphone",
+      "clip_similarity": 0.29934847354888916,
+      "visual": 0.05416074624114909,
+      "scene_support": 0.4748564378127811,
+      "object_support": 0.3501077921486006,
+      "score": 0.2691535674848742,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fire truck runs and blows its siren",
+      "clip_similarity": 0.2992250323295593,
+      "visual": 0.04595241067836681,
+      "scene_support": 0.40397621134198936,
+      "object_support": 0.5608558667618965,
+      "score": 0.3078305877025125,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorcycle accelerates before a man yells \u201cgo, go, go!",
+      "clip_similarity": 0.2991518974304199,
+      "visual": 0.041089239391291076,
+      "scene_support": 0.4090395170775582,
+      "object_support": 0.2164626523850083,
+      "score": 0.20408634659528638,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks and a car accelerates followed by objects hitting and several people talking",
+      "clip_similarity": 0.2990124821662903,
+      "visual": 0.03181869526702853,
+      "scene_support": 0.72641457761583,
+      "object_support": 0.4680231554870458,
+      "score": 0.37105879803767416,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus speeding up",
+      "clip_similarity": 0.29900798201560974,
+      "visual": 0.0315194536760145,
+      "scene_support": 0.6419884804317244,
+      "object_support": 0.7564553441748111,
+      "score": 0.43214092885236643,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus slows down and applies its air brake as it passes by",
+      "clip_similarity": 0.2987472116947174,
+      "visual": 0.014179295256327176,
+      "scene_support": 0.6557594958603353,
+      "object_support": 0.6153262704865018,
+      "score": 0.386997448006582,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bicycle being bounced off the ground",
+      "clip_similarity": 0.29853397607803345,
+      "visual": 0.0,
+      "scene_support": 0.6614330850303268,
+      "object_support": 0.4800002950683281,
+      "score": 0.3424300140295965,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "crosswalk",
+      0.8856727480888367
+    ],
+    [
+      "street",
+      0.016377916559576988
+    ],
+    [
+      "plaza",
+      0.011990203522145748
+    ],
+    [
+      "hospital",
+      0.00525855366140604
+    ],
+    [
+      "embassy",
+      0.004657114390283823
+    ]
+  ],
+  "top_objects": [
+    [
+      "ambulance",
+      0.2252494841814041
+    ],
+    [
+      "tram",
+      0.1151045635342598
+    ],
+    [
+      "moving van",
+      0.05778346210718155
+    ],
+    [
+      "trolleybus",
+      0.04419490322470665
+    ],
+    [
+      "scooter",
+      0.028474625200033188
+    ]
+  ]
+}

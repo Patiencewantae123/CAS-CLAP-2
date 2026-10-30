@@ -1,0 +1,285 @@
+{
+  "id": "lfO471Rn61k",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\lfO471Rn61k.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\lfO471Rn61k.wav",
+  "gt_captions": [
+    "Spray and a high pitch tone",
+    "Humming and hissing with some mechanical ringing",
+    "Steam escapes with a hissing noise",
+    "Loud hissing followed by a low frequency, consistent beep then more hissing",
+    "Steam hisses while machinery runs"
+  ],
+  "top_scene": [
+    "bus interior",
+    0.8285112977027893
+  ],
+  "top_object": [
+    "stretcher",
+    0.07590251415967941
+  ],
+  "env_probs": {
+    "indoor": 0.9762570261955261,
+    "outdoor": 0.023742973804473877
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Bus running and man screaming",
+    "casv": "Bus running and man screaming"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.10011259466409683,
+    "clap_gt_audio_baseline": 0.1436077058315277,
+    "clap_text_casv": -0.10011259466409683,
+    "clap_gt_audio_casv": 0.1436077058315277
+  },
+  "verdicts": [
+    {
+      "caption": "Bus running and man screaming",
+      "clip_similarity": 0.3175995647907257,
+      "visual": 1.0,
+      "scene_support": 0.7644612461126302,
+      "object_support": 0.7513901933454499,
+      "score": 0.8547554318374241,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks and laughs as a bus accelerates",
+      "clip_similarity": 0.31386199593544006,
+      "visual": 0.8385168665483772,
+      "scene_support": 0.5092153489114213,
+      "object_support": 0.6069672650454757,
+      "score": 0.6702615308064199,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple people laughing and then a bus takes off",
+      "clip_similarity": 0.311133474111557,
+      "visual": 0.7206300072364304,
+      "scene_support": 0.5926382043130725,
+      "object_support": 0.7711309872138001,
+      "score": 0.697382760352634,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bus taking off and person coughing",
+      "clip_similarity": 0.3094342052936554,
+      "visual": 0.6472124291486507,
+      "scene_support": 0.6554037824489897,
+      "object_support": 0.6634140962558362,
+      "score": 0.654530335270908,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bus accelerating with man talking in background",
+      "clip_similarity": 0.30868691205978394,
+      "visual": 0.6149253308542336,
+      "scene_support": 0.6965291166087101,
+      "object_support": 0.6691141549684722,
+      "score": 0.6556631138148481,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bus engine accelerates while several men speak",
+      "clip_similarity": 0.30803367495536804,
+      "visual": 0.5867019646522265,
+      "scene_support": 0.6571237581873092,
+      "object_support": 0.6779742496244616,
+      "score": 0.6352101882044218,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Men speak and laugh on a moving bus",
+      "clip_similarity": 0.30778589844703674,
+      "visual": 0.5759966830881273,
+      "scene_support": 0.5768528476081911,
+      "object_support": 0.3967620029617478,
+      "score": 0.5224831284062326,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man and woman have a loud discussion on a crowded bus",
+      "clip_similarity": 0.3076251447200775,
+      "visual": 0.5690512550442556,
+      "scene_support": 0.7116702024283569,
+      "object_support": 0.36025909006054074,
+      "score": 0.5491992897643715,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks on an intercom and then a bus accelerates",
+      "clip_similarity": 0.30265194177627563,
+      "visual": 0.35418206446861167,
+      "scene_support": 0.511581611581554,
+      "object_support": 0.7323869346490638,
+      "score": 0.51486338965663,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus engine is running while someone talks then wind blows into the microphone",
+      "clip_similarity": 0.30197814106941223,
+      "visual": 0.32507023972929056,
+      "scene_support": 0.562803019000951,
+      "object_support": 0.7369407911600243,
+      "score": 0.5199512389400088,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.98)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bus moving with human speech and kids laugh",
+      "clip_similarity": 0.3018537759780884,
+      "visual": 0.31969699701014387,
+      "scene_support": 0.5686412018863284,
+      "object_support": 0.49665473391181886,
+      "score": 0.4474675795435017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The sound of a bus while someone speaking",
+      "clip_similarity": 0.2998494505882263,
+      "visual": 0.2330993296644717,
+      "scene_support": 0.6581692223417129,
+      "object_support": 0.7829005976694856,
+      "score": 0.5255606778691482,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks which is followed by a bus engine idling, after which the bus accelerates",
+      "clip_similarity": 0.29927006363868713,
+      "visual": 0.20806668847038343,
+      "scene_support": 0.3648139966625789,
+      "object_support": 0.4843497454657305,
+      "score": 0.3379757980266462,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talking followed by a man talking during a muffled bus engine running",
+      "clip_similarity": 0.2964079976081848,
+      "visual": 0.0844099991501701,
+      "scene_support": 0.5227960146791232,
+      "object_support": 0.0,
+      "score": 0.190602804063805,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus engine accelerates as people talk nearby",
+      "clip_similarity": 0.29621946811676025,
+      "visual": 0.07626450827039012,
+      "scene_support": 0.4064635029327718,
+      "object_support": 0.6338928605628095,
+      "score": 0.34261271235683044,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus accelerates and squeaks",
+      "clip_similarity": 0.2960323691368103,
+      "visual": 0.06818082320190155,
+      "scene_support": 0.5899847990087963,
+      "object_support": 1.0,
+      "score": 0.5042677689833995,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring with some mechanical humming",
+      "clip_similarity": 0.29520702362060547,
+      "visual": 0.03252144532889705,
+      "scene_support": 0.0,
+      "object_support": 0.2776121077642867,
+      "score": 0.09629221046084482,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus accelerates then stops with breaks squealing",
+      "clip_similarity": 0.29487311840057373,
+      "visual": 0.018094938876627876,
+      "scene_support": 0.5594658858998278,
+      "object_support": 0.9668853962232395,
+      "score": 0.4651433601875713,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Inside a bus kids talk to one another",
+      "clip_similarity": 0.2945329248905182,
+      "visual": 0.0033967443788902253,
+      "scene_support": 0.8263452358803298,
+      "object_support": 0.617865374924191,
+      "score": 0.4346218809929123,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Inside a public bus, some people speak",
+      "clip_similarity": 0.29445430636405945,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.6390415815075509,
+      "score": 0.49171247445226524,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bus interior",
+      0.8285112977027893
+    ],
+    [
+      "train interior",
+      0.04550589248538017
+    ],
+    [
+      "indoor escalator",
+      0.019387073814868927
+    ],
+    [
+      "car interior",
+      0.011769265867769718
+    ],
+    [
+      "cockpit",
+      0.007810990791767836
+    ]
+  ],
+  "top_objects": [
+    [
+      "stretcher",
+      0.07590251415967941
+    ],
+    [
+      "school bus",
+      0.062178656458854675
+    ],
+    [
+      "seat belt",
+      0.04722720384597778
+    ],
+    [
+      "tram",
+      0.04006790742278099
+    ],
+    [
+      "passenger car",
+      0.03544015809893608
+    ]
+  ]
+}

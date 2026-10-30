@@ -1,0 +1,283 @@
+{
+  "id": "CxaPpRJRkn0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\CxaPpRJRkn0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\CxaPpRJRkn0.wav",
+  "gt_captions": [
+    "Footsteps walking on a hard surface followed by a person snoring",
+    "Footsteps shuffling on a hard surface followed by a person snoring",
+    "Male snoring loudly",
+    "A couple of loud snores one after the other",
+    "Footsteps shuffling as a person snores"
+  ],
+  "top_scene": [
+    "bedroom",
+    0.12606799602508545
+  ],
+  "top_object": [
+    "couch",
+    0.07691078633069992
+  ],
+  "env_probs": {
+    "indoor": 0.8484195470809937,
+    "outdoor": 0.15158045291900635
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Man snoring fairly loud",
+    "casv": "Camera noise followed by a man and a woman laughing as a man snores loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4345114529132843,
+    "clap_gt_audio_baseline": 0.6095621585845947,
+    "clap_text_casv": 0.38182908296585083,
+    "clap_gt_audio_casv": 0.6562178134918213
+  },
+  "verdicts": [
+    {
+      "caption": "Man snoring fairly loud",
+      "clip_similarity": 0.317984014749527,
+      "visual": 1.0,
+      "scene_support": 0.09095774196619079,
+      "object_support": 0.1354107110532004,
+      "score": 0.4679105359058174,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man snoring and breathing hard",
+      "clip_similarity": 0.3178441524505615,
+      "visual": 0.9857185895699753,
+      "scene_support": 0.6643398938035017,
+      "object_support": 0.5985595406015267,
+      "score": 0.7731572661494985,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man snoring with speech in the background",
+      "clip_similarity": 0.31773585081100464,
+      "visual": 0.9746598541123341,
+      "scene_support": 0.19242485100218013,
+      "object_support": 0.15179846831329857,
+      "score": 0.49313093743957725,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud snores separated three seconds apart, followed by a man speaking",
+      "clip_similarity": 0.3172416090965271,
+      "visual": 0.9241925814569899,
+      "scene_support": 0.4579567273647527,
+      "object_support": 0.6070038910505836,
+      "score": 0.689165218107397,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Male snoring loudly",
+      "clip_similarity": 0.3165624141693115,
+      "visual": 0.8548396422496036,
+      "scene_support": 0.3943758111587584,
+      "object_support": 0.39546677372581984,
+      "score": 0.5788886323652149,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man snoring and gasping",
+      "clip_similarity": 0.3157722055912018,
+      "visual": 0.7741510427285924,
+      "scene_support": 0.5395833865399304,
+      "object_support": 0.4833335424332419,
+      "score": 0.6165354957833886,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person snoring repeatedly in white noise",
+      "clip_similarity": 0.31460222601890564,
+      "visual": 0.6546838339789841,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.26187353359159365,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Camera noise followed by a man and a woman laughing as a man snores loudly",
+      "clip_similarity": 0.31402045488357544,
+      "visual": 0.595278887675018,
+      "scene_support": 0.9427841406418689,
+      "object_support": 1.0,
+      "score": 0.8209467972625679,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man snoring and groaning",
+      "clip_similarity": 0.3132890462875366,
+      "visual": 0.520594384207371,
+      "scene_support": 0.61096071379649,
+      "object_support": 0.5712424298365257,
+      "score": 0.5628986967728531,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man snoring loudly",
+      "clip_similarity": 0.3132358193397522,
+      "visual": 0.5151593535174022,
+      "scene_support": 0.6192191515888844,
+      "object_support": 0.5671640854776528,
+      "score": 0.561978712526922,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple people talking at once, followed by snoring",
+      "clip_similarity": 0.3129909336566925,
+      "visual": 0.4901539519611453,
+      "scene_support": 0.39025007487619306,
+      "object_support": 0.3466556859343271,
+      "score": 0.4171333090276142,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.3127771317958832,
+      "visual": 0.4683225352927035,
+      "scene_support": 1.0,
+      "object_support": 0.743524026475633,
+      "score": 0.7103862220597713,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A snoring sound, scrap, getting louder",
+      "clip_similarity": 0.3123014569282532,
+      "visual": 0.4197511328052488,
+      "scene_support": 0.6331368365330814,
+      "object_support": 0.7068735919361516,
+      "score": 0.5699035816628695,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male snoring then women speaking and giggling",
+      "clip_similarity": 0.31199464201927185,
+      "visual": 0.38842210651564624,
+      "scene_support": 0.7324598164430441,
+      "object_support": 0.6016386861117633,
+      "score": 0.5555983933727007,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man giving a speech, laughing and snoring noises",
+      "clip_similarity": 0.311674565076828,
+      "visual": 0.3557388872489798,
+      "scene_support": 0.2202044990724639,
+      "object_support": 0.29059928631214077,
+      "score": 0.29553669051497333,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man lightly snoring",
+      "clip_similarity": 0.3104640245437622,
+      "visual": 0.23212997818075584,
+      "scene_support": 0.684919818625482,
+      "object_support": 0.6785545938951191,
+      "score": 0.5018943150284827,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking followed by snoring loudly",
+      "clip_similarity": 0.3096127510070801,
+      "visual": 0.14520600470467943,
+      "scene_support": 0.5856711344729993,
+      "object_support": 0.6401728121129785,
+      "score": 0.4258355858576651,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Snoring and female laughing",
+      "clip_similarity": 0.30920645594596863,
+      "visual": 0.10371900952195466,
+      "scene_support": 0.2972341082535621,
+      "object_support": 0.19768902781088526,
+      "score": 0.18996454462811607,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man snores loudly",
+      "clip_similarity": 0.30858153104782104,
+      "visual": 0.0399076105645311,
+      "scene_support": 0.7222836194106953,
+      "object_support": 0.877691787929678,
+      "score": 0.4959556664279244,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud snoring is followed by male laughter",
+      "clip_similarity": 0.3081907033920288,
+      "visual": 0.0,
+      "scene_support": 0.36162763430699474,
+      "object_support": 0.4334900985219026,
+      "score": 0.2385353198486692,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bedroom",
+      0.12606799602508545
+    ],
+    [
+      "indoor jacuzzi",
+      0.1135205626487732
+    ],
+    [
+      "bedchamber",
+      0.07645666599273682
+    ],
+    [
+      "home theater",
+      0.06117543205618858
+    ],
+    [
+      "clean room",
+      0.04132496938109398
+    ]
+  ],
+  "top_objects": [
+    [
+      "couch",
+      0.07691078633069992
+    ],
+    [
+      "cock",
+      0.07112854719161987
+    ],
+    [
+      "wild boar",
+      0.03891758248209953
+    ],
+    [
+      "chest",
+      0.03169920668005943
+    ],
+    [
+      "pillow",
+      0.02475125528872013
+    ]
+  ]
+}

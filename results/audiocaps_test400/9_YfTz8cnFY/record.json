@@ -1,0 +1,299 @@
+{
+  "id": "9_YfTz8cnFY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\9_YfTz8cnFY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\9_YfTz8cnFY.wav",
+  "gt_captions": [
+    "People are speaking in the background, a hiss occurs, then a steam whistle blows",
+    "A long train whistle and a train chugging",
+    "Steam hissing followed by a train whistle blowing and a group of people talking in the background",
+    "A steam engine horn whistles followed by steam hissing as a group of people talk in the background",
+    "A train emits the steam whistle sound with a hissing noise"
+  ],
+  "top_scene": [
+    "platform train station",
+    0.7960477471351624
+  ],
+  "top_object": [
+    "electric locomotive",
+    0.42719587683677673
+  ],
+  "env_probs": {
+    "indoor": 0.8853955864906311,
+    "outdoor": 0.1146044135093689
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A train moves while a horn is triggered and steam is released",
+    "casv": "An engine running continuously in the background with rustling and clanking in the foreground"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5622829794883728,
+    "clap_gt_audio_baseline": 0.5401827096939087,
+    "clap_text_casv": -0.024829082190990448,
+    "clap_gt_audio_casv": -0.005486985668540001
+  },
+  "verdicts": [
+    {
+      "caption": "A train moves while a horn is triggered and steam is released",
+      "clip_similarity": 0.30955958366394043,
+      "visual": 1.0,
+      "scene_support": 0.7510266567548209,
+      "object_support": 0.795706707946624,
+      "score": 0.8640200094104336,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running continuously in the background with rustling and clanking in the foreground",
+      "clip_similarity": 0.3089112639427185,
+      "visual": 0.9384544873281994,
+      "scene_support": 0.7353927568848291,
+      "object_support": 0.790114197973808,
+      "score": 0.8330338813888709,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam engine train is moving while an announcer speaks and wind blows",
+      "clip_similarity": 0.3073793351650238,
+      "visual": 0.7930272561123968,
+      "scene_support": 0.3666364559041674,
+      "object_support": 0.6484915027288523,
+      "score": 0.6217492900348647,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam engine slowly running on railroad tracks alongside a group of people talking followed by a train horn whistling",
+      "clip_similarity": 0.3072623014450073,
+      "visual": 0.781917150924286,
+      "scene_support": 0.6494309174906737,
+      "object_support": 0.7568607957910048,
+      "score": 0.734654374354218,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The low rumble of an engine together with an intermittent siren followed by a man yelling in the background",
+      "clip_similarity": 0.30284783244132996,
+      "visual": 0.3628480572169003,
+      "scene_support": 0.5825728028459217,
+      "object_support": 0.6440561598771634,
+      "score": 0.5131279117036857,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam train is passing by",
+      "clip_similarity": 0.30245140194892883,
+      "visual": 0.32521459166756256,
+      "scene_support": 0.7213943115510342,
+      "object_support": 1.0,
+      "score": 0.6465041301323353,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running continuously",
+      "clip_similarity": 0.301880419254303,
+      "visual": 0.27101074514374957,
+      "scene_support": 0.8357355981221805,
+      "object_support": 0.9049161837589749,
+      "score": 0.6305998326218464,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train moving is followed by a horn and accelerated train movement",
+      "clip_similarity": 0.3018002510070801,
+      "visual": 0.2634003089441015,
+      "scene_support": 1.0,
+      "object_support": 0.856582685547324,
+      "score": 0.6623349292418378,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.3017811179161072,
+      "visual": 0.2615839892265647,
+      "scene_support": 0.6806841210195623,
+      "object_support": 0.5446972346422814,
+      "score": 0.47224800238917897,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idling with sirens in the background",
+      "clip_similarity": 0.30167123675346375,
+      "visual": 0.25115288206370134,
+      "scene_support": 0.4152017841322213,
+      "object_support": 0.5194799087642347,
+      "score": 0.3808656606944173,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A powerful engine moving into the distance with people speaking nearby",
+      "clip_similarity": 0.30164098739624023,
+      "visual": 0.2482812862485925,
+      "scene_support": 0.6018730672749553,
+      "object_support": 0.713728279603902,
+      "score": 0.49399291856309413,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine rumbling with a person talking at the end",
+      "clip_similarity": 0.30153822898864746,
+      "visual": 0.23852634795253805,
+      "scene_support": 0.6832394763015238,
+      "object_support": 0.7488264611586162,
+      "score": 0.5250303204190572,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine is running, adult males speak in the background, and two whistles occur in the background",
+      "clip_similarity": 0.30151039361953735,
+      "visual": 0.2358839139709502,
+      "scene_support": 0.7409023174030964,
+      "object_support": 0.6831535695226842,
+      "score": 0.5215703316661143,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large engine idling with people faintly speaking nearby",
+      "clip_similarity": 0.30079737305641174,
+      "visual": 0.16819629832909902,
+      "scene_support": 0.5010505877520817,
+      "object_support": 0.6345295603600942,
+      "score": 0.4079525637652924,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine running smoothly with traffic sounds in the background",
+      "clip_similarity": 0.30039912462234497,
+      "visual": 0.13039025411501096,
+      "scene_support": 0.5915515093500613,
+      "object_support": 0.6702638006635075,
+      "score": 0.43070069465007504,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running with faint voices in the background",
+      "clip_similarity": 0.3001997470855713,
+      "visual": 0.1114631841612394,
+      "scene_support": 0.7306730889995485,
+      "object_support": 0.7915141542229982,
+      "score": 0.5012414466312598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine idles at high speed, followed by a person talking",
+      "clip_similarity": 0.30019769072532654,
+      "visual": 0.11126797222898077,
+      "scene_support": 0.7025804743429159,
+      "object_support": 0.7633642004121494,
+      "score": 0.4842905913181119,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam engine running on railroad tracks followed by a train whistle blowing as a group of people talk in the background",
+      "clip_similarity": 0.30002135038375854,
+      "visual": 0.09452784174819358,
+      "scene_support": 0.6547446172228502,
+      "object_support": 0.6907570144112939,
+      "score": 0.4414616261895207,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idling with two men and a child speaking",
+      "clip_similarity": 0.2993360161781311,
+      "visual": 0.02946851429573759,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.011787405718295035,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idling with male speech in the background",
+      "clip_similarity": 0.29902559518814087,
+      "visual": 0.0,
+      "scene_support": 0.48610814095187665,
+      "object_support": 0.5337842639204906,
+      "score": 0.30596772146171014,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "platform train station",
+      0.7960477471351624
+    ],
+    [
+      "industrial area",
+      0.03498804196715355
+    ],
+    [
+      "amusement park",
+      0.022956352680921555
+    ],
+    [
+      "platform subway station",
+      0.020963165909051895
+    ],
+    [
+      "railroad track",
+      0.011369074694812298
+    ]
+  ],
+  "top_objects": [
+    [
+      "electric locomotive",
+      0.42719587683677673
+    ],
+    [
+      "steam locomotive",
+      0.3147362768650055
+    ],
+    [
+      "high-speed train",
+      0.11461343616247177
+    ],
+    [
+      "freight car",
+      0.035295192152261734
+    ],
+    [
+      "passenger car",
+      0.03445647284388542
+    ]
+  ]
+}

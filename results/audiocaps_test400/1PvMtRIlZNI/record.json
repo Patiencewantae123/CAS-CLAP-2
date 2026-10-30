@@ -1,0 +1,285 @@
+{
+  "id": "1PvMtRIlZNI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1PvMtRIlZNI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1PvMtRIlZNI.wav",
+  "gt_captions": [
+    "A stream of water trickling as plastic clanks against a metal surface followed by water pouring down a drain alongside a camera muffling",
+    "Tapping noise followed by splashing and gurgling water",
+    "Gurgling and splashing water",
+    "Water splashes and gurgles",
+    "Water gurgling"
+  ],
+  "top_scene": [
+    "fountain",
+    0.23354509472846985
+  ],
+  "top_object": [
+    "sink",
+    0.5043377876281738
+  ],
+  "env_probs": {
+    "indoor": 0.6126037240028381,
+    "outdoor": 0.38739627599716187
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Water flowing from a sink, then stopping momentarily, and an object being placed down, followed by the water flowing again",
+    "casv": "Water flowing from a sink, then stopping momentarily, and an object being placed down, followed by the water flowing again"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.28968843817710876,
+    "clap_gt_audio_baseline": 0.5613764524459839,
+    "clap_text_casv": 0.28968843817710876,
+    "clap_gt_audio_casv": 0.5613764524459839
+  },
+  "verdicts": [
+    {
+      "caption": "Water flowing from a sink, then stopping momentarily, and an object being placed down, followed by the water flowing again",
+      "clip_similarity": 0.34808969497680664,
+      "visual": 1.0,
+      "scene_support": 0.8238937269529916,
+      "object_support": 0.6805754084988024,
+      "score": 0.8513407406355382,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running through faucet with mechanical background noise",
+      "clip_similarity": 0.3448534905910492,
+      "visual": 0.6995423505583656,
+      "scene_support": 0.4338759317831852,
+      "object_support": 0.09937734625260523,
+      "score": 0.4397929236340834,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bathtub fills with water from a faucet",
+      "clip_similarity": 0.34467101097106934,
+      "visual": 0.6826004670569876,
+      "scene_support": 0.908724692811963,
+      "object_support": 0.95299447070322,
+      "score": 0.8315559358773499,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A tap followed by water filling a sink and small splash",
+      "clip_similarity": 0.3446308970451355,
+      "visual": 0.6788761856274833,
+      "scene_support": 0.6941188062257131,
+      "object_support": 0.6953886911394954,
+      "score": 0.6884027234605559,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flows rapidly from a faucet while a man speaks with frying sounds",
+      "clip_similarity": 0.34276050329208374,
+      "visual": 0.505223954932321,
+      "scene_support": 0.5994469050851046,
+      "object_support": 0.20094709669112032,
+      "score": 0.44220778250579584,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-0.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running from a tap while a man speaks ending in a light scrubbing",
+      "clip_similarity": 0.3424666225910187,
+      "visual": 0.4779393047270151,
+      "scene_support": 0.9419962678742262,
+      "object_support": 0.4296879334210478,
+      "score": 0.6026809822793882,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water slowly pours into sink and then runs fast out of a faucet into sink",
+      "clip_similarity": 0.34242191910743713,
+      "visual": 0.47378891680409063,
+      "scene_support": 0.3101592244954207,
+      "object_support": 0.6806048597265419,
+      "score": 0.48674479198822507,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water drops into a basin from a faucet while two men talk",
+      "clip_similarity": 0.34237760305404663,
+      "visual": 0.46967449890983143,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.18786979956393257,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running in a sink accompanied by musical tones",
+      "clip_similarity": 0.3411840796470642,
+      "visual": 0.3588646752183104,
+      "scene_support": 0.6970380662182701,
+      "object_support": 1.0,
+      "score": 0.6526572899528051,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A faucet pouring out water with a blowing noise",
+      "clip_similarity": 0.34056979417800903,
+      "visual": 0.3018328113067635,
+      "scene_support": 0.5813142062442206,
+      "object_support": 0.24983818947550104,
+      "score": 0.3700788432386219,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male voice speaking followed by water flowing from a faucet",
+      "clip_similarity": 0.3402435779571533,
+      "visual": 0.2715460471705422,
+      "scene_support": 0.7432808754184994,
+      "object_support": 0.1462726046734304,
+      "score": 0.37548446289579585,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running from a faucet continuously",
+      "clip_similarity": 0.34017401933670044,
+      "visual": 0.2650880435624716,
+      "scene_support": 1.0,
+      "object_support": 0.6801548723631734,
+      "score": 0.6100816791339407,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flowing from a faucet as a man speaks",
+      "clip_similarity": 0.33829665184020996,
+      "visual": 0.0907883523513331,
+      "scene_support": 0.7851824088122373,
+      "object_support": 0.3913205177114889,
+      "score": 0.3892662188976511,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sink running and water dripping with male voice",
+      "clip_similarity": 0.3382052779197693,
+      "visual": 0.08230495943687537,
+      "scene_support": 0.6258800220758635,
+      "object_support": 0.7700475534591152,
+      "score": 0.4517002564352437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A faucet is turned on with water coming through",
+      "clip_similarity": 0.33807745575904846,
+      "visual": 0.07043761690259316,
+      "scene_support": 0.8662586138141912,
+      "object_support": 0.6312637795787926,
+      "score": 0.47743176477893245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A water faucet is turned on and runs into a sink",
+      "clip_similarity": 0.3379959166049957,
+      "visual": 0.06286730933117882,
+      "scene_support": 0.4749293152953912,
+      "object_support": 0.7240981588873189,
+      "score": 0.38485516598728453,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water from a faucet running in short bursts interrupted by banging and splashing water",
+      "clip_similarity": 0.3377756178379059,
+      "visual": 0.04241419764700674,
+      "scene_support": 0.7676668488568951,
+      "object_support": 0.41097476029782726,
+      "score": 0.3705581618052194,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pours out of a faucet tap at moderate speed",
+      "clip_similarity": 0.3376484513282776,
+      "visual": 0.03060772746892743,
+      "scene_support": 0.25056105048089566,
+      "object_support": 0.0691323051886899,
+      "score": 0.10815109768844663,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping sounds, followed by a girl talking and then water splashing noises while water is running from a faucet in the background",
+      "clip_similarity": 0.3375436067581177,
+      "visual": 0.020873684327028432,
+      "scene_support": 0.6732485937954574,
+      "object_support": 0.018687831369119088,
+      "score": 0.21593040128018434,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing from a faucet",
+      "clip_similarity": 0.3373187780380249,
+      "visual": 0.0,
+      "scene_support": 0.6007857036814631,
+      "object_support": 0.4418259487233578,
+      "score": 0.31278349572144626,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fountain",
+      0.23354509472846985
+    ],
+    [
+      "indoor jacuzzi",
+      0.22904366254806519
+    ],
+    [
+      "shower",
+      0.20974014699459076
+    ],
+    [
+      "bathroom",
+      0.12045948207378387
+    ],
+    [
+      "watering hole",
+      0.03695593774318695
+    ]
+  ],
+  "top_objects": [
+    [
+      "sink",
+      0.5043377876281738
+    ],
+    [
+      "bathtub",
+      0.21201150119304657
+    ],
+    [
+      "tub",
+      0.150838702917099
+    ],
+    [
+      "soap dispenser",
+      0.01660136692225933
+    ],
+    [
+      "fountain",
+      0.012879586778581142
+    ]
+  ]
+}

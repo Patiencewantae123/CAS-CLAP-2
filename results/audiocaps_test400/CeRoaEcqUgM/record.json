@@ -1,0 +1,283 @@
+{
+  "id": "CeRoaEcqUgM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\CeRoaEcqUgM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\CeRoaEcqUgM.wav",
+  "gt_captions": [
+    "A motor is revving and changing gears",
+    "A motorboat driving by as water splashes followed by wind blowing into a microphone",
+    "A motorboat driving by as water splashes followed by wind blowing into a microphone",
+    "A boat motor runs fast and water splashes at regular intervals, then it fades and the wind is blowing",
+    "A speedboat is traveling across water followed by strong wind noise"
+  ],
+  "top_scene": [
+    "landing deck",
+    0.46935009956359863
+  ],
+  "top_object": [
+    "amphibious vehicle",
+    0.4356362521648407
+  ],
+  "env_probs": {
+    "indoor": 0.07457511126995087,
+    "outdoor": 0.9254248887300491
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A speedboat engine running as wind blows into a microphone followed by a motorboat engine running idle then starting up as water flows then sprays",
+    "casv": "A boat motor accelerates while the exhaust pops"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.39813071489334106,
+    "clap_gt_audio_baseline": 0.5356078743934631,
+    "clap_text_casv": 0.4148424565792084,
+    "clap_gt_audio_casv": 0.5214240550994873
+  },
+  "verdicts": [
+    {
+      "caption": "A speedboat engine running as wind blows into a microphone followed by a motorboat engine running idle then starting up as water flows then sprays",
+      "clip_similarity": 0.364990234375,
+      "visual": 1.0,
+      "scene_support": 0.36885922280297706,
+      "object_support": 0.27532633216279995,
+      "score": 0.5932556664897332,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboats' engine accelerating",
+      "clip_similarity": 0.36337512731552124,
+      "visual": 0.9006026858587082,
+      "scene_support": 0.8016312571490124,
+      "object_support": 0.6332690926664735,
+      "score": 0.7907111792881291,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat engine starts and accelerates across water",
+      "clip_similarity": 0.3621288239955902,
+      "visual": 0.823902381764626,
+      "scene_support": 0.8754363141615843,
+      "object_support": 0.8598614242663316,
+      "score": 0.8501502742342252,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat motor accelerates while the exhaust pops",
+      "clip_similarity": 0.36124420166015625,
+      "visual": 0.7694607373822965,
+      "scene_support": 1.0,
+      "object_support": 0.820998967940052,
+      "score": 0.8540839853349342,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motor boat engine accelerating with wind blowing in a microphone and plastic rattling",
+      "clip_similarity": 0.360828161239624,
+      "visual": 0.7438566759472219,
+      "scene_support": 0.46270299348061367,
+      "object_support": 0.30561248243757333,
+      "score": 0.5280373131543448,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat making high-pitched noise",
+      "clip_similarity": 0.35893183946609497,
+      "visual": 0.6271527770135686,
+      "scene_support": 0.8941391563267798,
+      "object_support": 0.7302272597185645,
+      "score": 0.7381710356190306,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat engine driving with water splashing and wind blowing",
+      "clip_similarity": 0.35847535729408264,
+      "visual": 0.5990598394060445,
+      "scene_support": 0.36575212739219415,
+      "object_support": 0.42069572288157747,
+      "score": 0.47555829084454926,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat engine is idling and begins accelerating while traveling across the water",
+      "clip_similarity": 0.35643115639686584,
+      "visual": 0.47325512723164337,
+      "scene_support": 0.8311259021220064,
+      "object_support": 0.6102221141709679,
+      "score": 0.6217064557805496,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy speedboat motor running while wind blows into a microphone and water splashes",
+      "clip_similarity": 0.3563931882381439,
+      "visual": 0.47091848151041954,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.18836739260416782,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine motorboat sounds with wind in the background followed by a man laughing",
+      "clip_similarity": 0.3549892008304596,
+      "visual": 0.38451394467615263,
+      "scene_support": 0.7962428894576753,
+      "object_support": 0.7021899261743739,
+      "score": 0.6033354225600758,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat coasting on water with a loud engine",
+      "clip_similarity": 0.3549429178237915,
+      "visual": 0.38166558454659166,
+      "scene_support": 0.7264230060987807,
+      "object_support": 0.8183273547813762,
+      "score": 0.6160913420826837,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat accelerating with a man talking in the background",
+      "clip_similarity": 0.3540249466896057,
+      "visual": 0.3251715802254478,
+      "scene_support": 0.8484332442538611,
+      "object_support": 0.6871391994542887,
+      "score": 0.5907403652026241,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat travels across water as the engine accelerates with wind noise in the background",
+      "clip_similarity": 0.35320088267326355,
+      "visual": 0.27445683074541566,
+      "scene_support": 0.6463643264925086,
+      "object_support": 0.5166950006166396,
+      "score": 0.45870053043091075,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Speedboat with water spraying",
+      "clip_similarity": 0.35197919607162476,
+      "visual": 0.1992714947563029,
+      "scene_support": 0.6093667449745328,
+      "object_support": 0.4424359565201228,
+      "score": 0.3952494083509178,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat running with a loud engine noise humming",
+      "clip_similarity": 0.35172587633132935,
+      "visual": 0.18368162926933052,
+      "scene_support": 0.8826718840564842,
+      "object_support": 0.7437293064309314,
+      "score": 0.5613930088539569,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat travels on water as the engine accelerates",
+      "clip_similarity": 0.35128411650657654,
+      "visual": 0.1564947379618727,
+      "scene_support": 0.9239550259800879,
+      "object_support": 1.0,
+      "score": 0.6397844029787754,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat driving accelerating as wind is blowing into a microphone",
+      "clip_similarity": 0.34951430559158325,
+      "visual": 0.04757660126259569,
+      "scene_support": 0.6068988930892453,
+      "object_support": 0.550998159522597,
+      "score": 0.36639975628859095,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speedboat revving the engine and running on water",
+      "clip_similarity": 0.3493185341358185,
+      "visual": 0.03552838639389904,
+      "scene_support": 0.7812992095692897,
+      "object_support": 0.6159828261448106,
+      "score": 0.4333959652717897,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled speedboat engine running as water splashes and wind heavily blows into a microphone",
+      "clip_similarity": 0.3492594063282013,
+      "visual": 0.031889528379057494,
+      "scene_support": 0.3704990074734429,
+      "object_support": 0.23090290788348639,
+      "score": 0.1931763859587018,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor runs while waves slap the boat",
+      "clip_similarity": 0.34874123334884644,
+      "visual": 0.0,
+      "scene_support": 0.831735331380766,
+      "object_support": 0.7218740060743425,
+      "score": 0.46608280123653256,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "landing deck",
+      0.46935009956359863
+    ],
+    [
+      "boat deck",
+      0.16414855420589447
+    ],
+    [
+      "raft",
+      0.10243979096412659
+    ],
+    [
+      "galley",
+      0.021158523857593536
+    ],
+    [
+      "raceway",
+      0.019846592098474503
+    ]
+  ],
+  "top_objects": [
+    [
+      "amphibious vehicle",
+      0.4356362521648407
+    ],
+    [
+      "motorboat",
+      0.41981595754623413
+    ],
+    [
+      "trimaran",
+      0.02177315205335617
+    ],
+    [
+      "catamaran",
+      0.016795039176940918
+    ],
+    [
+      "snowmobile",
+      0.01468484103679657
+    ]
+  ]
+}

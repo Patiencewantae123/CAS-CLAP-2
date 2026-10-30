@@ -1,0 +1,283 @@
+{
+  "id": "U90e2P9jy30",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\U90e2P9jy30.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\U90e2P9jy30.wav",
+  "gt_captions": [
+    "Squeaking and bouncing followed by a man speaking",
+    "Several basketballs bouncing and shoes squeaking on a hardwood surface as a man yells in the distance",
+    "A man yelling in the background as several basketballs bounce and shoes squeak on a hardwood surface",
+    "A man yelling in the distance as several basketballs bounce and shoes squeak on hardwood floors",
+    "Multiple basketballs bouncing on a hard surface and shoes squeaking as a man shouts in the distance"
+  ],
+  "top_scene": [
+    "indoor basketball court",
+    0.8265146613121033
+  ],
+  "top_object": [
+    "basketball",
+    0.6826722025871277
+  ],
+  "env_probs": {
+    "indoor": 0.9938395023345947,
+    "outdoor": 0.0061604976654052734
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A basketball bouncing off a hard surface followed by a kid speaking",
+    "casv": "Basketball bouncing with dog barking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.37393125891685486,
+    "clap_gt_audio_baseline": 0.2748633027076721,
+    "clap_text_casv": 0.2789328992366791,
+    "clap_gt_audio_casv": 0.2071734368801117
+  },
+  "verdicts": [
+    {
+      "caption": "A basketball bouncing off a hard surface followed by a kid speaking",
+      "clip_similarity": 0.3212260603904724,
+      "visual": 1.0,
+      "scene_support": 0.6920311351752061,
+      "object_support": 0.5815063918945513,
+      "score": 0.7820612581209273,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Basketball bouncing with dog barking",
+      "clip_similarity": 0.31664544343948364,
+      "visual": 0.8720498414566838,
+      "scene_support": 0.8811575047072132,
+      "object_support": 0.6851543138893331,
+      "score": 0.8187134821616374,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person shouts and dribbles a ball, followed by a beeping sound in the background",
+      "clip_similarity": 0.31400445103645325,
+      "visual": 0.7982791244779393,
+      "scene_support": 0.5560399691634095,
+      "object_support": 0.2881678166715137,
+      "score": 0.5725739855416526,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some air whooshes",
+      "clip_similarity": 0.30934882164001465,
+      "visual": 0.6682336468126092,
+      "scene_support": 0.3142140466075246,
+      "object_support": 0.1403612755858987,
+      "score": 0.40366605538307065,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Basketballs bouncing and shoes squeaking as a group of young men are shouting",
+      "clip_similarity": 0.30013206601142883,
+      "visual": 0.4107824439395995,
+      "scene_support": 0.915997317885866,
+      "object_support": 0.6209173522065944,
+      "score": 0.625387378603578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fast dribbling of basketball onto court",
+      "clip_similarity": 0.2967764437198639,
+      "visual": 0.3170500037877243,
+      "scene_support": 1.0,
+      "object_support": 0.7480302585471454,
+      "score": 0.6512290790792333,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person dribbles a ball rapidly nearby, and then throws a ball against a wall",
+      "clip_similarity": 0.294583261013031,
+      "visual": 0.255787934058634,
+      "scene_support": 0.47202827802867187,
+      "object_support": 0.4215327365383525,
+      "score": 0.37038347799356086,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sneakers slide on a floor as a basket ball bounces and the audience cheers",
+      "clip_similarity": 0.29390329122543335,
+      "visual": 0.23679436986003735,
+      "scene_support": 0.809147759520926,
+      "object_support": 0.1494099878278159,
+      "score": 0.3822850721486375,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several air whooshes are going by",
+      "clip_similarity": 0.2924724221229553,
+      "visual": 0.19682597030257673,
+      "scene_support": 0.10845380753385783,
+      "object_support": 0.16941274396794767,
+      "score": 0.16209035357157237,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Constant squeaking and dribbles of a basketball while the audience chatters followed by individuals yelling and appraises",
+      "clip_similarity": 0.29222941398620605,
+      "visual": 0.19003803541147588,
+      "scene_support": 0.8371780401261778,
+      "object_support": 0.5850179356510413,
+      "score": 0.5026740068977561,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rubber ball bouncing repeatedly off a hardwood surface",
+      "clip_similarity": 0.2918303906917572,
+      "visual": 0.17889213643466093,
+      "scene_support": 0.3086773599451222,
+      "object_support": 0.010195874915483747,
+      "score": 0.16721882503204613,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sneakers squeaking and a basketball bouncing",
+      "clip_similarity": 0.2908725440502167,
+      "visual": 0.152136651102311,
+      "scene_support": 0.7661567132004031,
+      "object_support": 0.7776513906754894,
+      "score": 0.5239970916036921,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two swishes occur and then a swoosh",
+      "clip_similarity": 0.2905283272266388,
+      "visual": 0.1425216587068959,
+      "scene_support": 0.39419227051772265,
+      "object_support": 0.3052084135095112,
+      "score": 0.26682886869092853,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking and dribbling a basketball",
+      "clip_similarity": 0.28997722268104553,
+      "visual": 0.12712768127174298,
+      "scene_support": 0.9926878927772108,
+      "object_support": 1.0,
+      "score": 0.6486574403418603,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks with his voice echoing followed by a ball being dribbled and sneakers squeaking",
+      "clip_similarity": 0.28858381509780884,
+      "visual": 0.0882056925749782,
+      "scene_support": 0.8002687262145769,
+      "object_support": 0.5718875550133405,
+      "score": 0.44692916139836647,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ball dribbles nearby several times",
+      "clip_similarity": 0.2884351909160614,
+      "visual": 0.08405418027403144,
+      "scene_support": 0.6772466888631774,
+      "object_support": 0.6738126589792787,
+      "score": 0.43893947646234943,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Static followed by a pop and then explosion",
+      "clip_similarity": 0.2879191040992737,
+      "visual": 0.06963835141590129,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.027855340566360517,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wheels slide followed by a clank",
+      "clip_similarity": 0.28673112392425537,
+      "visual": 0.03645455688204527,
+      "scene_support": 0.0103359206382505,
+      "object_support": 0.06313727098803015,
+      "score": 0.0366237802407023,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several low knocks that are not rhythmic",
+      "clip_similarity": 0.2859988808631897,
+      "visual": 0.01600084578634405,
+      "scene_support": 0.20461094544523223,
+      "object_support": 0.18106780611706405,
+      "score": 0.1221039637832265,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something whooshes two times followed by a hit",
+      "clip_similarity": 0.2854260504245758,
+      "visual": 0.0,
+      "scene_support": 0.027613935153069695,
+      "object_support": 0.09094294559480777,
+      "score": 0.03556706422436324,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor basketball court",
+      0.8265146613121033
+    ],
+    [
+      "indoor gymnasium",
+      0.1473589539527893
+    ],
+    [
+      "ballroom",
+      0.003658242989331484
+    ],
+    [
+      "martial arts gym",
+      0.0019581986125558615
+    ],
+    [
+      "basement",
+      0.001646121614612639
+    ]
+  ],
+  "top_objects": [
+    [
+      "basketball",
+      0.6826722025871277
+    ],
+    [
+      "volleyball",
+      0.08013229817152023
+    ],
+    [
+      "projectile",
+      0.01208382286131382
+    ],
+    [
+      "scoreboard",
+      0.008771747350692749
+    ],
+    [
+      "gazelle",
+      0.0073566315695643425
+    ]
+  ]
+}

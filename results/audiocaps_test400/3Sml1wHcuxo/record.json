@@ -1,0 +1,285 @@
+{
+  "id": "3Sml1wHcuxo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3Sml1wHcuxo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3Sml1wHcuxo.wav",
+  "gt_captions": [
+    "A railroad horn sounds repeatedly",
+    "A train horn blasts as railroad rails go clickety-clack",
+    "A train horn goes off loudly",
+    "A train running on a railroad track as steam hisses and a train horn blows several times along with a railroad crossing signal ringing in the background",
+    "A train horn blowing as a train runs on railroad tracks while a train signal beeps in the background"
+  ],
+  "top_scene": [
+    "railroad track",
+    0.6008298397064209
+  ],
+  "top_object": [
+    "freight car",
+    0.38989493250846863
+  ],
+  "env_probs": {
+    "indoor": 0.2964199185371399,
+    "outdoor": 0.7035800814628601
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A train passes while continuously blowing its horn",
+    "casv": "A train passes while continuously blowing its horn"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4826245903968811,
+    "clap_gt_audio_baseline": 0.6001696586608887,
+    "clap_text_casv": 0.4826245903968811,
+    "clap_gt_audio_casv": 0.6001696586608887
+  },
+  "verdicts": [
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.3520847260951996,
+      "visual": 1.0,
+      "scene_support": 0.24290442172662075,
+      "object_support": 0.49031266907340976,
+      "score": 0.6199651272400092,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train moving on tracks while blowing its horn",
+      "clip_similarity": 0.34303855895996094,
+      "visual": 0.45967869698722796,
+      "scene_support": 0.809852128790952,
+      "object_support": 0.6349355975542065,
+      "score": 0.6173077966984387,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train moving on the tracks while blowing its horn",
+      "clip_similarity": 0.34231871366500854,
+      "visual": 0.41668283565484404,
+      "scene_support": 0.7478224981635526,
+      "object_support": 0.6398022811154264,
+      "score": 0.5829605680456313,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train moving is followed by a horn and accelerated train movement",
+      "clip_similarity": 0.342073529958725,
+      "visual": 0.4020381825463931,
+      "scene_support": 0.42389668280443127,
+      "object_support": 0.6965653490376681,
+      "score": 0.496953882571187,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Railroad and engine noises made by train get louder as it approaches then train passes by",
+      "clip_similarity": 0.3413983881473541,
+      "visual": 0.3617124293533888,
+      "scene_support": 0.6122950344656917,
+      "object_support": 0.5709742223609641,
+      "score": 0.4996657487893522,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large train horn followed by a fast moving train",
+      "clip_similarity": 0.34081339836120605,
+      "visual": 0.3267713942414668,
+      "scene_support": 0.4281874695556972,
+      "object_support": 0.8006904552497486,
+      "score": 0.4993719351382204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train rattles as it passes followed by a train horn blowing twice",
+      "clip_similarity": 0.33999237418174744,
+      "visual": 0.2777321881536202,
+      "scene_support": 0.799022179898224,
+      "object_support": 0.859875465513628,
+      "score": 0.6087621688850037,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train running followed by a train horn",
+      "clip_similarity": 0.3385508060455322,
+      "visual": 0.19162832094699836,
+      "scene_support": 0.6426445781339816,
+      "object_support": 0.8165917957360836,
+      "score": 0.5144222405398189,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train using its horn as it comes closer",
+      "clip_similarity": 0.3376598656177521,
+      "visual": 0.13841306572916204,
+      "scene_support": 0.43528892132800595,
+      "object_support": 0.679485481937589,
+      "score": 0.3897975472713433,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passes by with a blowing horn and clicking wheels",
+      "clip_similarity": 0.33742770552635193,
+      "visual": 0.12454630412531707,
+      "scene_support": 0.15793133801438144,
+      "object_support": 0.4747769875141068,
+      "score": 0.2396310193086733,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A trains passing by while a horn is honking",
+      "clip_similarity": 0.3372098207473755,
+      "visual": 0.11153219705398068,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.044612878821592275,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passing by with its bell sound and honk",
+      "clip_similarity": 0.33670738339424133,
+      "visual": 0.0815219616394464,
+      "scene_support": 0.6699132758304736,
+      "object_support": 0.9525879795546678,
+      "score": 0.5193591612713209,
+      "conflicts": [
+        "names 'a bell', not visible in image (z=-0.02)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train horn blows as a train passes with a humming engine",
+      "clip_similarity": 0.33636319637298584,
+      "visual": 0.06096390903831605,
+      "scene_support": 0.27320384487071253,
+      "object_support": 0.519124312635752,
+      "score": 0.26208401086726574,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train engine running followed by a train horn",
+      "clip_similarity": 0.3363487720489502,
+      "visual": 0.06010235414534289,
+      "scene_support": 0.3991833487088483,
+      "object_support": 0.8822753630940533,
+      "score": 0.40847855519900766,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train blowing a horn while traveling down a track",
+      "clip_similarity": 0.3359526991844177,
+      "visual": 0.036445196030439234,
+      "scene_support": 0.20450191945945015,
+      "object_support": 0.08024503532510761,
+      "score": 0.10000216484754301,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Railroad train hitting the track while blowing the air horn",
+      "clip_similarity": 0.3359283208847046,
+      "visual": 0.03498909705843087,
+      "scene_support": 0.6233176341233059,
+      "object_support": 0.5336471978863686,
+      "score": 0.3610850884262747,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming of a passing train with a blowing horn",
+      "clip_similarity": 0.3358802795410156,
+      "visual": 0.03211962084464421,
+      "scene_support": 0.16508056091131643,
+      "object_support": 0.21565546335650343,
+      "score": 0.12706865561820363,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.3354549705982208,
+      "visual": 0.006716212006586267,
+      "scene_support": 0.027624240165021827,
+      "object_support": 0.06205942264472245,
+      "score": 0.029591583645557792,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train crossing making noise as a train blares its horn",
+      "clip_similarity": 0.33539140224456787,
+      "visual": 0.0029193182323884116,
+      "scene_support": 0.5720576511329588,
+      "object_support": 0.5129545855120146,
+      "score": 0.32667139828644737,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train speeds up and blows its horn as it clicks on the tracks",
+      "clip_similarity": 0.33534252643585205,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "railroad track",
+      0.6008298397064209
+    ],
+    [
+      "platform train station",
+      0.14583271741867065
+    ],
+    [
+      "train interior",
+      0.080506831407547
+    ],
+    [
+      "assembly line",
+      0.01563875749707222
+    ],
+    [
+      "outdoor diner",
+      0.008279314264655113
+    ]
+  ],
+  "top_objects": [
+    [
+      "freight car",
+      0.38989493250846863
+    ],
+    [
+      "electric locomotive",
+      0.35128462314605713
+    ],
+    [
+      "high-speed train",
+      0.165188267827034
+    ],
+    [
+      "steam locomotive",
+      0.03658511862158775
+    ],
+    [
+      "passenger car",
+      0.03083474189043045
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "SNy_axSCoyw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SNy_axSCoyw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SNy_axSCoyw.wav",
+  "gt_captions": [
+    "The rhythmic and repeated ticktock of a clock",
+    "A clock ticking",
+    "Mechanical sound with clock tick-tocking",
+    "A clock ticking",
+    "A clock ticking"
+  ],
+  "top_scene": [
+    "indoor bow window",
+    0.3061501681804657
+  ],
+  "top_object": [
+    "harp",
+    0.5616204738616943
+  ],
+  "env_probs": {
+    "indoor": 0.7117743492126465,
+    "outdoor": 0.2882256507873535
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A clock making music",
+    "casv": "A clock making music"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.34879568219184875,
+    "clap_gt_audio_baseline": 0.5152506828308105,
+    "clap_text_casv": 0.34879568219184875,
+    "clap_gt_audio_casv": 0.5152506828308105
+  },
+  "verdicts": [
+    {
+      "caption": "A clock making music",
+      "clip_similarity": 0.3283795118331909,
+      "visual": 1.0,
+      "scene_support": 0.5257195628668874,
+      "object_support": 0.7323352671079421,
+      "score": 0.7774164489924488,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cuckoo clock making cuckoo sounds",
+      "clip_similarity": 0.326945960521698,
+      "visual": 0.9300979169754728,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.37203916679018917,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood clock repeatedly clacking",
+      "clip_similarity": 0.3254922032356262,
+      "visual": 0.8592105607338105,
+      "scene_support": 0.3882857671187635,
+      "object_support": 0.4631296480870965,
+      "score": 0.5991088488552823,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock making high pitched sounds",
+      "clip_similarity": 0.3230803310871124,
+      "visual": 0.7416041061769946,
+      "scene_support": 0.15260011084173775,
+      "object_support": 0.2228253554482183,
+      "score": 0.40926928235778465,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.32028713822364807,
+      "visual": 0.6054038893587587,
+      "scene_support": 0.2695171493809093,
+      "object_support": 0.40599623467675294,
+      "score": 0.44481557096080215,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock chimes with the motor rhythmically running",
+      "clip_similarity": 0.3181842267513275,
+      "visual": 0.5028628145099646,
+      "scene_support": 0.4845382774095764,
+      "object_support": 0.6098603763619481,
+      "score": 0.5294647219354431,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Chime clock playing music",
+      "clip_similarity": 0.3161904811859131,
+      "visual": 0.4056448308033028,
+      "scene_support": 0.4479341258777775,
+      "object_support": 0.6607375603772139,
+      "score": 0.4948594381978185,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A mechanical winding sound",
+      "clip_similarity": 0.3149060606956482,
+      "visual": 0.3430145872751528,
+      "scene_support": 0.4577704553205245,
+      "object_support": 0.7174664996975815,
+      "score": 0.4897769214154929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mechanical humming, a door slides and stops",
+      "clip_similarity": 0.3148657977581024,
+      "visual": 0.34105130686755775,
+      "scene_support": 0.6585261601843451,
+      "object_support": 0.6351043982723811,
+      "score": 0.5245096902840409,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ticking followed by the opening of a door",
+      "clip_similarity": 0.3144138753414154,
+      "visual": 0.3190149011675052,
+      "scene_support": 0.8553103501366142,
+      "object_support": 0.8079054750526038,
+      "score": 0.6265707080237675,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A door rattles against its frame",
+      "clip_similarity": 0.31385719776153564,
+      "visual": 0.29187047871490146,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7167481914859606,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A mechanical door sliding",
+      "clip_similarity": 0.31290462613105774,
+      "visual": 0.2454216765920591,
+      "scene_support": 0.8470475534741402,
+      "object_support": 0.7148433812943512,
+      "score": 0.5667359510673711,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Nonstop machine buzzing concurrent with oscillating wood filing",
+      "clip_similarity": 0.3113586902618408,
+      "visual": 0.1700395562492189,
+      "scene_support": 0.21782016452919042,
+      "object_support": 0.3604303713358379,
+      "score": 0.24149098325919605,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chime of a clock and rumpling sounds in background",
+      "clip_similarity": 0.3109590709209442,
+      "visual": 0.15055352591210433,
+      "scene_support": 0.7118001769484177,
+      "object_support": 0.865335003024185,
+      "score": 0.5333619643566225,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine followed by the sound of a clock and music",
+      "clip_similarity": 0.3097861409187317,
+      "visual": 0.09335972354221707,
+      "scene_support": 0.383652916243967,
+      "object_support": 0.5286994300902145,
+      "score": 0.31104959331714127,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ticking of a clock with musical chimes",
+      "clip_similarity": 0.30919349193573,
+      "visual": 0.06446128225025939,
+      "scene_support": 0.6103519938458342,
+      "object_support": 0.7830744460630223,
+      "score": 0.4438124448727607,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A mechanical winding noise",
+      "clip_similarity": 0.3087522089481354,
+      "visual": 0.04294367085480444,
+      "scene_support": 0.4730029847596648,
+      "object_support": 0.6665514920732278,
+      "score": 0.35904381139178954,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tick took of wood clock gears",
+      "clip_similarity": 0.308150976896286,
+      "visual": 0.013626706426364632,
+      "scene_support": 0.33143698318828535,
+      "object_support": 0.37545588523431045,
+      "score": 0.2175185430973246,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw is cutting through wood",
+      "clip_similarity": 0.30798882246017456,
+      "visual": 0.005719816198589228,
+      "scene_support": 0.4180200457201981,
+      "object_support": 0.5648400589503096,
+      "score": 0.29714595788058795,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Musical chimes with ticking and locking",
+      "clip_similarity": 0.3078715205192566,
+      "visual": 0.0,
+      "scene_support": 0.45377498481242096,
+      "object_support": 0.7454368882414577,
+      "score": 0.35976356191616354,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor bow window",
+      0.3061501681804657
+    ],
+    [
+      "staircase",
+      0.21155215799808502
+    ],
+    [
+      "arch",
+      0.161484032869339
+    ],
+    [
+      "door elevator",
+      0.09869193285703659
+    ],
+    [
+      "outdoor doorway",
+      0.038171395659446716
+    ]
+  ],
+  "top_objects": [
+    [
+      "harp",
+      0.5616204738616943
+    ],
+    [
+      "baluster",
+      0.13157539069652557
+    ],
+    [
+      "chiffonier",
+      0.029616311192512512
+    ],
+    [
+      "plate rack",
+      0.02671424299478531
+    ],
+    [
+      "wall clock",
+      0.025327244773507118
+    ]
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "id": "bA5zPFSFZAA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\bA5zPFSFZAA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\bA5zPFSFZAA.wav",
+  "gt_captions": [
+    "Digital beeps followed by static electric hissing",
+    "A series of electronic beeping and static",
+    "Static and beeping",
+    "Digital beeping with static electric scratching",
+    "Digital static and beeps"
+  ],
+  "top_scene": [
+    "elevator shaft",
+    0.0677536278963089
+  ],
+  "top_object": [
+    "chain mail",
+    0.146352618932724
+  ],
+  "env_probs": {
+    "indoor": 0.5342190265655518,
+    "outdoor": 0.46578097343444824
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A filing noise pattern",
+    "casv": "A filing noise pattern"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.12077195942401886,
+    "clap_gt_audio_baseline": 0.09941960871219635,
+    "clap_text_casv": -0.12077195942401886,
+    "clap_gt_audio_casv": 0.09941960871219635
+  },
+  "verdicts": [
+    {
+      "caption": "A filing noise pattern",
+      "clip_similarity": 0.3109530508518219,
+      "visual": 1.0,
+      "scene_support": 0.5979865989818403,
+      "object_support": 1.0,
+      "score": 0.8793959796945521,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "White noise and faint tapping",
+      "clip_similarity": 0.2948019504547119,
+      "visual": 0.47204608311990437,
+      "scene_support": 0.628950061085977,
+      "object_support": 0.5495224402161273,
+      "score": 0.5423601836385931,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A repetitive clatter followed by an object falling on a hard surface",
+      "clip_similarity": 0.28883567452430725,
+      "visual": 0.277017963103499,
+      "scene_support": 1.0,
+      "object_support": 0.8434134424093078,
+      "score": 0.6638312179641919,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "White noise together with continuous ticking",
+      "clip_similarity": 0.2871861159801483,
+      "visual": 0.22309650431128122,
+      "scene_support": 0.034806374596895714,
+      "object_support": 0.0,
+      "score": 0.09968051410358121,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "White noise with faint tick-tocking",
+      "clip_similarity": 0.28660812973976135,
+      "visual": 0.20420304863257713,
+      "scene_support": 0.3080411522782272,
+      "object_support": 0.280140855628747,
+      "score": 0.2581358218251231,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of an engine running while idle and random sounds of small solid objects moving in the background",
+      "clip_similarity": 0.28653496503829956,
+      "visual": 0.20181141030674343,
+      "scene_support": 0.8702423768851385,
+      "object_support": 0.7847790192773076,
+      "score": 0.5772309829714313,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.14)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Moving of objects followed by a beep",
+      "clip_similarity": 0.28569379448890686,
+      "visual": 0.1743148759903867,
+      "scene_support": 0.33057168173213486,
+      "object_support": 0.16524683372769577,
+      "score": 0.21847150503410387,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "White noise and faint clicking noise",
+      "clip_similarity": 0.2849235534667969,
+      "visual": 0.14913691569255708,
+      "scene_support": 0.43074907468730655,
+      "object_support": 0.38856105441817285,
+      "score": 0.30544780500866664,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Faint tick-tocking with white noise",
+      "clip_similarity": 0.28422749042510986,
+      "visual": 0.12638371620654013,
+      "scene_support": 0.33416916755242837,
+      "object_support": 0.254316682972961,
+      "score": 0.22709924164023287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "White noise and musical tapping with faint buzzing",
+      "clip_similarity": 0.28383582830429077,
+      "visual": 0.11358090118490823,
+      "scene_support": 0.0,
+      "object_support": 0.05374926237244089,
+      "score": 0.06155713918569555,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A repetitive tapping noise along with a machine vibrating faintly",
+      "clip_similarity": 0.2838083505630493,
+      "visual": 0.11268269730041998,
+      "scene_support": 0.7588367136646714,
+      "object_support": 0.6796034206697178,
+      "score": 0.47660511922048476,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "White noise with distant chirping",
+      "clip_similarity": 0.2837616205215454,
+      "visual": 0.1111551661823315,
+      "scene_support": 0.5013390190512454,
+      "object_support": 0.5791015456060463,
+      "score": 0.3685942358701201,
+      "conflicts": [
+        "names 'birds', not visible in image (z=-0.14)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock ticktocks as static noise sounds in the background",
+      "clip_similarity": 0.28366583585739136,
+      "visual": 0.10802411706655574,
+      "scene_support": 0.7152148295457621,
+      "object_support": 0.6469575145747517,
+      "score": 0.4518613500627764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A static sound with a clicking in the background",
+      "clip_similarity": 0.2835986614227295,
+      "visual": 0.10582829108430354,
+      "scene_support": 0.938368129181051,
+      "object_support": 0.9790263892866685,
+      "score": 0.6175496719740372,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small, high-pitch engine running",
+      "clip_similarity": 0.28349700570106506,
+      "visual": 0.10250532638800265,
+      "scene_support": 0.6512730606330204,
+      "object_support": 0.9774406101693612,
+      "score": 0.5296162317959154,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.14)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Computerized beeps occur in a slow, rhythmic sequence, then a man with an animated voice speaks",
+      "clip_similarity": 0.2821480929851532,
+      "visual": 0.05841150402389495,
+      "scene_support": 0.3605696786173816,
+      "object_support": 0.33276373428877326,
+      "score": 0.2313646254814044,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Radio static and noise",
+      "clip_similarity": 0.28118908405303955,
+      "visual": 0.027063019426338028,
+      "scene_support": 0.6235190936537355,
+      "object_support": 0.7356736870229448,
+      "score": 0.4185830419735393,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "White noise with muffled speech and high pitched rubbing",
+      "clip_similarity": 0.28109148144721985,
+      "visual": 0.023872544673952965,
+      "scene_support": 0.6957647657528734,
+      "object_support": 0.7246722242618439,
+      "score": 0.4356801148739963,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "White noise followed by a man speaking together with tapping and then whistling",
+      "clip_similarity": 0.2804226279258728,
+      "visual": 0.0020087813555474806,
+      "scene_support": 0.25974623603910224,
+      "object_support": 0.22128826773333538,
+      "score": 0.1451138636739503,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine is running and making white noise",
+      "clip_similarity": 0.2803611755371094,
+      "visual": 0.0,
+      "scene_support": 0.7450206356911738,
+      "object_support": 0.8365426939792292,
+      "score": 0.47446899890112093,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "elevator shaft",
+      0.0677536278963089
+    ],
+    [
+      "staircase",
+      0.06284331530332565
+    ],
+    [
+      "crosswalk",
+      0.0480567030608654
+    ],
+    [
+      "ball pit",
+      0.03538981080055237
+    ],
+    [
+      "television room",
+      0.030806783586740494
+    ]
+  ],
+  "top_objects": [
+    [
+      "chain mail",
+      0.146352618932724
+    ],
+    [
+      "CRT screen",
+      0.12516507506370544
+    ],
+    [
+      "window screen",
+      0.08572618663311005
+    ],
+    [
+      "window shade",
+      0.034085411578416824
+    ],
+    [
+      "maze",
+      0.02007967233657837
+    ]
+  ]
+}

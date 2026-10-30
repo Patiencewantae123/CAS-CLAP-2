@@ -1,0 +1,287 @@
+{
+  "id": "oOMtaqvQ3_M",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\oOMtaqvQ3_M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\oOMtaqvQ3_M.wav",
+  "gt_captions": [
+    "A helicopter flying as wind blows into a microphone",
+    "Aircraft is in flight while the wind blows",
+    "A helicopter flying with wind heavily blowing into a microphone",
+    "An engine running consistently with heavy wind",
+    "Helicopter propellers spinning and wind"
+  ],
+  "top_scene": [
+    "racecourse",
+    0.8690505623817444
+  ],
+  "top_object": [
+    "prison",
+    0.1880885362625122
+  ],
+  "env_probs": {
+    "indoor": 0.027055930346250534,
+    "outdoor": 0.9729440696537495
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "The clip-clop of horses trotting through water and then neighing",
+    "casv": "Horses run while announcer speaks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10032424330711365,
+    "clap_gt_audio_baseline": 0.14072197675704956,
+    "clap_text_casv": 0.2454601675271988,
+    "clap_gt_audio_casv": 0.16687390208244324
+  },
+  "verdicts": [
+    {
+      "caption": "The clip-clop of horses trotting through water and then neighing",
+      "clip_similarity": 0.2710532248020172,
+      "visual": 1.0,
+      "scene_support": 0.3532184287210061,
+      "object_support": 0.29128687941321363,
+      "score": 0.5933515924402659,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The sounds of a raceway with cars going around the track",
+      "clip_similarity": 0.2709435820579529,
+      "visual": 0.991110004929489,
+      "scene_support": 0.8407429219324546,
+      "object_support": 0.6882587990585144,
+      "score": 0.8551445182690862,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.28)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horses run while announcer speaks",
+      "clip_similarity": 0.26956790685653687,
+      "visual": 0.8795682347596633,
+      "scene_support": 0.9818021261160322,
+      "object_support": 0.8263601364789169,
+      "score": 0.8942759726823502,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clop of a horse trotting by",
+      "clip_similarity": 0.2687934339046478,
+      "visual": 0.8167728278835094,
+      "scene_support": 0.4925268189100672,
+      "object_support": 0.17115623916652983,
+      "score": 0.5258140485763829,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Drag races down runway",
+      "clip_similarity": 0.2686687409877777,
+      "visual": 0.8066625426497454,
+      "scene_support": 0.6164109461605555,
+      "object_support": 0.42240297772182384,
+      "score": 0.634309194224612,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Distant clip clops of a horse with people speaking faintly",
+      "clip_similarity": 0.2644275724887848,
+      "visual": 0.4627823582288636,
+      "scene_support": 0.47382296999051216,
+      "object_support": 0.5996161074315325,
+      "score": 0.5071446665181588,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of several horses with wind blowing and people speaking",
+      "clip_similarity": 0.2634556293487549,
+      "visual": 0.3839757778443635,
+      "scene_support": 0.3724493083838085,
+      "object_support": 0.3369175470286642,
+      "score": 0.3664003677614872,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large plane drives past and then takes flight",
+      "clip_similarity": 0.26274266839027405,
+      "visual": 0.32616785393247566,
+      "scene_support": 0.3027715053746289,
+      "object_support": 1.0,
+      "score": 0.5212985931853789,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A long droning, followed by a lower pitch, with splashing going on",
+      "clip_similarity": 0.26255786418914795,
+      "visual": 0.31118365729419384,
+      "scene_support": 0.0,
+      "object_support": 0.617391938985896,
+      "score": 0.3096910446134463,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An announcer is heard as multiple horses run by, with many observers talking and some shuttering cameras",
+      "clip_similarity": 0.2622397541999817,
+      "visual": 0.28539083115050407,
+      "scene_support": 0.8409305091461527,
+      "object_support": 0.5019212874267885,
+      "score": 0.517011871432084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The constant drone of an airplane flying",
+      "clip_similarity": 0.261986643075943,
+      "visual": 0.26486820866236865,
+      "scene_support": 0.10444907102855856,
+      "object_support": 0.6996558833725619,
+      "score": 0.3471787697852836,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse clip-clops in the distance, followed by people talking nearby",
+      "clip_similarity": 0.2618957757949829,
+      "visual": 0.2575005557757179,
+      "scene_support": 0.7286117078667315,
+      "object_support": 0.7835407885853997,
+      "score": 0.5566459712459265,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is being moved around while the camera is making a lot of noises",
+      "clip_similarity": 0.2618620991706848,
+      "visual": 0.25477000550942885,
+      "scene_support": 0.3266984458973592,
+      "object_support": 0.6026171839363585,
+      "score": 0.3807026911538869,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse running with fast clip-clops with people speaking",
+      "clip_similarity": 0.2618387043476105,
+      "visual": 0.2528731188200157,
+      "scene_support": 0.3032436636676108,
+      "object_support": 0.0,
+      "score": 0.19212234662828953,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud sounds of a motorcycle speeding and racing around a track",
+      "clip_similarity": 0.2612735629081726,
+      "visual": 0.20705061908582142,
+      "scene_support": 0.4864691556214592,
+      "object_support": 0.5420044884777492,
+      "score": 0.39136234086409105,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse clip-clops nearby and then stops",
+      "clip_similarity": 0.2610164284706116,
+      "visual": 0.18620178041543026,
+      "scene_support": 0.46179059014044155,
+      "object_support": 0.6641998284890616,
+      "score": 0.412277837755023,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man narrates a horse race",
+      "clip_similarity": 0.2607820928096771,
+      "visual": 0.16720150011115514,
+      "scene_support": 1.0,
+      "object_support": 0.6272410458518073,
+      "score": 0.5550529138000042,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car racing on a racetrack with voices in background",
+      "clip_similarity": 0.25934210419654846,
+      "visual": 0.050445103857566766,
+      "scene_support": 0.7381863123863072,
+      "object_support": 0.408906891455471,
+      "score": 0.3643060026955601,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.28)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse runs with faint clip-clops",
+      "clip_similarity": 0.2587427496910095,
+      "visual": 0.001848558366116046,
+      "scene_support": 0.718878866513832,
+      "object_support": 0.7410192128742679,
+      "score": 0.4387088471628764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A buzzing noise and a clip-clop sound",
+      "clip_similarity": 0.25871995091438293,
+      "visual": 0.0,
+      "scene_support": 0.3410035660712155,
+      "object_support": 0.6054219351542686,
+      "score": 0.2839276503676452,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "racecourse",
+      0.8690505623817444
+    ],
+    [
+      "airfield",
+      0.030339177697896957
+    ],
+    [
+      "raceway",
+      0.023536551743745804
+    ],
+    [
+      "performance arena",
+      0.01448637805879116
+    ],
+    [
+      "heliport",
+      0.010931763797998428
+    ]
+  ],
+  "top_objects": [
+    [
+      "prison",
+      0.1880885362625122
+    ],
+    [
+      "lakeshore",
+      0.05322591960430145
+    ],
+    [
+      "palace",
+      0.04535337910056114
+    ],
+    [
+      "wing",
+      0.03475845605134964
+    ],
+    [
+      "stopwatch",
+      0.03382987156510353
+    ]
+  ]
+}

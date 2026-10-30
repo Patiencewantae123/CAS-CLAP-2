@@ -1,0 +1,283 @@
+{
+  "id": "AR8-MVl_Mf8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AR8-MVl_Mf8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AR8-MVl_Mf8.wav",
+  "gt_captions": [
+    "A man screaming followed by a door slamming shut then a series of cardboard thumping and metal bars clacking",
+    "A ring followed by a crash then a scream and a man speaking",
+    "A man screaming followed by slamming against a metal object proceeded by a man talking cardboard tumbles on a hard surface as a truck engine runs idle in the background",
+    "A man screaming followed by a loud metal object slamming shut then a series of thuds and a man speaking with audio static at the end",
+    "A man yells, slams a door and then speaks"
+  ],
+  "top_scene": [
+    "fire escape",
+    0.09996020048856735
+  ],
+  "top_object": [
+    "mousetrap",
+    0.13794392347335815
+  ],
+  "env_probs": {
+    "indoor": 0.3512369692325592,
+    "outdoor": 0.6487630307674408
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+    "casv": "A vehicle races and a man speaks over an intercom"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.12069056928157806,
+    "clap_gt_audio_baseline": 0.2219882309436798,
+    "clap_text_casv": 0.09963423013687134,
+    "clap_gt_audio_casv": 0.30873334407806396
+  },
+  "verdicts": [
+    {
+      "caption": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+      "clip_similarity": 0.32114946842193604,
+      "visual": 1.0,
+      "scene_support": 0.01982056935419787,
+      "object_support": 0.0,
+      "score": 0.4059461708062594,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency siren wailing as a man is talking followed by metal clanking and crumpling as a muffled truck engine accelerates",
+      "clip_similarity": 0.3126470446586609,
+      "visual": 0.6108527047192434,
+      "scene_support": 0.5582770363896365,
+      "object_support": 0.6243984169914883,
+      "score": 0.5991437179020348,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by another man speaking in the background alongside a toy helicopter engine running and humming",
+      "clip_similarity": 0.3112414479255676,
+      "visual": 0.5465199706462464,
+      "scene_support": 0.3707587674747094,
+      "object_support": 0.7035504998276456,
+      "score": 0.5409007684492051,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle races and a man speaks over an intercom",
+      "clip_similarity": 0.30745115876197815,
+      "visual": 0.37304228741034967,
+      "scene_support": 0.9896118792725923,
+      "object_support": 1.0,
+      "score": 0.7461004787459176,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Police siren on a toy car",
+      "clip_similarity": 0.3061545491218567,
+      "visual": 0.31369778182740754,
+      "scene_support": 0.4478461496274454,
+      "object_support": 0.7470197058485579,
+      "score": 0.48393886937376407,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine is running followed by a man conversing something in low frequency in the background",
+      "clip_similarity": 0.30599427223205566,
+      "visual": 0.30636207145838507,
+      "scene_support": 0.8303477817963718,
+      "object_support": 0.6062520439459426,
+      "score": 0.5535247763060483,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle driving by as metal lightly clanks followed by a man talking in the background during a man speaking over an intercom in the distance",
+      "clip_similarity": 0.3053280711174011,
+      "visual": 0.2758707234499936,
+      "scene_support": 0.3983338166148087,
+      "object_support": 0.22091741132589116,
+      "score": 0.2961236577622074,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.30517739057540894,
+      "visual": 0.2689742281681457,
+      "scene_support": 0.9636716245317177,
+      "object_support": 0.8903080502744412,
+      "score": 0.6637835937091059,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical cranking while men are communicating followed by a pop and a man screaming",
+      "clip_similarity": 0.3044227063655853,
+      "visual": 0.23443309881248245,
+      "scene_support": 1.0,
+      "object_support": 0.921151194548299,
+      "score": 0.6701185978894827,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck revs up and drives away, followed by a cartoon droop sound, after which the truck resumes driving",
+      "clip_similarity": 0.3039528727531433,
+      "visual": 0.21292929182705292,
+      "scene_support": 0.9985618243418669,
+      "object_support": 0.9265814617417513,
+      "score": 0.6627147025559066,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled truck engine running as a man is talking during an emergency siren going off while plastic and metal clacks repeatedly",
+      "clip_similarity": 0.3038976192474365,
+      "visual": 0.21040039502077407,
+      "scene_support": 0.35514653930595336,
+      "object_support": 0.33407191596178154,
+      "score": 0.2909256945886301,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A rooster crows and an animal releases gas",
+      "clip_similarity": 0.3022565543651581,
+      "visual": 0.1352905230478799,
+      "scene_support": 0.6153828201895358,
+      "object_support": 0.66500886078187,
+      "score": 0.4382337135105737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine is running and a man and a child are communicating",
+      "clip_similarity": 0.30216094851493835,
+      "visual": 0.13091474044025175,
+      "scene_support": 0.8872061877143043,
+      "object_support": 0.727899972600076,
+      "score": 0.5368977442704148,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking followed by a young boy talking then a toy helicopter flying",
+      "clip_similarity": 0.30176395177841187,
+      "visual": 0.112744603246918,
+      "scene_support": 0.1337287489855465,
+      "object_support": 0.5148025879670141,
+      "score": 0.23965724238453534,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy helicopter motor starting up then flying as wind blows into a microphone",
+      "clip_similarity": 0.3013785183429718,
+      "visual": 0.0951037065934096,
+      "scene_support": 0.0,
+      "object_support": 0.7828528403114753,
+      "score": 0.2728973347308064,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fire truck siren with engine sounds",
+      "clip_similarity": 0.30125415325164795,
+      "visual": 0.08941164274626735,
+      "scene_support": 0.6359758619864794,
+      "object_support": 0.5842205163559869,
+      "score": 0.40182357060124685,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy helicopter starting up and flying as a woman talks in the background",
+      "clip_similarity": 0.30093008279800415,
+      "visual": 0.07457926741105894,
+      "scene_support": 0.47541886501394126,
+      "object_support": 0.9098498307391792,
+      "score": 0.4454123156903598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy helicopter motor turning on and then running",
+      "clip_similarity": 0.29980093240737915,
+      "visual": 0.022899201501515427,
+      "scene_support": 0.13379934503205118,
+      "object_support": 0.9058867852818214,
+      "score": 0.32106551969476793,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two men yelling briefly as a group of people talk in the background while a toy helicopter engine buzzes and wind blows heavily into a microphone",
+      "clip_similarity": 0.29939740896224976,
+      "visual": 0.004430343488022522,
+      "scene_support": 0.0932462921031029,
+      "object_support": 0.47650401276306137,
+      "score": 0.17269722885505828,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.2993006110191345,
+      "visual": 0.0,
+      "scene_support": 0.315148336296228,
+      "object_support": 0.5087011331194371,
+      "score": 0.24715484082469952,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fire escape",
+      0.09996020048856735
+    ],
+    [
+      "crosswalk",
+      0.0572035051882267
+    ],
+    [
+      "lobby",
+      0.035419415682554245
+    ],
+    [
+      "street",
+      0.03449929505586624
+    ],
+    [
+      "plaza",
+      0.03323744237422943
+    ]
+  ],
+  "top_objects": [
+    [
+      "mousetrap",
+      0.13794392347335815
+    ],
+    [
+      "tow truck",
+      0.059196580201387405
+    ],
+    [
+      "scooter",
+      0.04557453468441963
+    ],
+    [
+      "guillotine",
+      0.04480280354619026
+    ],
+    [
+      "swing",
+      0.0329473540186882
+    ]
+  ]
+}

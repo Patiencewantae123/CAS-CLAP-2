@@ -1,0 +1,283 @@
+{
+  "id": "YflmW68gL4E",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\YflmW68gL4E.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\YflmW68gL4E.wav",
+  "gt_captions": [
+    "A person burps followed by laughter and a woman speaking",
+    "A burp followed by a two girls laughing then talking",
+    "Burping and laughing from a young girl",
+    "A woman laughs and talks after burping",
+    "Burping followed by girls laughing and speaking"
+  ],
+  "top_scene": [
+    "home theater",
+    0.3762495517730713
+  ],
+  "top_object": [
+    "home theater",
+    0.24183140695095062
+  ],
+  "env_probs": {
+    "indoor": 0.9642705321311951,
+    "outdoor": 0.03572946786880493
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A female's speech followed by snoring in the background and television playing",
+    "casv": "A female's speech followed by snoring in the background and television playing"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.02396201714873314,
+    "clap_gt_audio_baseline": 0.2435029149055481,
+    "clap_text_casv": 0.02396201714873314,
+    "clap_gt_audio_casv": 0.2435029149055481
+  },
+  "verdicts": [
+    {
+      "caption": "A female's speech followed by snoring in the background and television playing",
+      "clip_similarity": 0.3008902072906494,
+      "visual": 1.0,
+      "scene_support": 0.7752199242929435,
+      "object_support": 0.7751787912842028,
+      "score": 0.8651196146731439,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child talks and laughs while a television plays in the background",
+      "clip_similarity": 0.2984042167663574,
+      "visual": 0.8650209064195006,
+      "scene_support": 0.6009121075349211,
+      "object_support": 0.587986616679498,
+      "score": 0.7026779798321261,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A television is playing something in the background followed by a cat meowing",
+      "clip_similarity": 0.2937329113483429,
+      "visual": 0.6113881733096869,
+      "scene_support": 0.8652434817431981,
+      "object_support": 0.8696319146679062,
+      "score": 0.7650178882472061,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The distant audio from a television and a young woman laughing",
+      "clip_similarity": 0.2935628294944763,
+      "visual": 0.6021534259343163,
+      "scene_support": 0.4894963784749015,
+      "object_support": 0.5060897101527743,
+      "score": 0.5395371969620293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Television in background, woman making noises then laughing",
+      "clip_similarity": 0.2926068603992462,
+      "visual": 0.5502482232779712,
+      "scene_support": 0.8347875078917014,
+      "object_support": 0.856300535746592,
+      "score": 0.7274257024026765,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries and cries as a voice from a TV is in the background",
+      "clip_similarity": 0.28917139768600464,
+      "visual": 0.3637166824166009,
+      "scene_support": 0.6581004152966259,
+      "object_support": 0.6658184342430593,
+      "score": 0.5426623278285458,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird is communicating by tweeting, chirping and whistling while a television is playing in the background",
+      "clip_similarity": 0.28841179609298706,
+      "visual": 0.32247343007676477,
+      "scene_support": 0.7067377149184457,
+      "object_support": 0.7379952222549425,
+      "score": 0.5624092531827224,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.28744325041770935,
+      "visual": 0.26988537068441015,
+      "scene_support": 0.3179070364230325,
+      "object_support": 0.3748553448986985,
+      "score": 0.3157828626702834,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks over the television followed by people laughing with some loud pops and a child laughing followed by a woman speaking",
+      "clip_similarity": 0.28703221678733826,
+      "visual": 0.24756792968193764,
+      "scene_support": 0.33514801768451485,
+      "object_support": 0.3197158355353482,
+      "score": 0.29548632783873396,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog is barking and woman laughing",
+      "clip_similarity": 0.2866441607475281,
+      "visual": 0.22649807764501806,
+      "scene_support": 0.33554182579563,
+      "object_support": 0.38872990950280023,
+      "score": 0.3078807516475363,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A series of belches while a man talks through a television speaker in the background",
+      "clip_similarity": 0.28642699122428894,
+      "visual": 0.21470666286942225,
+      "scene_support": 0.6548442837442938,
+      "object_support": 0.6284372230974525,
+      "score": 0.47086711720029284,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking and whimpering alongside camera muffling and a man briefly speaking through a television speaker in the background",
+      "clip_similarity": 0.2861272692680359,
+      "visual": 0.19843298942381132,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.07937319576952453,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird whistling as a man speaks through a television speaker in the background",
+      "clip_similarity": 0.28519493341445923,
+      "visual": 0.14781097489935144,
+      "scene_support": 0.4856253379779308,
+      "object_support": 0.4565453654684448,
+      "score": 0.34177560099365323,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.284641832113266,
+      "visual": 0.11777984181024997,
+      "scene_support": 0.021342002143523744,
+      "object_support": 0.052545511609163376,
+      "score": 0.06927819084990613,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaks as the TV plays in the background",
+      "clip_similarity": 0.283629447221756,
+      "visual": 0.06281149270540719,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6251245970821628,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.2832191288471222,
+      "visual": 0.040532887157115303,
+      "scene_support": 0.28745239450426796,
+      "object_support": 0.3337105700676517,
+      "score": 0.202562044234422,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whooshes and chiming followed by a person grunting",
+      "clip_similarity": 0.28287166357040405,
+      "visual": 0.02166694714494686,
+      "scene_support": 0.5037516105286619,
+      "object_support": 0.5601780627815245,
+      "score": 0.32784568085103466,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks, and a TV speaks in the background",
+      "clip_similarity": 0.28269118070602417,
+      "visual": 0.01186746754003288,
+      "scene_support": 0.8818366997193173,
+      "object_support": 0.9100635932217117,
+      "score": 0.5423170748983218,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speak over a television followed by a child crying",
+      "clip_similarity": 0.2826206088066101,
+      "visual": 0.0080357027275434,
+      "scene_support": 0.6555382206977018,
+      "object_support": 0.66123040800992,
+      "score": 0.39824486970330386,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barking with music in the background",
+      "clip_similarity": 0.2824726104736328,
+      "visual": 0.0,
+      "scene_support": 0.3777845163707852,
+      "object_support": 0.4648555781956287,
+      "score": 0.2527920283699242,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "home theater",
+      0.3762495517730713
+    ],
+    [
+      "television room",
+      0.370290607213974
+    ],
+    [
+      "living room",
+      0.044581372290849686
+    ],
+    [
+      "recreation room",
+      0.024287201464176178
+    ],
+    [
+      "childs room",
+      0.011666471138596535
+    ]
+  ],
+  "top_objects": [
+    [
+      "home theater",
+      0.24183140695095062
+    ],
+    [
+      "entertainment center",
+      0.09763253480195999
+    ],
+    [
+      "remote control",
+      0.06491471827030182
+    ],
+    [
+      "television",
+      0.06124294549226761
+    ],
+    [
+      "couch",
+      0.017678584903478622
+    ]
+  ]
+}

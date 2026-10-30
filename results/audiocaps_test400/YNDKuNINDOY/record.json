@@ -1,0 +1,283 @@
+{
+  "id": "YNDKuNINDOY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\YNDKuNINDOY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\YNDKuNINDOY.wav",
+  "gt_captions": [
+    "A large truck driving by as an emergency siren wails and truck horn honks",
+    "A wailing siren fades, a motor sputters, then the siren resumes accompanied by blaring horns",
+    "An emergency siren ringing with car horn honking",
+    "A fire truck engine runs and the siren is blowing but stops, traffic is present, the fire truck horn honks twice, and the siren begins again",
+    "A fire engine with a siren fading then another loud siren"
+  ],
+  "top_scene": [
+    "fire station",
+    0.3682333827018738
+  ],
+  "top_object": [
+    "fire engine",
+    0.27396589517593384
+  ],
+  "env_probs": {
+    "indoor": 0.0998571366071701,
+    "outdoor": 0.9001428633928299
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Loud fire truck horn blows and the sirens come near while random traffic sounds are in the background",
+    "casv": "A fire truck runs and blows its siren"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3394991159439087,
+    "clap_gt_audio_baseline": 0.413280189037323,
+    "clap_text_casv": 0.39231598377227783,
+    "clap_gt_audio_casv": 0.5803285241127014
+  },
+  "verdicts": [
+    {
+      "caption": "Loud fire truck horn blows and the sirens come near while random traffic sounds are in the background",
+      "clip_similarity": 0.3428754508495331,
+      "visual": 1.0,
+      "scene_support": 0.43113168966413173,
+      "object_support": 0.3248340878639412,
+      "score": 0.6267897332584218,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fire truck starts engine and pulls out turning the siren on",
+      "clip_similarity": 0.33930444717407227,
+      "visual": 0.8199025135159915,
+      "scene_support": 0.5979880761939826,
+      "object_support": 0.7038195443166886,
+      "score": 0.7185032915595979,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fire truck sirens wail while driving through the streets",
+      "clip_similarity": 0.337682843208313,
+      "visual": 0.7381196802154742,
+      "scene_support": 0.4520571885963022,
+      "object_support": 0.3803607727875898,
+      "score": 0.5449732605013573,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fire truck runs and blows its siren",
+      "clip_similarity": 0.33535557985305786,
+      "visual": 0.6207481178314894,
+      "scene_support": 0.7065792984365297,
+      "object_support": 0.8879636858477774,
+      "score": 0.7266621424178878,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire truck siren running and the truck accelerating",
+      "clip_similarity": 0.333353728055954,
+      "visual": 0.5197881329820253,
+      "scene_support": 0.1550852108220715,
+      "object_support": 0.4722257806954573,
+      "score": 0.3961085506480687,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fire truck siren with engine sounds",
+      "clip_similarity": 0.3322947323322296,
+      "visual": 0.46637948785777733,
+      "scene_support": 0.0011056959068279344,
+      "object_support": 0.2583185690264581,
+      "score": 0.26437907462309673,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car engine followed by a fire truck siren as the fire truck drives by",
+      "clip_similarity": 0.33226278424263,
+      "visual": 0.464768240388503,
+      "scene_support": 0.6004266657967128,
+      "object_support": 0.6377262081150915,
+      "score": 0.5573531583289425,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud horn sound from emergency vehicles followed by an ambulance siren",
+      "clip_similarity": 0.3301198482513428,
+      "visual": 0.35669291456931446,
+      "scene_support": 0.39912592932634106,
+      "object_support": 0.44389200825995495,
+      "score": 0.39558254710361457,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fire truck with siren on pulls up then turns off siren as a man speaks over the radio",
+      "clip_similarity": 0.32956063747406006,
+      "visual": 0.32849007173959116,
+      "scene_support": 0.1978613114788479,
+      "object_support": 0.31268828016168626,
+      "score": 0.28456090618799673,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Emergency fire truck siren is revving",
+      "clip_similarity": 0.3269895613193512,
+      "visual": 0.19882222619689985,
+      "scene_support": 0.45783500313999,
+      "object_support": 0.6993237826597345,
+      "score": 0.42667652621867724,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fire trucks passes by while sounding the siren",
+      "clip_similarity": 0.3265231251716614,
+      "visual": 0.17529831375136587,
+      "scene_support": 0.6682236511733309,
+      "object_support": 0.47387986648071295,
+      "score": 0.4127503807967595,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fire truck drives with sirens",
+      "clip_similarity": 0.3263201117515564,
+      "visual": 0.16505967778056674,
+      "scene_support": 0.8228265036124448,
+      "object_support": 0.9087819628108662,
+      "score": 0.58550641103922,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud siren coming from emergency vehicles",
+      "clip_similarity": 0.3262377083301544,
+      "visual": 0.1609038016121493,
+      "scene_support": 0.0,
+      "object_support": 0.026177740501092117,
+      "score": 0.07221484279518735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High-frequency fire engine siren noises followed by police emergency sirens",
+      "clip_similarity": 0.3259490728378296,
+      "visual": 0.14634696230252073,
+      "scene_support": 0.18406050218867204,
+      "object_support": 0.08161902206709964,
+      "score": 0.1382426421977398,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud siren from an emergency vehicle",
+      "clip_similarity": 0.325819194316864,
+      "visual": 0.1397967603705268,
+      "scene_support": 0.003410297069847591,
+      "object_support": 0.1846565616769352,
+      "score": 0.11233876177224555,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency vehicle siren is ongoing, a fire truck horn blows followed by a large motor vehicle engine running, and an adult female speaks momentarily in the background",
+      "clip_similarity": 0.3253306746482849,
+      "visual": 0.11515910317244406,
+      "scene_support": 0.031242608789874667,
+      "object_support": 0.0,
+      "score": 0.05543642390594003,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency vehicle sirens with engines revving with movement",
+      "clip_similarity": 0.3248865604400635,
+      "visual": 0.09276095971430418,
+      "scene_support": 0.19448247256441056,
+      "object_support": 0.41228229193606997,
+      "score": 0.21913381323586584,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sirens as emergency fire vehicles drive off",
+      "clip_similarity": 0.3242296576499939,
+      "visual": 0.059631186656706595,
+      "scene_support": 0.5799543973258238,
+      "object_support": 0.3702243610660595,
+      "score": 0.3089061021802476,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A firetruck moving with its siren blaring",
+      "clip_similarity": 0.3233359456062317,
+      "visual": 0.014558342338984223,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6058233369355936,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sirens from an emergency vehicle as a man speaks",
+      "clip_similarity": 0.3230472803115845,
+      "visual": 0.0,
+      "scene_support": 0.5161071581284961,
+      "object_support": 0.4903756055782895,
+      "score": 0.3019448291120357,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fire station",
+      0.3682333827018738
+    ],
+    [
+      "embassy",
+      0.07437436282634735
+    ],
+    [
+      "downtown",
+      0.07359303534030914
+    ],
+    [
+      "outdoor apartment building",
+      0.06886748224496841
+    ],
+    [
+      "residential neighborhood",
+      0.05197310075163841
+    ]
+  ],
+  "top_objects": [
+    [
+      "fire engine",
+      0.27396589517593384
+    ],
+    [
+      "ambulance",
+      0.20737344026565552
+    ],
+    [
+      "moving van",
+      0.12498439103364944
+    ],
+    [
+      "tow truck",
+      0.10615989565849304
+    ],
+    [
+      "trolleybus",
+      0.05062323063611984
+    ]
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "id": "MPLZUg89y5U",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\MPLZUg89y5U.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\MPLZUg89y5U.wav",
+  "gt_captions": [
+    "A large truck engine running idle as a man is talking and wind blows into a microphone",
+    "Male speaking with rustling in the background",
+    "Men speak with humming of an engine and some rustling",
+    "Two men talking as a truck engine runs idle and wind blows into a microphone",
+    "A large truck engine running idle as a man is talking while wind blows heavily into a microphone"
+  ],
+  "top_scene": [
+    "catacomb",
+    0.04890046641230583
+  ],
+  "top_object": [
+    "night snake",
+    0.07736852020025253
+  ],
+  "env_probs": {
+    "indoor": 0.5080918669700623,
+    "outdoor": 0.49190813302993774
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A woman speaking with light tapping noises in the background",
+    "casv": "A woman speaking with light tapping noises in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.014914412051439285,
+    "clap_gt_audio_baseline": 0.04748455062508583,
+    "clap_text_casv": 0.014914412051439285,
+    "clap_gt_audio_casv": 0.04748455062508583
+  },
+  "verdicts": [
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.2995409369468689,
+      "visual": 1.0,
+      "scene_support": 0.758761387884022,
+      "object_support": 0.9713580961627286,
+      "score": 0.9190358452140253,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dogs barking outside while a male is talking and metal is clanking followed by a child communicating out loud",
+      "clip_similarity": 0.2986428737640381,
+      "visual": 0.9224000515032511,
+      "scene_support": 0.535228831758747,
+      "object_support": 0.20863557451735473,
+      "score": 0.592119342484131,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Intermittent, high pitched spraying with white noise",
+      "clip_similarity": 0.2946232557296753,
+      "visual": 0.5750724264469195,
+      "scene_support": 0.443407001366952,
+      "object_support": 0.15962281685205665,
+      "score": 0.4109379160444704,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Deep booming speaking with footsteps and whooshes then faint bursts",
+      "clip_similarity": 0.29331159591674805,
+      "visual": 0.4617343719822314,
+      "scene_support": 0.9025248958237713,
+      "object_support": 0.6307548164116357,
+      "score": 0.6446776624635147,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Low outside noises with a distant dog barking",
+      "clip_similarity": 0.2919987142086029,
+      "visual": 0.3482907358527007,
+      "scene_support": 0.8693577323958878,
+      "object_support": 0.6257162899659505,
+      "score": 0.5878385010496318,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dog is barking with muffled noise in the background",
+      "clip_similarity": 0.2917743921279907,
+      "visual": 0.32890748728513486,
+      "scene_support": 0.8789301430709772,
+      "object_support": 0.6636243458606317,
+      "score": 0.5943293415935366,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of bats squeaking followed by an echoing thud then a kid talking",
+      "clip_similarity": 0.2914482355117798,
+      "visual": 0.3007249082598339,
+      "scene_support": 0.5271744933878615,
+      "object_support": 0.16515785559317292,
+      "score": 0.3279896679982439,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking with light engine noises in background",
+      "clip_similarity": 0.29143214225769043,
+      "visual": 0.29933432047898023,
+      "scene_support": 0.7423398546122608,
+      "object_support": 0.8400364801502417,
+      "score": 0.5944466286203429,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking and noises in background",
+      "clip_similarity": 0.2913622558116913,
+      "visual": 0.2932955642824953,
+      "scene_support": 1.0,
+      "object_support": 0.9522205594869512,
+      "score": 0.7029843935590835,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Static noise in the background followed by two adults speaking",
+      "clip_similarity": 0.29121899604797363,
+      "visual": 0.28091675787034054,
+      "scene_support": 0.9529353873207553,
+      "object_support": 0.7890037415006028,
+      "score": 0.6349484417945437,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud siren gets closer and then gets further away with a faint city noise in the background",
+      "clip_similarity": 0.2911476492881775,
+      "visual": 0.274751818708556,
+      "scene_support": 0.5410332258630562,
+      "object_support": 0.36635544047980956,
+      "score": 0.3821173273862821,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large pop sound, afterwards people are heard screaming in the background along with a repeating recording in the back",
+      "clip_similarity": 0.2909976840019226,
+      "visual": 0.2617936007210455,
+      "scene_support": 0.9006783553862842,
+      "object_support": 0.8232076910239302,
+      "score": 0.6218832542114825,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Large spraying noise like with a hose",
+      "clip_similarity": 0.29072025418281555,
+      "visual": 0.23782141247666258,
+      "scene_support": 0.19996527979427653,
+      "object_support": 0.21991963010180232,
+      "score": 0.22109403795948868,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A spraying noise with chiming and a man humming then an explosion at end",
+      "clip_similarity": 0.2901119887828827,
+      "visual": 0.18526234468550828,
+      "scene_support": 0.570049576207417,
+      "object_support": 0.5181898699026988,
+      "score": 0.40057677170723804,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Static noise and wind blowing with very muffled dog barking",
+      "clip_similarity": 0.28928908705711365,
+      "visual": 0.11415695615785747,
+      "scene_support": 0.47859180840441296,
+      "object_support": 0.3559549967349296,
+      "score": 0.29602682400494573,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog screaming followed by two girls laughing then talking",
+      "clip_similarity": 0.2892329692840576,
+      "visual": 0.10930792506276958,
+      "scene_support": 0.0,
+      "object_support": 0.08636336251699187,
+      "score": 0.06963217878020539,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Emergency siren with child talking and car noises in background",
+      "clip_similarity": 0.28915515542030334,
+      "visual": 0.10258417562608639,
+      "scene_support": 0.1728117059548275,
+      "object_support": 0.0,
+      "score": 0.0928771820368828,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.92)",
+        "names 'an emergency vehicle', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Siren running and a car loudly revving with squeaking tires",
+      "clip_similarity": 0.2888510823249817,
+      "visual": 0.07630979205562351,
+      "scene_support": 0.3709416856659879,
+      "object_support": 0.27684542263445133,
+      "score": 0.22486004931238118,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.92)",
+        "names 'an emergency vehicle', not visible in image (z=-0.91)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.28876182436943054,
+      "visual": 0.06859718019699994,
+      "scene_support": 0.5591757822818294,
+      "object_support": 0.5254249612034849,
+      "score": 0.35281909512439424,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by clicking noises and then a flame running",
+      "clip_similarity": 0.2879679501056671,
+      "visual": 0.0,
+      "scene_support": 0.9044257646407177,
+      "object_support": 1.0,
+      "score": 0.5713277293922152,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "catacomb",
+      0.04890046641230583
+    ],
+    [
+      "attic",
+      0.03131110221147537
+    ],
+    [
+      "ballroom",
+      0.02144799567759037
+    ],
+    [
+      "basement",
+      0.01900252141058445
+    ],
+    [
+      "elevator shaft",
+      0.018868276849389076
+    ]
+  ],
+  "top_objects": [
+    [
+      "night snake",
+      0.07736852020025253
+    ],
+    [
+      "spotlight",
+      0.030521487817168236
+    ],
+    [
+      "front curtain",
+      0.029307471588253975
+    ],
+    [
+      "candle",
+      0.01563834398984909
+    ],
+    [
+      "torch",
+      0.0128891970962286
+    ]
+  ]
+}

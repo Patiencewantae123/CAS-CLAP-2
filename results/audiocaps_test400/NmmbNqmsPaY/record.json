@@ -1,0 +1,283 @@
+{
+  "id": "NmmbNqmsPaY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\NmmbNqmsPaY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\NmmbNqmsPaY.wav",
+  "gt_captions": [
+    "An auto engine running loudly with some metallic sounds in the background",
+    "A car engine idling",
+    "An engine idling with bells ringing in the background",
+    "Car engine idling",
+    "Humming and rattling of an idling engine with some bells ringing in the background"
+  ],
+  "top_scene": [
+    "junkyard",
+    0.42363986372947693
+  ],
+  "top_object": [
+    "snowplow",
+    0.3615502119064331
+  ],
+  "env_probs": {
+    "indoor": 0.25148165225982666,
+    "outdoor": 0.7485183477401733
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A truck engine running idle then revving after a car door slams in the background",
+    "casv": "A truck engine running idle then revving after a car door slams in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.47507238388061523,
+    "clap_gt_audio_baseline": 0.5361608266830444,
+    "clap_text_casv": 0.47507238388061523,
+    "clap_gt_audio_casv": 0.5361608266830444
+  },
+  "verdicts": [
+    {
+      "caption": "A truck engine running idle then revving after a car door slams in the background",
+      "clip_similarity": 0.320650577545166,
+      "visual": 1.0,
+      "scene_support": 0.6307505835807059,
+      "object_support": 0.6691607899385101,
+      "score": 0.7899734120557649,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.3176517188549042,
+      "visual": 0.8261663482235713,
+      "scene_support": 0.4796022045254155,
+      "object_support": 0.6220823317440712,
+      "score": 0.6609719001702745,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck engine revving then running idle",
+      "clip_similarity": 0.3168926239013672,
+      "visual": 0.7821641922544044,
+      "scene_support": 0.6422253929651679,
+      "object_support": 0.7227901952711706,
+      "score": 0.7223703533726633,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.3163571059703827,
+      "visual": 0.7511220368380501,
+      "scene_support": 0.3619434311343528,
+      "object_support": 0.624636661044486,
+      "score": 0.5964228423888717,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Skidding tires and a humming engine",
+      "clip_similarity": 0.3131639361381531,
+      "visual": 0.566024828196207,
+      "scene_support": 0.8133252424720236,
+      "object_support": 0.7899030948554834,
+      "score": 0.7073784324767349,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw cutting and revving",
+      "clip_similarity": 0.31166836619377136,
+      "visual": 0.47933171865984403,
+      "scene_support": 0.2236631140288194,
+      "object_support": 0.32513026194049344,
+      "score": 0.3563707002547315,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine idles then revs up a little",
+      "clip_similarity": 0.30972087383270264,
+      "visual": 0.3664422017144101,
+      "scene_support": 0.5515007532466923,
+      "object_support": 0.6388939798398342,
+      "score": 0.503695300611722,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine runs and whooshes by",
+      "clip_similarity": 0.3092697262763977,
+      "visual": 0.3402907103296491,
+      "scene_support": 0.6277547781768541,
+      "object_support": 0.9643757387412513,
+      "score": 0.6137554392072913,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud truck beeping in reverse with revving engine",
+      "clip_similarity": 0.3085244297981262,
+      "visual": 0.2970884051010783,
+      "scene_support": 0.5022464635673045,
+      "object_support": 0.9459712870366681,
+      "score": 0.5533006872216231,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine idling with music in the background",
+      "clip_similarity": 0.30841028690338135,
+      "visual": 0.2904719292123457,
+      "scene_support": 0.31486492713148506,
+      "object_support": 0.5672930749786401,
+      "score": 0.38083617231797584,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small engine runs and someone hits wood",
+      "clip_similarity": 0.3074398934841156,
+      "visual": 0.234221518921739,
+      "scene_support": 1.0,
+      "object_support": 0.5832113718563378,
+      "score": 0.5686520191255969,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine vibrates followed by a chainsaw revving",
+      "clip_similarity": 0.3072766065597534,
+      "visual": 0.2247563305681186,
+      "scene_support": 0.6157028310985844,
+      "object_support": 0.7490037230345609,
+      "score": 0.499314498467191,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man yells while a truck engine revs",
+      "clip_similarity": 0.30574560165405273,
+      "visual": 0.1360091766892744,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.05440367067570976,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chainsaw starting and revving",
+      "clip_similarity": 0.3056323826313019,
+      "visual": 0.12944625452183436,
+      "scene_support": 0.10771154361294444,
+      "object_support": 0.3517165358513619,
+      "score": 0.18960692564802567,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck reverses and beeps then revs its engine",
+      "clip_similarity": 0.30485865473747253,
+      "visual": 0.08459587670896834,
+      "scene_support": 0.5189662753220139,
+      "object_support": 0.9082672616438902,
+      "score": 0.4620084117733585,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Revving of a truck engine",
+      "clip_similarity": 0.30485379695892334,
+      "visual": 0.08431428778733299,
+      "scene_support": 0.4305986065912405,
+      "object_support": 0.821775103921803,
+      "score": 0.4094378282688462,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine revs as a vehicle spins tires causing a burnout",
+      "clip_similarity": 0.30481863021850586,
+      "visual": 0.08227579129942059,
+      "scene_support": 0.3880747264453238,
+      "object_support": 0.4252776781722158,
+      "score": 0.2769160379050301,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some scraping with a clunk and an explosion",
+      "clip_similarity": 0.3043231964111328,
+      "visual": 0.05355717637140715,
+      "scene_support": 0.8105957482367624,
+      "object_support": 0.20365397470461416,
+      "score": 0.3256977874309758,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine revving then idling",
+      "clip_similarity": 0.30349913239479065,
+      "visual": 0.005788984517791928,
+      "scene_support": 0.7030169697225288,
+      "object_support": 1.0,
+      "score": 0.5132206847238754,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car motor revs and tires skid on pavement",
+      "clip_similarity": 0.3033992648124695,
+      "visual": 0.0,
+      "scene_support": 0.09784943969223488,
+      "object_support": 0.2026995320752044,
+      "score": 0.09016469153023178,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "junkyard",
+      0.42363986372947693
+    ],
+    [
+      "repair shop",
+      0.1775006800889969
+    ],
+    [
+      "barndoor",
+      0.1574474573135376
+    ],
+    [
+      "outdoor garage",
+      0.06339238584041595
+    ],
+    [
+      "shed",
+      0.020440051332116127
+    ]
+  ],
+  "top_objects": [
+    [
+      "snowplow",
+      0.3615502119064331
+    ],
+    [
+      "tow truck",
+      0.17236779630184174
+    ],
+    [
+      "snowmobile",
+      0.13745085895061493
+    ],
+    [
+      "semi-trailer truck",
+      0.05760684609413147
+    ],
+    [
+      "pickup truck",
+      0.05629020556807518
+    ]
+  ]
+}

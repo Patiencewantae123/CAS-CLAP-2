@@ -1,0 +1,283 @@
+{
+  "id": "eUecAF626A8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\eUecAF626A8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\eUecAF626A8.wav",
+  "gt_captions": [
+    "Engines hum and vibrate and rev their engines",
+    "An engine revving",
+    "Vehicles hum and vibrate as they rev their engines",
+    "Cars humming and rumbling as they rev and idle",
+    "A vehicle engine running idle then revving as a crowd of people talk in the background"
+  ],
+  "top_scene": [
+    "junkyard",
+    0.2508191466331482
+  ],
+  "top_object": [
+    "pickup truck",
+    0.27130410075187683
+  ],
+  "env_probs": {
+    "indoor": 0.1292990744113922,
+    "outdoor": 0.8707009255886078
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+    "casv": "A truck is attempted to be started up"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2093082070350647,
+    "clap_gt_audio_baseline": 0.34400662779808044,
+    "clap_text_casv": 0.05813181772828102,
+    "clap_gt_audio_casv": -0.015416239388287067
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.3349486291408539,
+      "visual": 1.0,
+      "scene_support": 0.3422387443531905,
+      "object_support": 0.3889280869508746,
+      "score": 0.6193500493912195,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle engine revving followed by tires skidding then a man speaking over an intercom before a truck engine accelerates",
+      "clip_similarity": 0.3117862939834595,
+      "visual": 0.3976999112667925,
+      "scene_support": 0.26358982063647546,
+      "object_support": 0.4414741886583318,
+      "score": 0.3705991672951592,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.30988597869873047,
+      "visual": 0.3482852017033676,
+      "scene_support": 0.6281357481299757,
+      "object_support": 0.8634044564703581,
+      "score": 0.5867761420614471,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine revving then turning off as tires skid on dirt and gravel",
+      "clip_similarity": 0.3080369830131531,
+      "visual": 0.3002049775842094,
+      "scene_support": 0.539611765066368,
+      "object_support": 0.6702941044821108,
+      "score": 0.4830537518982274,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle skidding across pavement and a man speaking in the background",
+      "clip_similarity": 0.3074467182159424,
+      "visual": 0.2848560700876095,
+      "scene_support": 0.42307835503098556,
+      "object_support": 0.5340100755836954,
+      "score": 0.4010689572194481,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck vehicle is in its clinker, while a bull horn decimates a speech",
+      "clip_similarity": 0.3063054084777832,
+      "visual": 0.2551781057591339,
+      "scene_support": 0.5403415547518534,
+      "object_support": 0.7123007140774341,
+      "score": 0.47786392295243985,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.3055858612060547,
+      "visual": 0.23646741088899825,
+      "scene_support": 0.635129538492864,
+      "object_support": 0.8707110787177292,
+      "score": 0.5463391495187773,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle driving by as gravel shuffles while a woman is speaking in the distance followed by two men speaking while gusts of wind blow",
+      "clip_similarity": 0.30501046776771545,
+      "visual": 0.22150520968548146,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.08860208387419259,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck is attempted to be started up",
+      "clip_similarity": 0.30421704053878784,
+      "visual": 0.20087338275010946,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6803493531000437,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled truck engine running as a man is talking during an emergency siren going off while plastic and metal clacks repeatedly",
+      "clip_similarity": 0.3032342791557312,
+      "visual": 0.1753182189811568,
+      "scene_support": 0.3050520885328789,
+      "object_support": 0.4044533655611261,
+      "score": 0.28297892382066425,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck starts up, after which it idles at moderate speed",
+      "clip_similarity": 0.3001188635826111,
+      "visual": 0.09430673791155353,
+      "scene_support": 0.8355706411704839,
+      "object_support": 0.8980363970176355,
+      "score": 0.5578048066210572,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large truck starts up and begins to drive away",
+      "clip_similarity": 0.2997863292694092,
+      "visual": 0.08565970621171201,
+      "scene_support": 0.8465708615900321,
+      "object_support": 0.9697771299101394,
+      "score": 0.5791682799347362,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine running idle as footsteps run on concrete while a vehicle passes by followed by a car door opening then closing proceeded by a man speaking over a radio",
+      "clip_similarity": 0.2992982268333435,
+      "visual": 0.07296737020346641,
+      "scene_support": 0.44371674144128026,
+      "object_support": 0.5813101053121266,
+      "score": 0.33669500210740866,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine running idle then revving after a car door slams in the background",
+      "clip_similarity": 0.29874879121780396,
+      "visual": 0.05868016134719483,
+      "scene_support": 0.6240495848435696,
+      "object_support": 0.8375870345747606,
+      "score": 0.46196305036437696,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The beeping of a backing vehicle, followed by a man signaling to fire guns, and then two loud gunshots",
+      "clip_similarity": 0.2987213730812073,
+      "visual": 0.05796719583690139,
+      "scene_support": 0.7046473600228789,
+      "object_support": 0.6855803137242118,
+      "score": 0.44025518045888773,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine revving and driving through wet ground as water splashes while kids shout in the background",
+      "clip_similarity": 0.29828542470932007,
+      "visual": 0.046631044223235704,
+      "scene_support": 0.25638549500991886,
+      "object_support": 0.3706739505204028,
+      "score": 0.20677025134839078,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle accelerates quickly while some sequence of tires squeal, followed by deceleration",
+      "clip_similarity": 0.2982104420661926,
+      "visual": 0.044681238545085385,
+      "scene_support": 0.7741691352667653,
+      "object_support": 0.7014383230784476,
+      "score": 0.460554732921598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine roars, tires tear through dirt",
+      "clip_similarity": 0.2974455654621124,
+      "visual": 0.024791825695431983,
+      "scene_support": 0.8316185746795597,
+      "object_support": 0.6348443086613228,
+      "score": 0.4498555952804375,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck running and then its engine winds down",
+      "clip_similarity": 0.2972172498703003,
+      "visual": 0.018854837897216724,
+      "scene_support": 0.8205804645020742,
+      "object_support": 0.9874685218863608,
+      "score": 0.5499566310754171,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large truck accelerating and driving by as a kid laughs followed by a group of kids laughing in the background as several vehicles pass by in the distance",
+      "clip_similarity": 0.29649215936660767,
+      "visual": 0.0,
+      "scene_support": 0.06713175520844145,
+      "object_support": 0.2711406273811529,
+      "score": 0.1014817147768783,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "junkyard",
+      0.2508191466331482
+    ],
+    [
+      "excavation",
+      0.2082670032978058
+    ],
+    [
+      "raceway",
+      0.11645255982875824
+    ],
+    [
+      "archaelogical excavation",
+      0.05441795289516449
+    ],
+    [
+      "sandbox",
+      0.040355075150728226
+    ]
+  ],
+  "top_objects": [
+    [
+      "pickup truck",
+      0.27130410075187683
+    ],
+    [
+      "tow truck",
+      0.22927990555763245
+    ],
+    [
+      "amphibious vehicle",
+      0.051886070519685745
+    ],
+    [
+      "jeep",
+      0.04695694521069527
+    ],
+    [
+      "station wagon",
+      0.030963802710175514
+    ]
+  ]
+}

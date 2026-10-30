@@ -1,0 +1,283 @@
+{
+  "id": "P12nvSpKXcs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\P12nvSpKXcs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\P12nvSpKXcs.wav",
+  "gt_captions": [
+    "Insects buzzing followed by plastic camera muffling and a kid speaking then footsteps walking on foliage",
+    "Insects buzzing followed by rattling and rustling",
+    "Birds are calling and many bees are buzzing, then a child speaks briefly and rustling footfalls and rattling occur",
+    "Insects buzz nearby with distant birds chirping followed by rustling",
+    "Insects buzzing as a bird is chirping in the distance followed by camera muffling and a person talking then sniffling as footsteps move over foliage"
+  ],
+  "top_scene": [
+    "crevasse",
+    0.210454523563385
+  ],
+  "top_object": [
+    "bee eater",
+    0.20311297476291656
+  ],
+  "env_probs": {
+    "indoor": 0.31323131918907166,
+    "outdoor": 0.6867686808109283
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+    "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.399188756942749,
+    "clap_gt_audio_baseline": 0.6679438948631287,
+    "clap_text_casv": 0.399188756942749,
+    "clap_gt_audio_casv": 0.6679438948631287
+  },
+  "verdicts": [
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.31800857186317444,
+      "visual": 1.0,
+      "scene_support": 0.6112249013368357,
+      "object_support": 0.828183963801849,
+      "score": 0.8318226595416054,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water filling follow by bird chirp",
+      "clip_similarity": 0.3032606244087219,
+      "visual": 0.48051589496922625,
+      "scene_support": 0.9135966181075676,
+      "object_support": 0.780073413396967,
+      "score": 0.7003073674390509,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling followed by male speech then high pitched buzzing and more speech",
+      "clip_similarity": 0.3021283745765686,
+      "visual": 0.44063334232629325,
+      "scene_support": 0.7914390568878397,
+      "object_support": 0.5235848687556234,
+      "score": 0.5707605146235561,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insect buzzing noises and a slurping sound",
+      "clip_similarity": 0.30020493268966675,
+      "visual": 0.37288171178368185,
+      "scene_support": 0.9031728468836376,
+      "object_support": 0.6573113484332824,
+      "score": 0.6172979433085487,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby bird is making a bird call",
+      "clip_similarity": 0.29549095034599304,
+      "visual": 0.20683562933748478,
+      "scene_support": 0.4450526942592714,
+      "object_support": 0.8893439737120057,
+      "score": 0.48305325212637706,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insect sounds along with rumbling and knocking noises followed by a speech",
+      "clip_similarity": 0.29436343908309937,
+      "visual": 0.1671199888305338,
+      "scene_support": 0.771904911725766,
+      "object_support": 0.5882095215741502,
+      "score": 0.47488232552218834,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds chirping outdoors near running water",
+      "clip_similarity": 0.29375746846199036,
+      "visual": 0.1457751809002128,
+      "scene_support": 0.20934644759819335,
+      "object_support": 0.42599329760461085,
+      "score": 0.2489119959209264,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insect buzzing with light scrapping and then metal clanking",
+      "clip_similarity": 0.2929418683052063,
+      "visual": 0.11704634803594804,
+      "scene_support": 0.46917528363680133,
+      "object_support": 0.74893596213277,
+      "score": 0.41225191294525065,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping and rustling followed by running water with music in the background",
+      "clip_similarity": 0.2929343581199646,
+      "visual": 0.11678180804684457,
+      "scene_support": 1.0,
+      "object_support": 0.0,
+      "score": 0.3467127232187378,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees buzzing with a slight metal tapping sound near the end",
+      "clip_similarity": 0.29276812076568604,
+      "visual": 0.11092623638327645,
+      "scene_support": 0.5038852910061848,
+      "object_support": 0.7615831475178969,
+      "score": 0.4240110261105351,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing and men speaking clicking",
+      "clip_similarity": 0.29245221614837646,
+      "visual": 0.09979876065114629,
+      "scene_support": 0.4638625705000834,
+      "object_support": 0.7353231884624913,
+      "score": 0.39967523194923094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.2921180725097656,
+      "visual": 0.08802883065976483,
+      "scene_support": 0.7658193635302092,
+      "object_support": 0.9182933667149135,
+      "score": 0.5404453513374428,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insect buzzing and tapping",
+      "clip_similarity": 0.29193246364593506,
+      "visual": 0.0814909137862076,
+      "scene_support": 0.8445165663318419,
+      "object_support": 0.818743235666132,
+      "score": 0.5315743061138752,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds cooing with blanking sounds",
+      "clip_similarity": 0.2911996841430664,
+      "visual": 0.0556793691351117,
+      "scene_support": 0.6976145580164744,
+      "object_support": 0.802681610139655,
+      "score": 0.4723605981008835,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird vocalization with running water",
+      "clip_similarity": 0.29063886404037476,
+      "visual": 0.03592495042499609,
+      "scene_support": 0.46042070944569147,
+      "object_support": 0.8197948858376038,
+      "score": 0.398434658754987,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music playing while a fly is buzzing and eating",
+      "clip_similarity": 0.29016366600990295,
+      "visual": 0.019186497543032362,
+      "scene_support": 0.0,
+      "object_support": 0.6350148000365111,
+      "score": 0.19817903902816628,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crackling noise precedes a fly buzzing",
+      "clip_similarity": 0.29002636671066284,
+      "visual": 0.014350244647001827,
+      "scene_support": 0.916462020224629,
+      "object_support": 0.6268728240034425,
+      "score": 0.4687405511272221,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.2898726761341095,
+      "visual": 0.00893662272713435,
+      "scene_support": 0.5603075292294243,
+      "object_support": 0.7840922426945194,
+      "score": 0.4068945806680368,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Buzzing insects with hammering and a male voice",
+      "clip_similarity": 0.2897055745124817,
+      "visual": 0.0030506079695821003,
+      "scene_support": 0.5300191519507751,
+      "object_support": 1.0,
+      "score": 0.46022598877306536,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cricket makes noises while a man speaks in the background",
+      "clip_similarity": 0.28961896896362305,
+      "visual": 0.0,
+      "scene_support": 0.708899850289602,
+      "object_support": 0.918645438068041,
+      "score": 0.48826358650729285,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "crevasse",
+      0.210454523563385
+    ],
+    [
+      "watering hole",
+      0.06843061745166779
+    ],
+    [
+      "trench",
+      0.06661644577980042
+    ],
+    [
+      "catacomb",
+      0.0631662905216217
+    ],
+    [
+      "basement",
+      0.04683084413409233
+    ]
+  ],
+  "top_objects": [
+    [
+      "bee eater",
+      0.20311297476291656
+    ],
+    [
+      "indigo bunting",
+      0.06827572733163834
+    ],
+    [
+      "cricket",
+      0.06496934592723846
+    ],
+    [
+      "dragonfly",
+      0.061804451048374176
+    ],
+    [
+      "goldfinch",
+      0.04920549690723419
+    ]
+  ]
+}

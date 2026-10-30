@@ -1,0 +1,283 @@
+{
+  "id": "K-7Y8yhcUiw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\K-7Y8yhcUiw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\K-7Y8yhcUiw.wav",
+  "gt_captions": [
+    "Loud nearby snoring",
+    "A dog snoring loudly",
+    "An animal snores",
+    "A light and brief snoring",
+    "Repetitive snoring"
+  ],
+  "top_scene": [
+    "tundra",
+    0.3252018690109253
+  ],
+  "top_object": [
+    "hippopotamus",
+    0.2621730864048004
+  ],
+  "env_probs": {
+    "indoor": 0.5253782272338867,
+    "outdoor": 0.4746217727661133
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "A large animal snoring",
+    "casv": "A large animal snoring"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1878523826599121,
+    "clap_gt_audio_baseline": 0.3077811002731323,
+    "clap_text_casv": 0.1878523826599121,
+    "clap_gt_audio_casv": 0.3077811002731323
+  },
+  "verdicts": [
+    {
+      "caption": "A large animal snoring",
+      "clip_similarity": 0.2809884548187256,
+      "visual": 1.0,
+      "scene_support": 0.2816541032748435,
+      "object_support": 0.5266617601731112,
+      "score": 0.6424947590343865,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog snoring",
+      "clip_similarity": 0.2735366225242615,
+      "visual": 0.5878213423228136,
+      "scene_support": 0.5198771552921235,
+      "object_support": 0.7972660626507506,
+      "score": 0.6302715023119877,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An animal snoring",
+      "clip_similarity": 0.27158188819885254,
+      "visual": 0.47970031402738056,
+      "scene_support": 0.8609736912362055,
+      "object_support": 0.616785380047066,
+      "score": 0.6352078469959337,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small creature oinking",
+      "clip_similarity": 0.2703154385089874,
+      "visual": 0.409649954255854,
+      "scene_support": 0.5938975422099505,
+      "object_support": 0.6998497997912992,
+      "score": 0.5519841843027166,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog softly snoring",
+      "clip_similarity": 0.2680826485157013,
+      "visual": 0.2861490022830862,
+      "scene_support": 0.684640648769134,
+      "object_support": 0.8313361388411868,
+      "score": 0.5692526371963307,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone snores and a dog barks",
+      "clip_similarity": 0.26768288016319275,
+      "visual": 0.2640368590668194,
+      "scene_support": 0.25116510751599613,
+      "object_support": 0.48159820290936894,
+      "score": 0.32544373675433724,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig squeals as a dog barks and child talks",
+      "clip_similarity": 0.2676399350166321,
+      "visual": 0.2616614603509524,
+      "scene_support": 0.0,
+      "object_support": 1.0,
+      "score": 0.404664584140381,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog snoring and yelping",
+      "clip_similarity": 0.26680439710617065,
+      "visual": 0.21544586118506187,
+      "scene_support": 0.2371587323486883,
+      "object_support": 0.7006843230541594,
+      "score": 0.3675312610948791,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal snorting and snoring",
+      "clip_similarity": 0.2662176191806793,
+      "visual": 0.18298977144411385,
+      "scene_support": 0.2991257886089127,
+      "object_support": 0.47885420095795445,
+      "score": 0.3065899054477057,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal snoring and breathing loudly",
+      "clip_similarity": 0.2656933069229126,
+      "visual": 0.15398880710806334,
+      "scene_support": 1.0,
+      "object_support": 0.565203595019979,
+      "score": 0.531156601349219,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby that is snoring",
+      "clip_similarity": 0.26566213369369507,
+      "visual": 0.15226454128100092,
+      "scene_support": 0.43701073099409965,
+      "object_support": 0.2735230371055322,
+      "score": 0.2740659469422899,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone snores while the TV plays in the background",
+      "clip_similarity": 0.2656257152557373,
+      "visual": 0.1502501504199395,
+      "scene_support": 0.20424007754840953,
+      "object_support": 0.0,
+      "score": 0.12137208343249867,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks and its nails scrape against the floor followed by some banging and scraping",
+      "clip_similarity": 0.2642498314380646,
+      "visual": 0.07414672743906962,
+      "scene_support": 0.541710042769883,
+      "object_support": 0.5677714664335034,
+      "score": 0.3625031437366437,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A canine snoring",
+      "clip_similarity": 0.2633824348449707,
+      "visual": 0.026168948379173638,
+      "scene_support": 0.248429053418455,
+      "object_support": 0.6354796796381217,
+      "score": 0.27564019926864247,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "That is a snoring",
+      "clip_similarity": 0.2632816433906555,
+      "visual": 0.02059393210085142,
+      "scene_support": 0.0618165464081003,
+      "object_support": 0.15753129287503048,
+      "score": 0.0740419246252798,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A snoring creature",
+      "clip_similarity": 0.2629879415035248,
+      "visual": 0.004348578634599059,
+      "scene_support": 0.7736206399177212,
+      "object_support": 0.4936261014274262,
+      "score": 0.38191345385738384,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone snores through the nose and makes funny noises sleeping",
+      "clip_similarity": 0.2629610300064087,
+      "visual": 0.002860039397660867,
+      "scene_support": 0.11259928722834316,
+      "object_support": 0.2389105906873075,
+      "score": 0.10659697913375954,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud heavy snoring",
+      "clip_similarity": 0.2629326581954956,
+      "visual": 0.0012907267137570368,
+      "scene_support": 0.4637996928882303,
+      "object_support": 0.2656062489996554,
+      "score": 0.21933807325186855,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone snores while sleeping",
+      "clip_similarity": 0.26293161511421204,
+      "visual": 0.0012330313944958666,
+      "scene_support": 0.26646515069798943,
+      "object_support": 0.1978784657352716,
+      "score": 0.13979629748777664,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud snoring over and over",
+      "clip_similarity": 0.26290932297706604,
+      "visual": 0.0,
+      "scene_support": 0.5719571476949595,
+      "object_support": 0.29176093494562666,
+      "score": 0.25911542479217586,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tundra",
+      0.3252018690109253
+    ],
+    [
+      "veterinarians office",
+      0.17445489764213562
+    ],
+    [
+      "nursing home",
+      0.1030135303735733
+    ],
+    [
+      "pet shop",
+      0.03640606626868248
+    ],
+    [
+      "bullring",
+      0.030347418040037155
+    ]
+  ],
+  "top_objects": [
+    [
+      "hippopotamus",
+      0.2621730864048004
+    ],
+    [
+      "Mexican hairless dog",
+      0.1830214411020279
+    ],
+    [
+      "Bullmastiff",
+      0.06938738375902176
+    ],
+    [
+      "wombat",
+      0.04991717264056206
+    ],
+    [
+      "wild boar",
+      0.04463643953204155
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "dxow2DcTrwk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\dxow2DcTrwk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\dxow2DcTrwk.wav",
+  "gt_captions": [
+    "Wind blowing followed by people speaking then a loud burst of thunder",
+    "Rain falls and a man speaks with distant thunder",
+    "A man and a woman talking while rain falls, followed by a crash of thunder",
+    "A man and a woman communicates with thunder and rain in the background",
+    "A man talking followed by another man laughing as rain falls and thunder roars in the distance"
+  ],
+  "top_scene": [
+    "airfield",
+    0.11886280030012131
+  ],
+  "top_object": [
+    "military aircraft",
+    0.07150428742170334
+  ],
+  "env_probs": {
+    "indoor": 0.3281363844871521,
+    "outdoor": 0.6718636155128479
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Gun firing and shooting during a rain and thunderstorm",
+    "casv": "An aircraft engine accelerates with wind noise in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.42548245191574097,
+    "clap_gt_audio_baseline": 0.4503818154335022,
+    "clap_text_casv": -0.051774460822343826,
+    "clap_gt_audio_casv": -0.018288368359208107
+  },
+  "verdicts": [
+    {
+      "caption": "Gun firing and shooting during a rain and thunderstorm",
+      "clip_similarity": 0.3153815269470215,
+      "visual": 1.0,
+      "scene_support": 0.20625740140380677,
+      "object_support": 0.29688635388295315,
+      "score": 0.550943126586028,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine accelerating turbulently",
+      "clip_similarity": 0.30967631936073303,
+      "visual": 0.6225382716438864,
+      "scene_support": 0.11686397989234949,
+      "object_support": 0.528358384184481,
+      "score": 0.44258201788060375,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunder booms while rain falls",
+      "clip_similarity": 0.3093656897544861,
+      "visual": 0.6019867340741851,
+      "scene_support": 0.29018336492416474,
+      "object_support": 0.3878946627524534,
+      "score": 0.44421810193265954,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud and heavy rainfall on metal with faint yell in background",
+      "clip_similarity": 0.30784767866134644,
+      "visual": 0.5015537380413436,
+      "scene_support": 0.15460104059853405,
+      "object_support": 0.11537753521965587,
+      "score": 0.2816150679619944,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rotor blades spinning from an aircraft followed by a males laughter",
+      "clip_similarity": 0.30758538842201233,
+      "visual": 0.4842003769983674,
+      "scene_support": 0.06423330951073916,
+      "object_support": 0.43593097352092836,
+      "score": 0.34372943570884723,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People talking while thundering during a thunderstorm",
+      "clip_similarity": 0.3070696294307709,
+      "visual": 0.4500772925523105,
+      "scene_support": 0.12397208958676431,
+      "object_support": 0.052578576350241164,
+      "score": 0.23299611680202587,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks while thunder rolls in the background",
+      "clip_similarity": 0.30564892292022705,
+      "visual": 0.3560820562973713,
+      "scene_support": 0.3024178206814643,
+      "object_support": 0.2604667306117355,
+      "score": 0.31129818790690844,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine accelerates with wind noise in the background",
+      "clip_similarity": 0.3055640459060669,
+      "visual": 0.35046651576215976,
+      "scene_support": 0.6797953328430713,
+      "object_support": 0.9826852483513627,
+      "score": 0.6389307806631941,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitched powerful spraying with a man speaking",
+      "clip_similarity": 0.3054428696632385,
+      "visual": 0.3424493852087293,
+      "scene_support": 0.33022880048059494,
+      "object_support": 0.42687265869575997,
+      "score": 0.3641101918363982,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A continuous long burst of rapid wind on mic",
+      "clip_similarity": 0.30444836616516113,
+      "visual": 0.27665212830563685,
+      "scene_support": 0.8475181345182484,
+      "object_support": 0.9124710551677248,
+      "score": 0.6386576082280466,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Thunder booms as it rains",
+      "clip_similarity": 0.30440235137939453,
+      "visual": 0.2736077481840194,
+      "scene_support": 0.30852676244040034,
+      "object_support": 0.4188293721015986,
+      "score": 0.3276499396362075,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle beeps a horn followed by thunder",
+      "clip_similarity": 0.3040716052055359,
+      "visual": 0.2517252801855021,
+      "scene_support": 0.5450022614201718,
+      "object_support": 0.6552705383639067,
+      "score": 0.46077195200942445,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunderstorm followed by a symbol and drums playing",
+      "clip_similarity": 0.3040134012699127,
+      "visual": 0.2478744548114614,
+      "scene_support": 0.20216060571535108,
+      "object_support": 0.21775518613315278,
+      "score": 0.2251245194791357,
+      "conflicts": [
+        "names 'drums', not visible in image (z=-0.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A thunderstorm and a ringing sound",
+      "clip_similarity": 0.30240994691848755,
+      "visual": 0.14178845501652326,
+      "scene_support": 0.6279891313729755,
+      "object_support": 0.5927531201717057,
+      "score": 0.4229380574700137,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunderstorm sounds together with rain",
+      "clip_similarity": 0.30195629596710205,
+      "visual": 0.11177449503513656,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.04470979801405463,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people converse as wind blows wildly",
+      "clip_similarity": 0.30192235112190247,
+      "visual": 0.10952867317080865,
+      "scene_support": 0.17328416902303195,
+      "object_support": 0.21762866380452642,
+      "score": 0.16108531911659096,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A very loud explosion with a wind sound at the end",
+      "clip_similarity": 0.3011174201965332,
+      "visual": 0.05627371027912076,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6225094841116483,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud horn from a train",
+      "clip_similarity": 0.3007949888706207,
+      "visual": 0.03494136019118076,
+      "scene_support": 0.5295534817239272,
+      "object_support": 0.5805174991208978,
+      "score": 0.3469978383299198,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plane flying and high winds blowing over the microphone",
+      "clip_similarity": 0.3004435896873474,
+      "visual": 0.011692470285745833,
+      "scene_support": 0.7792253168577653,
+      "object_support": 0.8165625707057496,
+      "score": 0.48341335438335276,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple people yell as sirens whale",
+      "clip_similarity": 0.3002668619155884,
+      "visual": 0.0,
+      "scene_support": 0.07390528274657249,
+      "object_support": 0.37005672417733415,
+      "score": 0.13318860207717198,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "airfield",
+      0.11886280030012131
+    ],
+    [
+      "army base",
+      0.06400082260370255
+    ],
+    [
+      "shower",
+      0.06291203945875168
+    ],
+    [
+      "sky",
+      0.05004871264100075
+    ],
+    [
+      "highway",
+      0.03911590576171875
+    ]
+  ],
+  "top_objects": [
+    [
+      "military aircraft",
+      0.07150428742170334
+    ],
+    [
+      "missile",
+      0.05727629363536835
+    ],
+    [
+      "cannon",
+      0.045645490288734436
+    ],
+    [
+      "aircraft carrier",
+      0.03162102401256561
+    ],
+    [
+      "motorboat",
+      0.02704111859202385
+    ]
+  ]
+}

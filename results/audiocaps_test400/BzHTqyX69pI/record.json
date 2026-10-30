@@ -1,0 +1,287 @@
+{
+  "id": "BzHTqyX69pI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BzHTqyX69pI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BzHTqyX69pI.wav",
+  "gt_captions": [
+    "Rustling with scraping as pigeons coo",
+    "Wood sawing as pigeons coo and bird wings flap followed by a woman speaking",
+    "Wood sawing and scrapping followed by a woman speaking while pigeons are cooing and bird wings are flapping",
+    "A rasping sound on wood along with some pigeons cooing followed a woman speaking",
+    "Rubbing against wood with birds cooing and woman speaking briefly"
+  ],
+  "top_scene": [
+    "elevator shaft",
+    0.10826902836561203
+  ],
+  "top_object": [
+    "abacus",
+    0.4130481481552124
+  ],
+  "env_probs": {
+    "indoor": 0.6321936845779419,
+    "outdoor": 0.3678063154220581
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A man talking in a foreign language followed by a sawing sound created by a power tool cutting through wood",
+    "casv": "A man makes a speech which is broadcast through loudspeakers"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06364788115024567,
+    "clap_gt_audio_baseline": 0.21278738975524902,
+    "clap_text_casv": -0.0668114721775055,
+    "clap_gt_audio_casv": 0.08459952473640442
+  },
+  "verdicts": [
+    {
+      "caption": "A man talking in a foreign language followed by a sawing sound created by a power tool cutting through wood",
+      "clip_similarity": 0.3032657206058502,
+      "visual": 1.0,
+      "scene_support": 0.4110582349942215,
+      "object_support": 0.6075900617900293,
+      "score": 0.7055944890352752,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man makes a speech which is broadcast through loudspeakers",
+      "clip_similarity": 0.2982069253921509,
+      "visual": 0.6680005711145143,
+      "scene_support": 0.8955210789319323,
+      "object_support": 0.9127330077419589,
+      "score": 0.8096764544479731,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A drill spinning with an air conditioner running in the background followed by a man speaking",
+      "clip_similarity": 0.29621565341949463,
+      "visual": 0.5373170526579317,
+      "scene_support": 0.48596590113412047,
+      "object_support": 0.42159586691513656,
+      "score": 0.4871953514779498,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man drilling holes in an object",
+      "clip_similarity": 0.29458504915237427,
+      "visual": 0.4303034925999597,
+      "scene_support": 0.6215380720500634,
+      "object_support": 0.5729020200642875,
+      "score": 0.5304534246742891,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks in Russian while an insects buzz",
+      "clip_similarity": 0.29350078105926514,
+      "visual": 0.3591449711606729,
+      "scene_support": 0.06149626951769107,
+      "object_support": 0.0,
+      "score": 0.1621068693195765,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by a power drill running",
+      "clip_similarity": 0.2933966815471649,
+      "visual": 0.35231311157660855,
+      "scene_support": 0.8292734343112674,
+      "object_support": 0.817731387604753,
+      "score": 0.6350266912054495,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is talking as power tools are used to drill",
+      "clip_similarity": 0.2932160496711731,
+      "visual": 0.3404585736610592,
+      "scene_support": 0.7807779118369242,
+      "object_support": 0.7983117339475682,
+      "score": 0.6099103231997713,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man yells over a drill being used",
+      "clip_similarity": 0.29134052991867065,
+      "visual": 0.21737166059368526,
+      "scene_support": 0.6935577353871792,
+      "object_support": 0.6320011064828458,
+      "score": 0.4846163167984816,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bell ringing and man speaking with a motor sound in background",
+      "clip_similarity": 0.29029494524002075,
+      "visual": 0.14875186052288272,
+      "scene_support": 0.6094214176679987,
+      "object_support": 0.4572721190270575,
+      "score": 0.37950880521766994,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks then uses a drill and then clacks wood together",
+      "clip_similarity": 0.2896197438240051,
+      "visual": 0.1044396330002484,
+      "scene_support": 0.7325858912964716,
+      "object_support": 1.0,
+      "score": 0.5615516205890408,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by some rustling then vibrations from a power tool",
+      "clip_similarity": 0.2896000146865845,
+      "visual": 0.10314484598488893,
+      "scene_support": 0.9072838969050279,
+      "object_support": 0.7996660024837217,
+      "score": 0.5533429082105804,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A drill works then a man talks and some wood object is moved",
+      "clip_similarity": 0.28940948843955994,
+      "visual": 0.09064095869003543,
+      "scene_support": 0.9604949124803085,
+      "object_support": 0.9853088010838058,
+      "score": 0.6199974975452485,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man makes a buzzing noise, followed by hammering and childish noises",
+      "clip_similarity": 0.2891697287559509,
+      "visual": 0.07490597147165648,
+      "scene_support": 0.7862215105625152,
+      "object_support": 0.6484712795858314,
+      "score": 0.46037022563316654,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by some rustling and vibrations from a power tool",
+      "clip_similarity": 0.2891567647457123,
+      "visual": 0.07405516731503811,
+      "scene_support": 0.8656547942092429,
+      "object_support": 0.8124584885659366,
+      "score": 0.5330560517585691,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks before a power drill is turned on",
+      "clip_similarity": 0.28915032744407654,
+      "visual": 0.07363269904416554,
+      "scene_support": 0.5849209873331549,
+      "object_support": 0.6689245954422095,
+      "score": 0.4056067544502755,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple men laugh while using power tools",
+      "clip_similarity": 0.2888917922973633,
+      "visual": 0.056665512702408265,
+      "scene_support": 0.0,
+      "object_support": 0.14537689083207608,
+      "score": 0.06627927233058613,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks while shuffling something and then hammering",
+      "clip_similarity": 0.2886457145214081,
+      "visual": 0.040515880699654394,
+      "scene_support": 0.7909953119167618,
+      "object_support": 0.6519686255420617,
+      "score": 0.4490955335175088,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and rubs a wall",
+      "clip_similarity": 0.28841152787208557,
+      "visual": 0.025146641475040143,
+      "scene_support": 0.719135622505391,
+      "object_support": 0.6254330751377116,
+      "score": 0.4134292658829468,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric drill humming followed by a man speaking",
+      "clip_similarity": 0.2882838845252991,
+      "visual": 0.016769643307691855,
+      "scene_support": 1.0,
+      "object_support": 0.9031006444871593,
+      "score": 0.5776380506692245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking as a power tool drill revs several times while music plays in the background",
+      "clip_similarity": 0.288028359413147,
+      "visual": 0.0,
+      "scene_support": 0.7265980822066634,
+      "object_support": 0.7146891951265882,
+      "score": 0.43238618319997546,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.17)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "elevator shaft",
+      0.10826902836561203
+    ],
+    [
+      "storage room",
+      0.10405022650957108
+    ],
+    [
+      "fire escape",
+      0.09235956519842148
+    ],
+    [
+      "embassy",
+      0.050534214824438095
+    ],
+    [
+      "construction site",
+      0.04676521569490433
+    ]
+  ],
+  "top_objects": [
+    [
+      "abacus",
+      0.4130481481552124
+    ],
+    [
+      "crate",
+      0.10525442659854889
+    ],
+    [
+      "prison",
+      0.054226238280534744
+    ],
+    [
+      "wardrobe",
+      0.04376482218503952
+    ],
+    [
+      "bulletproof vest",
+      0.024530461058020592
+    ]
+  ]
+}

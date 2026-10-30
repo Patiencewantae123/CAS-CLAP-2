@@ -1,0 +1,283 @@
+{
+  "id": "gbtcDoh0q3c",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\gbtcDoh0q3c.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\gbtcDoh0q3c.wav",
+  "gt_captions": [
+    "Scraping and speech followed by people laughing",
+    "A scratching of surface sound followed by men talking and snickering",
+    "Metal clacking followed by a man talking then a metal bang as footsteps shuffle on dirt and a group of men laugh",
+    "Man talks while striking and popping occurs then a second man laughs",
+    "Rustling and scratching and then laughter"
+  ],
+  "top_scene": [
+    "trench",
+    0.157231867313385
+  ],
+  "top_object": [
+    "mortar",
+    0.1906926929950714
+  ],
+  "env_probs": {
+    "indoor": 0.36318251490592957,
+    "outdoor": 0.6368174850940704
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A gunshot firing followed by metal clanking then a gun reloading and cocking as music plays in the background",
+    "casv": "A gunshot firing followed by metal clanking then a gun reloading and cocking as music plays in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.04836076498031616,
+    "clap_gt_audio_baseline": 0.28560394048690796,
+    "clap_text_casv": 0.04836076498031616,
+    "clap_gt_audio_casv": 0.28560394048690796
+  },
+  "verdicts": [
+    {
+      "caption": "A gunshot firing followed by metal clanking then a gun reloading and cocking as music plays in the background",
+      "clip_similarity": 0.3059534728527069,
+      "visual": 1.0,
+      "scene_support": 0.9949278078282721,
+      "object_support": 0.7768768719561511,
+      "score": 0.9315414039353269,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while a pot is being scraped, then a liquid pours, and then some more scraping",
+      "clip_similarity": 0.3055717349052429,
+      "visual": 0.9785380974322456,
+      "scene_support": 0.09899016142084416,
+      "object_support": 0.0,
+      "score": 0.4211122873991515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man pours liquid into a pot",
+      "clip_similarity": 0.30220460891723633,
+      "visual": 0.7892330247560005,
+      "scene_support": 0.0,
+      "object_support": 0.2798714165828834,
+      "score": 0.39965463487726527,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water runs as someone stirs a pot",
+      "clip_similarity": 0.3013285994529724,
+      "visual": 0.739982406903196,
+      "scene_support": 0.5319753822564846,
+      "object_support": 0.49860133639673826,
+      "score": 0.6051659783572453,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A gun is cocked and fired rapidly and cartridges ping against the floor",
+      "clip_similarity": 0.2994312644004822,
+      "visual": 0.6333112721484522,
+      "scene_support": 0.5618637931768815,
+      "object_support": 0.43375133282692735,
+      "score": 0.5520090466605236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone rubs rocks together",
+      "clip_similarity": 0.29884159564971924,
+      "visual": 0.6001591756377498,
+      "scene_support": 0.617258401124409,
+      "object_support": 0.18469148055857593,
+      "score": 0.48064863475999536,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The person pours a coup of water into the cooking pot",
+      "clip_similarity": 0.293706476688385,
+      "visual": 0.3114547815523814,
+      "scene_support": 0.3405302610843733,
+      "object_support": 0.40234753103687204,
+      "score": 0.34744525025732614,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fishing line being thrown twice",
+      "clip_similarity": 0.2936757504940033,
+      "visual": 0.3097273069995392,
+      "scene_support": 0.3237544188423698,
+      "object_support": 0.15834803198082367,
+      "score": 0.26852165804677375,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.2933107316493988,
+      "visual": 0.2892053784610229,
+      "scene_support": 0.33622045231909364,
+      "object_support": 0.20027575325935437,
+      "score": 0.2766310130579436,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone rubs metal against an object",
+      "clip_similarity": 0.2918129563331604,
+      "visual": 0.20499811502534243,
+      "scene_support": 0.7816529664806848,
+      "object_support": 0.7343393567551941,
+      "score": 0.5367969429809006,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sharp ringing from metal being drilled into by a power tool",
+      "clip_similarity": 0.29060256481170654,
+      "visual": 0.136948016587777,
+      "scene_support": 0.4760977895140338,
+      "object_support": 0.5047261955062519,
+      "score": 0.3490264021411965,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A metal object is smacked, then an object is hammered",
+      "clip_similarity": 0.2901425361633301,
+      "visual": 0.11108448875298454,
+      "scene_support": 0.8019915669321521,
+      "object_support": 0.9131055364840523,
+      "score": 0.5589629265260552,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A light hammer tapping in the background is followed by a slow drill",
+      "clip_similarity": 0.2891653776168823,
+      "visual": 0.056147111799941356,
+      "scene_support": 0.8065841816090975,
+      "object_support": 0.6779024025412371,
+      "score": 0.46780481996507695,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.289105623960495,
+      "visual": 0.05278766807690696,
+      "scene_support": 0.5706921078410494,
+      "object_support": 0.35174107283935735,
+      "score": 0.2978450214348848,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person loads, cocks, and fires an automatic weapon, then replaces the clip with a new one and re-cocks the weapon",
+      "clip_similarity": 0.2890908122062683,
+      "visual": 0.051954928161521384,
+      "scene_support": 0.5720763235231483,
+      "object_support": 0.27381093111201366,
+      "score": 0.2745481476551571,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cocking of weapons with heavy rapid gunfire",
+      "clip_similarity": 0.28907662630081177,
+      "visual": 0.05115737443974364,
+      "scene_support": 0.7917977767366583,
+      "object_support": 0.640408854535474,
+      "score": 0.45012493915753715,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some metal object hits the wood",
+      "clip_similarity": 0.28898224234580994,
+      "visual": 0.045850961337075356,
+      "scene_support": 1.0,
+      "object_support": 0.9605518342390509,
+      "score": 0.6065059348065454,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some water running, someone stirs a metal pot with a metal utensil",
+      "clip_similarity": 0.28840965032577515,
+      "visual": 0.01365894525195828,
+      "scene_support": 0.6027066740491503,
+      "object_support": 0.8060644649321678,
+      "score": 0.4280949197951788,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several gunshots firing with a gun cocking several times afterward alongside metal lightly clanking as footsteps continuously walk on a hard surface",
+      "clip_similarity": 0.2881688177585602,
+      "visual": 0.00011896284505508315,
+      "scene_support": 0.793496315856723,
+      "object_support": 0.5244520340314167,
+      "score": 0.3954320901044639,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Gun being fired repeatedly",
+      "clip_similarity": 0.28816670179367065,
+      "visual": 0.0,
+      "scene_support": 0.9564070020017889,
+      "object_support": 1.0,
+      "score": 0.5869221006005366,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "trench",
+      0.157231867313385
+    ],
+    [
+      "archaelogical excavation",
+      0.12193326652050018
+    ],
+    [
+      "excavation",
+      0.0369732491672039
+    ],
+    [
+      "army base",
+      0.029484333470463753
+    ],
+    [
+      "swamp",
+      0.02819436602294445
+    ]
+  ],
+  "top_objects": [
+    [
+      "mortar",
+      0.1906926929950714
+    ],
+    [
+      "hatchet",
+      0.06677021831274033
+    ],
+    [
+      "shovel",
+      0.025263242423534393
+    ],
+    [
+      "garfish",
+      0.02253745123744011
+    ],
+    [
+      "pot",
+      0.019707372412085533
+    ]
+  ]
+}

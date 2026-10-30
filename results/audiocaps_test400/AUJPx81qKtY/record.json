@@ -1,0 +1,289 @@
+{
+  "id": "AUJPx81qKtY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AUJPx81qKtY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AUJPx81qKtY.wav",
+  "gt_captions": [
+    "An adult male speaks, birds chirp in the background, and many insects are buzzing",
+    "A man talking as a swarm of insects are buzzing",
+    "A man talks and insects buzz",
+    "A man talking as a swam of insects buzz",
+    "Insects buzzing as a man talks and birds chirp in the background"
+  ],
+  "top_scene": [
+    "heliport",
+    0.35005033016204834
+  ],
+  "top_object": [
+    "crane (machine)",
+    0.15505313873291016
+  ],
+  "env_probs": {
+    "indoor": 0.3490836024284363,
+    "outdoor": 0.6509163975715637
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Faint audio of a person snoring",
+    "casv": "A train horn sounds increasing volume"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.042493872344493866,
+    "clap_gt_audio_baseline": 0.05588360130786896,
+    "clap_text_casv": -0.05153330788016319,
+    "clap_gt_audio_casv": 0.18866762518882751
+  },
+  "verdicts": [
+    {
+      "caption": "Faint audio of a person snoring",
+      "clip_similarity": 0.30370619893074036,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Helicopter engine and rotor noise",
+      "clip_similarity": 0.29977738857269287,
+      "visual": 0.6782688914432982,
+      "scene_support": 0.8147577579060346,
+      "object_support": 0.4969342482731357,
+      "score": 0.6648151584310703,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitched mechanical humming with repetitive snoring",
+      "clip_similarity": 0.2985374927520752,
+      "visual": 0.5767335612777579,
+      "scene_support": 0.43201602906437353,
+      "object_support": 0.5838924829984667,
+      "score": 0.5354659781299552,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn sounds increasing volume",
+      "clip_similarity": 0.2985242009162903,
+      "visual": 0.5756450900429287,
+      "scene_support": 0.5738436230675076,
+      "object_support": 1.0,
+      "score": 0.7024111229374237,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train horn sounds followed by the rumbling of a moving train and then another horn sounds",
+      "clip_similarity": 0.29785463213920593,
+      "visual": 0.5208139617180274,
+      "scene_support": 0.44042609036878805,
+      "object_support": 0.5723152802782214,
+      "score": 0.5121479958813138,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train horn and associated train sounds",
+      "clip_similarity": 0.29568371176719666,
+      "visual": 0.34303683474517327,
+      "scene_support": 0.3670484224313346,
+      "object_support": 0.528298938506002,
+      "score": 0.4058189421792703,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter engine noise",
+      "clip_similarity": 0.29507899284362793,
+      "visual": 0.29351627459737545,
+      "scene_support": 0.882339183110231,
+      "object_support": 0.8463271078962973,
+      "score": 0.6360063971409087,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Low-quality horn sound",
+      "clip_similarity": 0.29447054862976074,
+      "visual": 0.24369064964160986,
+      "scene_support": 0.508329240308627,
+      "object_support": 0.8311232230526366,
+      "score": 0.49931199886502303,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn sounds loudly followed by a distant train horn with subtle speech and beeping in the background",
+      "clip_similarity": 0.29439777135849,
+      "visual": 0.23773090355315082,
+      "scene_support": 0.6407270251376685,
+      "object_support": 0.8054673351532409,
+      "score": 0.5289506695085331,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train moves closer while horn is triggered",
+      "clip_similarity": 0.2935754954814911,
+      "visual": 0.17039455862003325,
+      "scene_support": 0.4706458663049212,
+      "object_support": 0.6269278643510036,
+      "score": 0.3974299426447907,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two short beeps followed by a man speaking a short foreign phrase followed by a car horn playing a short tune ending with a man saying a foreign word",
+      "clip_similarity": 0.29338693618774414,
+      "visual": 0.15495339829993485,
+      "scene_support": 0.2676900527805281,
+      "object_support": 0.3192254886772193,
+      "score": 0.23805602175729815,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter engine sound",
+      "clip_similarity": 0.2929970920085907,
+      "visual": 0.12302897627572001,
+      "scene_support": 0.9846985844631381,
+      "object_support": 0.8584378622675478,
+      "score": 0.6021525245294937,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Repetitive deep snoring and breathing",
+      "clip_similarity": 0.29249823093414307,
+      "visual": 0.08217713771113536,
+      "scene_support": 0.0629249923986684,
+      "object_support": 0.10470633958191988,
+      "score": 0.08316025467863064,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter motor noise",
+      "clip_similarity": 0.2922407388687134,
+      "visual": 0.06109105818440069,
+      "scene_support": 0.9981829569049977,
+      "object_support": 0.7579812382137839,
+      "score": 0.5512856818093947,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train moves closer and the horn is triggered",
+      "clip_similarity": 0.292197048664093,
+      "visual": 0.05751325811655428,
+      "scene_support": 0.5278307488805902,
+      "object_support": 0.7378051060692669,
+      "score": 0.40269605973157885,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car engine noise and horn honking",
+      "clip_similarity": 0.29186248779296875,
+      "visual": 0.030115997842581677,
+      "scene_support": 0.4278699899428536,
+      "object_support": 0.596857988450176,
+      "score": 0.31946479265494154,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming and vibrating of a helicopter rotor",
+      "clip_similarity": 0.2917667627334595,
+      "visual": 0.02227705253704097,
+      "scene_support": 1.0,
+      "object_support": 0.7022114013109745,
+      "score": 0.5195742414081087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle horn sound that is beep",
+      "clip_similarity": 0.2916923761367798,
+      "visual": 0.016185518451539847,
+      "scene_support": 0.48262972289573053,
+      "object_support": 0.5486687251921855,
+      "score": 0.3158637418069907,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Soft snoring sounds",
+      "clip_similarity": 0.2915215492248535,
+      "visual": 0.0021964666173681937,
+      "scene_support": 0.17567573888841245,
+      "object_support": 0.33544038378323515,
+      "score": 0.15421342344844155,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Helicopter noises while man talks and another person talks",
+      "clip_similarity": 0.2914947271347046,
+      "visual": 0.0,
+      "scene_support": 0.8140924789696492,
+      "object_support": 0.5034330275817489,
+      "score": 0.3952576519654194,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "heliport",
+      0.35005033016204834
+    ],
+    [
+      "operating room",
+      0.11007344722747803
+    ],
+    [
+      "manufactured home",
+      0.051255933940410614
+    ],
+    [
+      "harbor",
+      0.04519318416714668
+    ],
+    [
+      "construction site",
+      0.03234428912401199
+    ]
+  ],
+  "top_objects": [
+    [
+      "crane (machine)",
+      0.15505313873291016
+    ],
+    [
+      "monitor",
+      0.05519422888755798
+    ],
+    [
+      "website",
+      0.03115641511976719
+    ],
+    [
+      "hermit crab",
+      0.029989471659064293
+    ],
+    [
+      "odometer",
+      0.028751343488693237
+    ]
+  ]
+}

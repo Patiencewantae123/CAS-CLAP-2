@@ -1,0 +1,285 @@
+{
+  "id": "OpiWMltpj44",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\OpiWMltpj44.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\OpiWMltpj44.wav",
+  "gt_captions": [
+    "Birds are squawking, and ducks are quacking",
+    "Ducks quacking as roosters crow and chickens cluck while water trickles",
+    "Ducks quack and water splashes with some animal screeching in the background",
+    "Several ducks quack with some distant humming",
+    "Ducks are quaking along with geese honking"
+  ],
+  "top_scene": [
+    "pond",
+    0.20470069348812103
+  ],
+  "top_object": [
+    "duck",
+    0.7510947585105896
+  ],
+  "env_probs": {
+    "indoor": 0.2729719877243042,
+    "outdoor": 0.7270280122756958
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Birds cheep and sing softy as water just barely splashes",
+    "casv": "Various bird and duck noises, followed by splashing water"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07685959339141846,
+    "clap_gt_audio_baseline": 0.6015844345092773,
+    "clap_text_casv": 0.5617177486419678,
+    "clap_gt_audio_casv": 0.7675314545631409
+  },
+  "verdicts": [
+    {
+      "caption": "Birds cheep and sing softy as water just barely splashes",
+      "clip_similarity": 0.3455464243888855,
+      "visual": 1.0,
+      "scene_support": 0.7599567853432072,
+      "object_support": 0.18377680072079947,
+      "score": 0.6831200758192021,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Ducks quacking as water trickles and splashes with plastic clacking",
+      "clip_similarity": 0.3431500792503357,
+      "visual": 0.8375254598946041,
+      "scene_support": 0.29326135430570527,
+      "object_support": 0.40101384973255655,
+      "score": 0.5432927451693202,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Various bird and duck noises, followed by splashing water",
+      "clip_similarity": 0.34271618723869324,
+      "visual": 0.8081071578675115,
+      "scene_support": 1.0,
+      "object_support": 0.5441865499543487,
+      "score": 0.7864988281333092,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Ducks in moving in water quacking with natural outdoor noises",
+      "clip_similarity": 0.3418222665786743,
+      "visual": 0.7474984643238175,
+      "scene_support": 0.413202457067474,
+      "object_support": 0.5616858809698722,
+      "score": 0.5914658871407308,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People are playing with a duck splashing in water",
+      "clip_similarity": 0.34002184867858887,
+      "visual": 0.6254283728298471,
+      "scene_support": 0.3431688348581369,
+      "object_support": 0.28930647105928053,
+      "score": 0.43991394090716407,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds quacking with loud taps",
+      "clip_similarity": 0.33957862854003906,
+      "visual": 0.5953776146907633,
+      "scene_support": 0.5638136107684465,
+      "object_support": 0.5704237703463987,
+      "score": 0.5784222602107589,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ducks quacking as a woman talks",
+      "clip_similarity": 0.33918970823287964,
+      "visual": 0.5690084381364974,
+      "scene_support": 0.3520077984846657,
+      "object_support": 0.7384340852351368,
+      "score": 0.5547359403705396,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water moving and birds crying",
+      "clip_similarity": 0.337693989276886,
+      "visual": 0.46759723254986907,
+      "scene_support": 0.9852387215777533,
+      "object_support": 0.37935779494698735,
+      "score": 0.5964178479773699,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds tweet as water splashes",
+      "clip_similarity": 0.33746275305747986,
+      "visual": 0.4519191911027772,
+      "scene_support": 0.4846841886112549,
+      "object_support": 0.0,
+      "score": 0.32617293302448735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck quacking as a person speaks and water splashes",
+      "clip_similarity": 0.33596110343933105,
+      "visual": 0.3501058808315282,
+      "scene_support": 0.4283810945118748,
+      "object_support": 0.8571465081014772,
+      "score": 0.5257006331166169,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are tweeting from a distance as water is splashing mildly",
+      "clip_similarity": 0.3356599807739258,
+      "visual": 0.329689470110892,
+      "scene_support": 0.6391396177808564,
+      "object_support": 0.09223717428974895,
+      "score": 0.3512888256655384,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two ducks make frantic calls to each other",
+      "clip_similarity": 0.3352835476398468,
+      "visual": 0.3041669360835408,
+      "scene_support": 0.0,
+      "object_support": 0.5070967476831089,
+      "score": 0.27379579873834897,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A quacking sound with people talking",
+      "clip_similarity": 0.33397144079208374,
+      "visual": 0.21520481070770425,
+      "scene_support": 0.7080374202737253,
+      "object_support": 0.9220720779409509,
+      "score": 0.5751147737474845,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ducks making sounds",
+      "clip_similarity": 0.333878755569458,
+      "visual": 0.20892066211890983,
+      "scene_support": 0.5727955855284407,
+      "object_support": 0.8997630742617869,
+      "score": 0.5253358627846322,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing and duck quacking",
+      "clip_similarity": 0.3336057960987091,
+      "visual": 0.19041374349358248,
+      "scene_support": 0.956903546286964,
+      "object_support": 0.9455687169829853,
+      "score": 0.6469071763784178,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult male speaks and an adult female laugh, water splashes, and a duck quacks",
+      "clip_similarity": 0.3333617150783539,
+      "visual": 0.17386481200090523,
+      "scene_support": 0.34873556754989826,
+      "object_support": 0.23336233101251677,
+      "score": 0.24417529436908658,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks being shot at from someone with a gun",
+      "clip_similarity": 0.3319580554962158,
+      "visual": 0.07869532184539782,
+      "scene_support": 0.47213520486588084,
+      "object_support": 0.8773448281737175,
+      "score": 0.43632213865003866,
+      "conflicts": [
+        "names 'a gun', not visible in image (z=-0.12)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person talking and duck hearing in water",
+      "clip_similarity": 0.33179906010627747,
+      "visual": 0.06791527916976496,
+      "scene_support": 0.9852299657940717,
+      "object_support": 0.6024738895609357,
+      "score": 0.5034772682744082,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A duck quacking loudly with a person talking",
+      "clip_similarity": 0.3315073847770691,
+      "visual": 0.04813940706734344,
+      "scene_support": 0.462360831682706,
+      "object_support": 1.0,
+      "score": 0.45796401233174916,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Splashing water with quacking ducks and people speaking",
+      "clip_similarity": 0.33079737424850464,
+      "visual": 0.0,
+      "scene_support": 0.6242703513598705,
+      "object_support": 0.5211789961925513,
+      "score": 0.3436348042657265,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pond",
+      0.20470069348812103
+    ],
+    [
+      "watering hole",
+      0.11545169353485107
+    ],
+    [
+      "fountain",
+      0.10241981595754623
+    ],
+    [
+      "hot spring",
+      0.07079976052045822
+    ],
+    [
+      "indoor jacuzzi",
+      0.04801611602306366
+    ]
+  ],
+  "top_objects": [
+    [
+      "duck",
+      0.7510947585105896
+    ],
+    [
+      "fountain",
+      0.07346601039171219
+    ],
+    [
+      "goose",
+      0.044843822717666626
+    ],
+    [
+      "bathtub",
+      0.008840417489409447
+    ],
+    [
+      "tub",
+      0.006502855569124222
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "PWjEfOkb6ro",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\PWjEfOkb6ro.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\PWjEfOkb6ro.wav",
+  "gt_captions": [
+    "Rain is falling and hitting surfaces and then splashing into puddles",
+    "Water trickling and dripping as a crowd of people talk in the background",
+    "Water running with distant speech in the background",
+    "Water trickling and pouring as a man speaks in the background",
+    "Water trickling and dripping as a crowd of people talk in the background"
+  ],
+  "top_scene": [
+    "aquarium",
+    0.93724125623703
+  ],
+  "top_object": [
+    "clownfish",
+    0.13635459542274475
+  ],
+  "env_probs": {
+    "indoor": 0.9703468680381775,
+    "outdoor": 0.02965313196182251
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Water bubbles vigorously and an electronic animal makes noises",
+    "casv": "Water bubbles vigorously and an electronic animal makes noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2110166847705841,
+    "clap_gt_audio_baseline": 0.3000614047050476,
+    "clap_text_casv": 0.2110166847705841,
+    "clap_gt_audio_casv": 0.3000614047050476
+  },
+  "verdicts": [
+    {
+      "caption": "Water bubbles vigorously and an electronic animal makes noises",
+      "clip_similarity": 0.30290478467941284,
+      "visual": 1.0,
+      "scene_support": 0.6600291928490415,
+      "object_support": 0.6114110588279127,
+      "score": 0.7814320755030862,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water moving followed by a clicking sound, water stops",
+      "clip_similarity": 0.2965785264968872,
+      "visual": 0.7024103091078086,
+      "scene_support": 0.6703394144604696,
+      "object_support": 0.48824917733971557,
+      "score": 0.628540701183179,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Underwater gurgling followed by water dripping, and a deep inhale then a males speech",
+      "clip_similarity": 0.29542404413223267,
+      "visual": 0.6481030013556499,
+      "scene_support": 0.5555557602452837,
+      "object_support": 0.6026898328312268,
+      "score": 0.6067148784652131,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Large bubbles from a liquid and popping",
+      "clip_similarity": 0.29347866773605347,
+      "visual": 0.5565917250680278,
+      "scene_support": 0.11015664290832991,
+      "object_support": 0.32552938529638936,
+      "score": 0.3533424984886269,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Underwater gurgling, several pops",
+      "clip_similarity": 0.2933272421360016,
+      "visual": 0.5494686048581895,
+      "scene_support": 0.19320274538051105,
+      "object_support": 0.3857181684565608,
+      "score": 0.3934637160943974,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bubbles are gurgling underwater",
+      "clip_similarity": 0.29206255078315735,
+      "visual": 0.4899770226451015,
+      "scene_support": 0.5230223748388836,
+      "object_support": 0.726973274109117,
+      "score": 0.5709895037424407,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bubbles underwater followed by a man talking then a kid talking with splashing in the background",
+      "clip_similarity": 0.2919497489929199,
+      "visual": 0.48467078174877437,
+      "scene_support": 0.02175831342214002,
+      "object_support": 0.0,
+      "score": 0.2003958067261518,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Underwater gurgling and splashing",
+      "clip_similarity": 0.2910129129886627,
+      "visual": 0.4406016450047735,
+      "scene_support": 0.8155323887721134,
+      "object_support": 0.7940533447845798,
+      "score": 0.6591163780689173,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.2898610234260559,
+      "visual": 0.38641630368801266,
+      "scene_support": 0.3594380284449128,
+      "object_support": 0.358007807928587,
+      "score": 0.36980027238725505,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.97)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping and rustling followed by running water with music in the background",
+      "clip_similarity": 0.2895813584327698,
+      "visual": 0.37326075162166295,
+      "scene_support": 0.25244199963033037,
+      "object_support": 0.3434963145679057,
+      "score": 0.328085794908136,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.2877054810523987,
+      "visual": 0.2850187365679206,
+      "scene_support": 0.7502685017510183,
+      "object_support": 0.7857515095440057,
+      "score": 0.5748134980156754,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An underwater gurgling is heard at intermittent",
+      "clip_similarity": 0.285460501909256,
+      "visual": 0.1794140283831316,
+      "scene_support": 0.9718105400063004,
+      "object_support": 1.0,
+      "score": 0.6633087733551428,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.28472113609313965,
+      "visual": 0.14463396751206697,
+      "scene_support": 0.4108178111995166,
+      "object_support": 0.4509138467255756,
+      "score": 0.31637308438235445,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Hissing occurs, then a large volume of water gurgles and bubbles",
+      "clip_similarity": 0.28459611535072327,
+      "visual": 0.13875294226501483,
+      "scene_support": 0.4741909792008626,
+      "object_support": 0.6392317602040207,
+      "score": 0.3895279987274709,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water splashing and flushing sounds",
+      "clip_similarity": 0.2839338183403015,
+      "visual": 0.10759822854266933,
+      "scene_support": 0.6198709103759884,
+      "object_support": 0.5044286804046595,
+      "score": 0.3803291686512621,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man explaining with loud motor background noises and splashing",
+      "clip_similarity": 0.2822112441062927,
+      "visual": 0.026567654220949907,
+      "scene_support": 0.4378325568428493,
+      "object_support": 0.37716460322911777,
+      "score": 0.2551262097099701,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water splashing and a yell from under water",
+      "clip_similarity": 0.28215667605400085,
+      "visual": 0.024000751425395095,
+      "scene_support": 0.697787078879029,
+      "object_support": 0.6190288763432565,
+      "score": 0.4046450871368437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Underwater gurgling",
+      "clip_similarity": 0.2820272445678711,
+      "visual": 0.01791224304686175,
+      "scene_support": 1.0,
+      "object_support": 0.9601755518117155,
+      "score": 0.5952175627622593,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water streaming sound with some rumble in the background",
+      "clip_similarity": 0.2819187343120575,
+      "visual": 0.012807877629813644,
+      "scene_support": 0.6530263478665087,
+      "object_support": 0.6186534308599947,
+      "score": 0.3866270846698765,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Group of people laughing while an animal clip-clops",
+      "clip_similarity": 0.2816464602947235,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.15317077085262906,
+      "score": 0.04595123125578872,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "aquarium",
+      0.93724125623703
+    ],
+    [
+      "pet shop",
+      0.011350368149578571
+    ],
+    [
+      "ocean deep underwater",
+      0.006593239493668079
+    ],
+    [
+      "ocean",
+      0.004549537785351276
+    ],
+    [
+      "watering hole",
+      0.0035811627749353647
+    ]
+  ],
+  "top_objects": [
+    [
+      "clownfish",
+      0.13635459542274475
+    ],
+    [
+      "shoal",
+      0.0897420197725296
+    ],
+    [
+      "eel",
+      0.05016119033098221
+    ],
+    [
+      "rock crab",
+      0.04631371796131134
+    ],
+    [
+      "hermit crab",
+      0.04588034749031067
+    ]
+  ]
+}

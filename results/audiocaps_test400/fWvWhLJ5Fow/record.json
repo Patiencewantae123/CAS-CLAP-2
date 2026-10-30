@@ -1,0 +1,285 @@
+{
+  "id": "fWvWhLJ5Fow",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\fWvWhLJ5Fow.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\fWvWhLJ5Fow.wav",
+  "gt_captions": [
+    "Running footsteps followed by spraying noise",
+    "Footsteps running on dirt followed by compressed air spraying as wind blows in the background",
+    "Running then spraying",
+    "Footsteps running followed by air spraying",
+    "Footsteps running on dirt followed by compressed air spraying as wind blows in the background"
+  ],
+  "top_scene": [
+    "golf course",
+    0.1376095414161682
+  ],
+  "top_object": [
+    "website",
+    0.10736963897943497
+  ],
+  "env_probs": {
+    "indoor": 0.06641978025436401,
+    "outdoor": 0.933580219745636
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Multiple bells ringing at different pitches",
+    "casv": "A small, high-pitch engine running"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.00515785813331604,
+    "clap_gt_audio_baseline": 0.0641632080078125,
+    "clap_text_casv": 0.16482675075531006,
+    "clap_gt_audio_casv": 0.541094183921814
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple bells ringing at different pitches",
+      "clip_similarity": 0.26867738366127014,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [
+        "names 'a bell', not visible in image (z=-0.16)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple beeps of increasing pitch",
+      "clip_similarity": 0.26675131916999817,
+      "visual": 0.8695158834954593,
+      "scene_support": 0.6930003410168081,
+      "object_support": 0.7922891562364167,
+      "score": 0.793393202574151,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicles moves nearby followed by someone talking",
+      "clip_similarity": 0.2657344937324524,
+      "visual": 0.8006295250901485,
+      "scene_support": 0.45679201442674494,
+      "object_support": 0.4751385955809682,
+      "score": 0.5998309930383734,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small, high-pitch engine running",
+      "clip_similarity": 0.2652513086795807,
+      "visual": 0.7678954318041405,
+      "scene_support": 0.6456979862668485,
+      "object_support": 1.0,
+      "score": 0.8008675686017108,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicle clicking and steam being released",
+      "clip_similarity": 0.2647751271724701,
+      "visual": 0.7356358041890271,
+      "scene_support": 0.5050986347767785,
+      "object_support": 0.6473216995877545,
+      "score": 0.6399804219849707,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train running down the track, accelerating increasing pitch",
+      "clip_similarity": 0.26114267110824585,
+      "visual": 0.48954964122319267,
+      "scene_support": 0.4994870298014011,
+      "object_support": 0.404049119779445,
+      "score": 0.4668807013635309,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle races by",
+      "clip_similarity": 0.2611330449581146,
+      "visual": 0.4888975033010697,
+      "scene_support": 0.6137305504820475,
+      "object_support": 0.568475404090401,
+      "score": 0.5502207876921624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles move and accelerate nearby",
+      "clip_similarity": 0.25810492038726807,
+      "visual": 0.28375268022628986,
+      "scene_support": 0.8204192483758352,
+      "object_support": 0.7492757576517954,
+      "score": 0.5844095738988051,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles move nearby",
+      "clip_similarity": 0.25788232684135437,
+      "visual": 0.2686727479032655,
+      "scene_support": 0.6902592016738723,
+      "object_support": 0.6093688912920128,
+      "score": 0.4973575270510717,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle racing by",
+      "clip_similarity": 0.2572788596153259,
+      "visual": 0.22778995909500216,
+      "scene_support": 0.6232443414329641,
+      "object_support": 0.5498956233017033,
+      "score": 0.4430579730584011,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car racing along track",
+      "clip_similarity": 0.25723057985305786,
+      "visual": 0.22451917447011271,
+      "scene_support": 0.9865919704991561,
+      "object_support": 0.626562109194458,
+      "score": 0.5737538936961293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A device ticktocks multiple times nearby",
+      "clip_similarity": 0.25702789425849915,
+      "visual": 0.2107879360541416,
+      "scene_support": 0.5077942570457541,
+      "object_support": 0.7864490796314478,
+      "score": 0.47258817542481724,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person whistling up and down pitches in a tune",
+      "clip_similarity": 0.25655099749565125,
+      "visual": 0.17847985237051125,
+      "scene_support": 0.7233977989966014,
+      "object_support": 0.7627641896053922,
+      "score": 0.5172405375288025,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motor vehicle racing by",
+      "clip_similarity": 0.25573453307151794,
+      "visual": 0.12316725015849173,
+      "scene_support": 0.5731170381245232,
+      "object_support": 0.46553869141812276,
+      "score": 0.36086361892619045,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cars going by in open area",
+      "clip_similarity": 0.2555486559867859,
+      "visual": 0.11057472935266731,
+      "scene_support": 1.0,
+      "object_support": 0.646033887823582,
+      "score": 0.5380400580881415,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine works in idle nearby while vehicles moves far away",
+      "clip_similarity": 0.25519859790802,
+      "visual": 0.08685952181936385,
+      "scene_support": 0.8010694344900932,
+      "object_support": 0.5992873730501712,
+      "score": 0.4548508509898248,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rumbling vehicle noise with traffic noises in the background, train noise and car honking",
+      "clip_similarity": 0.25494956970214844,
+      "visual": 0.06998873396406982,
+      "scene_support": 0.22635785379048853,
+      "object_support": 0.11104239903709562,
+      "score": 0.12921556943390317,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Beeps at different pitches from buttons being pressed",
+      "clip_similarity": 0.25489550828933716,
+      "visual": 0.06632626278533559,
+      "scene_support": 0.2083424849143412,
+      "object_support": 0.04013261790034069,
+      "score": 0.10107303595853881,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Running footsteps are interrupted by explosions and gunfire, followed by a female voice",
+      "clip_similarity": 0.25486865639686584,
+      "visual": 0.06450714121309767,
+      "scene_support": 0.31911081312278916,
+      "object_support": 0.3285069396946324,
+      "score": 0.22008818233046554,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle racing by loudly and background voices",
+      "clip_similarity": 0.253916472196579,
+      "visual": 0.0,
+      "scene_support": 0.8617263542413243,
+      "object_support": 0.8818628994462652,
+      "score": 0.5230767761062769,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "golf course",
+      0.1376095414161682
+    ],
+    [
+      "baseball field",
+      0.13596147298812866
+    ],
+    [
+      "park",
+      0.09237170219421387
+    ],
+    [
+      "residential neighborhood",
+      0.07549043744802475
+    ],
+    [
+      "raceway",
+      0.07116289436817169
+    ]
+  ],
+  "top_objects": [
+    [
+      "website",
+      0.10736963897943497
+    ],
+    [
+      "packet",
+      0.086642324924469
+    ],
+    [
+      "go-kart",
+      0.043286122381687164
+    ],
+    [
+      "golf cart",
+      0.03982824459671974
+    ],
+    [
+      "maze",
+      0.025371577590703964
+    ]
+  ]
+}

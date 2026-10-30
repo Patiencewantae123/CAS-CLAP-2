@@ -1,0 +1,291 @@
+{
+  "id": "ZTYAQBnU4GM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ZTYAQBnU4GM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ZTYAQBnU4GM.wav",
+  "gt_captions": [
+    "Birds chirping repeatedly",
+    "Birds are chirping followed by a low vibrating noise",
+    "Pet birds tweet, chirp, and sing while music plays",
+    "Several small birds chirping with faint rustling",
+    "Birds chirping as well as some clanking"
+  ],
+  "top_scene": [
+    "construction site",
+    0.604272186756134
+  ],
+  "top_object": [
+    "crane (bird)",
+    0.11659766733646393
+  ],
+  "env_probs": {
+    "indoor": 0.33072197437286377,
+    "outdoor": 0.6692780256271362
+  },
+  "status": "REPAIR",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Heavy machinery humming followed by wood clacking then a motor starting up before a man speaking over radio static during wood clanking several times in the background",
+    "casv": "Large rattling followed by a power tool"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.042507924139499664,
+    "clap_gt_audio_baseline": 0.20090502500534058,
+    "clap_text_casv": -0.003469240851700306,
+    "clap_gt_audio_casv": 0.1369498372077942
+  },
+  "verdicts": [
+    {
+      "caption": "Heavy machinery humming followed by wood clacking then a motor starting up before a man speaking over radio static during wood clanking several times in the background",
+      "clip_similarity": 0.3071655333042145,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 0.7703458964969162,
+      "score": 0.9311037689490749,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.55)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical spraying noise with alarm sounding",
+      "clip_similarity": 0.29890426993370056,
+      "visual": 0.5100741599564513,
+      "scene_support": 0.20007709827136938,
+      "object_support": 0.20491381602286934,
+      "score": 0.32552693827085216,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large spraying noise like with a hose",
+      "clip_similarity": 0.29651516675949097,
+      "visual": 0.3683908208496228,
+      "scene_support": 0.4189098564177522,
+      "object_support": 0.3829694765252477,
+      "score": 0.38792012822274907,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking in the background as scrapping followed by wood clacking then an air ventilation system powering on and a man speaking",
+      "clip_similarity": 0.29558122158050537,
+      "visual": 0.31300414984694347,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.12520165993877738,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sawing or drilling sound indoors",
+      "clip_similarity": 0.2944280803203583,
+      "visual": 0.24461827770747469,
+      "scene_support": 0.7611641957044574,
+      "object_support": 0.7046323116039908,
+      "score": 0.5375862632755243,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electrical saw is being used",
+      "clip_similarity": 0.2942412495613098,
+      "visual": 0.23353846915186177,
+      "scene_support": 0.7817333769397063,
+      "object_support": 0.7180749707177787,
+      "score": 0.5433578919579902,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.29410743713378906,
+      "visual": 0.22560285894055185,
+      "scene_support": 0.7520971792422645,
+      "object_support": 0.7801590417655431,
+      "score": 0.549918009878563,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.60)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw buzzing as items are placed over it",
+      "clip_similarity": 0.2937880754470825,
+      "visual": 0.2066634382224233,
+      "scene_support": 0.9090128233434203,
+      "object_support": 0.9279719088222004,
+      "score": 0.6337607949386554,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.60)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An electric saw works and some wood is hit",
+      "clip_similarity": 0.2932199239730835,
+      "visual": 0.1729697916593025,
+      "scene_support": 0.8302362182412385,
+      "object_support": 0.6418955124738559,
+      "score": 0.5108274358782493,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood being moved around or worked on",
+      "clip_similarity": 0.2930409014225006,
+      "visual": 0.16235304098238967,
+      "scene_support": 0.8963169931438031,
+      "object_support": 0.7020283957293639,
+      "score": 0.544444833054906,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.2928212881088257,
+      "visual": 0.14932909629483002,
+      "scene_support": 0.5553625803008604,
+      "object_support": 1.0,
+      "score": 0.5263404126081901,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A light hammer tapping in the background is followed by a slow drill",
+      "clip_similarity": 0.29280710220336914,
+      "visual": 0.14848781556864216,
+      "scene_support": 0.8593328461068915,
+      "object_support": 0.7282774481212873,
+      "score": 0.5356782144959105,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Large rattling followed by a power tool",
+      "clip_similarity": 0.29227766394615173,
+      "visual": 0.1170900170377021,
+      "scene_support": 0.9098540563962638,
+      "object_support": 0.7566912859566335,
+      "score": 0.54679960952095,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power drill going in to a wall",
+      "clip_similarity": 0.2918170094490051,
+      "visual": 0.08977136959088307,
+      "scene_support": 0.6596955503789386,
+      "object_support": 0.47515353102845415,
+      "score": 0.376363272258571,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Saws sound along with wind noise, and then static noise occurs",
+      "clip_similarity": 0.29161155223846436,
+      "visual": 0.07758693823302769,
+      "scene_support": 0.712859708301701,
+      "object_support": 0.699746316778075,
+      "score": 0.4548165828171439,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw running in the background with some tapping on a table",
+      "clip_similarity": 0.2914915680885315,
+      "visual": 0.07047139999010257,
+      "scene_support": 0.6320836250591815,
+      "object_support": 0.7041409135394571,
+      "score": 0.4290559215756326,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Power drill with dogs barking in the background",
+      "clip_similarity": 0.2912311553955078,
+      "visual": 0.05502788951651102,
+      "scene_support": 0.5776059628960142,
+      "object_support": 0.43125859637945807,
+      "score": 0.3246705235892461,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.290962815284729,
+      "visual": 0.03911425157828506,
+      "scene_support": 0.41389787843975767,
+      "object_support": 0.4250420404625562,
+      "score": 0.26732767630200815,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal rattling and spraying",
+      "clip_similarity": 0.2904103994369507,
+      "visual": 0.006353790358498703,
+      "scene_support": 0.5846528393534135,
+      "object_support": 0.6843541160967025,
+      "score": 0.3832436027784343,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rattling of paint spray can while spraying",
+      "clip_similarity": 0.2903032600879669,
+      "visual": 0.0,
+      "scene_support": 0.21011168032907857,
+      "object_support": 0.2813109874796383,
+      "score": 0.14742680034261504,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "construction site",
+      0.604272186756134
+    ],
+    [
+      "mezzanine",
+      0.0666029080748558
+    ],
+    [
+      "storage room",
+      0.030699793249368668
+    ],
+    [
+      "childs room",
+      0.020405780524015427
+    ],
+    [
+      "basement",
+      0.013733175583183765
+    ]
+  ],
+  "top_objects": [
+    [
+      "crane (bird)",
+      0.11659766733646393
+    ],
+    [
+      "horizontal bar",
+      0.112925224006176
+    ],
+    [
+      "crane (machine)",
+      0.09111082553863525
+    ],
+    [
+      "bulbul",
+      0.05955032631754875
+    ],
+    [
+      "prison",
+      0.04325133562088013
+    ]
+  ]
+}

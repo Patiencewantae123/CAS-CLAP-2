@@ -1,0 +1,287 @@
+{
+  "id": "1e98HeU9Vrg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1e98HeU9Vrg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1e98HeU9Vrg.wav",
+  "gt_captions": [
+    "Waves and wind rake a shore",
+    "Waves of water colliding repeatedly",
+    "Waves crash on a beach while the wind blows",
+    "Ocean waves are repeatedly splashing on shore, and a gentle wind is blowing",
+    "Close ocean waves"
+  ],
+  "top_scene": [
+    "wave",
+    0.21900416910648346
+  ],
+  "top_object": [
+    "shipwreck",
+    0.08558240532875061
+  ],
+  "env_probs": {
+    "indoor": 0.10369453579187393,
+    "outdoor": 0.8963054642081261
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Strong wind noise while a water vehicle speeds through the ocean water",
+    "casv": "Water running against background music"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2139080911874771,
+    "clap_gt_audio_baseline": 0.40293288230895996,
+    "clap_text_casv": 0.0668507069349289,
+    "clap_gt_audio_casv": 0.28492558002471924
+  },
+  "verdicts": [
+    {
+      "caption": "Strong wind noise while a water vehicle speeds through the ocean water",
+      "clip_similarity": 0.3326253294944763,
+      "visual": 1.0,
+      "scene_support": 0.674712194866285,
+      "object_support": 0.7858191347701777,
+      "score": 0.8381593988909388,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.78)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large waves hit against a beach continuously in almost a thunder",
+      "clip_similarity": 0.3231159746646881,
+      "visual": 0.542887472852403,
+      "scene_support": 0.640658289547819,
+      "object_support": 0.46852797739208285,
+      "score": 0.5499108692229318,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind and waves crash while a woman briefly speaks",
+      "clip_similarity": 0.3211560547351837,
+      "visual": 0.44867456692778024,
+      "scene_support": 0.7247836056552104,
+      "object_support": 0.6707935011702398,
+      "score": 0.5981429588187472,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Hard blowing wind while a motorboat crashes against water waves",
+      "clip_similarity": 0.3201296031475067,
+      "visual": 0.39933327220945625,
+      "scene_support": 0.4609766899461471,
+      "object_support": 0.6756741537410292,
+      "score": 0.5007285619899354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Waves crash on a beach store as multiple people are talking",
+      "clip_similarity": 0.3186114430427551,
+      "visual": 0.32635566073956074,
+      "scene_support": 0.517296610280533,
+      "object_support": 0.42854438819595675,
+      "score": 0.41429456383877117,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind noise on ocean",
+      "clip_similarity": 0.3182459771633148,
+      "visual": 0.30878779891008484,
+      "scene_support": 0.9974507003498474,
+      "object_support": 0.8519019591698442,
+      "score": 0.6783209174199414,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Windy sounds over water",
+      "clip_similarity": 0.31756216287612915,
+      "visual": 0.27591700141539977,
+      "scene_support": 0.9595214821997143,
+      "object_support": 0.9095432515537738,
+      "score": 0.6710862206922064,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running against background music",
+      "clip_similarity": 0.3173730671405792,
+      "visual": 0.2668272123500794,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7067308849400318,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Ocean waves repeatedly crash and then a man and woman talk",
+      "clip_similarity": 0.31593436002731323,
+      "visual": 0.19766888813757458,
+      "scene_support": 0.7841853273758828,
+      "object_support": 0.6617050957722779,
+      "score": 0.512834682199478,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Winds blow past the microphone while high waves crash in the background",
+      "clip_similarity": 0.31558719277381897,
+      "visual": 0.18098063710181136,
+      "scene_support": 0.8775696746550662,
+      "object_support": 0.784051235021829,
+      "score": 0.5708785277437931,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy wave sound with wind blowing and a man talking",
+      "clip_similarity": 0.31538206338882446,
+      "visual": 0.17112011414884046,
+      "scene_support": 0.7021297448865944,
+      "object_support": 0.6706198343587719,
+      "score": 0.4802729194331461,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ocean waves crashing as wind blows heavily into a microphone",
+      "clip_similarity": 0.3151331841945648,
+      "visual": 0.15915654779982694,
+      "scene_support": 0.6180075734744952,
+      "object_support": 0.4592569142578086,
+      "score": 0.3868419654396219,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water moving in sand, voice",
+      "clip_similarity": 0.3150981664657593,
+      "visual": 0.1574732535284713,
+      "scene_support": 0.7462519162986937,
+      "object_support": 0.6557871743983889,
+      "score": 0.48360102862051324,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud music plays continuously and a big water splash happens",
+      "clip_similarity": 0.31474769115448,
+      "visual": 0.1406259849062226,
+      "scene_support": 0.8781058452023742,
+      "object_support": 0.945547646696403,
+      "score": 0.6033464415321221,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water waves crash while two men are laughing while a dog whimpers and barks",
+      "clip_similarity": 0.3146407902240753,
+      "visual": 0.1354872814582629,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.05419491258330516,
+      "conflicts": [
+        "names 'a dog', not visible in image (z=-0.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind noise with water splashing sounds",
+      "clip_similarity": 0.3127391040325165,
+      "visual": 0.04407365809213278,
+      "scene_support": 0.7537829374074608,
+      "object_support": 0.7205909214372987,
+      "score": 0.45994162089028096,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat is traveling through water with strong wind noise",
+      "clip_similarity": 0.31209880113601685,
+      "visual": 0.013294443266536397,
+      "scene_support": 0.5665682202334936,
+      "object_support": 0.8477661337414267,
+      "score": 0.42961808349909064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaks while wind blows and waves splash",
+      "clip_similarity": 0.3119165897369385,
+      "visual": 0.004535582692010154,
+      "scene_support": 0.23043488515310734,
+      "object_support": 0.1343069085320091,
+      "score": 0.11123677118233899,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ocean waves crashing as wind heavily blows into a microphone",
+      "clip_similarity": 0.31189578771591187,
+      "visual": 0.0035356342652814467,
+      "scene_support": 0.6959153028734654,
+      "object_support": 0.5223490731302899,
+      "score": 0.36689356650723914,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ocean waves crashing as wind blows into a microphone",
+      "clip_similarity": 0.31182223558425903,
+      "visual": 0.0,
+      "scene_support": 0.7771920491620697,
+      "object_support": 0.5643158710644592,
+      "score": 0.4024523760679587,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "wave",
+      0.21900416910648346
+    ],
+    [
+      "ocean",
+      0.1494387686252594
+    ],
+    [
+      "beach",
+      0.10688241571187973
+    ],
+    [
+      "lighthouse",
+      0.0767553523182869
+    ],
+    [
+      "shower",
+      0.05124177411198616
+    ]
+  ],
+  "top_objects": [
+    [
+      "shipwreck",
+      0.08558240532875061
+    ],
+    [
+      "submarine",
+      0.0636209174990654
+    ],
+    [
+      "lighthouse",
+      0.029717912897467613
+    ],
+    [
+      "barrel",
+      0.027125125750899315
+    ],
+    [
+      "swimsuit",
+      0.026161717250943184
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "fPqj3nnwQOI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\fPqj3nnwQOI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\fPqj3nnwQOI.wav",
+  "gt_captions": [
+    "Waves coming against the shoreline",
+    "A stream of water flowing as the wind blows",
+    "Ocean waves crashing and water trickling",
+    "Ocean waves crashing and water trickling",
+    "Water flowing and splashing"
+  ],
+  "top_scene": [
+    "islet",
+    0.24056711792945862
+  ],
+  "top_object": [
+    "swimsuit",
+    0.19844859838485718
+  ],
+  "env_probs": {
+    "indoor": 0.07125312089920044,
+    "outdoor": 0.9287468791007996
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Tropical music with clacking at end",
+    "casv": "Tropical music with clacking at end"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.034937385469675064,
+    "clap_gt_audio_baseline": 0.12222042679786682,
+    "clap_text_casv": 0.034937385469675064,
+    "clap_gt_audio_casv": 0.12222042679786682
+  },
+  "verdicts": [
+    {
+      "caption": "Tropical music with clacking at end",
+      "clip_similarity": 0.3008250296115875,
+      "visual": 1.0,
+      "scene_support": 0.8318776616790986,
+      "object_support": 1.0,
+      "score": 0.9495632985037297,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person laughs nearby as water splashes and an animal grunts in the distance",
+      "clip_similarity": 0.2914605736732483,
+      "visual": 0.7164955848346038,
+      "scene_support": 0.8016837329215459,
+      "object_support": 0.7832776058044446,
+      "score": 0.7620866355516387,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water splashes as a man yells in excitement",
+      "clip_similarity": 0.2783931493759155,
+      "visual": 0.3208855774271229,
+      "scene_support": 0.3814364430138217,
+      "object_support": 0.5920936345019521,
+      "score": 0.4204132542255813,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks as water splashes in the distance",
+      "clip_similarity": 0.27720212936401367,
+      "visual": 0.2848280174206628,
+      "scene_support": 0.6220785836834837,
+      "object_support": 0.6070451033039813,
+      "score": 0.48266831306450464,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water moves around and splashes loudly as a man grunts at the end",
+      "clip_similarity": 0.2731480896472931,
+      "visual": 0.16209390809129698,
+      "scene_support": 0.8704158054070513,
+      "object_support": 0.9244898365547062,
+      "score": 0.603309255825046,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat is speeding by in the distance",
+      "clip_similarity": 0.2722128629684448,
+      "visual": 0.13378036864172424,
+      "scene_support": 0.8424729325377539,
+      "object_support": 0.955341648299302,
+      "score": 0.5928565217078064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "As water runs in the background into a something a man talks softly and a click sound squishes",
+      "clip_similarity": 0.2715591788291931,
+      "visual": 0.1139903946355763,
+      "scene_support": 1.0,
+      "object_support": 0.9945518235385117,
+      "score": 0.643961704915784,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water softly trickling as a kid yells briefly in the distance",
+      "clip_similarity": 0.27139630913734436,
+      "visual": 0.10905959277802188,
+      "scene_support": 0.5454673973326953,
+      "object_support": 0.7346797798673261,
+      "score": 0.42766799027121516,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks, leaves rustle in the distance",
+      "clip_similarity": 0.2709304094314575,
+      "visual": 0.0949547024872354,
+      "scene_support": 0.7959051026443006,
+      "object_support": 0.8856189278564635,
+      "score": 0.5424390901451234,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is talking near the sea, the sound is muffled because it is very windy",
+      "clip_similarity": 0.27062469720840454,
+      "visual": 0.08569941146165569,
+      "scene_support": 0.7570398824197638,
+      "object_support": 0.47161801804009623,
+      "score": 0.40287713472262027,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud wind noises and water splashing and gurgling",
+      "clip_similarity": 0.2701756954193115,
+      "visual": 0.07210609750265938,
+      "scene_support": 0.5105906700383709,
+      "object_support": 0.6875431741563138,
+      "score": 0.38828259225946915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboats pass by rapidly in the distance",
+      "clip_similarity": 0.2697041630744934,
+      "visual": 0.05783068176794284,
+      "scene_support": 0.5526881756409152,
+      "object_support": 0.7046520105563205,
+      "score": 0.4003343285663479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water splashes by loudly as wind blows by and a man talks quietly in the background",
+      "clip_similarity": 0.26956963539123535,
+      "visual": 0.05375792063619524,
+      "scene_support": 0.3840430168331467,
+      "object_support": 0.48894358679020156,
+      "score": 0.2833991493414826,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water splashes and people speak with motorboat engines speeding in the distance",
+      "clip_similarity": 0.26917311549186707,
+      "visual": 0.041753470734134594,
+      "scene_support": 0.6716394563001542,
+      "object_support": 0.8260619502235483,
+      "score": 0.4660118102507646,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yells in the distance, a closer man reacts, a splash in the water, the closer man reacts and runs",
+      "clip_similarity": 0.2686576247215271,
+      "visual": 0.026147234735942704,
+      "scene_support": 0.6035966703445346,
+      "object_support": 0.839990258531826,
+      "score": 0.4435349725572852,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water is sloshing lightly and a man speaks for a brief time",
+      "clip_similarity": 0.2684248685836792,
+      "visual": 0.019100654222219016,
+      "scene_support": 0.8113931367472536,
+      "object_support": 0.8196250760094903,
+      "score": 0.49694572551591076,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Steam hisses in the background quietly",
+      "clip_similarity": 0.2682337164878845,
+      "visual": 0.013313616140909956,
+      "scene_support": 0.5255182405794022,
+      "object_support": 0.6508755833776243,
+      "score": 0.3582435936434719,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Gurgling water is in the background followed by a middle aged, low voice male narrating a series of steps",
+      "clip_similarity": 0.26804661750793457,
+      "visual": 0.007649284199148456,
+      "scene_support": 0.4018097117460615,
+      "object_support": 0.460124310936636,
+      "score": 0.2616399204844686,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water is splashing lightly as a child are screaming in the background",
+      "clip_similarity": 0.2678147554397583,
+      "visual": 0.0006297712162073156,
+      "scene_support": 0.807622973652357,
+      "object_support": 0.8683653479434934,
+      "score": 0.503048404965238,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy wind blows over a microphone as leaves rustle heavily in the background",
+      "clip_similarity": 0.2677939534187317,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "islet",
+      0.24056711792945862
+    ],
+    [
+      "beach",
+      0.1984778195619583
+    ],
+    [
+      "sand desert",
+      0.1565164178609848
+    ],
+    [
+      "ocean",
+      0.07383941113948822
+    ],
+    [
+      "vegetation desert",
+      0.03501344099640846
+    ]
+  ],
+  "top_objects": [
+    [
+      "swimsuit",
+      0.19844859838485718
+    ],
+    [
+      "bikini",
+      0.18175272643566132
+    ],
+    [
+      "sunscreen",
+      0.053836073726415634
+    ],
+    [
+      "CRT screen",
+      0.033442117273807526
+    ],
+    [
+      "volleyball",
+      0.030461417511105537
+    ]
+  ]
+}

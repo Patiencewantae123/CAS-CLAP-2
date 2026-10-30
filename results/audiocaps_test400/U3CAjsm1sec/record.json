@@ -1,0 +1,285 @@
+{
+  "id": "U3CAjsm1sec",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\U3CAjsm1sec.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\U3CAjsm1sec.wav",
+  "gt_captions": [
+    "Several cats meowing followed by a man singing",
+    "Several cats meowing followed by a man singing in the background",
+    "Several cats meowing followed by a man singing",
+    "Several cats meowing followed by a man singing in the background",
+    "Cats meowing loudly and then a male voice"
+  ],
+  "top_scene": [
+    "art studio",
+    0.16987201571464539
+  ],
+  "top_object": [
+    "tabby cat",
+    0.052157942205667496
+  ],
+  "env_probs": {
+    "indoor": 0.8379043340682983,
+    "outdoor": 0.16209566593170166
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "A cat meows while music plays lightly in the background",
+    "casv": "A cat meows while music plays lightly in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3480490446090698,
+    "clap_gt_audio_baseline": 0.6541852951049805,
+    "clap_text_casv": 0.3480490446090698,
+    "clap_gt_audio_casv": 0.6541852951049805
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meows while music plays lightly in the background",
+      "clip_similarity": 0.3435819149017334,
+      "visual": 1.0,
+      "scene_support": 0.5380032673773857,
+      "object_support": 0.5013585506056252,
+      "score": 0.7118085453949032,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meowing with music playing",
+      "clip_similarity": 0.33742374181747437,
+      "visual": 0.6766746467633666,
+      "scene_support": 0.3480386294997244,
+      "object_support": 0.45459556559228087,
+      "score": 0.5114601172329483,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cats meowing faintly followed by the clock of a computer mouse",
+      "clip_similarity": 0.3318334221839905,
+      "visual": 0.38316356068785307,
+      "scene_support": 0.7016958174152833,
+      "object_support": 0.45898326832272635,
+      "score": 0.501469149996544,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meowing with background noise",
+      "clip_similarity": 0.3311845660209656,
+      "visual": 0.34909637140308875,
+      "scene_support": 0.6984109073221082,
+      "object_support": 0.6742511804557586,
+      "score": 0.5514371748945955,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat reacts to a television show and a woman is amused",
+      "clip_similarity": 0.33093345165252686,
+      "visual": 0.335911999874822,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1343647999499288,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat continually meows every time a human voice speaks",
+      "clip_similarity": 0.32869434356689453,
+      "visual": 0.21835109296030292,
+      "scene_support": 0.10288507445106891,
+      "object_support": 0.19287107370149867,
+      "score": 0.17606728162989144,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cats communicating vocally to each other by meowing",
+      "clip_similarity": 0.32867079973220825,
+      "visual": 0.21711496033422523,
+      "scene_support": 0.40899805521813837,
+      "object_support": 0.3981364196263601,
+      "score": 0.32898632658703963,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Lady singing as cat meows",
+      "clip_similarity": 0.32846832275390625,
+      "visual": 0.20648421974995698,
+      "scene_support": 0.5676861411589749,
+      "object_support": 0.42205963867788954,
+      "score": 0.3795174218510421,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meows followed by drumming",
+      "clip_similarity": 0.32845667004585266,
+      "visual": 0.20587241233629067,
+      "scene_support": 0.4337623302137102,
+      "object_support": 0.19814514473414083,
+      "score": 0.2719212074188716,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing a few times close to the microphone",
+      "clip_similarity": 0.32831069827079773,
+      "visual": 0.19820839005460889,
+      "scene_support": 0.5793975402060947,
+      "object_support": 0.5996869226031616,
+      "score": 0.43300869486462046,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cat is meowing and someone touches the microphone",
+      "clip_similarity": 0.3281211256980896,
+      "visual": 0.18825517532741867,
+      "scene_support": 0.6726396255373325,
+      "object_support": 0.6592717101211251,
+      "score": 0.47487547082850473,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female sings while cat meows",
+      "clip_similarity": 0.3271094858646393,
+      "visual": 0.1351405905271558,
+      "scene_support": 0.5384213550175462,
+      "object_support": 0.42981215356189695,
+      "score": 0.34452628878469527,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Single meow and repeated shaking sound",
+      "clip_similarity": 0.3259572982788086,
+      "visual": 0.07464676336666197,
+      "scene_support": 0.9147645177561371,
+      "object_support": 0.7628397659618148,
+      "score": 0.5331399904620503,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows as people speak in the background",
+      "clip_similarity": 0.3259466290473938,
+      "visual": 0.07408659187281917,
+      "scene_support": 0.5857861890817088,
+      "object_support": 0.5746263600903305,
+      "score": 0.37775840150073947,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat is meowing, and some tapping occurs in the background",
+      "clip_similarity": 0.3259318172931671,
+      "visual": 0.07330892362578041,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6293235694503121,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows following an audibly loud popping sound",
+      "clip_similarity": 0.3256051540374756,
+      "visual": 0.056157974620163045,
+      "scene_support": 0.5182969537145513,
+      "object_support": 0.6128454116197906,
+      "score": 0.3618058994483678,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meowing, followed by person laughing in background",
+      "clip_similarity": 0.3249286413192749,
+      "visual": 0.020638720680968253,
+      "scene_support": 0.44441097745293817,
+      "object_support": 0.46642989119277356,
+      "score": 0.2815077488661008,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meowing after tapping noise",
+      "clip_similarity": 0.3246570825576782,
+      "visual": 0.006380947910309972,
+      "scene_support": 0.5065734166391688,
+      "object_support": 0.5221083966331349,
+      "score": 0.3111569231458151,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Kitten meows and then male makes funny noise in response",
+      "clip_similarity": 0.32463937997817993,
+      "visual": 0.005451501353486989,
+      "scene_support": 0.3571156268572307,
+      "object_support": 0.2774928146171217,
+      "score": 0.1925631329837005,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meows, followed by a woman speaking",
+      "clip_similarity": 0.3245355486869812,
+      "visual": 0.0,
+      "scene_support": 0.6714775217203273,
+      "object_support": 0.5500272018066106,
+      "score": 0.3664514170580814,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art studio",
+      0.16987201571464539
+    ],
+    [
+      "music studio",
+      0.1139814481139183
+    ],
+    [
+      "watering hole",
+      0.07726947218179703
+    ],
+    [
+      "home office",
+      0.0682477131485939
+    ],
+    [
+      "veterinarians office",
+      0.039618559181690216
+    ]
+  ],
+  "top_objects": [
+    [
+      "tabby cat",
+      0.052157942205667496
+    ],
+    [
+      "space heater",
+      0.03413555771112442
+    ],
+    [
+      "monitor",
+      0.030405938625335693
+    ],
+    [
+      "tiger cat",
+      0.020587269216775894
+    ],
+    [
+      "Siamese cat",
+      0.018342120572924614
+    ]
+  ]
+}

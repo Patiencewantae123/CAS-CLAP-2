@@ -1,0 +1,285 @@
+{
+  "id": "3qrVku794u0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3qrVku794u0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3qrVku794u0.wav",
+  "gt_captions": [
+    "A man talking before and after a young kid talks as plastic rattles followed by an electronic beep",
+    "Man talking with cranking noises in the background",
+    "A man speaks followed by a beep and a child speaks",
+    "An appliance motor is running and obvious vibration and knocking are occurring, and an adult male and a child speak and the vibration continues, followed by an electronic beep",
+    "Male speech and then a child speaks with repeated taps and a beep"
+  ],
+  "top_scene": [
+    "fastfood restaurant",
+    0.07208725064992905
+  ],
+  "top_object": [
+    "gorilla",
+    0.03631843626499176
+  ],
+  "env_probs": {
+    "indoor": 0.7920317649841309,
+    "outdoor": 0.20796823501586914
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Kid screaming then talking",
+    "casv": "A person screaming like a baby"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.10667577385902405,
+    "clap_gt_audio_baseline": 0.10761632770299911,
+    "clap_text_casv": -0.16305482387542725,
+    "clap_gt_audio_casv": 0.057218313217163086
+  },
+  "verdicts": [
+    {
+      "caption": "Kid screaming then talking",
+      "clip_similarity": 0.3182893991470337,
+      "visual": 1.0,
+      "scene_support": 0.46481953835627465,
+      "object_support": 0.27476000271983403,
+      "score": 0.6218738623228327,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid crying and yelling",
+      "clip_similarity": 0.30607908964157104,
+      "visual": 0.39437165190449724,
+      "scene_support": 0.7685109021572889,
+      "object_support": 0.8549255507819835,
+      "score": 0.6447795966435806,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two girls laugh and scream",
+      "clip_similarity": 0.3056041896343231,
+      "visual": 0.37081672835637336,
+      "scene_support": 0.20650016602269983,
+      "object_support": 0.0,
+      "score": 0.2102767411493593,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child screaming then a child speaking",
+      "clip_similarity": 0.30524006485939026,
+      "visual": 0.3527562290836418,
+      "scene_support": 0.6649894600740562,
+      "object_support": 0.6290152641326879,
+      "score": 0.5293039088954801,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid trying to sing like a duck using a type of quack speech",
+      "clip_similarity": 0.30481866002082825,
+      "visual": 0.33185465274410797,
+      "scene_support": 0.2058995914835386,
+      "object_support": 0.06141709590346835,
+      "score": 0.21293686731374525,
+      "conflicts": [
+        "names 'ducks or geese', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person screaming like a baby",
+      "clip_similarity": 0.30469632148742676,
+      "visual": 0.3257866915790594,
+      "scene_support": 0.8138369858327296,
+      "object_support": 1.0,
+      "score": 0.6744657723814427,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person screaming, a child yelling, and another child laughing",
+      "clip_similarity": 0.30424878001213074,
+      "visual": 0.3035887444863593,
+      "scene_support": 0.06733666888030267,
+      "object_support": 0.08396551799425965,
+      "score": 0.1668261538569124,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl sneezing then speaking",
+      "clip_similarity": 0.3036153018474579,
+      "visual": 0.27216838333550136,
+      "scene_support": 0.11533232210416164,
+      "object_support": 0.17052111645443435,
+      "score": 0.19462338490177933,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child screaming with people laughing and talking",
+      "clip_similarity": 0.302533894777298,
+      "visual": 0.21853085864976407,
+      "scene_support": 0.015811146663446834,
+      "object_support": 0.09466769055525162,
+      "score": 0.12055599462551517,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young kid speaks and then begins to burp",
+      "clip_similarity": 0.30231013894081116,
+      "visual": 0.20743262419734398,
+      "scene_support": 0.7949305220156162,
+      "object_support": 0.7369402740669441,
+      "score": 0.5425342885037057,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman fake sneezing",
+      "clip_similarity": 0.30217427015304565,
+      "visual": 0.20069356574388325,
+      "scene_support": 0.0,
+      "object_support": 0.03631539844008786,
+      "score": 0.09117204582957966,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl screaming",
+      "clip_similarity": 0.30124449729919434,
+      "visual": 0.15457706088951434,
+      "scene_support": 0.42272586633663367,
+      "object_support": 0.5337599397145047,
+      "score": 0.3487765661711473,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young child crying and screaming",
+      "clip_similarity": 0.3011089563369751,
+      "visual": 0.1478542625025129,
+      "scene_support": 0.2905875191177654,
+      "object_support": 0.4888708259749139,
+      "score": 0.292979208528809,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman burps and then speaks while burping",
+      "clip_similarity": 0.3010272979736328,
+      "visual": 0.14380402776628076,
+      "scene_support": 0.5916319528294293,
+      "object_support": 0.6299060721542021,
+      "score": 0.4239830186016017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by a young boy talking",
+      "clip_similarity": 0.29991286993026733,
+      "visual": 0.08852867093173138,
+      "scene_support": 0.16088039825323996,
+      "object_support": 0.11490799662391246,
+      "score": 0.11814798683583827,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Women screaming followed by laughing",
+      "clip_similarity": 0.29967716336250305,
+      "visual": 0.07683768314747584,
+      "scene_support": 1.0,
+      "object_support": 0.8800771534566533,
+      "score": 0.5947582192959863,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman yelling in a foreign language",
+      "clip_similarity": 0.29950252175331116,
+      "visual": 0.06817550228823481,
+      "scene_support": 0.42446218707236577,
+      "object_support": 0.4576962881127658,
+      "score": 0.2919177434708334,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Child crying and yelling",
+      "clip_similarity": 0.2986786961555481,
+      "visual": 0.02731395527594811,
+      "scene_support": 0.8095996337438622,
+      "object_support": 0.8855411502776913,
+      "score": 0.5194678173168452,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.29824167490005493,
+      "visual": 0.005637808497806369,
+      "scene_support": 0.5205220407711503,
+      "object_support": 0.40753219353989517,
+      "score": 0.28067139369243616,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl laughing followed by a series of burping then glass clanking proceeded by a girl talking",
+      "clip_similarity": 0.29812800884246826,
+      "visual": 0.0,
+      "scene_support": 0.2992502565805361,
+      "object_support": 0.2530811789357589,
+      "score": 0.16569943065488849,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fastfood restaurant",
+      0.07208725064992905
+    ],
+    [
+      "childs room",
+      0.05112531781196594
+    ],
+    [
+      "dorm room",
+      0.026380782946944237
+    ],
+    [
+      "candy store",
+      0.024273373186588287
+    ],
+    [
+      "closet",
+      0.022178776562213898
+    ]
+  ],
+  "top_objects": [
+    [
+      "gorilla",
+      0.03631843626499176
+    ],
+    [
+      "wild boar",
+      0.027892982587218285
+    ],
+    [
+      "meatloaf",
+      0.023867325857281685
+    ],
+    [
+      "diaper",
+      0.023723362013697624
+    ],
+    [
+      "punching bag",
+      0.02046716772019863
+    ]
+  ]
+}

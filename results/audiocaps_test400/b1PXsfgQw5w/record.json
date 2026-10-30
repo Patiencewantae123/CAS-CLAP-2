@@ -1,0 +1,285 @@
+{
+  "id": "b1PXsfgQw5w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\b1PXsfgQw5w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\b1PXsfgQw5w.wav",
+  "gt_captions": [
+    "People are giggling, and a man speaks",
+    "A group of people laughing followed by a man talking then more laughter",
+    "A group of people laughing followed by a man talking then more laughter",
+    "Men and women laughing then man speaking and laughter follows",
+    "A few people laughing and giggling followed by someone talking and more laughter"
+  ],
+  "top_scene": [
+    "nursing home",
+    0.18308982253074646
+  ],
+  "top_object": [
+    "meatloaf",
+    0.06930983066558838
+  ],
+  "env_probs": {
+    "indoor": 0.9076001048088074,
+    "outdoor": 0.09239989519119263
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A woman sneezing then speaking followed by another sneeze",
+    "casv": "A woman speaks followed by several burps then laughter"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.09411247819662094,
+    "clap_gt_audio_baseline": 0.2823304235935211,
+    "clap_text_casv": 0.053589459508657455,
+    "clap_gt_audio_casv": 0.3530292510986328
+  },
+  "verdicts": [
+    {
+      "caption": "A woman sneezing then speaking followed by another sneeze",
+      "clip_similarity": 0.3172508478164673,
+      "visual": 1.0,
+      "scene_support": 0.5080269287850672,
+      "object_support": 0.4474064430957663,
+      "score": 0.68663001156425,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Distressed cat growling and hissing violently while woman laughs and talks",
+      "clip_similarity": 0.31520557403564453,
+      "visual": 0.811152326336529,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3244609305346116,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman speaking followed by a sneeze",
+      "clip_similarity": 0.31516364216804504,
+      "visual": 0.8072806023048729,
+      "scene_support": 0.7381425413292656,
+      "object_support": 0.8004492198243459,
+      "score": 0.7844897692680326,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman laughing followed by some banging",
+      "clip_similarity": 0.31480342149734497,
+      "visual": 0.7740200988431608,
+      "scene_support": 0.9189334376412647,
+      "object_support": 0.9792918828728067,
+      "score": 0.8790756356914857,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks followed by several burps then laughter",
+      "clip_similarity": 0.3140370845794678,
+      "visual": 0.7032613840243915,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8813045536097566,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Women talk, yell and laugh as a pig snorts",
+      "clip_similarity": 0.3134823739528656,
+      "visual": 0.6520429054165612,
+      "scene_support": 0.6162049527002063,
+      "object_support": 0.8987562417108247,
+      "score": 0.7153055204899337,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks in a frustrated way, then a series of very rapid, escalating explosions, and an older child exclaims excitedly",
+      "clip_similarity": 0.31268519163131714,
+      "visual": 0.5784361206811153,
+      "scene_support": 0.5281904913275111,
+      "object_support": 0.4608512562875496,
+      "score": 0.5280869725569644,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman yells and an object is dropped as water is running",
+      "clip_similarity": 0.3121364712715149,
+      "visual": 0.5277707455063786,
+      "scene_support": 0.4348345487684302,
+      "object_support": 0.5697091378035289,
+      "score": 0.5124714041741392,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A lady yells at a dog in anger while he barks and growls",
+      "clip_similarity": 0.3113667070865631,
+      "visual": 0.4566955784746453,
+      "scene_support": 0.29220858971686176,
+      "object_support": 0.3291589504758063,
+      "score": 0.3690884934476586,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman shrieking loudly with man laughing after",
+      "clip_similarity": 0.31081414222717285,
+      "visual": 0.40567522646971416,
+      "scene_support": 0.43502341768102004,
+      "object_support": 0.5066649553530501,
+      "score": 0.4447766024981067,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks followed by someone burps and several laughs",
+      "clip_similarity": 0.31057193875312805,
+      "visual": 0.38331168616746103,
+      "scene_support": 0.9560100564955425,
+      "object_support": 0.9072168539943893,
+      "score": 0.7122927476139639,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water is splashing into a sink and woman speaks briefly",
+      "clip_similarity": 0.3103429973125458,
+      "visual": 0.3621726783414602,
+      "scene_support": 0.47328640164470764,
+      "object_support": 0.33943233282605106,
+      "score": 0.3886846916778117,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman speaking enthusiastically to a dog that then barks",
+      "clip_similarity": 0.3094438314437866,
+      "visual": 0.2791493764515525,
+      "scene_support": 0.3025117501233324,
+      "object_support": 0.31230128898586335,
+      "score": 0.29610366231337976,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Adult female speaking accompanied by toddler laughter followed by slapping",
+      "clip_similarity": 0.30918338894844055,
+      "visual": 0.25510176002465573,
+      "scene_support": 0.4139180907520285,
+      "object_support": 0.3108191691572392,
+      "score": 0.3194618819826426,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman burps and then speaks while burping",
+      "clip_similarity": 0.30837658047676086,
+      "visual": 0.18060615733453678,
+      "scene_support": 0.8147392060900419,
+      "object_support": 0.8433921902980741,
+      "score": 0.5696818818502495,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks followed by a burst and people laughing",
+      "clip_similarity": 0.3083236515522003,
+      "visual": 0.17571903446302187,
+      "scene_support": 0.9296050472378695,
+      "object_support": 0.8711967582830635,
+      "score": 0.6105281554414888,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sneeze followed by a woman talking",
+      "clip_similarity": 0.30794039368629456,
+      "visual": 0.14033142177851649,
+      "scene_support": 0.8376816186169016,
+      "object_support": 0.9647151579603587,
+      "score": 0.5968516016845846,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman yelling in a foreign language",
+      "clip_similarity": 0.3078940510749817,
+      "visual": 0.13605243750756735,
+      "scene_support": 0.6790317320414562,
+      "object_support": 0.6966244338913438,
+      "score": 0.4671178247828669,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks and something screeches while a dog barks afterwards",
+      "clip_similarity": 0.30773818492889404,
+      "visual": 0.12166074121363551,
+      "scene_support": 0.6413843781671665,
+      "object_support": 0.679665927134711,
+      "score": 0.44497938807601745,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks as food sizzles with some scraping sounds",
+      "clip_similarity": 0.30642056465148926,
+      "visual": 0.0,
+      "scene_support": 0.48126224293702513,
+      "object_support": 0.37888116760483326,
+      "score": 0.2580430231625575,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "nursing home",
+      0.18308982253074646
+    ],
+    [
+      "indoor pub",
+      0.06055410951375961
+    ],
+    [
+      "kitchen",
+      0.04996517300605774
+    ],
+    [
+      "bar",
+      0.04502900689840317
+    ],
+    [
+      "waiting room",
+      0.03338538855314255
+    ]
+  ],
+  "top_objects": [
+    [
+      "meatloaf",
+      0.06930983066558838
+    ],
+    [
+      "trifle",
+      0.04719538241624832
+    ],
+    [
+      "wild boar",
+      0.04668372496962547
+    ],
+    [
+      "yawl",
+      0.03370606154203415
+    ],
+    [
+      "cockroach",
+      0.024967605248093605
+    ]
+  ]
+}

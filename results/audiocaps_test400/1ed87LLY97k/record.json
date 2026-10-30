@@ -1,0 +1,289 @@
+{
+  "id": "1ed87LLY97k",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1ed87LLY97k.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1ed87LLY97k.wav",
+  "gt_captions": [
+    "Thuds on floor",
+    "Hissing with some faint bangs",
+    "A fan sound and a tapping noise",
+    "Constant faint humming and a few light knocks",
+    "Thumping on a wooden surface before and after plastic clanking"
+  ],
+  "top_scene": [
+    "bedroom",
+    0.3504595458507538
+  ],
+  "top_object": [
+    "spotlight",
+    0.08675642311573029
+  ],
+  "env_probs": {
+    "indoor": 0.8910573720932007,
+    "outdoor": 0.10894262790679932
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Dog howling with clock ticking in the background",
+    "casv": "An object bursts and an alarm goes off"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.07480144500732422,
+    "clap_gt_audio_baseline": 0.1739799827337265,
+    "clap_text_casv": 0.010651908814907074,
+    "clap_gt_audio_casv": 0.15434427559375763
+  },
+  "verdicts": [
+    {
+      "caption": "Dog howling with clock ticking in the background",
+      "clip_similarity": 0.3320913314819336,
+      "visual": 1.0,
+      "scene_support": 0.588533652102112,
+      "object_support": 0.6011139775037021,
+      "score": 0.7568942888817443,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A rooster alarm clock following repetitive beeping",
+      "clip_similarity": 0.32742756605148315,
+      "visual": 0.7821489973341129,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3128595989336452,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog howling along with an emergency siren",
+      "clip_similarity": 0.3271067142486572,
+      "visual": 0.7671615611100671,
+      "scene_support": 0.08159663081669528,
+      "object_support": 0.3262580844649437,
+      "score": 0.42922103902851855,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-1.47)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Alarm going off with dog howling",
+      "clip_similarity": 0.3260951638221741,
+      "visual": 0.7199106266574787,
+      "scene_support": 0.853313387252243,
+      "object_support": 0.7589776022238626,
+      "score": 0.7716515475058232,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An object bursts and an alarm goes off",
+      "clip_similarity": 0.3219689428806305,
+      "visual": 0.5271690784940174,
+      "scene_support": 0.9665589900741759,
+      "object_support": 1.0,
+      "score": 0.8008353284198597,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud alarm clock beeping, person talking and something screaming",
+      "clip_similarity": 0.32043853402137756,
+      "visual": 0.45568154134213146,
+      "scene_support": 0.8638196284639329,
+      "object_support": 0.7761469064937939,
+      "score": 0.6742625770241706,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone snores nearby followed by a clap",
+      "clip_similarity": 0.3192313611507416,
+      "visual": 0.3992928090654082,
+      "scene_support": 0.7811070765977882,
+      "object_support": 0.7961187747535821,
+      "score": 0.6328848790315744,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cat meowing while alarming clock ringing",
+      "clip_similarity": 0.31656894087791443,
+      "visual": 0.27492743636325667,
+      "scene_support": 0.5420691871050659,
+      "object_support": 0.39372462118398854,
+      "score": 0.39070911703201905,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.3162899613380432,
+      "visual": 0.26189591207444995,
+      "scene_support": 0.8753650927458222,
+      "object_support": 0.8683624780789174,
+      "score": 0.6278766360772019,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fan spins while a person snores",
+      "clip_similarity": 0.316287100315094,
+      "visual": 0.2617622696931098,
+      "scene_support": 0.4700038348989625,
+      "object_support": 0.5914762797592432,
+      "score": 0.4231489422747056,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Object is moving, and a cat meows",
+      "clip_similarity": 0.31557518243789673,
+      "visual": 0.22850759046962768,
+      "scene_support": 0.7657384598907572,
+      "object_support": 0.7333411140229753,
+      "score": 0.5411269083619707,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking along with audible snoring",
+      "clip_similarity": 0.3143385946750641,
+      "visual": 0.1707448474597507,
+      "scene_support": 0.7255324809032396,
+      "object_support": 0.7891710988809448,
+      "score": 0.5227090129191556,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog howling at a woman screaming at it",
+      "clip_similarity": 0.31406939029693604,
+      "visual": 0.15816993464052287,
+      "scene_support": 0.2510659982656583,
+      "object_support": 0.3511636172931385,
+      "score": 0.24393685852384817,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A constant ringing noise while a dog barks",
+      "clip_similarity": 0.3131029009819031,
+      "visual": 0.11302386769404248,
+      "scene_support": 1.0,
+      "object_support": 0.9991201252589984,
+      "score": 0.6449455846553165,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman and a man talk followed by a long alarm siren",
+      "clip_similarity": 0.31296348571777344,
+      "visual": 0.1065115858199865,
+      "scene_support": 0.6997927081641889,
+      "object_support": 0.6363889213084291,
+      "score": 0.44345912316978,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-1.47)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Door screeching followed by child speaking",
+      "clip_similarity": 0.3127495348453522,
+      "visual": 0.09651764149039098,
+      "scene_support": 0.9655639892622829,
+      "object_support": 0.8051876990328198,
+      "score": 0.5698325630846872,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud snores separated three seconds apart, followed by a man speaking",
+      "clip_similarity": 0.31173211336135864,
+      "visual": 0.048992461734427534,
+      "scene_support": 0.6908266452925752,
+      "object_support": 0.7113275725915608,
+      "score": 0.44024325005901177,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud siren gets closer and then gets further away with a faint city noise in the background",
+      "clip_similarity": 0.3110286295413971,
+      "visual": 0.016131749114271197,
+      "scene_support": 0.7767193994064544,
+      "object_support": 0.7225385864103687,
+      "score": 0.45623009539075543,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-1.47)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dogs howling and a human howling",
+      "clip_similarity": 0.31101953983306885,
+      "visual": 0.015707156131888327,
+      "scene_support": 0.42947897197068896,
+      "object_support": 0.5944235948908152,
+      "score": 0.31345363251120656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks after the doorbell rings",
+      "clip_similarity": 0.3106832802295685,
+      "visual": 0.0,
+      "scene_support": 0.9266380373608986,
+      "object_support": 0.7625414359616401,
+      "score": 0.5067538419967615,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bedroom",
+      0.3504595458507538
+    ],
+    [
+      "hotel room",
+      0.25368532538414
+    ],
+    [
+      "motel",
+      0.07245243340730667
+    ],
+    [
+      "dorm room",
+      0.059769418090581894
+    ],
+    [
+      "attic",
+      0.0428360253572464
+    ]
+  ],
+  "top_objects": [
+    [
+      "spotlight",
+      0.08675642311573029
+    ],
+    [
+      "four-poster bed",
+      0.06455926597118378
+    ],
+    [
+      "projector",
+      0.04190356284379959
+    ],
+    [
+      "coyote",
+      0.034931160509586334
+    ],
+    [
+      "pillow",
+      0.030662275850772858
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "XplKBvZaHXA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\XplKBvZaHXA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\XplKBvZaHXA.wav",
+  "gt_captions": [
+    "A man talking as a motorbike engine runs and accelerates",
+    "Revving of a motorcycle with a man speaking",
+    "A man talking as a motorbike engine revs and accelerates",
+    "A man speaks as a motorcycle accelerates",
+    "A motorbike engine driving then accelerating as a man is talking"
+  ],
+  "top_scene": [
+    "forest road",
+    0.27429598569869995
+  ],
+  "top_object": [
+    "moving van",
+    0.36706048250198364
+  ],
+  "env_probs": {
+    "indoor": 0.11422425508499146,
+    "outdoor": 0.8857757449150085
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A motorbike accelerating then slowing down",
+    "casv": "A motorcycle is speeding along then stops"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.07951294630765915,
+    "clap_gt_audio_baseline": -0.13606902956962585,
+    "clap_text_casv": 0.3226886987686157,
+    "clap_gt_audio_casv": 0.12273988127708435
+  },
+  "verdicts": [
+    {
+      "caption": "A motorbike accelerating then slowing down",
+      "clip_similarity": 0.339531809091568,
+      "visual": 1.0,
+      "scene_support": 0.4192951939232096,
+      "object_support": 0.5466404988102889,
+      "score": 0.6897807078200495,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle slows down followed by another vehicle speeding past",
+      "clip_similarity": 0.33907124400138855,
+      "visual": 0.9739576048545964,
+      "scene_support": 0.7242200744919465,
+      "object_support": 0.4368410997446897,
+      "score": 0.7379013942128294,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A speeding motorcycle whooshes past",
+      "clip_similarity": 0.33825987577438354,
+      "visual": 0.928079242758465,
+      "scene_support": 0.8258589125271054,
+      "object_support": 0.7436914045539017,
+      "score": 0.8420967922276881,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motorcycle accelerates before a man yells \u201cgo, go, go!",
+      "clip_similarity": 0.33704251050949097,
+      "visual": 0.8592440054801261,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3436976021920505,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle drives in the distance overlapped with a loud engine",
+      "clip_similarity": 0.3355201780796051,
+      "visual": 0.7731645706139191,
+      "scene_support": 0.9024690954255982,
+      "object_support": 0.6881476978654671,
+      "score": 0.7864508662328873,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle is speeding along then stops",
+      "clip_similarity": 0.3330914378166199,
+      "visual": 0.6358328123393836,
+      "scene_support": 1.0,
+      "object_support": 0.9830050193653715,
+      "score": 0.8492346307453649,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Outside several motorcycles speed past followed by a scream",
+      "clip_similarity": 0.33185505867004395,
+      "visual": 0.5659224457674789,
+      "scene_support": 0.8631482392778069,
+      "object_support": 0.6710624033902426,
+      "score": 0.6866321711074064,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several motorcycles accelerate while a man talks far away",
+      "clip_similarity": 0.3307228088378906,
+      "visual": 0.5019000129756984,
+      "scene_support": 0.7743861487876614,
+      "object_support": 0.38377755006339337,
+      "score": 0.5482091148455958,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motorcycle speeding along with a persons' speech in between",
+      "clip_similarity": 0.32937002182006836,
+      "visual": 0.4254074285030594,
+      "scene_support": 0.29647627385107544,
+      "object_support": 0.3339673828091078,
+      "score": 0.35929606839927875,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle accelerates and then slows down as a police siren sounds nearby",
+      "clip_similarity": 0.32665348052978516,
+      "visual": 0.2718021222850036,
+      "scene_support": 0.4705610778438559,
+      "object_support": 0.3932591138822794,
+      "score": 0.36786690643184206,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck along with motorcycle speeding on a highway",
+      "clip_similarity": 0.32627588510513306,
+      "visual": 0.25045120042061486,
+      "scene_support": 0.4682625822100089,
+      "object_support": 0.5288820188616983,
+      "score": 0.3993238604897581,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorcycle driving away at high speeds",
+      "clip_similarity": 0.3260692358016968,
+      "visual": 0.23876633126452393,
+      "scene_support": 0.5848804318311982,
+      "object_support": 0.5925470239852719,
+      "score": 0.4487347692507506,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motorcycle speeding and skidding with a squeal",
+      "clip_similarity": 0.32538971304893494,
+      "visual": 0.20034309768678688,
+      "scene_support": 0.5058607075137685,
+      "object_support": 0.5615235250186706,
+      "score": 0.4003525088344465,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man groans and a motorcycle accelerates then stops",
+      "clip_similarity": 0.3246898055076599,
+      "visual": 0.16076721765638666,
+      "scene_support": 0.7319286295048651,
+      "object_support": 0.5800739878771037,
+      "score": 0.45790767227714535,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motorcycle running repeatedly revving engine",
+      "clip_similarity": 0.3228859007358551,
+      "visual": 0.058766432373861886,
+      "scene_support": 0.5764645303790084,
+      "object_support": 0.6508057036663946,
+      "score": 0.3916876431631656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yelling followed by a motorbike engine revving then accelerating",
+      "clip_similarity": 0.3228699266910553,
+      "visual": 0.057863188954815924,
+      "scene_support": 0.23324102335536248,
+      "object_support": 0.2463893568612467,
+      "score": 0.16703438964690911,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle moves then goes idle followed by a man talking and accelerating again",
+      "clip_similarity": 0.3225570321083069,
+      "visual": 0.040170739968689806,
+      "scene_support": 0.45847001725773195,
+      "object_support": 0.5951105476144989,
+      "score": 0.33214246544914516,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car horn beeps three times, and then a motorcycle drives away",
+      "clip_similarity": 0.3224080801010132,
+      "visual": 0.03174833211721269,
+      "scene_support": 0.7151797306455183,
+      "object_support": 0.39633603695920244,
+      "score": 0.34615406312830127,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor bike slowing down and speeding up",
+      "clip_similarity": 0.3223286271095276,
+      "visual": 0.027255707200838534,
+      "scene_support": 0.8923631683948484,
+      "object_support": 0.7626649530194348,
+      "score": 0.5074107193046203,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle speeding by",
+      "clip_similarity": 0.321846604347229,
+      "visual": 0.0,
+      "scene_support": 0.9220755217820871,
+      "object_support": 1.0,
+      "score": 0.5766226565346261,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "forest road",
+      0.27429598569869995
+    ],
+    [
+      "field road",
+      0.1958746463060379
+    ],
+    [
+      "highway",
+      0.12944869697093964
+    ],
+    [
+      "driveway",
+      0.06285272538661957
+    ],
+    [
+      "cockpit",
+      0.05683937668800354
+    ]
+  ],
+  "top_objects": [
+    [
+      "moving van",
+      0.36706048250198364
+    ],
+    [
+      "moped",
+      0.08175072073936462
+    ],
+    [
+      "police van",
+      0.0660424456000328
+    ],
+    [
+      "ambulance",
+      0.06475061178207397
+    ],
+    [
+      "crash helmet",
+      0.056909672915935516
+    ]
+  ]
+}

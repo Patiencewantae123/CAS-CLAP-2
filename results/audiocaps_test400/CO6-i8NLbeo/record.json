@@ -1,0 +1,283 @@
+{
+  "id": "CO6-i8NLbeo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\CO6-i8NLbeo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\CO6-i8NLbeo.wav",
+  "gt_captions": [
+    "A man talking followed by a goat baaing then a metal gate sliding while ducks quack and wind blows into a microphone",
+    "A man talking as goats baa while wind blows into a microphone followed by another goat baaing and a metal gate sliding",
+    "A man talking followed by a goat baaing then a metal gate sliding shut as ducks quack and wind blows into a microphone",
+    "A man talking followed by a goat talking as a metal gate slides shut while ducks quack and wind blows into a microphone",
+    "A man talking followed by a goat baaing then a metal gate sliding as ducks quack and wind blows into a microphone"
+  ],
+  "top_scene": [
+    "farm",
+    0.27179569005966187
+  ],
+  "top_object": [
+    "pig",
+    0.26700636744499207
+  ],
+  "env_probs": {
+    "indoor": 0.4478418231010437,
+    "outdoor": 0.5521581768989563
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Person calling on a goat that makes typical animal sound",
+    "casv": "Person calling on a goat that makes typical animal sound"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.19824177026748657,
+    "clap_gt_audio_baseline": 0.29002392292022705,
+    "clap_text_casv": 0.19824177026748657,
+    "clap_gt_audio_casv": 0.29002392292022705
+  },
+  "verdicts": [
+    {
+      "caption": "Person calling on a goat that makes typical animal sound",
+      "clip_similarity": 0.34807074069976807,
+      "visual": 1.0,
+      "scene_support": 0.4796056813890875,
+      "object_support": 0.7455314650266459,
+      "score": 0.76754114392472,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking to a goat who is baaing",
+      "clip_similarity": 0.3448886275291443,
+      "visual": 0.7876775253238308,
+      "scene_support": 0.18125559490911922,
+      "object_support": 0.4571507216704535,
+      "score": 0.5065929051034042,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat shouts over the cries of other farm animals",
+      "clip_similarity": 0.344448447227478,
+      "visual": 0.7583070516976015,
+      "scene_support": 0.7245648859236012,
+      "object_support": 0.7751570708845358,
+      "score": 0.7532394077214817,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man talking and laughing with sounds of a goat in the background",
+      "clip_similarity": 0.34432700276374817,
+      "visual": 0.7502038235305815,
+      "scene_support": 0.5074656828503361,
+      "object_support": 0.5530996112887638,
+      "score": 0.6182511176539626,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person talking with a goat in the background and water sounds",
+      "clip_similarity": 0.3436974585056305,
+      "visual": 0.7081982795305497,
+      "scene_support": 0.2602702217342289,
+      "object_support": 0.4419688775239892,
+      "score": 0.49395104158968534,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Small goats bleat with a man speaking",
+      "clip_similarity": 0.3407481014728546,
+      "visual": 0.5114061636235648,
+      "scene_support": 0.8346849882656276,
+      "object_support": 0.7720567592700291,
+      "score": 0.686584989710123,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitched goat bleating and man speaking a foreign language",
+      "clip_similarity": 0.3400719165802002,
+      "visual": 0.4662885823029474,
+      "scene_support": 0.5426018828256177,
+      "object_support": 0.6406013544908845,
+      "score": 0.5414764041161296,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.33967357873916626,
+      "visual": 0.43970999391512194,
+      "scene_support": 0.7703244996077162,
+      "object_support": 0.7413447350424124,
+      "score": 0.6293847679610873,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats bleat as a man speaks quietly",
+      "clip_similarity": 0.33918267488479614,
+      "visual": 0.4069550554201151,
+      "scene_support": 0.42275150375452114,
+      "object_support": 0.5789641634182717,
+      "score": 0.46329672231988395,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while a goat bleats",
+      "clip_similarity": 0.3377982974052429,
+      "visual": 0.31458421988283625,
+      "scene_support": 0.6419558607334512,
+      "object_support": 0.7469777899302902,
+      "score": 0.542513783152257,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple sheep bleating as a man attempts to imitate them",
+      "clip_similarity": 0.3373323082923889,
+      "visual": 0.2834916859884745,
+      "scene_support": 0.21301248684705576,
+      "object_support": 0.5023095525040299,
+      "score": 0.3279932862007155,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking as goat bleats and other farm animals faintly making noise in the background",
+      "clip_similarity": 0.33705225586891174,
+      "visual": 0.264805542409214,
+      "scene_support": 0.829207354586989,
+      "object_support": 0.5265761439821008,
+      "score": 0.5126572665344126,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and baas back at some baby goats baaing",
+      "clip_similarity": 0.3359542489051819,
+      "visual": 0.1915424171681057,
+      "scene_support": 0.3277259626316404,
+      "object_support": 0.2710857424031404,
+      "score": 0.2562604783776765,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks for a few seconds then a goat bleats",
+      "clip_similarity": 0.33549636602401733,
+      "visual": 0.16099076132562848,
+      "scene_support": 1.0,
+      "object_support": 0.9987820421864048,
+      "score": 0.6640309171861728,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat snorting as a woman is laughing while leaves rustle in the background",
+      "clip_similarity": 0.3345597982406616,
+      "visual": 0.09849946111047037,
+      "scene_support": 0.40018272435457536,
+      "object_support": 0.5746294515596864,
+      "score": 0.33184343721846665,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking while a goat is baaing in the background",
+      "clip_similarity": 0.3344722092151642,
+      "visual": 0.09265519421896812,
+      "scene_support": 0.3680728111486438,
+      "object_support": 0.5658662450908688,
+      "score": 0.317243794559441,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People standing around talking while a goat is making noises",
+      "clip_similarity": 0.33376550674438477,
+      "visual": 0.04550136611478546,
+      "scene_support": 0.6308073534944667,
+      "object_support": 0.6987497054064539,
+      "score": 0.41706766411619034,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat bleating followed by a man's voice imitating the goat",
+      "clip_similarity": 0.3336513638496399,
+      "visual": 0.037885325898911484,
+      "scene_support": 0.9926179633882121,
+      "object_support": 1.0,
+      "score": 0.6129395193760282,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking a foreign language while a goat fleets in the background",
+      "clip_similarity": 0.3333963453769684,
+      "visual": 0.020869541009294352,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.00834781640371774,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goats baaing as a woman talks followed by another woman talking in the background",
+      "clip_similarity": 0.3330835700035095,
+      "visual": 0.0,
+      "scene_support": 0.3437402910615971,
+      "object_support": 0.40090725677534705,
+      "score": 0.22339426435108323,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "farm",
+      0.27179569005966187
+    ],
+    [
+      "stable",
+      0.18186554312705994
+    ],
+    [
+      "corral",
+      0.10193486511707306
+    ],
+    [
+      "veterinarians office",
+      0.08319299668073654
+    ],
+    [
+      "pet shop",
+      0.028684508055448532
+    ]
+  ],
+  "top_objects": [
+    [
+      "pig",
+      0.26700636744499207
+    ],
+    [
+      "ram",
+      0.09375450760126114
+    ],
+    [
+      "wild boar",
+      0.06320498138666153
+    ],
+    [
+      "ox",
+      0.04550756514072418
+    ],
+    [
+      "meatloaf",
+      0.028646240010857582
+    ]
+  ]
+}

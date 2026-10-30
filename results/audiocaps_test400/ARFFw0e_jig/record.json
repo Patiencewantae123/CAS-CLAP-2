@@ -1,0 +1,283 @@
+{
+  "id": "ARFFw0e_jig",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ARFFw0e_jig.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ARFFw0e_jig.wav",
+  "gt_captions": [
+    "Loud burping and screaming",
+    "Loud burping repeating",
+    "A loud distorted belch followed by a series of burping",
+    "Several distorted belches followed by non-distorted burps",
+    "A series of distorted burps followed by non-distorted burps"
+  ],
+  "top_scene": [
+    "discotheque",
+    0.04675717651844025
+  ],
+  "top_object": [
+    "ocarina",
+    0.07156193256378174
+  ],
+  "env_probs": {
+    "indoor": 0.6101058721542358,
+    "outdoor": 0.38989412784576416
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A woman briefly speaks along with persistent bursting, popping, and various sound effects in the background",
+    "casv": "A woman is speaking with whirring background sounds followed by gurgling noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.17151950299739838,
+    "clap_gt_audio_baseline": 0.2956366539001465,
+    "clap_text_casv": 0.04616608843207359,
+    "clap_gt_audio_casv": 0.13591277599334717
+  },
+  "verdicts": [
+    {
+      "caption": "A woman briefly speaks along with persistent bursting, popping, and various sound effects in the background",
+      "clip_similarity": 0.2887203097343445,
+      "visual": 1.0,
+      "scene_support": 0.42707668043790253,
+      "object_support": 0.36854939508997003,
+      "score": 0.6386878226583618,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud, computer-generated, cartoon voice is followed by laughter and a medium male voice in the background with a loud static sound",
+      "clip_similarity": 0.2845434844493866,
+      "visual": 0.6755598664746816,
+      "scene_support": 0.5081091323033022,
+      "object_support": 0.3431673466500012,
+      "score": 0.5256068902758636,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid screaming in the foreground as a man screams then laughs in the background while wind blows into a microphone",
+      "clip_similarity": 0.28237342834472656,
+      "visual": 0.5069980415669316,
+      "scene_support": 0.11641352889114918,
+      "object_support": 0.07314282008348466,
+      "score": 0.2596661213191628,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A banging, hammer and clanking pots and pans is followed by a medium voice woman speaking with a small child babbling in the background",
+      "clip_similarity": 0.28235065937042236,
+      "visual": 0.5052294329803833,
+      "scene_support": 0.32896021150085364,
+      "object_support": 0.29221340471193075,
+      "score": 0.38844385805598863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Small children sneezing, interspersed by a woman laughing and background voices",
+      "clip_similarity": 0.2821062207221985,
+      "visual": 0.48624235493474205,
+      "scene_support": 0.6242644196020211,
+      "object_support": 0.3494599438718959,
+      "score": 0.4866142510160719,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman with a high-pitched voice speaks in an animated way, while wind hits the microphone",
+      "clip_similarity": 0.27951580286026,
+      "visual": 0.2850284042242892,
+      "scene_support": 0.2760196956212219,
+      "object_support": 0.3203859396740797,
+      "score": 0.2929330522783062,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sharp rapping is interrupted by a woman speaking",
+      "clip_similarity": 0.2793915569782257,
+      "visual": 0.275377449777535,
+      "scene_support": 0.8569311894993625,
+      "object_support": 0.8497765488290923,
+      "score": 0.6221633014095505,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bells tingle and clang a lot as someone talks super softly in the background",
+      "clip_similarity": 0.27929824590682983,
+      "visual": 0.2681293954784734,
+      "scene_support": 0.8743407294978686,
+      "object_support": 0.8699331415230055,
+      "score": 0.6305339194976516,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person talking with squeaky noises from a video game",
+      "clip_similarity": 0.2784852087497711,
+      "visual": 0.20497571635592554,
+      "scene_support": 0.7992399188072602,
+      "object_support": 0.9174893285852416,
+      "score": 0.5970090607601207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult female is sneezing",
+      "clip_similarity": 0.27797263860702515,
+      "visual": 0.16516118876424263,
+      "scene_support": 0.19025726700251266,
+      "object_support": 0.20683972832110936,
+      "score": 0.18519357410278364,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female speaking with muffled voices in the background",
+      "clip_similarity": 0.2775004208087921,
+      "visual": 0.1284810800550028,
+      "scene_support": 0.8691996440025864,
+      "object_support": 0.9431290238898191,
+      "score": 0.5950910323897227,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female sneezing",
+      "clip_similarity": 0.27719005942344666,
+      "visual": 0.10437337086610893,
+      "scene_support": 0.3868731148240074,
+      "object_support": 0.36253743838879326,
+      "score": 0.2665725143102838,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is speaking with whirring background sounds followed by gurgling noises",
+      "clip_similarity": 0.2771344482898712,
+      "visual": 0.10005370643875383,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6400214825755015,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat snorting followed by a man and a woman talking as metal rattles while wind blows into a microphone and leaves loudly rustle",
+      "clip_similarity": 0.27713093161582947,
+      "visual": 0.09978054437957488,
+      "scene_support": 0.11393154025278983,
+      "object_support": 0.13134978657170482,
+      "score": 0.11349661579917834,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A repetitive beeping sound is in the background while a woman coughs and burps, followed by a girl talking",
+      "clip_similarity": 0.2765418589115143,
+      "visual": 0.05402358453439759,
+      "scene_support": 0.9703848343914477,
+      "object_support": 0.9285628375350801,
+      "score": 0.5912937353917174,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of raspy rubbing noises while woodwind instruments are playing a soft melody in the background",
+      "clip_similarity": 0.2763565182685852,
+      "visual": 0.039627018042585505,
+      "scene_support": 0.7828707659138908,
+      "object_support": 0.5796394123057331,
+      "score": 0.42460386068292133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse snorting and galloping as wind is blowing on a microphone",
+      "clip_similarity": 0.276215523481369,
+      "visual": 0.028675071415673947,
+      "scene_support": 0.5563048299587952,
+      "object_support": 0.679354644718534,
+      "score": 0.38216787096946836,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Orchestral music playing during series of synthesized whooshes and slashes with a man grunting",
+      "clip_similarity": 0.2760498523712158,
+      "visual": 0.0158063605091,
+      "scene_support": 0.8546881485413556,
+      "object_support": 0.6888751975096101,
+      "score": 0.4693915480189297,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Adult female sneezing",
+      "clip_similarity": 0.2759656608104706,
+      "visual": 0.009266675617739792,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.003706670247095917,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young male voice dialog with young female voice followed by a slap and a dog whimper",
+      "clip_similarity": 0.27584636211395264,
+      "visual": 0.0,
+      "scene_support": 0.6422028106777457,
+      "object_support": 0.557396882296064,
+      "score": 0.35987990789214286,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "discotheque",
+      0.04675717651844025
+    ],
+    [
+      "candy store",
+      0.03248240053653717
+    ],
+    [
+      "sand desert",
+      0.02761666476726532
+    ],
+    [
+      "arcade",
+      0.02596251294016838
+    ],
+    [
+      "archaelogical excavation",
+      0.016975009813904762
+    ]
+  ],
+  "top_objects": [
+    [
+      "ocarina",
+      0.07156193256378174
+    ],
+    [
+      "poke bonnet",
+      0.044610872864723206
+    ],
+    [
+      "wild boar",
+      0.03639839217066765
+    ],
+    [
+      "wig",
+      0.026408793404698372
+    ],
+    [
+      "mushroom",
+      0.020958565175533295
+    ]
+  ]
+}

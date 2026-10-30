@@ -1,0 +1,285 @@
+{
+  "id": "fsBR7e_X_0Y",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\fsBR7e_X_0Y.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\fsBR7e_X_0Y.wav",
+  "gt_captions": [
+    "A child yelling as a young boy talks during several slaps on a hard surface",
+    "A child speaks followed by second child speaking as well",
+    "An infant yelling as a young boy talks while a hard surface is slapped several times",
+    "A young boy talking as a baby is yelling with several slaps on a hard surface",
+    "A young kid speaking with a series of slapping on a hard surface as a baby is yelling"
+  ],
+  "top_scene": [
+    "playroom",
+    0.2652096152305603
+  ],
+  "top_object": [
+    "diaper",
+    0.34763097763061523
+  ],
+  "env_probs": {
+    "indoor": 0.7976086139678955,
+    "outdoor": 0.2023913860321045
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+    "casv": "Child crying followed by footsteps and laughter"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.029881520196795464,
+    "clap_gt_audio_baseline": 0.288777619600296,
+    "clap_text_casv": 0.24337616562843323,
+    "clap_gt_audio_casv": 0.3723057210445404
+  },
+  "verdicts": [
+    {
+      "caption": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+      "clip_similarity": 0.3439955711364746,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is communicating to a baby, followed by the baby chuckling then suddenly a dog barks",
+      "clip_similarity": 0.32394737005233765,
+      "visual": 0.5632635677938482,
+      "scene_support": 0.20850852544508944,
+      "object_support": 0.13562120231799257,
+      "score": 0.32854434544646394,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping with a baby cooing in the background followed by whistling",
+      "clip_similarity": 0.3154416084289551,
+      "visual": 0.37797133289445833,
+      "scene_support": 0.4610357984886172,
+      "object_support": 0.33559201642849107,
+      "score": 0.3901768776329158,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Child crying followed by footsteps and laughter",
+      "clip_similarity": 0.3141632080078125,
+      "visual": 0.3501222487538158,
+      "scene_support": 0.8802081274381287,
+      "object_support": 0.8904289622482278,
+      "score": 0.6712400264074332,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toddler cries and stamps a foot while adults chuckle",
+      "clip_similarity": 0.31366652250289917,
+      "visual": 0.3393022926672821,
+      "scene_support": 0.7757103483391076,
+      "object_support": 0.7510540325756724,
+      "score": 0.5937502313413469,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Shuffling of an object while a child babbles and a dog barks followed by a male talking",
+      "clip_similarity": 0.3120718002319336,
+      "visual": 0.30456235205823273,
+      "scene_support": 0.8640807019596743,
+      "object_support": 0.6579396168560819,
+      "score": 0.57843103646802,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.3076828420162201,
+      "visual": 0.2089518808649213,
+      "scene_support": 0.8644380701485291,
+      "object_support": 0.6559115491729492,
+      "score": 0.539685638142412,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An infant whining with brief female speech and laughter in the background",
+      "clip_similarity": 0.30710309743881226,
+      "visual": 0.19632253934618016,
+      "scene_support": 0.5708023864604894,
+      "object_support": 0.8372288877011365,
+      "score": 0.5009383979869598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid talks as something is dragged over a floor and thumps over and over",
+      "clip_similarity": 0.3055155873298645,
+      "visual": 0.1617397107839891,
+      "scene_support": 0.9293383470298118,
+      "object_support": 0.7382008129852594,
+      "score": 0.5649576323181169,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum cleaner works then stops followed by a baby crying and people talking far away",
+      "clip_similarity": 0.30405741930007935,
+      "visual": 0.12997451149190223,
+      "scene_support": 0.33588656564426683,
+      "object_support": 0.3247853254754135,
+      "score": 0.250191371932665,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman squeaking then hiccuping followed by an infant laughing",
+      "clip_similarity": 0.303993821144104,
+      "visual": 0.12858906889687866,
+      "scene_support": 0.4882321501705405,
+      "object_support": 0.6200146632721953,
+      "score": 0.3839096715915722,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People laugh followed by a laughing baby",
+      "clip_similarity": 0.3038117587566376,
+      "visual": 0.12462296354870668,
+      "scene_support": 0.6739315718982102,
+      "object_support": 1.0,
+      "score": 0.5520286569889457,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking followed by a baby crying and a person whooshing",
+      "clip_similarity": 0.30163201689720154,
+      "visual": 0.07713876889077596,
+      "scene_support": 0.7318671222847529,
+      "object_support": 0.8816608880949702,
+      "score": 0.5149139106702273,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking, and a toddler laughing",
+      "clip_similarity": 0.30119431018829346,
+      "visual": 0.06760362578247642,
+      "scene_support": 0.9247028388633162,
+      "object_support": 0.8471564855969393,
+      "score": 0.5585992476510672,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two children hit objects and laugh",
+      "clip_similarity": 0.30077898502349854,
+      "visual": 0.05855604939810505,
+      "scene_support": 0.7657664994204626,
+      "object_support": 0.5214120695960391,
+      "score": 0.4095759904641925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping and knocking sounds followed by a baby saying something",
+      "clip_similarity": 0.29963821172714233,
+      "visual": 0.03370507861445353,
+      "scene_support": 1.0,
+      "object_support": 0.9608522279734444,
+      "score": 0.6017376998378148,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby laughs followed by a fart noise and more laughs",
+      "clip_similarity": 0.29952409863471985,
+      "visual": 0.031219202468087428,
+      "scene_support": 0.5680794306144361,
+      "object_support": 0.9800032702261731,
+      "score": 0.4769124912394177,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks quickly before making a snorting sound followed by a woman speaking, and the child speaking first and then snorting",
+      "clip_similarity": 0.29932186007499695,
+      "visual": 0.02681357292271256,
+      "scene_support": 0.557344944109829,
+      "object_support": 0.3485920445594689,
+      "score": 0.2825065257698744,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person makes farting noises, followed by a baby laughing nearby",
+      "clip_similarity": 0.29915672540664673,
+      "visual": 0.023216226428323796,
+      "scene_support": 0.29836448708967883,
+      "object_support": 0.6197430235174974,
+      "score": 0.2847187437534824,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people are communicating with a baby then suddenly the baby starts crying loudly",
+      "clip_similarity": 0.29809099435806274,
+      "visual": 0.0,
+      "scene_support": 0.2998864644426558,
+      "object_support": 0.5657886871272645,
+      "score": 0.2597025454709761,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "playroom",
+      0.2652096152305603
+    ],
+    [
+      "childs room",
+      0.08431298285722733
+    ],
+    [
+      "sandbox",
+      0.06439310312271118
+    ],
+    [
+      "assembly line",
+      0.06322101503610611
+    ],
+    [
+      "watering hole",
+      0.059366755187511444
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.34763097763061523
+    ],
+    [
+      "infant bed",
+      0.0841502919793129
+    ],
+    [
+      "pajamas",
+      0.08117172122001648
+    ],
+    [
+      "chocolate syrup",
+      0.05021987855434418
+    ],
+    [
+      "centipede",
+      0.03510509803891182
+    ]
+  ]
+}

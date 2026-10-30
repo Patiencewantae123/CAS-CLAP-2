@@ -1,0 +1,283 @@
+{
+  "id": "OMGHnJV0l2U",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\OMGHnJV0l2U.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\OMGHnJV0l2U.wav",
+  "gt_captions": [
+    "Metal scrapping against a wooden surface followed by sand scrapping then more metal scrapping against wood",
+    "Rapid filing and scraping of wood occurs, followed by brushing and a thump",
+    "Scraping and banging",
+    "Metal scrapping against a wooden surface followed by light sanding then metal scraping against a wooden surface",
+    "Metal scrapping on wood followed by wood sanding then more metal scrapping against wood"
+  ],
+  "top_scene": [
+    "assembly line",
+    0.1304282248020172
+  ],
+  "top_object": [
+    "hand plane",
+    0.7794673442840576
+  ],
+  "env_probs": {
+    "indoor": 0.835873007774353,
+    "outdoor": 0.16412699222564697
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A man speaks then uses a drill and then clacks wood together",
+    "casv": "A man speaks then uses a drill and then clacks wood together"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.14684665203094482,
+    "clap_gt_audio_baseline": 0.3427277207374573,
+    "clap_text_casv": 0.14684665203094482,
+    "clap_gt_audio_casv": 0.3427277207374573
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks then uses a drill and then clacks wood together",
+      "clip_similarity": 0.3289291262626648,
+      "visual": 1.0,
+      "scene_support": 0.7465526628756788,
+      "object_support": 0.7606392059625584,
+      "score": 0.8521575606514712,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking in a foreign language followed by a sawing sound created by a power tool cutting through wood",
+      "clip_similarity": 0.32888996601104736,
+      "visual": 0.9951159678858162,
+      "scene_support": 0.5084960020265391,
+      "object_support": 0.824699593271714,
+      "score": 0.7980050657438025,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood sawing followed by man's voice",
+      "clip_similarity": 0.32846421003341675,
+      "visual": 0.9420160570918823,
+      "scene_support": 0.7705211758532602,
+      "object_support": 0.8110134123602583,
+      "score": 0.8512667993008084,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.32844799757003784,
+      "visual": 0.9399940529289325,
+      "scene_support": 0.5132025239623446,
+      "object_support": 0.5641590901027631,
+      "score": 0.6992061053911053,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power saw cutting into wood",
+      "clip_similarity": 0.3262075185775757,
+      "visual": 0.6605634849836456,
+      "scene_support": 0.38420352242763595,
+      "object_support": 0.9145534009404511,
+      "score": 0.6538524710038843,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cuckoo clock making cuckoo sounds",
+      "clip_similarity": 0.32560276985168457,
+      "visual": 0.5851397561700862,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23405590246803448,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sawing wood noise",
+      "clip_similarity": 0.32542869448661804,
+      "visual": 0.5634292298542968,
+      "scene_support": 0.74434189293886,
+      "object_support": 0.9237395835196961,
+      "score": 0.7257961348792855,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sawing of something wooden by a blade at a steady medium rate",
+      "clip_similarity": 0.3254085183143616,
+      "visual": 0.5609128754088611,
+      "scene_support": 0.6386760547626137,
+      "object_support": 1.0,
+      "score": 0.7159679665923286,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical tool sawing into wood",
+      "clip_similarity": 0.32530641555786133,
+      "visual": 0.5481787094855783,
+      "scene_support": 0.2302161586885397,
+      "object_support": 0.949136373298514,
+      "score": 0.5730772433903475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw grinds against wood loudly and quickly",
+      "clip_similarity": 0.32405397295951843,
+      "visual": 0.3919751709782932,
+      "scene_support": 0.7702143986261644,
+      "object_support": 0.9411500891963955,
+      "score": 0.6701994147380852,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood being sawed with some clicking and blowing",
+      "clip_similarity": 0.3237791657447815,
+      "visual": 0.3577014570324115,
+      "scene_support": 0.6764092424658639,
+      "object_support": 0.9655055720835144,
+      "score": 0.6356550271777781,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sawing and clicking",
+      "clip_similarity": 0.32363390922546387,
+      "visual": 0.3395851917930419,
+      "scene_support": 0.8080680765808074,
+      "object_support": 0.8049796544886725,
+      "score": 0.6197483960380608,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A mechanical wood saw working",
+      "clip_similarity": 0.32351168990135193,
+      "visual": 0.3243421052631579,
+      "scene_support": 0.5822759251430667,
+      "object_support": 0.9668498101297873,
+      "score": 0.5944745626871193,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw spins faster than slows down as blocks of wood fall in the background",
+      "clip_similarity": 0.32343295216560364,
+      "visual": 0.31452200416294973,
+      "scene_support": 0.14010507736872319,
+      "object_support": 0.611967630335447,
+      "score": 0.35143061397643094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sawing of wood with a power saw",
+      "clip_similarity": 0.32227805256843567,
+      "visual": 0.17048394290811775,
+      "scene_support": 0.33803930696310286,
+      "object_support": 0.7790085387771588,
+      "score": 0.40330793088532557,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.3218992054462433,
+      "visual": 0.12323446327683615,
+      "scene_support": 1.0,
+      "object_support": 0.6823198279811958,
+      "score": 0.5539897337050932,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.321707546710968,
+      "visual": 0.09933095450490634,
+      "scene_support": 0.31345518338369527,
+      "object_support": 0.8004011184497203,
+      "score": 0.3738892723519872,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw cuts through wood at decreasing speed",
+      "clip_similarity": 0.32138627767562866,
+      "visual": 0.05926256318763009,
+      "scene_support": 0.35202069964946797,
+      "object_support": 0.8014057339803546,
+      "score": 0.3697329553639988,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw sawing wood",
+      "clip_similarity": 0.32125309109687805,
+      "visual": 0.042651650312221234,
+      "scene_support": 0.5380354414055496,
+      "object_support": 0.9805587336204155,
+      "score": 0.472638912632678,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Nonstop machine buzzing concurrent with oscillating wood filing",
+      "clip_similarity": 0.32091110944747925,
+      "visual": 0.0,
+      "scene_support": 0.6142547780758735,
+      "object_support": 0.6357184638509736,
+      "score": 0.3749919725780541,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "assembly line",
+      0.1304282248020172
+    ],
+    [
+      "art studio",
+      0.12134890258312225
+    ],
+    [
+      "repair shop",
+      0.09867966920137405
+    ],
+    [
+      "art school",
+      0.06652022898197174
+    ],
+    [
+      "indoor bow window",
+      0.05763019993901253
+    ]
+  ],
+  "top_objects": [
+    [
+      "hand plane",
+      0.7794673442840576
+    ],
+    [
+      "marimba",
+      0.0268388818949461
+    ],
+    [
+      "sawmill",
+      0.02544356696307659
+    ],
+    [
+      "mousetrap",
+      0.015010545961558819
+    ],
+    [
+      "chainsaw",
+      0.010228847153484821
+    ]
+  ]
+}

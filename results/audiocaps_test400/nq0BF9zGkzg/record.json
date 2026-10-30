@@ -1,0 +1,291 @@
+{
+  "id": "nq0BF9zGkzg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\nq0BF9zGkzg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\nq0BF9zGkzg.wav",
+  "gt_captions": [
+    "A low slow groan followed by a crash and men speaking with distant birds",
+    "A low slow scream then a crash then birds chirping and men speaking",
+    "An animal cries, followed by a crash, then two people speak with one another",
+    "Groaning followed by a bang and breaking glass followed by men speaking with seagulls cawing in the distance",
+    "A person screaming followed glass crashing then two men communicating with each other as seagulls squawk in the distance"
+  ],
+  "top_scene": [
+    "toyshop",
+    0.05896753445267677
+  ],
+  "top_object": [
+    "guillotine",
+    0.0990917831659317
+  ],
+  "env_probs": {
+    "indoor": 0.6594845056533813,
+    "outdoor": 0.34051549434661865
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A truck revs up and drives away, followed by a cartoon droop sound, after which the truck resumes driving",
+    "casv": "A truck revs up and drives away, followed by a cartoon droop sound, after which the truck resumes driving"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.32521432638168335,
+    "clap_gt_audio_baseline": 0.6134214401245117,
+    "clap_text_casv": 0.32521432638168335,
+    "clap_gt_audio_casv": 0.6134214401245117
+  },
+  "verdicts": [
+    {
+      "caption": "A truck revs up and drives away, followed by a cartoon droop sound, after which the truck resumes driving",
+      "clip_similarity": 0.2953895330429077,
+      "visual": 1.0,
+      "scene_support": 0.8563646496786379,
+      "object_support": 0.8274849005478521,
+      "score": 0.905154865067947,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind and a sequence of clanking sounds are in the background while a small farm animal fleets and is followed by a soft voice woman and man speaking",
+      "clip_similarity": 0.291511595249176,
+      "visual": 0.729912386851178,
+      "scene_support": 0.8280900254698541,
+      "object_support": 0.6722758156198648,
+      "score": 0.7420747070673869,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two men yelling briefly as a group of people talk in the background while a toy helicopter engine buzzes and wind blows heavily into a microphone",
+      "clip_similarity": 0.29068058729171753,
+      "visual": 0.6720349871413538,
+      "scene_support": 0.5347769449193982,
+      "object_support": 0.5769841007524001,
+      "score": 0.602342308558081,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A flock of sheep baaing as a woman laughs and talks while a vehicle engine runs in the background and wind blows into a microphone",
+      "clip_similarity": 0.29012131690979004,
+      "visual": 0.6330833559925028,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2532333423970011,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing as children laugh and a man talks in the background followed by a goat screaming",
+      "clip_similarity": 0.2885191738605499,
+      "visual": 0.5214985356295547,
+      "scene_support": 0.7694502313449073,
+      "object_support": 0.7580288549984877,
+      "score": 0.6668431401548404,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.97)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine moves back and forth rapidly, followed by a woman talking and hammering",
+      "clip_similarity": 0.2880249619483948,
+      "visual": 0.48707804648208614,
+      "scene_support": 0.7328103122177239,
+      "object_support": 0.845455446872067,
+      "score": 0.6683109463197717,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking followed by metal scrapping a surface as a cat meows and a chicken clucks in the background",
+      "clip_similarity": 0.28725188970565796,
+      "visual": 0.4332357086369835,
+      "scene_support": 0.661673406500272,
+      "object_support": 0.6523231485436863,
+      "score": 0.5674932499679809,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.97)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as water rushes in the background, followed by gunshot and ricochet sound effects",
+      "clip_similarity": 0.285401850938797,
+      "visual": 0.30438563899895593,
+      "scene_support": 0.6254974479574453,
+      "object_support": 0.6262432687780435,
+      "score": 0.49727647062022906,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man yells out as he goes galloping by on a horse while the rooster goes cock-a-doodle-doo",
+      "clip_similarity": 0.2852438986301422,
+      "visual": 0.2933846987299103,
+      "scene_support": 0.919534867195497,
+      "object_support": 0.7892236839233319,
+      "score": 0.6299814448276129,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An old time movie film player whirs then a few footsteps ending with a sweet bird song",
+      "clip_similarity": 0.2849917709827423,
+      "visual": 0.27582470728158465,
+      "scene_support": 0.9542813395779126,
+      "object_support": 0.8548057884611188,
+      "score": 0.6530560213243433,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Door being slammed shut followed by laughter and a male's voice in the background",
+      "clip_similarity": 0.2839782238006592,
+      "visual": 0.2052339567891369,
+      "scene_support": 0.9346873686277063,
+      "object_support": 0.9418382511139451,
+      "score": 0.6450512686381502,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sawing action is followed by a young boy yelling and a young man speaking after that",
+      "clip_similarity": 0.2837976813316345,
+      "visual": 0.19265967449670698,
+      "scene_support": 0.8265238667393167,
+      "object_support": 0.900751277645951,
+      "score": 0.595246413114263,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large objects being slid, along with a mechanical sound",
+      "clip_similarity": 0.2837192416191101,
+      "visual": 0.18719656604611679,
+      "scene_support": 0.9933852550784752,
+      "object_support": 1.0,
+      "score": 0.6728942029419893,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A metal object falls, followed by a woman who talks and then screams, after which a sewing machine actuates several times",
+      "clip_similarity": 0.28330621123313904,
+      "visual": 0.1584301450671161,
+      "scene_support": 0.8766785505238553,
+      "object_support": 0.9699720929072331,
+      "score": 0.617367251056173,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid screaming in the foreground as a man screams then laughs in the background while wind blows into a microphone",
+      "clip_similarity": 0.2826453745365143,
+      "visual": 0.11240470176035801,
+      "scene_support": 0.6203599078925427,
+      "object_support": 0.6327324317835282,
+      "score": 0.42088958260696446,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock cooing and bell chiming followed by a woman and a man laughing and speaking then another woman speaking",
+      "clip_similarity": 0.2823491096496582,
+      "visual": 0.09177067398402165,
+      "scene_support": 0.6900839252569613,
+      "object_support": 0.8203723648065057,
+      "score": 0.4898451566126487,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking while a woman yells in the distance as a door slams followed by goats baaing alongside a person whistling and clapping",
+      "clip_similarity": 0.2818155288696289,
+      "visual": 0.05460825236572107,
+      "scene_support": 0.37560915898131997,
+      "object_support": 0.3723322534275834,
+      "score": 0.24622572466895942,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The truck moves fast and then a crowd cheers after a horn blows",
+      "clip_similarity": 0.2816978693008423,
+      "visual": 0.046413589689835756,
+      "scene_support": 0.9434743515897976,
+      "object_support": 0.9219781295699814,
+      "score": 0.578201180223868,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gurgling engine sound with people in the background",
+      "clip_similarity": 0.28159013390541077,
+      "visual": 0.03891011816670368,
+      "scene_support": 1.0,
+      "object_support": 0.9393045989018013,
+      "score": 0.5973554269372219,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A film reel rolling as music is playing",
+      "clip_similarity": 0.28103145956993103,
+      "visual": 0.0,
+      "scene_support": 0.9522499235593168,
+      "object_support": 0.9384669495832645,
+      "score": 0.5672150619427744,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "toyshop",
+      0.05896753445267677
+    ],
+    [
+      "art school",
+      0.044205937534570694
+    ],
+    [
+      "archaelogical excavation",
+      0.042961485683918
+    ],
+    [
+      "windmill",
+      0.03545508161187172
+    ],
+    [
+      "stable",
+      0.031950511038303375
+    ]
+  ],
+  "top_objects": [
+    [
+      "guillotine",
+      0.0990917831659317
+    ],
+    [
+      "mousetrap",
+      0.05678306147456169
+    ],
+    [
+      "front curtain",
+      0.03733482584357262
+    ],
+    [
+      "pirate ship",
+      0.03515942394733429
+    ],
+    [
+      "threshing machine",
+      0.027272263541817665
+    ]
+  ]
+}

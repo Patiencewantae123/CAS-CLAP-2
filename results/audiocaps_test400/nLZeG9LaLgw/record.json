@@ -1,0 +1,283 @@
+{
+  "id": "nLZeG9LaLgw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\nLZeG9LaLgw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\nLZeG9LaLgw.wav",
+  "gt_captions": [
+    "Race car revving its engine",
+    "Humming of a loud powerful engine starting and speeding into the distance",
+    "Loud humming of a car speeding into the distance with wind blowing and tires squealing",
+    "An engine revving",
+    "A vehicle engine accelerating and revving as wind is blowing into a microphone"
+  ],
+  "top_scene": [
+    "raceway",
+    0.6448029279708862
+  ],
+  "top_object": [
+    "crash helmet",
+    0.35859403014183044
+  ],
+  "env_probs": {
+    "indoor": 0.11400765180587769,
+    "outdoor": 0.8859923481941223
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "An engine revs as a vehicle spins tires causing a burnout",
+    "casv": "An engine revs as a vehicle spins tires causing a burnout"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.39806437492370605,
+    "clap_gt_audio_baseline": 0.46070772409439087,
+    "clap_text_casv": 0.39806437492370605,
+    "clap_gt_audio_casv": 0.46070772409439087
+  },
+  "verdicts": [
+    {
+      "caption": "An engine revs as a vehicle spins tires causing a burnout",
+      "clip_similarity": 0.31322193145751953,
+      "visual": 1.0,
+      "scene_support": 0.8760040899386462,
+      "object_support": 0.7864947852440417,
+      "score": 0.8987496625548064,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several large vehicle engines revving and accelerating with a group of people talking in the background as a man briefly shouts and water splashes",
+      "clip_similarity": 0.3116301894187927,
+      "visual": 0.8818561480812961,
+      "scene_support": 0.40019201947626115,
+      "object_support": 0.0,
+      "score": 0.4728000650753968,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking followed by a spraying noise and engine running",
+      "clip_similarity": 0.3103099465370178,
+      "visual": 0.7838637751174581,
+      "scene_support": 0.5328540466247291,
+      "object_support": 0.43221873229042124,
+      "score": 0.6030673437215284,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People speaking with an engine starting and water splashing",
+      "clip_similarity": 0.3102114796638489,
+      "visual": 0.7765552694679656,
+      "scene_support": 0.5465621036800399,
+      "object_support": 0.45216257789281383,
+      "score": 0.6102395122590423,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Short bursts of a liquid spray are almost drowned out by a man shouting and brakes squealing",
+      "clip_similarity": 0.30859577655792236,
+      "visual": 0.6566329555207532,
+      "scene_support": 0.19911876776073,
+      "object_support": 0.17024133719272597,
+      "score": 0.3734612136943381,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud car engine rumbles as water is splashed",
+      "clip_similarity": 0.3082294166088104,
+      "visual": 0.6294406250276502,
+      "scene_support": 0.6541334906826264,
+      "object_support": 0.8605397439612903,
+      "score": 0.7061782204042351,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine idling followed by a person talking, the car accelerates with a large bang and laughing",
+      "clip_similarity": 0.30822259187698364,
+      "visual": 0.628934073031968,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8515736292127871,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine works while some surface is rubbed followed by men talking and liquid flowing",
+      "clip_similarity": 0.3066956102848053,
+      "visual": 0.5155969350286235,
+      "scene_support": 0.798812927215951,
+      "object_support": 0.6518339350434651,
+      "score": 0.6414328326892742,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People are communicating and laughing followed by a vehicle engine revving",
+      "clip_similarity": 0.30614805221557617,
+      "visual": 0.4749555384492873,
+      "scene_support": 0.8156508255361139,
+      "object_support": 0.6828848764450723,
+      "score": 0.6395429259740708,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man briefly speaking followed by another man speaking over a radio intercom as a muffled vehicle engine accelerates and an emergency siren wails",
+      "clip_similarity": 0.3048063814640045,
+      "visual": 0.3753727249400543,
+      "scene_support": 0.5458348870623544,
+      "object_support": 0.6404780984942972,
+      "score": 0.5060429856430172,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine works while a man talks followed by some liquid flowing",
+      "clip_similarity": 0.3043127655982971,
+      "visual": 0.33873507994231056,
+      "scene_support": 0.7281981458119323,
+      "object_support": 0.7440152623569594,
+      "score": 0.5771580544275917,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud humming of an engine followed by a loud explosion with water splashing loudly",
+      "clip_similarity": 0.3041483163833618,
+      "visual": 0.3265291676620745,
+      "scene_support": 0.5942378917480677,
+      "object_support": 0.7376870395509525,
+      "score": 0.5301891464545359,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine running followed by water splashing",
+      "clip_similarity": 0.30389708280563354,
+      "visual": 0.3078818605721162,
+      "scene_support": 0.6383261730832699,
+      "object_support": 0.6888646275400596,
+      "score": 0.5213099844158453,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric engine runs then a burst of spray occurs",
+      "clip_similarity": 0.30287814140319824,
+      "visual": 0.23225298401153788,
+      "scene_support": 0.6522113909648931,
+      "object_support": 0.7299966091473238,
+      "score": 0.5075635936382802,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People are communicating with one another while a car engine is clicking and sounds of spray being forced out of a can",
+      "clip_similarity": 0.3025171458721161,
+      "visual": 0.2054588166591458,
+      "scene_support": 0.6609322755117543,
+      "object_support": 0.5808448503038275,
+      "score": 0.4547166644083328,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks as a car ignition turns over",
+      "clip_similarity": 0.3016882538795471,
+      "visual": 0.1439359753669737,
+      "scene_support": 0.5807946234546647,
+      "object_support": 0.7155485261523913,
+      "score": 0.4464773350289063,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine stops followed by water splashing and a woman speaking",
+      "clip_similarity": 0.301141619682312,
+      "visual": 0.10336315132853768,
+      "scene_support": 0.27771150121417076,
+      "object_support": 0.003992171706209015,
+      "score": 0.125856362407529,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from an engine followed by splashing and people speaking",
+      "clip_similarity": 0.3007420003414154,
+      "visual": 0.07370220936302746,
+      "scene_support": 0.6726720376876322,
+      "object_support": 0.5675612729425209,
+      "score": 0.4015508769342569,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine revving before accelerating at a high rate as tires skid and water splashes",
+      "clip_similarity": 0.30065280199050903,
+      "visual": 0.06708164113998531,
+      "scene_support": 0.6289576037950516,
+      "object_support": 0.4563307454126691,
+      "score": 0.3524191612183103,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine accelerates along with water splashing",
+      "clip_similarity": 0.2997490167617798,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.15910138884163075,
+      "score": 0.04773041665248922,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.6448029279708862
+    ],
+    [
+      "landing deck",
+      0.03309202939271927
+    ],
+    [
+      "junkyard",
+      0.0303808581084013
+    ],
+    [
+      "fire station",
+      0.025465531274676323
+    ],
+    [
+      "parking lot",
+      0.02246369607746601
+    ]
+  ],
+  "top_objects": [
+    [
+      "crash helmet",
+      0.35859403014183044
+    ],
+    [
+      "tow truck",
+      0.14779144525527954
+    ],
+    [
+      "fire engine",
+      0.09813611209392548
+    ],
+    [
+      "ambulance",
+      0.08925975114107132
+    ],
+    [
+      "stretcher",
+      0.027778036892414093
+    ]
+  ]
+}

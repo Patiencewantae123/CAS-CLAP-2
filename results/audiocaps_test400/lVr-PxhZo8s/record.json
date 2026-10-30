@@ -1,0 +1,301 @@
+{
+  "id": "lVr-PxhZo8s",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\lVr-PxhZo8s.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\lVr-PxhZo8s.wav",
+  "gt_captions": [
+    "An idle vehicle engine running as wind blows into a microphone",
+    "Camera muffling and wind blowing into a microphone as a vehicle engine runs while idle",
+    "Car engine idling",
+    "A loud engine idling",
+    "Hissing and vibrating from an idling engine"
+  ],
+  "top_scene": [
+    "car interior",
+    0.2466074824333191
+  ],
+  "top_object": [
+    "motorboat",
+    0.37772610783576965
+  ],
+  "env_probs": {
+    "indoor": 0.8751876354217529,
+    "outdoor": 0.12481236457824707
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Mid frequency of a car engine idling then accelerating",
+    "casv": "An engine accelerating with intermittent tapping"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.294293075799942,
+    "clap_gt_audio_baseline": 0.2408967763185501,
+    "clap_text_casv": 0.44669994711875916,
+    "clap_gt_audio_casv": 0.35917752981185913
+  },
+  "verdicts": [
+    {
+      "caption": "Mid frequency of a car engine idling then accelerating",
+      "clip_similarity": 0.33451932668685913,
+      "visual": 1.0,
+      "scene_support": 0.4487338258870227,
+      "object_support": 0.32337435957541516,
+      "score": 0.6316324556387314,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine accelerating with intermittent tapping",
+      "clip_similarity": 0.3339401185512543,
+      "visual": 0.9182014848734827,
+      "scene_support": 0.8726905074970155,
+      "object_support": 0.7802045368681321,
+      "score": 0.8631491072589373,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car engine running with male speech",
+      "clip_similarity": 0.3325650691986084,
+      "visual": 0.7240105052273608,
+      "scene_support": 0.7738335962817161,
+      "object_support": 0.6164391333242727,
+      "score": 0.706686020972741,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.33244946599006653,
+      "visual": 0.7076844728025724,
+      "scene_support": 0.0,
+      "object_support": 0.005174518426896524,
+      "score": 0.28462614464909797,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person sniffs then starts an engine",
+      "clip_similarity": 0.33178791403770447,
+      "visual": 0.6142569740231317,
+      "scene_support": 0.3502400781119961,
+      "object_support": 0.5462533369409494,
+      "score": 0.5146508141251364,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.33174607157707214,
+      "visual": 0.6083477836327211,
+      "scene_support": 0.006426240788510656,
+      "object_support": 0.0,
+      "score": 0.24526698568964164,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine vibration with some voices in the background",
+      "clip_similarity": 0.33164286613464355,
+      "visual": 0.5937726224347212,
+      "scene_support": 0.7505473334963322,
+      "object_support": 0.7330253975339367,
+      "score": 0.6825808682829692,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine starts off idling and then begins to increase in speed and volume",
+      "clip_similarity": 0.33159172534942627,
+      "visual": 0.5865502786242193,
+      "scene_support": 0.49055177747000916,
+      "object_support": 0.4097246034012172,
+      "score": 0.5047030257110556,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is idling, making a continuous clicking and soft tapping sound",
+      "clip_similarity": 0.3313789367675781,
+      "visual": 0.5564992676644388,
+      "scene_support": 0.8943051034816702,
+      "object_support": 0.7909675351960769,
+      "score": 0.7281814986690996,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine sound with lady laughing loudly",
+      "clip_similarity": 0.3307931423187256,
+      "visual": 0.4737706021986902,
+      "scene_support": 0.10560490206931485,
+      "object_support": 0.16558833027641903,
+      "score": 0.27086621058319627,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine running idle then accelerating",
+      "clip_similarity": 0.3299776315689087,
+      "visual": 0.3586003131365848,
+      "scene_support": 0.703010354140103,
+      "object_support": 0.5012362734988597,
+      "score": 0.5047141135463227,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine is continuously making low thumping sounds and idling",
+      "clip_similarity": 0.3294941782951355,
+      "visual": 0.29032475294196874,
+      "scene_support": 0.5324151244830296,
+      "object_support": 0.46662560301842754,
+      "score": 0.41584211942722465,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine is attempted to be started",
+      "clip_similarity": 0.32904329895973206,
+      "visual": 0.22664943854273642,
+      "scene_support": 0.9781743550862394,
+      "object_support": 0.9660289748094468,
+      "score": 0.6739207743858004,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An automobile engine idling in mid frequency",
+      "clip_similarity": 0.3285006582736969,
+      "visual": 0.1500151517702318,
+      "scene_support": 0.7566876627167333,
+      "object_support": 0.6146430143377801,
+      "score": 0.4714052638244467,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An idling engine sound is followed by an engine revving",
+      "clip_similarity": 0.32849031686782837,
+      "visual": 0.14855468947288675,
+      "scene_support": 0.7239352581526608,
+      "object_support": 0.7058647867163255,
+      "score": 0.4883618892498506,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking over engine sound",
+      "clip_similarity": 0.3280094265937805,
+      "visual": 0.08064108823380865,
+      "scene_support": 0.4363878617398555,
+      "object_support": 0.5228476808805909,
+      "score": 0.32002709807965735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle engine sound with child's voice",
+      "clip_similarity": 0.32776448130607605,
+      "visual": 0.04604875502954595,
+      "scene_support": 0.1360102832595193,
+      "object_support": 0.14579610901151735,
+      "score": 0.10296141969312937,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine rattles with a continuous knocking sound",
+      "clip_similarity": 0.32759523391723633,
+      "visual": 0.022146837488846615,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6088587349955386,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine chugging then slows slightly and continues chugging",
+      "clip_similarity": 0.32752853631973267,
+      "visual": 0.012727486994730551,
+      "scene_support": 0.6566552487868669,
+      "object_support": 0.7660675031514688,
+      "score": 0.4319078203793929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle car engine idling in mid frequency",
+      "clip_similarity": 0.3274384140968323,
+      "visual": 0.0,
+      "scene_support": 0.7737260807895301,
+      "object_support": 0.5302653218737492,
+      "score": 0.3911974207989838,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.2466074824333191
+    ],
+    [
+      "auto factory",
+      0.15846554934978485
+    ],
+    [
+      "indoor garage",
+      0.15072311460971832
+    ],
+    [
+      "engine room",
+      0.148344486951828
+    ],
+    [
+      "auto showroom",
+      0.04488725960254669
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.37772610783576965
+    ],
+    [
+      "oil filter",
+      0.1277688890695572
+    ],
+    [
+      "race car",
+      0.027017826214432716
+    ],
+    [
+      "convertible",
+      0.02171572856605053
+    ],
+    [
+      "grille",
+      0.02132595144212246
+    ]
+  ]
+}

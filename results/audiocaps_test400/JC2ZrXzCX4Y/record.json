@@ -1,0 +1,283 @@
+{
+  "id": "JC2ZrXzCX4Y",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\JC2ZrXzCX4Y.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\JC2ZrXzCX4Y.wav",
+  "gt_captions": [
+    "A group of people talk as a man snores",
+    "A man snoring with children speaking in the distance and a woman speaking nearby",
+    "A person snores while people communicate",
+    "Loud snoring sounds as people speak in the background and man and woman talk",
+    "A group of children talking in the background followed by a woman then a man talking as a person is snoring"
+  ],
+  "top_scene": [
+    "water park",
+    0.11619997024536133
+  ],
+  "top_object": [
+    "stretcher",
+    0.15598006546497345
+  ],
+  "env_probs": {
+    "indoor": 0.5635815858840942,
+    "outdoor": 0.43641841411590576
+  },
+  "status": "ACCEPT",
+  "n_rejected": 1,
+  "prompts": {
+    "baseline": "Pig snorting then oinking with some walking on sand",
+    "casv": "A man speaks turns on a machine with beeping and vibrating noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.042056433856487274,
+    "clap_gt_audio_baseline": -0.09790028631687164,
+    "clap_text_casv": 0.078403539955616,
+    "clap_gt_audio_casv": -0.046071164309978485
+  },
+  "verdicts": [
+    {
+      "caption": "Pig snorting then oinking with some walking on sand",
+      "clip_similarity": 0.306545615196228,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring as a fan blows air in the background",
+      "clip_similarity": 0.3047831654548645,
+      "visual": 0.8658116807235614,
+      "scene_support": 0.28813028902916576,
+      "object_support": 0.7114463826217995,
+      "score": 0.6461976737847142,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sanding and rubbing with a man speaking",
+      "clip_similarity": 0.30386054515838623,
+      "visual": 0.7955657815020796,
+      "scene_support": 0.42398395433950176,
+      "object_support": 0.3917317069703303,
+      "score": 0.5629410109937815,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speeches followed by wood being shaved",
+      "clip_similarity": 0.302851140499115,
+      "visual": 0.7187123476035207,
+      "scene_support": 0.28478812046709073,
+      "object_support": 0.4009645867985954,
+      "score": 0.4932107512211141,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks turns on a machine with beeping and vibrating noises",
+      "clip_similarity": 0.3015298843383789,
+      "visual": 0.61811535503019,
+      "scene_support": 0.8379231138660708,
+      "object_support": 0.8258085611521019,
+      "score": 0.7463656445175277,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks with some light rustling then vibrations from a power tool",
+      "clip_similarity": 0.3005416989326477,
+      "visual": 0.5428774996653121,
+      "scene_support": 0.5847413138502202,
+      "object_support": 0.6554669396226952,
+      "score": 0.5892134759079994,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and shaves wood with a rasp",
+      "clip_similarity": 0.3000129461288452,
+      "visual": 0.5026196424397958,
+      "scene_support": 0.057644617882566196,
+      "object_support": 0.2136250550887818,
+      "score": 0.2824287588673227,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An electric razor, laughing, and then a crash",
+      "clip_similarity": 0.2994343638420105,
+      "visual": 0.4585678985452986,
+      "scene_support": 0.7817118216173413,
+      "object_support": 0.7341571771797387,
+      "score": 0.6381878590572435,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man snoring and breathing hard",
+      "clip_similarity": 0.2986425459384918,
+      "visual": 0.39828095182989226,
+      "scene_support": 0.5916132838668904,
+      "object_support": 0.8461125090629932,
+      "score": 0.590630118610922,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking, followed by pounding",
+      "clip_similarity": 0.29814040660858154,
+      "visual": 0.36004937498440015,
+      "scene_support": 1.0,
+      "object_support": 0.8985655592044469,
+      "score": 0.7135894177550941,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rubbing and tapping followed by a man speaking",
+      "clip_similarity": 0.2980484366416931,
+      "visual": 0.3530470219577998,
+      "scene_support": 0.6356311476020584,
+      "object_support": 0.585530487198078,
+      "score": 0.5075672992231608,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man with a distinct voice is communicating with another man followed by animal noises in the background and loud bang",
+      "clip_similarity": 0.2970041036605835,
+      "visual": 0.2735342368773953,
+      "scene_support": 0.7750992862498959,
+      "object_support": 0.7644830184387483,
+      "score": 0.5712883861575514,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming and vibrations of a power tool with a man speaking then clinks",
+      "clip_similarity": 0.2968343198299408,
+      "visual": 0.2606073395369734,
+      "scene_support": 0.8062267025314184,
+      "object_support": 0.8295951152244068,
+      "score": 0.5949894811415368,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking while water runs then brushing sound",
+      "clip_similarity": 0.29605770111083984,
+      "visual": 0.20147761901844527,
+      "scene_support": 0.7933613179551131,
+      "object_support": 0.7153765229382579,
+      "score": 0.5332123998753895,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring with some mechanical humming",
+      "clip_similarity": 0.2955070734024048,
+      "visual": 0.1595542636978142,
+      "scene_support": 0.4826683429441565,
+      "object_support": 0.7699499580614435,
+      "score": 0.43960719578080565,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks followed by a surface being rubbed",
+      "clip_similarity": 0.2950572371482849,
+      "visual": 0.12530490641216765,
+      "scene_support": 0.5092837639293715,
+      "object_support": 0.6993261398046658,
+      "score": 0.4127049336850782,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Spraying followed by choking and laughter, then a man speaks",
+      "clip_similarity": 0.2949013411998749,
+      "visual": 0.11343539614575604,
+      "scene_support": 0.8555849912652486,
+      "object_support": 0.9505082384384641,
+      "score": 0.5872021273694162,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man cries and is being hit",
+      "clip_similarity": 0.29423800110816956,
+      "visual": 0.06293041440043202,
+      "scene_support": 0.8824903287775344,
+      "object_support": 1.0,
+      "score": 0.589919264393433,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks briefly, then something sprays and the man cries out in pain",
+      "clip_similarity": 0.29357555508613586,
+      "visual": 0.012493504784336149,
+      "scene_support": 0.6912836054236067,
+      "object_support": 0.701600773375414,
+      "score": 0.4228627155534407,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by some rustling then vibrations from a power tool",
+      "clip_similarity": 0.2934114634990692,
+      "visual": 0.0,
+      "scene_support": 0.7422134043041766,
+      "object_support": 0.817183434981021,
+      "score": 0.46781905178555927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "water park",
+      0.11619997024536133
+    ],
+    [
+      "archaelogical excavation",
+      0.07951720803976059
+    ],
+    [
+      "hot spring",
+      0.0708293616771698
+    ],
+    [
+      "indoor jacuzzi",
+      0.0652187168598175
+    ],
+    [
+      "sauna",
+      0.058667659759521484
+    ]
+  ],
+  "top_objects": [
+    [
+      "stretcher",
+      0.15598006546497345
+    ],
+    [
+      "snorkel",
+      0.10279003530740738
+    ],
+    [
+      "oxygen mask",
+      0.07320168614387512
+    ],
+    [
+      "sunscreen",
+      0.06711024791002274
+    ],
+    [
+      "scuba diver",
+      0.03998921811580658
+    ]
+  ]
+}

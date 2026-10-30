@@ -1,0 +1,283 @@
+{
+  "id": "Tgxst7Ft9js",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Tgxst7Ft9js.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Tgxst7Ft9js.wav",
+  "gt_captions": [
+    "Wood scrapping followed by a man talking as a dog barks in the background",
+    "Scrapping and filing of wood followed by a man talking as a dog barks in the background",
+    "Sanding and filing then a man speaks",
+    "Rustling and rubbing followed by male speech",
+    "Sanding and scraping followed by a man speaking"
+  ],
+  "top_scene": [
+    "martial arts gym",
+    0.33598607778549194
+  ],
+  "top_object": [
+    "maraca",
+    0.581274151802063
+  ],
+  "env_probs": {
+    "indoor": 0.9611562490463257,
+    "outdoor": 0.038843750953674316
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A woman chopping and peeling vegetables while talking",
+    "casv": "A woman describes an item while making crinkly noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.03908473998308182,
+    "clap_gt_audio_baseline": 0.16037675738334656,
+    "clap_text_casv": -0.05192704126238823,
+    "clap_gt_audio_casv": -0.02317192032933235
+  },
+  "verdicts": [
+    {
+      "caption": "A woman chopping and peeling vegetables while talking",
+      "clip_similarity": 0.29372385144233704,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks while tapping plastic and wood objects",
+      "clip_similarity": 0.29135873913764954,
+      "visual": 0.8582079818757783,
+      "scene_support": 0.40421152126269677,
+      "object_support": 0.5250763804287509,
+      "score": 0.6220695632577457,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An English speaking woman opening a package",
+      "clip_similarity": 0.2889835834503174,
+      "visual": 0.7158138479487862,
+      "scene_support": 0.7311789036213495,
+      "object_support": 0.6220606177680058,
+      "score": 0.6922973955963211,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is speaking in a foreign language and lightly using a sewing machine",
+      "clip_similarity": 0.28809499740600586,
+      "visual": 0.6625417863007041,
+      "scene_support": 0.5877447049669543,
+      "object_support": 0.4691472879518625,
+      "score": 0.5820843123959267,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks while music plays in the background and utensils clank against a metal pan",
+      "clip_similarity": 0.28784510493278503,
+      "visual": 0.6475603589825136,
+      "scene_support": 0.6265206748368193,
+      "object_support": 0.682961461863242,
+      "score": 0.6518687846030238,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman describes an item while making crinkly noises",
+      "clip_similarity": 0.28774508833885193,
+      "visual": 0.6415642146676839,
+      "scene_support": 0.8707976268951879,
+      "object_support": 0.8465897683787607,
+      "score": 0.7718419044492582,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while hit kitchenware",
+      "clip_similarity": 0.2858840823173523,
+      "visual": 0.5299941217774744,
+      "scene_support": 0.7289995283909942,
+      "object_support": 0.7171146528020129,
+      "score": 0.6458319030688919,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking followed by humming and vibrations of a sewing machine",
+      "clip_similarity": 0.2852741479873657,
+      "visual": 0.49342764694216296,
+      "scene_support": 0.7716448057618203,
+      "object_support": 0.6307721933020917,
+      "score": 0.6180961584960387,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks and moves some objects",
+      "clip_similarity": 0.2849745452404022,
+      "visual": 0.47546601440432523,
+      "scene_support": 0.95446198923886,
+      "object_support": 0.9108796285750126,
+      "score": 0.7497888911058919,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks in a foreign language and people clap",
+      "clip_similarity": 0.2831786870956421,
+      "visual": 0.36780163411012823,
+      "scene_support": 0.8889958559175041,
+      "object_support": 0.8381816188246815,
+      "score": 0.665273896066707,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while tapping some objects",
+      "clip_similarity": 0.2821418344974518,
+      "visual": 0.3056407709226308,
+      "scene_support": 0.5475809892692438,
+      "object_support": 0.6690715985082012,
+      "score": 0.48725208470228576,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talking and laughing while stirring liquid",
+      "clip_similarity": 0.2804555296897888,
+      "visual": 0.20454427695182895,
+      "scene_support": 0.29728705928666826,
+      "object_support": 0.4184347532393533,
+      "score": 0.2965342545385381,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman narrating a recipe and scraping can",
+      "clip_similarity": 0.28000372648239136,
+      "visual": 0.17745799929604264,
+      "scene_support": 0.5632761898219643,
+      "object_support": 0.5231701727705708,
+      "score": 0.39691710849617756,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking followed by the vibrations of a sewing machine",
+      "clip_similarity": 0.27930817008018494,
+      "visual": 0.13575835324007984,
+      "scene_support": 0.7931852498669059,
+      "object_support": 0.6567495879147164,
+      "score": 0.4892837926305186,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A medium voice woman narrates while sewing a series of stitches followed by repeated talking",
+      "clip_similarity": 0.27915120124816895,
+      "visual": 0.12634783711784853,
+      "scene_support": 0.6093257708561487,
+      "object_support": 0.49919648305294523,
+      "score": 0.38309581101986756,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking followed by vibrations of a sewing machine",
+      "clip_similarity": 0.279106467962265,
+      "visual": 0.1236660097589214,
+      "scene_support": 0.797660251287017,
+      "object_support": 0.6635895809775297,
+      "score": 0.48784135358293257,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks followed by quick vibrations of a sewing machine",
+      "clip_similarity": 0.27873528003692627,
+      "visual": 0.10141273876928959,
+      "scene_support": 0.7613760811008966,
+      "object_support": 0.6310598253371932,
+      "score": 0.45829586743914275,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks followed by vibrations of a sewing machine",
+      "clip_similarity": 0.2783839702606201,
+      "visual": 0.0803511925287613,
+      "scene_support": 0.8286450950681852,
+      "object_support": 0.6857876668121532,
+      "score": 0.486470305575606,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking, tapping and moving dishes",
+      "clip_similarity": 0.27833500504493713,
+      "visual": 0.07741565465353327,
+      "scene_support": 0.6947708865324584,
+      "object_support": 0.7017410698150074,
+      "score": 0.44991984876565305,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman is speaking in a foreign language over upbeat music that is playing",
+      "clip_similarity": 0.2770437002182007,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "martial arts gym",
+      0.33598607778549194
+    ],
+    [
+      "delicatessen",
+      0.17486004531383514
+    ],
+    [
+      "nursery",
+      0.06459064036607742
+    ],
+    [
+      "archaelogical excavation",
+      0.05636404827237129
+    ],
+    [
+      "nursing home",
+      0.05378417670726776
+    ]
+  ],
+  "top_objects": [
+    [
+      "maraca",
+      0.581274151802063
+    ],
+    [
+      "titi",
+      0.19888298213481903
+    ],
+    [
+      "diaper",
+      0.04761352017521858
+    ],
+    [
+      "dumbbell",
+      0.01522792223840952
+    ],
+    [
+      "bra",
+      0.00757021177560091
+    ]
+  ]
+}

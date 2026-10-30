@@ -1,0 +1,287 @@
+{
+  "id": "W7OJevEgq7w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\W7OJevEgq7w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\W7OJevEgq7w.wav",
+  "gt_captions": [
+    "A dog is panting, barking and yipping",
+    "A dog barking and panting",
+    "A dog whimpering and barking while breathing rapidly",
+    "A dog is panting in a very fast tempo while barking few times",
+    "Dog yapping and panting"
+  ],
+  "top_scene": [
+    "martial arts gym",
+    0.1871001422405243
+  ],
+  "top_object": [
+    "Bullmastiff",
+    0.20560912787914276
+  ],
+  "env_probs": {
+    "indoor": 0.7192590832710266,
+    "outdoor": 0.2807409167289734
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A dog whimpers as a small motor runs and then begins clicking",
+    "casv": "A dog whimpers as a small motor runs and then begins clicking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1579662561416626,
+    "clap_gt_audio_baseline": 0.29592278599739075,
+    "clap_text_casv": 0.1579662561416626,
+    "clap_gt_audio_casv": 0.29592278599739075
+  },
+  "verdicts": [
+    {
+      "caption": "A dog whimpers as a small motor runs and then begins clicking",
+      "clip_similarity": 0.33368974924087524,
+      "visual": 1.0,
+      "scene_support": 0.8704814160747779,
+      "object_support": 0.6352756773867448,
+      "score": 0.8517271280384568,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog panting with mechanical humming",
+      "clip_similarity": 0.3225482702255249,
+      "visual": 0.660229884639609,
+      "scene_support": 0.18220000822495366,
+      "object_support": 0.3183515299688339,
+      "score": 0.41425741531397986,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum cleaner running and the sound of a dog",
+      "clip_similarity": 0.3218957483768463,
+      "visual": 0.6403306034494511,
+      "scene_support": 0.4615796321538472,
+      "object_support": 0.22998728703226234,
+      "score": 0.4636023171356133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency vehicle siren as a dog whines a similar sound",
+      "clip_similarity": 0.3177477717399597,
+      "visual": 0.5138340675330435,
+      "scene_support": 0.5839633667715448,
+      "object_support": 0.35570052244972983,
+      "score": 0.48743279377959986,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.93)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog whimpers in a funny way while his owner laughs",
+      "clip_similarity": 0.31685641407966614,
+      "visual": 0.4866512586215828,
+      "scene_support": 0.18486715805798115,
+      "object_support": 0.06389889142629579,
+      "score": 0.2692903182939162,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog whining and people speaking with a humming engine",
+      "clip_similarity": 0.31174999475479126,
+      "visual": 0.3309260913703738,
+      "scene_support": 0.6787666860767626,
+      "object_support": 0.6811473909241226,
+      "score": 0.540344659648415,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog is reacting to something violently while growling",
+      "clip_similarity": 0.3096599578857422,
+      "visual": 0.26718840743039796,
+      "scene_support": 0.7921154878857757,
+      "object_support": 0.7778060612337633,
+      "score": 0.5778518277080209,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks with sounds of objects moving followed by speech from a woman",
+      "clip_similarity": 0.3093772530555725,
+      "visual": 0.25856705180720374,
+      "scene_support": 0.42574565463181113,
+      "object_support": 0.5816908465902916,
+      "score": 0.4056577710895123,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum is going while dog is bow-wow",
+      "clip_similarity": 0.30800724029541016,
+      "visual": 0.21678719538740207,
+      "scene_support": 0.26094857556318585,
+      "object_support": 0.06659684137819365,
+      "score": 0.1849785032373747,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor running with dog barking in the background",
+      "clip_similarity": 0.3061825633049011,
+      "visual": 0.16114191609310627,
+      "scene_support": 0.9224839836907512,
+      "object_support": 0.8074652763848783,
+      "score": 0.5834415444599313,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motor revving with a squeaky belt with man laughing and hissing at the end",
+      "clip_similarity": 0.3061203360557556,
+      "visual": 0.15924423629748857,
+      "scene_support": 0.88354359612855,
+      "object_support": 0.44312898009614593,
+      "score": 0.4616994673864042,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pet dog rubs an object and then pants quietly",
+      "clip_similarity": 0.3060205280780792,
+      "visual": 0.15620049605059025,
+      "scene_support": 0.0,
+      "object_support": 0.012382561863576655,
+      "score": 0.0661949669793091,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog whimpers multiple times as an object is dragged on a surface",
+      "clip_similarity": 0.3057776093482971,
+      "visual": 0.14879245581396194,
+      "scene_support": 0.8662342407205537,
+      "object_support": 0.767035413237095,
+      "score": 0.5494978785128793,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog making a strange muffled sound",
+      "clip_similarity": 0.30467045307159424,
+      "visual": 0.11502866059978678,
+      "scene_support": 0.9809550601643441,
+      "object_support": 0.9478709972932976,
+      "score": 0.6246592814772072,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.30374205112457275,
+      "visual": 0.08671615054562838,
+      "scene_support": 0.7980654670551864,
+      "object_support": 0.6160056482628893,
+      "score": 0.45890779481367405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog howls and a harmonica is played",
+      "clip_similarity": 0.30280956625938416,
+      "visual": 0.05827912797614449,
+      "scene_support": 0.19854859368192435,
+      "object_support": 0.20188747090714282,
+      "score": 0.14344247056717796,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some mechanical vibrations followed by a light ring and a dog whimpering",
+      "clip_similarity": 0.30249252915382385,
+      "visual": 0.04861077660364394,
+      "scene_support": 0.6877044690703001,
+      "object_support": 0.2626733992637711,
+      "score": 0.3045576711416789,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car racing and squealing his tires",
+      "clip_similarity": 0.30215296149253845,
+      "visual": 0.03825533427066113,
+      "scene_support": 0.7211299655922772,
+      "object_support": 0.0,
+      "score": 0.23164112338594758,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.93)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle is started and gets ready to go as a small dog bow-wows",
+      "clip_similarity": 0.3011913001537323,
+      "visual": 0.008928547084362227,
+      "scene_support": 0.32230851801235055,
+      "object_support": 0.01386683549215523,
+      "score": 0.10442402488509663,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog yipping repeatedly",
+      "clip_similarity": 0.3008985221385956,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "martial arts gym",
+      0.1871001422405243
+    ],
+    [
+      "archaelogical excavation",
+      0.11185415834188461
+    ],
+    [
+      "raceway",
+      0.051624517887830734
+    ],
+    [
+      "tundra",
+      0.04878481104969978
+    ],
+    [
+      "veterinarians office",
+      0.04802142083644867
+    ]
+  ],
+  "top_objects": [
+    [
+      "Bullmastiff",
+      0.20560912787914276
+    ],
+    [
+      "Boxer",
+      0.19577978551387787
+    ],
+    [
+      "French Bulldog",
+      0.07023146003484726
+    ],
+    [
+      "car wheel",
+      0.055093247443437576
+    ],
+    [
+      "Boston Terrier",
+      0.050334811210632324
+    ]
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "id": "HxZADVzNIqs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\HxZADVzNIqs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\HxZADVzNIqs.wav",
+  "gt_captions": [
+    "Birds chirping and water trickling",
+    "Several birds chirp with trickling water followed by booms of drums",
+    "Birds chirping and water dripping with some banging in the background",
+    "Water is trickling as birds chirp, and soft beats of a bass drum begin to occur",
+    "Water trickles as birds chirp then drums begin to play"
+  ],
+  "top_scene": [
+    "shower",
+    0.5140769481658936
+  ],
+  "top_object": [
+    "spider web",
+    0.7207430601119995
+  ],
+  "env_probs": {
+    "indoor": 0.8066048622131348,
+    "outdoor": 0.19339513778686523
+  },
+  "status": "ACCEPT",
+  "n_rejected": 15,
+  "prompts": {
+    "baseline": "Rain pattering and falling on a glass surface",
+    "casv": "Pitter-patter of raindrops as it falls on a surface"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.05607103183865547,
+    "clap_gt_audio_baseline": 0.05333097279071808,
+    "clap_text_casv": 0.13952907919883728,
+    "clap_gt_audio_casv": 0.20064769685268402
+  },
+  "verdicts": [
+    {
+      "caption": "Rain pattering and falling on a glass surface",
+      "clip_similarity": 0.3176272213459015,
+      "visual": 1.0,
+      "scene_support": 0.1611405021733319,
+      "object_support": 0.26092284344384176,
+      "score": 0.5266190036851521,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Raindrops on the windshield of a moving vehicle while the windshield wipers are on at a low constant speed",
+      "clip_similarity": 0.3110138773918152,
+      "visual": 0.6532676036531535,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.26130704146126144,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.53)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pitter-patter of raindrops as it falls on a surface",
+      "clip_similarity": 0.30946364998817444,
+      "visual": 0.5719904061750483,
+      "scene_support": 0.7644914955130139,
+      "object_support": 0.9347425537755442,
+      "score": 0.7385663772565867,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain is splashing on a surface and metal is clinking repeatedly, then bursts occur",
+      "clip_similarity": 0.3064555823802948,
+      "visual": 0.41427979906093015,
+      "scene_support": 0.7129684507744368,
+      "object_support": 0.7249772323687941,
+      "score": 0.5970956245673413,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain splashing on a surface",
+      "clip_similarity": 0.3063795566558838,
+      "visual": 0.4102938304205502,
+      "scene_support": 0.9777734121929199,
+      "object_support": 0.8945482336609466,
+      "score": 0.7258140259243799,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain drops on a surface increasing volume",
+      "clip_similarity": 0.30607834458351135,
+      "visual": 0.3945015195431214,
+      "scene_support": 0.5528130592084296,
+      "object_support": 0.6993446600453785,
+      "score": 0.533447923593391,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Raindrops falling on surface",
+      "clip_similarity": 0.30584806203842163,
+      "visual": 0.38242798771865405,
+      "scene_support": 0.7085337881997924,
+      "object_support": 0.9524852989558563,
+      "score": 0.6512769212341563,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain falling on a plastic surface",
+      "clip_similarity": 0.30428409576416016,
+      "visual": 0.3004304721130634,
+      "scene_support": 0.5489515778418134,
+      "object_support": 0.7158824406900652,
+      "score": 0.49962239440478895,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music playing with a tick locking sound and rain falling",
+      "clip_similarity": 0.30262452363967896,
+      "visual": 0.21342041734701053,
+      "scene_support": 0.4809594435052623,
+      "object_support": 0.6694487338336196,
+      "score": 0.4304906201404688,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Heavy rain, droplets hitting the surface",
+      "clip_similarity": 0.3024701476097107,
+      "visual": 0.20532660411409465,
+      "scene_support": 0.5153474619726376,
+      "object_support": 0.7072487914593967,
+      "score": 0.4489095176752481,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falling on a surface",
+      "clip_similarity": 0.3023984134197235,
+      "visual": 0.20156563723154086,
+      "scene_support": 0.9583380503847687,
+      "object_support": 1.0,
+      "score": 0.668127670008047,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Raindrops fall down very hard nearby as metal clangs",
+      "clip_similarity": 0.30166715383529663,
+      "visual": 0.16322627520527505,
+      "scene_support": 0.7970020482309392,
+      "object_support": 0.7299919010580392,
+      "score": 0.5233886948688036,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain falls on a surface",
+      "clip_similarity": 0.30150237679481506,
+      "visual": 0.15458714521207198,
+      "scene_support": 1.0,
+      "object_support": 0.9307012566642576,
+      "score": 0.641045235084106,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falls lightly with occasional large droplets",
+      "clip_similarity": 0.30142316222190857,
+      "visual": 0.1504339877655294,
+      "scene_support": 0.6060937010952756,
+      "object_support": 0.6534558777952078,
+      "score": 0.4380384687733567,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falling and pattering on a surface as vehicles drive by on a wet surface with water splashing",
+      "clip_similarity": 0.3009096384048462,
+      "visual": 0.12351033992453066,
+      "scene_support": 0.20705398177806994,
+      "object_support": 0.06874223908158407,
+      "score": 0.13214300222770847,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)",
+        "names 'cars on a road', not visible in image (z=-0.53)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "It's raining outside and the drops are rattling against the leaves around, which starts slowly then quickly speeds up",
+      "clip_similarity": 0.30033552646636963,
+      "visual": 0.09341010476644349,
+      "scene_support": 0.5276211505292769,
+      "object_support": 0.7485806416895933,
+      "score": 0.42022457957223847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The rain drops intensively",
+      "clip_similarity": 0.29903846979141235,
+      "visual": 0.025406448487878812,
+      "scene_support": 0.709378576436687,
+      "object_support": 0.8911444983390017,
+      "score": 0.4903195018278581,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Continuous rain drops, accompanied by phone ringing",
+      "clip_similarity": 0.299030601978302,
+      "visual": 0.024993945265197385,
+      "scene_support": 0.7124447391478484,
+      "object_support": 0.44868206578193615,
+      "score": 0.35833561958501436,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water lightly dripping on a metal surface",
+      "clip_similarity": 0.29878905415534973,
+      "visual": 0.012329783826436144,
+      "scene_support": 0.4784683646783383,
+      "object_support": 0.6868161621913598,
+      "score": 0.3545172715914839,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A continuous hum of a machine as a spray of liquid drops across a hard surface",
+      "clip_similarity": 0.2985538840293884,
+      "visual": 0.0,
+      "scene_support": 0.9044385630608732,
+      "object_support": 0.6874366950867554,
+      "score": 0.47756257744428854,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "shower",
+      0.5140769481658936
+    ],
+    [
+      "indoor bow window",
+      0.0687994584441185
+    ],
+    [
+      "wet bar",
+      0.04117412865161896
+    ],
+    [
+      "ballroom",
+      0.02482505701482296
+    ],
+    [
+      "car interior",
+      0.016845278441905975
+    ]
+  ],
+  "top_objects": [
+    [
+      "spider web",
+      0.7207430601119995
+    ],
+    [
+      "mosquito net",
+      0.1807328760623932
+    ],
+    [
+      "strainer",
+      0.011364265345036983
+    ],
+    [
+      "umbrella",
+      0.0061930385418236256
+    ],
+    [
+      "barn spider",
+      0.005591657944023609
+    ]
+  ]
+}

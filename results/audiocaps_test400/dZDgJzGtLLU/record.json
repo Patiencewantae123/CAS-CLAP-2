@@ -1,0 +1,285 @@
+{
+  "id": "dZDgJzGtLLU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\dZDgJzGtLLU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\dZDgJzGtLLU.wav",
+  "gt_captions": [
+    "Water is running, gurgling and splashing, and a quiet thump occurs",
+    "A stream of water trickling followed by dirt and gravel shuffling",
+    "Water splashing with some rustling and wind blowing",
+    "Water rushing and bubbling",
+    "Water flows and splashes"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.2535405158996582
+  ],
+  "top_object": [
+    "beaver",
+    0.21716205775737762
+  ],
+  "env_probs": {
+    "indoor": 0.2807769775390625,
+    "outdoor": 0.7192230224609375
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A guy is wading through a stream, ends with a cackle",
+    "casv": "A guy is wading through a stream, ends with a cackle"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.23353993892669678,
+    "clap_gt_audio_baseline": 0.2883604168891907,
+    "clap_text_casv": 0.23353993892669678,
+    "clap_gt_audio_casv": 0.2883604168891907
+  },
+  "verdicts": [
+    {
+      "caption": "A guy is wading through a stream, ends with a cackle",
+      "clip_similarity": 0.3410024046897888,
+      "visual": 1.0,
+      "scene_support": 0.7150705437920367,
+      "object_support": 0.450599297136864,
+      "score": 0.7497009522786703,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking foreign language near a stream",
+      "clip_similarity": 0.3257453739643097,
+      "visual": 0.600961388564979,
+      "scene_support": 0.6156403159927372,
+      "object_support": 0.4399671583098475,
+      "score": 0.557066797716767,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and walks into a creek",
+      "clip_similarity": 0.32502347230911255,
+      "visual": 0.5820804779038081,
+      "scene_support": 0.8195857943341041,
+      "object_support": 0.7960128085777016,
+      "score": 0.7175117720350649,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks over a stream",
+      "clip_similarity": 0.32028716802597046,
+      "visual": 0.45820524172678917,
+      "scene_support": 0.9195377217401993,
+      "object_support": 0.8939055729736144,
+      "score": 0.7273150851048598,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is talking around a creek and then an engine starts",
+      "clip_similarity": 0.32028186321258545,
+      "visual": 0.4580664974714249,
+      "scene_support": 0.6607061096979431,
+      "object_support": 0.39710493015566356,
+      "score": 0.500569910944652,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream goes by quickly and the whooshing sound is close by",
+      "clip_similarity": 0.3136611580848694,
+      "visual": 0.28490587215574276,
+      "scene_support": 1.0,
+      "object_support": 0.9351034186734155,
+      "score": 0.6944933744643218,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water trickles down as a man speaks Russian",
+      "clip_similarity": 0.3135301172733307,
+      "visual": 0.2814785772634021,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.11259143090536083,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping and rustling followed by running water with music in the background",
+      "clip_similarity": 0.3107995092868805,
+      "visual": 0.21006114100781334,
+      "scene_support": 0.6066889989037162,
+      "object_support": 0.4611525967949887,
+      "score": 0.4043769351127368,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing out of a pipe and gurgling down a drain with people noises in the background",
+      "clip_similarity": 0.3107357323169708,
+      "visual": 0.2083930920950071,
+      "scene_support": 0.7713126200325979,
+      "object_support": 0.823104017532557,
+      "score": 0.5616822281075493,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Walking through a stream",
+      "clip_similarity": 0.30842000246047974,
+      "visual": 0.14782654785585564,
+      "scene_support": 0.9269186991908653,
+      "object_support": 0.47638368714069446,
+      "score": 0.4801213350418102,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man and children laughing and talking with stream sounds",
+      "clip_similarity": 0.308283269405365,
+      "visual": 0.14425037570073643,
+      "scene_support": 0.2736879016670089,
+      "object_support": 0.010205292417662841,
+      "score": 0.1428681085056961,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A river stream running as a kid speaks followed by a man speaking",
+      "clip_similarity": 0.3076169490814209,
+      "visual": 0.12682316187245504,
+      "scene_support": 0.9098950931174243,
+      "object_support": 1.0,
+      "score": 0.6236977926842093,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water trickling and submerged gurgling followed by a man sniffing then coughing",
+      "clip_similarity": 0.30711856484413147,
+      "visual": 0.11378821702719387,
+      "scene_support": 0.6551465547100899,
+      "object_support": 0.3723828780437693,
+      "score": 0.3537741166370353,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low industrial noises followed by flowing water",
+      "clip_similarity": 0.30666542053222656,
+      "visual": 0.10193649566307282,
+      "scene_support": 0.861646217153769,
+      "object_support": 0.8464260771301906,
+      "score": 0.553196286550417,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud stream with occasional shouting",
+      "clip_similarity": 0.3061961829662323,
+      "visual": 0.08966386476020628,
+      "scene_support": 0.5537657897507705,
+      "object_support": 0.28483795365371767,
+      "score": 0.28744666892542897,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of someone walking through running water",
+      "clip_similarity": 0.30559831857681274,
+      "visual": 0.07402707539581085,
+      "scene_support": 0.7283946088182003,
+      "object_support": 0.5864551122422895,
+      "score": 0.4240657464764713,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing with a man yelling",
+      "clip_similarity": 0.3042863607406616,
+      "visual": 0.03971359444274695,
+      "scene_support": 0.6773552355056841,
+      "object_support": 0.6933068731031814,
+      "score": 0.42708407035975837,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Objects being rubbed together with a stream in the background",
+      "clip_similarity": 0.3032771944999695,
+      "visual": 0.013319448514968791,
+      "scene_support": 0.5597574740019696,
+      "object_support": 0.2516044567224726,
+      "score": 0.2487363586233202,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream burbles while a man talks",
+      "clip_similarity": 0.30312255024909973,
+      "visual": 0.009274819632468026,
+      "scene_support": 0.9082794918693473,
+      "object_support": 0.705899638534356,
+      "score": 0.4879636669740982,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Stream with gurgling water and people laughing",
+      "clip_similarity": 0.30276793241500854,
+      "visual": 0.0,
+      "scene_support": 0.8521017347583911,
+      "object_support": 0.5246778543960003,
+      "score": 0.4130338767463174,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.2535405158996582
+    ],
+    [
+      "creek",
+      0.17237375676631927
+    ],
+    [
+      "natural canal",
+      0.17236751317977905
+    ],
+    [
+      "bridge",
+      0.11088878661394119
+    ],
+    [
+      "watering hole",
+      0.06993227452039719
+    ]
+  ],
+  "top_objects": [
+    [
+      "beaver",
+      0.21716205775737762
+    ],
+    [
+      "dam",
+      0.05362766981124878
+    ],
+    [
+      "hippopotamus",
+      0.04637628421187401
+    ],
+    [
+      "plow",
+      0.04000280797481537
+    ],
+    [
+      "platypus",
+      0.036078501492738724
+    ]
+  ]
+}

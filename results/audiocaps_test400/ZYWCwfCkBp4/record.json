@@ -1,0 +1,283 @@
+{
+  "id": "ZYWCwfCkBp4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ZYWCwfCkBp4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ZYWCwfCkBp4.wav",
+  "gt_captions": [
+    "A person is sawing wood and music is playing in the background",
+    "Repeated scraping with faint music in the background",
+    "Rustling and sanding on wood with distant music playing",
+    "Sawing wood with music playing in the distance",
+    "Wood sawing and metal filing as orchestral music plays in the background"
+  ],
+  "top_scene": [
+    "repair shop",
+    0.2421450912952423
+  ],
+  "top_object": [
+    "guillotine",
+    0.06417746841907501
+  ],
+  "env_probs": {
+    "indoor": 0.6068692803382874,
+    "outdoor": 0.39313071966171265
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "A saw blade cutting and music playing",
+    "casv": "A saw is rubbing a surface"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.45211583375930786,
+    "clap_gt_audio_baseline": 0.4627438187599182,
+    "clap_text_casv": 0.48852863907814026,
+    "clap_gt_audio_casv": 0.5865050554275513
+  },
+  "verdicts": [
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.3458922803401947,
+      "visual": 1.0,
+      "scene_support": 0.1853512001341257,
+      "object_support": 0.1403506461186091,
+      "score": 0.4977105538758204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw is rubbing a surface",
+      "clip_similarity": 0.3401563763618469,
+      "visual": 0.7965701300073988,
+      "scene_support": 0.6633216065710513,
+      "object_support": 0.9688125850498115,
+      "score": 0.8082683094892185,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A tapping of metal followed by scraping and sawing",
+      "clip_similarity": 0.3325694799423218,
+      "visual": 0.5274928654476271,
+      "scene_support": 1.0,
+      "object_support": 0.7414492661193439,
+      "score": 0.733431926014854,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Scraping of metal on wood",
+      "clip_similarity": 0.33214080333709717,
+      "visual": 0.5122893985836592,
+      "scene_support": 0.6017173078974825,
+      "object_support": 0.4365842955847926,
+      "score": 0.5164062404781462,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal scrapping against a wooden surface",
+      "clip_similarity": 0.3295593857765198,
+      "visual": 0.42073670859317197,
+      "scene_support": 0.9179436090069294,
+      "object_support": 0.6452735701060007,
+      "score": 0.6372598371711479,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Scraping with high pitched rings and clinks",
+      "clip_similarity": 0.3241244852542877,
+      "visual": 0.22798224289187188,
+      "scene_support": 0.6716123212754136,
+      "object_support": 0.29827380510863843,
+      "score": 0.38215873507196435,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rubbing and sharpening of metal object",
+      "clip_similarity": 0.3239343464374542,
+      "visual": 0.2212387696860797,
+      "scene_support": 0.4960843052135827,
+      "object_support": 0.5185509973054417,
+      "score": 0.39288609863013924,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sawing of something wooden by a blade at a steady medium rate",
+      "clip_similarity": 0.3223722279071808,
+      "visual": 0.16583659232639256,
+      "scene_support": 0.42477736933481686,
+      "object_support": 0.46509794896075457,
+      "score": 0.3332972324192285,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw blade cutting wood",
+      "clip_similarity": 0.32215073704719543,
+      "visual": 0.15798118592114999,
+      "scene_support": 0.2721054549535756,
+      "object_support": 0.39726745310518896,
+      "score": 0.26400434678608936,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood cracking while a machine works",
+      "clip_similarity": 0.32116323709487915,
+      "visual": 0.1229584610506289,
+      "scene_support": 0.33308277135861863,
+      "object_support": 0.0,
+      "score": 0.14910821582783715,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw cuts through wood at decreasing speed",
+      "clip_similarity": 0.3199286162853241,
+      "visual": 0.07917133495402177,
+      "scene_support": 0.0,
+      "object_support": 0.3081896686185519,
+      "score": 0.12412543456717427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Filing and sanding a wooden surface followed by metal clanking before a man speaks",
+      "clip_similarity": 0.31937265396118164,
+      "visual": 0.05945354613677201,
+      "scene_support": 0.7343195545031183,
+      "object_support": 0.3610631824348353,
+      "score": 0.3523962395360949,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A back and forth sanding noise",
+      "clip_similarity": 0.31935420632362366,
+      "visual": 0.0587992812599091,
+      "scene_support": 0.5559843205937003,
+      "object_support": 0.07826281058995367,
+      "score": 0.21379385185905983,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw running and then cutting",
+      "clip_similarity": 0.3192053437232971,
+      "visual": 0.05351971250396364,
+      "scene_support": 0.7223888786508728,
+      "object_support": 0.7986270022883295,
+      "score": 0.4777126492833461,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sawing and clicking",
+      "clip_similarity": 0.3191033601760864,
+      "visual": 0.04990275869358419,
+      "scene_support": 0.6480897478353523,
+      "object_support": 0.5185059378026352,
+      "score": 0.36993980916882996,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw grinds against wood loudly and quickly",
+      "clip_similarity": 0.31872648000717163,
+      "visual": 0.036536306944297645,
+      "scene_support": 0.6367001472888733,
+      "object_support": 0.7265519012683903,
+      "score": 0.42359013734489814,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power drill saws into wood followed by metal scraping",
+      "clip_similarity": 0.31851354241371155,
+      "visual": 0.028984251136243526,
+      "scene_support": 0.3033499558687619,
+      "object_support": 0.13083546557211356,
+      "score": 0.14184932688676005,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw is cutting through wood",
+      "clip_similarity": 0.3183230757713318,
+      "visual": 0.022229151252510307,
+      "scene_support": 0.11291569617201345,
+      "object_support": 0.48142266021599445,
+      "score": 0.1871931674174065,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A hand saw cutting",
+      "clip_similarity": 0.31777656078338623,
+      "visual": 0.0028464221541063314,
+      "scene_support": 0.8764041285223587,
+      "object_support": 1.0,
+      "score": 0.5640598074183502,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High-pitched metal rasping and scraping are occurring",
+      "clip_similarity": 0.31769630312919617,
+      "visual": 0.0,
+      "scene_support": 0.8026980328691125,
+      "object_support": 0.4427595271386453,
+      "score": 0.3736372680023273,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "repair shop",
+      0.2421450912952423
+    ],
+    [
+      "barndoor",
+      0.18408149480819702
+    ],
+    [
+      "assembly line",
+      0.05918048694729805
+    ],
+    [
+      "art studio",
+      0.05622827634215355
+    ],
+    [
+      "arch",
+      0.033084478229284286
+    ]
+  ],
+  "top_objects": [
+    [
+      "guillotine",
+      0.06417746841907501
+    ],
+    [
+      "chain mail",
+      0.06367488205432892
+    ],
+    [
+      "scabbard",
+      0.05865221843123436
+    ],
+    [
+      "ruler",
+      0.05443970486521721
+    ],
+    [
+      "nail",
+      0.05375140905380249
+    ]
+  ]
+}

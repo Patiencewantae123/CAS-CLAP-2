@@ -1,0 +1,283 @@
+{
+  "id": "0On6-JiVwRs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0On6-JiVwRs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0On6-JiVwRs.wav",
+  "gt_captions": [
+    "Cats meowing and then wind",
+    "A cat meowing as wind blows into a microphone",
+    "Cat meowing sadly",
+    "Cats meow as the wind blows",
+    "A cat meowing as wind blows into a microphone"
+  ],
+  "top_scene": [
+    "patio",
+    0.18928444385528564
+  ],
+  "top_object": [
+    "patio",
+    0.19900329411029816
+  ],
+  "env_probs": {
+    "indoor": 0.2402571588754654,
+    "outdoor": 0.7597428411245346
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Cats communicating vocally to each other by meowing",
+    "casv": "A cat meows followed by some rumbles"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4590339958667755,
+    "clap_gt_audio_baseline": 0.7802700996398926,
+    "clap_text_casv": 0.5847668647766113,
+    "clap_gt_audio_casv": 0.747535228729248
+  },
+  "verdicts": [
+    {
+      "caption": "Cats communicating vocally to each other by meowing",
+      "clip_similarity": 0.3431854844093323,
+      "visual": 1.0,
+      "scene_support": 0.16263905772036638,
+      "object_support": 0.1764366492191266,
+      "score": 0.5017227120818479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows, followed by a person talking, followed by several meows",
+      "clip_similarity": 0.3417181968688965,
+      "visual": 0.8743748596623732,
+      "scene_support": 0.7851854943472613,
+      "object_support": 0.8566496883758431,
+      "score": 0.8423004986818806,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows followed by some rumbles",
+      "clip_similarity": 0.3395484685897827,
+      "visual": 0.688608667251832,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8754434669007327,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows while an insect is heard buzzing",
+      "clip_similarity": 0.33930811285972595,
+      "visual": 0.6680300679744432,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.26721202718977727,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows as a man talks to it",
+      "clip_similarity": 0.33811163902282715,
+      "visual": 0.5655912551797342,
+      "scene_support": 0.5782105660390483,
+      "object_support": 0.6874490757922846,
+      "score": 0.6059343946212936,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows, then someone laughs",
+      "clip_similarity": 0.33692455291748047,
+      "visual": 0.46395619424768825,
+      "scene_support": 0.5784044686286478,
+      "object_support": 0.7027689971290478,
+      "score": 0.569934517426384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows quickly and then lets out a long sustained meow",
+      "clip_similarity": 0.33690741658210754,
+      "visual": 0.46248902814917636,
+      "scene_support": 0.3673297613519967,
+      "object_support": 0.5566213201261001,
+      "score": 0.4621809357030996,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and then a dog whimpers",
+      "clip_similarity": 0.3359644114971161,
+      "visual": 0.3817515156463696,
+      "scene_support": 0.7767033429502062,
+      "object_support": 0.7329651859720071,
+      "score": 0.6056011649352118,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kitten meows and someone speaks",
+      "clip_similarity": 0.33540135622024536,
+      "visual": 0.3335442650390904,
+      "scene_support": 0.6429018609431492,
+      "object_support": 0.7509491632432801,
+      "score": 0.5515730132715649,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows, and then a bunch of kittens meow",
+      "clip_similarity": 0.3351755142211914,
+      "visual": 0.31420829165731085,
+      "scene_support": 0.3660141801050726,
+      "object_support": 0.4347156989467487,
+      "score": 0.3659022803784707,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows while a man talks",
+      "clip_similarity": 0.33451753854751587,
+      "visual": 0.25787421666088306,
+      "scene_support": 0.5411569115404213,
+      "object_support": 0.6056685308659355,
+      "score": 0.4471973193862603,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two cats meowing",
+      "clip_similarity": 0.3343874514102936,
+      "visual": 0.24673651227826654,
+      "scene_support": 0.5794670200389196,
+      "object_support": 0.7195627876817807,
+      "score": 0.48840354722751667,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows followed by speech",
+      "clip_similarity": 0.3342457413673401,
+      "visual": 0.23460368654187674,
+      "scene_support": 0.7113538226634738,
+      "object_support": 0.824523178779696,
+      "score": 0.5546045750497016,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while a cat meows",
+      "clip_similarity": 0.33386340737342834,
+      "visual": 0.2018692971891649,
+      "scene_support": 0.27494430735038633,
+      "object_support": 0.25934019290409827,
+      "score": 0.24103306895201132,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two young men laughing and talking as a cat meows",
+      "clip_similarity": 0.33382731676101685,
+      "visual": 0.19877931780603808,
+      "scene_support": 0.11146007780450097,
+      "object_support": 0.0429469705695406,
+      "score": 0.1258338416346277,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People talk while a cat meows",
+      "clip_similarity": 0.3334996700286865,
+      "visual": 0.17072710200249036,
+      "scene_support": 0.6839135629209556,
+      "object_support": 0.8475739814091982,
+      "score": 0.5277371041000423,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows followed by men speaking",
+      "clip_similarity": 0.3326259255409241,
+      "visual": 0.09591949213088652,
+      "scene_support": 0.9133707574026444,
+      "object_support": 0.8834427537251991,
+      "score": 0.5774118501907076,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat purrs and then a cat meows",
+      "clip_similarity": 0.33234351873397827,
+      "visual": 0.07174059482741023,
+      "scene_support": 0.7931441957042316,
+      "object_support": 0.8681814885439196,
+      "score": 0.5270939432054094,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Angry cat meowing and man talking to the cat then yelling",
+      "clip_similarity": 0.33203238248825073,
+      "visual": 0.04510196166486354,
+      "scene_support": 0.41182736235089934,
+      "object_support": 0.3009455372263957,
+      "score": 0.23187265453913392,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows and then a man starts speaking",
+      "clip_similarity": 0.33150559663772583,
+      "visual": 0.0,
+      "scene_support": 0.7220915046319242,
+      "object_support": 0.8329238067205024,
+      "score": 0.4665045934057279,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "patio",
+      0.18928444385528564
+    ],
+    [
+      "courtyard",
+      0.10649432986974716
+    ],
+    [
+      "yard",
+      0.09538573026657104
+    ],
+    [
+      "watering hole",
+      0.0750531330704689
+    ],
+    [
+      "porch",
+      0.05003279447555542
+    ]
+  ],
+  "top_objects": [
+    [
+      "patio",
+      0.19900329411029816
+    ],
+    [
+      "tabby cat",
+      0.14520122110843658
+    ],
+    [
+      "doormat",
+      0.031299833208322525
+    ],
+    [
+      "sliding door",
+      0.030407749116420746
+    ],
+    [
+      "bow",
+      0.02902723103761673
+    ]
+  ]
+}

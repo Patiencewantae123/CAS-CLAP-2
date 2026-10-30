@@ -1,0 +1,285 @@
+{
+  "id": "54eRRbCtPn8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\54eRRbCtPn8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\54eRRbCtPn8.wav",
+  "gt_captions": [
+    "A woman is speaking briefly in a quiet environment",
+    "Woman speaking in a quiet environment",
+    "An adult female speaks in a quiet environment",
+    "A woman is speaking",
+    "A woman speaking"
+  ],
+  "top_scene": [
+    "reception",
+    0.07828671485185623
+  ],
+  "top_object": [
+    "toy terrier",
+    0.06996159255504608
+  ],
+  "env_probs": {
+    "indoor": 0.5877385139465332,
+    "outdoor": 0.4122614860534668
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 1,
+  "prompts": {
+    "baseline": "Woman speaking with light background noise",
+    "casv": "Woman speaking with light background noise"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5428556203842163,
+    "clap_gt_audio_baseline": 0.40957996249198914,
+    "clap_text_casv": 0.5428556203842163,
+    "clap_gt_audio_casv": 0.40957996249198914
+  },
+  "verdicts": [
+    {
+      "caption": "Woman speaking with light background noise",
+      "clip_similarity": 0.2906290590763092,
+      "visual": 1.0,
+      "scene_support": 0.8220684434507619,
+      "object_support": 0.816646536080429,
+      "score": 0.8916144938593573,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motor vehicle motor idling",
+      "clip_similarity": 0.27674826979637146,
+      "visual": 0.4345551645059117,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1738220658023647,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman speaking in a presenting tone",
+      "clip_similarity": 0.27550196647644043,
+      "visual": 0.38378602151973573,
+      "scene_support": 0.9231355907911932,
+      "object_support": 0.9296603765878365,
+      "score": 0.7093531988216032,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is speaking while a repetitive, faint beeping sound is in the background",
+      "clip_similarity": 0.27350014448165894,
+      "visual": 0.30224023289778307,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7208960931591133,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Young woman speaking then animal type sounds with laughter",
+      "clip_similarity": 0.27198028564453125,
+      "visual": 0.24032759141881416,
+      "scene_support": 0.834007179914623,
+      "object_support": 0.8850075270887672,
+      "score": 0.6118354486685427,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman gives a speech energetically",
+      "clip_similarity": 0.27147334814071655,
+      "visual": 0.2196770947021339,
+      "scene_support": 0.9418222662183849,
+      "object_support": 0.9485926094491222,
+      "score": 0.6549953005811056,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female speaking in a presenting voice",
+      "clip_similarity": 0.27122771739959717,
+      "visual": 0.20967113385916628,
+      "scene_support": 0.9433783075733926,
+      "object_support": 0.9332129874373472,
+      "score": 0.6468458420468884,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female narration, female speech, woman speaking",
+      "clip_similarity": 0.2711993455886841,
+      "visual": 0.20851538589477595,
+      "scene_support": 0.9447045486340236,
+      "object_support": 0.9220536407186327,
+      "score": 0.6434336111637073,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female makes a speech in a low, steady English voice",
+      "clip_similarity": 0.2709404528141022,
+      "visual": 0.1979691857197141,
+      "scene_support": 0.9490305391756636,
+      "object_support": 0.9569965457081007,
+      "score": 0.6509957997530149,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is speaking followed by clanking background sounds",
+      "clip_similarity": 0.2696601450443268,
+      "visual": 0.14581484480562917,
+      "scene_support": 0.9665963269967736,
+      "object_support": 0.9756158792398224,
+      "score": 0.6409895997932304,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Middle aged woman speaking English and water running",
+      "clip_similarity": 0.2691613733768463,
+      "visual": 0.1254969898350024,
+      "scene_support": 0.9133672447671998,
+      "object_support": 0.9170850327632585,
+      "score": 0.5993344791931384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman is speaking with low speech in the background",
+      "clip_similarity": 0.26764610409736633,
+      "visual": 0.06377130758556723,
+      "scene_support": 0.9953652458713413,
+      "object_support": 0.9704316697883663,
+      "score": 0.6152475977321392,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Background speech with animal bark",
+      "clip_similarity": 0.267627477645874,
+      "visual": 0.06301254447869332,
+      "scene_support": 0.8417180798987509,
+      "object_support": 0.8792646209323087,
+      "score": 0.5414998280407952,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking in foreign language",
+      "clip_similarity": 0.2676205635070801,
+      "visual": 0.06273089161342173,
+      "scene_support": 0.9626136923205081,
+      "object_support": 0.9682407909861653,
+      "score": 0.6043487016373708,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female speaking in a monologue",
+      "clip_similarity": 0.2671852111816406,
+      "visual": 0.04499647326907925,
+      "scene_support": 0.9435847611357342,
+      "object_support": 0.9241709991189222,
+      "score": 0.5783253173840286,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person speaking with camera shutter noise in background",
+      "clip_similarity": 0.26700252294540405,
+      "visual": 0.03755452471685996,
+      "scene_support": 0.9407590731542956,
+      "object_support": 0.9208453679229319,
+      "score": 0.5735031422099123,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman narrates, accompanied by small background clicks and shuffling",
+      "clip_similarity": 0.26689040660858154,
+      "visual": 0.032987377823964534,
+      "scene_support": 0.9626624637659635,
+      "object_support": 0.967612950093651,
+      "score": 0.59227757528747,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Computer noise with electronic popping and whirring sound followed by a woman speaking",
+      "clip_similarity": 0.26664865016937256,
+      "visual": 0.023139239707226703,
+      "scene_support": 0.9384603368053347,
+      "object_support": 0.9348234343363617,
+      "score": 0.5712408272253995,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking narration",
+      "clip_similarity": 0.2661447525024414,
+      "visual": 0.0026125731295882403,
+      "scene_support": 0.9499624527098802,
+      "object_support": 0.9306098692387137,
+      "score": 0.5652167258364135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female speech with accent",
+      "clip_similarity": 0.2660806179046631,
+      "visual": 0.0,
+      "scene_support": 0.9632961258542871,
+      "object_support": 0.941918444868451,
+      "score": 0.5715643712168215,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "reception",
+      0.07828671485185623
+    ],
+    [
+      "archive",
+      0.036493539810180664
+    ],
+    [
+      "office",
+      0.0284052062779665
+    ],
+    [
+      "kasbah",
+      0.026079857721924782
+    ],
+    [
+      "discotheque",
+      0.025944117456674576
+    ]
+  ],
+  "top_objects": [
+    [
+      "toy terrier",
+      0.06996159255504608
+    ],
+    [
+      "website",
+      0.029208367690443993
+    ],
+    [
+      "titi",
+      0.026114877313375473
+    ],
+    [
+      "French Bulldog",
+      0.022567635402083397
+    ],
+    [
+      "Scottish Terrier",
+      0.021185535937547684
+    ]
+  ]
+}

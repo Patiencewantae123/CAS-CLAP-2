@@ -1,0 +1,291 @@
+{
+  "id": "SCow4mpBsGY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SCow4mpBsGY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SCow4mpBsGY.wav",
+  "gt_captions": [
+    "A person is snoring",
+    "A person snoring as metal creaks in the background",
+    "A person is snoring",
+    "A person is snoring",
+    "Woosh of air and loud snoring"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.19583038985729218
+  ],
+  "top_object": [
+    "meatloaf",
+    0.12227527052164078
+  ],
+  "env_probs": {
+    "indoor": 0.8500865697860718,
+    "outdoor": 0.14991343021392822
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A toy squeaking as wind blows into a microphone followed by a person clapping then sheep baaing",
+    "casv": "A man and a woman laughing and talking as a dog barks in the background while a toy squeaks repeatedly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08966170251369476,
+    "clap_gt_audio_baseline": 0.5466763973236084,
+    "clap_text_casv": -0.15789803862571716,
+    "clap_gt_audio_casv": 0.2654777467250824
+  },
+  "verdicts": [
+    {
+      "caption": "A toy squeaking as wind blows into a microphone followed by a person clapping then sheep baaing",
+      "clip_similarity": 0.2946802079677582,
+      "visual": 1.0,
+      "scene_support": 0.6251369097864152,
+      "object_support": 0.8455037606260413,
+      "score": 0.8411922011237369,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy motorboat running as water lightly splashes with wind blowing into a microphone and a bird chirping in the background",
+      "clip_similarity": 0.28679540753364563,
+      "visual": 0.7728620989544118,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.30914483958176475,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.85)",
+        "names 'birds', not visible in image (z=-0.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man and a woman laughing and talking as a dog barks in the background while a toy squeaks repeatedly",
+      "clip_similarity": 0.28653714060783386,
+      "visual": 0.7654221887209725,
+      "scene_support": 0.5997765217324834,
+      "object_support": 0.5357109197300216,
+      "score": 0.6468151079271405,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy motorboat engine buzzing alongside camera muffling and water lightly trickling with wind blowing briefly into a microphone",
+      "clip_similarity": 0.27233949303627014,
+      "visual": 0.3564297359458585,
+      "scene_support": 0.27671747389295537,
+      "object_support": 0.3019317039142421,
+      "score": 0.3161666477205026,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.85)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cartoon characters are speaking with giggles and snorting",
+      "clip_similarity": 0.2711407542228699,
+      "visual": 0.3218975977829651,
+      "scene_support": 0.8817366985931735,
+      "object_support": 0.8284516313362004,
+      "score": 0.6418155380919982,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A yelping dog with a baby crying",
+      "clip_similarity": 0.27112123370170593,
+      "visual": 0.3213352690034933,
+      "scene_support": 0.6754812181067082,
+      "object_support": 0.675687098102804,
+      "score": 0.533884602464251,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An eruption followed by a burp",
+      "clip_similarity": 0.2670927047729492,
+      "visual": 0.20528520371325867,
+      "scene_support": 0.8708374237918906,
+      "object_support": 0.9417012055524429,
+      "score": 0.6258756702886035,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Speech of several adults and musical tones in the background, as an adult snores slowly in the foreground",
+      "clip_similarity": 0.2666955888271332,
+      "visual": 0.1938454617491945,
+      "scene_support": 0.853901014360922,
+      "object_support": 0.8434329116930053,
+      "score": 0.586738362515856,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sheep coughing",
+      "clip_similarity": 0.2654626667499542,
+      "visual": 0.15832860433431004,
+      "scene_support": 0.5653863667882794,
+      "object_support": 0.6276316033587752,
+      "score": 0.4212368327778404,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sheep crying and a dog barking",
+      "clip_similarity": 0.2649475634098053,
+      "visual": 0.14348999269401846,
+      "scene_support": 0.7376355311335311,
+      "object_support": 0.7782447690749268,
+      "score": 0.5121600871401447,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sheep bleating with people laughing and talking in the background",
+      "clip_similarity": 0.26493382453918457,
+      "visual": 0.14309421625533675,
+      "scene_support": 0.564675200300519,
+      "object_support": 0.6754722581937863,
+      "score": 0.4292819240504263,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person laughing and a baby crying as something snores in the background",
+      "clip_similarity": 0.26442667841911316,
+      "visual": 0.12848482871293673,
+      "scene_support": 0.4867987843830569,
+      "object_support": 0.5191901388852814,
+      "score": 0.3531906084656762,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by a sheep baaing as a person heavily breathes in the background",
+      "clip_similarity": 0.2637435495853424,
+      "visual": 0.10880589698308464,
+      "scene_support": 0.8405450074201555,
+      "object_support": 0.9455519975658898,
+      "score": 0.5793514602890474,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sheep is bleating and people are laughing",
+      "clip_similarity": 0.26259711384773254,
+      "visual": 0.07578045654228756,
+      "scene_support": 0.7675585777325447,
+      "object_support": 0.9650423186383825,
+      "score": 0.5500924515281932,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An item crackles, and then a cat meows",
+      "clip_similarity": 0.26186850666999817,
+      "visual": 0.05479142753384919,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6219165710135397,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sheep lets out two deep bleats",
+      "clip_similarity": 0.26058292388916016,
+      "visual": 0.01775757019022166,
+      "scene_support": 0.8120994399120283,
+      "object_support": 0.9077067787742622,
+      "score": 0.5230448936819758,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog snoring and yelping",
+      "clip_similarity": 0.260456919670105,
+      "visual": 0.014127759381661557,
+      "scene_support": 0.832381471342038,
+      "object_support": 0.8594583362708393,
+      "score": 0.5132030460365278,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing as children laugh and a man talks in the background followed by a goat screaming",
+      "clip_similarity": 0.26016002893447876,
+      "visual": 0.005575210830366441,
+      "scene_support": 0.715577357987833,
+      "object_support": 0.7073854465441943,
+      "score": 0.42911892569175475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sheep crying and making sounds",
+      "clip_similarity": 0.2600616216659546,
+      "visual": 0.002740386968051999,
+      "scene_support": 0.7152781493618885,
+      "object_support": 0.7892442755739268,
+      "score": 0.4524528822679654,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is meowing, and a bomb explodes",
+      "clip_similarity": 0.25996649265289307,
+      "visual": 0.0,
+      "scene_support": 0.7295508922204665,
+      "object_support": 0.7102217786072882,
+      "score": 0.4319318012483264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.19583038985729218
+    ],
+    [
+      "veterinarians office",
+      0.10288053005933762
+    ],
+    [
+      "pet shop",
+      0.05374966189265251
+    ],
+    [
+      "gift shop",
+      0.046213217079639435
+    ],
+    [
+      "childs room",
+      0.041946280747652054
+    ]
+  ],
+  "top_objects": [
+    [
+      "meatloaf",
+      0.12227527052164078
+    ],
+    [
+      "diaper",
+      0.09626169502735138
+    ],
+    [
+      "piggy bank",
+      0.05274615064263344
+    ],
+    [
+      "hot pot",
+      0.04036842659115791
+    ],
+    [
+      "mousetrap",
+      0.03548889979720116
+    ]
+  ]
+}

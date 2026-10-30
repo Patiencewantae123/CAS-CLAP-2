@@ -1,0 +1,283 @@
+{
+  "id": "E6FH_xp3I54",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\E6FH_xp3I54.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\E6FH_xp3I54.wav",
+  "gt_captions": [
+    "A man speaking as birds are chirping",
+    "A man speaks with some humming and birds chirping",
+    "A man is speaking followed by birds chirping",
+    "A man speaks followed by chirping birds",
+    "A man speaking as birds chirp in the background"
+  ],
+  "top_scene": [
+    "crevasse",
+    0.09183533489704132
+  ],
+  "top_object": [
+    "tiger",
+    0.12127352505922318
+  ],
+  "env_probs": {
+    "indoor": 0.15898166596889496,
+    "outdoor": 0.841018334031105
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+    "casv": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.03627563267946243,
+    "clap_gt_audio_baseline": 0.2961444854736328,
+    "clap_text_casv": 0.03627563267946243,
+    "clap_gt_audio_casv": 0.2961444854736328
+  },
+  "verdicts": [
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.3087756037712097,
+      "visual": 1.0,
+      "scene_support": 0.45857079982693544,
+      "object_support": 0.5906034843556062,
+      "score": 0.7147522852547625,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.3058788478374481,
+      "visual": 0.8629594852186467,
+      "scene_support": 0.4854004729437391,
+      "object_support": 0.3364052112653287,
+      "score": 0.591725499350179,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Roaring is present, an adult male speaks, and dogs are barking and yipping",
+      "clip_similarity": 0.30099883675575256,
+      "visual": 0.6320945984051253,
+      "scene_support": 0.4467229623882913,
+      "object_support": 0.9598727899453403,
+      "score": 0.6748165650621396,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog is barking, two adult males are speaking, and tapping occurs",
+      "clip_similarity": 0.3008803725242615,
+      "visual": 0.6264902604360527,
+      "scene_support": 0.40259988512092143,
+      "object_support": 0.49991198400623654,
+      "score": 0.5213496649125684,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Unknown animal call and a roar, followed by a dog barking angrily",
+      "clip_similarity": 0.2993374168872833,
+      "visual": 0.5534956969963568,
+      "scene_support": 0.6113114864159219,
+      "object_support": 0.5983003931979803,
+      "score": 0.5842818426827134,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud male voice screams while sticks fall in the background followed by a sequence of oinks, dog barks, and animal movement",
+      "clip_similarity": 0.29734450578689575,
+      "visual": 0.4592145185485963,
+      "scene_support": 0.8256756605547019,
+      "object_support": 0.5439388414580478,
+      "score": 0.5945701580232634,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male giving a dog a command and dog responding with a bark",
+      "clip_similarity": 0.2965061664581299,
+      "visual": 0.41955413438004036,
+      "scene_support": 0.1662744118041983,
+      "object_support": 0.4500455348049368,
+      "score": 0.3527176377347567,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Roaring is present, and dogs are barking and adult males are speaking in the background",
+      "clip_similarity": 0.2952650189399719,
+      "visual": 0.36083759122029346,
+      "scene_support": 0.3128869709221657,
+      "object_support": 0.9705317064145697,
+      "score": 0.5293606396891379,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male whistling with a dog breathing heavily followed by loud barking",
+      "clip_similarity": 0.29494184255599976,
+      "visual": 0.34554867526139477,
+      "scene_support": 0.0,
+      "object_support": 0.1369861168241674,
+      "score": 0.1793153051518081,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Quiet hissing is ongoing in the background, an adult male speaks briefly, then a tune is whistled accompanied by an adult female speaking in the background",
+      "clip_similarity": 0.2939393222332001,
+      "visual": 0.2981211721314249,
+      "scene_support": 0.22641808524922793,
+      "object_support": 0.0,
+      "score": 0.18717389442733834,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks with a humming sound in the background followed by a man speaking",
+      "clip_similarity": 0.2926366329193115,
+      "visual": 0.23649319302044913,
+      "scene_support": 0.8138287555761111,
+      "object_support": 0.8867144348026017,
+      "score": 0.6047602343217935,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small dog is barking, and an adult female speaks in the background",
+      "clip_similarity": 0.2914639413356781,
+      "visual": 0.1810151817638367,
+      "scene_support": 0.6138356557805064,
+      "object_support": 0.8823585412336968,
+      "score": 0.5212643318097956,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking with distant muffled barking and growling",
+      "clip_similarity": 0.29133448004722595,
+      "visual": 0.17489059204367294,
+      "scene_support": 0.587364979784266,
+      "object_support": 0.9771230266005888,
+      "score": 0.5393026387329256,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An animal cries, followed by a woman speaking and dog barking",
+      "clip_similarity": 0.2911568880081177,
+      "visual": 0.16648901972726965,
+      "scene_support": 0.2406772643859937,
+      "object_support": 0.584880648516212,
+      "score": 0.3142629817615695,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Lgun is cocked and fired, a man screams and a big cat roars",
+      "clip_similarity": 0.29006287455558777,
+      "visual": 0.11473313481992804,
+      "scene_support": 0.33727266623897834,
+      "object_support": 0.8653543901120317,
+      "score": 0.40668137083327427,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult female is speaking, dogs are barking and panting, and tapping and squeaking sounds are present",
+      "clip_similarity": 0.29004859924316406,
+      "visual": 0.11405779447095049,
+      "scene_support": 0.763636295821087,
+      "object_support": 0.7538695602972426,
+      "score": 0.500874874623879,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Hissing is ongoing in the background while several metal scrapes and clicks occur followed by the beginning of a gunshot",
+      "clip_similarity": 0.2892600893974304,
+      "visual": 0.07675475699026607,
+      "scene_support": 0.8021991137899652,
+      "object_support": 0.4012586287108172,
+      "score": 0.3917392255463411,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking with a hissing sound in the background",
+      "clip_similarity": 0.28883057832717896,
+      "visual": 0.05643533087447411,
+      "scene_support": 1.0,
+      "object_support": 0.8101584826761173,
+      "score": 0.5656216771526248,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dogs bark nearby, and then a gun fires nearby, after which dogs continue to bark",
+      "clip_similarity": 0.28850653767585754,
+      "visual": 0.041105527921587205,
+      "scene_support": 0.6780728288600116,
+      "object_support": 0.7200435768981368,
+      "score": 0.43587713289607943,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gun fires several times while something roar",
+      "clip_similarity": 0.2876376509666443,
+      "visual": 0.0,
+      "scene_support": 0.8646832619690572,
+      "object_support": 1.0,
+      "score": 0.5594049785907171,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "crevasse",
+      0.09183533489704132
+    ],
+    [
+      "broadleaf forest",
+      0.08882178366184235
+    ],
+    [
+      "archaelogical excavation",
+      0.07457534223794937
+    ],
+    [
+      "outdoor hunting lodge",
+      0.06125771999359131
+    ],
+    [
+      "trench",
+      0.04491174593567848
+    ]
+  ],
+  "top_objects": [
+    [
+      "tiger",
+      0.12127352505922318
+    ],
+    [
+      "cougar",
+      0.10613354295492172
+    ],
+    [
+      "dhole",
+      0.09351722151041031
+    ],
+    [
+      "dingo",
+      0.07362376153469086
+    ],
+    [
+      "leopard",
+      0.05197625979781151
+    ]
+  ]
+}

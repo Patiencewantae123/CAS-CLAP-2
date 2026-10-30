@@ -1,0 +1,291 @@
+{
+  "id": "Z0IrCa4MvOA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Z0IrCa4MvOA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Z0IrCa4MvOA.wav",
+  "gt_captions": [
+    "Rain is falling continuously",
+    "A stream of water trickling followed by water pouring down a drain",
+    "Water flowing through pipes",
+    "Water flows and splashes",
+    "Water trickling rapidly and draining"
+  ],
+  "top_scene": [
+    "home theater",
+    0.44615063071250916
+  ],
+  "top_object": [
+    "CRT screen",
+    0.10922334343194962
+  ],
+  "env_probs": {
+    "indoor": 0.8997894525527954,
+    "outdoor": 0.10021054744720459
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Cats meowing faintly followed by the clock of a computer mouse",
+    "casv": "Television static followed by an electronic whoosh and laser ripple then rap music plays"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.03732092306017876,
+    "clap_gt_audio_baseline": 7.801130414009094e-05,
+    "clap_text_casv": 0.010145368054509163,
+    "clap_gt_audio_casv": 0.07170312851667404
+  },
+  "verdicts": [
+    {
+      "caption": "Cats meowing faintly followed by the clock of a computer mouse",
+      "clip_similarity": 0.3119487464427948,
+      "visual": 1.0,
+      "scene_support": 0.5172065683521198,
+      "object_support": 0.5338143864437389,
+      "score": 0.7153062864387576,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The distant audio from a television and a young woman laughing",
+      "clip_similarity": 0.3107232451438904,
+      "visual": 0.9204006968641115,
+      "scene_support": 0.6292666972415041,
+      "object_support": 0.6745724518455396,
+      "score": 0.7593120234717576,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Television static followed by an electronic whoosh and laser ripple then rap music plays",
+      "clip_similarity": 0.30666428804397583,
+      "visual": 0.6567615176151762,
+      "scene_support": 0.953663133506672,
+      "object_support": 0.9960060931586194,
+      "score": 0.8476053750456579,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running through faucet with mechanical background noise",
+      "clip_similarity": 0.30535170435905457,
+      "visual": 0.5715060007742935,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2286024003097174,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A static noise throughout as something is clicked off and on",
+      "clip_similarity": 0.30501049757003784,
+      "visual": 0.5493437862950058,
+      "scene_support": 1.0,
+      "object_support": 0.9920764532773099,
+      "score": 0.8173604505011953,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.3030696511268616,
+      "visual": 0.42328106852497094,
+      "scene_support": 0.6406313094861783,
+      "object_support": 0.725322605903205,
+      "score": 0.5790986020268034,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Intermittent, high pitched spraying with white noise",
+      "clip_similarity": 0.3018062710762024,
+      "visual": 0.341221447928765,
+      "scene_support": 0.493531777427365,
+      "object_support": 0.3586816324621364,
+      "score": 0.39215260213835645,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bleeping effects with multiple smart phone tapping followed by a woman speaking then a man shouting before a water faucet turns on and water lightly pours with a single electronic whooshing effect",
+      "clip_similarity": 0.2996048629283905,
+      "visual": 0.19823461091753775,
+      "scene_support": 0.47659837271214034,
+      "object_support": 0.5093506393138892,
+      "score": 0.375078547974824,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Computer noise with electronic popping and whirring sound followed by a woman speaking",
+      "clip_similarity": 0.2995535731315613,
+      "visual": 0.19490321331784746,
+      "scene_support": 0.7906684926300633,
+      "object_support": 0.7473926121468623,
+      "score": 0.5393796167602166,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Microphone wind noise blows loudly as water rushes in the background",
+      "clip_similarity": 0.2993694841861725,
+      "visual": 0.1829461866047232,
+      "scene_support": 0.40277658503428704,
+      "object_support": 0.45756367208393756,
+      "score": 0.33128055177735666,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something beeps with a tapping noise on a surface",
+      "clip_similarity": 0.2992539405822754,
+      "visual": 0.17544134727061556,
+      "scene_support": 0.7599668183836387,
+      "object_support": 0.849339128206484,
+      "score": 0.5529683228852831,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud siren gets closer and then gets further away with a faint city noise in the background",
+      "clip_similarity": 0.29853665828704834,
+      "visual": 0.12885210994967092,
+      "scene_support": 0.5334753357902834,
+      "object_support": 0.5056556958627128,
+      "score": 0.36328015347576725,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-1.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid typing on a computer keyboard, with a low rattling sound in the background",
+      "clip_similarity": 0.29833340644836426,
+      "visual": 0.11565040650406504,
+      "scene_support": 0.4848736778057743,
+      "object_support": 0.6001928008802133,
+      "score": 0.3717801062074223,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Air blowing into a speaker",
+      "clip_similarity": 0.29816964268684387,
+      "visual": 0.10501355013550136,
+      "scene_support": 0.5628130190337499,
+      "object_support": 0.5825812133032607,
+      "score": 0.3856236897553037,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The entire time a loud static sound is joined with a constant clicking",
+      "clip_similarity": 0.2980584502220154,
+      "visual": 0.09779132791327913,
+      "scene_support": 0.8710526027287129,
+      "object_support": 0.8948702356522995,
+      "score": 0.5688933826796154,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man explaining with loud motor background noises and splashing",
+      "clip_similarity": 0.2979300618171692,
+      "visual": 0.08945218737901665,
+      "scene_support": 0.49790376600382613,
+      "object_support": 0.4874836027732414,
+      "score": 0.3313970855847269,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.66)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water moving followed by a clicking sound, water stops",
+      "clip_similarity": 0.2975943386554718,
+      "visual": 0.06764614789005033,
+      "scene_support": 0.40959151529990445,
+      "object_support": 0.5113506433814183,
+      "score": 0.3033411067604169,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A static sound with a clicking in the background",
+      "clip_similarity": 0.2971581220626831,
+      "visual": 0.03931281455671699,
+      "scene_support": 0.9224630955012963,
+      "object_support": 0.9647231334617317,
+      "score": 0.5818809945115953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone laughs and coughs while screaming takes place on a television",
+      "clip_similarity": 0.29703524708747864,
+      "visual": 0.03133178474641889,
+      "scene_support": 0.9544328337210003,
+      "object_support": 1.0,
+      "score": 0.5988625640148677,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud static noise with one thumping sound",
+      "clip_similarity": 0.2965528666973114,
+      "visual": 0.0,
+      "scene_support": 0.7236675735577599,
+      "object_support": 0.5891213933727748,
+      "score": 0.3938366900791604,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "home theater",
+      0.44615063071250916
+    ],
+    [
+      "television room",
+      0.12016504257917404
+    ],
+    [
+      "indoor bow window",
+      0.027951350435614586
+    ],
+    [
+      "indoor movie theater",
+      0.01846548356115818
+    ],
+    [
+      "hotel room",
+      0.013034533709287643
+    ]
+  ],
+  "top_objects": [
+    [
+      "CRT screen",
+      0.10922334343194962
+    ],
+    [
+      "home theater",
+      0.0840161070227623
+    ],
+    [
+      "entertainment center",
+      0.07174787670373917
+    ],
+    [
+      "television",
+      0.06317252665758133
+    ],
+    [
+      "monitor",
+      0.05297424644231796
+    ]
+  ]
+}

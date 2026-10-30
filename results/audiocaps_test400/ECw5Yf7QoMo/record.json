@@ -1,0 +1,283 @@
+{
+  "id": "ECw5Yf7QoMo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ECw5Yf7QoMo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ECw5Yf7QoMo.wav",
+  "gt_captions": [
+    "A man speaking in the background as another man speaks in the foreground followed by a crowd of people applauding",
+    "A man delivers a speech while another man is speaking then audience claps",
+    "A man speaks while another speaks on top as well followed by clapping",
+    "An adult male speaks in the foreground while and another adult male speaks in the background, and a crowd applauds",
+    "A man talking in the foreground as another man talks in the background followed by a crowd of people applauding"
+  ],
+  "top_scene": [
+    "assembly line",
+    0.07326590269804001
+  ],
+  "top_object": [
+    "speaker",
+    0.2433423399925232
+  ],
+  "env_probs": {
+    "indoor": 0.6253060102462769,
+    "outdoor": 0.37469398975372314
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A man gives a speech and people begin clapping afterwards",
+    "casv": "A man gives a speech and people begin clapping afterwards"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5298120379447937,
+    "clap_gt_audio_baseline": 0.7674069404602051,
+    "clap_text_casv": 0.5298120379447937,
+    "clap_gt_audio_casv": 0.7674069404602051
+  },
+  "verdicts": [
+    {
+      "caption": "A man gives a speech and people begin clapping afterwards",
+      "clip_similarity": 0.3111833333969116,
+      "visual": 1.0,
+      "scene_support": 0.49848541413265574,
+      "object_support": 0.5866608301247767,
+      "score": 0.7255438732772297,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man delivering speech and gets responded by other men",
+      "clip_similarity": 0.30938172340393066,
+      "visual": 0.8289000718907261,
+      "scene_support": 0.426196354235662,
+      "object_support": 0.35878497172668133,
+      "score": 0.5670544265449935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man performs a speech and a crowd applauds",
+      "clip_similarity": 0.30616968870162964,
+      "visual": 0.5238513050714095,
+      "scene_support": 0.4842981642721518,
+      "object_support": 0.401358845597778,
+      "score": 0.4752376249895427,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man delivers a speech followed by whistling",
+      "clip_similarity": 0.3058178424835205,
+      "visual": 0.49043626915434996,
+      "scene_support": 0.3858272015286358,
+      "object_support": 0.6785462900453051,
+      "score": 0.5154865551339223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man delivering a speech, some laughing then clapping",
+      "clip_similarity": 0.3058038651943207,
+      "visual": 0.48910883803076016,
+      "scene_support": 0.0,
+      "object_support": 0.12288489578998314,
+      "score": 0.23250900394929902,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man gives a speech, a crowd applauds",
+      "clip_similarity": 0.3051225543022156,
+      "visual": 0.42440435420051287,
+      "scene_support": 0.8441096539293729,
+      "object_support": 0.8210411445376442,
+      "score": 0.6693069812203103,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man gives a speech and people laugh followed by another man screaming from a distance",
+      "clip_similarity": 0.30474424362182617,
+      "visual": 0.38847597321362864,
+      "scene_support": 0.6062124916202014,
+      "object_support": 0.6300433938669042,
+      "score": 0.5262671549315832,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking while people are clapping",
+      "clip_similarity": 0.30432552099227905,
+      "visual": 0.34870964637687724,
+      "scene_support": 0.5292676758553416,
+      "object_support": 0.5453755167343315,
+      "score": 0.4618768163276529,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd applauds as a man gives a speech",
+      "clip_similarity": 0.3038589358329773,
+      "visual": 0.3043977878034836,
+      "scene_support": 0.7790519085869352,
+      "object_support": 0.6542650427105394,
+      "score": 0.5517542005106358,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by applause and more speech",
+      "clip_similarity": 0.3037392497062683,
+      "visual": 0.293031128118331,
+      "scene_support": 0.7038404566638968,
+      "object_support": 0.9739297703711239,
+      "score": 0.6205435193578386,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A crowd applauds followed by a man performing a speech",
+      "clip_similarity": 0.30366426706314087,
+      "visual": 0.28590998375382803,
+      "scene_support": 0.6449446230796713,
+      "object_support": 0.48943719500729055,
+      "score": 0.4546785389276198,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man delivering a speech followed by claps and another man speaking",
+      "clip_similarity": 0.303422749042511,
+      "visual": 0.2629728796481317,
+      "scene_support": 0.0764462428395374,
+      "object_support": 0.0,
+      "score": 0.12812302471111392,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd applauds and a man gives a speech",
+      "clip_similarity": 0.3028421998023987,
+      "visual": 0.2078377873506286,
+      "scene_support": 1.0,
+      "object_support": 0.8599630694867029,
+      "score": 0.6411240357862622,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking followed by whistling and then brief speech",
+      "clip_similarity": 0.30281147360801697,
+      "visual": 0.20491970315356878,
+      "scene_support": 0.6582961009349246,
+      "object_support": 0.8837706115729994,
+      "score": 0.5445878950138047,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is giving a speech and start whistling in the middle of the speech",
+      "clip_similarity": 0.30270150303840637,
+      "visual": 0.1944757354647707,
+      "scene_support": 0.6180979563327191,
+      "object_support": 1.0,
+      "score": 0.563219681085724,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People applauding and man gives speech",
+      "clip_similarity": 0.302680104970932,
+      "visual": 0.19244354879795308,
+      "scene_support": 0.8315337339579545,
+      "object_support": 0.7945948278785301,
+      "score": 0.5648159880701266,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is speaking while snakes are hissing, and people are communicating in the background",
+      "clip_similarity": 0.3020895719528198,
+      "visual": 0.1363602914121716,
+      "scene_support": 0.3762089992011593,
+      "object_support": 0.1754291862031548,
+      "score": 0.22003557218616288,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People clapping and man gives speech",
+      "clip_similarity": 0.30180391669273376,
+      "visual": 0.10923144851322053,
+      "scene_support": 0.5759215771282681,
+      "object_support": 0.5758642551884083,
+      "score": 0.38922832910029115,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man makes a speech, followed by applause and whistling",
+      "clip_similarity": 0.30097952485084534,
+      "visual": 0.030938485313347332,
+      "scene_support": 0.48991413466286116,
+      "object_support": 0.6668557377419776,
+      "score": 0.3594063558467906,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man giving a speech followed by applause",
+      "clip_similarity": 0.30065375566482544,
+      "visual": 0.0,
+      "scene_support": 0.28942840741677406,
+      "object_support": 0.5570486005143966,
+      "score": 0.2539431023793512,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "assembly line",
+      0.07326590269804001
+    ],
+    [
+      "candy store",
+      0.06276645511388779
+    ],
+    [
+      "legislative chamber",
+      0.04195982962846756
+    ],
+    [
+      "reception",
+      0.03655929118394852
+    ],
+    [
+      "stable",
+      0.031951624900102615
+    ]
+  ],
+  "top_objects": [
+    [
+      "speaker",
+      0.2433423399925232
+    ],
+    [
+      "alp",
+      0.053760427981615067
+    ],
+    [
+      "suit",
+      0.0466044656932354
+    ],
+    [
+      "Windsor tie",
+      0.03919985890388489
+    ],
+    [
+      "assault rifle",
+      0.031241588294506073
+    ]
+  ]
+}

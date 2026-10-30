@@ -1,0 +1,303 @@
+{
+  "id": "KtTLsveexOg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\KtTLsveexOg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\KtTLsveexOg.wav",
+  "gt_captions": [
+    "A sewing machine operating as a machine motor hisses loudly in the background",
+    "A sewing machine operating several times as a loud motor hum in the background followed by steam hissing",
+    "A sewing machine running as a steam hisses followed by a machine motor sharply running in the background",
+    "A sewing machine running as a heavy machine motor hums while sawing wood in the background",
+    "Slow humming and rustling along with quick sewing machine sounds"
+  ],
+  "top_scene": [
+    "auto factory",
+    0.2847288250923157
+  ],
+  "top_object": [
+    "stretcher",
+    0.27909791469573975
+  ],
+  "env_probs": {
+    "indoor": 0.8787975311279297,
+    "outdoor": 0.12120246887207031
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "Helicopter blades spin and its motor runs",
+    "casv": "A sawing machine works followed an object being hit"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4076811671257019,
+    "clap_gt_audio_baseline": 0.29881295561790466,
+    "clap_text_casv": 0.09087890386581421,
+    "clap_gt_audio_casv": 0.19930051267147064
+  },
+  "verdicts": [
+    {
+      "caption": "Helicopter blades spin and its motor runs",
+      "clip_similarity": 0.3108769655227661,
+      "visual": 1.0,
+      "scene_support": 0.47110435026419456,
+      "object_support": 0.6769789287092467,
+      "score": 0.7444249836920325,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sawing machine works followed an object being hit",
+      "clip_similarity": 0.3064863979816437,
+      "visual": 0.6963213832225722,
+      "scene_support": 0.8098455005341723,
+      "object_support": 0.991307654051957,
+      "score": 0.8188744996648676,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Electrical humming with spinning blades of a helicopter",
+      "clip_similarity": 0.30548030138015747,
+      "visual": 0.6267335631008724,
+      "scene_support": 0.5303507464728878,
+      "object_support": 0.6769366251679244,
+      "score": 0.6128796367325926,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine motor sharply humming during high pressure spraying",
+      "clip_similarity": 0.3052366375923157,
+      "visual": 0.6098802790191454,
+      "scene_support": 0.40216901325542526,
+      "object_support": 0.3153801231136232,
+      "score": 0.4592168525183727,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large power tool motor is running and sharp tapping sounds are present",
+      "clip_similarity": 0.30177071690559387,
+      "visual": 0.3701559176134958,
+      "scene_support": 0.7859283160895592,
+      "object_support": 0.8187128167348682,
+      "score": 0.6294547068927265,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip and clapping of machinery as the vibration is heard getting louder and louder",
+      "clip_similarity": 0.3012780547142029,
+      "visual": 0.3360803746640062,
+      "scene_support": 1.0,
+      "object_support": 0.8363864108643748,
+      "score": 0.6853480731249149,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Humming and vibrating of a helicopter rotor",
+      "clip_similarity": 0.30120277404785156,
+      "visual": 0.3308735014264277,
+      "scene_support": 0.5387513741576265,
+      "object_support": 0.732335176116865,
+      "score": 0.5136753656529185,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High frequency ringing with continuous whooshing of helicopter blades",
+      "clip_similarity": 0.30019086599349976,
+      "visual": 0.26088372553223066,
+      "scene_support": 0.5639821732577178,
+      "object_support": 0.5641362958193783,
+      "score": 0.44278903093602107,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter motor and shuffling noise",
+      "clip_similarity": 0.29980045557022095,
+      "visual": 0.23388054286703716,
+      "scene_support": 0.45649296901180964,
+      "object_support": 0.7266401908405611,
+      "score": 0.4484921651025261,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from helicopter blades",
+      "clip_similarity": 0.2997126579284668,
+      "visual": 0.22780791873484935,
+      "scene_support": 0.4171526885984547,
+      "object_support": 0.4869503892957595,
+      "score": 0.36235409086220405,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.2996654212474823,
+      "visual": 0.22454073976352631,
+      "scene_support": 0.5916713526151723,
+      "object_support": 0.3993051901286234,
+      "score": 0.38710925872854923,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine works followed by an object being hit",
+      "clip_similarity": 0.2993597090244293,
+      "visual": 0.20339580481852212,
+      "scene_support": 0.7979625547533074,
+      "object_support": 0.9822160039455791,
+      "score": 0.6154118895370748,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A drilling sound is followed by helicopter blades",
+      "clip_similarity": 0.29902780055999756,
+      "visual": 0.18043897692979996,
+      "scene_support": 0.6709328161491985,
+      "object_support": 1.0,
+      "score": 0.5734554356166794,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by camera muffling and fabric rustling before metal clanks then an electronic motor lightly hums with a vehicle door closing shut",
+      "clip_similarity": 0.29840725660324097,
+      "visual": 0.1375183456737191,
+      "scene_support": 0.5933799811116257,
+      "object_support": 0.5262049802617867,
+      "score": 0.3908828266815114,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sewing machine clacking and woman narrating",
+      "clip_similarity": 0.29806849360466003,
+      "visual": 0.11408741610461569,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.04563496644184628,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter motor noise",
+      "clip_similarity": 0.29798176884651184,
+      "visual": 0.10808899919196584,
+      "scene_support": 0.5427577955852427,
+      "object_support": 0.7027464284461393,
+      "score": 0.4168868668862009,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter is vibrating then the blades are rotating and distorting air",
+      "clip_similarity": 0.2978869080543518,
+      "visual": 0.10152784419781996,
+      "scene_support": 0.2516243330591473,
+      "object_support": 0.5593136921086355,
+      "score": 0.28389254522946283,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tool motor is running, whirring is present, and metal scraping and scratching occur",
+      "clip_similarity": 0.2970616817474365,
+      "visual": 0.044450124503223894,
+      "scene_support": 0.9486946728898128,
+      "object_support": 0.7594223399842754,
+      "score": 0.530215153663516,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sawing machine is being used, followed by the needle being retracted",
+      "clip_similarity": 0.2969411313533783,
+      "visual": 0.03611211886347521,
+      "scene_support": 0.5317531746978402,
+      "object_support": 0.8882221781990247,
+      "score": 0.4404374534144495,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine tapping and clicking",
+      "clip_similarity": 0.29641902446746826,
+      "visual": 0.0,
+      "scene_support": 0.2497891968619894,
+      "object_support": 0.1622815434808179,
+      "score": 0.12362122210284218,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "auto factory",
+      0.2847288250923157
+    ],
+    [
+      "physics laboratory",
+      0.1299351155757904
+    ],
+    [
+      "repair shop",
+      0.07287614792585373
+    ],
+    [
+      "operating room",
+      0.04366399720311165
+    ],
+    [
+      "bus interior",
+      0.03701815381646156
+    ]
+  ],
+  "top_objects": [
+    [
+      "stretcher",
+      0.27909791469573975
+    ],
+    [
+      "crane (machine)",
+      0.15159016847610474
+    ],
+    [
+      "seat belt",
+      0.0561097115278244
+    ],
+    [
+      "clothes iron",
+      0.03226327896118164
+    ],
+    [
+      "pulled rickshaw",
+      0.03077298030257225
+    ]
+  ]
+}

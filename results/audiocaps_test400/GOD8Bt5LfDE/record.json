@@ -1,0 +1,285 @@
+{
+  "id": "GOD8Bt5LfDE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\GOD8Bt5LfDE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\GOD8Bt5LfDE.wav",
+  "gt_captions": [
+    "Humming and vibrating with a man and children speaking and laughing",
+    "A quiet machine running and a child speaking and then an adult speaks and the child laughs",
+    "A toy train running as a young boy talks followed by plastic clanking then a child laughing",
+    "Small child speaking and a train running followed by a woman speaking and laughter",
+    "A train chugging, a child speaking, and then a female speaking and laughter"
+  ],
+  "top_scene": [
+    "raceway",
+    0.381849080324173
+  ],
+  "top_object": [
+    "neck brace",
+    0.06315962970256805
+  ],
+  "env_probs": {
+    "indoor": 0.3989567160606384,
+    "outdoor": 0.6010432839393616
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A train is running with a horn and some sounds coming from wheels and engine",
+    "casv": "A train is running with a horn and some sounds coming from wheels and engine"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.012365431524813175,
+    "clap_gt_audio_baseline": 0.14912936091423035,
+    "clap_text_casv": 0.012365431524813175,
+    "clap_gt_audio_casv": 0.14912936091423035
+  },
+  "verdicts": [
+    {
+      "caption": "A train is running with a horn and some sounds coming from wheels and engine",
+      "clip_similarity": 0.32276371121406555,
+      "visual": 1.0,
+      "scene_support": 0.8480262667112614,
+      "object_support": 0.9348365229035318,
+      "score": 0.9348588368844379,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train horn sounds and passes on a track",
+      "clip_similarity": 0.3196556568145752,
+      "visual": 0.8285783321854705,
+      "scene_support": 0.9248957221245959,
+      "object_support": 0.9836648440551247,
+      "score": 0.9039995027281045,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train is moving through a tunnel at a fast speed and blows it horn",
+      "clip_similarity": 0.31636813282966614,
+      "visual": 0.6472581968088866,
+      "scene_support": 0.7820536825417371,
+      "object_support": 0.5110130837471405,
+      "score": 0.646823308610218,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train passes by with a blowing horn and clicking wheels",
+      "clip_similarity": 0.31476834416389465,
+      "visual": 0.5590234344822371,
+      "scene_support": 0.8207527175483744,
+      "object_support": 0.7403650337555097,
+      "score": 0.6919446991840601,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+      "clip_similarity": 0.31458210945129395,
+      "visual": 0.5487518430183915,
+      "scene_support": 0.3280769939515621,
+      "object_support": 0.09176128438319478,
+      "score": 0.3454522207077837,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The train whistle sound several times as a train is traveling down the tracks",
+      "clip_similarity": 0.31401050090789795,
+      "visual": 0.5172253388934822,
+      "scene_support": 0.6710060820320933,
+      "object_support": 0.5005642191597389,
+      "score": 0.5583612259149425,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train moves down a track quickly, and sounds its horn",
+      "clip_similarity": 0.31282705068588257,
+      "visual": 0.45195331184446486,
+      "scene_support": 0.7272299261075834,
+      "object_support": 0.5668359091669921,
+      "score": 0.5690010753201586,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train running across the track while a train horn blows",
+      "clip_similarity": 0.3098140358924866,
+      "visual": 0.285773459548931,
+      "scene_support": 1.0,
+      "object_support": 0.7168163811861854,
+      "score": 0.629354298175428,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train horn is triggered shortly while an engine works",
+      "clip_similarity": 0.30925124883651733,
+      "visual": 0.2547334958422163,
+      "scene_support": 0.8775318539699698,
+      "object_support": 1.0,
+      "score": 0.6651529545278774,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaks with some humming followed by clicks and vibrations of an engine starting",
+      "clip_similarity": 0.3090968728065491,
+      "visual": 0.24621903852381008,
+      "scene_support": 0.4267490844345726,
+      "object_support": 0.31729551414383755,
+      "score": 0.32170099498304705,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train moving is followed by a horn and accelerated train movement",
+      "clip_similarity": 0.30846506357192993,
+      "visual": 0.21137222478824808,
+      "scene_support": 0.9001871888522591,
+      "object_support": 0.6282200245494616,
+      "score": 0.5430710539358155,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train engine is running and rhythmically chugging",
+      "clip_similarity": 0.3084472119808197,
+      "visual": 0.21038763792845555,
+      "scene_support": 0.8822874092400844,
+      "object_support": 0.7893572504603024,
+      "score": 0.5856484530814983,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train crossing bell is ringing, a train horn sounds, and a large engine is running and approaches",
+      "clip_similarity": 0.30774757266044617,
+      "visual": 0.17179972286920775,
+      "scene_support": 0.8257799906035049,
+      "object_support": 0.6586983205936506,
+      "score": 0.5140633825068297,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train passes with rumbling sounds followed by the train signal and horn",
+      "clip_similarity": 0.30759185552597046,
+      "visual": 0.16321129825749495,
+      "scene_support": 0.807989392137673,
+      "object_support": 0.6710246610500474,
+      "score": 0.5089887352593141,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train engine running on railroad tracks and a train horn sounding followed by a train horn whistling",
+      "clip_similarity": 0.30736565589904785,
+      "visual": 0.15073548145311214,
+      "scene_support": 0.7987880398723618,
+      "object_support": 0.7348128103554092,
+      "score": 0.5203744476495762,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn is triggered while train moves getting closer",
+      "clip_similarity": 0.3068279027938843,
+      "visual": 0.12107624055478758,
+      "scene_support": 0.7919629831450988,
+      "object_support": 0.729772499023601,
+      "score": 0.5049511408725249,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small dc motor is running, clacking and clattering are ongoing, and a model train whistle blows once",
+      "clip_similarity": 0.30674004554748535,
+      "visual": 0.11623056098438961,
+      "scene_support": 0.43639457177030067,
+      "object_support": 0.6260677620933995,
+      "score": 0.3652309245528659,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle blows, the bell rings, and a train engine is running",
+      "clip_similarity": 0.30527985095977783,
+      "visual": 0.03569497203214454,
+      "scene_support": 0.7178161399376235,
+      "object_support": 0.6829332422027562,
+      "score": 0.4345028034549717,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy motorboat engine buzzing alongside camera muffling and water lightly trickling with wind blowing briefly into a microphone",
+      "clip_similarity": 0.3051546514034271,
+      "visual": 0.028789714272564545,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.011515885709025819,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-1.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train moves getting closer while the horn is triggered",
+      "clip_similarity": 0.30463266372680664,
+      "visual": 0.0,
+      "scene_support": 0.9589296097786785,
+      "object_support": 0.8694812531384255,
+      "score": 0.5485232588751312,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.381849080324173
+    ],
+    [
+      "cockpit",
+      0.1379282921552658
+    ],
+    [
+      "galley",
+      0.03881404176354408
+    ],
+    [
+      "landing deck",
+      0.03609945997595787
+    ],
+    [
+      "railroad track",
+      0.03219958022236824
+    ]
+  ],
+  "top_objects": [
+    [
+      "neck brace",
+      0.06315962970256805
+    ],
+    [
+      "mousetrap",
+      0.05687209963798523
+    ],
+    [
+      "computer mouse",
+      0.05123483017086983
+    ],
+    [
+      "bobsleigh",
+      0.040277015417814255
+    ],
+    [
+      "disc brake",
+      0.03378022462129593
+    ]
+  ]
+}

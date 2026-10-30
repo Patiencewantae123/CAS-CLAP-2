@@ -1,0 +1,285 @@
+{
+  "id": "JZloTOdIY_c",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\JZloTOdIY_c.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\JZloTOdIY_c.wav",
+  "gt_captions": [
+    "Horses growl and clop hooves",
+    "A horse neighs followed by horse trotting and snorting",
+    "Horses neighing and snorting while trotting on grass",
+    "Horses neighing then snorting and trotting on a dirt surface",
+    "Horses neighing and stomping on the ground"
+  ],
+  "top_scene": [
+    "stable",
+    0.4625050723552704
+  ],
+  "top_object": [
+    "llama",
+    0.15246209502220154
+  ],
+  "env_probs": {
+    "indoor": 0.5982323884963989,
+    "outdoor": 0.4017676115036011
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "The sound of a horse walking on wood",
+    "casv": "Clip clops of a horse with distant humming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.13664427399635315,
+    "clap_gt_audio_baseline": 0.31425416469573975,
+    "clap_text_casv": -0.0027594715356826782,
+    "clap_gt_audio_casv": 0.24300289154052734
+  },
+  "verdicts": [
+    {
+      "caption": "The sound of a horse walking on wood",
+      "clip_similarity": 0.3313671350479126,
+      "visual": 1.0,
+      "scene_support": 0.44545754327072523,
+      "object_support": 0.6060323252207304,
+      "score": 0.7154469605474367,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse walking slowly",
+      "clip_similarity": 0.33015841245651245,
+      "visual": 0.9239337350640388,
+      "scene_support": 0.5440941788886906,
+      "object_support": 0.6767243193540137,
+      "score": 0.7358190434984268,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clops of a horse with heavy breathing and wind blowing hard",
+      "clip_similarity": 0.3274618983268738,
+      "visual": 0.7542390841590193,
+      "scene_support": 0.473933529760032,
+      "object_support": 0.6159518359391442,
+      "score": 0.6286612433733605,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clops of a horse with a neigh",
+      "clip_similarity": 0.32436150312423706,
+      "visual": 0.5591277454880316,
+      "scene_support": 0.8209253072030759,
+      "object_support": 0.867612777268739,
+      "score": 0.7302125235367571,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip clops of a horse with distant humming",
+      "clip_similarity": 0.32302379608154297,
+      "visual": 0.4749443447307073,
+      "scene_support": 0.8201106807490276,
+      "object_support": 1.0,
+      "score": 0.7360109421169911,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clop of horse and loud voice talking and laughing",
+      "clip_similarity": 0.3230045735836029,
+      "visual": 0.4737346514301576,
+      "scene_support": 0.49156842704585046,
+      "object_support": 0.5580916658302603,
+      "score": 0.5043918884348962,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is being moved around while the camera is making a lot of noises",
+      "clip_similarity": 0.3228187561035156,
+      "visual": 0.4620409495248437,
+      "scene_support": 0.8145072865562045,
+      "object_support": 0.9511025995512544,
+      "score": 0.7144993456421751,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse snorting while walking",
+      "clip_similarity": 0.3224041759967804,
+      "visual": 0.43595095959624375,
+      "scene_support": 0.2727056632301452,
+      "object_support": 0.41363266971226537,
+      "score": 0.3802818837212207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A buzzing noise and a clip-clop sound",
+      "clip_similarity": 0.3218676745891571,
+      "visual": 0.402188325803227,
+      "scene_support": 0.5557606133153594,
+      "object_support": 0.1760322604666824,
+      "score": 0.3804131924559033,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip clops of a horse getting closer and louder",
+      "clip_similarity": 0.3205253481864929,
+      "visual": 0.31771422355507295,
+      "scene_support": 0.7590817924051846,
+      "object_support": 0.8594068205438693,
+      "score": 0.6126322733067453,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A horse making noise with people talking in the background",
+      "clip_similarity": 0.3195381760597229,
+      "visual": 0.2555903772180055,
+      "scene_support": 0.5749944987493718,
+      "object_support": 0.6876297104522746,
+      "score": 0.48102341364769613,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clop as the horse goes by while a female and a child talk",
+      "clip_similarity": 0.3185986578464508,
+      "visual": 0.1964654449702078,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.07858617798808312,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse does clip-clop while someone shouts followed by a woman laughing",
+      "clip_similarity": 0.3181055188179016,
+      "visual": 0.16543165420401243,
+      "scene_support": 0.189284005137443,
+      "object_support": 0.31452417106724384,
+      "score": 0.21731511454301103,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip clops from a horse with some neighing",
+      "clip_similarity": 0.31776827573776245,
+      "visual": 0.14420856987994965,
+      "scene_support": 0.7110472048287424,
+      "object_support": 0.7041419926763172,
+      "score": 0.4822401872034977,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse walks slowly",
+      "clip_similarity": 0.31771931052207947,
+      "visual": 0.14112713407715405,
+      "scene_support": 0.8253534198863433,
+      "object_support": 0.9139645342079447,
+      "score": 0.5782462398591479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Horse moving slowly on grass",
+      "clip_similarity": 0.31675606966018677,
+      "visual": 0.08050930901193376,
+      "scene_support": 0.20080415989124864,
+      "object_support": 0.6260963669741405,
+      "score": 0.28027388166439027,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clops of several horses with wind blowing and people speaking",
+      "clip_similarity": 0.3161028027534485,
+      "visual": 0.03939849172813597,
+      "scene_support": 0.5085721779845309,
+      "object_support": 0.3596828346732025,
+      "score": 0.27623590048857444,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse does clip-clop nearby",
+      "clip_similarity": 0.3156512379646301,
+      "visual": 0.010981014379408582,
+      "scene_support": 0.8157563384180232,
+      "object_support": 0.8293447537889213,
+      "score": 0.49792273341384674,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is slowly walking",
+      "clip_similarity": 0.3155139088630676,
+      "visual": 0.002338740381062767,
+      "scene_support": 1.0,
+      "object_support": 0.8930012206138036,
+      "score": 0.5688358623365661,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks in a high pitched voice to a horse",
+      "clip_similarity": 0.31547674536705017,
+      "visual": 0.0,
+      "scene_support": 0.5234649619199964,
+      "object_support": 0.7877467533939215,
+      "score": 0.39336351459417535,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "stable",
+      0.4625050723552704
+    ],
+    [
+      "corral",
+      0.09651128947734833
+    ],
+    [
+      "watering hole",
+      0.06324224919080734
+    ],
+    [
+      "farm",
+      0.04882621020078659
+    ],
+    [
+      "pasture",
+      0.03724796697497368
+    ]
+  ],
+  "top_objects": [
+    [
+      "llama",
+      0.15246209502220154
+    ],
+    [
+      "hay",
+      0.09600800275802612
+    ],
+    [
+      "dromedary",
+      0.04211369901895523
+    ],
+    [
+      "horse-drawn vehicle",
+      0.03636741638183594
+    ],
+    [
+      "Golden Retriever",
+      0.027181053534150124
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "tIM-H2rdq8U",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\tIM-H2rdq8U.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\tIM-H2rdq8U.wav",
+  "gt_captions": [
+    "Gunshots firing before and after a person loudly exhaling followed by a revolver chamber spinning as a heart beats and footsteps walking on a stone surface",
+    "A series of gunshots firing followed by a person groaning and metal clanking then a man talking while a heart beats in the background",
+    "A gun firing several times followed by a revolver chamber spinning and metal clanking as a man talks and a person grunts",
+    "Clicks followed by gunshots and breathing then some speaking",
+    "A distorted gasping followed by footsteps walking on a hard surface and people grunting while a beating sounds in the background as a series of gunshots fire"
+  ],
+  "top_scene": [
+    "catacomb",
+    0.19432570040225983
+  ],
+  "top_object": [
+    "hatchet",
+    0.1574094146490097
+  ],
+  "env_probs": {
+    "indoor": 0.6020715832710266,
+    "outdoor": 0.3979284167289734
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Streaming water, then a man and woman talk",
+    "casv": "Background noises from a video game being played"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07170192152261734,
+    "clap_gt_audio_baseline": 0.3891353905200958,
+    "clap_text_casv": 0.3759946823120117,
+    "clap_gt_audio_casv": 0.5451945662498474
+  },
+  "verdicts": [
+    {
+      "caption": "Streaming water, then a man and woman talk",
+      "clip_similarity": 0.3013205826282501,
+      "visual": 1.0,
+      "scene_support": 0.23628181310519267,
+      "object_support": 0.17535997906240347,
+      "score": 0.5234925376502788,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.29339975118637085,
+      "visual": 0.5721378217872787,
+      "scene_support": 0.306683261370231,
+      "object_support": 0.21531716046020108,
+      "score": 0.3854552552640411,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream is running while people yell in the background",
+      "clip_similarity": 0.29190593957901,
+      "visual": 0.49144610490695917,
+      "scene_support": 0.7659073738151637,
+      "object_support": 0.72122944471242,
+      "score": 0.6427194875210588,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Video game player attacking with weapon and speaking in foreign language",
+      "clip_similarity": 0.29008346796035767,
+      "visual": 0.39300105122678003,
+      "scene_support": 0.5655584470569341,
+      "object_support": 1.0,
+      "score": 0.6268679546077922,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Background noises from a video game being played",
+      "clip_similarity": 0.28950273990631104,
+      "visual": 0.36163167138618657,
+      "scene_support": 1.0,
+      "object_support": 0.8953599486298504,
+      "score": 0.7132606531434297,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A guy is wading through a stream, ends with a cackle",
+      "clip_similarity": 0.28943687677383423,
+      "visual": 0.35807392072172434,
+      "scene_support": 0.13711361653825238,
+      "object_support": 0.2812104852318428,
+      "score": 0.2687267988197183,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking and hitting some switches followed by a beep",
+      "clip_similarity": 0.2882080674171448,
+      "visual": 0.29169691827959415,
+      "scene_support": 0.11305883941704413,
+      "object_support": 0.39526484690143354,
+      "score": 0.26917587320738096,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by clicking noises and then a flame running",
+      "clip_similarity": 0.28736647963523865,
+      "visual": 0.24623659202902867,
+      "scene_support": 0.8386301339864152,
+      "object_support": 0.9396918095348232,
+      "score": 0.6319912198679829,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A stream train whistle goes off",
+      "clip_similarity": 0.2872218191623688,
+      "visual": 0.23842241930264868,
+      "scene_support": 0.8172777143107419,
+      "object_support": 0.7418155452524456,
+      "score": 0.5630969455900158,
+      "conflicts": [
+        "names 'a train', not visible in image (z=-0.44)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People speak and scream are joined by some distant clip clips",
+      "clip_similarity": 0.28719133138656616,
+      "visual": 0.23677555100864647,
+      "scene_support": 0.5863378384790298,
+      "object_support": 0.7247504911053255,
+      "score": 0.48803671927876513,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door clanks open, followed by a bouncing ball, and then a door clanks closed",
+      "clip_similarity": 0.2871153950691223,
+      "visual": 0.23267367377197232,
+      "scene_support": 0.5268706452590124,
+      "object_support": 0.3199960133355448,
+      "score": 0.3471294670871561,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud clicking static sound similar to rapid gunfire",
+      "clip_similarity": 0.28540173172950745,
+      "visual": 0.1401061529768392,
+      "scene_support": 0.7031932638156382,
+      "object_support": 0.8357790961836057,
+      "score": 0.5177341691905089,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People are talking while a stream is running in the background",
+      "clip_similarity": 0.2851051688194275,
+      "visual": 0.12408661593518132,
+      "scene_support": 0.8616527302788859,
+      "object_support": 0.56673021998171,
+      "score": 0.47814953145225125,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person saws a log multiple time as a man talks nearby",
+      "clip_similarity": 0.2843247056007385,
+      "visual": 0.0819280754822684,
+      "scene_support": 0.0,
+      "object_support": 0.8490819259545551,
+      "score": 0.2874958079792739,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical cranking while men are communicating followed by a pop and a man screaming",
+      "clip_similarity": 0.2838461697101593,
+      "visual": 0.056078843618345114,
+      "scene_support": 0.43923382107649017,
+      "object_support": 0.19622605909088833,
+      "score": 0.2130695014975516,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People screaming followed by a huge splash and then people shouting and a dozen clanks in a row",
+      "clip_similarity": 0.28382912278175354,
+      "visual": 0.055158014034601945,
+      "scene_support": 0.0759835464244132,
+      "object_support": 0.0,
+      "score": 0.04485826954116474,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone giggles as a stream flows",
+      "clip_similarity": 0.2837654948234558,
+      "visual": 0.05172100151486125,
+      "scene_support": 0.6820919546103226,
+      "object_support": 0.6348162102037307,
+      "score": 0.4157608500501605,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A creature bites several times, followed by steam hissing",
+      "clip_similarity": 0.28371089696884155,
+      "visual": 0.04877177109979571,
+      "scene_support": 0.5945711960231109,
+      "object_support": 0.8095005865874608,
+      "score": 0.4407302432230898,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "There is a running stream and people talking",
+      "clip_similarity": 0.28358739614486694,
+      "visual": 0.042100586143446576,
+      "scene_support": 0.8962358978476767,
+      "object_support": 0.7710779666793977,
+      "score": 0.5170343938155009,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male voices communicating back and forth while an engine is running in the background",
+      "clip_similarity": 0.28280800580978394,
+      "visual": 0.0,
+      "scene_support": 0.5085373910060114,
+      "object_support": 0.4211644712115656,
+      "score": 0.2789105586652731,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.26)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "catacomb",
+      0.19432570040225983
+    ],
+    [
+      "lobby",
+      0.1001076027750969
+    ],
+    [
+      "archaelogical excavation",
+      0.09966634958982468
+    ],
+    [
+      "basement",
+      0.04491209238767624
+    ],
+    [
+      "chalet",
+      0.04267376661300659
+    ]
+  ],
+  "top_objects": [
+    [
+      "hatchet",
+      0.1574094146490097
+    ],
+    [
+      "ocarina",
+      0.05686698853969574
+    ],
+    [
+      "joystick",
+      0.027550319209694862
+    ],
+    [
+      "hammer",
+      0.02564452774822712
+    ],
+    [
+      "wild boar",
+      0.023988373577594757
+    ]
+  ]
+}

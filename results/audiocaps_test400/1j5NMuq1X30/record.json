@@ -1,0 +1,289 @@
+{
+  "id": "1j5NMuq1X30",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1j5NMuq1X30.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1j5NMuq1X30.wav",
+  "gt_captions": [
+    "Loud humming followed by hissing",
+    "Liquid is being sprayed",
+    "High pressure liquid spraying as a radio plays in the background",
+    "Music plays in the background as a machine motor hums and liquid is being sprayed",
+    "A motor engine humming as liquid sprays and music plays in the background"
+  ],
+  "top_scene": [
+    "attic",
+    0.8999962210655212
+  ],
+  "top_object": [
+    "tile roof",
+    0.36031976342201233
+  ],
+  "env_probs": {
+    "indoor": 0.9466654062271118,
+    "outdoor": 0.053334593772888184
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A low hum and then a buzz occurs while sawing",
+    "casv": "Sawing or drilling sound indoors"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.31719255447387695,
+    "clap_gt_audio_baseline": 0.40223830938339233,
+    "clap_text_casv": 0.33375805616378784,
+    "clap_gt_audio_casv": 0.2759513258934021
+  },
+  "verdicts": [
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.3046721816062927,
+      "visual": 1.0,
+      "scene_support": 0.7029993416476489,
+      "object_support": 0.8140151211776578,
+      "score": 0.855104338847592,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sawing or drilling sound indoors",
+      "clip_similarity": 0.30057525634765625,
+      "visual": 0.7327358270472043,
+      "scene_support": 1.0,
+      "object_support": 0.6614225760463887,
+      "score": 0.7915211036327984,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Power tool screeches as it is being used",
+      "clip_similarity": 0.2955290675163269,
+      "visual": 0.40354615444435804,
+      "scene_support": 0.6325079502443813,
+      "object_support": 0.9923929584007433,
+      "score": 0.6488887343712806,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking followed by wood clacking then thumping proceeded by a power tool sawing wood",
+      "clip_similarity": 0.2955092191696167,
+      "visual": 0.40225134147289837,
+      "scene_support": 0.41954957532783854,
+      "object_support": 0.6203174806580275,
+      "score": 0.47286065338491917,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sharp air noises spraying",
+      "clip_similarity": 0.295227587223053,
+      "visual": 0.38387899525624075,
+      "scene_support": 0.6129080097985162,
+      "object_support": 0.7114433997020615,
+      "score": 0.5508570209526696,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks then a power tool turns on",
+      "clip_similarity": 0.2946643531322479,
+      "visual": 0.3471362469865464,
+      "scene_support": 0.3104747813828191,
+      "object_support": 0.5236780983196911,
+      "score": 0.3891003627053716,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is filing down some wood at an angle",
+      "clip_similarity": 0.294596791267395,
+      "visual": 0.3427288280581694,
+      "scene_support": 0.48216690976850657,
+      "object_support": 0.5788223421807173,
+      "score": 0.4553883068080349,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric saw works and some wood is hit",
+      "clip_similarity": 0.2925533652305603,
+      "visual": 0.20942530523368846,
+      "scene_support": 0.7355645196935754,
+      "object_support": 0.6992919957071233,
+      "score": 0.514227076713685,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Saws sound along with wind noise, and then static noise occurs",
+      "clip_similarity": 0.29176416993141174,
+      "visual": 0.1579419083910102,
+      "scene_support": 0.6464676953712944,
+      "object_support": 0.8616204007752807,
+      "score": 0.5156031922003766,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.95)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drilling with a man speaking briefly followed by metal rattling",
+      "clip_similarity": 0.29119226336479187,
+      "visual": 0.12063340850766001,
+      "scene_support": 0.3672844245000128,
+      "object_support": 0.5399213506543433,
+      "score": 0.32041509594937084,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone is drilling wood and making a lot of clicks and thumps",
+      "clip_similarity": 0.29085084795951843,
+      "visual": 0.09836107006765689,
+      "scene_support": 0.5609365585619538,
+      "object_support": 0.7180324849028497,
+      "score": 0.42303514106650375,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man narrates, the sound of a power tool spinning followed by several loud scratches",
+      "clip_similarity": 0.29083168506622314,
+      "visual": 0.09711097285947586,
+      "scene_support": 0.6641222395146338,
+      "object_support": 1.0,
+      "score": 0.5380810609981804,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High-pitched metal rasping and scraping are occurring",
+      "clip_similarity": 0.2904146909713745,
+      "visual": 0.06990823547709775,
+      "scene_support": 0.4101889913251028,
+      "object_support": 0.8976437232696343,
+      "score": 0.4203131085692602,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sanding sound while two men are talking",
+      "clip_similarity": 0.29035428166389465,
+      "visual": 0.06596741581771522,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.02638696632708609,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music plays loudly nearby, and then a power tool moves, after which music starts to play",
+      "clip_similarity": 0.289981871843338,
+      "visual": 0.04167314721206937,
+      "scene_support": 0.4535343983287621,
+      "object_support": 0.6125686780182287,
+      "score": 0.336500181788925,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High pitched vibrations of a power tool with some rustling and scraping",
+      "clip_similarity": 0.2898287773132324,
+      "visual": 0.03168597869196672,
+      "scene_support": 0.3842939927092711,
+      "object_support": 0.5639742747761457,
+      "score": 0.29715487172241173,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is talking as power tools are used to drill",
+      "clip_similarity": 0.2898142337799072,
+      "visual": 0.030737226845011276,
+      "scene_support": 0.34114923196102925,
+      "object_support": 0.6529617645645454,
+      "score": 0.31052818969567686,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with some light rustling then vibrations from a power tool",
+      "clip_similarity": 0.2896063029766083,
+      "visual": 0.017172797262617622,
+      "scene_support": 0.2261795091901801,
+      "object_support": 0.29630940748690515,
+      "score": 0.1636157939081726,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Heavy machinery humming followed by wood clacking then a motor starting up before a man speaking over radio static during wood clanking several times in the background",
+      "clip_similarity": 0.28953835368156433,
+      "visual": 0.012740104207170075,
+      "scene_support": 0.5336294755746626,
+      "object_support": 0.7830439379134697,
+      "score": 0.40009806572930773,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.97)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whooshing and vibrations followed by a power tool running",
+      "clip_similarity": 0.28934305906295776,
+      "visual": 0.0,
+      "scene_support": 0.2681174844891721,
+      "object_support": 0.625916641304522,
+      "score": 0.2682102377381082,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "attic",
+      0.8999962210655212
+    ],
+    [
+      "construction site",
+      0.021754944697022438
+    ],
+    [
+      "manufactured home",
+      0.013957570306956768
+    ],
+    [
+      "indoor bow window",
+      0.006495826877653599
+    ],
+    [
+      "childs room",
+      0.003532534698024392
+    ]
+  ],
+  "top_objects": [
+    [
+      "tile roof",
+      0.36031976342201233
+    ],
+    [
+      "dome",
+      0.03993154317140579
+    ],
+    [
+      "diaper",
+      0.03354303166270256
+    ],
+    [
+      "solar thermal collector",
+      0.024162396788597107
+    ],
+    [
+      "mobile home",
+      0.01420691516250372
+    ]
+  ]
+}

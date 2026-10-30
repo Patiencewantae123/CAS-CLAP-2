@@ -1,0 +1,287 @@
+{
+  "id": "Lxu-3_h4kc4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Lxu-3_h4kc4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Lxu-3_h4kc4.wav",
+  "gt_captions": [
+    "Two large loud burps",
+    "A kid laughing as someone does a series of belching",
+    "Burping and then laughter",
+    "Loud burps and laughter",
+    "A series of belching followed by a group of kids laughing"
+  ],
+  "top_scene": [
+    "childs room",
+    0.17488312721252441
+  ],
+  "top_object": [
+    "pajamas",
+    0.03376235440373421
+  ],
+  "env_probs": {
+    "indoor": 0.7449067234992981,
+    "outdoor": 0.2550932765007019
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A kid trying to sing like a duck using a type of quack speech",
+    "casv": "A young kid speaks and then begins to burp"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.12034548819065094,
+    "clap_gt_audio_baseline": 0.22541165351867676,
+    "clap_text_casv": 0.19794800877571106,
+    "clap_gt_audio_casv": 0.4167860746383667
+  },
+  "verdicts": [
+    {
+      "caption": "A kid trying to sing like a duck using a type of quack speech",
+      "clip_similarity": 0.3162863254547119,
+      "visual": 1.0,
+      "scene_support": 0.5365069333608328,
+      "object_support": 0.4858914516529575,
+      "score": 0.706719515504137,
+      "conflicts": [
+        "names 'ducks or geese', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young kid speaks and then begins to burp",
+      "clip_similarity": 0.311975359916687,
+      "visual": 0.7395844210086666,
+      "scene_support": 0.9255362628442437,
+      "object_support": 0.9250860308241221,
+      "score": 0.8510204565039763,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy coughing then sneezing before talking",
+      "clip_similarity": 0.3106116056442261,
+      "visual": 0.6572031411463528,
+      "scene_support": 0.31529927880180625,
+      "object_support": 0.2591775503894827,
+      "score": 0.43522430521592786,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy speaking with a constant hissing noise throughout",
+      "clip_similarity": 0.3098774552345276,
+      "visual": 0.6128547921925014,
+      "scene_support": 0.7522017689838418,
+      "object_support": 0.6810118948067284,
+      "score": 0.6751060160141716,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy is burping and talking",
+      "clip_similarity": 0.3094683587551117,
+      "visual": 0.5881422085240141,
+      "scene_support": 0.6260100606343857,
+      "object_support": 0.6218019086426135,
+      "score": 0.6096004741927055,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy is talking while making meowing sounds, followed by a male laughing",
+      "clip_similarity": 0.3092764616012573,
+      "visual": 0.5765501398825491,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23062005595301965,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young man speaks as a child yells and burps",
+      "clip_similarity": 0.30902981758117676,
+      "visual": 0.5616509381312268,
+      "scene_support": 0.8313400965571135,
+      "object_support": 0.7940723621859684,
+      "score": 0.7122841128754153,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child screaming followed by a young boy talking",
+      "clip_similarity": 0.30805474519729614,
+      "visual": 0.5027490431457551,
+      "scene_support": 0.5344274454560162,
+      "object_support": 0.4001672469629472,
+      "score": 0.48147802498399106,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Boy speaks followed by whistling",
+      "clip_similarity": 0.3077724277973175,
+      "visual": 0.4856948940169155,
+      "scene_support": 0.6909093833343898,
+      "object_support": 0.788126986057685,
+      "score": 0.6379888684243886,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid singing followed by a hiccup and another kid speaking",
+      "clip_similarity": 0.3046991229057312,
+      "visual": 0.3000435670230041,
+      "scene_support": 0.8542717014619803,
+      "object_support": 0.8939497144131405,
+      "score": 0.6444838515717379,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male child speech to an audience, followed by an uproar of laughter",
+      "clip_similarity": 0.3026423156261444,
+      "visual": 0.1757965384019904,
+      "scene_support": 0.7642860724452716,
+      "object_support": 0.7731892982216073,
+      "score": 0.5315612265608598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A grown male speaks as a child speaks in the background",
+      "clip_similarity": 0.3024904131889343,
+      "visual": 0.16662045921802596,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6666481836872103,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young man speaking followed by rapid tapping",
+      "clip_similarity": 0.3020056486129761,
+      "visual": 0.13733693871452077,
+      "scene_support": 0.7259243456188369,
+      "object_support": 0.8276697429971669,
+      "score": 0.5210130020706094,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.3017447888851166,
+      "visual": 0.12157899853456378,
+      "scene_support": 0.8272132875303574,
+      "object_support": 0.7278278673984988,
+      "score": 0.5151439458924824,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Typing on a computer keyboard as a young boy is speaking",
+      "clip_similarity": 0.301646888256073,
+      "visual": 0.11566504520528709,
+      "scene_support": 0.221305100989507,
+      "object_support": 0.291509935990026,
+      "score": 0.20011052917597472,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child is speaking along with tapping in the background",
+      "clip_similarity": 0.3009501099586487,
+      "visual": 0.07357426017073952,
+      "scene_support": 0.7331003764459678,
+      "object_support": 0.8338842346931018,
+      "score": 0.49952508741001667,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid sings as a dog barks",
+      "clip_similarity": 0.30093109607696533,
+      "visual": 0.07242567501881303,
+      "scene_support": 0.6829272907716338,
+      "object_support": 0.6566419850694075,
+      "score": 0.43084105275983764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid speaking and singing",
+      "clip_similarity": 0.30027875304222107,
+      "visual": 0.03301912268257643,
+      "scene_support": 0.781732767828676,
+      "object_support": 0.7883114645259055,
+      "score": 0.484220918779405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child pretending to be a cat meowing",
+      "clip_similarity": 0.3002639412879944,
+      "visual": 0.03212437844980611,
+      "scene_support": 0.38683867696129864,
+      "object_support": 0.43658349931327384,
+      "score": 0.2598764042622942,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young boy speaks as small beeping of an alarm rings followed by a muffled digital female voice",
+      "clip_similarity": 0.29973214864730835,
+      "visual": 0.0,
+      "scene_support": 0.709599703308732,
+      "object_support": 0.7027773132028807,
+      "score": 0.4237131049534838,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.17488312721252441
+    ],
+    [
+      "closet",
+      0.03144758939743042
+    ],
+    [
+      "locker room",
+      0.027777982875704765
+    ],
+    [
+      "music studio",
+      0.024118468165397644
+    ],
+    [
+      "bathroom",
+      0.02331932820379734
+    ]
+  ],
+  "top_objects": [
+    [
+      "pajamas",
+      0.03376235440373421
+    ],
+    [
+      "chain mail",
+      0.030267441645264626
+    ],
+    [
+      "cardigan",
+      0.029846252873539925
+    ],
+    [
+      "iPod",
+      0.01884966529905796
+    ],
+    [
+      "bra",
+      0.016423698514699936
+    ]
+  ]
+}

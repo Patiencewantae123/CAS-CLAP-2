@@ -1,0 +1,283 @@
+{
+  "id": "_9mgOkzm-xg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\_9mgOkzm-xg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\_9mgOkzm-xg.wav",
+  "gt_captions": [
+    "A man talking while wood clanks on a metal pan followed by gravel crunching as food and oil sizzle",
+    "Food and oil sizzling as a man is speaking followed by wooden clanking then gravel scraping",
+    "A man speaks as food sizzles followed by some cracks",
+    "A man speaks as food sizzles with some banging and some cracking",
+    "A man is talking, and food is frying"
+  ],
+  "top_scene": [
+    "galley",
+    0.28007468581199646
+  ],
+  "top_object": [
+    "frying pan",
+    0.34829291701316833
+  ],
+  "env_probs": {
+    "indoor": 0.8484455347061157,
+    "outdoor": 0.15155446529388428
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A man puts ingredients into a frying pan and it begins to sizzle",
+    "casv": "Food frying in a pan"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1516834795475006,
+    "clap_gt_audio_baseline": 0.24579545855522156,
+    "clap_text_casv": 0.39669016003608704,
+    "clap_gt_audio_casv": 0.45399731397628784
+  },
+  "verdicts": [
+    {
+      "caption": "A man puts ingredients into a frying pan and it begins to sizzle",
+      "clip_similarity": 0.3321106433868408,
+      "visual": 1.0,
+      "scene_support": 0.2175493238575116,
+      "object_support": 0.6482086906401531,
+      "score": 0.6597274043492994,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man in his 40s is making a salad a demonstrating his cooking abilities",
+      "clip_similarity": 0.31438517570495605,
+      "visual": 0.5387829356013902,
+      "scene_support": 0.17877391928598274,
+      "object_support": 0.0,
+      "score": 0.2691453500263509,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frying food in a skillet",
+      "clip_similarity": 0.31332433223724365,
+      "visual": 0.5111797649124277,
+      "scene_support": 0.3416156756136367,
+      "object_support": 0.8244570444317104,
+      "score": 0.5542937219785752,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food frying in a pan",
+      "clip_similarity": 0.3130037486553192,
+      "visual": 0.5028381729610519,
+      "scene_support": 0.7264540607931875,
+      "object_support": 1.0,
+      "score": 0.719071487422377,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks and puts food into cookware causing it to sizzle",
+      "clip_similarity": 0.30825182795524597,
+      "visual": 0.3791930903671169,
+      "scene_support": 0.5667377053238485,
+      "object_support": 0.6207377024459391,
+      "score": 0.507919858477783,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food fries and squishes in the pan while a woman speaks",
+      "clip_similarity": 0.3057589828968048,
+      "visual": 0.3143292063506834,
+      "scene_support": 0.7358698709826964,
+      "object_support": 0.6088829910225091,
+      "score": 0.529157541141835,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sizzling sounds are in the background while a series of clanking pots and pans are followed by a low voice male narrating",
+      "clip_similarity": 0.30404913425445557,
+      "visual": 0.26983890654346204,
+      "scene_support": 1.0,
+      "object_support": 0.6914802639295204,
+      "score": 0.6153796417962409,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A food item is frying and sizzling",
+      "clip_similarity": 0.3018961250782013,
+      "visual": 0.21381755976060088,
+      "scene_support": 0.9219932532029282,
+      "object_support": 0.9257998143512515,
+      "score": 0.6398649441704942,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Food sizzles in a pan, and then a woman speaks quickly",
+      "clip_similarity": 0.301393061876297,
+      "visual": 0.2007278440276621,
+      "scene_support": 0.7088745811382238,
+      "object_support": 0.6957458287675135,
+      "score": 0.5016772605827859,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sizzling and frying sounds are followed by a man speaking in the background",
+      "clip_similarity": 0.30031678080558777,
+      "visual": 0.17272298656443041,
+      "scene_support": 0.8429913650899385,
+      "object_support": 0.712220647223814,
+      "score": 0.5356527983198979,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food is sizzling in a pan and being stirred around",
+      "clip_similarity": 0.29996901750564575,
+      "visual": 0.16367417774407125,
+      "scene_support": 0.9336761492396913,
+      "object_support": 0.9176265779305861,
+      "score": 0.6208604892487117,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Silverware mixing in a dish repeatedly",
+      "clip_similarity": 0.2996355891227722,
+      "visual": 0.1549983637855334,
+      "scene_support": 0.9003409405458199,
+      "object_support": 0.6079219068874345,
+      "score": 0.5144781997441897,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food sizzles in a pan while a ladle scrapes against a pan several times",
+      "clip_similarity": 0.2989061772823334,
+      "visual": 0.13601905142986534,
+      "scene_support": 0.9121053022443565,
+      "object_support": 0.8915268436696793,
+      "score": 0.5954972643461569,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Liquid being drained off vegetables as a man explains",
+      "clip_similarity": 0.29691025614738464,
+      "visual": 0.0840851389851748,
+      "scene_support": 0.5036634793038962,
+      "object_support": 0.11528854305945116,
+      "score": 0.21931966230307415,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman narrating a recipe and scraping can",
+      "clip_similarity": 0.29642874002456665,
+      "visual": 0.07155607873060775,
+      "scene_support": 0.5855999315868475,
+      "object_support": 0.12163712706886094,
+      "score": 0.24079354908895567,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks while food fries in a pan",
+      "clip_similarity": 0.29632532596588135,
+      "visual": 0.06886524261726075,
+      "scene_support": 0.0,
+      "object_support": 0.2589116425892974,
+      "score": 0.10521958982369352,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person speaks while frying some food",
+      "clip_similarity": 0.295454740524292,
+      "visual": 0.046212590011182095,
+      "scene_support": 0.7506741170990123,
+      "object_support": 0.6434116476158881,
+      "score": 0.43671076541894294,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays nearby as food fries in a pan",
+      "clip_similarity": 0.2948032319545746,
+      "visual": 0.029260322497095915,
+      "scene_support": 0.1149944076748755,
+      "object_support": 0.3623987560863635,
+      "score": 0.15492207812721007,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying on hot surface",
+      "clip_similarity": 0.29461759328842163,
+      "visual": 0.02443000026365541,
+      "scene_support": 0.9672944623603887,
+      "object_support": 0.7765161035209592,
+      "score": 0.5329151698698665,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frying, skillet scraping back and forth with a male voice",
+      "clip_similarity": 0.2936787009239197,
+      "visual": 0.0,
+      "scene_support": 0.9457749252293753,
+      "object_support": 0.7048148036446134,
+      "score": 0.4951769186621966,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "galley",
+      0.28007468581199646
+    ],
+    [
+      "kitchen",
+      0.23414956033229828
+    ],
+    [
+      "assembly line",
+      0.15209048986434937
+    ],
+    [
+      "delicatessen",
+      0.07385008037090302
+    ],
+    [
+      "vegetable garden",
+      0.061993297189474106
+    ]
+  ],
+  "top_objects": [
+    [
+      "frying pan",
+      0.34829291701316833
+    ],
+    [
+      "Dutch oven",
+      0.1738029420375824
+    ],
+    [
+      "wok",
+      0.12619362771511078
+    ],
+    [
+      "guacamole",
+      0.06456585973501205
+    ],
+    [
+      "mixing bowl",
+      0.05699765309691429
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "AI1OweEW8C0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AI1OweEW8C0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AI1OweEW8C0.wav",
+  "gt_captions": [
+    "Wind blowing into a microphone followed by thunder roaring in the distance while a stream of water trickles in the background",
+    "Rain falling and dripping from a roof, then thunder rolls",
+    "Light rain and water dripping followed by thunder",
+    "Rain is falling, splashing on a surface and gurgling, and thunder crashes",
+    "Rain lightly falling while water trickles and splashes followed by wind blowing into a microphone then thunder roaring in the distance"
+  ],
+  "top_scene": [
+    "sky",
+    0.07442830502986908
+  ],
+  "top_object": [
+    "yawl",
+    0.06622711569070816
+  ],
+  "env_probs": {
+    "indoor": 0.15577879548072815,
+    "outdoor": 0.8442212045192719
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A woman speaks while thunder rolls in the background",
+    "casv": "Background low roar and wind blowing and thunder clap"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.19081461429595947,
+    "clap_gt_audio_baseline": 0.2967304289340973,
+    "clap_text_casv": 0.488177627325058,
+    "clap_gt_audio_casv": 0.5139188766479492
+  },
+  "verdicts": [
+    {
+      "caption": "A woman speaks while thunder rolls in the background",
+      "clip_similarity": 0.28486090898513794,
+      "visual": 1.0,
+      "scene_support": 0.461626273090679,
+      "object_support": 0.46105934924191794,
+      "score": 0.676805686699779,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Thunder booms while rain falls",
+      "clip_similarity": 0.28166428208351135,
+      "visual": 0.7424371947383335,
+      "scene_support": 0.3141415317886988,
+      "object_support": 0.36350526136467876,
+      "score": 0.5002689158413467,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Distant booms and cracks of thunder with music playing and a woman speaking",
+      "clip_similarity": 0.27927547693252563,
+      "visual": 0.5499632605427834,
+      "scene_support": 0.5770726866410704,
+      "object_support": 0.49256594724220626,
+      "score": 0.5408768943820963,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck and cars moving, strong winds",
+      "clip_similarity": 0.2784883975982666,
+      "visual": 0.48654567458926246,
+      "scene_support": 0.6130471829388651,
+      "object_support": 0.711341091061577,
+      "score": 0.5919347520358376,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Background low roar and wind blowing and thunder clap",
+      "clip_similarity": 0.27726632356643677,
+      "visual": 0.3880791267055032,
+      "scene_support": 0.897996770148599,
+      "object_support": 0.8912122760807747,
+      "score": 0.6919943645510134,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Thunder booms as it rains",
+      "clip_similarity": 0.2767760753631592,
+      "visual": 0.34857820701843695,
+      "scene_support": 0.3868486063347861,
+      "object_support": 0.43659564151957125,
+      "score": 0.386464557163682,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female voice talking while a thunderstorm is happening, with heavy pouring rain at the end",
+      "clip_similarity": 0.27602991461753845,
+      "visual": 0.2884575671275508,
+      "scene_support": 0.0,
+      "object_support": 0.032995243149742504,
+      "score": 0.12528159979594305,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A thunderstorm with clanking while a kid speaks",
+      "clip_similarity": 0.2756772041320801,
+      "visual": 0.2600385163982845,
+      "scene_support": 0.5905335793523814,
+      "object_support": 0.5880790449607527,
+      "score": 0.457599193853254,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High winds while dog barking",
+      "clip_similarity": 0.27479487657546997,
+      "visual": 0.18894646604841925,
+      "scene_support": 0.834902283713362,
+      "object_support": 0.7299275333831295,
+      "score": 0.5450275315483151,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Winds gushing as thunder later erupts",
+      "clip_similarity": 0.27437347173690796,
+      "visual": 0.15499248401953675,
+      "scene_support": 0.5962515469843936,
+      "object_support": 0.5720964212236768,
+      "score": 0.41250138407023584,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunder rolls in sky and a car horn honks",
+      "clip_similarity": 0.27426016330718994,
+      "visual": 0.14586284896481178,
+      "scene_support": 0.8527802127669719,
+      "object_support": 0.9135983016865197,
+      "score": 0.588258693921972,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud and heavy rainfall on metal with faint yell in background",
+      "clip_similarity": 0.2742016613483429,
+      "visual": 0.1411491525912123,
+      "scene_support": 0.08180337683620321,
+      "object_support": 0.0,
+      "score": 0.08100067408734589,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thunder and dogs barking from a distance",
+      "clip_similarity": 0.27417925000190735,
+      "visual": 0.1393433962626607,
+      "scene_support": 0.7551517900746435,
+      "object_support": 0.5965751988573076,
+      "score": 0.4612554551846496,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sirens ring out as wind blows and traffic passes",
+      "clip_similarity": 0.2738586664199829,
+      "visual": 0.11351291644054691,
+      "scene_support": 0.5930080732662707,
+      "object_support": 0.6677359751543028,
+      "score": 0.4236283811023908,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person speaks nearby as a thunderstorm roars in the distance",
+      "clip_similarity": 0.2732390761375427,
+      "visual": 0.06359047751689295,
+      "scene_support": 0.754253398257297,
+      "object_support": 0.6583565934137936,
+      "score": 0.44921918850808434,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing as rain falls and thunder roars multiple times",
+      "clip_similarity": 0.2728542387485504,
+      "visual": 0.0325828558804743,
+      "scene_support": 0.7180595826530689,
+      "object_support": 0.720748646984052,
+      "score": 0.444675611243326,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Emergency horns and sirens going off",
+      "clip_similarity": 0.27277839183807373,
+      "visual": 0.02647161936961815,
+      "scene_support": 0.6948703121349644,
+      "object_support": 0.8470993696845802,
+      "score": 0.47317955229371067,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sirens ring with people speaking and wind blowing",
+      "clip_similarity": 0.27249523997306824,
+      "visual": 0.0036571368196596917,
+      "scene_support": 0.6686473515831517,
+      "object_support": 0.8517238668081928,
+      "score": 0.45757422024526717,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A thunder storm is rolling",
+      "clip_similarity": 0.27248919010162354,
+      "visual": 0.0031696786618192994,
+      "scene_support": 0.9406080593715072,
+      "object_support": 0.8783045694591868,
+      "score": 0.5469416601139359,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sirens ring out and cars speed by in the background",
+      "clip_similarity": 0.2724498510360718,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sky",
+      0.07442830502986908
+    ],
+    [
+      "residential neighborhood",
+      0.056357018649578094
+    ],
+    [
+      "yard",
+      0.03377287834882736
+    ],
+    [
+      "porch",
+      0.031409911811351776
+    ],
+    [
+      "shed",
+      0.030404068529605865
+    ]
+  ],
+  "top_objects": [
+    [
+      "yawl",
+      0.06622711569070816
+    ],
+    [
+      "harmonica",
+      0.024195997044444084
+    ],
+    [
+      "mobile home",
+      0.0194451455026865
+    ],
+    [
+      "convertible",
+      0.01707819476723671
+    ],
+    [
+      "dome",
+      0.015008457936346531
+    ]
+  ]
+}

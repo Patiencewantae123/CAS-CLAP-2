@@ -1,0 +1,283 @@
+{
+  "id": "-EaZ7EJJUl0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-EaZ7EJJUl0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-EaZ7EJJUl0.wav",
+  "gt_captions": [
+    "A man speaks with some clinking and clanking",
+    "Man speaking and clinking dishes",
+    "A person speaks with distant humming and nearby clinking",
+    "Cup being set down followed a man talking and mixing something in the cup",
+    "Dishes clanking followed by metal clanking on glass several times as a man is talking"
+  ],
+  "top_scene": [
+    "delicatessen",
+    0.307002454996109
+  ],
+  "top_object": [
+    "hot pot",
+    0.5304226875305176
+  ],
+  "env_probs": {
+    "indoor": 0.9604518413543701,
+    "outdoor": 0.03954815864562988
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A man in his 40s is making a salad a demonstrating his cooking abilities",
+    "casv": "Silverware mixing in a dish repeatedly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.24633610248565674,
+    "clap_gt_audio_baseline": 0.49227434396743774,
+    "clap_text_casv": -0.0005374513566493988,
+    "clap_gt_audio_casv": 0.18228012323379517
+  },
+  "verdicts": [
+    {
+      "caption": "A man in his 40s is making a salad a demonstrating his cooking abilities",
+      "clip_similarity": 0.30014851689338684,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Silverware mixing in a dish repeatedly",
+      "clip_similarity": 0.2997216284275055,
+      "visual": 0.9799496641946691,
+      "scene_support": 0.5646885813759901,
+      "object_support": 0.8930702248451106,
+      "score": 0.8293075075441979,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Food sizzling and utensil falling on dish. Begin to stir food in dish",
+      "clip_similarity": 0.29875481128692627,
+      "visual": 0.9345396569438496,
+      "scene_support": 0.5329409423741027,
+      "object_support": 0.8770374874767604,
+      "score": 0.7968093917327987,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Silverware clanks against each other, a dish is set on a wooden table, and a plastic bag crinkles",
+      "clip_similarity": 0.29142192006111145,
+      "visual": 0.5901243277594408,
+      "scene_support": 0.4060861807973331,
+      "object_support": 0.2664721099353527,
+      "score": 0.43781721832358206,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking followed by food sizzling and glass tapping then stirring and more sizzling",
+      "clip_similarity": 0.2873641550540924,
+      "visual": 0.3995369553836635,
+      "scene_support": 0.5212626213270256,
+      "object_support": 0.5939245465465764,
+      "score": 0.49437093251554604,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sizzling and frying sounds are followed by a man speaking in the background",
+      "clip_similarity": 0.28494498133659363,
+      "visual": 0.285911853550242,
+      "scene_support": 0.5277477865704018,
+      "object_support": 0.8373209986691722,
+      "score": 0.5238853769919689,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man puts ingredients into a frying pan and it begins to sizzle",
+      "clip_similarity": 0.2837250530719757,
+      "visual": 0.22861358170889778,
+      "scene_support": 0.007449462689695204,
+      "object_support": 0.4051373942689668,
+      "score": 0.2152214897711577,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frying food with female narration",
+      "clip_similarity": 0.28368669748306274,
+      "visual": 0.22681207499419095,
+      "scene_support": 0.48160986260036914,
+      "object_support": 0.6357922911671908,
+      "score": 0.4259454761279444,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food sizzles in a pan, and then a woman speaks quickly",
+      "clip_similarity": 0.28364527225494385,
+      "visual": 0.22486639175142287,
+      "scene_support": 0.4330001660145787,
+      "object_support": 0.8204135036660071,
+      "score": 0.4659706576047449,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man and woman speaking while stir frying food",
+      "clip_similarity": 0.2834892272949219,
+      "visual": 0.21753718494629073,
+      "scene_support": 0.03859191379486956,
+      "object_support": 0.1799937196887757,
+      "score": 0.15259056402360988,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food sizzles as something is used to stir the food scraps",
+      "clip_similarity": 0.28213679790496826,
+      "visual": 0.15401552627232287,
+      "scene_support": 0.569474353887351,
+      "object_support": 0.7476760356283053,
+      "score": 0.456751327363626,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food sizzles in a frying pan while a woman talks",
+      "clip_similarity": 0.2818990647792816,
+      "visual": 0.14284954409422146,
+      "scene_support": 0.22177860091704413,
+      "object_support": 0.7161274404741137,
+      "score": 0.33851163005503593,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food being prepared",
+      "clip_similarity": 0.2818710207939148,
+      "visual": 0.14153235853203097,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6566129434128123,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Frying and stirring food with female voice",
+      "clip_similarity": 0.28172194957733154,
+      "visual": 0.13453069840230011,
+      "scene_support": 0.5044892618395279,
+      "object_support": 0.7391273358022599,
+      "score": 0.4268972586534564,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dishes scraping and clinking food frying while woman speaks",
+      "clip_similarity": 0.2808675169944763,
+      "visual": 0.09439923180506214,
+      "scene_support": 0.3627037848576651,
+      "object_support": 0.34374585673912283,
+      "score": 0.24969458520106122,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks and puts food into cookware causing it to sizzle",
+      "clip_similarity": 0.2808219790458679,
+      "visual": 0.09226038001013435,
+      "scene_support": 0.30724549631490805,
+      "object_support": 0.5868477323590544,
+      "score": 0.3051321206062425,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food sizzling with mechanical humming",
+      "clip_similarity": 0.28008776903152466,
+      "visual": 0.057775594133275106,
+      "scene_support": 0.524460854900511,
+      "object_support": 0.9564535182203792,
+      "score": 0.4673845495895771,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dishes and plates clacking as a group of people sing during repeated thumping on a hard surface",
+      "clip_similarity": 0.27945995330810547,
+      "visual": 0.028287994714460484,
+      "scene_support": 0.36551072638638854,
+      "object_support": 0.5037138570581228,
+      "score": 0.2720825729191376,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A continuous sizzle is interrupted by a few sizzles and taps",
+      "clip_similarity": 0.2794423997402191,
+      "visual": 0.027463528937488976,
+      "scene_support": 0.5479446570974764,
+      "object_support": 0.7601329830979878,
+      "score": 0.4034087036336348,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food sizzles in a pan while a ladle scrapes against a pan several times",
+      "clip_similarity": 0.27885767817497253,
+      "visual": 0.0,
+      "scene_support": 0.5825063020782435,
+      "object_support": 0.9843281313083483,
+      "score": 0.4700503300159775,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "delicatessen",
+      0.307002454996109
+    ],
+    [
+      "restaurant kitchen",
+      0.2733360826969147
+    ],
+    [
+      "kitchen",
+      0.12351609766483307
+    ],
+    [
+      "sushi bar",
+      0.09955358505249023
+    ],
+    [
+      "assembly line",
+      0.024407733231782913
+    ]
+  ],
+  "top_objects": [
+    [
+      "hot pot",
+      0.5304226875305176
+    ],
+    [
+      "soup bowl",
+      0.09418004006147385
+    ],
+    [
+      "carbonara",
+      0.07385623455047607
+    ],
+    [
+      "mixing bowl",
+      0.05943986028432846
+    ],
+    [
+      "wok",
+      0.05315375328063965
+    ]
+  ]
+}

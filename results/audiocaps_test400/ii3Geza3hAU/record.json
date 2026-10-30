@@ -1,0 +1,283 @@
+{
+  "id": "ii3Geza3hAU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ii3Geza3hAU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ii3Geza3hAU.wav",
+  "gt_captions": [
+    "Vibrations from a sewing machine in bursts",
+    "A sewing machine stitches rapidly then slows and then returns to rapid sewing",
+    "Vibrations from a sewing machine",
+    "Sewing machine running then slowing to a stop followed by starting again",
+    "A man yells in the background, and a sewing machine sews garments"
+  ],
+  "top_scene": [
+    "repair shop",
+    0.24622555077075958
+  ],
+  "top_object": [
+    "sewing machine",
+    0.6916122436523438
+  ],
+  "env_probs": {
+    "indoor": 0.9082946181297302,
+    "outdoor": 0.09170538187026978
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A sewing machine is turned on and begins stitching",
+    "casv": "A sewing machine is turned on and begins stitching"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.04381178691983223,
+    "clap_gt_audio_baseline": 6.390362977981567e-05,
+    "clap_text_casv": -0.04381178691983223,
+    "clap_gt_audio_casv": 6.390362977981567e-05
+  },
+  "verdicts": [
+    {
+      "caption": "A sewing machine is turned on and begins stitching",
+      "clip_similarity": 0.3536839783191681,
+      "visual": 1.0,
+      "scene_support": 0.5642632862447602,
+      "object_support": 0.5687078494616323,
+      "score": 0.7398913407119178,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sewing machine being used",
+      "clip_similarity": 0.3477437496185303,
+      "visual": 0.6316952613246857,
+      "scene_support": 0.5515406399343277,
+      "object_support": 0.6888998752105396,
+      "score": 0.6248102590733344,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine running and making stitches",
+      "clip_similarity": 0.34673649072647095,
+      "visual": 0.5692434195330617,
+      "scene_support": 0.27561768946292625,
+      "object_support": 0.3437165438092835,
+      "score": 0.41349763779488763,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is being used in an articulate way",
+      "clip_similarity": 0.3440801501274109,
+      "visual": 0.40454558053161116,
+      "scene_support": 0.5064940154404318,
+      "object_support": 0.5773530996201763,
+      "score": 0.4869723667308269,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine clicks then is used lightly",
+      "clip_similarity": 0.34364378452301025,
+      "visual": 0.3774901373837043,
+      "scene_support": 0.9140373999737366,
+      "object_support": 0.7686267022168882,
+      "score": 0.6557952856106691,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sewing machine working as someone gives a short speech",
+      "clip_similarity": 0.3434198498725891,
+      "visual": 0.3636057909956854,
+      "scene_support": 0.0,
+      "object_support": 0.16427748266244793,
+      "score": 0.19472556119700857,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is in use with low music in the background",
+      "clip_similarity": 0.34339624643325806,
+      "visual": 0.36214233580014227,
+      "scene_support": 0.8082438347932922,
+      "object_support": 0.6802048456497576,
+      "score": 0.5913915384529718,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine tapping and clicking",
+      "clip_similarity": 0.34305042028427124,
+      "visual": 0.3407004998290788,
+      "scene_support": 0.12139831542675007,
+      "object_support": 0.0,
+      "score": 0.17269969455965653,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine operating and fabric shuffling",
+      "clip_similarity": 0.34293410181999207,
+      "visual": 0.3334885482783152,
+      "scene_support": 0.042459468694589796,
+      "object_support": 0.15033652239732145,
+      "score": 0.19123421663889945,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sewing on a machine",
+      "clip_similarity": 0.3428231179714203,
+      "visual": 0.32660735238412003,
+      "scene_support": 0.4906493190410679,
+      "object_support": 0.5092664698220898,
+      "score": 0.4306176776125953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A heavy duty sewing machine is being used",
+      "clip_similarity": 0.34235265851020813,
+      "visual": 0.2974380295093175,
+      "scene_support": 0.5146996238551853,
+      "object_support": 0.5465962481332725,
+      "score": 0.43736397340026434,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine being used",
+      "clip_similarity": 0.34127718210220337,
+      "visual": 0.23075658046693828,
+      "scene_support": 0.24023766357074253,
+      "object_support": 0.3901389049895327,
+      "score": 0.2814156027548579,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine being used heavily",
+      "clip_similarity": 0.34083205461502075,
+      "visual": 0.20315788501159493,
+      "scene_support": 0.5014001442427017,
+      "object_support": 0.4902555115345012,
+      "score": 0.37875985073779883,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine working",
+      "clip_similarity": 0.3404814898967743,
+      "visual": 0.18142224932324436,
+      "scene_support": 0.6796416345764469,
+      "object_support": 1.0,
+      "score": 0.5764613901022317,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.34042343497276306,
+      "visual": 0.17782274083723681,
+      "scene_support": 0.5213321755415805,
+      "object_support": 0.10720369322250028,
+      "score": 0.25968985696411895,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is being used",
+      "clip_similarity": 0.3390597105026245,
+      "visual": 0.09326939955837653,
+      "scene_support": 0.7674591764965524,
+      "object_support": 0.6601832973057751,
+      "score": 0.4656005019640488,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine operating",
+      "clip_similarity": 0.33900463581085205,
+      "visual": 0.08985467076877593,
+      "scene_support": 0.7258797395381071,
+      "object_support": 0.8726595157077881,
+      "score": 0.5155036448812789,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine stops and starts several times",
+      "clip_similarity": 0.3384125232696533,
+      "visual": 0.05314264068664135,
+      "scene_support": 0.96515280582306,
+      "object_support": 0.5660688592333972,
+      "score": 0.48062355579159377,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine operating continuously",
+      "clip_similarity": 0.3378942608833313,
+      "visual": 0.021009451481471215,
+      "scene_support": 0.47049590475856534,
+      "object_support": 0.5924730816177624,
+      "score": 0.32729447650548676,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some objects are hit followed by a sewing machine working",
+      "clip_similarity": 0.3375554084777832,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.49354572544954894,
+      "score": 0.44806371763486463,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "repair shop",
+      0.24622555077075958
+    ],
+    [
+      "assembly line",
+      0.1913445144891739
+    ],
+    [
+      "shoe shop",
+      0.10122843086719513
+    ],
+    [
+      "jewelry shop",
+      0.06323113292455673
+    ],
+    [
+      "clothing store",
+      0.05122878775000572
+    ]
+  ],
+  "top_objects": [
+    [
+      "sewing machine",
+      0.6916122436523438
+    ],
+    [
+      "holster",
+      0.09760213643312454
+    ],
+    [
+      "sandal",
+      0.0270890761166811
+    ],
+    [
+      "purse",
+      0.014710276387631893
+    ],
+    [
+      "hand plane",
+      0.013910898007452488
+    ]
+  ]
+}

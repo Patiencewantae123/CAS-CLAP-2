@@ -1,0 +1,287 @@
+{
+  "id": "ajheseWZmmU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ajheseWZmmU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ajheseWZmmU.wav",
+  "gt_captions": [
+    "A cat meowing as a man giggles",
+    "A cat meowing a few times",
+    "A cat meowing as a person makes kissing noises followed by a guy chuckling",
+    "A cat meowing and a person hums",
+    "A cat meowing as a person is kissing aloud followed by a man giggling during light audio static"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.16494672000408173
+  ],
+  "top_object": [
+    "Siamese cat",
+    0.05451755225658417
+  ],
+  "env_probs": {
+    "indoor": 0.9112355709075928,
+    "outdoor": 0.08876442909240723
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A cat meows and something falls to the floor as a man laughs",
+    "casv": "A cat meows and stomps around"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.30954810976982117,
+    "clap_gt_audio_baseline": 0.5373725891113281,
+    "clap_text_casv": -0.04370161518454552,
+    "clap_gt_audio_casv": 0.3782089352607727
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meows and something falls to the floor as a man laughs",
+      "clip_similarity": 0.33545202016830444,
+      "visual": 1.0,
+      "scene_support": 0.5705863362931426,
+      "object_support": 0.432447384870256,
+      "score": 0.7009101163490196,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows while an object clacks",
+      "clip_similarity": 0.3334943950176239,
+      "visual": 0.8293768815765891,
+      "scene_support": 0.48774763630784573,
+      "object_support": 0.4972895815089397,
+      "score": 0.6272619179756713,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows quickly and then lets out a long sustained meow",
+      "clip_similarity": 0.32971543073654175,
+      "visual": 0.5000090913105254,
+      "scene_support": 0.33331255713454666,
+      "object_support": 0.4012764260071799,
+      "score": 0.42038033146672815,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and stomps around",
+      "clip_similarity": 0.32903966307640076,
+      "visual": 0.4411103866923994,
+      "scene_support": 0.8478303255790167,
+      "object_support": 1.0,
+      "score": 0.7307932523506648,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat is making noises while the owner is playing with the cat",
+      "clip_similarity": 0.32842451333999634,
+      "visual": 0.3874950322481772,
+      "scene_support": 1.0,
+      "object_support": 0.758149212855346,
+      "score": 0.6824427767558747,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows and then a dog whimpers",
+      "clip_similarity": 0.328227162361145,
+      "visual": 0.37029427273412074,
+      "scene_support": 0.8255590395642751,
+      "object_support": 0.6151969886616325,
+      "score": 0.5803445175614206,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and hisses in a menacing way",
+      "clip_similarity": 0.32761022448539734,
+      "visual": 0.3165230672523202,
+      "scene_support": 0.3494444764078272,
+      "object_support": 0.43086560695187576,
+      "score": 0.360702251908839,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing and crying with music in the background",
+      "clip_similarity": 0.3271048069000244,
+      "visual": 0.27247177148081864,
+      "scene_support": 0.6252716887533641,
+      "object_support": 0.6240740486026101,
+      "score": 0.48379242979911974,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows loudly as people speak and shout",
+      "clip_similarity": 0.32684722542762756,
+      "visual": 0.25002142951766704,
+      "scene_support": 0.47961295539829574,
+      "object_support": 0.5899496734813021,
+      "score": 0.42087736047094615,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows while music plays lightly in the background",
+      "clip_similarity": 0.326846718788147,
+      "visual": 0.2499772717236865,
+      "scene_support": 0.34160066228129055,
+      "object_support": 0.3644828961665956,
+      "score": 0.31181597622384044,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows following an audibly loud popping sound",
+      "clip_similarity": 0.32649195194244385,
+      "visual": 0.2190564258681552,
+      "scene_support": 0.47102519353828254,
+      "object_support": 0.606745556885166,
+      "score": 0.41095379547429667,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and then cries out as a man is talking and laughing",
+      "clip_similarity": 0.32549944519996643,
+      "visual": 0.13255130746032942,
+      "scene_support": 0.5429148367630043,
+      "object_support": 0.5708865750610933,
+      "score": 0.387160946531361,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows and stops repeatedly",
+      "clip_similarity": 0.32537931203842163,
+      "visual": 0.12208071525236179,
+      "scene_support": 0.8084650224702581,
+      "object_support": 0.7921276364875666,
+      "score": 0.5290100837882921,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and hiss while people laugh",
+      "clip_similarity": 0.3252812922000885,
+      "visual": 0.11353748087577893,
+      "scene_support": 0.07863791240754592,
+      "object_support": 0.15074725634124833,
+      "score": 0.11423054297494985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat repeatedly sneezing",
+      "clip_similarity": 0.3252754211425781,
+      "visual": 0.11302576996906356,
+      "scene_support": 0.3692601755428981,
+      "object_support": 0.44145205684619465,
+      "score": 0.28842397770435324,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows in a distressed manner and a person laughs",
+      "clip_similarity": 0.32511913776397705,
+      "visual": 0.09940438928472166,
+      "scene_support": 0.683261255905235,
+      "object_support": 0.7739135019646141,
+      "score": 0.47691418307484335,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks and sizzling sound occurs while a cat meows in the background",
+      "clip_similarity": 0.3250666856765747,
+      "visual": 0.09483275884909204,
+      "scene_support": 0.3862782796028869,
+      "object_support": 0.30386717956006704,
+      "score": 0.24497674128852298,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-0.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows in an odd manner",
+      "clip_similarity": 0.3249947130680084,
+      "visual": 0.08855975458656616,
+      "scene_support": 0.7762315491373083,
+      "object_support": 0.8254725848085132,
+      "score": 0.5159351420183729,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows while an insect is heard buzzing",
+      "clip_similarity": 0.32441726326942444,
+      "visual": 0.03823025951795274,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.015292103807181096,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows with the faint sounds in the background",
+      "clip_similarity": 0.32397863268852234,
+      "visual": 0.0,
+      "scene_support": 0.8662596129873616,
+      "object_support": 0.8671467018784186,
+      "score": 0.520021894459734,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.16494672000408173
+    ],
+    [
+      "archaelogical excavation",
+      0.1477171778678894
+    ],
+    [
+      "childs room",
+      0.07646209001541138
+    ],
+    [
+      "closet",
+      0.051307495683431625
+    ],
+    [
+      "assembly line",
+      0.04857927933335304
+    ]
+  ],
+  "top_objects": [
+    [
+      "Siamese cat",
+      0.05451755225658417
+    ],
+    [
+      "sock",
+      0.04308565706014633
+    ],
+    [
+      "diaper",
+      0.03144510090351105
+    ],
+    [
+      "pajamas",
+      0.029314471408724785
+    ],
+    [
+      "Persian cat",
+      0.02060120552778244
+    ]
+  ]
+}

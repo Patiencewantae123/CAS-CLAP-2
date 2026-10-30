@@ -1,0 +1,285 @@
+{
+  "id": "OxUVcZmeiyI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\OxUVcZmeiyI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\OxUVcZmeiyI.wav",
+  "gt_captions": [
+    "U'A clock ticking followed by a cuckoo bird cooing then music playing.",
+    "A clock ticking as plastic clanks followed by a cuckoo bird cooing then music box music playing",
+    "A clock ticktocks with music",
+    "Ticking is ongoing, soft clicking occurs, and a cuckoo calls once followed by musical chimes",
+    "A clock ticking followed by plastic clacking then cuckoo bird cooing before bells chiming"
+  ],
+  "top_scene": [
+    "gift shop",
+    0.11920664459466934
+  ],
+  "top_object": [
+    "birdhouse",
+    0.9496745467185974
+  ],
+  "env_probs": {
+    "indoor": 0.4003537595272064,
+    "outdoor": 0.5996462404727936
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A cuckoo clock tick locking and chiming",
+    "casv": "A clock with chimes"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5401586890220642,
+    "clap_gt_audio_baseline": 0.7191998958587646,
+    "clap_text_casv": 0.618738055229187,
+    "clap_gt_audio_casv": 0.8368144035339355
+  },
+  "verdicts": [
+    {
+      "caption": "A cuckoo clock tick locking and chiming",
+      "clip_similarity": 0.3952149748802185,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cuckoo clock chime",
+      "clip_similarity": 0.37587738037109375,
+      "visual": 0.7356434885206576,
+      "scene_support": 0.09309778241262806,
+      "object_support": 0.21637153994345323,
+      "score": 0.38709819211508745,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cuckoo clock makes a cuckoo sound and then plays a chime melody",
+      "clip_similarity": 0.3714378774166107,
+      "visual": 0.6749528212716582,
+      "scene_support": 0.2694434446168618,
+      "object_support": 0.4704266556989449,
+      "score": 0.4919421586034053,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock making high pitched sounds",
+      "clip_similarity": 0.35991591215133667,
+      "visual": 0.5174406476930498,
+      "scene_support": 0.3881381422200667,
+      "object_support": 0.5762063447876616,
+      "score": 0.4962796051795384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cuckoo clock chimes",
+      "clip_similarity": 0.3594662845134735,
+      "visual": 0.5112939682932871,
+      "scene_support": 0.4497560360285906,
+      "object_support": 0.6100627862689834,
+      "score": 0.522463234006587,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock cooing and bell chiming followed by a woman and a man laughing and speaking then another woman speaking",
+      "clip_similarity": 0.3503938913345337,
+      "visual": 0.3872689138625608,
+      "scene_support": 0.5177163406382972,
+      "object_support": 0.4118477977548168,
+      "score": 0.4337768070629585,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock making cuckoo sounds",
+      "clip_similarity": 0.34426650404930115,
+      "visual": 0.30350385578139055,
+      "scene_support": 0.05463770779347175,
+      "object_support": 0.1296470367583589,
+      "score": 0.17668696567810543,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cuckoo clock chimes, followed by ticking, followed again by a cuckoo clock chiming",
+      "clip_similarity": 0.34202027320861816,
+      "visual": 0.27279653338200593,
+      "scene_support": 0.661623004709641,
+      "object_support": 0.7283310578264269,
+      "score": 0.5261048321136227,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock ticking and cooing alarm ringing",
+      "clip_similarity": 0.3416554629802704,
+      "visual": 0.26780935882560003,
+      "scene_support": 0.4955176309777154,
+      "object_support": 0.5609827236230106,
+      "score": 0.4240738499104578,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ringing with a mechanical bird cooing",
+      "clip_similarity": 0.3393807113170624,
+      "visual": 0.23671213968162913,
+      "scene_support": 0.5995647034644298,
+      "object_support": 0.728323673812669,
+      "score": 0.4930513690557813,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock sounds the cuckoo call and chimes",
+      "clip_similarity": 0.33925941586494446,
+      "visual": 0.23505395812419333,
+      "scene_support": 0.6387566156265257,
+      "object_support": 0.8657224482140655,
+      "score": 0.5453653024018548,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Musical chimes with ticking and locking",
+      "clip_similarity": 0.33833032846450806,
+      "visual": 0.2223527762929742,
+      "scene_support": 0.677709837832195,
+      "object_support": 0.5680765456402198,
+      "score": 0.4626770255589141,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock works",
+      "clip_similarity": 0.3380269408226013,
+      "visual": 0.21820528532130426,
+      "scene_support": 0.7242744967121681,
+      "object_support": 1.0,
+      "score": 0.604564463142172,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock with chimes",
+      "clip_similarity": 0.33546870946884155,
+      "visual": 0.18323272883720323,
+      "scene_support": 0.9568069047186667,
+      "object_support": 0.9306205451321997,
+      "score": 0.6395213264901412,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A set of bells chime",
+      "clip_similarity": 0.33273857831954956,
+      "visual": 0.14591019907956665,
+      "scene_support": 0.7166663223151729,
+      "object_support": 0.5312650218529887,
+      "score": 0.43274348288227515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock hoots several times, followed by people talking nearby",
+      "clip_similarity": 0.3321657180786133,
+      "visual": 0.13807885610732304,
+      "scene_support": 0.5072705286955349,
+      "object_support": 0.5513443704648311,
+      "score": 0.372816012191039,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock tick locking and chiming",
+      "clip_similarity": 0.33005744218826294,
+      "visual": 0.10925746059476162,
+      "scene_support": 1.0,
+      "object_support": 0.8800326668768649,
+      "score": 0.6077127843009641,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cuckoo clock tick rocks and then the cuckoo chirps several times",
+      "clip_similarity": 0.3288085162639618,
+      "visual": 0.09218389437179772,
+      "scene_support": 0.27965002289031243,
+      "object_support": 0.16218395498114493,
+      "score": 0.16942375111015628,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cuckoo clock goes off two times and a crowd murmurs",
+      "clip_similarity": 0.32484129071235657,
+      "visual": 0.03794954239078002,
+      "scene_support": 0.7108719741018679,
+      "object_support": 0.6277711280631658,
+      "score": 0.4167727476058221,
+      "conflicts": [
+        "names 'a crowd of people', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Chime clock playing music",
+      "clip_similarity": 0.3220652937889099,
+      "visual": 0.0,
+      "scene_support": 0.6179231690196748,
+      "object_support": 0.45185438429508884,
+      "score": 0.32093326599442906,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "gift shop",
+      0.11920664459466934
+    ],
+    [
+      "oast house",
+      0.0964680165052414
+    ],
+    [
+      "chalet",
+      0.09419074654579163
+    ],
+    [
+      "tower",
+      0.07738363742828369
+    ],
+    [
+      "tree house",
+      0.07408037036657333
+    ]
+  ],
+  "top_objects": [
+    [
+      "birdhouse",
+      0.9496745467185974
+    ],
+    [
+      "chime",
+      0.019942544400691986
+    ],
+    [
+      "barometer",
+      0.005113215651363134
+    ],
+    [
+      "totem pole",
+      0.005026458762586117
+    ],
+    [
+      "wall clock",
+      0.0036259028129279613
+    ]
+  ]
+}

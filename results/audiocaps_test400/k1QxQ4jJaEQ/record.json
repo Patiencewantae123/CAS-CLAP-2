@@ -1,0 +1,291 @@
+{
+  "id": "k1QxQ4jJaEQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\k1QxQ4jJaEQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\k1QxQ4jJaEQ.wav",
+  "gt_captions": [
+    "An engine idling and a man speaking",
+    "A man speaking as a truck engine runs idle",
+    "A man talking as an idle truck engine runs",
+    "A man speaking as well as an engine idling in the background",
+    "Motor sounds with male speaking"
+  ],
+  "top_scene": [
+    "ski resort",
+    0.23496878147125244
+  ],
+  "top_object": [
+    "ski",
+    0.24639156460762024
+  ],
+  "env_probs": {
+    "indoor": 0.04331526532769203,
+    "outdoor": 0.956684734672308
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A man talking with a helicopter in the background",
+    "casv": "A man speaking with rustling in the background followed by laughter"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.45932507514953613,
+    "clap_gt_audio_baseline": 0.6017736792564392,
+    "clap_text_casv": 0.0756496787071228,
+    "clap_gt_audio_casv": 0.1828799545764923
+  },
+  "verdicts": [
+    {
+      "caption": "A man talking with a helicopter in the background",
+      "clip_similarity": 0.3067188560962677,
+      "visual": 1.0,
+      "scene_support": 0.605411352079851,
+      "object_support": 0.657121327536396,
+      "score": 0.7787598038848741,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking outdoors while vehicles pass followed by a loud truck horn and a man laughing",
+      "clip_similarity": 0.3065004348754883,
+      "visual": 0.9817541780666748,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.39270167122666993,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking with a helicopter in the background",
+      "clip_similarity": 0.3044399917125702,
+      "visual": 0.809635008875202,
+      "scene_support": 0.574115558377629,
+      "object_support": 0.6306622381543654,
+      "score": 0.6852873425096792,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter flying by followed by a man faintly talking in the background",
+      "clip_similarity": 0.30153778195381165,
+      "visual": 0.5671988468461291,
+      "scene_support": 0.8726927674233745,
+      "object_support": 0.8702592747101019,
+      "score": 0.7497651513784946,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks a foreign language briefly as various birds chirp in the background",
+      "clip_similarity": 0.3013046085834503,
+      "visual": 0.547720703742522,
+      "scene_support": 0.7150208674163853,
+      "object_support": 0.6073981915950971,
+      "score": 0.6158139992004534,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking with rustling in the background followed by laughter",
+      "clip_similarity": 0.3011080324649811,
+      "visual": 0.5312997129563012,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8125198851825204,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks in the background while a small sized helicopter flies",
+      "clip_similarity": 0.300826758146286,
+      "visual": 0.5078034559762598,
+      "scene_support": 0.8588261727827605,
+      "object_support": 0.8880766941541258,
+      "score": 0.7271922424715698,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is narrating and vehicles pass by in the background",
+      "clip_similarity": 0.3002851605415344,
+      "visual": 0.4625610870317491,
+      "scene_support": 0.7089089198184975,
+      "object_support": 0.6145491970552608,
+      "score": 0.5820618698748271,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking as a helicopter flies in the distance",
+      "clip_similarity": 0.2990489900112152,
+      "visual": 0.35929755203756214,
+      "scene_support": 0.936673146642121,
+      "object_support": 0.9413525667609715,
+      "score": 0.7071267348359526,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks in Russian while an insects buzz",
+      "clip_similarity": 0.2986818850040436,
+      "visual": 0.32863142643042614,
+      "scene_support": 0.40803193154997774,
+      "object_support": 0.2592603531242219,
+      "score": 0.33164025597443036,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Trucks running in the background with a man talking",
+      "clip_similarity": 0.29799947142601013,
+      "visual": 0.2716259917695883,
+      "scene_support": 0.8102070077716269,
+      "object_support": 0.8076677746151407,
+      "score": 0.5940128314238656,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking as birds chirp in the background followed by a train horn blowing",
+      "clip_similarity": 0.2975045442581177,
+      "visual": 0.2302822388910603,
+      "scene_support": 0.8065168572158534,
+      "object_support": 0.8131295791067417,
+      "score": 0.5780068264532027,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.29669731855392456,
+      "visual": 0.16285062026832237,
+      "scene_support": 0.4983112970731124,
+      "object_support": 0.49532844457734904,
+      "score": 0.3632321706024674,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat accelerating with a man talking in the background",
+      "clip_similarity": 0.2964463233947754,
+      "visual": 0.14188373360950604,
+      "scene_support": 0.613436886579106,
+      "object_support": 0.7362094051329887,
+      "score": 0.46164738095743085,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks as a vehicle runs in the background",
+      "clip_similarity": 0.29643478989601135,
+      "visual": 0.14092028251274022,
+      "scene_support": 0.7909704444410222,
+      "object_support": 0.8523507910079378,
+      "score": 0.549364483639784,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male speaking and people laughing in the background",
+      "clip_similarity": 0.2959267199039459,
+      "visual": 0.09847864350068836,
+      "scene_support": 0.770820129544226,
+      "object_support": 0.8725145507968328,
+      "score": 0.5323918615025929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking as vehicles pass by in the background",
+      "clip_similarity": 0.2955262064933777,
+      "visual": 0.06502174611196447,
+      "scene_support": 0.423282184569129,
+      "object_support": 0.38539419543292236,
+      "score": 0.2686116124454012,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking and helicopter in background",
+      "clip_similarity": 0.2951240837574005,
+      "visual": 0.031430413686482556,
+      "scene_support": 0.641715799570134,
+      "object_support": 0.6842531438704524,
+      "score": 0.41036284850676896,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking with tapping in the background",
+      "clip_similarity": 0.29492878913879395,
+      "visual": 0.015116473022124521,
+      "scene_support": 0.8961423019984466,
+      "object_support": 0.9059470293157177,
+      "score": 0.5466733886030991,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking with construction noises in background",
+      "clip_similarity": 0.29474782943725586,
+      "visual": 0.0,
+      "scene_support": 0.7248103294204706,
+      "object_support": 0.6635778654784011,
+      "score": 0.4165164584696615,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "ski resort",
+      0.23496878147125244
+    ],
+    [
+      "ice shelf",
+      0.1070268303155899
+    ],
+    [
+      "ski slope",
+      0.10121950507164001
+    ],
+    [
+      "glacier",
+      0.0597628653049469
+    ],
+    [
+      "snowfield",
+      0.052690066397190094
+    ]
+  ],
+  "top_objects": [
+    [
+      "ski",
+      0.24639156460762024
+    ],
+    [
+      "bobsleigh",
+      0.06455200910568237
+    ],
+    [
+      "sunglass",
+      0.06398982554674149
+    ],
+    [
+      "sunglasses",
+      0.059605617076158524
+    ],
+    [
+      "snowmobile",
+      0.028947904706001282
+    ]
+  ]
+}

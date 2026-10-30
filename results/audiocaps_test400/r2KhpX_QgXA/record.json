@@ -1,0 +1,283 @@
+{
+  "id": "r2KhpX_QgXA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\r2KhpX_QgXA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\r2KhpX_QgXA.wav",
+  "gt_captions": [
+    "Men talking followed by an engine starting",
+    "An motor blowing air faintly before becoming more audible as a man talks",
+    "A man speaks as a machine hums quietly and then increases in volume",
+    "An engine running with a male speaking",
+    "A man speaks with some distant humming and vibrating getting louder"
+  ],
+  "top_scene": [
+    "indoor garage",
+    0.2521919310092926
+  ],
+  "top_object": [
+    "car wheel",
+    0.611599326133728
+  ],
+  "env_probs": {
+    "indoor": 0.514776349067688,
+    "outdoor": 0.485223650932312
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Engine starting and then digging and scraping sounds",
+    "casv": "Motor vehicle squealing tires"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.14178678393363953,
+    "clap_gt_audio_baseline": 0.03214162960648537,
+    "clap_text_casv": -0.07972482591867447,
+    "clap_gt_audio_casv": 0.33178675174713135
+  },
+  "verdicts": [
+    {
+      "caption": "Engine starting and then digging and scraping sounds",
+      "clip_similarity": 0.32654306292533875,
+      "visual": 1.0,
+      "scene_support": 0.6214451230578969,
+      "object_support": 0.21829001850377527,
+      "score": 0.6519205424685017,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Idling vehicle making knocking noises",
+      "clip_similarity": 0.3262724280357361,
+      "visual": 0.9680500728293682,
+      "scene_support": 0.4614306034500952,
+      "object_support": 0.19673361366838513,
+      "score": 0.5846692942672913,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motor vehicle squealing tires",
+      "clip_similarity": 0.32626205682754517,
+      "visual": 0.966825695045492,
+      "scene_support": 0.8698933399740841,
+      "object_support": 1.0,
+      "score": 0.9476982800104221,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "This is how a worn out engine sounds when trying to start",
+      "clip_similarity": 0.32313573360443115,
+      "visual": 0.5977461597461176,
+      "scene_support": 0.546587259044154,
+      "object_support": 0.3794390494574805,
+      "score": 0.5169063564489373,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car starting sound",
+      "clip_similarity": 0.3222368359565735,
+      "visual": 0.49162638182291557,
+      "scene_support": 0.9540758311842344,
+      "object_support": 0.6187775667561475,
+      "score": 0.6685065721112808,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Low sound of an engine idling",
+      "clip_similarity": 0.32195666432380676,
+      "visual": 0.45855059002343207,
+      "scene_support": 0.8601440986658,
+      "object_support": 0.5053561236694082,
+      "score": 0.5930703027099353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Beeping of several car horns",
+      "clip_similarity": 0.32173728942871094,
+      "visual": 0.4326521852328781,
+      "scene_support": 0.6813503235255634,
+      "object_support": 0.5982821558274428,
+      "score": 0.5569506178990531,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from an accelerating car with loud pops and squealing tires",
+      "clip_similarity": 0.321388304233551,
+      "visual": 0.3914525764708366,
+      "scene_support": 0.5433633996142174,
+      "object_support": 0.5095320668919526,
+      "score": 0.4724496705401856,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle with breaks squealing",
+      "clip_similarity": 0.32093656063079834,
+      "visual": 0.3381217763329182,
+      "scene_support": 0.972318198893302,
+      "object_support": 0.7461653872939358,
+      "score": 0.6507937863893386,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.3209359645843506,
+      "visual": 0.3380514097936149,
+      "scene_support": 0.0,
+      "object_support": 0.04461004189445837,
+      "score": 0.14860357648578348,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car accelerating, vehicle squealing tires",
+      "clip_similarity": 0.3199455440044403,
+      "visual": 0.22112684976040192,
+      "scene_support": 0.6837671628939604,
+      "object_support": 0.7330657738322446,
+      "score": 0.5135006209220223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mid frequency of a car engine idling then accelerating",
+      "clip_similarity": 0.3198617100715637,
+      "visual": 0.21122979600740255,
+      "scene_support": 0.4011843610317363,
+      "object_support": 0.25087754011445024,
+      "score": 0.280110488746817,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.3197470009326935,
+      "visual": 0.19768775551849585,
+      "scene_support": 0.0394241118347466,
+      "object_support": 0.0,
+      "score": 0.09090233575782232,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car engine accelerates along with skidding",
+      "clip_similarity": 0.31947633624076843,
+      "visual": 0.16573431002089886,
+      "scene_support": 1.0,
+      "object_support": 0.6904967040637158,
+      "score": 0.5734427352274742,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An idling engine sound with scraping noises",
+      "clip_similarity": 0.3193039894104004,
+      "visual": 0.14538782518136975,
+      "scene_support": 0.7151143208073577,
+      "object_support": 0.36260752106018374,
+      "score": 0.3814716826328103,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A high pitched vibration with a car engine noise in the background",
+      "clip_similarity": 0.31923791766166687,
+      "visual": 0.13758769429960666,
+      "scene_support": 0.6883129819644522,
+      "object_support": 0.4575002609639932,
+      "score": 0.39877905059837626,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine idling on a vehicle",
+      "clip_similarity": 0.3189038634300232,
+      "visual": 0.0981507673471111,
+      "scene_support": 0.6293203219638613,
+      "object_support": 0.5271540175731335,
+      "score": 0.38620260879994284,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car revving motor then squealing tires",
+      "clip_similarity": 0.31862950325012207,
+      "visual": 0.0657610493058341,
+      "scene_support": 0.8181444447727302,
+      "object_support": 0.6844714219759207,
+      "score": 0.4770891797469289,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine running idle then accelerating",
+      "clip_similarity": 0.3181268274784088,
+      "visual": 0.006417428384454624,
+      "scene_support": 0.6041102308364391,
+      "object_support": 0.48193116470956654,
+      "score": 0.32837939001758354,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large humming of a motor, scraping and clicking",
+      "clip_similarity": 0.31807246804237366,
+      "visual": 0.0,
+      "scene_support": 0.9510402201577741,
+      "object_support": 0.6062725876670234,
+      "score": 0.4671938423474392,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor garage",
+      0.2521919310092926
+    ],
+    [
+      "crevasse",
+      0.16023537516593933
+    ],
+    [
+      "outdoor garage",
+      0.06983109563589096
+    ],
+    [
+      "driveway",
+      0.05162907764315605
+    ],
+    [
+      "berth",
+      0.04432059824466705
+    ]
+  ],
+  "top_objects": [
+    [
+      "car wheel",
+      0.611599326133728
+    ],
+    [
+      "car mirror",
+      0.019598351791501045
+    ],
+    [
+      "grille",
+      0.015910694375634193
+    ],
+    [
+      "eel",
+      0.014673672616481781
+    ],
+    [
+      "motorboat",
+      0.012539549730718136
+    ]
+  ]
+}

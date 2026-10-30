@@ -1,0 +1,285 @@
+{
+  "id": "AtkD-3GjXMw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AtkD-3GjXMw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AtkD-3GjXMw.wav",
+  "gt_captions": [
+    "Music is playing with machine gun sounds",
+    "A rap and hip-hop song starts with a person rapping loudly with random computer generated sounds",
+    "Singing and music with faint gunshots",
+    "Music plays as a man is singing followed by muffled rapid gunshots firing",
+    "As music plays in the foreground, faint machine gunfire occurs in the background"
+  ],
+  "top_scene": [
+    "trench",
+    0.09866051375865936
+  ],
+  "top_object": [
+    "golf cart",
+    0.1515095829963684
+  ],
+  "env_probs": {
+    "indoor": 0.34885382652282715,
+    "outdoor": 0.6511461734771729
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Vehicle doors slamming followed by footsteps and then a door creaking",
+    "casv": "Continuous clacking then automatic gunfire erupts"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10874298214912415,
+    "clap_gt_audio_baseline": 0.11984441429376602,
+    "clap_text_casv": 0.2264551818370819,
+    "clap_gt_audio_casv": -0.002667884109541774
+  },
+  "verdicts": [
+    {
+      "caption": "Vehicle doors slamming followed by footsteps and then a door creaking",
+      "clip_similarity": 0.30076515674591064,
+      "visual": 1.0,
+      "scene_support": 0.4368629521113587,
+      "object_support": 0.8940939899834519,
+      "score": 0.7992870826284433,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Continuous clacking then automatic gunfire erupts",
+      "clip_similarity": 0.298600971698761,
+      "visual": 0.8023935475444096,
+      "scene_support": 0.92336382542275,
+      "object_support": 0.8446680867446044,
+      "score": 0.8513669926679701,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Distant clip clops with people speaking",
+      "clip_similarity": 0.29786914587020874,
+      "visual": 0.7355723180076629,
+      "scene_support": 0.5049830120563029,
+      "object_support": 0.22040790554873968,
+      "score": 0.5118462024845779,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Suppressed rapid gunfire",
+      "clip_similarity": 0.29684776067733765,
+      "visual": 0.6423121299198885,
+      "scene_support": 0.5255439153401663,
+      "object_support": 0.6387123535380198,
+      "score": 0.6062017326314112,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Explosions, gun fire, and popping and whizzing sounds",
+      "clip_similarity": 0.2953982353210449,
+      "visual": 0.5099595088819227,
+      "scene_support": 0.40796750502198337,
+      "object_support": 0.31892734714065346,
+      "score": 0.4220522592015601,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud clicking static sound similar to rapid gunfire",
+      "clip_similarity": 0.2946590781211853,
+      "visual": 0.4424688697318008,
+      "scene_support": 0.7354477625159871,
+      "object_support": 0.644578286838789,
+      "score": 0.5909953626991532,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Consistent spraying",
+      "clip_similarity": 0.29433584213256836,
+      "visual": 0.4129549808429119,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.16518199233716477,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Machine gun firing multiple times",
+      "clip_similarity": 0.29412955045700073,
+      "visual": 0.39411899164054337,
+      "scene_support": 0.7774933660219869,
+      "object_support": 1.0,
+      "score": 0.6908956064628133,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cocking gun and explosions",
+      "clip_similarity": 0.2939200699329376,
+      "visual": 0.37499183646812956,
+      "scene_support": 0.382638817539919,
+      "object_support": 0.5532480994253333,
+      "score": 0.4307628096768275,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Gun fire sounds with people talking and laughing",
+      "clip_similarity": 0.29265376925468445,
+      "visual": 0.2593690134099617,
+      "scene_support": 0.5728869584317949,
+      "object_support": 0.647133725564823,
+      "score": 0.46975381056297005,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle clicking and steam being released",
+      "clip_similarity": 0.29260843992233276,
+      "visual": 0.2552301027516545,
+      "scene_support": 0.3076022376611552,
+      "object_support": 0.969938955356994,
+      "score": 0.48535439900610655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Machine gunfire is followed by a man yelling in the background",
+      "clip_similarity": 0.2925998270511627,
+      "visual": 0.2544436825148032,
+      "scene_support": 0.7952917356045335,
+      "object_support": 0.918105818314796,
+      "score": 0.6157967391817201,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clicking followed by gunfire",
+      "clip_similarity": 0.2916508615016937,
+      "visual": 0.16779595524207594,
+      "scene_support": 0.9953163583800694,
+      "object_support": 0.8884569412082473,
+      "score": 0.6322503719733252,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A few small clicks, then rapid gunfire",
+      "clip_similarity": 0.2915915250778198,
+      "visual": 0.1623780912574016,
+      "scene_support": 1.0,
+      "object_support": 0.9824986648402675,
+      "score": 0.6597008359550409,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Spraying and rattling with vehicles passing by in the background",
+      "clip_similarity": 0.29112786054611206,
+      "visual": 0.1200420149773598,
+      "scene_support": 0.3250135513836583,
+      "object_support": 0.6256966289080279,
+      "score": 0.3332298600784498,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid gunfire followed by laughing",
+      "clip_similarity": 0.2908893823623657,
+      "visual": 0.09826715430163706,
+      "scene_support": 0.6717553736107618,
+      "object_support": 0.6496882873386518,
+      "score": 0.4357399600054789,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone hits mute on a phone line",
+      "clip_similarity": 0.2902570068836212,
+      "visual": 0.04052649338209683,
+      "scene_support": 0.7003293074800095,
+      "object_support": 0.4550531301493537,
+      "score": 0.3628253286416477,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicles are racing with extended room sounds",
+      "clip_similarity": 0.29010143876075745,
+      "visual": 0.026321947927551374,
+      "scene_support": 0.6113410024126777,
+      "object_support": 0.9420729220836735,
+      "score": 0.4765529565199259,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud gunfire followed by whooshing",
+      "clip_similarity": 0.2898210287094116,
+      "visual": 0.0007183908045977011,
+      "scene_support": 0.9171824459096078,
+      "object_support": 0.8290600913959588,
+      "score": 0.5241601175135091,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Quick clacking followed by people cheering",
+      "clip_similarity": 0.28981316089630127,
+      "visual": 0.0,
+      "scene_support": 0.9102623831303873,
+      "object_support": 0.7029868115157856,
+      "score": 0.48397475839385184,
+      "conflicts": [
+        "names 'a crowd of people', not visible in image (z=-1.44)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "trench",
+      0.09866051375865936
+    ],
+    [
+      "alley",
+      0.04573706164956093
+    ],
+    [
+      "army base",
+      0.042464207857847214
+    ],
+    [
+      "stable",
+      0.03629191964864731
+    ],
+    [
+      "lobby",
+      0.028594892472028732
+    ]
+  ],
+  "top_objects": [
+    [
+      "golf cart",
+      0.1515095829963684
+    ],
+    [
+      "half-track",
+      0.0985763743519783
+    ],
+    [
+      "tank",
+      0.04164404422044754
+    ],
+    [
+      "forklift",
+      0.04055563732981682
+    ],
+    [
+      "moped",
+      0.03563852235674858
+    ]
+  ]
+}

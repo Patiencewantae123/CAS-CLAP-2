@@ -1,0 +1,293 @@
+{
+  "id": "FL8KTgMGrN4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\FL8KTgMGrN4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\FL8KTgMGrN4.wav",
+  "gt_captions": [
+    "A vacuum moving back and forth",
+    "Escaping steam is hissing, while a tool motor runs and suction is present",
+    "A vacuum running",
+    "A vacuum cleaner cleaning a surface and hissing",
+    "Vacuum cleaner sucks something."
+  ],
+  "top_scene": [
+    "sand desert",
+    0.6108139753341675
+  ],
+  "top_object": [
+    "mop",
+    0.3462735414505005
+  ],
+  "env_probs": {
+    "indoor": 0.21894454956054688,
+    "outdoor": 0.7810554504394531
+  },
+  "status": "REPAIR",
+  "n_rejected": 16,
+  "prompts": {
+    "baseline": "A vacuum cleaner cleaning a surface",
+    "casv": "Vacuuming noise"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.6062166690826416,
+    "clap_gt_audio_baseline": 0.6335504055023193,
+    "clap_text_casv": 0.39027923345565796,
+    "clap_gt_audio_casv": 0.5897635221481323
+  },
+  "verdicts": [
+    {
+      "caption": "A vacuum cleaner cleaning a surface",
+      "clip_similarity": 0.357862651348114,
+      "visual": 1.0,
+      "scene_support": 0.08218442954484172,
+      "object_support": 0.7151976382860998,
+      "score": 0.6392146203492824,
+      "conflicts": [
+        "indoor sound, but image is outdoor (p=0.78)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine works while some surface is rubbed",
+      "clip_similarity": 0.3340761661529541,
+      "visual": 0.44545668036334884,
+      "scene_support": 0.7539950948461042,
+      "object_support": 0.5910448179337104,
+      "score": 0.581694645979284,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steamy implement is used to help clean floors",
+      "clip_similarity": 0.33307141065597534,
+      "visual": 0.4220324357073477,
+      "scene_support": 0.0,
+      "object_support": 0.40804467552114826,
+      "score": 0.29122637693928355,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vacuuming noise",
+      "clip_similarity": 0.328949898481369,
+      "visual": 0.32594606462406844,
+      "scene_support": 0.5311230348329551,
+      "object_support": 0.9758097088013298,
+      "score": 0.5824582489399128,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sawing or drilling sound indoors",
+      "clip_similarity": 0.3252849578857422,
+      "visual": 0.24050391932621773,
+      "scene_support": 0.538180442403071,
+      "object_support": 0.5246262837558628,
+      "score": 0.41504358557816723,
+      "conflicts": [
+        "indoor sound, but image is outdoor (p=0.78)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vacuum cleaner running and the sound of a dog",
+      "clip_similarity": 0.32344990968704224,
+      "visual": 0.19772274709958743,
+      "scene_support": 0.20206416389697662,
+      "object_support": 0.7321850055914441,
+      "score": 0.35936384968636115,
+      "conflicts": [
+        "indoor sound, but image is outdoor (p=0.78)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A back and forth sanding noise",
+      "clip_similarity": 0.31975650787353516,
+      "visual": 0.11161707467216202,
+      "scene_support": 0.7157449683543345,
+      "object_support": 0.2788151975215545,
+      "score": 0.3430148796316315,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A scraper is being used to scrape and surface, and an object taps a surface",
+      "clip_similarity": 0.31892651319503784,
+      "visual": 0.09226709502959123,
+      "scene_support": 0.4387189034754182,
+      "object_support": 0.2910796039529992,
+      "score": 0.2558463902403617,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vacuum along with spraying",
+      "clip_similarity": 0.3175658881664276,
+      "visual": 0.060546329479086045,
+      "scene_support": 0.38757343339564504,
+      "object_support": 0.614594836260573,
+      "score": 0.3248690126884998,
+      "conflicts": [
+        "indoor sound, but image is outdoor (p=0.78)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Scrubbing noise against a wet surface",
+      "clip_similarity": 0.317461758852005,
+      "visual": 0.058118723415490264,
+      "scene_support": 0.6513981506448808,
+      "object_support": 0.633525201186927,
+      "score": 0.4087244949157385,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect buzzes and then a vacuum runs",
+      "clip_similarity": 0.31721821427345276,
+      "visual": 0.05244087660618727,
+      "scene_support": 0.6706131593856893,
+      "object_support": 1.0,
+      "score": 0.5221602984581817,
+      "conflicts": [
+        "indoor sound, but image is outdoor (p=0.78)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water moving in sand, voice",
+      "clip_similarity": 0.3168324828147888,
+      "visual": 0.04344817332023417,
+      "scene_support": 1.0,
+      "object_support": 0.30138175204805606,
+      "score": 0.4077937949425105,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sander grinding then a small object falling",
+      "clip_similarity": 0.31669023633003235,
+      "visual": 0.0401319272579724,
+      "scene_support": 0.4024002381377988,
+      "object_support": 0.0,
+      "score": 0.13677284234452858,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Power tool is drilling through a surface",
+      "clip_similarity": 0.31643009185791016,
+      "visual": 0.034067080855817986,
+      "scene_support": 0.39703001869351423,
+      "object_support": 0.5481494538128046,
+      "score": 0.29718067409422283,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A metal grinding and vibrating sound is present",
+      "clip_similarity": 0.31552568078041077,
+      "visual": 0.01298220357707128,
+      "scene_support": 0.6806957653282272,
+      "object_support": 0.5045624549124162,
+      "score": 0.3607703475030215,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power drill saws into wood followed by metal scraping",
+      "clip_similarity": 0.3153800070285797,
+      "visual": 0.009586056342138211,
+      "scene_support": 0.24340614310688025,
+      "object_support": 0.3272582313293629,
+      "score": 0.17503373486772822,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw is rubbing a surface",
+      "clip_similarity": 0.31514742970466614,
+      "visual": 0.0041638932853833655,
+      "scene_support": 0.5153854136053638,
+      "object_support": 0.6910528724146867,
+      "score": 0.3635970431201685,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Scraping noise and then water splashing",
+      "clip_similarity": 0.31513118743896484,
+      "visual": 0.0037852312062019986,
+      "scene_support": 0.5529663456149014,
+      "object_support": 0.4038382520142039,
+      "score": 0.28855547177121244,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical grinding sound from a device",
+      "clip_similarity": 0.315125048160553,
+      "visual": 0.0036421038881995,
+      "scene_support": 0.7325528462920491,
+      "object_support": 0.4807042651395059,
+      "score": 0.3654339749847463,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A spray is released while metal objects taps",
+      "clip_similarity": 0.3149688243865967,
+      "visual": 0.0,
+      "scene_support": 0.21880311518173914,
+      "object_support": 0.09730163214134797,
+      "score": 0.09483142419692614,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sand desert",
+      0.6108139753341675
+    ],
+    [
+      "sandbox",
+      0.044227056205272675
+    ],
+    [
+      "clean room",
+      0.03419153764843941
+    ],
+    [
+      "zen garden",
+      0.02285885624587536
+    ],
+    [
+      "attic",
+      0.018713343888521194
+    ]
+  ],
+  "top_objects": [
+    [
+      "mop",
+      0.3462735414505005
+    ],
+    [
+      "vacuum cleaner",
+      0.1470443457365036
+    ],
+    [
+      "broom",
+      0.11707106232643127
+    ],
+    [
+      "shovel",
+      0.07936669141054153
+    ],
+    [
+      "crutch",
+      0.035588253289461136
+    ]
+  ]
+}

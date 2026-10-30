@@ -1,0 +1,283 @@
+{
+  "id": "DNtF_mGzQes",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\DNtF_mGzQes.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\DNtF_mGzQes.wav",
+  "gt_captions": [
+    "A group of children talking as a man talks over an intercom while a large truck engine runs followed by compressed air releasing",
+    "A man talking on loudspeakers along with an idling truck and a bustling crowd",
+    "A crowd of children talking as a man speaks over an intercom as a large truck engine runs idle followed by pressurized air releasing",
+    "A man speaks over a loudspeaker as people speak and an engine hums",
+    "A vehicle engine running and children speaking"
+  ],
+  "top_scene": [
+    "fire station",
+    0.6717112064361572
+  ],
+  "top_object": [
+    "fire engine",
+    0.8416550159454346
+  ],
+  "env_probs": {
+    "indoor": 0.09747076034545898,
+    "outdoor": 0.902529239654541
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A fire engine siren wails and a man speaks over a radio",
+    "casv": "A fire engine in city traffic noise runs continuously"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3494028151035309,
+    "clap_gt_audio_baseline": 0.3286193609237671,
+    "clap_text_casv": 0.23375999927520752,
+    "clap_gt_audio_casv": 0.01645010896027088
+  },
+  "verdicts": [
+    {
+      "caption": "A fire engine siren wails and a man speaks over a radio",
+      "clip_similarity": 0.33246636390686035,
+      "visual": 1.0,
+      "scene_support": 0.5476500480391796,
+      "object_support": 0.6499781711261872,
+      "score": 0.7592884657496101,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine noise with a fire engine siren",
+      "clip_similarity": 0.329089879989624,
+      "visual": 0.7808511708338008,
+      "scene_support": 0.7296009205383789,
+      "object_support": 0.8622413278453176,
+      "score": 0.7898931428486293,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fire engine drives with sirens blasting",
+      "clip_similarity": 0.3284843862056732,
+      "visual": 0.741551930241285,
+      "scene_support": 0.8249503311727512,
+      "object_support": 0.8495696158321269,
+      "score": 0.7989767561979774,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire engine in city traffic noise runs continuously",
+      "clip_similarity": 0.3278014361858368,
+      "visual": 0.6972254353149626,
+      "scene_support": 0.8868520024827328,
+      "object_support": 0.9538340640083498,
+      "score": 0.8310959940733098,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire truck runs and blows its siren",
+      "clip_similarity": 0.32663851976394653,
+      "visual": 0.6217469853882727,
+      "scene_support": 0.9097078821098694,
+      "object_support": 0.9007848241608067,
+      "score": 0.7918466060365119,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire truck with siren on pulls up then turns off siren as a man speaks over the radio",
+      "clip_similarity": 0.32645276188850403,
+      "visual": 0.609690472782418,
+      "scene_support": 0.5703976623766782,
+      "object_support": 0.46819258955422394,
+      "score": 0.5554532646922378,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Fire truck starts engine and pulls out turning the siren on",
+      "clip_similarity": 0.3257625699043274,
+      "visual": 0.5648939421488562,
+      "scene_support": 0.8178858793153779,
+      "object_support": 0.7512885127328328,
+      "score": 0.6967098944740058,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fire engine siren",
+      "clip_similarity": 0.32573485374450684,
+      "visual": 0.5630950400594218,
+      "scene_support": 0.8944895234910171,
+      "object_support": 0.9300537904062607,
+      "score": 0.7726010101929519,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sirens as emergency fire vehicles drive off",
+      "clip_similarity": 0.32568448781967163,
+      "visual": 0.5598260674452882,
+      "scene_support": 0.7464268203164635,
+      "object_support": 0.5740526776413445,
+      "score": 0.6200742763654576,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire engine siren",
+      "clip_similarity": 0.32436269521713257,
+      "visual": 0.4740358465091628,
+      "scene_support": 0.9680861134178105,
+      "object_support": 1.0,
+      "score": 0.7800401726290083,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire engine siren goes off in an urban environment and at the end a soft radio is on",
+      "clip_similarity": 0.3237270712852478,
+      "visual": 0.4327810252581328,
+      "scene_support": 0.653242715474851,
+      "object_support": 0.6644554863574615,
+      "score": 0.5684218706529469,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud fire engine accelerating then idling",
+      "clip_similarity": 0.3217279314994812,
+      "visual": 0.3030279584202158,
+      "scene_support": 0.6910862522921349,
+      "object_support": 0.8527876994803713,
+      "score": 0.5843733688998382,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud fire engine siren is followed by men speaking in the distance",
+      "clip_similarity": 0.3216281235218048,
+      "visual": 0.2965499765949298,
+      "scene_support": 0.6840835853382723,
+      "object_support": 0.6848020273439641,
+      "score": 0.5292856744426429,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine runs shortly followed by a fire truck siren",
+      "clip_similarity": 0.3214920163154602,
+      "visual": 0.2877160133234813,
+      "scene_support": 1.0,
+      "object_support": 0.9228459978028984,
+      "score": 0.6919402046702621,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fire truck starting its siren as it accelerates",
+      "clip_similarity": 0.3214331269264221,
+      "visual": 0.2838938299592636,
+      "scene_support": 0.9069984156990338,
+      "object_support": 0.8635080117043376,
+      "score": 0.6447094602047169,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud fire engine is followed by an emergency siren",
+      "clip_similarity": 0.31920409202575684,
+      "visual": 0.13921954729565053,
+      "scene_support": 0.7532401647219538,
+      "object_support": 0.9148223129671633,
+      "score": 0.5561065622249953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency siren wailing as a man is talking followed by metal clanking and crumpling as a muffled truck engine accelerates",
+      "clip_similarity": 0.3177233338356018,
+      "visual": 0.04311175244012364,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.017244700976049458,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fire truck siren running and the truck accelerating",
+      "clip_similarity": 0.31741103529930115,
+      "visual": 0.02284218792917355,
+      "scene_support": 0.6193500114783881,
+      "object_support": 0.5529556295142619,
+      "score": 0.3608285674694644,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency siren wailing as a muffled truck engine runs",
+      "clip_similarity": 0.3173190951347351,
+      "visual": 0.01687486218088831,
+      "scene_support": 0.3124632620728552,
+      "object_support": 0.31210294293830854,
+      "score": 0.19411980637570442,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A firetruck siren with some vehicle and wind blowing",
+      "clip_similarity": 0.31705909967422485,
+      "visual": 0.0,
+      "scene_support": 0.8251662949180499,
+      "object_support": 0.745569144734571,
+      "score": 0.4712206318957863,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fire station",
+      0.6717112064361572
+    ],
+    [
+      "tower",
+      0.06087518483400345
+    ],
+    [
+      "fire escape",
+      0.028321310877799988
+    ],
+    [
+      "skyscraper",
+      0.02385794371366501
+    ],
+    [
+      "engine room",
+      0.016017740592360497
+    ]
+  ],
+  "top_objects": [
+    [
+      "fire engine",
+      0.8416550159454346
+    ],
+    [
+      "stretcher",
+      0.0596320666372776
+    ],
+    [
+      "ambulance",
+      0.03043367713689804
+    ],
+    [
+      "torch",
+      0.007654889952391386
+    ],
+    [
+      "crane (machine)",
+      0.007428351324051619
+    ]
+  ]
+}

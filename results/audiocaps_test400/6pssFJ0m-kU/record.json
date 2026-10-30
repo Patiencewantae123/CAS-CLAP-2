@@ -1,0 +1,286 @@
+{
+  "id": "6pssFJ0m-kU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\6pssFJ0m-kU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\6pssFJ0m-kU.wav",
+  "gt_captions": [
+    "Chirping of birds with wind blowing",
+    "White noise and then birds chirping.",
+    "Leaves rustle in the wind as small birds chirp",
+    "Birds singing outdoors",
+    "Hissing occurs, a bird chirps and sings, and people speak briefly in the far distance"
+  ],
+  "top_scene": [
+    "windmill",
+    0.4039517641067505
+  ],
+  "top_object": [
+    "guillotine",
+    0.2150619924068451
+  ],
+  "env_probs": {
+    "indoor": 0.1314142346382141,
+    "outdoor": 0.8685857653617859
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A bird chirping and flying around in a cage with a ticking sound in the background",
+    "casv": "A bird chirping and flying around in a cage with a ticking sound in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10246541351079941,
+    "clap_gt_audio_baseline": 0.3763566017150879,
+    "clap_text_casv": 0.10246541351079941,
+    "clap_gt_audio_casv": 0.3763566017150879
+  },
+  "verdicts": [
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.3181033730506897,
+      "visual": 1.0,
+      "scene_support": 0.873019006084637,
+      "object_support": 0.6850111400429523,
+      "score": 0.8674090438382768,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine motor sharply humming during high pressure spraying",
+      "clip_similarity": 0.31636136770248413,
+      "visual": 0.8996015115080729,
+      "scene_support": 0.052817787164728534,
+      "object_support": 0.04195781355678407,
+      "score": 0.388273284819683,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw buzzing as items are placed over it",
+      "clip_similarity": 0.3140483498573303,
+      "visual": 0.7662933699759533,
+      "scene_support": 0.8896054325870542,
+      "object_support": 0.8558331717013765,
+      "score": 0.8301489292769106,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing with a humming engine",
+      "clip_similarity": 0.31196844577789307,
+      "visual": 0.6464204740638956,
+      "scene_support": 0.8388455378913732,
+      "object_support": 0.6560776798159708,
+      "score": 0.7070451549377613,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock ringing with a mechanical bird cooing",
+      "clip_similarity": 0.30859363079071045,
+      "visual": 0.4519168670559945,
+      "scene_support": 0.7516662391065572,
+      "object_support": 0.7443433002465181,
+      "score": 0.6295696086283203,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine engine pump running and rattling with pressurized air spraying",
+      "clip_similarity": 0.3077648878097534,
+      "visual": 0.40415321195465476,
+      "scene_support": 0.08883931128783595,
+      "object_support": 0.18991537185232232,
+      "score": 0.2452876897239094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled motor buzzing followed by a man speaking then wood clacking as a bird chirps in the background",
+      "clip_similarity": 0.30646419525146484,
+      "visual": 0.32918928203366543,
+      "scene_support": 0.48297708858962446,
+      "object_support": 0.3191936357542618,
+      "score": 0.37232693011663204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine buzzing and spraying water",
+      "clip_similarity": 0.306070476770401,
+      "visual": 0.306497767090347,
+      "scene_support": 0.5045697043359576,
+      "object_support": 0.520462103252169,
+      "score": 0.43010864911257674,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A spraying noise with chiming and a man humming then an explosion at end",
+      "clip_similarity": 0.3044719398021698,
+      "visual": 0.2143679148059086,
+      "scene_support": 0.5617205849022299,
+      "object_support": 0.37016398022629815,
+      "score": 0.36531253546092185,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man is talking followed by metal clanking and crumpling as a muffled truck engine accelerates",
+      "clip_similarity": 0.30391013622283936,
+      "visual": 0.1819890072140158,
+      "scene_support": 0.0,
+      "object_support": 0.05745940692963935,
+      "score": 0.09003342496449812,
+      "conflicts": [
+        "names 'a truck or bus', not visible in image (z=-0.05)",
+        "names 'an emergency vehicle', not visible in image (z=-1.10)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A paint sprayer sprays several times as a fan hums loudly nearby",
+      "clip_similarity": 0.30369365215301514,
+      "visual": 0.16951219512195123,
+      "scene_support": 0.062490193099428895,
+      "object_support": 0.0036007915108551354,
+      "score": 0.0876321734318657,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.30323442816734314,
+      "visual": 0.14304534524218482,
+      "scene_support": 0.39378659686228995,
+      "object_support": 0.18622765082271503,
+      "score": 0.2312224124023754,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A church bell being rung repetitively",
+      "clip_similarity": 0.30216509103775024,
+      "visual": 0.08141532119546548,
+      "scene_support": 0.9531859039658483,
+      "object_support": 1.0,
+      "score": 0.6185218996679407,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sawing machine works followed an object being hit",
+      "clip_similarity": 0.3021193742752075,
+      "visual": 0.07878048780487805,
+      "scene_support": 0.614050829009995,
+      "object_support": 0.8539393141512212,
+      "score": 0.47190923807031604,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.3020065426826477,
+      "visual": 0.072277567846101,
+      "scene_support": 0.44269034104352895,
+      "object_support": 0.46658841335036416,
+      "score": 0.3016946534566083,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bell chiming with wind noise",
+      "clip_similarity": 0.30196619033813477,
+      "visual": 0.06995190656131914,
+      "scene_support": 0.8521075807652745,
+      "object_support": 0.5970781632043929,
+      "score": 0.4627364858154278,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw running in the background with some tapping on a table",
+      "clip_similarity": 0.30149850249290466,
+      "visual": 0.04299725180350395,
+      "scene_support": 0.7782413830033649,
+      "object_support": 0.7371422197075751,
+      "score": 0.47181398153468357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A drill spinning with an air conditioner running in the background followed by a man speaking",
+      "clip_similarity": 0.30133700370788574,
+      "visual": 0.03368945379594641,
+      "scene_support": 0.15492972655247905,
+      "object_support": 0.0,
+      "score": 0.05995469948412228,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming of a small motor with wind blowing",
+      "clip_similarity": 0.30104386806488037,
+      "visual": 0.016794915836482308,
+      "scene_support": 1.0,
+      "object_support": 0.6705818448956293,
+      "score": 0.5078925198032818,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bell ringing continuously",
+      "clip_similarity": 0.3007524609565735,
+      "visual": 0.0,
+      "scene_support": 0.5148280336635094,
+      "object_support": 0.6656921850865125,
+      "score": 0.35415606562500657,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "windmill",
+      0.4039517641067505
+    ],
+    [
+      "tree house",
+      0.21508371829986572
+    ],
+    [
+      "embassy",
+      0.028132352977991104
+    ],
+    [
+      "construction site",
+      0.026330439373850822
+    ],
+    [
+      "fire escape",
+      0.01902785710990429
+    ]
+  ],
+  "top_objects": [
+    [
+      "guillotine",
+      0.2150619924068451
+    ],
+    [
+      "electric fan",
+      0.08269330114126205
+    ],
+    [
+      "swing",
+      0.08231326192617416
+    ],
+    [
+      "crane (machine)",
+      0.08049732446670532
+    ],
+    [
+      "birdhouse",
+      0.052460696548223495
+    ]
+  ]
+}

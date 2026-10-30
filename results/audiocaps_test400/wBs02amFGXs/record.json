@@ -1,0 +1,293 @@
+{
+  "id": "wBs02amFGXs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\wBs02amFGXs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\wBs02amFGXs.wav",
+  "gt_captions": [
+    "Pigeons coo and a distant rooster crows",
+    "Pigeons coo and flap their wings and a distant rooster crows",
+    "A rooster crowing and birds cooing",
+    "A rooster crowing and birds cooing",
+    "Birds are making noises and flapping wings, and a rooster crows"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.3154451549053192
+  ],
+  "top_object": [
+    "grey parrot",
+    0.22119836509227753
+  ],
+  "env_probs": {
+    "indoor": 0.8175615668296814,
+    "outdoor": 0.1824384331703186
+  },
+  "status": "REPAIR",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Dove coo and flap their wings while two men speak",
+    "casv": "A pigeon coos while children can be heard in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4253299832344055,
+    "clap_gt_audio_baseline": 0.7275006771087646,
+    "clap_text_casv": 0.38637810945510864,
+    "clap_gt_audio_casv": 0.7810572385787964
+  },
+  "verdicts": [
+    {
+      "caption": "Dove coo and flap their wings while two men speak",
+      "clip_similarity": 0.34628432989120483,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Doves are cooing along with other bird speech",
+      "clip_similarity": 0.32865798473358154,
+      "visual": 0.36895554301285793,
+      "scene_support": 0.3404793965863239,
+      "object_support": 0.45213068639345494,
+      "score": 0.3853652420990768,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings, a dog barks",
+      "clip_similarity": 0.3271065354347229,
+      "visual": 0.31341178328352415,
+      "scene_support": 0.8172514255315612,
+      "object_support": 0.7260776136435098,
+      "score": 0.588363425065931,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings with wind blowing",
+      "clip_similarity": 0.32623541355133057,
+      "visual": 0.2822245671613445,
+      "scene_support": 0.44104230640438313,
+      "object_support": 0.5830425493080235,
+      "score": 0.4201152835782598,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons are squawking with other animal noises",
+      "clip_similarity": 0.32496657967567444,
+      "visual": 0.23679878110586047,
+      "scene_support": 0.7002574981416436,
+      "object_support": 0.7625545843156082,
+      "score": 0.5335631371795198,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons cooing and clacking",
+      "clip_similarity": 0.3243909180164337,
+      "visual": 0.21618939805365311,
+      "scene_support": 0.7459469424396361,
+      "object_support": 0.7331397670353424,
+      "score": 0.5302017720639548,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud cooing of pigeon or doves, with other bird sound in the background",
+      "clip_similarity": 0.3234895169734955,
+      "visual": 0.18391815142924514,
+      "scene_support": 0.7861019875507931,
+      "object_support": 0.6961822038642704,
+      "score": 0.5182525179962171,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo and squeal and flap their wings",
+      "clip_similarity": 0.3229588568210602,
+      "visual": 0.16491987670219996,
+      "scene_support": 0.6419080748852332,
+      "object_support": 0.7961111886535178,
+      "score": 0.49737372974250527,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flutter their wings",
+      "clip_similarity": 0.32195258140563965,
+      "visual": 0.12889400080875504,
+      "scene_support": 0.6592540212933211,
+      "object_support": 0.7121792875880852,
+      "score": 0.4629875929879239,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flap wings while a surface is tapped",
+      "clip_similarity": 0.32074233889579773,
+      "visual": 0.08556585645344911,
+      "scene_support": 0.7588907215172738,
+      "object_support": 1.0,
+      "score": 0.5618935590365617,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings",
+      "clip_similarity": 0.32020092010498047,
+      "visual": 0.06618240947118303,
+      "scene_support": 0.5918482274960755,
+      "object_support": 0.840605873760621,
+      "score": 0.4562091941654821,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons cooing as bird wings flap",
+      "clip_similarity": 0.3198317587375641,
+      "visual": 0.052965986409074274,
+      "scene_support": 0.6792687575254529,
+      "object_support": 0.8146053082975317,
+      "score": 0.4693486143105251,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons cooing with wings flapping",
+      "clip_similarity": 0.3198259770870209,
+      "visual": 0.05275899633286138,
+      "scene_support": 0.6163105509522148,
+      "object_support": 0.8259058785154191,
+      "score": 0.4537685273734347,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons cooing with children talking in the background, followed by a woman talking",
+      "clip_similarity": 0.31952425837516785,
+      "visual": 0.04195710184018445,
+      "scene_support": 0.5963445000961833,
+      "object_support": 0.43963528142014063,
+      "score": 0.32757677519097095,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons step on a surface nearby while cooing quietly",
+      "clip_similarity": 0.31915706396102905,
+      "visual": 0.028811098082354308,
+      "scene_support": 0.716060949341085,
+      "object_support": 0.6582522077857007,
+      "score": 0.4238183863709774,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and rustle and flap their wings",
+      "clip_similarity": 0.31876862049102783,
+      "visual": 0.014904352446483997,
+      "scene_support": 0.6207688252100002,
+      "object_support": 0.7829306837348582,
+      "score": 0.4270715936620511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Men speaking while a pigeon coos",
+      "clip_similarity": 0.31872454285621643,
+      "visual": 0.013326319855149624,
+      "scene_support": 0.6497321710590376,
+      "object_support": 0.3787529033666527,
+      "score": 0.31387605026976695,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pigeon coos while children can be heard in the background",
+      "clip_similarity": 0.3186640441417694,
+      "visual": 0.01116039276900441,
+      "scene_support": 1.0,
+      "object_support": 0.9501083633831462,
+      "score": 0.5894966661225456,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of birds, pigeons or doves, are cooing",
+      "clip_similarity": 0.3186049461364746,
+      "visual": 0.009044612763178812,
+      "scene_support": 0.9284203257882875,
+      "object_support": 0.9945892442376193,
+      "score": 0.5805207161130435,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeon makes lots of different sound",
+      "clip_similarity": 0.3183523118495941,
+      "visual": 0.0,
+      "scene_support": 0.6964315400490654,
+      "object_support": 0.7853571645860591,
+      "score": 0.44453661139053735,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.3154451549053192
+    ],
+    [
+      "assembly line",
+      0.10929953306913376
+    ],
+    [
+      "stable",
+      0.03254980221390724
+    ],
+    [
+      "nursery",
+      0.025017276406288147
+    ],
+    [
+      "veterinarians office",
+      0.02375021204352379
+    ]
+  ],
+  "top_objects": [
+    [
+      "grey parrot",
+      0.22119836509227753
+    ],
+    [
+      "albatross",
+      0.18839292228221893
+    ],
+    [
+      "sulphur-crested cockatoo",
+      0.14104461669921875
+    ],
+    [
+      "duck",
+      0.05358169227838516
+    ],
+    [
+      "hen",
+      0.048276737332344055
+    ]
+  ]
+}

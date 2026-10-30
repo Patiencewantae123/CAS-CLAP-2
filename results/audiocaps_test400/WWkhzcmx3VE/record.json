@@ -1,0 +1,285 @@
+{
+  "id": "WWkhzcmx3VE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\WWkhzcmx3VE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\WWkhzcmx3VE.wav",
+  "gt_captions": [
+    "Duck quacking repeatedly",
+    "A duck quacking",
+    "A duck quacking",
+    "L duck quacks in rapid succession",
+    "A duck quacking"
+  ],
+  "top_scene": [
+    "bedroom",
+    0.10028881579637527
+  ],
+  "top_object": [
+    "pajamas",
+    0.0303525198251009
+  ],
+  "env_probs": {
+    "indoor": 0.8873754739761353,
+    "outdoor": 0.11262452602386475
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A man speaks as he makes fumbling noises with a wooden object",
+    "casv": "A man speaks over a faint clicking sound"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.004578131716698408,
+    "clap_gt_audio_baseline": 0.4252229332923889,
+    "clap_text_casv": 0.007352890446782112,
+    "clap_gt_audio_casv": 0.2140263319015503
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks as he makes fumbling noises with a wooden object",
+      "clip_similarity": 0.29904618859291077,
+      "visual": 1.0,
+      "scene_support": 0.32996208560949236,
+      "object_support": 0.36155855148786165,
+      "score": 0.6074561911292062,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man sings while taps some objects",
+      "clip_similarity": 0.2974291443824768,
+      "visual": 0.8646242667844303,
+      "scene_support": 0.3820259111114252,
+      "object_support": 0.1912177455862381,
+      "score": 0.5178228037230711,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man with a distinct voice is communicating with another man followed by animal noises in the background and loud bang",
+      "clip_similarity": 0.29423126578330994,
+      "visual": 0.5969042147888115,
+      "scene_support": 0.8229662091969782,
+      "object_support": 0.7406569681319829,
+      "score": 0.7078486391142129,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks over a microphone that squeaks at the end",
+      "clip_similarity": 0.2939915060997009,
+      "visual": 0.576832009740446,
+      "scene_support": 0.47673150039221784,
+      "object_support": 0.5066245938481896,
+      "score": 0.5257396321683007,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speeches while some objects taps",
+      "clip_similarity": 0.29274865984916687,
+      "visual": 0.4727833873498951,
+      "scene_support": 0.7215072295287026,
+      "object_support": 0.5534213183828395,
+      "score": 0.5715919193134207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks turns on a machine with beeping and vibrating noises",
+      "clip_similarity": 0.2925404906272888,
+      "visual": 0.4553558730847823,
+      "scene_support": 0.8281728125905458,
+      "object_support": 0.644711119920926,
+      "score": 0.6240075289873545,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is speaking along with knocking and clicking sounds",
+      "clip_similarity": 0.2915460765361786,
+      "visual": 0.37210549821233874,
+      "scene_support": 0.9037988593881402,
+      "object_support": 0.7840239365050452,
+      "score": 0.6551890380528911,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks over a faint clicking sound",
+      "clip_similarity": 0.2907463014125824,
+      "visual": 0.3051499115525582,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7220599646210233,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male voice speaking in a foreign language with faint children's voices in the background",
+      "clip_similarity": 0.2898077070713043,
+      "visual": 0.22657265539429594,
+      "scene_support": 0.8822259952085821,
+      "object_support": 0.7275406419676365,
+      "score": 0.5735590533105839,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with objects striking in the background",
+      "clip_similarity": 0.28961968421936035,
+      "visual": 0.21083175525133294,
+      "scene_support": 0.7290675816060437,
+      "object_support": 0.3924611795211092,
+      "score": 0.42079133043867906,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Russian male voice over loud speakers",
+      "clip_similarity": 0.2890549898147583,
+      "visual": 0.16355666000503988,
+      "scene_support": 0.6213370917931068,
+      "object_support": 0.5603772624631349,
+      "score": 0.41993697027888843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking as a sewing machine operates before and after plastic flips clicking",
+      "clip_similarity": 0.28903719782829285,
+      "visual": 0.16206715019598156,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.06482686007839263,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speeches while metal objects taps",
+      "clip_similarity": 0.28825095295906067,
+      "visual": 0.09624428958865078,
+      "scene_support": 0.588683190462393,
+      "object_support": 0.44390055742912937,
+      "score": 0.34827284020291704,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks and manipulates metal objects",
+      "clip_similarity": 0.2878970801830292,
+      "visual": 0.06661876283361153,
+      "scene_support": 0.5382191543642184,
+      "object_support": 0.4545985894176861,
+      "score": 0.32449282826801595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some object is moved followed by a man talking",
+      "clip_similarity": 0.2877155840396881,
+      "visual": 0.051424265786433734,
+      "scene_support": 0.9073230779559444,
+      "object_support": 0.8481451619383855,
+      "score": 0.5472101782828724,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with some light rustling then vibrations from a power tool",
+      "clip_similarity": 0.2876078188419342,
+      "visual": 0.04240237722771536,
+      "scene_support": 0.5151476470463524,
+      "object_support": 0.44505505985465593,
+      "score": 0.3050217629613886,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man in shock is verbalizing something to his surprise while a cat is hissing in the background",
+      "clip_similarity": 0.28745681047439575,
+      "visual": 0.029760256285506846,
+      "scene_support": 0.34710969025391686,
+      "object_support": 0.14567570535812344,
+      "score": 0.15973972119781482,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.31)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking while sewing machine runs",
+      "clip_similarity": 0.2873106598854065,
+      "visual": 0.017524818926006044,
+      "scene_support": 0.7508648226539366,
+      "object_support": 0.5941203414755666,
+      "score": 0.41050547680925337,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking while sewing machine runs",
+      "clip_similarity": 0.2872137129306793,
+      "visual": 0.009408612210986446,
+      "scene_support": 0.5662742132675632,
+      "object_support": 0.4779532895283148,
+      "score": 0.317031695723158,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man narrates while something taps continuously",
+      "clip_similarity": 0.2871013283729553,
+      "visual": 0.0,
+      "scene_support": 0.8038897585210207,
+      "object_support": 0.7955518173368228,
+      "score": 0.479832472757353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bedroom",
+      0.10028881579637527
+    ],
+    [
+      "bedchamber",
+      0.06475996971130371
+    ],
+    [
+      "childs room",
+      0.04684421420097351
+    ],
+    [
+      "clean room",
+      0.043810345232486725
+    ],
+    [
+      "playroom",
+      0.039994604885578156
+    ]
+  ],
+  "top_objects": [
+    [
+      "pajamas",
+      0.0303525198251009
+    ],
+    [
+      "couch",
+      0.023009292781352997
+    ],
+    [
+      "pillow",
+      0.021356603130698204
+    ],
+    [
+      "four-poster bed",
+      0.02047070674598217
+    ],
+    [
+      "pan flute",
+      0.01970677450299263
+    ]
+  ]
+}

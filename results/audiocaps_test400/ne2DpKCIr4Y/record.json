@@ -1,0 +1,283 @@
+{
+  "id": "ne2DpKCIr4Y",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ne2DpKCIr4Y.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ne2DpKCIr4Y.wav",
+  "gt_captions": [
+    "Ocean waves crashing and water streaming as wind blows into a microphone while a man talks faintly in the distance",
+    "Wind blowing with waves crashing and people speaking in the distance",
+    "Ocean waves crashing as wind blows into a microphone",
+    "Wind blows and waves crash with distant humming",
+    "Waves are crashing as the wind blows heavily"
+  ],
+  "top_scene": [
+    "harbor",
+    0.3040612041950226
+  ],
+  "top_object": [
+    "container ship",
+    0.9031993746757507
+  ],
+  "env_probs": {
+    "indoor": 0.18403097987174988,
+    "outdoor": 0.8159690201282501
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Wind blowing heavily into a microphone as a ship engine operates and whistles",
+    "casv": "A ship engine running followed by a ship horn blowing then a motor rattling"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.37401020526885986,
+    "clap_gt_audio_baseline": 0.5850042104721069,
+    "clap_text_casv": 0.11928912997245789,
+    "clap_gt_audio_casv": 0.44028472900390625
+  },
+  "verdicts": [
+    {
+      "caption": "Wind blowing heavily into a microphone as a ship engine operates and whistles",
+      "clip_similarity": 0.3225019574165344,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.3425607668674152,
+      "score": 0.5027682300602245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ship engine running followed by a ship horn blowing then a motor rattling",
+      "clip_similarity": 0.31191331148147583,
+      "visual": 0.5640727085339894,
+      "scene_support": 0.8368487951009521,
+      "object_support": 0.729829501757043,
+      "score": 0.6956325724709943,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motorboat traveling at high speed",
+      "clip_similarity": 0.3093753457069397,
+      "visual": 0.4595863981301416,
+      "scene_support": 0.48065128220986836,
+      "object_support": 0.16513640253834536,
+      "score": 0.3775708646765208,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboat engine noise from a distance followed by one that is nearby",
+      "clip_similarity": 0.30692845582962036,
+      "visual": 0.3588496199549713,
+      "scene_support": 0.5740395815541933,
+      "object_support": 0.11254836305122047,
+      "score": 0.34951623136361265,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboat passing by with water and wind noise",
+      "clip_similarity": 0.3057209849357605,
+      "visual": 0.3091388713368138,
+      "scene_support": 0.4725824113522416,
+      "object_support": 0.3041745053263446,
+      "score": 0.3566826235383014,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ship motor runs while water burbles",
+      "clip_similarity": 0.3050176501274109,
+      "visual": 0.2801830596232064,
+      "scene_support": 0.8486523732836007,
+      "object_support": 1.0,
+      "score": 0.6666689358343627,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.3038659691810608,
+      "visual": 0.23276914488334857,
+      "scene_support": 0.08868462973667537,
+      "object_support": 0.1818475375762667,
+      "score": 0.17426730814722205,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ship engine running while steam hisses and wind blows into a microphone",
+      "clip_similarity": 0.30306410789489746,
+      "visual": 0.19975706564748752,
+      "scene_support": 0.2412224466218343,
+      "object_support": 0.3651508966637876,
+      "score": 0.2618148292446816,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rough sound of a large truck engine",
+      "clip_similarity": 0.3029414415359497,
+      "visual": 0.19470697577404653,
+      "scene_support": 0.09029745239041093,
+      "object_support": 0.20874646520818296,
+      "score": 0.1675959655891968,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat engine accelerates slowly",
+      "clip_similarity": 0.302456259727478,
+      "visual": 0.17473237345635464,
+      "scene_support": 0.9820948139901661,
+      "object_support": 0.6029191365839615,
+      "score": 0.5453971345547801,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat engine running loudly",
+      "clip_similarity": 0.3017662763595581,
+      "visual": 0.14632623138883608,
+      "scene_support": 1.0,
+      "object_support": 0.6059412110384104,
+      "score": 0.5403128558670576,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine motorboat sounds with wind in the background followed by a man laughing",
+      "clip_similarity": 0.3013450503349304,
+      "visual": 0.12898464483120356,
+      "scene_support": 0.36483015803917557,
+      "object_support": 0.0,
+      "score": 0.1610429053442341,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat produces a chugging mechanical sound",
+      "clip_similarity": 0.30060508847236633,
+      "visual": 0.09852092241437484,
+      "scene_support": 0.5970060492743487,
+      "object_support": 0.49103878509648946,
+      "score": 0.36582181927700136,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat engine gets louder as it approaches",
+      "clip_similarity": 0.3003949820995331,
+      "visual": 0.08987098713552179,
+      "scene_support": 0.5602980788062892,
+      "object_support": 0.20677743333688292,
+      "score": 0.26607104849716035,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat traveling quickly across windy waters ending with distorted speech",
+      "clip_similarity": 0.30004066228866577,
+      "visual": 0.07528388351420491,
+      "scene_support": 0.8081629125325202,
+      "object_support": 0.6584158611088105,
+      "score": 0.47008718549808115,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine runs as a container is opened",
+      "clip_similarity": 0.2992432117462158,
+      "visual": 0.04245339157214107,
+      "scene_support": 0.6880528219242386,
+      "object_support": 0.7800925652038446,
+      "score": 0.45742497276728133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing strongly and boat engine sound at the end",
+      "clip_similarity": 0.2984774112701416,
+      "visual": 0.010925911157189569,
+      "scene_support": 0.81604465155815,
+      "object_support": 0.3143179281485776,
+      "score": 0.3434791383748941,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.29844921827316284,
+      "visual": 0.009765224806296663,
+      "scene_support": 0.4825979290215305,
+      "object_support": 0.15860615812992257,
+      "score": 0.19626731606795456,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor is running and passes by",
+      "clip_similarity": 0.29833558201789856,
+      "visual": 0.00508689810867018,
+      "scene_support": 0.9913292941403156,
+      "object_support": 0.6537639370383079,
+      "score": 0.4955627285970551,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large loud boat engine roars",
+      "clip_similarity": 0.2982120215892792,
+      "visual": 0.0,
+      "scene_support": 0.6437557041509171,
+      "object_support": 0.5871027919432382,
+      "score": 0.3692575488282466,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "harbor",
+      0.3040612041950226
+    ],
+    [
+      "landing deck",
+      0.2146134376525879
+    ],
+    [
+      "berth",
+      0.11182735115289688
+    ],
+    [
+      "loading dock",
+      0.04584599658846855
+    ],
+    [
+      "boat deck",
+      0.04363713413476944
+    ]
+  ],
+  "top_objects": [
+    [
+      "container ship",
+      0.9031993746757507
+    ],
+    [
+      "motorboat",
+      0.011531236581504345
+    ],
+    [
+      "ocean liner",
+      0.00910878088325262
+    ],
+    [
+      "bow",
+      0.008304481394588947
+    ],
+    [
+      "freight car",
+      0.007484451401978731
+    ]
+  ]
+}

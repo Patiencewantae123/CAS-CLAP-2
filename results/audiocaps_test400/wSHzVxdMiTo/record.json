@@ -1,0 +1,285 @@
+{
+  "id": "wSHzVxdMiTo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\wSHzVxdMiTo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\wSHzVxdMiTo.wav",
+  "gt_captions": [
+    "Plastic camera muffling followed by a man yelling as a pig squeals",
+    "A pig squealing as a camera muffles and a man speaks briefly",
+    "A pig squeezing and male speech",
+    "Squealing from a pig",
+    "A pig squeals and men speak"
+  ],
+  "top_scene": [
+    "yard",
+    0.09016094356775284
+  ],
+  "top_object": [
+    "tractor",
+    0.13614198565483093
+  ],
+  "env_probs": {
+    "indoor": 0.13127484917640686,
+    "outdoor": 0.8687251508235931
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+    "casv": "A truck accelerates by then another truck passes and skids its tires"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.007612498477101326,
+    "clap_gt_audio_baseline": 0.22158312797546387,
+    "clap_text_casv": -0.03865659236907959,
+    "clap_gt_audio_casv": 0.2450338900089264
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.32377326488494873,
+      "visual": 1.0,
+      "scene_support": 0.2293958359040416,
+      "object_support": 0.20408840483860785,
+      "score": 0.5300452722227948,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.32091397047042847,
+      "visual": 0.8514231734134481,
+      "scene_support": 0.7077586232841463,
+      "object_support": 0.8066589524458277,
+      "score": 0.7948945420843714,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck engine revving then turning off as tires skid on dirt and gravel",
+      "clip_similarity": 0.31929582357406616,
+      "visual": 0.7673397962028061,
+      "scene_support": 0.4524797678989012,
+      "object_support": 0.6011328072195059,
+      "score": 0.6230196910166446,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle engine revving followed by tires skidding then a man speaking over an intercom before a truck engine accelerates",
+      "clip_similarity": 0.318138062953949,
+      "visual": 0.7071793601139778,
+      "scene_support": 0.2211258046943892,
+      "object_support": 0.26725114944865136,
+      "score": 0.42938483028850327,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck running and then its engine winds down",
+      "clip_similarity": 0.31341785192489624,
+      "visual": 0.4619041719577539,
+      "scene_support": 0.9655478693468245,
+      "object_support": 1.0,
+      "score": 0.7744260295871489,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.31312915682792664,
+      "visual": 0.4469027782079475,
+      "scene_support": 0.7033984512548568,
+      "object_support": 0.4389897345336317,
+      "score": 0.5214775670197256,
+      "conflicts": [
+        "names 'birds', not visible in image (z=-0.10)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor running with dog barking in the background",
+      "clip_similarity": 0.3125312328338623,
+      "visual": 0.41583299780097255,
+      "scene_support": 0.8506232901654984,
+      "object_support": 0.5825205142417275,
+      "score": 0.5962763404425568,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child yells as truck engine idles then accelerates and a snap occurs",
+      "clip_similarity": 0.3086127042770386,
+      "visual": 0.21221544274785517,
+      "scene_support": 0.2191522531442897,
+      "object_support": 0.4206081410479508,
+      "score": 0.27681429535681423,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck turning on and beeping it horn",
+      "clip_similarity": 0.30771565437316895,
+      "visual": 0.16560225477746462,
+      "scene_support": 0.9781468478852977,
+      "object_support": 0.9683997883381738,
+      "score": 0.6502048927780273,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small engine revving with single foot step on dirt",
+      "clip_similarity": 0.30715709924697876,
+      "visual": 0.13657818936414037,
+      "scene_support": 0.8793018608416674,
+      "object_support": 0.7058888854735669,
+      "score": 0.5301884996402264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine running idle followed by a man talking then camera muffling",
+      "clip_similarity": 0.30640995502471924,
+      "visual": 0.09775451420076192,
+      "scene_support": 0.5870025491394021,
+      "object_support": 0.6282637946232476,
+      "score": 0.40368170880909965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dirt bike motor, with men yelling in the background",
+      "clip_similarity": 0.3061680495738983,
+      "visual": 0.08518443955771673,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0340737758230867,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.30592334270477295,
+      "visual": 0.07246879549044508,
+      "scene_support": 0.7062790239233874,
+      "object_support": 0.8352736218266839,
+      "score": 0.49145331192119934,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine idling with music in the background",
+      "clip_similarity": 0.3058198094367981,
+      "visual": 0.06708892123764983,
+      "scene_support": 0.6136676909371623,
+      "object_support": 0.7579430198695721,
+      "score": 0.4383187817370803,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Large vehicle running and faint speaking in background",
+      "clip_similarity": 0.30575525760650635,
+      "visual": 0.06373463003685693,
+      "scene_support": 1.0,
+      "object_support": 0.8797606145728705,
+      "score": 0.5894220363866038,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.30561116337776184,
+      "visual": 0.05624709635456995,
+      "scene_support": 0.3686459615552459,
+      "object_support": 0.30869839544867583,
+      "score": 0.2257021456430045,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A monster truck driving over a dirt hill",
+      "clip_similarity": 0.30530717968940735,
+      "visual": 0.040451265215102054,
+      "scene_support": 0.20772626998004629,
+      "object_support": 0.5010241008255935,
+      "score": 0.22880561732773275,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck vehicle is in its clinker, while a bull horn decimates a speech",
+      "clip_similarity": 0.3049939274787903,
+      "visual": 0.024173816086969988,
+      "scene_support": 0.5551699075146944,
+      "object_support": 0.655046749698653,
+      "score": 0.3727345235987922,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck reversing beeps",
+      "clip_similarity": 0.30463290214538574,
+      "visual": 0.00541394369250782,
+      "scene_support": 0.9740428688803349,
+      "object_support": 0.9613968358473959,
+      "score": 0.5827974888953223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle engine accelerates then man laughs followed by tires squealing",
+      "clip_similarity": 0.30452871322631836,
+      "visual": 0.0,
+      "scene_support": 0.7099563907556828,
+      "object_support": 0.6528762574857523,
+      "score": 0.4088497944724305,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "yard",
+      0.09016094356775284
+    ],
+    [
+      "campsite",
+      0.07294578850269318
+    ],
+    [
+      "driveway",
+      0.06970234215259552
+    ],
+    [
+      "farm",
+      0.05528315529227257
+    ],
+    [
+      "corral",
+      0.0534953735768795
+    ]
+  ],
+  "top_objects": [
+    [
+      "tractor",
+      0.13614198565483093
+    ],
+    [
+      "tow truck",
+      0.06635510921478271
+    ],
+    [
+      "jeep",
+      0.06362677365541458
+    ],
+    [
+      "pickup truck",
+      0.04847158491611481
+    ],
+    [
+      "semi-trailer truck",
+      0.03353867679834366
+    ]
+  ]
+}

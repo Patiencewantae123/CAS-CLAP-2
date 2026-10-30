@@ -1,0 +1,283 @@
+{
+  "id": "XPebkNzsnRI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\XPebkNzsnRI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\XPebkNzsnRI.wav",
+  "gt_captions": [
+    "Whistling and then laughing with a male speaking in the distance",
+    "Young children are whistling and laughing",
+    "Whistling followed by a child giggling and then Moe whistling",
+    "A person is whistling and baby is laughing followed by a man talking",
+    "A person whistling followed by a young girl laughing as a man talks in the background then another person whistling"
+  ],
+  "top_scene": [
+    "kindergarden classroom",
+    0.14279769361019135
+  ],
+  "top_object": [
+    "cockroach",
+    0.03581162914633751
+  ],
+  "env_probs": {
+    "indoor": 0.31400567293167114,
+    "outdoor": 0.6859943270683289
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A young girl sneezing then speaking",
+    "casv": "A child screaming followed by children speaking with some tapping in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.02042575180530548,
+    "clap_gt_audio_baseline": 0.31317266821861267,
+    "clap_text_casv": 0.2487366646528244,
+    "clap_gt_audio_casv": 0.40939849615097046
+  },
+  "verdicts": [
+    {
+      "caption": "A young girl sneezing then speaking",
+      "clip_similarity": 0.3327920734882355,
+      "visual": 1.0,
+      "scene_support": 0.5179336592704024,
+      "object_support": 0.5259570167329669,
+      "score": 0.7131672028010108,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaking while metal creaks briefly followed by a young girl laughing in the background",
+      "clip_similarity": 0.3305996358394623,
+      "visual": 0.8659074297192415,
+      "scene_support": 0.21722572395637457,
+      "object_support": 0.0,
+      "score": 0.411530689074609,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.3274092674255371,
+      "visual": 0.670780010243866,
+      "scene_support": 0.9794834148176006,
+      "object_support": 0.9130695124738885,
+      "score": 0.836077882284993,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy screaming followed by two young girls screaming as another young girl speaks",
+      "clip_similarity": 0.32550668716430664,
+      "visual": 0.5544155254720472,
+      "scene_support": 0.5837153817224521,
+      "object_support": 0.5846812627862209,
+      "score": 0.5722852035414208,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaking and laughing with wind noise at the end",
+      "clip_similarity": 0.3254581689834595,
+      "visual": 0.5514480852902095,
+      "scene_support": 0.5497796163971418,
+      "object_support": 0.4166047273255287,
+      "score": 0.510494537232885,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl screaming",
+      "clip_similarity": 0.32392725348472595,
+      "visual": 0.457815140142284,
+      "scene_support": 0.7449501316284317,
+      "object_support": 0.9546539328007269,
+      "score": 0.6930072753856612,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.32332074642181396,
+      "visual": 0.42072031511735786,
+      "scene_support": 0.666675291462956,
+      "object_support": 0.45896261068212824,
+      "score": 0.5059794966904685,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming with people laughing and talking",
+      "clip_similarity": 0.32308459281921387,
+      "visual": 0.4062768286303295,
+      "scene_support": 0.6461256111320045,
+      "object_support": 0.4238304247002112,
+      "score": 0.4834975422017965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screams while speaking followed by a quick burp and children speaking from a distance followed by a child screaming",
+      "clip_similarity": 0.32270774245262146,
+      "visual": 0.3832281301663626,
+      "scene_support": 0.686981872884543,
+      "object_support": 0.511221683417844,
+      "score": 0.5127523189572611,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl sneezes several times before talking",
+      "clip_similarity": 0.32115650177001953,
+      "visual": 0.28835206818550513,
+      "scene_support": 0.5733174877773599,
+      "object_support": 0.624257985862016,
+      "score": 0.4746134693660148,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.3205207586288452,
+      "visual": 0.24946912349326766,
+      "scene_support": 1.0,
+      "object_support": 0.962377780621157,
+      "score": 0.6885009835836542,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking is followed by a child screaming in the background",
+      "clip_similarity": 0.3196621537208557,
+      "visual": 0.19695563968568466,
+      "scene_support": 0.8378578412937194,
+      "object_support": 0.8908216678910769,
+      "score": 0.5973861086297128,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young woman laugh followed by a toddler laughing",
+      "clip_similarity": 0.31955254077911377,
+      "visual": 0.19025155799723306,
+      "scene_support": 0.48701316284317414,
+      "object_support": 0.23059549464973483,
+      "score": 0.2913832204467659,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by sneezing and then a young girl speaking",
+      "clip_similarity": 0.31938689947128296,
+      "visual": 0.1801207026344234,
+      "scene_support": 0.5864189544941707,
+      "object_support": 0.6734282383013717,
+      "score": 0.4500024388924321,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Laughing women singing followed by young child speaking",
+      "clip_similarity": 0.317840039730072,
+      "visual": 0.08551258519086948,
+      "scene_support": 0.5677370440015044,
+      "object_support": 0.26263670383985577,
+      "score": 0.2833171584287558,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl vocalizing something followed by audio distortion",
+      "clip_similarity": 0.3176473379135132,
+      "visual": 0.07372667105342304,
+      "scene_support": 0.8492431741256111,
+      "object_support": 1.0,
+      "score": 0.5842636206590526,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crying child with laughing and talking in the background",
+      "clip_similarity": 0.316925048828125,
+      "visual": 0.029550454685475038,
+      "scene_support": 0.839580594208349,
+      "object_support": 0.9012102252387599,
+      "score": 0.5340574277083228,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bee buzzing and a young girl speaking",
+      "clip_similarity": 0.3168303072452545,
+      "visual": 0.023755926222291893,
+      "scene_support": 0.0,
+      "object_support": 0.14132880373447504,
+      "score": 0.051901011609259265,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl laughs followed by some rustling and more laughing than a girl speaks",
+      "clip_similarity": 0.31675052642822266,
+      "visual": 0.01887641924024053,
+      "scene_support": 0.7015996991350132,
+      "object_support": 0.9001916405610914,
+      "score": 0.4880879696049276,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Girls laughing followed by a young girl talking",
+      "clip_similarity": 0.3164418935775757,
+      "visual": 0.0,
+      "scene_support": 0.4562503196690485,
+      "object_support": 0.10490703348174814,
+      "score": 0.16834720594523897,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "kindergarden classroom",
+      0.14279769361019135
+    ],
+    [
+      "medina",
+      0.07207144051790237
+    ],
+    [
+      "playground",
+      0.06027240678668022
+    ],
+    [
+      "outdoor synagogue",
+      0.05627143010497093
+    ],
+    [
+      "sandbox",
+      0.04244302213191986
+    ]
+  ],
+  "top_objects": [
+    [
+      "cockroach",
+      0.03581162914633751
+    ],
+    [
+      "titi",
+      0.027993516996502876
+    ],
+    [
+      "projectile",
+      0.022685108706355095
+    ],
+    [
+      "wild boar",
+      0.01689174585044384
+    ],
+    [
+      "yawl",
+      0.016129901632666588
+    ]
+  ]
+}

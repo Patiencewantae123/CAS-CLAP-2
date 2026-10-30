@@ -1,0 +1,287 @@
+{
+  "id": "y3-M1sonh3M",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\y3-M1sonh3M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\y3-M1sonh3M.wav",
+  "gt_captions": [
+    "A footstep shuffling on a hard surface followed by plastic clacking then a toilet flushing",
+    "Tapping noises followed by a toilet flushing",
+    "Clinking followed by a toilet flushing",
+    "Some rustling followed by a toilet flush",
+    "Slight rustling and thumping occur, followed by a flush of water with splashing and gurgling"
+  ],
+  "top_scene": [
+    "indoor jacuzzi",
+    0.24077437818050385
+  ],
+  "top_object": [
+    "sink",
+    0.07733079046010971
+  ],
+  "env_probs": {
+    "indoor": 0.585339367389679,
+    "outdoor": 0.41466063261032104
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Water moving followed by a clicking sound, water stops",
+    "casv": "Water moving followed by a clicking sound, water stops"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4056246280670166,
+    "clap_gt_audio_baseline": 0.7304036021232605,
+    "clap_text_casv": 0.4056246280670166,
+    "clap_gt_audio_casv": 0.7304036021232605
+  },
+  "verdicts": [
+    {
+      "caption": "Water moving followed by a clicking sound, water stops",
+      "clip_similarity": 0.32986706495285034,
+      "visual": 1.0,
+      "scene_support": 0.8278809521645413,
+      "object_support": 0.7343978210803492,
+      "score": 0.8686836319734671,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running through faucet with mechanical background noise",
+      "clip_similarity": 0.3242197334766388,
+      "visual": 0.6357010754424617,
+      "scene_support": 0.616954779556693,
+      "object_support": 0.5930524715215139,
+      "score": 0.6172826055004468,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running into a sink and down a drain while a machine runs simultaneously",
+      "clip_similarity": 0.32203158736228943,
+      "visual": 0.4945478104729717,
+      "scene_support": 0.7057710440906813,
+      "object_support": 0.6908527594411122,
+      "score": 0.6168062652487267,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running in a toilet",
+      "clip_similarity": 0.3200984001159668,
+      "visual": 0.3698414712452755,
+      "scene_support": 1.0,
+      "object_support": 0.8894566509585945,
+      "score": 0.7147735837856886,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fast spraying liquid hits against a solid surface",
+      "clip_similarity": 0.32002127170562744,
+      "visual": 0.36486605992794496,
+      "scene_support": 0.35526472149648364,
+      "object_support": 0.36310724608237294,
+      "score": 0.3614580142448349,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rubbing with tricking water splashing",
+      "clip_similarity": 0.31987908482551575,
+      "visual": 0.355693846869605,
+      "scene_support": 0.5502681838334281,
+      "object_support": 0.4380764939201983,
+      "score": 0.4387809420739299,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water pours out of a sink nearby at moderate speed",
+      "clip_similarity": 0.31965741515159607,
+      "visual": 0.3413943455642324,
+      "scene_support": 0.6047866092898355,
+      "object_support": 0.6349373132054149,
+      "score": 0.5084749149742681,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing from a sink, then stopping momentarily, and an object being placed down, followed by the water flowing again",
+      "clip_similarity": 0.31888896226882935,
+      "visual": 0.2918228692051261,
+      "scene_support": 0.8398683470362429,
+      "object_support": 0.8842753679545804,
+      "score": 0.6339722621792974,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Splashing water from a toilet",
+      "clip_similarity": 0.3185145854949951,
+      "visual": 0.2676725148897066,
+      "scene_support": 0.9108534921463695,
+      "object_support": 0.8473400768526292,
+      "score": 0.6345270766555822,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flushing down a toilet",
+      "clip_similarity": 0.31840071082115173,
+      "visual": 0.26032666997335424,
+      "scene_support": 0.852010596063944,
+      "object_support": 0.7538411236165495,
+      "score": 0.5858861838934898,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine buzzing and spraying water",
+      "clip_similarity": 0.3182506263256073,
+      "visual": 0.25064499632803877,
+      "scene_support": 0.7435389628205271,
+      "object_support": 0.6506662307134343,
+      "score": 0.5185195565914039,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows while some liquid flow",
+      "clip_similarity": 0.31761059165000916,
+      "visual": 0.20935754136243218,
+      "scene_support": 0.30694854162732194,
+      "object_support": 0.2988989535535215,
+      "score": 0.2654972650992259,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water slowly pours into sink and then runs fast out of a faucet into sink",
+      "clip_similarity": 0.3169907331466675,
+      "visual": 0.1693716140095894,
+      "scene_support": 0.6118082353459997,
+      "object_support": 0.7460133293758938,
+      "score": 0.4750951150204038,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A water jet sprays a surface",
+      "clip_similarity": 0.3167148232460022,
+      "visual": 0.1515731758427247,
+      "scene_support": 0.5000775953977344,
+      "object_support": 0.36056390338980093,
+      "score": 0.3188217199733505,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running in a sink accompanied by musical tones",
+      "clip_similarity": 0.3162577748298645,
+      "visual": 0.1220898265527013,
+      "scene_support": 0.8024468303205784,
+      "object_support": 0.9181587748021148,
+      "score": 0.5650176121578885,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat motors through the water and then a radio plays while water splashes",
+      "clip_similarity": 0.3160458207130432,
+      "visual": 0.10841705789394761,
+      "scene_support": 0.788443638305128,
+      "object_support": 0.7548147172308928,
+      "score": 0.5063443298183853,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy speedboat motor running while wind blows into a microphone and water splashes",
+      "clip_similarity": 0.3158876895904541,
+      "visual": 0.09821631119775145,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03928652447910058,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pours into a basin and abruptly turns off",
+      "clip_similarity": 0.31581979990005493,
+      "visual": 0.09383687264254323,
+      "scene_support": 0.9140973500750874,
+      "object_support": 1.0,
+      "score": 0.6117639540795435,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flowing from faucet, followed by splashing sounds",
+      "clip_similarity": 0.3154553771018982,
+      "visual": 0.07032863091599091,
+      "scene_support": 0.8675229428214495,
+      "object_support": 0.80042061021813,
+      "score": 0.5285145182782702,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water pouring into a sink",
+      "clip_similarity": 0.3143651485443115,
+      "visual": 0.0,
+      "scene_support": 0.6710631781391715,
+      "object_support": 0.7489785520532921,
+      "score": 0.42601251905773907,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor jacuzzi",
+      0.24077437818050385
+    ],
+    [
+      "fountain",
+      0.08164481818675995
+    ],
+    [
+      "shower",
+      0.05470970273017883
+    ],
+    [
+      "raft",
+      0.04868219047784805
+    ],
+    [
+      "wave",
+      0.029657170176506042
+    ]
+  ],
+  "top_objects": [
+    [
+      "sink",
+      0.07733079046010971
+    ],
+    [
+      "bassinet",
+      0.06133679300546646
+    ],
+    [
+      "bathtub",
+      0.049208566546440125
+    ],
+    [
+      "mousetrap",
+      0.034959252923727036
+    ],
+    [
+      "infant bed",
+      0.029807759448885918
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "l5KdHAWwJCw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\l5KdHAWwJCw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\l5KdHAWwJCw.wav",
+  "gt_captions": [
+    "A clock ticks with breathing in the background",
+    "A clock ticking",
+    "Ticking of a clock",
+    "A clock ticking",
+    "A clock ticking"
+  ],
+  "top_scene": [
+    "indoor bow window",
+    0.2649575471878052
+  ],
+  "top_object": [
+    "wall clock",
+    0.8631514310836792
+  ],
+  "env_probs": {
+    "indoor": 0.6874021291732788,
+    "outdoor": 0.3125978708267212
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A clock tick locking with clanging in the background",
+    "casv": "A clock tick locking with clanging in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3747698664665222,
+    "clap_gt_audio_baseline": 0.6291176080703735,
+    "clap_text_casv": 0.3747698664665222,
+    "clap_gt_audio_casv": 0.6291176080703735
+  },
+  "verdicts": [
+    {
+      "caption": "A clock tick locking with clanging in the background",
+      "clip_similarity": 0.3256830871105194,
+      "visual": 1.0,
+      "scene_support": 0.9728748633631941,
+      "object_support": 1.0,
+      "score": 0.9918624590089582,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cuckoo clock making high pitched sounds",
+      "clip_similarity": 0.3239920735359192,
+      "visual": 0.887328110882753,
+      "scene_support": 0.19247075545850256,
+      "object_support": 0.12690130381463005,
+      "score": 0.450742862135041,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chime of a clock and rumpling sounds in background",
+      "clip_similarity": 0.32353514432907104,
+      "visual": 0.8568830111498327,
+      "scene_support": 1.0,
+      "object_support": 0.8326979528885861,
+      "score": 0.8925625903265089,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cuckoo clock chime",
+      "clip_similarity": 0.3227159380912781,
+      "visual": 0.8022994668334674,
+      "scene_support": 0.0,
+      "object_support": 0.022851491002847953,
+      "score": 0.3277752340342414,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tick locking of a large clock",
+      "clip_similarity": 0.3222433924674988,
+      "visual": 0.7708138484297898,
+      "scene_support": 0.8287199643485602,
+      "object_support": 0.9058973963676413,
+      "score": 0.8287107475867764,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A mechanical clock ticking",
+      "clip_similarity": 0.32220950722694397,
+      "visual": 0.7685560817720589,
+      "scene_support": 0.9278399546617545,
+      "object_support": 0.9659061134193746,
+      "score": 0.8755462531331624,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Chime clock playing music",
+      "clip_similarity": 0.320072740316391,
+      "visual": 0.6261837389171855,
+      "scene_support": 0.5903775232818299,
+      "object_support": 0.6017722134142357,
+      "score": 0.6081184165756939,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cuckoo clock tick locking and chiming",
+      "clip_similarity": 0.31871479749679565,
+      "visual": 0.5357042861823489,
+      "scene_support": 0.011564664629718937,
+      "object_support": 0.028101706550033276,
+      "score": 0.22618162582686524,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock making a faint ticktock sound",
+      "clip_similarity": 0.3183339536190033,
+      "visual": 0.510328736385389,
+      "scene_support": 0.9323667055165277,
+      "object_support": 0.8434845113724535,
+      "score": 0.73688685962085,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock chimes with the motor rhythmically running",
+      "clip_similarity": 0.31703096628189087,
+      "visual": 0.4235109562247441,
+      "scene_support": 0.6394086554605415,
+      "object_support": 0.5954383934740116,
+      "score": 0.5398584971702636,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cuckoo clock makes a cuckoo sound and then plays a chime melody",
+      "clip_similarity": 0.3166680335998535,
+      "visual": 0.3993288257429085,
+      "scene_support": 0.12708107165698054,
+      "object_support": 0.0,
+      "score": 0.19785585179425758,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock plays music nearby while tick-tocking",
+      "clip_similarity": 0.3160237967967987,
+      "visual": 0.35640345912886345,
+      "scene_support": 0.6673913739993318,
+      "object_support": 0.6357614192426062,
+      "score": 0.5335072216241268,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Gears move, a clock chimes the hour, and a loud ringing",
+      "clip_similarity": 0.31525570154190063,
+      "visual": 0.3052254291643086,
+      "scene_support": 0.6990162149971559,
+      "object_support": 0.519385289245607,
+      "score": 0.4876106229385523,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ticktocks as static noise sounds in the background",
+      "clip_similarity": 0.31508082151412964,
+      "visual": 0.2935732086299507,
+      "scene_support": 0.8328139713032541,
+      "object_support": 0.7336379226009551,
+      "score": 0.587364851623243,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock tick locking and chiming",
+      "clip_similarity": 0.3145551085472107,
+      "visual": 0.25854506101132857,
+      "scene_support": 0.9207100828080419,
+      "object_support": 0.8761661594408399,
+      "score": 0.642480897079196,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock ticks nearby multiple times at moderate speed",
+      "clip_similarity": 0.3137112259864807,
+      "visual": 0.20231733833735444,
+      "scene_support": 0.9379703229226525,
+      "object_support": 0.8943777554035887,
+      "score": 0.6306313588328141,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clock sounding tick took noise",
+      "clip_similarity": 0.31370311975479126,
+      "visual": 0.2017772217754346,
+      "scene_support": 0.6879949768419599,
+      "object_support": 0.6990387134798991,
+      "score": 0.49682099580673156,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A smaller clock dings continuously and then a door clap shuts and snaps",
+      "clip_similarity": 0.3127652704715729,
+      "visual": 0.1392885155730299,
+      "scene_support": 0.8875323569687787,
+      "object_support": 0.738862126567277,
+      "score": 0.5436337512900287,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock with chimes",
+      "clip_similarity": 0.31097733974456787,
+      "visual": 0.020159056384594764,
+      "scene_support": 0.843992079122229,
+      "object_support": 0.8576678016597926,
+      "score": 0.5185615867884443,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fan spins while a person snores",
+      "clip_similarity": 0.310674786567688,
+      "visual": 0.0,
+      "scene_support": 0.4324397310496661,
+      "object_support": 0.02640492672030128,
+      "score": 0.13765339733099022,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor bow window",
+      0.2649575471878052
+    ],
+    [
+      "windmill",
+      0.22630278766155243
+    ],
+    [
+      "childs room",
+      0.07193489372730255
+    ],
+    [
+      "bank vault",
+      0.05845778435468674
+    ],
+    [
+      "shower",
+      0.027383878827095032
+    ]
+  ],
+  "top_objects": [
+    [
+      "wall clock",
+      0.8631514310836792
+    ],
+    [
+      "analog clock",
+      0.027164913713932037
+    ],
+    [
+      "unicycle",
+      0.01509171910583973
+    ],
+    [
+      "electric fan",
+      0.011710681021213531
+    ],
+    [
+      "barometer",
+      0.011206917464733124
+    ]
+  ]
+}

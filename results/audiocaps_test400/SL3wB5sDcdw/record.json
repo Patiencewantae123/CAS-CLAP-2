@@ -1,0 +1,283 @@
+{
+  "id": "SL3wB5sDcdw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SL3wB5sDcdw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SL3wB5sDcdw.wav",
+  "gt_captions": [
+    "A vacuum cleaner running as leaves rustle and a swarm of insects buzz while wind blows into a microphone",
+    "A vacuum cleaner is operating with wind noise",
+    "Leaves rustling as a leaf blower operates and wind blows into a microphone",
+    "A machine running and minor rustling of leaves",
+    "Wind is blowing while a vacuum machine is in use"
+  ],
+  "top_scene": [
+    "vineyard",
+    0.34916386008262634
+  ],
+  "top_object": [
+    "European polecat",
+    0.049401555210351944
+  ],
+  "env_probs": {
+    "indoor": 0.062372125685214996,
+    "outdoor": 0.937627874314785
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+    "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10188166797161102,
+    "clap_gt_audio_baseline": 0.2608146071434021,
+    "clap_text_casv": 0.10188166797161102,
+    "clap_gt_audio_casv": 0.2608146071434021
+  },
+  "verdicts": [
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.3142552673816681,
+      "visual": 1.0,
+      "scene_support": 0.6190173921201318,
+      "object_support": 0.6855889437870343,
+      "score": 0.7913819007721499,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds cooing with blanking sounds",
+      "clip_similarity": 0.30618739128112793,
+      "visual": 0.5628062389576328,
+      "scene_support": 0.8816045116013037,
+      "object_support": 0.8259548687426371,
+      "score": 0.7373903096862353,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud cooing of pigeon or doves, with other bird sound in the background",
+      "clip_similarity": 0.30420634150505066,
+      "visual": 0.4554542430144411,
+      "scene_support": 0.4493678068739276,
+      "object_support": 1.0,
+      "score": 0.6169920392679547,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling followed by male speech then high pitched buzzing and more speech",
+      "clip_similarity": 0.30414366722106934,
+      "visual": 0.4520579580947213,
+      "scene_support": 0.6071860899354491,
+      "object_support": 0.5194957405095564,
+      "score": 0.5188277323713902,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice talking followed by rustling leaves and then some squeaking noises",
+      "clip_similarity": 0.3041187822818756,
+      "visual": 0.45070945694970654,
+      "scene_support": 0.8883198612746152,
+      "object_support": 0.873996118544828,
+      "score": 0.7089785767257155,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.3027741014957428,
+      "visual": 0.3778419459759757,
+      "scene_support": 0.6795796172946734,
+      "object_support": 0.8981233406009882,
+      "score": 0.6244476657590887,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.3003618121147156,
+      "visual": 0.24712131342396554,
+      "scene_support": 0.754799704633561,
+      "object_support": 0.869176718302182,
+      "score": 0.5860414522503091,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are cooing with wind noise in the background followed by clicking sounds",
+      "clip_similarity": 0.30032795667648315,
+      "visual": 0.24528670587817303,
+      "scene_support": 0.9142264637434669,
+      "object_support": 0.9287810120795457,
+      "score": 0.651016925098173,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bees buzzing with a slight metal tapping sound near the end",
+      "clip_similarity": 0.29980236291885376,
+      "visual": 0.21680506971831667,
+      "scene_support": 0.5965562270568974,
+      "object_support": 0.48262191637508134,
+      "score": 0.41047547091692027,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male speaking with high pitch noise in the background",
+      "clip_similarity": 0.29932063817977905,
+      "visual": 0.19070067150512107,
+      "scene_support": 0.7580249790429038,
+      "object_support": 0.6249032933026216,
+      "score": 0.49115875030570605,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rustling leaves with insects buzzing and a man speaking",
+      "clip_similarity": 0.2987786531448364,
+      "visual": 0.16133080105812928,
+      "scene_support": 0.6630515045227986,
+      "object_support": 0.288067822165175,
+      "score": 0.34986811842964377,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.29859283566474915,
+      "visual": 0.15126145418487547,
+      "scene_support": 0.8855356694316919,
+      "object_support": 0.8098070481599353,
+      "score": 0.5691073969514383,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insect buzzing noises and a slurping sound",
+      "clip_similarity": 0.29782384634017944,
+      "visual": 0.10959034634677313,
+      "scene_support": 0.7961464666487107,
+      "object_support": 0.3866635969616514,
+      "score": 0.3986791576218179,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insect buzzing with light scrapping and then metal clanking",
+      "clip_similarity": 0.2976382374763489,
+      "visual": 0.0995323042735374,
+      "scene_support": 0.43216483020969204,
+      "object_support": 0.5018138000457159,
+      "score": 0.3200065107860373,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rattling with rustling leaves and high pitched ringing",
+      "clip_similarity": 0.2974976599216461,
+      "visual": 0.09191448403277747,
+      "scene_support": 1.0,
+      "object_support": 0.5296142281926397,
+      "score": 0.4956500620709029,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds chirping outdoors near running water",
+      "clip_similarity": 0.2973758578300476,
+      "visual": 0.0853140957936454,
+      "scene_support": 0.5572567539349407,
+      "object_support": 0.46930881085928294,
+      "score": 0.3420953077557252,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Chainsaw buzzing in the wood",
+      "clip_similarity": 0.2962245047092438,
+      "visual": 0.022922904493819504,
+      "scene_support": 0.41083398650877473,
+      "object_support": 0.0,
+      "score": 0.1324193577501602,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds cooing and clicking noise",
+      "clip_similarity": 0.2961052656173706,
+      "visual": 0.016461403797766817,
+      "scene_support": 0.8076085607846579,
+      "object_support": 0.8352409095704464,
+      "score": 0.499439402625638,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeon cooing continuously",
+      "clip_similarity": 0.29595616459846497,
+      "visual": 0.008381701727696438,
+      "scene_support": 0.0,
+      "object_support": 0.987504505652946,
+      "score": 0.29960403238696237,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees buzzing and men speaking clicking",
+      "clip_similarity": 0.2958014905452728,
+      "visual": 0.0,
+      "scene_support": 0.6757937216473943,
+      "object_support": 0.46499107660928735,
+      "score": 0.34223543947700447,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "vineyard",
+      0.34916386008262634
+    ],
+    [
+      "vegetable garden",
+      0.05066261440515518
+    ],
+    [
+      "orchard",
+      0.04560941830277443
+    ],
+    [
+      "broadleaf forest",
+      0.035165999084711075
+    ],
+    [
+      "yard",
+      0.021862944588065147
+    ]
+  ],
+  "top_objects": [
+    [
+      "European polecat",
+      0.049401555210351944
+    ],
+    [
+      "junco",
+      0.036931101232767105
+    ],
+    [
+      "bulbul",
+      0.022411467507481575
+    ],
+    [
+      "ptarmigan",
+      0.020494885742664337
+    ],
+    [
+      "small white",
+      0.020306479185819626
+    ]
+  ]
+}

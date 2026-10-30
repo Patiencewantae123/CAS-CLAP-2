@@ -1,0 +1,285 @@
+{
+  "id": "3rna9zo5ZOs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3rna9zo5ZOs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3rna9zo5ZOs.wav",
+  "gt_captions": [
+    "A man is speaking with crowd noise in the background",
+    "Male speaking with many people cheering in background",
+    "A man is giving a speech and a crowd cheers",
+    "A man speaking while a large crowd cheers in the background",
+    "A man is speaking along with noise from a cheering crowd"
+  ],
+  "top_scene": [
+    "indoor stage",
+    0.15613438189029694
+  ],
+  "top_object": [
+    "cauldron",
+    0.15539267659187317
+  ],
+  "env_probs": {
+    "indoor": 0.7500553131103516,
+    "outdoor": 0.24994468688964844
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A crowding is applauding and chanting in a stadium",
+    "casv": "A crowding is applauding and chanting in a stadium"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1487848460674286,
+    "clap_gt_audio_baseline": 0.31163549423217773,
+    "clap_text_casv": 0.1487848460674286,
+    "clap_gt_audio_casv": 0.31163549423217773
+  },
+  "verdicts": [
+    {
+      "caption": "A crowding is applauding and chanting in a stadium",
+      "clip_similarity": 0.335854172706604,
+      "visual": 1.0,
+      "scene_support": 0.9401728270743219,
+      "object_support": 0.41221732674800066,
+      "score": 0.8057170461466968,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A crowd of people cheering and yelling followed by a man speaking",
+      "clip_similarity": 0.31900036334991455,
+      "visual": 0.3680436978696395,
+      "scene_support": 0.8487243902928532,
+      "object_support": 0.5476373167057721,
+      "score": 0.5661259912474433,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman makes a speech over a microphone in a stadium, people clap and cheer after she speaks",
+      "clip_similarity": 0.3177981972694397,
+      "visual": 0.32296686006490316,
+      "scene_support": 0.5989462487380028,
+      "object_support": 0.1880117868301423,
+      "score": 0.3652741546964048,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd cheering with a faint tapping of drums",
+      "clip_similarity": 0.3176232576370239,
+      "visual": 0.31640726271466757,
+      "scene_support": 0.9133246829627548,
+      "object_support": 0.6076773240826371,
+      "score": 0.5828635071994847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crowd cheering and accelerating vehicle with a dog barking in the background and popping at the end",
+      "clip_similarity": 0.31732916831970215,
+      "visual": 0.305379987305447,
+      "scene_support": 0.8431336447350395,
+      "object_support": 0.5841985668959149,
+      "score": 0.5503516584114652,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.31)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yells followed by a thump and a cheering crowd",
+      "clip_similarity": 0.3156721889972687,
+      "visual": 0.24324931386835213,
+      "scene_support": 0.6903859595235955,
+      "object_support": 0.4627549090478325,
+      "score": 0.4432419861187693,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd of people applauding and cheering followed by a kid talking",
+      "clip_similarity": 0.3154129981994629,
+      "visual": 0.23353060549441707,
+      "scene_support": 0.848791580461099,
+      "object_support": 0.5148600751417153,
+      "score": 0.5025077388786111,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd claps, and two quick thumps occur while the crowd is shouting and talking",
+      "clip_similarity": 0.31498590111732483,
+      "visual": 0.21751602463816055,
+      "scene_support": 0.9350166361111377,
+      "object_support": 0.7232410282918923,
+      "score": 0.5844837091761732,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd cheering followed by some bangs and claps",
+      "clip_similarity": 0.31420356035232544,
+      "visual": 0.1881811029957357,
+      "scene_support": 0.9360960418010107,
+      "object_support": 0.8251359941200463,
+      "score": 0.6036420519746113,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman talking and crowd clapping",
+      "clip_similarity": 0.3140554428100586,
+      "visual": 0.182627236073986,
+      "scene_support": 0.4048050568891301,
+      "object_support": 0.26783875357905834,
+      "score": 0.27484403757005094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A group of people is cheering while a man makes a speech, celebrating a victory",
+      "clip_similarity": 0.31375518441200256,
+      "visual": 0.1713686426662137,
+      "scene_support": 0.04800170331439502,
+      "object_support": 0.0,
+      "score": 0.082947968060804,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd clapping",
+      "clip_similarity": 0.31209421157836914,
+      "visual": 0.10908822714309979,
+      "scene_support": 0.982394430720392,
+      "object_support": 0.8261711782657098,
+      "score": 0.5862049735530704,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talks followed by a loud burst and then cheering from a crowd",
+      "clip_similarity": 0.31116318702697754,
+      "visual": 0.07417820649210166,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6296712825968407,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People in a crowd frolicking and cheering",
+      "clip_similarity": 0.3108803629875183,
+      "visual": 0.06357333786284519,
+      "scene_support": 0.7490063272196098,
+      "object_support": 0.5049874606757908,
+      "score": 0.4016274715137582,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Whistle with man speaking while people cheering",
+      "clip_similarity": 0.31081622838974,
+      "visual": 0.06116852466051011,
+      "scene_support": 0.0,
+      "object_support": 0.15351955878809417,
+      "score": 0.0705232775006323,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl yelps, followed by a crowd clapping",
+      "clip_similarity": 0.310743510723114,
+      "visual": 0.05844187772105955,
+      "scene_support": 0.8560742966192875,
+      "object_support": 0.7077570157619911,
+      "score": 0.4925261448028074,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd of people applaud, then drumming ensues and a band plays",
+      "clip_similarity": 0.31057846546173096,
+      "visual": 0.05225328315110988,
+      "scene_support": 0.5999567190604546,
+      "object_support": 0.7123379411816176,
+      "score": 0.4145897113330656,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman and crowd cheering",
+      "clip_similarity": 0.3104889392852783,
+      "visual": 0.04889637847647485,
+      "scene_support": 0.5664401689003762,
+      "object_support": 0.36952910563589786,
+      "score": 0.30034933375147216,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd of people shouting followed by a woman speaking as a gunshot fires then a man speaks as marching band music plays",
+      "clip_similarity": 0.3091980814933777,
+      "visual": 0.0004939253882119454,
+      "scene_support": 0.15795535955029708,
+      "object_support": 0.09245311719657595,
+      "score": 0.07532011317934668,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A group of people are clapping, cheering, and talking",
+      "clip_similarity": 0.3091849088668823,
+      "visual": 0.0,
+      "scene_support": 0.5728467950726046,
+      "object_support": 0.6045724447172628,
+      "score": 0.35322577193696025,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor stage",
+      0.15613438189029694
+    ],
+    [
+      "performance arena",
+      0.06566820293664932
+    ],
+    [
+      "football stadium",
+      0.0557623952627182
+    ],
+    [
+      "bullring",
+      0.05440067872405052
+    ],
+    [
+      "locker room",
+      0.04554433375597
+    ]
+  ],
+  "top_objects": [
+    [
+      "cauldron",
+      0.15539267659187317
+    ],
+    [
+      "neck brace",
+      0.09134019166231155
+    ],
+    [
+      "poncho",
+      0.03321697562932968
+    ],
+    [
+      "crutch",
+      0.028883028775453568
+    ],
+    [
+      "dome",
+      0.02374313212931156
+    ]
+  ]
+}

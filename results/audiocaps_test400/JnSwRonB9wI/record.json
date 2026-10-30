@@ -1,0 +1,299 @@
+{
+  "id": "JnSwRonB9wI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\JnSwRonB9wI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\JnSwRonB9wI.wav",
+  "gt_captions": [
+    "Screaming, wind and an engine running, and laughing",
+    "People scream with a distant hum and splashing waves",
+    "A muffled motorboat engine running as a group of people are laughing and screaming while water splashes and sprays",
+    "Several people screaming and laughing with a humming engine and splashing waves",
+    "People laugh and scream as water splashes and wind blows"
+  ],
+  "top_scene": [
+    "raft",
+    0.4589652419090271
+  ],
+  "top_object": [
+    "motorboat",
+    0.20475132763385773
+  ],
+  "env_probs": {
+    "indoor": 0.0343889556825161,
+    "outdoor": 0.9656110443174839
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "A speedboat travels fast with low splashing noise in the background",
+    "casv": "A speedboat travels fast with low splashing noise in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1835232377052307,
+    "clap_gt_audio_baseline": 0.24846595525741577,
+    "clap_text_casv": 0.1835232377052307,
+    "clap_gt_audio_casv": 0.24846595525741577
+  },
+  "verdicts": [
+    {
+      "caption": "A speedboat travels fast with low splashing noise in the background",
+      "clip_similarity": 0.30818992853164673,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 0.8712736091114739,
+      "score": 0.9613820827334421,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Speedboat traveling at high speed with loud wind",
+      "clip_similarity": 0.3057071268558502,
+      "visual": 0.8752637071574128,
+      "scene_support": 0.15870787338042003,
+      "object_support": 0.3115128119018406,
+      "score": 0.4911716884476433,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water speedboat moves along as someone laughs in the background",
+      "clip_similarity": 0.3057063817977905,
+      "visual": 0.8752262753394692,
+      "scene_support": 0.5999703271902334,
+      "object_support": 0.48446434291275003,
+      "score": 0.6754209111666827,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A powerful speedboat running with wind blowing and waves crashing then a man speaks",
+      "clip_similarity": 0.30541548132896423,
+      "visual": 0.8606113963415638,
+      "scene_support": 0.17711159315215866,
+      "object_support": 0.32733275921116944,
+      "score": 0.495577864245624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of men speaking and a motorboat engine revving then accelerating",
+      "clip_similarity": 0.30269336700439453,
+      "visual": 0.7238520035754873,
+      "scene_support": 0.7515391856494691,
+      "object_support": 0.8215826708207398,
+      "score": 0.7614773583712575,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speed boat slowing down at sea, waves heard followed by male voice",
+      "clip_similarity": 0.30253252387046814,
+      "visual": 0.7157712227178195,
+      "scene_support": 0.6664922353711586,
+      "object_support": 0.6422526204021737,
+      "score": 0.6789319458191274,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Speedboat traveling in water with wind sounds and people talking",
+      "clip_similarity": 0.3024877905845642,
+      "visual": 0.7135238163684848,
+      "scene_support": 0.6522858295523645,
+      "object_support": 0.5136365097362474,
+      "score": 0.6351862283339775,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine sound of a speedboat and laughter",
+      "clip_similarity": 0.29976919293403625,
+      "visual": 0.5769411017831021,
+      "scene_support": 0.9679402100191777,
+      "object_support": 0.9364497748399274,
+      "score": 0.8020934361709724,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blows and water slaps speedboat",
+      "clip_similarity": 0.29910510778427124,
+      "visual": 0.5435773738135985,
+      "scene_support": 0.28595964497871745,
+      "object_support": 0.3186311508932698,
+      "score": 0.3988081882870356,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat running on water with some people cheering",
+      "clip_similarity": 0.2977049946784973,
+      "visual": 0.4732355015339559,
+      "scene_support": 0.47497836662145093,
+      "object_support": 0.33871101815799887,
+      "score": 0.4334010160474173,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat accelerates loudly, and then people talk nearby",
+      "clip_similarity": 0.29634806513786316,
+      "visual": 0.4050631774223252,
+      "scene_support": 0.2530776404415548,
+      "object_support": 0.5184068220786547,
+      "score": 0.3934706097249929,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat runs really fast away and gets less noisy as it goes",
+      "clip_similarity": 0.2959926724433899,
+      "visual": 0.38720820026322056,
+      "scene_support": 0.6552297230927546,
+      "object_support": 0.7147366519367756,
+      "score": 0.5658731926141473,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male announcer narrating, speedboat engine racing, then coming to an abrupt end",
+      "clip_similarity": 0.2917437255382538,
+      "visual": 0.17374053162165115,
+      "scene_support": 0.6130936023668085,
+      "object_support": 0.6203312396716198,
+      "score": 0.43952366526018893,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat driving by as water splashes and wind blows moderately into a microphone",
+      "clip_similarity": 0.29133152961730957,
+      "visual": 0.15303175266252522,
+      "scene_support": 0.0,
+      "object_support": 0.19529685330070368,
+      "score": 0.1198017570552212,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat running with a loud engine noise humming",
+      "clip_similarity": 0.2902390658855438,
+      "visual": 0.09814622664816038,
+      "scene_support": 0.9273038086439964,
+      "object_support": 0.9666044885713114,
+      "score": 0.6074309798238565,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboats' engine accelerating",
+      "clip_similarity": 0.28952351212501526,
+      "visual": 0.06219670869511185,
+      "scene_support": 0.6260970169325039,
+      "object_support": 0.7686647891320226,
+      "score": 0.44330722529740263,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Jet ski riding on waves",
+      "clip_similarity": 0.28910550475120544,
+      "visual": 0.0411959615560257,
+      "scene_support": 0.07467827657982132,
+      "object_support": 0.0,
+      "score": 0.03888186759635667,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast, loud motor boat with men cheering and talking",
+      "clip_similarity": 0.2888796925544739,
+      "visual": 0.029851126173674653,
+      "scene_support": 0.8229147177136442,
+      "object_support": 1.0,
+      "score": 0.5588148657835631,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The sound of a watercraft engine, males speaking and water splashing in the background",
+      "clip_similarity": 0.288593053817749,
+      "visual": 0.015450357174406818,
+      "scene_support": 0.7537288343701763,
+      "object_support": 0.582392072237425,
+      "score": 0.4070164148520431,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speedboat revving the engine and running on water",
+      "clip_similarity": 0.2882855236530304,
+      "visual": 0.0,
+      "scene_support": 0.7281539419523831,
+      "object_support": 0.727963628585077,
+      "score": 0.43683527116123805,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raft",
+      0.4589652419090271
+    ],
+    [
+      "water park",
+      0.21458938717842102
+    ],
+    [
+      "islet",
+      0.05161542445421219
+    ],
+    [
+      "amusement park",
+      0.03051365725696087
+    ],
+    [
+      "wave",
+      0.025691838935017586
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.20475132763385773
+    ],
+    [
+      "amphibious vehicle",
+      0.09452588856220245
+    ],
+    [
+      "catamaran",
+      0.06456515192985535
+    ],
+    [
+      "sea snake",
+      0.053973063826560974
+    ],
+    [
+      "snorkel",
+      0.04400358349084854
+    ]
+  ]
+}

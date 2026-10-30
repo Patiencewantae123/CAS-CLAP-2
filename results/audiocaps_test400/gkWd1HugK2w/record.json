@@ -1,0 +1,283 @@
+{
+  "id": "gkWd1HugK2w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\gkWd1HugK2w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\gkWd1HugK2w.wav",
+  "gt_captions": [
+    "Pigeons coo and flap their wings",
+    "Several pigeons cooing and flapping wings repeatedly",
+    "Pigeons coo and flap their wings",
+    "Pigeons coo and flap their wings",
+    "Pigeons coo and flap their wings"
+  ],
+  "top_scene": [
+    "lawn",
+    0.21898062527179718
+  ],
+  "top_object": [
+    "magpie",
+    0.07911786437034607
+  ],
+  "env_probs": {
+    "indoor": 0.06001407653093338,
+    "outdoor": 0.9399859234690666
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A cat meows while birds are chirping",
+    "casv": "A bird repeatedly chirping followed by plastic clacking"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.02691790834069252,
+    "clap_gt_audio_baseline": 0.23496799170970917,
+    "clap_text_casv": 0.2133762538433075,
+    "clap_gt_audio_casv": 0.4965120255947113
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meows while birds are chirping",
+      "clip_similarity": 0.3209293484687805,
+      "visual": 1.0,
+      "scene_support": 0.47134295251066566,
+      "object_support": 0.24310790384020978,
+      "score": 0.6143352569052627,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone outdoors makes a tapping sound with birds in the background",
+      "clip_similarity": 0.31564339995384216,
+      "visual": 0.6395367978652706,
+      "scene_support": 0.8965455071279075,
+      "object_support": 0.4607284952344929,
+      "score": 0.6629969198548283,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.31557929515838623,
+      "visual": 0.635165317557255,
+      "scene_support": 0.8053326023704896,
+      "object_support": 0.6985818505664553,
+      "score": 0.7052404629039856,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds cooing with blanking sounds",
+      "clip_similarity": 0.3135262727737427,
+      "visual": 0.4951641388224439,
+      "scene_support": 0.8649211665546972,
+      "object_support": 0.7148500625944739,
+      "score": 0.671997024273729,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind noise with birds cooing and flapping around",
+      "clip_similarity": 0.31319648027420044,
+      "visual": 0.47267469154745523,
+      "scene_support": 0.6932207683186346,
+      "object_support": 0.0871643927065794,
+      "score": 0.4231854249265463,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.3128470480442047,
+      "visual": 0.44884595765090346,
+      "scene_support": 0.9320339163496237,
+      "object_support": 0.7285001743047921,
+      "score": 0.6776986102566861,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bird repeatedly chirping followed by plastic clacking",
+      "clip_similarity": 0.31232842803001404,
+      "visual": 0.4134798487154839,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7653919394861936,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bird sounds followed by an explosion",
+      "clip_similarity": 0.3116385340690613,
+      "visual": 0.3664341036433067,
+      "scene_support": 0.9358188517438482,
+      "object_support": 0.774170146881779,
+      "score": 0.6595703410450108,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds are cooing with wind noise in the background followed by clicking sounds",
+      "clip_similarity": 0.31115198135375977,
+      "visual": 0.33325475101259416,
+      "scene_support": 0.8689920422131042,
+      "object_support": 0.6200536604712016,
+      "score": 0.5800156112103294,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud cooing of pigeon or doves, with other bird sound in the background",
+      "clip_similarity": 0.3108235001564026,
+      "visual": 0.31085472499913624,
+      "scene_support": 0.627440638841946,
+      "object_support": 0.7282200164001755,
+      "score": 0.531040086572291,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks while birds coo, chirp and sing",
+      "clip_similarity": 0.3102046847343445,
+      "visual": 0.2686560187622065,
+      "scene_support": 0.8704666129050022,
+      "object_support": 0.6196620039546723,
+      "score": 0.554500992562785,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several pigeons coo and an object is hit",
+      "clip_similarity": 0.30880776047706604,
+      "visual": 0.17339595531375684,
+      "scene_support": 0.5592355238152344,
+      "object_support": 0.8491085050858892,
+      "score": 0.4918615907958398,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child yelling multiple birds cooing and flying",
+      "clip_similarity": 0.3083314299583435,
+      "visual": 0.14091368206270463,
+      "scene_support": 0.48626650530009247,
+      "object_support": 0.0,
+      "score": 0.2022454244151096,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.30801111459732056,
+      "visual": 0.11907050663241561,
+      "scene_support": 0.7951668345189045,
+      "object_support": 0.6485951880586398,
+      "score": 0.48075680942622956,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings with wind blowing",
+      "clip_similarity": 0.3075200915336609,
+      "visual": 0.08558630879193908,
+      "scene_support": 0.0,
+      "object_support": 0.5415529921852176,
+      "score": 0.1967004211723409,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird emits a strange buzzing noise",
+      "clip_similarity": 0.30703604221343994,
+      "visual": 0.05257766947869437,
+      "scene_support": 0.8578799385371199,
+      "object_support": 0.7982707835529668,
+      "score": 0.5178762844185036,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several birds tweet while someone walks",
+      "clip_similarity": 0.30694591999053955,
+      "visual": 0.04643199004985235,
+      "scene_support": 0.6045278905970523,
+      "object_support": 0.3771694595422347,
+      "score": 0.313082001061727,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple pigeons cooing and wings flapping",
+      "clip_similarity": 0.3066951036453247,
+      "visual": 0.029328141480694153,
+      "scene_support": 0.38533367107732586,
+      "object_support": 0.78718866835373,
+      "score": 0.3634879584215944,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird tweeting alongside footsteps shuffling on grass",
+      "clip_similarity": 0.30636849999427795,
+      "visual": 0.007056150455337128,
+      "scene_support": 0.8567843100783542,
+      "object_support": 0.3240368425286756,
+      "score": 0.35706880596424373,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man talking followed by pigeons walking and flapping",
+      "clip_similarity": 0.3062650263309479,
+      "visual": 0.0,
+      "scene_support": 0.4907974959627764,
+      "object_support": 0.5761775453086606,
+      "score": 0.3200925123814311,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lawn",
+      0.21898062527179718
+    ],
+    [
+      "yard",
+      0.2174045890569687
+    ],
+    [
+      "wild field",
+      0.11311765015125275
+    ],
+    [
+      "driveway",
+      0.02532081864774227
+    ],
+    [
+      "campsite",
+      0.022247180342674255
+    ]
+  ],
+  "top_objects": [
+    [
+      "magpie",
+      0.07911786437034607
+    ],
+    [
+      "goose",
+      0.05726506561040878
+    ],
+    [
+      "ptarmigan",
+      0.05592924356460571
+    ],
+    [
+      "sulphur-crested cockatoo",
+      0.05588861182332039
+    ],
+    [
+      "albatross",
+      0.04608139768242836
+    ]
+  ]
+}

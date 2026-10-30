@@ -1,0 +1,313 @@
+{
+  "id": "0fMXnvD38zI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0fMXnvD38zI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0fMXnvD38zI.wav",
+  "gt_captions": [
+    "Waves roll slowly and water swirls as the wind blows",
+    "Continuous wind and surf",
+    "Ocean waves crashing as water trickles as gusts of wind blow and seagulls squawk in the distance",
+    "Water flows and wind flows with seagulls in the distance",
+    "Ocean waves crashing and water splashing as gusts of wind blow and seagulls squawking in the distance"
+  ],
+  "top_scene": [
+    "landing deck",
+    0.3880912661552429
+  ],
+  "top_object": [
+    "pirate ship",
+    0.5175629258155823
+  ],
+  "env_probs": {
+    "indoor": 0.15133604407310486,
+    "outdoor": 0.8486639559268951
+  },
+  "status": "ACCEPT",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "A ship engine running while steam hisses and wind blows into a microphone",
+    "casv": "The whipping of the wind on a sail at sea while a static radio play in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3014717400074005,
+    "clap_gt_audio_baseline": 0.35224226117134094,
+    "clap_text_casv": 0.10927598178386688,
+    "clap_gt_audio_casv": 0.13572169840335846
+  },
+  "verdicts": [
+    {
+      "caption": "A ship engine running while steam hisses and wind blows into a microphone",
+      "clip_similarity": 0.29896047711372375,
+      "visual": 1.0,
+      "scene_support": 0.7332084689773869,
+      "object_support": 0.7704432674430632,
+      "score": 0.851095520926135,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ship engine running followed by a ship horn blowing then a motor rattling",
+      "clip_similarity": 0.28918322920799255,
+      "visual": 0.5589123054687237,
+      "scene_support": 1.0,
+      "object_support": 0.9175020753711135,
+      "score": 0.7988155447988236,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A siren followed by multiple sirens",
+      "clip_similarity": 0.2883159816265106,
+      "visual": 0.5197875701657088,
+      "scene_support": 0.8247101452745249,
+      "object_support": 0.6957291116881188,
+      "score": 0.6640468051550766,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A siren is triggered followed by a vehicle moving and objects moving",
+      "clip_similarity": 0.2871283292770386,
+      "visual": 0.46620819468253166,
+      "scene_support": 0.5559249117387316,
+      "object_support": 0.4459286921051026,
+      "score": 0.4870393590261629,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.32)",
+        "names 'an emergency vehicle', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine runs while sirens whale",
+      "clip_similarity": 0.2859078645706177,
+      "visual": 0.41114853282242614,
+      "scene_support": 0.7843863233854567,
+      "object_support": 0.7866043745905618,
+      "score": 0.6357566225217759,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sirens ring and approach as a man speaks in the foreground",
+      "clip_similarity": 0.28395840525627136,
+      "visual": 0.32320123693321234,
+      "scene_support": 0.632716148614122,
+      "object_support": 0.4225659808880201,
+      "score": 0.44586513362392755,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People screaming followed by a huge splash and then people shouting and a dozen clanks in a row",
+      "clip_similarity": 0.2809891402721405,
+      "visual": 0.1892467480084703,
+      "scene_support": 0.5776897540313561,
+      "object_support": 0.5121488114024735,
+      "score": 0.402650268833537,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ship engine running as ocean waves crash and wind blows into a microphone",
+      "clip_similarity": 0.28002285957336426,
+      "visual": 0.1456542637222278,
+      "scene_support": 0.48765026305654535,
+      "object_support": 0.5887802652761901,
+      "score": 0.3811908639887117,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The whipping of the wind on a sail at sea while a static radio play in the background",
+      "clip_similarity": 0.2800101339817047,
+      "visual": 0.14508016537259252,
+      "scene_support": 0.9590861735071857,
+      "object_support": 1.0,
+      "score": 0.6457579182011928,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam boat activating its horn",
+      "clip_similarity": 0.27987587451934814,
+      "visual": 0.13902322611004672,
+      "scene_support": 0.8909859609687157,
+      "object_support": 0.9006983325420843,
+      "score": 0.5931145784972587,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Boat running and background roar with voices",
+      "clip_similarity": 0.2791474759578705,
+      "visual": 0.10616248193338039,
+      "scene_support": 0.8442610166685707,
+      "object_support": 0.8080834710283497,
+      "score": 0.5381683390824282,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A siren is triggered while a horn sounds several times",
+      "clip_similarity": 0.2790378928184509,
+      "visual": 0.10121878256193069,
+      "scene_support": 0.8313855770723869,
+      "object_support": 0.7156545309396061,
+      "score": 0.5045995454283702,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine works while a siren is triggered far away",
+      "clip_similarity": 0.27831560373306274,
+      "visual": 0.0686336593727942,
+      "scene_support": 0.8890589546281329,
+      "object_support": 0.7830586063584597,
+      "score": 0.5290887320450954,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing heavily into a microphone as a ship engine operates and whistles",
+      "clip_similarity": 0.27809929847717285,
+      "visual": 0.05887533192161608,
+      "scene_support": 0.6248802034130655,
+      "object_support": 0.6178020427486666,
+      "score": 0.39635480661716604,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Siren whaling and motor revving then something is dropped",
+      "clip_similarity": 0.2778489291667938,
+      "visual": 0.047580249403381396,
+      "scene_support": 0.8542709150646474,
+      "object_support": 0.8156006906410709,
+      "score": 0.5199935814730681,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A group of men yelling as metal clanks followed by an artillery cannon firing while wind lightly blowing into a microphone",
+      "clip_similarity": 0.2776406705379486,
+      "visual": 0.038184934960169406,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.015273973984067763,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sirens ring as they approach",
+      "clip_similarity": 0.2772330045700073,
+      "visual": 0.01979362038250815,
+      "scene_support": 0.8298214663170647,
+      "object_support": 0.698904628409112,
+      "score": 0.46653527657085625,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud buzzer is followed by a boat accelerating",
+      "clip_similarity": 0.27704739570617676,
+      "visual": 0.011420120332089678,
+      "scene_support": 0.9671892454302861,
+      "object_support": 0.8479465097960169,
+      "score": 0.5491087747007267,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat runs continuously and wind blows",
+      "clip_similarity": 0.2770296037197113,
+      "visual": 0.010617458236697927,
+      "scene_support": 0.8380240694515796,
+      "object_support": 0.9781991878867285,
+      "score": 0.5491139604961716,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Boat motor revving then trolling",
+      "clip_similarity": 0.2767942547798157,
+      "visual": 0.0,
+      "scene_support": 0.8984726918506853,
+      "object_support": 0.8484549425659278,
+      "score": 0.5240782903249839,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "landing deck",
+      0.3880912661552429
+    ],
+    [
+      "harbor",
+      0.16472701728343964
+    ],
+    [
+      "rope bridge",
+      0.10661432147026062
+    ],
+    [
+      "ocean",
+      0.024275047704577446
+    ],
+    [
+      "boat deck",
+      0.024266112595796585
+    ]
+  ],
+  "top_objects": [
+    [
+      "pirate ship",
+      0.5175629258155823
+    ],
+    [
+      "airship",
+      0.13328014314174652
+    ],
+    [
+      "yawl",
+      0.10275407135486603
+    ],
+    [
+      "schooner",
+      0.02520379051566124
+    ],
+    [
+      "ocean liner",
+      0.02448049932718277
+    ]
+  ]
+}

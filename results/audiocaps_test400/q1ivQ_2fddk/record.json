@@ -1,0 +1,287 @@
+{
+  "id": "q1ivQ_2fddk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\q1ivQ_2fddk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\q1ivQ_2fddk.wav",
+  "gt_captions": [
+    "A man talks outside while several other men join in the conversation",
+    "Hissing spray is ongoing and an adult male speaks in the foreground, while several adult males speak in the background",
+    "Constant hissing with mean having conversation",
+    "A young man talking and a man laughing in the background with a spraying sound.",
+    "Men are communicating with a hissing noise in the background"
+  ],
+  "top_scene": [
+    "wild field",
+    0.11150269210338593
+  ],
+  "top_object": [
+    "fly",
+    0.03859693557024002
+  ],
+  "env_probs": {
+    "indoor": 0.07774201035499573,
+    "outdoor": 0.9222579896450043
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Plane flying and high winds blowing over the microphone",
+    "casv": "Plane flying and high winds blowing over the microphone"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.006406242027878761,
+    "clap_gt_audio_baseline": -0.08698300272226334,
+    "clap_text_casv": -0.006406242027878761,
+    "clap_gt_audio_casv": -0.08698300272226334
+  },
+  "verdicts": [
+    {
+      "caption": "Plane flying and high winds blowing over the microphone",
+      "clip_similarity": 0.2691294550895691,
+      "visual": 1.0,
+      "scene_support": 0.4457799157009039,
+      "object_support": 0.4339092329220337,
+      "score": 0.6639067445868813,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fly buzzes as the mic picks up wind and birds chirp in the background",
+      "clip_similarity": 0.26221638917922974,
+      "visual": 0.4219873266004341,
+      "scene_support": 0.5083229355095256,
+      "object_support": 0.5954565079144766,
+      "score": 0.49992876366737427,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young man talks continuously as a few taps hit something hard at random times",
+      "clip_similarity": 0.26068922877311707,
+      "visual": 0.2942989636518129,
+      "scene_support": 0.7143107667675321,
+      "object_support": 0.5586430648152287,
+      "score": 0.49960573493555344,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking with ratchet sounds and something spraying in the background",
+      "clip_similarity": 0.2605617046356201,
+      "visual": 0.28363646330918757,
+      "scene_support": 0.5217749282528237,
+      "object_support": 0.5393074657860125,
+      "score": 0.43177930353532584,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rapper makes noises with his mouth",
+      "clip_similarity": 0.2595938444137573,
+      "visual": 0.20271209753982553,
+      "scene_support": 0.5781472086336865,
+      "object_support": 0.7074556430975127,
+      "score": 0.46676569453529004,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing into the microphone then an aircraft flies overhead",
+      "clip_similarity": 0.25959262251853943,
+      "visual": 0.20260993289527127,
+      "scene_support": 0.5425787596791829,
+      "object_support": 0.5016792530010016,
+      "score": 0.39432137696216385,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks after gunshots",
+      "clip_similarity": 0.2594718933105469,
+      "visual": 0.19251556764919153,
+      "scene_support": 0.48254393171895976,
+      "object_support": 0.4915576914992363,
+      "score": 0.3692367140251354,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks over a loudspeaker as a car speeds by with people speaking faintly",
+      "clip_similarity": 0.2590605318546295,
+      "visual": 0.15812096792279343,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.06324838716911738,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter sound followed by a sharp fast rasp",
+      "clip_similarity": 0.25896716117858887,
+      "visual": 0.15031409398648934,
+      "scene_support": 0.737435585371906,
+      "object_support": 0.7996767613138545,
+      "score": 0.5212593416003239,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking with drill sound after",
+      "clip_similarity": 0.2587469220161438,
+      "visual": 0.13189953976073537,
+      "scene_support": 0.6624651566951317,
+      "object_support": 0.6082519286552697,
+      "score": 0.4339749415094146,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Video does not play",
+      "clip_similarity": 0.258164644241333,
+      "visual": 0.08321434889973661,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6332857395598946,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An aircraft flies while a man talks and sings",
+      "clip_similarity": 0.2581441402435303,
+      "visual": 0.08149997632770431,
+      "scene_support": 0.32165138193873893,
+      "object_support": 0.38910891155177924,
+      "score": 0.24582807857823716,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid talking and a mosquito flying",
+      "clip_similarity": 0.25807327032089233,
+      "visual": 0.07557442694355777,
+      "scene_support": 0.14088839357348726,
+      "object_support": 0.1787575329494596,
+      "score": 0.12612354873430717,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man narrates while a woman and man speak and make gun noises, followed by a spray",
+      "clip_similarity": 0.25806841254234314,
+      "visual": 0.07516826018593965,
+      "scene_support": 0.3913476368808107,
+      "object_support": 0.3676646538763619,
+      "score": 0.25777099130152764,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small aircraft makes multiple passes by, a man talks",
+      "clip_similarity": 0.2577320337295532,
+      "visual": 0.04704308108633411,
+      "scene_support": 0.7283533091384815,
+      "object_support": 0.7557499317688776,
+      "score": 0.46404820470674135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks as race cars run",
+      "clip_similarity": 0.257726788520813,
+      "visual": 0.046604520660930494,
+      "scene_support": 0.5301991384200978,
+      "object_support": 0.5338609873460463,
+      "score": 0.33785984599421537,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Gun shots then automatic gun sounds",
+      "clip_similarity": 0.25772443413734436,
+      "visual": 0.046407666833618647,
+      "scene_support": 0.7282340593250285,
+      "object_support": 0.6439643316386213,
+      "score": 0.43022258402254243,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing baby crying then man speaking horn blowing",
+      "clip_similarity": 0.2576559782028198,
+      "visual": 0.04068395491798173,
+      "scene_support": 0.40149176255608465,
+      "object_support": 0.3832293573328938,
+      "score": 0.25168991793388623,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks while a jet flies",
+      "clip_similarity": 0.2571776211261749,
+      "visual": 0.0006877424852920289,
+      "scene_support": 0.5002384996269059,
+      "object_support": 0.6585414354760464,
+      "score": 0.3479090775250025,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking with a fly buzzing around him",
+      "clip_similarity": 0.2571693956851959,
+      "visual": 0.0,
+      "scene_support": 0.12282204683536424,
+      "object_support": 0.42601644353365814,
+      "score": 0.1646515471107067,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "wild field",
+      0.11150269210338593
+    ],
+    [
+      "army base",
+      0.0906873568892479
+    ],
+    [
+      "football field",
+      0.05937539413571358
+    ],
+    [
+      "yard",
+      0.036551523953676224
+    ],
+    [
+      "hayfield",
+      0.034622129052877426
+    ]
+  ],
+  "top_objects": [
+    [
+      "fly",
+      0.03859693557024002
+    ],
+    [
+      "lawn mower",
+      0.029171915724873543
+    ],
+    [
+      "yawl",
+      0.019516075029969215
+    ],
+    [
+      "gorilla",
+      0.016944674775004387
+    ],
+    [
+      "Boxer",
+      0.016385920345783234
+    ]
+  ]
+}

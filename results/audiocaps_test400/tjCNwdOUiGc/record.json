@@ -1,0 +1,287 @@
+{
+  "id": "tjCNwdOUiGc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\tjCNwdOUiGc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\tjCNwdOUiGc.wav",
+  "gt_captions": [
+    "An engine rumbles loudly, then an air horn honk three times",
+    "Humming of an engine followed by some honks of a horn",
+    "A bus engine running followed by a bus horn honking",
+    "A bus engine accelerating followed by a bus horn honking while plastic clacks",
+    "A bus engine running followed by a vehicle horn honking"
+  ],
+  "top_scene": [
+    "bus interior",
+    0.5539373755455017
+  ],
+  "top_object": [
+    "ambulance",
+    0.16363145411014557
+  ],
+  "env_probs": {
+    "indoor": 0.8875950574874878,
+    "outdoor": 0.11240494251251221
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A fire truck with siren on pulls up then turns off siren as a man speaks over the radio",
+    "casv": "An ambulance siren is on and gets louder while an engine accelerates"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.15405577421188354,
+    "clap_gt_audio_baseline": 0.14996151626110077,
+    "clap_text_casv": 0.31647050380706787,
+    "clap_gt_audio_casv": 0.409912645816803
+  },
+  "verdicts": [
+    {
+      "caption": "A fire truck with siren on pulls up then turns off siren as a man speaks over the radio",
+      "clip_similarity": 0.32343822717666626,
+      "visual": 1.0,
+      "scene_support": 0.5957403128614578,
+      "object_support": 0.7020090016749478,
+      "score": 0.7893247943609216,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Emergency vehicles decrease and increase siren sounds as they approach",
+      "clip_similarity": 0.32069462537765503,
+      "visual": 0.8009724375147281,
+      "scene_support": 0.2596064668642474,
+      "object_support": 0.5610394033817103,
+      "score": 0.5665827360796785,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An ambulance siren is on and gets louder while an engine accelerates",
+      "clip_similarity": 0.3194262385368347,
+      "visual": 0.7089605641780654,
+      "scene_support": 1.0,
+      "object_support": 0.970035838269283,
+      "score": 0.874594977152011,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fire truck siren is blaring while traveling on the road",
+      "clip_similarity": 0.31926557421684265,
+      "visual": 0.6973055827598805,
+      "scene_support": 0.869896055933847,
+      "object_support": 0.8136686971900177,
+      "score": 0.7839916590411116,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A police siren wailing as a truck passing by before an emergency horn honk several times during an emergency siren followed by a bus passing by as wind blows into a microphone",
+      "clip_similarity": 0.3179294764995575,
+      "visual": 0.6003817973879524,
+      "scene_support": 0.5471531521206359,
+      "object_support": 0.27186892363547893,
+      "score": 0.48585934168201544,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fire truck starts engine and pulls out turning the siren on",
+      "clip_similarity": 0.3176037073135376,
+      "visual": 0.5767497065175797,
+      "scene_support": 0.724127897434585,
+      "object_support": 0.8384777624942686,
+      "score": 0.699481580585688,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud, repetitive, emergency vehicle siren is followed by a forceful horn and traffic sounds",
+      "clip_similarity": 0.31591126322746277,
+      "visual": 0.4539756869001987,
+      "scene_support": 0.5258769706839123,
+      "object_support": 0.6958927284806632,
+      "score": 0.5481211845094521,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency vehicle blares its horn as its siren screams",
+      "clip_similarity": 0.31508827209472656,
+      "visual": 0.39427390395395945,
+      "scene_support": 0.70863281534698,
+      "object_support": 0.9170258915120381,
+      "score": 0.6454071736392892,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+      "clip_similarity": 0.31448039412498474,
+      "visual": 0.3501769542253902,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.14007078169015608,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency vehicle siren changes tones as it sounds",
+      "clip_similarity": 0.31341350078582764,
+      "visual": 0.2727819106732476,
+      "scene_support": 0.3328352089034827,
+      "object_support": 0.6567423668229327,
+      "score": 0.4059860369872237,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency vehicle siren wails as it drives by",
+      "clip_similarity": 0.3131747543811798,
+      "visual": 0.25546266449608585,
+      "scene_support": 0.6432514803252904,
+      "object_support": 0.7871524951108366,
+      "score": 0.5313062584292725,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency vehicle siren blares as the vehicle drives away",
+      "clip_similarity": 0.31308725476264954,
+      "visual": 0.24911522887304913,
+      "scene_support": 0.6766334206627429,
+      "object_support": 0.8330659031150287,
+      "score": 0.5525558886825511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The siren and honks of an emergency vehicle",
+      "clip_similarity": 0.31249213218688965,
+      "visual": 0.20594358651732034,
+      "scene_support": 0.6291995867384663,
+      "object_support": 0.7534001441016571,
+      "score": 0.49715735385896515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Fire truck siren with engine sounds",
+      "clip_similarity": 0.312052845954895,
+      "visual": 0.17407669241529006,
+      "scene_support": 0.5052278029096327,
+      "object_support": 0.5447877307731896,
+      "score": 0.3846353370709627,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency vehicle is driven while the siren goes off",
+      "clip_similarity": 0.3119926452636719,
+      "visual": 0.16970958752478116,
+      "scene_support": 0.927006596717831,
+      "object_support": 0.9983834414095762,
+      "score": 0.6455008464481347,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An ambulance siren blares with an engine whirring in the background",
+      "clip_similarity": 0.3114508092403412,
+      "visual": 0.13040348157708698,
+      "scene_support": 0.9459638846806709,
+      "object_support": 1.0,
+      "score": 0.6359505580350361,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Emergency vehicle siren goes off for the entire time",
+      "clip_similarity": 0.3112901747226715,
+      "visual": 0.1187506620920162,
+      "scene_support": 0.5561605622315232,
+      "object_support": 0.7389907269647886,
+      "score": 0.43604565159569997,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle with sirens approaches and passes by",
+      "clip_similarity": 0.3112598657608032,
+      "visual": 0.11655197611496296,
+      "scene_support": 0.9108794937601848,
+      "object_support": 0.7515556428898932,
+      "score": 0.5453513314410086,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A medium emergency vehicle siren is in the background, while a man speaks softly, followed by a male voice over the intercom",
+      "clip_similarity": 0.3107989728450775,
+      "visual": 0.08311768050520053,
+      "scene_support": 0.6778167907248712,
+      "object_support": 0.6028543356820032,
+      "score": 0.4174484101241425,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency vehicle with its siren blaring passes by",
+      "clip_similarity": 0.3096531927585602,
+      "visual": 0.0,
+      "scene_support": 0.9250671383085319,
+      "object_support": 0.955450130533644,
+      "score": 0.5641551806526528,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bus interior",
+      0.5539373755455017
+    ],
+    [
+      "cockpit",
+      0.18696928024291992
+    ],
+    [
+      "car interior",
+      0.09382758289575577
+    ],
+    [
+      "highway",
+      0.023830128833651543
+    ],
+    [
+      "landing deck",
+      0.012215984053909779
+    ]
+  ],
+  "top_objects": [
+    [
+      "ambulance",
+      0.16363145411014557
+    ],
+    [
+      "tow truck",
+      0.13941919803619385
+    ],
+    [
+      "moving van",
+      0.13116420805454254
+    ],
+    [
+      "semi-trailer truck",
+      0.08129597455263138
+    ],
+    [
+      "taxicab",
+      0.0659552663564682
+    ]
+  ]
+}

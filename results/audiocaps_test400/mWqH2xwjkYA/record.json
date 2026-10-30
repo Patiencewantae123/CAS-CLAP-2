@@ -1,0 +1,285 @@
+{
+  "id": "mWqH2xwjkYA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\mWqH2xwjkYA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\mWqH2xwjkYA.wav",
+  "gt_captions": [
+    "An infant and a woman laughing followed by someone spits then a woman talking",
+    "An infant and a woman laughing followed by a person spitting then a woman talking",
+    "A baby laughs and a woman speaks",
+    "A baby and a woman laugh",
+    "A baby laughs and women laugh and speak"
+  ],
+  "top_scene": [
+    "nursery",
+    0.2466254085302353
+  ],
+  "top_object": [
+    "diaper",
+    0.31499212980270386
+  ],
+  "env_probs": {
+    "indoor": 0.9244572520256042,
+    "outdoor": 0.07554274797439575
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A female talking followed by a child communicating, and muffled background noise",
+    "casv": "A baby cries and fusses over tapping and clicking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09698528796434402,
+    "clap_gt_audio_baseline": 0.3603565990924835,
+    "clap_text_casv": -0.012380111962556839,
+    "clap_gt_audio_casv": 0.20002630352973938
+  },
+  "verdicts": [
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.3311002850532532,
+      "visual": 1.0,
+      "scene_support": 0.714408244714104,
+      "object_support": 0.5593839016911724,
+      "score": 0.7821376439215829,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant talking followed by liquid slurping while a young girl speaks through a television speaker in the background",
+      "clip_similarity": 0.3296930491924286,
+      "visual": 0.9001860189823916,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.36007440759295667,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is communicating to a baby, followed by the baby chuckling then suddenly a dog barks",
+      "clip_similarity": 0.32760727405548096,
+      "visual": 0.7522438539750989,
+      "scene_support": 0.7100742517725235,
+      "object_support": 0.6234854514691514,
+      "score": 0.700965452562542,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries and fusses over tapping and clicking",
+      "clip_similarity": 0.32727235555648804,
+      "visual": 0.7284883843828609,
+      "scene_support": 0.8024676127905096,
+      "object_support": 0.9254644965008857,
+      "score": 0.809774986540563,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant whining with brief female speech and laughter in the background",
+      "clip_similarity": 0.32654058933258057,
+      "visual": 0.6765848605914558,
+      "scene_support": 0.8468419657548291,
+      "object_support": 0.8893920835021328,
+      "score": 0.7915041590136709,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant whining and crying with brief male speech",
+      "clip_similarity": 0.3252834975719452,
+      "visual": 0.5874204663157673,
+      "scene_support": 0.6625282778556675,
+      "object_support": 0.7697514477039297,
+      "score": 0.664652104194186,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman mimics coughing, followed by a baby laughing loudly",
+      "clip_similarity": 0.32303255796432495,
+      "visual": 0.42776333312194814,
+      "scene_support": 0.4794007178449315,
+      "object_support": 0.47847166948661124,
+      "score": 0.4584670494482421,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman squeaking then hiccuping followed by an infant laughing",
+      "clip_similarity": 0.32289373874664307,
+      "visual": 0.41791701016762844,
+      "scene_support": 0.7677789984512821,
+      "object_support": 0.799103972547244,
+      "score": 0.6372316953666092,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant cries with low talking and fan noise in the background",
+      "clip_similarity": 0.32276651263237,
+      "visual": 0.4088929756695626,
+      "scene_support": 0.939685855320738,
+      "object_support": 0.9458862966581671,
+      "score": 0.7292288358614967,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman and a baby communicating with each other",
+      "clip_similarity": 0.322022944688797,
+      "visual": 0.3561523664573953,
+      "scene_support": 0.7858338987515233,
+      "object_support": 0.7348120963706122,
+      "score": 0.5986547451195987,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and cries as a voice from a TV is in the background",
+      "clip_similarity": 0.320093035697937,
+      "visual": 0.21926564778996765,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.687706259115987,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks as a baby imitates speech nearby",
+      "clip_similarity": 0.319487601518631,
+      "visual": 0.17632274293444944,
+      "scene_support": 0.922184842569238,
+      "object_support": 0.9110085869297556,
+      "score": 0.6204871260234779,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries and then a woman speaks while pumping something with air",
+      "clip_similarity": 0.3193405866622925,
+      "visual": 0.165895110660156,
+      "scene_support": 0.5519266451168707,
+      "object_support": 0.667903629387794,
+      "score": 0.43230712661546183,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone makes a baby laugh with their hiccup sounds",
+      "clip_similarity": 0.3189280033111572,
+      "visual": 0.13663094256663919,
+      "scene_support": 0.7135242751950067,
+      "object_support": 0.8394385530109859,
+      "score": 0.5205412254884534,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries nearby, followed by a person talking",
+      "clip_similarity": 0.31875866651535034,
+      "visual": 0.1246200350899444,
+      "scene_support": 0.8031015202108523,
+      "object_support": 0.8589042728117627,
+      "score": 0.5484497519427622,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man makes sounds while a baby giggles",
+      "clip_similarity": 0.3173331618309021,
+      "visual": 0.023510262751812627,
+      "scene_support": 0.5827372130745802,
+      "object_support": 0.6714388072031711,
+      "score": 0.38565691118405043,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby making hilarious noises followed by a woman laughing in response",
+      "clip_similarity": 0.3172009289264679,
+      "visual": 0.014131101105544634,
+      "scene_support": 0.7037318434077796,
+      "object_support": 0.7241404729563345,
+      "score": 0.43401413535145206,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby cries and then makes sucking noise",
+      "clip_similarity": 0.3171859383583069,
+      "visual": 0.01306783351301076,
+      "scene_support": 0.6685710284720706,
+      "object_support": 0.6875774690401862,
+      "score": 0.41207168265888133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple people are communicating with a baby then suddenly the baby starts crying loudly",
+      "clip_similarity": 0.3171228766441345,
+      "visual": 0.008594922527321538,
+      "scene_support": 0.7691843474462825,
+      "object_support": 0.771388127636251,
+      "score": 0.46560971153568864,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+      "clip_similarity": 0.31700170040130615,
+      "visual": 0.0,
+      "scene_support": 0.5548402853375255,
+      "object_support": 0.5721894685000278,
+      "score": 0.338108926151266,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.65)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "nursery",
+      0.2466254085302353
+    ],
+    [
+      "playroom",
+      0.21443377435207367
+    ],
+    [
+      "childs room",
+      0.1033228188753128
+    ],
+    [
+      "waiting room",
+      0.05683565512299538
+    ],
+    [
+      "television room",
+      0.044808998703956604
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.31499212980270386
+    ],
+    [
+      "infant bed",
+      0.19758491218090057
+    ],
+    [
+      "cradle",
+      0.07317149639129639
+    ],
+    [
+      "remote control",
+      0.06133773922920227
+    ],
+    [
+      "titi",
+      0.03247758373618126
+    ]
+  ]
+}

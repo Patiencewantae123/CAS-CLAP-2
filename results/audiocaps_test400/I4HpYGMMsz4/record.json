@@ -1,0 +1,285 @@
+{
+  "id": "I4HpYGMMsz4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\I4HpYGMMsz4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\I4HpYGMMsz4.wav",
+  "gt_captions": [
+    "A man talking as wood clanking as steam hisses in the background",
+    "A man speaks followed by slapping on a wooden surface as steam hisses in the background",
+    "A man speaking with slapping on a wooden surface as compressed air hisses in the background",
+    "Hissing is ongoing while an adult male speaks, and two thumps occur",
+    "Man speaking giving directions followed by tapping on table"
+  ],
+  "top_scene": [
+    "assembly line",
+    0.22652101516723633
+  ],
+  "top_object": [
+    "trimaran",
+    0.08088110387325287
+  ],
+  "env_probs": {
+    "indoor": 0.8397417068481445,
+    "outdoor": 0.16025829315185547
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A man talking as a sewing machine operates before and after plastic flips clicking",
+    "casv": "A typist rapidly punches keyboard keys"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.043775271624326706,
+    "clap_gt_audio_baseline": 0.23449578881263733,
+    "clap_text_casv": -0.09708786010742188,
+    "clap_gt_audio_casv": -0.016166329383850098
+  },
+  "verdicts": [
+    {
+      "caption": "A man talking as a sewing machine operates before and after plastic flips clicking",
+      "clip_similarity": 0.2801109552383423,
+      "visual": 1.0,
+      "scene_support": 0.18872625905082713,
+      "object_support": 0.16699797266712504,
+      "score": 0.5067172695153856,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A mechanical garage door opens",
+      "clip_similarity": 0.2785382568836212,
+      "visual": 0.8791988865539486,
+      "scene_support": 0.5804112244605129,
+      "object_support": 0.48379303015326347,
+      "score": 0.6709408310057123,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A typist rapidly punches keyboard keys",
+      "clip_similarity": 0.27807480096817017,
+      "visual": 0.8436002032771575,
+      "scene_support": 0.6696340482295162,
+      "object_support": 0.760373515684156,
+      "score": 0.7664423504849646,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person presses several keyboard keys at the same time",
+      "clip_similarity": 0.27693411707878113,
+      "visual": 0.7559827122849909,
+      "scene_support": 0.37311821466281,
+      "object_support": 0.5471532889201399,
+      "score": 0.5784745359888814,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat produces a chugging mechanical sound",
+      "clip_similarity": 0.2744543254375458,
+      "visual": 0.5655065218088005,
+      "scene_support": 0.49136800710113276,
+      "object_support": 0.8386859390615231,
+      "score": 0.6252187925723169,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clicks and vibrations from a sewing machine",
+      "clip_similarity": 0.2735031247138977,
+      "visual": 0.49244349215505834,
+      "scene_support": 0.7367118469971095,
+      "object_support": 0.8186184098039552,
+      "score": 0.6635764739023428,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks turns on a machine with beeping and vibrating noises",
+      "clip_similarity": 0.2727830111980438,
+      "visual": 0.43713058726038245,
+      "scene_support": 0.9210226581154884,
+      "object_support": 0.99341753442854,
+      "score": 0.7491842926673615,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man talking while sewing machine runs",
+      "clip_similarity": 0.2718033194541931,
+      "visual": 0.36187912334436706,
+      "scene_support": 0.6449898717818044,
+      "object_support": 0.6904250746932626,
+      "score": 0.545376133280267,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while opening a car hood, a jingling of keys and an engine starting",
+      "clip_similarity": 0.27160394191741943,
+      "visual": 0.3465646618228101,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.13862586472912405,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks while manipulating a metal tool, and another man speaks in the background",
+      "clip_similarity": 0.27035996317863464,
+      "visual": 0.25101295205131374,
+      "scene_support": 0.5512758982052224,
+      "object_support": 0.33864202477597216,
+      "score": 0.36738055771488387,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with some dry scraping and sanding",
+      "clip_similarity": 0.2701415717601776,
+      "visual": 0.23423800825012248,
+      "scene_support": 0.5499855028435208,
+      "object_support": 0.3680687536606065,
+      "score": 0.36911148025128715,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from a sewing machine",
+      "clip_similarity": 0.27001866698265076,
+      "visual": 0.22479752404759615,
+      "scene_support": 0.783452559663468,
+      "object_support": 0.954423727642042,
+      "score": 0.6112818958106915,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone unwraps something that was covered in plastic and a man speaks",
+      "clip_similarity": 0.26977917551994324,
+      "visual": 0.20640185696430288,
+      "scene_support": 0.7513267619487741,
+      "object_support": 0.8519688411253906,
+      "score": 0.5635494237079706,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from a sewing machine start and stop then a man speaks",
+      "clip_similarity": 0.2693132758140564,
+      "visual": 0.1706154627989067,
+      "scene_support": 1.0,
+      "object_support": 0.9635890807778598,
+      "score": 0.6573229093529205,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks as he files something with metal against metal",
+      "clip_similarity": 0.26896482706069946,
+      "visual": 0.14385063707244267,
+      "scene_support": 0.6708606165200294,
+      "object_support": 0.8506602473855409,
+      "score": 0.5139965140006482,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat making high-pitched noise",
+      "clip_similarity": 0.2689351439476013,
+      "visual": 0.14157063652304494,
+      "scene_support": 0.45769996922446643,
+      "object_support": 0.9659604521976112,
+      "score": 0.48372638103584126,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.26818621158599854,
+      "visual": 0.08404411663713654,
+      "scene_support": 0.6524314155854822,
+      "object_support": 0.6625761419143407,
+      "score": 0.4281199139048015,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations and clicking from a sewing machine",
+      "clip_similarity": 0.26805609464645386,
+      "visual": 0.07404965639750756,
+      "scene_support": 0.8833048173110892,
+      "object_support": 1.0,
+      "score": 0.5946113077523297,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while running a sewing machine",
+      "clip_similarity": 0.26780974864959717,
+      "visual": 0.055127483163248954,
+      "scene_support": 0.3140959860193975,
+      "object_support": 0.4420396392688297,
+      "score": 0.24889168085176772,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sanding and rubbing with a man speaking",
+      "clip_similarity": 0.2670920491218567,
+      "visual": 0.0,
+      "scene_support": 0.5386430859448831,
+      "object_support": 0.4465521569189945,
+      "score": 0.2955585728591633,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "assembly line",
+      0.22652101516723633
+    ],
+    [
+      "repair shop",
+      0.13343434035778046
+    ],
+    [
+      "martial arts gym",
+      0.12670280039310455
+    ],
+    [
+      "manufactured home",
+      0.060556117445230484
+    ],
+    [
+      "storage room",
+      0.03745884448289871
+    ]
+  ],
+  "top_objects": [
+    [
+      "trimaran",
+      0.08088110387325287
+    ],
+    [
+      "barbell",
+      0.05482207238674164
+    ],
+    [
+      "printer",
+      0.05386846140027046
+    ],
+    [
+      "bulletproof vest",
+      0.05127709358930588
+    ],
+    [
+      "T-shirt",
+      0.050243597477674484
+    ]
+  ]
+}

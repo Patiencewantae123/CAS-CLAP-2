@@ -1,0 +1,287 @@
+{
+  "id": "KJhGuhNHToA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\KJhGuhNHToA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\KJhGuhNHToA.wav",
+  "gt_captions": [
+    "Rough sanding and scraping",
+    "Repeated scraping",
+    "Brief silence followed by wood shuffling on a stone surface",
+    "Wood scrapping against a stone surface",
+    "A few seconds of silence then a rasping sound against wood"
+  ],
+  "top_scene": [
+    "fountain",
+    0.2000700831413269
+  ],
+  "top_object": [
+    "screw",
+    0.16424401104450226
+  ],
+  "env_probs": {
+    "indoor": 0.19829098880290985,
+    "outdoor": 0.8017090111970901
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Water lightly dripping on a metal surface",
+    "casv": "Water lightly dripping on a metal surface"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2378101944923401,
+    "clap_gt_audio_baseline": 0.4708313047885895,
+    "clap_text_casv": 0.2378101944923401,
+    "clap_gt_audio_casv": 0.4708313047885895
+  },
+  "verdicts": [
+    {
+      "caption": "Water lightly dripping on a metal surface",
+      "clip_similarity": 0.3327561020851135,
+      "visual": 1.0,
+      "scene_support": 0.49928036271048976,
+      "object_support": 0.6344368400639727,
+      "score": 0.7401151608323389,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water sprays onto metal",
+      "clip_similarity": 0.3324173092842102,
+      "visual": 0.9836221924478828,
+      "scene_support": 0.2805981576398999,
+      "object_support": 0.4546498934515172,
+      "score": 0.6140232923065783,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical sounds of a scanning printer machine",
+      "clip_similarity": 0.3274545669555664,
+      "visual": 0.7437149731310599,
+      "scene_support": 0.0,
+      "object_support": 0.19897874695497944,
+      "score": 0.3571796133389178,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal being filed by a machine",
+      "clip_similarity": 0.3234071731567383,
+      "visual": 0.5480572243592514,
+      "scene_support": 0.4417398491808655,
+      "object_support": 0.9096636641347784,
+      "score": 0.6246439437383937,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some metallic object hits while some liquid flows",
+      "clip_similarity": 0.3225700259208679,
+      "visual": 0.507588134445549,
+      "scene_support": 0.46809220221198444,
+      "object_support": 0.5674496563865902,
+      "score": 0.5136978113577919,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone rubs metal against an object",
+      "clip_similarity": 0.3219760060310364,
+      "visual": 0.47887222486349423,
+      "scene_support": 0.37794862930979084,
+      "object_support": 0.9188493853307361,
+      "score": 0.5805882943375558,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A water jet sprays a surface",
+      "clip_similarity": 0.3213682174682617,
+      "visual": 0.4494907147282131,
+      "scene_support": 0.26171031025840463,
+      "object_support": 0.0,
+      "score": 0.2583093789688067,
+      "conflicts": [
+        "names 'an airplane', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some surface is hit by a metallic tool",
+      "clip_similarity": 0.31852248311042786,
+      "visual": 0.31192318220454973,
+      "scene_support": 0.7584339939149376,
+      "object_support": 1.0,
+      "score": 0.6522994710563012,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water trickling on a metallic surface",
+      "clip_similarity": 0.3178379237651825,
+      "visual": 0.2788304447421878,
+      "scene_support": 0.8517918359116181,
+      "object_support": 0.682104212696047,
+      "score": 0.5717009924791747,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water runs onto a hard surface",
+      "clip_similarity": 0.3177950382232666,
+      "visual": 0.27675728630908647,
+      "scene_support": 1.0,
+      "object_support": 0.7676671111634048,
+      "score": 0.641003047872656,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bubbling water that moves by motor",
+      "clip_similarity": 0.3175165057182312,
+      "visual": 0.26329256169771365,
+      "scene_support": 0.5258853366838848,
+      "object_support": 0.35971987989872445,
+      "score": 0.3709985896538682,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.14)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water moving into an object",
+      "clip_similarity": 0.3142244219779968,
+      "visual": 0.10414775756004091,
+      "scene_support": 0.9906513631559004,
+      "object_support": 0.8256782933068378,
+      "score": 0.5865579999628379,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal scrapping against a wooden surface",
+      "clip_similarity": 0.3142164945602417,
+      "visual": 0.10376453299909236,
+      "scene_support": 0.40440236311379685,
+      "object_support": 0.7691291568071189,
+      "score": 0.3935652691759116,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical sounds of a working drill",
+      "clip_similarity": 0.31405866146087646,
+      "visual": 0.09613461843223696,
+      "scene_support": 0.29935526260390144,
+      "object_support": 0.7855112584051283,
+      "score": 0.36391380367560366,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running through faucet with mechanical background noise",
+      "clip_similarity": 0.31381261348724365,
+      "visual": 0.0842402501044503,
+      "scene_support": 0.44100193011263794,
+      "object_support": 0.23551409098238138,
+      "score": 0.2366509063702859,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water moving followed by a clicking sound, water stops",
+      "clip_similarity": 0.3133017420768738,
+      "visual": 0.059543876330840934,
+      "scene_support": 0.8353476529520086,
+      "object_support": 0.5127667525155465,
+      "score": 0.42825187217260285,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Fast scratches of something sharp onto plastic",
+      "clip_similarity": 0.31316593289375305,
+      "visual": 0.0529786345103802,
+      "scene_support": 0.25415328772860535,
+      "object_support": 0.5189728203318037,
+      "score": 0.25312928622227476,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drill noise and water pouring",
+      "clip_similarity": 0.31273409724235535,
+      "visual": 0.032102980795551135,
+      "scene_support": 0.538276504701187,
+      "object_support": 0.5884532167183067,
+      "score": 0.3508601087440686,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sharp ringing from metal being drilled into by a power tool",
+      "clip_similarity": 0.3123968243598938,
+      "visual": 0.015798648629179814,
+      "scene_support": 0.059436832576578495,
+      "object_support": 0.6839056228837379,
+      "score": 0.22932219608976684,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A raspy filing sound on a hard surface",
+      "clip_similarity": 0.31207001209259033,
+      "visual": 0.0,
+      "scene_support": 0.48490423671911875,
+      "object_support": 0.8378828881829234,
+      "score": 0.39683613747061264,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fountain",
+      0.2000700831413269
+    ],
+    [
+      "raft",
+      0.08386678248643875
+    ],
+    [
+      "wave",
+      0.06791907548904419
+    ],
+    [
+      "crevasse",
+      0.033547814935445786
+    ],
+    [
+      "wet bar",
+      0.030047355219721794
+    ]
+  ],
+  "top_objects": [
+    [
+      "screw",
+      0.16424401104450226
+    ],
+    [
+      "coil",
+      0.08143208175897598
+    ],
+    [
+      "nail",
+      0.06219545379281044
+    ],
+    [
+      "fountain",
+      0.032621096819639206
+    ],
+    [
+      "chain",
+      0.027803171426057816
+    ]
+  ]
+}

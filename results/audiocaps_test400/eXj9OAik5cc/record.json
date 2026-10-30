@@ -1,0 +1,285 @@
+{
+  "id": "eXj9OAik5cc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\eXj9OAik5cc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\eXj9OAik5cc.wav",
+  "gt_captions": [
+    "An engine idling with light wind",
+    "An idle motorbike engine running as a bird chirps in the background and wind blows into a microphone",
+    "An idle motorbike engine running as a bird chirps in the background and wind blows into a microphone",
+    "An idle motorbike engine running while birds chirp in the background and wind blows into a microphone",
+    "A motorbike engine running idle as wind blows into a microphone and birds chirp in the background"
+  ],
+  "top_scene": [
+    "cockpit",
+    0.36426326632499695
+  ],
+  "top_object": [
+    "moped",
+    0.6498604416847229
+  ],
+  "env_probs": {
+    "indoor": 0.6814818382263184,
+    "outdoor": 0.31851816177368164
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A motorcycle engine revving and accelerating with an electronic beep bleeping briefly",
+    "casv": "A small motor bike running"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1717108190059662,
+    "clap_gt_audio_baseline": 0.34635353088378906,
+    "clap_text_casv": 0.015565282665193081,
+    "clap_gt_audio_casv": 0.23296856880187988
+  },
+  "verdicts": [
+    {
+      "caption": "A motorcycle engine revving and accelerating with an electronic beep bleeping briefly",
+      "clip_similarity": 0.32370617985725403,
+      "visual": 1.0,
+      "scene_support": 0.4642008325045125,
+      "object_support": 0.38758072640081265,
+      "score": 0.6555344676715975,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small motor bike running",
+      "clip_similarity": 0.3230438828468323,
+      "visual": 0.950447186105679,
+      "scene_support": 0.8435304085165949,
+      "object_support": 0.9705117430635742,
+      "score": 0.9243915199163224,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine idling and a spraying sound at the end",
+      "clip_similarity": 0.32213294506073,
+      "visual": 0.8822911626392788,
+      "scene_support": 0.35202416473275133,
+      "object_support": 0.11253829666534315,
+      "score": 0.4922852034751399,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine is running along with wind noise followed by engine idling loudly",
+      "clip_similarity": 0.3191215395927429,
+      "visual": 0.656978935092793,
+      "scene_support": 0.45675912623862674,
+      "object_support": 0.4820812995354593,
+      "score": 0.544443701769343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine running idle before revving then accelerating at a moderate rate",
+      "clip_similarity": 0.31850406527519226,
+      "visual": 0.6107797382662424,
+      "scene_support": 0.6287803440527499,
+      "object_support": 0.3621125962882575,
+      "score": 0.5415797774087991,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine accelerating and revving then lowering speed",
+      "clip_similarity": 0.3166760802268982,
+      "visual": 0.4740105826240716,
+      "scene_support": 0.6041956753969131,
+      "object_support": 0.549960458152285,
+      "score": 0.5358510731143881,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle vehicle revving and accelerating",
+      "clip_similarity": 0.31654250621795654,
+      "visual": 0.4640166253782296,
+      "scene_support": 0.9544737908424503,
+      "object_support": 0.9125009762697469,
+      "score": 0.745699080284951,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorbike engine running then accelerating",
+      "clip_similarity": 0.3155083656311035,
+      "visual": 0.38664261457262566,
+      "scene_support": 0.579944008546064,
+      "object_support": 0.5025490578470808,
+      "score": 0.47940496574699365,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An idling motorcycle with wind blowing",
+      "clip_similarity": 0.3153390884399414,
+      "visual": 0.3739773586251954,
+      "scene_support": 0.21528272000589382,
+      "object_support": 0.7516715842601466,
+      "score": 0.4396772347298903,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorbike engine starting and running",
+      "clip_similarity": 0.3135806918144226,
+      "visual": 0.24241478267268118,
+      "scene_support": 0.7468979997789811,
+      "object_support": 0.40299900712782144,
+      "score": 0.4419350151411132,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled motorcycle engine accelerating and revving as wind blows into a microphone",
+      "clip_similarity": 0.3124314844608307,
+      "visual": 0.15643151954083986,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.06257260781633595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle moves slowly, and then accelerates",
+      "clip_similarity": 0.312050998210907,
+      "visual": 0.12796368104069158,
+      "scene_support": 0.9917862010535234,
+      "object_support": 1.0,
+      "score": 0.6487213327323336,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine running then accelerating",
+      "clip_similarity": 0.3117048740386963,
+      "visual": 0.10206680030592837,
+      "scene_support": 0.47672597340405937,
+      "object_support": 0.3945794697604246,
+      "score": 0.3022183530717165,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorcycle running repeatedly revving engine",
+      "clip_similarity": 0.3112834692001343,
+      "visual": 0.07053744835229034,
+      "scene_support": 0.6885622720742623,
+      "object_support": 0.6829969119477177,
+      "score": 0.43968273454751017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine running idle and revving several times",
+      "clip_similarity": 0.31112825870513916,
+      "visual": 0.05892465733570287,
+      "scene_support": 0.8051136405496003,
+      "object_support": 0.6472160995884,
+      "score": 0.45926878497568124,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle revving up and down with a whirring sound in the background",
+      "clip_similarity": 0.31112295389175415,
+      "visual": 0.058527753188054525,
+      "scene_support": 1.0,
+      "object_support": 0.8391907179780016,
+      "score": 0.5751683166686223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorbike engine running with wind blowing in a microphone",
+      "clip_similarity": 0.31107980012893677,
+      "visual": 0.05529900484089272,
+      "scene_support": 0.08532950233911667,
+      "object_support": 0.22140441605974256,
+      "score": 0.11413977745601485,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorized bicycle accelerating and revving, followed by a males voice",
+      "clip_similarity": 0.31057050824165344,
+      "visual": 0.01719397686806951,
+      "scene_support": 0.6846664456477696,
+      "object_support": 0.60452025753879,
+      "score": 0.39363360170319567,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low frequency of a motorcycle engine rumbling and vibrating",
+      "clip_similarity": 0.3105234205722809,
+      "visual": 0.01367089510804489,
+      "scene_support": 0.7106155376284672,
+      "object_support": 0.53986243833132,
+      "score": 0.3806117508311541,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle idling followed by a light engine rev",
+      "clip_similarity": 0.3103407025337219,
+      "visual": 0.0,
+      "scene_support": 0.735525104063064,
+      "object_support": 0.5936108231017926,
+      "score": 0.39874077814945696,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "cockpit",
+      0.36426326632499695
+    ],
+    [
+      "auto showroom",
+      0.08035588264465332
+    ],
+    [
+      "raceway",
+      0.05352671444416046
+    ],
+    [
+      "loading dock",
+      0.027270805090665817
+    ],
+    [
+      "medina",
+      0.01946946606040001
+    ]
+  ],
+  "top_objects": [
+    [
+      "moped",
+      0.6498604416847229
+    ],
+    [
+      "scooter",
+      0.2941563129425049
+    ],
+    [
+      "go-kart",
+      0.015154081396758556
+    ],
+    [
+      "tricycle",
+      0.014866362325847149
+    ],
+    [
+      "snowmobile",
+      0.005374082364141941
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "3XcIVh40pTI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3XcIVh40pTI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3XcIVh40pTI.wav",
+  "gt_captions": [
+    "A person snoring",
+    "A few loud snores",
+    "A person is snoring steadily",
+    "A person snoring",
+    "A sleeping person snores loudly"
+  ],
+  "top_scene": [
+    "childs room",
+    0.1212151050567627
+  ],
+  "top_object": [
+    "sleeping bag",
+    0.05102081969380379
+  ],
+  "env_probs": {
+    "indoor": 0.6774319410324097,
+    "outdoor": 0.32256805896759033
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A young girl speaking softly then snoring",
+    "casv": "A young girl speaking softly then snoring"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.16531306505203247,
+    "clap_gt_audio_baseline": 0.38294222950935364,
+    "clap_text_casv": 0.16531306505203247,
+    "clap_gt_audio_casv": 0.38294222950935364
+  },
+  "verdicts": [
+    {
+      "caption": "A young girl speaking softly then snoring",
+      "clip_similarity": 0.3041570782661438,
+      "visual": 1.0,
+      "scene_support": 0.9948403419911137,
+      "object_support": 1.0,
+      "score": 0.9984521025973341,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young girl vocalizing something followed by audio distortion",
+      "clip_similarity": 0.29925602674484253,
+      "visual": 0.7156541345063214,
+      "scene_support": 0.7794095341955777,
+      "object_support": 0.6071163819704849,
+      "score": 0.7022194286523474,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Snoring followed by a child speaking",
+      "clip_similarity": 0.2978658080101013,
+      "visual": 0.6349973718427532,
+      "scene_support": 0.8970281000487642,
+      "object_support": 0.7267587944232511,
+      "score": 0.7411350170787059,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaks quickly before making a snorting sound followed by a woman speaking, and the child speaking first and then snorting",
+      "clip_similarity": 0.29664453864097595,
+      "visual": 0.5641425982792486,
+      "scene_support": 0.6305421745368077,
+      "object_support": 0.3435814334539969,
+      "score": 0.5178941217089409,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.29633551836013794,
+      "visual": 0.546214070323955,
+      "scene_support": 0.5048076531031067,
+      "object_support": 0.21042807286008683,
+      "score": 0.43305634591854003,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Speech of several adults and musical tones in the background, as an adult snores slowly in the foreground",
+      "clip_similarity": 0.29608944058418274,
+      "visual": 0.531937297701054,
+      "scene_support": 0.9680493709305379,
+      "object_support": 0.854904918813768,
+      "score": 0.7596612060037133,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snores, followed by a child laughing and then talking nearby",
+      "clip_similarity": 0.29283201694488525,
+      "visual": 0.342950313995629,
+      "scene_support": 0.34716490627971314,
+      "object_support": 0.06490712035195738,
+      "score": 0.26080173358775277,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child coughing followed by snoring",
+      "clip_similarity": 0.29191458225250244,
+      "visual": 0.2897232135446925,
+      "scene_support": 0.9002170742222051,
+      "object_support": 0.7064035888681567,
+      "score": 0.5978754843449855,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.2918636202812195,
+      "visual": 0.286766536642045,
+      "scene_support": 0.8554344392901624,
+      "object_support": 0.4652247193038808,
+      "score": 0.510904362235031,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child crying followed by footsteps and laughter",
+      "clip_similarity": 0.29164791107177734,
+      "visual": 0.27425166680499075,
+      "scene_support": 0.8942979554359071,
+      "object_support": 0.4332100231341964,
+      "score": 0.5079530602930273,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl sneezes several times before talking",
+      "clip_similarity": 0.29154229164123535,
+      "visual": 0.26812391069798325,
+      "scene_support": 0.5331963730719237,
+      "object_support": 0.2672479689907932,
+      "score": 0.34738286689800835,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child crying with a distant speech",
+      "clip_similarity": 0.2903706729412079,
+      "visual": 0.20014973580103465,
+      "scene_support": 0.7047687286996259,
+      "object_support": 0.3486442494739767,
+      "score": 0.39608378777249464,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl sneezing then speaking",
+      "clip_similarity": 0.2898201048374176,
+      "visual": 0.16820725094751984,
+      "scene_support": 0.4150956012705882,
+      "object_support": 0.15061047571270286,
+      "score": 0.23699472347399525,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Girl crying and talking",
+      "clip_similarity": 0.2881600260734558,
+      "visual": 0.07189393310648187,
+      "scene_support": 0.6781691178349334,
+      "object_support": 0.44791557642405233,
+      "score": 0.36658298152028845,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female's speech followed by snoring in the background and television playing",
+      "clip_similarity": 0.2880558669567108,
+      "visual": 0.06585090048966719,
+      "scene_support": 1.0,
+      "object_support": 0.9427448489419985,
+      "score": 0.6091638148784664,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring followed by a girl giggling",
+      "clip_similarity": 0.2880042791366577,
+      "visual": 0.06285791351979417,
+      "scene_support": 0.579379960347123,
+      "object_support": 0.5231814753193132,
+      "score": 0.3559115961078485,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl speaks, rustling of a camera followed by computer typing",
+      "clip_similarity": 0.28783488273620605,
+      "visual": 0.05302998865742662,
+      "scene_support": 0.5343477960687439,
+      "object_support": 0.1670252888165469,
+      "score": 0.23162392092855788,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-0.84)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone is recording a young child snoring",
+      "clip_similarity": 0.2875727415084839,
+      "visual": 0.037821257642404627,
+      "scene_support": 0.8858003667374663,
+      "object_support": 0.7305310037931421,
+      "score": 0.5000279142161443,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Girl crying loudly",
+      "clip_similarity": 0.287157267332077,
+      "visual": 0.013716560157136138,
+      "scene_support": 0.8749009901259226,
+      "object_support": 0.5733014771960343,
+      "score": 0.4399473642594415,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores while a fan spins",
+      "clip_similarity": 0.28692084550857544,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.1212151050567627
+    ],
+    [
+      "berth",
+      0.09017551690340042
+    ],
+    [
+      "youth hostel",
+      0.06394864618778229
+    ],
+    [
+      "archaelogical excavation",
+      0.025310121476650238
+    ],
+    [
+      "bedroom",
+      0.02511952817440033
+    ]
+  ],
+  "top_objects": [
+    [
+      "sleeping bag",
+      0.05102081969380379
+    ],
+    [
+      "cockroach",
+      0.04343091696500778
+    ],
+    [
+      "neck brace",
+      0.038112010806798935
+    ],
+    [
+      "barrette",
+      0.03479861840605736
+    ],
+    [
+      "pillow",
+      0.026553697884082794
+    ]
+  ]
+}

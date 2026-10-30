@@ -1,0 +1,283 @@
+{
+  "id": "VOXl8iR-HnI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\VOXl8iR-HnI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\VOXl8iR-HnI.wav",
+  "gt_captions": [
+    "A man talking as gusts of wind blow followed by an aircraft flying by",
+    "A man talking as gusts of wind blow followed by an aircraft flying by",
+    "Quiet speech and then and airplane flying away",
+    "Humming of a distant jet engine passing",
+    "A jet engine hums first distant then louder as it passes by"
+  ],
+  "top_scene": [
+    "landing deck",
+    0.282161146402359
+  ],
+  "top_object": [
+    "airliner",
+    0.7183389663696289
+  ],
+  "env_probs": {
+    "indoor": 0.26815831661224365,
+    "outdoor": 0.7318416833877563
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "An engine of a heavy jet is revving as it prepares to take off",
+    "casv": "Large aircraft taking off with booming engines"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3155825436115265,
+    "clap_gt_audio_baseline": 0.48105138540267944,
+    "clap_text_casv": 0.4603872299194336,
+    "clap_gt_audio_casv": 0.48704567551612854
+  },
+  "verdicts": [
+    {
+      "caption": "An engine of a heavy jet is revving as it prepares to take off",
+      "clip_similarity": 0.296038955450058,
+      "visual": 1.0,
+      "scene_support": 0.012354132621354754,
+      "object_support": 0.32524523915993714,
+      "score": 0.5012798115343876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Large aircraft taking off with booming engines",
+      "clip_similarity": 0.2922525107860565,
+      "visual": 0.772144906743185,
+      "scene_support": 0.5086979538288029,
+      "object_support": 0.8302708274270372,
+      "score": 0.7105485970740261,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud airplane engine sound with a whoosh noise near the end",
+      "clip_similarity": 0.2902345657348633,
+      "visual": 0.6507119799139168,
+      "scene_support": 0.370360439155753,
+      "object_support": 0.21879746348325826,
+      "score": 0.43703216275727014,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft engine runs as plane takes off",
+      "clip_similarity": 0.2858726978302002,
+      "visual": 0.38822991391678624,
+      "scene_support": 0.07126383870002531,
+      "object_support": 0.4033223342267063,
+      "score": 0.297667817444734,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine hissing as it accelerates on a plane",
+      "clip_similarity": 0.2856796383857727,
+      "visual": 0.3766122668579627,
+      "scene_support": 0.7608948834211798,
+      "object_support": 0.6992840351230994,
+      "score": 0.5886985823064689,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft nearby and then an engine spins up to a high speed",
+      "clip_similarity": 0.285232275724411,
+      "visual": 0.3496915351506456,
+      "scene_support": 0.7947752434000046,
+      "object_support": 0.8189619142537315,
+      "score": 0.6239977613563791,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An aircraft flies overhead with a whooshing sound",
+      "clip_similarity": 0.28446048498153687,
+      "visual": 0.30324784791965564,
+      "scene_support": 0.9667813658020117,
+      "object_support": 0.8396049674264721,
+      "score": 0.6632150391364073,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud sustained noise from a large aircraft engine",
+      "clip_similarity": 0.2837946116924286,
+      "visual": 0.26317790530846485,
+      "scene_support": 0.4429695951389049,
+      "object_support": 0.5078420999817819,
+      "score": 0.39051467065959194,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large plane drives past and then takes flight",
+      "clip_similarity": 0.28366947174072266,
+      "visual": 0.2556474175035868,
+      "scene_support": 0.8004142978801758,
+      "object_support": 1.0,
+      "score": 0.6423832563654874,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An airplane is in flight, and a man is speaking with slight knocking noises",
+      "clip_similarity": 0.2833404839038849,
+      "visual": 0.23585007173601147,
+      "scene_support": 0.6257693281469376,
+      "object_support": 0.5679221625666011,
+      "score": 0.4524474759084662,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The engine of an airplane sounds as it begins to take off",
+      "clip_similarity": 0.2819514572620392,
+      "visual": 0.15226327116212338,
+      "scene_support": 1.0,
+      "object_support": 0.9642231893122587,
+      "score": 0.6501722652585269,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An aircraft engine accelerates with wind noise in the background",
+      "clip_similarity": 0.28123360872268677,
+      "visual": 0.10906563845050216,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.043626255380200867,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine is running and making a roaring sound",
+      "clip_similarity": 0.2808297872543335,
+      "visual": 0.08476506456241033,
+      "scene_support": 0.09438626372361728,
+      "object_support": 0.33353694832758046,
+      "score": 0.16228298944032343,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft motor starts up and goes fast with a few shouts from people",
+      "clip_similarity": 0.28065627813339233,
+      "visual": 0.0743238880918221,
+      "scene_support": 0.3124715170207379,
+      "object_support": 0.4666933606898359,
+      "score": 0.26347901854990097,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane idles nearby, and then a jet engine roars loudly",
+      "clip_similarity": 0.2806267738342285,
+      "visual": 0.0725484218077475,
+      "scene_support": 0.19509632425714088,
+      "object_support": 0.5758787350929956,
+      "score": 0.26031188652813997,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large aircraft engine is running, with high-pitched engine whining and hissing",
+      "clip_similarity": 0.2806043326854706,
+      "visual": 0.07119799139167862,
+      "scene_support": 0.5048311736138283,
+      "object_support": 0.5385587370804338,
+      "score": 0.34149616976495006,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large aircraft engine is running and hissing, and it fades somewhat",
+      "clip_similarity": 0.28018802404403687,
+      "visual": 0.04614598278335724,
+      "scene_support": 0.5482772113149355,
+      "object_support": 0.6915797893120639,
+      "score": 0.3904154933014427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine is making noise followed by multiple beeps and a woman speaking",
+      "clip_similarity": 0.2796785235404968,
+      "visual": 0.015486011477761836,
+      "scene_support": 0.18552028908785417,
+      "object_support": 0.1640484116569097,
+      "score": 0.1110650148145339,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft begins its takeoff, buzzing of small engines",
+      "clip_similarity": 0.27958938479423523,
+      "visual": 0.010121951219512195,
+      "scene_support": 0.9783241650746887,
+      "object_support": 0.6632685370019105,
+      "score": 0.49652659111078457,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Aircraft flies overhead with roaring sounds",
+      "clip_similarity": 0.2794211804866791,
+      "visual": 0.0,
+      "scene_support": 0.5115358943080075,
+      "object_support": 0.38939467892643265,
+      "score": 0.270279171970332,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "landing deck",
+      0.282161146402359
+    ],
+    [
+      "sky",
+      0.12639044225215912
+    ],
+    [
+      "airport terminal",
+      0.07749056816101074
+    ],
+    [
+      "runway",
+      0.06370359659194946
+    ],
+    [
+      "airplane cabin",
+      0.05864599347114563
+    ]
+  ],
+  "top_objects": [
+    [
+      "airliner",
+      0.7183389663696289
+    ],
+    [
+      "oxygen mask",
+      0.07502179592847824
+    ],
+    [
+      "military aircraft",
+      0.0298562403768301
+    ],
+    [
+      "wing",
+      0.01342234667390585
+    ],
+    [
+      "harvester",
+      0.009202102199196815
+    ]
+  ]
+}

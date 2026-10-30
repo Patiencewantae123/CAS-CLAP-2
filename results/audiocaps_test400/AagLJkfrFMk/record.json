@@ -1,0 +1,283 @@
+{
+  "id": "AagLJkfrFMk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AagLJkfrFMk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AagLJkfrFMk.wav",
+  "gt_captions": [
+    "A toilet is flushing",
+    "A toilet flushing",
+    "Water hissing followed by a man breathing loudly then a toilet flushing",
+    "Water hissing followed by a man breathing aloud then a toilet flushing",
+    "A toilet flushing followed by a person breathing then metal clacking and a toilet flushing"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.5847094058990479
+  ],
+  "top_object": [
+    "toilet seat",
+    0.7831473350524902
+  ],
+  "env_probs": {
+    "indoor": 0.8143615126609802,
+    "outdoor": 0.18563848733901978
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "A toilet flushing noise",
+    "casv": "A toilet flushing noise"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1970781683921814,
+    "clap_gt_audio_baseline": 0.3504473865032196,
+    "clap_text_casv": 0.1970781683921814,
+    "clap_gt_audio_casv": 0.3504473865032196
+  },
+  "verdicts": [
+    {
+      "caption": "A toilet flushing noise",
+      "clip_similarity": 0.3508361876010895,
+      "visual": 1.0,
+      "scene_support": 0.9509895872555127,
+      "object_support": 0.6067798180420412,
+      "score": 0.8673308215892661,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water finishes flushing down a toilet",
+      "clip_similarity": 0.34766635298728943,
+      "visual": 0.7932727442352246,
+      "scene_support": 0.3105585639860068,
+      "object_support": 0.45601287050127076,
+      "score": 0.5472805280402732,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Toilet flushing following tapping sound",
+      "clip_similarity": 0.3460589349269867,
+      "visual": 0.6884416836409435,
+      "scene_support": 0.0,
+      "object_support": 0.042274536842789784,
+      "score": 0.28805903450921433,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The toilet flushing as a small sound of tapping",
+      "clip_similarity": 0.343600869178772,
+      "visual": 0.5281338920591482,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8112535568236592,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female voice followed by a toilet flush and then a man communicating",
+      "clip_similarity": 0.34281283617019653,
+      "visual": 0.4767407056116182,
+      "scene_support": 0.4245921503926173,
+      "object_support": 0.19552329615960562,
+      "score": 0.3767309162103141,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing down a flushed toilet",
+      "clip_similarity": 0.34131568670272827,
+      "visual": 0.3791010371153577,
+      "scene_support": 0.058993229319988225,
+      "object_support": 0.42006223236564055,
+      "score": 0.2953570533518317,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water rushing down a flushed toilet",
+      "clip_similarity": 0.3410407304763794,
+      "visual": 0.361169203737969,
+      "scene_support": 0.19845965318235653,
+      "object_support": 0.4846445690992163,
+      "score": 0.34939894817965944,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flows down a flushed toilet",
+      "clip_similarity": 0.3402085602283478,
+      "visual": 0.30689751683174477,
+      "scene_support": 0.4678464582292173,
+      "object_support": 0.6905360659987333,
+      "score": 0.47027376400108306,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing down a toilet",
+      "clip_similarity": 0.3389776349067688,
+      "visual": 0.2266202012034892,
+      "scene_support": 0.37482457161243504,
+      "object_support": 0.3790642340279021,
+      "score": 0.3168147221734968,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet lid closes followed by a toilet flushing",
+      "clip_similarity": 0.33894211053848267,
+      "visual": 0.22430340677623498,
+      "scene_support": 0.013107324520267541,
+      "object_support": 0.7955845842608948,
+      "score": 0.3323289353448427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet flushing away water while a bathroom stall door makes noise",
+      "clip_similarity": 0.3386891484260559,
+      "visual": 0.20780596457947847,
+      "scene_support": 0.39814473783297166,
+      "object_support": 0.0,
+      "score": 0.20256580718168288,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet is flushed followed by a slight tapping",
+      "clip_similarity": 0.3380398750305176,
+      "visual": 0.1654622704585387,
+      "scene_support": 0.7221638792094256,
+      "object_support": 0.9215316324103595,
+      "score": 0.5592935616693511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet starts to flush as someone talks briefly",
+      "clip_similarity": 0.3375089466571808,
+      "visual": 0.1308366893163124,
+      "scene_support": 0.8448275153863533,
+      "object_support": 0.795760074899761,
+      "score": 0.5445109528123592,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A tapping noise followed by a toilet flushing",
+      "clip_similarity": 0.3373967111110687,
+      "visual": 0.123517018332219,
+      "scene_support": 0.5361351671447446,
+      "object_support": 0.3962676615293341,
+      "score": 0.32912765593511123,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet lid is opened then it is flushed",
+      "clip_similarity": 0.3371032476425171,
+      "visual": 0.1043781972540544,
+      "scene_support": 0.18871644611182234,
+      "object_support": 0.8354245225452022,
+      "score": 0.34899356949872906,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water runs down a flushed toilet",
+      "clip_similarity": 0.3362259268760681,
+      "visual": 0.04716192682661359,
+      "scene_support": 0.5457619924557235,
+      "object_support": 0.8709832018935173,
+      "score": 0.44388832903541764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water drains out of a toilet as it is flushed",
+      "clip_similarity": 0.33607444167137146,
+      "visual": 0.037282508979522025,
+      "scene_support": 0.2610429174853325,
+      "object_support": 0.5345213247850685,
+      "score": 0.25358227627292906,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet is flushed multiple times as water rapidly flows",
+      "clip_similarity": 0.3359546661376953,
+      "visual": 0.029471102265482874,
+      "scene_support": 0.4642892839783393,
+      "object_support": 0.7316525427880919,
+      "score": 0.3705709889361225,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something falls into water, followed by a man saying something. Then all of a sudden the man is laughing and making childish sounds and proceeds to flush the toilet",
+      "clip_similarity": 0.33573925495147705,
+      "visual": 0.015422620621025299,
+      "scene_support": 0.5509005894393822,
+      "object_support": 0.33283002261780364,
+      "score": 0.27128823186556583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet lid is opened and a toilet is flushed",
+      "clip_similarity": 0.3355027735233307,
+      "visual": 0.0,
+      "scene_support": 0.32897700433350907,
+      "object_support": 0.9080865551900243,
+      "score": 0.37111906785706,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.5847094058990479
+    ],
+    [
+      "fountain",
+      0.07185710221529007
+    ],
+    [
+      "shower",
+      0.06471004337072372
+    ],
+    [
+      "watering hole",
+      0.016850320622324944
+    ],
+    [
+      "archaelogical excavation",
+      0.014369172044098377
+    ]
+  ],
+  "top_objects": [
+    [
+      "toilet seat",
+      0.7831473350524902
+    ],
+    [
+      "plunger",
+      0.03823208436369896
+    ],
+    [
+      "sink",
+      0.03761853650212288
+    ],
+    [
+      "toilet paper",
+      0.02495008520781994
+    ],
+    [
+      "soap dispenser",
+      0.012824011966586113
+    ]
+  ]
+}

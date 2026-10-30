@@ -1,0 +1,285 @@
+{
+  "id": "RfGapDlAYoQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\RfGapDlAYoQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\RfGapDlAYoQ.wav",
+  "gt_captions": [
+    "A person whistles a tune with wind noise and people talking in the background",
+    "A person whistles a tune with people talking low in the background",
+    "Musical whistling with wind blowing",
+    "A person whistles as wind blows into a microphone and a crowd of people talk in the background",
+    "A person whistling as a crowd of people talk in the background"
+  ],
+  "top_scene": [
+    "art school",
+    0.08926691859960556
+  ],
+  "top_object": [
+    "pan flute",
+    0.2419288158416748
+  ],
+  "env_probs": {
+    "indoor": 0.4341995418071747,
+    "outdoor": 0.5658004581928253
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A person singing at a high pitch",
+    "casv": "A person singing at a high pitch"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3760867118835449,
+    "clap_gt_audio_baseline": 0.5394922494888306,
+    "clap_text_casv": 0.3760867118835449,
+    "clap_gt_audio_casv": 0.5394922494888306
+  },
+  "verdicts": [
+    {
+      "caption": "A person singing at a high pitch",
+      "clip_similarity": 0.3063962757587433,
+      "visual": 1.0,
+      "scene_support": 0.8617350223302261,
+      "object_support": 0.9929800814920541,
+      "score": 0.9564145311466841,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking then sniffing followed by plastic clicking and a goat baaing as metal clangs in the background",
+      "clip_similarity": 0.30143260955810547,
+      "visual": 0.704429659785234,
+      "scene_support": 0.269965065665699,
+      "object_support": 0.4201734696318505,
+      "score": 0.4888134245033584,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speeches and sings while an animal whistles",
+      "clip_similarity": 0.3007102906703949,
+      "visual": 0.6614178957474485,
+      "scene_support": 0.30380725195878544,
+      "object_support": 0.6134285469376689,
+      "score": 0.5397378979679157,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person whistling along with a stringed bow instrument",
+      "clip_similarity": 0.3006971478462219,
+      "visual": 0.6606352828852683,
+      "scene_support": 0.011659820138825213,
+      "object_support": 0.9033188874979069,
+      "score": 0.538747725445127,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A human female voice with chanting in the background",
+      "clip_similarity": 0.2968078851699829,
+      "visual": 0.42904221317948454,
+      "scene_support": 0.7293892468307305,
+      "object_support": 0.9034449729290094,
+      "score": 0.6614671511997158,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman giving a speech and shouting",
+      "clip_similarity": 0.2963704764842987,
+      "visual": 0.4029959343173078,
+      "scene_support": 0.25893461081845814,
+      "object_support": 0.3882594030826642,
+      "score": 0.35535657789725983,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman performs a speech with mild background noise from a crowd of people",
+      "clip_similarity": 0.295600950717926,
+      "visual": 0.3571731526520993,
+      "scene_support": 0.3685123407924242,
+      "object_support": 0.37998012534785625,
+      "score": 0.36741700090292384,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman making some musical sounds with her mouth and continues to give a speech",
+      "clip_similarity": 0.2954132854938507,
+      "visual": 0.3459982928036884,
+      "scene_support": 0.14386349638102955,
+      "object_support": 0.6735538549250065,
+      "score": 0.38362452251328616,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman singing and an animal sound being made",
+      "clip_similarity": 0.295282244682312,
+      "visual": 0.3381952344023127,
+      "scene_support": 0.5101963418082418,
+      "object_support": 0.7748069347983829,
+      "score": 0.5207790767429125,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person chanting while a dog barks in the background",
+      "clip_similarity": 0.29487037658691406,
+      "visual": 0.3136698154559829,
+      "scene_support": 0.32306266145187995,
+      "object_support": 0.6204006227523902,
+      "score": 0.40850691144367424,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person making a whistling and bubble sound",
+      "clip_similarity": 0.29444873332977295,
+      "visual": 0.2885623171019544,
+      "scene_support": 0.31469416735355976,
+      "object_support": 0.8065351125499358,
+      "score": 0.4517937108118304,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal clacking followed by a goat baaing as a woman speaks while a crowd of people talk in the background and foliage rustles",
+      "clip_similarity": 0.2925569415092468,
+      "visual": 0.17591220538884855,
+      "scene_support": 0.11368948719930524,
+      "object_support": 0.0,
+      "score": 0.104471728315331,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young woman speaks passionately into a microphone",
+      "clip_similarity": 0.2921261489391327,
+      "visual": 0.15025989490627278,
+      "scene_support": 0.0,
+      "object_support": 0.5960033410147435,
+      "score": 0.23890496026693217,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl singing and a long ringing",
+      "clip_similarity": 0.2916263937950134,
+      "visual": 0.12050108518767624,
+      "scene_support": 0.5313758520554706,
+      "object_support": 0.8632037859517905,
+      "score": 0.4665743254772488,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking while a pan sizzles",
+      "clip_similarity": 0.2912721037864685,
+      "visual": 0.09940425592327909,
+      "scene_support": 0.2308138398915821,
+      "object_support": 0.36518826099783913,
+      "score": 0.218562332636138,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-0.45)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks followed by a laughter from a crowd, and music plays as a man speaks",
+      "clip_similarity": 0.2907644510269165,
+      "visual": 0.06917516863443816,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6276700674537752,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking and music playing",
+      "clip_similarity": 0.2907164394855499,
+      "visual": 0.06631623593382041,
+      "scene_support": 0.6242775620952151,
+      "object_support": 0.8693764901005494,
+      "score": 0.47462271003225753,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female speaking into a microphone to a crowd",
+      "clip_similarity": 0.29007184505462646,
+      "visual": 0.027932713040175902,
+      "scene_support": 0.06911832691566361,
+      "object_support": 0.286698335871654,
+      "score": 0.11791808405226564,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaking on a microphone",
+      "clip_similarity": 0.29001757502555847,
+      "visual": 0.024701107548043735,
+      "scene_support": 0.14396575023847233,
+      "object_support": 0.6187635055936083,
+      "score": 0.23869921976884168,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young woman is giving a speech with joy in her voice",
+      "clip_similarity": 0.28960275650024414,
+      "visual": 0.0,
+      "scene_support": 0.5525116763823833,
+      "object_support": 0.5881461753753658,
+      "score": 0.3421973555273248,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art school",
+      0.08926691859960556
+    ],
+    [
+      "outdoor stage",
+      0.06906280666589737
+    ],
+    [
+      "marsh",
+      0.04177628830075264
+    ],
+    [
+      "youth hostel",
+      0.035090699791908264
+    ],
+    [
+      "reception",
+      0.024327071383595467
+    ]
+  ],
+  "top_objects": [
+    [
+      "pan flute",
+      0.2419288158416748
+    ],
+    [
+      "maraca",
+      0.14034920930862427
+    ],
+    [
+      "accordion",
+      0.04606692120432854
+    ],
+    [
+      "flute",
+      0.04416561499238014
+    ],
+    [
+      "bassoon",
+      0.023646241053938866
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "Wq4OD3olO2w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Wq4OD3olO2w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Wq4OD3olO2w.wav",
+  "gt_captions": [
+    "A man talking followed by screaming children, followed by more high pitched conversation",
+    "An adult male speaks and an adult female laugh, a group of kids shout and speak, and then an adult female speaks in the foreground while the kids talk",
+    "A man talks followed by laughter, and a woman and children communicate",
+    "Speech and laughter followed by more speech and hollering",
+    "Children screaming and speaking and a female speaking"
+  ],
+  "top_scene": [
+    "art school",
+    0.2041487991809845
+  ],
+  "top_object": [
+    "trifle",
+    0.10892095416784286
+  ],
+  "env_probs": {
+    "indoor": 0.8744374513626099,
+    "outdoor": 0.12556254863739014
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "Spraying followed by a girl laughing and talking in the background",
+    "casv": "Spraying followed by a girl laughing and talking in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.10613247752189636,
+    "clap_gt_audio_baseline": 0.222947359085083,
+    "clap_text_casv": -0.10613247752189636,
+    "clap_gt_audio_casv": 0.222947359085083
+  },
+  "verdicts": [
+    {
+      "caption": "Spraying followed by a girl laughing and talking in the background",
+      "clip_similarity": 0.31421181559562683,
+      "visual": 1.0,
+      "scene_support": 0.7954100905190895,
+      "object_support": 0.49964333621404,
+      "score": 0.7885160280199388,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone sprays painting an object",
+      "clip_similarity": 0.3081303536891937,
+      "visual": 0.7192531578172573,
+      "scene_support": 0.8042124072712291,
+      "object_support": 0.5842361353470066,
+      "score": 0.7042358259123735,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two children hit objects and laugh",
+      "clip_similarity": 0.305961936712265,
+      "visual": 0.6191495596734938,
+      "scene_support": 0.7111878145352722,
+      "object_support": 0.5050297874063029,
+      "score": 0.6125251044518701,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid speaking followed by paper sanding then glass pounding",
+      "clip_similarity": 0.30587783455848694,
+      "visual": 0.6152670369417498,
+      "scene_support": 0.6667948960551499,
+      "object_support": 0.5780284067525072,
+      "score": 0.6195538056189971,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks then spills some liquid and tap an object",
+      "clip_similarity": 0.30556800961494446,
+      "visual": 0.6009641643977344,
+      "scene_support": 0.6729154141146543,
+      "object_support": 0.7257988440781238,
+      "score": 0.6599999432169272,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Kid speaking and spray paint can shaking slow motion",
+      "clip_similarity": 0.3013682961463928,
+      "visual": 0.40708704858106315,
+      "scene_support": 0.4763704216479313,
+      "object_support": 0.1069617213581806,
+      "score": 0.3378344623342589,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talking and laughing while stirring liquid",
+      "clip_similarity": 0.3005269765853882,
+      "visual": 0.36824806321000153,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1472992252840006,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Paint gun shooting faster then slower",
+      "clip_similarity": 0.3005253076553345,
+      "visual": 0.36817101810972597,
+      "scene_support": 0.6058306845101933,
+      "object_support": 0.16917333123976086,
+      "score": 0.37976961196887665,
+      "conflicts": [
+        "names 'a gun', not visible in image (z=-0.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.30003559589385986,
+      "visual": 0.34556378440029334,
+      "scene_support": 0.7611009842364084,
+      "object_support": 0.6476713810892751,
+      "score": 0.5608572233578224,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping sounds, followed by a girl talking and then water splashing noises while water is running from a faucet in the background",
+      "clip_similarity": 0.2983495593070984,
+      "visual": 0.26772897184689487,
+      "scene_support": 0.5436055772598034,
+      "object_support": 0.4683943137426881,
+      "score": 0.4106915560395054,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pounding is followed by kids talking and then a young woman begins speaking",
+      "clip_similarity": 0.2981398403644562,
+      "visual": 0.2580474295140518,
+      "scene_support": 0.9542930097417607,
+      "object_support": 0.7217065641470399,
+      "score": 0.6060188439722609,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People creating something with household items",
+      "clip_similarity": 0.29757124185562134,
+      "visual": 0.2317984390112362,
+      "scene_support": 0.9963227069016315,
+      "object_support": 0.524350353627697,
+      "score": 0.548921293763293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toddler cries and stamps a foot while adults chuckle",
+      "clip_similarity": 0.2973485291004181,
+      "visual": 0.22151704554053328,
+      "scene_support": 0.7967351807627173,
+      "object_support": 0.48825830922351565,
+      "score": 0.47410486521208317,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks as objects tap a surface followed by spraying",
+      "clip_similarity": 0.2968049943447113,
+      "visual": 0.19642510734721338,
+      "scene_support": 0.5786759157901796,
+      "object_support": 0.49917289576033175,
+      "score": 0.4019246864040388,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Objects are tapping surfaces followed by spraying sounds",
+      "clip_similarity": 0.2959827184677124,
+      "visual": 0.15846526160251057,
+      "scene_support": 0.8896232403390812,
+      "object_support": 0.8325231984798701,
+      "score": 0.5800300362866896,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child and people laughing followed by slamming",
+      "clip_similarity": 0.2954573929309845,
+      "visual": 0.13421394048541166,
+      "scene_support": 1.0,
+      "object_support": 0.7894677766689749,
+      "score": 0.5905259091948571,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plastic squeaking followed by a woman laughing and liquid splashing then a kid and woman talking",
+      "clip_similarity": 0.2930986285209656,
+      "visual": 0.025323073494146635,
+      "scene_support": 0.7785000994057215,
+      "object_support": 0.6807083226252417,
+      "score": 0.4478917560069476,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling and tapping noises followed by an object moving",
+      "clip_similarity": 0.29307064414024353,
+      "visual": 0.02403119225916871,
+      "scene_support": 0.9774552614370474,
+      "object_support": 1.0,
+      "score": 0.6028490553347817,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of small pops is followed by an explosion",
+      "clip_similarity": 0.29299238324165344,
+      "visual": 0.020418327378389126,
+      "scene_support": 0.8840910125251209,
+      "object_support": 0.8080609082383508,
+      "score": 0.5158129071803972,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The clicking of ping pong balls followed by a woman screaming and a man laughing",
+      "clip_similarity": 0.29255008697509766,
+      "visual": 0.0,
+      "scene_support": 0.7697188614571681,
+      "object_support": 0.6919430785451552,
+      "score": 0.43849858200069697,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art school",
+      0.2041487991809845
+    ],
+    [
+      "art studio",
+      0.13607777655124664
+    ],
+    [
+      "ball pit",
+      0.09805689752101898
+    ],
+    [
+      "candy store",
+      0.07696031779050827
+    ],
+    [
+      "assembly line",
+      0.07414481788873672
+    ]
+  ],
+  "top_objects": [
+    [
+      "trifle",
+      0.10892095416784286
+    ],
+    [
+      "ice pop",
+      0.08923590183258057
+    ],
+    [
+      "abacus",
+      0.08021621406078339
+    ],
+    [
+      "beaker",
+      0.04950685054063797
+    ],
+    [
+      "eggnog",
+      0.03993861377239227
+    ]
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "id": "os_2U4xqTqw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\os_2U4xqTqw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\os_2U4xqTqw.wav",
+  "gt_captions": [
+    "An explosion and then gunfire and a speech followed by another explosion",
+    "Four gunshots occur followed by a man screaming and then an explosion",
+    "Heavy footsteps walking on a hard surface followed by a man grunting then two explosions",
+    "Loud footsteps followed by a scream and explosions",
+    "Wind blowing followed by heavy footsteps on a solid surface then a man groaning proceeded by two explosions"
+  ],
+  "top_scene": [
+    "archive",
+    0.15343734622001648
+  ],
+  "top_object": [
+    "microphone",
+    0.12061377614736557
+  ],
+  "env_probs": {
+    "indoor": 0.6913847923278809,
+    "outdoor": 0.30861520767211914
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Computer generated audio with low quality of a game shooting",
+    "casv": "Computer generated audio with low quality of a game shooting"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5526029467582703,
+    "clap_gt_audio_baseline": 0.5216807126998901,
+    "clap_text_casv": 0.5526029467582703,
+    "clap_gt_audio_casv": 0.5216807126998901
+  },
+  "verdicts": [
+    {
+      "caption": "Computer generated audio with low quality of a game shooting",
+      "clip_similarity": 0.30526795983314514,
+      "visual": 1.0,
+      "scene_support": 0.7978625427133739,
+      "object_support": 0.5904266379229992,
+      "score": 0.8164867541909119,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Low-quality horn sound",
+      "clip_similarity": 0.2982361614704132,
+      "visual": 0.6365406447896015,
+      "scene_support": 0.9041248239321326,
+      "object_support": 0.8319150309145792,
+      "score": 0.7754282143698541,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind sounds are followed by an accelerating motor vehicle",
+      "clip_similarity": 0.2968539595603943,
+      "visual": 0.5650974393574594,
+      "scene_support": 0.7180226494916034,
+      "object_support": 0.559682704326607,
+      "score": 0.6093505818884468,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind sound, motor, vehicle",
+      "clip_similarity": 0.29668620228767395,
+      "visual": 0.5564264071364644,
+      "scene_support": 0.6824487070438882,
+      "object_support": 0.5319181379074642,
+      "score": 0.5868806163399914,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat driving accelerating as wind is blowing into a microphone",
+      "clip_similarity": 0.2918601930141449,
+      "visual": 0.306979803534651,
+      "scene_support": 0.1280524897065832,
+      "object_support": 0.29137761674525764,
+      "score": 0.24862095334941264,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound distorts into a microphone",
+      "clip_similarity": 0.29128992557525635,
+      "visual": 0.2775038395004105,
+      "scene_support": 0.8360094135033124,
+      "object_support": 1.0,
+      "score": 0.6618043598511578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind sounds are followed by a motorboat and male voice",
+      "clip_similarity": 0.2910628616809845,
+      "visual": 0.26576736863671163,
+      "scene_support": 0.5860855944403247,
+      "object_support": 0.6474877572530359,
+      "score": 0.47637895296269284,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind against a microphone on a speeding car",
+      "clip_similarity": 0.2909764051437378,
+      "visual": 0.2612986060726494,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.10451944242905975,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind noise in microphone, waves",
+      "clip_similarity": 0.29000645875930786,
+      "visual": 0.21116405026087037,
+      "scene_support": 0.6418163503785578,
+      "object_support": 0.6941662623592592,
+      "score": 0.48526040392569325,
+      "conflicts": [
+        "names 'the sea', not visible in image (z=-0.39)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind noise in the microphone",
+      "clip_similarity": 0.28906768560409546,
+      "visual": 0.16264077526329654,
+      "scene_support": 0.7891535001402487,
+      "object_support": 0.9412773564748537,
+      "score": 0.5841855670898493,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A harsh motor sound",
+      "clip_similarity": 0.2880917191505432,
+      "visual": 0.11219505432296167,
+      "scene_support": 0.9117538952590662,
+      "object_support": 0.858573507866667,
+      "score": 0.5759762426669046,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled sound that seems like wind is heard as there is another sharp sound",
+      "clip_similarity": 0.28769564628601074,
+      "visual": 0.091722853538271,
+      "scene_support": 0.8712642477279153,
+      "object_support": 0.7099058103156943,
+      "score": 0.5110401588283913,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Low frequency motorboat churning",
+      "clip_similarity": 0.2876892685890198,
+      "visual": 0.0913932033525732,
+      "scene_support": 0.49499439194741945,
+      "object_support": 0.5285095277131815,
+      "score": 0.3436084572392095,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "No audio/video available",
+      "clip_similarity": 0.2875388264656067,
+      "visual": 0.08361715598153342,
+      "scene_support": 1.0,
+      "object_support": 0.791186178183652,
+      "score": 0.5708027158477089,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine running idle as wind blows heavily into a microphone",
+      "clip_similarity": 0.2867313027381897,
+      "visual": 0.04187789695504896,
+      "scene_support": 0.412369210106835,
+      "object_support": 0.6094055844612116,
+      "score": 0.3232835971524336,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical winding sound",
+      "clip_similarity": 0.28661587834358215,
+      "visual": 0.035911844762490125,
+      "scene_support": 0.6430182111239688,
+      "object_support": 0.4627703382559254,
+      "score": 0.3461013027189643,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A slowed-down bursting sound",
+      "clip_similarity": 0.28614866733551025,
+      "visual": 0.011762658027983295,
+      "scene_support": 0.8321555098028305,
+      "object_support": 0.6866459055808762,
+      "score": 0.4603454878263053,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Background music with male narration",
+      "clip_similarity": 0.28611668944358826,
+      "visual": 0.010109785835208796,
+      "scene_support": 0.9891790893643084,
+      "object_support": 0.7245277968313453,
+      "score": 0.5181559801927796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some narration followed by mechanical sounds and humming",
+      "clip_similarity": 0.28599685430526733,
+      "visual": 0.003915751271232784,
+      "scene_support": 0.9064096842342746,
+      "object_support": 0.6206844466326172,
+      "score": 0.4596945397685606,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine running as wind blows into a microphone",
+      "clip_similarity": 0.2859210968017578,
+      "visual": 0.0,
+      "scene_support": 0.11541837813529507,
+      "object_support": 0.3289770106426456,
+      "score": 0.1333186166333822,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archive",
+      0.15343734622001648
+    ],
+    [
+      "television studio",
+      0.0761232003569603
+    ],
+    [
+      "music studio",
+      0.06622231751680374
+    ],
+    [
+      "mountain",
+      0.025839269161224365
+    ],
+    [
+      "home office",
+      0.025382688269019127
+    ]
+  ],
+  "top_objects": [
+    [
+      "microphone",
+      0.12061377614736557
+    ],
+    [
+      "motorboat",
+      0.09720691293478012
+    ],
+    [
+      "website",
+      0.09495530277490616
+    ],
+    [
+      "radio",
+      0.05932525172829628
+    ],
+    [
+      "monitor",
+      0.038434840738773346
+    ]
+  ]
+}

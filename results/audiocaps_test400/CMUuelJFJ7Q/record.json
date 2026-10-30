@@ -1,0 +1,285 @@
+{
+  "id": "CMUuelJFJ7Q",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\CMUuelJFJ7Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\CMUuelJFJ7Q.wav",
+  "gt_captions": [
+    "A bell tolls followed by ticking",
+    "One long chime",
+    "A bell ringing followed by a clock ticking",
+    "A bell ringing followed by a clock ticking",
+    "Music plays with low ticktock sounds and a baby cries"
+  ],
+  "top_scene": [
+    "door elevator",
+    0.11214205622673035
+  ],
+  "top_object": [
+    "wall clock",
+    0.3549184501171112
+  ],
+  "env_probs": {
+    "indoor": 0.8267567753791809,
+    "outdoor": 0.1732432246208191
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "An alarm sound from a clock",
+    "casv": "A chime of a clock and rumpling sounds in background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3789600431919098,
+    "clap_gt_audio_baseline": 0.5305874347686768,
+    "clap_text_casv": 0.3602970838546753,
+    "clap_gt_audio_casv": 0.5861664414405823
+  },
+  "verdicts": [
+    {
+      "caption": "An alarm sound from a clock",
+      "clip_similarity": 0.3298723101615906,
+      "visual": 1.0,
+      "scene_support": 0.6627486991123355,
+      "object_support": 0.7158030821608575,
+      "score": 0.8135655343819579,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chime of a clock and rumpling sounds in background",
+      "clip_similarity": 0.3283011317253113,
+      "visual": 0.8470465359173727,
+      "scene_support": 1.0,
+      "object_support": 0.8348298938352857,
+      "score": 0.8892675825175348,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dog howling with clock ticking in the background",
+      "clip_similarity": 0.32829904556274414,
+      "visual": 0.8468434489961704,
+      "scene_support": 0.17649276150959653,
+      "object_support": 0.16840192307239318,
+      "score": 0.44220578497306506,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ticktocks as static noise sounds in the background",
+      "clip_similarity": 0.3279176354408264,
+      "visual": 0.8097133573169316,
+      "scene_support": 0.7198800575904953,
+      "object_support": 0.7039511238729667,
+      "score": 0.7510346973658113,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Chime clock playing music",
+      "clip_similarity": 0.3278360664844513,
+      "visual": 0.8017726586979227,
+      "scene_support": 0.3566172386037706,
+      "object_support": 0.5294070997898063,
+      "score": 0.5865163649972421,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The ticktock of a clock with a woman speaking",
+      "clip_similarity": 0.32540667057037354,
+      "visual": 0.5652721364744111,
+      "scene_support": 0.6118939110521602,
+      "object_support": 0.6829089806978244,
+      "score": 0.6145497221147598,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An object falls down several times as clocks tick nearby",
+      "clip_similarity": 0.3252749741077423,
+      "visual": 0.5524515492630846,
+      "scene_support": 0.55552381276287,
+      "object_support": 0.4025720268815558,
+      "score": 0.5084093715985616,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock plays music nearby while tick-tocking",
+      "clip_similarity": 0.3247832655906677,
+      "visual": 0.5045839619357085,
+      "scene_support": 0.4924214082463241,
+      "object_support": 0.6101958484186789,
+      "score": 0.5326187617737843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ringing of a coo clock",
+      "clip_similarity": 0.32433825731277466,
+      "visual": 0.4612626204015319,
+      "scene_support": 0.31728168327494927,
+      "object_support": 0.35934922388498,
+      "score": 0.3874943203085915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meowing while alarming clock ringing",
+      "clip_similarity": 0.3224458396434784,
+      "visual": 0.2770366716954857,
+      "scene_support": 0.11496786042240588,
+      "object_support": 0.0,
+      "score": 0.14530502680491605,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock tick locking with clanging in the background",
+      "clip_similarity": 0.3224242925643921,
+      "visual": 0.2749390739236393,
+      "scene_support": 0.7319502545091771,
+      "object_support": 1.0,
+      "score": 0.6295607059222088,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A tick took of a clock is heard multiple times",
+      "clip_similarity": 0.3222126066684723,
+      "visual": 0.2543315539050714,
+      "scene_support": 0.0,
+      "object_support": 0.21657570311254748,
+      "score": 0.16670533249579278,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The ringing of a clock bell with mechanical humming",
+      "clip_similarity": 0.32215404510498047,
+      "visual": 0.24863061390275037,
+      "scene_support": 0.5258494031221304,
+      "object_support": 0.4221164317789048,
+      "score": 0.38384199603141067,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tick locking of a large clock",
+      "clip_similarity": 0.32210567593574524,
+      "visual": 0.24392189857258906,
+      "scene_support": 0.5157852373340589,
+      "object_support": 0.865766531850592,
+      "score": 0.5120342901844308,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ticktocks at a loud volume",
+      "clip_similarity": 0.3219190835952759,
+      "visual": 0.22575722409191135,
+      "scene_support": 0.8919067215363512,
+      "object_support": 0.8403803587819285,
+      "score": 0.6099890137322483,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock ringing with a mechanical bird cooing",
+      "clip_similarity": 0.321292519569397,
+      "visual": 0.1647615179296739,
+      "scene_support": 0.2711486356267501,
+      "object_support": 0.46098578267523144,
+      "score": 0.28554493266246406,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple clocks make a ticking sound at once",
+      "clip_similarity": 0.32060784101486206,
+      "visual": 0.09810839039108739,
+      "scene_support": 0.49147762699951253,
+      "object_support": 0.6358878506140531,
+      "score": 0.3774529994405046,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock making a faint ticktock sound",
+      "clip_similarity": 0.3205356299877167,
+      "visual": 0.09107868167575722,
+      "scene_support": 0.8001485109229217,
+      "object_support": 0.8791166210082232,
+      "score": 0.5402110122496464,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steady recurrent ticking sounds as made by a clock",
+      "clip_similarity": 0.31962859630584717,
+      "visual": 0.0027793895787397004,
+      "scene_support": 0.722035166479611,
+      "object_support": 0.7484333618355087,
+      "score": 0.4422523143260318,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water pours nearby as the clock ticks slowly, and then a person talks",
+      "clip_similarity": 0.31960004568099976,
+      "visual": 0.0,
+      "scene_support": 0.4676824360326044,
+      "object_support": 0.6489690142879914,
+      "score": 0.3349954350961787,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "door elevator",
+      0.11214205622673035
+    ],
+    [
+      "bedchamber",
+      0.07343661785125732
+    ],
+    [
+      "childs room",
+      0.05811465159058571
+    ],
+    [
+      "waiting room",
+      0.05776510387659073
+    ],
+    [
+      "bedroom",
+      0.03469734266400337
+    ]
+  ],
+  "top_objects": [
+    [
+      "wall clock",
+      0.3549184501171112
+    ],
+    [
+      "analog clock",
+      0.30614855885505676
+    ],
+    [
+      "hourglass",
+      0.08583147823810577
+    ],
+    [
+      "barometer",
+      0.06881391257047653
+    ],
+    [
+      "digital clock",
+      0.06551608443260193
+    ]
+  ]
+}

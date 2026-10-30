@@ -1,0 +1,289 @@
+{
+  "id": "jYPU6aSDo88",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\jYPU6aSDo88.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\jYPU6aSDo88.wav",
+  "gt_captions": [
+    "Loud humming with wind blowing",
+    "An aircraft engine running in the distance as wind blows into a microphone followed by a man talking in the background",
+    "An airplane engine and then light talking",
+    "An aircraft flying with wind blowing into a microphone followed by a man talking in the background",
+    "Wind blowing with the distant humming of a jet engine"
+  ],
+  "top_scene": [
+    "runway",
+    0.4096985459327698
+  ],
+  "top_object": [
+    "military aircraft",
+    0.41513901948928833
+  ],
+  "env_probs": {
+    "indoor": 0.11675365269184113,
+    "outdoor": 0.8832463473081589
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Airplane take off at a high speed",
+    "casv": "An aircraft nearby and then an engine spins up to a high speed"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4329206943511963,
+    "clap_gt_audio_baseline": 0.506758987903595,
+    "clap_text_casv": 0.511474609375,
+    "clap_gt_audio_casv": 0.35049787163734436
+  },
+  "verdicts": [
+    {
+      "caption": "Airplane take off at a high speed",
+      "clip_similarity": 0.3019126057624817,
+      "visual": 1.0,
+      "scene_support": 0.7988598467400123,
+      "object_support": 0.8123989356961671,
+      "score": 0.8833776347308538,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An aircraft nearby and then an engine spins up to a high speed",
+      "clip_similarity": 0.30137547850608826,
+      "visual": 0.9387751635674346,
+      "scene_support": 0.836548148023833,
+      "object_support": 1.0,
+      "score": 0.9264745098341238,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An airplane idles with its propellers running",
+      "clip_similarity": 0.30098849534988403,
+      "visual": 0.8946646103256402,
+      "scene_support": 0.37358700889519164,
+      "object_support": 0.5345191544983064,
+      "score": 0.6302976931483055,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A jet flying by with a small engine revving and accelerating",
+      "clip_similarity": 0.30086982250213623,
+      "visual": 0.8811376004674326,
+      "scene_support": 0.571504913090696,
+      "object_support": 0.869948669198992,
+      "score": 0.7848911148738795,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An aircraft from the distance with some bird sounds while a car pass by",
+      "clip_similarity": 0.3003430962562561,
+      "visual": 0.8210983306949663,
+      "scene_support": 0.6365227092154292,
+      "object_support": 0.723963817926186,
+      "score": 0.7365852904204712,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle with a propeller is taking off",
+      "clip_similarity": 0.3002576529979706,
+      "visual": 0.8113590194786224,
+      "scene_support": 0.5539357943908311,
+      "object_support": 0.5981636724068901,
+      "score": 0.6701734478307653,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane in the process of taking off",
+      "clip_similarity": 0.29999464750289917,
+      "visual": 0.7813801490620775,
+      "scene_support": 0.9888254734334486,
+      "object_support": 0.9959638569441569,
+      "score": 0.9079888587381126,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large airplane comes in for a landing",
+      "clip_similarity": 0.2992731034755707,
+      "visual": 0.6991344344269534,
+      "scene_support": 1.0,
+      "object_support": 0.8892856208579432,
+      "score": 0.8464394600281644,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A plane taking off with people talking in the background",
+      "clip_similarity": 0.29900312423706055,
+      "visual": 0.6683606568514883,
+      "scene_support": 0.6417884542258233,
+      "object_support": 0.4845455581365549,
+      "score": 0.6052444664493088,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An aircraft engine accelerates with wind noise in the background",
+      "clip_similarity": 0.29812127351760864,
+      "visual": 0.5678422686786198,
+      "scene_support": 0.5176395612335526,
+      "object_support": 0.7088168642764316,
+      "score": 0.5950738351244431,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft begins its takeoff, buzzing of small engines",
+      "clip_similarity": 0.2964969277381897,
+      "visual": 0.3826900473547256,
+      "scene_support": 0.9033002879090138,
+      "object_support": 0.9081246500021504,
+      "score": 0.6965035003152396,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.55)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A medium sized aircraft takes off from the airway with the wind blowing in the background",
+      "clip_similarity": 0.2961590886116028,
+      "visual": 0.3441812116559207,
+      "scene_support": 0.6726427256269938,
+      "object_support": 0.6697581018821294,
+      "score": 0.5403927329151053,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft motor starts up and goes fast with a few shouts from people",
+      "clip_similarity": 0.2949718236923218,
+      "visual": 0.2088499663693125,
+      "scene_support": 0.5992663376992983,
+      "object_support": 0.8144150119869414,
+      "score": 0.5076443914535969,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flies moving the propellers",
+      "clip_similarity": 0.29496580362319946,
+      "visual": 0.20816376446289414,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.08326550578515766,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of an aircraft take off",
+      "clip_similarity": 0.29393452405929565,
+      "visual": 0.09061262203863113,
+      "scene_support": 0.993191143938166,
+      "object_support": 0.9897941402988688,
+      "score": 0.6311406340865628,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A propeller plane is accelerating in the back, while there is radio chatter in the background",
+      "clip_similarity": 0.29391905665397644,
+      "visual": 0.08884955872461563,
+      "scene_support": 0.36099789025715723,
+      "object_support": 0.5089260259176872,
+      "score": 0.2965169983422996,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small aircraft makes multiple passes by, a man talks",
+      "clip_similarity": 0.2936936020851135,
+      "visual": 0.06315095762533376,
+      "scene_support": 0.7157186662114768,
+      "object_support": 0.7571353005780423,
+      "score": 0.4671165730869893,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft engine runs as plane takes off",
+      "clip_similarity": 0.2935919165611267,
+      "visual": 0.05156026007731661,
+      "scene_support": 0.5687865820885173,
+      "object_support": 0.7157904397990397,
+      "score": 0.40599721059719374,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter engine running and revving as propellers turn",
+      "clip_similarity": 0.29317232966423035,
+      "visual": 0.0037333460156127917,
+      "scene_support": 0.1806720703524379,
+      "object_support": 0.35065140058996946,
+      "score": 0.16089037968896733,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing with aircraft motor running",
+      "clip_similarity": 0.29313957691192627,
+      "visual": 0.0,
+      "scene_support": 0.5997424320649114,
+      "object_support": 0.6615465925561692,
+      "score": 0.3783867073863242,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "runway",
+      0.4096985459327698
+    ],
+    [
+      "outdoor hangar",
+      0.13435105979442596
+    ],
+    [
+      "airfield",
+      0.11383277177810669
+    ],
+    [
+      "landing deck",
+      0.10206220299005508
+    ],
+    [
+      "heliport",
+      0.0889725312590599
+    ]
+  ],
+  "top_objects": [
+    [
+      "military aircraft",
+      0.41513901948928833
+    ],
+    [
+      "airliner",
+      0.11397014558315277
+    ],
+    [
+      "high-speed train",
+      0.07955867052078247
+    ],
+    [
+      "Griffon Bruxellois",
+      0.04746652767062187
+    ],
+    [
+      "limousine",
+      0.03677322715520859
+    ]
+  ]
+}

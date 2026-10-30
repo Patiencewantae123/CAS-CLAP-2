@@ -1,0 +1,293 @@
+{
+  "id": "-R69Fa-mCaY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-R69Fa-mCaY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-R69Fa-mCaY.wav",
+  "gt_captions": [
+    "A chainsaw cutting as wood is cracking",
+    "Sound of cutting with a chainsaw with a little pause and again followed by the same sound",
+    "A chainsaw cutting as wood cracks and creaks",
+    "A chainsaw running and crackling",
+    "A saw running continuously"
+  ],
+  "top_scene": [
+    "tree farm",
+    0.6026899218559265
+  ],
+  "top_object": [
+    "sawmill",
+    0.6589866280555725
+  ],
+  "env_probs": {
+    "indoor": 0.03514740243554115,
+    "outdoor": 0.9648525975644588
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Chainsaw cutting wood",
+    "casv": "Chainsaw cutting wood"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.36964285373687744,
+    "clap_gt_audio_baseline": 0.5468910932540894,
+    "clap_text_casv": 0.36964285373687744,
+    "clap_gt_audio_casv": 0.5468910932540894
+  },
+  "verdicts": [
+    {
+      "caption": "Chainsaw cutting wood",
+      "clip_similarity": 0.345309853553772,
+      "visual": 1.0,
+      "scene_support": 0.8533711515106992,
+      "object_support": 0.9184576738299033,
+      "score": 0.9315486476021807,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw cutting wood loudly",
+      "clip_similarity": 0.3368932008743286,
+      "visual": 0.6858882386046398,
+      "scene_support": 0.9058895957158785,
+      "object_support": 0.9826262173429716,
+      "score": 0.8409100393595109,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.33612391352653503,
+      "visual": 0.6571782260809215,
+      "scene_support": 0.3589945201139596,
+      "object_support": 0.6586600207756699,
+      "score": 0.5681676526992574,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A worker using a chainsaw to chop down wood",
+      "clip_similarity": 0.3338300883769989,
+      "visual": 0.5715720491961909,
+      "scene_support": 0.38079966084548345,
+      "object_support": 0.5510795942605925,
+      "score": 0.5081925962102991,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is sawing wood with farm animal sounds in the background",
+      "clip_similarity": 0.33336788415908813,
+      "visual": 0.554322462389917,
+      "scene_support": 0.9632956299420178,
+      "object_support": 0.8838538669636354,
+      "score": 0.7758738340276627,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood being cut by a power saw",
+      "clip_similarity": 0.3302033543586731,
+      "visual": 0.4362213517162833,
+      "scene_support": 0.7494687318972834,
+      "object_support": 1.0,
+      "score": 0.6993291602556984,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power saw spins faster than slows down as blocks of wood fall in the background",
+      "clip_similarity": 0.3282894194126129,
+      "visual": 0.36479278028771184,
+      "scene_support": 0.484581937726272,
+      "object_support": 0.7776235025656725,
+      "score": 0.5245787442026681,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw runs as someone pounds a stick, wood is then sawed",
+      "clip_similarity": 0.3269302248954773,
+      "visual": 0.3140672721650906,
+      "scene_support": 0.6907089875181649,
+      "object_support": 0.8308909578312513,
+      "score": 0.5821068924708611,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw cutting and revving",
+      "clip_similarity": 0.3256489336490631,
+      "visual": 0.26624913524058663,
+      "scene_support": 0.8696508744018691,
+      "object_support": 0.8577226998549347,
+      "score": 0.6247117263732758,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as a motor stutters several times while wind blows into a microphone followed by a chainsaw starting up and sawing wood",
+      "clip_similarity": 0.32533785700798035,
+      "visual": 0.2546396706017391,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.10185586824069565,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chainsaw engine running and revving up as it cuts an object",
+      "clip_similarity": 0.3250126540660858,
+      "visual": 0.242503008584197,
+      "scene_support": 0.3356018883070512,
+      "object_support": 0.5485216443590254,
+      "score": 0.3622382632335017,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.32370904088020325,
+      "visual": 0.19385181082289504,
+      "scene_support": 0.8629802743998793,
+      "object_support": 0.36898199613555116,
+      "score": 0.4471294054897872,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person saws a log multiple time as a man talks nearby",
+      "clip_similarity": 0.32340461015701294,
+      "visual": 0.1824903736428004,
+      "scene_support": 0.9468705113871588,
+      "object_support": 0.712813392426108,
+      "score": 0.5709013206011002,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw being used followed by a male voice shouting",
+      "clip_similarity": 0.32309505343437195,
+      "visual": 0.1709376327725466,
+      "scene_support": 0.2914215027942751,
+      "object_support": 0.26005348764726827,
+      "score": 0.23381755024148165,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chainsaw starting and revving",
+      "clip_similarity": 0.32267093658447266,
+      "visual": 0.1551094768733859,
+      "scene_support": 0.8177966588076484,
+      "object_support": 0.8349625297368112,
+      "score": 0.5578715473126922,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood being chopped and thrown onto a pile",
+      "clip_similarity": 0.3226303458213806,
+      "visual": 0.1535946185827066,
+      "scene_support": 1.0,
+      "object_support": 0.8932147992787524,
+      "score": 0.6294022872167083,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw operating and cutting through an object followed by a man speaking",
+      "clip_similarity": 0.32232290506362915,
+      "visual": 0.14212084609618128,
+      "scene_support": 0.39550375388646436,
+      "object_support": 0.38665874081064716,
+      "score": 0.29149708684760595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking while scraping wood, followed by a different man talking",
+      "clip_similarity": 0.31999972462654114,
+      "visual": 0.05541912191606217,
+      "scene_support": 0.5673491845216367,
+      "object_support": 0.3598119496932559,
+      "score": 0.3003159890308927,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by a goat baaing as a kid and woman talk in the background while wood is being hammered in the distance",
+      "clip_similarity": 0.3188071548938751,
+      "visual": 0.010912095954371846,
+      "scene_support": 0.585509485536575,
+      "object_support": 0.14648193772130583,
+      "score": 0.22396226535911298,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by some chopping on wood",
+      "clip_similarity": 0.31851476430892944,
+      "visual": 0.0,
+      "scene_support": 0.9691060998072359,
+      "object_support": 0.6011641662069432,
+      "score": 0.47108107980425373,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tree farm",
+      0.6026899218559265
+    ],
+    [
+      "excavation",
+      0.07689676433801651
+    ],
+    [
+      "orchard",
+      0.04301760345697403
+    ],
+    [
+      "farm",
+      0.029387092217803
+    ],
+    [
+      "yard",
+      0.02257673069834709
+    ]
+  ],
+  "top_objects": [
+    [
+      "sawmill",
+      0.6589866280555725
+    ],
+    [
+      "chainsaw",
+      0.1222430020570755
+    ],
+    [
+      "tusker",
+      0.02111077308654785
+    ],
+    [
+      "balance beam",
+      0.01363058015704155
+    ],
+    [
+      "plow",
+      0.009803947061300278
+    ]
+  ]
+}

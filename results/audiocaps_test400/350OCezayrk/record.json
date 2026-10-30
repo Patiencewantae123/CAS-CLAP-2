@@ -1,0 +1,283 @@
+{
+  "id": "350OCezayrk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\350OCezayrk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\350OCezayrk.wav",
+  "gt_captions": [
+    "An engine of a vehicle is starting",
+    "A motor vehicle engine starter grinds, and a mid-size engine starts up and idles smoothly",
+    "An engine being turned over and then started",
+    "An engine starting and running",
+    "An engine is being started up then idles"
+  ],
+  "top_scene": [
+    "car interior",
+    0.5369309782981873
+  ],
+  "top_object": [
+    "motorboat",
+    0.14584627747535706
+  ],
+  "env_probs": {
+    "indoor": 0.8657539486885071,
+    "outdoor": 0.13424605131149292
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A car engine is continuously making low thumping sounds and idling",
+    "casv": "Car engine running with male speech"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4131738543510437,
+    "clap_gt_audio_baseline": 0.5870859622955322,
+    "clap_text_casv": 0.0018893331289291382,
+    "clap_gt_audio_casv": 0.13722887635231018
+  },
+  "verdicts": [
+    {
+      "caption": "A car engine is continuously making low thumping sounds and idling",
+      "clip_similarity": 0.3301379978656769,
+      "visual": 1.0,
+      "scene_support": 0.528868957633396,
+      "object_support": 0.51659071567626,
+      "score": 0.7136379019928969,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car engine running with male speech",
+      "clip_similarity": 0.32909297943115234,
+      "visual": 0.8634327776912292,
+      "scene_support": 0.8084315976649139,
+      "object_support": 0.6140427557608512,
+      "score": 0.7721154171042212,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car engine running idle then accelerating",
+      "clip_similarity": 0.3287321925163269,
+      "visual": 0.8162836890481383,
+      "scene_support": 0.6506194687770681,
+      "object_support": 0.5864252468153545,
+      "score": 0.6976268902969821,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mid frequency of a car engine idling then accelerating",
+      "clip_similarity": 0.3285636007785797,
+      "visual": 0.794251441034429,
+      "scene_support": 0.43692723188831734,
+      "object_support": 0.36271051897881934,
+      "score": 0.5575919016739126,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine sound with lady laughing loudly",
+      "clip_similarity": 0.3281342387199402,
+      "visual": 0.7381406761177753,
+      "scene_support": 0.18762302863461738,
+      "object_support": 0.11947275443378871,
+      "score": 0.387385005367632,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.3270195722579956,
+      "visual": 0.5924715687801838,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23698862751207353,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High-power engine sound of car accelerating",
+      "clip_similarity": 0.3267774283885956,
+      "visual": 0.5608272316560212,
+      "scene_support": 0.6774138984563144,
+      "object_support": 0.6185931189985426,
+      "score": 0.6131329978988657,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car engine idling at low frequency",
+      "clip_similarity": 0.3262941539287567,
+      "visual": 0.49767097678766165,
+      "scene_support": 0.6181888916375415,
+      "object_support": 0.5021056463463779,
+      "score": 0.5351567521102405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is attempted to be started",
+      "clip_similarity": 0.32595348358154297,
+      "visual": 0.4531508023056551,
+      "scene_support": 0.8972617076744496,
+      "object_support": 0.9244676227197962,
+      "score": 0.7277791200405357,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People are communicating with one another while a car engine is clicking and sounds of spray being forced out of a can",
+      "clip_similarity": 0.3258117437362671,
+      "visual": 0.43462766786103757,
+      "scene_support": 0.4103385987650797,
+      "object_support": 0.3917610118790352,
+      "score": 0.41448095033764953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is idling, making a continuous clicking and soft tapping sound",
+      "clip_similarity": 0.32574397325515747,
+      "visual": 0.42577114815391803,
+      "scene_support": 0.8805957105513726,
+      "object_support": 0.8253811043351112,
+      "score": 0.6821015037275124,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks and starts up a car engine that idles roughly",
+      "clip_similarity": 0.32465487718582153,
+      "visual": 0.2834436828166381,
+      "scene_support": 0.3626692095227423,
+      "object_support": 0.5647843888755641,
+      "score": 0.39161355264614717,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle car engine idling in mid frequency",
+      "clip_similarity": 0.3235493302345276,
+      "visual": 0.13896634989873813,
+      "scene_support": 0.7323488928215764,
+      "object_support": 0.5511771287481905,
+      "score": 0.44064434643042527,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine vibration with some voices in the background",
+      "clip_similarity": 0.32328417897224426,
+      "visual": 0.10431531391182428,
+      "scene_support": 0.7017218546780306,
+      "object_support": 0.6892244963554482,
+      "score": 0.45901003087477343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man describing an engine while an idling car sounds",
+      "clip_similarity": 0.32317304611206055,
+      "visual": 0.08979202367970089,
+      "scene_support": 0.08233835631982195,
+      "object_support": 0.1688875685902579,
+      "score": 0.11128458694490431,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine is turned off and idling",
+      "clip_similarity": 0.32310158014297485,
+      "visual": 0.0804525627044711,
+      "scene_support": 0.7543211990891387,
+      "object_support": 0.7393338876964265,
+      "score": 0.48027755111745796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person sniffs then starts an engine",
+      "clip_similarity": 0.3230741620063782,
+      "visual": 0.07686945007010437,
+      "scene_support": 0.2861657493919487,
+      "object_support": 0.4905827265167776,
+      "score": 0.26377232280065965,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine is idling followed by multiple men laughing and talking",
+      "clip_similarity": 0.3226120173931122,
+      "visual": 0.016474528742794828,
+      "scene_support": 0.3892423374260066,
+      "object_support": 0.46000185058250737,
+      "score": 0.2613630678996721,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine starting up",
+      "clip_similarity": 0.32256460189819336,
+      "visual": 0.010278080697928026,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6041112322791712,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The revving sound of a car engine",
+      "clip_similarity": 0.32248595356941223,
+      "visual": 0.0,
+      "scene_support": 0.6844102765778852,
+      "object_support": 0.7166563383059622,
+      "score": 0.42031998446515423,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.5369309782981873
+    ],
+    [
+      "auto factory",
+      0.11269140988588333
+    ],
+    [
+      "indoor garage",
+      0.08126384764909744
+    ],
+    [
+      "outdoor garage",
+      0.05134962871670723
+    ],
+    [
+      "engine room",
+      0.04385653883218765
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.14584627747535706
+    ],
+    [
+      "oil filter",
+      0.1125972792506218
+    ],
+    [
+      "impala",
+      0.07160764187574387
+    ],
+    [
+      "minivan",
+      0.07001639157533646
+    ],
+    [
+      "station wagon",
+      0.050211887806653976
+    ]
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "id": "IsUG5SKWNZA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\IsUG5SKWNZA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\IsUG5SKWNZA.wav",
+  "gt_captions": [
+    "A woman whispering, then a baby cries. The woman calls out loudly, a male voice answers over the baby whining",
+    "A woman whispering then yelling as an infant is crying followed by a man yelling",
+    "A woman whispering then talking as an infant cries followed by a man yelling",
+    "A woman whispering then talking normally after an infant cries followed by a man shouting",
+    "A woman whispers, then a baby cries in the distance. The woman called, and a man speaks."
+  ],
+  "top_scene": [
+    "living room",
+    0.279146283864975
+  ],
+  "top_object": [
+    "Christmas stocking",
+    0.22538696229457855
+  ],
+  "env_probs": {
+    "indoor": 0.7675963044166565,
+    "outdoor": 0.2324036955833435
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Dog screeching followed by children speaking",
+    "casv": "Dog screeching followed by children speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.35170501470565796,
+    "clap_gt_audio_baseline": 0.5611525774002075,
+    "clap_text_casv": 0.35170501470565796,
+    "clap_gt_audio_casv": 0.5611525774002075
+  },
+  "verdicts": [
+    {
+      "caption": "Dog screeching followed by children speaking",
+      "clip_similarity": 0.31058311462402344,
+      "visual": 1.0,
+      "scene_support": 0.9473691795399746,
+      "object_support": 0.8391940708637742,
+      "score": 0.9359689751211246,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People are communicating while dog is excitedly barking repeatedly in the background",
+      "clip_similarity": 0.31006956100463867,
+      "visual": 0.9731228329582197,
+      "scene_support": 0.7271354108965334,
+      "object_support": 0.6857054392720948,
+      "score": 0.8131013882338763,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy helicopter buzzing and flying",
+      "clip_similarity": 0.30576080083847046,
+      "visual": 0.7476210306969315,
+      "scene_support": 0.26688796957062555,
+      "object_support": 0.29294317967902866,
+      "score": 0.46699775705366886,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)",
+        "names 'insects', not visible in image (z=-0.43)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy helicopter is buzzing and then it stops",
+      "clip_similarity": 0.29958024621009827,
+      "visual": 0.4241576319643634,
+      "scene_support": 0.26560761923290666,
+      "object_support": 0.2353306944895183,
+      "score": 0.31994454690247287,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)",
+        "names 'insects', not visible in image (z=-0.43)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Object is moving, and a cat meows",
+      "clip_similarity": 0.297945499420166,
+      "visual": 0.33860208160788846,
+      "scene_support": 0.7732735085922632,
+      "object_support": 0.7374963692473333,
+      "score": 0.5886717959950343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A quick whooshing burst followed by a child speaking",
+      "clip_similarity": 0.2964363396167755,
+      "visual": 0.2596192089390912,
+      "scene_support": 0.8906270969508477,
+      "object_support": 0.8529913568921268,
+      "score": 0.6269332197285289,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child is making obnoxious sounds while dog is howling in unison with child",
+      "clip_similarity": 0.29550132155418396,
+      "visual": 0.2106844225667133,
+      "scene_support": 0.19111086491876103,
+      "object_support": 0.17354529262801757,
+      "score": 0.1936706162907189,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barking with music in the background",
+      "clip_similarity": 0.2946398854255676,
+      "visual": 0.16560059519074646,
+      "scene_support": 0.8157669086857562,
+      "object_support": 0.8309001966781914,
+      "score": 0.5602403696854827,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks several times, and then music starts to play in the background",
+      "clip_similarity": 0.29425159096717834,
+      "visual": 0.1452789488706817,
+      "scene_support": 0.8962335272548442,
+      "object_support": 0.8593248375850405,
+      "score": 0.584779089000238,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Moving of objects with a whoosh noise followed by knocking",
+      "clip_similarity": 0.2936875522136688,
+      "visual": 0.11575960907073193,
+      "scene_support": 0.7794104533872315,
+      "object_support": 0.7564388896413029,
+      "score": 0.5070586465368531,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An object bursts and an alarm goes off",
+      "clip_similarity": 0.29348137974739075,
+      "visual": 0.10496943720472472,
+      "scene_support": 0.9822007434408503,
+      "object_support": 1.0,
+      "score": 0.636647997914145,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog howling in a yard",
+      "clip_similarity": 0.2924538850784302,
+      "visual": 0.051194826706845165,
+      "scene_support": 0.06184727127304563,
+      "object_support": 0.2902877259691022,
+      "score": 0.1261184298553824,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog howling at a woman screaming at it",
+      "clip_similarity": 0.29237794876098633,
+      "visual": 0.04722064950034236,
+      "scene_support": 0.13005261010427446,
+      "object_support": 0.3634300369932172,
+      "score": 0.16693305392938446,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Static noise in the background followed by two adults speaking",
+      "clip_similarity": 0.2922176122665405,
+      "visual": 0.03882933342067789,
+      "scene_support": 1.0,
+      "object_support": 0.9093495820694907,
+      "score": 0.5883366079891184,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy helicopter starting up and flying as a woman talks in the background",
+      "clip_similarity": 0.2918216586112976,
+      "visual": 0.01810683798677042,
+      "scene_support": 0.4574548094426175,
+      "object_support": 0.3264070071609942,
+      "score": 0.24240128017579166,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy helicopter flying",
+      "clip_similarity": 0.2915802001953125,
+      "visual": 0.0054699526935656695,
+      "scene_support": 0.24387453917745935,
+      "object_support": 0.3086731760418876,
+      "score": 0.16795229564323033,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vacuum is going while dog is bow-wow",
+      "clip_similarity": 0.29156893491744995,
+      "visual": 0.00488037695413943,
+      "scene_support": 0.2854055373463287,
+      "object_support": 0.3718776591802889,
+      "score": 0.19913710973964105,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy helicopter is buzzing and a child is speaking",
+      "clip_similarity": 0.2915426790714264,
+      "visual": 0.0035062599529899134,
+      "scene_support": 0.39353411820655476,
+      "object_support": 0.30874089330570126,
+      "score": 0.21208500743487277,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)",
+        "names 'insects', not visible in image (z=-0.43)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog howling with clock ticking in the background",
+      "clip_similarity": 0.2915160655975342,
+      "visual": 0.002113426261699881,
+      "scene_support": 0.45108773484723613,
+      "object_support": 0.5075025617568669,
+      "score": 0.28842245948591083,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Remote control helicopter flying",
+      "clip_similarity": 0.29147568345069885,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "living room",
+      0.279146283864975
+    ],
+    [
+      "playroom",
+      0.06606951355934143
+    ],
+    [
+      "tree house",
+      0.05787833034992218
+    ],
+    [
+      "childs room",
+      0.052993953227996826
+    ],
+    [
+      "home theater",
+      0.03392576798796654
+    ]
+  ],
+  "top_objects": [
+    [
+      "Christmas stocking",
+      0.22538696229457855
+    ],
+    [
+      "home theater",
+      0.048060107976198196
+    ],
+    [
+      "eggnog",
+      0.03561490401625633
+    ],
+    [
+      "couch",
+      0.02535475231707096
+    ],
+    [
+      "punching bag",
+      0.017717426642775536
+    ]
+  ]
+}

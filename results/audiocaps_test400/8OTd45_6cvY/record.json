@@ -1,0 +1,290 @@
+{
+  "id": "8OTd45_6cvY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\8OTd45_6cvY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\8OTd45_6cvY.wav",
+  "gt_captions": [
+    "A constant pounding noise followed by vibrating sounds",
+    "White noise as footsteps run on concrete followed by liquid spraying and a person groaning",
+    "Footsteps running on a hard surface followed by liquid spraying then an animal growling as static plays in the background",
+    "Footsteps with intermittent aerosol can activation",
+    "Footsteps and intermittent spraying"
+  ],
+  "top_scene": [
+    "lobby",
+    0.14353595674037933
+  ],
+  "top_object": [
+    "bulletproof vest",
+    0.07404711842536926
+  ],
+  "env_probs": {
+    "indoor": 0.5989006757736206,
+    "outdoor": 0.4010993242263794
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A person steps nearby, and then a door opens, followed by an explosion in the distance",
+    "casv": "A person steps nearby, and then a door opens, followed by an explosion in the distance"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.18890517950057983,
+    "clap_gt_audio_baseline": 0.35096970200538635,
+    "clap_text_casv": 0.18890517950057983,
+    "clap_gt_audio_casv": 0.35096970200538635
+  },
+  "verdicts": [
+    {
+      "caption": "A person steps nearby, and then a door opens, followed by an explosion in the distance",
+      "clip_similarity": 0.3172207474708557,
+      "visual": 1.0,
+      "scene_support": 0.887391113109474,
+      "object_support": 0.7861559260664026,
+      "score": 0.902064111752763,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A popping burst echoing in the distance followed by a man speaking alongside audio static and another man speaking faintly before a muffled explosion",
+      "clip_similarity": 0.3058556318283081,
+      "visual": 0.6456009821132348,
+      "scene_support": 0.6605941252748032,
+      "object_support": 0.64542822286436,
+      "score": 0.6500470972870429,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Running footsteps are interrupted by explosions and gunfire, followed by a female voice",
+      "clip_similarity": 0.30517154932022095,
+      "visual": 0.6242692001371687,
+      "scene_support": 0.8611086539218032,
+      "object_support": 0.8889559049514552,
+      "score": 0.774727047716845,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle engine is running followed by a man conversing something in low frequency in the background",
+      "clip_similarity": 0.3044200539588928,
+      "visual": 0.6008352794998731,
+      "scene_support": 0.5543766935073268,
+      "object_support": 0.4710114255326637,
+      "score": 0.5479505475119464,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.55)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A device bursts, followed by a man talking nearby",
+      "clip_similarity": 0.30044323205947876,
+      "visual": 0.47682582638118964,
+      "scene_support": 0.899034657511519,
+      "object_support": 0.989463543479196,
+      "score": 0.7572797908496904,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man screaming followed by a loud explosion then another man yelling as tin cans clank with footsteps shuffling on gravel and wind blowing into a microphone along with a distant explosion",
+      "clip_similarity": 0.29746145009994507,
+      "visual": 0.3838447577103974,
+      "scene_support": 0.16296478075462298,
+      "object_support": 0.314933351059462,
+      "score": 0.2969073426283845,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water sprays quickly nearby followed by a person speaking",
+      "clip_similarity": 0.2945757508277893,
+      "visual": 0.29385984069469084,
+      "scene_support": 0.744484470586221,
+      "object_support": 0.849023726944628,
+      "score": 0.5955963955371311,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by a clicking sound that gets fast and an engine starting is heard",
+      "clip_similarity": 0.29334020614624023,
+      "visual": 0.255331783834721,
+      "scene_support": 0.8950613484303045,
+      "object_support": 0.8814464130005514,
+      "score": 0.6350850419631451,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A file rubs against an object nearby, followed by a man speaking",
+      "clip_similarity": 0.29082390666007996,
+      "visual": 0.17686588039370027,
+      "scene_support": 0.7302532001097378,
+      "object_support": 0.6424892372420751,
+      "score": 0.48256908336302395,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle driving by as metal lightly clanks followed by a man talking in the background during a man speaking over an intercom in the distance",
+      "clip_similarity": 0.28967204689979553,
+      "visual": 0.14094737497525667,
+      "scene_support": 0.1860680219752894,
+      "object_support": 0.0,
+      "score": 0.1121993565826895,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by clicking noises and then a flame running",
+      "clip_similarity": 0.2876974940299988,
+      "visual": 0.07937478567385997,
+      "scene_support": 1.0,
+      "object_support": 0.9482981938899598,
+      "score": 0.6162393724365319,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.28708940744400024,
+      "visual": 0.06041278866071835,
+      "scene_support": 0.7152522971775931,
+      "object_support": 0.7501436989477718,
+      "score": 0.4637839143018968,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A click sounds, and then an engine starts up, after which a man beings talking nearby",
+      "clip_similarity": 0.2866981029510498,
+      "visual": 0.04821071942024837,
+      "scene_support": 0.9655626164079281,
+      "object_support": 1.0,
+      "score": 0.6089530726904777,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.28656747937202454,
+      "visual": 0.044137477266327586,
+      "scene_support": 0.1276387325686198,
+      "object_support": 0.1887226629858882,
+      "score": 0.11256340957288342,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine beeps nearby several times, followed by a person talking",
+      "clip_similarity": 0.28649401664733887,
+      "visual": 0.041846685135500584,
+      "scene_support": 0.9510700459292843,
+      "object_support": 0.8675198343649679,
+      "score": 0.5623156381424759,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A video game with machine gun and gunshots sounds is being played. The game also has loud music and dialog",
+      "clip_similarity": 0.2860594093799591,
+      "visual": 0.028294303129881872,
+      "scene_support": 0.6680919270528661,
+      "object_support": 0.8744687049107893,
+      "score": 0.47408591084104934,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A spray sounds followed by objects being tapped",
+      "clip_similarity": 0.28590983152389526,
+      "visual": 0.023630008726384627,
+      "scene_support": 0.767075302910295,
+      "object_support": 0.8151313036915966,
+      "score": 0.48411398547112133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying by as leaves rustle and wind blows into a microphone followed by a kid talking",
+      "clip_similarity": 0.2855105698108673,
+      "visual": 0.01117980906038491,
+      "scene_support": 0.0,
+      "object_support": 0.024671740771008394,
+      "score": 0.011873445855456482,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sequence of a whipping sound and a short grunt followed by a male voice talking accompanied by some keypad sound effects",
+      "clip_similarity": 0.28517472743988037,
+      "visual": 0.0007072181791315807,
+      "scene_support": 0.45199927113197524,
+      "object_support": 0.379650176153404,
+      "score": 0.2497777214572664,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by beeping and explosion effects",
+      "clip_similarity": 0.28515204787254333,
+      "visual": 0.0,
+      "scene_support": 0.7478654724862511,
+      "object_support": 0.87295351192408,
+      "score": 0.48624569532309936,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lobby",
+      0.14353595674037933
+    ],
+    [
+      "alley",
+      0.05931415408849716
+    ],
+    [
+      "corridor",
+      0.05407531559467316
+    ],
+    [
+      "basement",
+      0.04756345972418785
+    ],
+    [
+      "catacomb",
+      0.04640382528305054
+    ]
+  ],
+  "top_objects": [
+    [
+      "bulletproof vest",
+      0.07404711842536926
+    ],
+    [
+      "ocarina",
+      0.04515941068530083
+    ],
+    [
+      "geyser",
+      0.04015044495463371
+    ],
+    [
+      "CRT screen",
+      0.032630376517772675
+    ],
+    [
+      "backpack",
+      0.02892744541168213
+    ]
+  ]
+}

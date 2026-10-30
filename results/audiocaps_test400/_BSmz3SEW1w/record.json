@@ -1,0 +1,287 @@
+{
+  "id": "_BSmz3SEW1w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\_BSmz3SEW1w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\_BSmz3SEW1w.wav",
+  "gt_captions": [
+    "Rustling pigeons coo",
+    "Birds cooing and rustling",
+    "Pigeons coo and rustle",
+    "A group of pigeons cooing",
+    "Pigeons are making grunting sounds and snapping beaks"
+  ],
+  "top_scene": [
+    "excavation",
+    0.07028008252382278
+  ],
+  "top_object": [
+    "dog sled",
+    0.1884738802909851
+  ],
+  "env_probs": {
+    "indoor": 0.6217355728149414,
+    "outdoor": 0.3782644271850586
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Metal scrapping and clanking as compressed air sprays and pressurized air hisses as a small motor hum in the background",
+    "casv": "Metal scrapping and clanking as compressed air sprays and pressurized air hisses as a small motor hum in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0602220818400383,
+    "clap_gt_audio_baseline": 0.25473636388778687,
+    "clap_text_casv": 0.0602220818400383,
+    "clap_gt_audio_casv": 0.25473636388778687
+  },
+  "verdicts": [
+    {
+      "caption": "Metal scrapping and clanking as compressed air sprays and pressurized air hisses as a small motor hum in the background",
+      "clip_similarity": 0.30357712507247925,
+      "visual": 1.0,
+      "scene_support": 0.9006436673685176,
+      "object_support": 0.62215542325592,
+      "score": 0.8568397271873313,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A gun is cocked and fired rapidly and cartridges ping against the floor",
+      "clip_similarity": 0.3011822998523712,
+      "visual": 0.8280556250976263,
+      "scene_support": 0.5819909624183208,
+      "object_support": 0.20325489402571198,
+      "score": 0.5667960069722604,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.29992014169692993,
+      "visual": 0.7374348176820879,
+      "scene_support": 0.008475159593149982,
+      "object_support": 0.0,
+      "score": 0.29751647495078015,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A jackhammer pounding a stone surface followed by a muffled motor drilling during audio static",
+      "clip_similarity": 0.2992899417877197,
+      "visual": 0.6921875367770567,
+      "scene_support": 0.6356346162557632,
+      "object_support": 0.07084189496903562,
+      "score": 0.48881796807826233,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of a horse are joined by squeaking metal",
+      "clip_similarity": 0.2973025143146515,
+      "visual": 0.5494936267366795,
+      "scene_support": 0.4856632374215418,
+      "object_support": 0.4811470644395489,
+      "score": 0.509840541252999,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine is running and vibrating, and scraping occurs",
+      "clip_similarity": 0.296581506729126,
+      "visual": 0.4977265092234183,
+      "scene_support": 0.8286454040526159,
+      "object_support": 0.957323867797895,
+      "score": 0.7348813852445206,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Metal clacking several times followed by a motorcycle engine starting up then revving as birds chirp in the background",
+      "clip_similarity": 0.29391899704933167,
+      "visual": 0.3065628457043328,
+      "scene_support": 0.6886046578667613,
+      "object_support": 0.7184207451401733,
+      "score": 0.5447327591838135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorbike engine running then accelerating",
+      "clip_similarity": 0.29370856285095215,
+      "visual": 0.2914540284116805,
+      "scene_support": 0.5121847332995645,
+      "object_support": 0.705769948729933,
+      "score": 0.48196801597352146,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine running idle before revving several times",
+      "clip_similarity": 0.29306936264038086,
+      "visual": 0.24556054118709383,
+      "scene_support": 0.6257716389838516,
+      "object_support": 0.5867487253731258,
+      "score": 0.4619803257819307,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine revving with a series of plastic clicks",
+      "clip_similarity": 0.2929842472076416,
+      "visual": 0.23944939797964235,
+      "scene_support": 0.6653459160567388,
+      "object_support": 0.753421329373844,
+      "score": 0.5214099328210318,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A metal object falls, followed by a woman who talks and then screams, after which a sewing machine actuates several times",
+      "clip_similarity": 0.29217442870140076,
+      "visual": 0.1813058075118275,
+      "scene_support": 0.645819986104174,
+      "object_support": 0.5212554184110554,
+      "score": 0.42264494435929983,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling",
+      "clip_similarity": 0.29210832715034485,
+      "visual": 0.17655982864833752,
+      "scene_support": 0.49526618272481737,
+      "object_support": 0.6785831336014159,
+      "score": 0.422778726357205,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal filing and scrapping a surface followed by metal clank then a man speaking while a large machine motor runs idle",
+      "clip_similarity": 0.2919159233570099,
+      "visual": 0.16274556375082114,
+      "scene_support": 0.6503705455553065,
+      "object_support": 0.352286491092574,
+      "score": 0.3658953364946926,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large humming of a motor, scraping and clicking",
+      "clip_similarity": 0.29176512360572815,
+      "visual": 0.15191839826422993,
+      "scene_support": 1.0,
+      "object_support": 0.8697679024871254,
+      "score": 0.6216977300518296,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Metal churning followed by static and an audio feed cutting off then more metal churning while a man yells and horse trots",
+      "clip_similarity": 0.2914193868637085,
+      "visual": 0.1270950886179958,
+      "scene_support": 0.6665125300698733,
+      "object_support": 0.6520574999928752,
+      "score": 0.44640904446602286,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine idling and a spraying sound at the end",
+      "clip_similarity": 0.29124054312705994,
+      "visual": 0.1142544127118626,
+      "scene_support": 0.28183170754522174,
+      "object_support": 0.2603138617275647,
+      "score": 0.208345435866581,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several horses clip-clopping on pavement",
+      "clip_similarity": 0.29101061820983887,
+      "visual": 0.09774619497884851,
+      "scene_support": 0.0,
+      "object_support": 0.14085161319741113,
+      "score": 0.08135396195076275,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A gunshot firing followed by metal clanking then a gun reloading and cocking as music plays in the background",
+      "clip_similarity": 0.2905379831790924,
+      "visual": 0.06381180417808761,
+      "scene_support": 0.9654945813926535,
+      "object_support": 0.7388753359343606,
+      "score": 0.5368356968693393,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse does clip-clop while metallic objects are hit and a dog barks",
+      "clip_similarity": 0.29052039980888367,
+      "visual": 0.06254934812332698,
+      "scene_support": 0.5798983522091834,
+      "object_support": 1.0,
+      "score": 0.4989892449120858,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorbike engine starting and running",
+      "clip_similarity": 0.28964921832084656,
+      "visual": 0.0,
+      "scene_support": 0.6437456134312983,
+      "object_support": 0.6855447765234962,
+      "score": 0.3987871169864383,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "excavation",
+      0.07028008252382278
+    ],
+    [
+      "operating room",
+      0.046383682638406754
+    ],
+    [
+      "orchestra pit",
+      0.04486957564949989
+    ],
+    [
+      "carrousel",
+      0.03214172646403313
+    ],
+    [
+      "archaelogical excavation",
+      0.03176586702466011
+    ]
+  ],
+  "top_objects": [
+    [
+      "dog sled",
+      0.1884738802909851
+    ],
+    [
+      "bobsleigh",
+      0.08818845450878143
+    ],
+    [
+      "stretcher",
+      0.021907588467001915
+    ],
+    [
+      "carousel",
+      0.021025609225034714
+    ],
+    [
+      "go-kart",
+      0.019934307783842087
+    ]
+  ]
+}

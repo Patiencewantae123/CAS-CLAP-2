@@ -1,0 +1,289 @@
+{
+  "id": "z1ax0QPpd14",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\z1ax0QPpd14.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\z1ax0QPpd14.wav",
+  "gt_captions": [
+    "Several birds are singing",
+    "Birds are chirping, and ducks are making noises",
+    "A large duck quacks and small ducks chirp",
+    "Bird cheeping is ongoing, intermittent soft clucking and trilling is present, and a crow caws once",
+    "A duck quacking as birds chirp and a pigeon cooing"
+  ],
+  "top_scene": [
+    "fishpond",
+    0.22857357561588287
+  ],
+  "top_object": [
+    "bee",
+    0.2360604703426361
+  ],
+  "env_probs": {
+    "indoor": 0.30946624279022217,
+    "outdoor": 0.6905337572097778
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+    "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.04906820133328438,
+    "clap_gt_audio_baseline": 0.338826984167099,
+    "clap_text_casv": 0.04906820133328438,
+    "clap_gt_audio_casv": 0.338826984167099
+  },
+  "verdicts": [
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.32930874824523926,
+      "visual": 1.0,
+      "scene_support": 0.6543092070907036,
+      "object_support": 0.8648303570305222,
+      "score": 0.8557418692363679,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bee buzzing in the background is followed by a medium voice male speaking in a series of phrases",
+      "clip_similarity": 0.3255547881126404,
+      "visual": 0.8314876106028944,
+      "scene_support": 0.11418029959204085,
+      "object_support": 0.8307764140564313,
+      "score": 0.6160820583356994,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks over the sound of an insect buzzing and water splashing, followed by a slurping sound",
+      "clip_similarity": 0.3196626305580139,
+      "visual": 0.566993179878367,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2267972719513468,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees swarming while a bird chirps",
+      "clip_similarity": 0.3179476857185364,
+      "visual": 0.49001062215884006,
+      "scene_support": 0.5131225808085124,
+      "object_support": 0.7983375636705752,
+      "score": 0.5894422922072623,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A swarming bee noise",
+      "clip_similarity": 0.3152462840080261,
+      "visual": 0.3687467725493449,
+      "scene_support": 0.9644966340995623,
+      "object_support": 1.0,
+      "score": 0.7368476992496067,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male is vocally communicating, followed by sizzling, popping and frying sounds in the background",
+      "clip_similarity": 0.3142614960670471,
+      "visual": 0.32454039764867676,
+      "scene_support": 0.4121930415903128,
+      "object_support": 0.24557701815511318,
+      "score": 0.3271471769830985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male is speaking, a click, a motor is running, and water splashes quietly",
+      "clip_similarity": 0.3123447000980377,
+      "visual": 0.23849689763396095,
+      "scene_support": 0.5604445773714011,
+      "object_support": 0.19055716034477055,
+      "score": 0.32069928036843587,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bursts occur and an adult male shout, and splashing, crackling and whooshing are present",
+      "clip_similarity": 0.3118457794189453,
+      "visual": 0.2161007312433277,
+      "scene_support": 1.0,
+      "object_support": 0.4067740692364936,
+      "score": 0.5084725132682791,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing around while an individual is blowing into something",
+      "clip_similarity": 0.31177371740341187,
+      "visual": 0.2128659226696134,
+      "scene_support": 0.28447555568215266,
+      "object_support": 0.8468131744211459,
+      "score": 0.4245329880988349,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several bees buzzing close to the microphone",
+      "clip_similarity": 0.31109878420829773,
+      "visual": 0.18256868951456467,
+      "scene_support": 0.01867940233508354,
+      "object_support": 0.6701236296060544,
+      "score": 0.27966838538816724,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks while subtle tapping occurs, then water runs and splashes",
+      "clip_similarity": 0.310776948928833,
+      "visual": 0.16812175081003994,
+      "scene_support": 0.5082541310216703,
+      "object_support": 0.12893107990794064,
+      "score": 0.25840426360289925,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talks while bees fly",
+      "clip_similarity": 0.3102412521839142,
+      "visual": 0.14407473504804053,
+      "scene_support": 0.18638891262584542,
+      "object_support": 0.6565104400871014,
+      "score": 0.3104996998331002,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bee buzzing and bird calls occur simultaneously with a man speaking",
+      "clip_similarity": 0.30974382162094116,
+      "visual": 0.12174545882642536,
+      "scene_support": 0.748165133259274,
+      "object_support": 0.8232233166061435,
+      "score": 0.5201147184901954,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Something makes buzzing sounds before a stream of water gurgles",
+      "clip_similarity": 0.3093550205230713,
+      "visual": 0.10429247592622817,
+      "scene_support": 0.7753740153119194,
+      "object_support": 0.42536021550721875,
+      "score": 0.4019372596162327,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees fly while some objects are tapped",
+      "clip_similarity": 0.3093262314796448,
+      "visual": 0.10300015786079889,
+      "scene_support": 0.45372955061193876,
+      "object_support": 0.7610380581237619,
+      "score": 0.40563034576502977,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult female speaks in the background, then a flush occurs and water splashes and gurgles",
+      "clip_similarity": 0.3086826205253601,
+      "visual": 0.07410895605851017,
+      "scene_support": 0.6468692536784371,
+      "object_support": 0.19635490471373113,
+      "score": 0.2826108299410545,
+      "conflicts": [
+        "names 'a toilet', not visible in image (z=-0.63)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sequence of water gurgling and filling is followed by a low male voice in the background whispering",
+      "clip_similarity": 0.307841420173645,
+      "visual": 0.03634811784442417,
+      "scene_support": 0.5086299661669246,
+      "object_support": 0.039654111100289983,
+      "score": 0.17902447031793403,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks and a fly buzzes and splashing water",
+      "clip_similarity": 0.30774545669555664,
+      "visual": 0.032040390959659874,
+      "scene_support": 0.8735611448175894,
+      "object_support": 0.44590814475442064,
+      "score": 0.408656943255467,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor is running and mechanical buzzing occurs, with an adult male speaking in the background",
+      "clip_similarity": 0.307521790266037,
+      "visual": 0.022000176590046206,
+      "scene_support": 0.6089012004570156,
+      "object_support": 0.5066334825562079,
+      "score": 0.3434604755399855,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bee buzzing with speech",
+      "clip_similarity": 0.30703169107437134,
+      "visual": 0.0,
+      "scene_support": 0.21951225301696717,
+      "object_support": 0.9964594710082493,
+      "score": 0.36479151720756486,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fishpond",
+      0.22857357561588287
+    ],
+    [
+      "aquarium",
+      0.1973462700843811
+    ],
+    [
+      "pond",
+      0.06342805176973343
+    ],
+    [
+      "islet",
+      0.05540688335895538
+    ],
+    [
+      "zen garden",
+      0.025658896192908287
+    ]
+  ],
+  "top_objects": [
+    [
+      "bee",
+      0.2360604703426361
+    ],
+    [
+      "pufferfish",
+      0.16656896471977234
+    ],
+    [
+      "brambling",
+      0.0839003473520279
+    ],
+    [
+      "sea urchin",
+      0.04057566076517105
+    ],
+    [
+      "honeycomb",
+      0.0238273274153471
+    ]
+  ]
+}

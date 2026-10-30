@@ -1,0 +1,292 @@
+{
+  "id": "6cyKp3EDm-0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\6cyKp3EDm-0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\6cyKp3EDm-0.wav",
+  "gt_captions": [
+    "Pigeons peck, coo, and flap their wings before a man speaks",
+    "Something clicks repeatedly and then a man begins talking",
+    "Pigeons are cooing flapping and a man talks",
+    "Pigeons are making noises, and a man talks",
+    "Birds are flapping wings and making noises, and a man talks"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.3228170573711395
+  ],
+  "top_object": [
+    "duck",
+    0.15780892968177795
+  ],
+  "env_probs": {
+    "indoor": 0.8584123253822327,
+    "outdoor": 0.14158767461776733
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Cooping of pigeons with some scraping and chirping and clicking",
+    "casv": "A female voice talks as a duck squeaks and chickens cluck in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07333602011203766,
+    "clap_gt_audio_baseline": 0.6089345216751099,
+    "clap_text_casv": 0.016293589025735855,
+    "clap_gt_audio_casv": 0.2543666958808899
+  },
+  "verdicts": [
+    {
+      "caption": "Cooping of pigeons with some scraping and chirping and clicking",
+      "clip_similarity": 0.3098188638687134,
+      "visual": 1.0,
+      "scene_support": 0.6171364519604126,
+      "object_support": 0.4385440567495178,
+      "score": 0.716704152612979,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female voice talks as a duck squeaks and chickens cluck in the background",
+      "clip_similarity": 0.3082677721977234,
+      "visual": 0.9050858214126796,
+      "scene_support": 1.0,
+      "object_support": 0.775531798195497,
+      "score": 0.8946938680237209,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings, a dog barks",
+      "clip_similarity": 0.3037734627723694,
+      "visual": 0.6300706850394275,
+      "scene_support": 0.7247224221178237,
+      "object_support": 0.569015384896657,
+      "score": 0.6401496161201152,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A pigeon coos while children can be heard in the background",
+      "clip_similarity": 0.30274340510368347,
+      "visual": 0.5670395442310358,
+      "scene_support": 0.9387192799347592,
+      "object_support": 0.8466378104631923,
+      "score": 0.7624229448117997,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A rooster alarm clock following repetitive beeping",
+      "clip_similarity": 0.30125322937965393,
+      "visual": 0.47585292551445435,
+      "scene_support": 0.0,
+      "object_support": 0.0077029608841516365,
+      "score": 0.19265205847102726,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.70)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeon cooing continuously",
+      "clip_similarity": 0.2999489903450012,
+      "visual": 0.39604411796888106,
+      "scene_support": 0.4697242463483029,
+      "object_support": 0.5442537456692842,
+      "score": 0.46261104479282855,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A duck quacks and a woman speaks followed by a baby squealing",
+      "clip_similarity": 0.29985252022743225,
+      "visual": 0.39014093240059233,
+      "scene_support": 0.8065984885495378,
+      "object_support": 0.6039193549861509,
+      "score": 0.5792117260209435,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pigeon coos",
+      "clip_similarity": 0.29955703020095825,
+      "visual": 0.37205934917242334,
+      "scene_support": 0.9108624894585368,
+      "object_support": 1.0,
+      "score": 0.7220824865065303,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young female is speaking, a squeak occurs, and then a clicking sound",
+      "clip_similarity": 0.2984546422958374,
+      "visual": 0.304602186932386,
+      "scene_support": 0.8172557341005489,
+      "object_support": 0.36388205826698233,
+      "score": 0.47618221248321374,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flap their wings with wind blowing",
+      "clip_similarity": 0.29711419343948364,
+      "visual": 0.22257763318184803,
+      "scene_support": 0.09610842017805064,
+      "object_support": 0.25752790397923087,
+      "score": 0.19512195051992365,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.86)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two ducks make frantic calls to each other",
+      "clip_similarity": 0.29639172554016113,
+      "visual": 0.17836848132937477,
+      "scene_support": 0.20065576411285585,
+      "object_support": 0.3685802565063578,
+      "score": 0.242118198717514,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal creaking as a pigeon is cooing",
+      "clip_similarity": 0.2963830530643463,
+      "visual": 0.17783779643584002,
+      "scene_support": 0.5149680388108031,
+      "object_support": 0.6989729690199555,
+      "score": 0.43531742092356357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.29625383019447327,
+      "visual": 0.16993040915622926,
+      "scene_support": 0.9178755889196097,
+      "object_support": 0.6798986223981425,
+      "score": 0.5473044270578173,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.86)",
+        "names 'a clock', not visible in image (z=-0.70)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo as a man talks continuously",
+      "clip_similarity": 0.29601621627807617,
+      "visual": 0.15539037253714794,
+      "scene_support": 0.3933036118804628,
+      "object_support": 0.3766502427029152,
+      "score": 0.29314230538987257,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Children speak, a goat makes a bath",
+      "clip_similarity": 0.2955821454524994,
+      "visual": 0.1288287729689905,
+      "scene_support": 0.3636695750477872,
+      "object_support": 0.01719991224301372,
+      "score": 0.16579235537483647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeon cooing and a click",
+      "clip_similarity": 0.29436826705932617,
+      "visual": 0.05454930080897532,
+      "scene_support": 0.4361095036894522,
+      "object_support": 0.610118106277367,
+      "score": 0.33568800331363585,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl speaks while an animal clip-clops as it walks",
+      "clip_similarity": 0.2941078841686249,
+      "visual": 0.038615988386936764,
+      "scene_support": 0.9887439465991885,
+      "object_support": 0.1380015174645544,
+      "score": 0.3534700345738976,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Female talking with food frying in the background",
+      "clip_similarity": 0.2940036356449127,
+      "visual": 0.03223682770795189,
+      "scene_support": 0.7970645470754542,
+      "object_support": 0.0,
+      "score": 0.25201409520581697,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo and click in a tiny space",
+      "clip_similarity": 0.2935662269592285,
+      "visual": 0.005470978283863532,
+      "scene_support": 0.7879735987584685,
+      "object_support": 0.4844962657574068,
+      "score": 0.383929350668308,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird pecking at food",
+      "clip_similarity": 0.29347681999206543,
+      "visual": 0.0,
+      "scene_support": 0.9829452428815458,
+      "object_support": 0.7713788816469062,
+      "score": 0.5262972373585356,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.86)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.3228170573711395
+    ],
+    [
+      "veterinarians office",
+      0.19088302552700043
+    ],
+    [
+      "galley",
+      0.061636220663785934
+    ],
+    [
+      "bathroom",
+      0.02155676670372486
+    ],
+    [
+      "farm",
+      0.017474623396992683
+    ]
+  ],
+  "top_objects": [
+    [
+      "duck",
+      0.15780892968177795
+    ],
+    [
+      "hen",
+      0.1494714915752411
+    ],
+    [
+      "goose",
+      0.11123679578304291
+    ],
+    [
+      "grey parrot",
+      0.08984995633363724
+    ],
+    [
+      "white stork",
+      0.06888194382190704
+    ]
+  ]
+}

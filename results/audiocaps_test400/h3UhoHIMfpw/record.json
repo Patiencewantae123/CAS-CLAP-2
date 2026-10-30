@@ -1,0 +1,283 @@
+{
+  "id": "h3UhoHIMfpw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\h3UhoHIMfpw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\h3UhoHIMfpw.wav",
+  "gt_captions": [
+    "Wind is blowing along with some engines",
+    "Wind blowing and an engine humming",
+    "Some rustling with a very high toned beep",
+    "Wind blowing with some rustling and humming of engines",
+    "Wind blows with some nearby rustling and distant passing traffic"
+  ],
+  "top_scene": [
+    "fire station",
+    0.3871195912361145
+  ],
+  "top_object": [
+    "crash helmet",
+    0.10690348595380783
+  ],
+  "env_probs": {
+    "indoor": 0.20384113490581512,
+    "outdoor": 0.7961588650941849
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A vehicle engine revving followed by tires skidding then a man speaking over an intercom before a truck engine accelerates",
+    "casv": "An adult male speaks as a car ignition turns over"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08390294015407562,
+    "clap_gt_audio_baseline": 0.13378599286079407,
+    "clap_text_casv": 0.08588224649429321,
+    "clap_gt_audio_casv": 0.2730064392089844
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle engine revving followed by tires skidding then a man speaking over an intercom before a truck engine accelerates",
+      "clip_similarity": 0.3065215051174164,
+      "visual": 1.0,
+      "scene_support": 0.2412698139473837,
+      "object_support": 0.3034925892388068,
+      "score": 0.5634287209558572,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks as a car ignition turns over",
+      "clip_similarity": 0.3065178394317627,
+      "visual": 0.9996924738602782,
+      "scene_support": 0.6097013303611964,
+      "object_support": 0.7017483478136445,
+      "score": 0.7933118929965635,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+      "clip_similarity": 0.30150121450424194,
+      "visual": 0.578831700694559,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23153268027782362,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large vehicle going in reverse with the alarm sounding",
+      "clip_similarity": 0.30101481080055237,
+      "visual": 0.5380257321872359,
+      "scene_support": 0.9128580065883325,
+      "object_support": 1.0,
+      "score": 0.7890676948513942,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Truck engine slows and then air brakes hiss followed by machinery operating",
+      "clip_similarity": 0.3001425266265869,
+      "visual": 0.4648470119960197,
+      "scene_support": 0.7352906117337729,
+      "object_support": 0.8657486136705482,
+      "score": 0.6662505724197041,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large engine hums followed by a crash, a horn, and a splash",
+      "clip_similarity": 0.29942598938941956,
+      "visual": 0.40473440242420605,
+      "scene_support": 0.7696876459083271,
+      "object_support": 0.9229116580369008,
+      "score": 0.6696735521532508,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine revs as a vehicle spins tires causing a burnout",
+      "clip_similarity": 0.29894915223121643,
+      "visual": 0.3647310021351815,
+      "scene_support": 0.6087188899240685,
+      "object_support": 0.7405719225475865,
+      "score": 0.5506796445955691,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large truck engine is idling and a person speaks at the end",
+      "clip_similarity": 0.2982902526855469,
+      "visual": 0.3094538035733037,
+      "scene_support": 0.7601674839326019,
+      "object_support": 0.8726050124186501,
+      "score": 0.613613270334697,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large motor vehicle engine runs, an emergency vehicle siren and horn blow, an adult male cough, and people speak in the background",
+      "clip_similarity": 0.2982819378376007,
+      "visual": 0.30875624428076387,
+      "scene_support": 0.8358334713971267,
+      "object_support": 0.8919977495297762,
+      "score": 0.6418518639903763,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large engine hums and speeds down a roadway",
+      "clip_similarity": 0.29791176319122314,
+      "visual": 0.27770110459389047,
+      "scene_support": 0.8175208332885074,
+      "object_support": 0.9887103950472722,
+      "score": 0.65294981033829,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple vehicle alarms",
+      "clip_similarity": 0.29783934354782104,
+      "visual": 0.2716255881749949,
+      "scene_support": 0.8132196978662151,
+      "object_support": 0.7619336094350414,
+      "score": 0.5811962274603748,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man briefly speaking followed by another man speaking over a radio intercom as a muffled vehicle engine accelerates and an emergency siren wails",
+      "clip_similarity": 0.2977699637413025,
+      "visual": 0.2658050934329418,
+      "scene_support": 0.5818668089620257,
+      "object_support": 0.5878959754429502,
+      "score": 0.45725087269466946,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking followed by faint engine running",
+      "clip_similarity": 0.29732003808021545,
+      "visual": 0.22805938504772905,
+      "scene_support": 0.6792127566641779,
+      "object_support": 0.8386693099954999,
+      "score": 0.546588374016995,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of men talking as music plays in the background while a vehicle engine stutters followed by an explosion then wood and metal clanking",
+      "clip_similarity": 0.2966850996017456,
+      "visual": 0.1747923573503748,
+      "scene_support": 0.05293645551154249,
+      "object_support": 0.07741346632951947,
+      "score": 0.10902191949246852,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by a large explosion and crash",
+      "clip_similarity": 0.29663169384002686,
+      "visual": 0.17031197651800403,
+      "scene_support": 0.5775265136274343,
+      "object_support": 0.7088841503141388,
+      "score": 0.45404798978967353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine works while a man talks followed by some liquid flowing",
+      "clip_similarity": 0.2965088486671448,
+      "visual": 0.16000610051854408,
+      "scene_support": 0.5550521665974555,
+      "object_support": 0.7048535395163691,
+      "score": 0.441974152041565,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Fire truck starts engine and pulls out turning the siren on",
+      "clip_similarity": 0.29609784483909607,
+      "visual": 0.12552566968192297,
+      "scene_support": 1.0,
+      "object_support": 0.9175293257521782,
+      "score": 0.6254690655984226,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking and vehicle engine turning over",
+      "clip_similarity": 0.2959524989128113,
+      "visual": 0.11333213323132467,
+      "scene_support": 0.37921942675912995,
+      "object_support": 0.5064650218252431,
+      "score": 0.31103818786784176,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man is talking followed by metal clanking and crumpling as a muffled truck engine accelerates",
+      "clip_similarity": 0.2956238090991974,
+      "visual": 0.08575728936959641,
+      "scene_support": 0.43460574359724674,
+      "object_support": 0.5461640616500146,
+      "score": 0.32853385732201695,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horn is blown several times and an engine idles in the background",
+      "clip_similarity": 0.29460158944129944,
+      "visual": 0.0,
+      "scene_support": 0.7169302071387229,
+      "object_support": 0.8980832479246863,
+      "score": 0.48450403651902274,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fire station",
+      0.3871195912361145
+    ],
+    [
+      "loading dock",
+      0.05177997052669525
+    ],
+    [
+      "outdoor parking garage",
+      0.044055622071027756
+    ],
+    [
+      "raceway",
+      0.04385089501738548
+    ],
+    [
+      "heliport",
+      0.03476860374212265
+    ]
+  ],
+  "top_objects": [
+    [
+      "crash helmet",
+      0.10690348595380783
+    ],
+    [
+      "fire engine",
+      0.09302154183387756
+    ],
+    [
+      "fire screen sheet",
+      0.08251176029443741
+    ],
+    [
+      "tow truck",
+      0.0731305181980133
+    ],
+    [
+      "semi-trailer truck",
+      0.06380309164524078
+    ]
+  ]
+}

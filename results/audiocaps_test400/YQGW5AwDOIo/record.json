@@ -1,0 +1,283 @@
+{
+  "id": "YQGW5AwDOIo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\YQGW5AwDOIo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\YQGW5AwDOIo.wav",
+  "gt_captions": [
+    "Vehicles passing by slowly together with distant murmuring",
+    "Vehicles driving by as people talk in the background",
+    "Motor vehicles are driving with loud engines and a person whistles",
+    "Vehicles driving by then accelerating and revving as a crowd of people talk",
+    "Someone in a crowd whistles while engines rev in cars going slowly by"
+  ],
+  "top_scene": [
+    "raceway",
+    0.21776066720485687
+  ],
+  "top_object": [
+    "race car",
+    0.17514349520206451
+  ],
+  "env_probs": {
+    "indoor": 0.20174065232276917,
+    "outdoor": 0.7982593476772308
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A car moving and revving its engine with people cheering",
+    "casv": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4130805730819702,
+    "clap_gt_audio_baseline": 0.4071209132671356,
+    "clap_text_casv": 0.42788007855415344,
+    "clap_gt_audio_casv": 0.43348366022109985
+  },
+  "verdicts": [
+    {
+      "caption": "A car moving and revving its engine with people cheering",
+      "clip_similarity": 0.34374138712882996,
+      "visual": 1.0,
+      "scene_support": 0.02481995965423892,
+      "object_support": 0.25806106614316227,
+      "score": 0.48486430773922035,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle engine revs while people cheer in the background",
+      "clip_similarity": 0.3358864188194275,
+      "visual": 0.6612711280638263,
+      "scene_support": 0.317258787745759,
+      "object_support": 0.23098637318609944,
+      "score": 0.4289819995050881,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crowd cheering and accelerating vehicle with a dog barking in the background and popping at the end",
+      "clip_similarity": 0.3302568793296814,
+      "visual": 0.41850916063497284,
+      "scene_support": 0.7053505168647372,
+      "object_support": 0.44575651903856456,
+      "score": 0.5127357750249797,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud motor sound with people shouting and cheering",
+      "clip_similarity": 0.32898882031440735,
+      "visual": 0.3638268012831058,
+      "scene_support": 0.5274372079897149,
+      "object_support": 0.488049928991661,
+      "score": 0.45017686160765513,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car engine revving and crowds cheering",
+      "clip_similarity": 0.3272474408149719,
+      "visual": 0.2887334985194933,
+      "scene_support": 0.4977318574728502,
+      "object_support": 0.644441039426339,
+      "score": 0.4581452684775541,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background",
+      "clip_similarity": 0.3267330825328827,
+      "visual": 0.26655288698799146,
+      "scene_support": 1.0,
+      "object_support": 0.8920303037470396,
+      "score": 0.6742302459193084,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man cheering and motor running and revving",
+      "clip_similarity": 0.3265414535999298,
+      "visual": 0.258289295114328,
+      "scene_support": 0.2580790818726286,
+      "object_support": 0.32892851964324094,
+      "score": 0.2794179985004921,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine sounds with cheering from a crowd",
+      "clip_similarity": 0.3258824944496155,
+      "visual": 0.2298730773975983,
+      "scene_support": 0.5132764729861089,
+      "object_support": 0.3420750888761144,
+      "score": 0.34855469951770635,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car driving with crowd noise in the background",
+      "clip_similarity": 0.3245604634284973,
+      "visual": 0.1728632896035532,
+      "scene_support": 0.9195363373156481,
+      "object_support": 0.8902800330309608,
+      "score": 0.6120902269454039,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle accelerating while tires skid alongside a group of people cheering and rock music playing in the background",
+      "clip_similarity": 0.3237425684928894,
+      "visual": 0.13759330276361242,
+      "scene_support": 0.4600252944926991,
+      "object_support": 0.35107736258266736,
+      "score": 0.2983681182280549,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race vehicle engine running idle then revving as a crowd of people cheer and applaud in the background",
+      "clip_similarity": 0.3231814503669739,
+      "visual": 0.11339627200197401,
+      "scene_support": 0.19211689818444075,
+      "object_support": 0.5240744492354649,
+      "score": 0.2602159130267613,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck engine and acceleration with man speaking followed by people cheering",
+      "clip_similarity": 0.322958767414093,
+      "visual": 0.1037935412896858,
+      "scene_support": 0.1422491193962769,
+      "object_support": 0.019753789768012002,
+      "score": 0.090118289265161,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High revving engine in front of crowd",
+      "clip_similarity": 0.32276609539985657,
+      "visual": 0.09548496874485936,
+      "scene_support": 0.7175368181200548,
+      "object_support": 0.6964668595186653,
+      "score": 0.46239509078955976,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A revving engine with traffic noises and people talking in the background",
+      "clip_similarity": 0.3225124478340149,
+      "visual": 0.08454695468004605,
+      "scene_support": 0.5795689483971445,
+      "object_support": 0.6614491048630171,
+      "score": 0.4061241978500669,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine accelerating as a crowd of people talk and laugh in the background",
+      "clip_similarity": 0.3215700685977936,
+      "visual": 0.04390884602730712,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.01756353841092285,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine running and horn honking followed by engine revving with crowd cheering in the background",
+      "clip_similarity": 0.3215683102607727,
+      "visual": 0.043833021467346606,
+      "scene_support": 0.5128322515234183,
+      "object_support": 0.5949398460131979,
+      "score": 0.34986483784792344,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running while people are talking in the background",
+      "clip_similarity": 0.32142096757888794,
+      "visual": 0.03747918037506169,
+      "scene_support": 0.6205700667900035,
+      "object_support": 0.3440742229960069,
+      "score": 0.30438495908582774,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car is driving fast while people are cheering",
+      "clip_similarity": 0.32137542963027954,
+      "visual": 0.03551545278828755,
+      "scene_support": 0.7101585609315063,
+      "object_support": 0.6230470135877362,
+      "score": 0.41416785347108775,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle engine revving with horn honking and people cheering",
+      "clip_similarity": 0.32111379504203796,
+      "visual": 0.024233015298568843,
+      "scene_support": 0.3701796745163212,
+      "object_support": 0.5802651320775672,
+      "score": 0.29482664809759407,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor vehicle passing by in a race car event",
+      "clip_similarity": 0.3205518424510956,
+      "visual": 0.0,
+      "scene_support": 0.8926792302948585,
+      "object_support": 1.0,
+      "score": 0.5678037690884575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.21776066720485687
+    ],
+    [
+      "tundra",
+      0.10012936592102051
+    ],
+    [
+      "street",
+      0.09755685180425644
+    ],
+    [
+      "crosswalk",
+      0.09093228727579117
+    ],
+    [
+      "promenade",
+      0.04074119031429291
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.17514349520206451
+    ],
+    [
+      "station wagon",
+      0.1136574074625969
+    ],
+    [
+      "ambulance",
+      0.08957988023757935
+    ],
+    [
+      "taxicab",
+      0.08575401455163956
+    ],
+    [
+      "stretcher",
+      0.04151501879096031
+    ]
+  ]
+}
