@@ -18,6 +18,7 @@ casv/                 CAS-V library
   audio.py              AudioLDM generation, mel spectrograms, CLAP scoring
 scripts/              entry points (run from the repo root with  py -m scripts.<name>)
   fetch_audiocaps.py    build image + ground-truth audio pairs from AudioCaps
+  fetch_category_examples.py  one test clip per figure category (fixed caption rule)
   eval_places365.py     scene / indoor-outdoor accuracy on Places365 val
   tune_casv.py          tune the verifier on AudioCaps val, score once on test
   run_casv_experiment.py  generate baseline vs CAS-V audio and score with CLAP
@@ -27,7 +28,7 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
 data/                 datasets (see data/README.md); downloaded media is git-ignored
 eval/                 small smoke-test set
 results/              raw outputs of every run
-journal_results/      figures/, tables/ (CSV + LaTeX), RESULTS.md
+journal_results/      graphs/ (charts), qualitative/ (result images), tables/ (CSV + LaTeX), RESULTS.md
 docs/                 target figure layout
 notebooks/            exploratory Colab notebooks
 legacy/               earlier code; synthetic outputs, not results (see legacy/README.md)
@@ -42,15 +43,18 @@ py -m pip install torch transformers diffusers accelerate soundfile scipy matplo
 # data (Places365 val ~500 MB; AudioCaps clips via yt-dlp, needs Node.js)
 py -m scripts.fetch_audiocaps --split test --n 100
 py -m scripts.fetch_audiocaps --split val --n 100
+py -m scripts.fetch_category_examples
 
 # experiments
 py -m scripts.eval_places365 --per-class 10
 py -m scripts.tune_casv --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test/manifest.json
 py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/test/manifest.json --run-name audiocaps_test100
+py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/categories/manifest.json --run-name categories7
 
 # figures and journal package
 py -m scripts.make_casv_graphs --run results/audiocaps_test100
 py -m scripts.make_casv_figure --run results/audiocaps_test100 --count 20
+py -m scripts.make_casv_figure --run results/categories7 --count 7
 py -m scripts.build_journal_results --run results/audiocaps_test100
 ```
 

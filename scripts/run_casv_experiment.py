@@ -118,6 +118,7 @@ def main():
 
         record = {
             "id": item_id,
+            "label": item.get("label"),
             "image": str(image_path),
             "gt_audio": str(resolve(item["gt_audio"], base)) if item.get("gt_audio") else None,
             "gt_captions": item.get("captions", []),

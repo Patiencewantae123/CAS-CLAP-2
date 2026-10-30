@@ -1,0 +1,286 @@
+{
+  "id": "PMMkPq5jJXY",
+  "image": "data\\audiocaps\\test_subset\\frames\\PMMkPq5jJXY.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\PMMkPq5jJXY.wav",
+  "gt_captions": [
+    "Burping and then laughing with continuous burping",
+    "A person burps while people laugh",
+    "A person burps as people laugh",
+    "A person burps followed by laughter",
+    "A person belching several times as a group of people laugh"
+  ],
+  "top_scene": [
+    "coffee shop",
+    0.04916774854063988
+  ],
+  "top_object": [
+    "scarf",
+    0.16178828477859497
+  ],
+  "env_probs": {
+    "indoor": 0.8504642248153687,
+    "outdoor": 0.14953577518463135
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Man speaking a foreign language and female voices yelling and screaming",
+    "casv": "Man speaking a foreign language and female voices yelling and screaming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08547793328762054,
+    "clap_gt_audio_baseline": 0.28009477257728577,
+    "clap_text_casv": 0.08547793328762054,
+    "clap_gt_audio_casv": 0.28009477257728577
+  },
+  "verdicts": [
+    {
+      "caption": "Man speaking a foreign language and female voices yelling and screaming",
+      "clip_similarity": 0.31141749024391174,
+      "visual": 1.0,
+      "scene_support": 0.7511439319797246,
+      "object_support": 0.7552074744174107,
+      "score": 0.8519054219191405,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A guy screaming while people laugh",
+      "clip_similarity": 0.30546170473098755,
+      "visual": 0.6651474759931569,
+      "scene_support": 0.5573776112532149,
+      "object_support": 0.45725170139733046,
+      "score": 0.5704477841924264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person screaming like a baby",
+      "clip_similarity": 0.30395054817199707,
+      "visual": 0.5801856205251597,
+      "scene_support": 0.9294571497576503,
+      "object_support": 1.0,
+      "score": 0.8109113931373588,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Excited male voice with a glass spilling over liquid",
+      "clip_similarity": 0.30204910039901733,
+      "visual": 0.4732803962406733,
+      "scene_support": 0.5279104276679519,
+      "object_support": 0.4002912309395045,
+      "score": 0.46777265607850627,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man yelling then exploding sounds with another man laughing being surprised sounding",
+      "clip_similarity": 0.30037277936935425,
+      "visual": 0.3790324877808478,
+      "scene_support": 0.6643518273415248,
+      "object_support": 0.5544153874663589,
+      "score": 0.5172431595547042,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking followed by a loud pop and then excited yelling",
+      "clip_similarity": 0.30032140016555786,
+      "visual": 0.3761437913972477,
+      "scene_support": 1.0,
+      "object_support": 0.8733451435158188,
+      "score": 0.7124610596136447,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man yelling a long speech",
+      "clip_similarity": 0.30022233724594116,
+      "visual": 0.37057417029568923,
+      "scene_support": 0.530738555259919,
+      "object_support": 0.49125797144814715,
+      "score": 0.4548286261306955,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man yelling with a lot of background noise such as people talking",
+      "clip_similarity": 0.2976122498512268,
+      "visual": 0.2238270535464445,
+      "scene_support": 0.793662150435816,
+      "object_support": 0.7553069315683798,
+      "score": 0.5542215460198365,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby screaming and a man laughing and talking",
+      "clip_similarity": 0.29744046926498413,
+      "visual": 0.2141690222499996,
+      "scene_support": 0.08582603359769192,
+      "object_support": 0.24973435590018922,
+      "score": 0.1863357257493642,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid screaming in the foreground as a man screams then laughs in the background while wind blows into a microphone",
+      "clip_similarity": 0.29697170853614807,
+      "visual": 0.18781385669452036,
+      "scene_support": 0.028875238177352693,
+      "object_support": 0.28276050548034404,
+      "score": 0.16861626577511715,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man laughing before a woman screams",
+      "clip_similarity": 0.2967851758003235,
+      "visual": 0.17732641431345708,
+      "scene_support": 0.477550193088155,
+      "object_support": 0.4882109273656776,
+      "score": 0.3606589018615326,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man pretends to scream followed by laughter as a car drives off",
+      "clip_similarity": 0.2962554395198822,
+      "visual": 0.1475430162748886,
+      "scene_support": 0.22283769754413246,
+      "object_support": 0.23028155724396585,
+      "score": 0.19495298294638494,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.55)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Kid screaming then talking",
+      "clip_similarity": 0.2961762845516205,
+      "visual": 0.14309268124307778,
+      "scene_support": 0.580815926659275,
+      "object_support": 0.4738164174004111,
+      "score": 0.3736267757151369,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+      "clip_similarity": 0.295915424823761,
+      "visual": 0.1284263474578969,
+      "scene_support": 0.5739490574000488,
+      "object_support": 0.5644150814443558,
+      "score": 0.3928797806364801,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man shouting, laughter, screaming, yelling",
+      "clip_similarity": 0.2957960069179535,
+      "visual": 0.12171230661735999,
+      "scene_support": 0.801819803548748,
+      "object_support": 0.8424148196255311,
+      "score": 0.5419553095992278,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman shrieking loudly with man laughing after",
+      "clip_similarity": 0.29448798298835754,
+      "visual": 0.04817119044786523,
+      "scene_support": 0.45619225822130993,
+      "object_support": 0.3738709063181643,
+      "score": 0.26828742554098833,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man briefly talks followed by a bursting sound then by several voices laughing and talking",
+      "clip_similarity": 0.29436931014060974,
+      "visual": 0.041499039056046405,
+      "scene_support": 0.9012096560716506,
+      "object_support": 0.8342270309235233,
+      "score": 0.5372306217209708,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person screaming with a dog barking and people talking and laughing",
+      "clip_similarity": 0.2941244840621948,
+      "visual": 0.027734166207279046,
+      "scene_support": 0.6446824999457972,
+      "object_support": 0.6603593548376129,
+      "score": 0.4026062229179347,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man screams and then the bang of a crash occurs",
+      "clip_similarity": 0.29380661249160767,
+      "visual": 0.00986245180618925,
+      "scene_support": 0.8711495186535915,
+      "object_support": 0.843275506508918,
+      "score": 0.5182724882712285,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man shouting and laughing followed by ducks quacking",
+      "clip_similarity": 0.2936311960220337,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "coffee shop",
+      0.04916774854063988
+    ],
+    [
+      "indoor pub",
+      0.04143507406115532
+    ],
+    [
+      "wet bar",
+      0.03911040350794792
+    ],
+    [
+      "dorm room",
+      0.03560804948210716
+    ],
+    [
+      "hotel room",
+      0.03383425995707512
+    ]
+  ],
+  "top_objects": [
+    [
+      "scarf",
+      0.16178828477859497
+    ],
+    [
+      "wild boar",
+      0.07255008816719055
+    ],
+    [
+      "bib",
+      0.057052627205848694
+    ],
+    [
+      "yawl",
+      0.047904133796691895
+    ],
+    [
+      "neck brace",
+      0.04739491268992424
+    ]
+  ]
+}

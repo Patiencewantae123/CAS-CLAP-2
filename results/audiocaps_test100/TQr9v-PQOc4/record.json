@@ -1,0 +1,292 @@
+{
+  "id": "TQr9v-PQOc4",
+  "image": "data\\audiocaps\\test_subset\\frames\\TQr9v-PQOc4.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\TQr9v-PQOc4.wav",
+  "gt_captions": [
+    "Some clicking followed by a sneeze and a man laughing",
+    "Several faint clicks are followed by a person sneezing and coughing",
+    "A person sneezes and coughs",
+    "Someone sneezes through static and then coughs several times in quick succession",
+    "Humming noise then sneezing and coughing"
+  ],
+  "top_scene": [
+    "shower",
+    0.10475414246320724
+  ],
+  "top_object": [
+    "bridegroom",
+    0.06324291229248047
+  ],
+  "env_probs": {
+    "indoor": 0.7440168857574463,
+    "outdoor": 0.2559831142425537
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+    "casv": "A man speaks with light breathing and mild tapping noise in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07133940607309341,
+    "clap_gt_audio_baseline": 0.27144715189933777,
+    "clap_text_casv": 0.01616249792277813,
+    "clap_gt_audio_casv": 0.3033080995082855
+  },
+  "verdicts": [
+    {
+      "caption": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+      "clip_similarity": 0.2973751425743103,
+      "visual": 1.0,
+      "scene_support": 0.22545941362991084,
+      "object_support": 0.5187717052654403,
+      "score": 0.6232693356686053,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person shaves with an electric shaver; a kid talks faintly in the background",
+      "clip_similarity": 0.2906462550163269,
+      "visual": 0.597922153779853,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23916886151194122,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male teen talking, then some grunting sounds",
+      "clip_similarity": 0.28910863399505615,
+      "visual": 0.5060431703360205,
+      "scene_support": 0.6784749868902324,
+      "object_support": 0.7012308325335981,
+      "score": 0.6163290139615574,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male talking with distance voices communicating softly in the background",
+      "clip_similarity": 0.2880491316318512,
+      "visual": 0.4427336820154467,
+      "scene_support": 0.31544306113480763,
+      "object_support": 0.5150068927114658,
+      "score": 0.4262284589600608,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young man talking then whistling",
+      "clip_similarity": 0.28797149658203125,
+      "visual": 0.4380946784128731,
+      "scene_support": 0.5768632614487886,
+      "object_support": 0.8112647478770572,
+      "score": 0.5916762741629029,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young man speaking followed by rapid tapping",
+      "clip_similarity": 0.2870587408542633,
+      "visual": 0.38355388634530213,
+      "scene_support": 0.42401725751830877,
+      "object_support": 0.7096998128681195,
+      "score": 0.49353667565404935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A male teenager is vocalizing something while playing a video game",
+      "clip_similarity": 0.2865070104598999,
+      "visual": 0.3505857966353423,
+      "scene_support": 0.2775644093906776,
+      "object_support": 0.5215146225270318,
+      "score": 0.37995802822944974,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking while a phone rings in the background",
+      "clip_similarity": 0.28555527329444885,
+      "visual": 0.2937157083250971,
+      "scene_support": 0.7780863496689477,
+      "object_support": 0.7783374213251499,
+      "score": 0.5844134146282681,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking in the foreground with a clicking sound in the background",
+      "clip_similarity": 0.285457044839859,
+      "visual": 0.2878461667227621,
+      "scene_support": 0.16977353182855529,
+      "object_support": 0.5702625390063408,
+      "score": 0.33714928793957366,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man with a distinct voice is communicating with another man followed by animal noises in the background and loud bang",
+      "clip_similarity": 0.2852431833744049,
+      "visual": 0.27506709192350365,
+      "scene_support": 0.7399201815273981,
+      "object_support": 0.7632122622507321,
+      "score": 0.5609665699028406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.2848512530326843,
+      "visual": 0.251647692162488,
+      "scene_support": 0.36927315528009164,
+      "object_support": 0.3531261125969692,
+      "score": 0.31737885722811343,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)",
+        "names 'a stream or river', not visible in image (z=-0.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid talks fast while a brushing sound swooshes and something is sprayed",
+      "clip_similarity": 0.28420490026474,
+      "visual": 0.21302553856071574,
+      "scene_support": 0.7575281104455034,
+      "object_support": 0.5643775555081942,
+      "score": 0.4817819152103956,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with light breathing and mild tapping noise in the background",
+      "clip_similarity": 0.2840137481689453,
+      "visual": 0.20160343909549225,
+      "scene_support": 0.9723976090397769,
+      "object_support": 0.9868921447728115,
+      "score": 0.6684283017819734,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person blowing their nose and sniffling followed by camera muffling",
+      "clip_similarity": 0.2839904725551605,
+      "visual": 0.20021262841848264,
+      "scene_support": 0.024473199714443943,
+      "object_support": 0.4631631077936301,
+      "score": 0.22637594361981528,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young man speaks quickly followed by water running into a sink",
+      "clip_similarity": 0.2838722765445709,
+      "visual": 0.19314994577441086,
+      "scene_support": 0.6764264325586182,
+      "object_support": 0.462345714753852,
+      "score": 0.4188916225035054,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A male is vocally communicating, followed by sizzling, popping and frying sounds in the background",
+      "clip_similarity": 0.2818676829338074,
+      "visual": 0.07336748922166246,
+      "scene_support": 0.2812384115372489,
+      "object_support": 0.5358655065064979,
+      "score": 0.274478171101789,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several men speaking as a kid whimpers and an electric razor operates in the background followed by microphone distortion",
+      "clip_similarity": 0.2814328670501709,
+      "visual": 0.047385507432200207,
+      "scene_support": 0.013131821367369175,
+      "object_support": 0.13217436404111235,
+      "score": 0.06254605859542454,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male voice talking with some faint sizzling in the background",
+      "clip_similarity": 0.28127869963645935,
+      "visual": 0.03817339010547723,
+      "scene_support": 0.660790278025089,
+      "object_support": 0.7345850267392855,
+      "score": 0.43388194747150327,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is talking and a stream can be heard in the background",
+      "clip_similarity": 0.2809745669364929,
+      "visual": 0.020000249313053498,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6080000997252214,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)",
+        "names 'a stream or river', not visible in image (z=-0.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person making a whistling and bubble sound",
+      "clip_similarity": 0.2806398570537567,
+      "visual": 0.0,
+      "scene_support": 0.04540226974592372,
+      "object_support": 0.26831126721175963,
+      "score": 0.09411406108730501,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "shower",
+      0.10475414246320724
+    ],
+    [
+      "closet",
+      0.10058709979057312
+    ],
+    [
+      "locker room",
+      0.0656207725405693
+    ],
+    [
+      "sauna",
+      0.04397158324718475
+    ],
+    [
+      "indoor jacuzzi",
+      0.043902866542339325
+    ]
+  ],
+  "top_objects": [
+    [
+      "bridegroom",
+      0.06324291229248047
+    ],
+    [
+      "Boxer",
+      0.04701409861445427
+    ],
+    [
+      "ski mask",
+      0.03458017483353615
+    ],
+    [
+      "motorboat",
+      0.027995923534035683
+    ],
+    [
+      "shower curtain",
+      0.023815318942070007
+    ]
+  ]
+}

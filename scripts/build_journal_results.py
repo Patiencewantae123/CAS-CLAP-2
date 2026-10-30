@@ -49,21 +49,29 @@ def main():
     parser.add_argument("--run", default="results/audiocaps_test100")
     parser.add_argument("--places", default="results/places365/eval.json")
     parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
+    parser.add_argument("--categories", default="results/categories7")
     args = parser.parse_args()
     run_dir = Path(args.run)
-    (OUT / "figures").mkdir(parents=True, exist_ok=True)
+    # graphs/ holds charts with statistics; qualitative/ holds result images
+    if (OUT / "figures").exists():
+        shutil.rmtree(OUT / "figures")
+    for folder in ("graphs", "qualitative"):
+        (OUT / folder).mkdir(parents=True, exist_ok=True)
+        for stale in (OUT / folder).glob("*.png"):
+            stale.unlink()
 
     figures = [
-        (Path(args.places).with_name("fig_places365_recognition.png"), "fig1_scene_recognition.png"),
-        (Path(args.tuning).with_name("fig_prompt_selection.png"), "fig2_prompt_selection.png"),
-        (run_dir / "fig_clap_comparison.png", "fig3_generated_audio_clap.png"),
-        (run_dir / "fig_verification_stats.png", "fig4_verification_statistics.png"),
-    ] + [(p, f"fig5{chr(ord('a') + i)}_qualitative_examples.png")
+        (Path(args.places).with_name("fig_places365_recognition.png"), "graphs/fig1_scene_recognition.png"),
+        (Path(args.tuning).with_name("fig_prompt_selection.png"), "graphs/fig2_prompt_selection.png"),
+        (run_dir / "fig_clap_comparison.png", "graphs/fig3_generated_audio_clap.png"),
+        (run_dir / "fig_verification_stats.png", "graphs/fig4_verification_statistics.png"),
+        (Path(args.categories) / "casv_comparison_1.png", "qualitative/fig5_categories.png"),
+    ] + [(p, f"qualitative/figS1{chr(ord('a') + i)}_random20.png")
          for i, p in enumerate(sorted(run_dir.glob("casv_comparison_*.png")))]
     missing = []
     for src, dest in figures:
         if src.exists():
-            shutil.copy(src, OUT / "figures" / dest)
+            shutil.copy(src, OUT / dest)
         else:
             missing.append(str(src))
 
@@ -163,11 +171,12 @@ from result files in `results/`; nothing is entered by hand.
 
 | File | Content |
 |---|---|
-| `figures/fig1_scene_recognition.png` | Places365 accuracy and confidence calibration |
-| `figures/fig2_prompt_selection.png` | Prompt selection on val/test with 95% CIs |
-| `figures/fig3_generated_audio_clap.png` | Generated audio: baseline vs CAS-V, paired |
-| `figures/fig4_verification_statistics.png` | Candidate decisions and conflict types |
-| `figures/fig5*_qualitative_examples.png` | First 20 test items in sample order (not selected) |
+| `graphs/fig1_scene_recognition.png` | Places365 accuracy and confidence calibration |
+| `graphs/fig2_prompt_selection.png` | Prompt selection on val/test with 95% CIs |
+| `graphs/fig3_generated_audio_clap.png` | Generated audio: baseline vs CAS-V, paired |
+| `graphs/fig4_verification_statistics.png` | Candidate decisions and conflict types |
+| `qualitative/fig5_categories.png` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
+| `qualitative/figS1*_random20.png` | Supplementary: first 20 items of the random test sample (not selected) |
 
 LaTeX versions of all tables are in `tables/`.
 """

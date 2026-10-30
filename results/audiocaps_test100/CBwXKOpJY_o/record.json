@@ -1,0 +1,289 @@
+{
+  "id": "CBwXKOpJY_o",
+  "image": "data\\audiocaps\\test_subset\\frames\\CBwXKOpJY_o.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\CBwXKOpJY_o.wav",
+  "gt_captions": [
+    "A woman and a child speaking",
+    "A woman speaking with a child speaking",
+    "A woman and young boy talking",
+    "A woman and child speak",
+    "A woman talking followed by a kid talking while birds chirp in the background"
+  ],
+  "top_scene": [
+    "childs room",
+    0.11507800966501236
+  ],
+  "top_object": [
+    "binoculars",
+    0.11013640463352203
+  ],
+  "env_probs": {
+    "indoor": 0.6648397445678711,
+    "outdoor": 0.3351602554321289
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A young boy coughing then sneezing before talking",
+    "casv": "A kid crying and yelling"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0011231377720832825,
+    "clap_gt_audio_baseline": 0.4371144771575928,
+    "clap_text_casv": 0.1347639411687851,
+    "clap_gt_audio_casv": 0.38842087984085083
+  },
+  "verdicts": [
+    {
+      "caption": "A young boy coughing then sneezing before talking",
+      "clip_similarity": 0.33267688751220703,
+      "visual": 1.0,
+      "scene_support": 0.43584449379048373,
+      "object_support": 0.37323163397483344,
+      "score": 0.6427228383295952,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy is talking while making meowing sounds, followed by a male laughing",
+      "clip_similarity": 0.32965952157974243,
+      "visual": 0.8808483695882428,
+      "scene_support": 0.24864958154307326,
+      "object_support": 0.05605974740932643,
+      "score": 0.443752146521017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screams while speaking followed by a quick burp and children speaking from a distance followed by a child screaming",
+      "clip_similarity": 0.3149113655090332,
+      "visual": 0.2984639718308533,
+      "scene_support": 0.6467807992801677,
+      "object_support": 0.4661743615840118,
+      "score": 0.4532721369915952,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy demonstrates the use of a duck call",
+      "clip_similarity": 0.3142503499984741,
+      "visual": 0.2723613785182012,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.10894455140728049,
+      "conflicts": [
+        "names 'ducks or geese', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child crying with a distant speech",
+      "clip_similarity": 0.31405162811279297,
+      "visual": 0.2645141245863363,
+      "scene_support": 0.771551296213215,
+      "object_support": 0.8300466089933383,
+      "score": 0.5862850213965005,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child crying and then screaming with a high pitch at the close",
+      "clip_similarity": 0.3131507933139801,
+      "visual": 0.22894139744199293,
+      "scene_support": 0.8077875422614477,
+      "object_support": 0.587088267949667,
+      "score": 0.5100393020401315,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.31267112493515015,
+      "visual": 0.20999995292589124,
+      "scene_support": 0.8991120645201558,
+      "object_support": 0.87341205588453,
+      "score": 0.6157572172917622,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child having a difficult time sneezing",
+      "clip_similarity": 0.31258100271224976,
+      "visual": 0.2064411503029219,
+      "scene_support": 0.5403839523999224,
+      "object_support": 0.4032065368245744,
+      "score": 0.3656536068885178,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.3122960925102234,
+      "visual": 0.19519043830702676,
+      "scene_support": 0.7431140701978827,
+      "object_support": 0.7157076933752776,
+      "score": 0.5157227043947588,
+      "conflicts": [
+        "names 'a truck or bus', not visible in image (z=-0.49)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.27)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crying child with laughing and talking in the background",
+      "clip_similarity": 0.3116031885147095,
+      "visual": 0.16782861258479223,
+      "scene_support": 0.7997166582258968,
+      "object_support": 0.7631447770170244,
+      "score": 0.5359898756067932,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid crying and yelling",
+      "clip_similarity": 0.3114861845970154,
+      "visual": 0.16320828880907212,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6652833155236288,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy is burping and talking",
+      "clip_similarity": 0.30978649854660034,
+      "visual": 0.09609002452561066,
+      "scene_support": 0.7145922270353461,
+      "object_support": 0.7020823695410807,
+      "score": 0.4634383887831723,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid trying to sing like a duck using a type of quack speech",
+      "clip_similarity": 0.30966106057167053,
+      "visual": 0.0911366514303468,
+      "scene_support": 0.617261981808989,
+      "object_support": 0.5931098491857884,
+      "score": 0.3995662098705719,
+      "conflicts": [
+        "names 'ducks or geese', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male child burping several times then giggling",
+      "clip_similarity": 0.30906403064727783,
+      "visual": 0.06756076090589415,
+      "scene_support": 0.7864124968635104,
+      "object_support": 0.6024085168393782,
+      "score": 0.44367060847322426,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young kid speaks and then begins to burp",
+      "clip_similarity": 0.30897629261016846,
+      "visual": 0.06409610650046368,
+      "scene_support": 0.9824804804578374,
+      "object_support": 0.81513809215396,
+      "score": 0.5649240143837247,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child pretending to be a cat meowing",
+      "clip_similarity": 0.3085947632789612,
+      "visual": 0.04903003798880578,
+      "scene_support": 0.5753748183558889,
+      "object_support": 0.2513872825684678,
+      "score": 0.2676406454728293,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child is pretending to be shooting by making pow-pow noises as the dog stars barking",
+      "clip_similarity": 0.3080795705318451,
+      "visual": 0.028685785031374894,
+      "scene_support": 0.48526258334474826,
+      "object_support": 0.22646361491487788,
+      "score": 0.22499217349043776,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child laughing followed by an animal breathing aloud",
+      "clip_similarity": 0.30793502926826477,
+      "visual": 0.02297804934308081,
+      "scene_support": 0.5111307154798693,
+      "object_support": 0.2975024287564767,
+      "score": 0.25178116300813613,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child screaming followed by a young boy talking",
+      "clip_similarity": 0.307502806186676,
+      "visual": 0.005910154356002655,
+      "scene_support": 0.6517174976950205,
+      "object_support": 0.33650189674315323,
+      "score": 0.29882988007385314,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaks quickly before making a snorting sound followed by a woman speaking, and the child speaking first and then snorting",
+      "clip_similarity": 0.307353138923645,
+      "visual": 0.0,
+      "scene_support": 0.7576799486265003,
+      "object_support": 0.5456716089933382,
+      "score": 0.39100546728595154,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.11507800966501236
+    ],
+    [
+      "archaelogical excavation",
+      0.10688403248786926
+    ],
+    [
+      "playroom",
+      0.04259474575519562
+    ],
+    [
+      "indoor bow window",
+      0.04240142181515694
+    ],
+    [
+      "home theater",
+      0.030257709324359894
+    ]
+  ],
+  "top_objects": [
+    [
+      "binoculars",
+      0.11013640463352203
+    ],
+    [
+      "ocarina",
+      0.02530575543642044
+    ],
+    [
+      "diaper",
+      0.0221191868185997
+    ],
+    [
+      "pajamas",
+      0.021700633689761162
+    ],
+    [
+      "harmonica",
+      0.021611783653497696
+    ]
+  ]
+}

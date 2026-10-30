@@ -19,11 +19,12 @@ from result files in `results/`; nothing is entered by hand.
 
 | File | Content |
 |---|---|
-| `figures/fig1_scene_recognition.png` | Places365 accuracy and confidence calibration |
-| `figures/fig2_prompt_selection.png` | Prompt selection on val/test with 95% CIs |
-| `figures/fig3_generated_audio_clap.png` | Generated audio: baseline vs CAS-V, paired |
-| `figures/fig4_verification_statistics.png` | Candidate decisions and conflict types |
-| `figures/fig5*_qualitative_examples.png` | First 20 test items in sample order (not selected) |
+| `graphs/fig1_scene_recognition.png` | Places365 accuracy and confidence calibration |
+| `graphs/fig2_prompt_selection.png` | Prompt selection on val/test with 95% CIs |
+| `graphs/fig3_generated_audio_clap.png` | Generated audio: baseline vs CAS-V, paired |
+| `graphs/fig4_verification_statistics.png` | Candidate decisions and conflict types |
+| `qualitative/fig5_categories.png` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
+| `qualitative/figS1*_random20.png` | Supplementary: first 20 items of the random test sample (not selected) |
 
 LaTeX versions of all tables are in `tables/`.
 
@@ -69,5 +70,6 @@ LaTeX versions of all tables are in `tables/`.
 
 - `results\audiocaps_test100\fig_clap_comparison.png`
 - `results\audiocaps_test100\fig_verification_stats.png`
+- `results\categories7\casv_comparison_1.png`
 - `results\audiocaps_test100\results.json`
 - `results\audiocaps_test100\graph_stats.json`

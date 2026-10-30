@@ -1,0 +1,286 @@
+{
+  "id": "inSvboaSRwA",
+  "image": "data\\audiocaps\\test_subset\\frames\\inSvboaSRwA.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\inSvboaSRwA.wav",
+  "gt_captions": [
+    "A male speaking and a saw running",
+    "Continuous buzzing and clanking",
+    "A machine motor running as a man is speaking followed by rapid buzzing",
+    "A man talking as a machine motor hums followed by electronic buzzing",
+    "A man speaking while power tools are whirring and running in the background"
+  ],
+  "top_scene": [
+    "assembly line",
+    0.38973793387413025
+  ],
+  "top_object": [
+    "hand plane",
+    0.12143499404191971
+  ],
+  "env_probs": {
+    "indoor": 0.8904474973678589,
+    "outdoor": 0.10955250263214111
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Wood cracking while a machine works",
+    "casv": "Wood cracking while a machine works"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.10954596847295761,
+    "clap_gt_audio_baseline": 0.11221324652433395,
+    "clap_text_casv": -0.10954596847295761,
+    "clap_gt_audio_casv": 0.11221324652433395
+  },
+  "verdicts": [
+    {
+      "caption": "Wood cracking while a machine works",
+      "clip_similarity": 0.3429294526576996,
+      "visual": 1.0,
+      "scene_support": 0.3991180288117717,
+      "object_support": 0.4464954129366926,
+      "score": 0.6536840325245393,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Nonstop machine buzzing concurrent with oscillating wood filing",
+      "clip_similarity": 0.3366888165473938,
+      "visual": 0.6216244052900053,
+      "scene_support": 0.5453624329465296,
+      "object_support": 0.3563044189067552,
+      "score": 0.5191498176719875,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine is being used to saw wood",
+      "clip_similarity": 0.3342931866645813,
+      "visual": 0.47637512851879493,
+      "scene_support": 0.526407671732409,
+      "object_support": 0.769631835620658,
+      "score": 0.5793619036134381,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.3338889479637146,
+      "visual": 0.4518657586177612,
+      "scene_support": 0.061503610717148535,
+      "object_support": 0.43507414921242893,
+      "score": 0.3297196314259777,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine spins and someone chisels wood",
+      "clip_similarity": 0.3327404856681824,
+      "visual": 0.38223341723570303,
+      "scene_support": 0.647163848181898,
+      "object_support": 0.5961610566089186,
+      "score": 0.5258908383315262,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks and then an automatic saw starts",
+      "clip_similarity": 0.3325933814048767,
+      "visual": 0.37331434838938166,
+      "scene_support": 0.7727491666633248,
+      "object_support": 0.6814367538210799,
+      "score": 0.5855815155010741,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting into wood",
+      "clip_similarity": 0.3319764733314514,
+      "visual": 0.3359106358450438,
+      "scene_support": 0.13911431271613173,
+      "object_support": 0.5584994173855191,
+      "score": 0.3436483733685128,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical sander running",
+      "clip_similarity": 0.33061233162879944,
+      "visual": 0.2532014506135474,
+      "scene_support": 0.31976379177210085,
+      "object_support": 0.3001493462472179,
+      "score": 0.28725452165121457,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine works while wood hits",
+      "clip_similarity": 0.3299373388290405,
+      "visual": 0.21227600687360978,
+      "scene_support": 0.8490761670389446,
+      "object_support": 0.8489292644160789,
+      "score": 0.594312032185951,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.32917606830596924,
+      "visual": 0.16611946420536988,
+      "scene_support": 0.4150361962864887,
+      "object_support": 0.6560497854489035,
+      "score": 0.3877735802027656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Electric saw cutting",
+      "clip_similarity": 0.3288523852825165,
+      "visual": 0.14649426024671994,
+      "scene_support": 0.6757461487837362,
+      "object_support": 0.7229185261305435,
+      "score": 0.4781971065729719,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Machine is sawing wood",
+      "clip_similarity": 0.32827579975128174,
+      "visual": 0.1115353410875265,
+      "scene_support": 0.6015516704384591,
+      "object_support": 0.8074897837319898,
+      "score": 0.46732657268614525,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An automatic saw working",
+      "clip_similarity": 0.3277953863143921,
+      "visual": 0.08240742581145276,
+      "scene_support": 0.6559113769114612,
+      "object_support": 0.8440190173446162,
+      "score": 0.48294208860140425,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw spins faster than slows down as blocks of wood fall in the background",
+      "clip_similarity": 0.32748299837112427,
+      "visual": 0.06346705311146487,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.025386821244585953,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud drill increases in volume as wood is being cut, then quiets down when the cutting is done",
+      "clip_similarity": 0.32725799083709717,
+      "visual": 0.04982463621727401,
+      "scene_support": 0.5845520923980001,
+      "object_support": 0.43321079282279557,
+      "score": 0.3252587200531483,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sawing wood noise",
+      "clip_similarity": 0.32720619440078735,
+      "visual": 0.04668416991765762,
+      "scene_support": 0.6381806102684545,
+      "object_support": 0.8059376179589178,
+      "score": 0.45190913643527475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw cuts through wood at decreasing speed",
+      "clip_similarity": 0.3267875909805298,
+      "visual": 0.021303853666557647,
+      "scene_support": 0.08009834731770524,
+      "object_support": 0.43911015895338956,
+      "score": 0.1642840933479515,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A band saw cuts wood",
+      "clip_similarity": 0.3266856372356415,
+      "visual": 0.015122302912249445,
+      "scene_support": 0.31353732648751875,
+      "object_support": 0.6887816098338759,
+      "score": 0.30674460206131815,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.3265283703804016,
+      "visual": 0.00558706662739578,
+      "scene_support": 1.0,
+      "object_support": 0.7505905047095196,
+      "score": 0.5274119780638142,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The continuous hum of a high pitched saw cutting through something",
+      "clip_similarity": 0.32643622159957886,
+      "visual": 0.0,
+      "scene_support": 0.98004804189831,
+      "object_support": 1.0,
+      "score": 0.5940144125694929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "assembly line",
+      0.38973793387413025
+    ],
+    [
+      "art studio",
+      0.07112820446491241
+    ],
+    [
+      "physics laboratory",
+      0.06827454268932343
+    ],
+    [
+      "manufactured home",
+      0.03862079605460167
+    ],
+    [
+      "repair shop",
+      0.035097960382699966
+    ]
+  ],
+  "top_objects": [
+    [
+      "hand plane",
+      0.12143499404191971
+    ],
+    [
+      "guillotine",
+      0.12127227336168289
+    ],
+    [
+      "dough",
+      0.0873018354177475
+    ],
+    [
+      "sewing machine",
+      0.07205827534198761
+    ],
+    [
+      "crane (machine)",
+      0.06081448122859001
+    ]
+  ]
+}

@@ -12,7 +12,7 @@ data/
       val.csv                       used only for tuning
       test.csv                      used only for evaluation
     pairs/                        image + ground-truth audio pairs              git-ignored
-      val/  test/                   frames/<ytid>.jpg, audio/<ytid>.wav (16 kHz mono),
+      val/  test/  categories/      frames/<ytid>.jpg, audio/<ytid>.wav (16 kHz mono),
                                     manifest.json, failed.json (unavailable videos)
   places365/                                                                    git-ignored
     filelists/                      official split lists (places365_val.txt, ...)

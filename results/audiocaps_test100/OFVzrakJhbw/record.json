@@ -1,0 +1,282 @@
+{
+  "id": "OFVzrakJhbw",
+  "image": "data\\audiocaps\\test_subset\\frames\\OFVzrakJhbw.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\OFVzrakJhbw.wav",
+  "gt_captions": [
+    "A woman laughing followed by a sheep baaing and wind blowing into a microphone",
+    "A woman laughs with some wind blowing and sheep bleating",
+    "A woman laughing followed by the bleating of sheep and a soft breeze",
+    "A woman speaks with distant goats bleating and wind blowing",
+    "The wind is blowing, and an adult male laughs and animals bleat"
+  ],
+  "top_scene": [
+    "pasture",
+    0.38208022713661194
+  ],
+  "top_object": [
+    "Kuvasz",
+    0.38988542556762695
+  ],
+  "env_probs": {
+    "indoor": 0.03759763389825821,
+    "outdoor": 0.9624023661017418
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A dog barking followed by some human speech and the noises made by sheep",
+    "casv": "A dog barking followed by some human speech and the noises made by sheep"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.05531557649374008,
+    "clap_gt_audio_baseline": 0.26767152547836304,
+    "clap_text_casv": -0.05531557649374008,
+    "clap_gt_audio_casv": 0.26767152547836304
+  },
+  "verdicts": [
+    {
+      "caption": "A dog barking followed by some human speech and the noises made by sheep",
+      "clip_similarity": 0.3392675817012787,
+      "visual": 1.0,
+      "scene_support": 0.7963408137533362,
+      "object_support": 0.9809555986555768,
+      "score": 0.9331889237226738,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barking, with sounds of sheep, pigs, and birds in the background, followed by the sound of something getting hit",
+      "clip_similarity": 0.33906328678131104,
+      "visual": 0.9841753523321445,
+      "scene_support": 1.0,
+      "object_support": 0.7599815771314191,
+      "score": 0.9216646140722835,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sheep crying and a dog barking",
+      "clip_similarity": 0.338349848985672,
+      "visual": 0.9289125893094174,
+      "scene_support": 0.4277378310440553,
+      "object_support": 0.8802194807492179,
+      "score": 0.7639522292617489,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Movement is followed by a sheep bleating and followed in turn by loud, male human speech",
+      "clip_similarity": 0.3377458453178406,
+      "visual": 0.8821265740965176,
+      "scene_support": 0.7192279274962321,
+      "object_support": 1.0,
+      "score": 0.8686190078874767,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple people are communicating at the same time while a sheep is vocalizing itself",
+      "clip_similarity": 0.3353111147880554,
+      "visual": 0.6935327862229763,
+      "scene_support": 0.019349329278576265,
+      "object_support": 0.7690647206847697,
+      "score": 0.5139373294781944,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sheep crying and making sounds",
+      "clip_similarity": 0.3348824083805084,
+      "visual": 0.6603252651869294,
+      "scene_support": 0.45745784400071743,
+      "object_support": 0.8577988815597604,
+      "score": 0.6587071237429151,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of goats and sheep baaing as a woman laughs briefly followed by a man speaking",
+      "clip_similarity": 0.33477622270584106,
+      "visual": 0.6521001419716749,
+      "scene_support": 0.10781201061161334,
+      "object_support": 0.33187618429880744,
+      "score": 0.39274651526179616,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goats bleating in a musical rhythm",
+      "clip_similarity": 0.33460742235183716,
+      "visual": 0.6390248969839676,
+      "scene_support": 0.09655992590074233,
+      "object_support": 0.0,
+      "score": 0.28457793656380975,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.33451348543167114,
+      "visual": 0.6317485600840288,
+      "scene_support": 0.4941869025278876,
+      "object_support": 0.34545428467156775,
+      "score": 0.5045917801934481,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats baaing followed by a person whistling",
+      "clip_similarity": 0.33305466175079346,
+      "visual": 0.5187483407781894,
+      "scene_support": 0.6292012110731275,
+      "object_support": 0.4745777162973859,
+      "score": 0.5386330145224298,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man narrates, three pop noises followed by three whips of wind, a sheep and a dog both speak",
+      "clip_similarity": 0.33249419927597046,
+      "visual": 0.4753350185255722,
+      "scene_support": 0.6742798210695671,
+      "object_support": 0.6451486180458054,
+      "score": 0.5859625391448406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man shouting followed by a goat baaing then metal clanging",
+      "clip_similarity": 0.3324492275714874,
+      "visual": 0.4718515184043769,
+      "scene_support": 0.4940557297090373,
+      "object_support": 0.6236762547391873,
+      "score": 0.5240602026962181,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat gallops and then bleats multiple times loudly nearby",
+      "clip_similarity": 0.3316801190376282,
+      "visual": 0.41227651003612775,
+      "scene_support": 0.7521971447157432,
+      "object_support": 0.390713822410559,
+      "score": 0.5077838941523417,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sheep bleating with female and child talking along with some wind noises",
+      "clip_similarity": 0.33104991912841797,
+      "visual": 0.36346133868901276,
+      "scene_support": 0.3693338027000185,
+      "object_support": 0.5867667706273177,
+      "score": 0.43221470747380597,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sheep making sounds on a windy day",
+      "clip_similarity": 0.32916349172592163,
+      "visual": 0.2173390122003301,
+      "scene_support": 0.0,
+      "object_support": 0.3131457366836605,
+      "score": 0.1808793258852302,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A goat shouts over the cries of other farm animals",
+      "clip_similarity": 0.32872238755226135,
+      "visual": 0.18317116243637246,
+      "scene_support": 0.4590854577529828,
+      "object_support": 0.2977365051690808,
+      "score": 0.3003150538511681,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple sheep bleating as a man attempts to imitate them",
+      "clip_similarity": 0.3283824622631073,
+      "visual": 0.15684061082447454,
+      "scene_support": 0.03333864270933442,
+      "object_support": 0.2725086496642926,
+      "score": 0.15449043204187793,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman laughing, then talking and laughing again, followed by a sheep baaing",
+      "clip_similarity": 0.3281325697898865,
+      "visual": 0.13748398490252434,
+      "scene_support": 0.12393355159776524,
+      "object_support": 0.5293841566517552,
+      "score": 0.25098890643586586,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sheep bleating and dog barking",
+      "clip_similarity": 0.32773759961128235,
+      "visual": 0.10688966607800363,
+      "scene_support": 0.7772571763578394,
+      "object_support": 0.8697052181659684,
+      "score": 0.5368445847883437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clicking noise then a sheep baa followed by dog barking",
+      "clip_similarity": 0.3263576626777649,
+      "visual": 0.0,
+      "scene_support": 0.733255388124309,
+      "object_support": 0.5266454283077894,
+      "score": 0.3779702449296295,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pasture",
+      0.38208022713661194
+    ],
+    [
+      "farm",
+      0.1302255541086197
+    ],
+    [
+      "wild field",
+      0.12345626950263977
+    ],
+    [
+      "hayfield",
+      0.07270172238349915
+    ],
+    [
+      "lawn",
+      0.06450605392456055
+    ]
+  ],
+  "top_objects": [
+    [
+      "Kuvasz",
+      0.38988542556762695
+    ],
+    [
+      "borzoi",
+      0.0621504932641983
+    ],
+    [
+      "wool",
+      0.05706100910902023
+    ],
+    [
+      "ram",
+      0.05296368524432182
+    ],
+    [
+      "Groenendael",
+      0.031923454254865646
+    ]
+  ]
+}
