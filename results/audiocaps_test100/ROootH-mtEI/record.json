@@ -1,7 +1,7 @@
 {
   "id": "ROootH-mtEI",
-  "image": "data\\audiocaps\\test_subset\\frames\\ROootH-mtEI.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\ROootH-mtEI.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\ROootH-mtEI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\ROootH-mtEI.wav",
   "gt_captions": [
     "A river stream of water flowing",
     "Water moving down a stream swiftly",

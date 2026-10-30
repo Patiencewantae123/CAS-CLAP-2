@@ -1,7 +1,7 @@
 {
   "id": "Dc2WEiRk0rA",
-  "image": "data\\audiocaps\\test_subset\\frames\\Dc2WEiRk0rA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\Dc2WEiRk0rA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\Dc2WEiRk0rA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Dc2WEiRk0rA.wav",
   "gt_captions": [
     "Water spraying on a plastic surface",
     "Continuous spraying up and down",

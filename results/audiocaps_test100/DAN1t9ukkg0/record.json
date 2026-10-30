@@ -1,0 +1,282 @@
+{
+  "id": "DAN1t9ukkg0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\DAN1t9ukkg0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\DAN1t9ukkg0.wav",
+  "gt_captions": [
+    "A person types on a keyboard",
+    "Typing is occurring on a keyboard in a quiet environment",
+    "A person is typing keyboard with some mouse clicking",
+    "Computer keyboard clicks as typing occurs",
+    "Typing on a keyboard"
+  ],
+  "top_scene": [
+    "computer room",
+    0.4327705502510071
+  ],
+  "top_object": [
+    "computer keyboard",
+    0.43134957551956177
+  ],
+  "env_probs": {
+    "indoor": 0.9255962371826172,
+    "outdoor": 0.07440376281738281
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A person types on a computer keyboard slowly and loudly",
+    "casv": "Typing on a computer keyboard"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4277271330356598,
+    "clap_gt_audio_baseline": 0.4314092993736267,
+    "clap_text_casv": 0.5868217945098877,
+    "clap_gt_audio_casv": 0.7415008544921875
+  },
+  "verdicts": [
+    {
+      "caption": "A person types on a computer keyboard slowly and loudly",
+      "clip_similarity": 0.351832777261734,
+      "visual": 1.0,
+      "scene_support": 0.46532704494639765,
+      "object_support": 0.4587293572215369,
+      "score": 0.6772169206503804,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person presses several keyboard keys at the same time",
+      "clip_similarity": 0.3493264317512512,
+      "visual": 0.8543551110533836,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3417420444213535,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Typing on a computer keyboard",
+      "clip_similarity": 0.3434458374977112,
+      "visual": 0.5126310776291293,
+      "scene_support": 0.6175092791938778,
+      "object_support": 1.0,
+      "score": 0.690305214809815,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone is typing keys on a computer keyboard at a fast pace",
+      "clip_similarity": 0.34196290373802185,
+      "visual": 0.42645711564272415,
+      "scene_support": 0.5791287921709306,
+      "object_support": 0.40650711369338927,
+      "score": 0.46627361801638556,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Typing on a computer",
+      "clip_similarity": 0.34133124351501465,
+      "visual": 0.389751049919903,
+      "scene_support": 1.0,
+      "object_support": 0.7687795752876833,
+      "score": 0.6865342925542661,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Quick typing on a computer keyboard",
+      "clip_similarity": 0.34104102849960327,
+      "visual": 0.37288652205914186,
+      "scene_support": 0.40793561082383767,
+      "object_support": 0.7545997717425194,
+      "score": 0.4979152235935639,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person types on a computer keyboard and then talks",
+      "clip_similarity": 0.34061193466186523,
+      "visual": 0.34795168203662813,
+      "scene_support": 0.7390950471352649,
+      "object_support": 0.8428503351066965,
+      "score": 0.6137642874872397,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rapidly typing on a computer keyboard",
+      "clip_similarity": 0.34016650915145874,
+      "visual": 0.3220678010131186,
+      "scene_support": 0.6070416852066296,
+      "object_support": 0.7718320041986877,
+      "score": 0.5424892272268427,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rapid typing on a computer keyboard, with a low rattling sound in the background",
+      "clip_similarity": 0.3400195837020874,
+      "visual": 0.3135298956574447,
+      "scene_support": 0.6203476208506181,
+      "object_support": 0.49335574716684455,
+      "score": 0.4595229686682166,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person types on a computer keyboard slowly",
+      "clip_similarity": 0.33928483724594116,
+      "visual": 0.2708334415724986,
+      "scene_support": 0.434894329120501,
+      "object_support": 0.7184635018845091,
+      "score": 0.45434072593050245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Typing on a computer keyboard as a man talks",
+      "clip_similarity": 0.33894145488739014,
+      "visual": 0.2508793349785686,
+      "scene_support": 0.6810658843493234,
+      "object_support": 0.5178376758360268,
+      "score": 0.4600228020470325,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Typing on a computer keyboard with repeated sharp squeaks",
+      "clip_similarity": 0.3386368155479431,
+      "visual": 0.2331766030220375,
+      "scene_support": 0.6442489725866496,
+      "object_support": 0.6154926746677518,
+      "score": 0.4711931353851354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone is typing really fast on a computer keyboard with no other sounds",
+      "clip_similarity": 0.3380068838596344,
+      "visual": 0.19657098324457722,
+      "scene_support": 0.6771268907307555,
+      "object_support": 0.38693620082681196,
+      "score": 0.39784732076510115,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid typing on a computer keyboard",
+      "clip_similarity": 0.3377137780189514,
+      "visual": 0.17953846819933325,
+      "scene_support": 0.4780622721657348,
+      "object_support": 0.8302734473484421,
+      "score": 0.46431610313398636,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks loudly, and then starts typing on a computer keyboard",
+      "clip_similarity": 0.3375321626663208,
+      "visual": 0.16898471662986536,
+      "scene_support": 0.597439826880505,
+      "object_support": 0.3299918540345255,
+      "score": 0.3458233909264553,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks and then types on a computer keyboard",
+      "clip_similarity": 0.3366517126560211,
+      "visual": 0.11782136208165563,
+      "scene_support": 0.4189932592840304,
+      "object_support": 0.4178624617292315,
+      "score": 0.2981852611366408,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid typing from a computer keyboard",
+      "clip_similarity": 0.33665117621421814,
+      "visual": 0.11779018920206087,
+      "scene_support": 0.601548789351935,
+      "object_support": 0.8466612549616174,
+      "score": 0.4815790889748901,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person types on a computer keyboard quickly",
+      "clip_similarity": 0.33545222878456116,
+      "visual": 0.04811880330778889,
+      "scene_support": 0.6241822839944615,
+      "object_support": 0.7717084298314204,
+      "score": 0.4380147354708801,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A computer keyboard emits tapping as it is typed",
+      "clip_similarity": 0.33488035202026367,
+      "visual": 0.014886781833138503,
+      "scene_support": 0.309567173625256,
+      "object_support": 0.8608296953465728,
+      "score": 0.357073773424804,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person types on a computer keyboard rapidly and quietly",
+      "clip_similarity": 0.33462417125701904,
+      "visual": 0.0,
+      "scene_support": 0.37749460383438677,
+      "object_support": 0.5154002779713066,
+      "score": 0.267868464541708,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "computer room",
+      0.4327705502510071
+    ],
+    [
+      "office cubicles",
+      0.1028078943490982
+    ],
+    [
+      "office",
+      0.08802871406078339
+    ],
+    [
+      "server room",
+      0.06258384138345718
+    ],
+    [
+      "home office",
+      0.041598718613386154
+    ]
+  ],
+  "top_objects": [
+    [
+      "computer keyboard",
+      0.43134957551956177
+    ],
+    [
+      "hand-held computer",
+      0.14150552451610565
+    ],
+    [
+      "laptop computer",
+      0.10297112166881561
+    ],
+    [
+      "notebook computer",
+      0.08348005264997482
+    ],
+    [
+      "space bar",
+      0.05880965292453766
+    ]
+  ]
+}

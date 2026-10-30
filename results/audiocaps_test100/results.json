@@ -1,0 +1,3670 @@
+{
+  "run_name": "audiocaps_test100",
+  "timestamp": "2026-10-30T17:02:04.221729",
+  "environment": {
+    "python": "3.14.6",
+    "torch": "2.15.0+cpu",
+    "device": "cpu"
+  },
+  "models": {
+    "clip": "openai/clip-vit-base-patch32",
+    "generator": "cvssp/audioldm-s-full-v2",
+    "clap": "laion/clap-htsat-unfused"
+  },
+  "vocabulary": {
+    "scenes": "Places365",
+    "objects": "ImageNet-1k",
+    "sound_candidates": "AudioCaps train captions"
+  },
+  "settings": {
+    "manifest": "data/audiocaps/pairs\\test/manifest.json",
+    "output_dir": "results",
+    "run_name": "audiocaps_test100",
+    "limit": null,
+    "seed": 42,
+    "duration": 5.0,
+    "steps": 50,
+    "guidance_scale": 2.5,
+    "no_generate": false,
+    "no_clap": false
+  },
+  "verifier_config": {
+    "retrieve_k": 20,
+    "support_top_n": 5,
+    "w_visual": 0.4,
+    "w_scene": 0.3,
+    "w_object": 0.3,
+    "accept_threshold": 0.6,
+    "repair_threshold": 0.4,
+    "env_conflict_confidence": 0.7,
+    "source_absent_z": 0.0,
+    "uncertainty_threshold": 0.1
+  },
+  "summary": {
+    "n_items": 100,
+    "status_counts": {
+      "ACCEPT": 91,
+      "REPAIR": 2,
+      "UNCERTAIN": 7
+    },
+    "prompt_changed": 61,
+    "clap_text": {
+      "n": 100,
+      "baseline_mean": 0.15903577505145222,
+      "casv_mean": 0.1617090506758541,
+      "mean_diff": 0.0026732756244018676,
+      "diff_std": 0.1551808403773396,
+      "casv_wins": 29
+    },
+    "clap_gt_audio": {
+      "n": 100,
+      "baseline_mean": 0.30650365791283546,
+      "casv_mean": 0.32450901437550783,
+      "mean_diff": 0.018005356462672352,
+      "diff_std": 0.16650350686871385,
+      "casv_wins": 33
+    }
+  },
+  "items": [
+    {
+      "id": "AFgGoY8Ihhg",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\AFgGoY8Ihhg.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\AFgGoY8Ihhg.wav",
+      "gt_captions": [
+        "Police sirens sounding as wind is blowing heavily into a microphone",
+        "Wind and then a short ambulance siren repeats several times",
+        "Wind blowing and a siren rings",
+        "Police sirens wailing as wind blows heavily into a microphone",
+        "An emergency siren going off as wind blows heavily into a microphone"
+      ],
+      "top_scene": [
+        "tundra",
+        0.26523733139038086
+      ],
+      "top_object": [
+        "pickup truck",
+        0.37441951036453247
+      ],
+      "env_probs": {
+        "indoor": 0.14913180470466614,
+        "outdoor": 0.8508681952953339
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "Someone hammers metal as a vehicle passes",
+        "casv": "A truck squealing its tires as someone calls out"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.04672783985733986,
+        "clap_gt_audio_baseline": 0.2810595631599426,
+        "clap_text_casv": 0.001530197449028492,
+        "clap_gt_audio_casv": 0.2650309205055237
+      }
+    },
+    {
+      "id": "AbplcXwXnvE",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\AbplcXwXnvE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\AbplcXwXnvE.wav",
+      "gt_captions": [
+        "Girl speaks and crunches plastic wrapping",
+        "Plastic crinkling as a young girl is talking",
+        "Female speaking followed by crinkling",
+        "A young girl speaks with some crinkling plastic",
+        "A young woman talking as plastic crinkles and crumples"
+      ],
+      "top_scene": [
+        "candy store",
+        0.40773457288742065
+      ],
+      "top_object": [
+        "maraca",
+        0.05450544133782387
+      ],
+      "env_probs": {
+        "indoor": 0.8496469259262085,
+        "outdoor": 0.1503530740737915
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A series of small pops is followed by an explosion",
+        "casv": "A series of small pops is followed by an explosion"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.015289653092622757,
+        "clap_gt_audio_baseline": 0.23301264643669128,
+        "clap_text_casv": -0.015289653092622757,
+        "clap_gt_audio_casv": 0.23301264643669128
+      }
+    },
+    {
+      "id": "jj2RyNDj7no",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\jj2RyNDj7no.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jj2RyNDj7no.wav",
+      "gt_captions": [
+        "Bees buzz while birds call followed by man speaking",
+        "A man talking softly as insects buzz by while birds chirp in the background",
+        "Birds chirping as insects buzzing followed by a man talking in the distance",
+        "Bees buzz and birds call followed by man speaking",
+        "Insects are buzzing, and birds are chirping"
+      ],
+      "top_scene": [
+        "roof garden",
+        0.2902062237262726
+      ],
+      "top_object": [
+        "apiary",
+        0.9767698645591736
+      ],
+      "env_probs": {
+        "indoor": 0.1915426105260849,
+        "outdoor": 0.8084573894739151
+      },
+      "status": "ACCEPT",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+        "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3882613778114319,
+        "clap_gt_audio_baseline": 0.5076712369918823,
+        "clap_text_casv": 0.3882613778114319,
+        "clap_gt_audio_casv": 0.5076712369918823
+      }
+    },
+    {
+      "id": "F-47fRplQEc",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\F-47fRplQEc.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\F-47fRplQEc.wav",
+      "gt_captions": [
+        "Three young ladies' speech while sheep bleats",
+        "A woman talking as a sheep baa and birds are cawing in the background followed by a woman speaking in the foreground then another woman and kid talking",
+        "Different female voices speaking followed by sheep bleating from a distance and voices of young people shortly thereafter",
+        "Goats bleat followed by female speech and a younger female speaking",
+        "Wind blowing followed by a distant goat bleating and women speaking"
+      ],
+      "top_scene": [
+        "veterinarians office",
+        0.14693164825439453
+      ],
+      "top_object": [
+        "dromedary",
+        0.24202366173267365
+      ],
+      "env_probs": {
+        "indoor": 0.5082502961158752,
+        "outdoor": 0.49174970388412476
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+        "casv": "Multiple livestock communicating with one another in distress followed by a man laughing"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.0023470688611268997,
+        "clap_gt_audio_baseline": 0.22213564813137054,
+        "clap_text_casv": -0.0023470688611268997,
+        "clap_gt_audio_casv": 0.22213564813137054
+      }
+    },
+    {
+      "id": "4abZbau8tZo",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\4abZbau8tZo.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4abZbau8tZo.wav",
+      "gt_captions": [
+        "An engine idling and ticking with distant traffic and a man speaking",
+        "A man talking with light tapping and a vehicle passing by in the background",
+        "Waves roll in and a man speaks",
+        "Swirling wind followed by a man speaking and then a child talks",
+        "A man talking as rain falls on a hard surface as vehicles drive by followed by a child talking in the background"
+      ],
+      "top_scene": [
+        "beach house",
+        0.3013319671154022
+      ],
+      "top_object": [
+        "lighthouse",
+        0.06865096092224121
+      ],
+      "env_probs": {
+        "indoor": 0.05970187485218048,
+        "outdoor": 0.9402981251478195
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "Wind noise on ocean",
+        "casv": "Wind noise on ocean"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.1811700165271759,
+        "clap_gt_audio_baseline": 0.39814454317092896,
+        "clap_text_casv": 0.1811700165271759,
+        "clap_gt_audio_casv": 0.39814454317092896
+      }
+    },
+    {
+      "id": "ek9Fsmm3xqk",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\ek9Fsmm3xqk.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\ek9Fsmm3xqk.wav",
+      "gt_captions": [
+        "Some rowing sounds in water with light wind",
+        "Water splashing and trickling as wind blows into a microphone",
+        "Splashing with wind blowing hard",
+        "Wind blows and water smashes against kayak",
+        "Wind blows as water splashes"
+      ],
+      "top_scene": [
+        "raft",
+        0.278976172208786
+      ],
+      "top_object": [
+        "motorboat",
+        0.16307033598423004
+      ],
+      "env_probs": {
+        "indoor": 0.02402990311384201,
+        "outdoor": 0.975970096886158
+      },
+      "status": "ACCEPT",
+      "n_rejected": 12,
+      "prompts": {
+        "baseline": "Motorboat passing by with water and wind noise",
+        "casv": "Motorboat passing by with water and wind noise"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.09503016620874405,
+        "clap_gt_audio_baseline": 0.14867690205574036,
+        "clap_text_casv": 0.09503016620874405,
+        "clap_gt_audio_casv": 0.14867690205574036
+      }
+    },
+    {
+      "id": "6Nvu6EcpdE8",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\6Nvu6EcpdE8.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\6Nvu6EcpdE8.wav",
+      "gt_captions": [
+        "The wind is blowing, an adult male speaks via an electronic device, and a click occurs",
+        "Wind blowing with a man speaking followed by a click and light hum",
+        "Wind blows and a man speaks with a quick pop",
+        "A main is smoothly speaking over a loud faint noise",
+        "A man is talking then an engine turns on"
+      ],
+      "top_scene": [
+        "indoor garage",
+        0.4060698449611664
+      ],
+      "top_object": [
+        "race car",
+        0.4705544412136078
+      ],
+      "env_probs": {
+        "indoor": 0.8140270709991455,
+        "outdoor": 0.1859729290008545
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Mini race car engine revs along with tire squeal",
+        "casv": "A race car engine is being revved repeatedly"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.09938085079193115,
+        "clap_gt_audio_baseline": 0.223731130361557,
+        "clap_text_casv": -0.13310766220092773,
+        "clap_gt_audio_casv": 0.2214755117893219
+      }
+    },
+    {
+      "id": "iOCpICiu4LA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\iOCpICiu4LA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\iOCpICiu4LA.wav",
+      "gt_captions": [
+        "A man talking as birds chirp in the background followed by a loud popping",
+        "Birds chirp in the background while an adult male speaks and many bees buzz",
+        "Insects buzzing and birds chirping as a man talks followed by a loud plastic popping",
+        "A man speaks with chirping birds and faint buzzing of insects",
+        "Birds chirp and a great number of insects buzz, an adult male speaks, and then a sharp thump occurs"
+      ],
+      "top_scene": [
+        "outdoor greenhouse",
+        0.17655128240585327
+      ],
+      "top_object": [
+        "apiary",
+        0.5449942946434021
+      ],
+      "env_probs": {
+        "indoor": 0.3743886947631836,
+        "outdoor": 0.6256113052368164
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "Bees buzzing with a slight metal tapping sound near the end",
+        "casv": "Bees buzzing with a slight metal tapping sound near the end"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.25085151195526123,
+        "clap_gt_audio_baseline": 0.5220432281494141,
+        "clap_text_casv": 0.25085151195526123,
+        "clap_gt_audio_casv": 0.5220432281494141
+      }
+    },
+    {
+      "id": "TWOgvDaDqlU",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\TWOgvDaDqlU.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\TWOgvDaDqlU.wav",
+      "gt_captions": [
+        "Machine grinding wood",
+        "A power tool sawing wood followed by a machine motor running while cutting wood",
+        "A power tool drilling followed by a large motor running as wood is being sawed",
+        "High pitched metal whirring is followed by a large motor operating and low-pitched whirring and grinding of wood",
+        "Wood being sawed by a machine followed by a heavy machine motor running while sawing wood"
+      ],
+      "top_scene": [
+        "tree farm",
+        0.46628516912460327
+      ],
+      "top_object": [
+        "sawmill",
+        0.8995487689971924
+      ],
+      "env_probs": {
+        "indoor": 0.17642360925674438,
+        "outdoor": 0.8235763907432556
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Wood being sawed by machine",
+        "casv": "A machine is being used to saw wood"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.5396357774734497,
+        "clap_gt_audio_baseline": 0.5807886123657227,
+        "clap_text_casv": 0.28655779361724854,
+        "clap_gt_audio_casv": 0.28876399993896484
+      }
+    },
+    {
+      "id": "L6rnV0oNIII",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\L6rnV0oNIII.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\L6rnV0oNIII.wav",
+      "gt_captions": [
+        "A series of electronic beeps alongside plastic clicking and laser effects followed by a wooden thud and synthesized explosion",
+        "An electronic device beeping as plastic clacks with a toy zapping followed by a wooden thud and audio static",
+        "Laser followed by a gun shot",
+        "Digital beeping with some clicks",
+        "A beep and clicking noise repeat."
+      ],
+      "top_scene": [
+        "indoor bow window",
+        0.4114610254764557
+      ],
+      "top_object": [
+        "projectile",
+        0.4731869399547577
+      ],
+      "env_probs": {
+        "indoor": 0.7959905862808228,
+        "outdoor": 0.20400941371917725
+      },
+      "status": "ACCEPT",
+      "n_rejected": 5,
+      "prompts": {
+        "baseline": "A gun cocking followed by a gunshot firing during camera audio feedback",
+        "casv": "An automatic gunfire is triggered for a long period"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.27267929911613464,
+        "clap_gt_audio_baseline": 0.23295757174491882,
+        "clap_text_casv": 0.30473417043685913,
+        "clap_gt_audio_casv": 0.19294866919517517
+      }
+    },
+    {
+      "id": "lmPMhs-9IYE",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\lmPMhs-9IYE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lmPMhs-9IYE.wav",
+      "gt_captions": [
+        "A vehicle engine revving several times as a man speaks over an intercom along with a crowd of people talking and whistling",
+        "Revving of loud engines with people speaking and cheering",
+        "A vehicle engine revving as a crowd of people talk and whistle in the background",
+        "Revving of an engine with people cheering while someone speaks through a speaker",
+        "Distant humming of engines with people speaking and whistling"
+      ],
+      "top_scene": [
+        "raceway",
+        0.8579762578010559
+      ],
+      "top_object": [
+        "race car",
+        0.20192404091358185
+      ],
+      "env_probs": {
+        "indoor": 0.05934826284646988,
+        "outdoor": 0.9406517371535301
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A man speaks over a car racing while people laugh followed by a squeal",
+        "casv": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4591405391693115,
+        "clap_gt_audio_baseline": 0.49629050493240356,
+        "clap_text_casv": 0.4354628920555115,
+        "clap_gt_audio_casv": 0.5486471652984619
+      }
+    },
+    {
+      "id": "jjfUaMQaG1A",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\jjfUaMQaG1A.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jjfUaMQaG1A.wav",
+      "gt_captions": [
+        "A man speaks followed by vibrations of a power tool",
+        "A man talking followed by metal shuffling then a power tool drilling",
+        "A man talking followed by plastic clacking then a power tool drilling",
+        "A male speaking and then a drill turned on and off.",
+        "A man speaking together with intermittent, brief drill operating"
+      ],
+      "top_scene": [
+        "hardware store",
+        0.1250109076499939
+      ],
+      "top_object": [
+        "power drill",
+        0.7174860239028931
+      ],
+      "env_probs": {
+        "indoor": 0.7695116996765137,
+        "outdoor": 0.23048830032348633
+      },
+      "status": "ACCEPT",
+      "n_rejected": 12,
+      "prompts": {
+        "baseline": "A power tool drilling with a series of screeching",
+        "casv": "A power tool drilling with a series of screeching"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.0421382375061512,
+        "clap_gt_audio_baseline": 0.2900432348251343,
+        "clap_text_casv": 0.0421382375061512,
+        "clap_gt_audio_casv": 0.2900432348251343
+      }
+    },
+    {
+      "id": "jjHIINDfE1c",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\jjHIINDfE1c.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jjHIINDfE1c.wav",
+      "gt_captions": [
+        "Humming from an engine followed by loud honks of a horn",
+        "A tractor engine driving by followed by a car horn honking and wind blowing on a microphone",
+        "A tractor driving by as a car horn honks while wind blows into a microphone",
+        "A vehicle is in motion, and the horn sounds",
+        "Humming of a passing vehicle with a honking engine and wind blowing"
+      ],
+      "top_scene": [
+        "farm",
+        0.1178710088133812
+      ],
+      "top_object": [
+        "tractor",
+        0.5980978608131409
+      ],
+      "env_probs": {
+        "indoor": 0.3556849956512451,
+        "outdoor": 0.6443150043487549
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "Truck blows horn, while tires screech",
+        "casv": "Truck blows horn, while tires screech"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.20520074665546417,
+        "clap_gt_audio_baseline": 0.21663324534893036,
+        "clap_text_casv": 0.20520074665546417,
+        "clap_gt_audio_casv": 0.21663324534893036
+      }
+    },
+    {
+      "id": "_xylo5_IiaM",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\_xylo5_IiaM.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\_xylo5_IiaM.wav",
+      "gt_captions": [
+        "A woman talks and a baby whispers",
+        "A woman talking as a baby talks followed by plastic thumping",
+        "A woman and a baby are having a conversation",
+        "A woman speaks then a small child speaks",
+        "A young girl talking as a woman is talking"
+      ],
+      "top_scene": [
+        "playroom",
+        0.47056806087493896
+      ],
+      "top_object": [
+        "mousetrap",
+        0.18520355224609375
+      ],
+      "env_probs": {
+        "indoor": 0.9835220575332642,
+        "outdoor": 0.01647794246673584
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+        "casv": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.01826626993715763,
+        "clap_gt_audio_baseline": 0.3723759949207306,
+        "clap_text_casv": -0.01826626993715763,
+        "clap_gt_audio_casv": 0.3723759949207306
+      }
+    },
+    {
+      "id": "H7-orYrKBeo",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\H7-orYrKBeo.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\H7-orYrKBeo.wav",
+      "gt_captions": [
+        "A baby cries, and people are communicating",
+        "A child crying together with murmuring",
+        "A group of people talking as an infant cries while a muffled bus engine runs",
+        "A baby cries with a humming engine and some faint clicking",
+        "A child cries continually, while a motor vehicle engine runs quietly and several adult females and adult males speak"
+      ],
+      "top_scene": [
+        "trench",
+        0.05256621912121773
+      ],
+      "top_object": [
+        "jeans",
+        0.018352970480918884
+      ],
+      "env_probs": {
+        "indoor": 0.2318868339061737,
+        "outdoor": 0.7681131660938263
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "Scraping noise and then water splashing",
+        "casv": "Scraping noise and then water splashing"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.14300498366355896,
+        "clap_gt_audio_baseline": 0.16798561811447144,
+        "clap_text_casv": -0.14300498366355896,
+        "clap_gt_audio_casv": 0.16798561811447144
+      }
+    },
+    {
+      "id": "9MgGaTbmc6g",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\9MgGaTbmc6g.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\9MgGaTbmc6g.wav",
+      "gt_captions": [
+        "A vehicle accelerating and revving while tires are skidding",
+        "A car engine accelerating and revving while tires skid",
+        "A vehicle revving and accelerating as tires skid and squeak on a road",
+        "An engine revving and tires squealing",
+        "Car accelerating and skidding on tarmac"
+      ],
+      "top_scene": [
+        "parking lot",
+        0.6095597147941589
+      ],
+      "top_object": [
+        "go-kart",
+        0.14915858209133148
+      ],
+      "env_probs": {
+        "indoor": 0.053736694157123566,
+        "outdoor": 0.9462633058428764
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A car slowly moving pass in the rain followed by a man speaking",
+        "casv": "Cars going by in open area"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.0934680849313736,
+        "clap_gt_audio_baseline": 0.18103380501270294,
+        "clap_text_casv": 0.17243099212646484,
+        "clap_gt_audio_casv": 0.3685978949069977
+      }
+    },
+    {
+      "id": "pgq2KPX5_SA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\pgq2KPX5_SA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\pgq2KPX5_SA.wav",
+      "gt_captions": [
+        "A paper is being crumpled",
+        "Plastic and paper crinkling as cardboard clacks against a hard surface",
+        "Some crinkling of cellophane",
+        "Crumpling occurs followed by a thud and then crinkling",
+        "Paper is crinkling and crumpling, and thumping occurs"
+      ],
+      "top_scene": [
+        "bathroom",
+        0.26640236377716064
+      ],
+      "top_object": [
+        "shower cap",
+        0.1301800161600113
+      ],
+      "env_probs": {
+        "indoor": 0.9084398150444031,
+        "outdoor": 0.09156018495559692
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A toilet lid is opened then it is flushed",
+        "casv": "A toilet lid is opened then it is flushed"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.08290259540081024,
+        "clap_gt_audio_baseline": 0.4809386134147644,
+        "clap_text_casv": 0.08290259540081024,
+        "clap_gt_audio_casv": 0.4809386134147644
+      }
+    },
+    {
+      "id": "GE1aZSnPr2Q",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\GE1aZSnPr2Q.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GE1aZSnPr2Q.wav",
+      "gt_captions": [
+        "A man laughing",
+        "A person laughing",
+        "A man laughing",
+        "A person laughs",
+        "Brief silence followed by a man laughing"
+      ],
+      "top_scene": [
+        "pet shop",
+        0.11232030391693115
+      ],
+      "top_object": [
+        "Chow Chow",
+        0.09231352061033249
+      ],
+      "env_probs": {
+        "indoor": 0.33137771487236023,
+        "outdoor": 0.6686222851276398
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "A dog howls as a baby cries",
+        "casv": "A dog crying for some reason"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.050186119973659515,
+        "clap_gt_audio_baseline": 0.38199561834335327,
+        "clap_text_casv": 0.18591240048408508,
+        "clap_gt_audio_casv": 0.43401268124580383
+      }
+    },
+    {
+      "id": "fK4QBQZ6i7w",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\fK4QBQZ6i7w.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\fK4QBQZ6i7w.wav",
+      "gt_captions": [
+        "People are laughing",
+        "Multiple people laughing",
+        "People are laughing and chuckling",
+        "Woman laughs loudly as others chuckle as well",
+        "A hissing sound followed by laughter"
+      ],
+      "top_scene": [
+        "waiting room",
+        0.11131082475185394
+      ],
+      "top_object": [
+        "television",
+        0.0710064023733139
+      ],
+      "env_probs": {
+        "indoor": 0.9187337756156921,
+        "outdoor": 0.08126622438430786
+      },
+      "status": "ACCEPT",
+      "n_rejected": 4,
+      "prompts": {
+        "baseline": "A girl speaks, rustling of a camera followed by computer typing",
+        "casv": "A girl speaks, rustling of a camera followed by computer typing"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.039975330233573914,
+        "clap_gt_audio_baseline": 0.2065984159708023,
+        "clap_text_casv": -0.039975330233573914,
+        "clap_gt_audio_casv": 0.2065984159708023
+      }
+    },
+    {
+      "id": "Mj_BO-iK1G4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\Mj_BO-iK1G4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Mj_BO-iK1G4.wav",
+      "gt_captions": [
+        "A quick burst of vibrations from a sewing machine with clicking and rattling",
+        "A burst of vibration from a sewing machine followed by scraping and clicking",
+        "Vibrations from a sewing machine with clicking",
+        "A sewing machines a sewing then suddenly stopping with some squeezing",
+        "A sewing machine operating followed by metal clacking and gears cranking then scissors snipping"
+      ],
+      "top_scene": [
+        "repair shop",
+        0.36533668637275696
+      ],
+      "top_object": [
+        "sewing machine",
+        0.5788953304290771
+      ],
+      "env_probs": {
+        "indoor": 0.8144431114196777,
+        "outdoor": 0.18555688858032227
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Quick steady vibrations of a sewing machine",
+        "casv": "Quick steady vibrations of a sewing machine"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.5696364045143127,
+        "clap_gt_audio_baseline": 0.6771000623703003,
+        "clap_text_casv": 0.5696364045143127,
+        "clap_gt_audio_casv": 0.6771000623703003
+      }
+    },
+    {
+      "id": "CBwXKOpJY_o",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\CBwXKOpJY_o.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\CBwXKOpJY_o.wav",
+      "gt_captions": [
+        "A woman and a child speaking",
+        "A woman speaking with a child speaking",
+        "A woman and young boy talking",
+        "A woman and child speak",
+        "A woman talking followed by a kid talking while birds chirp in the background"
+      ],
+      "top_scene": [
+        "childs room",
+        0.11507800966501236
+      ],
+      "top_object": [
+        "binoculars",
+        0.11013640463352203
+      ],
+      "env_probs": {
+        "indoor": 0.6648397445678711,
+        "outdoor": 0.3351602554321289
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A young boy coughing then sneezing before talking",
+        "casv": "A kid crying and yelling"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.0011231377720832825,
+        "clap_gt_audio_baseline": 0.4371144771575928,
+        "clap_text_casv": 0.1347639411687851,
+        "clap_gt_audio_casv": 0.38842087984085083
+      }
+    },
+    {
+      "id": "CefFMA3klxk",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\CefFMA3klxk.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\CefFMA3klxk.wav",
+      "gt_captions": [
+        "A vehicle horn honking followed by a large truck engine accelerating while wind blows lightly into a microphone",
+        "Semi-truck honking then taking off.",
+        "A horn and then an engine revving",
+        "Roadway noise and a horn beep",
+        "Humming from a truck with a blowing horn"
+      ],
+      "top_scene": [
+        "highway",
+        0.09477894008159637
+      ],
+      "top_object": [
+        "semi-trailer truck",
+        0.8452961444854736
+      ],
+      "env_probs": {
+        "indoor": 0.15818406641483307,
+        "outdoor": 0.8418159335851669
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A car speeding past with a large boom",
+        "casv": "A truck moving away"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.18091446161270142,
+        "clap_gt_audio_baseline": 0.3368288576602936,
+        "clap_text_casv": 0.24727189540863037,
+        "clap_gt_audio_casv": 0.30626118183135986
+      }
+    },
+    {
+      "id": "PMMkPq5jJXY",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\PMMkPq5jJXY.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\PMMkPq5jJXY.wav",
+      "gt_captions": [
+        "Burping and then laughing with continuous burping",
+        "A person burps while people laugh",
+        "A person burps as people laugh",
+        "A person burps followed by laughter",
+        "A person belching several times as a group of people laugh"
+      ],
+      "top_scene": [
+        "coffee shop",
+        0.04916774854063988
+      ],
+      "top_object": [
+        "scarf",
+        0.16178828477859497
+      ],
+      "env_probs": {
+        "indoor": 0.8504642248153687,
+        "outdoor": 0.14953577518463135
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "Man speaking a foreign language and female voices yelling and screaming",
+        "casv": "Man speaking a foreign language and female voices yelling and screaming"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.08547793328762054,
+        "clap_gt_audio_baseline": 0.28009477257728577,
+        "clap_text_casv": 0.08547793328762054,
+        "clap_gt_audio_casv": 0.28009477257728577
+      }
+    },
+    {
+      "id": "FDwK7T1JO_0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\FDwK7T1JO_0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\FDwK7T1JO_0.wav",
+      "gt_captions": [
+        "Two men speaking followed by plastic clacking then a power tool drilling",
+        "An adult male speaks while two metal clinks occur, then a small drill operates with whirring and slight grinding",
+        "A male voice and then drilling",
+        "Two men communicating with each other followed by plastic clacking then a power tool drilling as wind softly blows into a microphone",
+        "Two men talking followed by plastic clacking then a power tool drilling"
+      ],
+      "top_scene": [
+        "archaelogical excavation",
+        0.08057792484760284
+      ],
+      "top_object": [
+        "holster",
+        0.13114091753959656
+      ],
+      "env_probs": {
+        "indoor": 0.6741697788238525,
+        "outdoor": 0.32583022117614746
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A man pours liquid into a pot",
+        "casv": "Man talking then tapping on an item"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.12633538246154785,
+        "clap_gt_audio_baseline": 0.17072688043117523,
+        "clap_text_casv": 0.04731008782982826,
+        "clap_gt_audio_casv": 0.3775824010372162
+      }
+    },
+    {
+      "id": "nD1K1Zo0qrM",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\nD1K1Zo0qrM.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\nD1K1Zo0qrM.wav",
+      "gt_captions": [
+        "Loud clicks with gusting wind and several rapid fire gunshots",
+        "Several rapid gunshots with a distant aircraft passing by with a booming engine",
+        "A series of machine gunfire and two gunshots firing as a jet aircraft flies by followed by soft music playing",
+        "An aircraft engine operates and whooshing is ongoing while a machine gun clicks and fires, after which music plays",
+        "Humming and rattling with rapid fire gunshots and loud bursts"
+      ],
+      "top_scene": [
+        "berth",
+        0.022225819528102875
+      ],
+      "top_object": [
+        "horizontal bar",
+        0.018119076266884804
+      ],
+      "env_probs": {
+        "indoor": 0.5085118412971497,
+        "outdoor": 0.49148815870285034
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A tick locking sound with crumpling near the end",
+        "casv": "A mechanical part moving, followed by beeping, which subsequently stops and then the mechanical part moving again"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.05948738008737564,
+        "clap_gt_audio_baseline": 0.18518899381160736,
+        "clap_text_casv": 0.16490772366523743,
+        "clap_gt_audio_casv": 0.3520262837409973
+      }
+    },
+    {
+      "id": "OFVzrakJhbw",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\OFVzrakJhbw.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\OFVzrakJhbw.wav",
+      "gt_captions": [
+        "A woman laughing followed by a sheep baaing and wind blowing into a microphone",
+        "A woman laughs with some wind blowing and sheep bleating",
+        "A woman laughing followed by the bleating of sheep and a soft breeze",
+        "A woman speaks with distant goats bleating and wind blowing",
+        "The wind is blowing, and an adult male laughs and animals bleat"
+      ],
+      "top_scene": [
+        "pasture",
+        0.38208022713661194
+      ],
+      "top_object": [
+        "Kuvasz",
+        0.38988542556762695
+      ],
+      "env_probs": {
+        "indoor": 0.03759763389825821,
+        "outdoor": 0.9624023661017418
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "A dog barking followed by some human speech and the noises made by sheep",
+        "casv": "A dog barking followed by some human speech and the noises made by sheep"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.05531557649374008,
+        "clap_gt_audio_baseline": 0.26767152547836304,
+        "clap_text_casv": -0.05531557649374008,
+        "clap_gt_audio_casv": 0.26767152547836304
+      }
+    },
+    {
+      "id": "lYhwCRX2wNc",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\lYhwCRX2wNc.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lYhwCRX2wNc.wav",
+      "gt_captions": [
+        "Plates rattling and clanking as a woman talks and a faucet pours water",
+        "Water splashes and a woman speaks",
+        "A woman talking as water trickles followed by porcelain dishes clanking",
+        "Water is running and splashing while an adult female speaks and dishes clink",
+        "A woman speaks with dishes clanging and water running in the background"
+      ],
+      "top_scene": [
+        "restaurant kitchen",
+        0.35320842266082764
+      ],
+      "top_object": [
+        "apron",
+        0.18481996655464172
+      ],
+      "env_probs": {
+        "indoor": 0.9868044853210449,
+        "outdoor": 0.013195514678955078
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "A squeaking cabinet sound is followed by a child and mother speaking while clanking dishes",
+        "casv": "A squeaking cabinet sound is followed by a child and mother speaking while clanking dishes"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.21508106589317322,
+        "clap_gt_audio_baseline": 0.18877530097961426,
+        "clap_text_casv": 0.21508106589317322,
+        "clap_gt_audio_casv": 0.18877530097961426
+      }
+    },
+    {
+      "id": "WCYfCfW9NA0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\WCYfCfW9NA0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WCYfCfW9NA0.wav",
+      "gt_captions": [
+        "An idle helicopter engine running as birds chirp in the background",
+        "Whirring and whooshing of a low helicopter",
+        "High pitched humming with whooshes of spinning helicopter blades",
+        "High-pitched turbine noise from helicopter, rhythmic squeaking, motor sound grows louder",
+        "Blades of a helicopter spinning and getting ready to take off"
+      ],
+      "top_scene": [
+        "cockpit",
+        0.7770901918411255
+      ],
+      "top_object": [
+        "military aircraft",
+        0.359078586101532
+      ],
+      "env_probs": {
+        "indoor": 0.8170835375785828,
+        "outdoor": 0.18291646242141724
+      },
+      "status": "ACCEPT",
+      "n_rejected": 19,
+      "prompts": {
+        "baseline": "Speech in a helicopter",
+        "casv": "Sound of an aircraft that fly by going support from the air"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.22255617380142212,
+        "clap_gt_audio_baseline": 0.28326618671417236,
+        "clap_text_casv": 0.13074928522109985,
+        "clap_gt_audio_casv": 0.24499830603599548
+      }
+    },
+    {
+      "id": "w_Utn3CwAXE",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\w_Utn3CwAXE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\w_Utn3CwAXE.wav",
+      "gt_captions": [
+        "A toilet flushes and a door creaks as it opens",
+        "A toilet flushing followed by plastic clacking and a door slowly creaking",
+        "A toilet flushes followed by a metal latch clanking then a door slowly creaking open",
+        "Water trickles down followed by some rattling",
+        "A toilet flushing with footsteps and door opening"
+      ],
+      "top_scene": [
+        "indoor jacuzzi",
+        0.09438040852546692
+      ],
+      "top_object": [
+        "Chihuahua",
+        0.037774354219436646
+      ],
+      "env_probs": {
+        "indoor": 0.7787623405456543,
+        "outdoor": 0.2212376594543457
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "A cat meows while some liquid flow",
+        "casv": "Water running while cat meows"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.2658229172229767,
+        "clap_gt_audio_baseline": 0.2766376733779907,
+        "clap_text_casv": 0.039332129061222076,
+        "clap_gt_audio_casv": 0.15211240947246552
+      }
+    },
+    {
+      "id": "n74IYuCe_ms",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\n74IYuCe_ms.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\n74IYuCe_ms.wav",
+      "gt_captions": [
+        "A river stream flowing followed by a kid talking",
+        "A large volume of water is rushing, splashing and gurgling, and an adult male speaks briefly",
+        "A stream of water rushing and trickling followed by a young man whooshing",
+        "Sounds of a river with man briefly mumbling",
+        "A stream burbles while a man speaks"
+      ],
+      "top_scene": [
+        "creek",
+        0.44316256046295166
+      ],
+      "top_object": [
+        "backpack",
+        0.19723232090473175
+      ],
+      "env_probs": {
+        "indoor": 0.05306678265333176,
+        "outdoor": 0.9469332173466682
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "A guy is wading through a stream, ends with a cackle",
+        "casv": "A stream goes by quickly and the whooshing sound is close by"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3193121552467346,
+        "clap_gt_audio_baseline": 0.33032578229904175,
+        "clap_text_casv": 0.2890816926956177,
+        "clap_gt_audio_casv": 0.4036270081996918
+      }
+    },
+    {
+      "id": "W4GEwnXc9tQ",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\W4GEwnXc9tQ.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\W4GEwnXc9tQ.wav",
+      "gt_captions": [
+        "A woman speaks with chirping frogs and distant music playing",
+        "Music plays as a woman speaks while a frog croaks followed by girl and boy speaking",
+        "While music plays in the background, a frog croaks, young females speak and laugh, and a young male speaks",
+        "Music is playing, people are talking and a frog croaks",
+        "A woman speaks an frog croaks followed by wind blowing as others speak"
+      ],
+      "top_scene": [
+        "lawn",
+        0.18603478372097015
+      ],
+      "top_object": [
+        "eastern hog-nosed snake",
+        0.5606334805488586
+      ],
+      "env_probs": {
+        "indoor": 0.1960962414741516,
+        "outdoor": 0.8039037585258484
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "A stick falls and then a snake squirms",
+        "casv": "A stick falls and then a snake squirms"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.012815749272704124,
+        "clap_gt_audio_baseline": -0.060662802308797836,
+        "clap_text_casv": 0.012815749272704124,
+        "clap_gt_audio_casv": -0.060662802308797836
+      }
+    },
+    {
+      "id": "4YMXgLFcR94",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\4YMXgLFcR94.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4YMXgLFcR94.wav",
+      "gt_captions": [
+        "Male speaking and then applause",
+        "An adult male speaks, with his voice amplified, after which crowd of people clap",
+        "A man speaks and then an audience claps",
+        "A man speaks followed by applause",
+        "A man speaks, and an audience applauds"
+      ],
+      "top_scene": [
+        "reception",
+        0.20646126568317413
+      ],
+      "top_object": [
+        "prayer rug",
+        0.07005558162927628
+      ],
+      "env_probs": {
+        "indoor": 0.8209971189498901,
+        "outdoor": 0.17900288105010986
+      },
+      "status": "ACCEPT",
+      "n_rejected": 4,
+      "prompts": {
+        "baseline": "Man sneezes during his speech",
+        "casv": "Low volume voice in the background, followed by a man's speech and a sound of gunshot"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.032613467425107956,
+        "clap_gt_audio_baseline": 0.2462809979915619,
+        "clap_text_casv": -0.11275433003902435,
+        "clap_gt_audio_casv": 0.176978200674057
+      }
+    },
+    {
+      "id": "5K1mISHwggI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\5K1mISHwggI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\5K1mISHwggI.wav",
+      "gt_captions": [
+        "Men are speaking with an engine sound in the background",
+        "A person speaks, traffic passes by",
+        "A man speaks with others speaking in the distance and traffic passing with a few horns honking",
+        "A man speaking with distant hums and horns of passing traffic",
+        "Men speak with traffic passing in the distance with a honk of a horn"
+      ],
+      "top_scene": [
+        "repair shop",
+        0.17752225697040558
+      ],
+      "top_object": [
+        "chainsaw",
+        0.494304358959198
+      ],
+      "env_probs": {
+        "indoor": 0.4828871488571167,
+        "outdoor": 0.5171128511428833
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A chainsaw engine making a prolonged and loud sawing noise",
+        "casv": "The motor of a chainsaw cutting"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.09773338586091995,
+        "clap_gt_audio_baseline": 0.26189497113227844,
+        "clap_text_casv": 0.12283621728420258,
+        "clap_gt_audio_casv": 0.28964394330978394
+      }
+    },
+    {
+      "id": "VQnmlf2OsUg",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\VQnmlf2OsUg.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\VQnmlf2OsUg.wav",
+      "gt_captions": [
+        "Helicopter blades spinning",
+        "High pitched vibrations from a small motor",
+        "A toy helicopter flying",
+        "Helicopter rotors are turning.",
+        "A high pitched engine running consistently with intermittent scraping"
+      ],
+      "top_scene": [
+        "tree house",
+        0.6956691741943359
+      ],
+      "top_object": [
+        "birdhouse",
+        0.08975207805633545
+      ],
+      "env_probs": {
+        "indoor": 0.04914599284529686,
+        "outdoor": 0.9508540071547031
+      },
+      "status": "ACCEPT",
+      "n_rejected": 2,
+      "prompts": {
+        "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+        "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.08566690981388092,
+        "clap_gt_audio_baseline": 0.0855509340763092,
+        "clap_text_casv": 0.08566690981388092,
+        "clap_gt_audio_casv": 0.0855509340763092
+      }
+    },
+    {
+      "id": "TQr9v-PQOc4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\TQr9v-PQOc4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\TQr9v-PQOc4.wav",
+      "gt_captions": [
+        "Some clicking followed by a sneeze and a man laughing",
+        "Several faint clicks are followed by a person sneezing and coughing",
+        "A person sneezes and coughs",
+        "Someone sneezes through static and then coughs several times in quick succession",
+        "Humming noise then sneezing and coughing"
+      ],
+      "top_scene": [
+        "shower",
+        0.10475414246320724
+      ],
+      "top_object": [
+        "bridegroom",
+        0.06324291229248047
+      ],
+      "env_probs": {
+        "indoor": 0.7440168857574463,
+        "outdoor": 0.2559831142425537
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+        "casv": "A man speaks with light breathing and mild tapping noise in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.07133940607309341,
+        "clap_gt_audio_baseline": 0.27144715189933777,
+        "clap_text_casv": 0.01616249792277813,
+        "clap_gt_audio_casv": 0.3033080995082855
+      }
+    },
+    {
+      "id": "inSvboaSRwA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\inSvboaSRwA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\inSvboaSRwA.wav",
+      "gt_captions": [
+        "A male speaking and a saw running",
+        "Continuous buzzing and clanking",
+        "A machine motor running as a man is speaking followed by rapid buzzing",
+        "A man talking as a machine motor hums followed by electronic buzzing",
+        "A man speaking while power tools are whirring and running in the background"
+      ],
+      "top_scene": [
+        "assembly line",
+        0.38973793387413025
+      ],
+      "top_object": [
+        "hand plane",
+        0.12143499404191971
+      ],
+      "env_probs": {
+        "indoor": 0.8904474973678589,
+        "outdoor": 0.10955250263214111
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "Wood cracking while a machine works",
+        "casv": "Wood cracking while a machine works"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.10954596847295761,
+        "clap_gt_audio_baseline": 0.11221324652433395,
+        "clap_text_casv": -0.10954596847295761,
+        "clap_gt_audio_casv": 0.11221324652433395
+      }
+    },
+    {
+      "id": "WqXFAY4k79s",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\WqXFAY4k79s.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WqXFAY4k79s.wav",
+      "gt_captions": [
+        "Rain falling with young female speaking",
+        "A girl speaks while rain pitter-patters followed by male sneezing",
+        "Several loud pops followed by one woman laughing and another speaking",
+        "A person coughs with rain noise in the background, and a woman speaks",
+        "A person laughing followed by a girl shouting as rain is falling on a plastic surface"
+      ],
+      "top_scene": [
+        "wild field",
+        0.1729878932237625
+      ],
+      "top_object": [
+        "miniskirt",
+        0.20712240040302277
+      ],
+      "env_probs": {
+        "indoor": 0.17275908589363098,
+        "outdoor": 0.827240914106369
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "A motor vehicle accelerates and speeds while a girl screams near the end",
+        "casv": "Pounding is followed by kids talking and then a young woman begins speaking"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.14699602127075195,
+        "clap_gt_audio_baseline": -0.09914667904376984,
+        "clap_text_casv": 0.21594743430614471,
+        "clap_gt_audio_casv": 0.25878944993019104
+      }
+    },
+    {
+      "id": "a3GzZKxUTy8",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\a3GzZKxUTy8.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\a3GzZKxUTy8.wav",
+      "gt_captions": [
+        "Birds chirp and a duck quacks followed by a dog barking",
+        "A duck quacking followed by a dog whimpering then glass tapping as a film projector runs while birds chirp in the background",
+        "Birds chirping and then a dog barking and a duck quaking",
+        "A duck quacking followed by a dog barking as birds chirp then plastic popping and a film reel rolling",
+        "A bird squawks followed by a dog whimpering"
+      ],
+      "top_scene": [
+        "archaelogical excavation",
+        0.15291918814182281
+      ],
+      "top_object": [
+        "Rottweiler",
+        0.2945265769958496
+      ],
+      "env_probs": {
+        "indoor": 0.34483247995376587,
+        "outdoor": 0.6551675200462341
+      },
+      "status": "ACCEPT",
+      "n_rejected": 4,
+      "prompts": {
+        "baseline": "A pet dog rubs an object and then pants quietly",
+        "casv": "A dog whimpers multiple times as an object is dragged on a surface"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.03636257350444794,
+        "clap_gt_audio_baseline": 0.4203859567642212,
+        "clap_text_casv": 0.022521672770380974,
+        "clap_gt_audio_casv": 0.2527856230735779
+      }
+    },
+    {
+      "id": "3ue0gJM0THk",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\3ue0gJM0THk.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\3ue0gJM0THk.wav",
+      "gt_captions": [
+        "Loud vibrations from a revving engine that increases",
+        "Loud high frequency buzzing and revving of a propeller",
+        "Aircraft engine revs and creates propeller which",
+        "A power tool motor running then revving",
+        "A motor is revving up"
+      ],
+      "top_scene": [
+        "outdoor greenhouse",
+        0.199839249253273
+      ],
+      "top_object": [
+        "oil filter",
+        0.1995639055967331
+      ],
+      "env_probs": {
+        "indoor": 0.48706716299057007,
+        "outdoor": 0.5129328370094299
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A machine engine pump running and rattling with pressurized air spraying",
+        "casv": "A machine engine pump running and rattling with pressurized air spraying"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.18226873874664307,
+        "clap_gt_audio_baseline": 0.20894372463226318,
+        "clap_text_casv": 0.18226873874664307,
+        "clap_gt_audio_casv": 0.20894372463226318
+      }
+    },
+    {
+      "id": "2msevPMQB4M",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\2msevPMQB4M.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\2msevPMQB4M.wav",
+      "gt_captions": [
+        "A drilling sound with humming in the background",
+        "A power tool drill operating followed by compressed air releasing and steam hissing",
+        "A power tool vibrating and humming",
+        "A power tool is being used to cut",
+        "A machine is drilling"
+      ],
+      "top_scene": [
+        "physics laboratory",
+        0.20272141695022583
+      ],
+      "top_object": [
+        "torch",
+        0.21372878551483154
+      ],
+      "env_probs": {
+        "indoor": 0.8985657691955566,
+        "outdoor": 0.10143423080444336
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "Sharp ringing from metal being drilled into by a power tool",
+        "casv": "A machine cutting into an object"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4992993175983429,
+        "clap_gt_audio_baseline": 0.5326587557792664,
+        "clap_text_casv": 0.3452083468437195,
+        "clap_gt_audio_casv": 0.40344858169555664
+      }
+    },
+    {
+      "id": "sJrFyjfrL-g",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\sJrFyjfrL-g.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sJrFyjfrL-g.wav",
+      "gt_captions": [
+        "A sewing machine operating during several metal clacks",
+        "Slow vibrations of a sewing machine with several clicks",
+        "A sewing machine operating during several metal clacks",
+        "A sewing machine lightly operating after a couple of metal clacks",
+        "Metal clicking and clacking as a sewing machine slowly operates"
+      ],
+      "top_scene": [
+        "assembly line",
+        0.1666405349969864
+      ],
+      "top_object": [
+        "ring binder",
+        0.5031932592391968
+      ],
+      "env_probs": {
+        "indoor": 0.8846691250801086,
+        "outdoor": 0.11533087491989136
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "A sewing machine is being used in an articulate way",
+        "casv": "A sewing machine is being used in an articulate way"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.27466583251953125,
+        "clap_gt_audio_baseline": 0.461035817861557,
+        "clap_text_casv": 0.27466583251953125,
+        "clap_gt_audio_casv": 0.461035817861557
+      }
+    },
+    {
+      "id": "xpZna_FwDhI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\xpZna_FwDhI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\xpZna_FwDhI.wav",
+      "gt_captions": [
+        "A click occurs then a woman speaks followed by a sewing machine stitching",
+        "A click occurs and then a woman speaks followed by a sewing machine stitching",
+        "A click is followed by a woman speaking and then a sewing machine stitching",
+        "Brief clanking followed by a woman speaking and sewing machine working",
+        "Woman speaks and then sewing machine stitches"
+      ],
+      "top_scene": [
+        "assembly line",
+        0.2671416699886322
+      ],
+      "top_object": [
+        "sewing machine",
+        0.7729880213737488
+      ],
+      "env_probs": {
+        "indoor": 0.984785795211792,
+        "outdoor": 0.015214204788208008
+      },
+      "status": "ACCEPT",
+      "n_rejected": 5,
+      "prompts": {
+        "baseline": "A sewing machine operating and fabric shuffling",
+        "casv": "A sewing machine clicks then is used lightly"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.016613803803920746,
+        "clap_gt_audio_baseline": 0.17769655585289001,
+        "clap_text_casv": 0.3196571469306946,
+        "clap_gt_audio_casv": 0.4782937169075012
+      }
+    },
+    {
+      "id": "1Og2TJ3bXW0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\1Og2TJ3bXW0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\1Og2TJ3bXW0.wav",
+      "gt_captions": [
+        "An aircraft engine running then slowing down after a plastic click",
+        "A quiet whirring of an airplane",
+        "An aircraft engine humming followed by plastic clanking then an aircraft engine slowing down",
+        "The whir of an aircraft engine",
+        "An aircraft engine running then slowing down with a plastic clank in the background"
+      ],
+      "top_scene": [
+        "runway",
+        0.4865896999835968
+      ],
+      "top_object": [
+        "airliner",
+        0.3620193302631378
+      ],
+      "env_probs": {
+        "indoor": 0.14254343509674072,
+        "outdoor": 0.8574565649032593
+      },
+      "status": "ACCEPT",
+      "n_rejected": 14,
+      "prompts": {
+        "baseline": "A loud airplane engine sound with a whoosh noise near the end",
+        "casv": "An airplane running"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.11211967468261719,
+        "clap_gt_audio_baseline": 0.27300336956977844,
+        "clap_text_casv": 0.06338414549827576,
+        "clap_gt_audio_casv": 0.47462064027786255
+      }
+    },
+    {
+      "id": "JQz40TkjymY",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\JQz40TkjymY.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\JQz40TkjymY.wav",
+      "gt_captions": [
+        "Typing on a computer keyboard",
+        "Typing on a keyboard is occurring in a quiet environment",
+        "Typing on a keyboard is ongoing in a quiet environment",
+        "Typing on a computer keyboard",
+        "Typing on a computer keyboard"
+      ],
+      "top_scene": [
+        "computer room",
+        0.2792151868343353
+      ],
+      "top_object": [
+        "computer keyboard",
+        0.7490342855453491
+      ],
+      "env_probs": {
+        "indoor": 0.8401869535446167,
+        "outdoor": 0.1598130464553833
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A person presses several keyboard keys at the same time",
+        "casv": "A person types on a computer keyboard and then talks"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.2915937602519989,
+        "clap_gt_audio_baseline": 0.48400652408599854,
+        "clap_text_casv": 0.2921715974807739,
+        "clap_gt_audio_casv": 0.5390881896018982
+      }
+    },
+    {
+      "id": "MBP4RcnwGZw",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\MBP4RcnwGZw.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\MBP4RcnwGZw.wav",
+      "gt_captions": [
+        "A woman speaks while a crowd talks and chuckles",
+        "An adult female speaks, an adult male speaks, and a crowd of people laugh and talk in the background",
+        "A woman talking then laughing as a crowd of people talk in the background",
+        "People speak with wind blowing and distant hums of traffic",
+        "A woman speaks with others speaking in the distance and wind blowing"
+      ],
+      "top_scene": [
+        "art gallery",
+        0.13000302016735077
+      ],
+      "top_object": [
+        "purse",
+        0.04878895357251167
+      ],
+      "env_probs": {
+        "indoor": 0.7397578954696655,
+        "outdoor": 0.2602421045303345
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "An English speaking woman opening a package",
+        "casv": "An English speaking woman opening a package"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.16774198412895203,
+        "clap_gt_audio_baseline": 0.29468172788619995,
+        "clap_text_casv": 0.16774198412895203,
+        "clap_gt_audio_casv": 0.29468172788619995
+      }
+    },
+    {
+      "id": "sqsI2UyrcBQ",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\sqsI2UyrcBQ.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sqsI2UyrcBQ.wav",
+      "gt_captions": [
+        "A car engine revs producing a room and a whine",
+        "A revving sound is accelerating",
+        "A vehicle engine accelerating and revving",
+        "A vehicle engine revving then slowing down before revving again",
+        "A vehicle engine revving several times"
+      ],
+      "top_scene": [
+        "indoor garage",
+        0.16094976663589478
+      ],
+      "top_object": [
+        "motorboat",
+        0.34390634298324585
+      ],
+      "env_probs": {
+        "indoor": 0.6074278950691223,
+        "outdoor": 0.3925721049308777
+      },
+      "status": "ACCEPT",
+      "n_rejected": 12,
+      "prompts": {
+        "baseline": "Revving engine follow by door shutting",
+        "casv": "Revving engine follow by door shutting"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3243226110935211,
+        "clap_gt_audio_baseline": 0.3700014054775238,
+        "clap_text_casv": 0.3243226110935211,
+        "clap_gt_audio_casv": 0.3700014054775238
+      }
+    },
+    {
+      "id": "EvZ3jOMYWxk",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\EvZ3jOMYWxk.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\EvZ3jOMYWxk.wav",
+      "gt_captions": [
+        "A woman speaks while delivering a speech",
+        "An adult female is speaking in a quiet environment",
+        "A woman is speaking in a quiet environment",
+        "A woman is performing a speech",
+        "A woman delivering a speech"
+      ],
+      "top_scene": [
+        "closet",
+        0.14844389259815216
+      ],
+      "top_object": [
+        "miniskirt",
+        0.34360945224761963
+      ],
+      "env_probs": {
+        "indoor": 0.8334503173828125,
+        "outdoor": 0.1665496826171875
+      },
+      "status": "ACCEPT",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "A girl speaks, rustling of a camera followed by computer typing",
+        "casv": "A girl speaking followed by a monologue"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.0008228272199630737,
+        "clap_gt_audio_baseline": 0.22764484584331512,
+        "clap_text_casv": 0.6006016731262207,
+        "clap_gt_audio_casv": 0.8134936094284058
+      }
+    },
+    {
+      "id": "K8-b0VtNOqA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\K8-b0VtNOqA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\K8-b0VtNOqA.wav",
+      "gt_captions": [
+        "Floor sweeping and a man then a woman talking in the background followed by horses neighing",
+        "Horses snorting and neighing as a man talks followed by a door creaking shut before woman talks in the background",
+        "Horses snorting then neighing as footsteps shuffle and people talk in the background",
+        "A door banging, a loud squeal, and some low voices in the background",
+        "A horse vocalizing and muffled speech"
+      ],
+      "top_scene": [
+        "corral",
+        0.35029855370521545
+      ],
+      "top_object": [
+        "butcher shop",
+        0.2587696611881256
+      ],
+      "env_probs": {
+        "indoor": 0.47388750314712524,
+        "outdoor": 0.5261124968528748
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+        "casv": "Tapping noises followed by livestock communicating"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.21127957105636597,
+        "clap_gt_audio_baseline": 0.36964237689971924,
+        "clap_text_casv": -0.06155514717102051,
+        "clap_gt_audio_casv": 0.4399526119232178
+      }
+    },
+    {
+      "id": "52IxrdTxGs4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\52IxrdTxGs4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\52IxrdTxGs4.wav",
+      "gt_captions": [
+        "A large explosion and a heartbeat, a person speaks",
+        "A loud burst followed by humming and a heartbeat then a man speaks",
+        "An explosion and heart beating as instrumental music plays followed by a man talking",
+        "A quick loud explosion as music plays with pulsating sounds followed by a man talking",
+        "A loud burst followed by musical notes and a heartbeat followed by a man speaking"
+      ],
+      "top_scene": [
+        "closet",
+        0.05395291745662689
+      ],
+      "top_object": [
+        "black stork",
+        0.01830935664474964
+      ],
+      "env_probs": {
+        "indoor": 0.4752134084701538,
+        "outdoor": 0.5247865915298462
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "Loud burst of noise with cartoon sounding voices",
+        "casv": "Background noises from a video game being played"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4498496353626251,
+        "clap_gt_audio_baseline": 0.2910604476928711,
+        "clap_text_casv": 0.329101026058197,
+        "clap_gt_audio_casv": 0.4050043225288391
+      }
+    },
+    {
+      "id": "Dc2WEiRk0rA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\Dc2WEiRk0rA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Dc2WEiRk0rA.wav",
+      "gt_captions": [
+        "Water spraying on a plastic surface",
+        "Continuous spraying up and down",
+        "Hissing spray is occurring, and liquid is pattering on a surface",
+        "High powered hissing and wind blowing",
+        "Continuous spray"
+      ],
+      "top_scene": [
+        "outdoor garage",
+        0.16178497672080994
+      ],
+      "top_object": [
+        "tile roof",
+        0.9398530125617981
+      ],
+      "env_probs": {
+        "indoor": 0.3841763138771057,
+        "outdoor": 0.6158236861228943
+      },
+      "status": "ACCEPT",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "Sharp air noises spraying",
+        "casv": "Rain falls onto a metal roof and a man speaks"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.549423098564148,
+        "clap_gt_audio_baseline": 0.6073769330978394,
+        "clap_text_casv": 0.22566290199756622,
+        "clap_gt_audio_casv": 0.15724986791610718
+      }
+    },
+    {
+      "id": "WUyeFOyKIg0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\WUyeFOyKIg0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WUyeFOyKIg0.wav",
+      "gt_captions": [
+        "Man speaks midst a crowd, a distant horn blow, then a race car goes by",
+        "A vehicle driving in the distance followed by tires skidding as a vehicle drives by while a crowd of people talk in the background and wind blows into a microphone",
+        "Wind and people speaking and a car passing by",
+        "A race car engine hums in the distance as wind blows into a microphone and a crowd of people talk followed by a race car speeding by",
+        "A racing vehicle driving in the distance then driving by as a crowd of people talk in the background followed by a horn honking while wind blows into a microphone"
+      ],
+      "top_scene": [
+        "raceway",
+        0.3178098499774933
+      ],
+      "top_object": [
+        "mountain bike",
+        0.1991233080625534
+      ],
+      "env_probs": {
+        "indoor": 0.04370691254734993,
+        "outdoor": 0.9562930874526501
+      },
+      "status": "REPAIR",
+      "n_rejected": 14,
+      "prompts": {
+        "baseline": "A dirt bike speeds by, followed by several other dirt bikes racing together",
+        "casv": "A motorcycle starting up and pulling off"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.13438186049461365,
+        "clap_gt_audio_baseline": 0.349835604429245,
+        "clap_text_casv": 0.2749384045600891,
+        "clap_gt_audio_casv": 0.6532368659973145
+      }
+    },
+    {
+      "id": "naPgJvWTIY4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\naPgJvWTIY4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\naPgJvWTIY4.wav",
+      "gt_captions": [
+        "An engine running and then revving",
+        "A motorcycle engine running idle then revving its engine",
+        "A motorbike running idle then revving",
+        "A motorcycle engine running idle then revving",
+        "A motorcycle engine idles and then shifts gears"
+      ],
+      "top_scene": [
+        "raceway",
+        0.8789694905281067
+      ],
+      "top_object": [
+        "go-kart",
+        0.2585608959197998
+      ],
+      "env_probs": {
+        "indoor": 0.046416327357292175,
+        "outdoor": 0.9535836726427078
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "A motorcycle accelerating with a man laughing in the background and a person cheering",
+        "casv": "A motorcycle engine accelerating and revving then lowering speed"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3078345060348511,
+        "clap_gt_audio_baseline": 0.4588606357574463,
+        "clap_text_casv": 0.2937377989292145,
+        "clap_gt_audio_casv": 0.4652179181575775
+      }
+    },
+    {
+      "id": "yL3gKa6YLoM",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\yL3gKa6YLoM.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\yL3gKa6YLoM.wav",
+      "gt_captions": [
+        "A person snoring with another man speaking",
+        "A man talking as a person is snoring",
+        "A man speaking followed by snoring",
+        "Two men speaking",
+        "A man talking as a person is snoring and a vehicle accelerates in the distance"
+      ],
+      "top_scene": [
+        "dorm room",
+        0.08779504895210266
+      ],
+      "top_object": [
+        "pillow",
+        0.08165134489536285
+      ],
+      "env_probs": {
+        "indoor": 0.7309144735336304,
+        "outdoor": 0.26908552646636963
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "A fan spins while a person snores",
+        "casv": "Someone breathes heavily while sleeping"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.011258564889431,
+        "clap_gt_audio_baseline": 0.31206077337265015,
+        "clap_text_casv": 0.13059958815574646,
+        "clap_gt_audio_casv": 0.21804574131965637
+      }
+    },
+    {
+      "id": "ROootH-mtEI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\ROootH-mtEI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\ROootH-mtEI.wav",
+      "gt_captions": [
+        "A river stream of water flowing",
+        "Water moving down a stream swiftly",
+        "A river stream flowing rapidly",
+        "Water flows loudly",
+        "Water flowing down a river"
+      ],
+      "top_scene": [
+        "driveway",
+        0.13759401440620422
+      ],
+      "top_object": [
+        "patio",
+        0.029158329591155052
+      ],
+      "env_probs": {
+        "indoor": 0.16487732529640198,
+        "outdoor": 0.835122674703598
+      },
+      "status": "ACCEPT",
+      "n_rejected": 1,
+      "prompts": {
+        "baseline": "A remote control car moving with a stream flowing in the background",
+        "casv": "A cat meows quietly nearby, followed by footsteps"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.21786223351955414,
+        "clap_gt_audio_baseline": 0.2305590808391571,
+        "clap_text_casv": 0.03987126052379608,
+        "clap_gt_audio_casv": 0.17721180617809296
+      }
+    },
+    {
+      "id": "R8bHTHnF8j4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\R8bHTHnF8j4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\R8bHTHnF8j4.wav",
+      "gt_captions": [
+        "A helicopter engine running idle",
+        "Helicopter rotors slowing down",
+        "A helicopter engine running idle",
+        "An engine running and helicopter propellers spinning",
+        "Vibrations and wind with loud humming of an engine"
+      ],
+      "top_scene": [
+        "heliport",
+        0.8472686409950256
+      ],
+      "top_object": [
+        "stretcher",
+        0.7800605893135071
+      ],
+      "env_probs": {
+        "indoor": 0.04602588340640068,
+        "outdoor": 0.9539741165935993
+      },
+      "status": "ACCEPT",
+      "n_rejected": 2,
+      "prompts": {
+        "baseline": "A helicopter hums as it passes with a roaring engine and whooshing blades",
+        "casv": "A helicopter hums as it passes with a roaring engine and whooshing blades"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3992668390274048,
+        "clap_gt_audio_baseline": 0.33308082818984985,
+        "clap_text_casv": 0.3992668390274048,
+        "clap_gt_audio_casv": 0.33308082818984985
+      }
+    },
+    {
+      "id": "PLHXGDnig4M",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\PLHXGDnig4M.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\PLHXGDnig4M.wav",
+      "gt_captions": [
+        "A person talking which later imitates a couple of meow sounds",
+        "A person speaks and makes meow sounds",
+        "A man talking then meowing and hissing",
+        "A man talks like a cat before growling then meowing and finally hissing",
+        "A man speaking then hissing"
+      ],
+      "top_scene": [
+        "pet shop",
+        0.11354733258485794
+      ],
+      "top_object": [
+        "tabby cat",
+        0.3250858187675476
+      ],
+      "env_probs": {
+        "indoor": 0.6194835901260376,
+        "outdoor": 0.3805164098739624
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "People speaking animal barking cat meow",
+        "casv": "Cats are caterwauling, thumping occurs, and an electronic device is playing in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.17601948976516724,
+        "clap_gt_audio_baseline": 0.554031491279602,
+        "clap_text_casv": 0.10240577161312103,
+        "clap_gt_audio_casv": 0.6251115798950195
+      }
+    },
+    {
+      "id": "1slvoNgzBLE",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\1slvoNgzBLE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\1slvoNgzBLE.wav",
+      "gt_captions": [
+        "A subway train signal plays followed by a bell chiming followed by a horn honking as a crowd of people talk in the background",
+        "A large motor vehicle engine is running, clacking occurs, and a horn blows",
+        "An electronic signal followed by compressed air releasing then an electronic bell playing as a train runs on tracks in the background",
+        "Subway train blowing its horn.",
+        "A high tone signal followed by train moving down tracks"
+      ],
+      "top_scene": [
+        "platform train station",
+        0.9212793707847595
+      ],
+      "top_object": [
+        "high-speed train",
+        0.4787519872188568
+      ],
+      "env_probs": {
+        "indoor": 0.9974387288093567,
+        "outdoor": 0.0025612711906433105
+      },
+      "status": "ACCEPT",
+      "n_rejected": 15,
+      "prompts": {
+        "baseline": "An individual mumbling immediately followed by the starting of an engine",
+        "casv": "An individual mumbling immediately followed by the starting of an engine"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.05277988314628601,
+        "clap_gt_audio_baseline": 0.19848576188087463,
+        "clap_text_casv": 0.05277988314628601,
+        "clap_gt_audio_casv": 0.19848576188087463
+      }
+    },
+    {
+      "id": "5QZ0NtdoKJ8",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\5QZ0NtdoKJ8.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\5QZ0NtdoKJ8.wav",
+      "gt_captions": [
+        "Digital beeps repeating then a person speaks",
+        "Beeping sound with person talking in the background",
+        "Continuous digital beeps with a person speaking and bird chirping in the background",
+        "A series of electronic beeping as a woman is talking and birds chirp in the background alongside a camera muffling",
+        "A two-tone electronic alarm is ongoing, while an adult female is speaking in the foreground and birds are chirping in the background"
+      ],
+      "top_scene": [
+        "indoor bow window",
+        0.5383402705192566
+      ],
+      "top_object": [
+        "car mirror",
+        0.1749614179134369
+      ],
+      "env_probs": {
+        "indoor": 0.8751029372215271,
+        "outdoor": 0.1248970627784729
+      },
+      "status": "ACCEPT",
+      "n_rejected": 19,
+      "prompts": {
+        "baseline": "A bus engine running idle as wind blows into a microphone",
+        "casv": "A banging sound is followed by speaking sounds and a window crashing"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.08271405100822449,
+        "clap_gt_audio_baseline": 0.22713154554367065,
+        "clap_text_casv": 0.0707947164773941,
+        "clap_gt_audio_casv": 0.25049853324890137
+      }
+    },
+    {
+      "id": "PZBUdlKwX04",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\PZBUdlKwX04.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\PZBUdlKwX04.wav",
+      "gt_captions": [
+        "Water splashing with multiple voices in background",
+        "A man shouting as a stream of water splashes and a crowd of people talk in the background",
+        "A plastic clack followed by a man talking as a stream of water rushes and a crowd of people talk in the background",
+        "Water splashes and a man speaks",
+        "Water is falling, splashing and gurgling, a crowd of people talk in the background, and an adult male speaks in the foreground"
+      ],
+      "top_scene": [
+        "outdoor swimming pool",
+        0.3476094901561737
+      ],
+      "top_object": [
+        "swimsuit",
+        0.2344549596309662
+      ],
+      "env_probs": {
+        "indoor": 0.08047370612621307,
+        "outdoor": 0.9195262938737869
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A baby talking, followed by splashing and a woman talking",
+        "casv": "People splashing in a pool and talking"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.07989683747291565,
+        "clap_gt_audio_baseline": 0.023927757516503334,
+        "clap_text_casv": 0.47586795687675476,
+        "clap_gt_audio_casv": 0.47664451599121094
+      }
+    },
+    {
+      "id": "BQ-r9mEHssU",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\BQ-r9mEHssU.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\BQ-r9mEHssU.wav",
+      "gt_captions": [
+        "A woman laughs then talks as horse breaths and gallops on grass",
+        "Laughing and rustling with horse hooves",
+        "A woman laughs and talk as a hose clip-clops",
+        "A horse is clip-clopping with a woman is laughing in the background",
+        "Running through grass and leaves, metal clinking, then a woman laughs"
+      ],
+      "top_scene": [
+        "stable",
+        0.40078723430633545
+      ],
+      "top_object": [
+        "orangutan",
+        0.0485987514257431
+      ],
+      "env_probs": {
+        "indoor": 0.6097682118415833,
+        "outdoor": 0.39023178815841675
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Clip clops of a horse getting closer and louder",
+        "casv": "Clip clops of a horse getting closer and louder"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.11293335258960724,
+        "clap_gt_audio_baseline": 0.21699830889701843,
+        "clap_text_casv": 0.11293335258960724,
+        "clap_gt_audio_casv": 0.21699830889701843
+      }
+    },
+    {
+      "id": "KVAIaRPry24",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\KVAIaRPry24.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\KVAIaRPry24.wav",
+      "gt_captions": [
+        "An insect buzzing as plastic clacks and plastic slaps a hard surface",
+        "An insect buzzing as plastic clacks then slaps a hard surface in the background",
+        "Flying insects are buzzing",
+        "Buzzing from a nearby insect",
+        "Buzzing and scratching with some light banging"
+      ],
+      "top_scene": [
+        "landing deck",
+        0.07698375731706619
+      ],
+      "top_object": [
+        "dragonfly",
+        0.40982455015182495
+      ],
+      "env_probs": {
+        "indoor": 0.3360244631767273,
+        "outdoor": 0.6639755368232727
+      },
+      "status": "ACCEPT",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "An engine works while an insect flies",
+        "casv": "An insect buzzing at a high pitch tone continuously"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.039938975125551224,
+        "clap_gt_audio_baseline": 0.22727102041244507,
+        "clap_text_casv": 0.14996685087680817,
+        "clap_gt_audio_casv": 0.48655059933662415
+      }
+    },
+    {
+      "id": "FXdoNvmrYxo",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\FXdoNvmrYxo.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\FXdoNvmrYxo.wav",
+      "gt_captions": [
+        "A child talking followed by a man talking as a young boy mumbles while birds chirp in the background",
+        "A girl talking followed by a man then a young boy talking as a bird chirps in the background",
+        "A young girl talking followed by a man talking then a young boy softly talking as birds are chirping in the background",
+        "A child speaks followed by a man and child communicating as birds are tweeting",
+        "A young girl speaking followed by a man speaking then a young boy speaking as birds chirp in the background"
+      ],
+      "top_scene": [
+        "pond",
+        0.11543764173984528
+      ],
+      "top_object": [
+        "stick insect",
+        0.1028638482093811
+      ],
+      "env_probs": {
+        "indoor": 0.2222236841917038,
+        "outdoor": 0.7777763158082962
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+        "casv": "A fishing line being thrown twice"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.09911943227052689,
+        "clap_gt_audio_baseline": 0.45120710134506226,
+        "clap_text_casv": 0.0412343367934227,
+        "clap_gt_audio_casv": 0.37789666652679443
+      }
+    },
+    {
+      "id": "azh_-OkQ-uI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\azh_-OkQ-uI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\azh_-OkQ-uI.wav",
+      "gt_captions": [
+        "A woman talking as goats are baaing followed by footsteps on gravel then a man talking while an airplane flies in the distance",
+        "Goats bleat and a man talks",
+        "A woman talks briefly as several goats bleat including one that has high pitched bleats. A crunch is followed by a man speaking",
+        "Female talking follow by the bleating of a sheep",
+        "Animals are bleating and people are talking in the background, an adult female and an adult male speak, and an aircraft is present in the distance"
+      ],
+      "top_scene": [
+        "stable",
+        0.4107356071472168
+      ],
+      "top_object": [
+        "skunk",
+        0.07176341116428375
+      ],
+      "env_probs": {
+        "indoor": 0.5989964008331299,
+        "outdoor": 0.4010035991668701
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "Goats running around a barn",
+        "casv": "Several goats bleat while someone makes animal sounds"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.22078707814216614,
+        "clap_gt_audio_baseline": 0.0012495918199419975,
+        "clap_text_casv": 0.004067865200340748,
+        "clap_gt_audio_casv": 0.15305334329605103
+      }
+    },
+    {
+      "id": "WUpeplQr3A4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\WUpeplQr3A4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WUpeplQr3A4.wav",
+      "gt_captions": [
+        "A loud shrill followed by a power tool drilling and a man screaming while liquid pours and splatters",
+        "A person screeching followed by a man screaming as a power tool drills and liquid sprays and gurgles",
+        "A man shrilling followed by a power tool drilling and a man screaming as liquid splatters",
+        "A man screams while a drill runs",
+        "A power drill running followed by drilling noises and human screaming"
+      ],
+      "top_scene": [
+        "lobby",
+        0.15479978919029236
+      ],
+      "top_object": [
+        "trench coat",
+        0.34285828471183777
+      ],
+      "env_probs": {
+        "indoor": 0.8696144819259644,
+        "outdoor": 0.13038551807403564
+      },
+      "status": "ACCEPT",
+      "n_rejected": 4,
+      "prompts": {
+        "baseline": "Male speaking followed by cocking gun and rapid gunfire then male laughter and woman speaking",
+        "casv": "Male speaking followed by cocking gun and rapid gunfire then male laughter and woman speaking"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.022183222696185112,
+        "clap_gt_audio_baseline": 0.016662798821926117,
+        "clap_text_casv": 0.022183222696185112,
+        "clap_gt_audio_casv": 0.016662798821926117
+      }
+    },
+    {
+      "id": "fwhkCnOeyC0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\fwhkCnOeyC0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\fwhkCnOeyC0.wav",
+      "gt_captions": [
+        "Applause and speech followed by a loud high pitched bell and more applause and speech",
+        "A man and woman speak and people clap and a bell rings",
+        "A man and a woman talking followed by a bell ringing and a cat meowing as a crowd of people applaud",
+        "An audience applauds and cheers as an adult male speaks, a bell and buzzer ring, and the adult male speaks again",
+        "A man and a woman talking followed by a bell ringing as a crowd of people applaud"
+      ],
+      "top_scene": [
+        "ballroom",
+        0.3158283531665802
+      ],
+      "top_object": [
+        "gown",
+        0.08399582654237747
+      ],
+      "env_probs": {
+        "indoor": 0.8784294724464417,
+        "outdoor": 0.12157052755355835
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "An audience applaud followed by a woman talking",
+        "casv": "An audience applaud followed by a woman talking"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.09326168894767761,
+        "clap_gt_audio_baseline": 0.33021479845046997,
+        "clap_text_casv": 0.09326168894767761,
+        "clap_gt_audio_casv": 0.33021479845046997
+      }
+    },
+    {
+      "id": "sI7_ycEYzAY",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\sI7_ycEYzAY.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sI7_ycEYzAY.wav",
+      "gt_captions": [
+        "A clock ticking during high-pitched humming followed by a person sniffing",
+        "A clock ticks low and loud and someone breathes sharply near the end",
+        "A clock ticks repeatedly",
+        "Humming noise with clock tick-tocking",
+        "A clock ticking followed by someone sniffling"
+      ],
+      "top_scene": [
+        "hotel room",
+        0.09678145498037338
+      ],
+      "top_object": [
+        "wall clock",
+        0.3265126049518585
+      ],
+      "env_probs": {
+        "indoor": 0.8458435535430908,
+        "outdoor": 0.15415644645690918
+      },
+      "status": "ACCEPT",
+      "n_rejected": 1,
+      "prompts": {
+        "baseline": "Chime clock playing music",
+        "casv": "A chime of a clock and rumpling sounds in background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.390533983707428,
+        "clap_gt_audio_baseline": 0.5283336639404297,
+        "clap_text_casv": 0.08951859176158905,
+        "clap_gt_audio_casv": 0.4300045371055603
+      }
+    },
+    {
+      "id": "bIiiIo20PsY",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\bIiiIo20PsY.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\bIiiIo20PsY.wav",
+      "gt_captions": [
+        "A main is speaking over a group of bees are buzzing",
+        "An adult male speaks while a many insects buzz",
+        "A man speaking as insects are buzzing and wind is blowing into a microphone",
+        "Two men speak while bees buzz",
+        "A man talking as a swarm of insects are buzzing"
+      ],
+      "top_scene": [
+        "broadleaf forest",
+        0.6657255291938782
+      ],
+      "top_object": [
+        "common sorrel",
+        0.6363989114761353
+      ],
+      "env_probs": {
+        "indoor": 0.023047693073749542,
+        "outdoor": 0.9769523069262505
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+        "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4043227434158325,
+        "clap_gt_audio_baseline": 0.5557286143302917,
+        "clap_text_casv": 0.4043227434158325,
+        "clap_gt_audio_casv": 0.5557286143302917
+      }
+    },
+    {
+      "id": "hGWarNR6xmg",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\hGWarNR6xmg.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\hGWarNR6xmg.wav",
+      "gt_captions": [
+        "Hisses continuously with some static",
+        "A roaring hiss is ongoing, and a brief low hum occurs",
+        "Repetitive loud hissing with some static",
+        "Rain pitter-patters and wind blows",
+        "Continuous hissing at varying levels"
+      ],
+      "top_scene": [
+        "sky",
+        0.34904366731643677
+      ],
+      "top_object": [
+        "tank",
+        0.049515314400196075
+      ],
+      "env_probs": {
+        "indoor": 0.17681999504566193,
+        "outdoor": 0.8231800049543381
+      },
+      "status": "ACCEPT",
+      "n_rejected": 15,
+      "prompts": {
+        "baseline": "Loud and heavy rainfall on metal with faint yell in background",
+        "casv": "A thunderstorm happens nearby"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.36488232016563416,
+        "clap_gt_audio_baseline": 0.4890337288379669,
+        "clap_text_casv": 0.10663841664791107,
+        "clap_gt_audio_casv": 0.3679580092430115
+      }
+    },
+    {
+      "id": "elztUCeNQvQ",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\elztUCeNQvQ.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\elztUCeNQvQ.wav",
+      "gt_captions": [
+        "A train honks horn and passes by",
+        "A train horn honking as a train runs on railroad tracks",
+        "A train horn honking followed by a subway train running on railroad tracks",
+        "A train horn honking followed by a train running on railroad tracks",
+        "Subway horn blows followed by the sound traveling down the rails"
+      ],
+      "top_scene": [
+        "platform train station",
+        0.5508530735969543
+      ],
+      "top_object": [
+        "high-speed train",
+        0.8552073240280151
+      ],
+      "env_probs": {
+        "indoor": 0.9022481441497803,
+        "outdoor": 0.09775185585021973
+      },
+      "status": "ACCEPT",
+      "n_rejected": 19,
+      "prompts": {
+        "baseline": "A train is moving through a tunnel at a fast speed and blows it horn",
+        "casv": "An engine idles at high speed, followed by a person talking"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.5321380496025085,
+        "clap_gt_audio_baseline": 0.5832855701446533,
+        "clap_text_casv": 0.08649709820747375,
+        "clap_gt_audio_casv": 0.12206635624170303
+      }
+    },
+    {
+      "id": "HqndxoujCYI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\HqndxoujCYI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\HqndxoujCYI.wav",
+      "gt_captions": [
+        "Loud ringing of a clock followed by faint tick rocks",
+        "A bell chiming as a man is speaking in the background followed by a muffled bell chiming",
+        "A bell chiming as a clock ticks and a man talks through a television speaker in the background followed by a muffled bell chiming",
+        "A bell chiming as a clock ticks while a man talks through a television speaker in the background followed by muffled a muffled bell chiming",
+        "Clock chiming with a laughter in background"
+      ],
+      "top_scene": [
+        "chemistry lab",
+        0.3589910864830017
+      ],
+      "top_object": [
+        "Petri dish",
+        0.4073704481124878
+      ],
+      "env_probs": {
+        "indoor": 0.8942400813102722,
+        "outdoor": 0.10575991868972778
+      },
+      "status": "ACCEPT",
+      "n_rejected": 5,
+      "prompts": {
+        "baseline": "Water pours nearby as the clock ticks slowly, and then a person talks",
+        "casv": "Water pours nearby as the clock ticks slowly, and then a person talks"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.047517187893390656,
+        "clap_gt_audio_baseline": 0.22510257363319397,
+        "clap_text_casv": 0.047517187893390656,
+        "clap_gt_audio_casv": 0.22510257363319397
+      }
+    },
+    {
+      "id": "KnsKf9KoNds",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\KnsKf9KoNds.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\KnsKf9KoNds.wav",
+      "gt_captions": [
+        "A man speaking and another speaks over the phone",
+        "A man speaking followed by another man speaking through a telephone speaker",
+        "A man speaks nearby and another speaks over the phone",
+        "A man speaking on the phone to another person",
+        "Male speech with another male speaking on the phone"
+      ],
+      "top_scene": [
+        "veterinarians office",
+        0.12109465897083282
+      ],
+      "top_object": [
+        "Kuvasz",
+        0.4687519073486328
+      ],
+      "env_probs": {
+        "indoor": 0.39973971247673035,
+        "outdoor": 0.6002602875232697
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Farm animal goat bleating",
+        "casv": "Farm animal goat bleating"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.042706552892923355,
+        "clap_gt_audio_baseline": 0.1552790403366089,
+        "clap_text_casv": 0.042706552892923355,
+        "clap_gt_audio_casv": 0.1552790403366089
+      }
+    },
+    {
+      "id": "a_Rjlu50TfA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\a_Rjlu50TfA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\a_Rjlu50TfA.wav",
+      "gt_captions": [
+        "A person snoring during a series of thumps followed by a man talking in the background",
+        "Plastic tapping as a person is snoring",
+        "A series of sharp, squeaky snoring noises",
+        "A sharp snorting snore",
+        "A person snoring repetitively"
+      ],
+      "top_scene": [
+        "home theater",
+        0.15030068159103394
+      ],
+      "top_object": [
+        "meatloaf",
+        0.07815515995025635
+      ],
+      "env_probs": {
+        "indoor": 0.8118561506271362,
+        "outdoor": 0.18814384937286377
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Man snoring fairly loud",
+        "casv": "A person snores, and then makes loud baby-like noises"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4284358024597168,
+        "clap_gt_audio_baseline": 0.5171955823898315,
+        "clap_text_casv": 0.4046609401702881,
+        "clap_gt_audio_casv": 0.646651029586792
+      }
+    },
+    {
+      "id": "R91bUbtKrRs",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\R91bUbtKrRs.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\R91bUbtKrRs.wav",
+      "gt_captions": [
+        "Two adult females speak in the foreground while muted speech occurs in the background, and an infant begins to cry",
+        "Two woman speaking then a baby crying",
+        "Two women are talking, and a baby cries",
+        "Rustling with woman speaking and a baby crying",
+        "A woman and a boy speaking in a foreign language then a baby cries and the boy laughs."
+      ],
+      "top_scene": [
+        "nursery",
+        0.3665129840373993
+      ],
+      "top_object": [
+        "diaper",
+        0.3745955526828766
+      ],
+      "env_probs": {
+        "indoor": 0.8297964334487915,
+        "outdoor": 0.1702035665512085
+      },
+      "status": "ACCEPT",
+      "n_rejected": 5,
+      "prompts": {
+        "baseline": "A baby cries and then a woman speaks while pumping something with air",
+        "casv": "An infant cries with low talking and fan noise in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3811224699020386,
+        "clap_gt_audio_baseline": 0.3952808976173401,
+        "clap_text_casv": -0.013585781678557396,
+        "clap_gt_audio_casv": 0.15988779067993164
+      }
+    },
+    {
+      "id": "GPj8h-WcjWs",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\GPj8h-WcjWs.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GPj8h-WcjWs.wav",
+      "gt_captions": [
+        "A bus is idling when a voice from a speaker starts to talk",
+        "Humming of a loud engine with a woman speaking over a loudspeaker",
+        "Humming of an engine with a woman speaking over a loudspeaker",
+        "Bus engine going then an announcers female voice speaking",
+        "A muffled bus engine running as a woman speaks over an intercom"
+      ],
+      "top_scene": [
+        "bus interior",
+        0.9591027498245239
+      ],
+      "top_object": [
+        "minibus",
+        0.3090274930000305
+      ],
+      "env_probs": {
+        "indoor": 0.9979921579360962,
+        "outdoor": 0.0020078420639038086
+      },
+      "status": "ACCEPT",
+      "n_rejected": 2,
+      "prompts": {
+        "baseline": "A man talking followed by glass clanking while a group of people are talking in the background during a muffled bus engine driving",
+        "casv": "A muffled bus engine running as a group of people talk in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3884274363517761,
+        "clap_gt_audio_baseline": 0.6915339231491089,
+        "clap_text_casv": 0.47758886218070984,
+        "clap_gt_audio_casv": 0.6691558957099915
+      }
+    },
+    {
+      "id": "C8kR19NvynA",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\C8kR19NvynA.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\C8kR19NvynA.wav",
+      "gt_captions": [
+        "A man speaks during a monologue",
+        "A man speaking on a microphone",
+        "A man speaking continuously",
+        "A male voice speaking",
+        "A male speaking over a microphone"
+      ],
+      "top_scene": [
+        "conference center",
+        0.11675763130187988
+      ],
+      "top_object": [
+        "bridegroom",
+        0.19998282194137573
+      ],
+      "env_probs": {
+        "indoor": 0.6691024303436279,
+        "outdoor": 0.33089756965637207
+      },
+      "status": "ACCEPT",
+      "n_rejected": 13,
+      "prompts": {
+        "baseline": "A man speaking along with sizzling noise and music in the background",
+        "casv": "A man is speaking and crowd cheering"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.14918479323387146,
+        "clap_gt_audio_baseline": 0.20951475203037262,
+        "clap_text_casv": 0.20067106187343597,
+        "clap_gt_audio_casv": 0.4101671576499939
+      }
+    },
+    {
+      "id": "g6CY7qvu81k",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\g6CY7qvu81k.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\g6CY7qvu81k.wav",
+      "gt_captions": [
+        "Music plays followed by a man speaking",
+        "Drums and music playing with a man speaking",
+        "Music followed by male speech and distant sizzling",
+        "Music plays followed by a man speaking",
+        "Music and a male speech"
+      ],
+      "top_scene": [
+        "art gallery",
+        0.07374751567840576
+      ],
+      "top_object": [
+        "sunglasses",
+        0.11585342139005661
+      ],
+      "env_probs": {
+        "indoor": 0.6491234302520752,
+        "outdoor": 0.3508765697479248
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "Man speaking with ticking in the background",
+        "casv": "A man speaks into a microphone, a guitar plays, the audience laughs, and then a woman speaks"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3585053086280823,
+        "clap_gt_audio_baseline": 0.31904926896095276,
+        "clap_text_casv": 0.1807786524295807,
+        "clap_gt_audio_casv": 0.24159544706344604
+      }
+    },
+    {
+      "id": "oZaEHkfh5Eg",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\oZaEHkfh5Eg.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\oZaEHkfh5Eg.wav",
+      "gt_captions": [
+        "A vehicle horn honking as a series of electronic beeps chime followed by a plastic click",
+        "Car horn and alarm blare simultaneously",
+        "A vehicle horn honking during a series of electronic beeps",
+        "Digital beeping with a horn honking twice",
+        "A series of electronic dings while a vehicle horn honks twice followed by a plastic click while a dog barks in the distance"
+      ],
+      "top_scene": [
+        "car interior",
+        0.6921477913856506
+      ],
+      "top_object": [
+        "odometer",
+        0.3314574360847473
+      ],
+      "env_probs": {
+        "indoor": 0.9658379554748535,
+        "outdoor": 0.034162044525146484
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "A car making a revving engine noise while pumping the accelerator",
+        "casv": "A car making a revving engine noise while pumping the accelerator"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.03374087065458298,
+        "clap_gt_audio_baseline": 0.008477412164211273,
+        "clap_text_casv": 0.03374087065458298,
+        "clap_gt_audio_casv": 0.008477412164211273
+      }
+    },
+    {
+      "id": "2EsxcKe1A4w",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\2EsxcKe1A4w.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\2EsxcKe1A4w.wav",
+      "gt_captions": [
+        "A dog barks with distant birds chirping then people speak",
+        "A dog barking during camera muffling and footsteps shuffling on dirt followed by a man talking then a bicycle riding",
+        "A large dog barks",
+        "A dog barking followed by a man talking in the distance while gravel and dirt shuffle during a series of camera muffles",
+        "A dog barking while wind blows into a microphone followed by a man speaking in the distance proceeded by a bicycle pedaling alongside leaves rustling and a camera muffling"
+      ],
+      "top_scene": [
+        "highway",
+        0.029507962986826897
+      ],
+      "top_object": [
+        "missile",
+        0.0258413627743721
+      ],
+      "env_probs": {
+        "indoor": 0.43223071098327637,
+        "outdoor": 0.5677692890167236
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 13,
+      "prompts": {
+        "baseline": "The wind noise from a helicopter running",
+        "casv": "A gun cocking followed by a gunshot firing during camera audio feedback"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.009176659397780895,
+        "clap_gt_audio_baseline": -0.013278478756546974,
+        "clap_text_casv": -0.008359319530427456,
+        "clap_gt_audio_casv": 0.39123860001564026
+      }
+    },
+    {
+      "id": "lHh0SwUhP8U",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\lHh0SwUhP8U.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lHh0SwUhP8U.wav",
+      "gt_captions": [
+        "A gunshot is followed by a click and clack and then a second gunshot",
+        "Ducks squeaking in the distance followed by a shotgun blast",
+        "Birds chirp followed by some clicking then gunshots",
+        "Birds chirping as a gun cocks followed by a gunshot and a man chuckling while metal clanks then another gunshot alongside ducks quacking",
+        "Metal clicking before a gunshot firing followed by a person sighing and metal clanking while wood clacks proceeded by another gunshot firing as ducks quack in the distance"
+      ],
+      "top_scene": [
+        "tundra",
+        0.28686606884002686
+      ],
+      "top_object": [
+        "ear of corn",
+        0.1160975843667984
+      ],
+      "env_probs": {
+        "indoor": 0.02040594071149826,
+        "outdoor": 0.9795940592885017
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "A duck call is blown, ducks quack, rhythmic thumping is present, and an adult male speaks in the background",
+        "casv": "The wind is blowing, duck calls are being blown, and an adult male speaks"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.016607601195573807,
+        "clap_gt_audio_baseline": 0.3768392503261566,
+        "clap_text_casv": 0.14667177200317383,
+        "clap_gt_audio_casv": 0.37221869826316833
+      }
+    },
+    {
+      "id": "paf0nyjg1Js",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\paf0nyjg1Js.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\paf0nyjg1Js.wav",
+      "gt_captions": [
+        "A woman speaking followed by a porcelain plate clanking as food and oil sizzles",
+        "Food and oil sizzling as a woman is talking followed by dinner plates clanking",
+        "A woman talking followed by a plate rattling as food and oil sizzle",
+        "Food and oil sizzling followed by a woman talking then plastic thumping",
+        "A woman is speaking with sizzling background noise"
+      ],
+      "top_scene": [
+        "kitchen",
+        0.4451616704463959
+      ],
+      "top_object": [
+        "wok",
+        0.2997671365737915
+      ],
+      "env_probs": {
+        "indoor": 0.9579120874404907,
+        "outdoor": 0.04208791255950928
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Man speaks while frying some food",
+        "casv": "Person speaks while frying some food"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.5778285264968872,
+        "clap_gt_audio_baseline": 0.36090314388275146,
+        "clap_text_casv": 0.7569587230682373,
+        "clap_gt_audio_casv": 0.48940309882164
+      }
+    },
+    {
+      "id": "XQxIXaX_7M0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\XQxIXaX_7M0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\XQxIXaX_7M0.wav",
+      "gt_captions": [
+        "Running water and distant speech",
+        "A stream of water rushing as a man shouts in the distance",
+        "Water rushing loudly while a man yells in the background",
+        "A large volume of water is rushing fast, splashing and roaring, and an adult male shout in the background",
+        "Water flows and people speak in the distance"
+      ],
+      "top_scene": [
+        "raft",
+        0.8685336709022522
+      ],
+      "top_object": [
+        "canoe",
+        0.2617296874523163
+      ],
+      "env_probs": {
+        "indoor": 0.03176702931523323,
+        "outdoor": 0.9682329706847668
+      },
+      "status": "ACCEPT",
+      "n_rejected": 13,
+      "prompts": {
+        "baseline": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+        "casv": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.24392572045326233,
+        "clap_gt_audio_baseline": 0.5130588412284851,
+        "clap_text_casv": 0.24392572045326233,
+        "clap_gt_audio_casv": 0.5130588412284851
+      }
+    },
+    {
+      "id": "GuizRlAQ8qQ",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\GuizRlAQ8qQ.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GuizRlAQ8qQ.wav",
+      "gt_captions": [
+        "Humming and vibrating from a power tool",
+        "Power tools make drilling sounds",
+        "High powered vibrations from a power tool",
+        "High pitched continuous drilling that slows down",
+        "A power tool drilling"
+      ],
+      "top_scene": [
+        "attic",
+        0.17289644479751587
+      ],
+      "top_object": [
+        "power drill",
+        0.3891976773738861
+      ],
+      "env_probs": {
+        "indoor": 0.9182170629501343,
+        "outdoor": 0.08178293704986572
+      },
+      "status": "ACCEPT",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "A power drill going in to a wall",
+        "casv": "A power drill going in to a wall"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.14470410346984863,
+        "clap_gt_audio_baseline": 0.07811930775642395,
+        "clap_text_casv": 0.14470410346984863,
+        "clap_gt_audio_casv": 0.07811930775642395
+      }
+    },
+    {
+      "id": "YIqpIjjee00",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\YIqpIjjee00.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\YIqpIjjee00.wav",
+      "gt_captions": [
+        "Water running from a flushed toilet",
+        "A toilet flushing",
+        "A flush occurs with water splashing and gurgling, and then water runs steadily",
+        "Hissing and gurgling of water flowing down a toilet",
+        "A toilet flushing"
+      ],
+      "top_scene": [
+        "bathroom",
+        0.2811014652252197
+      ],
+      "top_object": [
+        "toilet seat",
+        0.40365326404571533
+      ],
+      "env_probs": {
+        "indoor": 0.6061447262763977,
+        "outdoor": 0.3938552737236023
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "Water finishes flushing down a toilet",
+        "casv": "Water running in a toilet"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.29444199800491333,
+        "clap_gt_audio_baseline": 0.4407241940498352,
+        "clap_text_casv": 0.2811000347137451,
+        "clap_gt_audio_casv": 0.5560604929924011
+      }
+    },
+    {
+      "id": "0Rpjl1AO-P0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\0Rpjl1AO-P0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\0Rpjl1AO-P0.wav",
+      "gt_captions": [
+        "A car engine is revving while driving",
+        "Car engine accelerates and shifts gears",
+        "A car engine idling then starts to rev shortly after",
+        "A motor vehicle engine is running and vibrating, and it accelerates and then idles",
+        "A vehicle driving then accelerating alongside a series of plastic clicks"
+      ],
+      "top_scene": [
+        "raceway",
+        0.9338647127151489
+      ],
+      "top_object": [
+        "race car",
+        0.3705383837223053
+      ],
+      "env_probs": {
+        "indoor": 0.012561437673866749,
+        "outdoor": 0.9874385623261333
+      },
+      "status": "ACCEPT",
+      "n_rejected": 2,
+      "prompts": {
+        "baseline": "Race cars crashing together and sound of engines",
+        "casv": "A car racing, high pitch whining"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.26146775484085083,
+        "clap_gt_audio_baseline": 0.26473450660705566,
+        "clap_text_casv": 0.2600155174732208,
+        "clap_gt_audio_casv": 0.3320024609565735
+      }
+    },
+    {
+      "id": "S0YE96w0YRk",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\S0YE96w0YRk.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\S0YE96w0YRk.wav",
+      "gt_captions": [
+        "A man speaking as a crowd of people laugh and applaud",
+        "An adult male speaks and then an audience laughs and claps somewhat, followed by the adult male speaking again and then the audience laughing and clapping harder",
+        "A man speaking followed by a crowd of people laughing then applauding",
+        "A man speaks, and a crowd applauds",
+        "A man speaks and people laugh and clap"
+      ],
+      "top_scene": [
+        "television studio",
+        0.4790533781051636
+      ],
+      "top_object": [
+        "scoreboard",
+        0.05222954973578453
+      ],
+      "env_probs": {
+        "indoor": 0.8744559288024902,
+        "outdoor": 0.12554407119750977
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "A news broadcast with an anxious sounding woman and siren in background",
+        "casv": "A news broadcast with an anxious sounding woman and siren in background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.11656507849693298,
+        "clap_gt_audio_baseline": 0.32698893547058105,
+        "clap_text_casv": 0.11656507849693298,
+        "clap_gt_audio_casv": 0.32698893547058105
+      }
+    },
+    {
+      "id": "Y3lNEe-ZGF0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\Y3lNEe-ZGF0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Y3lNEe-ZGF0.wav",
+      "gt_captions": [
+        "A clock ticking followed by a some wooden clacking",
+        "A clock ticking",
+        "A clock ticking followed by a wooden latch opening",
+        "Continuous, quiet tick-tocking",
+        "Repeated ticking culminates in a sliding click"
+      ],
+      "top_scene": [
+        "door elevator",
+        0.39909088611602783
+      ],
+      "top_object": [
+        "baluster",
+        0.04475795850157738
+      ],
+      "env_probs": {
+        "indoor": 0.8864954710006714,
+        "outdoor": 0.11350452899932861
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "A mechanical door sliding",
+        "casv": "A mechanical door sliding"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.2102617472410202,
+        "clap_gt_audio_baseline": 0.30082592368125916,
+        "clap_text_casv": 0.2102617472410202,
+        "clap_gt_audio_casv": 0.30082592368125916
+      }
+    },
+    {
+      "id": "1IoHRTUp86c",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\1IoHRTUp86c.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\1IoHRTUp86c.wav",
+      "gt_captions": [
+        "A woman speaks briefly, and a muffled engine rumbles",
+        "A muffled aircraft engine running before accelerating as a woman talks over an intercom",
+        "An aircraft engine humming as a woman speaks over an intercom followed by an aircraft engine accelerating",
+        "A woman talking over an intercom as an aircraft engine runs then accelerates",
+        "A woman speaks briefly over a radio with an aircraft engine running"
+      ],
+      "top_scene": [
+        "airfield",
+        0.5104606747627258
+      ],
+      "top_object": [
+        "Groenendael",
+        0.1545412391424179
+      ],
+      "env_probs": {
+        "indoor": 0.034315384924411774,
+        "outdoor": 0.9656846150755882
+      },
+      "status": "REPAIR",
+      "n_rejected": 16,
+      "prompts": {
+        "baseline": "Very windy, engine or water noise in background",
+        "casv": "Helicopter in flight with faint sound of humans talking below"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.07174977660179138,
+        "clap_gt_audio_baseline": 0.16875824332237244,
+        "clap_text_casv": 0.29278111457824707,
+        "clap_gt_audio_casv": 0.46936941146850586
+      }
+    },
+    {
+      "id": "BwnGxJD9xh8",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\BwnGxJD9xh8.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\BwnGxJD9xh8.wav",
+      "gt_captions": [
+        "Birds chirping and wind blowing in the background followed by a man talking then a goat baaing",
+        "A man talking followed by a goat baaing as gusts of wind blow and birds chirp in the distance",
+        "Speech and a goat bleating",
+        "A man speaks and a goat bleats",
+        "A man speaks, and a goat bleats"
+      ],
+      "top_scene": [
+        "pasture",
+        0.17876455187797546
+      ],
+      "top_object": [
+        "Appenzeller Sennenhund",
+        0.2363627851009369
+      ],
+      "env_probs": {
+        "indoor": 0.25456294417381287,
+        "outdoor": 0.7454370558261871
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "A new baby goat bleeding with male speaking",
+        "casv": "A goat bleats while some object is tapped"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.12647294998168945,
+        "clap_gt_audio_baseline": 0.1585633009672165,
+        "clap_text_casv": -0.18703585863113403,
+        "clap_gt_audio_casv": -0.19840751588344574
+      }
+    },
+    {
+      "id": "9dLLsZVRSZI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\9dLLsZVRSZI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\9dLLsZVRSZI.wav",
+      "gt_captions": [
+        "A truck engine running followed by a truck horn honking",
+        "A truck is idling, and a horn honks",
+        "Engine idling continuously followed by honking",
+        "A truck engine running followed by a truck horn honking",
+        "Humming and rustling from a large engine followed by two honks of a horn"
+      ],
+      "top_scene": [
+        "driveway",
+        0.25898370146751404
+      ],
+      "top_object": [
+        "tow truck",
+        0.4464341402053833
+      ],
+      "env_probs": {
+        "indoor": 0.17240256071090698,
+        "outdoor": 0.827597439289093
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Truck engine slows and then air brakes hiss followed by machinery operating",
+        "casv": "Truck engine slows and then air brakes hiss followed by machinery operating"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.22028854489326477,
+        "clap_gt_audio_baseline": 0.3676605820655823,
+        "clap_text_casv": 0.22028854489326477,
+        "clap_gt_audio_casv": 0.3676605820655823
+      }
+    },
+    {
+      "id": "DAN1t9ukkg0",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\DAN1t9ukkg0.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\DAN1t9ukkg0.wav",
+      "gt_captions": [
+        "A person types on a keyboard",
+        "Typing is occurring on a keyboard in a quiet environment",
+        "A person is typing keyboard with some mouse clicking",
+        "Computer keyboard clicks as typing occurs",
+        "Typing on a keyboard"
+      ],
+      "top_scene": [
+        "computer room",
+        0.4327705502510071
+      ],
+      "top_object": [
+        "computer keyboard",
+        0.43134957551956177
+      ],
+      "env_probs": {
+        "indoor": 0.9255962371826172,
+        "outdoor": 0.07440376281738281
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "A person types on a computer keyboard slowly and loudly",
+        "casv": "Typing on a computer keyboard"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4277271330356598,
+        "clap_gt_audio_baseline": 0.4314092993736267,
+        "clap_text_casv": 0.5868217945098877,
+        "clap_gt_audio_casv": 0.7415008544921875
+      }
+    },
+    {
+      "id": "EzWEO2WD_MM",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\EzWEO2WD_MM.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\EzWEO2WD_MM.wav",
+      "gt_captions": [
+        "A drone whirring followed by a crashing sound",
+        "Toy helicopter whirring and crashing",
+        "High frequency humming followed by a smack",
+        "A power tool drilling followed by plastic clanking",
+        "A whirring followed by an object hitting a surface"
+      ],
+      "top_scene": [
+        "bedroom",
+        0.29955023527145386
+      ],
+      "top_object": [
+        "pajamas",
+        0.20860904455184937
+      ],
+      "env_probs": {
+        "indoor": 0.9629018902778625,
+        "outdoor": 0.03709810972213745
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "A person snores while a TV is running in the background",
+        "casv": "A person snores while a TV is running in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.15997761487960815,
+        "clap_gt_audio_baseline": 0.24099105596542358,
+        "clap_text_casv": 0.15997761487960815,
+        "clap_gt_audio_casv": 0.24099105596542358
+      }
+    },
+    {
+      "id": "Jon_DEFqsfM",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\Jon_DEFqsfM.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Jon_DEFqsfM.wav",
+      "gt_captions": [
+        "Ducks quacking as birds chirp followed by a flock of ducks quacking",
+        "Several breeds of birds chirping and honking",
+        "Wind blowing with ducks quacking and birds chirping",
+        "Birds chirping with distant humming",
+        "Birds are chirping, ducks are quacking and other bird whistling noises"
+      ],
+      "top_scene": [
+        "natural lake",
+        0.5418568849563599
+      ],
+      "top_object": [
+        "black swan",
+        0.8563998937606812
+      ],
+      "env_probs": {
+        "indoor": 0.02999074198305607,
+        "outdoor": 0.9700092580169439
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "Woman talking followed by ducks quacking and wind blowing",
+        "casv": "Natural outdoor sounds followed by a duck making a quacking sound"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.34742802381515503,
+        "clap_gt_audio_baseline": 0.6107479929924011,
+        "clap_text_casv": 0.1609591543674469,
+        "clap_gt_audio_casv": 0.4409642815589905
+      }
+    },
+    {
+      "id": "4YodC6RnplI",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\4YodC6RnplI.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4YodC6RnplI.wav",
+      "gt_captions": [
+        "A girl laughing as a person is snoring",
+        "Snoring is ongoing, while an adult female laugh in the foreground and an adult male speaks briefly in the background",
+        "A female laughs, snoring occurs, and an adult male speaks in the background",
+        "Snoring with some laughter",
+        "An adult female laugh while snoring is occurring, and an adult male speaks in the background"
+      ],
+      "top_scene": [
+        "closet",
+        0.049926530569791794
+      ],
+      "top_object": [
+        "candle",
+        0.024573154747486115
+      ],
+      "env_probs": {
+        "indoor": 0.40376216173171997,
+        "outdoor": 0.59623783826828
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 8,
+      "prompts": {
+        "baseline": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+        "casv": "Loud white noise with faint conversations in background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.001708002295345068,
+        "clap_gt_audio_baseline": 0.341651976108551,
+        "clap_text_casv": -0.06433086842298508,
+        "clap_gt_audio_casv": -0.023493245244026184
+      }
+    },
+    {
+      "id": "GMP8m09j5vk",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\GMP8m09j5vk.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GMP8m09j5vk.wav",
+      "gt_captions": [
+        "Birds chirp with a low whirring background noise",
+        "Birds chirping loudly",
+        "Birds call while another bird sings",
+        "A bird chirps loudly in the foreground, and birds chirp and thumping occurs in the background",
+        "Birds chirping in the foreground and background as a dog barks in the distance"
+      ],
+      "top_scene": [
+        "pet shop",
+        0.1515403389930725
+      ],
+      "top_object": [
+        "bulbul",
+        0.9174257516860962
+      ],
+      "env_probs": {
+        "indoor": 0.5574042797088623,
+        "outdoor": 0.4425957202911377
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "A bird chirping and flying around in a cage with a ticking sound in the background",
+        "casv": "Male voice with bird chirping and slamming"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.06404086202383041,
+        "clap_gt_audio_baseline": 0.31815576553344727,
+        "clap_text_casv": 0.21225574612617493,
+        "clap_gt_audio_casv": 0.6132150888442993
+      }
+    },
+    {
+      "id": "lh801oHGtD4",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\lh801oHGtD4.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lh801oHGtD4.wav",
+      "gt_captions": [
+        "A small motor buzzing followed by a man speaking as a metal door closes",
+        "Male speech and then a door shutting",
+        "A man talking as an electronic device hums followed by a door closing",
+        "Electronic humming followed by a man speaking and a door closing",
+        "An electric motor buzzing as a man is talking followed by a door closing"
+      ],
+      "top_scene": [
+        "door elevator",
+        0.12875093519687653
+      ],
+      "top_object": [
+        "car mirror",
+        0.07883897423744202
+      ],
+      "env_probs": {
+        "indoor": 0.9007887244224548,
+        "outdoor": 0.09921127557754517
+      },
+      "status": "ACCEPT",
+      "n_rejected": 18,
+      "prompts": {
+        "baseline": "Beeping sound from a vehicle door",
+        "casv": "A door sliding and then a woman screaming"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.032817233353853226,
+        "clap_gt_audio_baseline": 0.41967666149139404,
+        "clap_text_casv": 0.2837730050086975,
+        "clap_gt_audio_casv": 0.30220454931259155
+      }
+    },
+    {
+      "id": "o7-X8DAToGc",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\o7-X8DAToGc.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\o7-X8DAToGc.wav",
+      "gt_captions": [
+        "A vehicle accelerating and driving by as birds chirp faintly in the distance",
+        "Auto driving quickly past engine sound fading",
+        "A vehicle driving by with tires briefly skidding and accelerating then slowing down",
+        "An engine running",
+        "A vehicle accelerating and driving by"
+      ],
+      "top_scene": [
+        "raceway",
+        0.15352043509483337
+      ],
+      "top_object": [
+        "tow truck",
+        0.1369963139295578
+      ],
+      "env_probs": {
+        "indoor": 0.09291847050189972,
+        "outdoor": 0.9070815294981003
+      },
+      "status": "ACCEPT",
+      "n_rejected": 7,
+      "prompts": {
+        "baseline": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+        "casv": "A car driving quickly down a road followed by speaking"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.06441086530685425,
+        "clap_gt_audio_baseline": 0.270480215549469,
+        "clap_text_casv": 0.25993049144744873,
+        "clap_gt_audio_casv": 0.3493790030479431
+      }
+    },
+    {
+      "id": "vigslb0kClE",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\vigslb0kClE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\vigslb0kClE.wav",
+      "gt_captions": [
+        "People talking while herding goats near a fast running stream",
+        "Rustling and knocking and then male speech with a goat vocalizing",
+        "Goats bleating and a man speaking",
+        "Loud hissing together with speech, rustling and basing",
+        "A goat vocalizing and male speech"
+      ],
+      "top_scene": [
+        "fishpond",
+        0.0922747403383255
+      ],
+      "top_object": [
+        "snoek",
+        0.14281265437602997
+      ],
+      "env_probs": {
+        "indoor": 0.35337164998054504,
+        "outdoor": 0.646628350019455
+      },
+      "status": "ACCEPT",
+      "n_rejected": 12,
+      "prompts": {
+        "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+        "casv": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.11643654853105545,
+        "clap_gt_audio_baseline": 0.20436638593673706,
+        "clap_text_casv": -0.0222538523375988,
+        "clap_gt_audio_casv": -0.10329386591911316
+      }
+    },
+    {
+      "id": "yhDw7PZje3g",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\yhDw7PZje3g.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\yhDw7PZje3g.wav",
+      "gt_captions": [
+        "Two men speaking with loud insects buzzing",
+        "A man speaks with wind blowing and buzzing of insects",
+        "Many insects are buzzing, and an adult male speaks",
+        "A man is speaking outside with wind noise",
+        "Man speaks while insects buzz"
+      ],
+      "top_scene": [
+        "trench",
+        0.08708681911230087
+      ],
+      "top_object": [
+        "trilobite",
+        0.14702291786670685
+      ],
+      "env_probs": {
+        "indoor": 0.31880009174346924,
+        "outdoor": 0.6811999082565308
+      },
+      "status": "ACCEPT",
+      "n_rejected": 6,
+      "prompts": {
+        "baseline": "Liquid is being rubbed against a hard surface",
+        "casv": "Liquid is being rubbed against a hard surface"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.011734915897250175,
+        "clap_gt_audio_baseline": 0.2333364486694336,
+        "clap_text_casv": -0.011734915897250175,
+        "clap_gt_audio_casv": 0.2333364486694336
+      }
+    },
+    {
+      "id": "hrv6fwnmBkY",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\hrv6fwnmBkY.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\hrv6fwnmBkY.wav",
+      "gt_captions": [
+        "A rooster clucking followed by a dog whimpering then a man talking and a dog barking",
+        "A rooster clucking followed by a dog whimpering proceeded by a man laughing then talking before a dog barks",
+        "A dog whimpering followed by laughing and barking.",
+        "A rooster cackles and a dog yelps and whimpers followed by a man laughing and then speaking then the dog barks",
+        "A dog whimpers then a male voice laughs and talks as the dog starts to bark shortly after"
+      ],
+      "top_scene": [
+        "farm",
+        0.38902711868286133
+      ],
+      "top_object": [
+        "hen",
+        0.5829765200614929
+      ],
+      "env_probs": {
+        "indoor": 0.0923251360654831,
+        "outdoor": 0.9076748639345169
+      },
+      "status": "ACCEPT",
+      "n_rejected": 5,
+      "prompts": {
+        "baseline": "A rooster alarm clock following repetitive beeping",
+        "casv": "A rooster screams followed by a goat making noises"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.033233486115932465,
+        "clap_gt_audio_baseline": 0.22591252624988556,
+        "clap_text_casv": 0.08373129367828369,
+        "clap_gt_audio_casv": 0.3484230041503906
+      }
+    },
+    {
+      "id": "SoO1HhaEc9Q",
+      "image": "data\\audiocaps\\pairs\\test\\frames\\SoO1HhaEc9Q.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\SoO1HhaEc9Q.wav",
+      "gt_captions": [
+        "Mechanical noises followed by pigs oinking and a man talking",
+        "Humming followed by faint cracking oinks and a man speaking",
+        "Rhythmic squeaking is ongoing, pigs oink, an adult male speaks, and music plays faintly in the background",
+        "Birds chirping, oinking, and then male speech",
+        "Humming and vibrating with a man speaking and small oinks"
+      ],
+      "top_scene": [
+        "toyshop",
+        0.15736395120620728
+      ],
+      "top_object": [
+        "carton",
+        0.4147726595401764
+      ],
+      "env_probs": {
+        "indoor": 0.9239203929901123,
+        "outdoor": 0.0760796070098877
+      },
+      "status": "ACCEPT",
+      "n_rejected": 4,
+      "prompts": {
+        "baseline": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+        "casv": "A man announces a game as kids yell and pigs footsteps fast and squeal"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.03680535405874252,
+        "clap_gt_audio_baseline": 0.28678467869758606,
+        "clap_text_casv": 0.25356394052505493,
+        "clap_gt_audio_casv": 0.14932428300380707
+      }
+    }
+  ]
+}

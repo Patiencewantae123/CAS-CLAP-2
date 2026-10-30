@@ -1,7 +1,7 @@
 {
   "id": "lmPMhs-9IYE",
-  "image": "data\\audiocaps\\test_subset\\frames\\lmPMhs-9IYE.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\lmPMhs-9IYE.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\lmPMhs-9IYE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lmPMhs-9IYE.wav",
   "gt_captions": [
     "A vehicle engine revving several times as a man speaks over an intercom along with a crowd of people talking and whistling",
     "Revving of loud engines with people speaking and cheering",

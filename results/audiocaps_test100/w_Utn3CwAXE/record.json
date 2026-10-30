@@ -1,7 +1,7 @@
 {
   "id": "w_Utn3CwAXE",
-  "image": "data\\audiocaps\\test_subset\\frames\\w_Utn3CwAXE.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\w_Utn3CwAXE.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\w_Utn3CwAXE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\w_Utn3CwAXE.wav",
   "gt_captions": [
     "A toilet flushes and a door creaks as it opens",
     "A toilet flushing followed by plastic clacking and a door slowly creaking",

@@ -7,7 +7,7 @@ import pytest
 
 from casv import vocab
 from casv.verifier import CASVerifier, VerifierConfig
-from scripts.tune_casv import candidate_arrays, configs, select
+from scripts.train import candidate_arrays, configs, select
 
 CAPTIONS = [
     "A dog barks while traffic passes",

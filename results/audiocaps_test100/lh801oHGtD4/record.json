@@ -1,0 +1,320 @@
+{
+  "id": "lh801oHGtD4",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\lh801oHGtD4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lh801oHGtD4.wav",
+  "gt_captions": [
+    "A small motor buzzing followed by a man speaking as a metal door closes",
+    "Male speech and then a door shutting",
+    "A man talking as an electronic device hums followed by a door closing",
+    "Electronic humming followed by a man speaking and a door closing",
+    "An electric motor buzzing as a man is talking followed by a door closing"
+  ],
+  "top_scene": [
+    "door elevator",
+    0.12875093519687653
+  ],
+  "top_object": [
+    "car mirror",
+    0.07883897423744202
+  ],
+  "env_probs": {
+    "indoor": 0.9007887244224548,
+    "outdoor": 0.09921127557754517
+  },
+  "status": "ACCEPT",
+  "n_rejected": 18,
+  "prompts": {
+    "baseline": "Beeping sound from a vehicle door",
+    "casv": "A door sliding and then a woman screaming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.032817233353853226,
+    "clap_gt_audio_baseline": 0.41967666149139404,
+    "clap_text_casv": 0.2837730050086975,
+    "clap_gt_audio_casv": 0.30220454931259155
+  },
+  "verdicts": [
+    {
+      "caption": "Beeping sound from a vehicle door",
+      "clip_similarity": 0.31182098388671875,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 1.0,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind against a microphone on a speeding car",
+      "clip_similarity": 0.31038302183151245,
+      "visual": 0.8778919983195914,
+      "scene_support": 0.14461467177889237,
+      "object_support": 0.42879217367093786,
+      "score": 0.5231788529627857,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)",
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car making a revving engine noise while pumping the accelerator",
+      "clip_similarity": 0.3103231191635132,
+      "visual": 0.8728052193894853,
+      "scene_support": 0.8082901458374359,
+      "object_support": 0.6892919849944481,
+      "score": 0.7983967270053594,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door sliding and then a woman screaming",
+      "clip_similarity": 0.3094335198402405,
+      "visual": 0.79726275617373,
+      "scene_support": 0.9916556429473294,
+      "object_support": 0.7766824124774283,
+      "score": 0.8494065190969193,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clapping sound followed by a vehicle door closing",
+      "clip_similarity": 0.30934709310531616,
+      "visual": 0.7899236223939748,
+      "scene_support": 0.8326499785703529,
+      "object_support": 0.7341649546022224,
+      "score": 0.7860139289093626,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man slams his car door while talking",
+      "clip_similarity": 0.30873212218284607,
+      "visual": 0.7377018894473379,
+      "scene_support": 0.8395329495302853,
+      "object_support": 0.7805859665206406,
+      "score": 0.781116430594213,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car door closing with traffic sounds in the background",
+      "clip_similarity": 0.30560290813446045,
+      "visual": 0.471977162640266,
+      "scene_support": 0.8114001088857742,
+      "object_support": 0.7341574169646782,
+      "score": 0.6524581228112422,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)",
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from a powerful car speeding by",
+      "clip_similarity": 0.3039831519126892,
+      "visual": 0.33443167266451046,
+      "scene_support": 0.7153572959260504,
+      "object_support": 0.7925599748619788,
+      "score": 0.5861478503022128,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car engine acceleration noise following by man speaking",
+      "clip_similarity": 0.30353930592536926,
+      "visual": 0.2967414246017887,
+      "scene_support": 0.34633553035480547,
+      "object_support": 0.2874473366464391,
+      "score": 0.30883142994108886,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man talking while driving inside car",
+      "clip_similarity": 0.30346980690956116,
+      "visual": 0.2908397487485512,
+      "scene_support": 0.7895617926768526,
+      "object_support": 0.6626176990324971,
+      "score": 0.5519897470122254,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Door screeching followed by child speaking",
+      "clip_similarity": 0.3031069040298462,
+      "visual": 0.26002297908093797,
+      "scene_support": 0.8571928320726523,
+      "object_support": 0.7235335879484482,
+      "score": 0.5782271176387054,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car accelerating loudly and whizzing by",
+      "clip_similarity": 0.30272045731544495,
+      "visual": 0.2272069281422881,
+      "scene_support": 0.6942834968550545,
+      "object_support": 0.7566384209403109,
+      "score": 0.5261593465955248,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Unknown animal making noise while car engine revs by",
+      "clip_similarity": 0.30125918984413147,
+      "visual": 0.10311989107713176,
+      "scene_support": 0.40724623243637714,
+      "object_support": 0.4121142083996606,
+      "score": 0.287056088681664,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows while a car drives",
+      "clip_similarity": 0.3010115623474121,
+      "visual": 0.08209200743024027,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03283680297209611,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.69)",
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music plays and people talk as a car revs and smashes through a wall",
+      "clip_similarity": 0.30077770352363586,
+      "visual": 0.06223332371653734,
+      "scene_support": 0.6257911014838583,
+      "object_support": 0.6062955290974009,
+      "score": 0.39451931866099266,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor car accelerating at top speed",
+      "clip_similarity": 0.3006393313407898,
+      "visual": 0.050483117461570776,
+      "scene_support": 0.6640503191279871,
+      "object_support": 0.7013837689224146,
+      "score": 0.4298234733997488,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train is moving through a tunnel at a fast speed and blows it horn",
+      "clip_similarity": 0.30028411746025085,
+      "visual": 0.02031927762677721,
+      "scene_support": 0.7291996895597076,
+      "object_support": 0.5725655432917146,
+      "score": 0.3986572809061375,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Intermittent, high pitched spraying with white noise",
+      "clip_similarity": 0.3002835810184479,
+      "visual": 0.020273724382627006,
+      "scene_support": 0.36766046172201694,
+      "object_support": 0.16464979900418386,
+      "score": 0.16780256797091103,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car accelerating rapidly with musical notes in the background",
+      "clip_similarity": 0.3001101613044739,
+      "visual": 0.005547372843180427,
+      "scene_support": 0.8278956086598941,
+      "object_support": 0.8225277373284069,
+      "score": 0.4973459529337625,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast moving train going by while opening a car door",
+      "clip_similarity": 0.30004483461380005,
+      "visual": 0.0,
+      "scene_support": 0.8476572183159773,
+      "object_support": 0.7272171371958387,
+      "score": 0.47246230665354483,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)",
+        "names 'cars on a road', not visible in image (z=-1.03)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "door elevator",
+      0.12875093519687653
+    ],
+    [
+      "car interior",
+      0.09441330283880234
+    ],
+    [
+      "airplane cabin",
+      0.06824607402086258
+    ],
+    [
+      "indoor escalator",
+      0.05956856161355972
+    ],
+    [
+      "bus interior",
+      0.04179795831441879
+    ]
+  ],
+  "top_objects": [
+    [
+      "car mirror",
+      0.07883897423744202
+    ],
+    [
+      "window shade",
+      0.03543243184685707
+    ],
+    [
+      "high-speed train",
+      0.03385096788406372
+    ],
+    [
+      "moving van",
+      0.03201212361454964
+    ],
+    [
+      "refrigerator",
+      0.030555326491594315
+    ]
+  ]
+}

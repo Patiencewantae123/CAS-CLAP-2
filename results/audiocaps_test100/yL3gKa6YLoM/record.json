@@ -1,7 +1,7 @@
 {
   "id": "yL3gKa6YLoM",
-  "image": "data\\audiocaps\\test_subset\\frames\\yL3gKa6YLoM.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\yL3gKa6YLoM.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\yL3gKa6YLoM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\yL3gKa6YLoM.wav",
   "gt_captions": [
     "A person snoring with another man speaking",
     "A man talking as a person is snoring",

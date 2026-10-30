@@ -1,7 +1,7 @@
 # =============================================================================
 # Result graphs for CAS-V. Every value is read from experiment outputs:
-#   results/places365/eval.json          (eval_places365.py)
-#   results/<run>/results.json + record.json per item (run_casv_experiment.py)
+#   results/places365/eval.json          (eval_scenes.py)
+#   results/<run>/results.json + record.json per item (test.py)
 #
 # Figures (300 dpi PNG, written next to the inputs):
 #   fig_places365_recognition.png  scene / environment accuracy + calibration
@@ -10,7 +10,7 @@
 # Statistics used in the figures are saved to graph_stats.json.
 #
 # Usage:
-#   py -m scripts.make_casv_graphs --run results/audiocaps_test100
+#   py -m scripts.plots --run results/audiocaps_test100
 # =============================================================================
 
 import argparse
@@ -266,7 +266,9 @@ def verification_figure(run_dir, results, stats):
         "item_status": dict(status),
     }
 
-    fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(11, 3.6), gridspec_kw={"width_ratios": [0.8, 1.6, 0.8]})
+    fig, (ax1, ax2, ax3) = plt.subplots(
+        1, 3, figsize=(12.5, 3.8), layout="constrained", gridspec_kw={"width_ratios": [1, 1.5, 1]}
+    )
     order = ["ACCEPT", "REPAIR", "REJECT"]
     total = sum(decisions.values())
     bars = ax1.bar(range(3), [decisions[d] for d in order], width=0.6, color=CASV)
@@ -280,7 +282,7 @@ def verification_figure(run_dir, results, stats):
             fontsize=8,
             color=INK,
         )
-    ax1.set_xticks(range(3), order)
+    ax1.set_xticks(range(3), [d.title() for d in order], fontsize=8)
     ax1.set_ylabel("Candidate captions")
     ax1.set_ylim(0, max(decisions.values()) * 1.25)
     ax1.set_title(f"(a) Candidate decisions (n = {total})", fontsize=9, loc="left", color=INK)
@@ -310,13 +312,12 @@ def verification_figure(run_dir, results, stats):
             fontsize=8,
             color=INK,
         )
-    ax3.set_xticks(range(3), s_order, fontsize=8)
+    ax3.set_xticks(range(3), [s.title() for s in s_order], fontsize=8)
     ax3.set_ylabel("Images")
     ax3.set_ylim(0, max(status.values()) * 1.25)
     ax3.set_title(f"(c) Final status per image (n = {n_items})", fontsize=9, loc="left", color=INK)
     ax3.grid(axis="x", visible=False)
 
-    fig.tight_layout()
     out = run_dir / "fig_verification_stats.png"
     fig.savefig(out)
     plt.close(fig)
@@ -380,7 +381,7 @@ def tuning_figure(tuning_path, stats):
 def main():
     setup_logging()
     parser = argparse.ArgumentParser(description="Render CAS-V result graphs from experiment outputs.")
-    parser.add_argument("--run", default=None, help="Run directory from run_casv_experiment.py")
+    parser.add_argument("--run", default=None, help="Run directory from test.py")
     parser.add_argument("--places", default="results/places365/eval.json")
     parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
     args = parser.parse_args()

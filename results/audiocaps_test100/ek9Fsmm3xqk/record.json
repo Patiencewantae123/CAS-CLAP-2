@@ -1,7 +1,7 @@
 {
   "id": "ek9Fsmm3xqk",
-  "image": "data\\audiocaps\\test_subset\\frames\\ek9Fsmm3xqk.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\ek9Fsmm3xqk.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\ek9Fsmm3xqk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\ek9Fsmm3xqk.wav",
   "gt_captions": [
     "Some rowing sounds in water with light wind",
     "Water splashing and trickling as wind blows into a microphone",

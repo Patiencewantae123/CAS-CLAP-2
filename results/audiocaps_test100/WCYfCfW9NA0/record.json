@@ -1,7 +1,7 @@
 {
   "id": "WCYfCfW9NA0",
-  "image": "data\\audiocaps\\test_subset\\frames\\WCYfCfW9NA0.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\WCYfCfW9NA0.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WCYfCfW9NA0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WCYfCfW9NA0.wav",
   "gt_captions": [
     "An idle helicopter engine running as birds chirp in the background",
     "Whirring and whooshing of a low helicopter",

@@ -1,7 +1,7 @@
 {
   "id": "KVAIaRPry24",
-  "image": "data\\audiocaps\\test_subset\\frames\\KVAIaRPry24.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\KVAIaRPry24.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\KVAIaRPry24.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\KVAIaRPry24.wav",
   "gt_captions": [
     "An insect buzzing as plastic clacks and plastic slaps a hard surface",
     "An insect buzzing as plastic clacks then slaps a hard surface in the background",

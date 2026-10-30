@@ -1,7 +1,7 @@
 {
   "id": "52IxrdTxGs4",
-  "image": "data\\audiocaps\\test_subset\\frames\\52IxrdTxGs4.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\52IxrdTxGs4.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\52IxrdTxGs4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\52IxrdTxGs4.wav",
   "gt_captions": [
     "A large explosion and a heartbeat, a person speaks",
     "A loud burst followed by humming and a heartbeat then a man speaks",

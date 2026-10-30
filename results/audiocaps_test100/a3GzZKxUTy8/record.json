@@ -1,7 +1,7 @@
 {
   "id": "a3GzZKxUTy8",
-  "image": "data\\audiocaps\\test_subset\\frames\\a3GzZKxUTy8.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\a3GzZKxUTy8.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\a3GzZKxUTy8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\a3GzZKxUTy8.wav",
   "gt_captions": [
     "Birds chirp and a duck quacks followed by a dog barking",
     "A duck quacking followed by a dog whimpering then glass tapping as a film projector runs while birds chirp in the background",

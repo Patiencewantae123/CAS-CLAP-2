@@ -1,7 +1,7 @@
 {
   "id": "R91bUbtKrRs",
-  "image": "data\\audiocaps\\test_subset\\frames\\R91bUbtKrRs.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\R91bUbtKrRs.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\R91bUbtKrRs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\R91bUbtKrRs.wav",
   "gt_captions": [
     "Two adult females speak in the foreground while muted speech occurs in the background, and an infant begins to cry",
     "Two woman speaking then a baby crying",

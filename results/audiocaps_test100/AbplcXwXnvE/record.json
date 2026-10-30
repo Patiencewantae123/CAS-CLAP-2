@@ -1,7 +1,7 @@
 {
   "id": "AbplcXwXnvE",
-  "image": "data\\audiocaps\\test_subset\\frames\\AbplcXwXnvE.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\AbplcXwXnvE.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\AbplcXwXnvE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\AbplcXwXnvE.wav",
   "gt_captions": [
     "Girl speaks and crunches plastic wrapping",
     "Plastic crinkling as a young girl is talking",

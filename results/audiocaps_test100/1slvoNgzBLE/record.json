@@ -1,7 +1,7 @@
 {
   "id": "1slvoNgzBLE",
-  "image": "data\\audiocaps\\test_subset\\frames\\1slvoNgzBLE.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\1slvoNgzBLE.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\1slvoNgzBLE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\1slvoNgzBLE.wav",
   "gt_captions": [
     "A subway train signal plays followed by a bell chiming followed by a horn honking as a crowd of people talk in the background",
     "A large motor vehicle engine is running, clacking occurs, and a horn blows",

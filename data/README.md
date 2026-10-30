@@ -32,8 +32,8 @@ data/
 
 ```
 # AudioCaps pairs (needs Node.js for yt-dlp); deterministic sample with --seed 0
-py -m scripts.fetch_audiocaps --split test --n 100
-py -m scripts.fetch_audiocaps --split val --n 100
+py -m scripts.download_data --split test --n 100
+py -m scripts.download_data --split val --n 100
 
 # Places365 val
 curl -L -o val_256.tar http://data.csail.mit.edu/places/places365/val_256.tar

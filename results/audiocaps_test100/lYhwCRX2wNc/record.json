@@ -1,7 +1,7 @@
 {
   "id": "lYhwCRX2wNc",
-  "image": "data\\audiocaps\\test_subset\\frames\\lYhwCRX2wNc.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\lYhwCRX2wNc.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\lYhwCRX2wNc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lYhwCRX2wNc.wav",
   "gt_captions": [
     "Plates rattling and clanking as a woman talks and a faucet pours water",
     "Water splashes and a woman speaks",

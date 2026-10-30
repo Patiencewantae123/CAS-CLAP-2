@@ -1,7 +1,7 @@
 {
   "id": "4YMXgLFcR94",
-  "image": "data\\audiocaps\\test_subset\\frames\\4YMXgLFcR94.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\4YMXgLFcR94.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\4YMXgLFcR94.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4YMXgLFcR94.wav",
   "gt_captions": [
     "Male speaking and then applause",
     "An adult male speaks, with his voice amplified, after which crowd of people clap",

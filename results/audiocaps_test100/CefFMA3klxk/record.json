@@ -1,7 +1,7 @@
 {
   "id": "CefFMA3klxk",
-  "image": "data\\audiocaps\\test_subset\\frames\\CefFMA3klxk.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\CefFMA3klxk.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\CefFMA3klxk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\CefFMA3klxk.wav",
   "gt_captions": [
     "A vehicle horn honking followed by a large truck engine accelerating while wind blows lightly into a microphone",
     "Semi-truck honking then taking off.",

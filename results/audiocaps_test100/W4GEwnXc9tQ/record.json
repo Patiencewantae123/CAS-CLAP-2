@@ -1,7 +1,7 @@
 {
   "id": "W4GEwnXc9tQ",
-  "image": "data\\audiocaps\\test_subset\\frames\\W4GEwnXc9tQ.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\W4GEwnXc9tQ.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\W4GEwnXc9tQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\W4GEwnXc9tQ.wav",
   "gt_captions": [
     "A woman speaks with chirping frogs and distant music playing",
     "Music plays as a woman speaks while a frog croaks followed by girl and boy speaking",

@@ -1,7 +1,7 @@
 {
   "id": "L6rnV0oNIII",
-  "image": "data\\audiocaps\\test_subset\\frames\\L6rnV0oNIII.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\L6rnV0oNIII.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\L6rnV0oNIII.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\L6rnV0oNIII.wav",
   "gt_captions": [
     "A series of electronic beeps alongside plastic clicking and laser effects followed by a wooden thud and synthesized explosion",
     "An electronic device beeping as plastic clacks with a toy zapping followed by a wooden thud and audio static",

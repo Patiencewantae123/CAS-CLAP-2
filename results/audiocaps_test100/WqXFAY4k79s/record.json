@@ -1,7 +1,7 @@
 {
   "id": "WqXFAY4k79s",
-  "image": "data\\audiocaps\\test_subset\\frames\\WqXFAY4k79s.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\WqXFAY4k79s.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WqXFAY4k79s.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WqXFAY4k79s.wav",
   "gt_captions": [
     "Rain falling with young female speaking",
     "A girl speaks while rain pitter-patters followed by male sneezing",

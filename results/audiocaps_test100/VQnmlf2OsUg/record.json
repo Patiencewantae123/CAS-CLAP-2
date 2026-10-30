@@ -1,7 +1,7 @@
 {
   "id": "VQnmlf2OsUg",
-  "image": "data\\audiocaps\\test_subset\\frames\\VQnmlf2OsUg.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\VQnmlf2OsUg.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\VQnmlf2OsUg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\VQnmlf2OsUg.wav",
   "gt_captions": [
     "Helicopter blades spinning",
     "High pitched vibrations from a small motor",

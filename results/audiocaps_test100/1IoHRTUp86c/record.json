@@ -1,0 +1,307 @@
+{
+  "id": "1IoHRTUp86c",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\1IoHRTUp86c.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\1IoHRTUp86c.wav",
+  "gt_captions": [
+    "A woman speaks briefly, and a muffled engine rumbles",
+    "A muffled aircraft engine running before accelerating as a woman talks over an intercom",
+    "An aircraft engine humming as a woman speaks over an intercom followed by an aircraft engine accelerating",
+    "A woman talking over an intercom as an aircraft engine runs then accelerates",
+    "A woman speaks briefly over a radio with an aircraft engine running"
+  ],
+  "top_scene": [
+    "airfield",
+    0.5104606747627258
+  ],
+  "top_object": [
+    "Groenendael",
+    0.1545412391424179
+  ],
+  "env_probs": {
+    "indoor": 0.034315384924411774,
+    "outdoor": 0.9656846150755882
+  },
+  "status": "REPAIR",
+  "n_rejected": 16,
+  "prompts": {
+    "baseline": "Very windy, engine or water noise in background",
+    "casv": "Helicopter in flight with faint sound of humans talking below"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07174977660179138,
+    "clap_gt_audio_baseline": 0.16875824332237244,
+    "clap_text_casv": 0.29278111457824707,
+    "clap_gt_audio_casv": 0.46936941146850586
+  },
+  "verdicts": [
+    {
+      "caption": "Very windy, engine or water noise in background",
+      "clip_similarity": 0.29864025115966797,
+      "visual": 1.0,
+      "scene_support": 0.766822425582708,
+      "object_support": 0.4992388696866982,
+      "score": 0.7798183885808219,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.29261183738708496,
+      "visual": 0.6594549730718919,
+      "scene_support": 0.0,
+      "object_support": 0.07230529256903048,
+      "score": 0.2854735769994659,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low level sounds followed by an engine starting",
+      "clip_similarity": 0.2915855944156647,
+      "visual": 0.6014825190365478,
+      "scene_support": 0.9044460688608625,
+      "object_support": 0.7437954660566493,
+      "score": 0.7350654680898726,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Helicopter in flight with faint sound of humans talking below",
+      "clip_similarity": 0.28768545389175415,
+      "visual": 0.3811636242421998,
+      "scene_support": 0.6368041354763293,
+      "object_support": 0.6906993215225946,
+      "score": 0.550716486796557,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The wind noise from a helicopter running",
+      "clip_similarity": 0.28746938705444336,
+      "visual": 0.3689580110069378,
+      "scene_support": 0.1485822854305269,
+      "object_support": 0.14177200042300478,
+      "score": 0.23468949015883464,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine idling consistently with light wind",
+      "clip_similarity": 0.2866056263446808,
+      "visual": 0.3201641781245107,
+      "scene_support": 0.632466943639947,
+      "object_support": 0.5911130035009211,
+      "score": 0.4951396553920647,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plane flying and high winds blowing over the microphone",
+      "clip_similarity": 0.28573769330978394,
+      "visual": 0.2711346506416786,
+      "scene_support": 0.7103815630792767,
+      "object_support": 0.5666489950853524,
+      "score": 0.4915630277060601,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind noise and engine humming sounds",
+      "clip_similarity": 0.285661518573761,
+      "visual": 0.2668315406514262,
+      "scene_support": 0.7720590094966674,
+      "object_support": 0.568544167821581,
+      "score": 0.5089135694560449,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine powering down followed by an aircraft engine running idle with warning sirens bleeping in the distance",
+      "clip_similarity": 0.28564029932022095,
+      "visual": 0.2656328652550805,
+      "scene_support": 0.8224952886783317,
+      "object_support": 0.6158587831933522,
+      "score": 0.5377593676635374,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.48)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clanging occurs followed by strong wind blowing, and an aircraft engine is running",
+      "clip_similarity": 0.2839382290840149,
+      "visual": 0.1694829365526971,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6677931746210788,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A light aircraft engine passes nearby",
+      "clip_similarity": 0.28365886211395264,
+      "visual": 0.15370149952271844,
+      "scene_support": 0.9190645828899602,
+      "object_support": 0.8798715122977508,
+      "score": 0.6011614283654007,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine and blade sounds from a helicopter",
+      "clip_similarity": 0.2821347117424011,
+      "visual": 0.06760226199475075,
+      "scene_support": 0.32144260515269,
+      "object_support": 0.0,
+      "score": 0.12347368634370731,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.2821305990219116,
+      "visual": 0.06736993446006576,
+      "scene_support": 0.5729300256925103,
+      "object_support": 0.7136842046675238,
+      "score": 0.4129322428920365,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Light wind and engine accelerating rapidly",
+      "clip_similarity": 0.2820359468460083,
+      "visual": 0.06202303409659102,
+      "scene_support": 0.8105675484780349,
+      "object_support": 0.8370061001742112,
+      "score": 0.5190813082343102,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter takes off from the ground really close by with a dog barking at the end",
+      "clip_similarity": 0.28190168738365173,
+      "visual": 0.05443871856212826,
+      "scene_support": 0.5157402866580922,
+      "object_support": 0.5242371999309834,
+      "score": 0.333768733401574,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind and a sequence of clanking sounds are in the background while a small farm animal fleets and is followed by a soft voice woman and man speaking",
+      "clip_similarity": 0.28152093291282654,
+      "visual": 0.03292990274230668,
+      "scene_support": 0.32595560408242574,
+      "object_support": 0.3281445674497821,
+      "score": 0.20940201255658503,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud airplane engine sound with a whoosh noise near the end",
+      "clip_similarity": 0.28142285346984863,
+      "visual": 0.027389396099927778,
+      "scene_support": 0.8284745804533356,
+      "object_support": 0.569920324823145,
+      "score": 0.4304742300229153,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plane engine running while flying",
+      "clip_similarity": 0.2814095616340637,
+      "visual": 0.026638540444351662,
+      "scene_support": 0.7161461851402909,
+      "object_support": 0.52603149159278,
+      "score": 0.3833087191976619,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whooshing sound followed by the propeller of a helicopter",
+      "clip_similarity": 0.28097084164619446,
+      "visual": 0.0018552532117598137,
+      "scene_support": 0.6771737621792677,
+      "object_support": 0.8211218532062092,
+      "score": 0.45023078590034704,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft engine works nearby while wind blows strongly",
+      "clip_similarity": 0.2809379994869232,
+      "visual": 0.0,
+      "scene_support": 0.7804798608348061,
+      "object_support": 0.729379212654522,
+      "score": 0.4529577220467984,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "airfield",
+      0.5104606747627258
+    ],
+    [
+      "farm",
+      0.07001856714487076
+    ],
+    [
+      "racecourse",
+      0.055880021303892136
+    ],
+    [
+      "tree farm",
+      0.03273651748895645
+    ],
+    [
+      "outdoor hunting lodge",
+      0.019686535000801086
+    ]
+  ],
+  "top_objects": [
+    [
+      "Groenendael",
+      0.1545412391424179
+    ],
+    [
+      "parachute",
+      0.08503802120685577
+    ],
+    [
+      "megalith",
+      0.08108382672071457
+    ],
+    [
+      "harvester",
+      0.05051547661423683
+    ],
+    [
+      "airship",
+      0.036530058830976486
+    ]
+  ]
+}

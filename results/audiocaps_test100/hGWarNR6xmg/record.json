@@ -1,7 +1,7 @@
 {
   "id": "hGWarNR6xmg",
-  "image": "data\\audiocaps\\test_subset\\frames\\hGWarNR6xmg.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\hGWarNR6xmg.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\hGWarNR6xmg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\hGWarNR6xmg.wav",
   "gt_captions": [
     "Hisses continuously with some static",
     "A roaring hiss is ongoing, and a brief low hum occurs",

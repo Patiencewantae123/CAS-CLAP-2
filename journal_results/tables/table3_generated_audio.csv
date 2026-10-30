@@ -1,0 +1,3 @@
+Metric,Baseline,CAS-V,Δ [95% CI],better/worse,Wilcoxon p,n
+"CLAP(audio, GT captions)",0.159,0.162,"+0.003 [-0.028, +0.033]",29/32,0.923,100
+"CLAP(audio, GT recording)",0.307,0.325,"+0.018 [-0.014, +0.051]",33/28,0.277,100

@@ -1,0 +1,292 @@
+{
+  "id": "XQxIXaX_7M0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\XQxIXaX_7M0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\XQxIXaX_7M0.wav",
+  "gt_captions": [
+    "Running water and distant speech",
+    "A stream of water rushing as a man shouts in the distance",
+    "Water rushing loudly while a man yells in the background",
+    "A large volume of water is rushing fast, splashing and roaring, and an adult male shout in the background",
+    "Water flows and people speak in the distance"
+  ],
+  "top_scene": [
+    "raft",
+    0.8685336709022522
+  ],
+  "top_object": [
+    "canoe",
+    0.2617296874523163
+  ],
+  "env_probs": {
+    "indoor": 0.03176702931523323,
+    "outdoor": 0.9682329706847668
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+    "casv": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.24392572045326233,
+    "clap_gt_audio_baseline": 0.5130588412284851,
+    "clap_text_casv": 0.24392572045326233,
+    "clap_gt_audio_casv": 0.5130588412284851
+  },
+  "verdicts": [
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.34028851985931396,
+      "visual": 1.0,
+      "scene_support": 0.5771923932947218,
+      "object_support": 0.5333803123348122,
+      "score": 0.7331718116888601,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water is running, splashing and gurgling, two young females laugh and speak, and an adult male speaks in the background",
+      "clip_similarity": 0.31568142771720886,
+      "visual": 0.3418519528179915,
+      "scene_support": 0.11484054228037577,
+      "object_support": 0.10987821257568128,
+      "score": 0.2041564075840137,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water rapids and people screaming",
+      "clip_similarity": 0.31272509694099426,
+      "visual": 0.2627811176313981,
+      "scene_support": 0.5226309393105161,
+      "object_support": 0.36113486018574953,
+      "score": 0.3702421869014389,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing strongly and boat engine sound at the end",
+      "clip_similarity": 0.3124356269836426,
+      "visual": 0.2550388746207792,
+      "scene_support": 0.9142802295136547,
+      "object_support": 0.8978879672853204,
+      "score": 0.6456660088880042,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat is driving through a stream of water",
+      "clip_similarity": 0.3100121319293976,
+      "visual": 0.19021941004953186,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6760877640198127,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud rushing water from a river, and two men conversing over the sound",
+      "clip_similarity": 0.3095910847187042,
+      "visual": 0.17895796567044972,
+      "scene_support": 0.3376820198587238,
+      "object_support": 0.4044403873431457,
+      "score": 0.29421990842874074,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rushing water, people laughing happily",
+      "clip_similarity": 0.30868208408355713,
+      "visual": 0.1546455849367022,
+      "scene_support": 0.5535265640982217,
+      "object_support": 0.39803197268569723,
+      "score": 0.34732579500985655,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large motor is running, water is splashing, and an adult female speaks",
+      "clip_similarity": 0.30814632773399353,
+      "visual": 0.14031609841329054,
+      "scene_support": 0.7081403639771718,
+      "object_support": 0.6266595489179023,
+      "score": 0.4565664132338385,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water is rushing and splashing, and two adult males speak",
+      "clip_similarity": 0.30786076188087463,
+      "visual": 0.13267827564712653,
+      "scene_support": 0.5082132055990862,
+      "object_support": 0.4737320899821057,
+      "score": 0.3476548989332082,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water is rushing, an adult female and male are shouting, and an adult female is laughing",
+      "clip_similarity": 0.3078194260597229,
+      "visual": 0.13157269641766822,
+      "scene_support": 0.6681635924679646,
+      "object_support": 0.6091505145839464,
+      "score": 0.4358233106826406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Males and females are shouting and laughing, water is splashing, and a boat engine is running",
+      "clip_similarity": 0.3076969087123871,
+      "visual": 0.12829581378442878,
+      "scene_support": 0.8907991505338992,
+      "object_support": 0.8435030900141843,
+      "score": 0.5716089976781966,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rushing water with faint music in the background",
+      "clip_similarity": 0.3071976900100708,
+      "visual": 0.11494357321293919,
+      "scene_support": 0.657298932586378,
+      "object_support": 0.48085146592616046,
+      "score": 0.3874225488389372,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of waterfall followed by a laughing sound",
+      "clip_similarity": 0.30605366826057434,
+      "visual": 0.08434525318322325,
+      "scene_support": 0.8021955446330543,
+      "object_support": 0.6904832305188239,
+      "score": 0.4815417338188528,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A stream goes by quickly and the whooshing sound is close by",
+      "clip_similarity": 0.305990070104599,
+      "visual": 0.08264423943004083,
+      "scene_support": 0.8183602263575052,
+      "object_support": 0.7878800452448929,
+      "score": 0.5149297772527357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dribbling water flow is interrupted by splashing and an adult woman speaking",
+      "clip_similarity": 0.3054201006889343,
+      "visual": 0.06739968084071847,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.02695987233628739,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor is running, a high-pitched hum is present, water is splashing, and an adult male speaks in the background",
+      "clip_similarity": 0.30535268783569336,
+      "visual": 0.0655966381463892,
+      "scene_support": 0.6500118836727958,
+      "object_support": 0.5979874809445639,
+      "score": 0.4006384646437636,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Flowing water is followed by a tapping sound in the background",
+      "clip_similarity": 0.3049379885196686,
+      "visual": 0.05450497630218422,
+      "scene_support": 0.9556517689352133,
+      "object_support": 0.7703605504702317,
+      "score": 0.5396056863425072,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A waterfall is flowing loudly, followed by several men talking",
+      "clip_similarity": 0.3048575222492218,
+      "visual": 0.05235280332486812,
+      "scene_support": 0.24944358430816335,
+      "object_support": 0.1452990082107486,
+      "score": 0.13936389908562083,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.30369865894317627,
+      "visual": 0.021357526946002778,
+      "scene_support": 0.75187805331006,
+      "object_support": 0.6954257887520974,
+      "score": 0.4427341633970483,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two loud pops followed by males laughing and water splashing then an engine running",
+      "clip_similarity": 0.30290013551712036,
+      "visual": 0.0,
+      "scene_support": 0.4698717621802835,
+      "object_support": 0.5606224380637306,
+      "score": 0.3091482600732042,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.69)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raft",
+      0.8685336709022522
+    ],
+    [
+      "river",
+      0.062032800167798996
+    ],
+    [
+      "swimming hole",
+      0.027614498510956764
+    ],
+    [
+      "creek",
+      0.006180035416036844
+    ],
+    [
+      "campsite",
+      0.004261689726263285
+    ]
+  ],
+  "top_objects": [
+    [
+      "canoe",
+      0.2617296874523163
+    ],
+    [
+      "motorboat",
+      0.14312773942947388
+    ],
+    [
+      "tub",
+      0.06415234506130219
+    ],
+    [
+      "paddle",
+      0.04468205198645592
+    ],
+    [
+      "amphibious vehicle",
+      0.03396982699632645
+    ]
+  ]
+}

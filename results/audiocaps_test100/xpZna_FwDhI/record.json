@@ -1,7 +1,7 @@
 {
   "id": "xpZna_FwDhI",
-  "image": "data\\audiocaps\\test_subset\\frames\\xpZna_FwDhI.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\xpZna_FwDhI.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\xpZna_FwDhI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\xpZna_FwDhI.wav",
   "gt_captions": [
     "A click occurs then a woman speaks followed by a sewing machine stitching",
     "A click occurs and then a woman speaks followed by a sewing machine stitching",

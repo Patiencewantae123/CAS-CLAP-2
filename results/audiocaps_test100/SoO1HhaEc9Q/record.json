@@ -1,0 +1,289 @@
+{
+  "id": "SoO1HhaEc9Q",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\SoO1HhaEc9Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\SoO1HhaEc9Q.wav",
+  "gt_captions": [
+    "Mechanical noises followed by pigs oinking and a man talking",
+    "Humming followed by faint cracking oinks and a man speaking",
+    "Rhythmic squeaking is ongoing, pigs oink, an adult male speaks, and music plays faintly in the background",
+    "Birds chirping, oinking, and then male speech",
+    "Humming and vibrating with a man speaking and small oinks"
+  ],
+  "top_scene": [
+    "toyshop",
+    0.15736395120620728
+  ],
+  "top_object": [
+    "carton",
+    0.4147726595401764
+  ],
+  "env_probs": {
+    "indoor": 0.9239203929901123,
+    "outdoor": 0.0760796070098877
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+    "casv": "A man announces a game as kids yell and pigs footsteps fast and squeal"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.03680535405874252,
+    "clap_gt_audio_baseline": 0.28678467869758606,
+    "clap_text_casv": 0.25356394052505493,
+    "clap_gt_audio_casv": 0.14932428300380707
+  },
+  "verdicts": [
+    {
+      "caption": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+      "clip_similarity": 0.3032131791114807,
+      "visual": 1.0,
+      "scene_support": 0.44240146701284816,
+      "object_support": 0.39602362145715614,
+      "score": 0.6515275265410013,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man announces a game as kids yell and pigs footsteps fast and squeal",
+      "clip_similarity": 0.28731635212898254,
+      "visual": 0.47783836168921434,
+      "scene_support": 0.8616482330733228,
+      "object_support": 0.7152133575143512,
+      "score": 0.6641938218519879,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of small pops is followed by an explosion",
+      "clip_similarity": 0.28424975275993347,
+      "visual": 0.37711004953305793,
+      "scene_support": 0.8535424311453275,
+      "object_support": 0.8169382035102445,
+      "score": 0.6519882102098948,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Electronic toy noises, accompanied by a toddler giggling",
+      "clip_similarity": 0.2841269373893738,
+      "visual": 0.3730759441627347,
+      "scene_support": 0.9448654409925192,
+      "object_support": 0.6441853145280955,
+      "score": 0.6259456043212783,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Beeping is followed by a door opening and closing and a child's voice in the background",
+      "clip_similarity": 0.2814917266368866,
+      "visual": 0.2865174148834113,
+      "scene_support": 0.8050971452381467,
+      "object_support": 0.7031610186003987,
+      "score": 0.5670844151049281,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy motorboat running as water lightly splashes with wind blowing into a microphone and a bird chirping in the background",
+      "clip_similarity": 0.27983570098876953,
+      "visual": 0.23212209017757504,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.09284883607103002,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy motorboat buzzing as water splashes and a man speaks in the background",
+      "clip_similarity": 0.2795223295688629,
+      "visual": 0.22182880748673572,
+      "scene_support": 0.5729739777056052,
+      "object_support": 0.5026780976933107,
+      "score": 0.4114271456143691,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy helicopter is buzzing and then it stops",
+      "clip_similarity": 0.2791828513145447,
+      "visual": 0.21067799596687353,
+      "scene_support": 0.6969962007826427,
+      "object_support": 0.43710517243963487,
+      "score": 0.42450161035343265,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)",
+        "names 'a helicopter', not visible in image (z=-0.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby screaming and crying and a rattling sound from a toy followed by a woman talking",
+      "clip_similarity": 0.2785528898239136,
+      "visual": 0.18998570785284963,
+      "scene_support": 0.9942796943891701,
+      "object_support": 0.7751087396393831,
+      "score": 0.6068108133497058,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meowing as plastic clacks in the background",
+      "clip_similarity": 0.27591004967689514,
+      "visual": 0.10317657654130039,
+      "scene_support": 0.7798155452035548,
+      "object_support": 0.6385635276308098,
+      "score": 0.4667843524668295,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talks as people talk in the background and boards make a stacking sound",
+      "clip_similarity": 0.2754988372325897,
+      "visual": 0.08966951857000216,
+      "scene_support": 0.6860595874293104,
+      "object_support": 0.863304306119696,
+      "score": 0.5006769754927027,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling and tapping noises followed by an object moving",
+      "clip_similarity": 0.2754943370819092,
+      "visual": 0.08952170252755644,
+      "scene_support": 0.9650475372474079,
+      "object_support": 0.8771927037275739,
+      "score": 0.588480753303517,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plastic squeaking followed by a woman laughing and liquid splashing then a kid and woman talking",
+      "clip_similarity": 0.2745491564273834,
+      "visual": 0.05847543904301349,
+      "scene_support": 0.7940091921349378,
+      "object_support": 0.7126485708718656,
+      "score": 0.4753875045192464,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of small pops, a large explosion",
+      "clip_similarity": 0.27448713779449463,
+      "visual": 0.05643831861699004,
+      "scene_support": 0.7595028868267873,
+      "object_support": 0.7098835414199853,
+      "score": 0.46339125592082775,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A plastic like material is rubbing together and there is an occasional popping sound",
+      "clip_similarity": 0.27446842193603516,
+      "visual": 0.055823560506685986,
+      "scene_support": 0.8905900649806276,
+      "object_support": 0.9714713949549604,
+      "score": 0.5809478621833508,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.27410274744033813,
+      "visual": 0.04381228341523582,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6175249133660943,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaks with some humming followed by clicks and vibrations of an engine starting",
+      "clip_similarity": 0.2738516926765442,
+      "visual": 0.03556591029230378,
+      "scene_support": 0.718974157965567,
+      "object_support": 0.540866319938848,
+      "score": 0.392178507488246,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby fusses and fidgets, a woman speaks, and a man repeatedly imitates cartoon noise",
+      "clip_similarity": 0.2732582688331604,
+      "visual": 0.016073770973236486,
+      "scene_support": 0.9456954229974087,
+      "object_support": 0.7707441658298236,
+      "score": 0.5213613850374643,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speaking are followed by a countdown and popping sound",
+      "clip_similarity": 0.27310711145401,
+      "visual": 0.011108718209761732,
+      "scene_support": 0.9269343480303229,
+      "object_support": 0.8671382964372967,
+      "score": 0.5426652806241905,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man and a woman laughing and talking as a dog barks in the background while a toy squeaks repeatedly",
+      "clip_similarity": 0.27276891469955444,
+      "visual": 0.0,
+      "scene_support": 0.6388842638388128,
+      "object_support": 0.4908146105307334,
+      "score": 0.33890966231086384,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "toyshop",
+      0.15736395120620728
+    ],
+    [
+      "playroom",
+      0.07559122890233994
+    ],
+    [
+      "childs room",
+      0.07405200600624084
+    ],
+    [
+      "archaelogical excavation",
+      0.0737413540482521
+    ],
+    [
+      "candy store",
+      0.07153081148862839
+    ]
+  ],
+  "top_objects": [
+    [
+      "carton",
+      0.4147726595401764
+    ],
+    [
+      "abacus",
+      0.10516741126775742
+    ],
+    [
+      "jigsaw puzzle",
+      0.09590955078601837
+    ],
+    [
+      "toy store",
+      0.04603731259703636
+    ],
+    [
+      "diaper",
+      0.024530528113245964
+    ]
+  ]
+}

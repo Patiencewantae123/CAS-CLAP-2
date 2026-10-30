@@ -1,7 +1,7 @@
 {
   "id": "EvZ3jOMYWxk",
-  "image": "data\\audiocaps\\test_subset\\frames\\EvZ3jOMYWxk.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\EvZ3jOMYWxk.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\EvZ3jOMYWxk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\EvZ3jOMYWxk.wav",
   "gt_captions": [
     "A woman speaks while delivering a speech",
     "An adult female is speaking in a quiet environment",

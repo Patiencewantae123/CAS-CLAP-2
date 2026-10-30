@@ -1,7 +1,7 @@
 {
   "id": "WUyeFOyKIg0",
-  "image": "data\\audiocaps\\test_subset\\frames\\WUyeFOyKIg0.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\WUyeFOyKIg0.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WUyeFOyKIg0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WUyeFOyKIg0.wav",
   "gt_captions": [
     "Man speaks midst a crowd, a distant horn blow, then a race car goes by",
     "A vehicle driving in the distance followed by tires skidding as a vehicle drives by while a crowd of people talk in the background and wind blows into a microphone",

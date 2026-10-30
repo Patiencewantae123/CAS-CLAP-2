@@ -1,7 +1,7 @@
 {
   "id": "sI7_ycEYzAY",
-  "image": "data\\audiocaps\\test_subset\\frames\\sI7_ycEYzAY.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\sI7_ycEYzAY.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\sI7_ycEYzAY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sI7_ycEYzAY.wav",
   "gt_captions": [
     "A clock ticking during high-pitched humming followed by a person sniffing",
     "A clock ticks low and loud and someone breathes sharply near the end",

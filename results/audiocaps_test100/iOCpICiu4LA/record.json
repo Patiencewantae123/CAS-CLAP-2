@@ -1,7 +1,7 @@
 {
   "id": "iOCpICiu4LA",
-  "image": "data\\audiocaps\\test_subset\\frames\\iOCpICiu4LA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\iOCpICiu4LA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\iOCpICiu4LA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\iOCpICiu4LA.wav",
   "gt_captions": [
     "A man talking as birds chirp in the background followed by a loud popping",
     "Birds chirp in the background while an adult male speaks and many bees buzz",

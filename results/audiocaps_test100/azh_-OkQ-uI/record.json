@@ -1,7 +1,7 @@
 {
   "id": "azh_-OkQ-uI",
-  "image": "data\\audiocaps\\test_subset\\frames\\azh_-OkQ-uI.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\azh_-OkQ-uI.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\azh_-OkQ-uI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\azh_-OkQ-uI.wav",
   "gt_captions": [
     "A woman talking as goats are baaing followed by footsteps on gravel then a man talking while an airplane flies in the distance",
     "Goats bleat and a man talks",

@@ -4,11 +4,11 @@
 #   tables/   CSV + LaTeX (booktabs) tables
 #   RESULTS.md  results summary with every number read from result files
 #
-# Run after eval_places365, tune_casv, run_casv_experiment and the two figure
+# Run after eval_scenes, train, test and the two figure
 # scripts. Missing inputs are reported, never filled in.
 #
 # Usage:
-#   py -m scripts.build_journal_results --run results/audiocaps_test100
+#   py -m scripts.report --run results/audiocaps_test100
 # =============================================================================
 
 import argparse
@@ -259,7 +259,7 @@ def main():
 
     header = f"""# CAS-V results
 
-Generated {date.today().isoformat()} by `scripts/build_journal_results.py`. Every number below is read
+Generated {date.today().isoformat()} by `scripts/report.py`. Every number below is read
 from result files in `results/`; nothing is entered by hand.
 
 ## Setup

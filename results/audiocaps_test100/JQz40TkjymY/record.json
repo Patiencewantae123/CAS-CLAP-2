@@ -1,7 +1,7 @@
 {
   "id": "JQz40TkjymY",
-  "image": "data\\audiocaps\\test_subset\\frames\\JQz40TkjymY.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\JQz40TkjymY.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\JQz40TkjymY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\JQz40TkjymY.wav",
   "gt_captions": [
     "Typing on a computer keyboard",
     "Typing on a keyboard is occurring in a quiet environment",

@@ -1,0 +1,290 @@
+{
+  "id": "g6CY7qvu81k",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\g6CY7qvu81k.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\g6CY7qvu81k.wav",
+  "gt_captions": [
+    "Music plays followed by a man speaking",
+    "Drums and music playing with a man speaking",
+    "Music followed by male speech and distant sizzling",
+    "Music plays followed by a man speaking",
+    "Music and a male speech"
+  ],
+  "top_scene": [
+    "art gallery",
+    0.07374751567840576
+  ],
+  "top_object": [
+    "sunglasses",
+    0.11585342139005661
+  ],
+  "env_probs": {
+    "indoor": 0.6491234302520752,
+    "outdoor": 0.3508765697479248
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Man speaking with ticking in the background",
+    "casv": "A man speaks into a microphone, a guitar plays, the audience laughs, and then a woman speaks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3585053086280823,
+    "clap_gt_audio_baseline": 0.31904926896095276,
+    "clap_text_casv": 0.1807786524295807,
+    "clap_gt_audio_casv": 0.24159544706344604
+  },
+  "verdicts": [
+    {
+      "caption": "Man speaking with ticking in the background",
+      "clip_similarity": 0.25856447219848633,
+      "visual": 1.0,
+      "scene_support": 0.932474018144081,
+      "object_support": 0.9933816726980476,
+      "score": 0.9777567072526385,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks into a microphone, a guitar plays, the audience laughs, and then a woman speaks",
+      "clip_similarity": 0.2581150531768799,
+      "visual": 0.9534918148061337,
+      "scene_support": 0.9615471753623609,
+      "object_support": 0.9238379012119432,
+      "score": 0.9470122488947447,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is speaking while snakes are hissing, and people are communicating in the background",
+      "clip_similarity": 0.25623780488967896,
+      "visual": 0.7592245346097384,
+      "scene_support": 0.6081364897033574,
+      "object_support": 0.6355476486446505,
+      "score": 0.6767950553482978,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A grown man speaks clearly and naturally as sheep bleat in the background",
+      "clip_similarity": 0.25620120763778687,
+      "visual": 0.7554372632955428,
+      "scene_support": 0.5769904748406299,
+      "object_support": 0.46810507187978156,
+      "score": 0.6157035693343406,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking in foreign language, along with music and duck quacking",
+      "clip_similarity": 0.25495588779449463,
+      "visual": 0.6265651793094089,
+      "scene_support": 0.2431879165445286,
+      "object_support": 0.22676133616245206,
+      "score": 0.39161084753585773,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as birds chirp in the background followed by a train horn blowing",
+      "clip_similarity": 0.2547323703765869,
+      "visual": 0.6034344505989316,
+      "scene_support": 0.5966071921342004,
+      "object_support": 0.7748079636306631,
+      "score": 0.6527983269690317,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motorcylde accepting down the road then slowing down",
+      "clip_similarity": 0.2542001008987427,
+      "visual": 0.5483524752963818,
+      "scene_support": 0.36214342392488963,
+      "object_support": 0.33526492076774805,
+      "score": 0.42856349352634404,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bee buzzing in the background is followed by a medium voice male speaking in a series of phrases",
+      "clip_similarity": 0.2539268434047699,
+      "visual": 0.5200743884235329,
+      "scene_support": 0.10526476850673719,
+      "object_support": 0.23882391385465954,
+      "score": 0.3112563600778322,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog swallows a buzzing fly and croaks, then a man sings as music plays",
+      "clip_similarity": 0.25369665026664734,
+      "visual": 0.4962528219489027,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.19850112877956108,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man recites a foreign narrative as multiple others whisper in the background",
+      "clip_similarity": 0.25350919365882874,
+      "visual": 0.47685385080371573,
+      "scene_support": 1.0,
+      "object_support": 0.8778430104060639,
+      "score": 0.7540944434433055,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks a foreign language briefly as various birds chirp in the background",
+      "clip_similarity": 0.253446489572525,
+      "visual": 0.4703649103761365,
+      "scene_support": 0.408682057674942,
+      "object_support": 0.5253356634555727,
+      "score": 0.46835128048960906,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking with ticking in the background",
+      "clip_similarity": 0.25339871644973755,
+      "visual": 0.4654211026264171,
+      "scene_support": 0.8401166942081318,
+      "object_support": 0.904223033766165,
+      "score": 0.7094703594428559,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees buzz when some shuffling goes on and a man speaks while the bees continue to buzz",
+      "clip_similarity": 0.25304073095321655,
+      "visual": 0.4283749275237167,
+      "scene_support": 0.46211947949315113,
+      "object_support": 0.4136432484229724,
+      "score": 0.43407878938432376,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks very fast with a rustle in the background followed by a train whistle and a train coming close by at the end",
+      "clip_similarity": 0.25264644622802734,
+      "visual": 0.3875723220784348,
+      "scene_support": 0.6159989606183891,
+      "object_support": 0.70586365031386,
+      "score": 0.5515877121110486,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talking as a clock tick rocks in the background",
+      "clip_similarity": 0.2523202896118164,
+      "visual": 0.35381996274410626,
+      "scene_support": 0.6515344300527315,
+      "object_support": 0.8413925313915157,
+      "score": 0.5894060735309167,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fly buzzes the microphone",
+      "clip_similarity": 0.25130248069763184,
+      "visual": 0.24849187648807688,
+      "scene_support": 0.6797303406014884,
+      "object_support": 1.0,
+      "score": 0.6033158527756772,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male voice speaking in a foreign language with faint children's voices in the background",
+      "clip_similarity": 0.25118809938430786,
+      "visual": 0.2366551115826353,
+      "scene_support": 0.7510917265009025,
+      "object_support": 0.8120041774396181,
+      "score": 0.5635908158152103,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks as cats meow with metal jingling",
+      "clip_similarity": 0.2495926022529602,
+      "visual": 0.07154488595008697,
+      "scene_support": 0.4630267909200138,
+      "object_support": 0.42908288419969576,
+      "score": 0.29625085691594766,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.50)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking in a foreign language and metal is jangling together",
+      "clip_similarity": 0.24956844747066498,
+      "visual": 0.06904522520077473,
+      "scene_support": 0.906567860989152,
+      "object_support": 0.8403967463662678,
+      "score": 0.5517074722869358,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is vocalizing something while something is buzzing in the background",
+      "clip_similarity": 0.24890124797821045,
+      "visual": 0.0,
+      "scene_support": 0.7950388855423951,
+      "object_support": 0.6898146205970735,
+      "score": 0.44545605184184056,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art gallery",
+      0.07374751567840576
+    ],
+    [
+      "catacomb",
+      0.06415709108114243
+    ],
+    [
+      "dressing room",
+      0.06054283306002617
+    ],
+    [
+      "discotheque",
+      0.050744783133268356
+    ],
+    [
+      "bar",
+      0.029123274609446526
+    ]
+  ],
+  "top_objects": [
+    [
+      "sunglasses",
+      0.11585342139005661
+    ],
+    [
+      "sunglass",
+      0.11543984711170197
+    ],
+    [
+      "feather boa",
+      0.03219054266810417
+    ],
+    [
+      "Band-Aid",
+      0.029968909919261932
+    ],
+    [
+      "maraca",
+      0.02932273969054222
+    ]
+  ]
+}

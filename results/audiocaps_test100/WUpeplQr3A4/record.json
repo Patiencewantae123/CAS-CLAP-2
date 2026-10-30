@@ -1,7 +1,7 @@
 {
   "id": "WUpeplQr3A4",
-  "image": "data\\audiocaps\\test_subset\\frames\\WUpeplQr3A4.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\WUpeplQr3A4.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WUpeplQr3A4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WUpeplQr3A4.wav",
   "gt_captions": [
     "A loud shrill followed by a power tool drilling and a man screaming while liquid pours and splatters",
     "A person screeching followed by a man screaming as a power tool drills and liquid sprays and gurgles",

@@ -1,7 +1,7 @@
 {
   "id": "PZBUdlKwX04",
-  "image": "data\\audiocaps\\test_subset\\frames\\PZBUdlKwX04.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\PZBUdlKwX04.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\PZBUdlKwX04.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\PZBUdlKwX04.wav",
   "gt_captions": [
     "Water splashing with multiple voices in background",
     "A man shouting as a stream of water splashes and a crowd of people talk in the background",

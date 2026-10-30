@@ -1,7 +1,7 @@
 {
   "id": "CBwXKOpJY_o",
-  "image": "data\\audiocaps\\test_subset\\frames\\CBwXKOpJY_o.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\CBwXKOpJY_o.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\CBwXKOpJY_o.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\CBwXKOpJY_o.wav",
   "gt_captions": [
     "A woman and a child speaking",
     "A woman speaking with a child speaking",

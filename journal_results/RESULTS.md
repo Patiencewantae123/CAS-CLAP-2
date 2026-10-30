@@ -1,6 +1,6 @@
 # CAS-V results
 
-Generated 2026-10-30 by `scripts/build_journal_results.py`. Every number below is read
+Generated 2026-10-30 by `scripts/report.py`. Every number below is read
 from result files in `results/`; nothing is entered by hand.
 
 ## Setup
@@ -70,6 +70,32 @@ LaTeX versions of all tables are in `tables/`.
 | metal hit | LB6CZ0x-kns | yes | 0.544 | 0.495 | -0.050 |
 | Mean |  | 6/7 | 0.365 | 0.330 | -0.036 |
 
+## Table 3. Generated audio (AudioLDM-S), baseline vs CAS-V
+
+| Metric | Baseline | CAS-V | Δ [95% CI] | better/worse | Wilcoxon p | n |
+|---|---|---|---|---|---|---|
+| CLAP(audio, GT captions) | 0.159 | 0.162 | +0.003 [-0.028, +0.033] | 29/32 | 0.923 | 100 |
+| CLAP(audio, GT recording) | 0.307 | 0.325 | +0.018 [-0.014, +0.051] | 33/28 | 0.277 | 100 |
+
+## Table 4. Verification statistics
+
+| Quantity | Count |
+|---|---|
+| Candidates ACCEPT | 436 |
+| Candidates REPAIR | 774 |
+| Candidates REJECT | 790 |
+| Images ACCEPT | 91 |
+| Images REPAIR | 2 |
+| Images UNCERTAIN | 7 |
+| Conflict: absent source: a motor vehicle with an engine | 74 |
+| Conflict: environment: outdoor sound | 72 |
+| Conflict: absent source: cars on a road | 58 |
+| Conflict: absent source: insects | 7 |
+| Conflict: absent source: an emergency vehicle | 6 |
+| Conflict: absent source: a clock | 6 |
+| Conflict: absent source: a stream or river | 4 |
+| Conflict: absent source: a boat | 3 |
+
 ## Limitations
 
 - Sample sizes are small (100 test pairs); report confidence intervals with every mean.
@@ -78,10 +104,3 @@ LaTeX versions of all tables are in `tables/`.
   cannot be recovered from the image by any method.
 - Places365/ImageNet are used for zero-shot vocabularies and Places365 val for recognition accuracy only;
   they contain no audio.
-
-## Missing inputs at build time
-
-- `results\audiocaps_test100\fig_clap_comparison.png`
-- `results\audiocaps_test100\fig_verification_stats.png`
-- `results\audiocaps_test100\results.json`
-- `results\audiocaps_test100\graph_stats.json`

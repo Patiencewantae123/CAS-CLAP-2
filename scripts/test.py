@@ -1,5 +1,7 @@
 # =============================================================================
-# CAS-V experiment runner
+# TEST: run CAS-V and the unverified baseline on a manifest (normally the
+# AudioCaps test split) and evaluate both. Uses the default verifier
+# configuration unless --config points to one produced by train.py.
 #
 # For every item in the manifest:
 #   1. CAS-V recognition (Places365 / ImageNet) and verification of
@@ -14,7 +16,7 @@
 #     "gt_audio": "audio/7fmOlUlwoNg.wav", "captions": ["...", "..."]}, ...]
 #
 # Usage:
-#   py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/test/manifest.json --run-name main
+#   py -m scripts.test --manifest data/audiocaps/pairs/test/manifest.json --run-name main
 # =============================================================================
 
 import argparse
@@ -51,7 +53,7 @@ def parse_args():
     parser.add_argument("--guidance-scale", type=float, default=2.5)
     parser.add_argument("--no-generate", action="store_true", help="Run verification only.")
     parser.add_argument("--no-clap", action="store_true", help="Skip CLAP evaluation.")
-    parser.add_argument("--config", default=None, help="VerifierConfig JSON (e.g. from tune_casv).")
+    parser.add_argument("--config", default=None, help="VerifierConfig JSON (e.g. from train).")
     return parser.parse_args()
 
 

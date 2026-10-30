@@ -1,7 +1,7 @@
 {
   "id": "FXdoNvmrYxo",
-  "image": "data\\audiocaps\\test_subset\\frames\\FXdoNvmrYxo.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\FXdoNvmrYxo.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\FXdoNvmrYxo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\FXdoNvmrYxo.wav",
   "gt_captions": [
     "A child talking followed by a man talking as a young boy mumbles while birds chirp in the background",
     "A girl talking followed by a man then a young boy talking as a bird chirps in the background",

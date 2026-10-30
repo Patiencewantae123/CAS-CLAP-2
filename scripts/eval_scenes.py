@@ -7,7 +7,7 @@
 # Per-image confidences are saved so calibration can be plotted.
 #
 # Usage:
-#   py -m scripts.eval_places365 --per-class 10
+#   py -m scripts.eval_scenes --per-class 10
 # =============================================================================
 
 import argparse

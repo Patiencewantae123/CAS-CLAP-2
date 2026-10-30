@@ -1,7 +1,7 @@
 {
   "id": "HqndxoujCYI",
-  "image": "data\\audiocaps\\test_subset\\frames\\HqndxoujCYI.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\HqndxoujCYI.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\HqndxoujCYI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\HqndxoujCYI.wav",
   "gt_captions": [
     "Loud ringing of a clock followed by faint tick rocks",
     "A bell chiming as a man is speaking in the background followed by a muffled bell chiming",

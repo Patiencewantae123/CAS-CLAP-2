@@ -1,7 +1,7 @@
 {
   "id": "3ue0gJM0THk",
-  "image": "data\\audiocaps\\test_subset\\frames\\3ue0gJM0THk.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\3ue0gJM0THk.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\3ue0gJM0THk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\3ue0gJM0THk.wav",
   "gt_captions": [
     "Loud vibrations from a revving engine that increases",
     "Loud high frequency buzzing and revving of a propeller",

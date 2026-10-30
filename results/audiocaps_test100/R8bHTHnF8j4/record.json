@@ -1,7 +1,7 @@
 {
   "id": "R8bHTHnF8j4",
-  "image": "data\\audiocaps\\test_subset\\frames\\R8bHTHnF8j4.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\R8bHTHnF8j4.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\R8bHTHnF8j4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\R8bHTHnF8j4.wav",
   "gt_captions": [
     "A helicopter engine running idle",
     "Helicopter rotors slowing down",

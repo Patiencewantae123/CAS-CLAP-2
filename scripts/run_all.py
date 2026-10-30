@@ -5,9 +5,9 @@
 # the first failure, and can skip stages whose outputs already exist.
 #
 # Usage:
-#   py -m scripts.run_pipeline                 # everything (hours on CPU)
-#   py -m scripts.run_pipeline --from figures  # only re-render figures + journal
-#   py -m scripts.run_pipeline --list
+#   py -m scripts.run_all                 # everything (hours on CPU)
+#   py -m scripts.run_all --from figures  # only re-render figures + journal
+#   py -m scripts.run_all --list
 # =============================================================================
 
 import argparse
@@ -26,17 +26,17 @@ CATEGORY_MANIFEST = "data/audiocaps/pairs/categories/manifest.json"
 SCREENING = "data/audiocaps/pairs/categories/screening/screening.json"
 
 STAGES = [
-    ("data", "fetch_audiocaps", ["--split", "test", "--n", "100"]),
-    ("data", "fetch_audiocaps", ["--split", "val", "--n", "100"]),
-    ("data", "fetch_category_examples", ["--screening", SCREENING]),
-    ("places", "eval_places365", ["--per-class", "10"]),
-    ("tuning", "tune_casv", ["--val", VAL_MANIFEST, "--test", TEST_MANIFEST]),
-    ("generation", "run_casv_experiment", ["--manifest", TEST_MANIFEST, "--run-name", "audiocaps_test100"]),
-    ("generation", "run_casv_experiment", ["--manifest", CATEGORY_MANIFEST, "--run-name", "categories7"]),
-    ("figures", "make_casv_graphs", ["--run", "results/audiocaps_test100"]),
-    ("figures", "make_casv_figure", ["--run", "results/audiocaps_test100", "--count", "20"]),
-    ("figures", "make_casv_figure", ["--run", "results/categories7", "--count", "7"]),
-    ("journal", "build_journal_results", ["--run", "results/audiocaps_test100"]),
+    ("data", "download_data", ["--split", "test", "--n", "100"]),
+    ("data", "download_data", ["--split", "val", "--n", "100"]),
+    ("data", "select_examples", ["--screening", SCREENING]),
+    ("places", "eval_scenes", ["--per-class", "10"]),
+    ("train", "train", ["--val", VAL_MANIFEST, "--test", TEST_MANIFEST]),
+    ("test", "test", ["--manifest", TEST_MANIFEST, "--run-name", "audiocaps_test100"]),
+    ("test", "test", ["--manifest", CATEGORY_MANIFEST, "--run-name", "categories7"]),
+    ("figures", "plots", ["--run", "results/audiocaps_test100"]),
+    ("figures", "figures", ["--run", "results/audiocaps_test100", "--count", "20"]),
+    ("figures", "figures", ["--run", "results/categories7", "--count", "7"]),
+    ("journal", "report", ["--run", "results/audiocaps_test100"]),
 ]
 GROUPS = list(dict.fromkeys(group for group, _, _ in STAGES))
 

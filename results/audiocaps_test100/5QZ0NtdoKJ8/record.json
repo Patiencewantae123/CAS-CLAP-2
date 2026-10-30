@@ -1,7 +1,7 @@
 {
   "id": "5QZ0NtdoKJ8",
-  "image": "data\\audiocaps\\test_subset\\frames\\5QZ0NtdoKJ8.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\5QZ0NtdoKJ8.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\5QZ0NtdoKJ8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\5QZ0NtdoKJ8.wav",
   "gt_captions": [
     "Digital beeps repeating then a person speaks",
     "Beeping sound with person talking in the background",

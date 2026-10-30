@@ -1,7 +1,7 @@
 {
   "id": "inSvboaSRwA",
-  "image": "data\\audiocaps\\test_subset\\frames\\inSvboaSRwA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\inSvboaSRwA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\inSvboaSRwA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\inSvboaSRwA.wav",
   "gt_captions": [
     "A male speaking and a saw running",
     "Continuous buzzing and clanking",

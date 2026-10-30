@@ -1,7 +1,7 @@
 {
   "id": "KnsKf9KoNds",
-  "image": "data\\audiocaps\\test_subset\\frames\\KnsKf9KoNds.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\KnsKf9KoNds.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\KnsKf9KoNds.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\KnsKf9KoNds.wav",
   "gt_captions": [
     "A man speaking and another speaks over the phone",
     "A man speaking followed by another man speaking through a telephone speaker",

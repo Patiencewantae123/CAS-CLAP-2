@@ -1,7 +1,7 @@
 {
   "id": "elztUCeNQvQ",
-  "image": "data\\audiocaps\\test_subset\\frames\\elztUCeNQvQ.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\elztUCeNQvQ.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\elztUCeNQvQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\elztUCeNQvQ.wav",
   "gt_captions": [
     "A train honks horn and passes by",
     "A train horn honking as a train runs on railroad tracks",

@@ -1,7 +1,7 @@
 {
   "id": "bIiiIo20PsY",
-  "image": "data\\audiocaps\\test_subset\\frames\\bIiiIo20PsY.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\bIiiIo20PsY.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\bIiiIo20PsY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\bIiiIo20PsY.wav",
   "gt_captions": [
     "A main is speaking over a group of bees are buzzing",
     "An adult male speaks while a many insects buzz",

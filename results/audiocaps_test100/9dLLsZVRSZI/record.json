@@ -1,0 +1,284 @@
+{
+  "id": "9dLLsZVRSZI",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\9dLLsZVRSZI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\9dLLsZVRSZI.wav",
+  "gt_captions": [
+    "A truck engine running followed by a truck horn honking",
+    "A truck is idling, and a horn honks",
+    "Engine idling continuously followed by honking",
+    "A truck engine running followed by a truck horn honking",
+    "Humming and rustling from a large engine followed by two honks of a horn"
+  ],
+  "top_scene": [
+    "driveway",
+    0.25898370146751404
+  ],
+  "top_object": [
+    "tow truck",
+    0.4464341402053833
+  ],
+  "env_probs": {
+    "indoor": 0.17240256071090698,
+    "outdoor": 0.827597439289093
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Truck engine slows and then air brakes hiss followed by machinery operating",
+    "casv": "Truck engine slows and then air brakes hiss followed by machinery operating"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22028854489326477,
+    "clap_gt_audio_baseline": 0.3676605820655823,
+    "clap_text_casv": 0.22028854489326477,
+    "clap_gt_audio_casv": 0.3676605820655823
+  },
+  "verdicts": [
+    {
+      "caption": "Truck engine slows and then air brakes hiss followed by machinery operating",
+      "clip_similarity": 0.3277209997177124,
+      "visual": 1.0,
+      "scene_support": 0.7600299045472421,
+      "object_support": 0.7366151913787051,
+      "score": 0.8489935287777842,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.32674285769462585,
+      "visual": 0.9218912126721815,
+      "scene_support": 0.7124939030575732,
+      "object_support": 0.2970737807154325,
+      "score": 0.6716267902007744,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.32402658462524414,
+      "visual": 0.7049852925777494,
+      "scene_support": 0.7817009739822102,
+      "object_support": 0.8419851137956478,
+      "score": 0.7690999433644572,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck makes loud, mechanical noises while a man speaks in the background",
+      "clip_similarity": 0.32038387656211853,
+      "visual": 0.4140996106578835,
+      "scene_support": 0.9182797798291605,
+      "object_support": 0.8191925535547558,
+      "score": 0.6868815442783283,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rough sound of a large truck engine",
+      "clip_similarity": 0.32004234194755554,
+      "visual": 0.38682662376605204,
+      "scene_support": 0.6535161466490093,
+      "object_support": 0.617991994148039,
+      "score": 0.5361830917455352,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child yells as truck engine idles then accelerates and a snap occurs",
+      "clip_similarity": 0.3196195662021637,
+      "visual": 0.3530661881598111,
+      "scene_support": 0.2983200926040441,
+      "object_support": 0.27418212238653666,
+      "score": 0.3129771397610987,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine revs up, and then a truck passes by",
+      "clip_similarity": 0.31947022676467896,
+      "visual": 0.3411408009595522,
+      "scene_support": 0.8451536429491553,
+      "object_support": 0.8127117773898758,
+      "score": 0.6338159464855302,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.3192604184150696,
+      "visual": 0.324386714771202,
+      "scene_support": 0.7730509586269477,
+      "object_support": 0.8095776511126447,
+      "score": 0.6045432688303585,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clunking and pounding sounds of someone moving wood around",
+      "clip_similarity": 0.31893160939216614,
+      "visual": 0.2981299203228969,
+      "scene_support": 0.8533766986324784,
+      "object_support": 0.3571200583285774,
+      "score": 0.48240099521747554,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An emergency siren wailing as a muffled truck engine runs",
+      "clip_similarity": 0.31880882382392883,
+      "visual": 0.28832497215585107,
+      "scene_support": 0.42903958044698404,
+      "object_support": 0.4336854698323929,
+      "score": 0.37414750394615354,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large truck slowly moves forward then brakes squeal",
+      "clip_similarity": 0.31866973638534546,
+      "visual": 0.2772182505307047,
+      "scene_support": 0.9697765357694237,
+      "object_support": 0.8446352911772455,
+      "score": 0.6552108482962826,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man yells while a truck engine revs",
+      "clip_similarity": 0.3185923993587494,
+      "visual": 0.2710425610905387,
+      "scene_support": 0.5022393670018885,
+      "object_support": 0.44822622382158844,
+      "score": 0.3935567016832585,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man is talking followed by metal clanking and crumpling as a muffled truck engine accelerates",
+      "clip_similarity": 0.3185878396034241,
+      "visual": 0.27067844529695667,
+      "scene_support": 0.38452807928595945,
+      "object_support": 0.19435284172721998,
+      "score": 0.2819356544227365,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck turning on and beeping it horn",
+      "clip_similarity": 0.31759458780288696,
+      "visual": 0.19136307818256243,
+      "scene_support": 0.9811328292731055,
+      "object_support": 1.0,
+      "score": 0.6708850800549566,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.3170102536678314,
+      "visual": 0.14470152024293426,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.05788060809717371,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck releases its air brake and honks its horn twice quickly",
+      "clip_similarity": 0.31693217158317566,
+      "visual": 0.13846633475806527,
+      "scene_support": 0.5940037352891723,
+      "object_support": 0.7193908293276214,
+      "score": 0.4494049032882642,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck engine rattling, popping, ticking, clicking and idling",
+      "clip_similarity": 0.3165341019630432,
+      "visual": 0.10667878799417414,
+      "scene_support": 0.7947234176784232,
+      "object_support": 0.6620098524990627,
+      "score": 0.47969149625091545,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-1.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large truck squeaks and stops nearby, and then starts accelerating again",
+      "clip_similarity": 0.3161715567111969,
+      "visual": 0.07772801264171958,
+      "scene_support": 1.0,
+      "object_support": 0.8696673090133094,
+      "score": 0.5919913977606805,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck engine sounds and back up beeps as man talks",
+      "clip_similarity": 0.3153702914714813,
+      "visual": 0.013743586326381022,
+      "scene_support": 0.7383480655843407,
+      "object_support": 0.6060743546087775,
+      "score": 0.4088241605884878,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud truck beeping in reverse with revving engine",
+      "clip_similarity": 0.3151981830596924,
+      "visual": 0.0,
+      "scene_support": 0.8000459963063993,
+      "object_support": 0.8678071304457186,
+      "score": 0.5003559380256353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "driveway",
+      0.25898370146751404
+    ],
+    [
+      "assembly line",
+      0.11336322128772736
+    ],
+    [
+      "yard",
+      0.11110931634902954
+    ],
+    [
+      "manufactured home",
+      0.10403329133987427
+    ],
+    [
+      "construction site",
+      0.03479398787021637
+    ]
+  ],
+  "top_objects": [
+    [
+      "tow truck",
+      0.4464341402053833
+    ],
+    [
+      "semi-trailer truck",
+      0.22483383119106293
+    ],
+    [
+      "moving van",
+      0.05630572885274887
+    ],
+    [
+      "drilling rig",
+      0.047433171421289444
+    ],
+    [
+      "snowplow",
+      0.04506395757198334
+    ]
+  ]
+}

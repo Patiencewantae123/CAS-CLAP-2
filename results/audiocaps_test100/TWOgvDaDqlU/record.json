@@ -1,7 +1,7 @@
 {
   "id": "TWOgvDaDqlU",
-  "image": "data\\audiocaps\\test_subset\\frames\\TWOgvDaDqlU.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\TWOgvDaDqlU.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\TWOgvDaDqlU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\TWOgvDaDqlU.wav",
   "gt_captions": [
     "Machine grinding wood",
     "A power tool sawing wood followed by a machine motor running while cutting wood",

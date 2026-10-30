@@ -1,7 +1,7 @@
 {
   "id": "nD1K1Zo0qrM",
-  "image": "data\\audiocaps\\test_subset\\frames\\nD1K1Zo0qrM.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\nD1K1Zo0qrM.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\nD1K1Zo0qrM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\nD1K1Zo0qrM.wav",
   "gt_captions": [
     "Loud clicks with gusting wind and several rapid fire gunshots",
     "Several rapid gunshots with a distant aircraft passing by with a booming engine",

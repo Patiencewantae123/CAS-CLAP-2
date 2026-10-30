@@ -1,7 +1,7 @@
 {
   "id": "sqsI2UyrcBQ",
-  "image": "data\\audiocaps\\test_subset\\frames\\sqsI2UyrcBQ.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\sqsI2UyrcBQ.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\sqsI2UyrcBQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sqsI2UyrcBQ.wav",
   "gt_captions": [
     "A car engine revs producing a room and a whine",
     "A revving sound is accelerating",

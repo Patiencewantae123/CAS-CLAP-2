@@ -1,7 +1,7 @@
 {
   "id": "F-47fRplQEc",
-  "image": "data\\audiocaps\\test_subset\\frames\\F-47fRplQEc.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\F-47fRplQEc.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\F-47fRplQEc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\F-47fRplQEc.wav",
   "gt_captions": [
     "Three young ladies' speech while sheep bleats",
     "A woman talking as a sheep baa and birds are cawing in the background followed by a woman speaking in the foreground then another woman and kid talking",

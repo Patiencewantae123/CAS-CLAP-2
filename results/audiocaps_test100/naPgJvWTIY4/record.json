@@ -1,7 +1,7 @@
 {
   "id": "naPgJvWTIY4",
-  "image": "data\\audiocaps\\test_subset\\frames\\naPgJvWTIY4.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\naPgJvWTIY4.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\naPgJvWTIY4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\naPgJvWTIY4.wav",
   "gt_captions": [
     "An engine running and then revving",
     "A motorcycle engine running idle then revving its engine",

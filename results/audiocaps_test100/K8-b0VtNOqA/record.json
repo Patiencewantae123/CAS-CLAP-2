@@ -1,7 +1,7 @@
 {
   "id": "K8-b0VtNOqA",
-  "image": "data\\audiocaps\\test_subset\\frames\\K8-b0VtNOqA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\K8-b0VtNOqA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\K8-b0VtNOqA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\K8-b0VtNOqA.wav",
   "gt_captions": [
     "Floor sweeping and a man then a woman talking in the background followed by horses neighing",
     "Horses snorting and neighing as a man talks followed by a door creaking shut before woman talks in the background",

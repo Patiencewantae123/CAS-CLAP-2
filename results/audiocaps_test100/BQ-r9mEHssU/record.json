@@ -1,7 +1,7 @@
 {
   "id": "BQ-r9mEHssU",
-  "image": "data\\audiocaps\\test_subset\\frames\\BQ-r9mEHssU.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\BQ-r9mEHssU.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\BQ-r9mEHssU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\BQ-r9mEHssU.wav",
   "gt_captions": [
     "A woman laughs then talks as horse breaths and gallops on grass",
     "Laughing and rustling with horse hooves",

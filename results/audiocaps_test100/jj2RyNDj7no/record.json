@@ -1,7 +1,7 @@
 {
   "id": "jj2RyNDj7no",
-  "image": "data\\audiocaps\\test_subset\\frames\\jj2RyNDj7no.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\jj2RyNDj7no.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\jj2RyNDj7no.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jj2RyNDj7no.wav",
   "gt_captions": [
     "Bees buzz while birds call followed by man speaking",
     "A man talking softly as insects buzz by while birds chirp in the background",

@@ -1,7 +1,7 @@
 {
   "id": "PMMkPq5jJXY",
-  "image": "data\\audiocaps\\test_subset\\frames\\PMMkPq5jJXY.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\PMMkPq5jJXY.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\PMMkPq5jJXY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\PMMkPq5jJXY.wav",
   "gt_captions": [
     "Burping and then laughing with continuous burping",
     "A person burps while people laugh",

@@ -1,7 +1,7 @@
 {
   "id": "MBP4RcnwGZw",
-  "image": "data\\audiocaps\\test_subset\\frames\\MBP4RcnwGZw.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\MBP4RcnwGZw.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\MBP4RcnwGZw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\MBP4RcnwGZw.wav",
   "gt_captions": [
     "A woman speaks while a crowd talks and chuckles",
     "An adult female speaks, an adult male speaks, and a crowd of people laugh and talk in the background",

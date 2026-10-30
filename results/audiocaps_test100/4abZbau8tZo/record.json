@@ -1,7 +1,7 @@
 {
   "id": "4abZbau8tZo",
-  "image": "data\\audiocaps\\test_subset\\frames\\4abZbau8tZo.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\4abZbau8tZo.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\4abZbau8tZo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4abZbau8tZo.wav",
   "gt_captions": [
     "An engine idling and ticking with distant traffic and a man speaking",
     "A man talking with light tapping and a vehicle passing by in the background",

@@ -8,8 +8,8 @@
 # Videos that are no longer available are skipped and listed in failed.json.
 #
 # Usage:
-#   py -m scripts.fetch_audiocaps --split test --n 100
-#   py -m scripts.fetch_audiocaps --split val --n 100
+#   py -m scripts.download_data --split test --n 100
+#   py -m scripts.download_data --split val --n 100
 # =============================================================================
 
 import argparse

@@ -1,7 +1,7 @@
 {
   "id": "AFgGoY8Ihhg",
-  "image": "data\\audiocaps\\test_subset\\frames\\AFgGoY8Ihhg.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\AFgGoY8Ihhg.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\AFgGoY8Ihhg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\AFgGoY8Ihhg.wav",
   "gt_captions": [
     "Police sirens sounding as wind is blowing heavily into a microphone",
     "Wind and then a short ambulance siren repeats several times",

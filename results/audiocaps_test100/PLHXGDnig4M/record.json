@@ -1,7 +1,7 @@
 {
   "id": "PLHXGDnig4M",
-  "image": "data\\audiocaps\\test_subset\\frames\\PLHXGDnig4M.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\PLHXGDnig4M.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\PLHXGDnig4M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\PLHXGDnig4M.wav",
   "gt_captions": [
     "A person talking which later imitates a couple of meow sounds",
     "A person speaks and makes meow sounds",

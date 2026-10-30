@@ -1,0 +1,282 @@
+{
+  "id": "Y3lNEe-ZGF0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\Y3lNEe-ZGF0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Y3lNEe-ZGF0.wav",
+  "gt_captions": [
+    "A clock ticking followed by a some wooden clacking",
+    "A clock ticking",
+    "A clock ticking followed by a wooden latch opening",
+    "Continuous, quiet tick-tocking",
+    "Repeated ticking culminates in a sliding click"
+  ],
+  "top_scene": [
+    "door elevator",
+    0.39909088611602783
+  ],
+  "top_object": [
+    "baluster",
+    0.04475795850157738
+  ],
+  "env_probs": {
+    "indoor": 0.8864954710006714,
+    "outdoor": 0.11350452899932861
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A mechanical door sliding",
+    "casv": "A mechanical door sliding"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2102617472410202,
+    "clap_gt_audio_baseline": 0.30082592368125916,
+    "clap_text_casv": 0.2102617472410202,
+    "clap_gt_audio_casv": 0.30082592368125916
+  },
+  "verdicts": [
+    {
+      "caption": "A mechanical door sliding",
+      "clip_similarity": 0.30572250485420227,
+      "visual": 1.0,
+      "scene_support": 0.8330019915302337,
+      "object_support": 0.8247310004923603,
+      "score": 0.8973198976067782,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical door closing",
+      "clip_similarity": 0.29634037613868713,
+      "visual": 0.5773115731385567,
+      "scene_support": 0.7838369859218515,
+      "object_support": 0.5806316600799664,
+      "score": 0.640265223055968,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A metal door being opened and then closed",
+      "clip_similarity": 0.2958795726299286,
+      "visual": 0.5565512194794471,
+      "scene_support": 0.7271390465619681,
+      "object_support": 0.5443521520899036,
+      "score": 0.6040678473873404,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A door opening followed by a man's speech",
+      "clip_similarity": 0.29073771834373474,
+      "visual": 0.3248977892948972,
+      "scene_support": 0.7248456770659136,
+      "object_support": 0.5381122518882674,
+      "score": 0.5088464944042133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A metal door clangs",
+      "clip_similarity": 0.2895079553127289,
+      "visual": 0.26949388078438746,
+      "scene_support": 0.7731069045948721,
+      "object_support": 0.6698126841267925,
+      "score": 0.5406734289302544,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A church bell being rung repetitively",
+      "clip_similarity": 0.2894054651260376,
+      "visual": 0.26487644085205797,
+      "scene_support": 0.2222680828466139,
+      "object_support": 0.23536823481644095,
+      "score": 0.24324147163973964,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chime of a clock and rumpling sounds in background",
+      "clip_similarity": 0.2889702618122101,
+      "visual": 0.24526944017400995,
+      "scene_support": 0.47467529445637835,
+      "object_support": 0.7337907425005772,
+      "score": 0.46064758715669063,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy metal door opening, and then closing",
+      "clip_similarity": 0.2882818579673767,
+      "visual": 0.21425512060527535,
+      "scene_support": 0.6190592792304578,
+      "object_support": 0.3602413128439718,
+      "score": 0.37949222586443904,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ringing of a coo clock",
+      "clip_similarity": 0.2876833975315094,
+      "visual": 0.18729297716790752,
+      "scene_support": 0.11081154313365695,
+      "object_support": 0.0,
+      "score": 0.1081606538072601,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door opening followed by a man screaming",
+      "clip_similarity": 0.28632652759552,
+      "visual": 0.12616258383291823,
+      "scene_support": 0.7460283563634371,
+      "object_support": 0.5633846610065045,
+      "score": 0.44328893874414976,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door squeaks as it opens, a man is speaking with the door tapping with a squeak at the end",
+      "clip_similarity": 0.2862916886806488,
+      "visual": 0.12459300334996005,
+      "scene_support": 0.5665427270003048,
+      "object_support": 0.6540114850699721,
+      "score": 0.4160034649610671,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The ringing of a clock bell with mechanical humming",
+      "clip_similarity": 0.2856381833553314,
+      "visual": 0.09515094960290553,
+      "scene_support": 0.2468897290709918,
+      "object_support": 0.29304445694287434,
+      "score": 0.20004063564532204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door rattles against its frame",
+      "clip_similarity": 0.2852383852005005,
+      "visual": 0.07713904012567385,
+      "scene_support": 0.8840454463806906,
+      "object_support": 1.0,
+      "score": 0.5960692499644766,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A lock is opened on a door",
+      "clip_similarity": 0.2848726511001587,
+      "visual": 0.06066180172801547,
+      "scene_support": 0.6421973898297566,
+      "object_support": 0.4527036960804493,
+      "score": 0.35273504646426795,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door is closed, and followed by a man and woman talking",
+      "clip_similarity": 0.284557968378067,
+      "visual": 0.0464845559456756,
+      "scene_support": 0.5591489698539124,
+      "object_support": 0.4502306335682107,
+      "score": 0.3214077034049071,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal rubbing against each other, a bell is rung",
+      "clip_similarity": 0.28428924083709717,
+      "visual": 0.034377706317930676,
+      "scene_support": 0.0,
+      "object_support": 0.39640007682572137,
+      "score": 0.13267110557488868,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaks followed by a door slide and then a metallic click",
+      "clip_similarity": 0.2839929759502411,
+      "visual": 0.021030230200661935,
+      "scene_support": 0.5115257800739985,
+      "object_support": 0.5129512025289926,
+      "score": 0.3157551868611621,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person opens a door nearby, followed by closing a door, after which a lock automatically closes",
+      "clip_similarity": 0.28391775488853455,
+      "visual": 0.017641332733607684,
+      "scene_support": 0.5970737248922142,
+      "object_support": 0.4224526298733189,
+      "score": 0.312914439523103,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The ticktock of a clock with a woman speaking",
+      "clip_similarity": 0.28365543484687805,
+      "visual": 0.005823157018468417,
+      "scene_support": 0.1822300180451167,
+      "object_support": 0.31634492246420376,
+      "score": 0.1519017449601835,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door being shut",
+      "clip_similarity": 0.2835261821746826,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.9213568623574611,
+      "score": 0.5764070587072383,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "door elevator",
+      0.39909088611602783
+    ],
+    [
+      "elevator lobby",
+      0.09175685793161392
+    ],
+    [
+      "throne room",
+      0.08563224226236343
+    ],
+    [
+      "bedchamber",
+      0.08444754034280777
+    ],
+    [
+      "outdoor doorway",
+      0.026726052165031433
+    ]
+  ],
+  "top_objects": [
+    [
+      "baluster",
+      0.04475795850157738
+    ],
+    [
+      "sliding door",
+      0.04270581528544426
+    ],
+    [
+      "fire screen sheet",
+      0.04098198562860489
+    ],
+    [
+      "breastplate",
+      0.03882946819067001
+    ],
+    [
+      "safe",
+      0.038648515939712524
+    ]
+  ]
+}

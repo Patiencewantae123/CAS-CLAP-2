@@ -1,7 +1,7 @@
 {
   "id": "6Nvu6EcpdE8",
-  "image": "data\\audiocaps\\test_subset\\frames\\6Nvu6EcpdE8.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\6Nvu6EcpdE8.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\6Nvu6EcpdE8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\6Nvu6EcpdE8.wav",
   "gt_captions": [
     "The wind is blowing, an adult male speaks via an electronic device, and a click occurs",
     "Wind blowing with a man speaking followed by a click and light hum",

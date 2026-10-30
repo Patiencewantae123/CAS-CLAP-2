@@ -19,15 +19,15 @@ casv/                 CAS-V library
   stats.py              bootstrap / Wilson confidence intervals, paired differences
   log.py                logging setup shared by all scripts
 scripts/              entry points (run from the repo root with  py -m scripts.<name>)
-  run_pipeline.py       runs every stage below in order
-  fetch_audiocaps.py    build image + ground-truth audio pairs from AudioCaps
-  fetch_category_examples.py  one test clip per figure category (fixed caption rule)
-  eval_places365.py     scene / indoor-outdoor accuracy on Places365 val
-  tune_casv.py          tune the verifier on AudioCaps val, score once on test
-  run_casv_experiment.py  generate baseline vs CAS-V audio and score with CLAP
-  make_casv_graphs.py   result graphs
-  make_casv_figure.py   qualitative comparison figures
-  build_journal_results.py  collect figures, tables and RESULTS.md
+  run_all.py       runs every stage below in order
+  download_data.py    build image + ground-truth audio pairs from AudioCaps
+  select_examples.py  one test clip per figure category (fixed caption rule)
+  eval_scenes.py     scene / indoor-outdoor accuracy on Places365 val
+  train.py          tune the verifier on AudioCaps val, score once on test
+  test.py  generate baseline vs CAS-V audio and score with CLAP
+  plots.py   result graphs
+  figures.py   qualitative comparison figures
+  report.py  collect figures, tables and RESULTS.md
 data/                 datasets (see data/README.md); downloaded media is git-ignored
 eval/                 small smoke-test set
 tests/                pytest suite (verifier logic, vocabularies, statistics, figure text)
@@ -43,30 +43,30 @@ app.py                Streamlit demo (runtime files in app_data/)
 
 ```
 py -m pip install -r requirements.txt     # exact versions used for journal_results/
-py -m scripts.run_pipeline                # everything below, in order (hours on CPU)
-py -m scripts.run_pipeline --list         # show the stages
-py -m scripts.run_pipeline --from figures # only re-render figures and the journal package
+py -m scripts.run_all                # everything below, in order (hours on CPU)
+py -m scripts.run_all --list         # show the stages
+py -m scripts.run_all --from figures # only re-render figures and the journal package
 ```
 
 Individual stages:
 
 ```
 # data (Places365 val ~500 MB; AudioCaps clips via yt-dlp, needs Node.js)
-py -m scripts.fetch_audiocaps --split test --n 100
-py -m scripts.fetch_audiocaps --split val --n 100
-py -m scripts.fetch_category_examples --screening data/audiocaps/pairs/categories/screening/screening.json
+py -m scripts.download_data --split test --n 100
+py -m scripts.download_data --split val --n 100
+py -m scripts.select_examples --screening data/audiocaps/pairs/categories/screening/screening.json
 
 # experiments
-py -m scripts.eval_places365 --per-class 10
-py -m scripts.tune_casv --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test/manifest.json
-py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/test/manifest.json --run-name audiocaps_test100
-py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/categories/manifest.json --run-name categories7
+py -m scripts.eval_scenes --per-class 10
+py -m scripts.train --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test/manifest.json
+py -m scripts.test --manifest data/audiocaps/pairs/test/manifest.json --run-name audiocaps_test100
+py -m scripts.test --manifest data/audiocaps/pairs/categories/manifest.json --run-name categories7
 
 # figures and journal package
-py -m scripts.make_casv_graphs --run results/audiocaps_test100
-py -m scripts.make_casv_figure --run results/audiocaps_test100 --count 20
-py -m scripts.make_casv_figure --run results/categories7 --count 7
-py -m scripts.build_journal_results --run results/audiocaps_test100
+py -m scripts.plots --run results/audiocaps_test100
+py -m scripts.figures --run results/audiocaps_test100 --count 20
+py -m scripts.figures --run results/categories7 --count 7
+py -m scripts.report --run results/audiocaps_test100
 ```
 
 See [`data/README.md`](data/README.md) for every dataset: source, licence, size and layout.

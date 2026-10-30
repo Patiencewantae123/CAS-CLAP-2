@@ -1,7 +1,7 @@
 {
   "id": "TQr9v-PQOc4",
-  "image": "data\\audiocaps\\test_subset\\frames\\TQr9v-PQOc4.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\TQr9v-PQOc4.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\TQr9v-PQOc4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\TQr9v-PQOc4.wav",
   "gt_captions": [
     "Some clicking followed by a sneeze and a man laughing",
     "Several faint clicks are followed by a person sneezing and coughing",

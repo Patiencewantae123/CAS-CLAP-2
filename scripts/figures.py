@@ -5,13 +5,13 @@
 #       Ours (CAS-V): Semantic Text (Verified Concepts), Spectrogram (Generated
 #       Audio), Caption (Sound Type) | Target Sound (Ground Truth)
 #
-# Every panel is rendered from files produced by run_casv_experiment.py; the
+# Every panel is rendered from files produced by test.py; the
 # concepts and sound type are derived from the verified caption only. A
 # missing ground-truth recording is shown as an empty panel, never filled in.
 # Provenance (clip ids, prompts, recognition) goes to a caption .txt file.
 #
 # Usage:
-#   py -m scripts.make_casv_figure --run results/audiocaps_test100 [--items <ytid>,<ytid>,...]
+#   py -m scripts.figures --run results/audiocaps_test100 [--items <ytid>,<ytid>,...]
 # =============================================================================
 
 import argparse
@@ -256,7 +256,7 @@ def render_page(run_dir, items, output, provenance):
 def main():
     setup_logging()
     parser = argparse.ArgumentParser(description="Render the CAS-V qualitative comparison figures.")
-    parser.add_argument("--run", required=True, help="Run directory produced by run_casv_experiment.py")
+    parser.add_argument("--run", required=True, help="Run directory produced by test.py")
     parser.add_argument("--items", default=None, help="Comma-separated item ids (default: first --count)")
     parser.add_argument("--count", type=int, default=20, help="Number of items when --items is not given")
     parser.add_argument("--per-figure", type=int, default=7)

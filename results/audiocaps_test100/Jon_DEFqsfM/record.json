@@ -1,0 +1,284 @@
+{
+  "id": "Jon_DEFqsfM",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\Jon_DEFqsfM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\Jon_DEFqsfM.wav",
+  "gt_captions": [
+    "Ducks quacking as birds chirp followed by a flock of ducks quacking",
+    "Several breeds of birds chirping and honking",
+    "Wind blowing with ducks quacking and birds chirping",
+    "Birds chirping with distant humming",
+    "Birds are chirping, ducks are quacking and other bird whistling noises"
+  ],
+  "top_scene": [
+    "natural lake",
+    0.5418568849563599
+  ],
+  "top_object": [
+    "black swan",
+    0.8563998937606812
+  ],
+  "env_probs": {
+    "indoor": 0.02999074198305607,
+    "outdoor": 0.9700092580169439
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Woman talking followed by ducks quacking and wind blowing",
+    "casv": "Natural outdoor sounds followed by a duck making a quacking sound"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.34742802381515503,
+    "clap_gt_audio_baseline": 0.6107479929924011,
+    "clap_text_casv": 0.1609591543674469,
+    "clap_gt_audio_casv": 0.4409642815589905
+  },
+  "verdicts": [
+    {
+      "caption": "Woman talking followed by ducks quacking and wind blowing",
+      "clip_similarity": 0.3218107223510742,
+      "visual": 1.0,
+      "scene_support": 0.3744474666055007,
+      "object_support": 0.0,
+      "score": 0.5123342399816502,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two ducks make frantic calls to each other",
+      "clip_similarity": 0.31858718395233154,
+      "visual": 0.8538662011886442,
+      "scene_support": 0.050901256355524824,
+      "object_support": 0.06010834997076759,
+      "score": 0.37484936237334543,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks in moving in water quacking with natural outdoor noises",
+      "clip_similarity": 0.316673219203949,
+      "visual": 0.7670997647840837,
+      "scene_support": 0.6810286835226796,
+      "object_support": 0.2062532015370998,
+      "score": 0.5730244714315674,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Natural outdoor sounds followed by a duck making a quacking sound",
+      "clip_similarity": 0.3134755492210388,
+      "visual": 0.6221386679564587,
+      "scene_support": 0.9046689820718712,
+      "object_support": 0.873538605786026,
+      "score": 0.7823177435399526,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two quacks followed by several sounds of wings flapping",
+      "clip_similarity": 0.30849650502204895,
+      "visual": 0.39642190791046933,
+      "scene_support": 0.5119042524601893,
+      "object_support": 0.7961161621738052,
+      "score": 0.5509748875543861,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Geese squawking as bird wings flap while a bird chirps in the background",
+      "clip_similarity": 0.3083117604255676,
+      "visual": 0.3880468162086869,
+      "scene_support": 0.0,
+      "object_support": 0.8547601765890936,
+      "score": 0.4116467794602029,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with some distant splashing and quacking ducks",
+      "clip_similarity": 0.30809956789016724,
+      "visual": 0.37842741744813024,
+      "scene_support": 0.6067713905383345,
+      "object_support": 0.5859179429072039,
+      "score": 0.5091777670129136,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some rustling together with continuous quacking, male speech and a whistle",
+      "clip_similarity": 0.3059028685092926,
+      "visual": 0.2788436726107886,
+      "scene_support": 0.5915483715991416,
+      "object_support": 0.5431300217749774,
+      "score": 0.4519409870565511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ducks quacking distantly with distant speech",
+      "clip_similarity": 0.3051941990852356,
+      "visual": 0.24671731262100244,
+      "scene_support": 0.34412638529187056,
+      "object_support": 0.631837261457204,
+      "score": 0.39147601907312335,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A quacking sound with people talking",
+      "clip_similarity": 0.3043270707130432,
+      "visual": 0.20740747746128935,
+      "scene_support": 0.7601239067013806,
+      "object_support": 1.0,
+      "score": 0.61100016299493,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man briefly talks then a duck quacks followed by some rustling leaves",
+      "clip_similarity": 0.30400949716567993,
+      "visual": 0.19301080426009665,
+      "scene_support": 0.647039927331196,
+      "object_support": 0.5368943777840929,
+      "score": 0.4323846132386253,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of incessant quacking sounds",
+      "clip_similarity": 0.3037959039211273,
+      "visual": 0.18332790665940707,
+      "scene_support": 0.518445928327425,
+      "object_support": 0.6538547864224056,
+      "score": 0.425021377088712,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two man chattering with each other while a duck is quacking",
+      "clip_similarity": 0.3036567270755768,
+      "visual": 0.17701855382067117,
+      "scene_support": 0.6082714398933248,
+      "object_support": 0.6542665742331244,
+      "score": 0.4495688257662032,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Various bird and duck noises, followed by splashing water",
+      "clip_similarity": 0.3030463457107544,
+      "visual": 0.1493479209534013,
+      "scene_support": 1.0,
+      "object_support": 0.5080610857803787,
+      "score": 0.5121574941154741,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children talking in the background followed by a duck quacking then a woman talking while a lawn mower engine runs in the distance",
+      "clip_similarity": 0.30269312858581543,
+      "visual": 0.13333540492669937,
+      "scene_support": 0.49361380661630744,
+      "object_support": 0.06445701025758911,
+      "score": 0.2207554070328487,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Men speak with rustling and quacking of ducks",
+      "clip_similarity": 0.3024275302886963,
+      "visual": 0.12129494400618236,
+      "scene_support": 0.5840652421618284,
+      "object_support": 0.4613996441429293,
+      "score": 0.3621574434939002,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man shouting and laughing followed by ducks quacking",
+      "clip_similarity": 0.30224084854125977,
+      "visual": 0.1128320347595353,
+      "scene_support": 0.3936154612922791,
+      "object_support": 0.20047459676470536,
+      "score": 0.22335983132090945,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck quacks and a woman speaks followed by a baby squealing",
+      "clip_similarity": 0.30125880241394043,
+      "visual": 0.06831259263062184,
+      "scene_support": 0.49229976566364775,
+      "object_support": 0.5445472958663744,
+      "score": 0.33837915551125536,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck quacking and a man talking followed by a woman talking and more duck quacks",
+      "clip_similarity": 0.30081167817115784,
+      "visual": 0.048042952236712864,
+      "scene_support": 0.3945785968233645,
+      "object_support": 0.4569125145483276,
+      "score": 0.27466451430619276,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Duck quacking and a dog barking at the ending",
+      "clip_similarity": 0.2997519075870514,
+      "visual": 0.0,
+      "scene_support": 0.6779298748323214,
+      "object_support": 0.8291650753254933,
+      "score": 0.4521284850473444,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "natural lake",
+      0.5418568849563599
+    ],
+    [
+      "pond",
+      0.15220066905021667
+    ],
+    [
+      "water moat",
+      0.08023196458816528
+    ],
+    [
+      "lagoon",
+      0.05281951650977135
+    ],
+    [
+      "park",
+      0.023948395624756813
+    ]
+  ],
+  "top_objects": [
+    [
+      "black swan",
+      0.8563998937606812
+    ],
+    [
+      "goose",
+      0.04486379399895668
+    ],
+    [
+      "duck",
+      0.03747516870498657
+    ],
+    [
+      "black stork",
+      0.022251464426517487
+    ],
+    [
+      "platypus",
+      0.004377839155495167
+    ]
+  ]
+}

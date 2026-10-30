@@ -1,0 +1,282 @@
+{
+  "id": "yhDw7PZje3g",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\yhDw7PZje3g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\yhDw7PZje3g.wav",
+  "gt_captions": [
+    "Two men speaking with loud insects buzzing",
+    "A man speaks with wind blowing and buzzing of insects",
+    "Many insects are buzzing, and an adult male speaks",
+    "A man is speaking outside with wind noise",
+    "Man speaks while insects buzz"
+  ],
+  "top_scene": [
+    "trench",
+    0.08708681911230087
+  ],
+  "top_object": [
+    "trilobite",
+    0.14702291786670685
+  ],
+  "env_probs": {
+    "indoor": 0.31880009174346924,
+    "outdoor": 0.6811999082565308
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Liquid is being rubbed against a hard surface",
+    "casv": "Liquid is being rubbed against a hard surface"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.011734915897250175,
+    "clap_gt_audio_baseline": 0.2333364486694336,
+    "clap_text_casv": -0.011734915897250175,
+    "clap_gt_audio_casv": 0.2333364486694336
+  },
+  "verdicts": [
+    {
+      "caption": "Liquid is being rubbed against a hard surface",
+      "clip_similarity": 0.28720563650131226,
+      "visual": 1.0,
+      "scene_support": 0.7184308652952692,
+      "object_support": 0.8021055360805679,
+      "score": 0.8561609204127512,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rubbing with tricking water splashing",
+      "clip_similarity": 0.28560376167297363,
+      "visual": 0.8585172608941709,
+      "scene_support": 0.516122231024447,
+      "object_support": 0.20747979913306874,
+      "score": 0.5604875134049231,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Steam hissing with metal screeching and crumpling alongside high pressurized liquid spraying against a metal surface in the background",
+      "clip_similarity": 0.2830521762371063,
+      "visual": 0.6331530250983799,
+      "scene_support": 0.6950398301907018,
+      "object_support": 0.5774562339227158,
+      "score": 0.6350100292733772,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clop of horse hooves",
+      "clip_similarity": 0.28253453969955444,
+      "visual": 0.5874337005303958,
+      "scene_support": 0.516629310340993,
+      "object_support": 0.7314553113193951,
+      "score": 0.6093988667102748,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rubber stretching and rubbing together with a woman whispering softly",
+      "clip_similarity": 0.28165701031684875,
+      "visual": 0.5099274818704677,
+      "scene_support": 0.45279380687128057,
+      "object_support": 0.5273954618708843,
+      "score": 0.49802777337083654,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vigorous rubbing is followed by splashing water",
+      "clip_similarity": 0.281505823135376,
+      "visual": 0.49657414353588397,
+      "scene_support": 0.7598503493287204,
+      "object_support": 0.5601149766420793,
+      "score": 0.5946192552055936,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of a horse with heavy breathing and wind blowing hard",
+      "clip_similarity": 0.2813807725906372,
+      "visual": 0.48552927705610616,
+      "scene_support": 0.5983180090108884,
+      "object_support": 0.6978066126046566,
+      "score": 0.583049097307106,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Quiet, continuous rubbing against fabric",
+      "clip_similarity": 0.28093212842941284,
+      "visual": 0.4459035811584475,
+      "scene_support": 0.7864346497082737,
+      "object_support": 1.0,
+      "score": 0.7142918273758612,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Hissing is ongoing in the background while several metal scrapes and clicks occur followed by the beginning of a gunshot",
+      "clip_similarity": 0.2807764410972595,
+      "visual": 0.43215277503586425,
+      "scene_support": 0.7458905447054914,
+      "object_support": 0.7796090188752005,
+      "score": 0.6305109790885532,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse hooves clip-clop and voices in the background",
+      "clip_similarity": 0.28074944019317627,
+      "visual": 0.42976796830786645,
+      "scene_support": 0.49728734805968766,
+      "object_support": 0.53726047355478,
+      "score": 0.4822715338074869,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain falling heavily on a surface as a muffled man speaks followed by camera muffling",
+      "clip_similarity": 0.2798943519592285,
+      "visual": 0.35424382411392324,
+      "scene_support": 0.3696483671823604,
+      "object_support": 0.263725698582468,
+      "score": 0.33170974937501785,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rubbing occurs while man speaks",
+      "clip_similarity": 0.27895820140838623,
+      "visual": 0.2715599952619734,
+      "scene_support": 0.7386940216682999,
+      "object_support": 0.7767385511969166,
+      "score": 0.5632537699643543,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rubbing and scratching noise",
+      "clip_similarity": 0.2787795960903168,
+      "visual": 0.2557849988812993,
+      "scene_support": 1.0,
+      "object_support": 0.9102291175450592,
+      "score": 0.6753827348160375,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fast spraying liquid hits against a solid surface",
+      "clip_similarity": 0.2785797119140625,
+      "visual": 0.23813058527789843,
+      "scene_support": 0.3671618993056127,
+      "object_support": 0.22884708146087196,
+      "score": 0.2740549283411048,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone rubs metal against an object",
+      "clip_similarity": 0.27846410870552063,
+      "visual": 0.22792013792921914,
+      "scene_support": 0.7113081801234694,
+      "object_support": 0.8799635170270326,
+      "score": 0.5685495643168382,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rubbing and tapping followed by a man speaking",
+      "clip_similarity": 0.2778955399990082,
+      "visual": 0.17770232031692135,
+      "scene_support": 0.482008692407021,
+      "object_support": 0.6228789830042254,
+      "score": 0.4025472307501424,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water rushing down a pipe followed by several plastic clicks as wind blows into a microphone",
+      "clip_similarity": 0.27733516693115234,
+      "visual": 0.12820836788144405,
+      "scene_support": 0.6246016202518583,
+      "object_support": 0.42357955611066767,
+      "score": 0.36573770006133544,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falling on a surface and wind blowing heavily on a microphone",
+      "clip_similarity": 0.2770726978778839,
+      "visual": 0.10502625656414104,
+      "scene_support": 0.2379629823202793,
+      "object_support": 0.2770007890166773,
+      "score": 0.1964996340267434,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A wiper blade being used in the rain",
+      "clip_similarity": 0.2763497531414032,
+      "visual": 0.04117345125755123,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.016469380503020492,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Random high-pitched metal squeaking occurs while water runs, splashes and gurgles down a drain",
+      "clip_similarity": 0.27588358521461487,
+      "visual": 0.0,
+      "scene_support": 0.6797918661808787,
+      "object_support": 0.5151910387710555,
+      "score": 0.3584948714855803,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "trench",
+      0.08708681911230087
+    ],
+    [
+      "crevasse",
+      0.08678420633077621
+    ],
+    [
+      "fountain",
+      0.054449744522571564
+    ],
+    [
+      "wave",
+      0.040416259318590164
+    ],
+    [
+      "shower",
+      0.02728058211505413
+    ]
+  ],
+  "top_objects": [
+    [
+      "trilobite",
+      0.14702291786670685
+    ],
+    [
+      "isopod",
+      0.12199351191520691
+    ],
+    [
+      "eel",
+      0.05635661259293556
+    ],
+    [
+      "trench coat",
+      0.03314374014735222
+    ],
+    [
+      "centipede",
+      0.028187161311507225
+    ]
+  ]
+}

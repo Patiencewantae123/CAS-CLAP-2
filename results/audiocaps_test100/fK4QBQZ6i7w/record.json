@@ -1,7 +1,7 @@
 {
   "id": "fK4QBQZ6i7w",
-  "image": "data\\audiocaps\\test_subset\\frames\\fK4QBQZ6i7w.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\fK4QBQZ6i7w.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\fK4QBQZ6i7w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\fK4QBQZ6i7w.wav",
   "gt_captions": [
     "People are laughing",
     "Multiple people laughing",

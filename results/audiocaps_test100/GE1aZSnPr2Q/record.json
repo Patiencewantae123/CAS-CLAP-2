@@ -1,7 +1,7 @@
 {
   "id": "GE1aZSnPr2Q",
-  "image": "data\\audiocaps\\test_subset\\frames\\GE1aZSnPr2Q.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\GE1aZSnPr2Q.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\GE1aZSnPr2Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GE1aZSnPr2Q.wav",
   "gt_captions": [
     "A man laughing",
     "A person laughing",

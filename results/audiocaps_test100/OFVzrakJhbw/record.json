@@ -1,7 +1,7 @@
 {
   "id": "OFVzrakJhbw",
-  "image": "data\\audiocaps\\test_subset\\frames\\OFVzrakJhbw.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\OFVzrakJhbw.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\OFVzrakJhbw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\OFVzrakJhbw.wav",
   "gt_captions": [
     "A woman laughing followed by a sheep baaing and wind blowing into a microphone",
     "A woman laughs with some wind blowing and sheep bleating",

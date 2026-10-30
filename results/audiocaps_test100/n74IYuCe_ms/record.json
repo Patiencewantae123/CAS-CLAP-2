@@ -1,7 +1,7 @@
 {
   "id": "n74IYuCe_ms",
-  "image": "data\\audiocaps\\test_subset\\frames\\n74IYuCe_ms.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\n74IYuCe_ms.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\n74IYuCe_ms.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\n74IYuCe_ms.wav",
   "gt_captions": [
     "A river stream flowing followed by a kid talking",
     "A large volume of water is rushing, splashing and gurgling, and an adult male speaks briefly",

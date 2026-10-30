@@ -1,7 +1,7 @@
 {
   "id": "pgq2KPX5_SA",
-  "image": "data\\audiocaps\\test_subset\\frames\\pgq2KPX5_SA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\pgq2KPX5_SA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\pgq2KPX5_SA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\pgq2KPX5_SA.wav",
   "gt_captions": [
     "A paper is being crumpled",
     "Plastic and paper crinkling as cardboard clacks against a hard surface",

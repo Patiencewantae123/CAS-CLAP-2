@@ -8,7 +8,7 @@
 # The rule and the matching captions are written to the manifest.
 #
 # Usage:
-#   py -m scripts.fetch_category_examples
+#   py -m scripts.select_examples
 # =============================================================================
 
 import argparse
@@ -19,7 +19,7 @@ import re
 from pathlib import Path
 
 from casv.log import setup_logging
-from scripts.fetch_audiocaps import DATA_DIR, fetch_clip, load_clips
+from scripts.download_data import DATA_DIR, fetch_clip, load_clips
 
 log = logging.getLogger("casv")
 

@@ -1,7 +1,7 @@
 {
   "id": "a_Rjlu50TfA",
-  "image": "data\\audiocaps\\test_subset\\frames\\a_Rjlu50TfA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\a_Rjlu50TfA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\a_Rjlu50TfA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\a_Rjlu50TfA.wav",
   "gt_captions": [
     "A person snoring during a series of thumps followed by a man talking in the background",
     "Plastic tapping as a person is snoring",

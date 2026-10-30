@@ -1,7 +1,7 @@
 {
   "id": "jjfUaMQaG1A",
-  "image": "data\\audiocaps\\test_subset\\frames\\jjfUaMQaG1A.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\jjfUaMQaG1A.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\jjfUaMQaG1A.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jjfUaMQaG1A.wav",
   "gt_captions": [
     "A man speaks followed by vibrations of a power tool",
     "A man talking followed by metal shuffling then a power tool drilling",

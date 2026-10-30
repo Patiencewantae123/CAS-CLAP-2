@@ -1,0 +1,244 @@
+{
+  "places365": {
+    "n_images": 3650,
+    "clip_model": "openai/clip-vit-base-patch32",
+    "scene_top1": 0.38767123287671235,
+    "scene_top5": 0.6854794520547945,
+    "env_accuracy": 0.9161643835616439,
+    "env_accuracy_when_p_ge_0.7": 0.9546023794614903,
+    "env_coverage_p_ge_0.7": 0.8750684931506849,
+    "calibration_bins": [
+      [
+        0.08192108775256202,
+        0.09375,
+        64
+      ],
+      [
+        0.15723466649801437,
+        0.1267605633802817,
+        497
+      ],
+      [
+        0.24853550439531152,
+        0.21460506706408347,
+        671
+      ],
+      [
+        0.3916204455913435,
+        0.3125659978880676,
+        947
+      ],
+      [
+        0.594664171630261,
+        0.48717948717948717,
+        663
+      ],
+      [
+        0.8531194532124122,
+        0.7215346534653465,
+        808
+      ]
+    ]
+  },
+  "tuning": {
+    "tuned_config": {
+      "retrieve_k": 20,
+      "support_top_n": 5,
+      "w_visual": 0.5,
+      "w_scene": 0.0,
+      "w_object": 0.5,
+      "accept_threshold": 0.5,
+      "repair_threshold": 0.4,
+      "env_conflict_confidence": 1.01,
+      "source_absent_z": -99.0,
+      "uncertainty_threshold": 0.1
+    },
+    "val": {
+      "n": 100,
+      "baseline": {
+        "mean": 0.30568113923072815,
+        "ci95": [
+          0.2653566598892212,
+          0.3459201455116272
+        ]
+      },
+      "default": {
+        "mean": 0.307331383228302,
+        "ci95": [
+          0.2663057744503021,
+          0.348221093416214
+        ]
+      },
+      "tuned": {
+        "mean": 0.3378542363643646,
+        "ci95": [
+          0.2981806993484497,
+          0.377088725566864
+        ]
+      },
+      "oracle": {
+        "mean": 0.5129632949829102,
+        "ci95": [
+          0.47973233461380005,
+          0.5450152158737183
+        ]
+      },
+      "default_minus_baseline": {
+        "mean": 0.0016502558719366789,
+        "ci95": [
+          -0.028416302055120468,
+          0.0318242609500885
+        ],
+        "better": 28,
+        "worse": 28,
+        "same": 44
+      },
+      "tuned_minus_baseline": {
+        "mean": 0.03217315301299095,
+        "ci95": [
+          0.010642980225384235,
+          0.05525403097271919
+        ],
+        "better": 24,
+        "worse": 16,
+        "same": 60
+      }
+    },
+    "test": {
+      "n": 100,
+      "baseline": {
+        "mean": 0.26514163613319397,
+        "ci95": [
+          0.2202940732240677,
+          0.30886605381965637
+        ]
+      },
+      "default": {
+        "mean": 0.2899962365627289,
+        "ci95": [
+          0.24803662300109863,
+          0.3333858251571655
+        ]
+      },
+      "tuned": {
+        "mean": 0.27828308939933777,
+        "ci95": [
+          0.23473584651947021,
+          0.32216066122055054
+        ]
+      },
+      "oracle": {
+        "mean": 0.5086901187896729,
+        "ci95": [
+          0.4791567921638489,
+          0.5375624299049377
+        ]
+      },
+      "default_minus_baseline": {
+        "mean": 0.0248546339571476,
+        "ci95": [
+          -0.008862554095685482,
+          0.05760161206126213
+        ],
+        "better": 34,
+        "worse": 27,
+        "same": 39
+      },
+      "tuned_minus_baseline": {
+        "mean": 0.013141435571014881,
+        "ci95": [
+          -0.01561172679066658,
+          0.039943791925907135
+        ],
+        "better": 25,
+        "worse": 20,
+        "same": 55
+      }
+    }
+  },
+  "clap": {
+    "clap_text": {
+      "n": 100,
+      "n_prompt_changed": 61,
+      "baseline_mean": 0.15903577505145222,
+      "baseline_ci95": [
+        0.12483751988294535,
+        0.19419820053991863
+      ],
+      "casv_mean": 0.1617090506758541,
+      "casv_ci95": [
+        0.12902906868210995,
+        0.19621210286067797
+      ],
+      "mean_diff": 0.0026732756244018676,
+      "mean_diff_ci95": [
+        -0.0275486602447927,
+        0.03293243832665029
+      ],
+      "casv_better": 29,
+      "casv_worse": 32,
+      "wilcoxon_p_changed_items": 0.9227522266343026
+    },
+    "clap_gt_audio": {
+      "n": 100,
+      "n_prompt_changed": 61,
+      "baseline_mean": 0.30650365791283546,
+      "baseline_ci95": [
+        0.2748324732063338,
+        0.3384404572050552
+      ],
+      "casv_mean": 0.32450901437550783,
+      "casv_ci95": [
+        0.289790175720118,
+        0.36120490138512107
+      ],
+      "mean_diff": 0.018005356462672352,
+      "mean_diff_ci95": [
+        -0.013527178662596269,
+        0.051076984050218016
+      ],
+      "casv_better": 33,
+      "casv_worse": 28,
+      "wilcoxon_p_changed_items": 0.27651101158767966
+    }
+  },
+  "verification": {
+    "candidate_decisions": {
+      "ACCEPT": 436,
+      "REPAIR": 774,
+      "REJECT": 790
+    },
+    "conflicts": {
+      "environment: outdoor sound": 72,
+      "absent source: cars on a road": 58,
+      "absent source: a motor vehicle with an engine": 74,
+      "absent source: insects": 7,
+      "absent source: a stream or river": 4,
+      "absent source: birds": 2,
+      "absent source: a boat": 3,
+      "absent source: an emergency vehicle": 6,
+      "absent source: ducks or geese": 2,
+      "absent source: a truck or bus": 2,
+      "absent source: a piano": 1,
+      "absent source: a power tool": 2,
+      "absent source: food frying in a pan": 3,
+      "absent source: an airplane": 1,
+      "absent source: a horse": 1,
+      "absent source: a computer keyboard": 3,
+      "absent source: a hammer": 1,
+      "absent source: a dog": 3,
+      "absent source: a bell": 3,
+      "absent source: drums": 1,
+      "absent source: a clock": 6,
+      "absent source: a cat": 2,
+      "absent source: a train": 1,
+      "absent source: a frog": 1,
+      "absent source: a helicopter": 1
+    },
+    "item_status": {
+      "ACCEPT": 91,
+      "UNCERTAIN": 7,
+      "REPAIR": 2
+    }
+  }
+}

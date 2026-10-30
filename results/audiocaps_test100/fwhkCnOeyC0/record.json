@@ -1,7 +1,7 @@
 {
   "id": "fwhkCnOeyC0",
-  "image": "data\\audiocaps\\test_subset\\frames\\fwhkCnOeyC0.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\fwhkCnOeyC0.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\fwhkCnOeyC0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\fwhkCnOeyC0.wav",
   "gt_captions": [
     "Applause and speech followed by a loud high pitched bell and more applause and speech",
     "A man and woman speak and people clap and a bell rings",

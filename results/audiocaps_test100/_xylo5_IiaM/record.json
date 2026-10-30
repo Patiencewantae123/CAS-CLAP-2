@@ -1,7 +1,7 @@
 {
   "id": "_xylo5_IiaM",
-  "image": "data\\audiocaps\\test_subset\\frames\\_xylo5_IiaM.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\_xylo5_IiaM.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\_xylo5_IiaM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\_xylo5_IiaM.wav",
   "gt_captions": [
     "A woman talks and a baby whispers",
     "A woman talking as a baby talks followed by plastic thumping",

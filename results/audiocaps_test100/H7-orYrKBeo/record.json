@@ -1,7 +1,7 @@
 {
   "id": "H7-orYrKBeo",
-  "image": "data\\audiocaps\\test_subset\\frames\\H7-orYrKBeo.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\H7-orYrKBeo.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\H7-orYrKBeo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\H7-orYrKBeo.wav",
   "gt_captions": [
     "A baby cries, and people are communicating",
     "A child crying together with murmuring",

@@ -1,7 +1,7 @@
 {
   "id": "jjHIINDfE1c",
-  "image": "data\\audiocaps\\test_subset\\frames\\jjHIINDfE1c.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\jjHIINDfE1c.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\jjHIINDfE1c.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jjHIINDfE1c.wav",
   "gt_captions": [
     "Humming from an engine followed by loud honks of a horn",
     "A tractor engine driving by followed by a car horn honking and wind blowing on a microphone",

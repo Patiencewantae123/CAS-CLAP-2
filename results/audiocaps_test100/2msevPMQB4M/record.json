@@ -1,7 +1,7 @@
 {
   "id": "2msevPMQB4M",
-  "image": "data\\audiocaps\\test_subset\\frames\\2msevPMQB4M.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\2msevPMQB4M.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\2msevPMQB4M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\2msevPMQB4M.wav",
   "gt_captions": [
     "A drilling sound with humming in the background",
     "A power tool drill operating followed by compressed air releasing and steam hissing",

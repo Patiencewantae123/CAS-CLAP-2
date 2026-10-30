@@ -1,7 +1,7 @@
 {
   "id": "C8kR19NvynA",
-  "image": "data\\audiocaps\\test_subset\\frames\\C8kR19NvynA.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\C8kR19NvynA.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\C8kR19NvynA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\C8kR19NvynA.wav",
   "gt_captions": [
     "A man speaks during a monologue",
     "A man speaking on a microphone",

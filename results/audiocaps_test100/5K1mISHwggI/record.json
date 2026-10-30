@@ -1,7 +1,7 @@
 {
   "id": "5K1mISHwggI",
-  "image": "data\\audiocaps\\test_subset\\frames\\5K1mISHwggI.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\5K1mISHwggI.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\5K1mISHwggI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\5K1mISHwggI.wav",
   "gt_captions": [
     "Men are speaking with an engine sound in the background",
     "A person speaks, traffic passes by",

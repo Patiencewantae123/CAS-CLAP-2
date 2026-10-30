@@ -1,7 +1,7 @@
 {
   "id": "sJrFyjfrL-g",
-  "image": "data\\audiocaps\\test_subset\\frames\\sJrFyjfrL-g.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\sJrFyjfrL-g.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\sJrFyjfrL-g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sJrFyjfrL-g.wav",
   "gt_captions": [
     "A sewing machine operating during several metal clacks",
     "Slow vibrations of a sewing machine with several clicks",

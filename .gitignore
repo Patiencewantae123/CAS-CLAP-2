@@ -3,7 +3,6 @@ __pycache__/
 
 # Large or re-downloadable datasets (see data/README.md for how to fetch them)
 data/places365/
-data/audiocaps/test_subset/
 data/audiocaps/pairs/
 data/cache/
 

@@ -1,7 +1,7 @@
 {
   "id": "9MgGaTbmc6g",
-  "image": "data\\audiocaps\\test_subset\\frames\\9MgGaTbmc6g.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\9MgGaTbmc6g.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\9MgGaTbmc6g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\9MgGaTbmc6g.wav",
   "gt_captions": [
     "A vehicle accelerating and revving while tires are skidding",
     "A car engine accelerating and revving while tires skid",

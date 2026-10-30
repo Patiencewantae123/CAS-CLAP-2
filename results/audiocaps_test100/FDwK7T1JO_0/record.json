@@ -1,7 +1,7 @@
 {
   "id": "FDwK7T1JO_0",
-  "image": "data\\audiocaps\\test_subset\\frames\\FDwK7T1JO_0.jpg",
-  "gt_audio": "data\\audiocaps\\test_subset\\audio\\FDwK7T1JO_0.wav",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\FDwK7T1JO_0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\FDwK7T1JO_0.wav",
   "gt_captions": [
     "Two men speaking followed by plastic clacking then a power tool drilling",
     "An adult male speaks while two metal clinks occur, then a small drill operates with whirring and slight grinding",

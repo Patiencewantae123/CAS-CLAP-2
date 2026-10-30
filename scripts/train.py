@@ -1,6 +1,11 @@
 # =============================================================================
-# Tune the CAS-V verifier on the AudioCaps *validation* split, then score the
-# chosen configuration once on the *test* split.
+# TRAIN: fit the CAS-V verifier on the AudioCaps *validation* split, then score
+# the chosen configuration once on the *test* split.
+#
+# What is trained: only the verifier's parameters (three evidence weights, the
+# accept threshold and the two conflict thresholds) by grid search. No neural
+# network weights are trained; CLIP, AudioLDM and CLAP are used pretrained and
+# frozen. The result is saved to results/tuning/casv_tuned_config.json.
 #
 # Objective (no audio generation needed): CLAP cosine between the prompt the
 # verifier selects and the real ground-truth recording. Reported alongside:
@@ -13,7 +18,7 @@
 # configuration is re-checked against decide() itself on every item.
 #
 # Usage:
-#   py -m scripts.tune_casv --val data/audiocaps/pairs/val/manifest.json \
+#   py -m scripts.train --val data/audiocaps/pairs/val/manifest.json \
 #                           --test data/audiocaps/pairs/test/manifest.json
 # =============================================================================
 
