@@ -1,0 +1,293 @@
+{
+  "id": "3MoF8myFs8Y",
+  "label": "beach",
+  "image": "data\\audiocaps\\pairs\\categories\\frames\\3MoF8myFs8Y.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\3MoF8myFs8Y.wav",
+  "gt_captions": [
+    "Ocean waves crashing as a man talks in the distance and wind heavily blows into a microphone",
+    "Strong wind noise under a microphone as waves travel",
+    "A strong wind is blowing and constant background waves can be heard",
+    "Wind blowing hard and waves crashing and splashing",
+    "Wind blowing and waves crashing"
+  ],
+  "top_scene": [
+    "raft",
+    0.2548794448375702
+  ],
+  "top_object": [
+    "amphibious vehicle",
+    0.33923307061195374
+  ],
+  "env_probs": {
+    "indoor": 0.02546374872326851,
+    "outdoor": 0.9745362512767315
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "Jet ski riding on waves",
+    "casv": "Waves crash against a shoreline and a boat accelerates"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3924824595451355,
+    "clap_gt_audio_baseline": 0.5056328773498535,
+    "clap_text_casv": 0.3658778667449951,
+    "clap_gt_audio_casv": 0.34031522274017334
+  },
+  "verdicts": [
+    {
+      "caption": "Jet ski riding on waves",
+      "clip_similarity": 0.35561466217041016,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.28304542043517233,
+      "score": 0.4849136261305517,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Strong wind noise while a water vehicle speeds through the ocean water",
+      "clip_similarity": 0.33870434761047363,
+      "visual": 0.5234205245922018,
+      "scene_support": 0.6041566523683892,
+      "object_support": 0.8059062846791414,
+      "score": 0.6323870909511399,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.39)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Hard blowing wind while a motorboat crashes against water waves",
+      "clip_similarity": 0.3360670208930969,
+      "visual": 0.44909335705244663,
+      "scene_support": 0.39456640993369463,
+      "object_support": 0.44477536805504875,
+      "score": 0.43143987621760166,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A jet boat is revving its engine",
+      "clip_similarity": 0.3293950855731964,
+      "visual": 0.261059750495758,
+      "scene_support": 0.5445380946964277,
+      "object_support": 0.89680984649012,
+      "score": 0.5368282825542674,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.63)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A powerful speedboat running with wind blowing and waves crashing then a man speaks",
+      "clip_similarity": 0.32915839552879333,
+      "visual": 0.25438916983943405,
+      "scene_support": 0.1851865442078522,
+      "object_support": 0.48478000909494107,
+      "score": 0.3027456339266116,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat is traveling through water with strong wind noise",
+      "clip_similarity": 0.3284896910190582,
+      "visual": 0.23554322564822305,
+      "scene_support": 0.6228110731536081,
+      "object_support": 0.8445635270406072,
+      "score": 0.5344296703175537,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Large waves hit against a beach continuously in almost a thunder",
+      "clip_similarity": 0.3271918296813965,
+      "visual": 0.19896590041500048,
+      "scene_support": 0.1960735388909478,
+      "object_support": 0.0,
+      "score": 0.13840842183328453,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat speeds off into the distance as wind blows and waves crash",
+      "clip_similarity": 0.32710063457489014,
+      "visual": 0.19639576986748708,
+      "scene_support": 0.043183488853092235,
+      "object_support": 0.2220943441069086,
+      "score": 0.15814165783499506,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor roars and waves crash",
+      "clip_similarity": 0.32657068967819214,
+      "visual": 0.1814604556858259,
+      "scene_support": 1.0,
+      "object_support": 0.9360140017179334,
+      "score": 0.6533883827897103,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.63)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat crashing into rough waves and some wind",
+      "clip_similarity": 0.3262808918952942,
+      "visual": 0.17329315194595,
+      "scene_support": 0.6896870157207665,
+      "object_support": 0.5936030376354651,
+      "score": 0.4543042767852495,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Waves crash against a shoreline and a boat accelerates",
+      "clip_similarity": 0.32579803466796875,
+      "visual": 0.15968489863522708,
+      "scene_support": 0.9896627979368405,
+      "object_support": 0.8169643107775052,
+      "score": 0.6058620920683946,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Waves breaking and a man laughing",
+      "clip_similarity": 0.32511284947395325,
+      "visual": 0.14037448313918768,
+      "scene_support": 0.5385759943051515,
+      "object_support": 0.20155914612351528,
+      "score": 0.27819033538427507,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Strong winds followed by a boat traveling fast through water",
+      "clip_similarity": 0.3251001238822937,
+      "visual": 0.1400158407392569,
+      "scene_support": 0.8715148713093871,
+      "object_support": 0.8206322294021106,
+      "score": 0.5636504665091521,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat motor runs while waves slap the boat",
+      "clip_similarity": 0.3249312937259674,
+      "visual": 0.1352577395785826,
+      "scene_support": 0.9294577540329337,
+      "object_support": 0.8727826402651381,
+      "score": 0.5947752141208545,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.63)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboat travels in ocean with wind noise and people talking in the background",
+      "clip_similarity": 0.32271239161491394,
+      "visual": 0.07272293572741834,
+      "scene_support": 0.5703239189756122,
+      "object_support": 0.6530022662497217,
+      "score": 0.3960870298585675,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat running on water with some people cheering",
+      "clip_similarity": 0.32222241163253784,
+      "visual": 0.058913943462167426,
+      "scene_support": 0.12638258472249234,
+      "object_support": 0.5456913184483208,
+      "score": 0.22518774833611088,
+      "conflicts": [
+        "names 'a crowd of people', not visible in image (z=-0.53)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle going against the wind",
+      "clip_similarity": 0.3214666247367859,
+      "visual": 0.037613776571664224,
+      "scene_support": 0.21703170695013704,
+      "object_support": 0.5849226087884078,
+      "score": 0.25563180535022917,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle is riding through the wind",
+      "clip_similarity": 0.32064810395240784,
+      "visual": 0.014545595039816025,
+      "scene_support": 0.34022072430743866,
+      "object_support": 0.605265053905304,
+      "score": 0.2894639714797492,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat is traveling fast across water",
+      "clip_similarity": 0.3204720616340637,
+      "visual": 0.009584235188782809,
+      "scene_support": 0.8159876513764386,
+      "object_support": 1.0,
+      "score": 0.5486299894884447,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind and waves crash while a woman briefly speaks",
+      "clip_similarity": 0.32013198733329773,
+      "visual": 0.0,
+      "scene_support": 0.5489425512579181,
+      "object_support": 0.21192756609271227,
+      "score": 0.22826103520518912,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raft",
+      0.2548794448375702
+    ],
+    [
+      "wave",
+      0.20012739300727844
+    ],
+    [
+      "ocean",
+      0.15641538798809052
+    ],
+    [
+      "cliff",
+      0.05759548395872116
+    ],
+    [
+      "coast",
+      0.05647846311330795
+    ]
+  ],
+  "top_objects": [
+    [
+      "amphibious vehicle",
+      0.33923307061195374
+    ],
+    [
+      "motorboat",
+      0.0695374608039856
+    ],
+    [
+      "snowmobile",
+      0.04961729049682617
+    ],
+    [
+      "moped",
+      0.0388772189617157
+    ],
+    [
+      "shipwreck",
+      0.03729306161403656
+    ]
+  ]
+}

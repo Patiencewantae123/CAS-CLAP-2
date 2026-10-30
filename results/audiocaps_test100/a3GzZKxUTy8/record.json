@@ -1,0 +1,284 @@
+{
+  "id": "a3GzZKxUTy8",
+  "image": "data\\audiocaps\\test_subset\\frames\\a3GzZKxUTy8.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\a3GzZKxUTy8.wav",
+  "gt_captions": [
+    "Birds chirp and a duck quacks followed by a dog barking",
+    "A duck quacking followed by a dog whimpering then glass tapping as a film projector runs while birds chirp in the background",
+    "Birds chirping and then a dog barking and a duck quaking",
+    "A duck quacking followed by a dog barking as birds chirp then plastic popping and a film reel rolling",
+    "A bird squawks followed by a dog whimpering"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.15291918814182281
+  ],
+  "top_object": [
+    "Rottweiler",
+    0.2945265769958496
+  ],
+  "env_probs": {
+    "indoor": 0.34483247995376587,
+    "outdoor": 0.6551675200462341
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A pet dog rubs an object and then pants quietly",
+    "casv": "A dog whimpers multiple times as an object is dragged on a surface"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.03636257350444794,
+    "clap_gt_audio_baseline": 0.4203859567642212,
+    "clap_text_casv": 0.022521672770380974,
+    "clap_gt_audio_casv": 0.2527856230735779
+  },
+  "verdicts": [
+    {
+      "caption": "A pet dog rubs an object and then pants quietly",
+      "clip_similarity": 0.3227347135543823,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.09957591178965225,
+      "score": 0.4298727735368957,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers multiple times as an object is dragged on a surface",
+      "clip_similarity": 0.3216300308704376,
+      "visual": 0.8840242795907512,
+      "scene_support": 0.8666096093579985,
+      "object_support": 0.6419780542699338,
+      "score": 0.8061860109246801,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog whimpers in a funny way while his owner laughs",
+      "clip_similarity": 0.32096120715141296,
+      "visual": 0.8138074528331404,
+      "scene_support": 0.06904909046638727,
+      "object_support": 0.0,
+      "score": 0.34623770827317235,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male giving a dog a command and dog responding with a bark",
+      "clip_similarity": 0.320716917514801,
+      "visual": 0.7881605706955351,
+      "scene_support": 0.5324340996519766,
+      "object_support": 0.8755618333967796,
+      "score": 0.737663008192841,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog is aggressively vocalizing itself followed by a squeaky toy being played with",
+      "clip_similarity": 0.3201611638069153,
+      "visual": 0.7298144613748005,
+      "scene_support": 0.49721114596905297,
+      "object_support": 0.36563950498554093,
+      "score": 0.5507809798362984,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male whistling with a dog breathing heavily followed by loud barking",
+      "clip_similarity": 0.3201165199279785,
+      "visual": 0.7251274991395763,
+      "scene_support": 0.5555574924549956,
+      "object_support": 0.5948822236915042,
+      "score": 0.6351829144997805,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A lady yells at a dog in anger while he barks and growls",
+      "clip_similarity": 0.32005345821380615,
+      "visual": 0.7185069303213292,
+      "scene_support": 0.3246305942263777,
+      "object_support": 0.33062184020890517,
+      "score": 0.48397850245911656,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks with sounds of objects moving followed by speech from a woman",
+      "clip_similarity": 0.3186405301094055,
+      "visual": 0.5701698945589938,
+      "scene_support": 0.4744706969295333,
+      "object_support": 0.740373197625106,
+      "score": 0.5925211261899893,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog sniffs, barks and then growls at something",
+      "clip_similarity": 0.3184092342853546,
+      "visual": 0.5458871749945245,
+      "scene_support": 0.9091905940914196,
+      "object_support": 0.6873615034761876,
+      "score": 0.6973204992680919,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barks while birds coo, chirp and sing",
+      "clip_similarity": 0.317628413438797,
+      "visual": 0.4639122680767185,
+      "scene_support": 0.8223635783929746,
+      "object_support": 0.4291625760520393,
+      "score": 0.5610227535641916,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.3175380825996399,
+      "visual": 0.45442883514283033,
+      "scene_support": 0.7919676280373317,
+      "object_support": 0.6060561132148558,
+      "score": 0.6011786564327883,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dog growling with woman speaking",
+      "clip_similarity": 0.3161473274230957,
+      "visual": 0.3084196364319014,
+      "scene_support": 0.4234728219581416,
+      "object_support": 0.6085786032471132,
+      "score": 0.43298328213433696,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog yipping repeatedly",
+      "clip_similarity": 0.31582292914390564,
+      "visual": 0.2743625043021182,
+      "scene_support": 1.0,
+      "object_support": 0.977091222375829,
+      "score": 0.702872368433596,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog howls while another dog barks in the background",
+      "clip_similarity": 0.314822793006897,
+      "visual": 0.16936266074278025,
+      "scene_support": 0.634305575627457,
+      "object_support": 0.8087121743369865,
+      "score": 0.5006503892864451,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks while another dog growls",
+      "clip_similarity": 0.3146258592605591,
+      "visual": 0.14868746284534276,
+      "scene_support": 0.9742083720166516,
+      "object_support": 0.8712408086393781,
+      "score": 0.613109739334946,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog whines and scampers as people talk and laugh",
+      "clip_similarity": 0.3142261505126953,
+      "visual": 0.10672381965520478,
+      "scene_support": 0.6370446638389184,
+      "object_support": 0.39549464713857335,
+      "score": 0.3524513211553294,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman speaking enthusiastically to a dog that then barks",
+      "clip_similarity": 0.31412890553474426,
+      "visual": 0.09651450204937267,
+      "scene_support": 0.30675032572712924,
+      "object_support": 0.42999138466470316,
+      "score": 0.2596283139372988,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog breathing heavy and movement in the background",
+      "clip_similarity": 0.3137657344341278,
+      "visual": 0.058386783892869436,
+      "scene_support": 0.9454791548695433,
+      "object_support": 1.0,
+      "score": 0.6069984600180107,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dog whining with person speaking in the background and another person laughing",
+      "clip_similarity": 0.31352734565734863,
+      "visual": 0.03335940677700948,
+      "scene_support": 0.8048325141185911,
+      "object_support": 0.593161828053936,
+      "score": 0.43274206536256193,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers as a small motor runs and then begins clicking",
+      "clip_similarity": 0.313209593296051,
+      "visual": 0.0,
+      "scene_support": 0.7998373754237826,
+      "object_support": 0.4506875571851229,
+      "score": 0.37515747978267167,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.15291918814182281
+    ],
+    [
+      "watering hole",
+      0.12310109287500381
+    ],
+    [
+      "yard",
+      0.07545110583305359
+    ],
+    [
+      "veterinarians office",
+      0.06455312669277191
+    ],
+    [
+      "lawn",
+      0.059666022658348083
+    ]
+  ],
+  "top_objects": [
+    [
+      "Rottweiler",
+      0.2945265769958496
+    ],
+    [
+      "Dobermann",
+      0.14984101057052612
+    ],
+    [
+      "Black and Tan Coonhound",
+      0.13150204718112946
+    ],
+    [
+      "Bloodhound",
+      0.06919105350971222
+    ],
+    [
+      "Australian Kelpie",
+      0.06090862676501274
+    ]
+  ]
+}

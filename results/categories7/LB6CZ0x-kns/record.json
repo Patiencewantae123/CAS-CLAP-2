@@ -1,0 +1,295 @@
+{
+  "id": "LB6CZ0x-kns",
+  "label": "metal hit",
+  "image": "data\\audiocaps\\pairs\\categories\\frames\\LB6CZ0x-kns.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\LB6CZ0x-kns.wav",
+  "gt_captions": [
+    "Metal clanking followed by steam hissing as a truck engine is running then accelerating",
+    "A motor vehicle is accelerating followed by thumping and hissing noises",
+    "A loud metal clank followed by pressurized air releasing as a truck engine runs idle before accelerating",
+    "An engine hums followed by a hiss",
+    "A vehicle engine whirring followed by some knocking and a release of brakes"
+  ],
+  "top_scene": [
+    "loading dock",
+    0.40946173667907715
+  ],
+  "top_object": [
+    "garbage truck",
+    0.9216278791427612
+  ],
+  "env_probs": {
+    "indoor": 0.2622483968734741,
+    "outdoor": 0.7377516031265259
+  },
+  "status": "REPAIR",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Garbage truck picking up can and driving off while honking horn",
+    "casv": "A truck idling then accelerates"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4088904857635498,
+    "clap_gt_audio_baseline": 0.5444886684417725,
+    "clap_text_casv": 0.3245270848274231,
+    "clap_gt_audio_casv": 0.4945458173751831
+  },
+  "verdicts": [
+    {
+      "caption": "Garbage truck picking up can and driving off while honking horn",
+      "clip_similarity": 0.31612443923950195,
+      "visual": 1.0,
+      "scene_support": 0.17064790213222789,
+      "object_support": 1.0,
+      "score": 0.7511943706396684,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking and scraping a container",
+      "clip_similarity": 0.3150530159473419,
+      "visual": 0.9482733565557201,
+      "scene_support": 0.07059580774797085,
+      "object_support": 0.1885534291116648,
+      "score": 0.45705411368017873,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal trash cans clanging and scrapping on a hard surface as a vehicle engine runs idle followed by a car horn honking",
+      "clip_similarity": 0.3083958923816681,
+      "visual": 0.6268778263615815,
+      "scene_support": 0.5058934741095661,
+      "object_support": 0.742628426019191,
+      "score": 0.6253077005832597,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The idling of a large vehicle along with a soft vibration",
+      "clip_similarity": 0.3062599301338196,
+      "visual": 0.5237569044875032,
+      "scene_support": 1.0,
+      "object_support": 0.7410702610047889,
+      "score": 0.731823840096438,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.30436715483665466,
+      "visual": 0.4323766688392691,
+      "scene_support": 0.5814453737336631,
+      "object_support": 0.7951169838661224,
+      "score": 0.5859193748156433,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large truck idling in mid-frequency",
+      "clip_similarity": 0.3019307255744934,
+      "visual": 0.3147496687140927,
+      "scene_support": 0.35670006618678607,
+      "object_support": 0.5149490183604587,
+      "score": 0.3873945928498105,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck engine slows and then air brakes hiss followed by machinery operating",
+      "clip_similarity": 0.30074721574783325,
+      "visual": 0.25761166241498434,
+      "scene_support": 0.5973943307375869,
+      "object_support": 0.624581632472742,
+      "score": 0.4696374539290924,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal filing and scrapping a surface followed by metal clank then a man speaking while a large machine motor runs idle",
+      "clip_similarity": 0.30038905143737793,
+      "visual": 0.24032004880442118,
+      "scene_support": 0.0,
+      "object_support": 0.1286915301560374,
+      "score": 0.1347354785685797,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large truck idling and accelerating",
+      "clip_similarity": 0.29952141642570496,
+      "visual": 0.19843198531263173,
+      "scene_support": 0.7540701706605695,
+      "object_support": 0.7709797840569722,
+      "score": 0.5368877805403152,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Idling truck vehicle",
+      "clip_similarity": 0.29897570610046387,
+      "visual": 0.17208594297422086,
+      "scene_support": 0.8335085646967917,
+      "object_support": 0.8519221933591334,
+      "score": 0.574463604606466,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.29878896474838257,
+      "visual": 0.16307036210520864,
+      "scene_support": 0.5847800476924879,
+      "object_support": 0.6760280266482885,
+      "score": 0.44347056714431643,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck releases its air brake and honks its horn twice quickly",
+      "clip_similarity": 0.29873180389404297,
+      "visual": 0.16031072531830065,
+      "scene_support": 0.25913868506807103,
+      "object_support": 0.5878545300323385,
+      "score": 0.31822225465744314,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck idling then accelerates",
+      "clip_similarity": 0.298203706741333,
+      "visual": 0.13481501944551155,
+      "scene_support": 0.9379316787692424,
+      "object_support": 0.8772844545759777,
+      "score": 0.5984908477817706,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck reverses and beeps then revs its engine",
+      "clip_similarity": 0.29751574993133545,
+      "visual": 0.10160153895073372,
+      "scene_support": 0.5586790194221799,
+      "object_support": 0.6931382424146035,
+      "score": 0.4161857941313285,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A scraper is being used to scrape and surface, and an object taps a surface",
+      "clip_similarity": 0.29651448130607605,
+      "visual": 0.05326185327307599,
+      "scene_support": 0.04020530571011455,
+      "object_support": 0.0,
+      "score": 0.03336633302226476,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine idling with music in the background",
+      "clip_similarity": 0.2960640788078308,
+      "visual": 0.031517123992293734,
+      "scene_support": 0.4150180667758168,
+      "object_support": 0.6025804484970577,
+      "score": 0.31788640417877984,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large vehicle putting on the breaks",
+      "clip_similarity": 0.29587361216545105,
+      "visual": 0.022321691924968957,
+      "scene_support": 0.9155651369813125,
+      "object_support": 0.9196429518104225,
+      "score": 0.5594911034075081,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine running idle followed by a man talking then camera muffling",
+      "clip_similarity": 0.29570573568344116,
+      "visual": 0.014216877524211568,
+      "scene_support": 0.25032776709851695,
+      "object_support": 0.5200374631112054,
+      "score": 0.23679632007260132,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck is revving its engine and spinning its tires",
+      "clip_similarity": 0.2954687774181366,
+      "visual": 0.00277690250194599,
+      "scene_support": 0.6665373543653194,
+      "object_support": 0.8506374913852516,
+      "score": 0.45626321472594966,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine accelerates along with reversing beeps",
+      "clip_similarity": 0.29541125893592834,
+      "visual": 0.0,
+      "scene_support": 0.7228760850357694,
+      "object_support": 0.6954143031331177,
+      "score": 0.4254871164506661,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "loading dock",
+      0.40946173667907715
+    ],
+    [
+      "landfill",
+      0.0882536917924881
+    ],
+    [
+      "yard",
+      0.04391774907708168
+    ],
+    [
+      "assembly line",
+      0.040520552545785904
+    ],
+    [
+      "archaelogical excavation",
+      0.038018811494112015
+    ]
+  ],
+  "top_objects": [
+    [
+      "garbage truck",
+      0.9216278791427612
+    ],
+    [
+      "snowplow",
+      0.019653143361210823
+    ],
+    [
+      "waste container",
+      0.018753303214907646
+    ],
+    [
+      "semi-trailer truck",
+      0.009290751069784164
+    ],
+    [
+      "moving van",
+      0.003759183222427964
+    ]
+  ]
+}

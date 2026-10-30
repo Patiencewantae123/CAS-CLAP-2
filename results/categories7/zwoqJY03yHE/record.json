@@ -1,0 +1,285 @@
+{
+  "id": "zwoqJY03yHE",
+  "label": "cloth scratch",
+  "image": "data\\audiocaps\\pairs\\categories\\frames\\zwoqJY03yHE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\zwoqJY03yHE.wav",
+  "gt_captions": [
+    "Two woman communicating with each other as a goat is baaing",
+    "A woman talking followed by another woman talking as a goat is baaing",
+    "Women speak and a goat bleats",
+    "Two women talking then laughing as fabric shuffles followed by a goat baaing",
+    "A woman speaking followed by another woman talking followed by a goat baaing as cloth rustles"
+  ],
+  "top_scene": [
+    "veterinarians office",
+    0.6085996031761169
+  ],
+  "top_object": [
+    "skunk",
+    0.12528221309185028
+  ],
+  "env_probs": {
+    "indoor": 0.9792538285255432,
+    "outdoor": 0.020746171474456787
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A dog whimpers as someone sniffles",
+    "casv": "A dog whimpers as someone sniffles"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.16485336422920227,
+    "clap_gt_audio_baseline": 0.2851410508155823,
+    "clap_text_casv": -0.16485336422920227,
+    "clap_gt_audio_casv": 0.2851410508155823
+  },
+  "verdicts": [
+    {
+      "caption": "A dog whimpers as someone sniffles",
+      "clip_similarity": 0.29333579540252686,
+      "visual": 1.0,
+      "scene_support": 0.8633642421952051,
+      "object_support": 0.7521056326908111,
+      "score": 0.8846409624658049,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog making a strange muffled sound",
+      "clip_similarity": 0.28722894191741943,
+      "visual": 0.623314527736876,
+      "scene_support": 0.9045773382123863,
+      "object_support": 1.0,
+      "score": 0.8206990125584663,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle is started and gets ready to go as a small dog bow-wows",
+      "clip_similarity": 0.28651922941207886,
+      "visual": 0.5795377463064375,
+      "scene_support": 0.22485332884755418,
+      "object_support": 0.0,
+      "score": 0.29927109717684125,
+      "conflicts": [
+        "names 'a motorcycle', not visible in image (z=-0.27)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sheep crying and making sounds",
+      "clip_similarity": 0.2847716212272644,
+      "visual": 0.471741052635449,
+      "scene_support": 0.33674394650247486,
+      "object_support": 0.8354455453919988,
+      "score": 0.5403532686225216,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pet dog rubs an object and then pants quietly",
+      "clip_similarity": 0.2826412320137024,
+      "visual": 0.34033350061674267,
+      "scene_support": 0.0,
+      "object_support": 0.12283374313395969,
+      "score": 0.17298352318688498,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Human making dog sounds followed by real dog bark",
+      "clip_similarity": 0.28233373165130615,
+      "visual": 0.321366135587799,
+      "scene_support": 0.7945699412854522,
+      "object_support": 0.6333322994326706,
+      "score": 0.5569171264505565,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Animals bleating with shearing clipping sounds",
+      "clip_similarity": 0.2822999358177185,
+      "visual": 0.3192815269482543,
+      "scene_support": 0.525713538450194,
+      "object_support": 0.3102498561938169,
+      "score": 0.37850162917250496,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Female voice talking to her dog and pet is responding with animal cries",
+      "clip_similarity": 0.2817499041557312,
+      "visual": 0.28535424559778083,
+      "scene_support": 1.0,
+      "object_support": 0.4637093818025964,
+      "score": 0.5532545127798912,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Soft repeated tapping followed by a loud tap",
+      "clip_similarity": 0.2817244529724121,
+      "visual": 0.2837843551408398,
+      "scene_support": 0.6934734217584869,
+      "object_support": 0.483814050146062,
+      "score": 0.4666999836277006,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An unhappy little dog expresses his misery by whimpering sadly and repeatedly",
+      "clip_similarity": 0.2815466523170471,
+      "visual": 0.2728171812929353,
+      "scene_support": 0.6075647980016775,
+      "object_support": 0.39327959869615725,
+      "score": 0.4093801915265245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cat crying followed by woman speaking and giggling, and cat crying louder",
+      "clip_similarity": 0.2814093828201294,
+      "visual": 0.26435006718910564,
+      "scene_support": 0.728328847554175,
+      "object_support": 0.471806233857051,
+      "score": 0.4657805512990101,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers as an infant cries",
+      "clip_similarity": 0.2806868553161621,
+      "visual": 0.21978282569252575,
+      "scene_support": 0.744822151146178,
+      "object_support": 0.7443203606997439,
+      "score": 0.5346558838307869,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Repeated tapping, a dog whimpering and then yapping",
+      "clip_similarity": 0.2802574038505554,
+      "visual": 0.19329322208067473,
+      "scene_support": 0.9471903199343724,
+      "object_support": 0.6590813604628867,
+      "score": 0.5591987929514476,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing followed by a brushing noise",
+      "clip_similarity": 0.2799886465072632,
+      "visual": 0.17671562004239072,
+      "scene_support": 0.3727987805440083,
+      "object_support": 0.3894489967403932,
+      "score": 0.2993605812022767,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A new baby goat bleeding with male speaking",
+      "clip_similarity": 0.2791537642478943,
+      "visual": 0.1252180658728977,
+      "scene_support": 0.06588507341622807,
+      "object_support": 0.2891780207757639,
+      "score": 0.15660615460675664,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People clapping followed by purring",
+      "clip_similarity": 0.27901580929756165,
+      "visual": 0.11670867134692557,
+      "scene_support": 0.628844212884018,
+      "object_support": 0.4460043029065767,
+      "score": 0.36913802327594863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman talking with a rustling of tissue then nose blowing sound",
+      "clip_similarity": 0.2784793972969055,
+      "visual": 0.08362148360163019,
+      "scene_support": 0.2895113419546322,
+      "object_support": 0.14744997800611317,
+      "score": 0.16453698942887568,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A puppy and a baby cry while a woman groans quietly",
+      "clip_similarity": 0.27775195240974426,
+      "visual": 0.03875092603315888,
+      "scene_support": 0.29776260242785113,
+      "object_support": 0.03940007444084773,
+      "score": 0.11664917347387321,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several loud pops",
+      "clip_similarity": 0.27727511525154114,
+      "visual": 0.009338458455808687,
+      "scene_support": 0.6077543298522458,
+      "object_support": 0.3488512423726328,
+      "score": 0.29071705504978707,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog howling and baby crying",
+      "clip_similarity": 0.27712371945381165,
+      "visual": 0.0,
+      "scene_support": 0.12898708187775945,
+      "object_support": 0.05668007917799258,
+      "score": 0.05570014831672561,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "veterinarians office",
+      0.6085996031761169
+    ],
+    [
+      "beauty salon",
+      0.17386093735694885
+    ],
+    [
+      "nursing home",
+      0.06723897159099579
+    ],
+    [
+      "pet shop",
+      0.05186547338962555
+    ],
+    [
+      "hospital room",
+      0.018546754494309425
+    ]
+  ],
+  "top_objects": [
+    [
+      "skunk",
+      0.12528221309185028
+    ],
+    [
+      "neck brace",
+      0.06260906159877777
+    ],
+    [
+      "giant panda",
+      0.04943790286779404
+    ],
+    [
+      "bath towel",
+      0.03834822028875351
+    ],
+    [
+      "albatross",
+      0.0351201668381691
+    ]
+  ]
+}

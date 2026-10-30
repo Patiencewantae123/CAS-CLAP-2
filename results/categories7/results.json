@@ -1,0 +1,330 @@
+{
+  "run_name": "categories7",
+  "timestamp": "2026-10-30T16:35:34.635983",
+  "environment": {
+    "python": "3.14.6",
+    "torch": "2.15.0+cpu",
+    "device": "cpu"
+  },
+  "models": {
+    "clip": "openai/clip-vit-base-patch32",
+    "generator": "cvssp/audioldm-s-full-v2",
+    "clap": "laion/clap-htsat-unfused"
+  },
+  "vocabulary": {
+    "scenes": "Places365",
+    "objects": "ImageNet-1k",
+    "sound_candidates": "AudioCaps train captions"
+  },
+  "settings": {
+    "manifest": "data/audiocaps/pairs/categories/manifest.json",
+    "output_dir": "results",
+    "run_name": "categories7",
+    "limit": null,
+    "seed": 42,
+    "duration": 5.0,
+    "steps": 50,
+    "guidance_scale": 2.5,
+    "no_generate": false,
+    "no_clap": false,
+    "config": null
+  },
+  "verifier_config": {
+    "retrieve_k": 20,
+    "support_top_n": 5,
+    "w_visual": 0.4,
+    "w_scene": 0.3,
+    "w_object": 0.3,
+    "accept_threshold": 0.6,
+    "repair_threshold": 0.4,
+    "env_conflict_confidence": 0.7,
+    "source_absent_z": 0.0,
+    "uncertainty_threshold": 0.1
+  },
+  "summary": {
+    "n_items": 7,
+    "status_counts": {
+      "ACCEPT": 6,
+      "REPAIR": 1,
+      "UNCERTAIN": 0
+    },
+    "prompt_changed": 6,
+    "clap_text": {
+      "n": 7,
+      "baseline_mean": 0.19648183350052154,
+      "casv_mean": 0.1271045601793698,
+      "mean_diff": -0.06937727332115173,
+      "diff_std": 0.11107210876978259,
+      "casv_wins": 2
+    },
+    "clap_gt_audio": {
+      "n": 7,
+      "baseline_mean": 0.3653874269553593,
+      "casv_mean": 0.3295659231288092,
+      "mean_diff": -0.035821503826550076,
+      "diff_std": 0.06721652767003466,
+      "casv_wins": 1
+    }
+  },
+  "items": [
+    {
+      "id": "kgjNIDmO8a8",
+      "label": "busy road",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\kgjNIDmO8a8.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\kgjNIDmO8a8.wav",
+      "gt_captions": [
+        "An emergency vehicle siren blasts as a man speaks",
+        "Distant rings of sirens get closer as traffic passes and people speak",
+        "Emergency vehicle siren blasts while a man talks",
+        "Sirens ring and traffic passes as people speak",
+        "A ringing of a siren with passing traffic"
+      ],
+      "top_scene": [
+        "crosswalk",
+        0.2962513267993927
+      ],
+      "top_object": [
+        "car mirror",
+        0.12040790915489197
+      ],
+      "env_probs": {
+        "indoor": 0.2353629171848297,
+        "outdoor": 0.7646370828151703
+      },
+      "status": "ACCEPT",
+      "n_rejected": 3,
+      "prompts": {
+        "baseline": "A man talks and a car accelerates followed by objects hitting and several people talking",
+        "casv": "A vehicle runs while people talk in the background"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.25405019521713257,
+        "clap_gt_audio_baseline": 0.2872854471206665,
+        "clap_text_casv": 0.18424338102340698,
+        "clap_gt_audio_casv": 0.27481845021247864
+      }
+    },
+    {
+      "id": "JQz40TkjymY",
+      "label": "office",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\JQz40TkjymY.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\JQz40TkjymY.wav",
+      "gt_captions": [
+        "Typing on a computer keyboard",
+        "Typing on a keyboard is occurring in a quiet environment",
+        "Typing on a keyboard is ongoing in a quiet environment",
+        "Typing on a computer keyboard",
+        "Typing on a computer keyboard"
+      ],
+      "top_scene": [
+        "computer room",
+        0.2792151868343353
+      ],
+      "top_object": [
+        "computer keyboard",
+        0.7490342855453491
+      ],
+      "env_probs": {
+        "indoor": 0.8401869535446167,
+        "outdoor": 0.1598130464553833
+      },
+      "status": "ACCEPT",
+      "n_rejected": 9,
+      "prompts": {
+        "baseline": "A person presses several keyboard keys at the same time",
+        "casv": "A person types on a computer keyboard and then talks"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.2915937602519989,
+        "clap_gt_audio_baseline": 0.4888402819633484,
+        "clap_text_casv": 0.2921715974807739,
+        "clap_gt_audio_casv": 0.5426428914070129
+      }
+    },
+    {
+      "id": "3MoF8myFs8Y",
+      "label": "beach",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\3MoF8myFs8Y.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\3MoF8myFs8Y.wav",
+      "gt_captions": [
+        "Ocean waves crashing as a man talks in the distance and wind heavily blows into a microphone",
+        "Strong wind noise under a microphone as waves travel",
+        "A strong wind is blowing and constant background waves can be heard",
+        "Wind blowing hard and waves crashing and splashing",
+        "Wind blowing and waves crashing"
+      ],
+      "top_scene": [
+        "raft",
+        0.2548794448375702
+      ],
+      "top_object": [
+        "amphibious vehicle",
+        0.33923307061195374
+      ],
+      "env_probs": {
+        "indoor": 0.02546374872326851,
+        "outdoor": 0.9745362512767315
+      },
+      "status": "ACCEPT",
+      "n_rejected": 13,
+      "prompts": {
+        "baseline": "Jet ski riding on waves",
+        "casv": "Waves crash against a shoreline and a boat accelerates"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.3924824595451355,
+        "clap_gt_audio_baseline": 0.5056328773498535,
+        "clap_text_casv": 0.3658778667449951,
+        "clap_gt_audio_casv": 0.34031522274017334
+      }
+    },
+    {
+      "id": "0yxEvdnimGg",
+      "label": "field (wind / birds)",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\0yxEvdnimGg.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\0yxEvdnimGg.wav",
+      "gt_captions": [
+        "A dog barking as a man is talking while birds chirp and wind blows into a microphone",
+        "Dogs barking and muffled speech",
+        "Dogs are barking with wind noise while people are speaking",
+        "Several people talk as a few dogs bark, birds chirp and wind rustles",
+        "Barks of distant dogs with men speaking and wind blowing"
+      ],
+      "top_scene": [
+        "soccer field",
+        0.20939014852046967
+      ],
+      "top_object": [
+        "gazelle",
+        0.30583056807518005
+      ],
+      "env_probs": {
+        "indoor": 0.047275610268116,
+        "outdoor": 0.952724389731884
+      },
+      "status": "ACCEPT",
+      "n_rejected": 14,
+      "prompts": {
+        "baseline": "A remote controlled helicopter motor flying through the air",
+        "casv": "A helicopter running"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.13004453480243683,
+        "clap_gt_audio_baseline": 0.1622508466243744,
+        "clap_text_casv": -0.17818982899188995,
+        "clap_gt_audio_casv": 0.11232326924800873
+      }
+    },
+    {
+      "id": "zwoqJY03yHE",
+      "label": "cloth scratch",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\zwoqJY03yHE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\zwoqJY03yHE.wav",
+      "gt_captions": [
+        "Two woman communicating with each other as a goat is baaing",
+        "A woman talking followed by another woman talking as a goat is baaing",
+        "Women speak and a goat bleats",
+        "Two women talking then laughing as fabric shuffles followed by a goat baaing",
+        "A woman speaking followed by another woman talking followed by a goat baaing as cloth rustles"
+      ],
+      "top_scene": [
+        "veterinarians office",
+        0.6085996031761169
+      ],
+      "top_object": [
+        "skunk",
+        0.12528221309185028
+      ],
+      "env_probs": {
+        "indoor": 0.9792538285255432,
+        "outdoor": 0.020746171474456787
+      },
+      "status": "ACCEPT",
+      "n_rejected": 10,
+      "prompts": {
+        "baseline": "A dog whimpers as someone sniffles",
+        "casv": "A dog whimpers as someone sniffles"
+      },
+      "metrics": {
+        "clap_text_baseline": -0.16485336422920227,
+        "clap_gt_audio_baseline": 0.2851410508155823,
+        "clap_text_casv": -0.16485336422920227,
+        "clap_gt_audio_casv": 0.2851410508155823
+      }
+    },
+    {
+      "id": "fmEft49sPfE",
+      "label": "leaves",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\fmEft49sPfE.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\fmEft49sPfE.wav",
+      "gt_captions": [
+        "Man speaking with light wind sounds",
+        "A man is speaking as wind is blowing through the leaves",
+        "A man is speaking with the wind blowing in the background",
+        "A man speaking as wind blows through foliage and on a microphone",
+        "A man speaks with wind blowing and leaves rustling"
+      ],
+      "top_scene": [
+        "tree farm",
+        0.26309898495674133
+      ],
+      "top_object": [
+        "jackfruit",
+        0.13511347770690918
+      ],
+      "env_probs": {
+        "indoor": 0.09921225905418396,
+        "outdoor": 0.900787740945816
+      },
+      "status": "ACCEPT",
+      "n_rejected": 4,
+      "prompts": {
+        "baseline": "A man is talking with a bee buzzing in the background, followed by a tapping sound",
+        "casv": "Rustling leaves with insects buzzing and a man speaking"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.06316476315259933,
+        "clap_gt_audio_baseline": 0.2840728163719177,
+        "clap_text_casv": 0.06595518440008163,
+        "clap_gt_audio_casv": 0.2571747601032257
+      }
+    },
+    {
+      "id": "LB6CZ0x-kns",
+      "label": "metal hit",
+      "image": "data\\audiocaps\\pairs\\categories\\frames\\LB6CZ0x-kns.jpg",
+      "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\LB6CZ0x-kns.wav",
+      "gt_captions": [
+        "Metal clanking followed by steam hissing as a truck engine is running then accelerating",
+        "A motor vehicle is accelerating followed by thumping and hissing noises",
+        "A loud metal clank followed by pressurized air releasing as a truck engine runs idle before accelerating",
+        "An engine hums followed by a hiss",
+        "A vehicle engine whirring followed by some knocking and a release of brakes"
+      ],
+      "top_scene": [
+        "loading dock",
+        0.40946173667907715
+      ],
+      "top_object": [
+        "garbage truck",
+        0.9216278791427612
+      ],
+      "env_probs": {
+        "indoor": 0.2622483968734741,
+        "outdoor": 0.7377516031265259
+      },
+      "status": "REPAIR",
+      "n_rejected": 11,
+      "prompts": {
+        "baseline": "Garbage truck picking up can and driving off while honking horn",
+        "casv": "A truck idling then accelerates"
+      },
+      "metrics": {
+        "clap_text_baseline": 0.4088904857635498,
+        "clap_gt_audio_baseline": 0.5444886684417725,
+        "clap_text_casv": 0.3245270848274231,
+        "clap_gt_audio_casv": 0.4945458173751831
+      }
+    }
+  ]
+}

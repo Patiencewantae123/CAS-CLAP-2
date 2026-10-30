@@ -57,6 +57,19 @@ LaTeX versions of all tables are in `tables/`.
 - The val-optimal configuration disables both explicit conflict checks: under this objective, rejecting sounds that are not visible does not increase agreement with the recording, which itself contains off-screen sounds (narration, music, speech).
 - Selection headroom on test: oracle − baseline = +0.244.
 
+## Table 5. Figure 5 examples: CLAP(generated audio, GT recording)
+
+| Category | AudioCaps id | Prompt changed | Baseline | CAS-V | Δ |
+|---|---|---|---|---|---|
+| busy road | kgjNIDmO8a8 | yes | 0.287 | 0.275 | -0.012 |
+| office | JQz40TkjymY | yes | 0.489 | 0.543 | +0.054 |
+| beach | 3MoF8myFs8Y | yes | 0.506 | 0.340 | -0.165 |
+| field (wind / birds) | 0yxEvdnimGg | yes | 0.162 | 0.112 | -0.050 |
+| cloth scratch | zwoqJY03yHE | no | 0.285 | 0.285 | +0.000 |
+| leaves | fmEft49sPfE | yes | 0.284 | 0.257 | -0.027 |
+| metal hit | LB6CZ0x-kns | yes | 0.544 | 0.495 | -0.050 |
+| Mean |  | 6/7 | 0.365 | 0.330 | -0.036 |
+
 ## Limitations
 
 - Sample sizes are small (100 test pairs); report confidence intervals with every mean.
@@ -70,6 +83,5 @@ LaTeX versions of all tables are in `tables/`.
 
 - `results\audiocaps_test100\fig_clap_comparison.png`
 - `results\audiocaps_test100\fig_verification_stats.png`
-- `results\categories7\casv_comparison_1.png`
 - `results\audiocaps_test100\results.json`
 - `results\audiocaps_test100\graph_stats.json`

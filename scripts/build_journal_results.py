@@ -72,6 +72,9 @@ def main():
     for src, dest in figures:
         if src.exists():
             shutil.copy(src, OUT / dest)
+            caption = src.with_name(src.stem + "_caption.txt")
+            if caption.exists():
+                shutil.copy(caption, (OUT / dest).with_name(Path(dest).stem + "_caption.txt"))
         else:
             missing.append(str(src))
 
@@ -120,6 +123,25 @@ def main():
         sections.append("\n".join(lines))
     else:
         missing.append(args.tuning)
+
+    categories_path = Path(args.categories) / "results.json"
+    if categories_path.exists():
+        cat = json.loads(categories_path.read_text())
+        rows = []
+        for r in cat["items"]:
+            m = r["metrics"]
+            rows.append([r["label"], r["id"], "yes" if r["prompts"]["baseline"] != r["prompts"]["casv"] else "no",
+                         f"{m['clap_gt_audio_baseline']:.3f}", f"{m['clap_gt_audio_casv']:.3f}",
+                         f"{m['clap_gt_audio_casv'] - m['clap_gt_audio_baseline']:+.3f}"])
+        s = cat["summary"]["clap_gt_audio"]
+        rows.append(["Mean", "", f"{cat['summary']['prompt_changed']}/{cat['summary']['n_items']}",
+                     f"{s['baseline_mean']:.3f}", f"{s['casv_mean']:.3f}", f"{s['mean_diff']:+.3f}"])
+        sections.append("## Table 5. Figure 5 examples: CLAP(generated audio, GT recording)\n\n" + write_table(
+            "table5_figure5_examples", ["Category", "AudioCaps id", "Prompt changed", "Baseline", "CAS-V", "Δ"],
+            rows, "Scores for the seven Figure 5 columns. Seven examples are illustrative, not a benchmark; "
+                  "see Table 3 for the 100-item test result."))
+    else:
+        missing.append(str(categories_path))
 
     results_path = run_dir / "results.json"
     stats_path = run_dir / "graph_stats.json"

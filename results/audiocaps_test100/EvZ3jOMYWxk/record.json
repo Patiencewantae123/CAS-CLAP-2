@@ -1,0 +1,284 @@
+{
+  "id": "EvZ3jOMYWxk",
+  "image": "data\\audiocaps\\test_subset\\frames\\EvZ3jOMYWxk.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\EvZ3jOMYWxk.wav",
+  "gt_captions": [
+    "A woman speaks while delivering a speech",
+    "An adult female is speaking in a quiet environment",
+    "A woman is speaking in a quiet environment",
+    "A woman is performing a speech",
+    "A woman delivering a speech"
+  ],
+  "top_scene": [
+    "closet",
+    0.14844389259815216
+  ],
+  "top_object": [
+    "miniskirt",
+    0.34360945224761963
+  ],
+  "env_probs": {
+    "indoor": 0.8334503173828125,
+    "outdoor": 0.1665496826171875
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A girl speaks, rustling of a camera followed by computer typing",
+    "casv": "A girl speaking followed by a monologue"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0008228272199630737,
+    "clap_gt_audio_baseline": 0.22764484584331512,
+    "clap_text_casv": 0.6006016731262207,
+    "clap_gt_audio_casv": 0.8134936094284058
+  },
+  "verdicts": [
+    {
+      "caption": "A girl speaks, rustling of a camera followed by computer typing",
+      "clip_similarity": 0.3234483599662781,
+      "visual": 1.0,
+      "scene_support": 0.31077557034046155,
+      "object_support": 0.4877388017203726,
+      "score": 0.6395543116182503,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-1.32)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl speaking followed by a monologue",
+      "clip_similarity": 0.3213270306587219,
+      "visual": 0.8729044319178075,
+      "scene_support": 0.8097014601140633,
+      "object_support": 0.996767641634947,
+      "score": 0.891102503291826,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young woman speaks followed by crinkling paper",
+      "clip_similarity": 0.3170126974582672,
+      "visual": 0.6144190439799233,
+      "scene_support": 0.37381594433357374,
+      "object_support": 0.8272057918071702,
+      "score": 0.6060741384341926,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A girl gives a speech",
+      "clip_similarity": 0.31670907139778137,
+      "visual": 0.596227843535678,
+      "scene_support": 0.2575576326514061,
+      "object_support": 0.6227866437404282,
+      "score": 0.5025944203318216,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice followed by a toilet flush and then a man communicating",
+      "clip_similarity": 0.3138617277145386,
+      "visual": 0.425634451148199,
+      "scene_support": 0.9974868234433125,
+      "object_support": 0.7344681184718902,
+      "score": 0.6898402630338404,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young woman gives a speech",
+      "clip_similarity": 0.31367364525794983,
+      "visual": 0.41436583454006864,
+      "scene_support": 0.1670316227705575,
+      "object_support": 0.5095837339644919,
+      "score": 0.36873094083654223,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young female giving a monologue",
+      "clip_similarity": 0.3126765191555023,
+      "visual": 0.35462484666575006,
+      "scene_support": 0.3845034617727791,
+      "object_support": 0.7166783358606814,
+      "score": 0.47220447795633813,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A girl speaking and a door sound",
+      "clip_similarity": 0.3126424252986908,
+      "visual": 0.3525821755518694,
+      "scene_support": 1.0,
+      "object_support": 0.8461013415468376,
+      "score": 0.694863272684799,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman talking followed by a toilet flush",
+      "clip_similarity": 0.31209811568260193,
+      "visual": 0.3199708597966971,
+      "scene_support": 0.928500464884561,
+      "object_support": 0.7273756275856731,
+      "score": 0.624751171659749,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young lady delivers a speech with a baby in the room who coos in the beginning then is silent",
+      "clip_similarity": 0.31194525957107544,
+      "visual": 0.3108127652660204,
+      "scene_support": 0.3643319130941036,
+      "object_support": 0.33889550952995345,
+      "score": 0.3352933328936253,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female gives a speech as dogs go by barking and whimpering",
+      "clip_similarity": 0.3109830617904663,
+      "visual": 0.25316444395242577,
+      "scene_support": 0.33603719462684206,
+      "object_support": 0.5859218755418887,
+      "score": 0.37785349863158957,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young woman speaks as a male coughs",
+      "clip_similarity": 0.3105998635292053,
+      "visual": 0.23020582054134356,
+      "scene_support": 0.740370903536695,
+      "object_support": 0.8948722059903427,
+      "score": 0.5826552610746487,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud burst is followed by a young woman speaking clearly",
+      "clip_similarity": 0.310198575258255,
+      "visual": 0.20616336726476697,
+      "scene_support": 0.32767989294620953,
+      "object_support": 0.6670771408279884,
+      "score": 0.3808924570381662,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young lady voicing frustration as she plays a computer game",
+      "clip_similarity": 0.309332937002182,
+      "visual": 0.15430023337160365,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.06172009334864146,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young woman performs a speech",
+      "clip_similarity": 0.3088507056236267,
+      "visual": 0.12540822175123337,
+      "scene_support": 0.0900360225191433,
+      "object_support": 0.45549211914741333,
+      "score": 0.21382173120046033,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young female is speaking and makes sneezing sounds, and a dog barks in the background",
+      "clip_similarity": 0.30845844745635986,
+      "visual": 0.10190679063156748,
+      "scene_support": 0.17994797927281048,
+      "object_support": 0.4062513036743134,
+      "score": 0.21662250113676415,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.3070485591888428,
+      "visual": 0.01743591208657783,
+      "scene_support": 0.15527144334346135,
+      "object_support": 0.3951835799612881,
+      "score": 0.17211087182605594,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl speaks followed by a small bang",
+      "clip_similarity": 0.30681687593460083,
+      "visual": 0.0035550333808885264,
+      "scene_support": 0.666146749042473,
+      "object_support": 1.0,
+      "score": 0.5012660380650973,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks followed by a young girl speaking",
+      "clip_similarity": 0.3068167567253113,
+      "visual": 0.0035478911741966355,
+      "scene_support": 0.36423295012942425,
+      "object_support": 0.6979969028467975,
+      "score": 0.3200881123625452,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl speaks while an animal clip-clops as it walks",
+      "clip_similarity": 0.30675753951072693,
+      "visual": 0.0,
+      "scene_support": 0.38189952893628815,
+      "object_support": 0.5544562666587588,
+      "score": 0.28090673867851407,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "closet",
+      0.14844389259815216
+    ],
+    [
+      "bathroom",
+      0.0529436394572258
+    ],
+    [
+      "door elevator",
+      0.04907463118433952
+    ],
+    [
+      "bedroom",
+      0.036015354096889496
+    ],
+    [
+      "jail cell",
+      0.034125134348869324
+    ]
+  ],
+  "top_objects": [
+    [
+      "miniskirt",
+      0.34360945224761963
+    ],
+    [
+      "ring binder",
+      0.0453181192278862
+    ],
+    [
+      "envelope",
+      0.03412391245365143
+    ],
+    [
+      "pajamas",
+      0.033666327595710754
+    ],
+    [
+      "diaper",
+      0.02169184200465679
+    ]
+  ]
+}

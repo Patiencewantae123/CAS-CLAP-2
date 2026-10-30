@@ -1,0 +1,307 @@
+{
+  "id": "0yxEvdnimGg",
+  "label": "field (wind / birds)",
+  "image": "data\\audiocaps\\pairs\\categories\\frames\\0yxEvdnimGg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\categories\\audio\\0yxEvdnimGg.wav",
+  "gt_captions": [
+    "A dog barking as a man is talking while birds chirp and wind blows into a microphone",
+    "Dogs barking and muffled speech",
+    "Dogs are barking with wind noise while people are speaking",
+    "Several people talk as a few dogs bark, birds chirp and wind rustles",
+    "Barks of distant dogs with men speaking and wind blowing"
+  ],
+  "top_scene": [
+    "soccer field",
+    0.20939014852046967
+  ],
+  "top_object": [
+    "gazelle",
+    0.30583056807518005
+  ],
+  "env_probs": {
+    "indoor": 0.047275610268116,
+    "outdoor": 0.952724389731884
+  },
+  "status": "ACCEPT",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "A remote controlled helicopter motor flying through the air",
+    "casv": "A helicopter running"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.13004453480243683,
+    "clap_gt_audio_baseline": 0.1622508466243744,
+    "clap_text_casv": -0.17818982899188995,
+    "clap_gt_audio_casv": 0.11232326924800873
+  },
+  "verdicts": [
+    {
+      "caption": "A remote controlled helicopter motor flying through the air",
+      "clip_similarity": 0.3292321264743805,
+      "visual": 1.0,
+      "scene_support": 0.17410290321056582,
+      "object_support": 0.19030748332196432,
+      "score": 0.5093231159597591,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A miniature helicopter flying",
+      "clip_similarity": 0.3214086592197418,
+      "visual": 0.6971736344308798,
+      "scene_support": 0.5271160797116603,
+      "object_support": 0.591258704000631,
+      "score": 0.6143818888860393,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter takes off from the ground really close by with a dog barking at the end",
+      "clip_similarity": 0.3212837278842926,
+      "visual": 0.6923378626396254,
+      "scene_support": 0.5835981000523368,
+      "object_support": 0.841421687697227,
+      "score": 0.7044410813807193,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A remote control helicopter motor is running",
+      "clip_similarity": 0.3208903670310974,
+      "visual": 0.6771118722119619,
+      "scene_support": 0.36458990672031955,
+      "object_support": 0.3961137303171491,
+      "score": 0.4990558399960253,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A remote-controlled helicopter flies while a man speaks",
+      "clip_similarity": 0.3200988471508026,
+      "visual": 0.6464741663427054,
+      "scene_support": 0.23174922566035414,
+      "object_support": 0.0837664882026653,
+      "score": 0.35324438069598796,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter running",
+      "clip_similarity": 0.3179829716682434,
+      "visual": 0.5645740494859108,
+      "scene_support": 0.6863134254397997,
+      "object_support": 1.0,
+      "score": 0.7317236474263042,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Drone helicopter running",
+      "clip_similarity": 0.31580400466918945,
+      "visual": 0.48023182173167234,
+      "scene_support": 0.544662650880405,
+      "object_support": 0.6178495884923861,
+      "score": 0.5408464005045063,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter running continuously",
+      "clip_similarity": 0.3155107796192169,
+      "visual": 0.4688818315947088,
+      "scene_support": 0.7007688642395906,
+      "object_support": 0.9455344984255397,
+      "score": 0.6814437414374226,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A remote-controlled helicopter engine runs",
+      "clip_similarity": 0.3142690062522888,
+      "visual": 0.42081596727548326,
+      "scene_support": 0.0,
+      "object_support": 0.06923094349311189,
+      "score": 0.18909566995812688,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Helicopter drone running",
+      "clip_similarity": 0.31401193141937256,
+      "visual": 0.410865259386323,
+      "scene_support": 0.5463895097808336,
+      "object_support": 0.7592678361218858,
+      "score": 0.556043307525345,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dirt bike motor accelerating",
+      "clip_similarity": 0.30828583240509033,
+      "visual": 0.18922264276312678,
+      "scene_support": 0.40531557568128523,
+      "object_support": 0.2740102044155367,
+      "score": 0.27948679113429725,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy helicopter motor turning on and then running",
+      "clip_similarity": 0.3074694573879242,
+      "visual": 0.1576228582502858,
+      "scene_support": 0.22033181328242,
+      "object_support": 0.25409640747853945,
+      "score": 0.20537760952840212,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small remote controlled vehicle engine running",
+      "clip_similarity": 0.3064320385456085,
+      "visual": 0.11746703381002753,
+      "scene_support": 0.4706520055186235,
+      "object_support": 0.31472004980546836,
+      "score": 0.2825984301212386,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A remote control car moving with a stream flowing in the background",
+      "clip_similarity": 0.30591174960136414,
+      "visual": 0.09732798229959867,
+      "scene_support": 0.2868446314099336,
+      "object_support": 0.0,
+      "score": 0.12498458234281955,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)",
+        "names 'a stream or river', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A RC engine accelerates",
+      "clip_similarity": 0.30574917793273926,
+      "visual": 0.09103524968478659,
+      "scene_support": 0.8379228469475617,
+      "object_support": 0.5841683887981326,
+      "score": 0.4630414705976229,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crowd cheering and accelerating vehicle with a dog barking in the background and popping at the end",
+      "clip_similarity": 0.3056553602218628,
+      "visual": 0.08740380655528548,
+      "scene_support": 0.8601899874413591,
+      "object_support": 0.6924382277106685,
+      "score": 0.5007499871677226,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Remote control helicopter flying",
+      "clip_similarity": 0.305522620677948,
+      "visual": 0.08226579902707779,
+      "scene_support": 0.2187316761592021,
+      "object_support": 0.11834588119012919,
+      "score": 0.1340295868156305,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small remote control vehicle speeds off",
+      "clip_similarity": 0.3050643503665924,
+      "visual": 0.06452732983954974,
+      "scene_support": 0.6832805264886971,
+      "object_support": 0.530641774000975,
+      "score": 0.38998762208272153,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car is racing along a track",
+      "clip_similarity": 0.30437952280044556,
+      "visual": 0.03801940999431289,
+      "scene_support": 1.0,
+      "object_support": 0.461242602805585,
+      "score": 0.45358054483940063,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike speeds by, followed by several other dirt bikes racing together",
+      "clip_similarity": 0.3033972978591919,
+      "visual": 0.0,
+      "scene_support": 0.4369257003850364,
+      "object_support": 0.03474447428633278,
+      "score": 0.14150105240141075,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "soccer field",
+      0.20939014852046967
+    ],
+    [
+      "outdoor volleyball court",
+      0.14064306020736694
+    ],
+    [
+      "raceway",
+      0.1329987645149231
+    ],
+    [
+      "outdoor athletic field",
+      0.09957177191972733
+    ],
+    [
+      "football field",
+      0.0960746556520462
+    ]
+  ],
+  "top_objects": [
+    [
+      "gazelle",
+      0.30583056807518005
+    ],
+    [
+      "dingo",
+      0.1046648919582367
+    ],
+    [
+      "Australian Kelpie",
+      0.05937622860074043
+    ],
+    [
+      "Whippet",
+      0.029789917171001434
+    ],
+    [
+      "borzoi",
+      0.018052997067570686
+    ]
+  ]
+}

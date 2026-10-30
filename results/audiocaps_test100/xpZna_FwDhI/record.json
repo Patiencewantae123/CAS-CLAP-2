@@ -1,0 +1,282 @@
+{
+  "id": "xpZna_FwDhI",
+  "image": "data\\audiocaps\\test_subset\\frames\\xpZna_FwDhI.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\xpZna_FwDhI.wav",
+  "gt_captions": [
+    "A click occurs then a woman speaks followed by a sewing machine stitching",
+    "A click occurs and then a woman speaks followed by a sewing machine stitching",
+    "A click is followed by a woman speaking and then a sewing machine stitching",
+    "Brief clanking followed by a woman speaking and sewing machine working",
+    "Woman speaks and then sewing machine stitches"
+  ],
+  "top_scene": [
+    "assembly line",
+    0.2671416699886322
+  ],
+  "top_object": [
+    "sewing machine",
+    0.7729880213737488
+  ],
+  "env_probs": {
+    "indoor": 0.984785795211792,
+    "outdoor": 0.015214204788208008
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A sewing machine operating and fabric shuffling",
+    "casv": "A sewing machine clicks then is used lightly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.016613803803920746,
+    "clap_gt_audio_baseline": 0.17769655585289001,
+    "clap_text_casv": 0.3196571469306946,
+    "clap_gt_audio_casv": 0.4782937169075012
+  },
+  "verdicts": [
+    {
+      "caption": "A sewing machine operating and fabric shuffling",
+      "clip_similarity": 0.3486473262310028,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.556228186143427,
+      "score": 0.5668684558430281,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine running and making stitches",
+      "clip_similarity": 0.3466198742389679,
+      "visual": 0.8423717228355944,
+      "scene_support": 0.09024134608340893,
+      "object_support": 0.6884622697418529,
+      "score": 0.5705597738818163,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clicking sounds are followed by a female voice and a sewing machine",
+      "clip_similarity": 0.34357693791389465,
+      "visual": 0.6057926016891226,
+      "scene_support": 0.9049764364027055,
+      "object_support": 0.3969040585031094,
+      "score": 0.6328811891473936,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine clicks then is used lightly",
+      "clip_similarity": 0.3431795537471771,
+      "visual": 0.5748971813200181,
+      "scene_support": 0.9205261566260761,
+      "object_support": 1.0,
+      "score": 0.8061167195158301,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine is turned on and begins stitching",
+      "clip_similarity": 0.3428924083709717,
+      "visual": 0.5525724944101393,
+      "scene_support": 0.4049942804979066,
+      "object_support": 0.8608944473415309,
+      "score": 0.6007956161158869,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult female speaks, and a sewing machine operates, with rhythmic clicking",
+      "clip_similarity": 0.34216511249542236,
+      "visual": 0.4960274337615997,
+      "scene_support": 0.4920312027483663,
+      "object_support": 0.5110821896636649,
+      "score": 0.49934499122824927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Females speech followed by a sewing machine in operation",
+      "clip_similarity": 0.3414791226387024,
+      "visual": 0.4426937914895096,
+      "scene_support": 0.35301443117720316,
+      "object_support": 0.3019588134373912,
+      "score": 0.3735694899801822,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clicks and vibrations from a sewing machine",
+      "clip_similarity": 0.34146997332572937,
+      "visual": 0.44198246000208535,
+      "scene_support": 0.4166990677869002,
+      "object_support": 0.2865875150521865,
+      "score": 0.38777895885256014,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is in use with low music in the background",
+      "clip_similarity": 0.34132710099220276,
+      "visual": 0.43087456700302373,
+      "scene_support": 0.6737873998147971,
+      "object_support": 0.9336697536389321,
+      "score": 0.6545869728373283,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some objects are hit followed by a sewing machine working",
+      "clip_similarity": 0.34015947580337524,
+      "visual": 0.3400952303717692,
+      "scene_support": 1.0,
+      "object_support": 0.7680139786584179,
+      "score": 0.6664422857462331,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine is being used in an articulate way",
+      "clip_similarity": 0.3401340842247009,
+      "visual": 0.3381211117161162,
+      "scene_support": 0.24242893823876902,
+      "object_support": 0.8539312475052009,
+      "score": 0.4641565004096374,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speak with vibrations and clicking of a sewing machine",
+      "clip_similarity": 0.33978700637817383,
+      "visual": 0.31113685600750723,
+      "scene_support": 0.6350553824365267,
+      "object_support": 0.44727759734303196,
+      "score": 0.44915463633687047,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is in use with repetitive clicking and humming sounds",
+      "clip_similarity": 0.33947762846946716,
+      "visual": 0.2870836567535943,
+      "scene_support": 0.6280022690175793,
+      "object_support": 0.9163431998585678,
+      "score": 0.5781371033642819,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine stops and starts several times",
+      "clip_similarity": 0.3391408324241638,
+      "visual": 0.26089878007808426,
+      "scene_support": 0.8369265706090847,
+      "object_support": 0.8233815633370434,
+      "score": 0.6024519522150722,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clicking, a button being pushed, then a sewing machine working",
+      "clip_similarity": 0.33909761905670166,
+      "visual": 0.25753907109839314,
+      "scene_support": 0.7132763824947548,
+      "object_support": 0.5041890387837722,
+      "score": 0.46825525482291536,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two females speak loudly while a sewing machine buzzes and makes other mechanical noises",
+      "clip_similarity": 0.33778107166290283,
+      "visual": 0.1551814822109202,
+      "scene_support": 0.21014521336842046,
+      "object_support": 0.0,
+      "score": 0.12511615689489422,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine sews with repetitive clacking followed by a faint buzz",
+      "clip_similarity": 0.336838960647583,
+      "visual": 0.0819351923723021,
+      "scene_support": 0.5696107545422614,
+      "object_support": 0.7332541298307372,
+      "score": 0.4236335422608204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talks as a sewing machine sews several times",
+      "clip_similarity": 0.3363795876502991,
+      "visual": 0.04622032739784747,
+      "scene_support": 0.4077948642815685,
+      "object_support": 0.7746102553896,
+      "score": 0.37320966686048956,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks, during which a sewing machine starts and operates briefly",
+      "clip_similarity": 0.3358404040336609,
+      "visual": 0.004300427494004657,
+      "scene_support": 0.6713305496544819,
+      "object_support": 0.4730967531752747,
+      "score": 0.3450483618465289,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine humming followed by a sewing machine operating",
+      "clip_similarity": 0.3357850909233093,
+      "visual": 0.0,
+      "scene_support": 0.8540785027489298,
+      "object_support": 0.754843662960002,
+      "score": 0.48267664971267954,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "assembly line",
+      0.2671416699886322
+    ],
+    [
+      "biology laboratory",
+      0.26045605540275574
+    ],
+    [
+      "physics laboratory",
+      0.2097482830286026
+    ],
+    [
+      "chemistry lab",
+      0.05780705809593201
+    ],
+    [
+      "repair shop",
+      0.02288712002336979
+    ]
+  ],
+  "top_objects": [
+    [
+      "sewing machine",
+      0.7729880213737488
+    ],
+    [
+      "lab coat",
+      0.023368049412965775
+    ],
+    [
+      "overskirt",
+      0.018613124266266823
+    ],
+    [
+      "crane (machine)",
+      0.015858549624681473
+    ],
+    [
+      "ring binder",
+      0.014857916161417961
+    ]
+  ]
+}
