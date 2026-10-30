@@ -23,7 +23,7 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
   download_data.py    build image + ground-truth audio pairs from AudioCaps
   select_examples.py  one test clip per figure category (fixed caption rule)
   eval_scenes.py     scene / indoor-outdoor accuracy on Places365 val
-  train.py          tune the verifier on AudioCaps val, score once on test
+  train.py          tune the verifier on AudioCaps val, score on test
   test.py  generate baseline vs CAS-V audio and score with CLAP
   plots.py   result graphs
   figures.py   qualitative comparison figures
@@ -62,14 +62,13 @@ py -m scripts.select_examples --screening data/audiocaps/pairs/categories/screen
 
 # experiments
 py -m scripts.eval_scenes --per-class 10
-py -m scripts.train --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test/manifest.json
 py -m scripts.train --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test400/manifest.json --out results/tuning_test400
 py -m scripts.test --manifest data/audiocaps/pairs/test/manifest.json --run-name audiocaps_test100
 py -m scripts.test --manifest data/audiocaps/pairs/test400/manifest.json --run-name audiocaps_test400 --reuse-from results/audiocaps_test100
 py -m scripts.test --manifest data/audiocaps/pairs/categories/manifest.json --run-name categories7
 
 # figures and journal package
-py -m scripts.plots --run results/audiocaps_test400 --tuning results/tuning_test400/tuning_results.json --earlier-run results/audiocaps_test100
+py -m scripts.plots --run results/audiocaps_test400 --earlier-run results/audiocaps_test100 results/categories7
 py -m scripts.figures --run results/audiocaps_test400 --count 20
 py -m scripts.figures --run results/categories7 --count 7
 py -m scripts.report
@@ -84,14 +83,14 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 
 - Candidate captions come only from the AudioCaps **train** split.
 - Verifier settings are tuned on AudioCaps **val** and fixed before test is scored; test is never used for tuning.
-- The test sample was extended from 100 to 400 clips in the same seeded order, with no change to the method.
+- The 400-clip test sample uses the same seeded order as the earlier 100-clip sample; 98 clips are shared, and 2 earlier clips are absent because their downloads failed.
 - Baseline and CAS-V use the same generator and seed; only the prompt differs.
 - Every mean is reported with a bootstrap 95% CI and n; paired differences use Wilcoxon signed-rank.
 
 ## Development
 
 ```
-py -m pytest                         # 25 tests, ~10 s, no model downloads
+py -m pytest                         # 26 tests, ~10 s, no model downloads
 py -m ruff check casv scripts tests  # lint
 py -m ruff format casv scripts tests # format
 ```

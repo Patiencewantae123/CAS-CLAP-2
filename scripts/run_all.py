@@ -32,7 +32,6 @@ STAGES = [
     ("data", "download_data", ["--split", "val", "--n", "100"]),
     ("data", "select_examples", ["--screening", SCREENING]),
     ("places", "eval_scenes", ["--per-class", "10"]),
-    ("train", "train", ["--val", VAL_MANIFEST, "--test", TEST_MANIFEST]),
     ("train", "train", ["--val", VAL_MANIFEST, "--test", TEST400_MANIFEST, "--out", "results/tuning_test400"]),
     ("test", "test", ["--manifest", TEST_MANIFEST, "--run-name", "audiocaps_test100"]),
     (
@@ -54,10 +53,9 @@ STAGES = [
         [
             "--run",
             "results/audiocaps_test400",
-            "--tuning",
-            "results/tuning_test400/tuning_results.json",
             "--earlier-run",
             "results/audiocaps_test100",
+            "results/categories7",
         ],
     ),
     ("figures", "figures", ["--run", "results/audiocaps_test400", "--count", "20"]),

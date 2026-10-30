@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 from scripts.figures import load_records
-from scripts.plots import paired_stats
+from scripts.plots import earlier_overlap, paired_stats
 
 
 def write_item(run_dir, item_id, mtime):
@@ -25,6 +25,15 @@ def test_finished_run_keeps_manifest_order_over_file_times(tmp_path):
 
     (tmp_path / "results.json").write_text(json.dumps({"items": [{"id": "first"}, {"id": "second"}]}))
     assert [r["id"] for r in load_records(tmp_path)] == ["first", "second"]
+
+
+def test_earlier_overlap_reports_shared_items_and_config_changes(tmp_path):
+    (tmp_path / "results.json").write_text(
+        json.dumps({"items": [{"id": "a"}, {"id": "z"}], "verifier_config": {"x": 2}})
+    )
+    results = {"items": [{"id": "a"}, {"id": "b"}], "verifier_config": {"x": 1}}
+    overlap = earlier_overlap(results, [tmp_path])[0]
+    assert (overlap["n_items"], overlap["n_shared"], overlap["same_config"]) == (2, 1, False)
 
 
 def test_paired_stats_counts_and_skips_unscored_items():

@@ -11,8 +11,7 @@
 #
 # Usage:
 #   py -m scripts.plots --run results/audiocaps_test400 \
-#       --tuning results/tuning_test400/tuning_results.json \
-#       --earlier-run results/audiocaps_test100
+#       --earlier-run results/audiocaps_test100 results/categories7
 # =============================================================================
 
 import argparse
@@ -177,6 +176,25 @@ def paired_stats(items, key):
     }
 
 
+def earlier_overlap(results, earlier_runs):
+    """How each earlier run relates to this one: shared items and verifier configuration."""
+    ids = {r["id"] for r in results["items"]}
+    overlap = []
+    for path in earlier_runs:
+        earlier = json.loads((Path(path) / "results.json").read_text())
+        earlier_ids = [r["id"] for r in earlier["items"]]
+        overlap.append(
+            {
+                "run": Path(path).name,
+                "ids": earlier_ids,
+                "n_items": len(earlier_ids),
+                "n_shared": len(ids.intersection(earlier_ids)),
+                "same_config": earlier["verifier_config"] == results["verifier_config"],
+            }
+        )
+    return overlap
+
+
 def clap_figure(run_dir, results, stats, earlier_ids=frozenset()):
     """Figure 3: generated audio, baseline vs CAS-V, paired with 95% CIs."""
     items = results["items"]
@@ -184,8 +202,8 @@ def clap_figure(run_dir, results, stats, earlier_ids=frozenset()):
 
     fig, axes = plt.subplots(1, 3, figsize=(11, 3.4), gridspec_kw={"width_ratios": [1, 1, 1.15]})
     stats["clap"] = {}
-    if earlier_ids:
-        new_items = [r for r in items if r["id"] not in earlier_ids]
+    new_items = [r for r in items if r["id"] not in earlier_ids]
+    if earlier_ids and new_items:
         stats["clap_new_items"] = {key: paired_stats(new_items, key) for key, _ in panels}
     for ax, (key, title) in zip(axes[:2], panels, strict=True):
         entry = paired_stats(items, key)
@@ -336,7 +354,7 @@ def verification_figure(run_dir, results, stats):
 
 
 # -----------------------------------------------------------------------------
-# Figure 4: prompt selection (tuned on val, evaluated once on test)
+# Figure 4: prompt selection (tuned on val, evaluated on test)
 # -----------------------------------------------------------------------------
 
 
@@ -394,11 +412,12 @@ def main():
     parser = argparse.ArgumentParser(description="Render CAS-V result graphs from experiment outputs.")
     parser.add_argument("--run", default=None, help="Run directory from test.py")
     parser.add_argument("--places", default="results/places365/eval.json")
-    parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
+    parser.add_argument("--tuning", default="results/tuning_test400/tuning_results.json")
     parser.add_argument(
         "--earlier-run",
-        default=None,
-        help="Earlier run on part of this data; items not in it are also summarised on their own.",
+        nargs="*",
+        default=[],
+        help="Runs whose results were read earlier; items in none of them are also summarised on their own.",
     )
     args = parser.parse_args()
 
@@ -413,10 +432,8 @@ def main():
         run_dir = Path(args.run)
         results = json.loads((run_dir / "results.json").read_text())
         if results["models"]["clap"]:
-            earlier_ids = frozenset()
-            if args.earlier_run:
-                earlier = json.loads((Path(args.earlier_run) / "results.json").read_text())
-                earlier_ids = frozenset(r["id"] for r in earlier["items"])
+            stats["earlier_runs"] = earlier_overlap(results, args.earlier_run)
+            earlier_ids = frozenset(i for run in stats["earlier_runs"] for i in run["ids"])
             outputs.append(clap_figure(run_dir, results, stats, earlier_ids))
         outputs.append(verification_figure(run_dir, results, stats))
         (run_dir / "graph_stats.json").write_text(json.dumps(stats, indent=2))

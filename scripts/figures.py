@@ -11,7 +11,7 @@
 # Provenance (clip ids, prompts, recognition) goes to a caption .txt file.
 #
 # Usage:
-#   py -m scripts.figures --run results/audiocaps_test100 [--items <ytid>,<ytid>,...]
+#   py -m scripts.figures --run results/audiocaps_test400 [--items <ytid>,<ytid>,...]
 # =============================================================================
 
 import argparse

@@ -72,7 +72,6 @@ def main():
     parser.add_argument("--places", default="results/places365/eval.json")
     parser.add_argument("--tuning", default="results/tuning_test400/tuning_results.json")
     parser.add_argument("--categories", default="results/categories7")
-    parser.add_argument("--earlier-run", default="results/audiocaps_test100")
     args = parser.parse_args()
     run_dir = Path(args.run)
     results_path = run_dir / "results.json"
@@ -149,7 +148,7 @@ def main():
                 ["Split", "Method", "Mean [95% CI]", "n"],
                 rows,
                 "CLAP cosine between the selected prompt and the real AudioCaps recording. "
-                "Tuned on val only; configurations were fixed before test was scored.",
+                "Tuned on val only; test is never used for tuning.",
             )
         )
         lines = []
@@ -212,7 +211,7 @@ def main():
                 ["Category", "AudioCaps id", "Prompt changed", "Baseline", "CAS-V", "Δ"],
                 rows,
                 "Scores for the seven Figure 5 columns. Seven examples are illustrative, not a benchmark; "
-                f"see Table 3 for the {n_test}-item test result.",
+                "see Table 3 for the full test result.",
             )
         )
     else:
@@ -251,16 +250,17 @@ def main():
                 f"CAS-V changed the prompt on {res['summary']['prompt_changed']} of {res['summary']['n_items']} items.",
             )
         )
-        earlier_path = Path(args.earlier_run) / "results.json"
-        if "clap_new_items" in stats and earlier_path.exists():
-            earlier = {r["id"] for r in json.loads(earlier_path.read_text())["items"]}
-            shared = sum(r["id"] in earlier for r in res["items"])
+        if "clap_new_items" in stats:
+            earlier = "; ".join(
+                f"{e['run']}: {e['n_shared']} of its {e['n_items']} items are in this sample, "
+                f"{'same' if e['same_config'] else 'DIFFERENT'} verifier configuration"
+                for e in stats["earlier_runs"]
+            )
+            n_new = next(iter(stats["clap_new_items"].values()))["n"]
             sections.append(
-                f"- The test set was extended from an earlier {len(earlier)}-item sample, continuing the same "
-                f"seeded clip order with no change to the method or configuration; {shared} items are shared "
-                f"and {res['summary']['n_items'] - shared} are new. The primary result uses all "
-                f"{res['summary']['n_items']} items; the new-items rows are a sensitivity analysis on clips "
-                "not seen when the earlier results were read."
+                f"- The primary result uses all {res['summary']['n_items']} items, drawn in the same seeded clip "
+                "order as the earlier test results; an earlier clip is absent here if its download failed. "
+                f"The new-items rows are a sensitivity analysis on the {n_new} clips in no earlier run ({earlier})."
             )
         v = stats["verification"]
         conflicts = Counter(v["conflicts"]).most_common(8)
@@ -308,11 +308,13 @@ from result files in `results/`; nothing is entered by hand.
 
 LaTeX versions of all tables are in `tables/`.
 """
+    sample_note = (
+        f"- Results rest on {n_test} test pairs; report confidence intervals with every mean.\n" if n_test else ""
+    )
     limitations = f"""
 ## Limitations
 
-- Results rest on {n_test} test pairs; report confidence intervals with every mean.
-- CLAP similarity is an automatic proxy; no listening test has been run.
+{sample_note}- CLAP similarity is an automatic proxy; no listening test has been run.
 - AudioCaps frames are single video frames; off-screen sounds (narration, music) in the ground truth
   cannot be recovered from the image by any method.
 - Places365/ImageNet are used for zero-shot vocabularies and Places365 val for recognition accuracy only;

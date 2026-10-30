@@ -1,6 +1,6 @@
 # =============================================================================
 # TRAIN: fit the CAS-V verifier on the AudioCaps *validation* split, then score
-# the chosen configuration once on the *test* split.
+# the chosen configuration on the *test* split, which is never used for tuning.
 #
 # What is trained: only the verifier's parameters (three evidence weights, the
 # accept threshold and the two conflict thresholds) by grid search. No neural
@@ -146,7 +146,7 @@ def summarise(items, cfg_default, cfg_tuned):
 
 def main():
     setup_logging()
-    parser = argparse.ArgumentParser(description="Tune CAS-V on AudioCaps val, evaluate once on test.")
+    parser = argparse.ArgumentParser(description="Tune CAS-V on AudioCaps val, evaluate on test.")
     parser.add_argument("--val", required=True)
     parser.add_argument("--test", required=True)
     parser.add_argument("--out", default="results/tuning")
@@ -176,7 +176,7 @@ def main():
         assert chosen == expected, f"vectorised selection disagrees with decide() on {it['id']}"
     log.info("Vectorised selection matches CASVerifier.decide() on all val items")
 
-    log.info("Measuring test items (scored once with the chosen configuration)")
+    log.info("Measuring test items (scored with the chosen configuration)")
     test = prepare(args.test, verifier, scorer)
 
     results = {
