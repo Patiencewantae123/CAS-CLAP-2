@@ -1,6 +1,6 @@
 # =============================================================================
 # Result graphs for CAS-V. Every value is read from experiment outputs:
-#   results/places365_eval.json         (eval_places365.py)
+#   results/places365/eval.json          (eval_places365.py)
 #   results/<run>/results.json + record.json per item (run_casv_experiment.py)
 #
 # Figures (300 dpi PNG, written next to the inputs):
@@ -268,9 +268,11 @@ def tuning_figure(tuning_path, stats):
         bars[2].set_edgecolor("white")
         label_bars(ax, bars, lambda v: f"{v:.3f}", tops=[hi for _, hi in cis])
         ax.set_xticks(range(4), [label for _, label in methods], fontsize=7.5)
-        diff = block["tuned_minus_baseline"]
-        ax.set_title(f"{split.upper()} (n = {block['n']}): tuned − baseline = {diff['mean']:+.3f} "
-                     f"[{diff['ci95'][0]:+.3f}, {diff['ci95'][1]:+.3f}]", fontsize=8.5, loc="left", color=INK)
+        d, t = block["default_minus_baseline"], block["tuned_minus_baseline"]
+        ax.set_title(f"{split.upper()} (n = {block['n']})\n"
+                     f"default − baseline {d['mean']:+.3f} [{d['ci95'][0]:+.3f}, {d['ci95'][1]:+.3f}]\n"
+                     f"tuned − baseline {t['mean']:+.3f} [{t['ci95'][0]:+.3f}, {t['ci95'][1]:+.3f}]",
+                     fontsize=8, loc="left", color=INK)
         ax.grid(axis="x", visible=False)
     axes[0].set_ylabel("CLAP(prompt, GT recording)")
     axes[0].set_ylim(0, max(block["oracle"]["ci95"][1] for block in (data["val"], data["test"])) * 1.2)
@@ -286,7 +288,7 @@ def tuning_figure(tuning_path, stats):
 def main():
     parser = argparse.ArgumentParser(description="Render CAS-V result graphs from experiment outputs.")
     parser.add_argument("--run", default=None, help="Run directory from run_casv_experiment.py")
-    parser.add_argument("--places", default="results/places365_eval.json")
+    parser.add_argument("--places", default="results/places365/eval.json")
     parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
     args = parser.parse_args()
 

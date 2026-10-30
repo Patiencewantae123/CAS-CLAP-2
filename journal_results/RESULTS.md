@@ -36,6 +36,26 @@ LaTeX versions of all tables are in `tables/`.
 | Indoor/outdoor accuracy | 91.6% | 3650 |
 | Indoor/outdoor accuracy, p >= 0.7 | 95.5% | 3194 |
 
+## Table 2. Prompt selection: CLAP(prompt, ground-truth recording)
+
+| Split | Method | Mean [95% CI] | n |
+|---|---|---|---|
+| val | baseline | 0.306 [0.265, 0.346] | 100 |
+| val | default | 0.307 [0.266, 0.348] | 100 |
+| val | tuned | 0.338 [0.298, 0.377] | 100 |
+| val | oracle | 0.513 [0.480, 0.545] | 100 |
+| test | baseline | 0.265 [0.220, 0.309] | 100 |
+| test | default | 0.290 [0.248, 0.333] | 100 |
+| test | tuned | 0.278 [0.235, 0.322] | 100 |
+| test | oracle | 0.509 [0.479, 0.538] | 100 |
+
+- Test, default − baseline: 0.025 [-0.009, 0.058]; better on 34, worse on 27, unchanged on 39 items.
+- Test, tuned − baseline: 0.013 [-0.016, 0.040]; better on 25, worse on 20, unchanged on 55 items.
+- Tuned configuration: `{"retrieve_k": 20, "support_top_n": 5, "w_visual": 0.5, "w_scene": 0.0, "w_object": 0.5, "accept_threshold": 0.5, "repair_threshold": 0.4, "env_conflict_confidence": 1.01, "source_absent_z": -99.0, "uncertainty_threshold": 0.1}`
+- The primary CAS-V configuration is the default, fixed before any data was seen; the tuned configuration is an ablation.
+- The val-optimal configuration disables both explicit conflict checks: under this objective, rejecting sounds that are not visible does not increase agreement with the recording, which itself contains off-screen sounds (narration, music, speech).
+- Selection headroom on test: oracle − baseline = +0.244.
+
 ## Limitations
 
 - Sample sizes are small (100 test pairs); report confidence intervals with every mean.
@@ -47,9 +67,7 @@ LaTeX versions of all tables are in `tables/`.
 
 ## Missing inputs at build time
 
-- `results\tuning\fig_prompt_selection.png`
 - `results\audiocaps_test100\fig_clap_comparison.png`
 - `results\audiocaps_test100\fig_verification_stats.png`
-- `results/tuning/tuning_results.json`
 - `results\audiocaps_test100\results.json`
 - `results\audiocaps_test100\graph_stats.json`

@@ -1,0 +1,282 @@
+{
+  "id": "pgq2KPX5_SA",
+  "image": "data\\audiocaps\\test_subset\\frames\\pgq2KPX5_SA.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\pgq2KPX5_SA.wav",
+  "gt_captions": [
+    "A paper is being crumpled",
+    "Plastic and paper crinkling as cardboard clacks against a hard surface",
+    "Some crinkling of cellophane",
+    "Crumpling occurs followed by a thud and then crinkling",
+    "Paper is crinkling and crumpling, and thumping occurs"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.26640236377716064
+  ],
+  "top_object": [
+    "shower cap",
+    0.1301800161600113
+  ],
+  "env_probs": {
+    "indoor": 0.9084398150444031,
+    "outdoor": 0.09156018495559692
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A toilet lid is opened then it is flushed",
+    "casv": "A toilet lid is opened then it is flushed"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08290259540081024,
+    "clap_gt_audio_baseline": 0.4809386134147644,
+    "clap_text_casv": 0.08290259540081024,
+    "clap_gt_audio_casv": 0.4809386134147644
+  },
+  "verdicts": [
+    {
+      "caption": "A toilet lid is opened then it is flushed",
+      "clip_similarity": 0.32134488224983215,
+      "visual": 1.0,
+      "scene_support": 0.8454792633611223,
+      "object_support": 0.539779170301707,
+      "score": 0.8155775300988488,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Splashing water from a toilet",
+      "clip_similarity": 0.318770170211792,
+      "visual": 0.7757639308860897,
+      "scene_support": 1.0,
+      "object_support": 0.6370472680179713,
+      "score": 0.8014197527598274,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Plastic tapping followed by faucet water pouring then liquid filling a container",
+      "clip_similarity": 0.3171813189983368,
+      "visual": 0.6373881648787755,
+      "scene_support": 0.3158949089158973,
+      "object_support": 0.27911607514525544,
+      "score": 0.433458561169856,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet lid is opened and a toilet is flushed",
+      "clip_similarity": 0.31707853078842163,
+      "visual": 0.6284361641104971,
+      "scene_support": 0.923521024302002,
+      "object_support": 0.5858749375995815,
+      "score": 0.7041932542146739,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Paper is crumpling along with several taps on a surface",
+      "clip_similarity": 0.3167484402656555,
+      "visual": 0.5996880166737178,
+      "scene_support": 0.1189155100211875,
+      "object_support": 0.6118327142467532,
+      "score": 0.4590996739498694,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water splashing in a plastic container followed by fabric shuffling and being rubbed",
+      "clip_similarity": 0.31610584259033203,
+      "visual": 0.5437230875448055,
+      "scene_support": 0.12868637527867366,
+      "object_support": 0.5457121941183319,
+      "score": 0.41980880583702385,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet lid closes followed by a toilet flushing",
+      "clip_similarity": 0.3156382143497467,
+      "visual": 0.5029965453427014,
+      "scene_support": 0.739722958283315,
+      "object_support": 0.5000063795955018,
+      "score": 0.5731174195007256,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling of paper with a small slap",
+      "clip_similarity": 0.31527480483055115,
+      "visual": 0.471346589596576,
+      "scene_support": 0.38598444406335225,
+      "object_support": 0.9319432726367984,
+      "score": 0.5839169508486757,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling of plastic with chewing",
+      "clip_similarity": 0.314267098903656,
+      "visual": 0.38358375921739424,
+      "scene_support": 0.3940825759126389,
+      "object_support": 0.964219241179013,
+      "score": 0.5609240488144532,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A click and pouring liquid into container",
+      "clip_similarity": 0.3142421543598175,
+      "visual": 0.38141129628812515,
+      "scene_support": 0.07643402833481774,
+      "object_support": 0.01063558315085032,
+      "score": 0.1786854019609505,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man pleasantly speaks as he open up something bound in plastic",
+      "clip_similarity": 0.3140185475349426,
+      "visual": 0.36193699597951606,
+      "scene_support": 0.10204987636017636,
+      "object_support": 0.3861609029679473,
+      "score": 0.2912380321902435,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crinkling plastic wrap",
+      "clip_similarity": 0.3135392367839813,
+      "visual": 0.3201930039945286,
+      "scene_support": 0.0,
+      "object_support": 0.7835084266482084,
+      "score": 0.36312972959227396,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A plastic like material is rubbing together and there is an occasional popping sound",
+      "clip_similarity": 0.31259065866470337,
+      "visual": 0.2375797153736143,
+      "scene_support": 0.6071738757627222,
+      "object_support": 0.7131749811403209,
+      "score": 0.4911365432203586,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing down a toilet",
+      "clip_similarity": 0.31248340010643005,
+      "visual": 0.22823838433127333,
+      "scene_support": 0.7348949199798636,
+      "object_support": 0.2125386164890215,
+      "score": 0.3755254146731748,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Paper or plastic being torn",
+      "clip_similarity": 0.31190961599349976,
+      "visual": 0.17826654588776386,
+      "scene_support": 0.38719525687763806,
+      "object_support": 0.8300459809345788,
+      "score": 0.4364789896987706,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Shaking a spray can",
+      "clip_similarity": 0.31163138151168823,
+      "visual": 0.15403462963011028,
+      "scene_support": 0.08774071041727749,
+      "object_support": 0.0,
+      "score": 0.08793606497722736,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic being crinkled",
+      "clip_similarity": 0.31133854389190674,
+      "visual": 0.12853090114385235,
+      "scene_support": 0.40011658654511056,
+      "object_support": 1.0,
+      "score": 0.47144733642107406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.31079715490341187,
+      "visual": 0.08138040941971621,
+      "scene_support": 0.6088085767866923,
+      "object_support": 0.09673779384018157,
+      "score": 0.24421607495594863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pouring and filling up a container",
+      "clip_similarity": 0.3100065290927887,
+      "visual": 0.01252345714901227,
+      "scene_support": 0.33599398673430436,
+      "object_support": 0.43842494166657364,
+      "score": 0.23733506137986832,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Liquid sprays continuously",
+      "clip_similarity": 0.30986273288726807,
+      "visual": 0.0,
+      "scene_support": 0.6830650782499018,
+      "object_support": 0.5403357900092345,
+      "score": 0.36702026047774083,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.26640236377716064
+    ],
+    [
+      "archaelogical excavation",
+      0.1035131886601448
+    ],
+    [
+      "closet",
+      0.06024986878037453
+    ],
+    [
+      "locker room",
+      0.05741894245147705
+    ],
+    [
+      "shower",
+      0.05698242783546448
+    ]
+  ],
+  "top_objects": [
+    [
+      "shower cap",
+      0.1301800161600113
+    ],
+    [
+      "plastic bag",
+      0.11698655039072037
+    ],
+    [
+      "soap dispenser",
+      0.07369571179151535
+    ],
+    [
+      "toilet paper",
+      0.0687171220779419
+    ],
+    [
+      "mail bag",
+      0.04735807329416275
+    ]
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "jjfUaMQaG1A",
+  "image": "data\\audiocaps\\test_subset\\frames\\jjfUaMQaG1A.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\jjfUaMQaG1A.wav",
+  "gt_captions": [
+    "A man speaks followed by vibrations of a power tool",
+    "A man talking followed by metal shuffling then a power tool drilling",
+    "A man talking followed by plastic clacking then a power tool drilling",
+    "A male speaking and then a drill turned on and off.",
+    "A man speaking together with intermittent, brief drill operating"
+  ],
+  "top_scene": [
+    "hardware store",
+    0.1250109076499939
+  ],
+  "top_object": [
+    "power drill",
+    0.7174860239028931
+  ],
+  "env_probs": {
+    "indoor": 0.7695116996765137,
+    "outdoor": 0.23048830032348633
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "A power tool drilling with a series of screeching",
+    "casv": "A power tool drilling with a series of screeching"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0421382375061512,
+    "clap_gt_audio_baseline": 0.2900432348251343,
+    "clap_text_casv": 0.0421382375061512,
+    "clap_gt_audio_casv": 0.2900432348251343
+  },
+  "verdicts": [
+    {
+      "caption": "A power tool drilling with a series of screeching",
+      "clip_similarity": 0.34150612354278564,
+      "visual": 1.0,
+      "scene_support": 0.28779061149223556,
+      "object_support": 0.5532762006993728,
+      "score": 0.6523200436574825,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitched vibrations of a power tool with some rustling and scraping",
+      "clip_similarity": 0.3391585350036621,
+      "visual": 0.799554180322863,
+      "scene_support": 0.6333084795408324,
+      "object_support": 0.12447265789794407,
+      "score": 0.5471560133607781,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Power tool is drilling through a surface",
+      "clip_similarity": 0.3368344008922577,
+      "visual": 0.6011109867068379,
+      "scene_support": 0.5729478574350886,
+      "object_support": 0.6932585757544507,
+      "score": 0.620306324639597,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power drill is being used to cut wood",
+      "clip_similarity": 0.3360912799835205,
+      "visual": 0.5376605663334894,
+      "scene_support": 0.0,
+      "object_support": 0.7143516739010191,
+      "score": 0.4293697287037015,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool sanding an object then running idle",
+      "clip_similarity": 0.33570680022239685,
+      "visual": 0.5048322578018444,
+      "scene_support": 0.3401555264359365,
+      "object_support": 0.07464879016003075,
+      "score": 0.3263741980995279,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drill operating as machine gears buzz and bleep",
+      "clip_similarity": 0.3347257971763611,
+      "visual": 0.42107057793701524,
+      "scene_support": 0.23677462007791145,
+      "object_support": 0.6162795194390017,
+      "score": 0.42434447302988,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.02)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool sharply sawing through an object",
+      "clip_similarity": 0.33410799503326416,
+      "visual": 0.36832033874152637,
+      "scene_support": 0.28985105512502,
+      "object_support": 0.3470192280649123,
+      "score": 0.3383892204535902,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drilling while releasing compressed air",
+      "clip_similarity": 0.33292156457901,
+      "visual": 0.26701850457016063,
+      "scene_support": 0.008481912566037959,
+      "object_support": 0.4645391733150834,
+      "score": 0.24871372759240062,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drilling into an object and being pulled out",
+      "clip_similarity": 0.33278465270996094,
+      "visual": 0.25532846120961666,
+      "scene_support": 0.43018653685377667,
+      "object_support": 0.659750086718479,
+      "score": 0.4291123715555234,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Power drill with dogs barking in the background",
+      "clip_similarity": 0.3318706750869751,
+      "visual": 0.17728966064776175,
+      "scene_support": 0.4224413440614753,
+      "object_support": 0.6112709413408083,
+      "score": 0.38102954987978976,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks over a power drill",
+      "clip_similarity": 0.3314850330352783,
+      "visual": 0.14436211143456223,
+      "scene_support": 0.13656368401392208,
+      "object_support": 0.5948184536923322,
+      "score": 0.27715948588570116,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drill operating",
+      "clip_similarity": 0.33103302121162415,
+      "visual": 0.1057676648413167,
+      "scene_support": 0.5172476920066645,
+      "object_support": 1.0,
+      "score": 0.497481373538526,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool lightly drilling followed by a louder power tool drilling",
+      "clip_similarity": 0.3310115337371826,
+      "visual": 0.10393298454898928,
+      "scene_support": 0.5381426657100674,
+      "object_support": 0.5682474429767407,
+      "score": 0.3734902264256381,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person uses a drill on wood",
+      "clip_similarity": 0.33101141452789307,
+      "visual": 0.10392280601754779,
+      "scene_support": 0.3309005769242172,
+      "object_support": 0.6738471129777719,
+      "score": 0.34299342937761584,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power drill is turned on and runs",
+      "clip_similarity": 0.330566942691803,
+      "visual": 0.0659721515379761,
+      "scene_support": 0.6731832520026326,
+      "object_support": 0.9751264449173597,
+      "score": 0.5208817696911882,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sawing or drilling sound indoors",
+      "clip_similarity": 0.3304991126060486,
+      "visual": 0.06018056714777192,
+      "scene_support": 0.703863850628213,
+      "object_support": 0.0,
+      "score": 0.23523138204757266,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The whirling sound of a drilling power tool",
+      "clip_similarity": 0.33049625158309937,
+      "visual": 0.05993628239317631,
+      "scene_support": 0.48650705887235923,
+      "object_support": 0.39772082743491427,
+      "score": 0.28924287884945254,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power drill being used",
+      "clip_similarity": 0.3303174078464508,
+      "visual": 0.04466594059809051,
+      "scene_support": 0.27174953899426635,
+      "object_support": 0.8334981765681982,
+      "score": 0.3494406909079755,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as a power tool vibrates faster",
+      "clip_similarity": 0.32994937896728516,
+      "visual": 0.013242269405370193,
+      "scene_support": 0.3973965775883026,
+      "object_support": 0.3026615541826432,
+      "score": 0.2153143472934318,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud humming and vibrations of a power tool",
+      "clip_similarity": 0.3297942876815796,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.40159093252833583,
+      "score": 0.42047727975850074,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "hardware store",
+      0.1250109076499939
+    ],
+    [
+      "repair shop",
+      0.05298628658056259
+    ],
+    [
+      "assembly line",
+      0.048880141228437424
+    ],
+    [
+      "archaelogical excavation",
+      0.044651105999946594
+    ],
+    [
+      "childs room",
+      0.03890121355652809
+    ]
+  ],
+  "top_objects": [
+    [
+      "power drill",
+      0.7174860239028931
+    ],
+    [
+      "chainsaw",
+      0.11641500890254974
+    ],
+    [
+      "vacuum cleaner",
+      0.028873104602098465
+    ],
+    [
+      "hand-held computer",
+      0.020260823890566826
+    ],
+    [
+      "hair dryer",
+      0.01711255870759487
+    ]
+  ]
+}

@@ -47,7 +47,7 @@ def ci(block):
 def main():
     parser = argparse.ArgumentParser(description="Assemble journal_results/ from experiment outputs.")
     parser.add_argument("--run", default="results/audiocaps_test100")
-    parser.add_argument("--places", default="results/places365_eval.json")
+    parser.add_argument("--places", default="results/places365/eval.json")
     parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
     args = parser.parse_args()
     run_dir = Path(args.run)
@@ -93,9 +93,23 @@ def main():
             "table2_prompt_selection", ["Split", "Method", "Mean [95% CI]", "n"], rows,
             "CLAP cosine between the selected prompt and the real AudioCaps recording. "
             "Tuned on val only; test evaluated once."))
-        d = t["test"]["tuned_minus_baseline"]
-        sections.append(f"Test, tuned − baseline: {ci(d)}; better on {d['better']}, worse on {d['worse']}, "
-                        f"unchanged on {d['same']} items.\n\nTuned configuration: `{json.dumps(t['tuned_config'])}`")
+        lines = []
+        for name in ("default", "tuned"):
+            d = t["test"][f"{name}_minus_baseline"]
+            lines.append(f"- Test, {name} − baseline: {ci(d)}; better on {d['better']}, worse on {d['worse']}, "
+                         f"unchanged on {d['same']} items.")
+        tuned = t["tuned_config"]
+        checks_off = tuned["env_conflict_confidence"] > 1 and tuned["source_absent_z"] < -50
+        lines.append(f"- Tuned configuration: `{json.dumps(tuned)}`")
+        lines.append("- The primary CAS-V configuration is the default, fixed before any data was seen; "
+                     "the tuned configuration is an ablation.")
+        if checks_off:
+            lines.append("- The val-optimal configuration disables both explicit conflict checks: under this "
+                         "objective, rejecting sounds that are not visible does not increase agreement with the "
+                         "recording, which itself contains off-screen sounds (narration, music, speech).")
+        oracle_gap = t["test"]["oracle"]["mean"] - t["test"]["baseline"]["mean"]
+        lines.append(f"- Selection headroom on test: oracle − baseline = {oracle_gap:+.3f}.")
+        sections.append("\n".join(lines))
     else:
         missing.append(args.tuning)
 

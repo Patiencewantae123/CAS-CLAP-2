@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "vs65y4qmyBE",
+    "image": "frames/vs65y4qmyBE.jpg",
+    "gt_audio": "audio/vs65y4qmyBE.wav",
+    "captions": [
+      "Wind blows strongly and a young man speaks",
+      "A machine engine runs and a man speaks",
+      "An engine runs and wind blows",
+      "Wind blows into a microphone causing noise",
+      "A strong wind blows and a man speaks"
+    ],
+    "start_time": 340
+  },
+  {
+    "id": "tvP4E1r7yk8",
+    "image": "frames/tvP4E1r7yk8.jpg",
+    "gt_audio": "audio/tvP4E1r7yk8.wav",
+    "captions": [
+      "Wind blowing with a faint man's voice and a distant train approaching with a humming engine and blowing horn",
+      "A train horn blares multiple times as wind gusts loudly",
+      "A train sounds its horn as the wind blares and the train travels along the tracks",
+      "A horn blares twice",
+      "Wind blows hard as a train horn sounds and the train approaches"
+    ],
+    "start_time": 120
+  },
+  {
+    "id": "viuTg1M-dqg",
+    "image": "frames/viuTg1M-dqg.jpg",
+    "gt_audio": "audio/viuTg1M-dqg.wav",
+    "captions": [
+      "A man speaks followed by another man speaking outside",
+      "A male speaks and another male speaks",
+      "A man speaks before another man is interviewed",
+      "A man speaking followed by hissing and another man speaking",
+      "A man speaks before another man talks over an engine sound"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "wfHeoPDLMaM",
+    "image": "frames/wfHeoPDLMaM.jpg",
+    "gt_audio": "audio/wfHeoPDLMaM.wav",
+    "captions": [
+      "Multiple ducks quack continuously",
+      "Several ducks are quacking and squawking",
+      "Several ducks quack and rustle",
+      "Ducks quack continuously",
+      "Ducks quack continuously"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "skd2PphS6oI",
+    "image": "frames/skd2PphS6oI.jpg",
+    "gt_audio": "audio/skd2PphS6oI.wav",
+    "captions": [
+      "A telephone rings and a bird vocalizes",
+      "A squeal and a phone rings two times and stops",
+      "A telephone rings continuously before being picked up",
+      "A loud, continuous ringing",
+      "A telephone rings then is picked up"
+    ],
+    "start_time": 190
+  },
+  {
+    "id": "vx1gfpZnjAM",
+    "image": "frames/vx1gfpZnjAM.jpg",
+    "gt_audio": "audio/vx1gfpZnjAM.wav",
+    "captions": [
+      "Piano music plays as water runs and birds chirp",
+      "Music is ongoing while water gurgles and splashes, and a bird chirps and sings",
+      "Waters flows as music plays and birds chirp",
+      "Music plays and water flows before a bird chirps",
+      "Gentle music underscores a chirping bird"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "snFy48Lv3r8",
+    "image": "frames/snFy48Lv3r8.jpg",
+    "gt_audio": "audio/snFy48Lv3r8.wav",
+    "captions": [
+      "A large engine roars and a strong wind blows",
+      "Wind blows as a boat moves through the water",
+      "Wind blows and water splashes",
+      "A boat moves while wind blows strongly",
+      "Wind blows as water flows quickly"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "xw5cmiqbaUg",
+    "image": "frames/xw5cmiqbaUg.jpg",
+    "gt_audio": "audio/xw5cmiqbaUg.wav",
+    "captions": [
+      "An machine runs and a baby cries",
+      "An infant cries briefly",
+      "An infant briefly cries and stirs",
+      "A baby cries briefly",
+      "A motor runs and a baby whines and cries for a moment"
+    ],
+    "start_time": 160
+  },
+  {
+    "id": "xZepNM9qcRA",
+    "image": "frames/xZepNM9qcRA.jpg",
+    "gt_audio": "audio/xZepNM9qcRA.wav",
+    "captions": [
+      "A man speaks as a motor runs in the background",
+      "A car revs noisily while a man speaks",
+      "A vehicle engine is idling as a man speaks",
+      "A machine vibrates nearby while a man speaks",
+      "A motorcycle engine is revving while a man speaks"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "u-6osTkkOfY",
+    "image": "frames/u-6osTkkOfY.jpg",
+    "gt_audio": "audio/u-6osTkkOfY.wav",
+    "captions": [
+      "A low rumble followed by two scuffles and then steam hissing",
+      "A motor rumbles and steam hisses",
+      "A low rumble followed by steaming hissing",
+      "Steam is released then stops and is released again",
+      "A car travels along a road followed by water hissing loudly as it runs"
+    ],
+    "start_time": 80
+  },
+  {
+    "id": "tqR406bGi_E",
+    "image": "frames/tqR406bGi_E.jpg",
+    "gt_audio": "audio/tqR406bGi_E.wav",
+    "captions": [
+      "A flush is followed by gurgling water, then another flush",
+      "A toilet flushes and water drains",
+      "Toilet flushing and water running followed by another toilet flush",
+      "A toilet flushes and water drains",
+      "A toilet flushes and water drains"
+    ],
+    "start_time": 40
+  },
+  {
+    "id": "w5W_5Kqtc8E",
+    "image": "frames/w5W_5Kqtc8E.jpg",
+    "gt_audio": "audio/w5W_5Kqtc8E.wav",
+    "captions": [
+      "A vehicle engine runs and wind blows before women yell",
+      "Water flows followed by women screaming",
+      "Water splashes and a motorboat passes as people yell",
+      "Wind blows and people scream while an engine revs",
+      "Wind blows and water flows before people cheer"
+    ],
+    "start_time": 100
+  },
+  {
+    "id": "wyllXV6PjKo",
+    "image": "frames/wyllXV6PjKo.jpg",
+    "gt_audio": "audio/wyllXV6PjKo.wav",
+    "captions": [
+      "A baby cries and fusses, a woman speaks, and a man speaks",
+      "Two women and a man talk while a kid cries",
+      "A small child crying with a woman and man speaking",
+      "A woman speaks and a child cries before a man speaks",
+      "A woman and man speak then an infant begins to cry"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "sK4u5T8hW78",
+    "image": "frames/sK4u5T8hW78.jpg",
+    "gt_audio": "audio/sK4u5T8hW78.wav",
+    "captions": [
+      "A man speaks as a car is passing by",
+      "A man speaks as a car is passing by",
+      "A man talks while vehicles pass by",
+      "A man speaks and wind blows while a car is passing by",
+      "A man speaks while wind blows and a car is passing by"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "yks4cLgIDMc",
+    "image": "frames/yks4cLgIDMc.jpg",
+    "gt_audio": "audio/yks4cLgIDMc.wav",
+    "captions": [
+      "Multiple adults speaking, and a child shouting in the background",
+      "People speak as a child vocalizes and television plays",
+      "Children yell and play as a woman speaks in the distance",
+      "Multiple people speak while a television play and a child screams",
+      "Several adults speaks as children yell and shout"
+    ],
+    "start_time": 170
+  },
+  {
+    "id": "vYkA3cfXp5Q",
+    "image": "frames/vYkA3cfXp5Q.jpg",
+    "gt_audio": "audio/vYkA3cfXp5Q.wav",
+    "captions": [
+      "A vehicle engine accelerating then running on idle",
+      "A motor idles, accelerates, then slows down.",
+      "A vehicle engine is idling before revving",
+      "A vehicle engine is revving and idling",
+      "A vehicle engine idles then begins revving"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "yPUYU6t3rwo",
+    "image": "frames/yPUYU6t3rwo.jpg",
+    "gt_audio": "audio/yPUYU6t3rwo.wav",
+    "captions": [
+      "Birds chirp and objects are moved around",
+      "Insects buzz around and a person grunts",
+      "Several bees fly nearby while birds tweet far away",
+      "Birds chirp as insects buzz in the foreground",
+      "Several insects flies far away while birds tweet"
+    ],
+    "start_time": 370
+  },
+  {
+    "id": "sLUnaPT5gM8",
+    "image": "frames/sLUnaPT5gM8.jpg",
+    "gt_audio": "audio/sLUnaPT5gM8.wav",
+    "captions": [
+      "Loud intermittent buzzing with intermittent laughter",
+      "A baby laugh at a sputter",
+      "Someone makes a blowing sound and a baby laughs",
+      "A person makes a snoring noise and a baby laughs",
+      "A person blows raspberries while a baby laughs"
+    ],
+    "start_time": 0
+  },
+  {
+    "id": "tc7UjDIyobI",
+    "image": "frames/tc7UjDIyobI.jpg",
+    "gt_audio": "audio/tc7UjDIyobI.wav",
+    "captions": [
+      "Birds chirp as wind blows",
+      "Birds chirp in an open environment",
+      "Birds chirp and tweet softly",
+      "Birds chirp continuously",
+      "Several birds tweet nearby"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "wyjQhK3XMFQ",
+    "image": "frames/wyjQhK3XMFQ.jpg",
+    "gt_audio": "audio/wyjQhK3XMFQ.wav",
+    "captions": [
+      "Water trickles down as a lawnmower engine runs",
+      "Water trickles as a small engine is revving up",
+      "Water drips and gurgles as birds chirp distantly",
+      "Water trickles as a small motor whirls",
+      "Water flows and splashes"
+    ],
+    "start_time": 180
+  },
+  {
+    "id": "zn196JcTlq0",
+    "image": "frames/zn196JcTlq0.jpg",
+    "gt_audio": "audio/zn196JcTlq0.wav",
+    "captions": [
+      "The humming of an idling then revving engine",
+      "A vehicle engine runs smoothly, then revs aggressively",
+      "An engine is idle then it begins revving loudly",
+      "Engine running then revving up",
+      "A vehicle engine begins revving after idling"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "yTMbYkZ-Vkc",
+    "image": "frames/yTMbYkZ-Vkc.jpg",
+    "gt_audio": "audio/yTMbYkZ-Vkc.wav",
+    "captions": [
+      "White noise and vehicles passing by faintly",
+      "Several vehicles accelerates and start moving skidding",
+      "A vehicle revs its engine then accelerates",
+      "A vehicle revs several times, then speeds up quickly",
+      "A vehicle engine revs then accelerates"
+    ],
+    "start_time": 0
+  },
+  {
+    "id": "wTjoRj1se3U",
+    "image": "frames/wTjoRj1se3U.jpg",
+    "gt_audio": "audio/wTjoRj1se3U.wav",
+    "captions": [
+      "An airplane engine spools and people speak",
+      "An aircraft engine runs as people speak",
+      "Wind blows as an airplane engine spools and people speak",
+      "A small motor races and whirls",
+      "An electric engine works nearby while people talk far away"
+    ],
+    "start_time": 390
+  },
+  {
+    "id": "sjlVMgdGSK0",
+    "image": "frames/sjlVMgdGSK0.jpg",
+    "gt_audio": "audio/sjlVMgdGSK0.wav",
+    "captions": [
+      "A car speeds away loudly followed by a car revving loudly and driving away while outside",
+      "A vehicle accelerates before a race car idles then accelerates quickly",
+      "A vehicle accelerates then a race car revs and accelerates quickly",
+      "A vehicle accelerates then a race car engine revs and accelerates",
+      "A vehicle engine accelerates and then another vehicle revs an engine and accelerates"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "tO_j4tdLRaA",
+    "image": "frames/tO_j4tdLRaA.jpg",
+    "gt_audio": "audio/tO_j4tdLRaA.wav",
+    "captions": [
+      "A woman speaks and a baby laughs",
+      "A woman speaks and laughs at a baby laughing",
+      "A baby cries and fidgets as a woman speaks and a man speaks",
+      "A baby laughs as a female speaks and laughs and a male speaks",
+      "A baby cries loudly while a woman laughs and speaks"
+    ],
+    "start_time": 70
+  },
+  {
+    "id": "xYoIXskAdKg",
+    "image": "frames/xYoIXskAdKg.jpg",
+    "gt_audio": "audio/xYoIXskAdKg.wav",
+    "captions": [
+      "An engine revs and runs roughly",
+      "A vehicle engine is revving loudly",
+      "A motor revs repeatedly",
+      "A large powerful engine revs repeatedly",
+      "Vehicle engine revving"
+    ],
+    "start_time": 20
+  },
+  {
+    "id": "sfAvvZwdLCY",
+    "image": "frames/sfAvvZwdLCY.jpg",
+    "gt_audio": "audio/sfAvvZwdLCY.wav",
+    "captions": [
+      "A muffled toilet flushes and the water drains",
+      "A toilet flushes and water drains",
+      "A toilet flushes and water drains",
+      "A toilet flushes once",
+      "A toilet flushes and water drains"
+    ],
+    "start_time": 20
+  },
+  {
+    "id": "v7jJ_S8aAyA",
+    "image": "frames/v7jJ_S8aAyA.jpg",
+    "gt_audio": "audio/v7jJ_S8aAyA.wav",
+    "captions": [
+      "A motorcycle idles loudly as wind blows",
+      "A motorcycle engine idles as wind blows",
+      "Wind blowing with low humming of an idling engine",
+      "A motorcycle engine idles and wind blows",
+      "Low rumbling humming of an idling engine with wind blowing hard"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "zPKXXJn5r3U",
+    "image": "frames/zPKXXJn5r3U.jpg",
+    "gt_audio": "audio/zPKXXJn5r3U.wav",
+    "captions": [
+      "Water pouring and thunder booming in the distance",
+      "Rain falls onto a hard surface and thunder roars",
+      "Rain falling with thunder rolling and cracking",
+      "Water pours while thunder claps in the background",
+      "Rain drops falling against a hard surface as thunder is heard in the distance"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vW4x7S1VfQc",
+    "image": "frames/vW4x7S1VfQc.jpg",
+    "gt_audio": "audio/vW4x7S1VfQc.wav",
+    "captions": [
+      "Metal clacking as food and oil sizzles followed by a woman talking",
+      "Food is frying and a woman speaks",
+      "Food sizzles in cookware then a person speaks",
+      "Loud sizzling that gets quieter at the end followed by a person speaking",
+      "Food is frying loudly"
+    ],
+    "start_time": 150
+  },
+  {
+    "id": "u21-Z5gJCB8",
+    "image": "frames/u21-Z5gJCB8.jpg",
+    "gt_audio": "audio/u21-Z5gJCB8.wav",
+    "captions": [
+      "A man speaks with another voice speaking in the background",
+      "Continuous speech and sizzling",
+      "A man speaks while the TV sounds loudly in the background",
+      "A man speaks while the television plays in the background",
+      "A man speaks while a television plays in the background"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vVhthZ45k3Y",
+    "image": "frames/vVhthZ45k3Y.jpg",
+    "gt_audio": "audio/vVhthZ45k3Y.wav",
+    "captions": [
+      "A man laughs and speaks as cats purr and hiss",
+      "A cat meows and a man speaks",
+      "Cats snarl and hiss as a man speaks and laughs",
+      "A male is speaking as angry cat growls and hisses",
+      "A cat meows while a man speaks"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "y2ZBGpgbhHM",
+    "image": "frames/y2ZBGpgbhHM.jpg",
+    "gt_audio": "audio/y2ZBGpgbhHM.wav",
+    "captions": [
+      "Birds chirp and a dog breathes heavily",
+      "A small musical boom and then birds tweet and a few dogs pant",
+      "An animal growls followed by birds chirping",
+      "A vehicle moves far away and birds tweet nearby",
+      "A bird chirps as a car drives by"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "tH-q8LXgHEc",
+    "image": "frames/tH-q8LXgHEc.jpg",
+    "gt_audio": "audio/tH-q8LXgHEc.wav",
+    "captions": [
+      "Birds chirp and pigeons vocalize as a vehicle passes by",
+      "Birds chirp and pigeons vocalize as a vehicle passes by",
+      "Bird chirp and pigeons coo",
+      "Birds chirp and pigeons vocalize as a motorcycle passes by nearby",
+      "Birds chirping and cooing"
+    ],
+    "start_time": 70
+  },
+  {
+    "id": "yDoT73BWsdA",
+    "image": "frames/yDoT73BWsdA.jpg",
+    "gt_audio": "audio/yDoT73BWsdA.wav",
+    "captions": [
+      "A vehicle engine revs as the vehicle passes",
+      "A vehicle engine revs and tires squeal",
+      "A motor runs and shifts gears",
+      "A vehicle engine revs and squeals tires",
+      "A car zooms by"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "yHeVV-xeOxQ",
+    "image": "frames/yHeVV-xeOxQ.jpg",
+    "gt_audio": "audio/yHeVV-xeOxQ.wav",
+    "captions": [
+      "Scraping and female speech with distant music",
+      "A girl speaks followed by scraping and then the girl speaking again",
+      "A woman speaks over repeated scraping",
+      "A woman speaks while a rhythmic splashing sound occurs",
+      "A woman speaks and scraps an object against metal"
+    ],
+    "start_time": 130
+  },
+  {
+    "id": "smGI3C1N_Zc",
+    "image": "frames/smGI3C1N_Zc.jpg",
+    "gt_audio": "audio/smGI3C1N_Zc.wav",
+    "captions": [
+      "A toilet flushes and water sputters as it drains",
+      "A toilet is flushed nearby",
+      "A toilet flushes and drains speedily",
+      "A toilet flushes and water drains",
+      "A toilet flushes and water drains out"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vzxHnu-SFEw",
+    "image": "frames/vzxHnu-SFEw.jpg",
+    "gt_audio": "audio/vzxHnu-SFEw.wav",
+    "captions": [
+      "A woman speaks as she rubs two objects together",
+      "A woman speaks as she rubs two objects together",
+      "A woman speaking with continuous rubbing",
+      "An adult female speaks over rubbing and scraping",
+      "A woman speaks over light rubbing and scraping"
+    ],
+    "start_time": 80
+  },
+  {
+    "id": "ukxt9I7eMMg",
+    "image": "frames/ukxt9I7eMMg.jpg",
+    "gt_audio": "audio/ukxt9I7eMMg.wav",
+    "captions": [
+      "Food is frying then a woman speaks",
+      "Continuous sizzling with a woman speaking towards the end",
+      "Food fries in a pan as someone talks and cooks",
+      "Food is frying and someone speaks",
+      "Food sizzles as a woman and a man speak"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vddP56-ogds",
+    "image": "frames/vddP56-ogds.jpg",
+    "gt_audio": "audio/vddP56-ogds.wav",
+    "captions": [
+      "Water splashing and a person laughs in the distance then a man speaks nearby",
+      "Water flows as a woman laughs and a man speaks",
+      "Some liquid flows while a woman laughs and man talks",
+      "Water pour and birds chirp while a person laughs and then speaks",
+      "Water runs onto a hard surface while someone speaks"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vr8ZXjEBhMQ",
+    "image": "frames/vr8ZXjEBhMQ.jpg",
+    "gt_audio": "audio/vr8ZXjEBhMQ.wav",
+    "captions": [
+      "Wind blowing followed by a zoom",
+      "A low rumbling in the distance followed by a motorcycle engine revving up",
+      "Vehicles pass by as wind blows",
+      "White noise and light wind with an engine running quietly",
+      "A low hiss in the distance followed by an engine rev"
+    ],
+    "start_time": 150
+  },
+  {
+    "id": "v5P-ThUCINM",
+    "image": "frames/v5P-ThUCINM.jpg",
+    "gt_audio": "audio/v5P-ThUCINM.wav",
+    "captions": [
+      "A guy speaks with birds chirping in the background",
+      "Birds chirp and wind blows as a man speaks",
+      "An adult man speaks over light wind",
+      "Insects buzz and wind blows as a man speaks",
+      "White noise and a man speaking with birds chirping in the distance"
+    ],
+    "start_time": 400
+  },
+  {
+    "id": "sLkeqCDJIyw",
+    "image": "frames/sLkeqCDJIyw.jpg",
+    "gt_audio": "audio/sLkeqCDJIyw.wav",
+    "captions": [
+      "Someone snores nearby",
+      "Continuous snoring",
+      "A person snores",
+      "Someone is snoring while sleeping",
+      "A person is snoring while sleeping"
+    ],
+    "start_time": 120
+  },
+  {
+    "id": "w1mlz3Pe4fU",
+    "image": "frames/w1mlz3Pe4fU.jpg",
+    "gt_audio": "audio/w1mlz3Pe4fU.wav",
+    "captions": [
+      "Birds tweet and squawk",
+      "Birds vocalize and chirp continuously",
+      "Several birds tweet and chirp continuously",
+      "Birds chirp and vocalize",
+      "Several birds tweet and chirp continuously"
+    ],
+    "start_time": 300
+  },
+  {
+    "id": "wob-3S4VjMs",
+    "image": "frames/wob-3S4VjMs.jpg",
+    "gt_audio": "audio/wob-3S4VjMs.wav",
+    "captions": [
+      "Someone is typing on a computer keyboard",
+      "Someone types in a keyboard",
+      "The loud, regular clack of typing ensues, followed by paper being pulled",
+      "A person is typing on a computer keyboard",
+      "Keys clicking on a computer keyboard"
+    ],
+    "start_time": 140
+  },
+  {
+    "id": "uJV8NDaHqqk",
+    "image": "frames/uJV8NDaHqqk.jpg",
+    "gt_audio": "audio/uJV8NDaHqqk.wav",
+    "captions": [
+      "A fly buzzes around loudly as birds chirp",
+      "An insect buzzes around",
+      "Insects buzz over chirping birds",
+      "A few chirps from birds and croaks from an insect then a bug buzzes by",
+      "Birds chirp softly as insects buzz"
+    ],
+    "start_time": 100
+  },
+  {
+    "id": "tK4VlLsNxak",
+    "image": "frames/tK4VlLsNxak.jpg",
+    "gt_audio": "audio/tK4VlLsNxak.wav",
+    "captions": [
+      "An adult male speaks and dials a rotary phone",
+      "A man speaks, then dials a rotary telephone",
+      "A man talks while dialing a phone",
+      "A man speaks while using an old phone punching in the numbers on the dial",
+      "A man speaks as he dials an old-fashioned phone"
+    ],
+    "start_time": 120
+  },
+  {
+    "id": "tOS_WIURC-4",
+    "image": "frames/tOS_WIURC-4.jpg",
+    "gt_audio": "audio/tOS_WIURC-4.wav",
+    "captions": [
+      "A motorcycle engine works nearby",
+      "An engine revs and a turning noise is made",
+      "A motorcycle engine works nearby",
+      "A vehicle engine runs",
+      "A motorcycle engine roars"
+    ],
+    "start_time": 0
+  },
+  {
+    "id": "wPz6QRAkEb4",
+    "image": "frames/wPz6QRAkEb4.jpg",
+    "gt_audio": "audio/wPz6QRAkEb4.wav",
+    "captions": [
+      "A bird is chirping and tweeting a bird song",
+      "Birds chirp continuously",
+      "Birds chirp continuously",
+      "A bird is chirping while air is flowing in a hollowed space",
+      "Birds chirp and wind blows"
+    ],
+    "start_time": 60
+  },
+  {
+    "id": "xX2OnECANVI",
+    "image": "frames/xX2OnECANVI.jpg",
+    "gt_audio": "audio/xX2OnECANVI.wav",
+    "captions": [
+      "A mechanical is running as a man talks",
+      "A man speaks as a drill runs",
+      "A drill press is running as a man talks",
+      "A man speaks as a drill runs",
+      "An adult male speaks as a small motor runs"
+    ],
+    "start_time": 70
+  },
+  {
+    "id": "wnNNcxAPwGQ",
+    "image": "frames/wnNNcxAPwGQ.jpg",
+    "gt_audio": "audio/wnNNcxAPwGQ.wav",
+    "captions": [
+      "Rustling with distant murmuring",
+      "Numerous people are talking as cars rev and idle in the background",
+      "People speak as someone sneezes while large engine idles and revs.",
+      "People chatter and cough over a low engine",
+      "People speak and a vehicle engine revs"
+    ],
+    "start_time": 0
+  },
+  {
+    "id": "uoGVs9yUqY4",
+    "image": "frames/uoGVs9yUqY4.jpg",
+    "gt_audio": "audio/uoGVs9yUqY4.wav",
+    "captions": [
+      "Multiple birds vocalize and wind blows",
+      "Birds vocalize and a turning sound occurs",
+      "Birds chirp in the distance as some rustling in the background",
+      "Birds chirp as a far-off engine turns over and wind blows momentarily",
+      "Chirping and clanking"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "zoKp_laniT8",
+    "image": "frames/zoKp_laniT8.jpg",
+    "gt_audio": "audio/zoKp_laniT8.wav",
+    "captions": [
+      "A motor runs as water splashes and a man speaks, then another man speaks",
+      "Some liquid splashes while a vehicle passes by and a man talks",
+      "Water moves and a man speaks as a boat passes by",
+      "A speedboat driving by as two men talk while water splashes and trickles",
+      "A boat passes by on the water and a man speaks"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "smDKStoHBJo",
+    "image": "frames/smDKStoHBJo.jpg",
+    "gt_audio": "audio/smDKStoHBJo.wav",
+    "captions": [
+      "A woman talks while a baby cries and a man whispers",
+      "A baby cries and a woman moans",
+      "An infant crying and a woman speaking with some distant murmuring",
+      "A baby cries as a woman sings and speaks",
+      "A baby cries and a woman speaks"
+    ],
+    "start_time": 0
+  },
+  {
+    "id": "rqu8iB22I_Y",
+    "image": "frames/rqu8iB22I_Y.jpg",
+    "gt_audio": "audio/rqu8iB22I_Y.wav",
+    "captions": [
+      "Popping and crackling repeats as men yell and laugh",
+      "A vehicle is running and crackling and popping as people laugh",
+      "People yell and laugh as a motor sputters and pops",
+      "Men screeching and shouting while a vehicle is revving and backfiring loudly",
+      "People yell and laugh as a vehicle approaches and sputters"
+    ],
+    "start_time": 5
+  },
+  {
+    "id": "w2JXXIAdUdg",
+    "image": "frames/w2JXXIAdUdg.jpg",
+    "gt_audio": "audio/w2JXXIAdUdg.wav",
+    "captions": [
+      "A sleeping person emits a gravely snore",
+      "People speaking indiscriminately in the distance with a person snoring loudly nearby",
+      "A person is snoring while sleeping",
+      "Someone snores close by",
+      "Someone snores while sleeping and people talk in the background"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "zuua6-5goWw",
+    "image": "frames/zuua6-5goWw.jpg",
+    "gt_audio": "audio/zuua6-5goWw.wav",
+    "captions": [
+      "Birds chirp and a pop occurs before a man speaks",
+      "Birds chirp quietly and an adult man speaks",
+      "A soft plastic clack as seagulls squawk in the distance followed by a man talking",
+      "Birds chirp and a man speaks",
+      "Birds twitter and chirp as a man speak quietly"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "x-PeY8Yb8M4",
+    "image": "frames/x-PeY8Yb8M4.jpg",
+    "gt_audio": "audio/x-PeY8Yb8M4.wav",
+    "captions": [
+      "A stream of water runs briefly",
+      "Water rushes by",
+      "A flowing, bubbling stream is interrupted by a loud thunk",
+      "A gurgling stream is interrupted by a large thump",
+      "A stream of water flows"
+    ],
+    "start_time": 300
+  },
+  {
+    "id": "vJvryTwuAV8",
+    "image": "frames/vJvryTwuAV8.jpg",
+    "gt_audio": "audio/vJvryTwuAV8.wav",
+    "captions": [
+      "Children cheer as a man speaks then an audience screams",
+      "Kids chant followed by loud screaming",
+      "Children yell as a group cheers and a man speaks",
+      "A crowd chants and cheers",
+      "People chant loudly then something pops and the people continue to chant then they begin screaming"
+    ],
+    "start_time": 16
+  },
+  {
+    "id": "ucQikcv96gM",
+    "image": "frames/ucQikcv96gM.jpg",
+    "gt_audio": "audio/ucQikcv96gM.wav",
+    "captions": [
+      "Wet smacking and rustling",
+      "A duck eats food as a dish rattles",
+      "Someone blows bubbles in water",
+      "A quite rumbling getting louder",
+      "A bird makes puttering sounds repeatedly"
+    ],
+    "start_time": 150
+  },
+  {
+    "id": "yfdjbS0FjI0",
+    "image": "frames/yfdjbS0FjI0.jpg",
+    "gt_audio": "audio/yfdjbS0FjI0.wav",
+    "captions": [
+      "A clinking sound occurs outside",
+      "A train passes by on a set of tracks",
+      "Rattling and rustling of a passing engine as people speak in the distance",
+      "Railroad tracks clickety-clack and a train clanks as it passes",
+      "A vehicle traverses a bump and distant engines run"
+    ],
+    "start_time": 24
+  },
+  {
+    "id": "wvKpEYswXO0",
+    "image": "frames/wvKpEYswXO0.jpg",
+    "gt_audio": "audio/wvKpEYswXO0.wav",
+    "captions": [
+      "Plastic is tapped on while someone speaks",
+      "A woman speaks and taps on a hard surface before running tap water",
+      "Repeated tapping is accompanied by water running and a woman speaking softly",
+      "Someone chops on a hard surface and speaks before turning a water faucet on",
+      "A woman speaks and taps on a counter before turning a water tap on"
+    ],
+    "start_time": 150
+  },
+  {
+    "id": "yRx9txMcBl0",
+    "image": "frames/yRx9txMcBl0.jpg",
+    "gt_audio": "audio/yRx9txMcBl0.wav",
+    "captions": [
+      "A vehicle accelerates and squeals tires",
+      "Motors runs briefly and tires screech",
+      "A vehicle accelerates and squeals tires while a swish occurs",
+      "A car squeals tires and accelerates",
+      "A vehicle accelerates then tires squeal and later accelerates again"
+    ],
+    "start_time": 40
+  },
+  {
+    "id": "vzceMbkl_Wc",
+    "image": "frames/vzceMbkl_Wc.jpg",
+    "gt_audio": "audio/vzceMbkl_Wc.wav",
+    "captions": [
+      "Water runs into a sink while men speak",
+      "Water runs from a faucet while some men speak and the water runs in the sink",
+      "Water runs into a sink as two men speak",
+      "Water splashing with male speech",
+      "Water runs into a container as several men speak"
+    ],
+    "start_time": 180
+  },
+  {
+    "id": "tZGN5a7ybxo",
+    "image": "frames/tZGN5a7ybxo.jpg",
+    "gt_audio": "audio/tZGN5a7ybxo.wav",
+    "captions": [
+      "A railroad crossing bell rings as a train horn blows",
+      "Repeated dings are followed by horn blasts and a person speaking",
+      "A railroad crossing bell rings as a man speaks on a radio and a train horn sounds",
+      "A bell dings followed by a loud horn blaring",
+      "A railroad car approaches from the distant, followed by a man speaking and a train horn"
+    ],
+    "start_time": 60
+  },
+  {
+    "id": "ul60S8TXDA8",
+    "image": "frames/ul60S8TXDA8.jpg",
+    "gt_audio": "audio/ul60S8TXDA8.wav",
+    "captions": [
+      "A bell rings multiple times before a siren sounds in the distance",
+      "Repeated electronic beeping is followed by a swell of music",
+      "Two beeps are followed by a swell of soft music",
+      "A bell rings out multiple times and a siren sounds",
+      "A series of electronic beeps is followed by soft music"
+    ],
+    "start_time": 60
+  },
+  {
+    "id": "y1saVTXsKwc",
+    "image": "frames/y1saVTXsKwc.jpg",
+    "gt_audio": "audio/y1saVTXsKwc.wav",
+    "captions": [
+      "A dog whimpers and a woman briefly talks",
+      "An animal growls playfully and a person speaks",
+      "Birds are singing, a dog is groaning and yipping playfully, and an adult female speaks",
+      "Small animal barks and whines and a person speaks briefly",
+      "A dog growls lowly with a man speaking in the middle"
+    ],
+    "start_time": 80
+  },
+  {
+    "id": "x5eIC7S0fbg",
+    "image": "frames/x5eIC7S0fbg.jpg",
+    "gt_audio": "audio/x5eIC7S0fbg.wav",
+    "captions": [
+      "A man speaks uses a drill",
+      "A man speaking followed by the high-frequency humming of a small drill",
+      "A man speaks and a high pitched motor whirls",
+      "A man speaks then uses a drill",
+      "A man speaks then uses a drill"
+    ],
+    "start_time": 60
+  },
+  {
+    "id": "w9ejUrlz1GM",
+    "image": "frames/w9ejUrlz1GM.jpg",
+    "gt_audio": "audio/w9ejUrlz1GM.wav",
+    "captions": [
+      "A material is crumpled while a woman talks",
+      "Paper crinkles and a woman speaks",
+      "Paper is crumpling while a woman speaks",
+      "A woman speaks while crumpling plastic",
+      "Someone crumples plastic and speaks"
+    ],
+    "start_time": 460
+  },
+  {
+    "id": "sC_i_y7QS1U",
+    "image": "frames/sC_i_y7QS1U.jpg",
+    "gt_audio": "audio/sC_i_y7QS1U.wav",
+    "captions": [
+      "Some men converse over an engine running",
+      "A motorcycle engine revs and a man speaks",
+      "A man speaks as a small engine revs",
+      "A motorcycle engine revs as a man speaks",
+      "A motorcycle engine runs and a man speaks"
+    ],
+    "start_time": 300
+  },
+  {
+    "id": "t4WCFbE0A50",
+    "image": "frames/t4WCFbE0A50.jpg",
+    "gt_audio": "audio/t4WCFbE0A50.wav",
+    "captions": [
+      "A ratting occurs and a bucket is hit while a cow vocalizes in the background",
+      "Something rattles and a bucket pops while a cow moos",
+      "While outdoors a bucket is thrown over and a hiss comes from a snake",
+      "A rattle shakes and a bucket thumps while a cow moos",
+      "Food sizzles as someone prepares a meal"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "v-HKXQkpsD8",
+    "image": "frames/v-HKXQkpsD8.jpg",
+    "gt_audio": "audio/v-HKXQkpsD8.wav",
+    "captions": [
+      "A horn blares angrily over wailing emergency sirens",
+      "A firetruck blows its horn as it travels works its way down a street",
+      "An emergency siren blares and a horn is honked",
+      "An emergency vehicle siren blares nearby multiple times",
+      "A fire engine sounds a siren and blows a horn"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "x5cuQjOdM3E",
+    "image": "frames/x5cuQjOdM3E.jpg",
+    "gt_audio": "audio/x5cuQjOdM3E.wav",
+    "captions": [
+      "A cat meows as a young woman speaks",
+      "A cat meows and children speak",
+      "Cats meow and then a person begins to talk while the cats continue to meow",
+      "A cat meows as a woman speaks",
+      "A cat meowing, a young girl speaking and meowing after the cat."
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "uEU-Hg5MTN8",
+    "image": "frames/uEU-Hg5MTN8.jpg",
+    "gt_audio": "audio/uEU-Hg5MTN8.wav",
+    "captions": [
+      "A woman speaks and laughs and an animal grunts and snorts",
+      "A young woman speaks and laughs and an animal snorts",
+      "A girl speaks then a pig oinks",
+      "A female speaks and laughs, then an animal grunts",
+      "Children speak and laugh then a pig oinks"
+    ],
+    "start_time": 27
+  },
+  {
+    "id": "uzQnlJXBbOM",
+    "image": "frames/uzQnlJXBbOM.jpg",
+    "gt_audio": "audio/uzQnlJXBbOM.wav",
+    "captions": [
+      "Loud ringing of a telephone stops followed by a man speaking and a digital beep",
+      "A telephone rings as a man speaks then picks up the telephone",
+      "A telephone rings followed by a man speaking",
+      "A telephone rings as a man speaks then answers",
+      "A telephone rings and a man speaks before answering"
+    ],
+    "start_time": 50
+  },
+  {
+    "id": "zofjfKhqLk8",
+    "image": "frames/zofjfKhqLk8.jpg",
+    "gt_audio": "audio/zofjfKhqLk8.wav",
+    "captions": [
+      "A motor slows to a stopover traffic noises",
+      "A saw finishes running as metal clings in the background",
+      "Cutting machine running then powering down followed by a series of metal clanking in the background",
+      "A saw comes to a slow stop as metal clings in the background",
+      "A powered saw runs through some wood"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "wjsXBsc7M40",
+    "image": "frames/wjsXBsc7M40.jpg",
+    "gt_audio": "audio/wjsXBsc7M40.wav",
+    "captions": [
+      "A baby laughs giddily and a woman laughs then speaks",
+      "A child laughs continuously",
+      "A baby laughs then a woman speaks and the baby laughs again",
+      "A baby laughs as a woman speaks to it",
+      "Water drips in the background while a kid and baby laugh"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "wIvYjuR3nrg",
+    "image": "frames/wIvYjuR3nrg.jpg",
+    "gt_audio": "audio/wIvYjuR3nrg.wav",
+    "captions": [
+      "Birds chirp and pigeons vocalize while walking around",
+      "Birds chirp and pigeons vocalize while walking around",
+      "Multiple birds chirp, flutter and coo",
+      "Continuous chirping and clanking",
+      "Birds tweet and pigeons vocalize as they walk around"
+    ],
+    "start_time": 9
+  },
+  {
+    "id": "tjmoSi330GM",
+    "image": "frames/tjmoSi330GM.jpg",
+    "gt_audio": "audio/tjmoSi330GM.wav",
+    "captions": [
+      "A speedboat passes quickly on the water",
+      "A vehicle engine runs at a high speed",
+      "A boat splays through water with the engine blaring loudly",
+      "A boat passing by quickly",
+      "A medium sized engine runs and a man talks"
+    ],
+    "start_time": 23
+  },
+  {
+    "id": "vbr9mHKc8WM",
+    "image": "frames/vbr9mHKc8WM.jpg",
+    "gt_audio": "audio/vbr9mHKc8WM.wav",
+    "captions": [
+      "An engine idles quietly then gradually becomes louder",
+      "A engine is humming as it runs",
+      "A high pitched engine moving closer and closer",
+      "A vehicle engine idles quietly then gradually gets louder",
+      "A low rumbling increasing into a loud buzz"
+    ],
+    "start_time": 40
+  },
+  {
+    "id": "vZAqdHZ81yA",
+    "image": "frames/vZAqdHZ81yA.jpg",
+    "gt_audio": "audio/vZAqdHZ81yA.wav",
+    "captions": [
+      "A motorcycle engine is idling",
+      "A vehicle engine runs and slows",
+      "A motorcycle engine revs then begins idling",
+      "A sputtering engine runs",
+      "A vehicle that is idling"
+    ],
+    "start_time": 180
+  },
+  {
+    "id": "yUsCyVRXMoY",
+    "image": "frames/yUsCyVRXMoY.jpg",
+    "gt_audio": "audio/yUsCyVRXMoY.wav",
+    "captions": [
+      "A machine whirls",
+      "A motor runs and then stops suddenly",
+      "A whirring motor runs and stops suddenly",
+      "A small motor whine, then shuts off",
+      "Hissing and vibrating followed by a loud click"
+    ],
+    "start_time": 20
+  },
+  {
+    "id": "sHbXC6na9hg",
+    "image": "frames/sHbXC6na9hg.jpg",
+    "gt_audio": "audio/sHbXC6na9hg.wav",
+    "captions": [
+      "A person uses a saw to cut some wood",
+      "An engine rumbling followed by a mechanical buzzing",
+      "An engine revs loudly followed by some men talking and a saw cutting through metal",
+      "An engine idles continuously",
+      "An engine runs and people speak as cutting takes place"
+    ],
+    "start_time": 0
+  },
+  {
+    "id": "y2bVZ7rz-5M",
+    "image": "frames/y2bVZ7rz-5M.jpg",
+    "gt_audio": "audio/y2bVZ7rz-5M.wav",
+    "captions": [
+      "Motor noise is followed by a horn honking and a siren wailing",
+      "An emergency vehicle engine runs then a horn blows and siren sounds",
+      "A diesel truck runs while a siren whales and a horn blows",
+      "A diesel engine runs while a siren wails and horn blows",
+      "Noisy traffic goes by on a busy road then an emergency siren on a fire truck and an ambulance sound"
+    ],
+    "start_time": 280
+  },
+  {
+    "id": "vvdb2UyJQrs",
+    "image": "frames/vvdb2UyJQrs.jpg",
+    "gt_audio": "audio/vvdb2UyJQrs.wav",
+    "captions": [
+      "A baby vocalizes and laughs as a woman speaks",
+      "A baby is laughing and the mother is playing with her baby",
+      "A baby laughs and fidgets as a woman speaks and chuckles",
+      "A baby vocalizes and laughs at a woman speaking",
+      "A baby coos and laughs as a woman speaks"
+    ],
+    "start_time": 20
+  },
+  {
+    "id": "xJSVJj-v8EE",
+    "image": "frames/xJSVJj-v8EE.jpg",
+    "gt_audio": "audio/xJSVJj-v8EE.wav",
+    "captions": [
+      "A small engine runs fast",
+      "A small engine runs briefly then idles",
+      "A small engine revs and idles",
+      "An engine works nearby",
+      "A small motor run at two different pitches"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "vqZuVbG6-HI",
+    "image": "frames/vqZuVbG6-HI.jpg",
+    "gt_audio": "audio/vqZuVbG6-HI.wav",
+    "captions": [
+      "An engine runs loudly",
+      "Propeller rearing loudly with some male and female voices interspersed in the background",
+      "Loud, continuous buzzing with distant murmuring",
+      "A propeller on a helicopter runs rapidly and loudly",
+      "A helicopter propeller swings around loudly"
+    ],
+    "start_time": 130
+  },
+  {
+    "id": "z5iUE5h0EPs",
+    "image": "frames/z5iUE5h0EPs.jpg",
+    "gt_audio": "audio/z5iUE5h0EPs.wav",
+    "captions": [
+      "Goats bleat and people speak",
+      "Objects are moved around while people talk and a goat bleats",
+      "A person walks along and a man speaks as a goat bleats",
+      "A man speaks then a goat vocalizes",
+      "Rustling with people speaking and a goat bleating"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "xO-Q2BlIIPU",
+    "image": "frames/xO-Q2BlIIPU.jpg",
+    "gt_audio": "audio/xO-Q2BlIIPU.wav",
+    "captions": [
+      "Male speech with light ticking",
+      "A man makes an exclamation, then another man speaks",
+      "An adult male speaks",
+      "A man speaks and a clock ticktocks",
+      "A man speaks in a quiet space"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vBHyYJ8p_L0",
+    "image": "frames/vBHyYJ8p_L0.jpg",
+    "gt_audio": "audio/vBHyYJ8p_L0.wav",
+    "captions": [
+      "A door opens and closes",
+      "A motor noise is accompanied by a door opening and closing",
+      "A door opens and closes repeatedly",
+      "A door open and closes as a fan runs",
+      "A door opens and closes, then repeats"
+    ],
+    "start_time": 2
+  },
+  {
+    "id": "uYT5gxnyMWM",
+    "image": "frames/uYT5gxnyMWM.jpg",
+    "gt_audio": "audio/uYT5gxnyMWM.wav",
+    "captions": [
+      "A young female speaks, followed by spraying and a female screaming",
+      "A girl speaks followed by a scream and more girls talking",
+      "A young woman speaks over spraying and another person yells",
+      "Female speech followed by hissing, hollering and more speech",
+      "A girl speaks with spraying followed by a woman screaming in the background and then two girls converse"
+    ],
+    "start_time": 50
+  },
+  {
+    "id": "uXxVebHsGZ8",
+    "image": "frames/uXxVebHsGZ8.jpg",
+    "gt_audio": "audio/uXxVebHsGZ8.wav",
+    "captions": [
+      "A male speaks over some small clicks",
+      "A clock ticktocks as a man speaks",
+      "A clock ticktocks while a man speaks",
+      "A man speaks as a clock ticktock",
+      "A man speaks as a clock ticktocks"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "z4uELRI6p08",
+    "image": "frames/z4uELRI6p08.jpg",
+    "gt_audio": "audio/z4uELRI6p08.wav",
+    "captions": [
+      "Loud laugh ting and mumbling with s person laughing faintly and briefly in the distance",
+      "An older woman laughs and titters",
+      "A woman makes noises and laughs happily",
+      "Laughing and some mumbling",
+      "Laughing followed by a short groan then more laughing"
+    ],
+    "start_time": 40
+  },
+  {
+    "id": "yYJksgsxx5U",
+    "image": "frames/yYJksgsxx5U.jpg",
+    "gt_audio": "audio/yYJksgsxx5U.wav",
+    "captions": [
+      "An adult woman speaks over chopping and silverware noises",
+      "A woman speaks followed by clicks and scraping",
+      "A woman speaks and uses cutlery while music plays",
+      "A woman speaks while using cutlery and music plays",
+      "A woman speaks while music plays in the background as she uses cutlery"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "ttUaPa1mkgU",
+    "image": "frames/ttUaPa1mkgU.jpg",
+    "gt_audio": "audio/ttUaPa1mkgU.wav",
+    "captions": [
+      "A sewing machine runs briefly",
+      "A sewing machine works nearby",
+      "A sewing machine runs slowly and briefly",
+      "A machine clatters and clicks as birds sing in the background",
+      "A repeated hissing and ticking"
+    ],
+    "start_time": 230
+  },
+  {
+    "id": "uP_Dn2BFTHk",
+    "image": "frames/uP_Dn2BFTHk.jpg",
+    "gt_audio": "audio/uP_Dn2BFTHk.wav",
+    "captions": [
+      "A baby coos and fidgets as a lady speaks and laughs",
+      "A child and woman laughs and the woman speaks",
+      "A young baby laughs and giggles while a man and woman speak and laugh",
+      "A baby and woman laugh",
+      "A female laughs as a baby fidgets and babbles"
+    ],
+    "start_time": 140
+  },
+  {
+    "id": "u2f5NpsoHBg",
+    "image": "frames/u2f5NpsoHBg.jpg",
+    "gt_audio": "audio/u2f5NpsoHBg.wav",
+    "captions": [
+      "Speaking following by laughing and clapping",
+      "A person speaks and an audience gives applause",
+      "A woman speaks and people laugh then give applause",
+      "A woman speaks and an audience yells and gives applause",
+      "A woman speaks as audience members respond enthusiastically"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "zliInBdC98Y",
+    "image": "frames/zliInBdC98Y.jpg",
+    "gt_audio": "audio/zliInBdC98Y.wav",
+    "captions": [
+      "A baby cries and wails as an adult female speaks",
+      "An infant cries and a woman speaks",
+      "A baby cries and babbles as a woman speaks",
+      "A baby fusses and cries as a woman speaks curtly",
+      "A baby cries and screams followed by a woman talking"
+    ],
+    "start_time": 30
+  },
+  {
+    "id": "vHZQht-r5fg",
+    "image": "frames/vHZQht-r5fg.jpg",
+    "gt_audio": "audio/vHZQht-r5fg.wav",
+    "captions": [
+      "A person snores while sleeping",
+      "A person is snoring while sleeping",
+      "Snoring intermittently",
+      "Someone snores while sleeping",
+      "A sleeping male snores and inhales loudly"
+    ],
+    "start_time": 10
+  },
+  {
+    "id": "v-g-j2uTByM",
+    "image": "frames/v-g-j2uTByM.jpg",
+    "gt_audio": "audio/v-g-j2uTByM.wav",
+    "captions": [
+      "A clock ticktocks",
+      "Ticking continues without interruption",
+      "A clock ticks in a quiet space",
+      "A clock does ticktock",
+      "Ticking of a clock with light electrical humming in the distance"
+    ],
+    "start_time": 30
+  }
+]

@@ -1,0 +1,286 @@
+{
+  "id": "fK4QBQZ6i7w",
+  "image": "data\\audiocaps\\test_subset\\frames\\fK4QBQZ6i7w.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\fK4QBQZ6i7w.wav",
+  "gt_captions": [
+    "People are laughing",
+    "Multiple people laughing",
+    "People are laughing and chuckling",
+    "Woman laughs loudly as others chuckle as well",
+    "A hissing sound followed by laughter"
+  ],
+  "top_scene": [
+    "waiting room",
+    0.11131082475185394
+  ],
+  "top_object": [
+    "television",
+    0.0710064023733139
+  ],
+  "env_probs": {
+    "indoor": 0.9187337756156921,
+    "outdoor": 0.08126622438430786
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A girl speaks, rustling of a camera followed by computer typing",
+    "casv": "A girl speaks, rustling of a camera followed by computer typing"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.039975330233573914,
+    "clap_gt_audio_baseline": 0.2065984159708023,
+    "clap_text_casv": -0.039975330233573914,
+    "clap_gt_audio_casv": 0.2065984159708023
+  },
+  "verdicts": [
+    {
+      "caption": "A girl speaks, rustling of a camera followed by computer typing",
+      "clip_similarity": 0.31383365392684937,
+      "visual": 1.0,
+      "scene_support": 0.6457893337561327,
+      "object_support": 0.6871414547350984,
+      "score": 0.7998792365473694,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman speaking with light background noise",
+      "clip_similarity": 0.3065953552722931,
+      "visual": 0.700316862567031,
+      "scene_support": 0.5460655653711174,
+      "object_support": 0.540063232091008,
+      "score": 0.60596538426545,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person speaking with camera shutter noise in background",
+      "clip_similarity": 0.3044256567955017,
+      "visual": 0.6104860780360444,
+      "scene_support": 0.8702643343310269,
+      "object_support": 0.944514922881752,
+      "score": 0.7886282083782514,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The distant audio from a television and a young woman laughing",
+      "clip_similarity": 0.30245256423950195,
+      "visual": 0.5287952559454917,
+      "scene_support": 0.6359225357311867,
+      "object_support": 0.82555819824632,
+      "score": 0.6499623225714487,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A computer keyboard sound followed by a girl speaking",
+      "clip_similarity": 0.3013664484024048,
+      "visual": 0.4838274234187102,
+      "scene_support": 0.7495042798350922,
+      "object_support": 0.9168486273547367,
+      "score": 0.6934368415244327,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.29988861083984375,
+      "visual": 0.42264136043610556,
+      "scene_support": 0.5041495257425515,
+      "object_support": 0.3244443281500102,
+      "score": 0.41763470034221073,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Computer noise with electronic popping and whirring sound followed by a woman speaking",
+      "clip_similarity": 0.297218918800354,
+      "visual": 0.3121096285255279,
+      "scene_support": 0.8995827276772621,
+      "object_support": 0.9379882486479268,
+      "score": 0.6761151443077678,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is speaking with clicking background noises followed by computer keyboard typing",
+      "clip_similarity": 0.29523178935050964,
+      "visual": 0.22983764495105163,
+      "scene_support": 0.8900378703982746,
+      "object_support": 0.9937354393854361,
+      "score": 0.6570670509155339,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while something click repeatedly",
+      "clip_similarity": 0.2923392355442047,
+      "visual": 0.11007889483074751,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.644031557932299,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is talking over some clinking and then begins clicking on a computer keyboard",
+      "clip_similarity": 0.2920878827571869,
+      "visual": 0.0996722792141611,
+      "scene_support": 0.6012739655232929,
+      "object_support": 0.7348650814131218,
+      "score": 0.44071062576658887,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+      "clip_similarity": 0.2919580638408661,
+      "visual": 0.09429746090424285,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03771898436169714,
+      "conflicts": [
+        "names 'a boat', not visible in image (z=-0.21)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female voice speaks after typing sound on computer keyboard",
+      "clip_similarity": 0.291385293006897,
+      "visual": 0.07058335780545527,
+      "scene_support": 0.5085675371573277,
+      "object_support": 0.7154695758721932,
+      "score": 0.39544447703103836,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman speaking with tapping noise",
+      "clip_similarity": 0.29117339849472046,
+      "visual": 0.06181041056405979,
+      "scene_support": 0.7099104092964224,
+      "object_support": 0.695560670505586,
+      "score": 0.44636548816622645,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking with white noise followed by baaing",
+      "clip_similarity": 0.29114004969596863,
+      "visual": 0.060429689331553245,
+      "scene_support": 0.8798725308294574,
+      "object_support": 0.8152108007052254,
+      "score": 0.5326968751930261,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A news broadcast with an anxious sounding woman and siren in background",
+      "clip_similarity": 0.29081153869628906,
+      "visual": 0.046828536386138,
+      "scene_support": 0.5313801454542814,
+      "object_support": 0.48775329378921556,
+      "score": 0.32447144632750424,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-1.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Typing on a computer keyboard followed by a woman talking",
+      "clip_similarity": 0.29073482751846313,
+      "visual": 0.04365250738482268,
+      "scene_support": 0.5576711661718542,
+      "object_support": 0.7280726844224207,
+      "score": 0.40318415813221153,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking, faint background noise",
+      "clip_similarity": 0.29063865542411804,
+      "visual": 0.039670749192419974,
+      "scene_support": 0.949153937299014,
+      "object_support": 0.9953870709863232,
+      "score": 0.5992306021625691,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talking while a phone rings in the background",
+      "clip_similarity": 0.2902758717536926,
+      "visual": 0.024650624470970304,
+      "scene_support": 0.9838041212449827,
+      "object_support": 0.9173534554785807,
+      "score": 0.5802075228054571,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An audio device with bizarre recorded noises prior to a woman talking",
+      "clip_similarity": 0.2900776267051697,
+      "visual": 0.0164427981629868,
+      "scene_support": 0.7549861480757989,
+      "object_support": 0.8924355182450929,
+      "score": 0.5008036191614622,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman are communicating something coming from a broadcast followed by kittens making noises",
+      "clip_similarity": 0.28968048095703125,
+      "visual": 0.0,
+      "scene_support": 0.6755454535552062,
+      "object_support": 0.6521197367495024,
+      "score": 0.3982995570914126,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "waiting room",
+      0.11131082475185394
+    ],
+    [
+      "conference room",
+      0.0730852410197258
+    ],
+    [
+      "television room",
+      0.06732568889856339
+    ],
+    [
+      "hospital room",
+      0.044585615396499634
+    ],
+    [
+      "classroom",
+      0.040968649089336395
+    ]
+  ],
+  "top_objects": [
+    [
+      "television",
+      0.0710064023733139
+    ],
+    [
+      "monitor",
+      0.069442018866539
+    ],
+    [
+      "couch",
+      0.050832875072956085
+    ],
+    [
+      "speaker",
+      0.0315510556101799
+    ],
+    [
+      "desk",
+      0.025933394208550453
+    ]
+  ]
+}
