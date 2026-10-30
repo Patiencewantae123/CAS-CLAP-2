@@ -95,7 +95,7 @@ def load_imagenet():
 
 
 def load_audiocaps_captions(split="train"):
-    with open(DATA_DIR / "audiocaps" / f"{split}.csv", newline="", encoding="utf-8") as file:
+    with open(DATA_DIR / "audiocaps" / "splits" / f"{split}.csv", newline="", encoding="utf-8") as file:
         captions = {row["caption"].strip().rstrip(".") for row in csv.DictReader(file)}
     return sorted(c for c in captions if c)
 

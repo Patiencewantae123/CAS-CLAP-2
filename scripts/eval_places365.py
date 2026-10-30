@@ -28,12 +28,12 @@ def main():
     parser = argparse.ArgumentParser(description="CAS-V scene recognition on Places365 val.")
     parser.add_argument("--per-class", type=int, default=10)
     parser.add_argument("--seed", type=int, default=0)
-    parser.add_argument("--output", default="results/places365_eval.json")
+    parser.add_argument("--output", default="results/places365/eval.json")
     args = parser.parse_args()
 
     names, envs = vocab.load_places365()
     by_class = defaultdict(list)
-    for line in (PLACES_DIR / "places365_val.txt").read_text().split("\n"):
+    for line in (PLACES_DIR / "filelists" / "places365_val.txt").read_text().split("\n"):
         if line.strip():
             filename, label = line.split()
             by_class[int(label)].append(filename)

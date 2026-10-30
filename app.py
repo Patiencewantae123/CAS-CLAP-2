@@ -66,13 +66,13 @@ st.set_page_config(
 
 BASE_DIR = Path.cwd()
 
-UPLOAD_DIR = BASE_DIR / "uploaded_images"
-EXPERIMENT_DIR = BASE_DIR / "experiments"
-TEMP_DIR = BASE_DIR / "temporary"
+UPLOAD_DIR = BASE_DIR / "app_data" / "uploaded_images"
+EXPERIMENT_DIR = BASE_DIR / "app_data" / "experiments"
+TEMP_DIR = BASE_DIR / "app_data" / "temporary"
 
-UPLOAD_DIR.mkdir(exist_ok=True)
-EXPERIMENT_DIR.mkdir(exist_ok=True)
-TEMP_DIR.mkdir(exist_ok=True)
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+EXPERIMENT_DIR.mkdir(parents=True, exist_ok=True)
+TEMP_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # =============================================================================

@@ -9,7 +9,7 @@
 #
 # Usage:
 #   py -m scripts.fetch_audiocaps --split test --n 100
-#   py -m scripts.fetch_audiocaps --split val --n 100 --out data/audiocaps/val_subset
+#   py -m scripts.fetch_audiocaps --split val --n 100
 # =============================================================================
 
 import argparse
@@ -32,7 +32,7 @@ FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()
 
 def load_clips(split):
     clips = defaultdict(lambda: {"captions": []})
-    with open(DATA_DIR / f"{split}.csv", newline="", encoding="utf-8") as file:
+    with open(DATA_DIR / "splits" / f"{split}.csv", newline="", encoding="utf-8") as file:
         for row in csv.DictReader(file):
             clip = clips[row["youtube_id"]]
             clip["start"] = int(row["start_time"])
@@ -73,10 +73,10 @@ def main():
     parser.add_argument("--n", type=int, default=100, help="Number of pairs to collect.")
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--workers", type=int, default=4)
-    parser.add_argument("--out", default=str(DATA_DIR / "test_subset"))
+    parser.add_argument("--out", default=None, help="Default: data/audiocaps/pairs/<split>")
     args = parser.parse_args()
 
-    out_dir = Path(args.out)
+    out_dir = Path(args.out) if args.out else DATA_DIR / "pairs" / args.split
     (out_dir / "audio").mkdir(parents=True, exist_ok=True)
     (out_dir / "frames").mkdir(parents=True, exist_ok=True)
 
