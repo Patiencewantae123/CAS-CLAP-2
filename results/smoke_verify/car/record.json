@@ -1,0 +1,402 @@
+{
+  "id": "car",
+  "image": "eval\\smoke_images\\car.jpg",
+  "label": null,
+  "gt_audio": null,
+  "top_scene": "busy road",
+  "scene_confidence": 0.7853610515594482,
+  "scene_correct": null,
+  "status": "ACCEPT",
+  "caption": "Traffic / engine sounds",
+  "baseline_concepts": [
+    "engine sounds",
+    "car movement",
+    "traffic",
+    "nature ambience"
+  ],
+  "verified_concepts": [
+    "engine sounds",
+    "car movement",
+    "traffic",
+    "urban ambience"
+  ],
+  "repaired_concepts": [],
+  "prompts": {
+    "baseline": "engine sounds, car movement, traffic, nature ambience",
+    "casv": "engine sounds, car movement, traffic, urban ambience"
+  },
+  "metrics": {},
+  "verdicts": [
+    {
+      "concept": "engine sounds",
+      "visual_evidence": 0.9479214365131983,
+      "scene_support": 0.7853610515594482,
+      "conflicts": [],
+      "score": 0.8585132247886358,
+      "decision": "ACCEPT"
+    },
+    {
+      "concept": "car movement",
+      "visual_evidence": 0.8836972865699219,
+      "scene_support": 0.7853610515594482,
+      "conflicts": [],
+      "score": 0.8296123573141614,
+      "decision": "ACCEPT"
+    },
+    {
+      "concept": "traffic",
+      "visual_evidence": 0.8200182545441254,
+      "scene_support": 0.7853610515594482,
+      "conflicts": [],
+      "score": 0.800956792902553,
+      "decision": "ACCEPT"
+    },
+    {
+      "concept": "urban ambience",
+      "visual_evidence": 0.6350650364933879,
+      "scene_support": 0.8296637386083603,
+      "conflicts": [],
+      "score": 0.7420943226566228,
+      "decision": "ACCEPT"
+    },
+    {
+      "concept": "nature ambience",
+      "visual_evidence": 0.7806454657870978,
+      "scene_support": 0.026736125349998474,
+      "conflicts": [],
+      "score": 0.3659953285466932,
+      "decision": "REPAIR"
+    },
+    {
+      "concept": "sharp strike",
+      "visual_evidence": 0.7766194216919071,
+      "scene_support": 0.0032985422294586897,
+      "conflicts": [],
+      "score": 0.3512929379875605,
+      "decision": "REPAIR"
+    },
+    {
+      "concept": "forest environment",
+      "visual_evidence": 0.6588932625944897,
+      "scene_support": 0.026736125349998474,
+      "conflicts": [],
+      "score": 0.3112068371100195,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "rain falling",
+      "visual_evidence": 0.6173245350730909,
+      "scene_support": 0.054052356630563736,
+      "conflicts": [],
+      "score": 0.307524836929701,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "movement on leaves",
+      "visual_evidence": 0.6684965566611168,
+      "scene_support": 0.0052523487247526646,
+      "conflicts": [],
+      "score": 0.30371224229611654,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "water ambience",
+      "visual_evidence": 0.6490450003839904,
+      "scene_support": 0.0009322546538896859,
+      "conflicts": [],
+      "score": 0.292582990232435,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "metallic resonance",
+      "visual_evidence": 0.6458883557915279,
+      "scene_support": 0.0032985422294586897,
+      "conflicts": [],
+      "score": 0.29246395833238986,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "dog barking",
+      "visual_evidence": 0.5776068852335705,
+      "scene_support": 0.04868655279278755,
+      "conflicts": [],
+      "score": 0.28670070239113987,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "bicycle bell",
+      "visual_evidence": 0.5703879949024093,
+      "scene_support": 0.04430268704891205,
+      "conflicts": [],
+      "score": 0.2810410755829858,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "fabric movement",
+      "visual_evidence": 0.5952685339468924,
+      "scene_support": 0.00010411339462734759,
+      "conflicts": [],
+      "score": 0.26792810264314665,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "bicycle chain clicking",
+      "visual_evidence": 0.5376132938703196,
+      "scene_support": 0.04430268704891205,
+      "conflicts": [],
+      "score": 0.26629246011854546,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "cat meowing",
+      "visual_evidence": 0.49463817401921584,
+      "scene_support": 0.016719888895750046,
+      "conflicts": [],
+      "score": 0.23178311720130965,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "wind",
+      "visual_evidence": 0.41118306373718816,
+      "scene_support": 0.08078848198056221,
+      "conflicts": [],
+      "score": 0.22946604377104388,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "leaves crunching",
+      "visual_evidence": 0.49067916960410546,
+      "scene_support": 0.0052523487247526646,
+      "conflicts": [],
+      "score": 0.22369441812046142,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "dry foliage",
+      "visual_evidence": 0.4279324090921172,
+      "scene_support": 0.0052523487247526646,
+      "conflicts": [],
+      "score": 0.1954583758900667,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "metal impact",
+      "visual_evidence": 0.41963391116396215,
+      "scene_support": 0.0032985422294586897,
+      "conflicts": [],
+      "score": 0.19064945824998525,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "seagulls",
+      "visual_evidence": 0.41376690143473077,
+      "scene_support": 0.0009322546538896859,
+      "conflicts": [],
+      "score": 0.1867078457052682,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "birds chirping",
+      "visual_evidence": 0.3575909752331491,
+      "scene_support": 0.026736125349998474,
+      "conflicts": [],
+      "score": 0.17562080779741626,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "soft friction",
+      "visual_evidence": 0.3773866985162852,
+      "scene_support": 0.00010411339462734759,
+      "conflicts": [],
+      "score": 0.1698812766993734,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "cat purring",
+      "visual_evidence": 0.3379481159174206,
+      "scene_support": 0.016719888895750046,
+      "conflicts": [],
+      "score": 0.1612725910555018,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "crowd cheering",
+      "visual_evidence": 0.3422880546456718,
+      "scene_support": 0.011554302647709846,
+      "conflicts": [],
+      "score": 0.16038449104679273,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "thunder",
+      "visual_evidence": 0.24883875793263863,
+      "scene_support": 0.054052356630563736,
+      "conflicts": [],
+      "score": 0.14170623721649744,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "cloth rubbing",
+      "visual_evidence": 0.2956294854645463,
+      "scene_support": 0.00010411339462734759,
+      "conflicts": [],
+      "score": 0.13309053082609087,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "shoreline",
+      "visual_evidence": 0.27618344478810475,
+      "scene_support": 0.0009322546538896859,
+      "conflicts": [],
+      "score": 0.12479529021428647,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "ocean waves",
+      "visual_evidence": 0.12238173852953499,
+      "scene_support": 0.0009322546538896859,
+      "conflicts": [],
+      "score": 0.055584522397930075,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "keyboard typing",
+      "visual_evidence": 0.16459463249033054,
+      "scene_support": 0.001527448184788227,
+      "conflicts": [
+        "'keyboard typing' is an indoor sound but the image is outdoors (p=0.92).",
+        "'keyboard typing' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "office ambience",
+      "visual_evidence": 0.19492867127475372,
+      "scene_support": 0.001527448184788227,
+      "conflicts": [
+        "'office ambience' is an indoor sound but the image is outdoors (p=0.92).",
+        "'office ambience' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "indoor environment",
+      "visual_evidence": 0.4891051407873481,
+      "scene_support": 0.002999760676175356,
+      "conflicts": [
+        "'indoor environment' is an indoor sound but the image is outdoors (p=0.92).",
+        "'indoor environment' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "mouse clicks",
+      "visual_evidence": 0.5362456667676928,
+      "scene_support": 0.001527448184788227,
+      "conflicts": [
+        "'mouse clicks' is an indoor sound but the image is outdoors (p=0.92).",
+        "'mouse clicks' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "applause",
+      "visual_evidence": 0.4204572213114954,
+      "scene_support": 0.011554302647709846,
+      "conflicts": [
+        "'applause' is an indoor sound but the image is outdoors (p=0.92).",
+        "'applause' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "dishes clattering",
+      "visual_evidence": 0.2054268963220909,
+      "scene_support": 0.0014723124913871288,
+      "conflicts": [
+        "'dishes clattering' is an indoor sound but the image is outdoors (p=0.92).",
+        "'dishes clattering' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    },
+    {
+      "concept": "sizzling pan",
+      "visual_evidence": 0.40418167864725374,
+      "scene_support": 0.0014723124913871288,
+      "conflicts": [
+        "'sizzling pan' is an indoor sound but the image is outdoors (p=0.92).",
+        "'sizzling pan' (indoor) contradicts the recognised outdoor scene 'busy road'."
+      ],
+      "score": 0.0,
+      "decision": "REJECT"
+    }
+  ],
+  "recognition": {
+    "scene_probs": {
+      "busy road": 0.7853610515594482,
+      "office": 0.001527448184788227,
+      "beach": 0.0009322546538896859,
+      "forest": 0.026736125349998474,
+      "cloth scratch": 0.00010411339462734759,
+      "leaves": 0.0052523487247526646,
+      "metal hit": 0.0032985422294586897,
+      "rainstorm": 0.054052356630563736,
+      "concert": 0.011554302647709846,
+      "kitchen": 0.0014723124913871288,
+      "cat": 0.016719888895750046,
+      "dog": 0.04868655279278755,
+      "bicycle": 0.04430268704891205
+    },
+    "top_scene": "busy road",
+    "scene_confidence": 0.7853610515594482,
+    "scene_margin": 0.7313086986541748,
+    "env_probs": {
+      "indoor": 0.08263644576072693,
+      "outdoor": 0.9173635244369507
+    },
+    "concept_sims": {
+      "traffic": 0.19593244791030884,
+      "engine sounds": 0.24020040035247803,
+      "car movement": 0.21227897703647614,
+      "urban ambience": 0.1651708483695984,
+      "keyboard typing": 0.09554500877857208,
+      "office ambience": 0.10213333368301392,
+      "indoor environment": 0.1460709273815155,
+      "mouse clicks": 0.15210598707199097,
+      "ocean waves": 0.08449804782867432,
+      "seagulls": 0.13632820546627045,
+      "shoreline": 0.11667013168334961,
+      "water ambience": 0.1671152412891388,
+      "wind": 0.13598743081092834,
+      "birds chirping": 0.12873992323875427,
+      "nature ambience": 0.1880367398262024,
+      "forest environment": 0.16850626468658447,
+      "cloth rubbing": 0.11971525102853775,
+      "fabric movement": 0.15979433059692383,
+      "soft friction": 0.13146239519119263,
+      "leaves crunching": 0.14627224206924438,
+      "dry foliage": 0.13818588852882385,
+      "movement on leaves": 0.16988146305084229,
+      "metal impact": 0.13709969818592072,
+      "metallic resonance": 0.1666732281446457,
+      "sharp strike": 0.18729017674922943,
+      "rain falling": 0.16274815797805786,
+      "thunder": 0.11215263605117798,
+      "crowd cheering": 0.1265895962715149,
+      "applause": 0.13720771670341492,
+      "dishes clattering": 0.10422943532466888,
+      "sizzling pan": 0.13506072759628296,
+      "cat meowing": 0.14677849411964417,
+      "cat purring": 0.12597155570983887,
+      "dog barking": 0.15746653079986572,
+      "bicycle bell": 0.1565229445695877,
+      "bicycle chain clicking": 0.15228179097175598
+    }
+  }
+}

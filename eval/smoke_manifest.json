@@ -1,7 +1,7 @@
 [
-  {"id": "car",    "image": "../uploaded_images/20260921_130207_4a92543a_car.jpg"},
-  {"id": "cat",    "image": "../uploaded_images/20260921_112535_e94958a6_cat.jpg", "label": "cat"},
-  {"id": "bike",   "image": "../uploaded_images/20260921_150322_1a61bdff_bike-1594092_1280.jpg", "label": "bicycle"},
-  {"id": "pexels", "image": "../uploaded_images/20260921_144510_1f5ddb32_pexels-createdstories-11187356.jpg"},
-  {"id": "test",   "image": "../test.jpg"}
+  {"id": "car",    "image": "smoke_images/car.jpg"},
+  {"id": "cat",    "image": "smoke_images/cat.jpg", "label": "cat"},
+  {"id": "bike",   "image": "smoke_images/bike.jpg", "label": "bicycle"},
+  {"id": "pexels", "image": "smoke_images/pexels.jpg"},
+  {"id": "blue",   "image": "smoke_images/blue.jpg"}
 ]

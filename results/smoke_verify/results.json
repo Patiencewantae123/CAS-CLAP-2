@@ -1,0 +1,202 @@
+{
+  "run_name": "smoke_verify",
+  "timestamp": "2026-10-30T14:46:03.081439",
+  "environment": {
+    "python": "3.14.6",
+    "torch": "2.15.0+cpu",
+    "device": "cpu"
+  },
+  "models": {
+    "clip": "openai/clip-vit-base-patch32",
+    "generator": null,
+    "clap": null
+  },
+  "settings": {
+    "manifest": "eval/smoke_manifest.json",
+    "output_dir": "results",
+    "run_name": "smoke_verify",
+    "seed": 42,
+    "duration": 5.0,
+    "steps": 50,
+    "guidance_scale": 2.5,
+    "no_generate": true,
+    "no_clap": false
+  },
+  "verifier_config": {
+    "w_visual": 0.45,
+    "w_scene": 0.55,
+    "conflict_penalty": 0.35,
+    "accept_threshold": 0.55,
+    "repair_threshold": 0.35,
+    "env_conflict_confidence": 0.7,
+    "uncertainty_threshold": 0.35,
+    "max_concepts": 4,
+    "min_concepts": 2
+  },
+  "summary": {
+    "n_items": 5,
+    "scene_accuracy": {
+      "mean": 1.0,
+      "n": 2
+    },
+    "clap_text_baseline": {
+      "mean": null,
+      "n": 0
+    },
+    "clap_text_casv": {
+      "mean": null,
+      "n": 0
+    },
+    "clap_gt_audio_baseline": {
+      "mean": null,
+      "n": 0
+    },
+    "clap_gt_audio_casv": {
+      "mean": null,
+      "n": 0
+    }
+  },
+  "items": [
+    {
+      "id": "car",
+      "image": "eval\\smoke_images\\car.jpg",
+      "label": null,
+      "gt_audio": null,
+      "top_scene": "busy road",
+      "scene_confidence": 0.7853610515594482,
+      "scene_correct": null,
+      "status": "ACCEPT",
+      "caption": "Traffic / engine sounds",
+      "baseline_concepts": [
+        "engine sounds",
+        "car movement",
+        "traffic",
+        "nature ambience"
+      ],
+      "verified_concepts": [
+        "engine sounds",
+        "car movement",
+        "traffic",
+        "urban ambience"
+      ],
+      "repaired_concepts": [],
+      "prompts": {
+        "baseline": "engine sounds, car movement, traffic, nature ambience",
+        "casv": "engine sounds, car movement, traffic, urban ambience"
+      },
+      "metrics": {}
+    },
+    {
+      "id": "cat",
+      "image": "eval\\smoke_images\\cat.jpg",
+      "label": "cat",
+      "gt_audio": null,
+      "top_scene": "cat",
+      "scene_confidence": 0.986788809299469,
+      "scene_correct": true,
+      "status": "ACCEPT",
+      "caption": "Cat meowing / purring",
+      "baseline_concepts": [
+        "cat purring",
+        "cat meowing",
+        "dog barking",
+        "mouse clicks"
+      ],
+      "verified_concepts": [
+        "cat purring",
+        "cat meowing"
+      ],
+      "repaired_concepts": [],
+      "prompts": {
+        "baseline": "cat purring, cat meowing, dog barking, mouse clicks",
+        "casv": "cat purring, cat meowing"
+      },
+      "metrics": {}
+    },
+    {
+      "id": "bike",
+      "image": "eval\\smoke_images\\bike.jpg",
+      "label": "bicycle",
+      "gt_audio": null,
+      "top_scene": "bicycle",
+      "scene_confidence": 0.9993584752082825,
+      "scene_correct": true,
+      "status": "ACCEPT",
+      "caption": "Bicycle",
+      "baseline_concepts": [
+        "bicycle bell",
+        "bicycle chain clicking",
+        "metallic resonance",
+        "engine sounds"
+      ],
+      "verified_concepts": [
+        "bicycle bell",
+        "bicycle chain clicking",
+        "urban ambience"
+      ],
+      "repaired_concepts": [],
+      "prompts": {
+        "baseline": "bicycle bell, bicycle chain clicking, metallic resonance, engine sounds",
+        "casv": "bicycle bell, bicycle chain clicking, urban ambience"
+      },
+      "metrics": {}
+    },
+    {
+      "id": "pexels",
+      "image": "eval\\smoke_images\\pexels.jpg",
+      "label": null,
+      "gt_audio": null,
+      "top_scene": "cat",
+      "scene_confidence": 0.9847580194473267,
+      "scene_correct": null,
+      "status": "ACCEPT",
+      "caption": "Cat meowing / purring",
+      "baseline_concepts": [
+        "cat meowing",
+        "cat purring",
+        "dog barking",
+        "fabric movement"
+      ],
+      "verified_concepts": [
+        "cat meowing",
+        "cat purring"
+      ],
+      "repaired_concepts": [],
+      "prompts": {
+        "baseline": "cat meowing, cat purring, dog barking, fabric movement",
+        "casv": "cat meowing, cat purring"
+      },
+      "metrics": {}
+    },
+    {
+      "id": "blue",
+      "image": "eval\\smoke_images\\blue.jpg",
+      "label": null,
+      "gt_audio": null,
+      "top_scene": "concert",
+      "scene_confidence": 0.34456667304039,
+      "scene_correct": null,
+      "status": "UNCERTAIN",
+      "caption": "Crowd / applause",
+      "baseline_concepts": [
+        "water ambience",
+        "indoor environment",
+        "bicycle bell",
+        "dog barking"
+      ],
+      "verified_concepts": [
+        "crowd cheering",
+        "applause"
+      ],
+      "repaired_concepts": [
+        "crowd cheering",
+        "applause"
+      ],
+      "prompts": {
+        "baseline": "water ambience, indoor environment, bicycle bell, dog barking",
+        "casv": "crowd cheering, applause"
+      },
+      "metrics": {}
+    }
+  ]
+}
