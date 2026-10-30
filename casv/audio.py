@@ -17,7 +17,9 @@ GENERATOR_SAMPLE_RATE = 16000
 # I/O
 # -----------------------------------------------------------------------------
 
+
 def load_audio(path, target_sr):
+    """Read an audio file as mono float32, resampled to target_sr."""
     audio, sr = sf.read(str(path), dtype="float32", always_2d=True)
     audio = audio.mean(axis=1)
     if sr != target_sr:
@@ -27,6 +29,7 @@ def load_audio(path, target_sr):
 
 
 def save_audio(path, audio, sr):
+    """Write mono audio as 16-bit PCM."""
     sf.write(str(path), audio, sr, subtype="PCM_16")
 
 
@@ -34,7 +37,10 @@ def save_audio(path, audio, sr):
 # Generation
 # -----------------------------------------------------------------------------
 
+
 class AudioGenerator:
+    """Text-to-audio generation with AudioLDM (diffusers)."""
+
     def __init__(self, model_id=AUDIOLDM_MODEL_ID, device="cpu"):
         from diffusers import AudioLDMPipeline
 
@@ -44,6 +50,7 @@ class AudioGenerator:
         self.pipe.set_progress_bar_config(disable=True)
 
     def generate(self, prompt, seed, duration=5.0, steps=50, guidance_scale=2.5):
+        """Generate one clip for prompt; the same seed gives the same audio."""
         generator = torch.Generator(device="cpu").manual_seed(seed)
         result = self.pipe(
             prompt,
@@ -59,7 +66,9 @@ class AudioGenerator:
 # Mel spectrogram (dB) for figures
 # -----------------------------------------------------------------------------
 
+
 def mel_spectrogram_db(audio, sr=GENERATOR_SAMPLE_RATE, n_fft=1024, hop=160, n_mels=64):
+    """Log-mel spectrogram in dB (64 bands, 80 dB range) for figures."""
     filters = mel_filter_bank(
         num_frequency_bins=n_fft // 2 + 1,
         num_mel_filters=n_mels,
@@ -86,7 +95,10 @@ def mel_spectrogram_db(audio, sr=GENERATOR_SAMPLE_RATE, n_fft=1024, hop=160, n_m
 # CLAP evaluation
 # -----------------------------------------------------------------------------
 
+
 class CLAPScorer:
+    """CLAP audio/text embeddings for evaluation (cosine similarity)."""
+
     sample_rate = 48000
 
     def __init__(self, model_id=CLAP_MODEL_ID, device="cpu"):
@@ -103,6 +115,7 @@ class CLAPScorer:
 
     @torch.no_grad()
     def audio_embedding(self, audio, sr):
+        """L2-normalised CLAP embedding of an audio clip."""
         if sr != self.sample_rate:
             g = np.gcd(sr, self.sample_rate)
             audio = resample_poly(audio, self.sample_rate // g, sr // g).astype(np.float32)
@@ -112,20 +125,24 @@ class CLAPScorer:
 
     @torch.no_grad()
     def text_embedding(self, text):
+        """L2-normalised CLAP embedding of one text."""
         inputs = self.processor(text=[text], return_tensors="pt", padding=True).to(self.device)
         emb = self._as_tensor(self.model.get_text_features(**inputs))
         return torch.nn.functional.normalize(emb, dim=-1)[0]
 
     @torch.no_grad()
     def text_embeddings(self, texts, batch_size=64):
+        """L2-normalised CLAP embeddings of many texts, batched."""
         chunks = []
         for start in range(0, len(texts), batch_size):
-            inputs = self.processor(text=texts[start:start + batch_size], return_tensors="pt",
-                                    padding=True).to(self.device)
+            inputs = self.processor(text=texts[start : start + batch_size], return_tensors="pt", padding=True).to(
+                self.device
+            )
             emb = self._as_tensor(self.model.get_text_features(**inputs))
             chunks.append(torch.nn.functional.normalize(emb, dim=-1))
         return torch.cat(chunks)
 
     @staticmethod
     def cosine(a, b):
+        """Cosine similarity of two L2-normalised embeddings."""
         return float((a @ b).item())

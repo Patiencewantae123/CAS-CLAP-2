@@ -1,0 +1,282 @@
+{
+  "id": "R8bHTHnF8j4",
+  "image": "data\\audiocaps\\test_subset\\frames\\R8bHTHnF8j4.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\R8bHTHnF8j4.wav",
+  "gt_captions": [
+    "A helicopter engine running idle",
+    "Helicopter rotors slowing down",
+    "A helicopter engine running idle",
+    "An engine running and helicopter propellers spinning",
+    "Vibrations and wind with loud humming of an engine"
+  ],
+  "top_scene": [
+    "heliport",
+    0.8472686409950256
+  ],
+  "top_object": [
+    "stretcher",
+    0.7800605893135071
+  ],
+  "env_probs": {
+    "indoor": 0.04602588340640068,
+    "outdoor": 0.9539741165935993
+  },
+  "status": "ACCEPT",
+  "n_rejected": 2,
+  "prompts": {
+    "baseline": "A helicopter hums as it passes with a roaring engine and whooshing blades",
+    "casv": "A helicopter hums as it passes with a roaring engine and whooshing blades"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3992668390274048,
+    "clap_gt_audio_baseline": 0.33308082818984985,
+    "clap_text_casv": 0.3992668390274048,
+    "clap_gt_audio_casv": 0.33308082818984985
+  },
+  "verdicts": [
+    {
+      "caption": "A helicopter hums as it passes with a roaring engine and whooshing blades",
+      "clip_similarity": 0.3159906268119812,
+      "visual": 1.0,
+      "scene_support": 0.7084394044157591,
+      "object_support": 0.8052202389442108,
+      "score": 0.854097893007991,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter is idling in place",
+      "clip_similarity": 0.3102215528488159,
+      "visual": 0.6884176707861588,
+      "scene_support": 0.9274959703228098,
+      "object_support": 1.0,
+      "score": 0.8536158594113064,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter whirs as it starts up the engines",
+      "clip_similarity": 0.30828481912612915,
+      "visual": 0.5838164803291301,
+      "scene_support": 0.8142569215686494,
+      "object_support": 0.9495095159586538,
+      "score": 0.762656523389843,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter engine runs as rotor blades beat the air and a man speaks",
+      "clip_similarity": 0.30774062871932983,
+      "visual": 0.5544252616397918,
+      "scene_support": 0.42897584576678177,
+      "object_support": 0.42714354151793965,
+      "score": 0.47860592084133313,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter idling",
+      "clip_similarity": 0.3069080114364624,
+      "visual": 0.5094563751259509,
+      "scene_support": 0.9275346939474602,
+      "object_support": 0.9258901889267681,
+      "score": 0.7598100149126489,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.3067933917045593,
+      "visual": 0.5032658698094561,
+      "scene_support": 0.3079954231654404,
+      "object_support": 0.3844595568464362,
+      "score": 0.40904284192734536,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter is flying with loud engine sounds",
+      "clip_similarity": 0.3066600561141968,
+      "visual": 0.49606453835183834,
+      "scene_support": 0.803991065268297,
+      "object_support": 0.7488688591650161,
+      "score": 0.6642837926707292,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small helicopter starts up and revs up highly",
+      "clip_similarity": 0.30494943261146545,
+      "visual": 0.4036753509723568,
+      "scene_support": 0.7370449927560758,
+      "object_support": 0.9106459893281571,
+      "score": 0.6557774350142126,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Helicopter is flying with sounds from the engine",
+      "clip_similarity": 0.3047405481338501,
+      "visual": 0.39239369424762666,
+      "scene_support": 0.7675755920525718,
+      "object_support": 0.8252810305903835,
+      "score": 0.6348144644919372,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter moves as the rotor blades spin",
+      "clip_similarity": 0.30306726694107056,
+      "visual": 0.3020213303630926,
+      "scene_support": 0.8245879378143269,
+      "object_support": 0.7566640687652342,
+      "score": 0.5951841341191053,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small helicopter flies overhead with distant humming of engines",
+      "clip_similarity": 0.3029455542564392,
+      "visual": 0.29544774125426143,
+      "scene_support": 0.8272408784454252,
+      "object_support": 0.8804466082333279,
+      "score": 0.6304853425053305,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter flying with engine sounds",
+      "clip_similarity": 0.3017960488796234,
+      "visual": 0.233364022959274,
+      "scene_support": 0.8244237347521074,
+      "object_support": 0.6020792745043508,
+      "score": 0.5212965119606471,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying followed by a man speaking as wind blows into a microphone",
+      "clip_similarity": 0.3015866279602051,
+      "visual": 0.2220533935107537,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.08882135740430148,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter hovers outside nearby as wind blows by",
+      "clip_similarity": 0.29990097880363464,
+      "visual": 0.13101304738328015,
+      "scene_support": 0.7532068932519989,
+      "object_support": 0.6564184410107655,
+      "score": 0.4752928192321414,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter running idle as wind blows heavily into a microphone",
+      "clip_similarity": 0.29987621307373047,
+      "visual": 0.12967547330163504,
+      "scene_support": 0.7002579216807244,
+      "object_support": 0.5617928605754847,
+      "score": 0.43048542399751677,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Blades hum from a helicopter as it hovers nearby",
+      "clip_similarity": 0.29886743426322937,
+      "visual": 0.07519226621426295,
+      "scene_support": 0.34043502268869297,
+      "object_support": 0.6570589472741416,
+      "score": 0.3293250974745555,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A flying helicopter followed by a speech",
+      "clip_similarity": 0.29795482754707336,
+      "visual": 0.025903224664157842,
+      "scene_support": 0.6245893527159968,
+      "object_support": 0.6826197383558257,
+      "score": 0.40252401718720987,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter whirs overhead and flies around",
+      "clip_similarity": 0.29768553376197815,
+      "visual": 0.011358917321503877,
+      "scene_support": 0.8648478478042402,
+      "object_support": 0.9451520412091644,
+      "score": 0.5475435336326229,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter is idling on the ground",
+      "clip_similarity": 0.2976210117340088,
+      "visual": 0.0078741424878556,
+      "scene_support": 1.0,
+      "object_support": 0.9830694851451093,
+      "score": 0.598070502538675,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud helicopter",
+      "clip_similarity": 0.2974752187728882,
+      "visual": 0.0,
+      "scene_support": 0.8436429398826898,
+      "object_support": 0.944541640998121,
+      "score": 0.5364553742642433,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "heliport",
+      0.8472686409950256
+    ],
+    [
+      "football stadium",
+      0.03683074191212654
+    ],
+    [
+      "cockpit",
+      0.018952548503875732
+    ],
+    [
+      "landing deck",
+      0.014106277376413345
+    ],
+    [
+      "football field",
+      0.009842229075729847
+    ]
+  ],
+  "top_objects": [
+    [
+      "stretcher",
+      0.7800605893135071
+    ],
+    [
+      "ambulance",
+      0.15966705977916718
+    ],
+    [
+      "oxygen mask",
+      0.00878226663917303
+    ],
+    [
+      "Griffon Bruxellois",
+      0.004620520863682032
+    ],
+    [
+      "military aircraft",
+      0.003808501409366727
+    ]
+  ]
+}

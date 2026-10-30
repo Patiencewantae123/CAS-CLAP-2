@@ -16,7 +16,10 @@ casv/                 CAS-V library
   vocab.py              Places365 / ImageNet / AudioCaps vocabularies, sound-source lexicon
   verifier.py           CLIP recognition, candidate retrieval, verification (measure + decide)
   audio.py              AudioLDM generation, mel spectrograms, CLAP scoring
+  stats.py              bootstrap / Wilson confidence intervals, paired differences
+  log.py                logging setup shared by all scripts
 scripts/              entry points (run from the repo root with  py -m scripts.<name>)
+  run_pipeline.py       runs every stage below in order
   fetch_audiocaps.py    build image + ground-truth audio pairs from AudioCaps
   fetch_category_examples.py  one test clip per figure category (fixed caption rule)
   eval_places365.py     scene / indoor-outdoor accuracy on Places365 val
@@ -27,6 +30,7 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
   build_journal_results.py  collect figures, tables and RESULTS.md
 data/                 datasets (see data/README.md); downloaded media is git-ignored
 eval/                 small smoke-test set
+tests/                pytest suite (verifier logic, vocabularies, statistics, figure text)
 results/              raw outputs of every run
 journal_results/      graphs/ (charts), qualitative/ (result images), tables/ (CSV + LaTeX), RESULTS.md
 docs/                 target figure layout
@@ -38,12 +42,19 @@ app.py                Streamlit demo (runtime files in app_data/)
 ## Reproducing the results
 
 ```
-py -m pip install torch transformers diffusers accelerate soundfile scipy matplotlib yt-dlp[default] imageio-ffmpeg
+py -m pip install -r requirements.txt     # exact versions used for journal_results/
+py -m scripts.run_pipeline                # everything below, in order (hours on CPU)
+py -m scripts.run_pipeline --list         # show the stages
+py -m scripts.run_pipeline --from figures # only re-render figures and the journal package
+```
 
+Individual stages:
+
+```
 # data (Places365 val ~500 MB; AudioCaps clips via yt-dlp, needs Node.js)
 py -m scripts.fetch_audiocaps --split test --n 100
 py -m scripts.fetch_audiocaps --split val --n 100
-py -m scripts.fetch_category_examples
+py -m scripts.fetch_category_examples --screening data/audiocaps/pairs/categories/screening/screening.json
 
 # experiments
 py -m scripts.eval_places365 --per-class 10
@@ -69,3 +80,11 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 - Verifier settings are tuned on AudioCaps **val**; the test split is evaluated once.
 - Baseline and CAS-V use the same generator and seed; only the prompt differs.
 - Every mean is reported with a bootstrap 95% CI and n; paired differences use Wilcoxon signed-rank.
+
+## Development
+
+```
+py -m pytest                         # 21 tests, ~10 s, no model downloads
+py -m ruff check casv scripts tests  # lint
+py -m ruff format casv scripts tests # format
+```

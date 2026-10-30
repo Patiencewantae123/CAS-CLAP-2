@@ -1,0 +1,282 @@
+{
+  "id": "HqndxoujCYI",
+  "image": "data\\audiocaps\\test_subset\\frames\\HqndxoujCYI.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\HqndxoujCYI.wav",
+  "gt_captions": [
+    "Loud ringing of a clock followed by faint tick rocks",
+    "A bell chiming as a man is speaking in the background followed by a muffled bell chiming",
+    "A bell chiming as a clock ticks and a man talks through a television speaker in the background followed by a muffled bell chiming",
+    "A bell chiming as a clock ticks while a man talks through a television speaker in the background followed by muffled a muffled bell chiming",
+    "Clock chiming with a laughter in background"
+  ],
+  "top_scene": [
+    "chemistry lab",
+    0.3589910864830017
+  ],
+  "top_object": [
+    "Petri dish",
+    0.4073704481124878
+  ],
+  "env_probs": {
+    "indoor": 0.8942400813102722,
+    "outdoor": 0.10575991868972778
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Water pours nearby as the clock ticks slowly, and then a person talks",
+    "casv": "Water pours nearby as the clock ticks slowly, and then a person talks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.047517187893390656,
+    "clap_gt_audio_baseline": 0.22510257363319397,
+    "clap_text_casv": 0.047517187893390656,
+    "clap_gt_audio_casv": 0.22510257363319397
+  },
+  "verdicts": [
+    {
+      "caption": "Water pours nearby as the clock ticks slowly, and then a person talks",
+      "clip_similarity": 0.3448241353034973,
+      "visual": 1.0,
+      "scene_support": 0.6719257663412366,
+      "object_support": 0.7150215511818648,
+      "score": 0.8160841952569304,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Chime clock playing music",
+      "clip_similarity": 0.32685500383377075,
+      "visual": 0.47395485712141955,
+      "scene_support": 0.4283301030572564,
+      "object_support": 0.5035340430901643,
+      "score": 0.46914118669279403,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tick locking of a large clock",
+      "clip_similarity": 0.3265451192855835,
+      "visual": 0.4648830073382697,
+      "scene_support": 0.5031899210881657,
+      "object_support": 0.7931845197475618,
+      "score": 0.5748655351860261,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ticktocks as static noise sounds in the background",
+      "clip_similarity": 0.3261626064777374,
+      "visual": 0.45368497002660135,
+      "scene_support": 0.9014384770365098,
+      "object_support": 0.7890931119327137,
+      "score": 0.6886334647014076,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock plays music nearby while tick-tocking",
+      "clip_similarity": 0.32489895820617676,
+      "visual": 0.4166917499212604,
+      "scene_support": 0.47715757478154813,
+      "object_support": 0.6278511569320998,
+      "score": 0.4981793194825985,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An alarm sound from a clock",
+      "clip_similarity": 0.3215646743774414,
+      "visual": 0.3190808099579212,
+      "scene_support": 0.5824080779050242,
+      "object_support": 0.7218849144776821,
+      "score": 0.5189202216979804,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple clocks make a ticking sound at once",
+      "clip_similarity": 0.32119664549827576,
+      "visual": 0.30830678870651546,
+      "scene_support": 0.48463601114022925,
+      "object_support": 0.5945141129170609,
+      "score": 0.44706775269979326,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A tick took of a clock is heard multiple times",
+      "clip_similarity": 0.3177347779273987,
+      "visual": 0.2069608430765419,
+      "scene_support": 0.0,
+      "object_support": 0.356357350847751,
+      "score": 0.18969154248494208,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock tick locking with clanging in the background",
+      "clip_similarity": 0.3165934085845947,
+      "visual": 0.17354733057461155,
+      "scene_support": 0.7632549245286632,
+      "object_support": 0.915148273503674,
+      "score": 0.5729398916395458,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ticktocks at a loud volume",
+      "clip_similarity": 0.3165031969547272,
+      "visual": 0.17090639103877828,
+      "scene_support": 0.9462409609517621,
+      "object_support": 0.8779413188728575,
+      "score": 0.6156172403628972,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A clock ticks nearby multiple times at moderate speed",
+      "clip_similarity": 0.3157190978527069,
+      "visual": 0.14795194135665946,
+      "scene_support": 0.9206838650243876,
+      "object_support": 0.9214855332973957,
+      "score": 0.6118315960391988,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clicking sounds followed by a clock chiming twice",
+      "clip_similarity": 0.3154543936252594,
+      "visual": 0.14020274249399964,
+      "scene_support": 1.0,
+      "object_support": 0.7844279463130438,
+      "score": 0.5914094808915129,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several ticks of a clock",
+      "clip_similarity": 0.3144676685333252,
+      "visual": 0.11131643027335077,
+      "scene_support": 0.626322564369961,
+      "object_support": 0.8578281532470879,
+      "score": 0.489771787394455,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock making a faint ticktock sound",
+      "clip_similarity": 0.31430381536483765,
+      "visual": 0.10651963953400112,
+      "scene_support": 0.9382050626553432,
+      "object_support": 0.8836727971703257,
+      "score": 0.5891712137613011,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock ticks and rocks while music plays",
+      "clip_similarity": 0.31320756673812866,
+      "visual": 0.0744270330305021,
+      "scene_support": 0.22517182778818248,
+      "object_support": 0.4528130906750823,
+      "score": 0.23316628875118028,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An object falls down several times as clocks tick nearby",
+      "clip_similarity": 0.3129711151123047,
+      "visual": 0.06750492722366323,
+      "scene_support": 0.6043889710378815,
+      "object_support": 0.5794103675938542,
+      "score": 0.38214177247898595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock ticks repetitively with a distant ring",
+      "clip_similarity": 0.312245637178421,
+      "visual": 0.046266608386269906,
+      "scene_support": 0.7433456500512977,
+      "object_support": 1.0,
+      "score": 0.5415103383698973,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running through faucet with mechanical background noise",
+      "clip_similarity": 0.3121107816696167,
+      "visual": 0.04231872222847486,
+      "scene_support": 0.559521731442993,
+      "object_support": 0.0,
+      "score": 0.18478400832428785,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clock sounding tick took noise",
+      "clip_similarity": 0.3107767701148987,
+      "visual": 0.003265621632845715,
+      "scene_support": 0.4609438787863772,
+      "object_support": 0.5728108185179284,
+      "score": 0.31143265784442997,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clock lightly ticks and slight rustle happens",
+      "clip_similarity": 0.31066522002220154,
+      "visual": 0.0,
+      "scene_support": 0.7721247633602228,
+      "object_support": 0.8391156428870425,
+      "score": 0.4833721218741796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "chemistry lab",
+      0.3589910864830017
+    ],
+    [
+      "biology laboratory",
+      0.03177142143249512
+    ],
+    [
+      "physics laboratory",
+      0.028405724093317986
+    ],
+    [
+      "veterinarians office",
+      0.023174792528152466
+    ],
+    [
+      "indoor jacuzzi",
+      0.02082988992333412
+    ]
+  ],
+  "top_objects": [
+    [
+      "Petri dish",
+      0.4073704481124878
+    ],
+    [
+      "analog clock",
+      0.10386088490486145
+    ],
+    [
+      "digital clock",
+      0.08408969640731812
+    ],
+    [
+      "hourglass",
+      0.07846652716398239
+    ],
+    [
+      "wall clock",
+      0.07688957452774048
+    ]
+  ]
+}

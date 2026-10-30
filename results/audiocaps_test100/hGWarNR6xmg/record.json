@@ -1,0 +1,282 @@
+{
+  "id": "hGWarNR6xmg",
+  "image": "data\\audiocaps\\test_subset\\frames\\hGWarNR6xmg.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\hGWarNR6xmg.wav",
+  "gt_captions": [
+    "Hisses continuously with some static",
+    "A roaring hiss is ongoing, and a brief low hum occurs",
+    "Repetitive loud hissing with some static",
+    "Rain pitter-patters and wind blows",
+    "Continuous hissing at varying levels"
+  ],
+  "top_scene": [
+    "sky",
+    0.34904366731643677
+  ],
+  "top_object": [
+    "tank",
+    0.049515314400196075
+  ],
+  "env_probs": {
+    "indoor": 0.17681999504566193,
+    "outdoor": 0.8231800049543381
+  },
+  "status": "ACCEPT",
+  "n_rejected": 15,
+  "prompts": {
+    "baseline": "Loud and heavy rainfall on metal with faint yell in background",
+    "casv": "A thunderstorm happens nearby"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.36488232016563416,
+    "clap_gt_audio_baseline": 0.4890337288379669,
+    "clap_text_casv": 0.10663841664791107,
+    "clap_gt_audio_casv": 0.3679580092430115
+  },
+  "verdicts": [
+    {
+      "caption": "Loud and heavy rainfall on metal with faint yell in background",
+      "clip_similarity": 0.29956403374671936,
+      "visual": 1.0,
+      "scene_support": 0.12778588237555907,
+      "object_support": 0.12542613868061483,
+      "score": 0.4759636063168522,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunderstorm sounds together with rain",
+      "clip_similarity": 0.2954399585723877,
+      "visual": 0.7320238655442657,
+      "scene_support": 0.13601473200737332,
+      "object_support": 0.04802657691701238,
+      "score": 0.348021938895022,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Winds gushing as thunder later erupts",
+      "clip_similarity": 0.2906365990638733,
+      "visual": 0.41990886785839465,
+      "scene_support": 0.5062781769552844,
+      "object_support": 0.48671629902293945,
+      "score": 0.465861889936825,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice talking while a thunderstorm is happening, with heavy pouring rain at the end",
+      "clip_similarity": 0.29031264781951904,
+      "visual": 0.39885900854581685,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.15954360341832674,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A thunderstorm happens nearby",
+      "clip_similarity": 0.29029133915901184,
+      "visual": 0.39747440418440994,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.758989761673764,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A thunderstorm with rain sounds",
+      "clip_similarity": 0.2885235548019409,
+      "visual": 0.28260646445633464,
+      "scene_support": 0.536025077003851,
+      "object_support": 0.612064278296424,
+      "score": 0.4574693923726163,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy wind, rainfall and thunder",
+      "clip_similarity": 0.28803756833076477,
+      "visual": 0.2510278024682751,
+      "scene_support": 0.6734066302272558,
+      "object_support": 0.7576514661345484,
+      "score": 0.5297285498958513,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunderstorm sounds with lightning and a scared male voice",
+      "clip_similarity": 0.2873982787132263,
+      "visual": 0.20948773511647137,
+      "scene_support": 0.2733852993938107,
+      "object_support": 0.14304394869480586,
+      "score": 0.2087238684731735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud rainstorm with thunder in the background",
+      "clip_similarity": 0.2870281934738159,
+      "visual": 0.18544015894870766,
+      "scene_support": 0.3620844893256573,
+      "object_support": 0.3353228867055606,
+      "score": 0.2833982763888484,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Distant booms and cracks of thunder with music playing and a woman speaking",
+      "clip_similarity": 0.28668007254600525,
+      "visual": 0.1628197903534711,
+      "scene_support": 0.5517741897830801,
+      "object_support": 0.3674029056269336,
+      "score": 0.34088104476439257,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A thunderstorm and a ringing sound",
+      "clip_similarity": 0.285605251789093,
+      "visual": 0.09297957176026786,
+      "scene_support": 0.5653307126008923,
+      "object_support": 0.6403566243835601,
+      "score": 0.3988980297994429,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud thundering sounds with heavy rain",
+      "clip_similarity": 0.28535646200180054,
+      "visual": 0.07681358964974351,
+      "scene_support": 0.45498850835678883,
+      "object_support": 0.5966206590944927,
+      "score": 0.34620818609528187,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thunder booms while rain falls",
+      "clip_similarity": 0.28524264693260193,
+      "visual": 0.06941805950119385,
+      "scene_support": 0.25801519798995803,
+      "object_support": 0.37804142040789696,
+      "score": 0.21858420931983402,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A heavy rain shower with a huge thunder crack",
+      "clip_similarity": 0.28511476516723633,
+      "visual": 0.06110849682315601,
+      "scene_support": 0.242846503597175,
+      "object_support": 0.25284364312550633,
+      "score": 0.17315044274606678,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud thunderstorm as rain falls",
+      "clip_similarity": 0.2850227952003479,
+      "visual": 0.05513242820874799,
+      "scene_support": 0.4472485284700254,
+      "object_support": 0.48362458473567166,
+      "score": 0.3013149052452083,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking during thunderstorm",
+      "clip_similarity": 0.28474852442741394,
+      "visual": 0.037310730393324464,
+      "scene_support": 0.2556578204740297,
+      "object_support": 0.16590659475095015,
+      "score": 0.14139361672482373,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thunderstorm, rain and wind noise",
+      "clip_similarity": 0.2844949960708618,
+      "visual": 0.02083684325697676,
+      "scene_support": 0.4964600429088482,
+      "object_support": 0.5669921269689374,
+      "score": 0.3273703882661264,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Heavy rainfall with wind and thunder",
+      "clip_similarity": 0.28430312871932983,
+      "visual": 0.008369594475525424,
+      "scene_support": 0.47531184900333284,
+      "object_support": 0.566188104546023,
+      "score": 0.31579782385501687,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking and thunderstorm with heavy rain",
+      "clip_similarity": 0.284280389547348,
+      "visual": 0.006892037653492592,
+      "scene_support": 0.19909678110399423,
+      "object_support": 0.14265451095319134,
+      "score": 0.1052822026785527,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thunder explodes and gets softer",
+      "clip_similarity": 0.2841743230819702,
+      "visual": 0.0,
+      "scene_support": 0.537904112868489,
+      "object_support": 0.6239900445304727,
+      "score": 0.3485682472196885,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sky",
+      0.34904366731643677
+    ],
+    [
+      "hospital",
+      0.029021399095654488
+    ],
+    [
+      "skyscraper",
+      0.026920747011899948
+    ],
+    [
+      "supermarket",
+      0.02144390158355236
+    ],
+    [
+      "village",
+      0.01865108497440815
+    ]
+  ],
+  "top_objects": [
+    [
+      "tank",
+      0.049515314400196075
+    ],
+    [
+      "umbrella",
+      0.046417485922575
+    ],
+    [
+      "dome",
+      0.043517038226127625
+    ],
+    [
+      "airship",
+      0.03878127038478851
+    ],
+    [
+      "tile roof",
+      0.03195241838693619
+    ]
+  ]
+}

@@ -19,8 +19,8 @@
 # =============================================================================
 
 import hashlib
+import logging
 from dataclasses import dataclass
-from pathlib import Path
 
 import numpy as np
 import torch
@@ -30,11 +30,14 @@ from transformers import CLIPModel, CLIPProcessor
 from . import vocab
 
 CLIP_MODEL_ID = "openai/clip-vit-base-patch32"
+log = logging.getLogger("casv")
 CACHE_DIR = vocab.DATA_DIR / "cache"
 
 
 @dataclass
 class VerifierConfig:
+    """Weights and thresholds of CAS-V verification; the defaults are the primary configuration."""
+
     retrieve_k: int = 20
     support_top_n: int = 5
     w_visual: float = 0.40
@@ -48,6 +51,8 @@ class VerifierConfig:
 
 
 class CLIPRecognizer:
+    """CLIP zero-shot encoder with a disk cache for text embeddings."""
+
     def __init__(self, model_id=CLIP_MODEL_ID, device="cpu"):
         self.model_id = model_id
         self.device = device
@@ -61,14 +66,20 @@ class CLIPRecognizer:
 
     @torch.no_grad()
     def encode_texts(self, texts, batch_size=256):
+        """L2-normalised CLIP text embeddings, cached on disk by content hash."""
         key = hashlib.sha1(("\n".join(texts) + self.model_id).encode()).hexdigest()[:16]
         cache = CACHE_DIR / f"clip_text_{key}.npy"
         if cache.exists():
             return np.load(cache)
         chunks = []
         for start in range(0, len(texts), batch_size):
-            inputs = self.processor(text=texts[start:start + batch_size], return_tensors="pt",
-                                    padding=True, truncation=True, max_length=77).to(self.device)
+            inputs = self.processor(
+                text=texts[start : start + batch_size],
+                return_tensors="pt",
+                padding=True,
+                truncation=True,
+                max_length=77,
+            ).to(self.device)
             emb = self._tensor(self.model.get_text_features(**inputs))
             chunks.append(torch.nn.functional.normalize(emb, dim=-1).cpu().numpy())
         embeddings = np.concatenate(chunks).astype(np.float32)
@@ -78,11 +89,13 @@ class CLIPRecognizer:
 
     @torch.no_grad()
     def encode_image(self, image):
+        """L2-normalised CLIP embedding of a PIL image."""
         inputs = self.processor(images=image, return_tensors="pt").to(self.device)
         emb = self._tensor(self.model.get_image_features(**inputs))
         return torch.nn.functional.normalize(emb, dim=-1)[0].cpu().numpy()
 
     def softmax(self, sims):
+        """Softmax over cosine similarities using CLIP's learned temperature."""
         logits = self.logit_scale * sims
         exp = np.exp(logits - logits.max())
         return exp / exp.sum()
@@ -95,6 +108,8 @@ def _minmax(values):
 
 
 class CASVerifier:
+    """Conflict-aware semantic verification of retrieved sound captions."""
+
     def __init__(self, recognizer, config=None):
         self.recognizer = recognizer
         self.config = config or VerifierConfig()
@@ -104,8 +119,10 @@ class CASVerifier:
         self.captions = vocab.load_audiocaps_captions("train")
         self.source_names = list(dict.fromkeys(vocab.SOUND_SOURCES.values()))
 
-        print(f"[*] Vocabulary: {len(self.scene_names)} Places365 scenes, {len(self.object_names)} "
-              f"ImageNet objects, {len(self.captions)} AudioCaps train captions")
+        log.info(
+            f"Vocabulary: {len(self.scene_names)} Places365 scenes, {len(self.object_names)} "
+            f"ImageNet objects, {len(self.captions)} AudioCaps train captions"
+        )
         encode = recognizer.encode_texts
         self.scene_emb = encode([f"a photo of a {n}" for n in self.scene_names])
         self.object_emb = encode([f"a photo of a {n}" for n in self.object_names])
@@ -114,6 +131,7 @@ class CASVerifier:
         self.indoor_mask = np.array([env == "indoor" for env in self.scene_envs])
 
     def recognise(self, image):
+        """Scene (Places365), object (ImageNet), environment and sound-source evidence for an image."""
         cfg = self.config
         image_emb = self.recognizer.encode_image(image)
 
@@ -122,8 +140,8 @@ class CASVerifier:
         source_sims = self.source_emb @ image_emb
         source_z = (source_sims - source_sims.mean()) / (source_sims.std() + 1e-8)
 
-        top_scenes = np.argsort(scene_probs)[::-1][:cfg.support_top_n]
-        top_objects = np.argsort(object_probs)[::-1][:cfg.support_top_n]
+        top_scenes = np.argsort(scene_probs)[::-1][: cfg.support_top_n]
+        top_objects = np.argsort(object_probs)[::-1][: cfg.support_top_n]
         p_indoor = float(scene_probs[self.indoor_mask].sum())
 
         return {
@@ -135,7 +153,7 @@ class CASVerifier:
             "object_idx": top_objects,
             "object_w": object_probs[top_objects],
             "env_probs": {"indoor": p_indoor, "outdoor": 1.0 - p_indoor},
-            "source_z": dict(zip(self.source_names, source_z.tolist())),
+            "source_z": dict(zip(self.source_names, source_z.tolist(), strict=True)),
         }
 
     @staticmethod
@@ -156,36 +174,45 @@ class CASVerifier:
     def measure(self, image):
         # Everything that does not depend on the verifier's weights or
         # thresholds, so decide() can be re-run cheaply (e.g. for tuning).
+        """Recognition plus config-independent scores of the top-k retrieved captions."""
         rec = self.recognise(image)
         sims = self.caption_emb @ rec["image_emb"]
-        candidates = np.argsort(sims)[::-1][:self.config.retrieve_k]
+        candidates = np.argsort(sims)[::-1][: self.config.retrieve_k]
         cand_emb = self.caption_emb[candidates]
 
         visual = _minmax(sims[candidates])
-        scene_support = _minmax(cand_emb @ self.scene_emb[rec["scene_idx"]].T @ rec["scene_w"]
-                                / rec["scene_w"].sum())
-        object_support = _minmax(cand_emb @ self.object_emb[rec["object_idx"]].T @ rec["object_w"]
-                                 / rec["object_w"].sum())
+        scene_support = _minmax(cand_emb @ self.scene_emb[rec["scene_idx"]].T @ rec["scene_w"] / rec["scene_w"].sum())
+        object_support = _minmax(
+            cand_emb @ self.object_emb[rec["object_idx"]].T @ rec["object_w"] / rec["object_w"].sum()
+        )
         rec.pop("image_emb")
-        rec["candidates"] = [{
-            "caption": self.captions[idx],
-            "clip_similarity": float(sims[idx]),
-            "visual": float(visual[j]),
-            "scene_support": float(scene_support[j]),
-            "object_support": float(object_support[j]),
-        } for j, idx in enumerate(candidates)]
+        rec["candidates"] = [
+            {
+                "caption": self.captions[idx],
+                "clip_similarity": float(sims[idx]),
+                "visual": float(visual[j]),
+                "scene_support": float(scene_support[j]),
+                "object_support": float(object_support[j]),
+            }
+            for j, idx in enumerate(candidates)
+        ]
         return rec
 
     def verify(self, image):
+        """Measure and decide with the verifier's own configuration."""
         return self.decide(self.measure(image))
 
     def decide(self, rec, config=None):
+        """Apply weights, thresholds and conflict checks; return verdicts, baseline and CAS-V prompts."""
         cfg = config or self.config
         verdicts = []
         for cand in rec["candidates"]:
             conflicts = self._conflicts(cand["caption"], rec, cfg)
-            score = float(cfg.w_visual * cand["visual"] + cfg.w_scene * cand["scene_support"]
-                          + cfg.w_object * cand["object_support"])
+            score = float(
+                cfg.w_visual * cand["visual"]
+                + cfg.w_scene * cand["scene_support"]
+                + cfg.w_object * cand["object_support"]
+            )
             if conflicts:
                 decision = "REJECT"
             elif score >= cfg.accept_threshold:
@@ -227,4 +254,5 @@ class CASVerifier:
 
 
 def load_image(path):
+    """Open an image as RGB."""
     return Image.open(path).convert("RGB")

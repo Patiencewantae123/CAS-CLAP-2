@@ -1,0 +1,282 @@
+{
+  "id": "fwhkCnOeyC0",
+  "image": "data\\audiocaps\\test_subset\\frames\\fwhkCnOeyC0.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\fwhkCnOeyC0.wav",
+  "gt_captions": [
+    "Applause and speech followed by a loud high pitched bell and more applause and speech",
+    "A man and woman speak and people clap and a bell rings",
+    "A man and a woman talking followed by a bell ringing and a cat meowing as a crowd of people applaud",
+    "An audience applauds and cheers as an adult male speaks, a bell and buzzer ring, and the adult male speaks again",
+    "A man and a woman talking followed by a bell ringing as a crowd of people applaud"
+  ],
+  "top_scene": [
+    "ballroom",
+    0.3158283531665802
+  ],
+  "top_object": [
+    "gown",
+    0.08399582654237747
+  ],
+  "env_probs": {
+    "indoor": 0.8784294724464417,
+    "outdoor": 0.12157052755355835
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "An audience applaud followed by a woman talking",
+    "casv": "An audience applaud followed by a woman talking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09326168894767761,
+    "clap_gt_audio_baseline": 0.33021479845046997,
+    "clap_text_casv": 0.09326168894767761,
+    "clap_gt_audio_casv": 0.33021479845046997
+  },
+  "verdicts": [
+    {
+      "caption": "An audience applaud followed by a woman talking",
+      "clip_similarity": 0.3243257701396942,
+      "visual": 1.0,
+      "scene_support": 0.9871937128468247,
+      "object_support": 0.9973738060482447,
+      "score": 0.9953702556685207,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Audience clapping and woman begins to speak",
+      "clip_similarity": 0.32169654965400696,
+      "visual": 0.825399778340722,
+      "scene_support": 0.9171881796312571,
+      "object_support": 0.9006723234262277,
+      "score": 0.8755180622535341,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman talking and crowd clapping",
+      "clip_similarity": 0.32083413004875183,
+      "visual": 0.7681285623812539,
+      "scene_support": 0.29116648271930423,
+      "object_support": 0.25426423243816115,
+      "score": 0.4708806394997412,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female giving speech and audience applauds",
+      "clip_similarity": 0.3174535632133484,
+      "visual": 0.543633233058898,
+      "scene_support": 0.7002397726745947,
+      "object_support": 0.5243633923671517,
+      "score": 0.5848342427360831,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Audience clapping followed by a woman speaking into a microphone",
+      "clip_similarity": 0.3174189031124115,
+      "visual": 0.5413315389487017,
+      "scene_support": 0.36359440050420316,
+      "object_support": 0.2378049728826589,
+      "score": 0.3969524275955393,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Girl squeals while woman speaks",
+      "clip_similarity": 0.3158331513404846,
+      "visual": 0.4360255699810006,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.17441022799240025,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman gives a speech and then an audience claps",
+      "clip_similarity": 0.31529200077056885,
+      "visual": 0.40008905953134893,
+      "scene_support": 0.539616738519564,
+      "object_support": 0.504873567202348,
+      "score": 0.4733827155291132,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female making speech, audience clapping and cheering",
+      "clip_similarity": 0.31457284092903137,
+      "visual": 0.35233138062064595,
+      "scene_support": 0.5919149956059758,
+      "object_support": 0.5013175406204661,
+      "score": 0.4689023131161909,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People applauding woman's speech",
+      "clip_similarity": 0.3136296570301056,
+      "visual": 0.2896968017732742,
+      "scene_support": 0.7324093553754548,
+      "object_support": 0.575796356655802,
+      "score": 0.5083404343186867,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A male makes a comment that causes the audience to applaud and laugh",
+      "clip_similarity": 0.31326377391815186,
+      "visual": 0.26539938252058265,
+      "scene_support": 0.8611636322749209,
+      "object_support": 0.7561538922993861,
+      "score": 0.5913550103805252,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female giving speech and audience gives applause",
+      "clip_similarity": 0.3126762807369232,
+      "visual": 0.22638537048765042,
+      "scene_support": 0.6941453450467857,
+      "object_support": 0.6273259702142503,
+      "score": 0.486995542773371,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice speaks on a microphone, then a huge crowd applauds and screams",
+      "clip_similarity": 0.31259584426879883,
+      "visual": 0.22104377770740977,
+      "scene_support": 0.4531693686709532,
+      "object_support": 0.3476240943296873,
+      "score": 0.32865554998315605,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The audience claps as a female proceeds to give a speech",
+      "clip_similarity": 0.3120107650756836,
+      "visual": 0.18219007283090563,
+      "scene_support": 1.0,
+      "object_support": 0.9188312770368,
+      "score": 0.6485254122434022,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks and then an audience cheers",
+      "clip_similarity": 0.31183871626853943,
+      "visual": 0.17076472450918304,
+      "scene_support": 0.9149157146281057,
+      "object_support": 1.0,
+      "score": 0.6427806041921049,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People applauding and a woman speaking",
+      "clip_similarity": 0.31148141622543335,
+      "visual": 0.14703728625712476,
+      "scene_support": 0.6697133873241035,
+      "object_support": 0.5631686296466636,
+      "score": 0.42867951959408,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman talking and people clapping",
+      "clip_similarity": 0.3108719289302826,
+      "visual": 0.10656269791006967,
+      "scene_support": 0.26071900240364465,
+      "object_support": 0.24371613109640264,
+      "score": 0.19395561921404206,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman's speech followed by people applauding",
+      "clip_similarity": 0.31064629554748535,
+      "visual": 0.09157892653578215,
+      "scene_support": 0.8303748876836144,
+      "object_support": 0.8725696041379218,
+      "score": 0.5475149181607737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman yelling followed by another woman speaking",
+      "clip_similarity": 0.30966639518737793,
+      "visual": 0.02650609563014566,
+      "scene_support": 0.06674576896408539,
+      "object_support": 0.19592028990337296,
+      "score": 0.08940225591229577,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman gives a speech then someone coughs near the end",
+      "clip_similarity": 0.3096323311328888,
+      "visual": 0.024243983533882203,
+      "scene_support": 0.36404021395100195,
+      "object_support": 0.4595128432437717,
+      "score": 0.25676351057198493,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks followed by clapping",
+      "clip_similarity": 0.3092672526836395,
+      "visual": 0.0,
+      "scene_support": 0.2080360832724285,
+      "object_support": 0.31422455069198657,
+      "score": 0.15667819018932452,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "ballroom",
+      0.3158283531665802
+    ],
+    [
+      "assembly line",
+      0.0818106085062027
+    ],
+    [
+      "orchestra pit",
+      0.061623867601156235
+    ],
+    [
+      "art school",
+      0.04777097702026367
+    ],
+    [
+      "indoor stage",
+      0.04484065622091293
+    ]
+  ],
+  "top_objects": [
+    [
+      "gown",
+      0.08399582654237747
+    ],
+    [
+      "hourglass",
+      0.05649494007229805
+    ],
+    [
+      "purse",
+      0.03926434367895126
+    ],
+    [
+      "stage",
+      0.03751470521092415
+    ],
+    [
+      "wig",
+      0.034274544566869736
+    ]
+  ]
+}

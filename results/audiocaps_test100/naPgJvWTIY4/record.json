@@ -1,0 +1,282 @@
+{
+  "id": "naPgJvWTIY4",
+  "image": "data\\audiocaps\\test_subset\\frames\\naPgJvWTIY4.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\naPgJvWTIY4.wav",
+  "gt_captions": [
+    "An engine running and then revving",
+    "A motorcycle engine running idle then revving its engine",
+    "A motorbike running idle then revving",
+    "A motorcycle engine running idle then revving",
+    "A motorcycle engine idles and then shifts gears"
+  ],
+  "top_scene": [
+    "raceway",
+    0.8789694905281067
+  ],
+  "top_object": [
+    "go-kart",
+    0.2585608959197998
+  ],
+  "env_probs": {
+    "indoor": 0.046416327357292175,
+    "outdoor": 0.9535836726427078
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A motorcycle accelerating with a man laughing in the background and a person cheering",
+    "casv": "A motorcycle engine accelerating and revving then lowering speed"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3078345060348511,
+    "clap_gt_audio_baseline": 0.4588606357574463,
+    "clap_text_casv": 0.2937377989292145,
+    "clap_gt_audio_casv": 0.4652179181575775
+  },
+  "verdicts": [
+    {
+      "caption": "A motorcycle accelerating with a man laughing in the background and a person cheering",
+      "clip_similarity": 0.346147358417511,
+      "visual": 1.0,
+      "scene_support": 0.05712604390714993,
+      "object_support": 0.3570723066625308,
+      "score": 0.5242595051709042,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine accelerating and revving then lowering speed",
+      "clip_similarity": 0.3227267265319824,
+      "visual": 0.3862881517017008,
+      "scene_support": 0.8883944590136372,
+      "object_support": 0.9410411530863795,
+      "score": 0.7033459443106853,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine revving with a motorcycle at the end",
+      "clip_similarity": 0.32123512029647827,
+      "visual": 0.3472022540966003,
+      "scene_support": 0.8309890488424497,
+      "object_support": 0.9749032700439162,
+      "score": 0.68064859730455,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult male speaks in the foreground, while an adult male and a crowd chants in the background, a motorcycle engine accelerates and revs, and the crowd cheers",
+      "clip_similarity": 0.3199600577354431,
+      "visual": 0.31379064484312147,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1255162579372486,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine running then accelerating",
+      "clip_similarity": 0.3189750909805298,
+      "visual": 0.2879806764944987,
+      "scene_support": 0.7237662263102534,
+      "object_support": 0.8020622459308115,
+      "score": 0.572940812270119,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine starts and accelerates",
+      "clip_similarity": 0.3181515336036682,
+      "visual": 0.2664002630195867,
+      "scene_support": 0.9501769490538454,
+      "object_support": 0.9727870471650368,
+      "score": 0.6834493040734994,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorbike engine running then accelerating",
+      "clip_similarity": 0.3158518671989441,
+      "visual": 0.2061400391874194,
+      "scene_support": 0.7248934307407461,
+      "object_support": 0.8920557972670726,
+      "score": 0.5675407840773135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine accelerating and revving as a man briefly speaks",
+      "clip_similarity": 0.315652459859848,
+      "visual": 0.20091478961947282,
+      "scene_support": 0.8590240941869263,
+      "object_support": 0.9565755962973242,
+      "score": 0.6250458229930642,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine is running and revving and tire squealing is present, and an adult male speaks in the background",
+      "clip_similarity": 0.3116893172264099,
+      "visual": 0.09706500441619882,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6388260017664795,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine is running, and a female speaks in the background",
+      "clip_similarity": 0.3100648522377014,
+      "visual": 0.05449768959784086,
+      "scene_support": 0.8875896791337493,
+      "object_support": 0.8165416387768762,
+      "score": 0.533038471212324,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motorcycle engine being accelerated and running",
+      "clip_similarity": 0.30994999408721924,
+      "visual": 0.051487958341695866,
+      "scene_support": 0.7317950589590967,
+      "object_support": 0.8417536692080387,
+      "score": 0.49265980178681895,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine accelerates",
+      "clip_similarity": 0.30991289019584656,
+      "visual": 0.05051569175791265,
+      "scene_support": 0.8883744676663023,
+      "object_support": 0.9251475437937734,
+      "score": 0.5642628801411878,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle is racing around and squealing its tires",
+      "clip_similarity": 0.3098214864730835,
+      "visual": 0.048120557932641056,
+      "scene_support": 0.8386570120419675,
+      "object_support": 0.7246721589146654,
+      "score": 0.4882469744600463,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine revving and accelerating with an electronic beep bleeping briefly",
+      "clip_similarity": 0.3096139430999756,
+      "visual": 0.042682112559575734,
+      "scene_support": 0.4647665318190486,
+      "object_support": 0.6326649306972719,
+      "score": 0.34630228377872646,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yelling followed by a motorbike engine revving then accelerating",
+      "clip_similarity": 0.3093685209751129,
+      "visual": 0.03625109624033493,
+      "scene_support": 0.633359202478517,
+      "object_support": 0.757302703541051,
+      "score": 0.4316990103020043,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine revs up highly several times as it passes by",
+      "clip_similarity": 0.30912065505981445,
+      "visual": 0.029756043085856998,
+      "scene_support": 0.7779520043632397,
+      "object_support": 0.7823172946631185,
+      "score": 0.4799832069422503,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle driving by as metal lightly clanks followed by a man talking in the background during a man speaking over an intercom in the distance",
+      "clip_similarity": 0.30857300758361816,
+      "visual": 0.015405544496619714,
+      "scene_support": 0.2946468297823916,
+      "object_support": 0.3247478694921065,
+      "score": 0.1919806275809973,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine idling and a spraying sound at the end",
+      "clip_similarity": 0.30832886695861816,
+      "visual": 0.009008108469027647,
+      "scene_support": 0.44573528175497373,
+      "object_support": 0.6002609055882977,
+      "score": 0.31740209959059246,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorcycle accelerates before a man yells \u201cgo, go, go!",
+      "clip_similarity": 0.30807793140411377,
+      "visual": 0.0024326188019957624,
+      "scene_support": 0.42474385445478985,
+      "object_support": 0.45541697957651056,
+      "score": 0.2650212977301884,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine starting up then revving several times as a crowd of people talk in the background",
+      "clip_similarity": 0.3079850971698761,
+      "visual": 0.0,
+      "scene_support": 0.5583311633323833,
+      "object_support": 0.7262853452075817,
+      "score": 0.3853849525619895,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.8789694905281067
+    ],
+    [
+      "bullring",
+      0.04212138056755066
+    ],
+    [
+      "cockpit",
+      0.0306085292249918
+    ],
+    [
+      "landing deck",
+      0.022760778665542603
+    ],
+    [
+      "performance arena",
+      0.0037483745254576206
+    ]
+  ],
+  "top_objects": [
+    [
+      "go-kart",
+      0.2585608959197998
+    ],
+    [
+      "crash helmet",
+      0.13283275067806244
+    ],
+    [
+      "race car",
+      0.09750668704509735
+    ],
+    [
+      "Griffon Bruxellois",
+      0.07843810319900513
+    ],
+    [
+      "disc brake",
+      0.036408498883247375
+    ]
+  ]
+}

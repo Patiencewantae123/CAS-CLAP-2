@@ -1,0 +1,282 @@
+{
+  "id": "bIiiIo20PsY",
+  "image": "data\\audiocaps\\test_subset\\frames\\bIiiIo20PsY.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\bIiiIo20PsY.wav",
+  "gt_captions": [
+    "A main is speaking over a group of bees are buzzing",
+    "An adult male speaks while a many insects buzz",
+    "A man speaking as insects are buzzing and wind is blowing into a microphone",
+    "Two men speak while bees buzz",
+    "A man talking as a swarm of insects are buzzing"
+  ],
+  "top_scene": [
+    "broadleaf forest",
+    0.6657255291938782
+  ],
+  "top_object": [
+    "common sorrel",
+    0.6363989114761353
+  ],
+  "env_probs": {
+    "indoor": 0.023047693073749542,
+    "outdoor": 0.9769523069262505
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+    "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4043227434158325,
+    "clap_gt_audio_baseline": 0.5557286143302917,
+    "clap_text_casv": 0.4043227434158325,
+    "clap_gt_audio_casv": 0.5557286143302917
+  },
+  "verdicts": [
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.32352858781814575,
+      "visual": 1.0,
+      "scene_support": 0.519118615431838,
+      "object_support": 0.6219391272432094,
+      "score": 0.7423173228025143,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bees buzzing with a slight metal tapping sound near the end",
+      "clip_similarity": 0.3056195378303528,
+      "visual": 0.45404180124195387,
+      "scene_support": 0.4444858371395666,
+      "object_support": 0.38432253666910704,
+      "score": 0.43025923263938365,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rustling leaves with insects buzzing and a man speaking",
+      "clip_similarity": 0.3006506860256195,
+      "visual": 0.30256612927404297,
+      "scene_support": 0.7882200470652433,
+      "object_support": 0.583110363671319,
+      "score": 0.5324255749305858,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insect buzzing noises and a slurping sound",
+      "clip_similarity": 0.2997573912143707,
+      "visual": 0.2753339965566897,
+      "scene_support": 0.5504372030547809,
+      "object_support": 0.6509190337571343,
+      "score": 0.47054046966625046,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect buzzing followed by a swarm of insects buzzing",
+      "clip_similarity": 0.29951685667037964,
+      "visual": 0.2680012901057069,
+      "scene_support": 0.54043177244978,
+      "object_support": 0.5768906461491854,
+      "score": 0.44239724162197236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insects buzzing as footsteps walk on foliage",
+      "clip_similarity": 0.2983652949333191,
+      "visual": 0.2328958784756765,
+      "scene_support": 0.760368126808562,
+      "object_support": 0.44220622476662463,
+      "score": 0.45393065686282663,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person laughing, rustling leaves and breathing noises",
+      "clip_similarity": 0.2979643940925598,
+      "visual": 0.22067439821565663,
+      "scene_support": 1.0,
+      "object_support": 0.8440510891496729,
+      "score": 0.6414850860311645,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Footsteps on leaves while bees are constantly buzzing in the background",
+      "clip_similarity": 0.2971249520778656,
+      "visual": 0.19508397043659176,
+      "scene_support": 0.7513407297998547,
+      "object_support": 0.4013842308760387,
+      "score": 0.42385107637740466,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice talking followed by rustling leaves and then some squeaking noises",
+      "clip_similarity": 0.29698583483695984,
+      "visual": 0.19084297505644213,
+      "scene_support": 0.9204718067649073,
+      "object_support": 1.0,
+      "score": 0.6524787320520491,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling and intermittent, light tapping",
+      "clip_similarity": 0.29563891887664795,
+      "visual": 0.1497821810963173,
+      "scene_support": 0.6936409451876182,
+      "object_support": 0.8461084042311479,
+      "score": 0.5218376772641568,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A tapping sound with birds singing in the background",
+      "clip_similarity": 0.2956010699272156,
+      "visual": 0.1486283541612723,
+      "scene_support": 0.8438960786834324,
+      "object_support": 0.8901598817733225,
+      "score": 0.5796681298015354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing and men speaking clicking",
+      "clip_similarity": 0.29453033208847046,
+      "visual": 0.11598686272639311,
+      "scene_support": 0.32025773074168423,
+      "object_support": 0.4160169183773738,
+      "score": 0.26727713982627466,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rattling with rustling leaves and high pitched ringing",
+      "clip_similarity": 0.2941616475582123,
+      "visual": 0.10474749814888001,
+      "scene_support": 0.8672109514577371,
+      "object_support": 0.8681050135646081,
+      "score": 0.5624937887662556,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Light rustling of footsteps on leaves with faint buzzing of an insect",
+      "clip_similarity": 0.2939333915710449,
+      "visual": 0.09778910405792757,
+      "scene_support": 0.9349628646310205,
+      "object_support": 0.8356645298605865,
+      "score": 0.5703038599706531,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rustling followed by male speech then high pitched buzzing and more speech",
+      "clip_similarity": 0.2932926118373871,
+      "visual": 0.07825490490013037,
+      "scene_support": 0.42432281405031314,
+      "object_support": 0.6692698026771895,
+      "score": 0.35937974697830294,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks in Russian while an insects buzz",
+      "clip_similarity": 0.2926585078239441,
+      "visual": 0.05892421537497104,
+      "scene_support": 0.0,
+      "object_support": 0.3299642873094692,
+      "score": 0.12255897234282917,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several bees flies while wood is tapped",
+      "clip_similarity": 0.2921050190925598,
+      "visual": 0.042051086368942975,
+      "scene_support": 0.21909159358086747,
+      "object_support": 0.0,
+      "score": 0.08254791262183743,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Random buzzing of an insect, varying in loudness",
+      "clip_similarity": 0.2911534905433655,
+      "visual": 0.013043695516882668,
+      "scene_support": 0.6762005703446992,
+      "object_support": 0.661302707289933,
+      "score": 0.40646846149714266,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insect sounds along with rumbling and knocking noises followed by a speech",
+      "clip_similarity": 0.29110151529312134,
+      "visual": 0.011459227662773637,
+      "scene_support": 0.5659508936886926,
+      "object_support": 0.6884062896281724,
+      "score": 0.38089084606016893,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insects buzzing and male speaking",
+      "clip_similarity": 0.29072561860084534,
+      "visual": 0.0,
+      "scene_support": 0.5969342004811463,
+      "object_support": 0.7256632287457059,
+      "score": 0.39677922876805566,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "broadleaf forest",
+      0.6657255291938782
+    ],
+    [
+      "vegetation desert",
+      0.05051979422569275
+    ],
+    [
+      "rainforest",
+      0.03589852154254913
+    ],
+    [
+      "vineyard",
+      0.027523357421159744
+    ],
+    [
+      "wild field",
+      0.015971463173627853
+    ]
+  ],
+  "top_objects": [
+    [
+      "common sorrel",
+      0.6363989114761353
+    ],
+    [
+      "eastern hog-nosed snake",
+      0.016970781609416008
+    ],
+    [
+      "chameleon",
+      0.01053360104560852
+    ],
+    [
+      "stick insect",
+      0.009412121959030628
+    ],
+    [
+      "brambling",
+      0.007907923310995102
+    ]
+  ]
+}

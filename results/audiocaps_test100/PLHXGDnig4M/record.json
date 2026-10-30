@@ -1,0 +1,285 @@
+{
+  "id": "PLHXGDnig4M",
+  "image": "data\\audiocaps\\test_subset\\frames\\PLHXGDnig4M.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\PLHXGDnig4M.wav",
+  "gt_captions": [
+    "A person talking which later imitates a couple of meow sounds",
+    "A person speaks and makes meow sounds",
+    "A man talking then meowing and hissing",
+    "A man talks like a cat before growling then meowing and finally hissing",
+    "A man speaking then hissing"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.11354733258485794
+  ],
+  "top_object": [
+    "tabby cat",
+    0.3250858187675476
+  ],
+  "env_probs": {
+    "indoor": 0.6194835901260376,
+    "outdoor": 0.3805164098739624
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "People speaking animal barking cat meow",
+    "casv": "Cats are caterwauling, thumping occurs, and an electronic device is playing in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.17601948976516724,
+    "clap_gt_audio_baseline": 0.554031491279602,
+    "clap_text_casv": 0.10240577161312103,
+    "clap_gt_audio_casv": 0.6251115798950195
+  },
+  "verdicts": [
+    {
+      "caption": "People speaking animal barking cat meow",
+      "clip_similarity": 0.2922978699207306,
+      "visual": 1.0,
+      "scene_support": 0.5448728233331965,
+      "object_support": 0.6196698245178791,
+      "score": 0.7493627943553227,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cats are caterwauling, thumping occurs, and an electronic device is playing in the background",
+      "clip_similarity": 0.2922019958496094,
+      "visual": 0.9923418984093431,
+      "scene_support": 0.9167139280557286,
+      "object_support": 0.8247478593281863,
+      "score": 0.9193752955789116,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows, then a woman's voice is heard while in the background water can be heard splashing",
+      "clip_similarity": 0.2893120348453522,
+      "visual": 0.7615014354477025,
+      "scene_support": 0.32763056269658564,
+      "object_support": 0.42242198103478407,
+      "score": 0.5296163372984919,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several thumping noises occur before a cat screams quickly followed by birds chirping and a hollowing sounds",
+      "clip_similarity": 0.2888307273387909,
+      "visual": 0.7230561943258157,
+      "scene_support": 0.5861254864502842,
+      "object_support": 0.23645855874861807,
+      "score": 0.5359976912899969,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is meowing, and a bomb explodes",
+      "clip_similarity": 0.2877899408340454,
+      "visual": 0.6399216336013788,
+      "scene_support": 0.0,
+      "object_support": 0.1994580073394462,
+      "score": 0.3158060556423854,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows, a dog barks, a motor vehicle engine runs, a musical tone and blasting occur, a female screams, then silence",
+      "clip_similarity": 0.28625091910362244,
+      "visual": 0.5169897019125019,
+      "scene_support": 0.9256817766302381,
+      "object_support": 0.530298077854629,
+      "score": 0.6435898371104609,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.15)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.43)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud caterwaul of a cat, laughter, a woman speaks and the cat meows very loudly",
+      "clip_similarity": 0.286018043756485,
+      "visual": 0.4983883945362528,
+      "scene_support": 0.7075654912261718,
+      "object_support": 0.49043454483391175,
+      "score": 0.5587553686325262,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple cats meowing a song",
+      "clip_similarity": 0.2854563295841217,
+      "visual": 0.4535205366622389,
+      "scene_support": 0.14245111244603806,
+      "object_support": 0.36775007854638037,
+      "score": 0.3344685719626211,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some one speaking and there is a cat meow sound",
+      "clip_similarity": 0.2848578095436096,
+      "visual": 0.4057127485847866,
+      "scene_support": 0.675124900657804,
+      "object_support": 0.5797238970232054,
+      "score": 0.5387397387382175,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is singing and talking while making meow sounds",
+      "clip_similarity": 0.2835809290409088,
+      "visual": 0.3037197853731926,
+      "scene_support": 0.807396469574237,
+      "object_support": 0.6427176413812211,
+      "score": 0.5565221474359144,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fart escapes a person laughs and a cat meows lightly",
+      "clip_similarity": 0.2832644581794739,
+      "visual": 0.27844114664419467,
+      "scene_support": 0.17508852182543383,
+      "object_support": 0.0,
+      "score": 0.163903015205308,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat is meowing, thumping occurs, and an adult female speaks",
+      "clip_similarity": 0.28290534019470215,
+      "visual": 0.24975599769566603,
+      "scene_support": 0.8867433669262312,
+      "object_support": 0.8801314327674674,
+      "score": 0.629964838986376,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows and two farts go off",
+      "clip_similarity": 0.2814074456691742,
+      "visual": 0.13010917020172444,
+      "scene_support": 0.3676286224921925,
+      "object_support": 0.32447306017603444,
+      "score": 0.25967417288115785,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat meow with background noise and people softly talking",
+      "clip_similarity": 0.2810515761375427,
+      "visual": 0.10168349687438999,
+      "scene_support": 1.0,
+      "object_support": 0.8773300206529445,
+      "score": 0.6038724049456393,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cat meow with faint speaking noise in background",
+      "clip_similarity": 0.2808879017829895,
+      "visual": 0.08860973438266227,
+      "scene_support": 0.7559978433881939,
+      "object_support": 1.0,
+      "score": 0.5622432467695231,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks, a meow occurs, then a boom, the male speaks again, and mechanical clicking occurs",
+      "clip_similarity": 0.28085222840309143,
+      "visual": 0.08576026357009889,
+      "scene_support": 0.6103118132329401,
+      "object_support": 0.08386942558375579,
+      "score": 0.2425584770730483,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High pitched electrical vibrations, a man speaks a woman laughs and a cat meows",
+      "clip_similarity": 0.28077393770217896,
+      "visual": 0.07950666304829103,
+      "scene_support": 0.6138778715957808,
+      "object_support": 0.20544926266000146,
+      "score": 0.27760080549605104,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat is meowing, thumping occurs, and a young female laughs",
+      "clip_similarity": 0.28072109818458557,
+      "visual": 0.07528601831088512,
+      "scene_support": 0.851361687679329,
+      "object_support": 0.5716401842376655,
+      "score": 0.45701496889945237,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rustling and crackling occur, a cat meows, and an adult male speaks and laughs and an adult female speaks",
+      "clip_similarity": 0.28009605407714844,
+      "visual": 0.025359576078728237,
+      "scene_support": 0.570005932548048,
+      "object_support": 0.11552339052354897,
+      "score": 0.2158026273529704,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person is mimicking the meow of a cat then speaking in a language that is not English",
+      "clip_similarity": 0.2797785699367523,
+      "visual": 0.0,
+      "scene_support": 0.8049385664128232,
+      "object_support": 0.9874823779950618,
+      "score": 0.5377262833223655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.11354733258485794
+    ],
+    [
+      "kasbah",
+      0.073219433426857
+    ],
+    [
+      "veterinarians office",
+      0.06795394420623779
+    ],
+    [
+      "manufactured home",
+      0.029782840982079506
+    ],
+    [
+      "aquarium",
+      0.029781023040413857
+    ]
+  ],
+  "top_objects": [
+    [
+      "tabby cat",
+      0.3250858187675476
+    ],
+    [
+      "Persian cat",
+      0.24216176569461823
+    ],
+    [
+      "fire screen sheet",
+      0.05828167498111725
+    ],
+    [
+      "Egyptian Mau",
+      0.05051136761903763
+    ],
+    [
+      "tiger cat",
+      0.0329093374311924
+    ]
+  ]
+}

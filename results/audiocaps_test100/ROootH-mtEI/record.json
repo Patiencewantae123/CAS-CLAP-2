@@ -1,0 +1,284 @@
+{
+  "id": "ROootH-mtEI",
+  "image": "data\\audiocaps\\test_subset\\frames\\ROootH-mtEI.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\ROootH-mtEI.wav",
+  "gt_captions": [
+    "A river stream of water flowing",
+    "Water moving down a stream swiftly",
+    "A river stream flowing rapidly",
+    "Water flows loudly",
+    "Water flowing down a river"
+  ],
+  "top_scene": [
+    "driveway",
+    0.13759401440620422
+  ],
+  "top_object": [
+    "patio",
+    0.029158329591155052
+  ],
+  "env_probs": {
+    "indoor": 0.16487732529640198,
+    "outdoor": 0.835122674703598
+  },
+  "status": "ACCEPT",
+  "n_rejected": 1,
+  "prompts": {
+    "baseline": "A remote control car moving with a stream flowing in the background",
+    "casv": "A cat meows quietly nearby, followed by footsteps"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.21786223351955414,
+    "clap_gt_audio_baseline": 0.2305590808391571,
+    "clap_text_casv": 0.03987126052379608,
+    "clap_gt_audio_casv": 0.17721180617809296
+  },
+  "verdicts": [
+    {
+      "caption": "A remote control car moving with a stream flowing in the background",
+      "clip_similarity": 0.31731653213500977,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog screaming followed by two girls laughing then talking",
+      "clip_similarity": 0.31596916913986206,
+      "visual": 0.8936060056950557,
+      "scene_support": 0.2984058848730535,
+      "object_support": 0.29987593834150233,
+      "score": 0.536926949242389,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows quietly nearby, followed by footsteps",
+      "clip_similarity": 0.3131118416786194,
+      "visual": 0.6679782552420399,
+      "scene_support": 0.9813106080111244,
+      "object_support": 0.8012013312074927,
+      "score": 0.801944883862401,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows followed by a woman talking",
+      "clip_similarity": 0.3115684390068054,
+      "visual": 0.5461040641988092,
+      "scene_support": 0.6267515930206257,
+      "object_support": 0.5413339340152246,
+      "score": 0.5688672837902787,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw running",
+      "clip_similarity": 0.31130239367485046,
+      "visual": 0.5250958981479302,
+      "scene_support": 0.6962873472519157,
+      "object_support": 0.6108763815235593,
+      "score": 0.6021874778918146,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows followed by some loud clicking and a woman talking",
+      "clip_similarity": 0.30994856357574463,
+      "visual": 0.4181912314969524,
+      "scene_support": 0.7687865941307627,
+      "object_support": 0.7184650558033151,
+      "score": 0.6134519875790043,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cat meowing, followed by person laughing in background",
+      "clip_similarity": 0.30967259407043457,
+      "visual": 0.39639940696114656,
+      "scene_support": 0.4964668454699632,
+      "object_support": 0.5313083447712091,
+      "score": 0.46689231985681034,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A stick falls and then a snake squirms",
+      "clip_similarity": 0.30957719683647156,
+      "visual": 0.38886640152495705,
+      "scene_support": 0.5628514782543433,
+      "object_support": 0.6378181370424463,
+      "score": 0.5157474451990197,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows followed by dragging and scraping",
+      "clip_similarity": 0.3090951442718506,
+      "visual": 0.35080130845080365,
+      "scene_support": 0.8152419212772101,
+      "object_support": 0.6707132885721084,
+      "score": 0.586107086335117,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows followed by some rolling vibrations",
+      "clip_similarity": 0.30861979722976685,
+      "visual": 0.31326571435295225,
+      "scene_support": 0.5661657325184684,
+      "object_support": 0.5639557638831544,
+      "score": 0.4643427346616677,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.3080843687057495,
+      "visual": 0.2709858094274351,
+      "scene_support": 0.4888454678784707,
+      "object_support": 0.5781307489679037,
+      "score": 0.42848718882488634,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Foot steps and then people laugh in a low slow distorted way",
+      "clip_similarity": 0.30807092785835266,
+      "visual": 0.2699244581460476,
+      "scene_support": 1.0,
+      "object_support": 0.73313257397891,
+      "score": 0.627909555452092,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows, followed by a person talking, followed by several meows",
+      "clip_similarity": 0.30780863761901855,
+      "visual": 0.24921281152189773,
+      "scene_support": 0.6591571714333069,
+      "object_support": 0.571868542527154,
+      "score": 0.46899283879689735,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing followed by the laughter of a child",
+      "clip_similarity": 0.3070823848247528,
+      "visual": 0.19186454239521802,
+      "scene_support": 0.6233231979035608,
+      "object_support": 0.5833619585617448,
+      "score": 0.4387513638976789,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows nearby, followed by an object coming in contact with a surface",
+      "clip_similarity": 0.306887686252594,
+      "visual": 0.17649024545219213,
+      "scene_support": 0.9132826596590785,
+      "object_support": 0.8891399873837258,
+      "score": 0.6113228922937182,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.30682721734046936,
+      "visual": 0.17171534135034006,
+      "scene_support": 0.8197090502751367,
+      "object_support": 0.796427962393535,
+      "score": 0.5535272403407375,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows, followed by a woman singing, followed by a cat meowing",
+      "clip_similarity": 0.30681589245796204,
+      "visual": 0.1708210764125856,
+      "scene_support": 0.6679960514561558,
+      "object_support": 0.6107854974413199,
+      "score": 0.4519628952342769,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing followed by silence",
+      "clip_similarity": 0.306144654750824,
+      "visual": 0.1178170522203657,
+      "scene_support": 0.822262365519664,
+      "object_support": 0.7725019948078803,
+      "score": 0.5255561289864095,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman talking followed by a dog barking",
+      "clip_similarity": 0.30500391125679016,
+      "visual": 0.027738686371873014,
+      "scene_support": 0.7267509675912944,
+      "object_support": 0.6686620446084484,
+      "score": 0.429719378208672,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking with whistling and music in the background",
+      "clip_similarity": 0.3046526312828064,
+      "visual": 0.0,
+      "scene_support": 0.912758341403109,
+      "object_support": 1.0,
+      "score": 0.5738275024209327,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "driveway",
+      0.13759401440620422
+    ],
+    [
+      "patio",
+      0.08674948662519455
+    ],
+    [
+      "staircase",
+      0.07444842904806137
+    ],
+    [
+      "mountain path",
+      0.0403999425470829
+    ],
+    [
+      "yard",
+      0.031587131321430206
+    ]
+  ],
+  "top_objects": [
+    [
+      "patio",
+      0.029158329591155052
+    ],
+    [
+      "mongoose",
+      0.0188056118786335
+    ],
+    [
+      "skunk",
+      0.017308954149484634
+    ],
+    [
+      "sandal",
+      0.016826052218675613
+    ],
+    [
+      "Chihuahua",
+      0.015038793906569481
+    ]
+  ]
+}

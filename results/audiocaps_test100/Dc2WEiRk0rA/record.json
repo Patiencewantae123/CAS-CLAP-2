@@ -1,0 +1,284 @@
+{
+  "id": "Dc2WEiRk0rA",
+  "image": "data\\audiocaps\\test_subset\\frames\\Dc2WEiRk0rA.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\Dc2WEiRk0rA.wav",
+  "gt_captions": [
+    "Water spraying on a plastic surface",
+    "Continuous spraying up and down",
+    "Hissing spray is occurring, and liquid is pattering on a surface",
+    "High powered hissing and wind blowing",
+    "Continuous spray"
+  ],
+  "top_scene": [
+    "outdoor garage",
+    0.16178497672080994
+  ],
+  "top_object": [
+    "tile roof",
+    0.9398530125617981
+  ],
+  "env_probs": {
+    "indoor": 0.3841763138771057,
+    "outdoor": 0.6158236861228943
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Sharp air noises spraying",
+    "casv": "Rain falls onto a metal roof and a man speaks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.549423098564148,
+    "clap_gt_audio_baseline": 0.6073769330978394,
+    "clap_text_casv": 0.22566290199756622,
+    "clap_gt_audio_casv": 0.15724986791610718
+  },
+  "verdicts": [
+    {
+      "caption": "Sharp air noises spraying",
+      "clip_similarity": 0.31948569416999817,
+      "visual": 1.0,
+      "scene_support": 0.6970913609319159,
+      "object_support": 0.4546785371789126,
+      "score": 0.7455309694332486,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitched spraying with intermittent drilling",
+      "clip_similarity": 0.3167931139469147,
+      "visual": 0.8484508431418925,
+      "scene_support": 0.45398082247357463,
+      "object_support": 0.29693111232249514,
+      "score": 0.5646539176955779,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal rapidly rattling as compressed air is spraying",
+      "clip_similarity": 0.3141323924064636,
+      "visual": 0.6986948200408277,
+      "scene_support": 0.6043340192345987,
+      "object_support": 0.4228525097919113,
+      "score": 0.5876338867242841,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Large spraying noise like with a hose",
+      "clip_similarity": 0.31292465329170227,
+      "visual": 0.6307184444522723,
+      "scene_support": 0.3545379595791788,
+      "object_support": 0.12940182724534036,
+      "score": 0.3974693138282646,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falls onto a metal roof and a man speaks",
+      "clip_similarity": 0.312679648399353,
+      "visual": 0.6169285916771085,
+      "scene_support": 0.9218010522391255,
+      "object_support": 0.9001317675735098,
+      "score": 0.7933512826146338,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rapid spraying with mechanical humming",
+      "clip_similarity": 0.31224745512008667,
+      "visual": 0.592603029708318,
+      "scene_support": 0.19566486413385684,
+      "object_support": 0.11503076613206792,
+      "score": 0.3302499009631047,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Intermittent spraying sound",
+      "clip_similarity": 0.3120079040527344,
+      "visual": 0.5791201399617218,
+      "scene_support": 0.6042167729224295,
+      "object_support": 0.27887505257104434,
+      "score": 0.49657560363273084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A continuous spraying sound is interrupted by a swooshing",
+      "clip_similarity": 0.311159610748291,
+      "visual": 0.5313748085674556,
+      "scene_support": 0.35890088716376206,
+      "object_support": 0.24134789989763675,
+      "score": 0.3926245595454019,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal rattling and spraying",
+      "clip_similarity": 0.31033557653427124,
+      "visual": 0.4849948755625559,
+      "scene_support": 0.55740199542057,
+      "object_support": 0.4768267624947626,
+      "score": 0.5042665775996221,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steady spraying noise that eventually diminishes and stops",
+      "clip_similarity": 0.306443989276886,
+      "visual": 0.26596081944032085,
+      "scene_support": 0.6856024630410468,
+      "object_support": 0.5194638009682926,
+      "score": 0.4679042069789301,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain hitting the roof",
+      "clip_similarity": 0.305052250623703,
+      "visual": 0.18762821577320296,
+      "scene_support": 0.9809105633964458,
+      "object_support": 0.9135678819791387,
+      "score": 0.6433948199219566,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pressure spraying",
+      "clip_similarity": 0.3050333857536316,
+      "visual": 0.18656642562520653,
+      "scene_support": 0.0,
+      "object_support": 0.008286024320439189,
+      "score": 0.07711237754621436,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falls heavily on a metal roof and windows",
+      "clip_similarity": 0.3048210144042969,
+      "visual": 0.17461331884065265,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.669845327536261,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pressured water spraying",
+      "clip_similarity": 0.3047628402709961,
+      "visual": 0.1713390465359306,
+      "scene_support": 0.4017019946141139,
+      "object_support": 0.29739976815528946,
+      "score": 0.27826614744519323,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine motor sharply humming during high pressure spraying",
+      "clip_similarity": 0.3036779761314392,
+      "visual": 0.11027856475494119,
+      "scene_support": 0.18310213890772342,
+      "object_support": 0.01117363797144944,
+      "score": 0.10239415896572833,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.95)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spray can rattling then spraying",
+      "clip_similarity": 0.30366232991218567,
+      "visual": 0.10939793311560764,
+      "scene_support": 0.5065226790968436,
+      "object_support": 0.4312997454122772,
+      "score": 0.32510590059897926,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High pressure water spraying",
+      "clip_similarity": 0.30332353711128235,
+      "visual": 0.09032932268523877,
+      "scene_support": 0.20784049042457434,
+      "object_support": 0.1892112195181556,
+      "score": 0.15524724205691448,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rattling of paint spray can while spraying",
+      "clip_similarity": 0.3032510578632355,
+      "visual": 0.08624990145312607,
+      "scene_support": 0.22177108929268216,
+      "object_support": 0.20500164955816674,
+      "score": 0.16253178223650508,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fan followed by a spraying",
+      "clip_similarity": 0.30271148681640625,
+      "visual": 0.055880690348109496,
+      "scene_support": 0.4758494309211404,
+      "object_support": 0.4294211804845247,
+      "score": 0.2939334595609433,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical spraying noise with alarm sounding",
+      "clip_similarity": 0.30171865224838257,
+      "visual": 0.0,
+      "scene_support": 0.20144281202562545,
+      "object_support": 0.0,
+      "score": 0.06043284360768763,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor garage",
+      0.16178497672080994
+    ],
+    [
+      "attic",
+      0.11918200552463531
+    ],
+    [
+      "roof garden",
+      0.10030791163444519
+    ],
+    [
+      "indoor hangar",
+      0.050409041345119476
+    ],
+    [
+      "outdoor hangar",
+      0.03389981761574745
+    ]
+  ],
+  "top_objects": [
+    [
+      "tile roof",
+      0.9398530125617981
+    ],
+    [
+      "solar thermal collector",
+      0.05328068137168884
+    ],
+    [
+      "dome",
+      0.0008372935699298978
+    ],
+    [
+      "wing",
+      0.0004276917898096144
+    ],
+    [
+      "sunscreen",
+      0.0004214418586343527
+    ]
+  ]
+}

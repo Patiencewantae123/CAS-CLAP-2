@@ -76,6 +76,7 @@ def _clean_places_name(raw):
 
 
 def load_places365():
+    """Places365 scene names and their official indoor/outdoor labels."""
     names, envs = [], []
     io_map = {}
     for line in (DATA_DIR / "vocab" / "IO_places365.txt").read_text().split("\n"):
@@ -91,21 +92,25 @@ def load_places365():
 
 
 def load_imagenet():
+    """ImageNet-1k class names."""
     return json.loads((DATA_DIR / "vocab" / "imagenet_simple_labels.json").read_text())
 
 
 def load_audiocaps_captions(split="train"):
+    """Unique AudioCaps captions of a split (train is the candidate pool)."""
     with open(DATA_DIR / "audiocaps" / "splits" / f"{split}.csv", newline="", encoding="utf-8") as file:
         captions = {row["caption"].strip().rstrip(".") for row in csv.DictReader(file)}
     return sorted(c for c in captions if c)
 
 
 def mentioned_sources(caption):
+    """Visible sound sources named in a caption."""
     text = caption.lower()
     return [visual for pattern, visual in SOUND_SOURCES.items() if re.search(pattern, text)]
 
 
 def caption_environment(caption):
+    """'indoor', 'outdoor' or 'any', from environment-specific words in a caption."""
     text = caption.lower()
     indoor = bool(re.search(INDOOR_WORDS, text))
     outdoor = bool(re.search(OUTDOOR_WORDS, text))

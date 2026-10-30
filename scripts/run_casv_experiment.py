@@ -19,6 +19,7 @@
 
 import argparse
 import json
+import logging
 import platform
 import shutil
 import time
@@ -29,12 +30,16 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from casv.verifier import CASVerifier, CLIPRecognizer, VerifierConfig, load_image, CLIP_MODEL_ID
+from casv.log import setup_logging
+from casv.verifier import CLIP_MODEL_ID, CASVerifier, CLIPRecognizer, VerifierConfig, load_image
+
+log = logging.getLogger("casv")
 
 ARMS = ("baseline", "casv")
 
 
 def parse_args():
+    """Command-line options."""
     parser = argparse.ArgumentParser(description="Run the CAS-V image-to-audio experiment.")
     parser.add_argument("--manifest", required=True)
     parser.add_argument("--output-dir", default="results")
@@ -51,15 +56,18 @@ def parse_args():
 
 
 def resolve(path, base):
+    """Resolve a manifest path relative to the manifest's folder."""
     path = Path(path)
     return path if path.is_absolute() else (base / path)
 
 
 def summarise(records):
-    summary = {"n_items": len(records),
-               "status_counts": {s: sum(r["status"] == s for r in records)
-                                 for s in ("ACCEPT", "REPAIR", "UNCERTAIN")},
-               "prompt_changed": sum(r["prompts"]["baseline"] != r["prompts"]["casv"] for r in records)}
+    """Status counts and paired CLAP statistics over all items."""
+    summary = {
+        "n_items": len(records),
+        "status_counts": {s: sum(r["status"] == s for r in records) for s in ("ACCEPT", "REPAIR", "UNCERTAIN")},
+        "prompt_changed": sum(r["prompts"]["baseline"] != r["prompts"]["casv"] for r in records),
+    }
     for metric in ("clap_text", "clap_gt_audio"):
         pairs = [(r["metrics"].get(f"{metric}_baseline"), r["metrics"].get(f"{metric}_casv")) for r in records]
         pairs = [(b, c) for b, c in pairs if b is not None and c is not None]
@@ -79,9 +87,10 @@ def summarise(records):
 
 
 def main():
+    setup_logging()
     args = parse_args()
     manifest_path = Path(args.manifest)
-    items = json.loads(manifest_path.read_text(encoding="utf-8"))[:args.limit]
+    items = json.loads(manifest_path.read_text(encoding="utf-8"))[: args.limit]
     base = manifest_path.parent
 
     run_name = args.run_name or datetime.now().strftime("run_%Y%m%d_%H%M%S")
@@ -92,23 +101,25 @@ def main():
     device = "cuda" if torch.cuda.is_available() else "cpu"
     config = VerifierConfig(**json.loads(Path(args.config).read_text())) if args.config else VerifierConfig()
 
-    print(f"[*] Loading CLIP ({CLIP_MODEL_ID}) on {device}")
+    log.info(f"Loading CLIP ({CLIP_MODEL_ID}) on {device}")
     verifier = CASVerifier(CLIPRecognizer(device=device), config)
 
     generator = scorer = None
     if not args.no_generate:
         from casv.audio import AudioGenerator
-        print("[*] Loading AudioLDM generator")
+
+        log.info("Loading AudioLDM generator")
         generator = AudioGenerator(device=device)
         if not args.no_clap:
             from casv.audio import CLAPScorer
-            print("[*] Loading CLAP scorer")
+
+            log.info("Loading CLAP scorer")
             scorer = CLAPScorer(device=device)
 
     records = []
     for index, item in enumerate(items, 1):
         item_id = item["id"]
-        print(f"\n[{index}/{len(items)}] {item_id}")
+        log.info(f"\n[{index}/{len(items)}] {item_id}")
         item_dir = run_dir / item_id
         item_dir.mkdir(exist_ok=True)
 
@@ -130,11 +141,13 @@ def main():
             "prompts": {"baseline": result["baseline_prompt"], "casv": result["casv_prompt"]},
             "metrics": {},
         }
-        print(f"    scene    : {record['top_scene'][0]} ({record['top_scene'][1]:.2f}), "
-              f"object: {record['top_object'][0]} -> {record['status']} "
-              f"({record['n_rejected']}/{len(result['verdicts'])} candidates rejected)")
-        print(f"    baseline : {record['prompts']['baseline']}")
-        print(f"    CAS-V    : {record['prompts']['casv']}")
+        log.info(
+            f"    scene    : {record['top_scene'][0]} ({record['top_scene'][1]:.2f}), "
+            f"object: {record['top_object'][0]} -> {record['status']} "
+            f"({record['n_rejected']}/{len(result['verdicts'])} candidates rejected)"
+        )
+        log.info(f"    baseline : {record['prompts']['baseline']}")
+        log.info(f"    CAS-V    : {record['prompts']['casv']}")
 
         if generator is not None:
             from casv.audio import GENERATOR_SAMPLE_RATE, load_audio, save_audio
@@ -145,37 +158,60 @@ def main():
                     shutil.copy(item_dir / "baseline.wav", item_dir / "casv.wav")
                     continue
                 start = time.time()
-                audio = generator.generate(record["prompts"][arm], seed=args.seed, duration=args.duration,
-                                           steps=args.steps, guidance_scale=args.guidance_scale)
+                audio = generator.generate(
+                    record["prompts"][arm],
+                    seed=args.seed,
+                    duration=args.duration,
+                    steps=args.steps,
+                    guidance_scale=args.guidance_scale,
+                )
                 save_audio(item_dir / f"{arm}.wav", audio, GENERATOR_SAMPLE_RATE)
-                print(f"    generated {arm}.wav in {time.time() - start:.0f}s")
+                log.info(f"    generated {arm}.wav in {time.time() - start:.0f}s")
 
             if record["gt_audio"]:
-                save_audio(item_dir / "gt.wav", load_audio(record["gt_audio"], GENERATOR_SAMPLE_RATE),
-                           GENERATOR_SAMPLE_RATE)
+                save_audio(
+                    item_dir / "gt.wav", load_audio(record["gt_audio"], GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE
+                )
 
             if scorer is not None:
                 gt_emb = text_emb = None
                 if record["gt_audio"]:
-                    gt_emb = scorer.audio_embedding(load_audio(item_dir / "gt.wav", GENERATOR_SAMPLE_RATE),
-                                                    GENERATOR_SAMPLE_RATE)
+                    gt_emb = scorer.audio_embedding(
+                        load_audio(item_dir / "gt.wav", GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE
+                    )
                 if record["gt_captions"]:
                     text_emb = torch.nn.functional.normalize(
-                        torch.stack([scorer.text_embedding(c) for c in record["gt_captions"]]).mean(0), dim=-1)
+                        torch.stack([scorer.text_embedding(c) for c in record["gt_captions"]]).mean(0), dim=-1
+                    )
                 for arm in ARMS:
-                    emb = scorer.audio_embedding(load_audio(item_dir / f"{arm}.wav", GENERATOR_SAMPLE_RATE),
-                                                 GENERATOR_SAMPLE_RATE)
-                    record["metrics"][f"clap_text_{arm}"] = scorer.cosine(emb, text_emb) if text_emb is not None else None
-                    record["metrics"][f"clap_gt_audio_{arm}"] = scorer.cosine(emb, gt_emb) if gt_emb is not None else None
-                print("    metrics  : " + ", ".join(
-                    f"{k}={v:.3f}" for k, v in record["metrics"].items() if v is not None))
+                    emb = scorer.audio_embedding(
+                        load_audio(item_dir / f"{arm}.wav", GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE
+                    )
+                    record["metrics"][f"clap_text_{arm}"] = (
+                        scorer.cosine(emb, text_emb) if text_emb is not None else None
+                    )
+                    record["metrics"][f"clap_gt_audio_{arm}"] = (
+                        scorer.cosine(emb, gt_emb) if gt_emb is not None else None
+                    )
+                log.info(
+                    "    metrics  : " + ", ".join(f"{k}={v:.3f}" for k, v in record["metrics"].items() if v is not None)
+                )
 
-        (item_dir / "record.json").write_text(json.dumps({**record, "verdicts": result["verdicts"],
-                                                          "top_scenes": result["top_scenes"],
-                                                          "top_objects": result["top_objects"]}, indent=2))
+        (item_dir / "record.json").write_text(
+            json.dumps(
+                {
+                    **record,
+                    "verdicts": result["verdicts"],
+                    "top_scenes": result["top_scenes"],
+                    "top_objects": result["top_objects"],
+                },
+                indent=2,
+            )
+        )
         records.append(record)
 
     from casv import audio as audio_module
+
     summary = summarise(records)
     output = {
         "run_name": run_name,
@@ -194,9 +230,9 @@ def main():
     }
     (run_dir / "results.json").write_text(json.dumps(output, indent=2))
 
-    print("\n=== Summary ===")
-    print(json.dumps(summary, indent=2))
-    print(f"\n[+] Results written to {run_dir.resolve()}")
+    log.info("\n=== Summary ===")
+    log.info(json.dumps(summary, indent=2))
+    log.info(f"\n[+] Results written to {run_dir.resolve()}")
 
 
 if __name__ == "__main__":

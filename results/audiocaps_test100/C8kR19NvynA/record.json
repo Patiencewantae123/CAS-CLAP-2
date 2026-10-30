@@ -1,0 +1,286 @@
+{
+  "id": "C8kR19NvynA",
+  "image": "data\\audiocaps\\test_subset\\frames\\C8kR19NvynA.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\C8kR19NvynA.wav",
+  "gt_captions": [
+    "A man speaks during a monologue",
+    "A man speaking on a microphone",
+    "A man speaking continuously",
+    "A male voice speaking",
+    "A male speaking over a microphone"
+  ],
+  "top_scene": [
+    "conference center",
+    0.11675763130187988
+  ],
+  "top_object": [
+    "bridegroom",
+    0.19998282194137573
+  ],
+  "env_probs": {
+    "indoor": 0.6691024303436279,
+    "outdoor": 0.33089756965637207
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "A man speaking along with sizzling noise and music in the background",
+    "casv": "A man is speaking and crowd cheering"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.14918479323387146,
+    "clap_gt_audio_baseline": 0.20951475203037262,
+    "clap_text_casv": 0.20067106187343597,
+    "clap_gt_audio_casv": 0.4101671576499939
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaking along with sizzling noise and music in the background",
+      "clip_similarity": 0.3137418031692505,
+      "visual": 1.0,
+      "scene_support": 0.5654245764123405,
+      "object_support": 0.6300282822379293,
+      "score": 0.7586358575950809,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-0.41)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking over a microphone, people talking in the background",
+      "clip_similarity": 0.30660808086395264,
+      "visual": 0.607216757053896,
+      "scene_support": 0.3439864255525569,
+      "object_support": 0.19568859909910824,
+      "score": 0.40478921021705794,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking in background, with slight crowd laughter, followed by wind sound",
+      "clip_similarity": 0.3062296509742737,
+      "visual": 0.5863803811852351,
+      "scene_support": 0.6737202121637825,
+      "object_support": 0.4938757894978939,
+      "score": 0.584830952972597,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is speaking while strong winds are making noises on the microphone",
+      "clip_similarity": 0.3041035532951355,
+      "visual": 0.46931729609543577,
+      "scene_support": 0.49449052356781814,
+      "object_support": 0.5657671954450783,
+      "score": 0.5058042341420432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking over a microphone as a crowd rustles and speaks quietly",
+      "clip_similarity": 0.30386078357696533,
+      "visual": 0.4559503786418122,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1823801514567249,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking on over a microphone, people laughing, cheering, and screaming in the background",
+      "clip_similarity": 0.3037884533405304,
+      "visual": 0.45196787082694057,
+      "scene_support": 0.1376609294674206,
+      "object_support": 0.09909741712343732,
+      "score": 0.2518146523080336,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking while a gathering of people are clapping in the background",
+      "clip_similarity": 0.3009052872657776,
+      "visual": 0.2932205475743131,
+      "scene_support": 0.6894772152209531,
+      "object_support": 0.4274595434119838,
+      "score": 0.45236924661960626,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking as a crowd of people quietly speak in the background with camera audio static and humming",
+      "clip_similarity": 0.29978716373443604,
+      "visual": 0.23165658869571637,
+      "scene_support": 0.4004581442371308,
+      "object_support": 0.34009577132853464,
+      "score": 0.3148288101479862,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man giving a speech and laughter from crowd",
+      "clip_similarity": 0.2990766167640686,
+      "visual": 0.19253382342082162,
+      "scene_support": 0.4887710201207871,
+      "object_support": 0.5060924175056297,
+      "score": 0.3754725606562537,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking and crowd cheering",
+      "clip_similarity": 0.29820728302001953,
+      "visual": 0.14466824741760542,
+      "scene_support": 1.0,
+      "object_support": 0.9430783602660601,
+      "score": 0.6407908070468602,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking into a microphone, crowd cheering",
+      "clip_similarity": 0.298176646232605,
+      "visual": 0.14298138378608993,
+      "scene_support": 0.06840311118690812,
+      "object_support": 0.017709375484082194,
+      "score": 0.08302629951573307,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several people talk and applaud while a man talks on microphone",
+      "clip_similarity": 0.29794567823410034,
+      "visual": 0.13026426983254433,
+      "scene_support": 0.5738515371124039,
+      "object_support": 0.4953592371845475,
+      "score": 0.37286894022210315,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man giving a speech with claps in the background",
+      "clip_similarity": 0.2978733479976654,
+      "visual": 0.1262817620176727,
+      "scene_support": 0.5369345611563496,
+      "object_support": 0.48821257744469543,
+      "score": 0.35805684638738255,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks over the microphone as a crowd laughs",
+      "clip_similarity": 0.2974700331687927,
+      "visual": 0.10407521967788781,
+      "scene_support": 0.43014461670567483,
+      "object_support": 0.4811396503987992,
+      "score": 0.3150153680024973,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking along with typing in the background",
+      "clip_similarity": 0.296911358833313,
+      "visual": 0.07331457217167284,
+      "scene_support": 0.9108290990604194,
+      "object_support": 1.0,
+      "score": 0.602574558586795,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking while phone ringing",
+      "clip_similarity": 0.2963371276855469,
+      "visual": 0.041697365506264204,
+      "scene_support": 0.5514181302751453,
+      "object_support": 0.7642637249351119,
+      "score": 0.4113835027655828,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking into a microphone and slight chatter from the crowd",
+      "clip_similarity": 0.2961364686489105,
+      "visual": 0.030649065087009673,
+      "scene_support": 0.056662169721735774,
+      "object_support": 0.08057021753850505,
+      "score": 0.05342934221287611,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd laughing as a man is speaking on a microphone",
+      "clip_similarity": 0.296131432056427,
+      "visual": 0.030371749956925903,
+      "scene_support": 0.14172012456957733,
+      "object_support": 0.13493894730006434,
+      "score": 0.09514642154366287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks in a microphone and a crowd laughs as he speaks",
+      "clip_similarity": 0.29598939418792725,
+      "visual": 0.022551135104977724,
+      "scene_support": 0.786030582322295,
+      "object_support": 0.7210563662769657,
+      "score": 0.46114653862176924,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man giving a speech with laughter from crowd",
+      "clip_similarity": 0.29557982087135315,
+      "visual": 0.0,
+      "scene_support": 0.2907092409895756,
+      "object_support": 0.29576212885904407,
+      "score": 0.1759414109545859,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "conference center",
+      0.11675763130187988
+    ],
+    [
+      "reception",
+      0.07830143719911575
+    ],
+    [
+      "performance arena",
+      0.04423690214753151
+    ],
+    [
+      "indoor stage",
+      0.04397677630186081
+    ],
+    [
+      "outdoor stage",
+      0.0365426167845726
+    ]
+  ],
+  "top_objects": [
+    [
+      "bridegroom",
+      0.19998282194137573
+    ],
+    [
+      "speaker",
+      0.07638462632894516
+    ],
+    [
+      "tiger",
+      0.07137708365917206
+    ],
+    [
+      "ruler",
+      0.06552042812108994
+    ],
+    [
+      "lion",
+      0.028879854828119278
+    ]
+  ]
+}

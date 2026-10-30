@@ -1,0 +1,282 @@
+{
+  "id": "R91bUbtKrRs",
+  "image": "data\\audiocaps\\test_subset\\frames\\R91bUbtKrRs.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\R91bUbtKrRs.wav",
+  "gt_captions": [
+    "Two adult females speak in the foreground while muted speech occurs in the background, and an infant begins to cry",
+    "Two woman speaking then a baby crying",
+    "Two women are talking, and a baby cries",
+    "Rustling with woman speaking and a baby crying",
+    "A woman and a boy speaking in a foreign language then a baby cries and the boy laughs."
+  ],
+  "top_scene": [
+    "nursery",
+    0.3665129840373993
+  ],
+  "top_object": [
+    "diaper",
+    0.3745955526828766
+  ],
+  "env_probs": {
+    "indoor": 0.8297964334487915,
+    "outdoor": 0.1702035665512085
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A baby cries and then a woman speaks while pumping something with air",
+    "casv": "An infant cries with low talking and fan noise in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3811224699020386,
+    "clap_gt_audio_baseline": 0.3952808976173401,
+    "clap_text_casv": -0.013585781678557396,
+    "clap_gt_audio_casv": 0.15988779067993164
+  },
+  "verdicts": [
+    {
+      "caption": "A baby cries and then a woman speaks while pumping something with air",
+      "clip_similarity": 0.3134974539279938,
+      "visual": 1.0,
+      "scene_support": 0.5401412789940013,
+      "object_support": 0.46914852068883844,
+      "score": 0.702786939904852,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant cries with low talking and fan noise in the background",
+      "clip_similarity": 0.3116565942764282,
+      "visual": 0.8745949699120507,
+      "scene_support": 0.8852835819133464,
+      "object_support": 0.7766445668867449,
+      "score": 0.8484164326048476,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries and cries followed by a man talking",
+      "clip_similarity": 0.3062281906604767,
+      "visual": 0.5047953938232405,
+      "scene_support": 0.8115654978479405,
+      "object_support": 0.8463012393243402,
+      "score": 0.6992781786809804,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant crying rapidly with brief male speech",
+      "clip_similarity": 0.30500343441963196,
+      "visual": 0.4213612259316707,
+      "scene_support": 0.6620215419362133,
+      "object_support": 0.6406022469182413,
+      "score": 0.5593316270290046,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and fusses over tapping and clicking",
+      "clip_similarity": 0.3040570616722107,
+      "visual": 0.35689139915055346,
+      "scene_support": 0.7112825675234492,
+      "object_support": 0.7208365468854129,
+      "score": 0.5723922939828799,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries nearby, followed by a person talking",
+      "clip_similarity": 0.30396223068237305,
+      "visual": 0.35043122000341076,
+      "scene_support": 0.7120867235251729,
+      "object_support": 0.6803451995344898,
+      "score": 0.5579020649192631,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and a woman vocalizes briefly",
+      "clip_similarity": 0.3037405014038086,
+      "visual": 0.3353263385280049,
+      "scene_support": 0.7009924583698292,
+      "object_support": 0.7594902087977958,
+      "score": 0.5722753355614895,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries followed by a man speaking then a loud burst and click",
+      "clip_similarity": 0.3035787343978882,
+      "visual": 0.3243062717741739,
+      "scene_support": 0.8679567671929779,
+      "object_support": 0.8773755818384815,
+      "score": 0.6533222134191075,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries with faint sounds of people talking",
+      "clip_similarity": 0.3027460277080536,
+      "visual": 0.2675797269752069,
+      "scene_support": 0.7853103265708854,
+      "object_support": 0.8375013941265792,
+      "score": 0.5938754069993221,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries and a woman speaks followed by whistling",
+      "clip_similarity": 0.30201441049575806,
+      "visual": 0.21773970878438187,
+      "scene_support": 0.9278280205003022,
+      "object_support": 0.8789578908746681,
+      "score": 0.6291316569262438,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Baby making cooing sounds",
+      "clip_similarity": 0.3010801672935486,
+      "visual": 0.15409618398720146,
+      "scene_support": 0.9646452881952533,
+      "object_support": 0.8091262383095343,
+      "score": 0.5937699315463169,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An infant crying with muffled speech in the background",
+      "clip_similarity": 0.3010454773902893,
+      "visual": 0.15173300091766215,
+      "scene_support": 0.7554798168649358,
+      "object_support": 0.7651502641845236,
+      "score": 0.5168822246819027,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking then sniffling briefly then talking again after an infant cries",
+      "clip_similarity": 0.30101364850997925,
+      "visual": 0.1495647195445797,
+      "scene_support": 0.7504414684769485,
+      "object_support": 0.7080314696241986,
+      "score": 0.49736776924817594,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby cries and then makes sucking noise",
+      "clip_similarity": 0.3005344867706299,
+      "visual": 0.11692274584006691,
+      "scene_support": 0.7109252153081153,
+      "object_support": 0.441211209290026,
+      "score": 0.3924100257154691,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries followed by a raspy voice talking",
+      "clip_similarity": 0.2993149161338806,
+      "visual": 0.033841837273325265,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6135367349093301,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant whining with brief female speech and laughter in the background",
+      "clip_similarity": 0.2990870475769043,
+      "visual": 0.0183187292409391,
+      "scene_support": 0.7507733928345205,
+      "object_support": 0.7010748272563865,
+      "score": 0.4428819577236477,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An infant crying as a man is speaking while an air ventilation system hums in the background",
+      "clip_similarity": 0.2990749478340149,
+      "visual": 0.017494457483007007,
+      "scene_support": 0.48717414313795204,
+      "object_support": 0.3396758374907534,
+      "score": 0.2550527771818144,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Infant crying and male voice soothing it",
+      "clip_similarity": 0.2989680767059326,
+      "visual": 0.010214067029941773,
+      "scene_support": 0.7214132984971682,
+      "object_support": 0.5815882284089695,
+      "score": 0.39498608488381803,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries while a woman speaks along with several taps on a surface",
+      "clip_similarity": 0.298953652381897,
+      "visual": 0.00923143764363849,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0036925750574553964,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An infant crying with clanking and brief female speech",
+      "clip_similarity": 0.2988181412220001,
+      "visual": 0.0,
+      "scene_support": 0.6234265945423644,
+      "object_support": 0.5496050927099101,
+      "score": 0.35190950617568234,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "nursery",
+      0.3665129840373993
+    ],
+    [
+      "hospital room",
+      0.13819178938865662
+    ],
+    [
+      "hospital",
+      0.08887345343828201
+    ],
+    [
+      "nursing home",
+      0.07690651714801788
+    ],
+    [
+      "childs room",
+      0.0403267927467823
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.3745955526828766
+    ],
+    [
+      "infant bed",
+      0.13866738975048065
+    ],
+    [
+      "bib",
+      0.09344859421253204
+    ],
+    [
+      "cradle",
+      0.07237859815359116
+    ],
+    [
+      "oxygen mask",
+      0.05628814548254013
+    ]
+  ]
+}

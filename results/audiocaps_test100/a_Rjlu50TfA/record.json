@@ -1,0 +1,284 @@
+{
+  "id": "a_Rjlu50TfA",
+  "image": "data\\audiocaps\\test_subset\\frames\\a_Rjlu50TfA.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\a_Rjlu50TfA.wav",
+  "gt_captions": [
+    "A person snoring during a series of thumps followed by a man talking in the background",
+    "Plastic tapping as a person is snoring",
+    "A series of sharp, squeaky snoring noises",
+    "A sharp snorting snore",
+    "A person snoring repetitively"
+  ],
+  "top_scene": [
+    "home theater",
+    0.15030068159103394
+  ],
+  "top_object": [
+    "meatloaf",
+    0.07815515995025635
+  ],
+  "env_probs": {
+    "indoor": 0.8118561506271362,
+    "outdoor": 0.18814384937286377
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Man snoring fairly loud",
+    "casv": "A person snores, and then makes loud baby-like noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4284358024597168,
+    "clap_gt_audio_baseline": 0.5171955823898315,
+    "clap_text_casv": 0.4046609401702881,
+    "clap_gt_audio_casv": 0.646651029586792
+  },
+  "verdicts": [
+    {
+      "caption": "Man snoring fairly loud",
+      "clip_similarity": 0.3067108988761902,
+      "visual": 1.0,
+      "scene_support": 0.3186854314729724,
+      "object_support": 0.6082709735400536,
+      "score": 0.6780869215039078,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud snores separated three seconds apart, followed by a man speaking",
+      "clip_similarity": 0.30193886160850525,
+      "visual": 0.672351771215296,
+      "scene_support": 0.572856201212009,
+      "object_support": 0.817352472876412,
+      "score": 0.6860033107126446,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snores, and then makes loud baby-like noises",
+      "clip_similarity": 0.30026960372924805,
+      "visual": 0.5577404727606077,
+      "scene_support": 0.7478521712900379,
+      "object_support": 0.9455755499393502,
+      "score": 0.7311245054730595,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man snoring with speech in the background",
+      "clip_similarity": 0.29951566457748413,
+      "visual": 0.5059749869041383,
+      "scene_support": 0.3935111074225577,
+      "object_support": 0.5145202430148806,
+      "score": 0.47479939989288683,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man snoring and breathing hard",
+      "clip_similarity": 0.29939281940460205,
+      "visual": 0.4975404334730225,
+      "scene_support": 0.6845871843693292,
+      "object_support": 0.862543734107019,
+      "score": 0.6631554489321134,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring as a man speaks through a television speaker in the background",
+      "clip_similarity": 0.2991390824317932,
+      "visual": 0.4801188449449974,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.19204753797799898,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man says something that is not understandable following by a man snoring loudly",
+      "clip_similarity": 0.2969827651977539,
+      "visual": 0.3320660358826611,
+      "scene_support": 0.6051761754205084,
+      "object_support": 0.763365688563807,
+      "score": 0.543388973548359,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring while asleep",
+      "clip_similarity": 0.29690614342689514,
+      "visual": 0.3268051826872708,
+      "scene_support": 0.20855604304754669,
+      "object_support": 0.6893969303656912,
+      "score": 0.4001079650988797,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Snoring becomes louder and more intense",
+      "clip_similarity": 0.2967434525489807,
+      "visual": 0.3156348218962808,
+      "scene_support": 0.7604151537834184,
+      "object_support": 0.8294389306929665,
+      "score": 0.6032101541014278,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring as a fan blows air in the background",
+      "clip_similarity": 0.29654884338378906,
+      "visual": 0.30227295049764275,
+      "scene_support": 0.1166004057054119,
+      "object_support": 0.41412400616108697,
+      "score": 0.2801265037590068,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man snoring with labored breathing",
+      "clip_similarity": 0.2940860688686371,
+      "visual": 0.13317877488213725,
+      "scene_support": 0.5821880640893254,
+      "object_support": 0.848509858518378,
+      "score": 0.48248088673516587,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man snoring and gasping",
+      "clip_similarity": 0.2933465242385864,
+      "visual": 0.0824016173389209,
+      "scene_support": 0.6527795289539918,
+      "object_support": 0.8401987547954919,
+      "score": 0.48085413206041344,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man snoring followed by a bird chirping",
+      "clip_similarity": 0.293316125869751,
+      "visual": 0.08031446437925616,
+      "scene_support": 0.574624578853204,
+      "object_support": 0.7257679929973481,
+      "score": 0.4222435573068681,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Adult snoring while sleeping",
+      "clip_similarity": 0.29316020011901855,
+      "visual": 0.0696085974332111,
+      "scene_support": 0.38968547456520736,
+      "object_support": 0.7800671174061097,
+      "score": 0.37876921656467955,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snoring as a man speaks briefly followed by a girl coughing in the background",
+      "clip_similarity": 0.2925601005554199,
+      "visual": 0.028405742535358828,
+      "scene_support": 0.560898106016474,
+      "object_support": 0.5798116608700847,
+      "score": 0.3535752270801112,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speech of several adults and musical tones in the background, as an adult snores slowly in the foreground",
+      "clip_similarity": 0.292416512966156,
+      "visual": 0.018547014143530643,
+      "scene_support": 0.8410894036194285,
+      "object_support": 0.9578327883074413,
+      "score": 0.5470954632354732,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone snores three times while a dog barks mildly in the background",
+      "clip_similarity": 0.2923603951931,
+      "visual": 0.014693966081718177,
+      "scene_support": 1.0,
+      "object_support": 0.9912492824619412,
+      "score": 0.6032523711712696,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring with some clicking",
+      "clip_similarity": 0.29225030541419983,
+      "visual": 0.007135198402304871,
+      "scene_support": 0.7306009132361789,
+      "object_support": 0.9136947820372626,
+      "score": 0.4961427879429544,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man lightly snoring",
+      "clip_similarity": 0.29224228858947754,
+      "visual": 0.006584762964903091,
+      "scene_support": 0.7427545194976403,
+      "object_support": 1.0,
+      "score": 0.5254602610352533,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores while sleeping",
+      "clip_similarity": 0.29214638471603394,
+      "visual": 0.0,
+      "scene_support": 0.20393001182642448,
+      "object_support": 0.8559806959534749,
+      "score": 0.3179732123339698,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "home theater",
+      0.15030068159103394
+    ],
+    [
+      "manufactured home",
+      0.08139537274837494
+    ],
+    [
+      "nursing home",
+      0.057854849845170975
+    ],
+    [
+      "archaelogical excavation",
+      0.04416931793093681
+    ],
+    [
+      "home office",
+      0.04285171255469322
+    ]
+  ],
+  "top_objects": [
+    [
+      "meatloaf",
+      0.07815515995025635
+    ],
+    [
+      "couch",
+      0.059078723192214966
+    ],
+    [
+      "sleeping bag",
+      0.05329658463597298
+    ],
+    [
+      "pajamas",
+      0.047951940447092056
+    ],
+    [
+      "pillow",
+      0.04480811581015587
+    ]
+  ]
+}

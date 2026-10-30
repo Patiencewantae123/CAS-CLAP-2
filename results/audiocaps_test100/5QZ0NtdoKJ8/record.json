@@ -1,0 +1,313 @@
+{
+  "id": "5QZ0NtdoKJ8",
+  "image": "data\\audiocaps\\test_subset\\frames\\5QZ0NtdoKJ8.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\5QZ0NtdoKJ8.wav",
+  "gt_captions": [
+    "Digital beeps repeating then a person speaks",
+    "Beeping sound with person talking in the background",
+    "Continuous digital beeps with a person speaking and bird chirping in the background",
+    "A series of electronic beeping as a woman is talking and birds chirp in the background alongside a camera muffling",
+    "A two-tone electronic alarm is ongoing, while an adult female is speaking in the foreground and birds are chirping in the background"
+  ],
+  "top_scene": [
+    "indoor bow window",
+    0.5383402705192566
+  ],
+  "top_object": [
+    "car mirror",
+    0.1749614179134369
+  ],
+  "env_probs": {
+    "indoor": 0.8751029372215271,
+    "outdoor": 0.1248970627784729
+  },
+  "status": "ACCEPT",
+  "n_rejected": 19,
+  "prompts": {
+    "baseline": "A bus engine running idle as wind blows into a microphone",
+    "casv": "A banging sound is followed by speaking sounds and a window crashing"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.08271405100822449,
+    "clap_gt_audio_baseline": 0.22713154554367065,
+    "clap_text_casv": 0.0707947164773941,
+    "clap_gt_audio_casv": 0.25049853324890137
+  },
+  "verdicts": [
+    {
+      "caption": "A bus engine running idle as wind blows into a microphone",
+      "clip_similarity": 0.31597962975502014,
+      "visual": 1.0,
+      "scene_support": 0.3382723571820496,
+      "object_support": 0.410913499422858,
+      "score": 0.6247557569814723,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car door bell as the doors slams",
+      "clip_similarity": 0.3116742968559265,
+      "visual": 0.6313957731061776,
+      "scene_support": 0.6602950903608527,
+      "object_support": 0.9170989733891879,
+      "score": 0.7257765283674831,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car sliding door opening and closing",
+      "clip_similarity": 0.31091395020484924,
+      "visual": 0.5662981381356862,
+      "scene_support": 0.7141857059066339,
+      "object_support": 0.6880113327784466,
+      "score": 0.6471783668597986,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large spraying noise like with a hose",
+      "clip_similarity": 0.310139536857605,
+      "visual": 0.4999961726785382,
+      "scene_support": 0.25773279073961025,
+      "object_support": 0.10435688118474826,
+      "score": 0.3086253706487228,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Beeping sound from a vehicle door",
+      "clip_similarity": 0.3088551461696625,
+      "visual": 0.39003212398480297,
+      "scene_support": 0.8069822838438587,
+      "object_support": 1.0,
+      "score": 0.6981075347470789,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Constant knocking as it rains with wind noise",
+      "clip_similarity": 0.30878427624702454,
+      "visual": 0.3839645436939776,
+      "scene_support": 0.5506897682161015,
+      "object_support": 0.270593836112781,
+      "score": 0.3999708987762558,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Typing on a computer keyboard followed by wind blowing into a microphone and a vehicle driving by in the distance",
+      "clip_similarity": 0.3087785840034485,
+      "visual": 0.3834771980945042,
+      "scene_support": 0.20740347743420973,
+      "object_support": 0.2674086033480042,
+      "score": 0.29583450347246587,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.06)",
+        "names 'a computer keyboard', not visible in image (z=-0.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A metal garage door sliding open",
+      "clip_similarity": 0.3083586096763611,
+      "visual": 0.34752078873440684,
+      "scene_support": 0.514318381115329,
+      "object_support": 0.20839655857635137,
+      "score": 0.3558227974012669,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sharp air noises spraying",
+      "clip_similarity": 0.3075386881828308,
+      "visual": 0.2773226100291132,
+      "scene_support": 0.390251615675908,
+      "object_support": 0.23680186796616423,
+      "score": 0.29904508910426697,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain and hail hit a window while a person speaks",
+      "clip_similarity": 0.307484894990921,
+      "visual": 0.27271706653670785,
+      "scene_support": 0.8405410800827714,
+      "object_support": 0.29759204847676207,
+      "score": 0.4505267651825432,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A banging sound is followed by speaking sounds and a window crashing",
+      "clip_similarity": 0.30695128440856934,
+      "visual": 0.22703160602063183,
+      "scene_support": 1.0,
+      "object_support": 0.8246411928973796,
+      "score": 0.6382050002774666,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks on an intercom and then a bus accelerates",
+      "clip_similarity": 0.30664920806884766,
+      "visual": 0.20116911912920782,
+      "scene_support": 0.3511668738268805,
+      "object_support": 0.4257027964074163,
+      "score": 0.31352854872197217,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic clicking followed by electronic beeping then plastic clicking and more electronic beeping as a vehicle door opens",
+      "clip_similarity": 0.30617016553878784,
+      "visual": 0.16015554234420887,
+      "scene_support": 0.686311941965794,
+      "object_support": 0.7423450174462086,
+      "score": 0.4926593047612844,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Intermittent, high pitched spraying with white noise",
+      "clip_similarity": 0.30612295866012573,
+      "visual": 0.15611389088051358,
+      "scene_support": 0.2643113341928648,
+      "object_support": 0.0,
+      "score": 0.14173895661006486,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind against a microphone on a speeding car",
+      "clip_similarity": 0.306057333946228,
+      "visual": 0.1504953829745432,
+      "scene_support": 0.07157819786445428,
+      "object_support": 0.35880235248044395,
+      "score": 0.18931231829328676,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)",
+        "names 'cars on a road', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thunderstorm with wind and rain hitting windows",
+      "clip_similarity": 0.30567386746406555,
+      "visual": 0.11766461947494253,
+      "scene_support": 0.7325579015693593,
+      "object_support": 0.04652128775239737,
+      "score": 0.280789604586504,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dogs barking outside while a male is talking and metal is clanking followed by a child communicating out loud",
+      "clip_similarity": 0.30558744072914124,
+      "visual": 0.11026513131539936,
+      "scene_support": 0.4754896452714378,
+      "object_support": 0.3379941003261235,
+      "score": 0.28815117620542813,
+      "conflicts": [
+        "names 'a dog', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing in a microphone followed by a door sliding close then opening",
+      "clip_similarity": 0.30498117208480835,
+      "visual": 0.05835899765002462,
+      "scene_support": 0.8050508478895723,
+      "object_support": 0.7214053447519662,
+      "score": 0.48128045685247134,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falls hard as sirens ring and a car speeds down a road during which a woman speaks over a radio with music playing",
+      "clip_similarity": 0.3046027421951294,
+      "visual": 0.025959445701790422,
+      "scene_support": 0.0,
+      "object_support": 0.07675804000779023,
+      "score": 0.03341119028305324,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)",
+        "names 'cars on a road', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fan blowing wind into microphone",
+      "clip_similarity": 0.304299533367157,
+      "visual": 0.0,
+      "scene_support": 0.4907156313868768,
+      "object_support": 0.44488491730270163,
+      "score": 0.2806801646068735,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor bow window",
+      0.5383402705192566
+    ],
+    [
+      "bus interior",
+      0.03818428888916969
+    ],
+    [
+      "server room",
+      0.03573356196284294
+    ],
+    [
+      "car interior",
+      0.03214047849178314
+    ],
+    [
+      "interior balcony",
+      0.015010504983365536
+    ]
+  ],
+  "top_objects": [
+    [
+      "car mirror",
+      0.1749614179134369
+    ],
+    [
+      "radio",
+      0.07618042826652527
+    ],
+    [
+      "window screen",
+      0.050992194563150406
+    ],
+    [
+      "sliding door",
+      0.04908381775021553
+    ],
+    [
+      "mosquito net",
+      0.029754433780908585
+    ]
+  ]
+}

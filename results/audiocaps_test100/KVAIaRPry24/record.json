@@ -1,0 +1,284 @@
+{
+  "id": "KVAIaRPry24",
+  "image": "data\\audiocaps\\test_subset\\frames\\KVAIaRPry24.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\KVAIaRPry24.wav",
+  "gt_captions": [
+    "An insect buzzing as plastic clacks and plastic slaps a hard surface",
+    "An insect buzzing as plastic clacks then slaps a hard surface in the background",
+    "Flying insects are buzzing",
+    "Buzzing from a nearby insect",
+    "Buzzing and scratching with some light banging"
+  ],
+  "top_scene": [
+    "landing deck",
+    0.07698375731706619
+  ],
+  "top_object": [
+    "dragonfly",
+    0.40982455015182495
+  ],
+  "env_probs": {
+    "indoor": 0.3360244631767273,
+    "outdoor": 0.6639755368232727
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "An engine works while an insect flies",
+    "casv": "An insect buzzing at a high pitch tone continuously"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.039938975125551224,
+    "clap_gt_audio_baseline": 0.22727102041244507,
+    "clap_text_casv": 0.14996685087680817,
+    "clap_gt_audio_casv": 0.48655059933662415
+  },
+  "verdicts": [
+    {
+      "caption": "An engine works while an insect flies",
+      "clip_similarity": 0.333970844745636,
+      "visual": 1.0,
+      "scene_support": 0.7936527410402752,
+      "object_support": 0.5783830258816743,
+      "score": 0.8116107300765848,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An insect buzzing at a high pitch tone continuously",
+      "clip_similarity": 0.3326437771320343,
+      "visual": 0.9271974900309168,
+      "scene_support": 0.7761054375865956,
+      "object_support": 0.876425981802952,
+      "score": 0.866638421829231,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An electronic music is played followed by an insect flying",
+      "clip_similarity": 0.33198967576026917,
+      "visual": 0.8913136954520707,
+      "scene_support": 0.6955672897456157,
+      "object_support": 0.39423445103987376,
+      "score": 0.6834660004164752,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two sequences of a fly buzzing and a gulping sound",
+      "clip_similarity": 0.3316405415534973,
+      "visual": 0.8721603031843843,
+      "scene_support": 0.20501816563856187,
+      "object_support": 0.17487074824788468,
+      "score": 0.46283079543968775,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect flies while a surface is tapped",
+      "clip_similarity": 0.3261171579360962,
+      "visual": 0.569149223155413,
+      "scene_support": 0.6577384311627809,
+      "object_support": 0.7527077654744307,
+      "score": 0.6507935482533287,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mid-range electromechanical buzzing occurs and then stops, and an adult male speaks",
+      "clip_similarity": 0.3250380754470825,
+      "visual": 0.5099510987654523,
+      "scene_support": 0.582952599215794,
+      "object_support": 0.0,
+      "score": 0.3788662192709191,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music playing while a fly is buzzing and eating",
+      "clip_similarity": 0.3221747875213623,
+      "visual": 0.3528720278725592,
+      "scene_support": 0.0,
+      "object_support": 0.5550105070211528,
+      "score": 0.30765196325536953,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as insects buzzing followed by another man talking",
+      "clip_similarity": 0.32211363315582275,
+      "visual": 0.34951711870198365,
+      "scene_support": 0.13383356316423994,
+      "object_support": 0.08700115952579877,
+      "score": 0.20605726428780508,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fly buzzes around along with a soft crumpling sound",
+      "clip_similarity": 0.32163989543914795,
+      "visual": 0.3235280172519501,
+      "scene_support": 0.7707743420374632,
+      "object_support": 0.6883494930652581,
+      "score": 0.5671483574315963,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect buzzing its wings",
+      "clip_similarity": 0.3215940594673157,
+      "visual": 0.321013470320008,
+      "scene_support": 0.8593205838522932,
+      "object_support": 1.0,
+      "score": 0.6862015632836911,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large vehicle engine runs, then an insect buzzes loudly near the microphone",
+      "clip_similarity": 0.3198312520980835,
+      "visual": 0.22430641503757923,
+      "scene_support": 0.18288896631709467,
+      "object_support": 0.18863167854726054,
+      "score": 0.20117875947433825,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People speak with hissing insects and splashing water",
+      "clip_similarity": 0.31960031390190125,
+      "visual": 0.21163721856448472,
+      "scene_support": 0.6919104428293575,
+      "object_support": 0.28660323749108213,
+      "score": 0.3782089915219258,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An insect flies followed by something being hit and then a whistle",
+      "clip_similarity": 0.31881725788116455,
+      "visual": 0.16867901268881583,
+      "scene_support": 1.0,
+      "object_support": 0.425642640305592,
+      "score": 0.49516439716720395,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Buzzing slapping insect sound with a man speaking a short phrase in a foreign language",
+      "clip_similarity": 0.31789833307266235,
+      "visual": 0.11826708804674638,
+      "scene_support": 0.5699888274370664,
+      "object_support": 0.28977397617976486,
+      "score": 0.3052356763037479,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An insect flies while some material is rasped",
+      "clip_similarity": 0.3173970878124237,
+      "visual": 0.0907689314483496,
+      "scene_support": 0.9833458472581418,
+      "object_support": 0.8907534433379654,
+      "score": 0.598537359758172,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect flies around then music plays",
+      "clip_similarity": 0.31697481870651245,
+      "visual": 0.0676033817222848,
+      "scene_support": 0.7445523531903965,
+      "object_support": 0.5977936065680899,
+      "score": 0.42974514061645985,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Electronic beeping while a buzzing occurs in the background",
+      "clip_similarity": 0.3169143795967102,
+      "visual": 0.06428771125545868,
+      "scene_support": 0.9635607596034149,
+      "object_support": 0.28396824616727306,
+      "score": 0.39997378623338986,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An insect buzzing followed by instrumental rock music playing",
+      "clip_similarity": 0.31679198145866394,
+      "visual": 0.0575729880763389,
+      "scene_support": 0.7990860745371893,
+      "object_support": 0.6042414773233586,
+      "score": 0.4440274607886999,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect buzzing followed by music",
+      "clip_similarity": 0.3167760372161865,
+      "visual": 0.056698291971924705,
+      "scene_support": 0.8281273770322859,
+      "object_support": 0.6681320509240832,
+      "score": 0.4715571451756806,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An insect flies followed by something being swallowed and a music being played",
+      "clip_similarity": 0.31574252247810364,
+      "visual": 0.0,
+      "scene_support": 0.9386024317909307,
+      "object_support": 0.34664582724631793,
+      "score": 0.3855744777111746,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "landing deck",
+      0.07698375731706619
+    ],
+    [
+      "watering hole",
+      0.059186819940805435
+    ],
+    [
+      "ice floe",
+      0.056949373334646225
+    ],
+    [
+      "science museum",
+      0.03926384821534157
+    ],
+    [
+      "pond",
+      0.034230273216962814
+    ]
+  ],
+  "top_objects": [
+    [
+      "dragonfly",
+      0.40982455015182495
+    ],
+    [
+      "fly",
+      0.26257702708244324
+    ],
+    [
+      "European garden spider",
+      0.09001191705465317
+    ],
+    [
+      "barn spider",
+      0.05225920304656029
+    ],
+    [
+      "wolf spider",
+      0.02398989163339138
+    ]
+  ]
+}

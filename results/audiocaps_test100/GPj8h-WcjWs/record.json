@@ -1,0 +1,284 @@
+{
+  "id": "GPj8h-WcjWs",
+  "image": "data\\audiocaps\\test_subset\\frames\\GPj8h-WcjWs.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\GPj8h-WcjWs.wav",
+  "gt_captions": [
+    "A bus is idling when a voice from a speaker starts to talk",
+    "Humming of a loud engine with a woman speaking over a loudspeaker",
+    "Humming of an engine with a woman speaking over a loudspeaker",
+    "Bus engine going then an announcers female voice speaking",
+    "A muffled bus engine running as a woman speaks over an intercom"
+  ],
+  "top_scene": [
+    "bus interior",
+    0.9591027498245239
+  ],
+  "top_object": [
+    "minibus",
+    0.3090274930000305
+  ],
+  "env_probs": {
+    "indoor": 0.9979921579360962,
+    "outdoor": 0.0020078420639038086
+  },
+  "status": "ACCEPT",
+  "n_rejected": 2,
+  "prompts": {
+    "baseline": "A man talking followed by glass clanking while a group of people are talking in the background during a muffled bus engine driving",
+    "casv": "A muffled bus engine running as a group of people talk in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3884274363517761,
+    "clap_gt_audio_baseline": 0.6915339231491089,
+    "clap_text_casv": 0.47758886218070984,
+    "clap_gt_audio_casv": 0.6691558957099915
+  },
+  "verdicts": [
+    {
+      "caption": "A man talking followed by glass clanking while a group of people are talking in the background during a muffled bus engine driving",
+      "clip_similarity": 0.31822770833969116,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled bus engine running as a group of people talk in the background",
+      "clip_similarity": 0.31541627645492554,
+      "visual": 0.8462877086870517,
+      "scene_support": 0.623994252401135,
+      "object_support": 0.8857654559879123,
+      "score": 0.791442995991535,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bus engine in motion with faint voices in the background",
+      "clip_similarity": 0.310404896736145,
+      "visual": 0.5722954190686927,
+      "scene_support": 0.8583004249321281,
+      "object_support": 0.9005161859324454,
+      "score": 0.7565631508868491,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled bus engine running as a group of people talk while a kid yells in the background",
+      "clip_similarity": 0.3100953698158264,
+      "visual": 0.5553723371320378,
+      "scene_support": 0.6133786214311784,
+      "object_support": 0.8544720220055365,
+      "score": 0.6625041278838296,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking as a bus engine runs followed by a young woman talking then a group of people talking",
+      "clip_similarity": 0.3089236617088318,
+      "visual": 0.4913103412316406,
+      "scene_support": 0.6040864507261768,
+      "object_support": 0.7207286662423734,
+      "score": 0.5939686715832213,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of people talking as a muffled bus engine accelerates while air hisses in the background",
+      "clip_similarity": 0.30885279178619385,
+      "visual": 0.4874355974568124,
+      "scene_support": 0.15742600952891392,
+      "object_support": 0.8307154301853792,
+      "score": 0.4914166708970129,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A high frequency rumble from a bus in the background followed by a woman saying something excitedly and a man responding to her",
+      "clip_similarity": 0.3077814280986786,
+      "visual": 0.42885983464718325,
+      "scene_support": 0.618422566888175,
+      "object_support": 0.7613854100370839,
+      "score": 0.585486326936451,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of people talking as a muffled bus engine runs then accelerates",
+      "clip_similarity": 0.3066592514514923,
+      "visual": 0.3675059229157365,
+      "scene_support": 0.4087985172860899,
+      "object_support": 0.9655879426757666,
+      "score": 0.5593183071548515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple people laughing and then a bus takes off",
+      "clip_similarity": 0.30648431181907654,
+      "visual": 0.35794126944296895,
+      "scene_support": 0.6005621555030191,
+      "object_support": 0.8138332013334804,
+      "score": 0.5674951148281374,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled bus engine accelerating as an air ventilation system runs while a group of people talks in the background",
+      "clip_similarity": 0.3057285249233246,
+      "visual": 0.316619359380041,
+      "scene_support": 0.46015918788313215,
+      "object_support": 0.7097718893744289,
+      "score": 0.4776270669292847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man singing as a woman is speaking with a person coughing then sniffling while another man talks briefly in the background as a muffled bus engine runs",
+      "clip_similarity": 0.30562442541122437,
+      "visual": 0.3109278202692442,
+      "scene_support": 0.2371361306296383,
+      "object_support": 0.3999724051545548,
+      "score": 0.3155036888429556,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus engine running idle with a crowd talking in the background followed by compressed air releasing",
+      "clip_similarity": 0.30519312620162964,
+      "visual": 0.2873469573973714,
+      "scene_support": 0.4442108066695821,
+      "object_support": 0.7671830329575791,
+      "score": 0.47835693484709696,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus engine accelerates as people talk nearby",
+      "clip_similarity": 0.3051702678203583,
+      "visual": 0.2860971977357679,
+      "scene_support": 0.2357036150467842,
+      "object_support": 0.7578247957271276,
+      "score": 0.4124974023264807,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming of a bus with several people speaking",
+      "clip_similarity": 0.30455487966537476,
+      "visual": 0.25245145164391464,
+      "scene_support": 0.902186696128043,
+      "object_support": 1.0,
+      "score": 0.6716365894959788,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple people talk as a bus idles nearby",
+      "clip_similarity": 0.3035217821598053,
+      "visual": 0.19596785494314978,
+      "scene_support": 0.6963757465357125,
+      "object_support": 0.9035343721530135,
+      "score": 0.5583601775838778,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speaking while a bus brakes which releases air followed by a man talking",
+      "clip_similarity": 0.3035171627998352,
+      "visual": 0.19571529595025727,
+      "scene_support": 0.8923859659506281,
+      "object_support": 0.7428481668027246,
+      "score": 0.5688563582061087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bus engine accelerates while several men speak",
+      "clip_similarity": 0.30156409740448,
+      "visual": 0.08893335375530781,
+      "scene_support": 0.7277644975070722,
+      "object_support": 0.786553532309303,
+      "score": 0.48986875044703565,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speaking on a moving bus",
+      "clip_similarity": 0.3015592396259308,
+      "visual": 0.08866775945955635,
+      "scene_support": 1.0,
+      "object_support": 0.7980574716763936,
+      "score": 0.5748843452867406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled bus engine running as a man talks in the background",
+      "clip_similarity": 0.30058789253234863,
+      "visual": 0.03556030619926416,
+      "scene_support": 0.6354976703811237,
+      "object_support": 0.9720967415763014,
+      "score": 0.49650244606693317,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus engine is running while someone talks then wind blows into the microphone",
+      "clip_similarity": 0.29993748664855957,
+      "visual": 0.0,
+      "scene_support": 0.5412404466993503,
+      "object_support": 0.8936496009230747,
+      "score": 0.4304670142867275,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bus interior",
+      0.9591027498245239
+    ],
+    [
+      "train interior",
+      0.02120506763458252
+    ],
+    [
+      "indoor bus station",
+      0.002994450042024255
+    ],
+    [
+      "car interior",
+      0.0019187524449080229
+    ],
+    [
+      "engine room",
+      0.000917661061976105
+    ]
+  ],
+  "top_objects": [
+    [
+      "minibus",
+      0.3090274930000305
+    ],
+    [
+      "crash helmet",
+      0.1568840742111206
+    ],
+    [
+      "oxygen mask",
+      0.07623361796140671
+    ],
+    [
+      "maraca",
+      0.06047553941607475
+    ],
+    [
+      "passenger car",
+      0.04629635810852051
+    ]
+  ]
+}

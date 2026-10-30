@@ -13,10 +13,15 @@
 
 import argparse
 import json
+import logging
 import random
 import re
+from pathlib import Path
 
+from casv.log import setup_logging
 from scripts.fetch_audiocaps import DATA_DIR, fetch_clip, load_clips
+
+log = logging.getLogger("casv")
 
 CATEGORIES = {
     "busy road": r"\btraffic\b",
@@ -31,6 +36,7 @@ CATEGORIES = {
 
 
 def candidates(label, clips, order, min_captions):
+    """Clips in seeded order whose captions match the category, with the matching captions."""
     for ytid in order:
         matched = [c for c in clips[ytid]["captions"] if re.search(CATEGORIES[label], c.lower())]
         if len(matched) >= min_captions:
@@ -38,12 +44,15 @@ def candidates(label, clips, order, min_captions):
 
 
 def contact_sheet(label, ytids, out_dir):
+    """Save the candidate frames of one category side by side for visual screening."""
     from PIL import Image, ImageDraw
+
     width, height = 320, 240
     sheet = Image.new("RGB", (width * len(ytids), height + 22), "white")
     for i, ytid in enumerate(ytids):
-        sheet.paste(Image.open(out_dir / "frames" / f"{ytid}.jpg").convert("RGB").resize((width, height)),
-                    (i * width, 22))
+        sheet.paste(
+            Image.open(out_dir / "frames" / f"{ytid}.jpg").convert("RGB").resize((width, height)), (i * width, 22)
+        )
         ImageDraw.Draw(sheet).text((i * width + 6, 5), f"{i + 1}. {ytid}", fill="black")
     path = out_dir / "screening" / f"{label.replace(' ', '_')}.png"
     path.parent.mkdir(exist_ok=True)
@@ -52,15 +61,21 @@ def contact_sheet(label, ytids, out_dir):
 
 
 def main():
+    setup_logging()
     parser = argparse.ArgumentParser(description="Fetch one AudioCaps test clip per figure category.")
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--min-captions", type=int, default=2)
-    parser.add_argument("--preview", type=int, default=0,
-                        help="Fetch the first N available clips per category and write frame contact "
-                             "sheets for visual screening; no manifest is written.")
+    parser.add_argument(
+        "--preview",
+        type=int,
+        default=0,
+        help="Fetch the first N available clips per category and write frame contact "
+        "sheets for visual screening; no manifest is written.",
+    )
     parser.add_argument("--only", default=None, help="Comma-separated categories to preview.")
-    parser.add_argument("--screening", default=None,
-                        help='JSON {"rejected": {ytid: reason}} from visual screening of frames only.')
+    parser.add_argument(
+        "--screening", default=None, help='JSON {"rejected": {ytid: reason}} from visual screening of frames only.'
+    )
     args = parser.parse_args()
 
     out_dir = DATA_DIR / "pairs" / "categories"
@@ -70,7 +85,7 @@ def main():
     clips = load_clips("test")
     order = sorted(clips)
     random.Random(args.seed).shuffle(order)
-    screening = json.loads(open(args.screening).read()) if args.screening else {}
+    screening = json.loads(Path(args.screening).read_text(encoding="utf-8")) if args.screening else {}
     rejected, relabel = screening.get("rejected", {}), screening.get("relabel", {})
 
     manifest, skipped = [], {}
@@ -89,27 +104,41 @@ def main():
             if args.preview and len(fetched) < args.preview:
                 continue
             if not args.preview:
-                manifest.append({"id": ytid, "label": relabel.get(label, label), "category": label,
-                                 "image": f"frames/{ytid}.jpg",
-                                 "gt_audio": f"audio/{ytid}.wav", "captions": clips[ytid]["captions"],
-                                 "start_time": clips[ytid]["start"], "matched_captions": matched})
-                print(f"    {label:14} {ytid}  {matched[0]}")
+                manifest.append(
+                    {
+                        "id": ytid,
+                        "label": relabel.get(label, label),
+                        "category": label,
+                        "image": f"frames/{ytid}.jpg",
+                        "gt_audio": f"audio/{ytid}.wav",
+                        "captions": clips[ytid]["captions"],
+                        "start_time": clips[ytid]["start"],
+                        "matched_captions": matched,
+                    }
+                )
+                log.info(f"    {label:14} {ytid}  {matched[0]}")
             break
         if args.preview:
-            print(f"    {label:14} {contact_sheet(label, fetched, out_dir)}")
+            log.info(f"    {label:14} {contact_sheet(label, fetched, out_dir)}")
         elif not fetched:
-            print(f"    {label:14} no available clip")
+            log.info(f"    {label:14} no available clip")
 
     if args.preview:
         return
-    rule = {"split": "test", "seed": args.seed, "min_matching_captions": args.min_captions,
-            "patterns": CATEGORIES,
-            "visual_screening": "frames only, by an author, before any audio was generated; "
-                                "the first non-rejected clip in seeded order is used",
-            "rejected_on_screening": rejected, "relabelled": relabel, "unavailable": skipped}
+    rule = {
+        "split": "test",
+        "seed": args.seed,
+        "min_matching_captions": args.min_captions,
+        "patterns": CATEGORIES,
+        "visual_screening": "frames only, by an author, before any audio was generated; "
+        "the first non-rejected clip in seeded order is used",
+        "rejected_on_screening": rejected,
+        "relabelled": relabel,
+        "unavailable": skipped,
+    }
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2))
     (out_dir / "selection_rule.json").write_text(json.dumps(rule, indent=2))
-    print(f"[+] {len(manifest)}/{len(CATEGORIES)} categories in {out_dir}")
+    log.info(f"{len(manifest)}/{len(CATEGORIES)} categories in {out_dir}")
 
 
 if __name__ == "__main__":

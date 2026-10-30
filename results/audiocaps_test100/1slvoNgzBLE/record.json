@@ -1,0 +1,307 @@
+{
+  "id": "1slvoNgzBLE",
+  "image": "data\\audiocaps\\test_subset\\frames\\1slvoNgzBLE.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\1slvoNgzBLE.wav",
+  "gt_captions": [
+    "A subway train signal plays followed by a bell chiming followed by a horn honking as a crowd of people talk in the background",
+    "A large motor vehicle engine is running, clacking occurs, and a horn blows",
+    "An electronic signal followed by compressed air releasing then an electronic bell playing as a train runs on tracks in the background",
+    "Subway train blowing its horn.",
+    "A high tone signal followed by train moving down tracks"
+  ],
+  "top_scene": [
+    "platform train station",
+    0.9212793707847595
+  ],
+  "top_object": [
+    "high-speed train",
+    0.4787519872188568
+  ],
+  "env_probs": {
+    "indoor": 0.9974387288093567,
+    "outdoor": 0.0025612711906433105
+  },
+  "status": "ACCEPT",
+  "n_rejected": 15,
+  "prompts": {
+    "baseline": "An individual mumbling immediately followed by the starting of an engine",
+    "casv": "An individual mumbling immediately followed by the starting of an engine"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.05277988314628601,
+    "clap_gt_audio_baseline": 0.19848576188087463,
+    "clap_text_casv": 0.05277988314628601,
+    "clap_gt_audio_casv": 0.19848576188087463
+  },
+  "verdicts": [
+    {
+      "caption": "An individual mumbling immediately followed by the starting of an engine",
+      "clip_similarity": 0.31808096170425415,
+      "visual": 1.0,
+      "scene_support": 0.7270361600107865,
+      "object_support": 0.8129240543231389,
+      "score": 0.8619880643001776,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train moving is followed by a horn and accelerated train movement",
+      "clip_similarity": 0.3148930072784424,
+      "visual": 0.8149525661340881,
+      "scene_support": 1.0,
+      "object_support": 0.9200473744952892,
+      "score": 0.9019952388022219,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person speaking with engine sound in background, followed by door opening",
+      "clip_similarity": 0.3142922520637512,
+      "visual": 0.7800812361175502,
+      "scene_support": 0.0,
+      "object_support": 0.31159488851096445,
+      "score": 0.4055109610003094,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine idles at high speed, followed by a person talking",
+      "clip_similarity": 0.31342965364456177,
+      "visual": 0.7300110021658351,
+      "scene_support": 0.4763829315086194,
+      "object_support": 0.8883971388955461,
+      "score": 0.7014384219875837,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An announcement over a loudspeaker in a train station followed by a horn blowing",
+      "clip_similarity": 0.3083558976650238,
+      "visual": 0.43550066774151136,
+      "scene_support": 0.3724191785978129,
+      "object_support": 0.02312676471675921,
+      "score": 0.29286405009097616,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A metal ting followed by a medium sized engine revving and men talking in normal voices",
+      "clip_similarity": 0.30764272809028625,
+      "visual": 0.3941041538365729,
+      "scene_support": 0.27053800410673,
+      "object_support": 0.5930951577060639,
+      "score": 0.4167316100784673,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The low rumble of an engine together with an intermittent siren followed by a man yelling in the background",
+      "clip_similarity": 0.3071242570877075,
+      "visual": 0.3640090785167143,
+      "scene_support": 0.28037674051477385,
+      "object_support": 0.556830903693472,
+      "score": 0.3967659246691595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.3063569962978363,
+      "visual": 0.3194727955880623,
+      "scene_support": 0.43767011890416035,
+      "object_support": 0.5687835503303583,
+      "score": 0.4297252190055806,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks very fast with a rustle in the background followed by a train whistle and a train coming close by at the end",
+      "clip_similarity": 0.3062264919281006,
+      "visual": 0.31189756222451337,
+      "scene_support": 0.6173426479139104,
+      "object_support": 0.48388263381830077,
+      "score": 0.4551266094094687,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running continuously",
+      "clip_similarity": 0.306190550327301,
+      "visual": 0.3098113024765253,
+      "scene_support": 0.7094446363914708,
+      "object_support": 0.876834957228957,
+      "score": 0.5998083990767384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train using its horn as it comes closer",
+      "clip_similarity": 0.3058152198791504,
+      "visual": 0.2880249382425597,
+      "scene_support": 0.817158378768599,
+      "object_support": 0.9256829414835652,
+      "score": 0.6380623713726732,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking, followed by a train horn blowing, and then more speaking by the man. He is interrupted by another male voice",
+      "clip_similarity": 0.3044423460960388,
+      "visual": 0.20833535155033664,
+      "scene_support": 0.0977120850784127,
+      "object_support": 0.0,
+      "score": 0.11264776614365847,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine humming as it speeds by followed by a man speaking over a loudspeaker",
+      "clip_similarity": 0.3042230010032654,
+      "visual": 0.195603285426628,
+      "scene_support": 0.15306080600897187,
+      "object_support": 0.3816687022394823,
+      "score": 0.23866016664518747,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming of a train with a person speaking",
+      "clip_similarity": 0.30379337072372437,
+      "visual": 0.17066504286692916,
+      "scene_support": 0.6963587180934885,
+      "object_support": 0.7460853845551653,
+      "score": 0.5009992479413677,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud, continuous horn followed by an engine running",
+      "clip_similarity": 0.3029259741306305,
+      "visual": 0.120316294968758,
+      "scene_support": 0.2758379892191314,
+      "object_support": 0.7194766136457181,
+      "score": 0.34672089884695806,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A trains passing by while a horn is honking",
+      "clip_similarity": 0.30284953117370605,
+      "visual": 0.115879100728634,
+      "scene_support": 0.4074089679523372,
+      "object_support": 0.5685049898349434,
+      "score": 0.33912582762763777,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two short beeps followed by a man speaking a short foreign phrase followed by a car horn playing a short tune ending with a man saying a foreign word",
+      "clip_similarity": 0.30161041021347046,
+      "visual": 0.04395330653141153,
+      "scene_support": 0.002717408097168266,
+      "object_support": 0.23754054135830902,
+      "score": 0.08965870744920779,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passing by with its bell sound and honk",
+      "clip_similarity": 0.30140063166618347,
+      "visual": 0.031776538400326605,
+      "scene_support": 0.9443670102050276,
+      "object_support": 1.0,
+      "score": 0.5960207184216388,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)",
+        "names 'cars on a road', not visible in image (z=-0.18)",
+        "names 'a bell', not visible in image (z=-0.44)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idling with male speech in the background",
+      "clip_similarity": 0.30101484060287476,
+      "visual": 0.009382979165080924,
+      "scene_support": 0.11755304058134668,
+      "object_support": 0.4225988445502761,
+      "score": 0.16579875720551918,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train horn honks and a man makes an announcement on the intercom as another man is talking and a camera is shuttering",
+      "clip_similarity": 0.3008531928062439,
+      "visual": 0.0,
+      "scene_support": 0.4074746981047806,
+      "object_support": 0.3361572003325436,
+      "score": 0.22308956953119724,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)",
+        "names 'cars on a road', not visible in image (z=-0.18)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "platform train station",
+      0.9212793707847595
+    ],
+    [
+      "platform subway station",
+      0.04502921923995018
+    ],
+    [
+      "train interior",
+      0.01559734158217907
+    ],
+    [
+      "galley",
+      0.006204098928719759
+    ],
+    [
+      "indoor bus station",
+      0.003789524780586362
+    ]
+  ],
+  "top_objects": [
+    [
+      "high-speed train",
+      0.4787519872188568
+    ],
+    [
+      "passenger car",
+      0.38099539279937744
+    ],
+    [
+      "electric locomotive",
+      0.12173628807067871
+    ],
+    [
+      "shoji",
+      0.0023599821142852306
+    ],
+    [
+      "sliding door",
+      0.0013280280400067568
+    ]
+  ]
+}

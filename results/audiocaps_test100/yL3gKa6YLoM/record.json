@@ -1,0 +1,282 @@
+{
+  "id": "yL3gKa6YLoM",
+  "image": "data\\audiocaps\\test_subset\\frames\\yL3gKa6YLoM.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\yL3gKa6YLoM.wav",
+  "gt_captions": [
+    "A person snoring with another man speaking",
+    "A man talking as a person is snoring",
+    "A man speaking followed by snoring",
+    "Two men speaking",
+    "A man talking as a person is snoring and a vehicle accelerates in the distance"
+  ],
+  "top_scene": [
+    "dorm room",
+    0.08779504895210266
+  ],
+  "top_object": [
+    "pillow",
+    0.08165134489536285
+  ],
+  "env_probs": {
+    "indoor": 0.7309144735336304,
+    "outdoor": 0.26908552646636963
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A fan spins while a person snores",
+    "casv": "Someone breathes heavily while sleeping"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.011258564889431,
+    "clap_gt_audio_baseline": 0.31206077337265015,
+    "clap_text_casv": 0.13059958815574646,
+    "clap_gt_audio_casv": 0.21804574131965637
+  },
+  "verdicts": [
+    {
+      "caption": "A fan spins while a person snores",
+      "clip_similarity": 0.3034946024417877,
+      "visual": 1.0,
+      "scene_support": 0.1929337618614644,
+      "object_support": 0.2954904495589849,
+      "score": 0.5465272634261348,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores while a fan spins",
+      "clip_similarity": 0.29475611448287964,
+      "visual": 0.6403483487166907,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2561393394866763,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person snoring and then person laughing",
+      "clip_similarity": 0.28767237067222595,
+      "visual": 0.3488013247063874,
+      "scene_support": 0.5105300665962205,
+      "object_support": 0.5537128194532474,
+      "score": 0.4587933956973953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy talking then snoring",
+      "clip_similarity": 0.28671956062316895,
+      "visual": 0.3095863358989298,
+      "scene_support": 0.6212686632660583,
+      "object_support": 0.6516385546878272,
+      "score": 0.5057066997457376,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A male teen talking, then some grunting sounds",
+      "clip_similarity": 0.28607213497161865,
+      "visual": 0.28294011223206894,
+      "scene_support": 0.6030385183832951,
+      "object_support": 0.4318787327132969,
+      "score": 0.4236512202218052,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Kid screaming then talking",
+      "clip_similarity": 0.2848927080631256,
+      "visual": 0.23439820919321702,
+      "scene_support": 0.3796660359275551,
+      "object_support": 0.13394573797085588,
+      "score": 0.2478428158468101,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone breathes heavily while sleeping",
+      "clip_similarity": 0.2832055687904358,
+      "visual": 0.16496028947287725,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6659841157891508,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring then another laughing",
+      "clip_similarity": 0.28270819783210754,
+      "visual": 0.144489896047346,
+      "scene_support": 0.5811349617870395,
+      "object_support": 0.6797736150394665,
+      "score": 0.4360685314668902,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person making snoring noises",
+      "clip_similarity": 0.282693475484848,
+      "visual": 0.14388396553310231,
+      "scene_support": 0.7162810557098273,
+      "object_support": 0.7862499336871878,
+      "score": 0.5083128830323453,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores, and then makes loud baby-like noises",
+      "clip_similarity": 0.2822692394256592,
+      "visual": 0.1264235993989758,
+      "scene_support": 0.6105617498271025,
+      "object_support": 0.7035568796401518,
+      "score": 0.4448050285997666,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rubbing with faint snoring in the background",
+      "clip_similarity": 0.2820509076118469,
+      "visual": 0.1174376744043421,
+      "scene_support": 0.7397371783844887,
+      "object_support": 0.8556709320928882,
+      "score": 0.52559750290495,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male snoring loudly",
+      "clip_similarity": 0.28178754448890686,
+      "visual": 0.10659838704731532,
+      "scene_support": 0.47775284271426116,
+      "object_support": 0.37930146781664714,
+      "score": 0.29975564797819865,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fan whirs and then a person snores nearby",
+      "clip_similarity": 0.28069108724594116,
+      "visual": 0.06147128269602281,
+      "scene_support": 0.541061818283945,
+      "object_support": 0.7294437262495428,
+      "score": 0.40574017643845545,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man sneezing and talking",
+      "clip_similarity": 0.2797732353210449,
+      "visual": 0.023695072214896813,
+      "scene_support": 0.38810290292117633,
+      "object_support": 0.31494983959279743,
+      "score": 0.22039385164015085,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person snoring as they sleep",
+      "clip_similarity": 0.27963972091674805,
+      "visual": 0.01819999386710006,
+      "scene_support": 0.648416628342537,
+      "object_support": 0.734632040675581,
+      "score": 0.4221945982522754,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young man speaking followed by rapid tapping",
+      "clip_similarity": 0.27947723865509033,
+      "visual": 0.011512679770629542,
+      "scene_support": 0.5280971455252044,
+      "object_support": 0.36790068993245867,
+      "score": 0.27340442254555075,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snoring with some clicking",
+      "clip_similarity": 0.2794520854949951,
+      "visual": 0.010477446260464261,
+      "scene_support": 0.5857808117226199,
+      "object_support": 0.6776756172675771,
+      "score": 0.3832279072012448,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people talking at once, followed by snoring",
+      "clip_similarity": 0.2793070673942566,
+      "visual": 0.004508908037165374,
+      "scene_support": 0.46781957935903334,
+      "object_support": 0.39147845461830344,
+      "score": 0.2595929734080672,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Heaver breathing from someone sleeping",
+      "clip_similarity": 0.27930670976638794,
+      "visual": 0.004494189077305204,
+      "scene_support": 0.6907742995460785,
+      "object_support": 0.6971232804040753,
+      "score": 0.41816694961596823,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+      "clip_similarity": 0.2791975140571594,
+      "visual": 0.0,
+      "scene_support": 0.40578495423923383,
+      "object_support": 0.13698858861206586,
+      "score": 0.1628320628553899,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "dorm room",
+      0.08779504895210266
+    ],
+    [
+      "bedroom",
+      0.07894719392061234
+    ],
+    [
+      "berth",
+      0.06986413151025772
+    ],
+    [
+      "bedchamber",
+      0.03423517197370529
+    ],
+    [
+      "hotel room",
+      0.029161222279071808
+    ]
+  ],
+  "top_objects": [
+    [
+      "pillow",
+      0.08165134489536285
+    ],
+    [
+      "sleeping bag",
+      0.02776060625910759
+    ],
+    [
+      "pajamas",
+      0.027759814634919167
+    ],
+    [
+      "neck brace",
+      0.02451038360595703
+    ],
+    [
+      "infant bed",
+      0.019400404766201973
+    ]
+  ]
+}
