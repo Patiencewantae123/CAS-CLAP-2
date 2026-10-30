@@ -1,0 +1,282 @@
+{
+  "id": "L6rnV0oNIII",
+  "image": "data\\audiocaps\\test_subset\\frames\\L6rnV0oNIII.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\L6rnV0oNIII.wav",
+  "gt_captions": [
+    "A series of electronic beeps alongside plastic clicking and laser effects followed by a wooden thud and synthesized explosion",
+    "An electronic device beeping as plastic clacks with a toy zapping followed by a wooden thud and audio static",
+    "Laser followed by a gun shot",
+    "Digital beeping with some clicks",
+    "A beep and clicking noise repeat."
+  ],
+  "top_scene": [
+    "indoor bow window",
+    0.4114610254764557
+  ],
+  "top_object": [
+    "projectile",
+    0.4731869399547577
+  ],
+  "env_probs": {
+    "indoor": 0.7959905862808228,
+    "outdoor": 0.20400941371917725
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A gun cocking followed by a gunshot firing during camera audio feedback",
+    "casv": "An automatic gunfire is triggered for a long period"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.27267929911613464,
+    "clap_gt_audio_baseline": 0.23295757174491882,
+    "clap_text_casv": 0.30473417043685913,
+    "clap_gt_audio_casv": 0.19294866919517517
+  },
+  "verdicts": [
+    {
+      "caption": "A gun cocking followed by a gunshot firing during camera audio feedback",
+      "clip_similarity": 0.33602604269981384,
+      "visual": 1.0,
+      "scene_support": 0.5129307996242035,
+      "object_support": 0.5578249725215294,
+      "score": 0.7212267316437199,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An automatic gunfire is triggered for a long period",
+      "clip_similarity": 0.331510066986084,
+      "visual": 0.8423827682117276,
+      "scene_support": 0.890979398890773,
+      "object_support": 0.8859903867235102,
+      "score": 0.8700440429689761,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Automatic gunfire occurs in two extended bursts followed by a series of single shots",
+      "clip_similarity": 0.3272019326686859,
+      "visual": 0.6920196466351705,
+      "scene_support": 0.6227604528710619,
+      "object_support": 0.5775963603864249,
+      "score": 0.6369149026313142,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A single shot rifle being used",
+      "clip_similarity": 0.3219749927520752,
+      "visual": 0.5095882403113837,
+      "scene_support": 0.6883176173579659,
+      "object_support": 0.43890019105640427,
+      "score": 0.5420006386488645,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An air soft gun is fired several times",
+      "clip_similarity": 0.3209590017795563,
+      "visual": 0.4741279777321492,
+      "scene_support": 0.755478851542235,
+      "object_support": 0.8093070618030684,
+      "score": 0.6590869650964507,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An automatic gun fires off multiple shots",
+      "clip_similarity": 0.3167975842952728,
+      "visual": 0.32888558809884894,
+      "scene_support": 0.8893736780665965,
+      "object_support": 1.0,
+      "score": 0.6983663386595185,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A single gunshot is followed by automatic gunfire",
+      "clip_similarity": 0.3149022161960602,
+      "visual": 0.2627331789728579,
+      "scene_support": 0.6765409553749957,
+      "object_support": 0.6684570465433213,
+      "score": 0.5085926721646382,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gun is cocked and fired rapidly and cartridges ping against the floor",
+      "clip_similarity": 0.31463468074798584,
+      "visual": 0.25339561840925495,
+      "scene_support": 0.5575805708605838,
+      "object_support": 0.2797122572552996,
+      "score": 0.35254609579846696,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A gun loading followed by a gun shot and reloading",
+      "clip_similarity": 0.31369683146476746,
+      "visual": 0.22066266827268133,
+      "scene_support": 0.8546603879817781,
+      "object_support": 0.5839690347317672,
+      "score": 0.5198538941231361,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gun is fired and loaded several times",
+      "clip_similarity": 0.3136049211025238,
+      "visual": 0.2174547996330298,
+      "scene_support": 0.951825898584489,
+      "object_support": 0.9844175766064799,
+      "score": 0.6678549624105026,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Gun fires in automatic and semi-automatic mode",
+      "clip_similarity": 0.3135554790496826,
+      "visual": 0.21572916601656358,
+      "scene_support": 0.48118210772941994,
+      "object_support": 0.5073825855328856,
+      "score": 0.38286107438531713,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A gun shoots several loud sharp cracks of gunfire",
+      "clip_similarity": 0.31329187750816345,
+      "visual": 0.20652890722352937,
+      "scene_support": 0.9070217469912342,
+      "object_support": 0.8679933541798232,
+      "score": 0.6151160932407289,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A continuous firing of a gun",
+      "clip_similarity": 0.3127479553222656,
+      "visual": 0.18754485711254376,
+      "scene_support": 0.8665790468705368,
+      "object_support": 0.9823627915649654,
+      "score": 0.6297004943756681,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A gun firing repeatedly",
+      "clip_similarity": 0.3122285008430481,
+      "visual": 0.1694147824078986,
+      "scene_support": 0.9611935665494917,
+      "object_support": 0.9977033898490268,
+      "score": 0.6554349998827149,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A gun is loaded and targets are fired at",
+      "clip_similarity": 0.3116985559463501,
+      "visual": 0.15091856964840344,
+      "scene_support": 1.0,
+      "object_support": 0.8336017446370547,
+      "score": 0.6104479512504778,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A pellet gun firing",
+      "clip_similarity": 0.31127625703811646,
+      "visual": 0.13617943261083476,
+      "scene_support": 0.5881866830018145,
+      "object_support": 0.7040424854668208,
+      "score": 0.4421405235849245,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clock tick locking with clanging in the background",
+      "clip_similarity": 0.3110513687133789,
+      "visual": 0.1283303480599884,
+      "scene_support": 0.9176987585177504,
+      "object_support": 0.541717380742709,
+      "score": 0.48915698100213323,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small airguns fires twice",
+      "clip_similarity": 0.30918335914611816,
+      "visual": 0.06313281033840726,
+      "scene_support": 0.3816653925471438,
+      "object_support": 0.29507762076141403,
+      "score": 0.22827602812793024,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man laughs followed by some steps and then a gun is fired several times while something swooshes and later is tapped",
+      "clip_similarity": 0.30750131607055664,
+      "visual": 0.0044259017709848076,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.001770360708393923,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A reloading sound then single shot gun fire and an explosion",
+      "clip_similarity": 0.307374507188797,
+      "visual": 0.0,
+      "scene_support": 0.4388026358588419,
+      "object_support": 0.5093674452415446,
+      "score": 0.28445102433011593,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor bow window",
+      0.4114610254764557
+    ],
+    [
+      "recreation room",
+      0.11893008649349213
+    ],
+    [
+      "lock chamber",
+      0.0944347083568573
+    ],
+    [
+      "bullring",
+      0.027790851891040802
+    ],
+    [
+      "office cubicles",
+      0.020442618057131767
+    ]
+  ],
+  "top_objects": [
+    [
+      "projectile",
+      0.4731869399547577
+    ],
+    [
+      "digital clock",
+      0.14977329969406128
+    ],
+    [
+      "rifle",
+      0.04397153854370117
+    ],
+    [
+      "digital watch",
+      0.0376930795609951
+    ],
+    [
+      "assault rifle",
+      0.03618062660098076
+    ]
+  ]
+}

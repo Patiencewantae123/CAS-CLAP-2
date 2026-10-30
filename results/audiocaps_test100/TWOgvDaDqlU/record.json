@@ -1,0 +1,282 @@
+{
+  "id": "TWOgvDaDqlU",
+  "image": "data\\audiocaps\\test_subset\\frames\\TWOgvDaDqlU.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\TWOgvDaDqlU.wav",
+  "gt_captions": [
+    "Machine grinding wood",
+    "A power tool sawing wood followed by a machine motor running while cutting wood",
+    "A power tool drilling followed by a large motor running as wood is being sawed",
+    "High pitched metal whirring is followed by a large motor operating and low-pitched whirring and grinding of wood",
+    "Wood being sawed by a machine followed by a heavy machine motor running while sawing wood"
+  ],
+  "top_scene": [
+    "tree farm",
+    0.46628516912460327
+  ],
+  "top_object": [
+    "sawmill",
+    0.8995487689971924
+  ],
+  "env_probs": {
+    "indoor": 0.17642360925674438,
+    "outdoor": 0.8235763907432556
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Wood being sawed by machine",
+    "casv": "A machine is being used to saw wood"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5396357774734497,
+    "clap_gt_audio_baseline": 0.5807886123657227,
+    "clap_text_casv": 0.28655779361724854,
+    "clap_gt_audio_casv": 0.28876399993896484
+  },
+  "verdicts": [
+    {
+      "caption": "Wood being sawed by machine",
+      "clip_similarity": 0.3622608482837677,
+      "visual": 1.0,
+      "scene_support": 0.5694671854326525,
+      "object_support": 0.7932795823513222,
+      "score": 0.8088240303351923,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood being cut by a power saw",
+      "clip_similarity": 0.36220335960388184,
+      "visual": 0.9973603402410588,
+      "scene_support": 0.4618858376311007,
+      "object_support": 0.70419851586867,
+      "score": 0.7487694421463548,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine is being used to saw wood",
+      "clip_similarity": 0.3563906252384186,
+      "visual": 0.7304618651953539,
+      "scene_support": 0.747757384606983,
+      "object_support": 1.0,
+      "score": 0.8165119614602365,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw cutting wood loudly",
+      "clip_similarity": 0.35081934928894043,
+      "visual": 0.47465023481887747,
+      "scene_support": 0.6597471255337678,
+      "object_support": 0.4931615407546766,
+      "score": 0.5357326938140843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting wood",
+      "clip_similarity": 0.348153293132782,
+      "visual": 0.3522351582427447,
+      "scene_support": 0.562311798030005,
+      "object_support": 0.930204401355161,
+      "score": 0.5886489231126477,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw spins faster than slows down as blocks of wood fall in the background",
+      "clip_similarity": 0.3474670946598053,
+      "visual": 0.32072755536580294,
+      "scene_support": 0.22217964108572957,
+      "object_support": 0.4058284969465391,
+      "score": 0.31669346355600175,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood cracking while a machine works",
+      "clip_similarity": 0.34695518016815186,
+      "visual": 0.2972224046766725,
+      "scene_support": 0.6337554933658057,
+      "object_support": 0.18670026532180498,
+      "score": 0.3650256894769522,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Chainsaw cutting wood",
+      "clip_similarity": 0.3457278907299042,
+      "visual": 0.24086997930966533,
+      "scene_support": 0.5958147426752728,
+      "object_support": 0.41340307114137587,
+      "score": 0.3991133358688607,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood sawing followed by man's voice",
+      "clip_similarity": 0.3456414043903351,
+      "visual": 0.23689885820005036,
+      "scene_support": 0.743254429422884,
+      "object_support": 0.4217014583258234,
+      "score": 0.4442463096046324,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Machine is sawing wood",
+      "clip_similarity": 0.345198392868042,
+      "visual": 0.21655746767819414,
+      "scene_support": 0.5152501679027438,
+      "object_support": 0.6652127466614484,
+      "score": 0.4407618614405353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine works while wood hits",
+      "clip_similarity": 0.3448590636253357,
+      "visual": 0.20097676989939461,
+      "scene_support": 0.9852877915304203,
+      "object_support": 0.46111865440590405,
+      "score": 0.5143126417406552,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine is sawing wood",
+      "clip_similarity": 0.3440425992012024,
+      "visual": 0.16348785400724708,
+      "scene_support": 0.4957494977288819,
+      "object_support": 0.7566002875797696,
+      "score": 0.44110007719549427,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood is being chopped by tools",
+      "clip_similarity": 0.34388768672943115,
+      "visual": 0.15637486726438746,
+      "scene_support": 1.0,
+      "object_support": 0.5620084580265711,
+      "score": 0.5311524843137263,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw revs and then accelerates as it cuts wood",
+      "clip_similarity": 0.3433857858181,
+      "visual": 0.13332950178987815,
+      "scene_support": 0.7065519914079783,
+      "object_support": 0.7482835905015137,
+      "score": 0.4897824752887988,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.3416651487350464,
+      "visual": 0.054324444152517325,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.021729777661006932,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.34146648645401,
+      "visual": 0.04520263391244376,
+      "scene_support": 0.2733926126625016,
+      "object_support": 0.5279543442797889,
+      "score": 0.2584851406476647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine saws wood with along with rumbling background noises",
+      "clip_similarity": 0.34120070934295654,
+      "visual": 0.03299916800770688,
+      "scene_support": 0.7844277270902574,
+      "object_support": 0.7328826810719756,
+      "score": 0.4683927896517527,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is sawing wood with farm animal sounds in the background",
+      "clip_similarity": 0.3407764434814453,
+      "visual": 0.013518506354888502,
+      "scene_support": 0.7699080918104658,
+      "object_support": 0.5650164302687721,
+      "score": 0.40588475916572675,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric saw cutting wood",
+      "clip_similarity": 0.34062305092811584,
+      "visual": 0.006475308439248142,
+      "scene_support": 0.40563195143706543,
+      "object_support": 0.740407475243021,
+      "score": 0.3464019513797252,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw is cutting wood",
+      "clip_similarity": 0.34048202633857727,
+      "visual": 0.0,
+      "scene_support": 0.6960054955214757,
+      "object_support": 0.8950831641098617,
+      "score": 0.47732659788940124,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tree farm",
+      0.46628516912460327
+    ],
+    [
+      "assembly line",
+      0.0841304212808609
+    ],
+    [
+      "construction site",
+      0.0473332516849041
+    ],
+    [
+      "manufactured home",
+      0.0433955192565918
+    ],
+    [
+      "excavation",
+      0.04193117842078209
+    ]
+  ],
+  "top_objects": [
+    [
+      "sawmill",
+      0.8995487689971924
+    ],
+    [
+      "chainsaw",
+      0.014441210776567459
+    ],
+    [
+      "plow",
+      0.009510638192296028
+    ],
+    [
+      "forklift",
+      0.007939026691019535
+    ],
+    [
+      "hand plane",
+      0.00713748624548316
+    ]
+  ]
+}

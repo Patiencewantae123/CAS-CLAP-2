@@ -1,0 +1,282 @@
+{
+  "id": "lmPMhs-9IYE",
+  "image": "data\\audiocaps\\test_subset\\frames\\lmPMhs-9IYE.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\lmPMhs-9IYE.wav",
+  "gt_captions": [
+    "A vehicle engine revving several times as a man speaks over an intercom along with a crowd of people talking and whistling",
+    "Revving of loud engines with people speaking and cheering",
+    "A vehicle engine revving as a crowd of people talk and whistle in the background",
+    "Revving of an engine with people cheering while someone speaks through a speaker",
+    "Distant humming of engines with people speaking and whistling"
+  ],
+  "top_scene": [
+    "raceway",
+    0.8579762578010559
+  ],
+  "top_object": [
+    "race car",
+    0.20192404091358185
+  ],
+  "env_probs": {
+    "indoor": 0.05934826284646988,
+    "outdoor": 0.9406517371535301
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A man speaks over a car racing while people laugh followed by a squeal",
+    "casv": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4591405391693115,
+    "clap_gt_audio_baseline": 0.49629050493240356,
+    "clap_text_casv": 0.4354628920555115,
+    "clap_gt_audio_casv": 0.5486471652984619
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks over a car racing while people laugh followed by a squeal",
+      "clip_similarity": 0.3325139284133911,
+      "visual": 1.0,
+      "scene_support": 0.7422386287777933,
+      "object_support": 0.6821464981203121,
+      "score": 0.8273155380694317,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background",
+      "clip_similarity": 0.3315596580505371,
+      "visual": 0.9483275022915348,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.9793310009166141,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine racing at a race track. People clapping",
+      "clip_similarity": 0.3271598815917969,
+      "visual": 0.7100853354677958,
+      "scene_support": 0.748629061369766,
+      "object_support": 0.4765824656917454,
+      "score": 0.6515975923055718,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man giving direction, followed by a loud engine starting, and the man confirming the results",
+      "clip_similarity": 0.32664430141448975,
+      "visual": 0.682167340141236,
+      "scene_support": 0.2915035144313565,
+      "object_support": 0.3985272138398436,
+      "score": 0.4798761545378545,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A guy talks while a large crowd noise is in the background and a small engine starts",
+      "clip_similarity": 0.3247844874858856,
+      "visual": 0.581460837346209,
+      "scene_support": 0.5232843052722985,
+      "object_support": 0.7276844098646419,
+      "score": 0.6078749494795658,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A commentator talking with motor bikes racing in the background",
+      "clip_similarity": 0.32291460037231445,
+      "visual": 0.48020888470029305,
+      "scene_support": 0.613530963094447,
+      "object_support": 0.5736497832686294,
+      "score": 0.5482377777890401,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man jabbers loudly and constantly as the rest of the crowd joins in while a racing car comes closer and moves further away",
+      "clip_similarity": 0.322674036026001,
+      "visual": 0.4671826385571722,
+      "scene_support": 0.7481707405866046,
+      "object_support": 0.6339901262677284,
+      "score": 0.6015213154791688,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks while cars race in the background",
+      "clip_similarity": 0.32220301032066345,
+      "visual": 0.44167720987877457,
+      "scene_support": 0.3223114082787449,
+      "object_support": 0.17719347522636328,
+      "score": 0.3265223490030423,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man and a woman are speaking followed by the sounds of a race car",
+      "clip_similarity": 0.3202795684337616,
+      "visual": 0.3375253359841981,
+      "scene_support": 0.673661423568878,
+      "object_support": 0.8235252341930978,
+      "score": 0.5841661317222719,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A firearm cocking followed by multiple gunfire shots then a woman speaking as a crowd of people talk in the background",
+      "clip_similarity": 0.31930041313171387,
+      "visual": 0.28450535121806375,
+      "scene_support": 0.4136164958693648,
+      "object_support": 0.5125584173336803,
+      "score": 0.391654614448139,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race vehicle engine running idle then revving as a crowd of people cheer and applaud in the background",
+      "clip_similarity": 0.31750625371932983,
+      "visual": 0.18735395499554602,
+      "scene_support": 0.6747562584162794,
+      "object_support": 0.7574494195817779,
+      "score": 0.5046032853976357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck engine and acceleration with man speaking followed by people cheering",
+      "clip_similarity": 0.317125529050827,
+      "visual": 0.16673820989168464,
+      "scene_support": 0.5637736508469354,
+      "object_support": 0.6479928867652714,
+      "score": 0.4302252452403359,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People cheering while cars race",
+      "clip_similarity": 0.31555360555648804,
+      "visual": 0.08162059928478292,
+      "scene_support": 0.8093615468862928,
+      "object_support": 0.6718114992796926,
+      "score": 0.47700015356370873,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd of people talking while a man speaks over an intercom followed by a motorbike engine revving",
+      "clip_similarity": 0.3150904178619385,
+      "visual": 0.05653958868562724,
+      "scene_support": 0.0418052933751187,
+      "object_support": 0.09238718410430662,
+      "score": 0.0628735787180785,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking while cars are racing in the background",
+      "clip_similarity": 0.3150734603404999,
+      "visual": 0.05562136097806582,
+      "scene_support": 0.629457227097948,
+      "object_support": 0.5533210305241998,
+      "score": 0.3770820216778707,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man cheering and motor running and revving",
+      "clip_similarity": 0.31499531865119934,
+      "visual": 0.05139009024128894,
+      "scene_support": 0.6417709576375173,
+      "object_support": 0.7862286895022618,
+      "score": 0.44895593023844926,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine starting up then revving several times as a crowd of people talk in the background",
+      "clip_similarity": 0.31477099657058716,
+      "visual": 0.03924334163880246,
+      "scene_support": 0.43091848864506427,
+      "object_support": 0.5405713952940867,
+      "score": 0.30714430183726626,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle accelerating with a man laughing in the background and a person cheering",
+      "clip_similarity": 0.31442826986312866,
+      "visual": 0.020685136652938974,
+      "scene_support": 0.05493756337357819,
+      "object_support": 0.1072283205600252,
+      "score": 0.05692381984125661,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine revving before accelerating at a high rate as a crowd of people talk then cheer while a man speaks over an intercom",
+      "clip_similarity": 0.31411445140838623,
+      "visual": 0.0036922759137091882,
+      "scene_support": 0.4443308861456065,
+      "object_support": 0.47694856717962303,
+      "score": 0.2778607463630525,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks in the foreground, while an adult male and a crowd chants in the background, a motorcycle engine accelerates and revs, and the crowd cheers",
+      "clip_similarity": 0.3140462636947632,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.8579762578010559
+    ],
+    [
+      "bullring",
+      0.01636657491326332
+    ],
+    [
+      "performance arena",
+      0.012387195602059364
+    ],
+    [
+      "promenade",
+      0.010107839480042458
+    ],
+    [
+      "bar",
+      0.007278251927345991
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.20192404091358185
+    ],
+    [
+      "bib",
+      0.08784402161836624
+    ],
+    [
+      "T-shirt",
+      0.04643760621547699
+    ],
+    [
+      "tank suit",
+      0.04625497758388519
+    ],
+    [
+      "neck brace",
+      0.04405035451054573
+    ]
+  ]
+}

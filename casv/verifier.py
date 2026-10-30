@@ -138,8 +138,8 @@ class CASVerifier:
             "source_z": dict(zip(self.source_names, source_z.tolist())),
         }
 
-    def _conflicts(self, caption, recognition):
-        cfg = self.config
+    @staticmethod
+    def _conflicts(caption, recognition, cfg):
         conflicts = []
         env = vocab.caption_environment(caption)
         env_probs = recognition["env_probs"]
@@ -153,12 +153,12 @@ class CASVerifier:
                 conflicts.append(f"names '{source}', not visible in image (z={z:+.2f})")
         return conflicts
 
-    def verify(self, image):
-        cfg = self.config
+    def measure(self, image):
+        # Everything that does not depend on the verifier's weights or
+        # thresholds, so decide() can be re-run cheaply (e.g. for tuning).
         rec = self.recognise(image)
-
         sims = self.caption_emb @ rec["image_emb"]
-        candidates = np.argsort(sims)[::-1][:cfg.retrieve_k]
+        candidates = np.argsort(sims)[::-1][:self.config.retrieve_k]
         cand_emb = self.caption_emb[candidates]
 
         visual = _minmax(sims[candidates])
@@ -166,13 +166,26 @@ class CASVerifier:
                                 / rec["scene_w"].sum())
         object_support = _minmax(cand_emb @ self.object_emb[rec["object_idx"]].T @ rec["object_w"]
                                  / rec["object_w"].sum())
+        rec.pop("image_emb")
+        rec["candidates"] = [{
+            "caption": self.captions[idx],
+            "clip_similarity": float(sims[idx]),
+            "visual": float(visual[j]),
+            "scene_support": float(scene_support[j]),
+            "object_support": float(object_support[j]),
+        } for j, idx in enumerate(candidates)]
+        return rec
 
+    def verify(self, image):
+        return self.decide(self.measure(image))
+
+    def decide(self, rec, config=None):
+        cfg = config or self.config
         verdicts = []
-        for j, idx in enumerate(candidates):
-            caption = self.captions[idx]
-            conflicts = self._conflicts(caption, rec)
-            score = float(cfg.w_visual * visual[j] + cfg.w_scene * scene_support[j]
-                          + cfg.w_object * object_support[j])
+        for cand in rec["candidates"]:
+            conflicts = self._conflicts(cand["caption"], rec, cfg)
+            score = float(cfg.w_visual * cand["visual"] + cfg.w_scene * cand["scene_support"]
+                          + cfg.w_object * cand["object_support"])
             if conflicts:
                 decision = "REJECT"
             elif score >= cfg.accept_threshold:
@@ -181,16 +194,7 @@ class CASVerifier:
                 decision = "REPAIR"
             else:
                 decision = "REJECT"
-            verdicts.append({
-                "caption": caption,
-                "clip_similarity": float(sims[idx]),
-                "visual": float(visual[j]),
-                "scene_support": float(scene_support[j]),
-                "object_support": float(object_support[j]),
-                "score": score,
-                "conflicts": conflicts,
-                "decision": decision,
-            })
+            verdicts.append({**cand, "score": score, "conflicts": conflicts, "decision": decision})
 
         baseline = verdicts[0]["caption"]
         ranked = sorted(verdicts, key=lambda v: v["score"], reverse=True)

@@ -1,0 +1,282 @@
+{
+  "id": "6Nvu6EcpdE8",
+  "image": "data\\audiocaps\\test_subset\\frames\\6Nvu6EcpdE8.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\6Nvu6EcpdE8.wav",
+  "gt_captions": [
+    "The wind is blowing, an adult male speaks via an electronic device, and a click occurs",
+    "Wind blowing with a man speaking followed by a click and light hum",
+    "Wind blows and a man speaks with a quick pop",
+    "A main is smoothly speaking over a loud faint noise",
+    "A man is talking then an engine turns on"
+  ],
+  "top_scene": [
+    "indoor garage",
+    0.4060698449611664
+  ],
+  "top_object": [
+    "race car",
+    0.4705544412136078
+  ],
+  "env_probs": {
+    "indoor": 0.8140270709991455,
+    "outdoor": 0.1859729290008545
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Mini race car engine revs along with tire squeal",
+    "casv": "A race car engine is being revved repeatedly"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.09938085079193115,
+    "clap_gt_audio_baseline": 0.223731130361557,
+    "clap_text_casv": -0.13310766220092773,
+    "clap_gt_audio_casv": 0.2214755117893219
+  },
+  "verdicts": [
+    {
+      "caption": "Mini race car engine revs along with tire squeal",
+      "clip_similarity": 0.3165666460990906,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.22516766223860046,
+      "score": 0.46755029867158016,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car engine is being revved repeatedly",
+      "clip_similarity": 0.31481656432151794,
+      "visual": 0.845126289998866,
+      "scene_support": 0.6546633772889482,
+      "object_support": 0.7651013650727609,
+      "score": 0.763979938708059,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car dings and its engine is started up",
+      "clip_similarity": 0.3135557174682617,
+      "visual": 0.7335474869912202,
+      "scene_support": 0.7403626782413455,
+      "object_support": 0.19262397594777458,
+      "score": 0.5733149910532241,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car engine is running and accelerating, and tires are squealing",
+      "clip_similarity": 0.31154555082321167,
+      "visual": 0.5556575334878826,
+      "scene_support": 0.3965408889874503,
+      "object_support": 0.35747595272766897,
+      "score": 0.4484680659096888,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car racing engine with tire squeal with background music",
+      "clip_similarity": 0.31098276376724243,
+      "visual": 0.5058536212275857,
+      "scene_support": 0.35574369965498387,
+      "object_support": 0.41962242562929064,
+      "score": 0.4349512860763166,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine idling and then a race car accelerating",
+      "clip_similarity": 0.3105137348175049,
+      "visual": 0.46434684453024655,
+      "scene_support": 0.7655166786322278,
+      "object_support": 0.8999159212259898,
+      "score": 0.6853685177695639,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A fast race car goes by with the engine changing gears",
+      "clip_similarity": 0.3100811839103699,
+      "visual": 0.42606819686312364,
+      "scene_support": 1.0,
+      "object_support": 0.9301025538153684,
+      "score": 0.74945804488986,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Race car accelerating and leveling off",
+      "clip_similarity": 0.30943235754966736,
+      "visual": 0.36865022536243924,
+      "scene_support": 0.7584544750430859,
+      "object_support": 0.5777035226405935,
+      "score": 0.5483074894500796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cars engine is being revved up to its maximum and then it is throttled down",
+      "clip_similarity": 0.30901429057121277,
+      "visual": 0.3316533348102551,
+      "scene_support": 0.44903625137285896,
+      "object_support": 0.24216049015820182,
+      "score": 0.34002035638342026,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks and starts up a car engine that idles roughly",
+      "clip_similarity": 0.30845776200294495,
+      "visual": 0.2824032682169071,
+      "scene_support": 0.4549054084555608,
+      "object_support": 0.0037556836755921422,
+      "score": 0.2505596349261087,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small RC race engine revs",
+      "clip_similarity": 0.3081277310848236,
+      "visual": 0.2531971400464703,
+      "scene_support": 0.12708544595130816,
+      "object_support": 0.22457019525097327,
+      "score": 0.20677554837927253,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race vehicle is accelerating its engine",
+      "clip_similarity": 0.3079908490180969,
+      "visual": 0.24108374410220298,
+      "scene_support": 0.6338452750949403,
+      "object_support": 0.6596759933430414,
+      "score": 0.48448987817227573,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large motor is started and is running",
+      "clip_similarity": 0.3078882694244385,
+      "visual": 0.23200594988487921,
+      "scene_support": 0.9570338744925604,
+      "object_support": 0.615195350035167,
+      "score": 0.5644711473122699,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car is revving up its engine and takes off",
+      "clip_similarity": 0.30767741799354553,
+      "visual": 0.21334662562934012,
+      "scene_support": 0.8731093371517841,
+      "object_support": 1.0,
+      "score": 0.6472714513972713,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car engine is started up and the engine is revved up high",
+      "clip_similarity": 0.30764296650886536,
+      "visual": 0.21029783710080255,
+      "scene_support": 0.7300575992061272,
+      "object_support": 0.32868980752275945,
+      "score": 0.401743356858987,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks over an idling engine then the engine begins to rev",
+      "clip_similarity": 0.30661624670028687,
+      "visual": 0.11943813675768197,
+      "scene_support": 0.43181571412684194,
+      "object_support": 0.0,
+      "score": 0.17731996894112537,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle's engine is being made to run quite fast",
+      "clip_similarity": 0.30592578649520874,
+      "visual": 0.05833577289162823,
+      "scene_support": 0.7186292270730088,
+      "object_support": 0.4420376534220928,
+      "score": 0.3715343733051818,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The motor of a car being started",
+      "clip_similarity": 0.30544281005859375,
+      "visual": 0.015594711565088733,
+      "scene_support": 0.9959990497743214,
+      "object_support": 0.7936045647716128,
+      "score": 0.5431189689898157,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car is accelerating then it throttles down a gear",
+      "clip_similarity": 0.3052983582019806,
+      "visual": 0.002811426099845187,
+      "scene_support": 0.7220662275711535,
+      "object_support": 0.7561957017048551,
+      "score": 0.4446031492227406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Roars of racing engines with a near constant loud static sound",
+      "clip_similarity": 0.3052665889263153,
+      "visual": 0.0,
+      "scene_support": 0.5360213840260746,
+      "object_support": 0.315925683774654,
+      "score": 0.2555841203402186,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor garage",
+      0.4060698449611664
+    ],
+    [
+      "repair shop",
+      0.19645020365715027
+    ],
+    [
+      "raceway",
+      0.11524134129285812
+    ],
+    [
+      "assembly line",
+      0.06801334023475647
+    ],
+    [
+      "outdoor garage",
+      0.05513732135295868
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.4705544412136078
+    ],
+    [
+      "go-kart",
+      0.4186491370201111
+    ],
+    [
+      "Model T",
+      0.038133472204208374
+    ],
+    [
+      "snowmobile",
+      0.007920121774077415
+    ],
+    [
+      "motorboat",
+      0.006955769378691912
+    ]
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "iOCpICiu4LA",
+  "image": "data\\audiocaps\\test_subset\\frames\\iOCpICiu4LA.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\iOCpICiu4LA.wav",
+  "gt_captions": [
+    "A man talking as birds chirp in the background followed by a loud popping",
+    "Birds chirp in the background while an adult male speaks and many bees buzz",
+    "Insects buzzing and birds chirping as a man talks followed by a loud plastic popping",
+    "A man speaks with chirping birds and faint buzzing of insects",
+    "Birds chirp and a great number of insects buzz, an adult male speaks, and then a sharp thump occurs"
+  ],
+  "top_scene": [
+    "outdoor greenhouse",
+    0.17655128240585327
+  ],
+  "top_object": [
+    "apiary",
+    0.5449942946434021
+  ],
+  "env_probs": {
+    "indoor": 0.3743886947631836,
+    "outdoor": 0.6256113052368164
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Bees buzzing with a slight metal tapping sound near the end",
+    "casv": "Bees buzzing with a slight metal tapping sound near the end"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.25085151195526123,
+    "clap_gt_audio_baseline": 0.5220432281494141,
+    "clap_text_casv": 0.25085151195526123,
+    "clap_gt_audio_casv": 0.5220432281494141
+  },
+  "verdicts": [
+    {
+      "caption": "Bees buzzing with a slight metal tapping sound near the end",
+      "clip_similarity": 0.3200276494026184,
+      "visual": 1.0,
+      "scene_support": 0.5735186401450401,
+      "object_support": 0.892770596905407,
+      "score": 0.8398867711151341,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bees fly while some objects are tapped",
+      "clip_similarity": 0.31376007199287415,
+      "visual": 0.7386080307448313,
+      "scene_support": 0.47100518704379335,
+      "object_support": 0.8310883342913246,
+      "score": 0.6860712686984679,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water pouring and filling up a container",
+      "clip_similarity": 0.311479389667511,
+      "visual": 0.6434912088376475,
+      "scene_support": 0.7874756071510198,
+      "object_support": 0.18090961549493653,
+      "score": 0.5479120503288459,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several bees flies while wood is tapped",
+      "clip_similarity": 0.31143370270729065,
+      "visual": 0.6415858148200627,
+      "scene_support": 0.11454667766782703,
+      "object_support": 0.7547287459988399,
+      "score": 0.5174169530280252,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing and men speaking clicking",
+      "clip_similarity": 0.3087483048439026,
+      "visual": 0.5295901600630408,
+      "scene_support": 0.583423667997329,
+      "object_support": 0.7941372435873641,
+      "score": 0.6251043375006242,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.30847233533859253,
+      "visual": 0.5180807350122676,
+      "scene_support": 0.6535983902586949,
+      "object_support": 0.7694788115209414,
+      "score": 0.634155454538798,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bees fly nearby and wood objects are tapped",
+      "clip_similarity": 0.30742818117141724,
+      "visual": 0.4745338434270742,
+      "scene_support": 0.5082043128598552,
+      "object_support": 1.0,
+      "score": 0.6422748312287863,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw buzzing as items are placed over it",
+      "clip_similarity": 0.30717945098876953,
+      "visual": 0.4641604458597143,
+      "scene_support": 1.0,
+      "object_support": 0.7038779710382937,
+      "score": 0.6968275696553738,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Adult man putting food in oil",
+      "clip_similarity": 0.3060208559036255,
+      "visual": 0.41584074734201887,
+      "scene_support": 0.39951640040970526,
+      "object_support": 0.13920868798693983,
+      "score": 0.32795382545580104,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking and scraping a container",
+      "clip_similarity": 0.30547380447387695,
+      "visual": 0.3930257358698814,
+      "scene_support": 0.6143044297264366,
+      "object_support": 0.3172304566974836,
+      "score": 0.4366707602751286,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.3010826110839844,
+      "visual": 0.20988915653066653,
+      "scene_support": 0.8543913103447589,
+      "object_support": 0.5683985123577121,
+      "score": 0.5107926094230079,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with a bee buzzing and then a motorized vibration with some clicks",
+      "clip_similarity": 0.29903462529182434,
+      "visual": 0.12447704205290358,
+      "scene_support": 0.1391045938475496,
+      "object_support": 0.4546375212360974,
+      "score": 0.22791345134625554,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck chirping with periodic tapping on a cardboard surface",
+      "clip_similarity": 0.29834651947021484,
+      "visual": 0.09577929745276288,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03831171898110516,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic tapping with whooshing effects and water lightly splashing followed by metal tapping as a stream of water gently flows",
+      "clip_similarity": 0.2975335717201233,
+      "visual": 0.061874967373390106,
+      "scene_support": 0.44317281564807176,
+      "object_support": 0.009564164603517234,
+      "score": 0.16057108102483275,
+      "conflicts": [
+        "names 'a stream or river', not visible in image (z=-0.44)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several bees fly and wood is tapped followed by a man talking",
+      "clip_similarity": 0.29735520482063293,
+      "visual": 0.05443610031843571,
+      "scene_support": 0.5619460103282771,
+      "object_support": 0.8039713704973943,
+      "score": 0.43154965437507564,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is sawing wood with farm animal sounds in the background",
+      "clip_similarity": 0.29694581031799316,
+      "visual": 0.037362129268492764,
+      "scene_support": 0.4880696000991897,
+      "object_support": 0.30085536806923335,
+      "score": 0.251622342157924,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is talking while bees are buzzing, followed by a metal ding",
+      "clip_similarity": 0.296831876039505,
+      "visual": 0.03261045195001479,
+      "scene_support": 0.5942463997673623,
+      "object_support": 0.7661020330036419,
+      "score": 0.4211487106113071,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing while man speaking",
+      "clip_similarity": 0.29656320810317993,
+      "visual": 0.02140554192488298,
+      "scene_support": 0.2949225528600942,
+      "object_support": 0.685399801052778,
+      "score": 0.30265892294381486,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is talking with a bee buzzing in the background, followed by a tapping sound",
+      "clip_similarity": 0.2961236238479614,
+      "visual": 0.003072494462798207,
+      "scene_support": 0.12297033321664932,
+      "object_support": 0.42563157119187234,
+      "score": 0.16580956910767577,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A lot of bees are buzzing followed by a man speaking and more bees buzzing",
+      "clip_similarity": 0.29604995250701904,
+      "visual": 0.0,
+      "scene_support": 0.44890311227607005,
+      "object_support": 0.8357665560946053,
+      "score": 0.38540090051120257,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor greenhouse",
+      0.17655128240585327
+    ],
+    [
+      "raft",
+      0.13003656268119812
+    ],
+    [
+      "nursery",
+      0.10919664055109024
+    ],
+    [
+      "assembly line",
+      0.05711209774017334
+    ],
+    [
+      "pet shop",
+      0.04674120619893074
+    ]
+  ],
+  "top_objects": [
+    [
+      "apiary",
+      0.5449942946434021
+    ],
+    [
+      "crate",
+      0.08971544355154037
+    ],
+    [
+      "marimba",
+      0.055029403418302536
+    ],
+    [
+      "abacus",
+      0.03746899962425232
+    ],
+    [
+      "shopping basket",
+      0.02199699729681015
+    ]
+  ]
+}

@@ -4,6 +4,7 @@ __pycache__/
 # Large or re-downloadable datasets (see eval/README.md for how to fetch them)
 data/places365/
 data/audiocaps/test_subset/
+data/audiocaps/val_subset/
 data/cache/
 
 # Generated audio from experiment runs (results.json and figures are kept)

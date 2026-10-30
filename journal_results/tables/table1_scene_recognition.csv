@@ -1,0 +1,5 @@
+Metric,Value,n
+Scene top-1 accuracy (365-way),38.8%,3650
+Scene top-5 accuracy,68.5%,3650
+Indoor/outdoor accuracy,91.6%,3650
+"Indoor/outdoor accuracy, p >= 0.7",95.5%,3194

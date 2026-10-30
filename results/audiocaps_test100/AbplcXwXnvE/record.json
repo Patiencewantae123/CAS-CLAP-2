@@ -1,0 +1,284 @@
+{
+  "id": "AbplcXwXnvE",
+  "image": "data\\audiocaps\\test_subset\\frames\\AbplcXwXnvE.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\AbplcXwXnvE.wav",
+  "gt_captions": [
+    "Girl speaks and crunches plastic wrapping",
+    "Plastic crinkling as a young girl is talking",
+    "Female speaking followed by crinkling",
+    "A young girl speaks with some crinkling plastic",
+    "A young woman talking as plastic crinkles and crumples"
+  ],
+  "top_scene": [
+    "candy store",
+    0.40773457288742065
+  ],
+  "top_object": [
+    "maraca",
+    0.05450544133782387
+  ],
+  "env_probs": {
+    "indoor": 0.8496469259262085,
+    "outdoor": 0.1503530740737915
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A series of small pops is followed by an explosion",
+    "casv": "A series of small pops is followed by an explosion"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.015289653092622757,
+    "clap_gt_audio_baseline": 0.23301264643669128,
+    "clap_text_casv": -0.015289653092622757,
+    "clap_gt_audio_casv": 0.23301264643669128
+  },
+  "verdicts": [
+    {
+      "caption": "A series of small pops is followed by an explosion",
+      "clip_similarity": 0.3168359100818634,
+      "visual": 1.0,
+      "scene_support": 0.8813299765011392,
+      "object_support": 0.7454736952972774,
+      "score": 0.888041101539525,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Spray can ball rattling and rhythmic spray",
+      "clip_similarity": 0.3135527968406677,
+      "visual": 0.8342256852901875,
+      "scene_support": 0.5085222845717735,
+      "object_support": 0.38397727339219784,
+      "score": 0.6014401415052664,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Shaking a spray can",
+      "clip_similarity": 0.3103353977203369,
+      "visual": 0.6717694752428762,
+      "scene_support": 0.45997091504739895,
+      "object_support": 0.28794506761224337,
+      "score": 0.4930825848950432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ting clicks are followed by shaking can sound and a small spray",
+      "clip_similarity": 0.31023988127708435,
+      "visual": 0.6669465612096259,
+      "scene_support": 0.7259330818297738,
+      "object_support": 0.7376884863166394,
+      "score": 0.7058650949277743,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Crinkling and tapping noises followed by an object moving",
+      "clip_similarity": 0.3102247714996338,
+      "visual": 0.6661836228586563,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8664734491434625,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Crinkling sound of a wrapper",
+      "clip_similarity": 0.309648722410202,
+      "visual": 0.6370971625314505,
+      "scene_support": 0.8881565016879938,
+      "object_support": 0.743887396796976,
+      "score": 0.7444520345580712,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Shaking of a can following by spraying",
+      "clip_similarity": 0.3060377836227417,
+      "visual": 0.4547699447433999,
+      "scene_support": 0.24475935023242595,
+      "object_support": 0.2777227751739311,
+      "score": 0.33865261551926706,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A series of small pops, a large explosion",
+      "clip_similarity": 0.30372902750968933,
+      "visual": 0.33819386760085235,
+      "scene_support": 0.7678013318609659,
+      "object_support": 0.5948941199875951,
+      "score": 0.5440861825949093,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy squeaking as wind blows into a microphone followed by a person clapping then sheep baaing",
+      "clip_similarity": 0.30327990651130676,
+      "visual": 0.3155163903836662,
+      "scene_support": 0.5143501470037788,
+      "object_support": 0.6413695648357821,
+      "score": 0.4729224697053347,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Small wrapper being torn up",
+      "clip_similarity": 0.30322566628456116,
+      "visual": 0.3127776373289032,
+      "scene_support": 0.8792958935753732,
+      "object_support": 0.7976501015207634,
+      "score": 0.6281948534604023,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A can of spray paint being shaken and sprayed",
+      "clip_similarity": 0.30203914642333984,
+      "visual": 0.25286666185127665,
+      "scene_support": 0.019440013708963064,
+      "object_support": 0.0,
+      "score": 0.10697866885319958,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large bubbles from a liquid and popping",
+      "clip_similarity": 0.30119314789772034,
+      "visual": 0.21014963824382726,
+      "scene_support": 0.3570247822640808,
+      "object_support": 0.272446621143235,
+      "score": 0.2729012763197256,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spray can shake then sprays",
+      "clip_similarity": 0.3007771074771881,
+      "visual": 0.18914249942817243,
+      "scene_support": 0.5342457455879452,
+      "object_support": 0.33455626356779655,
+      "score": 0.3362976025179915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water bubbles vigorously and an electronic animal makes noises",
+      "clip_similarity": 0.30035313963890076,
+      "visual": 0.1677350813198984,
+      "scene_support": 0.6115807604436361,
+      "object_support": 0.512837256657363,
+      "score": 0.40441943765825905,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling followed by a pop",
+      "clip_similarity": 0.299933522939682,
+      "visual": 0.14654736537975369,
+      "scene_support": 0.7175995025841498,
+      "object_support": 0.5841533987513239,
+      "score": 0.44914481655254357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pet dog rubs an object and then pants quietly",
+      "clip_similarity": 0.29951608180999756,
+      "visual": 0.12546950052367367,
+      "scene_support": 0.0,
+      "object_support": 0.12688457059935285,
+      "score": 0.08825317138927533,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child is pretending to be shooting by making pow-pow noises as the dog stars barking",
+      "clip_similarity": 0.2991047203540802,
+      "visual": 0.10469861677922641,
+      "scene_support": 0.2974379045580749,
+      "object_support": 0.20554004950234347,
+      "score": 0.19277283292981606,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A miniature dog yelping",
+      "clip_similarity": 0.29857078194618225,
+      "visual": 0.07773845209288888,
+      "scene_support": 0.41487888431405745,
+      "object_support": 0.814809743652758,
+      "score": 0.4000019692272002,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toy horn is blown and a baby laughs, then the horn blows in slow motion",
+      "clip_similarity": 0.2976498007774353,
+      "visual": 0.031235328108635198,
+      "scene_support": 0.18367370182901796,
+      "object_support": 0.12173070959210303,
+      "score": 0.10411545466979037,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person making a whistling and bubble sound",
+      "clip_similarity": 0.2970311939716339,
+      "visual": 0.0,
+      "scene_support": 0.5664664681766199,
+      "object_support": 0.6722453350185195,
+      "score": 0.3716135409585418,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "candy store",
+      0.40773457288742065
+    ],
+    [
+      "ball pit",
+      0.12623730301856995
+    ],
+    [
+      "shower",
+      0.05997487157583237
+    ],
+    [
+      "archaelogical excavation",
+      0.04921405762434006
+    ],
+    [
+      "pet shop",
+      0.022510359063744545
+    ]
+  ],
+  "top_objects": [
+    [
+      "maraca",
+      0.05450544133782387
+    ],
+    [
+      "Maltese",
+      0.05132260546088219
+    ],
+    [
+      "ping-pong ball",
+      0.04537903144955635
+    ],
+    [
+      "packet",
+      0.044218890368938446
+    ],
+    [
+      "hamster",
+      0.037381209433078766
+    ]
+  ]
+}

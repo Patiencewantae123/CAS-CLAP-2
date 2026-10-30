@@ -1,0 +1,282 @@
+{
+  "id": "AFgGoY8Ihhg",
+  "image": "data\\audiocaps\\test_subset\\frames\\AFgGoY8Ihhg.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\AFgGoY8Ihhg.wav",
+  "gt_captions": [
+    "Police sirens sounding as wind is blowing heavily into a microphone",
+    "Wind and then a short ambulance siren repeats several times",
+    "Wind blowing and a siren rings",
+    "Police sirens wailing as wind blows heavily into a microphone",
+    "An emergency siren going off as wind blows heavily into a microphone"
+  ],
+  "top_scene": [
+    "tundra",
+    0.26523733139038086
+  ],
+  "top_object": [
+    "pickup truck",
+    0.37441951036453247
+  ],
+  "env_probs": {
+    "indoor": 0.14913180470466614,
+    "outdoor": 0.8508681952953339
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Someone hammers metal as a vehicle passes",
+    "casv": "A truck squealing its tires as someone calls out"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.04672783985733986,
+    "clap_gt_audio_baseline": 0.2810595631599426,
+    "clap_text_casv": 0.001530197449028492,
+    "clap_gt_audio_casv": 0.2650309205055237
+  },
+  "verdicts": [
+    {
+      "caption": "Someone hammers metal as a vehicle passes",
+      "clip_similarity": 0.32374465465545654,
+      "visual": 1.0,
+      "scene_support": 0.39770850611621167,
+      "object_support": 0.30071745101089176,
+      "score": 0.609527787138131,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.3235030174255371,
+      "visual": 0.9868318692151904,
+      "scene_support": 0.6809740964714814,
+      "object_support": 0.7698088121922392,
+      "score": 0.8299676202851924,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck squealing its tires as someone calls out",
+      "clip_similarity": 0.32268500328063965,
+      "visual": 0.9422538162081046,
+      "scene_support": 0.9045380138451978,
+      "object_support": 0.910864177065865,
+      "score": 0.9215221837565606,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck makes loud, mechanical noises while a man speaks in the background",
+      "clip_similarity": 0.31672433018684387,
+      "visual": 0.6174242239686616,
+      "scene_support": 0.7983348767932142,
+      "object_support": 0.7825245782889038,
+      "score": 0.7212275261121001,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck engine running idle then revving after a car door slams in the background",
+      "clip_similarity": 0.31431329250335693,
+      "visual": 0.4860336284306895,
+      "scene_support": 0.5534724220391564,
+      "object_support": 0.6493930789082574,
+      "score": 0.5552731016564999,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle horn sounds followed by man laughing",
+      "clip_similarity": 0.3115141987800598,
+      "visual": 0.33349574244513414,
+      "scene_support": 0.6728781859550793,
+      "object_support": 0.4791003647998256,
+      "score": 0.47899186220452517,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck turning on and beeping it horn",
+      "clip_similarity": 0.31142282485961914,
+      "visual": 0.32851627907732134,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7314065116309285,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.3109740614891052,
+      "visual": 0.3040607150223556,
+      "scene_support": 0.5820580647189251,
+      "object_support": 0.7028646948023121,
+      "score": 0.5071011138653134,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clapping sound followed by a vehicle door closing",
+      "clip_similarity": 0.3099247217178345,
+      "visual": 0.24687646675729094,
+      "scene_support": 0.29752909401725935,
+      "object_support": 0.1031402532139966,
+      "score": 0.21895139087229318,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several girls scream with passing vehicles",
+      "clip_similarity": 0.3098672926425934,
+      "visual": 0.24374684317288936,
+      "scene_support": 0.2136853711436675,
+      "object_support": 0.0,
+      "score": 0.161604348612256,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck running while a man speaks",
+      "clip_similarity": 0.3098576068878174,
+      "visual": 0.24321901355953673,
+      "scene_support": 0.6335090782038479,
+      "object_support": 0.7207788300291681,
+      "score": 0.5035739778937195,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck is running while people speak",
+      "clip_similarity": 0.3084341287612915,
+      "visual": 0.16564592539899858,
+      "scene_support": 0.7687270445604525,
+      "object_support": 0.7861118333433625,
+      "score": 0.532710033530744,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle engine accelerates then man laughs followed by tires squealing",
+      "clip_similarity": 0.30752071738243103,
+      "visual": 0.1158691567231688,
+      "scene_support": 0.514489582250292,
+      "object_support": 0.35320866027746584,
+      "score": 0.3066571354475949,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large truck slowly moves forward then brakes squeal",
+      "clip_similarity": 0.30723637342453003,
+      "visual": 0.10037370336625366,
+      "scene_support": 0.8116136691708598,
+      "object_support": 0.750518587987379,
+      "score": 0.5087891584939731,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck revving and accelerating as a child talks briefly followed by a man talking then yelling",
+      "clip_similarity": 0.3068368136882782,
+      "visual": 0.07859951374711927,
+      "scene_support": 0.5236977510620858,
+      "object_support": 0.550921536814354,
+      "score": 0.35382559186177964,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud beeping of a vehicle backing up",
+      "clip_similarity": 0.3063746988773346,
+      "visual": 0.05341635687128591,
+      "scene_support": 0.6841391967077154,
+      "object_support": 0.5623009524761087,
+      "score": 0.39529858750366154,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Driving a truck down the road",
+      "clip_similarity": 0.3058929145336151,
+      "visual": 0.027161299857567208,
+      "scene_support": 0.845243765913152,
+      "object_support": 0.9660082179307119,
+      "score": 0.554240115096186,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man coughs, then vehicle goes by",
+      "clip_similarity": 0.3058587908744812,
+      "visual": 0.025301715527447952,
+      "scene_support": 0.8294714596939355,
+      "object_support": 0.5317987821839623,
+      "score": 0.4185017587743485,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck struggles to drive forward while the wind blows and two men speak",
+      "clip_similarity": 0.3056528568267822,
+      "visual": 0.014079245902012087,
+      "scene_support": 0.0,
+      "object_support": 0.041367255667567784,
+      "score": 0.01804187506107517,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yells while a truck engine revs",
+      "clip_similarity": 0.3053945004940033,
+      "visual": 0.0,
+      "scene_support": 0.01006896001431428,
+      "object_support": 0.13011818242716208,
+      "score": 0.0420561427324429,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tundra",
+      0.26523733139038086
+    ],
+    [
+      "driveway",
+      0.138400599360466
+    ],
+    [
+      "highway",
+      0.04243331775069237
+    ],
+    [
+      "junkyard",
+      0.03239499777555466
+    ],
+    [
+      "parking lot",
+      0.027428118512034416
+    ]
+  ],
+  "top_objects": [
+    [
+      "pickup truck",
+      0.37441951036453247
+    ],
+    [
+      "jeep",
+      0.1793913096189499
+    ],
+    [
+      "tow truck",
+      0.13815855979919434
+    ],
+    [
+      "moving van",
+      0.0550960972905159
+    ],
+    [
+      "semi-trailer truck",
+      0.04067191109061241
+    ]
+  ]
+}

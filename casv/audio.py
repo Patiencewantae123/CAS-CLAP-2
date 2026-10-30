@@ -116,6 +116,16 @@ class CLAPScorer:
         emb = self._as_tensor(self.model.get_text_features(**inputs))
         return torch.nn.functional.normalize(emb, dim=-1)[0]
 
+    @torch.no_grad()
+    def text_embeddings(self, texts, batch_size=64):
+        chunks = []
+        for start in range(0, len(texts), batch_size):
+            inputs = self.processor(text=texts[start:start + batch_size], return_tensors="pt",
+                                    padding=True).to(self.device)
+            emb = self._as_tensor(self.model.get_text_features(**inputs))
+            chunks.append(torch.nn.functional.normalize(emb, dim=-1))
+        return torch.cat(chunks)
+
     @staticmethod
     def cosine(a, b):
         return float((a @ b).item())
