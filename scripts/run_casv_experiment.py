@@ -14,7 +14,7 @@
 #     "gt_audio": "audio/7fmOlUlwoNg.wav", "captions": ["...", "..."]}, ...]
 #
 # Usage:
-#   py -m scripts.run_casv_experiment --manifest data/audiocaps/test_subset/manifest.json --run-name main
+#   py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/test/manifest.json --run-name main
 # =============================================================================
 
 import argparse

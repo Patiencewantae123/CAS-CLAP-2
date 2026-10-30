@@ -13,8 +13,8 @@
 # configuration is re-checked against decide() itself on every item.
 #
 # Usage:
-#   py -m scripts.tune_casv --val data/audiocaps/val_subset/manifest.json \
-#                           --test data/audiocaps/test_subset/manifest.json
+#   py -m scripts.tune_casv --val data/audiocaps/pairs/val/manifest.json \
+#                           --test data/audiocaps/pairs/test/manifest.json
 # =============================================================================
 
 import argparse

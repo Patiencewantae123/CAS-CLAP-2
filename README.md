@@ -24,14 +24,14 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
   make_casv_graphs.py   result graphs
   make_casv_figure.py   qualitative comparison figures
   build_journal_results.py  collect figures, tables and RESULTS.md
-data/                 vocab files, AudioCaps CSVs; downloaded media is git-ignored
+data/                 datasets (see data/README.md); downloaded media is git-ignored
 eval/                 small smoke-test set
 results/              raw outputs of every run
 journal_results/      figures/, tables/ (CSV + LaTeX), RESULTS.md
 docs/                 target figure layout
 notebooks/            exploratory Colab notebooks
 legacy/               earlier code; synthetic outputs, not results (see legacy/README.md)
-app.py                Streamlit demo
+app.py                Streamlit demo (runtime files in app_data/)
 ```
 
 ## Reproducing the results
@@ -41,12 +41,12 @@ py -m pip install torch transformers diffusers accelerate soundfile scipy matplo
 
 # data (Places365 val ~500 MB; AudioCaps clips via yt-dlp, needs Node.js)
 py -m scripts.fetch_audiocaps --split test --n 100
-py -m scripts.fetch_audiocaps --split val --n 100 --out data/audiocaps/val_subset
+py -m scripts.fetch_audiocaps --split val --n 100
 
 # experiments
 py -m scripts.eval_places365 --per-class 10
-py -m scripts.tune_casv --val data/audiocaps/val_subset/manifest.json --test data/audiocaps/test_subset/manifest.json
-py -m scripts.run_casv_experiment --manifest data/audiocaps/test_subset/manifest.json --run-name audiocaps_test100
+py -m scripts.tune_casv --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test/manifest.json
+py -m scripts.run_casv_experiment --manifest data/audiocaps/pairs/test/manifest.json --run-name audiocaps_test100
 
 # figures and journal package
 py -m scripts.make_casv_graphs --run results/audiocaps_test100
@@ -54,8 +54,10 @@ py -m scripts.make_casv_figure --run results/audiocaps_test100 --count 20
 py -m scripts.build_journal_results --run results/audiocaps_test100
 ```
 
+See [`data/README.md`](data/README.md) for every dataset: source, licence, size and layout.
+
 Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
-(`val_256.tar`, `filelist_places365-standard.tar`) into `data/places365/`.
+(`val_256.tar` into `data/places365/`, `filelist_places365-standard.tar` into `data/places365/filelists/`).
 
 ## Evaluation protocol
 

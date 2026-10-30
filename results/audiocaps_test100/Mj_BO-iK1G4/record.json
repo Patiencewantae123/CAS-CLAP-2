@@ -1,0 +1,282 @@
+{
+  "id": "Mj_BO-iK1G4",
+  "image": "data\\audiocaps\\test_subset\\frames\\Mj_BO-iK1G4.jpg",
+  "gt_audio": "data\\audiocaps\\test_subset\\audio\\Mj_BO-iK1G4.wav",
+  "gt_captions": [
+    "A quick burst of vibrations from a sewing machine with clicking and rattling",
+    "A burst of vibration from a sewing machine followed by scraping and clicking",
+    "Vibrations from a sewing machine with clicking",
+    "A sewing machines a sewing then suddenly stopping with some squeezing",
+    "A sewing machine operating followed by metal clacking and gears cranking then scissors snipping"
+  ],
+  "top_scene": [
+    "repair shop",
+    0.36533668637275696
+  ],
+  "top_object": [
+    "sewing machine",
+    0.5788953304290771
+  ],
+  "env_probs": {
+    "indoor": 0.8144431114196777,
+    "outdoor": 0.18555688858032227
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Quick steady vibrations of a sewing machine",
+    "casv": "Quick steady vibrations of a sewing machine"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5696364045143127,
+    "clap_gt_audio_baseline": 0.6771000623703003,
+    "clap_text_casv": 0.5696364045143127,
+    "clap_gt_audio_casv": 0.6771000623703003
+  },
+  "verdicts": [
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.35011810064315796,
+      "visual": 1.0,
+      "scene_support": 0.544973950079592,
+      "object_support": 0.7246652680658241,
+      "score": 0.7808917654436249,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sewing machine tapping and clicking",
+      "clip_similarity": 0.34293606877326965,
+      "visual": 0.5947067291844657,
+      "scene_support": 0.0,
+      "object_support": 0.6630286347421513,
+      "score": 0.4367912820964317,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is being used in an articulate way",
+      "clip_similarity": 0.3429144024848938,
+      "visual": 0.5934840667065812,
+      "scene_support": 0.4371917366732311,
+      "object_support": 1.0,
+      "score": 0.6685511476846018,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.34206587076187134,
+      "visual": 0.5456000968711949,
+      "scene_support": 0.18697361533010218,
+      "object_support": 0.0,
+      "score": 0.2743321233475086,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine running and making stitches",
+      "clip_similarity": 0.34080082178115845,
+      "visual": 0.4742114079286382,
+      "scene_support": 0.19998433087494258,
+      "object_support": 0.8489491212230721,
+      "score": 0.5043645988008597,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running at different speeds",
+      "clip_similarity": 0.3370739817619324,
+      "visual": 0.26390000739988295,
+      "scene_support": 0.05942871794506547,
+      "object_support": 0.8187682850760385,
+      "score": 0.36901910386628434,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Industrial sounds and sewing machine running",
+      "clip_similarity": 0.33652472496032715,
+      "visual": 0.23290458860014396,
+      "scene_support": 0.8216283782099449,
+      "object_support": 0.6793693653938127,
+      "score": 0.5434611585211848,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running fast then stopping",
+      "clip_similarity": 0.3353726267814636,
+      "visual": 0.1678898897417441,
+      "scene_support": 0.544957924838056,
+      "object_support": 0.7818691556831975,
+      "score": 0.4652040800530737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running and stopping",
+      "clip_similarity": 0.33477193117141724,
+      "visual": 0.13399169867676639,
+      "scene_support": 0.7064754439882197,
+      "object_support": 0.7535377485070791,
+      "score": 0.49160063721929614,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations and clicking from a sewing machine",
+      "clip_similarity": 0.33474165201187134,
+      "visual": 0.13228299843257024,
+      "scene_support": 0.8518439711260759,
+      "object_support": 0.6386763622543156,
+      "score": 0.5000692993871456,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations and clicking of a sewing machine",
+      "clip_similarity": 0.3344149589538574,
+      "visual": 0.11384719914430444,
+      "scene_support": 0.9750415765988739,
+      "object_support": 0.8480073118438592,
+      "score": 0.5924535461905417,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine rhythmically clacking then clunking to a stop",
+      "clip_similarity": 0.3343254029750824,
+      "visual": 0.10879341544961016,
+      "scene_support": 0.5631697215525254,
+      "object_support": 0.8715489683231619,
+      "score": 0.47393297314255023,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine ending with beeping and female voice",
+      "clip_similarity": 0.3341613709926605,
+      "visual": 0.0995368345991618,
+      "scene_support": 0.3109849469564505,
+      "object_support": 0.7568382556688457,
+      "score": 0.36016169462725356,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming of a sewing machine with short bursts of vibrations",
+      "clip_similarity": 0.33382120728492737,
+      "visual": 0.08034086551721818,
+      "scene_support": 0.9956438051757969,
+      "object_support": 0.8552217545642372,
+      "score": 0.5873960141288974,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming followed by vibrations of a sewing machine",
+      "clip_similarity": 0.333456426858902,
+      "visual": 0.05975573659107574,
+      "scene_support": 1.0,
+      "object_support": 0.7335860197163758,
+      "score": 0.543978100551343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running",
+      "clip_similarity": 0.3333703279495239,
+      "visual": 0.05489704071953771,
+      "scene_support": 0.27604546895198484,
+      "object_support": 0.8028978627804805,
+      "score": 0.34564181580755465,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical grinding sound from a device",
+      "clip_similarity": 0.33328866958618164,
+      "visual": 0.05028893179326072,
+      "scene_support": 0.9663247354944855,
+      "object_support": 0.298224794672436,
+      "score": 0.3994804317673807,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is turned on and begins stitching",
+      "clip_similarity": 0.33274662494659424,
+      "visual": 0.019700506555623575,
+      "scene_support": 0.549516215763852,
+      "object_support": 0.9741537133090904,
+      "score": 0.46498118134413213,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clicks and vibrations from a sewing machine",
+      "clip_similarity": 0.33272284269332886,
+      "visual": 0.018358436875634876,
+      "scene_support": 0.5454769646055831,
+      "object_support": 0.6243043272741874,
+      "score": 0.35827776231418507,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A high frequency sound from a sewing machine",
+      "clip_similarity": 0.3323975205421448,
+      "visual": 0.0,
+      "scene_support": 0.6147968177431474,
+      "object_support": 0.8005268407721963,
+      "score": 0.42459709755460306,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "repair shop",
+      0.36533668637275696
+    ],
+    [
+      "assembly line",
+      0.05653468891978264
+    ],
+    [
+      "auto factory",
+      0.03485134243965149
+    ],
+    [
+      "landing deck",
+      0.03323211148381233
+    ],
+    [
+      "music studio",
+      0.021528415381908417
+    ]
+  ],
+  "top_objects": [
+    [
+      "sewing machine",
+      0.5788953304290771
+    ],
+    [
+      "hand plane",
+      0.14738598465919495
+    ],
+    [
+      "reel",
+      0.021666908636689186
+    ],
+    [
+      "power drill",
+      0.021492309868335724
+    ],
+    [
+      "crane (machine)",
+      0.01715625822544098
+    ]
+  ]
+}
