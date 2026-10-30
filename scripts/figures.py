@@ -227,12 +227,13 @@ def main():
         f"spectrograms, 16 kHz, 64 bands, each scaled to its own peak with an 80 dB range."
     )
 
+    (run_dir / "comparisons").mkdir(exist_ok=True)
     pages = [records[i : i + args.per_figure] for i in range(0, len(records), args.per_figure)]
     for number, page in enumerate(pages, 1):
         render_page(
             run_dir,
             page,
-            run_dir / f"casv_comparison_{number}.png",
+            run_dir / "comparisons" / f"casv_comparison_{number}.png",
             f"{provenance} Items {(number - 1) * args.per_figure + 1}-"
             f"{(number - 1) * args.per_figure + len(page)} of {len(records)}.",
         )

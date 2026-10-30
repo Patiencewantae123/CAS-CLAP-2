@@ -23,8 +23,8 @@ from result files in `results/`; nothing is entered by hand.
 | `graphs/fig2_prompt_selection.png` | Prompt selection on val/test with 95% CIs |
 | `graphs/fig3_generated_audio_clap.png` | Generated audio: baseline vs CAS-V, paired |
 | `graphs/fig4_verification_statistics.png` | Candidate decisions and conflict types |
-| `qualitative/fig5_categories.png` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
-| `qualitative/figS1*_random20.png` | Supplementary: first 20 items of the random test sample (not selected) |
+| `comparisons/fig5_categories/` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
+| `comparisons/figS1_random20/` | Supplementary: first 20 items of the random test sample (not selected) |
 
 LaTeX versions of all tables are in `tables/`.
 

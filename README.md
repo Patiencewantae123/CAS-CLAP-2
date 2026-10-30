@@ -27,16 +27,19 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
   test.py  generate baseline vs CAS-V audio and score with CLAP
   plots.py   result graphs
   figures.py   qualitative comparison figures
+  listening_test.py     blind A/B listening test: build the rater package, analyse ratings
   report.py  collect figures, tables and RESULTS.md
 data/                 datasets (see data/README.md); downloaded media is git-ignored
 eval/                 small smoke-test set
 tests/                pytest suite (verifier logic, vocabularies, statistics, figure text)
 results/              raw outputs of every run
-journal_results/      graphs/ (charts), qualitative/ (result images), tables/ (CSV + LaTeX), RESULTS.md
+journal_results/      graphs/ (charts), comparisons/<set>/ (comparison images), tables/ (CSV + LaTeX), RESULTS.md
 docs/                 target figure layout
 notebooks/            exploratory Colab notebooks
 legacy/               earlier code; synthetic outputs, not results (see legacy/README.md)
-app.py                Streamlit demo (runtime files in app_data/)
+demo_app.py           Streamlit demo of the real CAS-V pipeline (streamlit run demo_app.py)
+app.py                earlier heuristic prototype (pixel statistics, sine tones); not the paper's method
+evaluation/            blind listening-test package for raters
 ```
 
 ## Reproducing the results
@@ -88,3 +91,25 @@ py -m pytest                         # 21 tests, ~10 s, no model downloads
 py -m ruff check casv scripts tests  # lint
 py -m ruff format casv scripts tests # format
 ```
+
+## Demo
+
+```
+streamlit run demo_app.py
+```
+
+Upload an image or pick a Figure 5 example: recognition, all 20 candidates with
+their verification scores, and the baseline vs CAS-V prompts appear instantly.
+Audio is generated on request (about 1-2 min per clip on CPU) and saved to
+`app_data/runs/`.
+
+## Listening test
+
+```
+py -m scripts.listening_test build --run results/audiocaps_test100   # evaluation/listening_test/
+py -m scripts.listening_test analyze --ratings "evaluation/ratings/*.csv"
+```
+
+Send `evaluation/listening_test/` (open `index.html`) to 2-3 raters. Items are the
+test clips where CAS-V changed the prompt; A/B order is randomised and the key is kept in
+`results/listening_test/key.json`, so do not share the rest of the repository with raters.
