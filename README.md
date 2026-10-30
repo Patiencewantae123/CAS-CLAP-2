@@ -56,20 +56,23 @@ Individual stages:
 ```
 # data (Places365 val ~500 MB; AudioCaps clips via yt-dlp, needs Node.js)
 py -m scripts.download_data --split test --n 100
+py -m scripts.download_data --split test --n 400 --out data/audiocaps/pairs/test400
 py -m scripts.download_data --split val --n 100
 py -m scripts.select_examples --screening data/audiocaps/pairs/categories/screening/screening.json
 
 # experiments
 py -m scripts.eval_scenes --per-class 10
 py -m scripts.train --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test/manifest.json
+py -m scripts.train --val data/audiocaps/pairs/val/manifest.json --test data/audiocaps/pairs/test400/manifest.json --out results/tuning_test400
 py -m scripts.test --manifest data/audiocaps/pairs/test/manifest.json --run-name audiocaps_test100
+py -m scripts.test --manifest data/audiocaps/pairs/test400/manifest.json --run-name audiocaps_test400 --reuse-from results/audiocaps_test100
 py -m scripts.test --manifest data/audiocaps/pairs/categories/manifest.json --run-name categories7
 
 # figures and journal package
-py -m scripts.plots --run results/audiocaps_test100
-py -m scripts.figures --run results/audiocaps_test100 --count 20
+py -m scripts.plots --run results/audiocaps_test400 --tuning results/tuning_test400/tuning_results.json --earlier-run results/audiocaps_test100
+py -m scripts.figures --run results/audiocaps_test400 --count 20
 py -m scripts.figures --run results/categories7 --count 7
-py -m scripts.report --run results/audiocaps_test100
+py -m scripts.report
 ```
 
 See [`data/README.md`](data/README.md) for every dataset: source, licence, size and layout.
@@ -80,14 +83,15 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 ## Evaluation protocol
 
 - Candidate captions come only from the AudioCaps **train** split.
-- Verifier settings are tuned on AudioCaps **val**; the test split is evaluated once.
+- Verifier settings are tuned on AudioCaps **val** and fixed before test is scored; test is never used for tuning.
+- The test sample was extended from 100 to 400 clips in the same seeded order, with no change to the method.
 - Baseline and CAS-V use the same generator and seed; only the prompt differs.
 - Every mean is reported with a bootstrap 95% CI and n; paired differences use Wilcoxon signed-rank.
 
 ## Development
 
 ```
-py -m pytest                         # 21 tests, ~10 s, no model downloads
+py -m pytest                         # 25 tests, ~10 s, no model downloads
 py -m ruff check casv scripts tests  # lint
 py -m ruff format casv scripts tests # format
 ```

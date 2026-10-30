@@ -1,0 +1,308 @@
+{
+  "id": "tpm5IOD5d4o",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\tpm5IOD5d4o.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\tpm5IOD5d4o.wav",
+  "gt_captions": [
+    "Brief speech followed by whistling a tune",
+    "A woman talking followed by a bird whistling then a woman whistling",
+    "An adult female speaks and claps, a bird whistles in the foreground, another bird chirps in the background, and then a human whistles a tune",
+    "A woman talking followed by a bird whistling then a person whistling",
+    "A woman talking before clapping followed by a bird whistling then a woman whistling"
+  ],
+  "top_scene": [
+    "clean room",
+    0.15000100433826447
+  ],
+  "top_object": [
+    "cock",
+    0.11883407831192017
+  ],
+  "env_probs": {
+    "indoor": 0.7261916995048523,
+    "outdoor": 0.2738083004951477
+  },
+  "status": "REPAIR",
+  "n_rejected": 16,
+  "prompts": {
+    "baseline": "A rooster alarm clock following repetitive beeping",
+    "casv": "Crinkling and tapping noises followed by an object moving"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2715327739715576,
+    "clap_gt_audio_baseline": 0.43555712699890137,
+    "clap_text_casv": -0.11599931865930557,
+    "clap_gt_audio_casv": 0.22022835910320282
+  },
+  "verdicts": [
+    {
+      "caption": "A rooster alarm clock following repetitive beeping",
+      "clip_similarity": 0.31605470180511475,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.21825822813904713,
+      "score": 0.46547746844171417,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.3145214319229126,
+      "visual": 0.9023297491039427,
+      "scene_support": 0.8981485054938017,
+      "object_support": 0.7135852772401616,
+      "score": 0.8444520344617661,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird sounds followed by an explosion",
+      "clip_similarity": 0.3128626346588135,
+      "visual": 0.7966633254358787,
+      "scene_support": 0.9475331882114619,
+      "object_support": 0.8333367288037757,
+      "score": 0.8529263052789229,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows while some liquid flow",
+      "clip_similarity": 0.3119719624519348,
+      "visual": 0.7399269485450458,
+      "scene_support": 0.3518985044673833,
+      "object_support": 0.0,
+      "score": 0.40154033075823337,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds quacking with loud taps",
+      "clip_similarity": 0.3099033832550049,
+      "visual": 0.6081571593463337,
+      "scene_support": 0.6408857744162348,
+      "object_support": 0.7005085369962624,
+      "score": 0.6456811571622827,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds singing along with a baby making noises while sleeping",
+      "clip_similarity": 0.3079826831817627,
+      "visual": 0.48580736285766357,
+      "scene_support": 0.5352221620969152,
+      "object_support": 0.0789572249081264,
+      "score": 0.37857676124457795,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird pecking at food",
+      "clip_similarity": 0.3072723150253296,
+      "visual": 0.4405564668003159,
+      "scene_support": 0.7970557394441082,
+      "object_support": 0.9264253793132269,
+      "score": 0.6932669223473269,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cat repeatedly sneezing",
+      "clip_similarity": 0.3061014413833618,
+      "visual": 0.3659710831662718,
+      "scene_support": 0.6405766172042499,
+      "object_support": 0.18411807879058567,
+      "score": 0.39379684206495935,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird emits a strange buzzing noise",
+      "clip_similarity": 0.3053054213523865,
+      "visual": 0.31526410910637265,
+      "scene_support": 0.9144907281576119,
+      "object_support": 0.7415869384087781,
+      "score": 0.6229289436124661,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)",
+        "names 'insects', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeon makes lots of different sound",
+      "clip_similarity": 0.30405548214912415,
+      "visual": 0.23564219974485145,
+      "scene_support": 0.4852261446001772,
+      "object_support": 0.49789506951572754,
+      "score": 0.389193244132712,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crinkling and tapping noises followed by an object moving",
+      "clip_similarity": 0.30400609970092773,
+      "visual": 0.23249650689508536,
+      "scene_support": 1.0,
+      "object_support": 0.46411066099361914,
+      "score": 0.5322318010561198,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two ducks make frantic calls to each other",
+      "clip_similarity": 0.3037068247795105,
+      "visual": 0.21343250713808395,
+      "scene_support": 0.21138470406716225,
+      "object_support": 0.34564113011703923,
+      "score": 0.252480753110494,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds cooing with blanking sounds",
+      "clip_similarity": 0.303615927696228,
+      "visual": 0.20764230605674017,
+      "scene_support": 0.8390994780046755,
+      "object_support": 0.7170972384377702,
+      "score": 0.5499159373554298,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows while an object clacks",
+      "clip_similarity": 0.3022215962409973,
+      "visual": 0.1188225198955106,
+      "scene_support": 0.6358982022898162,
+      "object_support": 0.2087921789256209,
+      "score": 0.3009361223228354,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird making whistling sounds",
+      "clip_similarity": 0.3019716441631317,
+      "visual": 0.10290041613510723,
+      "scene_support": 0.914523984112686,
+      "object_support": 1.0,
+      "score": 0.6155173616878487,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird is communicating by tweeting, chirping and whistling while a television is playing in the background",
+      "clip_similarity": 0.30094221234321594,
+      "visual": 0.037324965068950854,
+      "scene_support": 0.9277294722485213,
+      "object_support": 0.7933537583939947,
+      "score": 0.5312549552203352,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird whistling while woman speaks",
+      "clip_similarity": 0.30077695846557617,
+      "visual": 0.026798189660409453,
+      "scene_support": 0.765759011747974,
+      "object_support": 0.6978632043315756,
+      "score": 0.4498059406880286,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.3005974292755127,
+      "visual": 0.01536206791810947,
+      "scene_support": 0.857331542164856,
+      "object_support": 0.7894014307990065,
+      "score": 0.5001647190564025,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird whistles continuously",
+      "clip_similarity": 0.3004429042339325,
+      "visual": 0.005518726079825041,
+      "scene_support": 0.8845295760399465,
+      "object_support": 0.9251293543643548,
+      "score": 0.5451051695532204,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person snoring with a squawking noise",
+      "clip_similarity": 0.30035626888275146,
+      "visual": 0.0,
+      "scene_support": 0.8622718990464163,
+      "object_support": 0.6495707341790666,
+      "score": 0.4535527899676448,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "clean room",
+      0.15000100433826447
+    ],
+    [
+      "bedroom",
+      0.09511811286211014
+    ],
+    [
+      "dorm room",
+      0.05578485131263733
+    ],
+    [
+      "childs room",
+      0.04722188413143158
+    ],
+    [
+      "hotel room",
+      0.042920876294374466
+    ]
+  ],
+  "top_objects": [
+    [
+      "cock",
+      0.11883407831192017
+    ],
+    [
+      "sock",
+      0.05757290869951248
+    ],
+    [
+      "sulphur-crested cockatoo",
+      0.039663318544626236
+    ],
+    [
+      "duck",
+      0.03432789817452431
+    ],
+    [
+      "quill",
+      0.025166328996419907
+    ]
+  ]
+}

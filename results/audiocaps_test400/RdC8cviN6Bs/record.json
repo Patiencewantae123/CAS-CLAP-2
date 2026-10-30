@@ -1,0 +1,283 @@
+{
+  "id": "RdC8cviN6Bs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\RdC8cviN6Bs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\RdC8cviN6Bs.wav",
+  "gt_captions": [
+    "Rain is splashing on a surface while rustling occurs and a car door shuts, and traffic is discernible in the distance",
+    "Rain falls soft and steadily and a person closes a car door and walks away through leaves",
+    "Rain falling followed by fabric rustling and footsteps shuffling then a vehicle door opening and closing as plastic crinkles",
+    "Rain falling followed by footsteps walking on grass then a vehicle door opening then closing",
+    "Light rainfall together with rustling"
+  ],
+  "top_scene": [
+    "auto showroom",
+    0.1657002717256546
+  ],
+  "top_object": [
+    "grille",
+    0.15125754475593567
+  ],
+  "env_probs": {
+    "indoor": 0.541195273399353,
+    "outdoor": 0.458804726600647
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "An accelerating and gear shifting noise from a car",
+    "casv": "An accelerating and gear shifting noise from a car"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.028811177238821983,
+    "clap_gt_audio_baseline": 0.3056800961494446,
+    "clap_text_casv": -0.028811177238821983,
+    "clap_gt_audio_casv": 0.3056800961494446
+  },
+  "verdicts": [
+    {
+      "caption": "An accelerating and gear shifting noise from a car",
+      "clip_similarity": 0.29991891980171204,
+      "visual": 1.0,
+      "scene_support": 0.719766410924094,
+      "object_support": 0.6509559784288961,
+      "score": 0.811216716805897,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.29834887385368347,
+      "visual": 0.8701758276962506,
+      "scene_support": 0.0,
+      "object_support": 0.0168982172771935,
+      "score": 0.3531397962616583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle is revving with low speech in the background followed by loud revving",
+      "clip_similarity": 0.2975957691669464,
+      "visual": 0.8079030052119913,
+      "scene_support": 0.43296880126777576,
+      "object_support": 0.7025939335219439,
+      "score": 0.6638300225217124,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitched engine revving noise and gear shifting noise",
+      "clip_similarity": 0.2963264286518097,
+      "visual": 0.7029436045293807,
+      "scene_support": 0.45169484721766506,
+      "object_support": 0.34071075719268734,
+      "score": 0.518899123134858,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.2948281168937683,
+      "visual": 0.5790509986569573,
+      "scene_support": 0.017501727833122736,
+      "object_support": 0.0,
+      "score": 0.23687091781271974,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "White noise followed by a vehicle starting and idling and then revving briefly",
+      "clip_similarity": 0.2942773103713989,
+      "visual": 0.5335058342266416,
+      "scene_support": 0.5253659864705431,
+      "object_support": 0.5405300702362245,
+      "score": 0.5331711507026868,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car is being driven at a fast speed. Car noise increases when car shifts",
+      "clip_similarity": 0.29291677474975586,
+      "visual": 0.4210056802079868,
+      "scene_support": 0.807534225058118,
+      "object_support": 0.647809377517638,
+      "score": 0.6050053528559216,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Idling vehicle making knocking noises",
+      "clip_similarity": 0.2924472689628601,
+      "visual": 0.38218312201973903,
+      "scene_support": 0.5547696920617412,
+      "object_support": 0.17466756834623293,
+      "score": 0.3717044269302878,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A revving engine with traffic noises and people talking in the background",
+      "clip_similarity": 0.29188072681427,
+      "visual": 0.33533680799418425,
+      "scene_support": 0.6101895031519865,
+      "object_support": 0.7328435779026321,
+      "score": 0.5370446475140593,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Revving engine followed by the sound of driving car",
+      "clip_similarity": 0.29098597168922424,
+      "visual": 0.2613511748542984,
+      "scene_support": 0.6738880783005103,
+      "object_support": 0.7385590628951587,
+      "score": 0.52827461230042,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car motor sounds, and the sound of a car skidding",
+      "clip_similarity": 0.290890634059906,
+      "visual": 0.2534678840301137,
+      "scene_support": 0.7553807166842359,
+      "object_support": 0.746668161107772,
+      "score": 0.5520018169496479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud engine idling sound with revving up and down",
+      "clip_similarity": 0.2900794744491577,
+      "visual": 0.18639460811493488,
+      "scene_support": 0.48749415329195844,
+      "object_support": 0.5955380401708779,
+      "score": 0.39946750128482483,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car revving motor then squealing tires",
+      "clip_similarity": 0.28992027044296265,
+      "visual": 0.17323032565704358,
+      "scene_support": 0.8911404047667251,
+      "object_support": 0.6719155149314977,
+      "score": 0.5382089061722842,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car making a revving engine noise while pumping the accelerator",
+      "clip_similarity": 0.28977063298225403,
+      "visual": 0.16085708300989415,
+      "scene_support": 0.8853277298018053,
+      "object_support": 0.5960751362862587,
+      "score": 0.5087636930303769,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car sounds with heavy rain",
+      "clip_similarity": 0.28921273350715637,
+      "visual": 0.11472541554233048,
+      "scene_support": 0.3698924205720349,
+      "object_support": 0.13357595434231678,
+      "score": 0.1969306786912377,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud accelerating of a vehicle followed by the softer revving of the engine",
+      "clip_similarity": 0.28917932510375977,
+      "visual": 0.11196293695092349,
+      "scene_support": 0.863830169711609,
+      "object_support": 1.0,
+      "score": 0.603934225693852,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car engine revving at a high rate then a downshifting sound with wind blowing",
+      "clip_similarity": 0.2888427972793579,
+      "visual": 0.08413607856183541,
+      "scene_support": 0.6907361965331639,
+      "object_support": 0.6685710760953865,
+      "score": 0.44144661321329925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car going around corner real fast skidding tires",
+      "clip_similarity": 0.2879653573036194,
+      "visual": 0.011582202836407545,
+      "scene_support": 0.4295969087494677,
+      "object_support": 0.30175097847026905,
+      "score": 0.22403724730048402,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud hissing sound with people talking and an engine sound in the background",
+      "clip_similarity": 0.2878897190093994,
+      "visual": 0.005327813304747471,
+      "scene_support": 0.6267060170479535,
+      "object_support": 0.7354372857539393,
+      "score": 0.41077411616246684,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car starting sound",
+      "clip_similarity": 0.2878252863883972,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.7522384646573455,
+      "score": 0.5256715393972036,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "auto showroom",
+      0.1657002717256546
+    ],
+    [
+      "outdoor parking garage",
+      0.1367911994457245
+    ],
+    [
+      "indoor parking garage",
+      0.1268501877784729
+    ],
+    [
+      "indoor garage",
+      0.1231161430478096
+    ],
+    [
+      "outdoor garage",
+      0.09026562422513962
+    ]
+  ],
+  "top_objects": [
+    [
+      "grille",
+      0.15125754475593567
+    ],
+    [
+      "ram",
+      0.0989067330956459
+    ],
+    [
+      "passenger car",
+      0.06384961307048798
+    ],
+    [
+      "station wagon",
+      0.057381659746170044
+    ],
+    [
+      "limousine",
+      0.05711664631962776
+    ]
+  ]
+}

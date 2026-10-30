@@ -1,0 +1,289 @@
+{
+  "id": "0jGH7A_hpBM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0jGH7A_hpBM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0jGH7A_hpBM.wav",
+  "gt_captions": [
+    "A man speaking followed by another man speaking with some rustling",
+    "Two men are speaking and paper is being shuffled",
+    "An adult male speaks, followed by another adult male speaking",
+    "A man narrating followed by another man speaking then speaking through a television speaker",
+    "One man speaking, then another man speaking"
+  ],
+  "top_scene": [
+    "army base",
+    0.11118375509977341
+  ],
+  "top_object": [
+    "military uniform",
+    0.16603615880012512
+  ],
+  "env_probs": {
+    "indoor": 0.5020622611045837,
+    "outdoor": 0.49793773889541626
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A clock ticking as a man talks through a television speaker in the background followed by camera muffling",
+    "casv": "A clock ticking as a man talks through a television speaker in the background followed by camera muffling"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.23893572390079498,
+    "clap_gt_audio_baseline": 0.5248445868492126,
+    "clap_text_casv": 0.23893572390079498,
+    "clap_gt_audio_casv": 0.5248445868492126
+  },
+  "verdicts": [
+    {
+      "caption": "A clock ticking as a man talks through a television speaker in the background followed by camera muffling",
+      "clip_similarity": 0.3039345145225525,
+      "visual": 1.0,
+      "scene_support": 0.6356744106904356,
+      "object_support": 0.7289914020736682,
+      "score": 0.8093997438292311,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking, accompanied by helicopter rotor noises",
+      "clip_similarity": 0.3014132082462311,
+      "visual": 0.8152393015866083,
+      "scene_support": 0.6639663977586074,
+      "object_support": 0.618632322344701,
+      "score": 0.7108753366656358,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking with tapping and distant speech in the background",
+      "clip_similarity": 0.2989758849143982,
+      "visual": 0.6366328525098549,
+      "scene_support": 0.7200487624091241,
+      "object_support": 0.8751324580334182,
+      "score": 0.7332075071367047,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking with distant speech in the background",
+      "clip_similarity": 0.2977305054664612,
+      "visual": 0.5453717555334738,
+      "scene_support": 0.805683198180034,
+      "object_support": 0.8825985681609656,
+      "score": 0.7246332321156894,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaking followed by whistling and then brief speech",
+      "clip_similarity": 0.29543566703796387,
+      "visual": 0.3772065648238133,
+      "scene_support": 0.7716655905682499,
+      "object_support": 0.8837050773425688,
+      "score": 0.647493826302771,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is speaking in a low tone while a helicopter is flying from above",
+      "clip_similarity": 0.29464563727378845,
+      "visual": 0.3193133797049542,
+      "scene_support": 0.4701987557660616,
+      "object_support": 0.4435265712968826,
+      "score": 0.40184295000086495,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is speaking while a helicopter engine is operating in the background",
+      "clip_similarity": 0.29431140422821045,
+      "visual": 0.2948208650454799,
+      "scene_support": 0.0,
+      "object_support": 0.05254384037837768,
+      "score": 0.13369149813170528,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.38)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by another man speaking in the background alongside a toy helicopter engine running and humming",
+      "clip_similarity": 0.2940261662006378,
+      "visual": 0.27391869315017636,
+      "scene_support": 0.2149629736678329,
+      "object_support": 0.0,
+      "score": 0.1740563693604204,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.38)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking with ticking in the background",
+      "clip_similarity": 0.293356329202652,
+      "visual": 0.22483320411884822,
+      "scene_support": 0.8414932671979563,
+      "object_support": 0.8579376822644078,
+      "score": 0.5997625664862485,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking with muffled speech in the background",
+      "clip_similarity": 0.29251712560653687,
+      "visual": 0.1633365727950731,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6653346291180292,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of gunshot fire followed by a man speaking",
+      "clip_similarity": 0.29236680269241333,
+      "visual": 0.1523209469419845,
+      "scene_support": 0.7729135539451633,
+      "object_support": 0.7753856359493256,
+      "score": 0.5254181357451405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking in a presenting tone",
+      "clip_similarity": 0.2921179234981537,
+      "visual": 0.13408314133152796,
+      "scene_support": 0.8066882818709661,
+      "object_support": 0.8959612145647838,
+      "score": 0.5644281054633362,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking as a helicopter flies in the distance",
+      "clip_similarity": 0.2920131981372833,
+      "visual": 0.1264088928684524,
+      "scene_support": 0.7434934117137003,
+      "object_support": 0.7302492149438508,
+      "score": 0.49268634514464626,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking intermittently with continuous tapping",
+      "clip_similarity": 0.29158246517181396,
+      "visual": 0.0948448880201793,
+      "scene_support": 0.5110267843615318,
+      "object_support": 0.765955808553989,
+      "score": 0.42103273308272793,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft flies overhead as a man on a microphone speaks",
+      "clip_similarity": 0.2912558913230896,
+      "visual": 0.0709136374059555,
+      "scene_support": 0.23269319074446587,
+      "object_support": 0.3935629703337081,
+      "score": 0.21624230328583438,
+      "conflicts": [
+        "names 'an airplane', not visible in image (z=-1.15)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by beeping and explosion effects",
+      "clip_similarity": 0.29109305143356323,
+      "visual": 0.058980770700706495,
+      "scene_support": 0.7106491787077029,
+      "object_support": 0.7372856441337244,
+      "score": 0.45797275513271085,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks in the background while a small sized helicopter flies",
+      "clip_similarity": 0.2906446158885956,
+      "visual": 0.026119525218663668,
+      "scene_support": 0.6523366098004983,
+      "object_support": 0.6170250571831022,
+      "score": 0.3912563101825456,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by another man speaking briefly in the distance alongside camera muffling as birds chirp in the background",
+      "clip_similarity": 0.2905661165714264,
+      "visual": 0.02036711473154326,
+      "scene_support": 0.18552698132250553,
+      "object_support": 0.20546987064342298,
+      "score": 0.12544590148239587,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking calmly and directly into microphone in non-english language with faint voice in the background",
+      "clip_similarity": 0.29041820764541626,
+      "visual": 0.00952838532851418,
+      "scene_support": 0.4359284786920859,
+      "object_support": 0.6835846805284537,
+      "score": 0.3396653018975675,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as pans are being hit together in the background",
+      "clip_similarity": 0.29028818011283875,
+      "visual": 0.0,
+      "scene_support": 0.6120941030583728,
+      "object_support": 0.5361319669694894,
+      "score": 0.3444678210083586,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "army base",
+      0.11118375509977341
+    ],
+    [
+      "reception",
+      0.07213933765888214
+    ],
+    [
+      "galley",
+      0.05898620933294296
+    ],
+    [
+      "television studio",
+      0.046735502779483795
+    ],
+    [
+      "rope bridge",
+      0.04442282393574715
+    ]
+  ],
+  "top_objects": [
+    [
+      "military uniform",
+      0.16603615880012512
+    ],
+    [
+      "tank suit",
+      0.08168623596429825
+    ],
+    [
+      "tench",
+      0.032893240451812744
+    ],
+    [
+      "bulletproof vest",
+      0.019676396623253822
+    ],
+    [
+      "missile",
+      0.018570244312286377
+    ]
+  ]
+}

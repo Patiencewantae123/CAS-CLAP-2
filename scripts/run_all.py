@@ -21,22 +21,48 @@ from casv.log import setup_logging
 log = logging.getLogger("casv")
 
 TEST_MANIFEST = "data/audiocaps/pairs/test/manifest.json"
+TEST400_MANIFEST = "data/audiocaps/pairs/test400/manifest.json"
 VAL_MANIFEST = "data/audiocaps/pairs/val/manifest.json"
 CATEGORY_MANIFEST = "data/audiocaps/pairs/categories/manifest.json"
 SCREENING = "data/audiocaps/pairs/categories/screening/screening.json"
 
 STAGES = [
     ("data", "download_data", ["--split", "test", "--n", "100"]),
+    ("data", "download_data", ["--split", "test", "--n", "400", "--out", "data/audiocaps/pairs/test400"]),
     ("data", "download_data", ["--split", "val", "--n", "100"]),
     ("data", "select_examples", ["--screening", SCREENING]),
     ("places", "eval_scenes", ["--per-class", "10"]),
     ("train", "train", ["--val", VAL_MANIFEST, "--test", TEST_MANIFEST]),
+    ("train", "train", ["--val", VAL_MANIFEST, "--test", TEST400_MANIFEST, "--out", "results/tuning_test400"]),
     ("test", "test", ["--manifest", TEST_MANIFEST, "--run-name", "audiocaps_test100"]),
+    (
+        "test",
+        "test",
+        [
+            "--manifest",
+            TEST400_MANIFEST,
+            "--run-name",
+            "audiocaps_test400",
+            "--reuse-from",
+            "results/audiocaps_test100",
+        ],
+    ),
     ("test", "test", ["--manifest", CATEGORY_MANIFEST, "--run-name", "categories7"]),
-    ("figures", "plots", ["--run", "results/audiocaps_test100"]),
-    ("figures", "figures", ["--run", "results/audiocaps_test100", "--count", "20"]),
+    (
+        "figures",
+        "plots",
+        [
+            "--run",
+            "results/audiocaps_test400",
+            "--tuning",
+            "results/tuning_test400/tuning_results.json",
+            "--earlier-run",
+            "results/audiocaps_test100",
+        ],
+    ),
+    ("figures", "figures", ["--run", "results/audiocaps_test400", "--count", "20"]),
     ("figures", "figures", ["--run", "results/categories7", "--count", "7"]),
-    ("journal", "report", ["--run", "results/audiocaps_test100"]),
+    ("journal", "report", []),
 ]
 GROUPS = list(dict.fromkeys(group for group, _, _ in STAGES))
 

@@ -1,0 +1,283 @@
+{
+  "id": "6i5eQOpFk_U",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\6i5eQOpFk_U.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\6i5eQOpFk_U.wav",
+  "gt_captions": [
+    "Water is running, splashing and gurgling, thumps occur, an adult male speaks, and people are talking in the background",
+    "Plastic clanking before and after a man talking as water flows from a faucet while a child talks in the background",
+    "Water flowing from a faucet with some light bangs and a man speaking",
+    "A man speaking as water runs from the faucet",
+    "Faucet water flowing as plastic clanks and a man speaks followed by another plastic clank and a kid laughing in the background"
+  ],
+  "top_scene": [
+    "lock chamber",
+    0.14546369016170502
+  ],
+  "top_object": [
+    "washing machine",
+    0.15591438114643097
+  ],
+  "env_probs": {
+    "indoor": 0.8151043653488159,
+    "outdoor": 0.18489563465118408
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "An industrial toilet flushes fast and then fills with water",
+    "casv": "A machine loudly sprays liquid nearby, and then the machine turns off"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1513606309890747,
+    "clap_gt_audio_baseline": 0.4826517105102539,
+    "clap_text_casv": -0.06523802131414413,
+    "clap_gt_audio_casv": 0.1269088089466095
+  },
+  "verdicts": [
+    {
+      "caption": "An industrial toilet flushes fast and then fills with water",
+      "clip_similarity": 0.32057908177375793,
+      "visual": 1.0,
+      "scene_support": 0.4408520104886294,
+      "object_support": 0.22342733758351502,
+      "score": 0.5992838044216433,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An industrial toilet flushes very fast",
+      "clip_similarity": 0.31558936834335327,
+      "visual": 0.7628583285766287,
+      "scene_support": 0.5078377654643953,
+      "object_support": 0.3960835829674986,
+      "score": 0.5763197359602197,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An industrial toilet flushes fast with a lot of power",
+      "clip_similarity": 0.3136715888977051,
+      "visual": 0.6717137308946901,
+      "scene_support": 0.4605451440126677,
+      "object_support": 0.304245783135694,
+      "score": 0.4981227705023845,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An industrial toilet is flushed and it goes fast",
+      "clip_similarity": 0.31270653009414673,
+      "visual": 0.6258482396415971,
+      "scene_support": 0.6258699071616933,
+      "object_support": 0.5525544747375477,
+      "score": 0.6038666104264111,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An industrial toilet is flushed noisily and drains super fast",
+      "clip_similarity": 0.31130048632621765,
+      "visual": 0.5590244482812834,
+      "scene_support": 0.5834587144986499,
+      "object_support": 0.34777961816640834,
+      "score": 0.5029812791120308,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.3109685182571411,
+      "visual": 0.5432472971767128,
+      "scene_support": 0.36516663606095257,
+      "object_support": 0.27480897488164946,
+      "score": 0.4092916021534657,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talks as food fries in a fryer at rapid speed",
+      "clip_similarity": 0.30815982818603516,
+      "visual": 0.4097611827410233,
+      "scene_support": 0.0,
+      "object_support": 0.03339681689358593,
+      "score": 0.1739235181644851,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine loudly sprays liquid nearby, and then the machine turns off",
+      "clip_similarity": 0.30787351727485657,
+      "visual": 0.3961539387638611,
+      "scene_support": 0.9148182349282928,
+      "object_support": 0.9842512189565719,
+      "score": 0.7281824116710038,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man puts ingredients into a frying pan and it begins to sizzle",
+      "clip_similarity": 0.3068043291568756,
+      "visual": 0.34533958621627403,
+      "scene_support": 0.0332807557843704,
+      "object_support": 0.0,
+      "score": 0.14812006122182075,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running into a sink and down a drain while a machine runs simultaneously",
+      "clip_similarity": 0.3064883351325989,
+      "visual": 0.33032161932860354,
+      "scene_support": 0.4864963060583098,
+      "object_support": 0.2524229777663109,
+      "score": 0.35380443287882757,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The gentle drone of a fan blows with an echo as a toilet flushes",
+      "clip_similarity": 0.3064480423927307,
+      "visual": 0.328406662124781,
+      "scene_support": 0.19320211297759707,
+      "object_support": 0.332687993729111,
+      "score": 0.28912969686192486,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine taps continuously and a thumb takes place in the background",
+      "clip_similarity": 0.3053872287273407,
+      "visual": 0.27799031473568064,
+      "scene_support": 1.0,
+      "object_support": 0.8788685089372642,
+      "score": 0.6748566785754515,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An industrial toilet flushes and drains quickly",
+      "clip_similarity": 0.3048661947250366,
+      "visual": 0.25322759521317356,
+      "scene_support": 0.6897654345931055,
+      "object_support": 0.5301901421257079,
+      "score": 0.46727771110091343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is speaking with a machine in use, and bees are buzzing",
+      "clip_similarity": 0.3020855188369751,
+      "visual": 0.1210728859339878,
+      "scene_support": 0.06196583350462307,
+      "object_support": 0.027594668956539035,
+      "score": 0.07529730511194375,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal being filed by a machine",
+      "clip_similarity": 0.30173295736312866,
+      "visual": 0.10431701040054049,
+      "scene_support": 0.8868151021887541,
+      "object_support": 0.9536530620149695,
+      "score": 0.5938672534213333,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An industrial toilet continually runs water at a high rate of speed",
+      "clip_similarity": 0.3014547824859619,
+      "visual": 0.0910964404741502,
+      "scene_support": 0.8062583791359897,
+      "object_support": 0.6832780888494113,
+      "score": 0.48329951658528036,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food frying on hot surface",
+      "clip_similarity": 0.30106329917907715,
+      "visual": 0.07249076160624117,
+      "scene_support": 0.7368354159097413,
+      "object_support": 1.0,
+      "score": 0.5500469294154189,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine works while some surface is rubbed",
+      "clip_similarity": 0.30090221762657166,
+      "visual": 0.06483518195634408,
+      "scene_support": 0.9757567682820202,
+      "object_support": 0.9514518171594685,
+      "score": 0.6040966484149841,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water drains out of a toilet as it is flushed",
+      "clip_similarity": 0.3006248474121094,
+      "visual": 0.05165285451849166,
+      "scene_support": 0.6524815390569086,
+      "object_support": 0.4845627282568806,
+      "score": 0.3617744220015334,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.2995380163192749,
+      "visual": 0.0,
+      "scene_support": 0.6300812242051901,
+      "object_support": 0.7271467389341983,
+      "score": 0.4071683889418165,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lock chamber",
+      0.14546369016170502
+    ],
+    [
+      "biology laboratory",
+      0.09541124850511551
+    ],
+    [
+      "physics laboratory",
+      0.09114769846200943
+    ],
+    [
+      "laundromat",
+      0.0822170153260231
+    ],
+    [
+      "galley",
+      0.07276927679777145
+    ]
+  ],
+  "top_objects": [
+    [
+      "washing machine",
+      0.15591438114643097
+    ],
+    [
+      "hard disk drive",
+      0.07746313512325287
+    ],
+    [
+      "stove",
+      0.07159429043531418
+    ],
+    [
+      "microwave oven",
+      0.05528833344578743
+    ],
+    [
+      "pencil sharpener",
+      0.04777884855866432
+    ]
+  ]
+}

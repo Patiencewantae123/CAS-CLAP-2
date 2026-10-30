@@ -1,0 +1,285 @@
+{
+  "id": "4pf-PIymDhU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\4pf-PIymDhU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\4pf-PIymDhU.wav",
+  "gt_captions": [
+    "A jackhammer operating then slowing down before operating at a normal rate again",
+    "A jackhammer operating",
+    "A jackhammer drilling and vibrating continuously",
+    "Vibrations and clanking from a drill",
+    "A power tool is in use"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.3378688395023346
+  ],
+  "top_object": [
+    "mortar",
+    0.15391089022159576
+  ],
+  "env_probs": {
+    "indoor": 0.3705745339393616,
+    "outdoor": 0.6294254660606384
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Rapid vibration of a jackhammer",
+    "casv": "Rapid vibration of a jackhammer"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.6138827800750732,
+    "clap_gt_audio_baseline": 0.7513958811759949,
+    "clap_text_casv": 0.6138827800750732,
+    "clap_gt_audio_casv": 0.7513958811759949
+  },
+  "verdicts": [
+    {
+      "caption": "Rapid vibration of a jackhammer",
+      "clip_similarity": 0.34318044781684875,
+      "visual": 1.0,
+      "scene_support": 0.5857492686316405,
+      "object_support": 0.5777704793799463,
+      "score": 0.749055924403476,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A jackhammer pounding a stone surface followed by a muffled motor drilling during audio static",
+      "clip_similarity": 0.3386746644973755,
+      "visual": 0.9055508528841258,
+      "scene_support": 0.7234705883340243,
+      "object_support": 0.5102913081754157,
+      "score": 0.7323489101064824,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Compressed air spraying followed by a man talking while plastic rattles proceeded by more compressed air spraying and footsteps shuffling on gravel",
+      "clip_similarity": 0.31945154070854187,
+      "visual": 0.5026003517112344,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.20104014068449377,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine revs and accelerates kicking up rocks before coming to a stop",
+      "clip_similarity": 0.3111969828605652,
+      "visual": 0.3295702938319345,
+      "scene_support": 0.37505979345452595,
+      "object_support": 0.28633354207507444,
+      "score": 0.3302461181916539,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talking, scraping, and water pouring",
+      "clip_similarity": 0.30592215061187744,
+      "visual": 0.21900052787920624,
+      "scene_support": 0.38498844412815686,
+      "object_support": 0.2738549834821753,
+      "score": 0.2852532394347821,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A light hammer tapping in the background is followed by a slow drill",
+      "clip_similarity": 0.30561575293540955,
+      "visual": 0.21257789341837707,
+      "scene_support": 1.0,
+      "object_support": 0.8063823921803529,
+      "score": 0.6269458750214567,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud jackhammer close by",
+      "clip_similarity": 0.30412811040878296,
+      "visual": 0.18139428828451754,
+      "scene_support": 0.3123031012032541,
+      "object_support": 0.4643766336310172,
+      "score": 0.30556163576408846,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks while shuffling something and then hammering",
+      "clip_similarity": 0.30298495292663574,
+      "visual": 0.1574316958666121,
+      "scene_support": 0.5215499806143327,
+      "object_support": 0.6093449366514194,
+      "score": 0.40224115352637047,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks and starts to use a hammer",
+      "clip_similarity": 0.30225709080696106,
+      "visual": 0.14217442503334385,
+      "scene_support": 0.7358270630630026,
+      "object_support": 1.0,
+      "score": 0.5776178889322383,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool drilling with a man speaking briefly followed by metal rattling",
+      "clip_similarity": 0.30138546228408813,
+      "visual": 0.12390355740608279,
+      "scene_support": 0.6633347376053413,
+      "object_support": 0.7182440281710594,
+      "score": 0.46403505269535333,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool drilling followed by a man speaking with metal tapping",
+      "clip_similarity": 0.2991521954536438,
+      "visual": 0.0770903548035446,
+      "scene_support": 0.6369039326889347,
+      "object_support": 0.5929865043926523,
+      "score": 0.39980327304589397,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drill loudly cuts into a block of material nearby",
+      "clip_similarity": 0.29803699254989624,
+      "visual": 0.05371373954002667,
+      "scene_support": 0.6091413072485612,
+      "object_support": 0.885940222718362,
+      "score": 0.47000995480608765,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A hammer banging is followed by a man speaking",
+      "clip_similarity": 0.2973075807094574,
+      "visual": 0.03842398383252798,
+      "scene_support": 0.902117485536278,
+      "object_support": 0.8883713833224425,
+      "score": 0.5525162541906273,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks and then starts drilling with a drill",
+      "clip_similarity": 0.29719579219818115,
+      "visual": 0.03608069992409784,
+      "scene_support": 0.6614423272199946,
+      "object_support": 0.728139974950991,
+      "score": 0.4313069706209348,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A jackhammer is constantly going in the background as a few people talk softly in the background",
+      "clip_similarity": 0.2960965037345886,
+      "visual": 0.013037679330561706,
+      "scene_support": 0.8845822682405703,
+      "object_support": 0.6411496905176796,
+      "score": 0.4629346593596996,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking as plastic shuffles followed by metal lightly clanking before a power tool drill operates",
+      "clip_similarity": 0.29589155316352844,
+      "visual": 0.008741554713586487,
+      "scene_support": 0.3213522635913669,
+      "object_support": 0.467977995897771,
+      "score": 0.24029569973217596,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks then spills some liquid and tap an object",
+      "clip_similarity": 0.29566270112991333,
+      "visual": 0.003944413382518765,
+      "scene_support": 0.5531351911124688,
+      "object_support": 0.5350481921150076,
+      "score": 0.3280327803212504,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A broken tool is used on concrete",
+      "clip_similarity": 0.29566189646720886,
+      "visual": 0.00392754623628373,
+      "scene_support": 0.7786156787249434,
+      "object_support": 0.7825393205910114,
+      "score": 0.46991751828929995,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking briefly with scraping followed by music",
+      "clip_similarity": 0.2955853044986725,
+      "visual": 0.0023220437983563903,
+      "scene_support": 0.8158244111708439,
+      "object_support": 0.40966814601031004,
+      "score": 0.3685765846736887,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by plastic snapping and a power tool drilling",
+      "clip_similarity": 0.2954745292663574,
+      "visual": 0.0,
+      "scene_support": 0.6478245253029116,
+      "object_support": 0.6420084812676977,
+      "score": 0.38694990197118273,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.3378688395023346
+    ],
+    [
+      "excavation",
+      0.2908397912979126
+    ],
+    [
+      "driveway",
+      0.10014565289020538
+    ],
+    [
+      "construction site",
+      0.07698215544223785
+    ],
+    [
+      "parking lot",
+      0.016547411680221558
+    ]
+  ],
+  "top_objects": [
+    [
+      "mortar",
+      0.15391089022159576
+    ],
+    [
+      "bulletproof vest",
+      0.13856083154678345
+    ],
+    [
+      "shovel",
+      0.07667513191699982
+    ],
+    [
+      "power drill",
+      0.07557816803455353
+    ],
+    [
+      "hammer",
+      0.06198986619710922
+    ]
+  ]
+}

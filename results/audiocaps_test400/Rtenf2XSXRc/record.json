@@ -1,0 +1,283 @@
+{
+  "id": "Rtenf2XSXRc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Rtenf2XSXRc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Rtenf2XSXRc.wav",
+  "gt_captions": [
+    "A mid-size motor vehicle engine idles smoothly and is then revved several times, followed by a car door shutting",
+    "A vehicle engine is idling and rooms",
+    "A vehicle engine running idle then revving several times before a car door slams shut",
+    "A car idling and revving",
+    "Low humming of an idling and accelerating engine"
+  ],
+  "top_scene": [
+    "outdoor garage",
+    0.6111562848091125
+  ],
+  "top_object": [
+    "station wagon",
+    0.17399930953979492
+  ],
+  "env_probs": {
+    "indoor": 0.18564751744270325,
+    "outdoor": 0.8143524825572968
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A car races, slows, and tires squeal on pavement",
+    "casv": "Car revving motor then squealing tires"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.040341369807720184,
+    "clap_gt_audio_baseline": 0.5172368288040161,
+    "clap_text_casv": 0.05367747321724892,
+    "clap_gt_audio_casv": 0.5670052170753479
+  },
+  "verdicts": [
+    {
+      "caption": "A car races, slows, and tires squeal on pavement",
+      "clip_similarity": 0.30844345688819885,
+      "visual": 1.0,
+      "scene_support": 0.16695652944722192,
+      "object_support": 0.46510911399209665,
+      "score": 0.5896196930317956,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle engine accelerates then man laughs followed by tires squealing",
+      "clip_similarity": 0.30569472908973694,
+      "visual": 0.757806201896439,
+      "scene_support": 0.34099386590079067,
+      "object_support": 0.5491784997397963,
+      "score": 0.5701741904507517,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car revving motor then squealing tires",
+      "clip_similarity": 0.302826464176178,
+      "visual": 0.5050798410793579,
+      "scene_support": 0.7998874233237598,
+      "object_support": 0.8126797836020199,
+      "score": 0.685802098509477,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People are communicating with one another while a car engine is clicking and sounds of spray being forced out of a can",
+      "clip_similarity": 0.30051371455192566,
+      "visual": 0.30130061787883483,
+      "scene_support": 0.3955279580186505,
+      "object_support": 0.23010299491601996,
+      "score": 0.30820953303193505,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud engine idling sound with revving up and down",
+      "clip_similarity": 0.30045852065086365,
+      "visual": 0.2964374151499794,
+      "scene_support": 0.3757516930822962,
+      "object_support": 0.5013582061385199,
+      "score": 0.3817079358262366,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music plays and people talk as a car revs and smashes through a wall",
+      "clip_similarity": 0.30044668912887573,
+      "visual": 0.2953949251481675,
+      "scene_support": 0.25102471368294155,
+      "object_support": 0.3322894208609025,
+      "score": 0.29315221042242023,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Soft shuffle step on gravel as an engine turns on and revs",
+      "clip_similarity": 0.30041465163230896,
+      "visual": 0.29257206179313533,
+      "scene_support": 0.2049179165337021,
+      "object_support": 0.1563802805624975,
+      "score": 0.225418283846114,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car engine accelerating followed by music",
+      "clip_similarity": 0.3000832796096802,
+      "visual": 0.26337446398420244,
+      "scene_support": 0.5306802467822572,
+      "object_support": 0.7763727889833756,
+      "score": 0.4974656963233708,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle moves with a squeal of tires in the background followed by a muffler sounding",
+      "clip_similarity": 0.3000272810459137,
+      "visual": 0.2584403614315462,
+      "scene_support": 0.7277018402297628,
+      "object_support": 0.8528112007686017,
+      "score": 0.5775300568721278,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Whooshes and humming of a loud engine followed by a smack",
+      "clip_similarity": 0.2992463707923889,
+      "visual": 0.18963339539256183,
+      "scene_support": 0.7125793355316811,
+      "object_support": 0.769591051280145,
+      "score": 0.5205044742005726,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car accelerating, vehicle squealing tires",
+      "clip_similarity": 0.2983514964580536,
+      "visual": 0.11078491356786295,
+      "scene_support": 0.6758270396766302,
+      "object_support": 0.6942449231684232,
+      "score": 0.4553355542806612,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine running while someone is coughing one time",
+      "clip_similarity": 0.29835009574890137,
+      "visual": 0.11066149535606154,
+      "scene_support": 0.6648140268765734,
+      "object_support": 0.6011134430954519,
+      "score": 0.4240428391340322,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine sound with lady laughing loudly",
+      "clip_similarity": 0.2979559004306793,
+      "visual": 0.07592845945186559,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.030371383780746237,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car going fast and breaking hard into a skid",
+      "clip_similarity": 0.29789695143699646,
+      "visual": 0.07073439087860638,
+      "scene_support": 0.5232758926355352,
+      "object_support": 0.8945481605599812,
+      "score": 0.4536409723100975,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine starting driving off while squealing tires",
+      "clip_similarity": 0.2977958023548126,
+      "visual": 0.06182202043490477,
+      "scene_support": 0.7530768003403894,
+      "object_support": 0.536372045544226,
+      "score": 0.41156346193934656,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine revving loudly followed by idling",
+      "clip_similarity": 0.2975121736526489,
+      "visual": 0.036831145504819876,
+      "scene_support": 0.6505238804382513,
+      "object_support": 0.8110077603609683,
+      "score": 0.4531919504416938,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Windy sound with car engine revving by",
+      "clip_similarity": 0.2974761128425598,
+      "visual": 0.03365378303078365,
+      "scene_support": 0.3467538914299897,
+      "object_support": 0.5650680818698066,
+      "score": 0.2870081052022524,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car starting sound",
+      "clip_similarity": 0.2973964214324951,
+      "visual": 0.026632074555103604,
+      "scene_support": 1.0,
+      "object_support": 0.7822573957898469,
+      "score": 0.5453300485589955,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car revving its engine, and then coming to a stop",
+      "clip_similarity": 0.29713669419288635,
+      "visual": 0.003747186983842718,
+      "scene_support": 0.7813672304364784,
+      "object_support": 1.0,
+      "score": 0.5359090439244806,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming of an idling engine with squeaking tires",
+      "clip_similarity": 0.2970941662788391,
+      "visual": 0.0,
+      "scene_support": 0.642196752118569,
+      "object_support": 0.6534208208711964,
+      "score": 0.3886852718969296,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor garage",
+      0.6111562848091125
+    ],
+    [
+      "indoor garage",
+      0.1099146381020546
+    ],
+    [
+      "outdoor parking garage",
+      0.07347522675991058
+    ],
+    [
+      "driveway",
+      0.060281578451395035
+    ],
+    [
+      "loading dock",
+      0.014217114076018333
+    ]
+  ],
+  "top_objects": [
+    [
+      "station wagon",
+      0.17399930953979492
+    ],
+    [
+      "sports car",
+      0.08521507680416107
+    ],
+    [
+      "race car",
+      0.0692373588681221
+    ],
+    [
+      "convertible",
+      0.0587804913520813
+    ],
+    [
+      "car wheel",
+      0.05321913957595825
+    ]
+  ]
+}

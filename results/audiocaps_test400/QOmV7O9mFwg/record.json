@@ -1,0 +1,292 @@
+{
+  "id": "QOmV7O9mFwg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\QOmV7O9mFwg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\QOmV7O9mFwg.wav",
+  "gt_captions": [
+    "A group of kids talking and laughing as a young girl talks",
+    "Young people laughing and speaking",
+    "Laughing followed by a child talking and more laughing with many children talking in the background",
+    "Laughter with people talking in the background and a girl talks",
+    "People laugh on a bus while brakes squeal"
+  ],
+  "top_scene": [
+    "tundra",
+    0.14170531928539276
+  ],
+  "top_object": [
+    "school bus",
+    0.08429786562919617
+  ],
+  "env_probs": {
+    "indoor": 0.37553828954696655,
+    "outdoor": 0.6244617104530334
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A young girl vocalizing something followed by audio distortion",
+    "casv": "A young girl vocalizing something followed by audio distortion"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.040161244571208954,
+    "clap_gt_audio_baseline": 0.2411104440689087,
+    "clap_text_casv": 0.040161244571208954,
+    "clap_gt_audio_casv": 0.2411104440689087
+  },
+  "verdicts": [
+    {
+      "caption": "A young girl vocalizing something followed by audio distortion",
+      "clip_similarity": 0.3059038519859314,
+      "visual": 1.0,
+      "scene_support": 0.8882360735710142,
+      "object_support": 0.8995485206167758,
+      "score": 0.9363353782563371,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young lady voicing frustration as she plays a computer game",
+      "clip_similarity": 0.29990383982658386,
+      "visual": 0.7035948111756124,
+      "scene_support": 0.43991747682519916,
+      "object_support": 0.4128131593158712,
+      "score": 0.537257115312566,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.29871895909309387,
+      "visual": 0.6450607968741029,
+      "scene_support": 0.5658399340294886,
+      "object_support": 0.5695519754738688,
+      "score": 0.5986418916006484,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.2985074818134308,
+      "visual": 0.6346136575440684,
+      "scene_support": 0.8053175216803441,
+      "object_support": 0.7929339786872214,
+      "score": 0.733320913127897,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child is speaking along with tapping in the background",
+      "clip_similarity": 0.2958952784538269,
+      "visual": 0.5055688140524035,
+      "scene_support": 0.8484878112790535,
+      "object_support": 0.8667377763466395,
+      "score": 0.7167952019086692,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young girl sneezes several times before talking",
+      "clip_similarity": 0.29447928071022034,
+      "visual": 0.43561744271814073,
+      "scene_support": 0.67150596217502,
+      "object_support": 0.7545733251490117,
+      "score": 0.6020707632844657,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young girl sneezing then speaking",
+      "clip_similarity": 0.2935945987701416,
+      "visual": 0.3919134783703287,
+      "scene_support": 0.5659304162051433,
+      "object_support": 0.6760467713857331,
+      "score": 0.5293585476253945,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.2929725646972656,
+      "visual": 0.36118451950667596,
+      "scene_support": 0.773671059126028,
+      "object_support": 0.8027648919434746,
+      "score": 0.6174045931235211,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young female is speaking and makes sneezing sounds, and a dog barks in the background",
+      "clip_similarity": 0.29171836376190186,
+      "visual": 0.2992260342240982,
+      "scene_support": 0.607007179824962,
+      "object_support": 0.6267855405845082,
+      "score": 0.48982822981248036,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl talking and cat meowing",
+      "clip_similarity": 0.2901982069015503,
+      "visual": 0.22412912287314,
+      "scene_support": 0.07729064633004724,
+      "object_support": 0.19583874202951052,
+      "score": 0.17159046565712333,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl speaking as plastic crinkles and crumples",
+      "clip_similarity": 0.2901867926120758,
+      "visual": 0.22356524824470098,
+      "scene_support": 0.41317677772817696,
+      "object_support": 0.39147757193985194,
+      "score": 0.33082240419828907,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young child speaks followed by a child yelling and sobbing",
+      "clip_similarity": 0.28932252526283264,
+      "visual": 0.18086978029501097,
+      "scene_support": 0.9531804055917127,
+      "object_support": 0.9485544945007396,
+      "score": 0.64286838214574,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaking with vehicle engine noise in the background",
+      "clip_similarity": 0.28842073678970337,
+      "visual": 0.1363207401332982,
+      "scene_support": 0.777346951115182,
+      "object_support": 0.7874907339391073,
+      "score": 0.5239796015696061,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.82)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small child talks and cries while riding in a car",
+      "clip_similarity": 0.28801918029785156,
+      "visual": 0.11648354236936291,
+      "scene_support": 0.8112974929576136,
+      "object_support": 0.7329506156689509,
+      "score": 0.5098678495357145,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young kid speaks and then begins to burp",
+      "clip_similarity": 0.28767725825309753,
+      "visual": 0.09959233189395623,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6398369327575825,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks followed by sneezing and then a young girl speaking",
+      "clip_similarity": 0.28757303953170776,
+      "visual": 0.09444384736222983,
+      "scene_support": 0.6328370536087594,
+      "object_support": 0.7608749174020817,
+      "score": 0.4558911302481442,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking is followed by a child screaming in the background",
+      "clip_similarity": 0.2875259220600128,
+      "visual": 0.09211620823021396,
+      "scene_support": 0.7021138094239544,
+      "object_support": 0.7255381023778138,
+      "score": 0.465142056832616,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy talking as a group of people talk while a girl laughs in the background with a muffled bus engine running idle",
+      "clip_similarity": 0.2871324121952057,
+      "visual": 0.07267651999546544,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.029070607998186178,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl talks followed by a robotic female voice speaking",
+      "clip_similarity": 0.2863215506076813,
+      "visual": 0.03261933751356317,
+      "scene_support": 0.6752770534200762,
+      "object_support": 0.7040831044071231,
+      "score": 0.426855782353585,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaking while metal creaks briefly followed by a young girl laughing in the background",
+      "clip_similarity": 0.2856612503528595,
+      "visual": 0.0,
+      "scene_support": 0.2190830767884917,
+      "object_support": 0.29065410842884504,
+      "score": 0.15292115556520103,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tundra",
+      0.14170531928539276
+    ],
+    [
+      "bus interior",
+      0.07478263974189758
+    ],
+    [
+      "landfill",
+      0.06371438503265381
+    ],
+    [
+      "train interior",
+      0.05831380933523178
+    ],
+    [
+      "airplane cabin",
+      0.02986677549779415
+    ]
+  ],
+  "top_objects": [
+    [
+      "school bus",
+      0.08429786562919617
+    ],
+    [
+      "iPod",
+      0.060497134923934937
+    ],
+    [
+      "oxygen mask",
+      0.05093029513955116
+    ],
+    [
+      "maraca",
+      0.03485926240682602
+    ],
+    [
+      "wild boar",
+      0.03224428743124008
+    ]
+  ]
+}

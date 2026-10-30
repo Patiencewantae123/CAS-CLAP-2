@@ -1,0 +1,283 @@
+{
+  "id": "SePTNAN7s-w",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SePTNAN7s-w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SePTNAN7s-w.wav",
+  "gt_captions": [
+    "A female speaking and then a toilet flushing with multiple females speaking during and after",
+    "A woman talking followed by a young girl talking as a toilet flushes",
+    "A female speech and then a toilet flushing followed by a female speech.",
+    "A young woman speaks loudly with a toilet flushing sound",
+    "Speech followed by a toilet flushing and more speech"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.2051040679216385
+  ],
+  "top_object": [
+    "plunger",
+    0.23552066087722778
+  ],
+  "env_probs": {
+    "indoor": 0.9443939924240112,
+    "outdoor": 0.05560600757598877
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Water flushing and tricking from a toilet",
+    "casv": "Clanging sound then a toilet flushing"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2313874363899231,
+    "clap_gt_audio_baseline": 0.29983770847320557,
+    "clap_text_casv": -0.007154880091547966,
+    "clap_gt_audio_casv": -0.06665191799402237
+  },
+  "verdicts": [
+    {
+      "caption": "Water flushing and tricking from a toilet",
+      "clip_similarity": 0.3099856972694397,
+      "visual": 1.0,
+      "scene_support": 0.39525646769329525,
+      "object_support": 0.2585365131603293,
+      "score": 0.5961378942560874,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing down a toilet, followed by a child talking",
+      "clip_similarity": 0.3074558675289154,
+      "visual": 0.8110275309826515,
+      "scene_support": 0.111514753208891,
+      "object_support": 0.0,
+      "score": 0.35786543835572787,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clanging sound then a toilet flushing",
+      "clip_similarity": 0.30376365780830383,
+      "visual": 0.535227948165974,
+      "scene_support": 0.8194232832182428,
+      "object_support": 1.0,
+      "score": 0.7599181642318624,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toilet flushing and dinnerware clanking as a man and a young girl communicate with each other",
+      "clip_similarity": 0.30369070172309875,
+      "visual": 0.5297782962268729,
+      "scene_support": 0.05523103919637544,
+      "object_support": 0.13558753364401366,
+      "score": 0.2691568903428659,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet flushing followed by a child yelling in the distance then camera muffling",
+      "clip_similarity": 0.3031974732875824,
+      "visual": 0.4929352653477381,
+      "scene_support": 0.7731323380366182,
+      "object_support": 0.6472067964813686,
+      "score": 0.6232758464944912,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toilet is flushed and takes a long time to swirl down the tube",
+      "clip_similarity": 0.3031271696090698,
+      "visual": 0.4876837420943315,
+      "scene_support": 0.0,
+      "object_support": 0.9454113800439294,
+      "score": 0.47869691085091143,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet flushes followed by a gurgling water sound and a woman speaking",
+      "clip_similarity": 0.3028161823749542,
+      "visual": 0.46445371023791027,
+      "scene_support": 0.7916257903419474,
+      "object_support": 0.8375696214190147,
+      "score": 0.6745401076234527,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toilet flushing followed by a woman communicating and a man responding",
+      "clip_similarity": 0.3018975257873535,
+      "visual": 0.3958321738723918,
+      "scene_support": 0.4036501642535705,
+      "object_support": 0.020081559750041323,
+      "score": 0.28545238675004025,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Flushing toilets then rapid tapping",
+      "clip_similarity": 0.3014093041419983,
+      "visual": 0.3593631387145678,
+      "scene_support": 0.4061891929843331,
+      "object_support": 0.4932522834345224,
+      "score": 0.41357769841148384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Musical sound effects together with toilet flushing noises",
+      "clip_similarity": 0.29973936080932617,
+      "visual": 0.23462220866735084,
+      "scene_support": 0.2999874863520041,
+      "object_support": 0.6825394867442792,
+      "score": 0.38860697539582534,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Instrumental music playing then a toilet flushes",
+      "clip_similarity": 0.29967254400253296,
+      "visual": 0.22963114671985718,
+      "scene_support": 0.6359655616765232,
+      "object_support": 0.8122267259080903,
+      "score": 0.526310144963327,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman is verbalizing something while flushing the toilet",
+      "clip_similarity": 0.2996121644973755,
+      "visual": 0.22512093641404887,
+      "scene_support": 0.5388118912134131,
+      "object_support": 0.3602189399863985,
+      "score": 0.35975762392556304,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Gurgling of a toilet flushing or drain emptying",
+      "clip_similarity": 0.29895445704460144,
+      "visual": 0.17599170085685092,
+      "scene_support": 0.322277063629512,
+      "object_support": 0.5919290550236381,
+      "score": 0.34465851593868535,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet flushing with a hiss in the background",
+      "clip_similarity": 0.2985168397426605,
+      "visual": 0.14330269388227596,
+      "scene_support": 1.0,
+      "object_support": 0.7935382112938626,
+      "score": 0.5953825409410691,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Soft clattering occurs, then a toilet flushes with splashing and gurgling water",
+      "clip_similarity": 0.29808878898620605,
+      "visual": 0.11132828587520564,
+      "scene_support": 0.5787781903354517,
+      "object_support": 0.6633879943192705,
+      "score": 0.41718116974649894,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Camera muffling followed by a toilet flushing",
+      "clip_similarity": 0.29714494943618774,
+      "visual": 0.04082564007809387,
+      "scene_support": 0.5970328325645241,
+      "object_support": 0.6440490082160059,
+      "score": 0.38865480826539656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet gurgles flushing down water with a big splash at the end",
+      "clip_similarity": 0.2970673143863678,
+      "visual": 0.03502648023276781,
+      "scene_support": 0.29390451608959006,
+      "object_support": 0.49601123646324424,
+      "score": 0.2509853178589574,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud clicking followed by whooshing of a flushing toilet and a small bang",
+      "clip_similarity": 0.2969599962234497,
+      "visual": 0.02701006003967026,
+      "scene_support": 0.8599283378723168,
+      "object_support": 0.706583906299212,
+      "score": 0.48075769726732676,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Toilet flushes followed by clanking",
+      "clip_similarity": 0.2968749701976776,
+      "visual": 0.020658811272409133,
+      "scene_support": 0.6322047805956306,
+      "object_support": 0.7904593677351339,
+      "score": 0.43506276900819296,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone makes rustling sounds while flushing a toilet",
+      "clip_similarity": 0.2965984046459198,
+      "visual": 0.0,
+      "scene_support": 0.6735800591675845,
+      "object_support": 0.5542074650443529,
+      "score": 0.3683362572635812,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.2051040679216385
+    ],
+    [
+      "utility room",
+      0.1347884088754654
+    ],
+    [
+      "playroom",
+      0.07672383636236191
+    ],
+    [
+      "childs room",
+      0.07644819468259811
+    ],
+    [
+      "beauty salon",
+      0.045328542590141296
+    ]
+  ],
+  "top_objects": [
+    [
+      "plunger",
+      0.23552066087722778
+    ],
+    [
+      "toilet seat",
+      0.16331100463867188
+    ],
+    [
+      "mop",
+      0.042950354516506195
+    ],
+    [
+      "crutch",
+      0.03463040664792061
+    ],
+    [
+      "ladle",
+      0.025736898183822632
+    ]
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "id": "R_g4RpU9mO0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\R_g4RpU9mO0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\R_g4RpU9mO0.wav",
+  "gt_captions": [
+    "Boat motor idles then accelerates",
+    "A motorboat engine running idle then accelerating as water trickles then splashes",
+    "A motorboat engine running idle then accelerating as water trickles followed by water spraying",
+    "A motor boat idling then taking off",
+    "An engine running and then accelerating"
+  ],
+  "top_scene": [
+    "raft",
+    0.3798271417617798
+  ],
+  "top_object": [
+    "amphibious vehicle",
+    0.5697378516197205
+  ],
+  "env_probs": {
+    "indoor": 0.17065328359603882,
+    "outdoor": 0.8293467164039612
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Motorized water vehicle operating, with speech and laughter in the background",
+    "casv": "A boat motor accelerates while the exhaust pops"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09730307012796402,
+    "clap_gt_audio_baseline": 0.1547294557094574,
+    "clap_text_casv": 0.4785693287849426,
+    "clap_gt_audio_casv": 0.6955149173736572
+  },
+  "verdicts": [
+    {
+      "caption": "Motorized water vehicle operating, with speech and laughter in the background",
+      "clip_similarity": 0.3447878658771515,
+      "visual": 1.0,
+      "scene_support": 0.4767146612320289,
+      "object_support": 0.7291910661380056,
+      "score": 0.7617717182110104,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat engine running on water followed by a man talking",
+      "clip_similarity": 0.33253395557403564,
+      "visual": 0.5359844445272023,
+      "scene_support": 0.33546041492409445,
+      "object_support": 0.3639293831387764,
+      "score": 0.4242107172297422,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat motor running and a man speaking",
+      "clip_similarity": 0.3297591805458069,
+      "visual": 0.4309127780805964,
+      "scene_support": 0.684337790738604,
+      "object_support": 0.5913800128048425,
+      "score": 0.5550804522952726,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat motor accelerates while the exhaust pops",
+      "clip_similarity": 0.32883501052856445,
+      "visual": 0.39591747835223035,
+      "scene_support": 0.6861681627432193,
+      "object_support": 0.949420162090568,
+      "score": 0.6490434887910284,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A water vehicle travels through the water with wind noise and a man talking",
+      "clip_similarity": 0.3284268081188202,
+      "visual": 0.3804601864986531,
+      "scene_support": 0.0,
+      "object_support": 0.05312732016791095,
+      "score": 0.16812227064983454,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor hums smoothly over stable water",
+      "clip_similarity": 0.3240896165370941,
+      "visual": 0.21622490884407172,
+      "scene_support": 0.7353978911346278,
+      "object_support": 0.8807282860675647,
+      "score": 0.5713278166982865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine starts and accelerates across water",
+      "clip_similarity": 0.32395803928375244,
+      "visual": 0.2112425080604298,
+      "scene_support": 0.6245577694757428,
+      "object_support": 0.9205063449272524,
+      "score": 0.5480162375450705,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat motor is running, scraping occurs, and water splashes",
+      "clip_similarity": 0.3228972554206848,
+      "visual": 0.17107408824322692,
+      "scene_support": 0.8693252800147002,
+      "object_support": 0.8402695263201977,
+      "score": 0.5813080771977601,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman and man speak followed by boat motor running",
+      "clip_similarity": 0.32249677181243896,
+      "visual": 0.15590908218873537,
+      "scene_support": 0.6192086445104948,
+      "object_support": 0.40866612437732547,
+      "score": 0.37072606354184023,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat engine running, two men speaking a foreign language",
+      "clip_similarity": 0.3220368027687073,
+      "visual": 0.13849155700306617,
+      "scene_support": 0.018647362247801825,
+      "object_support": 0.0,
+      "score": 0.06099083147556702,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud boating motor speeds by and water is constantly moving",
+      "clip_similarity": 0.3219980299472809,
+      "visual": 0.13702335690804507,
+      "scene_support": 0.7262961455992917,
+      "object_support": 0.9660806534728522,
+      "score": 0.5625223824848612,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Boat motor running",
+      "clip_similarity": 0.3208310902118683,
+      "visual": 0.09283516096596507,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6371340643863861,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat putters through water",
+      "clip_similarity": 0.32020172476768494,
+      "visual": 0.06900314743279401,
+      "scene_support": 0.5985209066904035,
+      "object_support": 0.3182180826522775,
+      "score": 0.3026229557759219,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat engine is idling and begins accelerating while traveling across the water",
+      "clip_similarity": 0.31998157501220703,
+      "visual": 0.060666795317558926,
+      "scene_support": 0.3717164570011729,
+      "object_support": 0.5074018236253603,
+      "score": 0.2880022023149835,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Boat motor revving then trolling",
+      "clip_similarity": 0.3197576701641083,
+      "visual": 0.05218825011087676,
+      "scene_support": 0.7444775624313164,
+      "object_support": 0.8143120378296501,
+      "score": 0.48851218012264064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A water vehicle travel and the vibrating engine increases in sound",
+      "clip_similarity": 0.3195837736129761,
+      "visual": 0.045603355756958154,
+      "scene_support": 0.5604458280285557,
+      "object_support": 0.9057963916464727,
+      "score": 0.4581140082052918,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine motorboat sounds with wind in the background followed by a man laughing",
+      "clip_similarity": 0.31911277770996094,
+      "visual": 0.02776827942973799,
+      "scene_support": 0.3490539697236902,
+      "object_support": 0.4845887615502661,
+      "score": 0.2612001311540821,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor is running and an adult male is singing",
+      "clip_similarity": 0.31899330019950867,
+      "visual": 0.02324405638520334,
+      "scene_support": 0.9359059565841488,
+      "object_support": 0.8190790734518136,
+      "score": 0.5357931315648701,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of men speaking and a motorboat engine revving then accelerating",
+      "clip_similarity": 0.3187403678894043,
+      "visual": 0.013666336011303222,
+      "scene_support": 0.5345497630897252,
+      "object_support": 0.5894685138574801,
+      "score": 0.3426720174886829,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motors through the water and then a radio plays while water splashes",
+      "clip_similarity": 0.3183794617652893,
+      "visual": 0.0,
+      "scene_support": 0.7085335427005266,
+      "object_support": 0.6346921798186028,
+      "score": 0.40296771675573884,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raft",
+      0.3798271417617798
+    ],
+    [
+      "boat deck",
+      0.0547933392226696
+    ],
+    [
+      "swimming hole",
+      0.04900572448968887
+    ],
+    [
+      "fishpond",
+      0.04387209936976433
+    ],
+    [
+      "landing deck",
+      0.043531596660614014
+    ]
+  ],
+  "top_objects": [
+    [
+      "amphibious vehicle",
+      0.5697378516197205
+    ],
+    [
+      "motorboat",
+      0.2335137575864792
+    ],
+    [
+      "recreational vehicle",
+      0.06768769770860672
+    ],
+    [
+      "bassinet",
+      0.006134193856269121
+    ],
+    [
+      "golf cart",
+      0.006038355175405741
+    ]
+  ]
+}

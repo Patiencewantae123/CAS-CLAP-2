@@ -10,7 +10,9 @@
 # Statistics used in the figures are saved to graph_stats.json.
 #
 # Usage:
-#   py -m scripts.plots --run results/audiocaps_test100
+#   py -m scripts.plots --run results/audiocaps_test400 \
+#       --tuning results/tuning_test400/tuning_results.json \
+#       --earlier-run results/audiocaps_test100
 # =============================================================================
 
 import argparse
@@ -147,38 +149,47 @@ def places_figure(places_path, stats):
 # -----------------------------------------------------------------------------
 
 
-def clap_figure(run_dir, results, stats):
+def paired_stats(items, key):
+    """Baseline vs CAS-V statistics of one CLAP metric over the given items."""
+    pairs = np.array(
+        [
+            (r["metrics"][f"{key}_baseline"], r["metrics"][f"{key}_casv"])
+            for r in items
+            if r["metrics"].get(f"{key}_baseline") is not None
+        ]
+    )
+    base, casv = pairs[:, 0], pairs[:, 1]
+    diff = casv - base
+    changed = diff != 0
+    p_value = float(wilcoxon(casv[changed], base[changed]).pvalue) if changed.sum() >= 6 else None
+    return {
+        "n": int(len(pairs)),
+        "n_prompt_changed": int(changed.sum()),
+        "baseline_mean": float(base.mean()),
+        "baseline_ci95": bootstrap_ci(base),
+        "casv_mean": float(casv.mean()),
+        "casv_ci95": bootstrap_ci(casv),
+        "mean_diff": float(diff.mean()),
+        "mean_diff_ci95": bootstrap_ci(diff),
+        "casv_better": int((diff > 0).sum()),
+        "casv_worse": int((diff < 0).sum()),
+        "wilcoxon_p_changed_items": p_value,
+    }
+
+
+def clap_figure(run_dir, results, stats, earlier_ids=frozenset()):
     """Figure 3: generated audio, baseline vs CAS-V, paired with 95% CIs."""
     items = results["items"]
     panels = [("clap_text", "CLAP: audio vs GT captions"), ("clap_gt_audio", "CLAP: audio vs GT recording")]
 
     fig, axes = plt.subplots(1, 3, figsize=(11, 3.4), gridspec_kw={"width_ratios": [1, 1, 1.15]})
     stats["clap"] = {}
+    if earlier_ids:
+        new_items = [r for r in items if r["id"] not in earlier_ids]
+        stats["clap_new_items"] = {key: paired_stats(new_items, key) for key, _ in panels}
     for ax, (key, title) in zip(axes[:2], panels, strict=True):
-        pairs = np.array(
-            [
-                (r["metrics"][f"{key}_baseline"], r["metrics"][f"{key}_casv"])
-                for r in items
-                if r["metrics"].get(f"{key}_baseline") is not None
-            ]
-        )
-        base, casv = pairs[:, 0], pairs[:, 1]
-        diff = casv - base
-        changed = diff != 0
-        p_value = float(wilcoxon(casv[changed], base[changed]).pvalue) if changed.sum() >= 6 else None
-        entry = {
-            "n": int(len(pairs)),
-            "n_prompt_changed": int(changed.sum()),
-            "baseline_mean": float(base.mean()),
-            "baseline_ci95": bootstrap_ci(base),
-            "casv_mean": float(casv.mean()),
-            "casv_ci95": bootstrap_ci(casv),
-            "mean_diff": float(diff.mean()),
-            "mean_diff_ci95": bootstrap_ci(diff),
-            "casv_better": int((diff > 0).sum()),
-            "casv_worse": int((diff < 0).sum()),
-            "wilcoxon_p_changed_items": p_value,
-        }
+        entry = paired_stats(items, key)
+        p_value = entry["wilcoxon_p_changed_items"]
         stats["clap"][key] = entry
 
         means = [entry["baseline_mean"], entry["casv_mean"]]
@@ -384,6 +395,11 @@ def main():
     parser.add_argument("--run", default=None, help="Run directory from test.py")
     parser.add_argument("--places", default="results/places365/eval.json")
     parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
+    parser.add_argument(
+        "--earlier-run",
+        default=None,
+        help="Earlier run on part of this data; items not in it are also summarised on their own.",
+    )
     args = parser.parse_args()
 
     stats, outputs = {}, []
@@ -397,7 +413,11 @@ def main():
         run_dir = Path(args.run)
         results = json.loads((run_dir / "results.json").read_text())
         if results["models"]["clap"]:
-            outputs.append(clap_figure(run_dir, results, stats))
+            earlier_ids = frozenset()
+            if args.earlier_run:
+                earlier = json.loads((Path(args.earlier_run) / "results.json").read_text())
+                earlier_ids = frozenset(r["id"] for r in earlier["items"])
+            outputs.append(clap_figure(run_dir, results, stats, earlier_ids))
         outputs.append(verification_figure(run_dir, results, stats))
         (run_dir / "graph_stats.json").write_text(json.dumps(stats, indent=2))
     for out in outputs:

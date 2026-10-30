@@ -1,0 +1,283 @@
+{
+  "id": "4eyY1w2QyM0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\4eyY1w2QyM0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\4eyY1w2QyM0.wav",
+  "gt_captions": [
+    "Waves crash against a shore",
+    "Ocean waves crashing and water splashing followed by a bird cawing",
+    "Ocean waves are hitting the shores",
+    "Ocean waves crashing and water splashing",
+    "Water rushing and rippling"
+  ],
+  "top_scene": [
+    "beach",
+    0.49967852234840393
+  ],
+  "top_object": [
+    "pelican",
+    0.1403125822544098
+  ],
+  "env_probs": {
+    "indoor": 0.027106381952762604,
+    "outdoor": 0.9728936180472374
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Bird sounds followed by an explosion",
+    "casv": "Waves crash against a shoreline and a bird squeals"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.03079884871840477,
+    "clap_gt_audio_baseline": 0.24947834014892578,
+    "clap_text_casv": 0.42709800601005554,
+    "clap_gt_audio_casv": 0.5650985240936279
+  },
+  "verdicts": [
+    {
+      "caption": "Bird sounds followed by an explosion",
+      "clip_similarity": 0.3164020776748657,
+      "visual": 1.0,
+      "scene_support": 0.48801942462244025,
+      "object_support": 0.6315461702438568,
+      "score": 0.735869678459889,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Waves crash against a shoreline and a bird squeals",
+      "clip_similarity": 0.31323403120040894,
+      "visual": 0.7794189052909416,
+      "scene_support": 0.8534309084437298,
+      "object_support": 0.6245326907916646,
+      "score": 0.7551566418869949,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind noise on ocean",
+      "clip_similarity": 0.31172722578048706,
+      "visual": 0.6745047912715442,
+      "scene_support": 0.8540072061426555,
+      "object_support": 0.5995135782291764,
+      "score": 0.7058581518201673,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking with bird sounds in the background",
+      "clip_similarity": 0.3110172748565674,
+      "visual": 0.6250731452238762,
+      "scene_support": 0.38687433562318846,
+      "object_support": 0.4726607258320942,
+      "score": 0.5078897765261352,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pig snorting then oinking with some walking on sand",
+      "clip_similarity": 0.3100776672363281,
+      "visual": 0.5596512269722235,
+      "scene_support": 0.23181635474755496,
+      "object_support": 0.0,
+      "score": 0.2934053972131559,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several birds tweet while someone walks",
+      "clip_similarity": 0.30955007672309875,
+      "visual": 0.5229167617727497,
+      "scene_support": 0.0,
+      "object_support": 0.26575085246105207,
+      "score": 0.2888919604474155,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Windy sounds over water",
+      "clip_similarity": 0.3092300295829773,
+      "visual": 0.5006328877526882,
+      "scene_support": 0.7815450347594683,
+      "object_support": 0.505861081303806,
+      "score": 0.5864749899200576,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.3090457320213318,
+      "visual": 0.4878008291867081,
+      "scene_support": 0.29340635525605296,
+      "object_support": 0.47943024181232874,
+      "score": 0.4269713107951977,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds flying and walking around",
+      "clip_similarity": 0.30897778272628784,
+      "visual": 0.4830697338551372,
+      "scene_support": 0.40780992345894845,
+      "object_support": 0.6744655538002171,
+      "score": 0.5179105367198046,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.30759793519973755,
+      "visual": 0.3869952979552538,
+      "scene_support": 0.2162871899675772,
+      "object_support": 0.5622310679014939,
+      "score": 0.38835359654282287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind and waves crash while a woman briefly speaks",
+      "clip_similarity": 0.30755069851875305,
+      "visual": 0.38370635668308717,
+      "scene_support": 0.567567273070674,
+      "object_support": 0.3471531218857812,
+      "score": 0.4278986611601714,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird flapping its wings",
+      "clip_similarity": 0.3056841492652893,
+      "visual": 0.25374441294992095,
+      "scene_support": 0.38612853860104945,
+      "object_support": 1.0,
+      "score": 0.5173363267602832,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Waves crash and birds shriek while the wind blows into the microphone",
+      "clip_similarity": 0.3056575059890747,
+      "visual": 0.2518893255699102,
+      "scene_support": 0.5596655778352999,
+      "object_support": 0.5020498576043539,
+      "score": 0.41927036085986025,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.3056083619594574,
+      "visual": 0.24846758162176968,
+      "scene_support": 0.6187512258433197,
+      "object_support": 0.2692936536258052,
+      "score": 0.36580049648944535,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very loud waves with soft voices in the background",
+      "clip_similarity": 0.3052688241004944,
+      "visual": 0.22482663025659966,
+      "scene_support": 1.0,
+      "object_support": 0.5816973460662614,
+      "score": 0.5644398559225183,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.3049473762512207,
+      "visual": 0.20244522927136982,
+      "scene_support": 0.3296053571471811,
+      "object_support": 0.467732538267458,
+      "score": 0.32017946033293965,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird emits a strange buzzing noise",
+      "clip_similarity": 0.30438560247421265,
+      "visual": 0.16333069111342594,
+      "scene_support": 0.33782849574193485,
+      "object_support": 0.6792795990720608,
+      "score": 0.37046470488956906,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yells followed by a woman yelling then something moving in sand and more people talking",
+      "clip_similarity": 0.3034597933292389,
+      "visual": 0.098869517220772,
+      "scene_support": 0.7885853102200827,
+      "object_support": 0.2897702792284232,
+      "score": 0.36305448372286053,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone outdoors makes a tapping sound with birds in the background",
+      "clip_similarity": 0.30254650115966797,
+      "visual": 0.03527986088919692,
+      "scene_support": 0.2462649613420472,
+      "object_support": 0.23701772529462195,
+      "score": 0.1590967503466795,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A birds flap its wings quickly, followed by a man talking nearby",
+      "clip_similarity": 0.3020398020744324,
+      "visual": 0.0,
+      "scene_support": 0.17466723650724852,
+      "object_support": 0.659494098780747,
+      "score": 0.25024840058639863,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "beach",
+      0.49967852234840393
+    ],
+    [
+      "ocean",
+      0.0808737650513649
+    ],
+    [
+      "wave",
+      0.0742170512676239
+    ],
+    [
+      "beach house",
+      0.0499853678047657
+    ],
+    [
+      "coast",
+      0.035742487758398056
+    ]
+  ],
+  "top_objects": [
+    [
+      "pelican",
+      0.1403125822544098
+    ],
+    [
+      "sea snake",
+      0.05386130139231682
+    ],
+    [
+      "snoek",
+      0.04593497887253761
+    ],
+    [
+      "kite",
+      0.03973051905632019
+    ],
+    [
+      "oystercatcher",
+      0.03145527467131615
+    ]
+  ]
+}

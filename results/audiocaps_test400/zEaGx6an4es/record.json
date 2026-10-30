@@ -1,0 +1,283 @@
+{
+  "id": "zEaGx6an4es",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\zEaGx6an4es.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\zEaGx6an4es.wav",
+  "gt_captions": [
+    "A power tool drill operating continuously",
+    "High pitched motorized vibrations",
+    "A sustained and coarse drilling noise",
+    "A tool motor is humming, and metal whirring and grinding are occurring",
+    "A saw blade blaring"
+  ],
+  "top_scene": [
+    "physics laboratory",
+    0.4788125455379486
+  ],
+  "top_object": [
+    "sewing machine",
+    0.5884106159210205
+  ],
+  "env_probs": {
+    "indoor": 0.959376335144043,
+    "outdoor": 0.04062366485595703
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Sewing machine running fast then stopping",
+    "casv": "A sewing machine running continuously"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.038549572229385376,
+    "clap_gt_audio_baseline": 0.25110864639282227,
+    "clap_text_casv": 0.2855806350708008,
+    "clap_gt_audio_casv": 0.5186609029769897
+  },
+  "verdicts": [
+    {
+      "caption": "Sewing machine running fast then stopping",
+      "clip_similarity": 0.3337857127189636,
+      "visual": 1.0,
+      "scene_support": 0.3057236893069726,
+      "object_support": 0.39835590853051644,
+      "score": 0.6112238793512468,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine running continuously",
+      "clip_similarity": 0.3334429860115051,
+      "visual": 0.9717439163423359,
+      "scene_support": 0.8347409809705859,
+      "object_support": 0.7405571233723945,
+      "score": 0.8612869978398285,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine running and making stitches",
+      "clip_similarity": 0.33272233605384827,
+      "visual": 0.9123299720879035,
+      "scene_support": 0.24790475452704924,
+      "object_support": 0.49473145277230524,
+      "score": 0.5877228510249678,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is being used slowly and then it speeds up a bit then slows back down",
+      "clip_similarity": 0.33243340253829956,
+      "visual": 0.8885088650391163,
+      "scene_support": 0.37255903640691834,
+      "object_support": 0.5584471650276268,
+      "score": 0.63470540644601,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.3304031491279602,
+      "visual": 0.7211247395526202,
+      "scene_support": 0.6280271926537124,
+      "object_support": 0.23711042937246823,
+      "score": 0.5479911824289023,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine going fast then slowing down",
+      "clip_similarity": 0.32920295000076294,
+      "visual": 0.6221743916342336,
+      "scene_support": 0.0,
+      "object_support": 0.5276100054475378,
+      "score": 0.4071527582879548,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running rapidly then stopping with a click clank",
+      "clip_similarity": 0.3275105655193329,
+      "visual": 0.4826458505326886,
+      "scene_support": 0.44359115547841527,
+      "object_support": 0.3850295109094111,
+      "score": 0.44164454012942334,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running and stopping",
+      "clip_similarity": 0.327426552772522,
+      "visual": 0.47571942446043164,
+      "scene_support": 0.4731444279974625,
+      "object_support": 0.3268752022347192,
+      "score": 0.43029365885382714,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine buzzing and stopping",
+      "clip_similarity": 0.3267110586166382,
+      "visual": 0.41673054998624054,
+      "scene_support": 0.20653373224825125,
+      "object_support": 0.5531036629571529,
+      "score": 0.39458343855611744,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine operating and fabric shuffling",
+      "clip_similarity": 0.325910359621048,
+      "visual": 0.35071696740967884,
+      "scene_support": 0.07019255530966503,
+      "object_support": 0.3272208956079739,
+      "score": 0.2595108222391632,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine whirring",
+      "clip_similarity": 0.3255631923675537,
+      "visual": 0.3220947831898416,
+      "scene_support": 0.8897345010457908,
+      "object_support": 1.0,
+      "score": 0.6957582635896739,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine motor running",
+      "clip_similarity": 0.32548999786376953,
+      "visual": 0.31606026654086566,
+      "scene_support": 0.6750909178462782,
+      "object_support": 0.0,
+      "score": 0.3289513819702297,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is being used in an articulate way",
+      "clip_similarity": 0.32520121335983276,
+      "visual": 0.2922514447458427,
+      "scene_support": 0.22085656440459017,
+      "object_support": 0.8760771174743085,
+      "score": 0.4459806824620067,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine runs as photo clicks are played over and over",
+      "clip_similarity": 0.3242497146129608,
+      "visual": 0.2138051853599088,
+      "scene_support": 0.5010185729928459,
+      "object_support": 0.668161394569665,
+      "score": 0.4362760644127167,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is operated and the motor runs",
+      "clip_similarity": 0.32421085238456726,
+      "visual": 0.21060119117820497,
+      "scene_support": 1.0,
+      "object_support": 0.7179396019611136,
+      "score": 0.5996223570596161,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sewing machine running with faint speaking in background",
+      "clip_similarity": 0.32383856177330017,
+      "visual": 0.1799077131737233,
+      "scene_support": 0.43521854828747836,
+      "object_support": 0.40408114783306776,
+      "score": 0.32375299410565317,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Heavy duty sewing machine running",
+      "clip_similarity": 0.32238489389419556,
+      "visual": 0.06006014860242953,
+      "scene_support": 0.06994864214693831,
+      "object_support": 0.541682674781996,
+      "score": 0.2075134545196521,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is being used to do quick lines across",
+      "clip_similarity": 0.32200366258621216,
+      "visual": 0.028629555372095765,
+      "scene_support": 0.05065437818892907,
+      "object_support": 0.2655654175558168,
+      "score": 0.10631776087226207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine operating at a moderate pace before slowing down",
+      "clip_similarity": 0.3218380808830261,
+      "visual": 0.014978181389314778,
+      "scene_support": 0.6592145786792678,
+      "object_support": 0.9038980614138203,
+      "score": 0.47492506458365236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine starting and running",
+      "clip_similarity": 0.32165640592575073,
+      "visual": 0.0,
+      "scene_support": 0.6762466265658074,
+      "object_support": 0.6909345599167714,
+      "score": 0.4101543559447737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "physics laboratory",
+      0.4788125455379486
+    ],
+    [
+      "assembly line",
+      0.08610282093286514
+    ],
+    [
+      "repair shop",
+      0.057912543416023254
+    ],
+    [
+      "biology laboratory",
+      0.026932600885629654
+    ],
+    [
+      "chemistry lab",
+      0.02600572444498539
+    ]
+  ],
+  "top_objects": [
+    [
+      "sewing machine",
+      0.5884106159210205
+    ],
+    [
+      "crane (machine)",
+      0.23291926085948944
+    ],
+    [
+      "printer",
+      0.020793138071894646
+    ],
+    [
+      "photocopier",
+      0.012365289963781834
+    ],
+    [
+      "joystick",
+      0.011714591644704342
+    ]
+  ]
+}

@@ -19,7 +19,8 @@
 #
 # Usage:
 #   py -m scripts.train --val data/audiocaps/pairs/val/manifest.json \
-#                           --test data/audiocaps/pairs/test/manifest.json
+#                           --test data/audiocaps/pairs/test400/manifest.json \
+#                           --out results/tuning_test400
 # =============================================================================
 
 import argparse

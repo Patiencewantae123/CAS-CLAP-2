@@ -1,0 +1,288 @@
+{
+  "id": "MvHpNzDpC6Q",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\MvHpNzDpC6Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\MvHpNzDpC6Q.wav",
+  "gt_captions": [
+    "Male speech and then a burp",
+    "A motor vehicle engine is running, two adult males speak, two burps occur, and person laughs",
+    "Men riding in the car talking then man burps loudly and then the other chuckles",
+    "Two men talk followed by a person belching as a car drives",
+    "A motor engine is working far away and some boys talks then suddenly a loud eructation followed by laughs"
+  ],
+  "top_scene": [
+    "butchers shop",
+    0.09364400058984756
+  ],
+  "top_object": [
+    "moving van",
+    0.0777948796749115
+  ],
+  "env_probs": {
+    "indoor": 0.7443002462387085,
+    "outdoor": 0.2556997537612915
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A young kid yelling followed by a woman speaking before a vehicle accelerates and drives by",
+    "casv": "A vehicle runs over something as it passes by"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07008874416351318,
+    "clap_gt_audio_baseline": 0.2998010516166687,
+    "clap_text_casv": -0.04328097775578499,
+    "clap_gt_audio_casv": 0.19278499484062195
+  },
+  "verdicts": [
+    {
+      "caption": "A young kid yelling followed by a woman speaking before a vehicle accelerates and drives by",
+      "clip_similarity": 0.32136932015419006,
+      "visual": 1.0,
+      "scene_support": 0.2910357935218882,
+      "object_support": 0.3317078510248201,
+      "score": 0.5868230933640125,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man yelling followed by a motorbike engine revving then accelerating",
+      "clip_similarity": 0.3175860643386841,
+      "visual": 0.7179507688616049,
+      "scene_support": 0.08584605234024278,
+      "object_support": 0.2572014096026903,
+      "score": 0.3900945461275219,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The door of a vehicle closes as another car passes by",
+      "clip_similarity": 0.31530770659446716,
+      "visual": 0.5480946762916008,
+      "scene_support": 0.4482712503139196,
+      "object_support": 0.4925387747159359,
+      "score": 0.501480878025597,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car driving past on road surface with a man speaking after",
+      "clip_similarity": 0.3141384720802307,
+      "visual": 0.46092592222288875,
+      "scene_support": 0.3557589572965318,
+      "object_support": 0.31349369236242236,
+      "score": 0.38514616378684174,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man pretends to scream followed by laughter as a car drives off",
+      "clip_similarity": 0.31296268105506897,
+      "visual": 0.37326836724945067,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.14930734689978029,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car accelerating at high speed and a man shouts",
+      "clip_similarity": 0.3129618763923645,
+      "visual": 0.373208378047507,
+      "scene_support": 0.591112471635785,
+      "object_support": 0.6013354130750075,
+      "score": 0.5070177166322405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car idles and then takes off over a speed bump and scrapes",
+      "clip_similarity": 0.31287962198257446,
+      "visual": 0.3670761485154894,
+      "scene_support": 0.662579148605454,
+      "object_support": 0.6092384314369373,
+      "score": 0.5283757334189132,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle pulling up to a halt and the sound of wind interference",
+      "clip_similarity": 0.3126479983329773,
+      "visual": 0.34980814564489504,
+      "scene_support": 0.6457329967025439,
+      "object_support": 0.7233438840696045,
+      "score": 0.5506463224896025,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle runs over something as it passes by",
+      "clip_similarity": 0.3113945722579956,
+      "visual": 0.2563627435950418,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7025450974380167,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks followed by a car speeding by",
+      "clip_similarity": 0.31125080585479736,
+      "visual": 0.2456446728477763,
+      "scene_support": 0.8065177882822171,
+      "object_support": 0.7714899038271503,
+      "score": 0.5716601767719207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles moving followed by popping and a woman screaming ended with people speaking",
+      "clip_similarity": 0.31079164147377014,
+      "visual": 0.21141305676089414,
+      "scene_support": 0.7739637681051739,
+      "object_support": 0.7623840407191528,
+      "score": 0.5454695653516557,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sound of riding vehicle followed by a man and kid speaking",
+      "clip_similarity": 0.3104252815246582,
+      "visual": 0.18410019529817967,
+      "scene_support": 0.05969896410245742,
+      "object_support": 0.2835618312672742,
+      "score": 0.17661831673019135,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car revving its engine while stopped",
+      "clip_similarity": 0.3100344240665436,
+      "visual": 0.15496099590962514,
+      "scene_support": 0.7510294333992626,
+      "object_support": 0.7893416279755661,
+      "score": 0.5240957167762986,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car drives past stream",
+      "clip_similarity": 0.3098357915878296,
+      "visual": 0.1401525503187204,
+      "scene_support": 0.48011347172048746,
+      "object_support": 0.3856978232645255,
+      "score": 0.315804408622992,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)",
+        "names 'a stream or river', not visible in image (z=-2.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person screaming while a car crash is taking place",
+      "clip_similarity": 0.30969661474227905,
+      "visual": 0.12977664020476315,
+      "scene_support": 0.6168115278708598,
+      "object_support": 0.6251162253296725,
+      "score": 0.4244889820420649,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle driving as a man talks followed by police sirens and several vehicles whooshing by",
+      "clip_similarity": 0.30948320031166077,
+      "visual": 0.1138661707559306,
+      "scene_support": 0.36214285608142144,
+      "object_support": 0.3815547589293587,
+      "score": 0.2686557528056063,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle drives by quickly followed by a man speaking",
+      "clip_similarity": 0.3082975149154663,
+      "visual": 0.02547097078081501,
+      "scene_support": 0.8428804519847892,
+      "object_support": 0.7944728736617744,
+      "score": 0.501394386006295,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car accelerating down road",
+      "clip_similarity": 0.3081949055194855,
+      "visual": 0.01782123662185251,
+      "scene_support": 0.5213353879897703,
+      "object_support": 0.6004232456740461,
+      "score": 0.3436560847478859,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by a vehicle horn honking then a child laughing then talking",
+      "clip_similarity": 0.3081224858760834,
+      "visual": 0.012422208446923998,
+      "scene_support": 0.03372128100002526,
+      "object_support": 0.12531903054848625,
+      "score": 0.052680976843323055,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle accelerates followed by a man briefly talking",
+      "clip_similarity": 0.30795586109161377,
+      "visual": 0.0,
+      "scene_support": 0.7276582117653353,
+      "object_support": 0.7199536618960312,
+      "score": 0.4342835620984099,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "butchers shop",
+      0.09364400058984756
+    ],
+    [
+      "supermarket",
+      0.0833820104598999
+    ],
+    [
+      "fastfood restaurant",
+      0.06701324880123138
+    ],
+    [
+      "auto showroom",
+      0.06111526861786842
+    ],
+    [
+      "amusement arcade",
+      0.056592393666505814
+    ]
+  ],
+  "top_objects": [
+    [
+      "moving van",
+      0.0777948796749115
+    ],
+    [
+      "grocery store",
+      0.0637761577963829
+    ],
+    [
+      "tobacco shop",
+      0.056996338069438934
+    ],
+    [
+      "moped",
+      0.0462322011590004
+    ],
+    [
+      "restaurant",
+      0.03529161959886551
+    ]
+  ]
+}

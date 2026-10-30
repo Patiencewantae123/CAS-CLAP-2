@@ -1,0 +1,289 @@
+{
+  "id": "zoctgurhvHE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\zoctgurhvHE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\zoctgurhvHE.wav",
+  "gt_captions": [
+    "A man speaking as plastic is clanking followed by a door hatch opening and plastic tumbling with a vehicle engine revving in the background",
+    "A man speaking with some rustling and humming",
+    "A man speaks with some clicking as wind blows and a distant motor hums",
+    "A series of plastic clanking followed by a car door opening then a vehicle engine accelerating in the distance while a man is talking",
+    "A plastic rattling followed by a plastic hatch opening followed by plastic clanking and a vehicle engine accelerating while a man is talking"
+  ],
+  "top_scene": [
+    "car interior",
+    0.14766272902488708
+  ],
+  "top_object": [
+    "crane (machine)",
+    0.0631961077451706
+  ],
+  "env_probs": {
+    "indoor": 0.834969699382782,
+    "outdoor": 0.16503030061721802
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Metal being filed by a machine",
+    "casv": "Metal being filed by a machine"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.04046642780303955,
+    "clap_gt_audio_baseline": 0.16535654664039612,
+    "clap_text_casv": -0.04046642780303955,
+    "clap_gt_audio_casv": 0.16535654664039612
+  },
+  "verdicts": [
+    {
+      "caption": "Metal being filed by a machine",
+      "clip_similarity": 0.3268195390701294,
+      "visual": 1.0,
+      "scene_support": 0.5849733750271374,
+      "object_support": 0.8536790411341648,
+      "score": 0.8315957248483907,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The vibration of a propeller of an airplane idling",
+      "clip_similarity": 0.3204188644886017,
+      "visual": 0.6062484416479664,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.24249937665918658,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from a motor with loud bursts of spraying",
+      "clip_similarity": 0.31989455223083496,
+      "visual": 0.5739942212639885,
+      "scene_support": 0.7037144163204544,
+      "object_support": 0.5382053914210327,
+      "score": 0.6021736308280415,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vibrations from a sewing machine",
+      "clip_similarity": 0.31809842586517334,
+      "visual": 0.4635015620187442,
+      "scene_support": 0.4675248146904586,
+      "object_support": 0.835602113053439,
+      "score": 0.5763387031306669,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mechanical sounds of a scanning printer machine",
+      "clip_similarity": 0.31672394275665283,
+      "visual": 0.37894721403323506,
+      "scene_support": 0.051148400007011895,
+      "object_support": 0.48453031520477874,
+      "score": 0.31228250017683123,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sharp ringing from metal being drilled into by a power tool",
+      "clip_similarity": 0.31616508960723877,
+      "visual": 0.34456813481761783,
+      "scene_support": 0.033957796485152986,
+      "object_support": 0.2895753015351047,
+      "score": 0.23488718333312447,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Racecar engine spinning",
+      "clip_similarity": 0.3159791827201843,
+      "visual": 0.33313166424663765,
+      "scene_support": 0.7368355049979975,
+      "object_support": 0.7332242154883323,
+      "score": 0.5742705818445539,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from an idling engine",
+      "clip_similarity": 0.3154832124710083,
+      "visual": 0.30262096478491074,
+      "scene_support": 0.7575745317200582,
+      "object_support": 0.5885759563660784,
+      "score": 0.5248935323398052,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from a small motor with wind blowing hard",
+      "clip_similarity": 0.31515949964523315,
+      "visual": 0.2827070591513765,
+      "scene_support": 0.5293899516853493,
+      "object_support": 0.5935810457099279,
+      "score": 0.44997412287913374,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from a power tool running",
+      "clip_similarity": 0.3150900602340698,
+      "visual": 0.2784353412240947,
+      "scene_support": 0.3934920179019063,
+      "object_support": 0.42137598758980693,
+      "score": 0.3558345381371518,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine part spinning until it gets stuck with a clunk and then a rumble",
+      "clip_similarity": 0.31389564275741577,
+      "visual": 0.20495812616418063,
+      "scene_support": 0.6363880921848389,
+      "object_support": 1.0,
+      "score": 0.572899678121124,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrating sound of a working motor",
+      "clip_similarity": 0.31389325857162476,
+      "visual": 0.20481145773749285,
+      "scene_support": 0.5954581801166942,
+      "object_support": 0.7009906719110967,
+      "score": 0.47085923870333435,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A mechanical winding sound",
+      "clip_similarity": 0.31366202235221863,
+      "visual": 0.19058645370411112,
+      "scene_support": 0.33588728109741545,
+      "object_support": 0.7387589930843158,
+      "score": 0.39862846373616384,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine stops and starts and something smacks against metal",
+      "clip_similarity": 0.31336072087287903,
+      "visual": 0.17205123128144204,
+      "scene_support": 0.24967401432314315,
+      "object_support": 0.7270847879109653,
+      "score": 0.3618481331828094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High speed spinning of a power tool",
+      "clip_similarity": 0.3126187324523926,
+      "visual": 0.12640618354086916,
+      "scene_support": 0.23971779821115782,
+      "object_support": 0.45001942190257826,
+      "score": 0.2574836394504685,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.31233885884284973,
+      "visual": 0.10918914360305657,
+      "scene_support": 0.16933927726244846,
+      "object_support": 0.5883114219992231,
+      "score": 0.2709708672197241,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical grinding sound from a device",
+      "clip_similarity": 0.31193435192108154,
+      "visual": 0.08430501166013993,
+      "scene_support": 0.8220023813472817,
+      "object_support": 0.8661369371133043,
+      "score": 0.5401638002022318,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud vibrations from an engine",
+      "clip_similarity": 0.31124162673950195,
+      "visual": 0.041690500286003435,
+      "scene_support": 0.7943869783723505,
+      "object_support": 0.5838998313051332,
+      "score": 0.43016224301764644,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Race car engine while driving",
+      "clip_similarity": 0.31095772981643677,
+      "visual": 0.024225957378155204,
+      "scene_support": 1.0,
+      "object_support": 0.7421669639322569,
+      "score": 0.5323404721309392,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical winding noise",
+      "clip_similarity": 0.31056392192840576,
+      "visual": 0.0,
+      "scene_support": 0.3871880549678599,
+      "object_support": 0.7301817605102849,
+      "score": 0.3352109446434435,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.14766272902488708
+    ],
+    [
+      "bus interior",
+      0.09785148501396179
+    ],
+    [
+      "cockpit",
+      0.06769201904535294
+    ],
+    [
+      "indoor escalator",
+      0.060025934129953384
+    ],
+    [
+      "orchestra pit",
+      0.033983323723077774
+    ]
+  ],
+  "top_objects": [
+    [
+      "crane (machine)",
+      0.0631961077451706
+    ],
+    [
+      "sewing machine",
+      0.03811262175440788
+    ],
+    [
+      "car wheel",
+      0.03383972868323326
+    ],
+    [
+      "seat belt",
+      0.023938501253724098
+    ],
+    [
+      "printer",
+      0.02310703694820404
+    ]
+  ]
+}

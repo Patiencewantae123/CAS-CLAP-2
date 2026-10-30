@@ -1,0 +1,285 @@
+{
+  "id": "Axd__X2rixk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Axd__X2rixk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Axd__X2rixk.wav",
+  "gt_captions": [
+    "An animal is galloping with a clip-clop noise",
+    "A horse making clip-clop noises",
+    "Clip clops of a horse running by",
+    "A horse trotting",
+    "Clip clops from a horse"
+  ],
+  "top_scene": [
+    "performance arena",
+    0.5381152629852295
+  ],
+  "top_object": [
+    "balance beam",
+    0.04579491168260574
+  ],
+  "env_probs": {
+    "indoor": 0.8810721039772034,
+    "outdoor": 0.11892789602279663
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Clip clops of a horse with distant humming",
+    "casv": "Clip clops of a horse with distant humming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2808300256729126,
+    "clap_gt_audio_baseline": 0.5543910264968872,
+    "clap_text_casv": 0.2808300256729126,
+    "clap_gt_audio_casv": 0.5543910264968872
+  },
+  "verdicts": [
+    {
+      "caption": "Clip clops of a horse with distant humming",
+      "clip_similarity": 0.32956814765930176,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 0.9871649536605748,
+      "score": 0.9961494860981723,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip clops of a horse with people speaking and clapping",
+      "clip_similarity": 0.3293629288673401,
+      "visual": 0.9874614657666696,
+      "scene_support": 0.6211787415068685,
+      "object_support": 0.6220451792814864,
+      "score": 0.7679517625431743,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clops of a horse with heavy breathing and wind blowing hard",
+      "clip_similarity": 0.3260502815246582,
+      "visual": 0.7850641038480518,
+      "scene_support": 0.3420293144483707,
+      "object_support": 0.4224657696385188,
+      "score": 0.5433741667652876,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.88)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clop of horse running and female speech",
+      "clip_similarity": 0.3224371671676636,
+      "visual": 0.5643086963092717,
+      "scene_support": 0.4319237632771879,
+      "object_support": 0.4637677018849019,
+      "score": 0.49443091807233563,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip clops of a horse getting closer and louder",
+      "clip_similarity": 0.3208165168762207,
+      "visual": 0.4652896008099245,
+      "scene_support": 0.7467250817818554,
+      "object_support": 0.7721047169994214,
+      "score": 0.6417647799583528,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip clops from a horse with faint speaking from people",
+      "clip_similarity": 0.3202327489852905,
+      "visual": 0.429622332648078,
+      "scene_support": 0.7661726091691463,
+      "object_support": 0.7742005262991416,
+      "score": 0.6339608736997175,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse clip clops with adults and a child speaking",
+      "clip_similarity": 0.31998348236083984,
+      "visual": 0.41439254752934795,
+      "scene_support": 0.30253976649224035,
+      "object_support": 0.3514602811486341,
+      "score": 0.36195703330400153,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Distant clip clops of a horse with people speaking faintly",
+      "clip_similarity": 0.31924542784690857,
+      "visual": 0.36929861777500195,
+      "scene_support": 0.7259615484725378,
+      "object_support": 0.7683151182948642,
+      "score": 0.5960024471402213,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse running with fast clip-clops with people speaking",
+      "clip_similarity": 0.3177396059036255,
+      "visual": 0.2772953474863753,
+      "scene_support": 0.3539400009578524,
+      "object_support": 0.08184982210109473,
+      "score": 0.24165508591223425,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse is trotting around at medium speed",
+      "clip_similarity": 0.3175686001777649,
+      "visual": 0.26684717591640006,
+      "scene_support": 0.8365487328237281,
+      "object_support": 0.7891262801629711,
+      "score": 0.5944413742625698,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse runs with faint clip-clops",
+      "clip_similarity": 0.3162814974784851,
+      "visual": 0.18820729551136497,
+      "scene_support": 0.858111864667948,
+      "object_support": 0.9130218733514889,
+      "score": 0.6066230396103771,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The clip-clop of a horse riding around",
+      "clip_similarity": 0.31553006172180176,
+      "visual": 0.14229579360035835,
+      "scene_support": 0.5972282666411239,
+      "object_support": 1.0,
+      "score": 0.5360867974324806,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Very soft trotting",
+      "clip_similarity": 0.3153814673423767,
+      "visual": 0.1332169188272847,
+      "scene_support": 0.7248974993805194,
+      "object_support": 0.8050203509817346,
+      "score": 0.51226212263959,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops from a horse with clinking metal",
+      "clip_similarity": 0.315333753824234,
+      "visual": 0.13030170051366838,
+      "scene_support": 0.7726110432053906,
+      "object_support": 0.9051202437424175,
+      "score": 0.5554400662898098,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse makes a noise with faint clip-clop sounds",
+      "clip_similarity": 0.31531548500061035,
+      "visual": 0.12918550511938556,
+      "scene_support": 0.24504467548584982,
+      "object_support": 0.3255820360369001,
+      "score": 0.2228622155045792,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse that is running and jumping with a woman speaking",
+      "clip_similarity": 0.31507429480552673,
+      "visual": 0.11444917669209213,
+      "scene_support": 0.21631639114527915,
+      "object_support": 0.18840958276661113,
+      "score": 0.16719746285040393,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clops of a horse with a neigh",
+      "clip_similarity": 0.314383327960968,
+      "visual": 0.07223222690995963,
+      "scene_support": 0.6699136475228062,
+      "object_support": 0.7665254155140906,
+      "score": 0.4598246096750529,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse moves fast doing clip-clop and breathing deeply",
+      "clip_similarity": 0.3136499226093292,
+      "visual": 0.027422353406034737,
+      "scene_support": 0.7504294718693323,
+      "object_support": 0.7990165817901314,
+      "score": 0.47580275746025297,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking followed by horse clip-clop followed by young girl speaking",
+      "clip_similarity": 0.31330037117004395,
+      "visual": 0.006065329295850047,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.002426131718340019,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse clip-clopping while galloping in low frequency",
+      "clip_similarity": 0.31320109963417053,
+      "visual": 0.0,
+      "scene_support": 0.6804593943457555,
+      "object_support": 0.8154147080100933,
+      "score": 0.44876223070675464,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "performance arena",
+      0.5381152629852295
+    ],
+    [
+      "stable",
+      0.18643540143966675
+    ],
+    [
+      "ballroom",
+      0.03745979815721512
+    ],
+    [
+      "barndoor",
+      0.031856972724199295
+    ],
+    [
+      "rodeo arena",
+      0.027274293825030327
+    ]
+  ],
+  "top_objects": [
+    [
+      "balance beam",
+      0.04579491168260574
+    ],
+    [
+      "jeans",
+      0.03182423114776611
+    ],
+    [
+      "buckle",
+      0.029517721384763718
+    ],
+    [
+      "cowboy boot",
+      0.027389604598283768
+    ],
+    [
+      "fire screen sheet",
+      0.02221609093248844
+    ]
+  ]
+}

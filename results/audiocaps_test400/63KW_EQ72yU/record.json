@@ -1,0 +1,287 @@
+{
+  "id": "63KW_EQ72yU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\63KW_EQ72yU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\63KW_EQ72yU.wav",
+  "gt_captions": [
+    "Several very loud explosions occur",
+    "Loud bursts of explosions with high wind",
+    "A loud explosion as gusts of wind blow",
+    "Loud banging followed by one louder bang with some static",
+    "Very loud explosions with pops and bursts of more explosions"
+  ],
+  "top_scene": [
+    "airfield",
+    0.24186693131923676
+  ],
+  "top_object": [
+    "missile",
+    0.15824507176876068
+  ],
+  "env_probs": {
+    "indoor": 0.13193237781524658,
+    "outdoor": 0.8680676221847534
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "An explosion take place then birds chirp while an engine runs",
+    "casv": "Helicopter blades spin followed by an explosion"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5941076278686523,
+    "clap_gt_audio_baseline": 0.6383898854255676,
+    "clap_text_casv": 0.4811113476753235,
+    "clap_gt_audio_casv": 0.5481444001197815
+  },
+  "verdicts": [
+    {
+      "caption": "An explosion take place then birds chirp while an engine runs",
+      "clip_similarity": 0.3278639316558838,
+      "visual": 1.0,
+      "scene_support": 0.7587710381029369,
+      "object_support": 0.392836930828917,
+      "score": 0.7454823906795562,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Helicopter blades spin followed by an explosion",
+      "clip_similarity": 0.3278636932373047,
+      "visual": 0.999986084512236,
+      "scene_support": 0.7766457336085372,
+      "object_support": 0.5473186038576479,
+      "score": 0.7971837350447499,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle engine revving followed by several popping explosions",
+      "clip_similarity": 0.31691819429397583,
+      "visual": 0.36114343562956275,
+      "scene_support": 0.6274972878108446,
+      "object_support": 0.4581005759360378,
+      "score": 0.4701367333758898,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.10)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle drives as shells explode nearby multiple times, and then a helicopter approaches",
+      "clip_similarity": 0.31665724515914917,
+      "visual": 0.345912934271933,
+      "scene_support": 0.7514951603485265,
+      "object_support": 0.43864585448723964,
+      "score": 0.49540747815950303,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.10)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter engine running as wind blows into a microphone",
+      "clip_similarity": 0.3164626955986023,
+      "visual": 0.33455789625655985,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.13382315850262394,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An explosion followed by the sound of an engine accelerating",
+      "clip_similarity": 0.3157508969306946,
+      "visual": 0.29301320753732396,
+      "scene_support": 0.9888606420013326,
+      "object_support": 0.7575455661584232,
+      "score": 0.6411271454628563,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud wind sounds with crashing and explosions",
+      "clip_similarity": 0.3156493902206421,
+      "visual": 0.28708868862182746,
+      "scene_support": 0.9463959736528648,
+      "object_support": 0.5764143523219386,
+      "score": 0.571678573241172,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rapid gunfire with wind and explosions",
+      "clip_similarity": 0.31524091958999634,
+      "visual": 0.2632479792102613,
+      "scene_support": 0.7582109798525415,
+      "object_support": 0.546710917631972,
+      "score": 0.4967757609294585,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An explosion with various gunfire sounds",
+      "clip_similarity": 0.3148995637893677,
+      "visual": 0.24332447960424353,
+      "scene_support": 0.9677844518504423,
+      "object_support": 0.8620882139797726,
+      "score": 0.6462915915907619,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of gunshots and explosions with electronic blooping and whooshing",
+      "clip_similarity": 0.3144358992576599,
+      "visual": 0.21626233477532575,
+      "scene_support": 0.7806659000428854,
+      "object_support": 0.5549211244926928,
+      "score": 0.48718104127080375,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Whooshing sound followed by the propeller of a helicopter",
+      "clip_similarity": 0.31286072731018066,
+      "visual": 0.12432618599093058,
+      "scene_support": 0.8740497850037762,
+      "object_support": 0.524173438493804,
+      "score": 0.4691974414456463,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by beeping and explosion effects",
+      "clip_similarity": 0.3128511607646942,
+      "visual": 0.12376782704440258,
+      "scene_support": 0.5729910959955021,
+      "object_support": 0.39658664863365956,
+      "score": 0.34038045420650953,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A popping burst echoing in the distance followed by a man speaking alongside audio static and another man speaking faintly before a muffled explosion",
+      "clip_similarity": 0.3123100697994232,
+      "visual": 0.09218662756414606,
+      "scene_support": 0.41189166857780446,
+      "object_support": 0.1528436519725835,
+      "score": 0.2062952471907748,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter engine running followed by a helicopter flying in the distance then a man speaking",
+      "clip_similarity": 0.3122827708721161,
+      "visual": 0.09059330421517518,
+      "scene_support": 0.6444172276737089,
+      "object_support": 0.22789728195713105,
+      "score": 0.29793167457532205,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter speeding up it's engine",
+      "clip_similarity": 0.31213265657424927,
+      "visual": 0.08183176523180594,
+      "scene_support": 0.5884482699730164,
+      "object_support": 0.38839190452677275,
+      "score": 0.3257847584426591,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A very loud and long explosion",
+      "clip_similarity": 0.31177619099617004,
+      "visual": 0.06102637158874863,
+      "scene_support": 0.8159972804915935,
+      "object_support": 0.587512486173721,
+      "score": 0.4454634786350938,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by explosions and crashing with others speaking and screaming",
+      "clip_similarity": 0.3117223381996155,
+      "visual": 0.05788321079006921,
+      "scene_support": 0.6974308344325764,
+      "object_support": 0.4008115884062333,
+      "score": 0.3526260111676706,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low level sounds followed by an engine starting",
+      "clip_similarity": 0.31158483028411865,
+      "visual": 0.049857453222218164,
+      "scene_support": 1.0,
+      "object_support": 0.5680350860192995,
+      "score": 0.4903535070946771,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled helicopter engine running as several men speak in the background",
+      "clip_similarity": 0.3111806809902191,
+      "visual": 0.026268962026373327,
+      "scene_support": 0.4525774878270011,
+      "object_support": 0.2847491889785614,
+      "score": 0.23170558785221806,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A missile falls then explodes on impact",
+      "clip_similarity": 0.31073060631752014,
+      "visual": 0.0,
+      "scene_support": 0.8322449335872842,
+      "object_support": 1.0,
+      "score": 0.5496734800761852,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "airfield",
+      0.24186693131923676
+    ],
+    [
+      "army base",
+      0.07787879556417465
+    ],
+    [
+      "wild field",
+      0.07395938038825989
+    ],
+    [
+      "windmill",
+      0.04156745225191116
+    ],
+    [
+      "runway",
+      0.039770983159542084
+    ]
+  ],
+  "top_objects": [
+    [
+      "missile",
+      0.15824507176876068
+    ],
+    [
+      "mortar",
+      0.10079620778560638
+    ],
+    [
+      "projectile",
+      0.07902039587497711
+    ],
+    [
+      "cannon",
+      0.07064615190029144
+    ],
+    [
+      "military aircraft",
+      0.048112574964761734
+    ]
+  ]
+}

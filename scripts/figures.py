@@ -98,13 +98,16 @@ def draw_text_box(ax, text, face, edge, fontsize):
 
 def load_records(run_dir):
     # Read per-item records directly so figures can be made while a run is in
-    # progress. Items are kept in processing order (= manifest order).
-    """Finished item records of a run, in processing order."""
-    records = []
-    for path in sorted(run_dir.glob("*/record.json"), key=lambda p: p.stat().st_mtime):
-        if (path.parent / "casv.wav").exists():
-            records.append(json.loads(path.read_text()))
-    return records
+    # progress. A finished run lists its items in manifest order; file times do
+    # not, because items copied with --reuse-from keep their original times.
+    """Finished item records of a run, in manifest order when the run has finished."""
+    results_path = run_dir / "results.json"
+    if results_path.exists():
+        items = json.loads(results_path.read_text())["items"]
+        paths = [run_dir / item["id"] / "record.json" for item in items]
+    else:
+        paths = sorted(run_dir.glob("*/record.json"), key=lambda p: p.stat().st_mtime)
+    return [json.loads(path.read_text()) for path in paths if (path.parent / "casv.wav").exists()]
 
 
 def render_page(run_dir, items, output, provenance):

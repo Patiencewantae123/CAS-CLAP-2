@@ -1,0 +1,292 @@
+{
+  "id": "hzn_wGlzGpU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\hzn_wGlzGpU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\hzn_wGlzGpU.wav",
+  "gt_captions": [
+    "A vehicle engine running smoothly",
+    "An aircraft accelerating as gusts of wind blow followed by fiber glass clanking while an emergency siren goes off in the background",
+    "An aircraft engine accelerating followed by an object clanking against fiberglass as an emergency siren sounds in the background",
+    "Race car engine slows while whining",
+    "A vehicle driving as gusts of wind blows and an emergency sirens sounds in the distance followed by fiberglass clanking"
+  ],
+  "top_scene": [
+    "cockpit",
+    0.7754611968994141
+  ],
+  "top_object": [
+    "race car",
+    0.10458437353372574
+  ],
+  "env_probs": {
+    "indoor": 0.8928775787353516,
+    "outdoor": 0.10712242126464844
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Music plays while a race car engine revs and accelerates and tires squeal",
+    "casv": "A music plays followed by a speed car accelerating and skidding"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3680041432380676,
+    "clap_gt_audio_baseline": 0.2647067904472351,
+    "clap_text_casv": 0.3312962055206299,
+    "clap_gt_audio_casv": 0.3358592987060547
+  },
+  "verdicts": [
+    {
+      "caption": "Music plays while a race car engine revs and accelerates and tires squeal",
+      "clip_similarity": 0.3057781159877777,
+      "visual": 1.0,
+      "scene_support": 0.4460805826602549,
+      "object_support": 0.7370830765037699,
+      "score": 0.7549490977492075,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A music plays followed by a speed car accelerating and skidding",
+      "clip_similarity": 0.30383408069610596,
+      "visual": 0.8897434033828633,
+      "scene_support": 0.7255041744732937,
+      "object_support": 1.0,
+      "score": 0.8735486136951334,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat driving accelerating as wind is blowing into a microphone",
+      "clip_similarity": 0.29983776807785034,
+      "visual": 0.6630912277795713,
+      "scene_support": 0.4611610577362236,
+      "object_support": 0.0,
+      "score": 0.4035848084326956,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)",
+        "names 'a boat', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car accelerating is followed by a tire squeal and more acceleration",
+      "clip_similarity": 0.2995292544364929,
+      "visual": 0.6455937758291092,
+      "scene_support": 0.33599222145311863,
+      "object_support": 0.7155358910508488,
+      "score": 0.5736959440828339,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Racing car engines change gears as tires squeal and the wind goes by in a fast blast",
+      "clip_similarity": 0.2994174063205719,
+      "visual": 0.6392502733976867,
+      "scene_support": 0.2544798705740738,
+      "object_support": 0.5172207771068489,
+      "score": 0.4872103036633515,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car is accelerating away then a horn blows and tires squeal",
+      "clip_similarity": 0.29929742217063904,
+      "visual": 0.6324453331395182,
+      "scene_support": 0.49170687544784497,
+      "object_support": 0.8852497077347916,
+      "score": 0.6660651082105982,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sounds of auto racing on the road",
+      "clip_similarity": 0.29713720083236694,
+      "visual": 0.5099276742688408,
+      "scene_support": 0.36674955393119074,
+      "object_support": 0.5144220972055471,
+      "score": 0.4683225650485577,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car revs up and shifts while music plays, and then the race car downshifts",
+      "clip_similarity": 0.2965857684612274,
+      "visual": 0.47865300720552917,
+      "scene_support": 0.7550208368433553,
+      "object_support": 0.9948051554762583,
+      "score": 0.7164090005780958,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Tires squeal and engines rev up during a race",
+      "clip_similarity": 0.2939699590206146,
+      "visual": 0.33029652028551676,
+      "scene_support": 0.4872297452282309,
+      "object_support": 0.5991458852907163,
+      "score": 0.45803129726989084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man cheering and motor running and revving",
+      "clip_similarity": 0.2926531434059143,
+      "visual": 0.2556128925390743,
+      "scene_support": 0.6137098918676429,
+      "object_support": 0.630419682113874,
+      "score": 0.4754840292100848,
+      "conflicts": [
+        "names 'a crowd of people', not visible in image (z=-0.38)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as the car is accelerated and the beep of the dashboard starts",
+      "clip_similarity": 0.2924593389034271,
+      "visual": 0.244621206871198,
+      "scene_support": 1.0,
+      "object_support": 0.5780447473333363,
+      "score": 0.5712619069484801,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car engine is running and accelerating, and tires are squealing",
+      "clip_similarity": 0.2922822833061218,
+      "visual": 0.2345794408320079,
+      "scene_support": 0.23480777935883826,
+      "object_support": 0.5623037501427415,
+      "score": 0.33296523518327703,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two male voices briefly talk, then a race car engine revs and accelerates",
+      "clip_similarity": 0.2919637858867645,
+      "visual": 0.21651575565092313,
+      "scene_support": 0.40815164106634294,
+      "object_support": 0.5283599773632474,
+      "score": 0.36755978778924636,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine revving while a man speaks from a radio",
+      "clip_similarity": 0.2906482517719269,
+      "visual": 0.14190480858781432,
+      "scene_support": 0.6840578356883465,
+      "object_support": 0.4286838192012406,
+      "score": 0.3905844199020019,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A diesel-powered vehicle blows an air horn and a man speaks",
+      "clip_similarity": 0.29002830386161804,
+      "visual": 0.10674426033882721,
+      "scene_support": 0.25329319559838176,
+      "object_support": 0.36761127370849694,
+      "score": 0.2289690449275945,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bell rings, a motor runs, and horns are playing music in background with people speaking",
+      "clip_similarity": 0.28995633125305176,
+      "visual": 0.10266231033299585,
+      "scene_support": 0.6202786230023324,
+      "object_support": 0.5899006519107173,
+      "score": 0.40411870660711324,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The rumble of a powerful motorized engine accelerating",
+      "clip_similarity": 0.2898695766925812,
+      "visual": 0.09774199709615317,
+      "scene_support": 0.5009980979910157,
+      "object_support": 0.6500520809345925,
+      "score": 0.38441185251614374,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine runs and changes gear as the wind blows wildly",
+      "clip_similarity": 0.28958651423454285,
+      "visual": 0.08168801732166611,
+      "scene_support": 0.0,
+      "object_support": 0.03007823811870163,
+      "score": 0.04169867836427694,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car horn beeps three times, and then a motorcycle drives away",
+      "clip_similarity": 0.2885604202747345,
+      "visual": 0.023492763201262954,
+      "scene_support": 0.48126713990219977,
+      "object_support": 0.5892009819353918,
+      "score": 0.33053754183178263,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car is accelerating then it throttles down a gear",
+      "clip_similarity": 0.2881461977958679,
+      "visual": 0.0,
+      "scene_support": 0.5867192273418359,
+      "object_support": 0.9893213579780358,
+      "score": 0.4728121755959615,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "cockpit",
+      0.7754611968994141
+    ],
+    [
+      "car interior",
+      0.109352707862854
+    ],
+    [
+      "raceway",
+      0.08924034237861633
+    ],
+    [
+      "junkyard",
+      0.005001899786293507
+    ],
+    [
+      "highway",
+      0.0024675442837178707
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.10458437353372574
+    ],
+    [
+      "car mirror",
+      0.09592991322278976
+    ],
+    [
+      "go-kart",
+      0.07973434776067734
+    ],
+    [
+      "tow truck",
+      0.06482134014368057
+    ],
+    [
+      "sports car",
+      0.043011076748371124
+    ]
+  ]
+}

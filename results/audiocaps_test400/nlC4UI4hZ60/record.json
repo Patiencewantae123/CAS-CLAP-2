@@ -1,0 +1,283 @@
+{
+  "id": "nlC4UI4hZ60",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\nlC4UI4hZ60.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\nlC4UI4hZ60.wav",
+  "gt_captions": [
+    "Rapid clicking occurs, a motor vehicle engine attempts to start and grinds, then the engine fully engages and begins to run and vibrate",
+    "Rapid metal rattling as a vehicle engine stalls before starting up",
+    "An engine being turned over",
+    "A vehicle motor stuttering before starting as metal rapidly rattles",
+    "An engine being turned over"
+  ],
+  "top_scene": [
+    "indoor garage",
+    0.373352974653244
+  ],
+  "top_object": [
+    "race car",
+    0.2800796627998352
+  ],
+  "env_probs": {
+    "indoor": 0.8782898783683777,
+    "outdoor": 0.12171012163162231
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A man talks over an idling engine then the engine begins to rev",
+    "casv": "A powerful motor with throttle being applied"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.23014765977859497,
+    "clap_gt_audio_baseline": 0.22030490636825562,
+    "clap_text_casv": 0.16651156544685364,
+    "clap_gt_audio_casv": 0.36106640100479126
+  },
+  "verdicts": [
+    {
+      "caption": "A man talks over an idling engine then the engine begins to rev",
+      "clip_similarity": 0.32602962851524353,
+      "visual": 1.0,
+      "scene_support": 0.535957472817558,
+      "object_support": 0.15717273633091264,
+      "score": 0.6079390627445412,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A powerful motor with throttle being applied",
+      "clip_similarity": 0.31423985958099365,
+      "visual": 0.50305940816688,
+      "scene_support": 1.0,
+      "object_support": 0.871546934049066,
+      "score": 0.7626878434814718,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mini race car engine revs along with tire squeal",
+      "clip_similarity": 0.3132714629173279,
+      "visual": 0.46224133837644726,
+      "scene_support": 0.0,
+      "object_support": 0.015647076776689618,
+      "score": 0.18959065838358583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor running in background as man talking, with faint conversation noise in background",
+      "clip_similarity": 0.3127918839454651,
+      "visual": 0.4420270102214758,
+      "scene_support": 0.4769209421264252,
+      "object_support": 0.23441531045502284,
+      "score": 0.39021167986302474,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks followed by an engine starting and working in idle",
+      "clip_similarity": 0.31153345108032227,
+      "visual": 0.3889838694887001,
+      "scene_support": 0.7162856774713638,
+      "object_support": 0.10488415723377707,
+      "score": 0.4019444982070223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then starts up a small engine",
+      "clip_similarity": 0.30749085545539856,
+      "visual": 0.21858783597904202,
+      "scene_support": 0.6687815724353023,
+      "object_support": 0.38977477760522794,
+      "score": 0.40500203940377594,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and starts up a car engine that idles roughly",
+      "clip_similarity": 0.3072514533996582,
+      "visual": 0.2084970021442865,
+      "scene_support": 0.6064788536955236,
+      "object_support": 0.21465606233337223,
+      "score": 0.32973927566638334,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine chugging followed by a squeaking horn sounding and a man laughing",
+      "clip_similarity": 0.30657708644866943,
+      "visual": 0.18007233041356968,
+      "scene_support": 0.27212639216062007,
+      "object_support": 0.13839732138849742,
+      "score": 0.1951860462301631,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An older man talks over a choppy engine running",
+      "clip_similarity": 0.30523186922073364,
+      "visual": 0.1233712153092257,
+      "scene_support": 0.3181721769410956,
+      "object_support": 0.0,
+      "score": 0.14480013920601897,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is working on getting an engine started",
+      "clip_similarity": 0.30499351024627686,
+      "visual": 0.11332434751258999,
+      "scene_support": 0.8774535230625387,
+      "object_support": 0.34667103526898324,
+      "score": 0.4125671065044925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine starting up then running idle before revving",
+      "clip_similarity": 0.3045596480369568,
+      "visual": 0.09503698799978394,
+      "scene_support": 0.9932997882230893,
+      "object_support": 0.5755424098526943,
+      "score": 0.5086674546226486,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man and woman talking, then a small engine starts",
+      "clip_similarity": 0.30378109216690063,
+      "visual": 0.06222073714715684,
+      "scene_support": 0.4131532954271385,
+      "object_support": 0.08330625398335742,
+      "score": 0.1738261596820115,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine revving up and running",
+      "clip_similarity": 0.3037808835506439,
+      "visual": 0.06221194393953288,
+      "scene_support": 0.9207894884646008,
+      "object_support": 1.0,
+      "score": 0.6011216241151933,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is talking followed by an engine starting and revving",
+      "clip_similarity": 0.30323857069015503,
+      "visual": 0.03935337263478417,
+      "scene_support": 0.6088331786029332,
+      "object_support": 0.46855683521691904,
+      "score": 0.33895835319986933,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor running with a lady and man speaking",
+      "clip_similarity": 0.30308690667152405,
+      "visual": 0.03296071069216362,
+      "scene_support": 0.28524268444579537,
+      "object_support": 0.06713943321873232,
+      "score": 0.11889891957622375,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idling followed by a person talking, the car accelerates with a large bang and laughing",
+      "clip_similarity": 0.3027733564376831,
+      "visual": 0.019744519633348365,
+      "scene_support": 0.6594653706756708,
+      "object_support": 0.6617157835207943,
+      "score": 0.4042521541122789,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine running then increased engine sound followed by women screaming",
+      "clip_similarity": 0.3024284839630127,
+      "visual": 0.005208091258421066,
+      "scene_support": 0.7435761554396271,
+      "object_support": 0.615752102763889,
+      "score": 0.40988171396442324,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Race car engine idle and accelerate",
+      "clip_similarity": 0.3023996353149414,
+      "visual": 0.003992116261278859,
+      "scene_support": 0.48577130075955555,
+      "object_support": 0.23078248848753602,
+      "score": 0.21656298327863902,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man talking, followed by an engine starting and revving",
+      "clip_similarity": 0.3023989498615265,
+      "visual": 0.003963224293371554,
+      "scene_support": 0.595031006650654,
+      "object_support": 0.6265572122332833,
+      "score": 0.3680617553825298,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Camera muffling followed by an idle vehicle engine running",
+      "clip_similarity": 0.3023049235343933,
+      "visual": 0.0,
+      "scene_support": 0.7149965144361812,
+      "object_support": 0.3342932289656287,
+      "score": 0.31478692302054295,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor garage",
+      0.373352974653244
+    ],
+    [
+      "repair shop",
+      0.3615832030773163
+    ],
+    [
+      "outdoor garage",
+      0.07088802754878998
+    ],
+    [
+      "car interior",
+      0.03515033423900604
+    ],
+    [
+      "assembly line",
+      0.02485761232674122
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.2800796627998352
+    ],
+    [
+      "motorboat",
+      0.08799996227025986
+    ],
+    [
+      "sports car",
+      0.0482228584587574
+    ],
+    [
+      "go-kart",
+      0.04106718674302101
+    ],
+    [
+      "grille",
+      0.03139645233750343
+    ]
+  ]
+}

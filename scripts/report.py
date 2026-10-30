@@ -8,7 +8,7 @@
 # scripts. Missing inputs are reported, never filled in.
 #
 # Usage:
-#   py -m scripts.report --run results/audiocaps_test100
+#   py -m scripts.report
 # =============================================================================
 
 import argparse
@@ -68,12 +68,16 @@ def ci(block):
 def main():
     setup_logging()
     parser = argparse.ArgumentParser(description="Assemble journal_results/ from experiment outputs.")
-    parser.add_argument("--run", default="results/audiocaps_test100")
+    parser.add_argument("--run", default="results/audiocaps_test400")
     parser.add_argument("--places", default="results/places365/eval.json")
-    parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
+    parser.add_argument("--tuning", default="results/tuning_test400/tuning_results.json")
     parser.add_argument("--categories", default="results/categories7")
+    parser.add_argument("--earlier-run", default="results/audiocaps_test100")
     args = parser.parse_args()
     run_dir = Path(args.run)
+    results_path = run_dir / "results.json"
+    stats_path = run_dir / "graph_stats.json"
+    n_test = json.loads(results_path.read_text())["summary"]["n_items"] if results_path.exists() else None
     # graphs/ holds charts with statistics; comparisons/<set>/ holds comparison images
     for old in ("figures", "qualitative"):  # earlier layouts
         if (OUT / old).exists():
@@ -145,7 +149,7 @@ def main():
                 ["Split", "Method", "Mean [95% CI]", "n"],
                 rows,
                 "CLAP cosine between the selected prompt and the real AudioCaps recording. "
-                "Tuned on val only; test evaluated once.",
+                "Tuned on val only; configurations were fixed before test was scored.",
             )
         )
         lines = []
@@ -208,33 +212,35 @@ def main():
                 ["Category", "AudioCaps id", "Prompt changed", "Baseline", "CAS-V", "Δ"],
                 rows,
                 "Scores for the seven Figure 5 columns. Seven examples are illustrative, not a benchmark; "
-                "see Table 3 for the 100-item test result.",
+                f"see Table 3 for the {n_test}-item test result.",
             )
         )
     else:
         missing.append(str(categories_path))
 
-    results_path = run_dir / "results.json"
-    stats_path = run_dir / "graph_stats.json"
     if results_path.exists() and stats_path.exists():
         res = json.loads(results_path.read_text())
         stats = json.loads(stats_path.read_text())
         rows = []
-        for key, label in (("clap_text", "CLAP(audio, GT captions)"), ("clap_gt_audio", "CLAP(audio, GT recording)")):
-            if key in stats.get("clap", {}):
-                c = stats["clap"][key]
-                p_value = "n/a" if c["wilcoxon_p_changed_items"] is None else f"{c['wilcoxon_p_changed_items']:.3g}"
-                rows.append(
-                    [
-                        label,
-                        f"{c['baseline_mean']:.3f}",
-                        f"{c['casv_mean']:.3f}",
-                        f"{c['mean_diff']:+.3f} [{c['mean_diff_ci95'][0]:+.3f}, {c['mean_diff_ci95'][1]:+.3f}]",
-                        f"{c['casv_better']}/{c['casv_worse']}",
-                        p_value,
-                        c["n"],
-                    ]
-                )
+        for group, suffix in (("clap", ""), ("clap_new_items", ", new items only")):
+            for key, label in (
+                ("clap_text", "CLAP(audio, GT captions)"),
+                ("clap_gt_audio", "CLAP(audio, GT recording)"),
+            ):
+                if key in stats.get(group, {}):
+                    c = stats[group][key]
+                    p_value = "n/a" if c["wilcoxon_p_changed_items"] is None else f"{c['wilcoxon_p_changed_items']:.3g}"
+                    rows.append(
+                        [
+                            label + suffix,
+                            f"{c['baseline_mean']:.3f}",
+                            f"{c['casv_mean']:.3f}",
+                            f"{c['mean_diff']:+.3f} [{c['mean_diff_ci95'][0]:+.3f}, {c['mean_diff_ci95'][1]:+.3f}]",
+                            f"{c['casv_better']}/{c['casv_worse']}",
+                            p_value,
+                            c["n"],
+                        ]
+                    )
         sections.append(
             "## Table 3. Generated audio (AudioLDM-S), baseline vs CAS-V\n\n"
             + write_table(
@@ -245,6 +251,17 @@ def main():
                 f"CAS-V changed the prompt on {res['summary']['prompt_changed']} of {res['summary']['n_items']} items.",
             )
         )
+        earlier_path = Path(args.earlier_run) / "results.json"
+        if "clap_new_items" in stats and earlier_path.exists():
+            earlier = {r["id"] for r in json.loads(earlier_path.read_text())["items"]}
+            shared = sum(r["id"] in earlier for r in res["items"])
+            sections.append(
+                f"- The test set was extended from an earlier {len(earlier)}-item sample, continuing the same "
+                f"seeded clip order with no change to the method or configuration; {shared} items are shared "
+                f"and {res['summary']['n_items'] - shared} are new. The primary result uses all "
+                f"{res['summary']['n_items']} items; the new-items rows are a sensitivity analysis on clips "
+                "not seen when the earlier results were read."
+            )
         v = stats["verification"]
         conflicts = Counter(v["conflicts"]).most_common(8)
         sections.append(
@@ -276,7 +293,7 @@ from result files in `results/`; nothing is entered by hand.
 | Generator | AudioLDM-S (`cvssp/audioldm-s-full-v2`), same seed for both arms |
 | Evaluation | AudioCaps test clips: video frame as input, real recording + 5 human captions as ground truth; CLAP (`laion/clap-htsat-unfused`) |
 | Baseline | same generator prompted with the top-1 retrieved caption, unverified |
-| Tuning | grid search on AudioCaps **val**; test scored once |
+| Tuning | grid search on AudioCaps **val**; test is never used for tuning |
 
 ## Figures
 
@@ -291,10 +308,10 @@ from result files in `results/`; nothing is entered by hand.
 
 LaTeX versions of all tables are in `tables/`.
 """
-    limitations = """
+    limitations = f"""
 ## Limitations
 
-- Sample sizes are small (100 test pairs); report confidence intervals with every mean.
+- Results rest on {n_test} test pairs; report confidence intervals with every mean.
 - CLAP similarity is an automatic proxy; no listening test has been run.
 - AudioCaps frames are single video frames; off-screen sounds (narration, music) in the ground truth
   cannot be recovered from the image by any method.

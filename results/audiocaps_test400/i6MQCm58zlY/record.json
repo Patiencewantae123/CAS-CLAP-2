@@ -1,0 +1,291 @@
+{
+  "id": "i6MQCm58zlY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\i6MQCm58zlY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\i6MQCm58zlY.wav",
+  "gt_captions": [
+    "Squealing and whimpering with some rustling followed by a man speaking",
+    "Squealing and rustling with a man speaking",
+    "A critter squealing as a man is talking and leaves are rustling",
+    "Squealing and whimpering with a man speaking",
+    "Screeching and male speech"
+  ],
+  "top_scene": [
+    "watering hole",
+    0.20004412531852722
+  ],
+  "top_object": [
+    "wild boar",
+    0.32750433683395386
+  ],
+  "env_probs": {
+    "indoor": 0.19818493723869324,
+    "outdoor": 0.8018150627613068
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A pig is oinking and hiding in a brush",
+    "casv": "Unknown animal call and a roar, followed by a dog barking angrily"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22308513522148132,
+    "clap_gt_audio_baseline": 0.41935092210769653,
+    "clap_text_casv": 0.042478494346141815,
+    "clap_gt_audio_casv": 0.24610698223114014
+  },
+  "verdicts": [
+    {
+      "caption": "A pig is oinking and hiding in a brush",
+      "clip_similarity": 0.2893220782279968,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.815105807178364,
+      "score": 0.6445317421535093,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Unknown animal making noise while car engine revs by",
+      "clip_similarity": 0.28931307792663574,
+      "visual": 0.9994570649868042,
+      "scene_support": 0.029542612163435362,
+      "object_support": 0.1406500523001262,
+      "score": 0.45084062533379016,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.59)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Unknown animal call and a roar, followed by a dog barking angrily",
+      "clip_similarity": 0.2883360981941223,
+      "visual": 0.9405216490842017,
+      "scene_support": 0.6725727113418729,
+      "object_support": 0.8196371764604296,
+      "score": 0.8238716259743715,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Male whistling with a dog breathing heavily followed by loud barking",
+      "clip_similarity": 0.28659436106681824,
+      "visual": 0.8354529372424654,
+      "scene_support": 0.07311831353914826,
+      "object_support": 0.21059092273907437,
+      "score": 0.419293945780453,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig squealing as a group of men are talking and footsteps shuffle on leaves and foliage",
+      "clip_similarity": 0.28368687629699707,
+      "visual": 0.6600615566054696,
+      "scene_support": 0.488733946454422,
+      "object_support": 0.8022966918453015,
+      "score": 0.6513338141321049,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female voice talking followed by rustling leaves and then some squeaking noises",
+      "clip_similarity": 0.282893568277359,
+      "visual": 0.6122059701277874,
+      "scene_support": 0.722297587345597,
+      "object_support": 0.6968093979303672,
+      "score": 0.6706144836339042,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud male voice screams while sticks fall in the background followed by a sequence of oinks, dog barks, and animal movement",
+      "clip_similarity": 0.2812291979789734,
+      "visual": 0.5118043420418671,
+      "scene_support": 0.8378756822350364,
+      "object_support": 1.0,
+      "score": 0.7560844414872578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An animal makes a howling noise as an emergency vehicle siren sounds off",
+      "clip_similarity": 0.27844199538230896,
+      "visual": 0.34366887436268057,
+      "scene_support": 0.15356118791126902,
+      "object_support": 0.35945003424529837,
+      "score": 0.29137091639204243,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking with high pitch noise in the background",
+      "clip_similarity": 0.2776450514793396,
+      "visual": 0.2955939565220518,
+      "scene_support": 0.6078549248217409,
+      "object_support": 0.2876860186945967,
+      "score": 0.386899865663722,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horse hoof hitting ground, chain rattles and man speaking",
+      "clip_similarity": 0.27678579092025757,
+      "visual": 0.24375984294436173,
+      "scene_support": 0.5514930656859702,
+      "object_support": 0.43255049954961056,
+      "score": 0.3927170067484189,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rustling and scratching with an engine accelerating and siren ringing followed by several car horns",
+      "clip_similarity": 0.27669757604599,
+      "visual": 0.23843836069581975,
+      "scene_support": 0.6547858195461616,
+      "object_support": 0.4744965744889208,
+      "score": 0.43416006248885264,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.59)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rustling follow by someone blows their nose and sniffing",
+      "clip_similarity": 0.27577897906303406,
+      "visual": 0.18302483118676247,
+      "scene_support": 0.4007806794382676,
+      "object_support": 0.0,
+      "score": 0.1934441363061853,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Animals bleating and a ringing noise",
+      "clip_similarity": 0.27508866786956787,
+      "visual": 0.14138243479386448,
+      "scene_support": 1.0,
+      "object_support": 0.7839366982037409,
+      "score": 0.5917339833786681,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming followed by rustling and scratching then a dog bark",
+      "clip_similarity": 0.2745267152786255,
+      "visual": 0.10748315463220648,
+      "scene_support": 0.9815459720025793,
+      "object_support": 0.8311284856120684,
+      "score": 0.5867955991372769,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male voice with wind and dogs barking in background",
+      "clip_similarity": 0.27449536323547363,
+      "visual": 0.10559187107630574,
+      "scene_support": 0.4609948320173344,
+      "object_support": 0.2836207387172045,
+      "score": 0.2656214196508839,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaks followed my an animal like noise then a clicking noise",
+      "clip_similarity": 0.2742995023727417,
+      "visual": 0.09377674224609699,
+      "scene_support": 0.3304396223154272,
+      "object_support": 0.28448913668485887,
+      "score": 0.2219893245985246,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.2738444209098816,
+      "visual": 0.06632436591662531,
+      "scene_support": 0.317536390514401,
+      "object_support": 0.23265019359877856,
+      "score": 0.191585721600604,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks with humming and a goat bleating followed by clicking",
+      "clip_similarity": 0.27362683415412903,
+      "visual": 0.0531986423029074,
+      "scene_support": 0.3486074693238138,
+      "object_support": 0.619571040841198,
+      "score": 0.3117330099706665,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Animals squeal nearby, followed by people talking and laughing",
+      "clip_similarity": 0.2734476923942566,
+      "visual": 0.0423920781826419,
+      "scene_support": 0.9814800017096527,
+      "object_support": 0.7499131602032345,
+      "score": 0.5363747798469228,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling",
+      "clip_similarity": 0.27274495363235474,
+      "visual": 0.0,
+      "scene_support": 0.3313158193045802,
+      "object_support": 0.8444213525813498,
+      "score": 0.352721151565779,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "watering hole",
+      0.20004412531852722
+    ],
+    [
+      "outdoor hunting lodge",
+      0.08110294491052628
+    ],
+    [
+      "wild field",
+      0.05813704431056976
+    ],
+    [
+      "archaelogical excavation",
+      0.054377395659685135
+    ],
+    [
+      "pasture",
+      0.04873568192124367
+    ]
+  ],
+  "top_objects": [
+    [
+      "wild boar",
+      0.32750433683395386
+    ],
+    [
+      "impala",
+      0.0833204835653305
+    ],
+    [
+      "hartebeest",
+      0.07167798280715942
+    ],
+    [
+      "African wild dog",
+      0.055526915937662125
+    ],
+    [
+      "cougar",
+      0.050132058560848236
+    ]
+  ]
+}

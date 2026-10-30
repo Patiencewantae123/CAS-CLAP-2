@@ -1,0 +1,304 @@
+{
+  "id": "7P0N61TVOxE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\7P0N61TVOxE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\7P0N61TVOxE.wav",
+  "gt_captions": [
+    "A motorboat engine running as water splashes then fades out followed by glasses clanking as a group of people talk and woodwind instruments play",
+    "Music plays over an engine noise",
+    "A band plays horn and string instruments while waves crash nearby",
+    "A motorboat engine running and water splashing then fading away as instrumental music plays and a crowd of people talk",
+    "A boat engine running as water splashes then cuts off while a group of people talk in the background alongside music playing proceeded by glass clanking"
+  ],
+  "top_scene": [
+    "airplane cabin",
+    0.11982996016740799
+  ],
+  "top_object": [
+    "saxophone",
+    0.17492616176605225
+  ],
+  "env_probs": {
+    "indoor": 0.7376195192337036,
+    "outdoor": 0.2623804807662964
+  },
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "An older man is communicating something out loud in a calm stern tone",
+    "casv": "An older man is communicating something out loud in a calm stern tone"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10391438007354736,
+    "clap_gt_audio_baseline": 0.19467805325984955,
+    "clap_text_casv": 0.10391438007354736,
+    "clap_gt_audio_casv": 0.19467805325984955
+  },
+  "verdicts": [
+    {
+      "caption": "An older man is communicating something out loud in a calm stern tone",
+      "clip_similarity": 0.31626445055007935,
+      "visual": 1.0,
+      "scene_support": 0.7793646584271388,
+      "object_support": 0.014993662878870129,
+      "score": 0.6383074963918026,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bus slows down and a musical horn is played",
+      "clip_similarity": 0.31489768624305725,
+      "visual": 0.9263717103995684,
+      "scene_support": 0.40061360289755954,
+      "object_support": 0.4033214743263737,
+      "score": 0.6117292073270073,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sound of a train followed by a horn sound",
+      "clip_similarity": 0.3075111508369446,
+      "visual": 0.5284552845528455,
+      "scene_support": 0.9238169345327406,
+      "object_support": 0.6099933371657011,
+      "score": 0.6715251953306707,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Middle age men are heard excitedly communicating with one another, then all of a sudden they're laughing abruptly followed by music being played",
+      "clip_similarity": 0.3073920011520386,
+      "visual": 0.5220366303189098,
+      "scene_support": 0.6462213785739708,
+      "object_support": 0.008260543106709348,
+      "score": 0.40515922863176795,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music and young male speaking with background boat engine accelerating",
+      "clip_similarity": 0.30187085270881653,
+      "visual": 0.22460955059787566,
+      "scene_support": 0.6021996887496249,
+      "object_support": 0.0,
+      "score": 0.2705037268640378,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.07)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People laughs while a horn is triggered followed by a man talking",
+      "clip_similarity": 0.30176806449890137,
+      "visual": 0.21907229735804468,
+      "scene_support": 0.7369236459561876,
+      "object_support": 0.46804010957676717,
+      "score": 0.4491180456031043,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming engines followed by a musical horn",
+      "clip_similarity": 0.30117639899253845,
+      "visual": 0.18719897507031943,
+      "scene_support": 0.7508609980948128,
+      "object_support": 0.6112887612956756,
+      "score": 0.4835245178452743,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.07)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Orchestral music playing followed by rainfall",
+      "clip_similarity": 0.30102938413619995,
+      "visual": 0.1792792098537099,
+      "scene_support": 0.3209464174802677,
+      "object_support": 0.2770996213727267,
+      "score": 0.2511254955973823,
+      "conflicts": [
+        "names 'rain', not visible in image (z=-0.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music beat followed by drill noise and then saxophone playing",
+      "clip_similarity": 0.30045783519744873,
+      "visual": 0.14848957731283474,
+      "scene_support": 0.8781159931050365,
+      "object_support": 1.0,
+      "score": 0.6228306288566448,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-1.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whistling followed by a trumpet being blown",
+      "clip_similarity": 0.3002375066280365,
+      "visual": 0.13662036501881605,
+      "scene_support": 0.44071238650876177,
+      "object_support": 0.7911070019188505,
+      "score": 0.4241939625358101,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An audience claps as a train approaches blowing a horn",
+      "clip_similarity": 0.2998368740081787,
+      "visual": 0.11503808166043746,
+      "scene_support": 0.0,
+      "object_support": 0.2171438269354505,
+      "score": 0.11115838074481013,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train in motion blowing horn multiple times",
+      "clip_similarity": 0.29968640208244324,
+      "visual": 0.1069320823539989,
+      "scene_support": 0.08042699224665545,
+      "object_support": 0.18656564606064208,
+      "score": 0.12287062443378882,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus horn blasts as music plays",
+      "clip_similarity": 0.2994897961616516,
+      "visual": 0.09634082122811749,
+      "scene_support": 1.0,
+      "object_support": 0.39621292726996366,
+      "score": 0.4574002066722361,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations of trains with horns blowing",
+      "clip_similarity": 0.29936715960502625,
+      "visual": 0.0897343274380611,
+      "scene_support": 0.31137163015639285,
+      "object_support": 0.03219074677458249,
+      "score": 0.13896244405451702,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Different ring tones playing one after another",
+      "clip_similarity": 0.29933980107307434,
+      "visual": 0.088260509382345,
+      "scene_support": 0.6975899032053205,
+      "object_support": 0.4942920195702186,
+      "score": 0.3928687805855997,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus engine hums, a very musical horn",
+      "clip_similarity": 0.29914355278015137,
+      "visual": 0.07768851385196317,
+      "scene_support": 0.4093744984053652,
+      "object_support": 0.547757550545541,
+      "score": 0.3182150202260571,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.07)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whistling accompanied by an orchestra",
+      "clip_similarity": 0.2981719970703125,
+      "visual": 0.025350312744833608,
+      "scene_support": 0.7582078329018166,
+      "object_support": 0.5091993970306388,
+      "score": 0.39036229407767004,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horn and then a male voice and an airplane flying",
+      "clip_similarity": 0.2980749011039734,
+      "visual": 0.020119703566703912,
+      "scene_support": 0.5517296727683837,
+      "object_support": 0.49462801841822257,
+      "score": 0.3219551887826634,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming of an engine with people singing and clapping",
+      "clip_similarity": 0.29803165793418884,
+      "visual": 0.01779017197754916,
+      "scene_support": 0.6034680689217198,
+      "object_support": 0.13615381890119232,
+      "score": 0.2290026351378933,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.07)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind and air leaking with a man's voice at the end",
+      "clip_similarity": 0.2977014183998108,
+      "visual": 0.0,
+      "scene_support": 0.9978601536711493,
+      "object_support": 0.24387859241625456,
+      "score": 0.37252162382622117,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "airplane cabin",
+      0.11982996016740799
+    ],
+    [
+      "boat deck",
+      0.07803033292293549
+    ],
+    [
+      "landing deck",
+      0.07734796404838562
+    ],
+    [
+      "music studio",
+      0.05836047977209091
+    ],
+    [
+      "orchestra pit",
+      0.04797663912177086
+    ]
+  ],
+  "top_objects": [
+    [
+      "saxophone",
+      0.17492616176605225
+    ],
+    [
+      "bassoon",
+      0.1730181872844696
+    ],
+    [
+      "trombone",
+      0.11733375489711761
+    ],
+    [
+      "cornet",
+      0.11528486758470535
+    ],
+    [
+      "oboe",
+      0.08446446806192398
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "kLYCjD6vWI4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\kLYCjD6vWI4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\kLYCjD6vWI4.wav",
+  "gt_captions": [
+    "A steam engine is hissing",
+    "Wind blowing with loud puffs of air and hissing",
+    "Hissing of a steam engine train",
+    "A steam engine hissing while puffing steam as wind blows into a microphone",
+    "A loud hissing and chugging growing louder"
+  ],
+  "top_scene": [
+    "railroad track",
+    0.4105421304702759
+  ],
+  "top_object": [
+    "steam locomotive",
+    0.6513851881027222
+  ],
+  "env_probs": {
+    "indoor": 0.4265194833278656,
+    "outdoor": 0.5734805166721344
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A train passes while continuously blowing its horn",
+    "casv": "A train engine idling followed by a single hoot from train horn"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.21100857853889465,
+    "clap_gt_audio_baseline": 0.31956198811531067,
+    "clap_text_casv": 0.06566371023654938,
+    "clap_gt_audio_casv": 0.17128506302833557
+  },
+  "verdicts": [
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.32450351119041443,
+      "visual": 1.0,
+      "scene_support": 0.7237394816821953,
+      "object_support": 0.561408938856237,
+      "score": 0.7855445261615297,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Steam engine train running and blowing horn",
+      "clip_similarity": 0.3225921094417572,
+      "visual": 0.7786131218048954,
+      "scene_support": 0.1608049832972968,
+      "object_support": 0.6514869011160268,
+      "score": 0.5551328140459553,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train engine idling followed by a single hoot from train horn",
+      "clip_similarity": 0.3224261403083801,
+      "visual": 0.7593898536767218,
+      "scene_support": 1.0,
+      "object_support": 0.823328262477709,
+      "score": 0.8507544202140015,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam train hisses loudly in an outdoor setting",
+      "clip_similarity": 0.3210082948207855,
+      "visual": 0.595168811982009,
+      "scene_support": 0.5440073614962906,
+      "object_support": 0.752696526168304,
+      "score": 0.627078691092182,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train horn sounding along with railway crossing bell and moving train sound",
+      "clip_similarity": 0.3209567666053772,
+      "visual": 0.5892005895733877,
+      "scene_support": 0.44274505726590574,
+      "object_support": 0.0,
+      "score": 0.36850375300912686,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large engine roars as it passes",
+      "clip_similarity": 0.31960329413414,
+      "visual": 0.43243551109592304,
+      "scene_support": 0.5460768982128851,
+      "object_support": 0.6379334709081828,
+      "score": 0.5281773151746896,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train engine running and then train blows horn",
+      "clip_similarity": 0.31891965866088867,
+      "visual": 0.35325387209571246,
+      "scene_support": 0.9355140563697667,
+      "object_support": 0.823594868576352,
+      "score": 0.6690342263221206,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam engine train is moving while an announcer speaks and wind blows",
+      "clip_similarity": 0.31792423129081726,
+      "visual": 0.2379591371793677,
+      "scene_support": 0.0,
+      "object_support": 0.49558011713504857,
+      "score": 0.24385769001226165,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming of a large engine passing",
+      "clip_similarity": 0.3178694248199463,
+      "visual": 0.23161121294023837,
+      "scene_support": 0.6757355661130692,
+      "object_support": 0.5099854282031493,
+      "score": 0.4483607834709609,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train blowing a horn while traveling down a track",
+      "clip_similarity": 0.31779709458351135,
+      "visual": 0.22323360982530263,
+      "scene_support": 0.6701394709313552,
+      "object_support": 0.36922198504831805,
+      "score": 0.40110188072402303,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam engine train hissing steam noise",
+      "clip_similarity": 0.3174588680267334,
+      "visual": 0.18405873642134477,
+      "scene_support": 0.5552235997914903,
+      "object_support": 1.0,
+      "score": 0.540190574505985,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large engine goes by with a fancy horn toot and then continues over metal tracks",
+      "clip_similarity": 0.3172469735145569,
+      "visual": 0.15951619083123633,
+      "scene_support": 0.7787561985312372,
+      "object_support": 0.6341277546674661,
+      "score": 0.48767166229210557,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine running with sweeping sounds",
+      "clip_similarity": 0.31702762842178345,
+      "visual": 0.1341106865354279,
+      "scene_support": 0.38091075175956596,
+      "object_support": 0.30069620807175707,
+      "score": 0.258126362563568,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running with faint voices in the background",
+      "clip_similarity": 0.31697186827659607,
+      "visual": 0.127652303581969,
+      "scene_support": 0.6595173580093405,
+      "object_support": 0.48202325423065545,
+      "score": 0.3935231051047864,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine chugging while train horn blares",
+      "clip_similarity": 0.3168017268180847,
+      "visual": 0.10794577857860346,
+      "scene_support": 0.5510696732239718,
+      "object_support": 0.3812581633814807,
+      "score": 0.3228766624130771,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train horn blows as a train passes with a humming engine",
+      "clip_similarity": 0.316567063331604,
+      "visual": 0.08076603118387579,
+      "scene_support": 0.7264675073540697,
+      "object_support": 0.6215463496990955,
+      "score": 0.43671056958949983,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train engine goes by quickly blowing the horn",
+      "clip_similarity": 0.3162216544151306,
+      "visual": 0.0407592655876231,
+      "scene_support": 0.7809346582329155,
+      "object_support": 0.739697476453132,
+      "score": 0.4724933466408635,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gurgling engine sound with people in the background",
+      "clip_similarity": 0.31617724895477295,
+      "visual": 0.035616031701651014,
+      "scene_support": 0.272303926249237,
+      "object_support": 0.21683142656575302,
+      "score": 0.1609870185251574,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam locomotive ring its train horn loudly nearby as it squeaks",
+      "clip_similarity": 0.31596869230270386,
+      "visual": 0.011460091611696198,
+      "scene_support": 0.44390147986728373,
+      "object_support": 0.9003425259039863,
+      "score": 0.4078572383760595,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large engine humming as it passes by",
+      "clip_similarity": 0.3158697485923767,
+      "visual": 0.0,
+      "scene_support": 0.5397890713466771,
+      "object_support": 0.5293137982386834,
+      "score": 0.3207308608756081,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "railroad track",
+      0.4105421304702759
+    ],
+    [
+      "platform train station",
+      0.2209147959947586
+    ],
+    [
+      "engine room",
+      0.050407540053129196
+    ],
+    [
+      "train interior",
+      0.04598456248641014
+    ],
+    [
+      "barndoor",
+      0.025790181010961533
+    ]
+  ],
+  "top_objects": [
+    [
+      "steam locomotive",
+      0.6513851881027222
+    ],
+    [
+      "electric locomotive",
+      0.11659595370292664
+    ],
+    [
+      "high-speed train",
+      0.08262406289577484
+    ],
+    [
+      "freight car",
+      0.08100526034832001
+    ],
+    [
+      "passenger car",
+      0.03305928409099579
+    ]
+  ]
+}

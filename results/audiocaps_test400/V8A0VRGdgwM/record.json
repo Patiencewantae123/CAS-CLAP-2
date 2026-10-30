@@ -1,0 +1,283 @@
+{
+  "id": "V8A0VRGdgwM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\V8A0VRGdgwM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\V8A0VRGdgwM.wav",
+  "gt_captions": [
+    "Some clicks followed by a person speaking and a goat bleating",
+    "Rustling followed by baaing and then more rustling",
+    "Pebbles and rocks bouncing off of a wooden surface as footsteps walk on gravel and dirt followed by a goat baaing as a muffled animal moan in the background",
+    "Rocks and gravel tapping against wooden surface as footsteps shuffle on dirt and gravel followed by a goat talking while a muffled animal moans",
+    "Goat bleating and making tickling noise"
+  ],
+  "top_scene": [
+    "farm",
+    0.16833405196666718
+  ],
+  "top_object": [
+    "Kuvasz",
+    0.11076849699020386
+  ],
+  "env_probs": {
+    "indoor": 0.5154430866241455,
+    "outdoor": 0.4845569133758545
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A goat shouts over the cries of other farm animals",
+    "casv": "A goat shouts over the cries of other farm animals"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.03327278792858124,
+    "clap_gt_audio_baseline": 0.114305779337883,
+    "clap_text_casv": -0.03327278792858124,
+    "clap_gt_audio_casv": 0.114305779337883
+  },
+  "verdicts": [
+    {
+      "caption": "A goat shouts over the cries of other farm animals",
+      "clip_similarity": 0.36202436685562134,
+      "visual": 1.0,
+      "scene_support": 0.6343582142079567,
+      "object_support": 0.8669838838891387,
+      "score": 0.8504026294291286,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat is tapping an object and making noises",
+      "clip_similarity": 0.35029929876327515,
+      "visual": 0.6514882006944936,
+      "scene_support": 0.38095087550814066,
+      "object_support": 0.7788188746339582,
+      "score": 0.6085262053204271,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats running around a barn",
+      "clip_similarity": 0.3478407859802246,
+      "visual": 0.5784122315923748,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23136489263694993,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A goat bleats while some object is tapped",
+      "clip_similarity": 0.34393253922462463,
+      "visual": 0.4622448798809439,
+      "scene_support": 0.6470015598390652,
+      "object_support": 0.8178840671668192,
+      "score": 0.6243636400541428,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People are communicating with one another followed by a goat making bah noises",
+      "clip_similarity": 0.3414345681667328,
+      "visual": 0.38799606689816457,
+      "scene_support": 0.8224885248933016,
+      "object_support": 0.8336275742753912,
+      "score": 0.6520332565098736,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person calling on a goat that makes typical animal sound",
+      "clip_similarity": 0.3393996059894562,
+      "visual": 0.3275095670044646,
+      "scene_support": 0.564935533611102,
+      "object_support": 0.9031778021742256,
+      "score": 0.5714378275373841,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat gallops and then bleats multiple times loudly nearby",
+      "clip_similarity": 0.33781394362449646,
+      "visual": 0.28037789667635177,
+      "scene_support": 0.8720120730947147,
+      "object_support": 0.8636589802639838,
+      "score": 0.6328524746781503,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats baaing as a woman talks followed by another woman talking in the background",
+      "clip_similarity": 0.3376635015010834,
+      "visual": 0.27590620792289705,
+      "scene_support": 0.36092349630619375,
+      "object_support": 0.6751968009713946,
+      "score": 0.4211985723524353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person talking with a goat in the background and water sounds",
+      "clip_similarity": 0.33730223774909973,
+      "visual": 0.2651681312451279,
+      "scene_support": 0.31085713604003684,
+      "object_support": 0.7763612875542358,
+      "score": 0.43223277957633294,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some object is moved followed by a goat bleats",
+      "clip_similarity": 0.3368913233280182,
+      "visual": 0.25295425554531925,
+      "scene_support": 0.9863402238652395,
+      "object_support": 0.9447707659546302,
+      "score": 0.6805149991640886,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats bleating in a musical rhythm",
+      "clip_similarity": 0.3368324041366577,
+      "visual": 0.25120296222804905,
+      "scene_support": 0.3887596147823831,
+      "object_support": 0.5770890346082126,
+      "score": 0.3902357797083983,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.3364728093147278,
+      "visual": 0.24051449224009638,
+      "scene_support": 0.7448592416736507,
+      "object_support": 0.7901105372113034,
+      "score": 0.5566967305615248,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People standing around talking while a goat is making noises",
+      "clip_similarity": 0.33409738540649414,
+      "visual": 0.16990822762383956,
+      "scene_support": 0.6394290332875024,
+      "object_support": 0.8942935136134461,
+      "score": 0.5280800551198204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A new baby goat bleeding with male speaking",
+      "clip_similarity": 0.3339478373527527,
+      "visual": 0.16546311388278648,
+      "scene_support": 0.12583099456889688,
+      "object_support": 0.4692918588647739,
+      "score": 0.24472210158321583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A goat snorting as a woman is laughing while leaves rustle in the background",
+      "clip_similarity": 0.3338008522987366,
+      "visual": 0.16109418184395152,
+      "scene_support": 0.42386643244226657,
+      "object_support": 0.5872280791449171,
+      "score": 0.3677660262137357,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man shouting followed by a goat baaing then metal clanging",
+      "clip_similarity": 0.3329898715019226,
+      "visual": 0.13698887392814116,
+      "scene_support": 0.7179453072107512,
+      "object_support": 0.8959916281129247,
+      "score": 0.5389766301683592,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats baaing followed by a person whistling",
+      "clip_similarity": 0.3325290083885193,
+      "visual": 0.12329034086882575,
+      "scene_support": 0.8252055677008927,
+      "object_support": 0.8707669817155977,
+      "score": 0.5581079011724774,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "There is a goat that is being very loud",
+      "clip_similarity": 0.3315821886062622,
+      "visual": 0.0951474027354546,
+      "scene_support": 0.5437998634022386,
+      "object_support": 0.9236447608374626,
+      "score": 0.4782923483660922,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking followed by some human speech and the noises made by sheep",
+      "clip_similarity": 0.33129972219467163,
+      "visual": 0.08675147048401956,
+      "scene_support": 1.0,
+      "object_support": 0.9868476010709077,
+      "score": 0.63075486851488,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat crying out",
+      "clip_similarity": 0.32838112115859985,
+      "visual": 0.0,
+      "scene_support": 0.9809359630887796,
+      "object_support": 1.0,
+      "score": 0.5942807889266339,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "farm",
+      0.16833405196666718
+    ],
+    [
+      "veterinarians office",
+      0.14522682130336761
+    ],
+    [
+      "stable",
+      0.13671112060546875
+    ],
+    [
+      "bullring",
+      0.08502781391143799
+    ],
+    [
+      "tundra",
+      0.041736308485269547
+    ]
+  ],
+  "top_objects": [
+    [
+      "Kuvasz",
+      0.11076849699020386
+    ],
+    [
+      "ostrich",
+      0.10082951188087463
+    ],
+    [
+      "borzoi",
+      0.08903300017118454
+    ],
+    [
+      "llama",
+      0.08418533205986023
+    ],
+    [
+      "ram",
+      0.08186567574739456
+    ]
+  ]
+}
