@@ -54,7 +54,27 @@ def parse_args():
     parser.add_argument("--no-generate", action="store_true", help="Run verification only.")
     parser.add_argument("--no-clap", action="store_true", help="Skip CLAP evaluation.")
     parser.add_argument("--config", default=None, help="VerifierConfig JSON (e.g. from train).")
+    parser.add_argument(
+        "--reuse-from",
+        default=None,
+        help="Earlier run directory; finished items are copied instead of regenerated. "
+        "Refused unless that run used the same seed, generation settings and verifier configuration.",
+    )
     return parser.parse_args()
+
+
+REUSE_SETTINGS = ("seed", "duration", "steps", "guidance_scale", "no_clap")
+
+
+def reusable_items(reuse_dir: Path, args, config) -> set[str]:
+    """Item ids of an earlier compatible run that can be copied; exits if the run is incompatible."""
+    previous = json.loads((reuse_dir / "results.json").read_text(encoding="utf-8"))
+    mismatched = [k for k in REUSE_SETTINGS if previous["settings"].get(k) != getattr(args, k)]
+    if previous["verifier_config"] != asdict(config):
+        mismatched.append("verifier_config")
+    if mismatched:
+        raise SystemExit(f"--reuse-from {reuse_dir}: settings differ ({', '.join(mismatched)}); not reusing")
+    return {r["id"] for r in previous["items"]}
 
 
 def resolve(path, base):
@@ -118,11 +138,22 @@ def main():
             log.info("Loading CLAP scorer")
             scorer = CLAPScorer(device=device)
 
+    reuse_dir = Path(args.reuse_from) if args.reuse_from else None
+    reusable = reusable_items(reuse_dir, args, config) if reuse_dir else set()
+    if reusable:
+        log.info(f"Reusing up to {len(reusable)} finished items from {reuse_dir}")
+
     records = []
     for index, item in enumerate(items, 1):
         item_id = item["id"]
         log.info(f"\n[{index}/{len(items)}] {item_id}")
         item_dir = run_dir / item_id
+        if item_id in reusable:
+            shutil.copytree(reuse_dir / item_id, item_dir, dirs_exist_ok=True)
+            saved = json.loads((item_dir / "record.json").read_text(encoding="utf-8"))
+            records.append({k: v for k, v in saved.items() if k not in ("verdicts", "top_scenes", "top_objects")})
+            log.info("    reused")
+            continue
         item_dir.mkdir(exist_ok=True)
 
         image_path = resolve(item["image"], base)
