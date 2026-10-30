@@ -68,7 +68,7 @@ class AudioGenerator:
 
 
 def mel_spectrogram_db(audio, sr=GENERATOR_SAMPLE_RATE, n_fft=1024, hop=160, n_mels=64):
-    """Log-mel spectrogram in dB (64 bands, 80 dB range) for figures."""
+    """Log-mel spectrogram in dB for figures."""
     filters = mel_filter_bank(
         num_frequency_bins=n_fft // 2 + 1,
         num_mel_filters=n_mels,

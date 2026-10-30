@@ -60,6 +60,19 @@ STAGES = [
     ),
     ("figures", "figures", ["--run", "results/audiocaps_test400", "--count", "20"]),
     ("figures", "figures", ["--run", "results/audiocaps_test400", "--count", "140", "--folder", "comparisons_140"]),
+    ("figures", "select_figure_clips", ["--run", "results/audiocaps_test400"]),
+    (
+        "figures",
+        "figures",
+        [
+            "--run",
+            "results/audiocaps_test400",
+            "--selection",
+            "results/audiocaps_test400/selected_clips.json",
+            "--folder",
+            "comparisons_selected",
+        ],
+    ),
     ("figures", "figures", ["--run", "results/categories7", "--count", "7"]),
     ("journal", "report", []),
 ]

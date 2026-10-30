@@ -15,8 +15,9 @@ button { background: var(--accent); color: #fff; border: 0; border-radius: 6px; 
 </style></head><body>
 <h1>Does the sound match the picture?</h1>
 <p>For each picture, listen to both sounds (A and B). Judge only <b>how well each sound fits what is visible in the picture</b>,
-not audio quality. Use headphones if you can. There are 61 items; it takes about 30 minutes.</p>
-<div class="bar">Your name or initials: <input id="rater" size="12"> &nbsp;
+not audio quality. Use headphones if you can. There are 61 items; it takes about 30 minutes.
+Please finish in one sitting: closing this page clears your answers.</p>
+<div class="bar">Your initials or a code name: <input id="rater" size="12"> &nbsp;
 <span id="progress" class="muted"></span> &nbsp; <button onclick="download()">Download my ratings (CSV)</button></div>
 <div class="item"><div class="muted">Item 1 of 61</div><div class="row">
 <img src="stimuli/item001.jpg" alt="picture for item 1">
@@ -813,18 +814,19 @@ not audio quality. Use headphones if you can. There are 61 items; it takes about
 </div>
 <p><button onclick="download()">Download my ratings (CSV)</button> and send the file back. Thank you.</p>
 <script>
+const PACKAGE = "bcd5118d";
 const ITEMS = ["item001", "item002", "item003", "item004", "item005", "item006", "item007", "item008", "item009", "item010", "item011", "item012", "item013", "item014", "item015", "item016", "item017", "item018", "item019", "item020", "item021", "item022", "item023", "item024", "item025", "item026", "item027", "item028", "item029", "item030", "item031", "item032", "item033", "item034", "item035", "item036", "item037", "item038", "item039", "item040", "item041", "item042", "item043", "item044", "item045", "item046", "item047", "item048", "item049", "item050", "item051", "item052", "item053", "item054", "item055", "item056", "item057", "item058", "item059", "item060", "item061"];
 function answered() { return ITEMS.filter(id => document.querySelector(`input[name="match_${id}"]:checked`)).length; }
 function update() { document.getElementById("progress").textContent = `${answered()} / ${ITEMS.length} answered`; }
 document.addEventListener("change", update); update();
 function download() {
-  const rater = document.getElementById("rater").value.trim();
-  if (!rater) { alert("Please enter your name or initials first."); return; }
+  const rater = document.getElementById("rater").value.replace(/,/g, " ").trim();
+  if (!rater) { alert("Please enter your initials or a code name first."); return; }
   if (answered() < ITEMS.length && !confirm(`${ITEMS.length - answered()} items are unanswered. Download anyway?`)) return;
-  const rows = [["rater", "item", "better_match", "A_has_unrelated_sound", "B_has_unrelated_sound"]];
+  const rows = [["package", "rater", "item", "better_match", "A_has_unrelated_sound", "B_has_unrelated_sound"]];
   for (const id of ITEMS) {
     const m = document.querySelector(`input[name="match_${id}"]:checked`);
-    rows.push([rater, id, m ? m.value : "", document.getElementById(`a_${id}`).checked, document.getElementById(`b_${id}`).checked]);
+    rows.push([PACKAGE, rater, id, m ? m.value : "", document.getElementById(`a_${id}`).checked, document.getElementById(`b_${id}`).checked]);
   }
   const blob = new Blob([rows.map(r => r.join(",")).join("\n")], {type: "text/csv"});
   const link = document.createElement("a");

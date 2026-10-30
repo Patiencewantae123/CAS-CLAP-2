@@ -2,15 +2,19 @@
 # Blind A/B listening test: does the generated sound match what is VISIBLE?
 #
 #   build    package the items where CAS-V changed the prompt into a folder
-#            raters open offline (index.html + image + two clips per item).
-#            A/B order is randomised per item with --seed; the key is written
-#            to results/listening_test/key.json, outside the rater package.
-#   analyze  combine rater CSVs with the key: CAS-V preference with a two-sided
-#            sign test (ties excluded), "contains a sound not in the image"
-#            rates per system, and inter-rater agreement (Fleiss' kappa).
+#            raters open offline (index.html + image + two clips per item) and
+#            zip it. A/B order is randomised per item with --seed; the key is
+#            written to results/listening_test/key.json, outside the package.
+#            The repository is public, so keep the seed private and the key out
+#            of git until rating has finished.
+#   analyze  combine rater CSVs with the key.
+#            Primary: each item counts once, for the system most of its raters
+#            preferred; two-sided sign test over items, ties excluded.
+#            Secondary: paired per-item reduction in "contains a sound not in
+#            the image" flags. Also inter-rater agreement (Fleiss' kappa).
 #
 # Usage:
-#   py -m scripts.listening_test build --run results/audiocaps_test100
+#   py -m scripts.listening_test build --seed <private number>
 #   py -m scripts.listening_test analyze --ratings evaluation/ratings/*.csv
 # =============================================================================
 
@@ -29,7 +33,7 @@ import numpy as np
 from scipy.stats import binomtest
 
 from casv.log import setup_logging
-from casv.stats import wilson_ci
+from casv.stats import paired_difference, wilson_ci
 
 log = logging.getLogger("casv")
 
@@ -55,24 +59,26 @@ button {{ background: var(--accent); color: #fff; border: 0; border-radius: 6px;
 </style></head><body>
 <h1>Does the sound match the picture?</h1>
 <p>For each picture, listen to both sounds (A and B). Judge only <b>how well each sound fits what is visible in the picture</b>,
-not audio quality. Use headphones if you can. There are {n} items; it takes about {minutes} minutes.</p>
-<div class="bar">Your name or initials: <input id="rater" size="12"> &nbsp;
+not audio quality. Use headphones if you can. There are {n} items; it takes about {minutes} minutes.
+Please finish in one sitting: closing this page clears your answers.</p>
+<div class="bar">Your initials or a code name: <input id="rater" size="12"> &nbsp;
 <span id="progress" class="muted"></span> &nbsp; <button onclick="download()">Download my ratings (CSV)</button></div>
 {items}
 <p><button onclick="download()">Download my ratings (CSV)</button> and send the file back. Thank you.</p>
 <script>
+const PACKAGE = {package};
 const ITEMS = {ids};
 function answered() {{ return ITEMS.filter(id => document.querySelector(`input[name="match_${{id}}"]:checked`)).length; }}
 function update() {{ document.getElementById("progress").textContent = `${{answered()}} / ${{ITEMS.length}} answered`; }}
 document.addEventListener("change", update); update();
 function download() {{
-  const rater = document.getElementById("rater").value.trim();
-  if (!rater) {{ alert("Please enter your name or initials first."); return; }}
+  const rater = document.getElementById("rater").value.replace(/,/g, " ").trim();
+  if (!rater) {{ alert("Please enter your initials or a code name first."); return; }}
   if (answered() < ITEMS.length && !confirm(`${{ITEMS.length - answered()}} items are unanswered. Download anyway?`)) return;
-  const rows = [["rater", "item", "better_match", "A_has_unrelated_sound", "B_has_unrelated_sound"]];
+  const rows = [["package", "rater", "item", "better_match", "A_has_unrelated_sound", "B_has_unrelated_sound"]];
   for (const id of ITEMS) {{
     const m = document.querySelector(`input[name="match_${{id}}"]:checked`);
-    rows.push([rater, id, m ? m.value : "", document.getElementById(`a_${{id}}`).checked, document.getElementById(`b_${{id}}`).checked]);
+    rows.push([PACKAGE, rater, id, m ? m.value : "", document.getElementById(`a_${{id}}`).checked, document.getElementById(`b_${{id}}`).checked]);
   }}
   const blob = new Blob([rows.map(r => r.join(",")).join("\\n")], {{type: "text/csv"}});
   const link = document.createElement("a");
@@ -121,20 +127,32 @@ def build(run_dir: Path, seed: int) -> None:
         key[item_id] = {"audiocaps_id": record["id"], "casv": "A" if casv_is_a else "B", "prompts": record["prompts"]}
         blocks.append(ITEM.format(number=number, n=len(items), id=html.escape(item_id)))
 
+    # Stamped on every rating, so ratings from another build cannot be decoded with this key
+    package = f"{rng.getrandbits(32):08x}"
+    minutes = round(len(items) * 0.5)
     page = PAGE.format(
-        n=len(items), minutes=round(len(items) * 0.5), items="\n".join(blocks), ids=json.dumps(list(key))
+        n=len(items), minutes=minutes, items="\n".join(blocks), ids=json.dumps(list(key)), package=json.dumps(package)
     )
     (PACKAGE_DIR / "index.html").write_text(page, encoding="utf-8")
     (PACKAGE_DIR / "README.txt").write_text(
-        "Open index.html in a web browser (Chrome, Edge or Firefox), answer every item, enter your name,\n"
-        "then click 'Download my ratings (CSV)' and send the CSV file back.\n",
+        "1. Extract this folder from the zip first (right-click > Extract All). The sounds do not play inside a zip.\n"
+        "2. Open index.html in a web browser (Chrome, Edge or Firefox).\n"
+        f"3. Enter your initials or a code name and answer every item, about {minutes} minutes in one sitting.\n"
+        "   Closing the page clears your answers.\n"
+        "4. Click 'Download my ratings (CSV)' and send the CSV file back.\n"
+        "\n"
+        "Please rate on your own, and do not look up the project or discuss it with other raters.\n",
         encoding="utf-8",
     )
+    archive = shutil.make_archive(str(PACKAGE_DIR), "zip", PACKAGE_DIR.parent, PACKAGE_DIR.name)
     KEY_PATH.parent.mkdir(parents=True, exist_ok=True)
     KEY_PATH.write_text(
-        json.dumps({"seed": seed, "run": str(run_dir), "n_items": len(items), "items": key}, indent=2), encoding="utf-8"
+        json.dumps(
+            {"seed": seed, "package": package, "run": str(run_dir), "n_items": len(items), "items": key}, indent=2
+        ),
+        encoding="utf-8",
     )
-    log.info(f"rater package: {PACKAGE_DIR} ({len(items)} items); key kept separately: {KEY_PATH}")
+    log.info(f"rater package: {archive} ({len(items)} items); key kept separately: {KEY_PATH}")
     log.info(f"CAS-V is clip A on {sum(v['casv'] == 'A' for v in key.values())} of {len(items)} items")
 
 
@@ -147,13 +165,23 @@ def fleiss_kappa(table: np.ndarray) -> float:
     return float((p_bar - p_exp) / (1 - p_exp)) if p_exp < 1 else float("nan")
 
 
+def item_winner(votes: Counter) -> str:
+    """System most of an item's raters preferred; ratings of one item are not independent."""
+    net = votes["casv"] - votes["baseline"]
+    return "casv" if net > 0 else "baseline" if net < 0 else "tied"
+
+
 def analyze(rating_files: list[str]) -> None:
     """Unblind the ratings with the key and report preference, unrelated-sound rates and agreement."""
-    key = json.loads(KEY_PATH.read_text(encoding="utf-8"))["items"]
+    key_file = json.loads(KEY_PATH.read_text(encoding="utf-8"))
+    key = key_file["items"]
     ratings = []
     for path in rating_files:
-        with open(path, newline="", encoding="utf-8") as file:
+        # utf-8-sig and the lower-casing below: Excel adds a BOM and writes TRUE/FALSE when it saves a CSV
+        with open(path, newline="", encoding="utf-8-sig") as file:
             for row in csv.DictReader(file):
+                if row.get("package") != key_file["package"]:
+                    raise SystemExit(f"{path} comes from a different build; its A/B labels do not match this key.")
                 if row["item"] in key and row["better_match"] in CHOICES:
                     casv = key[row["item"]]["casv"]
                     choice = row["better_match"]
@@ -162,22 +190,31 @@ def analyze(rating_files: list[str]) -> None:
                             "rater": row["rater"],
                             "item": row["item"],
                             "preferred": "same" if choice == "same" else ("casv" if choice == casv else "baseline"),
-                            "casv_unrelated": row[f"{casv}_has_unrelated_sound"] == "true",
-                            "baseline_unrelated": row[f"{'B' if casv == 'A' else 'A'}_has_unrelated_sound"] == "true",
+                            "casv_unrelated": row[f"{casv}_has_unrelated_sound"].lower() == "true",
+                            "baseline_unrelated": row[f"{'B' if casv == 'A' else 'A'}_has_unrelated_sound"].lower()
+                            == "true",
                         }
                     )
     if not ratings:
         raise SystemExit("No valid ratings found.")
+    repeated = [k for k, n in Counter((r["rater"], r["item"]) for r in ratings).items() if n > 1]
+    if repeated:
+        raise SystemExit(f"{len(repeated)} items rated twice under one name, e.g. {repeated[0]}; check the CSV files.")
 
     counts = Counter(r["preferred"] for r in ratings)
-    decisive = counts["casv"] + counts["baseline"]
-    test = binomtest(counts["casv"], decisive, 0.5) if decisive else None
     raters = sorted({r["rater"] for r in ratings})
 
     by_item = {}
     for r in ratings:
         by_item.setdefault(r["item"], Counter())[r["preferred"]] += 1
     complete = [c for c in by_item.values() if sum(c.values()) == len(raters)]
+    winners = Counter(item_winner(votes) for votes in by_item.values())
+    decisive = winners["casv"] + winners["baseline"]
+    test = binomtest(winners["casv"], decisive, 0.5) if decisive else None
+
+    def unrelated_rates(system):
+        return [np.mean([r[f"{system}_unrelated"] for r in ratings if r["item"] == item]) for item in by_item]
+
     kappa = (
         fleiss_kappa(np.array([[c["casv"], c["baseline"], c["same"]] for c in complete]))
         if len(raters) > 1 and complete
@@ -189,13 +226,15 @@ def analyze(rating_files: list[str]) -> None:
         "n_ratings": len(ratings),
         "n_items": len(by_item),
         "preferred": dict(counts),
-        "casv_win_rate_excluding_ties": counts["casv"] / decisive if decisive else None,
-        "casv_win_rate_ci95": list(wilson_ci(counts["casv"], decisive)) if decisive else None,
+        "item_winners": dict(winners),
+        "casv_win_rate_excluding_ties": winners["casv"] / decisive if decisive else None,
+        "casv_win_rate_ci95": list(wilson_ci(winners["casv"], decisive)) if decisive else None,
         "sign_test_p": test.pvalue if test else None,
         "unrelated_sound_rate": {
             "casv": float(np.mean([r["casv_unrelated"] for r in ratings])),
             "baseline": float(np.mean([r["baseline_unrelated"] for r in ratings])),
         },
+        "unrelated_sound_reduction": paired_difference(unrelated_rates("baseline"), unrelated_rates("casv")),
         "fleiss_kappa": kappa,
         "per_rater": {name: dict(Counter(r["preferred"] for r in ratings if r["rater"] == name)) for name in raters},
     }
@@ -210,7 +249,7 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     b = sub.add_parser("build", help="Write the rater package and the answer key.")
     b.add_argument("--run", default="results/audiocaps_test100")
-    b.add_argument("--seed", type=int, default=7)
+    b.add_argument("--seed", type=int, required=True, help="Decides A/B order; keep it private until rating ends.")
     a = sub.add_parser("analyze", help="Unblind and analyse rater CSVs.")
     a.add_argument("--ratings", nargs="+", required=True, help="Rater CSV files (globs allowed).")
     args = parser.parse_args()

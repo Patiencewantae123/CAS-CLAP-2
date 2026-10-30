@@ -52,6 +52,17 @@ def test_caption_environment(caption, env):
         ("A series of small pops is followed by an explosion", ["small pops", "explosion"], "Small pops / explosion"),
         ("Wind noise on ocean", ["wind noise on ocean"], "Wind noise on ocean"),
         ("Typing on a computer keyboard", ["typing on a computer keyboard"], "Typing on a computer keyboard"),
+        ("A man speaks and a loud bang", ["man speaks"], "Man speaks"),
+        (
+            "Soft repeated tapping followed by a loud tap",
+            ["soft repeated tapping", "loud tap"],
+            "Soft repeated tapping / loud tap",
+        ),
+        (
+            "Background noises from a video game being played",
+            ["background noises from a video game"],
+            "Background noises",
+        ),
     ],
 )
 def test_figure_text(caption, concepts, kind):

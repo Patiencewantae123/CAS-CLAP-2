@@ -81,24 +81,34 @@ def main():
     for old in ("figures", "qualitative"):  # earlier layouts
         if (OUT / old).exists():
             shutil.rmtree(OUT / old)
-    for folder in ("graphs", "comparisons/fig5_categories", "comparisons/figS1_random20"):
+    for folder in ("graphs", "comparisons/fig5_categories", "comparisons/figS1_random20", "comparisons/figS2_selected"):
         (OUT / folder).mkdir(parents=True, exist_ok=True)
         for stale in (OUT / folder).glob("*.png"):
             stale.unlink()
 
-    figures = [
-        (Path(args.places).with_name("fig_places365_recognition.png"), "graphs/fig1_scene_recognition.png"),
-        (Path(args.tuning).with_name("fig_prompt_selection.png"), "graphs/fig2_prompt_selection.png"),
-        (run_dir / "fig_clap_comparison.png", "graphs/fig3_generated_audio_clap.png"),
-        (run_dir / "fig_verification_stats.png", "graphs/fig4_verification_statistics.png"),
-        (
-            Path(args.categories) / "comparisons" / "casv_comparison_1.png",
-            "comparisons/fig5_categories/fig5_categories.png",
-        ),
-    ] + [
-        (p, f"comparisons/figS1_random20/figS1{chr(ord('a') + i)}_random20.png")
-        for i, p in enumerate(sorted((run_dir / "comparisons").glob("casv_comparison_*.png")))
-    ]
+    figures = (
+        [
+            (Path(args.places).with_name("fig_places365_recognition.png"), "graphs/fig1_scene_recognition.png"),
+            (Path(args.tuning).with_name("fig_prompt_selection.png"), "graphs/fig2_prompt_selection.png"),
+            (run_dir / "fig_clap_comparison.png", "graphs/fig3_generated_audio_clap.png"),
+            (run_dir / "fig_verification_stats.png", "graphs/fig4_verification_statistics.png"),
+            (
+                Path(args.categories) / "comparisons" / "casv_comparison_1.png",
+                "comparisons/fig5_categories/fig5_categories.png",
+            ),
+        ]
+        + [
+            (p, f"comparisons/figS1_random20/figS1{chr(ord('a') + i)}_random20.png")
+            for i, p in enumerate(sorted((run_dir / "comparisons").glob("casv_comparison_*.png")))
+        ]
+        + [
+            (
+                run_dir / "comparisons_selected" / f"casv_comparison_{i}.png",
+                f"comparisons/figS2_selected/figS2_page{i}.png",
+            )
+            for i in range(1, len(list((run_dir / "comparisons_selected").glob("casv_comparison_*.png"))) + 1)
+        ]
+    )
     missing = []
     for src, dest in figures:
         if src.exists():
@@ -305,6 +315,7 @@ from result files in `results/`; nothing is entered by hand.
 | `graphs/fig4_verification_statistics.png` | Candidate decisions and conflict types |
 | `comparisons/fig5_categories/` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
 | `comparisons/figS1_random20/` | Supplementary: first 20 items of the random test sample (not selected) |
+| `comparisons/figS2_selected/` | Illustrations, not results: clear examples of named sound categories where CAS-V's verified caption names the sound, so they show what the method does when it works. No CLAP score was used; the rule and its counts are in each page's caption and in `selected_clips.json` next to the run |
 
 LaTeX versions of all tables are in `tables/`.
 """

@@ -1,0 +1,399 @@
+{
+  "rule": {
+    "min_captions": 2,
+    "min_brightness": 30,
+    "categories": {
+      "busy road": {
+        "pattern": "\\btraffic\\b|\\b(cars?|vehicles?) (pass|driv|go)\\w*",
+        "frame": "a busy road with cars"
+      },
+      "office": {
+        "pattern": "\\btyping\\b|\\bkeyboard\\b",
+        "frame": "hands typing on a computer keyboard"
+      },
+      "beach": {
+        "pattern": "\\bwaves?\\b|\\bocean\\b|\\bbeach\\b|\\bshore\\b|\\bsurf\\b",
+        "frame": "ocean waves at a beach"
+      },
+      "birds": {
+        "pattern": "\\bbirds?\\b",
+        "frame": "trees and birds in nature"
+      },
+      "leaves": {
+        "pattern": "\\bleaves\\b|\\bfoliage\\b",
+        "frame": "leaves and plants"
+      },
+      "metal hit": {
+        "pattern": "\\bhammer\\w*|\\bmetal\\w*\\s+(\\w+\\s+)?(clank|clack|clang|bang|hit|strik|tap|ping)\\w*",
+        "frame": "a person hitting metal with a tool"
+      },
+      "cloth": {
+        "pattern": "\\b(cloth|fabric)\\b|\\bscratch\\w*",
+        "frame": "hands rubbing cloth or fabric"
+      },
+      "stream": {
+        "pattern": "\\bstream\\b|\\bbrook\\b|\\bcreek\\b|\\briver\\b|\\bwater (flow|run|trickl|gurgl)\\w*",
+        "frame": "a stream or river"
+      },
+      "rain": {
+        "pattern": "\\brain\\w*",
+        "frame": "rain falling"
+      },
+      "dog": {
+        "pattern": "\\bdogs?\\b|\\bbark\\w*",
+        "frame": "a dog"
+      },
+      "cat": {
+        "pattern": "\\bcats?\\b|\\bmeow\\w*",
+        "frame": "a cat"
+      },
+      "farm animals": {
+        "pattern": "\\bsheep\\b|\\bgoats?\\b|\\bcows?\\b|\\bbaa\\w*|\\bmoo(s|ing)?\\b|\\bhorses?\\b|\\bpigs?\\b|\\boink\\w*",
+        "frame": "farm animals such as sheep, goats, cows or horses"
+      },
+      "ducks / pigeons": {
+        "pattern": "\\bducks?\\b|\\bpigeons?\\b|\\bquack\\w*|\\bcoo(s|ing)?\\b",
+        "frame": "ducks or pigeons"
+      },
+      "baby": {
+        "pattern": "\\bbaby\\b|\\binfant\\b",
+        "frame": "a baby"
+      },
+      "train": {
+        "pattern": "\\btrains?\\b|\\blocomotive\\b|\\brailroad\\b",
+        "frame": "a train on railway tracks"
+      },
+      "aircraft": {
+        "pattern": "\\b(air)?planes?\\b|\\baircraft\\b|\\bjet\\b",
+        "frame": "an airplane"
+      },
+      "helicopter": {
+        "pattern": "\\bhelicopter\\b",
+        "frame": "a helicopter"
+      },
+      "motorcycle": {
+        "pattern": "\\bmotorcycle\\b|\\bmotorbike\\b|\\bdirt bike\\b",
+        "frame": "a motorcycle"
+      },
+      "boat": {
+        "pattern": "\\bboat\\b|\\bmotorboat\\b|\\bspeedboat\\b",
+        "frame": "a boat on water"
+      },
+      "engine": {
+        "pattern": "\\bengines?\\b|\\bidling\\b|\\brevving\\b",
+        "frame": "a car, truck or vehicle engine"
+      },
+      "kitchen": {
+        "pattern": "\\bsizzl\\w*|\\bfry\\w*",
+        "frame": "food frying in a pan"
+      },
+      "sewing machine": {
+        "pattern": "\\bsewing\\b",
+        "frame": "a sewing machine"
+      },
+      "toilet": {
+        "pattern": "\\btoilet\\b",
+        "frame": "a toilet"
+      },
+      "bells": {
+        "pattern": "\\bbells?\\b|\\bchim(e|es|ing)\\b",
+        "frame": "a bell or clock"
+      },
+      "crowd": {
+        "pattern": "\\bapplau\\w*|\\bcheer\\w*|\\bcrowd\\b",
+        "frame": "a crowd of people"
+      },
+      "power tools": {
+        "pattern": "\\bdrill\\w*|\\bsawing\\b|\\bsanding\\b|\\bpower tool\\b",
+        "frame": "a person using a power tool"
+      },
+      "insects": {
+        "pattern": "\\bbees?\\b|\\binsects?\\b|\\bbuzz\\w*",
+        "frame": "bees or insects"
+      },
+      "siren": {
+        "pattern": "\\bsirens?\\b",
+        "frame": "an emergency vehicle"
+      }
+    }
+  },
+  "counts": {
+    "clips": 400,
+    "caption_match": 293,
+    "caption_and_frame_match": 143,
+    "selected": 60,
+    "per_category": {
+      "busy road": 0,
+      "office": 3,
+      "beach": 0,
+      "birds": 2,
+      "leaves": 0,
+      "metal hit": 0,
+      "cloth": 0,
+      "stream": 2,
+      "rain": 0,
+      "dog": 1,
+      "cat": 4,
+      "farm animals": 6,
+      "ducks / pigeons": 5,
+      "baby": 3,
+      "train": 5,
+      "aircraft": 3,
+      "helicopter": 0,
+      "motorcycle": 2,
+      "boat": 2,
+      "engine": 7,
+      "kitchen": 3,
+      "sewing machine": 2,
+      "toilet": 5,
+      "bells": 2,
+      "crowd": 0,
+      "power tools": 0,
+      "insects": 2,
+      "siren": 1
+    }
+  },
+  "disclosure": "Selected examples, not representative. Of the 400 clips in this run, 293 had at least 2 human captions naming a category and 143 of those had a frame CLIP ranked first for that category; the 60 shown are those where CAS-V also changed the prompt and its verified caption names the category. No CLAP score was used. See Table 3 for the result over all clips.",
+  "items": [
+    {
+      "id": "JQz40TkjymY",
+      "label": "office"
+    },
+    {
+      "id": "GMP8m09j5vk",
+      "label": "birds"
+    },
+    {
+      "id": "n74IYuCe_ms",
+      "label": "stream"
+    },
+    {
+      "id": "a3GzZKxUTy8",
+      "label": "dog"
+    },
+    {
+      "id": "PLHXGDnig4M",
+      "label": "cat"
+    },
+    {
+      "id": "azh_-OkQ-uI",
+      "label": "farm animals"
+    },
+    {
+      "id": "Jon_DEFqsfM",
+      "label": "ducks / pigeons"
+    },
+    {
+      "id": "mWqH2xwjkYA",
+      "label": "baby"
+    },
+    {
+      "id": "0yETgW44MZU",
+      "label": "train"
+    },
+    {
+      "id": "1Og2TJ3bXW0",
+      "label": "aircraft"
+    },
+    {
+      "id": "naPgJvWTIY4",
+      "label": "motorcycle"
+    },
+    {
+      "id": "CeRoaEcqUgM",
+      "label": "boat"
+    },
+    {
+      "id": "LB6CZ0x-kns",
+      "label": "engine"
+    },
+    {
+      "id": "paf0nyjg1Js",
+      "label": "kitchen"
+    },
+    {
+      "id": "xpZna_FwDhI",
+      "label": "sewing machine"
+    },
+    {
+      "id": "YIqpIjjee00",
+      "label": "toilet"
+    },
+    {
+      "id": "CMUuelJFJ7Q",
+      "label": "bells"
+    },
+    {
+      "id": "KVAIaRPry24",
+      "label": "insects"
+    },
+    {
+      "id": "YNDKuNINDOY",
+      "label": "siren"
+    },
+    {
+      "id": "DAN1t9ukkg0",
+      "label": "office"
+    },
+    {
+      "id": "u84FiZ_omhA",
+      "label": "birds"
+    },
+    {
+      "id": "zF3xXn6NTyU",
+      "label": "stream"
+    },
+    {
+      "id": "ajheseWZmmU",
+      "label": "cat"
+    },
+    {
+      "id": "BwnGxJD9xh8",
+      "label": "farm animals"
+    },
+    {
+      "id": "6cyKp3EDm-0",
+      "label": "ducks / pigeons"
+    },
+    {
+      "id": "Vkbp8VmL3pM",
+      "label": "baby"
+    },
+    {
+      "id": "Ot0bN_hz2ec",
+      "label": "train"
+    },
+    {
+      "id": "VOXl8iR-HnI",
+      "label": "aircraft"
+    },
+    {
+      "id": "XplKBvZaHXA",
+      "label": "motorcycle"
+    },
+    {
+      "id": "R_g4RpU9mO0",
+      "label": "boat"
+    },
+    {
+      "id": "lVr-PxhZo8s",
+      "label": "engine"
+    },
+    {
+      "id": "_9mgOkzm-xg",
+      "label": "kitchen"
+    },
+    {
+      "id": "CvNAwby6Xos",
+      "label": "sewing machine"
+    },
+    {
+      "id": "yRoKi7rhSRo",
+      "label": "toilet"
+    },
+    {
+      "id": "OxUVcZmeiyI",
+      "label": "bells"
+    },
+    {
+      "id": "qakN0JNbpcU",
+      "label": "insects"
+    },
+    {
+      "id": "Bz9Y5nZK3eo",
+      "label": "office"
+    },
+    {
+      "id": "0On6-JiVwRs",
+      "label": "cat"
+    },
+    {
+      "id": "vigslb0kClE",
+      "label": "farm animals"
+    },
+    {
+      "id": "d1tL-9BILy8",
+      "label": "ducks / pigeons"
+    },
+    {
+      "id": "y_OyLW9lBXU",
+      "label": "baby"
+    },
+    {
+      "id": "SE_3nszEw7o",
+      "label": "train"
+    },
+    {
+      "id": "jYPU6aSDo88",
+      "label": "aircraft"
+    },
+    {
+      "id": "350OCezayrk",
+      "label": "engine"
+    },
+    {
+      "id": "ZY4aGEniU_E",
+      "label": "kitchen"
+    },
+    {
+      "id": "MtK8L8gXRrI",
+      "label": "toilet"
+    },
+    {
+      "id": "-NsC63dA01g",
+      "label": "cat"
+    },
+    {
+      "id": "c3nlaAkv9bA",
+      "label": "farm animals"
+    },
+    {
+      "id": "wBs02amFGXs",
+      "label": "ducks / pigeons"
+    },
+    {
+      "id": "3ndid3jni7M",
+      "label": "train"
+    },
+    {
+      "id": "3fomsZXG3aM",
+      "label": "engine"
+    },
+    {
+      "id": "SePTNAN7s-w",
+      "label": "toilet"
+    },
+    {
+      "id": "JZloTOdIY_c",
+      "label": "farm animals"
+    },
+    {
+      "id": "OpiWMltpj44",
+      "label": "ducks / pigeons"
+    },
+    {
+      "id": "kx6Rj4MDIAw",
+      "label": "train"
+    },
+    {
+      "id": "Rtenf2XSXRc",
+      "label": "engine"
+    },
+    {
+      "id": "y1a8PntuXYw",
+      "label": "toilet"
+    },
+    {
+      "id": "JhGp7HmRQxg",
+      "label": "farm animals"
+    },
+    {
+      "id": "BL8ksJ0sTXk",
+      "label": "engine"
+    },
+    {
+      "id": "0AsXkZkqelg",
+      "label": "engine"
+    }
+  ]
+}

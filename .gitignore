@@ -11,4 +11,9 @@ results/**/*.wav
 
 # Regenerable packages and app runs
 evaluation/listening_test/stimuli/
+evaluation/listening_test.zip
 app_data/runs/
+
+# Kept out of this public repository until rating has finished (see README)
+results/listening_test/key.json
+evaluation/ratings/

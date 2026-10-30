@@ -25,6 +25,7 @@ from result files in `results/`; nothing is entered by hand.
 | `graphs/fig4_verification_statistics.png` | Candidate decisions and conflict types |
 | `comparisons/fig5_categories/` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
 | `comparisons/figS1_random20/` | Supplementary: first 20 items of the random test sample (not selected) |
+| `comparisons/figS2_selected/` | Illustrations, not results: clear examples of named sound categories where CAS-V's verified caption names the sound, so they show what the method does when it works. No CLAP score was used; the rule and its counts are in each page's caption and in `selected_clips.json` next to the run |
 
 LaTeX versions of all tables are in `tables/`.
 

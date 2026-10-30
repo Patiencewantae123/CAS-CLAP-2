@@ -21,6 +21,8 @@ import textwrap
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.colors import PowerNorm
 from matplotlib.patches import FancyBboxPatch
 from PIL import Image
 
@@ -32,15 +34,18 @@ log = logging.getLogger("casv")
 
 RED, BLUE, INK = "#c0392b", "#1f3a93", "#111111"
 ROWS = [  # (label, colour, height)
-    ("Input Image", INK, 1.15),
-    ("Existing Research\n(Without CAS-V)", RED, 0.95),
-    ("Semantic Text\n(Verified Concepts)", BLUE, 0.62),
-    ("Spectrogram\n(Generated Audio)", BLUE, 0.95),
-    ("Caption\n(Sound Type)", BLUE, 0.42),
-    ("Target Sound\n(Ground Truth)", INK, 0.95),
+    ("Input Image", INK, 0.92),
+    ("Existing Research\n(Without CAS-V)", RED, 0.72),
+    ("Semantic Text\n(Verified Concepts)", BLUE, 0.52),
+    ("Spectrogram\n(Generated Audio)", BLUE, 0.72),
+    ("Caption\n(Sound Type)", BLUE, 0.34),
+    ("Target Sound\n(Ground Truth)", INK, 0.72),
 ]
 OURS_ROWS = (2, 4)
-DB_RANGE = 80  # every panel: own peak, 80 dB below it
+N_FFT, N_MELS = 2048, 96
+DB_RANGE = 40  # every panel: its own level, 40 dB below it
+LEVEL_PERCENTILE = 99.5  # a panel's level; the peak would let one click black out the rest
+GAMMA = 1.3  # contrast curve, the same for every panel
 GT_WINDOW = (2.5, 7.5)  # 5 s of the 10 s recording, centred on the input frame (t = 5 s)
 
 plt.rcParams.update({"font.family": "serif", "font.serif": ["Times New Roman", "DejaVu Serif"]})
@@ -59,8 +64,10 @@ def draw_spectrogram(ax, wav_path, window=None):
     audio = load_audio(wav_path, GENERATOR_SAMPLE_RATE)
     if window:
         audio = audio[int(window[0] * GENERATOR_SAMPLE_RATE) : int(window[1] * GENERATOR_SAMPLE_RATE)]
-    mel = mel_spectrogram_db(audio)
-    ax.imshow(mel, origin="lower", aspect="auto", cmap="inferno", vmin=mel.max() - DB_RANGE, vmax=mel.max())
+    mel = mel_spectrogram_db(audio, n_fft=N_FFT, n_mels=N_MELS)
+    level = np.percentile(mel, LEVEL_PERCENTILE)
+    norm = PowerNorm(GAMMA, vmin=level - DB_RANGE, vmax=level, clip=True)
+    ax.imshow(mel, origin="lower", aspect="auto", cmap="inferno", norm=norm)
 
 
 def shorten(text, width, max_lines):
@@ -113,7 +120,7 @@ def load_records(run_dir):
 def render_page(run_dir, items, output, provenance):
     """Render one comparison page and its caption file."""
     n_cols = len(items)
-    fig = plt.figure(figsize=(1.5 + 1.75 * n_cols, 8.6), dpi=250)
+    fig = plt.figure(figsize=(1.5 + 1.75 * n_cols, 7.2), dpi=250)
     grid = fig.add_gridspec(
         len(ROWS),
         n_cols + 1,
@@ -205,11 +212,18 @@ def main():
     parser.add_argument("--per-figure", type=int, default=7)
     parser.add_argument("--seed", type=int, default=42, help="Seed the run used (for the footer)")
     parser.add_argument("--folder", default="comparisons", help="Output folder inside the run directory")
+    parser.add_argument("--selection", default=None, help="JSON from select_figure_clips.py: clips, labels, disclosure")
     args = parser.parse_args()
 
     run_dir = Path(args.run)
     records = load_records(run_dir)
-    if args.items:
+    disclosure = ""
+    if args.selection:
+        selection = json.loads(Path(args.selection).read_text(encoding="utf-8"))
+        by_id = {r["id"]: r for r in records}
+        records = [{**by_id[item["id"]], "label": item["label"]} for item in selection["items"]]
+        disclosure = f" {selection['disclosure']}"
+    elif args.items:
         by_id = {r["id"]: r for r in records}
         records = [by_id[item_id] for item_id in args.items.split(",")]
     else:
@@ -228,7 +242,8 @@ def main():
         f"Recognition: {CLIP_MODEL_ID} zero-shot over Places365 scenes and ImageNet objects. "
         f"Target sound: the real AudioCaps recording (5 s window centred on the input frame; metrics "
         f"use the full 10 s) with its first human caption. Generated clips are 5 s. Mel "
-        f"spectrograms, 16 kHz, 64 bands, each scaled to its own peak with an 80 dB range."
+        f"spectrograms, 16 kHz, {N_MELS} bands, each panel showing {DB_RANGE} dB below its own "
+        f"{LEVEL_PERCENTILE}th-percentile level with the same contrast curve (gamma {GAMMA}).{disclosure}"
     )
 
     (run_dir / args.folder).mkdir(exist_ok=True)

@@ -28,6 +28,7 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
   rescore.py  recompute a finished run's CLAP metrics from its saved audio
   plots.py   result graphs
   figures.py   qualitative comparison figures
+  select_figure_clips.py  rule-based choice of clear examples for the selected pages
   listening_test.py     blind A/B listening test: build the rater package, analyse ratings
   report.py  collect figures, tables and RESULTS.md
 data/                 datasets (see data/README.md); downloaded media is git-ignored
@@ -72,6 +73,8 @@ py -m scripts.test --manifest data/audiocaps/pairs/categories/manifest.json --ru
 py -m scripts.plots --run results/audiocaps_test400 --earlier-run results/audiocaps_test100 results/categories7
 py -m scripts.figures --run results/audiocaps_test400 --count 20
 py -m scripts.figures --run results/audiocaps_test400 --count 140 --folder comparisons_140   # 20 pages of 7 clips
+py -m scripts.select_figure_clips --run results/audiocaps_test400                            # selected examples, rule in the JSON
+py -m scripts.figures --run results/audiocaps_test400 --selection results/audiocaps_test400/selected_clips.json --folder comparisons_selected
 py -m scripts.figures --run results/categories7 --count 7
 py -m scripts.report
 ```
@@ -93,7 +96,7 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 ## Development
 
 ```
-py -m pytest                         # 28 tests, ~10 s, no model downloads
+py -m pytest                         # 38 tests, ~10 s, no model downloads
 py -m ruff check casv scripts tests  # lint
 py -m ruff format casv scripts tests # format
 ```
@@ -112,10 +115,15 @@ Audio is generated on request (about 1-2 min per clip on CPU) and saved to
 ## Listening test
 
 ```
-py -m scripts.listening_test build --run results/audiocaps_test100   # evaluation/listening_test/
+py -m scripts.listening_test build --seed <private number>   # evaluation/listening_test.zip
 py -m scripts.listening_test analyze --ratings "evaluation/ratings/*.csv"
 ```
 
-Send `evaluation/listening_test/` (open `index.html`) to 2-3 raters. Items are the
-test clips where CAS-V changed the prompt; A/B order is randomised and the key is kept in
-`results/listening_test/key.json`, so do not share the rest of the repository with raters.
+Send `evaluation/listening_test.zip` to at least 3 raters who do not know the project, and put the
+returned CSVs in `evaluation/ratings/`. Items are the test clips where CAS-V changed the prompt.
+A/B order is randomised, and this repository is public, so the seed and the answer key
+(`results/listening_test/key.json`) stay out of git until rating has finished; commit the key then.
+
+Analysis fixed before any ratings were collected. Primary: each item counts once, for the system
+most of its raters preferred, with a two-sided sign test over items, ties excluded. Secondary: paired
+per-item reduction in "contains a sound that does not belong" flags. Inter-rater agreement: Fleiss' kappa.
