@@ -259,7 +259,7 @@ def clap_figure(run_dir, results, stats, earlier_ids=frozenset()):
         )
         ax.set_xlim(lo, hi)
         ax.set_ylim(lo, hi)
-        ax.legend(fontsize=7.5, loc="upper left")
+        ax.legend(fontsize=7.5, loc="lower right")
     ax.set_xlabel("Baseline CLAP (vs GT recording)")
     ax.set_ylabel("CAS-V CLAP (vs GT recording)")
     ax.set_title(f"Per item, where CAS-V changed the prompt (n = {len(pairs)})", fontsize=8.5, loc="left", color=INK)

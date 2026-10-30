@@ -1,0 +1,425 @@
+{
+  "places365": {
+    "n_images": 3650,
+    "clip_model": "openai/clip-vit-base-patch32",
+    "scene_top1": 0.38767123287671235,
+    "scene_top5": 0.6854794520547945,
+    "env_accuracy": 0.9161643835616439,
+    "env_accuracy_when_p_ge_0.7": 0.9546023794614903,
+    "env_coverage_p_ge_0.7": 0.8750684931506849,
+    "calibration_bins": [
+      [
+        0.08192108775256202,
+        0.09375,
+        64
+      ],
+      [
+        0.15723466649801437,
+        0.1267605633802817,
+        497
+      ],
+      [
+        0.24853550439531152,
+        0.21460506706408347,
+        671
+      ],
+      [
+        0.3916204455913435,
+        0.3125659978880676,
+        947
+      ],
+      [
+        0.594664171630261,
+        0.48717948717948717,
+        663
+      ],
+      [
+        0.8531194532124122,
+        0.7215346534653465,
+        808
+      ]
+    ]
+  },
+  "tuning": {
+    "tuned_config": {
+      "retrieve_k": 20,
+      "support_top_n": 5,
+      "w_visual": 0.5,
+      "w_scene": 0.0,
+      "w_object": 0.5,
+      "accept_threshold": 0.5,
+      "repair_threshold": 0.4,
+      "env_conflict_confidence": 1.01,
+      "source_absent_z": -99.0,
+      "uncertainty_threshold": 0.1
+    },
+    "val": {
+      "n": 100,
+      "baseline": {
+        "mean": 0.30848637223243713,
+        "ci95": [
+          0.26767868044762877,
+          0.3484960985849611
+        ]
+      },
+      "default": {
+        "mean": 0.3087958097457886,
+        "ci95": [
+          0.2681265714513138,
+          0.3497164431824349
+        ]
+      },
+      "tuned": {
+        "mean": 0.3403741419315338,
+        "ci95": [
+          0.3005796910214703,
+          0.37974523765873164
+        ]
+      },
+      "oracle": {
+        "mean": 0.5149834156036377,
+        "ci95": [
+          0.4819366015074774,
+          0.5469456063904798
+        ]
+      },
+      "default_minus_baseline": {
+        "mean": 0.00030940622673369944,
+        "ci95": [
+          -0.029191666095517575,
+          0.02971738519519567
+        ],
+        "better": 26,
+        "worse": 30,
+        "same": 44
+      },
+      "tuned_minus_baseline": {
+        "mean": 0.031887758523225784,
+        "ci95": [
+          0.010218842672184111,
+          0.05510915954131633
+        ],
+        "better": 23,
+        "worse": 17,
+        "same": 60
+      }
+    },
+    "test": {
+      "n": 400,
+      "baseline": {
+        "mean": 0.2865810692310333,
+        "ci95": [
+          0.2645032056069758,
+          0.3085872731112177
+        ]
+      },
+      "default": {
+        "mean": 0.2894187271595001,
+        "ci95": [
+          0.2676793844071799,
+          0.3111944772753632
+        ]
+      },
+      "tuned": {
+        "mean": 0.2910870611667633,
+        "ci95": [
+          0.2690364695826429,
+          0.31290341821804757
+        ]
+      },
+      "oracle": {
+        "mean": 0.5081192255020142,
+        "ci95": [
+          0.4921055319309235,
+          0.5239995376197621
+        ]
+      },
+      "default_minus_baseline": {
+        "mean": 0.002837643027305603,
+        "ci95": [
+          -0.01297517449245788,
+          0.01828466455533635
+        ],
+        "better": 122,
+        "worse": 110,
+        "same": 168
+      },
+      "tuned_minus_baseline": {
+        "mean": 0.004505977500230074,
+        "ci95": [
+          -0.008425746073771733,
+          0.01714673463563667
+        ],
+        "better": 92,
+        "worse": 68,
+        "same": 240
+      }
+    }
+  },
+  "earlier_runs": [
+    {
+      "run": "audiocaps_test100",
+      "ids": [
+        "AFgGoY8Ihhg",
+        "AbplcXwXnvE",
+        "jj2RyNDj7no",
+        "F-47fRplQEc",
+        "4abZbau8tZo",
+        "ek9Fsmm3xqk",
+        "6Nvu6EcpdE8",
+        "iOCpICiu4LA",
+        "TWOgvDaDqlU",
+        "L6rnV0oNIII",
+        "lmPMhs-9IYE",
+        "jjfUaMQaG1A",
+        "jjHIINDfE1c",
+        "_xylo5_IiaM",
+        "H7-orYrKBeo",
+        "9MgGaTbmc6g",
+        "pgq2KPX5_SA",
+        "GE1aZSnPr2Q",
+        "fK4QBQZ6i7w",
+        "Mj_BO-iK1G4",
+        "CBwXKOpJY_o",
+        "CefFMA3klxk",
+        "PMMkPq5jJXY",
+        "FDwK7T1JO_0",
+        "nD1K1Zo0qrM",
+        "OFVzrakJhbw",
+        "lYhwCRX2wNc",
+        "WCYfCfW9NA0",
+        "w_Utn3CwAXE",
+        "n74IYuCe_ms",
+        "W4GEwnXc9tQ",
+        "4YMXgLFcR94",
+        "5K1mISHwggI",
+        "VQnmlf2OsUg",
+        "TQr9v-PQOc4",
+        "inSvboaSRwA",
+        "WqXFAY4k79s",
+        "a3GzZKxUTy8",
+        "3ue0gJM0THk",
+        "2msevPMQB4M",
+        "sJrFyjfrL-g",
+        "xpZna_FwDhI",
+        "1Og2TJ3bXW0",
+        "JQz40TkjymY",
+        "MBP4RcnwGZw",
+        "sqsI2UyrcBQ",
+        "EvZ3jOMYWxk",
+        "K8-b0VtNOqA",
+        "52IxrdTxGs4",
+        "Dc2WEiRk0rA",
+        "WUyeFOyKIg0",
+        "naPgJvWTIY4",
+        "yL3gKa6YLoM",
+        "ROootH-mtEI",
+        "R8bHTHnF8j4",
+        "PLHXGDnig4M",
+        "1slvoNgzBLE",
+        "5QZ0NtdoKJ8",
+        "PZBUdlKwX04",
+        "BQ-r9mEHssU",
+        "KVAIaRPry24",
+        "FXdoNvmrYxo",
+        "azh_-OkQ-uI",
+        "WUpeplQr3A4",
+        "fwhkCnOeyC0",
+        "sI7_ycEYzAY",
+        "bIiiIo20PsY",
+        "hGWarNR6xmg",
+        "elztUCeNQvQ",
+        "HqndxoujCYI",
+        "KnsKf9KoNds",
+        "a_Rjlu50TfA",
+        "R91bUbtKrRs",
+        "GPj8h-WcjWs",
+        "C8kR19NvynA",
+        "g6CY7qvu81k",
+        "oZaEHkfh5Eg",
+        "2EsxcKe1A4w",
+        "lHh0SwUhP8U",
+        "paf0nyjg1Js",
+        "XQxIXaX_7M0",
+        "GuizRlAQ8qQ",
+        "YIqpIjjee00",
+        "0Rpjl1AO-P0",
+        "S0YE96w0YRk",
+        "Y3lNEe-ZGF0",
+        "1IoHRTUp86c",
+        "BwnGxJD9xh8",
+        "9dLLsZVRSZI",
+        "DAN1t9ukkg0",
+        "EzWEO2WD_MM",
+        "Jon_DEFqsfM",
+        "4YodC6RnplI",
+        "GMP8m09j5vk",
+        "lh801oHGtD4",
+        "o7-X8DAToGc",
+        "vigslb0kClE",
+        "yhDw7PZje3g",
+        "hrv6fwnmBkY",
+        "SoO1HhaEc9Q"
+      ],
+      "n_items": 100,
+      "n_shared": 98,
+      "same_config": true
+    },
+    {
+      "run": "categories7",
+      "ids": [
+        "kgjNIDmO8a8",
+        "JQz40TkjymY",
+        "3MoF8myFs8Y",
+        "0yxEvdnimGg",
+        "zwoqJY03yHE",
+        "fmEft49sPfE",
+        "LB6CZ0x-kns"
+      ],
+      "n_items": 7,
+      "n_shared": 6,
+      "same_config": true
+    }
+  ],
+  "clap": {
+    "clap_text": {
+      "n": 400,
+      "n_prompt_changed": 232,
+      "baseline_mean": 0.18293527408735827,
+      "baseline_ci95": [
+        0.16465320257100394,
+        0.20129622441166428
+      ],
+      "casv_mean": 0.1857530968869105,
+      "casv_ci95": [
+        0.166640263827343,
+        0.20425060043222035
+      ],
+      "mean_diff": 0.002817822799552232,
+      "mean_diff_ci95": [
+        -0.012525682576553662,
+        0.018151329723303192
+      ],
+      "casv_better": 120,
+      "casv_worse": 112,
+      "wilcoxon_p_changed_items": 0.714045850950163
+    },
+    "clap_gt_audio": {
+      "n": 400,
+      "n_prompt_changed": 232,
+      "baseline_mean": 0.3395065528480336,
+      "baseline_ci95": [
+        0.32167181080084994,
+        0.3571543442928232
+      ],
+      "casv_mean": 0.3426003797468729,
+      "casv_ci95": [
+        0.3236909032734693,
+        0.3613342419423861
+      ],
+      "mean_diff": 0.0030938268988393246,
+      "mean_diff_ci95": [
+        -0.012324325210705865,
+        0.01863767867174465
+      ],
+      "casv_better": 121,
+      "casv_worse": 111,
+      "wilcoxon_p_changed_items": 0.7279437044028743
+    }
+  },
+  "clap_new_items": {
+    "clap_text": {
+      "n": 297,
+      "n_prompt_changed": 168,
+      "baseline_mean": 0.1892327511328765,
+      "baseline_ci95": [
+        0.16815919433743928,
+        0.2107452456071512
+      ],
+      "casv_mean": 0.19261342161319372,
+      "casv_ci95": [
+        0.17009781238760935,
+        0.21502854626889178
+      ],
+      "mean_diff": 0.003380670480317239,
+      "mean_diff_ci95": [
+        -0.014803108582641578,
+        0.02115921999303536
+      ],
+      "casv_better": 90,
+      "casv_worse": 78,
+      "wilcoxon_p_changed_items": 0.6956555437061682
+    },
+    "clap_gt_audio": {
+      "n": 297,
+      "n_prompt_changed": 168,
+      "baseline_mean": 0.34947166602230734,
+      "baseline_ci95": [
+        0.32866892951794646,
+        0.3709474141920387
+      ],
+      "casv_mean": 0.3484183373431415,
+      "casv_ci95": [
+        0.32618677195197643,
+        0.37087135949048217
+      ],
+      "mean_diff": -0.0010533286791658562,
+      "mean_diff_ci95": [
+        -0.018555810117328958,
+        0.016591112950569024
+      ],
+      "casv_better": 88,
+      "casv_worse": 80,
+      "wilcoxon_p_changed_items": 0.8455464193604811
+    }
+  },
+  "verification": {
+    "candidate_decisions": {
+      "ACCEPT": 1731,
+      "REPAIR": 3137,
+      "REJECT": 3132
+    },
+    "conflicts": {
+      "absent source: cars on a road": 214,
+      "absent source: a motor vehicle with an engine": 201,
+      "absent source: insects": 33,
+      "absent source: a stream or river": 9,
+      "absent source: birds": 7,
+      "environment: outdoor sound": 240,
+      "absent source: a boat": 5,
+      "absent source: an emergency vehicle": 27,
+      "absent source: ducks or geese": 5,
+      "absent source: a truck or bus": 3,
+      "absent source: a piano": 2,
+      "absent source: a power tool": 9,
+      "absent source: food frying in a pan": 12,
+      "absent source: an airplane": 7,
+      "absent source: a horse": 2,
+      "absent source: a computer keyboard": 11,
+      "absent source: a hammer": 1,
+      "absent source: a dog": 6,
+      "absent source: a bell": 8,
+      "absent source: drums": 2,
+      "absent source: a clock": 16,
+      "absent source: a cat": 15,
+      "absent source: a train": 5,
+      "absent source: a frog": 2,
+      "absent source: a helicopter": 1,
+      "absent source: rain": 3,
+      "absent source: a crowd of people": 6,
+      "absent source: goats or sheep": 1,
+      "absent source: fire": 2,
+      "absent source: a baby": 1,
+      "absent source: a gun": 4,
+      "absent source: a toilet": 2,
+      "absent source: the sea": 1,
+      "environment: indoor sound": 6,
+      "absent source: a motorcycle": 1
+    },
+    "item_status": {
+      "ACCEPT": 364,
+      "UNCERTAIN": 22,
+      "REPAIR": 14
+    }
+  }
+}

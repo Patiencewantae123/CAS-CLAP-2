@@ -1,9 +1,9 @@
 Category,AudioCaps id,Prompt changed,Baseline,CAS-V,Δ
-busy road,kgjNIDmO8a8,yes,0.287,0.275,-0.012
-office,JQz40TkjymY,yes,0.489,0.543,+0.054
-beach,3MoF8myFs8Y,yes,0.506,0.340,-0.165
-field (wind / birds),0yxEvdnimGg,yes,0.162,0.112,-0.050
-cloth scratch,zwoqJY03yHE,no,0.285,0.285,+0.000
-leaves,fmEft49sPfE,yes,0.284,0.257,-0.027
-metal hit,LB6CZ0x-kns,yes,0.544,0.495,-0.050
-Mean,,6/7,0.365,0.330,-0.036
+busy road,kgjNIDmO8a8,yes,0.279,0.261,-0.018
+office,JQz40TkjymY,yes,0.481,0.535,+0.053
+beach,3MoF8myFs8Y,yes,0.535,0.359,-0.176
+field (wind / birds),0yxEvdnimGg,yes,0.155,0.111,-0.043
+cloth scratch,zwoqJY03yHE,no,0.292,0.292,+0.000
+leaves,fmEft49sPfE,yes,0.275,0.257,-0.018
+metal hit,LB6CZ0x-kns,yes,0.526,0.495,-0.031
+Mean,,6/7,0.363,0.330,-0.033

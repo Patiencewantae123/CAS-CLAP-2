@@ -59,6 +59,7 @@ STAGES = [
         ],
     ),
     ("figures", "figures", ["--run", "results/audiocaps_test400", "--count", "20"]),
+    ("figures", "figures", ["--run", "results/audiocaps_test400", "--count", "140", "--folder", "comparisons_140"]),
     ("figures", "figures", ["--run", "results/categories7", "--count", "7"]),
     ("journal", "report", []),
 ]

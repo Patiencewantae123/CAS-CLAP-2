@@ -204,6 +204,7 @@ def main():
     parser.add_argument("--count", type=int, default=20, help="Number of items when --items is not given")
     parser.add_argument("--per-figure", type=int, default=7)
     parser.add_argument("--seed", type=int, default=42, help="Seed the run used (for the footer)")
+    parser.add_argument("--folder", default="comparisons", help="Output folder inside the run directory")
     args = parser.parse_args()
 
     run_dir = Path(args.run)
@@ -230,13 +231,13 @@ def main():
         f"spectrograms, 16 kHz, 64 bands, each scaled to its own peak with an 80 dB range."
     )
 
-    (run_dir / "comparisons").mkdir(exist_ok=True)
+    (run_dir / args.folder).mkdir(exist_ok=True)
     pages = [records[i : i + args.per_figure] for i in range(0, len(records), args.per_figure)]
     for number, page in enumerate(pages, 1):
         render_page(
             run_dir,
             page,
-            run_dir / "comparisons" / f"casv_comparison_{number}.png",
+            run_dir / args.folder / f"casv_comparison_{number}.png",
             f"{provenance} Items {(number - 1) * args.per_figure + 1}-"
             f"{(number - 1) * args.per_figure + len(page)} of {len(records)}.",
         )

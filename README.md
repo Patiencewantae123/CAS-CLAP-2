@@ -71,6 +71,7 @@ py -m scripts.test --manifest data/audiocaps/pairs/categories/manifest.json --ru
 # figures and journal package
 py -m scripts.plots --run results/audiocaps_test400 --earlier-run results/audiocaps_test100 results/categories7
 py -m scripts.figures --run results/audiocaps_test400 --count 20
+py -m scripts.figures --run results/audiocaps_test400 --count 140 --folder comparisons_140   # 20 pages of 7 clips
 py -m scripts.figures --run results/categories7 --count 7
 py -m scripts.report
 ```
@@ -86,6 +87,7 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 - Verifier settings are tuned on AudioCaps **val** and fixed before test is scored; test is never used for tuning.
 - The 400-clip test sample uses the same seeded order as the earlier 100-clip sample; 98 clips are shared, and 2 earlier clips are absent because their downloads failed.
 - Baseline and CAS-V use the same generator and seed; only the prompt differs.
+- CLAP clips over 10 s are cropped to their first 10 s, so scores repeat exactly.
 - Every mean is reported with a bootstrap 95% CI and n; paired differences use Wilcoxon signed-rank.
 
 ## Development
