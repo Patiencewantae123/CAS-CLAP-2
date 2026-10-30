@@ -108,6 +108,25 @@ def summarise(records):
     return summary
 
 
+def score_item(scorer, item_dir, record):
+    """CLAP scores of both arms against the ground-truth captions and recording."""
+    from casv.audio import GENERATOR_SAMPLE_RATE, load_audio
+
+    gt_emb = text_emb = None
+    if record["gt_audio"]:
+        gt_emb = scorer.audio_embedding(load_audio(item_dir / "gt.wav", GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE)
+    if record["gt_captions"]:
+        text_emb = torch.nn.functional.normalize(
+            torch.stack([scorer.text_embedding(c) for c in record["gt_captions"]]).mean(0), dim=-1
+        )
+    metrics = {}
+    for arm in ARMS:
+        emb = scorer.audio_embedding(load_audio(item_dir / f"{arm}.wav", GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE)
+        metrics[f"clap_text_{arm}"] = scorer.cosine(emb, text_emb) if text_emb is not None else None
+        metrics[f"clap_gt_audio_{arm}"] = scorer.cosine(emb, gt_emb) if gt_emb is not None else None
+    return metrics
+
+
 def main():
     setup_logging()
     args = parse_args()
@@ -207,25 +226,7 @@ def main():
                 )
 
             if scorer is not None:
-                gt_emb = text_emb = None
-                if record["gt_audio"]:
-                    gt_emb = scorer.audio_embedding(
-                        load_audio(item_dir / "gt.wav", GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE
-                    )
-                if record["gt_captions"]:
-                    text_emb = torch.nn.functional.normalize(
-                        torch.stack([scorer.text_embedding(c) for c in record["gt_captions"]]).mean(0), dim=-1
-                    )
-                for arm in ARMS:
-                    emb = scorer.audio_embedding(
-                        load_audio(item_dir / f"{arm}.wav", GENERATOR_SAMPLE_RATE), GENERATOR_SAMPLE_RATE
-                    )
-                    record["metrics"][f"clap_text_{arm}"] = (
-                        scorer.cosine(emb, text_emb) if text_emb is not None else None
-                    )
-                    record["metrics"][f"clap_gt_audio_{arm}"] = (
-                        scorer.cosine(emb, gt_emb) if gt_emb is not None else None
-                    )
+                record["metrics"] = score_item(scorer, item_dir, record)
                 log.info(
                     "    metrics  : " + ", ".join(f"{k}={v:.3f}" for k, v in record["metrics"].items() if v is not None)
                 )

@@ -1,0 +1,285 @@
+{
+  "id": "FJkvAMLmejY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\FJkvAMLmejY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\FJkvAMLmejY.wav",
+  "gt_captions": [
+    "People speak followed by a loud air horn and people laughing",
+    "A young man whispering followed by a horn honking then a group of people laughing while someone claps",
+    "People whisper and then a horn sounds and people laugh",
+    "People are whispering, and a horn sounds followed by laughter",
+    "A young man and a girl talking followed by a horn honking then a group of people laughing and a person clapping"
+  ],
+  "top_scene": [
+    "dorm room",
+    0.18613600730895996
+  ],
+  "top_object": [
+    "infant bed",
+    0.09465856850147247
+  ],
+  "env_probs": {
+    "indoor": 0.9504340887069702,
+    "outdoor": 0.049565911293029785
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Multiple people talking at once, followed by snoring",
+    "casv": "Multiple people talking at once, followed by snoring"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08356603980064392,
+    "clap_gt_audio_baseline": 0.17640680074691772,
+    "clap_text_casv": 0.08356603980064392,
+    "clap_gt_audio_casv": 0.17640680074691772
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple people talking at once, followed by snoring",
+      "clip_similarity": 0.3103611171245575,
+      "visual": 1.0,
+      "scene_support": 0.45493836633784174,
+      "object_support": 0.5911791750805813,
+      "score": 0.713835262425527,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person is snoring and it leads up to a deep rumble",
+      "clip_similarity": 0.30516213178634644,
+      "visual": 0.6178428644971905,
+      "scene_support": 0.6285071752743024,
+      "object_support": 0.891078622986978,
+      "score": 0.7030128852772604,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Door opening followed by young man scaring a young women",
+      "clip_similarity": 0.3028419315814972,
+      "visual": 0.4472939965168625,
+      "scene_support": 0.504920986030137,
+      "object_support": 0.4676901909282852,
+      "score": 0.47070095169427173,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child and people laughing followed by slamming",
+      "clip_similarity": 0.3018789291381836,
+      "visual": 0.37650744274182063,
+      "scene_support": 0.6949276073579709,
+      "object_support": 0.8695025424668529,
+      "score": 0.6199320220441753,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A door sliding and then a woman screaming",
+      "clip_similarity": 0.30143314599990845,
+      "visual": 0.34373966285858243,
+      "scene_support": 0.8989859769929194,
+      "object_support": 1.0,
+      "score": 0.7071916582413087,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is communicating to a baby, followed by the baby chuckling then suddenly a dog barks",
+      "clip_similarity": 0.3012281060218811,
+      "visual": 0.3286679737559832,
+      "scene_support": 0.15736797609163788,
+      "object_support": 0.1513078938296619,
+      "score": 0.22406995047878325,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door being broken into by a bunch of males",
+      "clip_similarity": 0.30122658610343933,
+      "visual": 0.3285562504792052,
+      "scene_support": 0.86503174278663,
+      "object_support": 0.6837067137569295,
+      "score": 0.5960440371547499,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two women talk while someone snores nearby",
+      "clip_similarity": 0.3004905879497528,
+      "visual": 0.27445589668882875,
+      "scene_support": 0.34728132400526884,
+      "object_support": 0.3792548886195095,
+      "score": 0.327743222462965,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pounding is followed by kids talking and then a young woman begins speaking",
+      "clip_similarity": 0.3003688454627991,
+      "visual": 0.2655070812841605,
+      "scene_support": 0.6707410518529686,
+      "object_support": 0.7438705088177322,
+      "score": 0.5305863007148744,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud crinkling is interrupted by kids fighting",
+      "clip_similarity": 0.3000744581222534,
+      "visual": 0.24386781602900423,
+      "scene_support": 0.5860390305855455,
+      "object_support": 0.5835876051629314,
+      "score": 0.4484351171361448,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+      "clip_similarity": 0.29936766624450684,
+      "visual": 0.19191430167475382,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.07676572066990153,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone snores while a woman and a kid talk",
+      "clip_similarity": 0.29929694533348083,
+      "visual": 0.1867158833258486,
+      "scene_support": 0.5721082123445195,
+      "object_support": 0.769058317951302,
+      "score": 0.47703631241908584,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two men communicating with each other as a dog whimpers",
+      "clip_similarity": 0.2991352379322052,
+      "visual": 0.174829402937665,
+      "scene_support": 0.41448319207653195,
+      "object_support": 0.24567373297195932,
+      "score": 0.26797883868961336,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Door being slammed shut followed by laughter and a male's voice in the background",
+      "clip_similarity": 0.29859527945518494,
+      "visual": 0.13513916119916317,
+      "scene_support": 0.782113846709482,
+      "object_support": 0.9155075768604966,
+      "score": 0.5633420915506588,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Door screeching followed by child speaking",
+      "clip_similarity": 0.2981813848018646,
+      "visual": 0.10471537947577686,
+      "scene_support": 1.0,
+      "object_support": 0.9624630661524153,
+      "score": 0.6306250716360353,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman and man talking with loud snoring",
+      "clip_similarity": 0.29815980792045593,
+      "visual": 0.1031293470760266,
+      "scene_support": 0.2665716217806437,
+      "object_support": 0.3995327684412766,
+      "score": 0.2410830558969867,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl hiccuping as another girl talks followed by several slaps on skin",
+      "clip_similarity": 0.2977292239665985,
+      "visual": 0.07147879996056826,
+      "scene_support": 0.7699351587085103,
+      "object_support": 0.7487555452631516,
+      "score": 0.48419873117572587,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays followed by a door opening and a woman sneezing",
+      "clip_similarity": 0.29724520444869995,
+      "visual": 0.03590041293799358,
+      "scene_support": 0.8097715831697885,
+      "object_support": 0.7782045605239873,
+      "score": 0.4907530082833302,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two girls burping and talking with some scraping",
+      "clip_similarity": 0.29720833897590637,
+      "visual": 0.033190575813005906,
+      "scene_support": 0.3297838822455683,
+      "object_support": 0.10775292095157131,
+      "score": 0.14453727128434424,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog growling and woman laughing",
+      "clip_similarity": 0.2967568039894104,
+      "visual": 0.0,
+      "scene_support": 0.25827354164034316,
+      "object_support": 0.14106787379467609,
+      "score": 0.11980242463050578,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "dorm room",
+      0.18613600730895996
+    ],
+    [
+      "locker room",
+      0.152057483792305
+    ],
+    [
+      "childs room",
+      0.07745315879583359
+    ],
+    [
+      "bedroom",
+      0.06774616986513138
+    ],
+    [
+      "indoor jacuzzi",
+      0.06434296071529388
+    ]
+  ],
+  "top_objects": [
+    [
+      "infant bed",
+      0.09465856850147247
+    ],
+    [
+      "four-poster bed",
+      0.0847499743103981
+    ],
+    [
+      "punching bag",
+      0.03707476705312729
+    ],
+    [
+      "stretcher",
+      0.030100034549832344
+    ],
+    [
+      "sliding door",
+      0.028365926817059517
+    ]
+  ]
+}

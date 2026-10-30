@@ -1,0 +1,287 @@
+{
+  "id": "hV4bDCBDCy0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\hV4bDCBDCy0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\hV4bDCBDCy0.wav",
+  "gt_captions": [
+    "Vehicle running with a far away voice in the background",
+    "A truck engine running then accelerating followed by a man talking as wind blows into a microphone",
+    "Humming of a large truck engine with blowing wind",
+    "Humming of a large engine with wind blowing",
+    "An engine running and revving lightly"
+  ],
+  "top_scene": [
+    "excavation",
+    0.507865846157074
+  ],
+  "top_object": [
+    "plow",
+    0.205631285905838
+  ],
+  "env_probs": {
+    "indoor": 0.10562223941087723,
+    "outdoor": 0.8943777605891228
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A monster truck driving over a dirt hill",
+    "casv": "A monster truck driving over a dirt hill"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4648153781890869,
+    "clap_gt_audio_baseline": 0.5741369724273682,
+    "clap_text_casv": 0.4648153781890869,
+    "clap_gt_audio_casv": 0.5741369724273682
+  },
+  "verdicts": [
+    {
+      "caption": "A monster truck driving over a dirt hill",
+      "clip_similarity": 0.3053916394710541,
+      "visual": 1.0,
+      "scene_support": 0.3653704212357469,
+      "object_support": 0.6228348896503161,
+      "score": 0.6964615932658189,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck engine revving then turning off as tires skid on dirt and gravel",
+      "clip_similarity": 0.2981143891811371,
+      "visual": 0.6621899054291106,
+      "scene_support": 0.5067294893194447,
+      "object_support": 0.6706660225306844,
+      "score": 0.618094615726683,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Heavy machinery operating and a woman speaking in the background with a series of electronic buzzes and metal screeches",
+      "clip_similarity": 0.2964302599430084,
+      "visual": 0.5840125946953976,
+      "scene_support": 0.7451034249614401,
+      "object_support": 0.6596245341294787,
+      "score": 0.6550234256054347,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A powerful car speeds past on a dirt path",
+      "clip_similarity": 0.29516613483428955,
+      "visual": 0.5253318835046012,
+      "scene_support": 0.680023875425215,
+      "object_support": 0.8765351528104985,
+      "score": 0.6771004618725546,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Heavy sound vehicle driving over rocks",
+      "clip_similarity": 0.29357829689979553,
+      "visual": 0.45162441688663113,
+      "scene_support": 0.595465782078641,
+      "object_support": 0.630196606363782,
+      "score": 0.5483484832873794,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Footsteps on gravel followed by a big crash",
+      "clip_similarity": 0.2910909354686737,
+      "visual": 0.336161052730603,
+      "scene_support": 0.6861297161007698,
+      "object_support": 0.6891151782199244,
+      "score": 0.5470378893884494,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud motor shuts off nearby and then some shuffling of feet on a gravel happen",
+      "clip_similarity": 0.29007473587989807,
+      "visual": 0.28898904881274523,
+      "scene_support": 0.5899209082521639,
+      "object_support": 0.6738009073375616,
+      "score": 0.4947121642020158,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle is being driven loudly on an unpaved road",
+      "clip_similarity": 0.2889931797981262,
+      "visual": 0.23878319526758193,
+      "scene_support": 0.6944519568692908,
+      "object_support": 0.825928977798421,
+      "score": 0.5516275585073463,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car drives past, tires squeal on pavement, and gravel flies up and down",
+      "clip_similarity": 0.28775694966316223,
+      "visual": 0.18139736928023198,
+      "scene_support": 0.5519804630001338,
+      "object_support": 0.6831254587295535,
+      "score": 0.44309072423099893,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle speeds by and away with a small turn in some gravel",
+      "clip_similarity": 0.2877247929573059,
+      "visual": 0.17990465439292572,
+      "scene_support": 0.4361177431736708,
+      "object_support": 0.6001259915078371,
+      "score": 0.38283498216162265,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle driving by as gravel shuffles while a woman is speaking in the distance followed by two men speaking while gusts of wind blow",
+      "clip_similarity": 0.28646260499954224,
+      "visual": 0.12131386578570204,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.04852554631428082,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drilling and banging sound",
+      "clip_similarity": 0.28614264726638794,
+      "visual": 0.10646142182822296,
+      "scene_support": 0.8842862374724446,
+      "object_support": 0.8430427725334787,
+      "score": 0.5607832717330661,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle accelerating as dirt and gravel shuffle and crunch while metal rattles and squeaks",
+      "clip_similarity": 0.2861179709434509,
+      "visual": 0.10531594645594347,
+      "scene_support": 0.8579708001436751,
+      "object_support": 0.8836640118825702,
+      "score": 0.564616822190251,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy machinery running continuously",
+      "clip_similarity": 0.28608956933021545,
+      "visual": 0.10399754303833192,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6415990172153327,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.2858983278274536,
+      "visual": 0.09512010890316583,
+      "scene_support": 0.44122314014663316,
+      "object_support": 0.4096608599215363,
+      "score": 0.2933132435817172,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tires rolling over gravel with a small mechanical motor all come to a stop followed by a beep",
+      "clip_similarity": 0.28547126054763794,
+      "visual": 0.07529563778629968,
+      "scene_support": 0.5253597160303408,
+      "object_support": 0.6820757364821483,
+      "score": 0.39234889086826663,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drill is being used and then a man speaks after its done being used",
+      "clip_similarity": 0.28527384996414185,
+      "visual": 0.0661318348080637,
+      "scene_support": 0.9374361737342151,
+      "object_support": 0.7563613602860361,
+      "score": 0.5345919941293008,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train moves down a track quickly, and sounds its horn",
+      "clip_similarity": 0.284625381231308,
+      "visual": 0.03602990410102318,
+      "scene_support": 0.5311845450639847,
+      "object_support": 0.7732143544627322,
+      "score": 0.40573163149842434,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.28400880098342896,
+      "visual": 0.007408237462025001,
+      "scene_support": 0.8044486467070929,
+      "object_support": 0.8185057866676271,
+      "score": 0.48984962499722595,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Manual and machine digging with various people speaking out",
+      "clip_similarity": 0.28384920954704285,
+      "visual": 0.0,
+      "scene_support": 0.769484882418813,
+      "object_support": 0.7085106673637906,
+      "score": 0.4433986649347811,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "excavation",
+      0.507865846157074
+    ],
+    [
+      "construction site",
+      0.09161890298128128
+    ],
+    [
+      "archaelogical excavation",
+      0.0879397988319397
+    ],
+    [
+      "ski slope",
+      0.039389319717884064
+    ],
+    [
+      "raceway",
+      0.030043762177228928
+    ]
+  ],
+  "top_objects": [
+    [
+      "plow",
+      0.205631285905838
+    ],
+    [
+      "mountain bike",
+      0.16286113858222961
+    ],
+    [
+      "shovel",
+      0.04754949361085892
+    ],
+    [
+      "snowplow",
+      0.04577231779694557
+    ],
+    [
+      "tow truck",
+      0.038243912160396576
+    ]
+  ]
+}

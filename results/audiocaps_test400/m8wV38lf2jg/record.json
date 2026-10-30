@@ -1,0 +1,283 @@
+{
+  "id": "m8wV38lf2jg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\m8wV38lf2jg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\m8wV38lf2jg.wav",
+  "gt_captions": [
+    "People are speaking while an engine is running, and an emergency vehicle sounds horn",
+    "Emergency vehicle sirens are ongoing, and two adult males speak",
+    "Emergency sirens and muffled speech",
+    "A siren that gets louder and muffled male speech",
+    "A man speaking over an intercom as emergency sirens wail in the distance and grow louder as a vehicle engine runs"
+  ],
+  "top_scene": [
+    "crosswalk",
+    0.7152801752090454
+  ],
+  "top_object": [
+    "traffic light",
+    0.2408115565776825
+  ],
+  "env_probs": {
+    "indoor": 0.09242164343595505,
+    "outdoor": 0.907578356564045
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Person is repeatedly hitting their car horn over and over and over",
+    "casv": "A car driving quickly down a road followed by speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11654423177242279,
+    "clap_gt_audio_baseline": 0.42601698637008667,
+    "clap_text_casv": 0.20405372977256775,
+    "clap_gt_audio_casv": 0.44005441665649414
+  },
+  "verdicts": [
+    {
+      "caption": "Person is repeatedly hitting their car horn over and over and over",
+      "clip_similarity": 0.3258592486381531,
+      "visual": 1.0,
+      "scene_support": 0.43231787306785063,
+      "object_support": 0.6604905552218178,
+      "score": 0.7278425284869006,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle passes by followed by another one with a siren",
+      "clip_similarity": 0.3253774046897888,
+      "visual": 0.9404445295751406,
+      "scene_support": 0.46376728159237435,
+      "object_support": 0.26783926404937747,
+      "score": 0.5956597755225819,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud engine of vehicle repeatedly driving by",
+      "clip_similarity": 0.3247472047805786,
+      "visual": 0.862552398352721,
+      "scene_support": 0.3784222561502166,
+      "object_support": 0.4801641989705172,
+      "score": 0.6025968958773086,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicle drives by quickly while a man is speaking",
+      "clip_similarity": 0.3237400949001312,
+      "visual": 0.7380745401100641,
+      "scene_support": 0.9275859924974612,
+      "object_support": 0.7667938796423902,
+      "score": 0.803543777685981,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man honks horn and drives off",
+      "clip_similarity": 0.323039174079895,
+      "visual": 0.6514413690980485,
+      "scene_support": 0.6638418924758915,
+      "object_support": 0.7469659312657299,
+      "score": 0.6838188947617058,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle horn goes off and then another and another",
+      "clip_similarity": 0.32265639305114746,
+      "visual": 0.6041299847501455,
+      "scene_support": 0.42351578457719347,
+      "object_support": 0.8607852260189799,
+      "score": 0.6269422970789102,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car driving quickly down a road followed by speaking",
+      "clip_similarity": 0.32196158170700073,
+      "visual": 0.5182519393836701,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.807300775753468,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicle running down road while man speaks",
+      "clip_similarity": 0.32047873735427856,
+      "visual": 0.33497373636169414,
+      "scene_support": 0.8816619190502618,
+      "object_support": 0.5736637729641016,
+      "score": 0.5705872021489866,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car revs multiple times and then turns off",
+      "clip_similarity": 0.32038208842277527,
+      "visual": 0.3230280170032194,
+      "scene_support": 0.8243919251373432,
+      "object_support": 0.8391462595851443,
+      "score": 0.628272662218034,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car accelerating down road",
+      "clip_similarity": 0.3202257454395294,
+      "visual": 0.3037041675568554,
+      "scene_support": 0.9278009209684984,
+      "object_support": 0.5875678763678339,
+      "score": 0.5760923062236418,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man coughs, then vehicle goes by",
+      "clip_similarity": 0.3194448947906494,
+      "visual": 0.2071917429773315,
+      "scene_support": 0.7085830917307039,
+      "object_support": 0.5662508686997185,
+      "score": 0.4653268853200593,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Traffic sounds then young child crying",
+      "clip_similarity": 0.31922709941864014,
+      "visual": 0.18027243459875203,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.07210897383950081,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle speeds by, and a police siren goes off",
+      "clip_similarity": 0.31916436553001404,
+      "visual": 0.17251858345795976,
+      "scene_support": 0.8263976683331299,
+      "object_support": 0.827073787452246,
+      "score": 0.5650488701187967,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A police car siren sounds and then stops, and restarts again as a car accelerates",
+      "clip_similarity": 0.318819522857666,
+      "visual": 0.1298963451918756,
+      "scene_support": 0.1743776093659687,
+      "object_support": 0.26647192087667015,
+      "score": 0.18421339714954188,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle running loudly with a clanking sound",
+      "clip_similarity": 0.31871432065963745,
+      "visual": 0.11689344992964439,
+      "scene_support": 0.37805150453767733,
+      "object_support": 0.33720665433800173,
+      "score": 0.2613348276345615,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine idles nearby, and then slows to nearly a stop",
+      "clip_similarity": 0.3184650242328644,
+      "visual": 0.08608064005186424,
+      "scene_support": 0.7341480657589009,
+      "object_support": 0.6973234232854714,
+      "score": 0.46387370273405737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by a car speeding by",
+      "clip_similarity": 0.31823644042015076,
+      "visual": 0.05782789028945255,
+      "scene_support": 0.8505510228676217,
+      "object_support": 0.6197863293167014,
+      "score": 0.46423236177107796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle drives by quickly followed by a man speaking",
+      "clip_similarity": 0.31821927428245544,
+      "visual": 0.055706171402470916,
+      "scene_support": 0.9062497361369217,
+      "object_support": 0.6767563439618989,
+      "score": 0.49718429259063457,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car revs up multiple times, followed by a siren blaring and a car colliding",
+      "clip_similarity": 0.3180743455886841,
+      "visual": 0.03779311767436035,
+      "scene_support": 0.5379912938617196,
+      "object_support": 0.6080171658990698,
+      "score": 0.35891978499798094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car revving its engine, and then coming to a stop",
+      "clip_similarity": 0.31776857376098633,
+      "visual": 0.0,
+      "scene_support": 0.7362390127414203,
+      "object_support": 0.6846207757635723,
+      "score": 0.4262579365514978,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "crosswalk",
+      0.7152801752090454
+    ],
+    [
+      "highway",
+      0.027823809534311295
+    ],
+    [
+      "street",
+      0.026472600176930428
+    ],
+    [
+      "parking lot",
+      0.020655887201428413
+    ],
+    [
+      "auto showroom",
+      0.018220553174614906
+    ]
+  ],
+  "top_objects": [
+    [
+      "traffic light",
+      0.2408115565776825
+    ],
+    [
+      "car mirror",
+      0.09187331795692444
+    ],
+    [
+      "tow truck",
+      0.06717827171087265
+    ],
+    [
+      "pickup truck",
+      0.0579996183514595
+    ],
+    [
+      "convertible",
+      0.03748881816864014
+    ]
+  ]
+}

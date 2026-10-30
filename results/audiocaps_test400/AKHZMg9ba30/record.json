@@ -1,0 +1,287 @@
+{
+  "id": "AKHZMg9ba30",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AKHZMg9ba30.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AKHZMg9ba30.wav",
+  "gt_captions": [
+    "Male speech with people speaking in the background",
+    "A man talking as a man laughs then talks in the background while a horse snorts and trots",
+    "Clip-clop of horse while man speaks",
+    "A man talking in the foreground as another man laughs then talks in the background while a horse trots and snorts",
+    "A man speaking as a horse is trotting while a man talks then laughs in the background"
+  ],
+  "top_scene": [
+    "performance arena",
+    0.3631981611251831
+  ],
+  "top_object": [
+    "breastplate",
+    0.0847867876291275
+  ],
+  "env_probs": {
+    "indoor": 0.7361716032028198,
+    "outdoor": 0.2638283967971802
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Clip-clop of a horse trotting by",
+    "casv": "A horse clip-clopping while galloping in low frequency"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.067940354347229,
+    "clap_gt_audio_baseline": 0.29350703954696655,
+    "clap_text_casv": -0.017472529783844948,
+    "clap_gt_audio_casv": 0.26683032512664795
+  },
+  "verdicts": [
+    {
+      "caption": "Clip-clop of a horse trotting by",
+      "clip_similarity": 0.3371701240539551,
+      "visual": 1.0,
+      "scene_support": 0.2963622190463817,
+      "object_support": 0.35707103858573663,
+      "score": 0.5960299772896356,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse clip-clopping while galloping in low frequency",
+      "clip_similarity": 0.32874321937561035,
+      "visual": 0.6521516626624003,
+      "scene_support": 0.6527635999183355,
+      "object_support": 0.8365189118227053,
+      "score": 0.7076454185872724,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A horse running with fast clip-clops with people speaking",
+      "clip_similarity": 0.3276878297328949,
+      "visual": 0.6085869676201864,
+      "scene_support": 0.3045407301546057,
+      "object_support": 0.11485466029921816,
+      "score": 0.3692534041842217,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse is trotting around at medium speed",
+      "clip_similarity": 0.32710203528404236,
+      "visual": 0.5844063659837886,
+      "scene_support": 0.8340475881141075,
+      "object_support": 0.5201210167521007,
+      "score": 0.6400131278533778,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clop of horse running and female speech",
+      "clip_similarity": 0.3247731626033783,
+      "visual": 0.48827445032064887,
+      "scene_support": 0.4652545518662187,
+      "object_support": 0.5579029418390875,
+      "score": 0.5022570282398514,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is walking at a medium speed",
+      "clip_similarity": 0.32272255420684814,
+      "visual": 0.4036288125105335,
+      "scene_support": 0.7531839863397614,
+      "object_support": 0.546459752403786,
+      "score": 0.5513446466272776,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip clop of horse running with a male speaking",
+      "clip_similarity": 0.3198075294494629,
+      "visual": 0.2833015329389346,
+      "scene_support": 0.3139442083186399,
+      "object_support": 0.31932040374147863,
+      "score": 0.30329999679360936,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blows in the microphone while a horse gallops",
+      "clip_similarity": 0.31910833716392517,
+      "visual": 0.25444006086976845,
+      "scene_support": 0.6494766049852447,
+      "object_support": 0.6455823739976693,
+      "score": 0.49029371804278155,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse runs and then slows to a walk",
+      "clip_similarity": 0.3184628188610077,
+      "visual": 0.22779415979913467,
+      "scene_support": 0.7353931958648082,
+      "object_support": 0.6898907483791654,
+      "score": 0.518702847192846,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is trotting making a clip-clop sound",
+      "clip_similarity": 0.31839698553085327,
+      "visual": 0.22507667155051833,
+      "scene_support": 0.6732539579427977,
+      "object_support": 0.6855156771069458,
+      "score": 0.49766155913513044,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is trotting around at a medium pace",
+      "clip_similarity": 0.3180871903896332,
+      "visual": 0.21228885337742331,
+      "scene_support": 0.7098916089756677,
+      "object_support": 0.45892077866812037,
+      "score": 0.43555925764410575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse trotting at a steady rate as wind blows into a microphone",
+      "clip_similarity": 0.3172677755355835,
+      "visual": 0.17846479751698585,
+      "scene_support": 0.3318677035579725,
+      "object_support": 0.34698723636232154,
+      "score": 0.2750424009828826,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.74)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse clip clops through sand and exhales",
+      "clip_similarity": 0.31667184829711914,
+      "visual": 0.15386593150551803,
+      "scene_support": 0.22014235601997068,
+      "object_support": 0.30212189566025194,
+      "score": 0.21822564810627398,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse does clip-clop while someone shouts followed by a woman laughing",
+      "clip_similarity": 0.31633812189102173,
+      "visual": 0.1400902712936548,
+      "scene_support": 0.0,
+      "object_support": 0.1558998100334597,
+      "score": 0.10280605152749983,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horse galloping and their hooves clip-clopping and a man speaking",
+      "clip_similarity": 0.3154832422733307,
+      "visual": 0.10480229012047244,
+      "scene_support": 0.5834759368213961,
+      "object_support": 0.4857865810751049,
+      "score": 0.36269967141713927,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse that is running and jumping with a woman speaking",
+      "clip_similarity": 0.3146665394306183,
+      "visual": 0.0710901814898331,
+      "scene_support": 0.24063549806046883,
+      "object_support": 0.0,
+      "score": 0.10062672201407388,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse runs with faint clip-clops",
+      "clip_similarity": 0.31445977091789246,
+      "visual": 0.06255512785972889,
+      "scene_support": 0.8664823029380649,
+      "object_support": 0.6680355568411596,
+      "score": 0.4853774090776589,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse moves fast doing clip-clop and breathing deeply",
+      "clip_similarity": 0.313184916973114,
+      "visual": 0.009931318529234835,
+      "scene_support": 0.7881400916869281,
+      "object_support": 0.7977468243880323,
+      "score": 0.4797386022341821,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse is trotting and metal clings",
+      "clip_similarity": 0.31312841176986694,
+      "visual": 0.007598879543550548,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6030395518174202,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse galloping then girl speaks",
+      "clip_similarity": 0.31294432282447815,
+      "visual": 0.0,
+      "scene_support": 0.6183271775645428,
+      "object_support": 0.49200986268450814,
+      "score": 0.33310111207471527,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "performance arena",
+      0.3631981611251831
+    ],
+    [
+      "stable",
+      0.25895529985427856
+    ],
+    [
+      "racecourse",
+      0.10561810433864594
+    ],
+    [
+      "carrousel",
+      0.05682474747300148
+    ],
+    [
+      "ballroom",
+      0.05434773862361908
+    ]
+  ],
+  "top_objects": [
+    [
+      "breastplate",
+      0.0847867876291275
+    ],
+    [
+      "neck brace",
+      0.07028736174106598
+    ],
+    [
+      "cuirass",
+      0.06991498172283173
+    ],
+    [
+      "muzzle",
+      0.068556047976017
+    ],
+    [
+      "knee pad",
+      0.04492500051856041
+    ]
+  ]
+}

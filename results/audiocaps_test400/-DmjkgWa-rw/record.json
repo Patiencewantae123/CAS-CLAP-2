@@ -1,0 +1,287 @@
+{
+  "id": "-DmjkgWa-rw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-DmjkgWa-rw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-DmjkgWa-rw.wav",
+  "gt_captions": [
+    "A bell is ringing",
+    "Church bells ringing during audio static",
+    "A bell ringing repeatedly",
+    "A bell ringing repeatedly",
+    "Large church bells ring"
+  ],
+  "top_scene": [
+    "attic",
+    0.4721151888370514
+  ],
+  "top_object": [
+    "stretcher",
+    0.06814351677894592
+  ],
+  "env_probs": {
+    "indoor": 0.9002088904380798,
+    "outdoor": 0.09979110956192017
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A person snoring with some mechanical humming",
+    "casv": "A saw running in the background with some tapping on a table"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.07608658075332642,
+    "clap_gt_audio_baseline": 0.20387402176856995,
+    "clap_text_casv": 0.007952706888318062,
+    "clap_gt_audio_casv": 0.20120109617710114
+  },
+  "verdicts": [
+    {
+      "caption": "A person snoring with some mechanical humming",
+      "clip_similarity": 0.30020296573638916,
+      "visual": 1.0,
+      "scene_support": 0.4542276054118385,
+      "object_support": 0.4480655925217811,
+      "score": 0.6706879593800859,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Male talking with repeat bell ringing and squeaking sounds followed by a train horn",
+      "clip_similarity": 0.2991988956928253,
+      "visual": 0.8569821540760362,
+      "scene_support": 0.09914535194784456,
+      "object_support": 0.0,
+      "score": 0.37253646721476785,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal filing and scrapping a surface followed by metal clank then a man speaking while a large machine motor runs idle",
+      "clip_similarity": 0.297904372215271,
+      "visual": 0.6725926680590223,
+      "scene_support": 0.4756992972349828,
+      "object_support": 0.5556879612035185,
+      "score": 0.5784532447551592,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric saw works and some wood is hit",
+      "clip_similarity": 0.297584593296051,
+      "visual": 0.6270439610819623,
+      "scene_support": 0.9127675000611961,
+      "object_support": 0.9781877147728593,
+      "score": 0.8181041488830014,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A saw running in the background with some tapping on a table",
+      "clip_similarity": 0.29717332124710083,
+      "visual": 0.5684631450257246,
+      "scene_support": 1.0,
+      "object_support": 0.9890296878187129,
+      "score": 0.8240941643559037,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking in a foreign language followed by a sawing sound created by a power tool cutting through wood",
+      "clip_similarity": 0.2969881594181061,
+      "visual": 0.5420890428404055,
+      "scene_support": 0.16443990362479413,
+      "object_support": 0.5275211808371616,
+      "score": 0.4244239424747489,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal rattling is followed by a man speaking and a tool scraping a surface",
+      "clip_similarity": 0.2969367802143097,
+      "visual": 0.5347706858200465,
+      "scene_support": 0.5553650379940716,
+      "object_support": 0.5331534633511251,
+      "score": 0.5404638247315776,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.2962493300437927,
+      "visual": 0.4368515782860442,
+      "scene_support": 0.47712604193743535,
+      "object_support": 0.7578830971990838,
+      "score": 0.5452433730553734,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal scrapping and clanking as compressed air sprays and pressurized air hisses as a small motor hum in the background",
+      "clip_similarity": 0.2962344288825989,
+      "visual": 0.43472908495067325,
+      "scene_support": 0.8514203919584752,
+      "object_support": 0.7355960059689898,
+      "score": 0.6499965533585088,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.2960236370563507,
+      "visual": 0.4047042942285161,
+      "scene_support": 0.39743407425366917,
+      "object_support": 0.5437616932567788,
+      "score": 0.4442404479445409,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring as a fan blows air in the background",
+      "clip_similarity": 0.296011745929718,
+      "visual": 0.4030105445468901,
+      "scene_support": 0.4108004807103883,
+      "object_support": 0.24597293264196113,
+      "score": 0.35823624182446084,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as a machine motor hums followed by wood clacking then sanding against a wooden surface and metal rattling",
+      "clip_similarity": 0.29592737555503845,
+      "visual": 0.3909929872820199,
+      "scene_support": 0.0,
+      "object_support": 0.15334184373075524,
+      "score": 0.20239974803203456,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking, followed by a girl talking and a pig oinking while sleeping",
+      "clip_similarity": 0.29457154870033264,
+      "visual": 0.19787156368329004,
+      "scene_support": 0.20621822899485603,
+      "object_support": 0.09164097444050481,
+      "score": 0.16850638650392427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An automatic saw working",
+      "clip_similarity": 0.2945120632648468,
+      "visual": 0.1893985702884893,
+      "scene_support": 0.9211228154428796,
+      "object_support": 1.0,
+      "score": 0.6520962727482595,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.2939358651638031,
+      "visual": 0.10732599799636629,
+      "scene_support": 0.9071584351035148,
+      "object_support": 0.8774483251986817,
+      "score": 0.5783124272892055,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.52)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood being cut by a power saw",
+      "clip_similarity": 0.29387253522872925,
+      "visual": 0.09830540132103985,
+      "scene_support": 0.1681781146221516,
+      "object_support": 0.3985569410977046,
+      "score": 0.2093426772443728,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thumping on wooden table with talking in background followed by a power tool",
+      "clip_similarity": 0.29362753033638,
+      "visual": 0.06340736590087107,
+      "scene_support": 0.7616893403287341,
+      "object_support": 0.6295893440455033,
+      "score": 0.4427465516726196,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.2934870719909668,
+      "visual": 0.04340074372166471,
+      "scene_support": 0.5740426881082461,
+      "object_support": 0.5193645700053385,
+      "score": 0.34538247492274127,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood being sawed by machine",
+      "clip_similarity": 0.29342979192733765,
+      "visual": 0.03524187934049887,
+      "scene_support": 0.15728111882895032,
+      "object_support": 0.5404731859043614,
+      "score": 0.22342304315619307,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical wood saw working",
+      "clip_similarity": 0.293182373046875,
+      "visual": 0.0,
+      "scene_support": 0.7682979425269001,
+      "object_support": 0.9597971558486047,
+      "score": 0.5184285295126514,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "attic",
+      0.4721151888370514
+    ],
+    [
+      "indoor escalator",
+      0.026445241644978523
+    ],
+    [
+      "mezzanine",
+      0.024998100474476814
+    ],
+    [
+      "elevator shaft",
+      0.019598083570599556
+    ],
+    [
+      "interior balcony",
+      0.015257676132023335
+    ]
+  ],
+  "top_objects": [
+    [
+      "stretcher",
+      0.06814351677894592
+    ],
+    [
+      "sawmill",
+      0.051388394087553024
+    ],
+    [
+      "guillotine",
+      0.030793646350502968
+    ],
+    [
+      "pulled rickshaw",
+      0.024751931428909302
+    ],
+    [
+      "infant bed",
+      0.0217613335698843
+    ]
+  ]
+}

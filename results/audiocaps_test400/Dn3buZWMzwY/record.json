@@ -1,0 +1,283 @@
+{
+  "id": "Dn3buZWMzwY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Dn3buZWMzwY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Dn3buZWMzwY.wav",
+  "gt_captions": [
+    "Men speak as someone snores",
+    "Snoring is ongoing, while an adult female laughs and an adult male speaks",
+    "A man and a kid laughing followed by another man speaking as a person snores",
+    "A person snores as a man talks and a person laughs",
+    "Someone snores and others speak and laugh"
+  ],
+  "top_scene": [
+    "bedroom",
+    0.264692097902298
+  ],
+  "top_object": [
+    "pillow",
+    0.09077556431293488
+  ],
+  "env_probs": {
+    "indoor": 0.8449851870536804,
+    "outdoor": 0.15501481294631958
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A fan spins while a person snores",
+    "casv": "Camera noise followed by a man and a woman laughing as a man snores loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.0715576782822609,
+    "clap_gt_audio_baseline": 0.25436240434646606,
+    "clap_text_casv": 0.1711481809616089,
+    "clap_gt_audio_casv": 0.4411405026912689
+  },
+  "verdicts": [
+    {
+      "caption": "A fan spins while a person snores",
+      "clip_similarity": 0.31254443526268005,
+      "visual": 1.0,
+      "scene_support": 0.19243822346087275,
+      "object_support": 0.28203107996343535,
+      "score": 0.5423407910272925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud snores separated three seconds apart, followed by a man speaking",
+      "clip_similarity": 0.30097144842147827,
+      "visual": 0.5231595918813415,
+      "scene_support": 0.5008511100480901,
+      "object_support": 0.5947378444260654,
+      "score": 0.5379405230947832,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Camera noise followed by a man and a woman laughing as a man snores loudly",
+      "clip_similarity": 0.3009594678878784,
+      "visual": 0.5226659593723254,
+      "scene_support": 0.7445121542582078,
+      "object_support": 0.7861500457058286,
+      "score": 0.6682650437381411,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snores while a fan spins",
+      "clip_similarity": 0.29893603920936584,
+      "visual": 0.43929486683587704,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.17571794673435082,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snoring with some clicking",
+      "clip_similarity": 0.2982720136642456,
+      "visual": 0.4119351008324216,
+      "scene_support": 0.5792886540999101,
+      "object_support": 0.6501278674966264,
+      "score": 0.5335989968119296,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores while sleeping",
+      "clip_similarity": 0.29533132910728455,
+      "visual": 0.29077042281711896,
+      "scene_support": 0.515661765215643,
+      "object_support": 0.642697405650111,
+      "score": 0.4638159203865738,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two women talk while someone snores nearby",
+      "clip_similarity": 0.2940096855163574,
+      "visual": 0.23631489824662225,
+      "scene_support": 0.37973650945510934,
+      "object_support": 0.3296930091846951,
+      "score": 0.3073548148905902,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone snores followed by a woman laughing",
+      "clip_similarity": 0.2937977612018585,
+      "visual": 0.22758300577992094,
+      "scene_support": 0.47934804461914965,
+      "object_support": 0.5071818003743525,
+      "score": 0.386992155810019,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person snoring repeatedly in white noise",
+      "clip_similarity": 0.2933148145675659,
+      "visual": 0.2076842127236849,
+      "scene_support": 0.26372071203917463,
+      "object_support": 0.2953287554955818,
+      "score": 0.25078852534990087,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person is snoring and it leads up to a deep rumble",
+      "clip_similarity": 0.29291000962257385,
+      "visual": 0.19100508245013637,
+      "scene_support": 0.5857850987569587,
+      "object_support": 0.623819810211988,
+      "score": 0.43928350567073854,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring during camera muffling followed by a woman giggling",
+      "clip_similarity": 0.29275059700012207,
+      "visual": 0.1844368230204661,
+      "scene_support": 0.028357239750513602,
+      "object_support": 0.0429955817699038,
+      "score": 0.09518057566431166,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people talking at once, followed by snoring",
+      "clip_similarity": 0.2927141785621643,
+      "visual": 0.18293627842838214,
+      "scene_support": 0.42711073212102724,
+      "object_support": 0.4520970269446742,
+      "score": 0.3369368390910633,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.2921127378940582,
+      "visual": 0.15815518971083203,
+      "scene_support": 0.7515317901041991,
+      "object_support": 0.646949135942193,
+      "score": 0.4828063536982505,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone breathes heavily while sleeping",
+      "clip_similarity": 0.2901158630847931,
+      "visual": 0.07587819310854635,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6303512772434186,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while someone snores",
+      "clip_similarity": 0.29010146856307983,
+      "visual": 0.07528509733278813,
+      "scene_support": 0.5143084933064342,
+      "object_support": 0.5738524572324033,
+      "score": 0.3565623240947665,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks half way through continuous snoring",
+      "clip_similarity": 0.2896268963813782,
+      "visual": 0.055731355856237515,
+      "scene_support": 0.23672229039421902,
+      "object_support": 0.24767498802942584,
+      "score": 0.16761172586958845,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snores, and then makes loud baby-like noises",
+      "clip_similarity": 0.2895835340023041,
+      "visual": 0.05394470087957454,
+      "scene_support": 0.6101865139613939,
+      "object_support": 0.7265159099812823,
+      "score": 0.4225886075346327,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person snoring and then person laughing",
+      "clip_similarity": 0.289119154214859,
+      "visual": 0.03481091541815708,
+      "scene_support": 0.4965056652084792,
+      "object_support": 0.5736500457058286,
+      "score": 0.33497107944155513,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone snores followed by a woman talking",
+      "clip_similarity": 0.28851133584976196,
+      "visual": 0.009767047205757572,
+      "scene_support": 0.5530163219936727,
+      "object_support": 0.6270067035215253,
+      "score": 0.3579137265368624,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snores at moderate speed nearby",
+      "clip_similarity": 0.28827428817749023,
+      "visual": 0.0,
+      "scene_support": 0.7597734378791345,
+      "object_support": 0.8859411047751709,
+      "score": 0.4937143627962916,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bedroom",
+      0.264692097902298
+    ],
+    [
+      "hotel room",
+      0.24466244876384735
+    ],
+    [
+      "motel",
+      0.06293635070323944
+    ],
+    [
+      "dorm room",
+      0.049955207854509354
+    ],
+    [
+      "childs room",
+      0.03936571255326271
+    ]
+  ],
+  "top_objects": [
+    [
+      "pillow",
+      0.09077556431293488
+    ],
+    [
+      "four-poster bed",
+      0.06102432683110237
+    ],
+    [
+      "pajamas",
+      0.03755578771233559
+    ],
+    [
+      "infant bed",
+      0.023967400193214417
+    ],
+    [
+      "ski mask",
+      0.022311458364129066
+    ]
+  ]
+}

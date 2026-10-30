@@ -1,0 +1,12 @@
+{
+  "retrieve_k": 20,
+  "support_top_n": 5,
+  "w_visual": 0.5,
+  "w_scene": 0.0,
+  "w_object": 0.5,
+  "accept_threshold": 0.5,
+  "repair_threshold": 0.4,
+  "env_conflict_confidence": 1.01,
+  "source_absent_z": -99.0,
+  "uncertainty_threshold": 0.1
+}

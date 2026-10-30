@@ -1,0 +1,283 @@
+{
+  "id": "riM7b5bJ9KQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\riM7b5bJ9KQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\riM7b5bJ9KQ.wav",
+  "gt_captions": [
+    "A bell clanking as a couple of men laugh then a man speaks in the distance",
+    "Continuous laughing with brief tapping and speech",
+    "A man laughs followed by laughter and speech from other people",
+    "Two men are laughing",
+    "Several people laughing continuously with brief clanking and speech"
+  ],
+  "top_scene": [
+    "bedroom",
+    0.0996093600988388
+  ],
+  "top_object": [
+    "pillow",
+    0.08891845494508743
+  ],
+  "env_probs": {
+    "indoor": 0.7944396734237671,
+    "outdoor": 0.2055603265762329
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Two young men laughing and talking as a cat meows",
+    "casv": "A man briefly talks followed by a bursting sound then by several voices laughing and talking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.02944117784500122,
+    "clap_gt_audio_baseline": 0.33926132321357727,
+    "clap_text_casv": 0.25016236305236816,
+    "clap_gt_audio_casv": 0.4468598961830139
+  },
+  "verdicts": [
+    {
+      "caption": "Two young men laughing and talking as a cat meows",
+      "clip_similarity": 0.30209100246429443,
+      "visual": 1.0,
+      "scene_support": 0.3663119959243961,
+      "object_support": 0.45241605790496614,
+      "score": 0.6456184161488088,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young boy is talking while making meowing sounds, followed by a male laughing",
+      "clip_similarity": 0.2936796247959137,
+      "visual": 0.6379476443551625,
+      "scene_support": 0.0,
+      "object_support": 0.08260518383834516,
+      "score": 0.27996061289356855,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fan spins while a person snores",
+      "clip_similarity": 0.2933134436607361,
+      "visual": 0.6221860476452531,
+      "scene_support": 0.4339034518413391,
+      "object_support": 0.5876225175534874,
+      "score": 0.5553322098765492,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores while a fan spins",
+      "clip_similarity": 0.2862318456172943,
+      "visual": 0.3173716219423182,
+      "scene_support": 0.25348354997970746,
+      "object_support": 0.34815178119916407,
+      "score": 0.30743924813058876,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young man laughing as another young man yells followed by a door closing",
+      "clip_similarity": 0.28559380769729614,
+      "visual": 0.2899084475333941,
+      "scene_support": 0.2627582644887868,
+      "object_support": 0.0,
+      "score": 0.1947908583599937,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Males talking and laughing with singing in the background",
+      "clip_similarity": 0.28523603081703186,
+      "visual": 0.27450859659317584,
+      "scene_support": 0.6125601420627564,
+      "object_support": 0.6334574212062316,
+      "score": 0.48360870761796676,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man briefly talks followed by a bursting sound then by several voices laughing and talking",
+      "clip_similarity": 0.2849981188774109,
+      "visual": 0.2642681126235163,
+      "scene_support": 0.9975925572955774,
+      "object_support": 1.0,
+      "score": 0.7049850122380797,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is communicating to a dog followed by the dog barking and panting in excitement",
+      "clip_similarity": 0.2845139801502228,
+      "visual": 0.24342924727375817,
+      "scene_support": 0.38599197250878464,
+      "object_support": 0.4706388712152401,
+      "score": 0.3543609520267107,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young person talking followed by a dog barking",
+      "clip_similarity": 0.28308823704719543,
+      "visual": 0.18206074506800693,
+      "scene_support": 0.7748626168454605,
+      "object_support": 0.7866817185227479,
+      "score": 0.5412875986376653,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man with a distinct voice is communicating with another man followed by animal noises in the background and loud bang",
+      "clip_similarity": 0.28278931975364685,
+      "visual": 0.1691943973020436,
+      "scene_support": 1.0,
+      "object_support": 0.9162728900347022,
+      "score": 0.6425596259312281,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring as a fan blows air in the background",
+      "clip_similarity": 0.2826540768146515,
+      "visual": 0.16337311254013517,
+      "scene_support": 0.528025560030919,
+      "object_support": 0.6424759142740512,
+      "score": 0.41649968730754516,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and something falls to the floor as a man laughs",
+      "clip_similarity": 0.2807108461856842,
+      "visual": 0.07973030698361754,
+      "scene_support": 0.587012181046531,
+      "object_support": 0.6404923071031241,
+      "score": 0.40014346923834354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young man speaking followed by rapid tapping",
+      "clip_similarity": 0.280708909034729,
+      "visual": 0.07964692586649015,
+      "scene_support": 0.9237820839391335,
+      "object_support": 0.799984681225885,
+      "score": 0.5489887998961016,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is making noises while the owner is playing with the cat",
+      "clip_similarity": 0.2806987762451172,
+      "visual": 0.0792107784845931,
+      "scene_support": 0.8363366436718254,
+      "object_support": 0.8078916927854667,
+      "score": 0.5249528123310249,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and then cries out as a man is talking and laughing",
+      "clip_similarity": 0.2804063558578491,
+      "visual": 0.06662407815761083,
+      "scene_support": 0.5598981501365157,
+      "object_support": 0.6407038106320996,
+      "score": 0.38683021949362895,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid cries followed by a man laughing",
+      "clip_similarity": 0.2800864279270172,
+      "visual": 0.05285336596741979,
+      "scene_support": 0.6101280566400308,
+      "object_support": 0.658020553268861,
+      "score": 0.40158592935963544,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is meowing as a man is talking and then the man laughs",
+      "clip_similarity": 0.2792584300041199,
+      "visual": 0.01721371093434314,
+      "scene_support": 0.6669350543673687,
+      "object_support": 0.7797800015144697,
+      "score": 0.44090000113828876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud snores separated three seconds apart, followed by a man speaking",
+      "clip_similarity": 0.27916407585144043,
+      "visual": 0.013152409137031093,
+      "scene_support": 0.8280642340112763,
+      "object_support": 0.9047524755922316,
+      "score": 0.5251059765358648,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple people talking at once, followed by snoring",
+      "clip_similarity": 0.27887022495269775,
+      "visual": 0.0005041350620163094,
+      "scene_support": 0.7745357236434812,
+      "object_support": 0.7861433854664871,
+      "score": 0.46840538675779697,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dog is barking and woman laughing",
+      "clip_similarity": 0.2788585126399994,
+      "visual": 0.0,
+      "scene_support": 0.9220123344348796,
+      "object_support": 0.9654435437894991,
+      "score": 0.5662367634673136,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bedroom",
+      0.0996093600988388
+    ],
+    [
+      "dorm room",
+      0.09446757286787033
+    ],
+    [
+      "youth hostel",
+      0.05311465263366699
+    ],
+    [
+      "childs room",
+      0.05284908786416054
+    ],
+    [
+      "television room",
+      0.04568615183234215
+    ]
+  ],
+  "top_objects": [
+    [
+      "pillow",
+      0.08891845494508743
+    ],
+    [
+      "couch",
+      0.05898994207382202
+    ],
+    [
+      "Maltese",
+      0.03331981599330902
+    ],
+    [
+      "weasel",
+      0.02022583968937397
+    ],
+    [
+      "wild boar",
+      0.018689796328544617
+    ]
+  ]
+}

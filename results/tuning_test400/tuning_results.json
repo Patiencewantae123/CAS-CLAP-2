@@ -1,0 +1,153 @@
+{
+  "objective": "CLAP cosine(selected prompt text, ground-truth recording)",
+  "search_space": {
+    "weight_step": 0.1,
+    "accept_thresholds": [
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "env_conflict_confidence": [
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.01
+    ],
+    "source_absent_z": [
+      -99.0,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5
+    ],
+    "n_configs": 6600
+  },
+  "default_config": {
+    "retrieve_k": 20,
+    "support_top_n": 5,
+    "w_visual": 0.4,
+    "w_scene": 0.3,
+    "w_object": 0.3,
+    "accept_threshold": 0.6,
+    "repair_threshold": 0.4,
+    "env_conflict_confidence": 0.7,
+    "source_absent_z": 0.0,
+    "uncertainty_threshold": 0.1
+  },
+  "tuned_config": {
+    "retrieve_k": 20,
+    "support_top_n": 5,
+    "w_visual": 0.5,
+    "w_scene": 0.0,
+    "w_object": 0.5,
+    "accept_threshold": 0.5,
+    "repair_threshold": 0.4,
+    "env_conflict_confidence": 1.01,
+    "source_absent_z": -99.0,
+    "uncertainty_threshold": 0.1
+  },
+  "val": {
+    "n": 100,
+    "baseline": {
+      "mean": 0.30848637223243713,
+      "ci95": [
+        0.26767868044762877,
+        0.3484960985849611
+      ]
+    },
+    "default": {
+      "mean": 0.3087958097457886,
+      "ci95": [
+        0.2681265714513138,
+        0.3497164431824349
+      ]
+    },
+    "tuned": {
+      "mean": 0.3403741419315338,
+      "ci95": [
+        0.3005796910214703,
+        0.37974523765873164
+      ]
+    },
+    "oracle": {
+      "mean": 0.5149834156036377,
+      "ci95": [
+        0.4819366015074774,
+        0.5469456063904798
+      ]
+    },
+    "default_minus_baseline": {
+      "mean": 0.00030940622673369944,
+      "ci95": [
+        -0.029191666095517575,
+        0.02971738519519567
+      ],
+      "better": 26,
+      "worse": 30,
+      "same": 44
+    },
+    "tuned_minus_baseline": {
+      "mean": 0.031887758523225784,
+      "ci95": [
+        0.010218842672184111,
+        0.05510915954131633
+      ],
+      "better": 23,
+      "worse": 17,
+      "same": 60
+    }
+  },
+  "test": {
+    "n": 400,
+    "baseline": {
+      "mean": 0.2865810692310333,
+      "ci95": [
+        0.2645032056069758,
+        0.3085872731112177
+      ]
+    },
+    "default": {
+      "mean": 0.2894187271595001,
+      "ci95": [
+        0.2676793844071799,
+        0.3111944772753632
+      ]
+    },
+    "tuned": {
+      "mean": 0.2910870611667633,
+      "ci95": [
+        0.2690364695826429,
+        0.31290341821804757
+      ]
+    },
+    "oracle": {
+      "mean": 0.5081192255020142,
+      "ci95": [
+        0.4921055319309235,
+        0.5239995376197621
+      ]
+    },
+    "default_minus_baseline": {
+      "mean": 0.002837643027305603,
+      "ci95": [
+        -0.01297517449245788,
+        0.01828466455533635
+      ],
+      "better": 122,
+      "worse": 110,
+      "same": 168
+    },
+    "tuned_minus_baseline": {
+      "mean": 0.004505977500230074,
+      "ci95": [
+        -0.008425746073771733,
+        0.01714673463563667
+      ],
+      "better": 92,
+      "worse": 68,
+      "same": 240
+    }
+  }
+}

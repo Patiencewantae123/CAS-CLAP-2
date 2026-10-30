@@ -1,0 +1,283 @@
+{
+  "id": "3ndid3jni7M",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3ndid3jni7M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3ndid3jni7M.wav",
+  "gt_captions": [
+    "A train running on railroad tracks drives by as a train horn blows several times alongside a railroad crossing signal ringing",
+    "A main horn honks, a train passes by",
+    "A loud horn honking followed by a bell ringing together with clickety-clacking train passing by",
+    "Distant bells followed by a horn honking and clanking",
+    "A train horn blows as a train approaches with warning bells ringing"
+  ],
+  "top_scene": [
+    "platform train station",
+    0.41990968585014343
+  ],
+  "top_object": [
+    "high-speed train",
+    0.47603699564933777
+  ],
+  "env_probs": {
+    "indoor": 0.4949885308742523,
+    "outdoor": 0.5050114691257477
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A railroad crossing signal ringing as a train engine slowly runs and steam hisses in the distance alongside leaves rustling and wind blowing lightly into a microphone",
+    "casv": "A train crossing alarm with a heavy engine revving"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22530968487262726,
+    "clap_gt_audio_baseline": 0.3281256854534149,
+    "clap_text_casv": 0.0954427421092987,
+    "clap_gt_audio_casv": 0.36939287185668945
+  },
+  "verdicts": [
+    {
+      "caption": "A railroad crossing signal ringing as a train engine slowly runs and steam hisses in the distance alongside leaves rustling and wind blowing lightly into a microphone",
+      "clip_similarity": 0.35331615805625916,
+      "visual": 1.0,
+      "scene_support": 0.4808663485229891,
+      "object_support": 0.46851694342942457,
+      "score": 0.6848149875857241,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train crossing alarm with a heavy engine revving",
+      "clip_similarity": 0.3515769839286804,
+      "visual": 0.8831062173623032,
+      "scene_support": 0.6393890151481458,
+      "object_support": 0.8141852929402074,
+      "score": 0.7893147793714272,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train horn blowing several times as a train running on railroad tracks passes by",
+      "clip_similarity": 0.34725749492645264,
+      "visual": 0.5927837013326496,
+      "scene_support": 0.7529011523442712,
+      "object_support": 0.7783267199871505,
+      "score": 0.6964818422324863,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A railroad crossing alarm clangs while a train engine runs slowly, rhythmic clattering is present, and a train horn blows one time",
+      "clip_similarity": 0.34685924649238586,
+      "visual": 0.5660165334284128,
+      "scene_support": 0.4869218820881848,
+      "object_support": 0.5362843337312292,
+      "score": 0.5333684781171893,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train running on train tracks while a train horn blows in the distance followed by railroad crossing signals ringing and a man yelling in the background as vehicles drive by",
+      "clip_similarity": 0.34616705775260925,
+      "visual": 0.5194929802035531,
+      "scene_support": 0.7222721329265364,
+      "object_support": 0.6785042521321502,
+      "score": 0.6280301075990271,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train passes by while whistling as a railway crossing rapidly dings",
+      "clip_similarity": 0.3453119397163391,
+      "visual": 0.4620185845830888,
+      "scene_support": 0.9251359819609867,
+      "object_support": 0.8659290382478952,
+      "score": 0.7221269398959,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train running in the distance as a train horn blows while wind blows heavily into a microphone and a railroad crossing signal rings in the background",
+      "clip_similarity": 0.3443884253501892,
+      "visual": 0.3999471186685122,
+      "scene_support": 0.0,
+      "object_support": 0.028100454720785376,
+      "score": 0.16840898388364048,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking briefly as a steam engine is running on railroad tracks with a train horn blowing while railroad crossing signals ding in the background",
+      "clip_similarity": 0.34418630599975586,
+      "visual": 0.3863622251022072,
+      "scene_support": 0.018107671472919244,
+      "object_support": 0.0,
+      "score": 0.15997719148275868,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passing by a crossing",
+      "clip_similarity": 0.3428986370563507,
+      "visual": 0.2998151156478664,
+      "scene_support": 1.0,
+      "object_support": 0.989632804143958,
+      "score": 0.7168158875023339,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train passes by with a blowing horn and clicking wheels",
+      "clip_similarity": 0.34271126985549927,
+      "visual": 0.28722174704695824,
+      "scene_support": 0.7490957699936845,
+      "object_support": 0.8886791924781857,
+      "score": 0.6062211875603444,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train horn sounds as it passes the active railroad crossing",
+      "clip_similarity": 0.34264475107192993,
+      "visual": 0.2827508708393509,
+      "scene_support": 0.6561185211211229,
+      "object_support": 0.7188572235140657,
+      "score": 0.5255930717262969,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train engine runs followed by a train horn and train warning signal",
+      "clip_similarity": 0.34229230880737305,
+      "visual": 0.25906243802968965,
+      "scene_support": 0.7768414270211611,
+      "object_support": 0.8881676468047256,
+      "score": 0.6031276973596418,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train running on railroad tracks as steam sharply hisses several times alongside a train horn blowing while a railroad crossing signal dings in the background",
+      "clip_similarity": 0.3412018418312073,
+      "visual": 0.18576971381985494,
+      "scene_support": 0.6205580708573868,
+      "object_support": 0.5744560568394897,
+      "score": 0.43281212383700496,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train running on railroad tracks as a train horn blows alongside a railroad crossing signal dings several times before fading",
+      "clip_similarity": 0.3408849537372589,
+      "visual": 0.16447095633083683,
+      "scene_support": 0.615787861469628,
+      "object_support": 0.5565388167525124,
+      "score": 0.4174863859989768,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A railroad crossing rings while a train approaches and blows a horn",
+      "clip_similarity": 0.33985987305641174,
+      "visual": 0.09557299126055874,
+      "scene_support": 0.5601486684219421,
+      "object_support": 0.5249655947813581,
+      "score": 0.36376347546521354,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large train horn followed by a fast moving train",
+      "clip_similarity": 0.3395962715148926,
+      "visual": 0.07785574213139809,
+      "scene_support": 0.832428918014997,
+      "object_support": 1.0,
+      "score": 0.5808709722570583,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn blowing as it moves on the tracks",
+      "clip_similarity": 0.33932578563690186,
+      "visual": 0.05967578135171894,
+      "scene_support": 0.7629869443974987,
+      "object_support": 0.8079625418125314,
+      "score": 0.49515515840369656,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train approaches and blows a horn before passing",
+      "clip_similarity": 0.3392157554626465,
+      "visual": 0.052280407266375686,
+      "scene_support": 0.8344344573619277,
+      "object_support": 0.928356349238218,
+      "score": 0.549749404886594,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train running on railroad tracks passing by as a train horn blows and railroad crossing signals ring in the background",
+      "clip_similarity": 0.3389313220977783,
+      "visual": 0.03316300470123049,
+      "scene_support": 0.6411260373766934,
+      "object_support": 0.5324567455522661,
+      "score": 0.36534003675918003,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train engine running followed by a train horn",
+      "clip_similarity": 0.33843791484832764,
+      "visual": 0.0,
+      "scene_support": 0.8320241965612019,
+      "object_support": 0.9974006568324323,
+      "score": 0.5488274560180902,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "platform train station",
+      0.41990968585014343
+    ],
+    [
+      "railroad track",
+      0.33008095622062683
+    ],
+    [
+      "ticket booth",
+      0.033501800149679184
+    ],
+    [
+      "raceway",
+      0.022244298830628395
+    ],
+    [
+      "field road",
+      0.02191213145852089
+    ]
+  ],
+  "top_objects": [
+    [
+      "high-speed train",
+      0.47603699564933777
+    ],
+    [
+      "electric locomotive",
+      0.22740481793880463
+    ],
+    [
+      "freight car",
+      0.08198472857475281
+    ],
+    [
+      "steam locomotive",
+      0.06827566772699356
+    ],
+    [
+      "passenger car",
+      0.05259115993976593
+    ]
+  ]
+}

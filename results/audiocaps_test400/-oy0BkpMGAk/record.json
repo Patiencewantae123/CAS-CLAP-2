@@ -1,0 +1,283 @@
+{
+  "id": "-oy0BkpMGAk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-oy0BkpMGAk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-oy0BkpMGAk.wav",
+  "gt_captions": [
+    "An engine revving and then tires squealing",
+    "A vehicle engine revving and squealing tires",
+    "Revving of an engine and a skidding sound",
+    "A motor vehicle is skidding and drifting",
+    "A vehicle driving and revving several times as tires skid and wind blows into a microphone"
+  ],
+  "top_scene": [
+    "raceway",
+    0.3255390226840973
+  ],
+  "top_object": [
+    "limousine",
+    0.7396374344825745
+  ],
+  "env_probs": {
+    "indoor": 0.2815721333026886,
+    "outdoor": 0.7184278666973114
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A vehicle is revving with low speech in the background followed by loud revving",
+    "casv": "A vehicle is revving with low speech in the background followed by loud revving"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.37794071435928345,
+    "clap_gt_audio_baseline": 0.7072352766990662,
+    "clap_text_casv": 0.37794071435928345,
+    "clap_gt_audio_casv": 0.7072352766990662
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle is revving with low speech in the background followed by loud revving",
+      "clip_similarity": 0.3163769245147705,
+      "visual": 1.0,
+      "scene_support": 0.4447208453552317,
+      "object_support": 0.5803057910603401,
+      "score": 0.7075079909246715,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car driving with crowd noise in the background",
+      "clip_similarity": 0.3053392171859741,
+      "visual": 0.3715891313716774,
+      "scene_support": 0.6084128628147272,
+      "object_support": 0.8809966359100654,
+      "score": 0.5954585021661087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car moving and revving its engine with people cheering",
+      "clip_similarity": 0.3050746023654938,
+      "visual": 0.3565237899709179,
+      "scene_support": 0.13272946413158737,
+      "object_support": 0.45526204125100883,
+      "score": 0.319006967603146,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle running followed by speech",
+      "clip_similarity": 0.30403226613998413,
+      "visual": 0.29718035991217684,
+      "scene_support": 0.46654213212991047,
+      "object_support": 0.7888460866454227,
+      "score": 0.49548860959747065,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crowd cheering and accelerating vehicle with a dog barking in the background and popping at the end",
+      "clip_similarity": 0.3039567470550537,
+      "visual": 0.2928808244791861,
+      "scene_support": 0.5854556607728539,
+      "object_support": 0.5782634861733962,
+      "score": 0.46626807387554947,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man cheering and motor running and revving",
+      "clip_similarity": 0.30361348390579224,
+      "visual": 0.27333779009987,
+      "scene_support": 0.3602839634041084,
+      "object_support": 0.36944585423756077,
+      "score": 0.3282540613324488,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine revving before accelerating at a high rate as a crowd of people talk then cheer while a man speaks over an intercom",
+      "clip_similarity": 0.3033659756183624,
+      "visual": 0.2592463766148709,
+      "scene_support": 0.0,
+      "object_support": 0.07219009742826002,
+      "score": 0.12535557987442636,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle revving continuously followed by brief speech",
+      "clip_similarity": 0.30279356241226196,
+      "visual": 0.22665711968454239,
+      "scene_support": 0.7384520418731967,
+      "object_support": 0.9269362930668685,
+      "score": 0.5902793483558364,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle runs with speech in the background",
+      "clip_similarity": 0.3027590811252594,
+      "visual": 0.22469399320625894,
+      "scene_support": 0.5383899287317205,
+      "object_support": 0.716241648709138,
+      "score": 0.46626707051476113,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle revving and accelerating away at a high rate as a crowd of people talk and yell",
+      "clip_similarity": 0.30195152759552,
+      "visual": 0.17871746928054894,
+      "scene_support": 0.7805394749821213,
+      "object_support": 0.959077912101017,
+      "score": 0.593372203837161,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car doing a burnout",
+      "clip_similarity": 0.30146077275276184,
+      "visual": 0.15077727592022613,
+      "scene_support": 0.28256624374244776,
+      "object_support": 0.3768013689322273,
+      "score": 0.25812119417049295,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle revving up getting louder",
+      "clip_similarity": 0.30061936378479004,
+      "visual": 0.10287325702534587,
+      "scene_support": 0.9296441518088333,
+      "object_support": 0.9830830372767789,
+      "score": 0.614967459535822,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud car motor speeding by",
+      "clip_similarity": 0.3004652261734009,
+      "visual": 0.09409772535232776,
+      "scene_support": 0.5605695605533773,
+      "object_support": 0.7713461629129191,
+      "score": 0.43721380718082004,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An announcer speaking on a loud speaker with racing motors accelerating and decelerating",
+      "clip_similarity": 0.299831748008728,
+      "visual": 0.05803185117567013,
+      "scene_support": 0.4167938213607556,
+      "object_support": 0.0,
+      "score": 0.14825088687849472,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle is running with a horn beeping",
+      "clip_similarity": 0.29966747760772705,
+      "visual": 0.04867942840272428,
+      "scene_support": 0.7013305775443269,
+      "object_support": 0.8068074980655789,
+      "score": 0.47191319404406146,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car going around corner real fast skidding tires",
+      "clip_similarity": 0.29937055706977844,
+      "visual": 0.03177482243631292,
+      "scene_support": 0.34413300535128605,
+      "object_support": 0.37615905794388377,
+      "score": 0.2287975479630761,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor vehicle passing by in a race car event",
+      "clip_similarity": 0.2991827130317688,
+      "visual": 0.02108027948677053,
+      "scene_support": 0.905469347241745,
+      "object_support": 0.6167450141857543,
+      "score": 0.46509642022295805,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large truck revs the motor, a crowd cheers, and an announcer speaks",
+      "clip_similarity": 0.29901614785194397,
+      "visual": 0.01159720784707635,
+      "scene_support": 0.5164892666025499,
+      "object_support": 0.7220485172212007,
+      "score": 0.37620021828595573,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle revving up its engine and racing by",
+      "clip_similarity": 0.29898232221603394,
+      "visual": 0.009671409616435289,
+      "scene_support": 1.0,
+      "object_support": 0.7704548038815996,
+      "score": 0.535005005011054,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A high speed car drives by, a crowd cheers",
+      "clip_similarity": 0.2988124489784241,
+      "visual": 0.0,
+      "scene_support": 0.7811159095953244,
+      "object_support": 1.0,
+      "score": 0.5343347728785973,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.3255390226840973
+    ],
+    [
+      "bullring",
+      0.05351792648434639
+    ],
+    [
+      "landing deck",
+      0.05051805451512337
+    ],
+    [
+      "auto showroom",
+      0.04582749679684639
+    ],
+    [
+      "tundra",
+      0.03946073725819588
+    ]
+  ],
+  "top_objects": [
+    [
+      "limousine",
+      0.7396374344825745
+    ],
+    [
+      "station wagon",
+      0.18148183822631836
+    ],
+    [
+      "taxicab",
+      0.01771567016839981
+    ],
+    [
+      "minivan",
+      0.00820100400596857
+    ],
+    [
+      "pickup truck",
+      0.005885155871510506
+    ]
+  ]
+}

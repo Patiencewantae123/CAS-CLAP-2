@@ -1,0 +1,285 @@
+{
+  "id": "Kel-hfZ_9h8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Kel-hfZ_9h8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Kel-hfZ_9h8.wav",
+  "gt_captions": [
+    "Rustling followed by a man speaking and a child laughing",
+    "A child laughing followed by a man talking as snow shuffles in the background",
+    "Crunching and scraping followed by a child and a man speaking",
+    "A child laughing followed by a man talking as snow shuffles in the background",
+    "A child laughs, a man speaks, and people laugh"
+  ],
+  "top_scene": [
+    "playground",
+    0.1681668609380722
+  ],
+  "top_object": [
+    "ski",
+    0.08613962680101395
+  ],
+  "env_probs": {
+    "indoor": 0.15536737442016602,
+    "outdoor": 0.844632625579834
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A toddler cries and stamps a foot while adults chuckle",
+    "casv": "A toddler cries and stamps a foot while adults chuckle"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09354250133037567,
+    "clap_gt_audio_baseline": 0.570552408695221,
+    "clap_text_casv": 0.09354250133037567,
+    "clap_gt_audio_casv": 0.570552408695221
+  },
+  "verdicts": [
+    {
+      "caption": "A toddler cries and stamps a foot while adults chuckle",
+      "clip_similarity": 0.3225872218608856,
+      "visual": 1.0,
+      "scene_support": 0.6790173190552463,
+      "object_support": 0.6308491269184988,
+      "score": 0.7929599337921235,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Kids laugh and something explodes",
+      "clip_similarity": 0.31564271450042725,
+      "visual": 0.6828167388324524,
+      "scene_support": 0.6546485029972198,
+      "object_support": 0.5756326086392239,
+      "score": 0.642211029023914,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child crying followed by footsteps and laughter",
+      "clip_similarity": 0.31500357389450073,
+      "visual": 0.6536246462606053,
+      "scene_support": 0.8402404204143074,
+      "object_support": 0.7432627736143609,
+      "score": 0.7365008167128426,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child and people laughing followed by slamming",
+      "clip_similarity": 0.3120352327823639,
+      "visual": 0.5180487061203211,
+      "scene_support": 0.9425931977307913,
+      "object_support": 0.9422698264961417,
+      "score": 0.7726783897162083,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Kid screaming then talking",
+      "clip_similarity": 0.30945974588394165,
+      "visual": 0.4004159798326008,
+      "scene_support": 0.552925704306461,
+      "object_support": 0.5669462913040415,
+      "score": 0.4961279906161911,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child is pretending to be shooting by making pow-pow noises as the dog stars barking",
+      "clip_similarity": 0.30889323353767395,
+      "visual": 0.37454110863525675,
+      "scene_support": 0.18096832428899734,
+      "object_support": 0.234315032427682,
+      "score": 0.27440145046910647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A quick whooshing burst followed by a child speaking",
+      "clip_similarity": 0.3082798719406128,
+      "visual": 0.3465264458906338,
+      "scene_support": 0.8260214385583347,
+      "object_support": 0.8105923938637704,
+      "score": 0.6295947280828851,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child laughing while someone else makes funny noise",
+      "clip_similarity": 0.30668479204177856,
+      "visual": 0.2736728051823247,
+      "scene_support": 0.35580614229160085,
+      "object_support": 0.37646749630113063,
+      "score": 0.3291512136507493,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Child is laughing, then yelling",
+      "clip_similarity": 0.30635759234428406,
+      "visual": 0.2587282941151649,
+      "scene_support": 0.9979279274453188,
+      "object_support": 0.9868574257352314,
+      "score": 0.698926923600231,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child yells as truck engine idles then accelerates and a snap occurs",
+      "clip_similarity": 0.30531078577041626,
+      "visual": 0.21091647598655688,
+      "scene_support": 0.04476758824254177,
+      "object_support": 0.1733842708128613,
+      "score": 0.1498121481112437,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.63)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Kids speak followed by an animal crying and a person laughing",
+      "clip_similarity": 0.3051956593990326,
+      "visual": 0.20565819688532377,
+      "scene_support": 0.7322714050773277,
+      "object_support": 0.7157961190609506,
+      "score": 0.516683535995613,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several people laugh followed by a kid yelling",
+      "clip_similarity": 0.3038643002510071,
+      "visual": 0.1448497313690446,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6579398925476179,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A hysterical laugh of a small child after an older boy says something",
+      "clip_similarity": 0.30385780334472656,
+      "visual": 0.14455299182877313,
+      "scene_support": 0.4436774466580598,
+      "object_support": 0.40932624955038804,
+      "score": 0.3137223055940436,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young kids laugh and joke with each other while outside",
+      "clip_similarity": 0.3038356602191925,
+      "visual": 0.14354162724885694,
+      "scene_support": 0.4671302223674554,
+      "object_support": 0.3582044445762894,
+      "score": 0.3050170509826662,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid crying and yelling",
+      "clip_similarity": 0.3035784661769867,
+      "visual": 0.13179455278765018,
+      "scene_support": 0.9044564559416735,
+      "object_support": 0.8595194436307138,
+      "score": 0.5819105909867762,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child laughing very hard",
+      "clip_similarity": 0.3032182455062866,
+      "visual": 0.11534184258920221,
+      "scene_support": 0.8450515071810064,
+      "object_support": 0.8703898552713061,
+      "score": 0.5607691457713746,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid cries and someone tries to calm him down",
+      "clip_similarity": 0.3025567829608917,
+      "visual": 0.08513021829412877,
+      "scene_support": 0.5854628146545028,
+      "object_support": 0.49079361606662786,
+      "score": 0.3569290165339907,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Child laughing followed by duck noises and more laughter",
+      "clip_similarity": 0.3021124601364136,
+      "visual": 0.06483622835877172,
+      "scene_support": 0.7666164897976676,
+      "object_support": 0.7279935812101144,
+      "score": 0.4743175126458432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young child screams as he goes down with a loud swoosh",
+      "clip_similarity": 0.30123475193977356,
+      "visual": 0.024747805420533016,
+      "scene_support": 0.6414259159064246,
+      "object_support": 0.6918012103368103,
+      "score": 0.4098672600411837,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child is making obnoxious sounds while dog is howling in unison with child",
+      "clip_similarity": 0.30069291591644287,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "playground",
+      0.1681668609380722
+    ],
+    [
+      "sandbox",
+      0.12753650546073914
+    ],
+    [
+      "mountain snowy",
+      0.08465967327356339
+    ],
+    [
+      "ball pit",
+      0.06239757314324379
+    ],
+    [
+      "crevasse",
+      0.03949834033846855
+    ]
+  ],
+  "top_objects": [
+    [
+      "ski",
+      0.08613962680101395
+    ],
+    [
+      "swing",
+      0.07537171989679337
+    ],
+    [
+      "shovel",
+      0.06643011420965195
+    ],
+    [
+      "diaper",
+      0.03395313397049904
+    ],
+    [
+      "plow",
+      0.029945826157927513
+    ]
+  ]
+}

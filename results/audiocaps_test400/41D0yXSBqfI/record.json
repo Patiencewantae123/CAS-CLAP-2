@@ -1,0 +1,285 @@
+{
+  "id": "41D0yXSBqfI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\41D0yXSBqfI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\41D0yXSBqfI.wav",
+  "gt_captions": [
+    "A bird is cooing and flapping its wings",
+    "A group of pigeons cooing as bird wings flap in the background followed by plastic tapping",
+    "Pigeons cooing and bird wings flapping while gravel shuffles and wood clacks",
+    "Pigeons coo with some rustling",
+    "Metal scrapping and gravel pouring while pigeons are cooing"
+  ],
+  "top_scene": [
+    "corral",
+    0.09816645830869675
+  ],
+  "top_object": [
+    "black grouse",
+    0.25685960054397583
+  ],
+  "env_probs": {
+    "indoor": 0.5251420140266418,
+    "outdoor": 0.47485798597335815
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Men speaking while a pigeon coos",
+    "casv": "Men speaking while a pigeon coos"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2765193283557892,
+    "clap_gt_audio_baseline": 0.592789351940155,
+    "clap_text_casv": 0.2765193283557892,
+    "clap_gt_audio_casv": 0.592789351940155
+  },
+  "verdicts": [
+    {
+      "caption": "Men speaking while a pigeon coos",
+      "clip_similarity": 0.3348984718322754,
+      "visual": 1.0,
+      "scene_support": 0.449811748088335,
+      "object_support": 0.7523138453568975,
+      "score": 0.7606376780335697,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Men speaking together with rustling, tapping and squawking in the background",
+      "clip_similarity": 0.3296494781970978,
+      "visual": 0.7259700433619768,
+      "scene_support": 0.8141118758805992,
+      "object_support": 0.6511843571103458,
+      "score": 0.7299768872420742,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female and male engaging in conversation followed by clip-clop sounds and photographer equipment flashes in the background",
+      "clip_similarity": 0.32607558369636536,
+      "visual": 0.5393906296432867,
+      "scene_support": 0.24616277953152685,
+      "object_support": 0.0,
+      "score": 0.28960508571677274,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People talk loudly nearby as pigeons coo and fly, after which a rooster crows",
+      "clip_similarity": 0.325138658285141,
+      "visual": 0.49047732403547994,
+      "scene_support": 0.5436631063187317,
+      "object_support": 0.8938088685351111,
+      "score": 0.6274325220703447,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person hiccups multiple times, followed by water rushing and a drum beating, after which a rooster crows",
+      "clip_similarity": 0.3231765329837799,
+      "visual": 0.3880422386417915,
+      "scene_support": 0.5650357924324755,
+      "object_support": 0.705069065093633,
+      "score": 0.5362483527145492,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Males speaking to each other while crinkling sounds",
+      "clip_similarity": 0.32231009006500244,
+      "visual": 0.34280855539426414,
+      "scene_support": 0.8909818614634222,
+      "object_support": 0.5079156572032708,
+      "score": 0.5567926777577135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Hissing and clicking occur, and two adult males speak",
+      "clip_similarity": 0.32047465443611145,
+      "visual": 0.24698745505492983,
+      "scene_support": 1.0,
+      "object_support": 0.6683069263515197,
+      "score": 0.5992870599274278,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two men communicating with each other as a swarm of insects buzz during a series of metal and wood clanking alongside birds chirping in the background",
+      "clip_similarity": 0.32033786177635193,
+      "visual": 0.2398460315311741,
+      "scene_support": 0.0,
+      "object_support": 0.059448085118306966,
+      "score": 0.11377283814796174,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons cooing and cock crowing",
+      "clip_similarity": 0.31981608271598816,
+      "visual": 0.21260593500526662,
+      "scene_support": 0.4296996416099834,
+      "object_support": 1.0,
+      "score": 0.5139522664851017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two adult males speak, the wind is blowing, and water is splashing and gurgling",
+      "clip_similarity": 0.31978169083595276,
+      "visual": 0.21081046599733325,
+      "scene_support": 0.5954891482560483,
+      "object_support": 0.37774580985912826,
+      "score": 0.37629467383348625,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male is vocally communicating, followed by sizzling, popping and frying sounds in the background",
+      "clip_similarity": 0.31913161277770996,
+      "visual": 0.17687236766973327,
+      "scene_support": 0.7613705086029341,
+      "object_support": 0.5466987422950711,
+      "score": 0.46316972233729486,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple livestock communicating with one another in distress followed by a man laughing",
+      "clip_similarity": 0.31913143396377563,
+      "visual": 0.17686303247558458,
+      "scene_support": 0.726908027788635,
+      "object_support": 0.38448381235984586,
+      "score": 0.40416276503477805,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clattering sound occurs, two adult males speak, and then an adult male sings",
+      "clip_similarity": 0.3185639977455139,
+      "visual": 0.1472393497103756,
+      "scene_support": 0.9053306299654392,
+      "object_support": 0.5492967773157198,
+      "score": 0.49528396206849795,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of men speaking as a snake hisses followed by camera muffling as birds chirp and a dog barks in the background",
+      "clip_similarity": 0.3182964324951172,
+      "visual": 0.13327078753253704,
+      "scene_support": 0.3895441583455029,
+      "object_support": 0.22684355974344547,
+      "score": 0.23822463043969933,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing into a microphone as a crow caws and a person whistles followed by a woman laughing alongside a man talking in the distance while horses trot before a vehicle horn faintly honks twice",
+      "clip_similarity": 0.3166433870792389,
+      "visual": 0.04697158522487705,
+      "scene_support": 0.5156281363943954,
+      "object_support": 0.5626050327887848,
+      "score": 0.3422585848449049,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.70)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young female and young male speak in the background, and a sneeze occurs in the foreground",
+      "clip_similarity": 0.31660735607147217,
+      "visual": 0.045090543603913937,
+      "scene_support": 0.7505134653992569,
+      "object_support": 0.5027763872280129,
+      "score": 0.3940231732297465,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two adult males and a female is speaking, and a male makes a goat sound",
+      "clip_similarity": 0.3165958523750305,
+      "visual": 0.044489979447014216,
+      "scene_support": 0.7108561118199975,
+      "object_support": 0.4732467902282681,
+      "score": 0.37302686239328536,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two males speak, a crowd cheers, and an adult female speaks",
+      "clip_similarity": 0.3157958388328552,
+      "visual": 0.00272432082572904,
+      "scene_support": 0.8380002614297639,
+      "object_support": 0.5257451979330835,
+      "score": 0.41021336613914583,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "While distorted speech is ongoing in the background, birds coo and chatter, wings flap, and random metal thumping occurs",
+      "clip_similarity": 0.3157462477684021,
+      "visual": 0.00013536031515615446,
+      "scene_support": 0.885068859764771,
+      "object_support": 0.7311039433635181,
+      "score": 0.4849059850645492,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Males yell and scream, followed by an explosion",
+      "clip_similarity": 0.31574365496635437,
+      "visual": 0.0,
+      "scene_support": 0.9277442176328916,
+      "object_support": 0.5720906438173885,
+      "score": 0.44995045843508397,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "corral",
+      0.09816645830869675
+    ],
+    [
+      "watering hole",
+      0.07344352453947067
+    ],
+    [
+      "assembly line",
+      0.06654321402311325
+    ],
+    [
+      "bullring",
+      0.04692189395427704
+    ],
+    [
+      "pet shop",
+      0.03428848087787628
+    ]
+  ],
+  "top_objects": [
+    [
+      "black grouse",
+      0.25685960054397583
+    ],
+    [
+      "magpie",
+      0.2221798449754715
+    ],
+    [
+      "vulture",
+      0.1213742345571518
+    ],
+    [
+      "cock",
+      0.045622680336236954
+    ],
+    [
+      "peacock",
+      0.03267322853207588
+    ]
+  ]
+}

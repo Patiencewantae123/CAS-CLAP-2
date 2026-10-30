@@ -1,0 +1,293 @@
+{
+  "id": "maVYiednkSg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\maVYiednkSg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\maVYiednkSg.wav",
+  "gt_captions": [
+    "A rumbling sound followed by a spray of liquid and a man speaking",
+    "Low humming and vibrating with a spray and a man speaking",
+    "A man speaks with spraying and vibration in the background",
+    "An electronic motor rumbling followed by a man talking and pressurized air spraying then a louder electronic motor rumbling",
+    "A man speaking followed by air spraying while vibration rumbling grows louder"
+  ],
+  "top_scene": [
+    "discotheque",
+    0.21560485661029816
+  ],
+  "top_object": [
+    "CD player",
+    0.1538236141204834
+  ],
+  "env_probs": {
+    "indoor": 0.9412016868591309,
+    "outdoor": 0.05879831314086914
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Tapping sound followed by two high frequency beeps",
+    "casv": "Small electronic scratching"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.035435426980257034,
+    "clap_gt_audio_baseline": 0.430339515209198,
+    "clap_text_casv": 0.09342104941606522,
+    "clap_gt_audio_casv": 0.4183703362941742
+  },
+  "verdicts": [
+    {
+      "caption": "Tapping sound followed by two high frequency beeps",
+      "clip_similarity": 0.2950352430343628,
+      "visual": 1.0,
+      "scene_support": 0.40292597659218726,
+      "object_support": 0.7069510242984157,
+      "score": 0.7329631002671809,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Audio noise coming from a speaker with car engines revving there engines and peeling out",
+      "clip_similarity": 0.29393815994262695,
+      "visual": 0.9080853528821329,
+      "scene_support": 0.45611921771292496,
+      "object_support": 0.6134791389395309,
+      "score": 0.6841136481485899,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Computer noise with electronic popping and whirring sound followed by a woman speaking",
+      "clip_similarity": 0.2931213080883026,
+      "visual": 0.839648740830258,
+      "scene_support": 0.6131643613517759,
+      "object_support": 0.789283482236823,
+      "score": 0.7565938494086828,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car starting sound",
+      "clip_similarity": 0.29279860854148865,
+      "visual": 0.8126126710977722,
+      "scene_support": 0.6906026751785985,
+      "object_support": 0.3315372086019695,
+      "score": 0.6316870335732794,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A compressor sound with grinding and whirring",
+      "clip_similarity": 0.2923682928085327,
+      "visual": 0.7765604166770703,
+      "scene_support": 0.10029513097228555,
+      "object_support": 0.7240595441254092,
+      "score": 0.5579305692001365,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Small electronic scratching",
+      "clip_similarity": 0.2910613715648651,
+      "visual": 0.6670653330070762,
+      "scene_support": 0.794192379794295,
+      "object_support": 0.8887169041890508,
+      "score": 0.7716989183978342,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical sound then rubbing and clicking",
+      "clip_similarity": 0.2904651463031769,
+      "visual": 0.6171130231559393,
+      "scene_support": 0.7177141916198003,
+      "object_support": 0.7079332800108804,
+      "score": 0.67453945075158,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car horn beeping different tones",
+      "clip_similarity": 0.289767324924469,
+      "visual": 0.5586488956359769,
+      "scene_support": 0.4304466230936819,
+      "object_support": 0.2873670041956351,
+      "score": 0.43880364644118586,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud engine compressor sound with light spraying sounds",
+      "clip_similarity": 0.2883356809616089,
+      "visual": 0.43870442594543846,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1754817703781754,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic clicking followed by an electronic ding after each click and then a song plays",
+      "clip_similarity": 0.28814592957496643,
+      "visual": 0.42280687736890205,
+      "scene_support": 0.8333915995338704,
+      "object_support": 0.6540883965377106,
+      "score": 0.615366749769035,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Beeping sound from a vehicle door",
+      "clip_similarity": 0.28783971071243286,
+      "visual": 0.39715157477365903,
+      "scene_support": 0.7730936819172113,
+      "object_support": 0.2200716938729911,
+      "score": 0.45681024264652437,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping noises are followed by a high-pitched machine starting",
+      "clip_similarity": 0.2867923974990845,
+      "visual": 0.3094066945982792,
+      "scene_support": 0.8236991437401834,
+      "object_support": 0.99582811172673,
+      "score": 0.6696208544793857,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Television static followed by an electronic whoosh and laser ripple then rap music plays",
+      "clip_similarity": 0.2860322892665863,
+      "visual": 0.24572411623412618,
+      "scene_support": 0.9275257131276283,
+      "object_support": 0.6400432192513484,
+      "score": 0.5685603262073434,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle is idling and making light tapping sounds in mid frequency",
+      "clip_similarity": 0.28562992811203003,
+      "visual": 0.21201392252722834,
+      "scene_support": 0.7076164057354207,
+      "object_support": 0.7038617761126205,
+      "score": 0.5082490235653037,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low frequency tapping and thumping sounds from something mechanical being operated",
+      "clip_similarity": 0.28475821018218994,
+      "visual": 0.13898057937288702,
+      "scene_support": 0.5019797841617267,
+      "object_support": 0.6640232114580669,
+      "score": 0.4053931304350929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Repetitive thumping sound in mid frequency",
+      "clip_similarity": 0.2845575213432312,
+      "visual": 0.12216668081557645,
+      "scene_support": 1.0,
+      "object_support": 0.8105995105991868,
+      "score": 0.5920465255059866,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Funky music plays as a high-pitched machine runs",
+      "clip_similarity": 0.28405898809432983,
+      "visual": 0.08039909913059111,
+      "scene_support": 0.645576835385317,
+      "object_support": 0.92857058046995,
+      "score": 0.5044038644088165,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays briefly before a digital beep and a woman screaming",
+      "clip_similarity": 0.28328490257263184,
+      "visual": 0.015545490409536032,
+      "scene_support": 0.9931955211024979,
+      "object_support": 0.9972885424728449,
+      "score": 0.6033634152364172,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fly noise on top of music sound effects",
+      "clip_similarity": 0.2832633852958679,
+      "visual": 0.0137427528451793,
+      "scene_support": 0.42051603587171305,
+      "object_support": 0.6509807985199242,
+      "score": 0.3269461514555629,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A repetitive tapping noise along with a machine vibrating faintly",
+      "clip_similarity": 0.28309935331344604,
+      "visual": 0.0,
+      "scene_support": 0.7603270507169276,
+      "object_support": 1.0,
+      "score": 0.5280981152150783,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "discotheque",
+      0.21560485661029816
+    ],
+    [
+      "home theater",
+      0.18906991183757782
+    ],
+    [
+      "car interior",
+      0.1475609987974167
+    ],
+    [
+      "arcade",
+      0.04377204552292824
+    ],
+    [
+      "bus interior",
+      0.03764910623431206
+    ]
+  ],
+  "top_objects": [
+    [
+      "CD player",
+      0.1538236141204834
+    ],
+    [
+      "joystick",
+      0.07298782467842102
+    ],
+    [
+      "speaker",
+      0.06692031025886536
+    ],
+    [
+      "photocopier",
+      0.05062299966812134
+    ],
+    [
+      "home theater",
+      0.04603670910000801
+    ]
+  ]
+}

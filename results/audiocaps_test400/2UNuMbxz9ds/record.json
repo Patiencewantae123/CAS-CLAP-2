@@ -1,0 +1,285 @@
+{
+  "id": "2UNuMbxz9ds",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\2UNuMbxz9ds.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\2UNuMbxz9ds.wav",
+  "gt_captions": [
+    "A vehicle engine revving then accelerating at a high rate as a metal surface is whipped followed by tires skidding",
+    "A vehicle engine is revving up",
+    "An engine revving and popping",
+    "A vehicle engine revving then sharply accelerating as tires skid as leather whips against fiberglass three times",
+    "A vehicle engine revving up as whips smack fiberglass followed by a vehicle accelerating at a fast rate and tires skidding"
+  ],
+  "top_scene": [
+    "raceway",
+    0.6681782007217407
+  ],
+  "top_object": [
+    "sports car",
+    0.45702654123306274
+  ],
+  "env_probs": {
+    "indoor": 0.14866280555725098,
+    "outdoor": 0.851337194442749
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Tire squeal then car engine roving as it races away",
+    "casv": "A music plays followed by a speed car accelerating and skidding"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.28284940123558044,
+    "clap_gt_audio_baseline": 0.3505122661590576,
+    "clap_text_casv": 0.33227139711380005,
+    "clap_gt_audio_casv": 0.4270607829093933
+  },
+  "verdicts": [
+    {
+      "caption": "Tire squeal then car engine roving as it races away",
+      "clip_similarity": 0.3201633393764496,
+      "visual": 1.0,
+      "scene_support": 0.7315836482597943,
+      "object_support": 0.4607760125245809,
+      "score": 0.7577078982353126,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Race car speeding off and its wheels squeal",
+      "clip_similarity": 0.3191473186016083,
+      "visual": 0.8982465042009282,
+      "scene_support": 0.7171897184409982,
+      "object_support": 0.8637491028773588,
+      "score": 0.8335802480758784,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A music plays followed by a speed car accelerating and skidding",
+      "clip_similarity": 0.3178061544895172,
+      "visual": 0.7639302183288812,
+      "scene_support": 1.0,
+      "object_support": 0.9090700683022811,
+      "score": 0.8782931078222367,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man cheering and motor running and revving",
+      "clip_similarity": 0.31615912914276123,
+      "visual": 0.5989822262681133,
+      "scene_support": 0.1596097861027903,
+      "object_support": 0.12186928678318029,
+      "score": 0.3240366123730365,
+      "conflicts": [
+        "names 'a crowd of people', not visible in image (z=-0.28)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car races, slows, and tires squeal on pavement",
+      "clip_similarity": 0.314772367477417,
+      "visual": 0.46009938963422825,
+      "scene_support": 0.6229466584090632,
+      "object_support": 0.07874519182584473,
+      "score": 0.3945473109241637,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cars drifting and accelerating",
+      "clip_similarity": 0.3137952983379364,
+      "visual": 0.3622468623617723,
+      "scene_support": 0.36267731728998936,
+      "object_support": 0.19868026491469992,
+      "score": 0.3133060196061157,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine roars and tires squeal as a car speeds down the road",
+      "clip_similarity": 0.313227117061615,
+      "visual": 0.3053440582608306,
+      "scene_support": 0.16589356960190768,
+      "object_support": 0.34977702974357555,
+      "score": 0.2768388031079772,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle engine accelerates then man laughs followed by tires squealing",
+      "clip_similarity": 0.31304389238357544,
+      "visual": 0.28699428434986346,
+      "scene_support": 0.0,
+      "object_support": 0.05492291369305791,
+      "score": 0.13127458784786278,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fast car accelerates while some music is played",
+      "clip_similarity": 0.31286439299583435,
+      "visual": 0.26901759465146474,
+      "scene_support": 0.6661737382929511,
+      "object_support": 0.8530251033059041,
+      "score": 0.5633666903402424,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car engine accelerating followed by music",
+      "clip_similarity": 0.3128458261489868,
+      "visual": 0.2671581429360235,
+      "scene_support": 0.4216486136916122,
+      "object_support": 0.6207904356070424,
+      "score": 0.41959497196400575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine accelerating sound followed by a medium sound of engine",
+      "clip_similarity": 0.31176096200942993,
+      "visual": 0.15851005088868658,
+      "scene_support": 0.3520772507235936,
+      "object_support": 0.3368204475993977,
+      "score": 0.27007332985237203,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car accelerating and speeding followed by squealing tires",
+      "clip_similarity": 0.3114392161369324,
+      "visual": 0.12628751361757376,
+      "scene_support": 0.8208721461764347,
+      "object_support": 0.8681071317073957,
+      "score": 0.5572087888121786,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle engine revving, followed by tire squeal and man speaking",
+      "clip_similarity": 0.3109724223613739,
+      "visual": 0.07953856944589532,
+      "scene_support": 0.5808002291906285,
+      "object_support": 0.6755705008795546,
+      "score": 0.40872664679941306,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car speeding down a road with a humming engine and squealing tires",
+      "clip_similarity": 0.3108280897140503,
+      "visual": 0.06508379471414287,
+      "scene_support": 0.3355588838753439,
+      "object_support": 0.5878097305118466,
+      "score": 0.30304410220181427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car accelerating past with squealing tires",
+      "clip_similarity": 0.31067153811454773,
+      "visual": 0.04940530376516587,
+      "scene_support": 0.7873098328677899,
+      "object_support": 0.8203093589907529,
+      "score": 0.5020478790636291,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle revving up getting louder",
+      "clip_similarity": 0.310641884803772,
+      "visual": 0.046435553433120925,
+      "scene_support": 0.854821008017459,
+      "object_support": 1.0,
+      "score": 0.575020523778486,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays while a race car engine revs and accelerates and tires squeal",
+      "clip_similarity": 0.3105715811252594,
+      "visual": 0.03939470817352893,
+      "scene_support": 0.45298011012946743,
+      "object_support": 0.44342568944522975,
+      "score": 0.2846796231418207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Race car speeding by and skidding its tires",
+      "clip_similarity": 0.31025630235671997,
+      "visual": 0.007819845095434942,
+      "scene_support": 0.9875188007937411,
+      "object_support": 0.9267037842159407,
+      "score": 0.5773947135410785,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Racing vehicles revving and accelerating as tires skid and squeal",
+      "clip_similarity": 0.31021246314048767,
+      "visual": 0.0034293900819292933,
+      "scene_support": 0.5004255193653442,
+      "object_support": 0.296092519696378,
+      "score": 0.24032716775128835,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tires squeal and engines rev up during a race",
+      "clip_similarity": 0.3101782202720642,
+      "visual": 0.0,
+      "scene_support": 0.6329695353412792,
+      "object_support": 0.0,
+      "score": 0.18989086060238375,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.6681782007217407
+    ],
+    [
+      "highway",
+      0.05107672140002251
+    ],
+    [
+      "auto showroom",
+      0.03392793610692024
+    ],
+    [
+      "auto factory",
+      0.022535966709256172
+    ],
+    [
+      "cockpit",
+      0.01829911768436432
+    ]
+  ],
+  "top_objects": [
+    [
+      "sports car",
+      0.45702654123306274
+    ],
+    [
+      "race car",
+      0.21716928482055664
+    ],
+    [
+      "convertible",
+      0.06774654984474182
+    ],
+    [
+      "tow truck",
+      0.02856067195534706
+    ],
+    [
+      "car wheel",
+      0.022338991984725
+    ]
+  ]
+}

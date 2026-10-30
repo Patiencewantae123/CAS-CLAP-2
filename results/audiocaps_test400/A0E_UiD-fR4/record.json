@@ -1,0 +1,291 @@
+{
+  "id": "A0E_UiD-fR4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\A0E_UiD-fR4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\A0E_UiD-fR4.wav",
+  "gt_captions": [
+    "A bleeping noise followed by a loud object in use",
+    "Engine working, beeping and a scraping",
+    "Digital beeping followed by rapid vibrations and humming",
+    "Plastic tapping followed by an electronic beep then by a toy car motor revving and plastic scrapping against a wooden surface",
+    "Loud beep followed by engine noise"
+  ],
+  "top_scene": [
+    "playroom",
+    0.04872991144657135
+  ],
+  "top_object": [
+    "Model T",
+    0.12115757167339325
+  ],
+  "env_probs": {
+    "indoor": 0.8653677701950073,
+    "outdoor": 0.13463222980499268
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Music playing with an engine running continuously",
+    "casv": "Music playing with an engine running continuously"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3459068536758423,
+    "clap_gt_audio_baseline": 0.31824690103530884,
+    "clap_text_casv": 0.3459068536758423,
+    "clap_gt_audio_casv": 0.31824690103530884
+  },
+  "verdicts": [
+    {
+      "caption": "Music playing with an engine running continuously",
+      "clip_similarity": 0.3194138705730438,
+      "visual": 1.0,
+      "scene_support": 0.696045305994263,
+      "object_support": 0.7185268145176016,
+      "score": 0.8243716361535594,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motor running in background along with clicking sound",
+      "clip_similarity": 0.3172398507595062,
+      "visual": 0.8152555722422434,
+      "scene_support": 0.7103791569474195,
+      "object_support": 0.6410587029403816,
+      "score": 0.7315335868632378,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A continuous mechanical sound of a machine running",
+      "clip_similarity": 0.3149316906929016,
+      "visual": 0.6191121387634574,
+      "scene_support": 0.7466287682202263,
+      "object_support": 0.8087571123538878,
+      "score": 0.7142606196776171,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small remote controlled vehicle engine running",
+      "clip_similarity": 0.3137659728527069,
+      "visual": 0.520051461407743,
+      "scene_support": 0.2481593415179086,
+      "object_support": 0.44658594839906607,
+      "score": 0.41644417153818963,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Moving of objects with a whoosh noise followed by knocking",
+      "clip_similarity": 0.31340140104293823,
+      "visual": 0.489070782228593,
+      "scene_support": 0.7753922750492729,
+      "object_support": 0.5309354830070435,
+      "score": 0.5875266403083321,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small motor running and clicking",
+      "clip_similarity": 0.31310009956359863,
+      "visual": 0.463466705836767,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7853866823347069,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical humming followed by a cat meowing",
+      "clip_similarity": 0.31265056133270264,
+      "visual": 0.425265727766114,
+      "scene_support": 0.5897064526920928,
+      "object_support": 0.4379822218543127,
+      "score": 0.4784128934703672,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum cleaner running and the sound of a dog",
+      "clip_similarity": 0.31203269958496094,
+      "visual": 0.37276090959051206,
+      "scene_support": 0.42469809922008644,
+      "object_support": 0.18680249020643783,
+      "score": 0.33255454066416207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog whimpers as a small motor runs and then begins clicking",
+      "clip_similarity": 0.3114023804664612,
+      "visual": 0.3191974856847634,
+      "scene_support": 0.7067749450146346,
+      "object_support": 0.636384574743931,
+      "score": 0.5306268502014749,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A remote control car, and a dog barking",
+      "clip_similarity": 0.31099358201026917,
+      "visual": 0.2844585029086332,
+      "scene_support": 0.2953296893307642,
+      "object_support": 0.304282385709312,
+      "score": 0.29366702367547615,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical hum with dogs barking",
+      "clip_similarity": 0.3098824918270111,
+      "visual": 0.19003998895808377,
+      "scene_support": 0.5846513341219735,
+      "object_support": 0.4695353870800455,
+      "score": 0.3922720119438392,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Object is moving, and a cat meows",
+      "clip_similarity": 0.3097434937953949,
+      "visual": 0.17822817765328888,
+      "scene_support": 0.6417126436369393,
+      "object_support": 0.4778790881578851,
+      "score": 0.40716879059976285,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Small motors are running and a dog is barking",
+      "clip_similarity": 0.30899614095687866,
+      "visual": 0.11471943149326722,
+      "scene_support": 0.9300793131555529,
+      "object_support": 0.8328192068249382,
+      "score": 0.5747573285914542,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog panting with mechanical humming",
+      "clip_similarity": 0.3086954951286316,
+      "visual": 0.08917107119250163,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.035668428477000656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spinning followed by a small motor starting and stopping",
+      "clip_similarity": 0.3086910843849182,
+      "visual": 0.08879625385264107,
+      "scene_support": 0.8750796026196243,
+      "object_support": 0.9229983760581795,
+      "score": 0.5749418951443975,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small motor run, water gurgles, and a whooshing sound occurs",
+      "clip_similarity": 0.30863553285598755,
+      "visual": 0.08407558141007296,
+      "scene_support": 0.7463720929994268,
+      "object_support": 0.7899150047841764,
+      "score": 0.4945163618991101,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car racing engine with tire squeal with background music",
+      "clip_similarity": 0.30851462483406067,
+      "visual": 0.07380102770862511,
+      "scene_support": 0.3054747646247239,
+      "object_support": 0.6157997122190058,
+      "score": 0.3059027541365689,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrating sound of a working motor",
+      "clip_similarity": 0.3082509934902191,
+      "visual": 0.05139809400317582,
+      "scene_support": 0.6422541719969895,
+      "object_support": 0.760444964928213,
+      "score": 0.44136897867883107,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small remote control vehicle revs its engine",
+      "clip_similarity": 0.3076900243759155,
+      "visual": 0.003727913001856359,
+      "scene_support": 0.5601221999474354,
+      "object_support": 0.8375235252441391,
+      "score": 0.4207848827582149,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine running while people talk in the background",
+      "clip_similarity": 0.30764615535736084,
+      "visual": 0.0,
+      "scene_support": 0.29154718802305263,
+      "object_support": 0.3860272831964629,
+      "score": 0.20327234136585465,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "playroom",
+      0.04872991144657135
+    ],
+    [
+      "clean room",
+      0.04812738671898842
+    ],
+    [
+      "art studio",
+      0.047755226492881775
+    ],
+    [
+      "recreation room",
+      0.04714460298418999
+    ],
+    [
+      "childs room",
+      0.04325630143284798
+    ]
+  ],
+  "top_objects": [
+    [
+      "Model T",
+      0.12115757167339325
+    ],
+    [
+      "cannon",
+      0.08193257451057434
+    ],
+    [
+      "printer",
+      0.021879490464925766
+    ],
+    [
+      "sewing machine",
+      0.018834339454770088
+    ],
+    [
+      "projector",
+      0.015988370403647423
+    ]
+  ]
+}

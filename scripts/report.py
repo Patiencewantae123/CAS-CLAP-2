@@ -291,7 +291,7 @@ from result files in `results/`; nothing is entered by hand.
 | Sound candidates | AudioCaps **train** captions (test/val captions never enter the candidate pool) |
 | Verification | visual + scene + object support; explicit conflicts: indoor/outdoor, absent sound source |
 | Generator | AudioLDM-S (`cvssp/audioldm-s-full-v2`), same seed for both arms |
-| Evaluation | AudioCaps test clips: video frame as input, real recording + 5 human captions as ground truth; CLAP (`laion/clap-htsat-unfused`) |
+| Evaluation | AudioCaps test clips: video frame as input, real recording + 5 human captions as ground truth; CLAP (`laion/clap-htsat-unfused`), clips over 10 s cropped to their first 10 s |
 | Baseline | same generator prompted with the top-1 retrieved caption, unverified |
 | Tuning | grid search on AudioCaps **val**; test is never used for tuning |
 
@@ -315,6 +315,8 @@ LaTeX versions of all tables are in `tables/`.
 ## Limitations
 
 {sample_note}- CLAP similarity is an automatic proxy; no listening test has been run.
+- CLAP embeddings of a recording change when it is shifted by a few milliseconds, so single-item scores
+  are noisy; compare means with their confidence intervals, not individual items.
 - AudioCaps frames are single video frames; off-screen sounds (narration, music) in the ground truth
   cannot be recovered from the image by any method.
 - Places365/ImageNet are used for zero-shot vocabularies and Places365 val for recognition accuracy only;

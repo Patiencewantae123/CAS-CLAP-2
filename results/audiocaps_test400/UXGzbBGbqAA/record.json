@@ -1,0 +1,289 @@
+{
+  "id": "UXGzbBGbqAA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\UXGzbBGbqAA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\UXGzbBGbqAA.wav",
+  "gt_captions": [
+    "Footsteps shuffling while a person heavily breathes with a series of cloth slapping against a hard surface",
+    "Muted knocking, thumping and smacking are occurring, accompanied by rapid and irregular breathing",
+    "Footsteps shuffling and fabric slapping a hard surface",
+    "Slapping noises while a person breathes heavily",
+    "Footsteps shuffling followed by fabric slapping a hard surface as a person heavily breathes"
+  ],
+  "top_scene": [
+    "childs room",
+    0.16446906328201294
+  ],
+  "top_object": [
+    "balance beam",
+    0.05521557480096817
+  ],
+  "env_probs": {
+    "indoor": 0.8150951862335205,
+    "outdoor": 0.1849048137664795
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A kid speaking as liquid sprays followed by a tin can rattling",
+    "casv": "A child screaming followed by children speaking with some tapping in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4307098984718323,
+    "clap_gt_audio_baseline": 0.36564886569976807,
+    "clap_text_casv": 0.07089204341173172,
+    "clap_gt_audio_casv": 0.33921146392822266
+  },
+  "verdicts": [
+    {
+      "caption": "A kid speaking as liquid sprays followed by a tin can rattling",
+      "clip_similarity": 0.3070135712623596,
+      "visual": 1.0,
+      "scene_support": 0.029015271057335926,
+      "object_support": 0.19578287868479094,
+      "score": 0.46743944492263806,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.3069036304950714,
+      "visual": 0.9922440037676187,
+      "scene_support": 0.7330470119299128,
+      "object_support": 0.7375152366015544,
+      "score": 0.8380662760664876,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Kid screaming then talking",
+      "clip_similarity": 0.3063610792160034,
+      "visual": 0.9539686143909577,
+      "scene_support": 0.6744232069744643,
+      "object_support": 0.445760781758422,
+      "score": 0.717642642376249,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid trying to sing like a duck using a type of quack speech",
+      "clip_similarity": 0.30366674065589905,
+      "visual": 0.7638909913546608,
+      "scene_support": 0.43715957285075463,
+      "object_support": 0.48672385830834153,
+      "score": 0.5827214258895932,
+      "conflicts": [
+        "names 'ducks or geese', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid talking while plastic crinkles followed by gear cranking",
+      "clip_similarity": 0.30361711978912354,
+      "visual": 0.7603903858445185,
+      "scene_support": 0.6121262400416595,
+      "object_support": 0.572700943281815,
+      "score": 0.6596043093348497,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some objects hit and two boys speech and laugh",
+      "clip_similarity": 0.29882144927978516,
+      "visual": 0.42207000370033976,
+      "scene_support": 0.6718845837286963,
+      "object_support": 0.5326659376393905,
+      "score": 0.530193157890562,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid singing followed by a hiccup and another kid speaking",
+      "clip_similarity": 0.2985367774963379,
+      "visual": 0.40198725064755947,
+      "scene_support": 0.7720603782553005,
+      "object_support": 0.7400640913641101,
+      "score": 0.614432241144847,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Door screeching followed by child speaking",
+      "clip_similarity": 0.2974346876144409,
+      "visual": 0.32423806640427894,
+      "scene_support": 1.0,
+      "object_support": 0.7067486068658747,
+      "score": 0.6417198086214739,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A basketball bouncing off a hard surface followed by a kid speaking",
+      "clip_similarity": 0.2965274453163147,
+      "visual": 0.260234803377401,
+      "scene_support": 0.10144357712154811,
+      "object_support": 0.3995299007385512,
+      "score": 0.2543859647089902,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child screaming followed by a young boy talking",
+      "clip_similarity": 0.2956247329711914,
+      "visual": 0.1965511151478454,
+      "scene_support": 0.5043188486332237,
+      "object_support": 0.40941287952755745,
+      "score": 0.3527399645073725,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid speaking followed by paper sanding then glass pounding",
+      "clip_similarity": 0.2952253818511963,
+      "visual": 0.16837807380495845,
+      "scene_support": 0.47784613260778774,
+      "object_support": 0.6094882146300152,
+      "score": 0.3935515336933243,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A music is played while something swooshes followed by an explosion and a kid talking",
+      "clip_similarity": 0.2949347496032715,
+      "visual": 0.1478748275978067,
+      "scene_support": 0.6569512231349791,
+      "object_support": 0.627353322658291,
+      "score": 0.4444412947771037,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child and people laughing followed by slamming",
+      "clip_similarity": 0.2937997281551361,
+      "visual": 0.06780241867662394,
+      "scene_support": 0.8417425501390104,
+      "object_support": 0.8276265023340521,
+      "score": 0.5279316832125683,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy is talking while making meowing sounds, followed by a male laughing",
+      "clip_similarity": 0.29370373487472534,
+      "visual": 0.061030376425471794,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.02441215057018872,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boy speaks then sprays a liquid",
+      "clip_similarity": 0.29368144273757935,
+      "visual": 0.05945773202812258,
+      "scene_support": 0.36651149217399814,
+      "object_support": 0.4745499935250867,
+      "score": 0.27610153852097447,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child pretending to be a cat meowing",
+      "clip_similarity": 0.2934987246990204,
+      "visual": 0.04656751438086588,
+      "scene_support": 0.3788891917820427,
+      "object_support": 0.3356851999926001,
+      "score": 0.23299932328473918,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Children speaking followed by several whooshes and a scream",
+      "clip_similarity": 0.29308098554611206,
+      "visual": 0.01709725165674303,
+      "scene_support": 0.892365170316238,
+      "object_support": 0.7628424252764171,
+      "score": 0.5034011793404938,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Child speaking followed by a low screech",
+      "clip_similarity": 0.29297930002212524,
+      "visual": 0.009923638443166145,
+      "scene_support": 0.9421926959645894,
+      "object_support": 1.0,
+      "score": 0.5866272641666432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A quick whooshing burst followed by a child speaking",
+      "clip_similarity": 0.29284659028053284,
+      "visual": 0.0005613583610858815,
+      "scene_support": 0.896808962375428,
+      "object_support": 0.7952786576579725,
+      "score": 0.5078508293544545,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud cracking is followed by a child speaking",
+      "clip_similarity": 0.2928386330604553,
+      "visual": 0.0,
+      "scene_support": 0.7319041727609352,
+      "object_support": 0.6554940153301281,
+      "score": 0.41621945642731895,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.16446906328201294
+    ],
+    [
+      "playroom",
+      0.05787475407123566
+    ],
+    [
+      "archaelogical excavation",
+      0.050147511065006256
+    ],
+    [
+      "candy store",
+      0.0361434668302536
+    ],
+    [
+      "dorm room",
+      0.020740291103720665
+    ]
+  ],
+  "top_objects": [
+    [
+      "balance beam",
+      0.05521557480096817
+    ],
+    [
+      "projectile",
+      0.025174541398882866
+    ],
+    [
+      "ocarina",
+      0.01575271226465702
+    ],
+    [
+      "chain mail",
+      0.015429211780428886
+    ],
+    [
+      "pajamas",
+      0.015129889361560345
+    ]
+  ]
+}

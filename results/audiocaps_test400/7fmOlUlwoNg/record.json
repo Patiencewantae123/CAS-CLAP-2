@@ -1,0 +1,283 @@
+{
+  "id": "7fmOlUlwoNg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\7fmOlUlwoNg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\7fmOlUlwoNg.wav",
+  "gt_captions": [
+    "Constant rattling noise and sharp vibrations",
+    "Vibrations and rattling with people speaking in the distance",
+    "A machine is making clicking sound as people talk in the background",
+    "Clicking and screeching metal with people speaking",
+    "A machine makes stitching sounds while people are talking in the background"
+  ],
+  "top_scene": [
+    "ice cream parlor",
+    0.17544960975646973
+  ],
+  "top_object": [
+    "feather boa",
+    0.18737541139125824
+  ],
+  "env_probs": {
+    "indoor": 0.6956768035888672,
+    "outdoor": 0.3043231964111328
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Large bubbles from a liquid and popping",
+    "casv": "Loud shaking of loose objects against a plastic surface"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.09304476529359818,
+    "clap_gt_audio_baseline": -0.1570875197649002,
+    "clap_text_casv": 0.17952150106430054,
+    "clap_gt_audio_casv": 0.11761438846588135
+  },
+  "verdicts": [
+    {
+      "caption": "Large bubbles from a liquid and popping",
+      "clip_similarity": 0.3038804531097412,
+      "visual": 1.0,
+      "scene_support": 0.27328038200294885,
+      "object_support": 0.43393517979049556,
+      "score": 0.6121646685380333,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A gurgling and bubbling followed by sucking",
+      "clip_similarity": 0.290513277053833,
+      "visual": 0.5048911711656022,
+      "scene_support": 0.6938243041251628,
+      "object_support": 0.7240821623880453,
+      "score": 0.6273284084202033,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rubbing with tricking water splashing",
+      "clip_similarity": 0.28619256615638733,
+      "visual": 0.34485571541795174,
+      "scene_support": 0.10604653352820013,
+      "object_support": 0.2787350375492721,
+      "score": 0.2533767574904224,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic squeaking followed by a woman laughing and liquid splashing then a kid and woman talking",
+      "clip_similarity": 0.28614702820777893,
+      "visual": 0.34316902854342224,
+      "scene_support": 0.7049503615899433,
+      "object_support": 0.7600216777231761,
+      "score": 0.5767592232113047,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of small pops is followed by an explosion",
+      "clip_similarity": 0.28563836216926575,
+      "visual": 0.32432847123028796,
+      "scene_support": 0.714301475442074,
+      "object_support": 0.5761874530382967,
+      "score": 0.5168780670362264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person sneezes in slow motion",
+      "clip_similarity": 0.28458714485168457,
+      "visual": 0.2853922761221214,
+      "scene_support": 0.46241366480386065,
+      "object_support": 0.4848265983051597,
+      "score": 0.3983289893815546,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft explosion followed by another soft explosion",
+      "clip_similarity": 0.2844819128513336,
+      "visual": 0.28149457235643843,
+      "scene_support": 0.6894734995609958,
+      "object_support": 0.9322395358275104,
+      "score": 0.5991117395591272,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food frying on hot surface",
+      "clip_similarity": 0.28447744250297546,
+      "visual": 0.28132899445645193,
+      "scene_support": 0.7904389396316057,
+      "object_support": 0.7796155067042226,
+      "score": 0.5835479316833292,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.28347325325012207,
+      "visual": 0.2441346788561437,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6976538715424574,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking followed by food sizzling and glass tapping then stirring and more sizzling",
+      "clip_similarity": 0.2830035984516144,
+      "visual": 0.22673906468355856,
+      "scene_support": 0.7974154605205455,
+      "object_support": 0.4341677281183576,
+      "score": 0.46017058246509435,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig snorting, people laughing",
+      "clip_similarity": 0.28218162059783936,
+      "visual": 0.19629370428670145,
+      "scene_support": 0.3030297294976702,
+      "object_support": 0.24054035592450768,
+      "score": 0.24158850734133397,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Squishy slurps real close and a kid begins to talk and a click sound",
+      "clip_similarity": 0.28151464462280273,
+      "visual": 0.1715894816087107,
+      "scene_support": 0.3717775194736011,
+      "object_support": 0.32831805780458306,
+      "score": 0.27866446582693954,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something dropping in water and water being added to something in a bowl",
+      "clip_similarity": 0.2808665931224823,
+      "visual": 0.14758620537399633,
+      "scene_support": 0.6001012802675202,
+      "object_support": 0.6976711013247721,
+      "score": 0.44836619662728616,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talking and laughing while stirring liquid",
+      "clip_similarity": 0.2802121639251709,
+      "visual": 0.12334670466863447,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.04933868186745379,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations and oinking of a small pig",
+      "clip_similarity": 0.2788486182689667,
+      "visual": 0.07284213361474218,
+      "scene_support": 0.5403953161800075,
+      "object_support": 0.41961713404025347,
+      "score": 0.31714058851197513,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman describes an item while making crinkly noises",
+      "clip_similarity": 0.27876439690589905,
+      "visual": 0.0697226459789959,
+      "scene_support": 0.7137032109630119,
+      "object_support": 0.8528104695969431,
+      "score": 0.49784316255958483,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sizzling food with scraping and a woman speaking",
+      "clip_similarity": 0.27868151664733887,
+      "visual": 0.06665283171324557,
+      "scene_support": 0.6762396677047048,
+      "object_support": 0.48352221815946284,
+      "score": 0.3745896984445485,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast spraying liquid hits against a solid surface",
+      "clip_similarity": 0.2781375050544739,
+      "visual": 0.04650310513755108,
+      "scene_support": 0.27956308228075405,
+      "object_support": 0.31322049800500656,
+      "score": 0.19643631614074863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman narrating a recipe and scraping can",
+      "clip_similarity": 0.27807632088661194,
+      "visual": 0.04423689561306873,
+      "scene_support": 0.33570484880434814,
+      "object_support": 0.19883032711463278,
+      "score": 0.17805531102092176,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crumpling sound with woman talking, followed by shaking and more crumpling",
+      "clip_similarity": 0.27688199281692505,
+      "visual": 0.0,
+      "scene_support": 0.31711710380904284,
+      "object_support": 0.33437486187734305,
+      "score": 0.19544758970591575,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "ice cream parlor",
+      0.17544960975646973
+    ],
+    [
+      "delicatessen",
+      0.05857521668076515
+    ],
+    [
+      "candy store",
+      0.05479747802019119
+    ],
+    [
+      "ice floe",
+      0.05374784767627716
+    ],
+    [
+      "bar",
+      0.038818784058094025
+    ]
+  ],
+  "top_objects": [
+    [
+      "feather boa",
+      0.18737541139125824
+    ],
+    [
+      "ice cream",
+      0.1642589420080185
+    ],
+    [
+      "dishcloth",
+      0.038821469992399216
+    ],
+    [
+      "ice pop",
+      0.034328050911426544
+    ],
+    [
+      "trifle",
+      0.023080727085471153
+    ]
+  ]
+}

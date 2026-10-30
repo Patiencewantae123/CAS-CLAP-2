@@ -1,0 +1,289 @@
+{
+  "id": "-nQHwrRLfc0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-nQHwrRLfc0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-nQHwrRLfc0.wav",
+  "gt_captions": [
+    "Chainsaw being run",
+    "Clicking and vibrating of a humming rattling engine",
+    "Engine running steadily",
+    "An engine is idling",
+    "A mid-size motor is idling, vibrating and humming"
+  ],
+  "top_scene": [
+    "lock chamber",
+    0.44586706161499023
+  ],
+  "top_object": [
+    "electric locomotive",
+    0.15263235569000244
+  ],
+  "env_probs": {
+    "indoor": 0.42730429768562317,
+    "outdoor": 0.5726957023143768
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A large machine outdoors making engine sounds",
+    "casv": "A large machine outdoors making engine sounds"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.38428622484207153,
+    "clap_gt_audio_baseline": 0.324815034866333,
+    "clap_text_casv": 0.38428622484207153,
+    "clap_gt_audio_casv": 0.324815034866333
+  },
+  "verdicts": [
+    {
+      "caption": "A large machine outdoors making engine sounds",
+      "clip_similarity": 0.35118991136550903,
+      "visual": 1.0,
+      "scene_support": 0.6691428984211338,
+      "object_support": 0.8841011553330306,
+      "score": 0.8659732161262493,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An idle motorboat engine running",
+      "clip_similarity": 0.3508186340332031,
+      "visual": 0.9724310998791731,
+      "scene_support": 0.83056912981767,
+      "object_support": 0.6647251382339668,
+      "score": 0.8375607203671603,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine engine pump running and rattling with pressurized air spraying",
+      "clip_similarity": 0.3503950834274292,
+      "visual": 0.9409806898199988,
+      "scene_support": 0.5729440605905601,
+      "object_support": 0.4649482197545622,
+      "score": 0.6877599600315363,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A lawn mower engine running",
+      "clip_similarity": 0.35024064779281616,
+      "visual": 0.9295131958060219,
+      "scene_support": 0.5063981793676856,
+      "object_support": 0.5157517611255407,
+      "score": 0.6784502604703766,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine motor running and sawing wood",
+      "clip_similarity": 0.34876465797424316,
+      "visual": 0.8199147572617873,
+      "scene_support": 0.5788024149279355,
+      "object_support": 0.7303535832469246,
+      "score": 0.7207127023571729,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large fast motor idles with a soft tamping noise in the background",
+      "clip_similarity": 0.34828877449035645,
+      "visual": 0.7845784113692391,
+      "scene_support": 0.8445216056914934,
+      "object_support": 0.8488165168941388,
+      "score": 0.8218328013233853,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motor engine running idle",
+      "clip_similarity": 0.34415867924690247,
+      "visual": 0.47790150613207755,
+      "scene_support": 0.936888629443144,
+      "object_support": 0.9311736679042425,
+      "score": 0.751579291657047,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat engine running",
+      "clip_similarity": 0.34379008412361145,
+      "visual": 0.4505317712874486,
+      "scene_support": 0.9820598473652048,
+      "object_support": 0.9681482740801138,
+      "score": 0.7652751449485751,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motor running with metal scraping and grinding",
+      "clip_similarity": 0.34301137924194336,
+      "visual": 0.39270966571214866,
+      "scene_support": 0.763836148297973,
+      "object_support": 0.5356171897989328,
+      "score": 0.5469198677139312,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An idle vehicle engine running with a series of plastic clanking",
+      "clip_similarity": 0.3421744704246521,
+      "visual": 0.33056567364335254,
+      "scene_support": 0.6680671530623601,
+      "object_support": 0.5175794691796408,
+      "score": 0.4879202561299413,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.36)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A medium machine motor running while a saw buzzes cutting wood",
+      "clip_similarity": 0.34189844131469727,
+      "visual": 0.31006935377506717,
+      "scene_support": 0.26752446458402884,
+      "object_support": 0.34639666995927026,
+      "score": 0.3082040818730166,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-1.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small engine continuously running",
+      "clip_similarity": 0.3416745066642761,
+      "visual": 0.29344126616004923,
+      "scene_support": 1.0,
+      "object_support": 0.9650409295833934,
+      "score": 0.7068887853390378,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine running continuously with some tapping",
+      "clip_similarity": 0.34123581647872925,
+      "visual": 0.26086667876411307,
+      "scene_support": 0.9680793877948132,
+      "object_support": 0.7260012781916141,
+      "score": 0.6125708713015734,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine running continuously with low pitched clanking",
+      "clip_similarity": 0.3404003381729126,
+      "visual": 0.1988289081759559,
+      "scene_support": 0.9731346751190446,
+      "object_support": 0.9163396136817553,
+      "score": 0.6463738499106223,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter engine running idle",
+      "clip_similarity": 0.338966429233551,
+      "visual": 0.09235515152051624,
+      "scene_support": 0.5988345115771155,
+      "object_support": 0.6820910136001707,
+      "score": 0.42121971816139236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.33895331621170044,
+      "visual": 0.09138145461465945,
+      "scene_support": 0.5166372837852701,
+      "object_support": 0.6153731678972592,
+      "score": 0.3761557173506226,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large truck engine running",
+      "clip_similarity": 0.33890336751937866,
+      "visual": 0.08767255458235042,
+      "scene_support": 0.6640378261483565,
+      "object_support": 0.7051552925753635,
+      "score": 0.4458269574500562,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large motor idles with some hydraulic hissing",
+      "clip_similarity": 0.3388151526451111,
+      "visual": 0.08112222994295021,
+      "scene_support": 0.9421873098491549,
+      "object_support": 1.0,
+      "score": 0.6151050849319266,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An idle vehicle engine running",
+      "clip_similarity": 0.338263601064682,
+      "visual": 0.04016721031410577,
+      "scene_support": 0.7931916967816797,
+      "object_support": 0.7813666247505865,
+      "score": 0.4884343805853221,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.36)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chainsaw engine running and revving up as it cuts an object",
+      "clip_similarity": 0.33772265911102295,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lock chamber",
+      0.44586706161499023
+    ],
+    [
+      "engine room",
+      0.3000738322734833
+    ],
+    [
+      "galley",
+      0.026871152222156525
+    ],
+    [
+      "landing deck",
+      0.019719291478395462
+    ],
+    [
+      "boat deck",
+      0.013031070120632648
+    ]
+  ],
+  "top_objects": [
+    [
+      "electric locomotive",
+      0.15263235569000244
+    ],
+    [
+      "paddle wheel",
+      0.12201333045959473
+    ],
+    [
+      "harvester",
+      0.0912952721118927
+    ],
+    [
+      "crane (machine)",
+      0.08002012968063354
+    ],
+    [
+      "sawmill",
+      0.042793311178684235
+    ]
+  ]
+}

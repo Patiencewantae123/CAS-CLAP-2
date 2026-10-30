@@ -1,0 +1,285 @@
+{
+  "id": "KvrcRMfFzOE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\KvrcRMfFzOE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\KvrcRMfFzOE.wav",
+  "gt_captions": [
+    "An engine running and helicopter propellers spinning",
+    "A helicopter flying and wind",
+    "A helicopter is in flight with loud blades moving fast",
+    "A helicopter is taking flight with the blades slapping",
+    "A helicopter flying as wind blows heavily into a microphone"
+  ],
+  "top_scene": [
+    "heliport",
+    0.6240395307540894
+  ],
+  "top_object": [
+    "ambulance",
+    0.8403785824775696
+  ],
+  "env_probs": {
+    "indoor": 0.04867427796125412,
+    "outdoor": 0.9513257220387459
+  },
+  "status": "REPAIR",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "An helicopter engine works nearby while two men talk",
+    "casv": "An ambulance siren goes off and gets louder as the sound appears to come closer"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.21769025921821594,
+    "clap_gt_audio_baseline": 0.3544178307056427,
+    "clap_text_casv": 0.0275435708463192,
+    "clap_gt_audio_casv": 0.04402919113636017
+  },
+  "verdicts": [
+    {
+      "caption": "An helicopter engine works nearby while two men talk",
+      "clip_similarity": 0.31394439935684204,
+      "visual": 1.0,
+      "scene_support": 0.20346188400795961,
+      "object_support": 0.17961839935982105,
+      "score": 0.5149240850103343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An ambulance siren goes off and gets louder as the sound appears to come closer",
+      "clip_similarity": 0.3070799708366394,
+      "visual": 0.5750496751970865,
+      "scene_support": 0.17296042540447934,
+      "object_support": 1.0,
+      "score": 0.5819079977001784,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter takes off from the ground really close by with a dog barking at the end",
+      "clip_similarity": 0.3060723543167114,
+      "visual": 0.5126720182428356,
+      "scene_support": 0.4314182733600782,
+      "object_support": 0.2895382805796319,
+      "score": 0.42135577347904724,
+      "conflicts": [
+        "names 'a dog', not visible in image (z=-0.10)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying with engine sounds",
+      "clip_similarity": 0.30514732003211975,
+      "visual": 0.4554067093341402,
+      "scene_support": 0.7193104203119085,
+      "object_support": 0.3542191070275065,
+      "score": 0.5042215419354805,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud propeller and engine noises from helicopter",
+      "clip_similarity": 0.30510881543159485,
+      "visual": 0.4530230378527769,
+      "scene_support": 0.7479025449172343,
+      "object_support": 0.5084871916005438,
+      "score": 0.5581261360964441,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter hovers outside nearby as wind blows by",
+      "clip_similarity": 0.3033093214035034,
+      "visual": 0.3416232950383841,
+      "scene_support": 0.6850351387383498,
+      "object_support": 0.2769144146315597,
+      "score": 0.4252341840263265,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter is flying with loud engine sounds",
+      "clip_similarity": 0.3029462993144989,
+      "visual": 0.319149996033364,
+      "scene_support": 0.7654544321327534,
+      "object_support": 0.41866931479642505,
+      "score": 0.48289712249209915,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talks nearby, followed by a small helicopter starting up",
+      "clip_similarity": 0.3022240400314331,
+      "visual": 0.27443770628813274,
+      "scene_support": 0.7568867518671493,
+      "object_support": 0.42601363272625603,
+      "score": 0.46464519789327463,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter running continuously",
+      "clip_similarity": 0.3005198538303375,
+      "visual": 0.16893810387420413,
+      "scene_support": 0.8046489850582453,
+      "object_support": 0.5318143866719373,
+      "score": 0.4685142530687364,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter running idle as wind blows heavily into a microphone",
+      "clip_similarity": 0.30038779973983765,
+      "visual": 0.16076314386342966,
+      "scene_support": 0.48117953060178986,
+      "object_support": 0.216977468400806,
+      "score": 0.2737523572461506,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small helicopter starts up and revs up highly",
+      "clip_similarity": 0.3003252148628235,
+      "visual": 0.15688875523273083,
+      "scene_support": 0.8094246003092026,
+      "object_support": 0.5591839646744632,
+      "score": 0.4733380715881921,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter engine noise",
+      "clip_similarity": 0.2999401092529297,
+      "visual": 0.13304835052516414,
+      "scene_support": 0.6586921062112642,
+      "object_support": 0.49645684094831327,
+      "score": 0.3997640243579389,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High frequency humming of a helicopter with people speaking",
+      "clip_similarity": 0.2996312975883484,
+      "visual": 0.11393101005311602,
+      "scene_support": 0.7660906234370748,
+      "object_support": 0.4488768908899837,
+      "score": 0.41006265831936395,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter hovers nearby as a person speaks",
+      "clip_similarity": 0.2995902895927429,
+      "visual": 0.1113923630265248,
+      "scene_support": 1.0,
+      "object_support": 0.5264600225605229,
+      "score": 0.5024949519787668,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying closer and closer followed by a man speaking",
+      "clip_similarity": 0.2993524670600891,
+      "visual": 0.09666968622986932,
+      "scene_support": 0.5679341340577452,
+      "object_support": 0.3975368536747621,
+      "score": 0.32830917081169986,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ambulance siren going off and a robotic voice talking",
+      "clip_similarity": 0.299163281917572,
+      "visual": 0.08495796288335691,
+      "scene_support": 0.20807940153932453,
+      "object_support": 0.967475824567831,
+      "score": 0.3866497529854894,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter motor noise",
+      "clip_similarity": 0.29890066385269165,
+      "visual": 0.0687002902101579,
+      "scene_support": 0.8595164946087157,
+      "object_support": 0.3740796945652279,
+      "score": 0.3975589728362462,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter engine runs as rotor blades beat the air and a man speaks",
+      "clip_similarity": 0.298525869846344,
+      "visual": 0.045498237153173034,
+      "scene_support": 0.028323054447942527,
+      "object_support": 0.0,
+      "score": 0.02669621119565197,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An helicopter engine running followed by a gust of wind in a microphone",
+      "clip_similarity": 0.2982374429702759,
+      "visual": 0.027642840406552512,
+      "scene_support": 0.0,
+      "object_support": 0.16277629409666317,
+      "score": 0.05989002439161996,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person speaks followed by a sound of a helicopter",
+      "clip_similarity": 0.29779091477394104,
+      "visual": 0.0,
+      "scene_support": 0.858381687419526,
+      "object_support": 0.6210753849268711,
+      "score": 0.4438371217039191,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "heliport",
+      0.6240395307540894
+    ],
+    [
+      "hospital",
+      0.2929828464984894
+    ],
+    [
+      "hospital room",
+      0.022430451586842537
+    ],
+    [
+      "landing deck",
+      0.011015492491424084
+    ],
+    [
+      "outdoor hangar",
+      0.004159057047218084
+    ]
+  ],
+  "top_objects": [
+    [
+      "ambulance",
+      0.8403785824775696
+    ],
+    [
+      "stretcher",
+      0.1024264320731163
+    ],
+    [
+      "Griffon Bruxellois",
+      0.006224085111171007
+    ],
+    [
+      "oxygen mask",
+      0.005504219327121973
+    ],
+    [
+      "police van",
+      0.005255349446088076
+    ]
+  ]
+}

@@ -25,6 +25,7 @@ scripts/              entry points (run from the repo root with  py -m scripts.<
   eval_scenes.py     scene / indoor-outdoor accuracy on Places365 val
   train.py          tune the verifier on AudioCaps val, score on test
   test.py  generate baseline vs CAS-V audio and score with CLAP
+  rescore.py  recompute a finished run's CLAP metrics from its saved audio
   plots.py   result graphs
   figures.py   qualitative comparison figures
   listening_test.py     blind A/B listening test: build the rater package, analyse ratings
@@ -90,7 +91,7 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 ## Development
 
 ```
-py -m pytest                         # 26 tests, ~10 s, no model downloads
+py -m pytest                         # 28 tests, ~10 s, no model downloads
 py -m ruff check casv scripts tests  # lint
 py -m ruff format casv scripts tests # format
 ```

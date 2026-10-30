@@ -1,0 +1,287 @@
+{
+  "id": "Or7umk40TZA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Or7umk40TZA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Or7umk40TZA.wav",
+  "gt_captions": [
+    "Vibrating noise from an engine",
+    "Vibrations from an engine",
+    "An engine is idling with vibrating noises",
+    "Vibrations from a sewing machine",
+    "Vibrations from a humming engine"
+  ],
+  "top_scene": [
+    "car interior",
+    0.07736748456954956
+  ],
+  "top_object": [
+    "car mirror",
+    0.1403135359287262
+  ],
+  "env_probs": {
+    "indoor": 0.46601179242134094,
+    "outdoor": 0.5339882075786591
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Raindrops on the windshield of a moving vehicle while the windshield wipers are on at a low constant speed",
+    "casv": "Rain falling on car driving"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.24544396996498108,
+    "clap_gt_audio_baseline": 0.14942219853401184,
+    "clap_text_casv": 0.1560196876525879,
+    "clap_gt_audio_casv": 0.2695642113685608
+  },
+  "verdicts": [
+    {
+      "caption": "Raindrops on the windshield of a moving vehicle while the windshield wipers are on at a low constant speed",
+      "clip_similarity": 0.31598228216171265,
+      "visual": 1.0,
+      "scene_support": 0.341321191406639,
+      "object_support": 0.8344874935080623,
+      "score": 0.7527426054744104,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain falling on car driving",
+      "clip_similarity": 0.3145040273666382,
+      "visual": 0.8972045319368082,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.9588818127747234,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain falls hard on top of a vehicle",
+      "clip_similarity": 0.31290221214294434,
+      "visual": 0.7858168697969664,
+      "scene_support": 0.7662655209914313,
+      "object_support": 0.7551415122990229,
+      "score": 0.7707488579059227,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain pattering and falling on a glass surface",
+      "clip_similarity": 0.3090674877166748,
+      "visual": 0.5191562821870512,
+      "scene_support": 0.0,
+      "object_support": 0.7458497664949815,
+      "score": 0.43141744282331496,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain and hail hit a window while a person speaks",
+      "clip_similarity": 0.30868953466415405,
+      "visual": 0.49287403296368526,
+      "scene_support": 0.3518561452569603,
+      "object_support": 0.6153954298123429,
+      "score": 0.48732508570626504,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind against a microphone on a speeding car",
+      "clip_similarity": 0.3081567585468292,
+      "visual": 0.45582563607312276,
+      "scene_support": 0.1960976931135995,
+      "object_support": 0.8979771087963453,
+      "score": 0.5105526950022325,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy rain hitting a vehicle",
+      "clip_similarity": 0.308016300201416,
+      "visual": 0.44605838795849384,
+      "scene_support": 0.6384470443889401,
+      "object_support": 0.6318469042414449,
+      "score": 0.559511539772513,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain pouring on a surface with vehicle engines revving and accelerating",
+      "clip_similarity": 0.3072361946105957,
+      "visual": 0.39181109607465636,
+      "scene_support": 0.541941831885305,
+      "object_support": 0.41532022229213683,
+      "score": 0.4439030546830951,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car slowly moving pass in the rain followed by a man speaking",
+      "clip_similarity": 0.30586397647857666,
+      "visual": 0.2963892475302105,
+      "scene_support": 0.10916261338241094,
+      "object_support": 0.32759221963871726,
+      "score": 0.24958214891842267,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Strong wind against the microphone simultaneously with heavy rain",
+      "clip_similarity": 0.3056733012199402,
+      "visual": 0.2831299957930164,
+      "scene_support": 0.34270508423262463,
+      "object_support": 0.44696129542564933,
+      "score": 0.3501519122146887,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car driving down the road in the rain",
+      "clip_similarity": 0.3043603003025055,
+      "visual": 0.19182601739577354,
+      "scene_support": 0.3916273288956344,
+      "object_support": 0.6750141099408372,
+      "score": 0.39672283860925084,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain on a surface with non English speech ending with a motorcycle passing",
+      "clip_similarity": 0.30329784750938416,
+      "visual": 0.11794475380856359,
+      "scene_support": 0.41297369647573406,
+      "object_support": 0.46785492728688527,
+      "score": 0.31142648865221123,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as rain falls on a windshield",
+      "clip_similarity": 0.3031606674194336,
+      "visual": 0.10840547032211402,
+      "scene_support": 0.28677812700423455,
+      "object_support": 0.5091221535284407,
+      "score": 0.2821322722886482,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle driving in the rain",
+      "clip_similarity": 0.30314379930496216,
+      "visual": 0.10723248868984583,
+      "scene_support": 0.7818572208213328,
+      "object_support": 0.7830686169664617,
+      "score": 0.5123707468122767,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car drives past stream",
+      "clip_similarity": 0.3028322458267212,
+      "visual": 0.08556755938996666,
+      "scene_support": 0.9141643860718397,
+      "object_support": 0.9827459480412946,
+      "score": 0.6033001239899269,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female voice talking while a thunderstorm is happening, with heavy pouring rain at the end",
+      "clip_similarity": 0.3026279807090759,
+      "visual": 0.07136329064868371,
+      "scene_support": 0.22731853834785345,
+      "object_support": 0.0,
+      "score": 0.09674087776382952,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falling on a surface and wind blowing heavily on a microphone",
+      "clip_similarity": 0.3025307059288025,
+      "visual": 0.0645989584088898,
+      "scene_support": 0.20094888679087444,
+      "object_support": 0.2873889545949952,
+      "score": 0.1723409357793168,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain splashing against a window quickly",
+      "clip_similarity": 0.3024901747703552,
+      "visual": 0.06178048664230899,
+      "scene_support": 0.8500734968987894,
+      "object_support": 0.7914765720384992,
+      "score": 0.5171772153381102,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy rain pouring as vehicles drive by followed by a man speaking",
+      "clip_similarity": 0.30220234394073486,
+      "visual": 0.04176519228816387,
+      "scene_support": 0.5832849329365696,
+      "object_support": 0.4705636264492974,
+      "score": 0.3328606447310256,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain and hail fall on a windshield as an engine hums",
+      "clip_similarity": 0.30160173773765564,
+      "visual": 0.0,
+      "scene_support": 0.20244033605411285,
+      "object_support": 0.3387047790898525,
+      "score": 0.16234353454318962,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.19)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.07736748456954956
+    ],
+    [
+      "wet bar",
+      0.03931524604558945
+    ],
+    [
+      "fountain",
+      0.035049229860305786
+    ],
+    [
+      "indoor bow window",
+      0.031199606135487556
+    ],
+    [
+      "driveway",
+      0.02838985249400139
+    ]
+  ],
+  "top_objects": [
+    [
+      "car mirror",
+      0.1403135359287262
+    ],
+    [
+      "mosquito net",
+      0.030715862289071083
+    ],
+    [
+      "car wheel",
+      0.02490042895078659
+    ],
+    [
+      "umbrella",
+      0.021357329562306404
+    ],
+    [
+      "bubble",
+      0.01887911558151245
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "2ABngPM3raQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\2ABngPM3raQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\2ABngPM3raQ.wav",
+  "gt_captions": [
+    "A man talking while bongos play followed by frogs croaking",
+    "A man is speaking as frogs croak",
+    "A man talking as music is playing followed by a frog croaking",
+    "An adult male speaks while thumps occur in the background, then frogs croak and the adult male speaks again",
+    "An adult male speaks, a tapping sound occurs, and frogs croak"
+  ],
+  "top_scene": [
+    "swamp",
+    0.22237719595432281
+  ],
+  "top_object": [
+    "ladybug",
+    0.3447283208370209
+  ],
+  "env_probs": {
+    "indoor": 0.20392851531505585,
+    "outdoor": 0.7960714846849442
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Several insects buzz as people talk",
+    "casv": "Several insects buzz as people talk"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.03154691681265831,
+    "clap_gt_audio_baseline": 0.2842564284801483,
+    "clap_text_casv": 0.03154691681265831,
+    "clap_gt_audio_casv": 0.2842564284801483
+  },
+  "verdicts": [
+    {
+      "caption": "Several insects buzz as people talk",
+      "clip_similarity": 0.30530452728271484,
+      "visual": 1.0,
+      "scene_support": 0.6788957743689609,
+      "object_support": 0.43383225342415227,
+      "score": 0.733818408337934,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Frogs purr nearby as birds chirp in the background",
+      "clip_similarity": 0.2961524724960327,
+      "visual": 0.6468396442314106,
+      "scene_support": 0.7717639389713588,
+      "object_support": 0.4761661789657462,
+      "score": 0.6331148930736957,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.02)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insects, frogs and birds call as a male narrates",
+      "clip_similarity": 0.2941203713417053,
+      "visual": 0.5684247326790516,
+      "scene_support": 0.8241614337934962,
+      "object_support": 0.404954416357243,
+      "score": 0.5961046481168424,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speak as insects buzz nearby",
+      "clip_similarity": 0.2932155430316925,
+      "visual": 0.5335091322678063,
+      "scene_support": 0.45666933467558934,
+      "object_support": 0.3325039343939804,
+      "score": 0.45015563362799343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frogs making strange croaking sounds",
+      "clip_similarity": 0.2906768321990967,
+      "visual": 0.43554511853202904,
+      "scene_support": 0.47532614346186536,
+      "object_support": 0.36987299284432096,
+      "score": 0.42777778830466756,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A variety of frogs call outdoors, while several bird species vocalize nearby",
+      "clip_similarity": 0.289308100938797,
+      "visual": 0.38272838719619484,
+      "scene_support": 0.9431227256599196,
+      "object_support": 0.7596822976860845,
+      "score": 0.6639328618822791,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several insects buzz with distant chirps of birds",
+      "clip_similarity": 0.28881269693374634,
+      "visual": 0.3636116905908086,
+      "scene_support": 0.7706516267978116,
+      "object_support": 0.2002406742567684,
+      "score": 0.43671236655269746,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog swallows a buzzing fly and croaks, then a man sings as music plays",
+      "clip_similarity": 0.28712737560272217,
+      "visual": 0.29857835166073643,
+      "scene_support": 0.0,
+      "object_support": 0.5226834718567881,
+      "score": 0.276236382221331,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman narrates while insects buzz around",
+      "clip_similarity": 0.28640779852867126,
+      "visual": 0.2708112434650407,
+      "scene_support": 0.2094513528455553,
+      "object_support": 0.0,
+      "score": 0.1711599032396829,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insects buzzing as footsteps walk on foliage",
+      "clip_similarity": 0.2858453392982483,
+      "visual": 0.2491070134804739,
+      "scene_support": 0.29031842824018683,
+      "object_support": 0.037556556913467924,
+      "score": 0.19800530093828597,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind and buzzing insect with gunshots",
+      "clip_similarity": 0.2858435809612274,
+      "visual": 0.2490391626051976,
+      "scene_support": 0.28171698751536856,
+      "object_support": 0.40963496200850813,
+      "score": 0.307021249899242,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs and insects croak and chirp together",
+      "clip_similarity": 0.2846817374229431,
+      "visual": 0.2042058342552619,
+      "scene_support": 0.5055945671636864,
+      "object_support": 0.31419978114933483,
+      "score": 0.3276206381960111,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog consistently croaks while crickets chirp in the background",
+      "clip_similarity": 0.28294432163238525,
+      "visual": 0.13716226939327517,
+      "scene_support": 1.0,
+      "object_support": 0.824527565347825,
+      "score": 0.6022231773616575,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Insects buzz while birds chirp and wind blows",
+      "clip_similarity": 0.2820897698402405,
+      "visual": 0.10418674400899772,
+      "scene_support": 0.7468664647781564,
+      "object_support": 0.14900518233457102,
+      "score": 0.3104361917374173,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks multiple times nearby",
+      "clip_similarity": 0.28184404969215393,
+      "visual": 0.09470487169284483,
+      "scene_support": 0.9410713843665679,
+      "object_support": 1.0,
+      "score": 0.6202033639871083,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An insect flies nearby while different animal make noises far away",
+      "clip_similarity": 0.2814008593559265,
+      "visual": 0.07760300107871392,
+      "scene_support": 0.6633968429477923,
+      "object_support": 0.3943730481717363,
+      "score": 0.34837216776734414,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insects buzz loudly as a person makes noise",
+      "clip_similarity": 0.280387818813324,
+      "visual": 0.03851169680088873,
+      "scene_support": 0.45729397882646117,
+      "object_support": 0.3212678584601766,
+      "score": 0.24897322990634685,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insects buzz while something bangs",
+      "clip_similarity": 0.2800784111022949,
+      "visual": 0.026572242781931887,
+      "scene_support": 0.9265791449719034,
+      "object_support": 0.5146686809944181,
+      "score": 0.4430032449026692,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with rustling and humming of traffic then a frog croaks and a girl scrams",
+      "clip_similarity": 0.2797941565513611,
+      "visual": 0.015603401283876562,
+      "scene_support": 0.6135631121636452,
+      "object_support": 0.08629924139966066,
+      "score": 0.2162000665825424,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.50)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Insects buzz and crickets chirp",
+      "clip_similarity": 0.27938979864120483,
+      "visual": 0.0,
+      "scene_support": 0.6434041043329015,
+      "object_support": 0.13309086605847492,
+      "score": 0.23294849111741292,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "swamp",
+      0.22237719595432281
+    ],
+    [
+      "rainforest",
+      0.09466230124235153
+    ],
+    [
+      "natural history museum",
+      0.0725182518362999
+    ],
+    [
+      "marsh",
+      0.06577107310295105
+    ],
+    [
+      "outdoor museum",
+      0.05451968312263489
+    ]
+  ],
+  "top_objects": [
+    [
+      "ladybug",
+      0.3447283208370209
+    ],
+    [
+      "tree frog",
+      0.150821715593338
+    ],
+    [
+      "leaf beetle",
+      0.11712672561407089
+    ],
+    [
+      "tailed frog",
+      0.10558474063873291
+    ],
+    [
+      "weevil",
+      0.04908020794391632
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "-NsC63dA01g",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-NsC63dA01g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-NsC63dA01g.wav",
+  "gt_captions": [
+    "A cat meows and a woman speaks",
+    "A woman speaks and a cat meows",
+    "An adult female speaks as a cat meows three times, and an electronic device plays in the background",
+    "A woman talking as a cat meows",
+    "Woman speaking to meowing cat"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.27233144640922546
+  ],
+  "top_object": [
+    "Siamese cat",
+    0.11631547659635544
+  ],
+  "env_probs": {
+    "indoor": 0.8274326324462891,
+    "outdoor": 0.17256736755371094
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A cat meows and hisses in a menacing way",
+    "casv": "A cat is meowing, and some tapping occurs in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.12247425317764282,
+    "clap_gt_audio_baseline": 0.2697531282901764,
+    "clap_text_casv": -0.10801231861114502,
+    "clap_gt_audio_casv": 0.21405468881130219
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meows and hisses in a menacing way",
+      "clip_similarity": 0.30897143483161926,
+      "visual": 1.0,
+      "scene_support": 0.41717334828272146,
+      "object_support": 0.3925002065917548,
+      "score": 0.6429020664623429,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meowing",
+      "clip_similarity": 0.30427807569503784,
+      "visual": 0.7066055346689967,
+      "scene_support": 0.4806666458657389,
+      "object_support": 0.7644950505441054,
+      "score": 0.6561907227905519,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat is meowing and hisses as someone snickers",
+      "clip_similarity": 0.2985282838344574,
+      "visual": 0.34717062683274896,
+      "scene_support": 0.4149785094021046,
+      "object_support": 0.3795232284530832,
+      "score": 0.37721877208965593,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat is meowing, and some tapping occurs in the background",
+      "clip_similarity": 0.29748910665512085,
+      "visual": 0.282208874696793,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7128835498787172,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat is meowing over and over",
+      "clip_similarity": 0.2972114384174347,
+      "visual": 0.26485108856439166,
+      "scene_support": 0.849101374344579,
+      "object_support": 0.8823380034128355,
+      "score": 0.6253722487529809,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman's voice and laughter accompany a kitten's meowing",
+      "clip_similarity": 0.2959945797920227,
+      "visual": 0.18878199276401833,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.07551279710560733,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing angrily",
+      "clip_similarity": 0.29586300253868103,
+      "visual": 0.1805567458203077,
+      "scene_support": 0.585795898909537,
+      "object_support": 0.7867134659823303,
+      "score": 0.4839755077956832,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing and growling",
+      "clip_similarity": 0.2958139181137085,
+      "visual": 0.17748834679057013,
+      "scene_support": 0.6405609907925205,
+      "object_support": 0.8301309098059606,
+      "score": 0.5122029088957724,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing weakly",
+      "clip_similarity": 0.2952757477760315,
+      "visual": 0.14384587582578498,
+      "scene_support": 0.7889716890847813,
+      "object_support": 0.8796851843250844,
+      "score": 0.5581354123532737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is meowing and something is being tapped on rapidly",
+      "clip_similarity": 0.2952595055103302,
+      "visual": 0.14283052824156703,
+      "scene_support": 0.9309369982522105,
+      "object_support": 0.7672642848396637,
+      "score": 0.5665925962241891,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is meowing very loudly and menacingly",
+      "clip_similarity": 0.2951628267765045,
+      "visual": 0.1367868813366073,
+      "scene_support": 0.7195618915408936,
+      "object_support": 0.6055641643830989,
+      "score": 0.45225256931184066,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing and singing",
+      "clip_similarity": 0.2945915460586548,
+      "visual": 0.10107459171848976,
+      "scene_support": 0.5015485608741709,
+      "object_support": 0.6531399835571059,
+      "score": 0.38683640001677894,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat vocalizing itself while meowing repeatedly",
+      "clip_similarity": 0.2943256199359894,
+      "visual": 0.08445083668366986,
+      "scene_support": 0.803653734116062,
+      "object_support": 0.9071091087963452,
+      "score": 0.5470091875471901,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing, a man cries out in pain",
+      "clip_similarity": 0.2941700518131256,
+      "visual": 0.07472585615226116,
+      "scene_support": 0.5237603712658712,
+      "object_support": 0.5058656978669477,
+      "score": 0.3387781632007501,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog growling and barking as a cat hisses with tapping on a plastic surface several times",
+      "clip_similarity": 0.294053316116333,
+      "visual": 0.067428394707524,
+      "scene_support": 0.5482575557238953,
+      "object_support": 0.3494977558405148,
+      "score": 0.2962979513523326,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat is meowing",
+      "clip_similarity": 0.2938228249549866,
+      "visual": 0.05301977412708053,
+      "scene_support": 0.9053723170000015,
+      "object_support": 0.9927346052951427,
+      "score": 0.5906399863393754,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing quietly",
+      "clip_similarity": 0.29373788833618164,
+      "visual": 0.04771015831970221,
+      "scene_support": 0.5996672192552484,
+      "object_support": 0.8335129827084209,
+      "score": 0.44903812391698167,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A television is playing something in the background followed by a cat meowing",
+      "clip_similarity": 0.29366186261177063,
+      "visual": 0.04295758641632604,
+      "scene_support": 0.9792643734837274,
+      "object_support": 0.7254470977326781,
+      "score": 0.5285964759314521,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is hissing and people are laughing",
+      "clip_similarity": 0.29335811734199524,
+      "visual": 0.02396965507990506,
+      "scene_support": 0.5654219016378684,
+      "object_support": 0.5458347181515436,
+      "score": 0.34296484796878557,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kitten meowing",
+      "clip_similarity": 0.29297468066215515,
+      "visual": 0.0,
+      "scene_support": 0.09646293862890855,
+      "object_support": 0.3163097706137856,
+      "score": 0.12383181277280825,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.27233144640922546
+    ],
+    [
+      "delicatessen",
+      0.07949914783239365
+    ],
+    [
+      "veterinarians office",
+      0.06475549191236496
+    ],
+    [
+      "catacomb",
+      0.04882437735795975
+    ],
+    [
+      "berth",
+      0.03545500710606575
+    ]
+  ],
+  "top_objects": [
+    [
+      "Siamese cat",
+      0.11631547659635544
+    ],
+    [
+      "can opener",
+      0.06189073249697685
+    ],
+    [
+      "bib",
+      0.046424269676208496
+    ],
+    [
+      "muzzle",
+      0.036222148686647415
+    ],
+    [
+      "meatloaf",
+      0.024269787594676018
+    ]
+  ]
+}

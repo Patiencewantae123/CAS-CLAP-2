@@ -1,0 +1,289 @@
+{
+  "id": "dkiwn2FdDVw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\dkiwn2FdDVw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\dkiwn2FdDVw.wav",
+  "gt_captions": [
+    "Ongoing speech with the faint quacking of a duck in the background",
+    "A young boy talking as a duck is quacking while water trickles and frogs croak in the background",
+    "A woman speaks with distant quacks of a duck",
+    "A pretend duck quacks in cartoon fashion while an adult female speaks",
+    "A female voice and a duck quacking"
+  ],
+  "top_scene": [
+    "sky",
+    0.14537309110164642
+  ],
+  "top_object": [
+    "baseball",
+    0.04596657305955887
+  ],
+  "env_probs": {
+    "indoor": 0.0942179262638092,
+    "outdoor": 0.9057820737361908
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Bird and animal sounds are followed by clicking gun sounds",
+    "casv": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10886488109827042,
+    "clap_gt_audio_baseline": 0.5044238567352295,
+    "clap_text_casv": -0.13122454285621643,
+    "clap_gt_audio_casv": 0.2586058974266052
+  },
+  "verdicts": [
+    {
+      "caption": "Bird and animal sounds are followed by clicking gun sounds",
+      "clip_similarity": 0.3020249903202057,
+      "visual": 1.0,
+      "scene_support": 0.376955992916517,
+      "object_support": 0.506451166159246,
+      "score": 0.6650221477227289,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bug flies nearby buzzing while there is a steady background of wind in the mic",
+      "clip_similarity": 0.29728683829307556,
+      "visual": 0.7546447977801887,
+      "scene_support": 0.553907124266151,
+      "object_support": 0.42206269312064804,
+      "score": 0.5946488643281151,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.29524096846580505,
+      "visual": 0.6487037468575565,
+      "scene_support": 0.8183430519656485,
+      "object_support": 0.6117698875955528,
+      "score": 0.688515380611383,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Amplified male voice while horse clip-clops",
+      "clip_similarity": 0.2896256744861603,
+      "visual": 0.35792759995246787,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.14317103998098715,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud horn repeated multiple times with volume increase, muffled speech in the background",
+      "clip_similarity": 0.28949233889579773,
+      "visual": 0.35102309782818375,
+      "scene_support": 0.7364661630443492,
+      "object_support": 0.5827776680447619,
+      "score": 0.5361823884580068,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud wind sounds with crashing and explosions",
+      "clip_similarity": 0.2890336513519287,
+      "visual": 0.32727093149048664,
+      "scene_support": 0.9154528504537013,
+      "object_support": 0.8661056660831897,
+      "score": 0.6653759275572619,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.28868138790130615,
+      "visual": 0.3090297121992398,
+      "scene_support": 0.45747614456139213,
+      "object_support": 0.7300545108215674,
+      "score": 0.4798710814945838,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male voices communicating back and forth while an engine is running in the background",
+      "clip_similarity": 0.28839442133903503,
+      "visual": 0.29416975445343474,
+      "scene_support": 0.4679654252565602,
+      "object_support": 0.3547778133464105,
+      "score": 0.36449087336226504,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.45)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird sounds followed by an explosion",
+      "clip_similarity": 0.2882733643054962,
+      "visual": 0.28790107147872707,
+      "scene_support": 0.6571199897727037,
+      "object_support": 0.7873669297988707,
+      "score": 0.5485065044629631,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Computer generated audio with low quality of a game shooting",
+      "clip_similarity": 0.28813111782073975,
+      "visual": 0.2805351374958911,
+      "scene_support": 0.6295837148312902,
+      "object_support": 0.597052419840032,
+      "score": 0.4802048953997531,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A low, smooth drone while a metallic slam, then a clip-clop occur",
+      "clip_similarity": 0.2870284914970398,
+      "visual": 0.22343796056378024,
+      "scene_support": 0.3888056120487633,
+      "object_support": 0.22633229124807305,
+      "score": 0.273916555214563,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Background noises from a video game being played",
+      "clip_similarity": 0.2855503261089325,
+      "visual": 0.14689428580688074,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6587577143227523,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind noise sounds and a train goes by with horn sounds",
+      "clip_similarity": 0.2845951318740845,
+      "visual": 0.09743156842077647,
+      "scene_support": 0.3658374093970487,
+      "object_support": 0.4315583828834658,
+      "score": 0.2781913650524649,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine coming around a corner with faint music in background",
+      "clip_similarity": 0.28455913066864014,
+      "visual": 0.0955673219822125,
+      "scene_support": 0.6218718292905804,
+      "object_support": 0.572077563836236,
+      "score": 0.3964117467309299,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.45)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cartoon sounding bug getting almost eaten then a laugh",
+      "clip_similarity": 0.2842254936695099,
+      "visual": 0.07829063416787169,
+      "scene_support": 0.5219729318759436,
+      "object_support": 0.536005294428817,
+      "score": 0.3487097215585768,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind noise with clicking sounds",
+      "clip_similarity": 0.28415897488594055,
+      "visual": 0.07484609935754487,
+      "scene_support": 0.7456221140073446,
+      "object_support": 0.5391951196808813,
+      "score": 0.41538360984948575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud clicking static sound similar to rapid gunfire",
+      "clip_similarity": 0.2841523289680481,
+      "visual": 0.0745019545265848,
+      "scene_support": 0.8396772279705749,
+      "object_support": 0.933340598415758,
+      "score": 0.5617061297265338,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A few clip-clops then a slam into something hard and a fart",
+      "clip_similarity": 0.283201664686203,
+      "visual": 0.025273811195664082,
+      "scene_support": 0.6239127870912795,
+      "object_support": 0.569289588455784,
+      "score": 0.3680702371423847,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Distant clip clops with people speaking",
+      "clip_similarity": 0.283080518245697,
+      "visual": 0.019000498469867264,
+      "scene_support": 0.5955104330125599,
+      "object_support": 0.4853177224874734,
+      "score": 0.3318486460379569,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle clicking and steam being released",
+      "clip_similarity": 0.2827135920524597,
+      "visual": 0.0,
+      "scene_support": 0.307935247530279,
+      "object_support": 0.5064171110853806,
+      "score": 0.24430570758469788,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.46)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sky",
+      0.14537309110164642
+    ],
+    [
+      "wild field",
+      0.050484929233789444
+    ],
+    [
+      "cliff",
+      0.037915896624326706
+    ],
+    [
+      "army base",
+      0.03476459160447121
+    ],
+    [
+      "rope bridge",
+      0.034096021205186844
+    ]
+  ],
+  "top_objects": [
+    [
+      "baseball",
+      0.04596657305955887
+    ],
+    [
+      "airship",
+      0.03366432338953018
+    ],
+    [
+      "swing",
+      0.024165088310837746
+    ],
+    [
+      "vulture",
+      0.020953867584466934
+    ],
+    [
+      "parachute",
+      0.019855568185448647
+    ]
+  ]
+}

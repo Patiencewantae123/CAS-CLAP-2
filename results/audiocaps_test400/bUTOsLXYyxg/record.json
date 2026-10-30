@@ -1,0 +1,283 @@
+{
+  "id": "bUTOsLXYyxg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\bUTOsLXYyxg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\bUTOsLXYyxg.wav",
+  "gt_captions": [
+    "A man talking followed by another man speaking then a group of people laughing and a man speaking a bit in the background",
+    "Men speak followed by laughing",
+    "Man speaking followed by group laughter",
+    "A man is speaking followed by another male voice followed by laughter",
+    "A man talking then another man talking followed by a group of people laughing then another man talking"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.17149393260478973
+  ],
+  "top_object": [
+    "comic book",
+    0.12318974733352661
+  ],
+  "env_probs": {
+    "indoor": 0.6103158593177795,
+    "outdoor": 0.38968414068222046
+  },
+  "status": "ACCEPT",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "A person snickers over a low rumble",
+    "casv": "A small thump in the background is followed by two closer mechanical clicks"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.08576353639364243,
+    "clap_gt_audio_baseline": 0.2247680425643921,
+    "clap_text_casv": -0.004899334162473679,
+    "clap_gt_audio_casv": 0.2982929050922394
+  },
+  "verdicts": [
+    {
+      "caption": "A person snickers over a low rumble",
+      "clip_similarity": 0.28673630952835083,
+      "visual": 1.0,
+      "scene_support": 0.30927094834556873,
+      "object_support": 0.09903489560063611,
+      "score": 0.5224917531838614,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A plastic like material is rubbing together and there is an occasional popping sound",
+      "clip_similarity": 0.2778701186180115,
+      "visual": 0.5670630283468211,
+      "scene_support": 0.6469771907301655,
+      "object_support": 0.6987087159331269,
+      "score": 0.6305309833377162,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small thump in the background is followed by two closer mechanical clicks",
+      "clip_similarity": 0.27722349762916565,
+      "visual": 0.5354884620477992,
+      "scene_support": 1.0,
+      "object_support": 0.66014984269017,
+      "score": 0.7122403376261706,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid talks and plays with something with buttons and ends with getting it turned on and it beeping",
+      "clip_similarity": 0.2765079736709595,
+      "visual": 0.5005493569976439,
+      "scene_support": 0.3466401638875627,
+      "object_support": 0.3169910238104909,
+      "score": 0.3993090991084737,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Light popping and heavy tapping",
+      "clip_similarity": 0.2733694911003113,
+      "visual": 0.34729694528404303,
+      "scene_support": 0.4118395250290137,
+      "object_support": 0.2603251173965614,
+      "score": 0.3405681708412897,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Small wrapper being torn up",
+      "clip_similarity": 0.2725209593772888,
+      "visual": 0.3058630580339277,
+      "scene_support": 0.4623252401845294,
+      "object_support": 0.425152857665066,
+      "score": 0.3885886525684497,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone files some plastic with something metal",
+      "clip_similarity": 0.2722579836845398,
+      "visual": 0.2930219291671457,
+      "scene_support": 0.8581702835733013,
+      "object_support": 1.0,
+      "score": 0.6746598567388487,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several whooshes go off and a zipper is opened",
+      "clip_similarity": 0.26966869831085205,
+      "visual": 0.1665868704405188,
+      "scene_support": 0.5875575540716838,
+      "object_support": 0.5080138970034587,
+      "score": 0.39530618349875024,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Inconsistent scratching clip clops",
+      "clip_similarity": 0.2695963978767395,
+      "visual": 0.1630564331523487,
+      "scene_support": 0.2839259951721777,
+      "object_support": 0.1489327301300657,
+      "score": 0.19508019085161252,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid tapping against a surface",
+      "clip_similarity": 0.2689799964427948,
+      "visual": 0.1329574906827598,
+      "scene_support": 0.6072816806345817,
+      "object_support": 0.4878049733026316,
+      "score": 0.3817089924542679,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man pleasantly speaks as he open up something bound in plastic",
+      "clip_similarity": 0.26895663142204285,
+      "visual": 0.13181657442805025,
+      "scene_support": 0.059112236101448126,
+      "object_support": 0.2659910831726909,
+      "score": 0.15025762555346178,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Striking match sound followed by swishing",
+      "clip_similarity": 0.26895225048065186,
+      "visual": 0.1316026526302922,
+      "scene_support": 0.41393489790811694,
+      "object_support": 0.3188703060902493,
+      "score": 0.2724826222516267,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Scuffling and clicking occur, and then metal slides",
+      "clip_similarity": 0.2674676477909088,
+      "visual": 0.05910935769616411,
+      "scene_support": 0.6745340913900371,
+      "object_support": 0.6330377199916268,
+      "score": 0.41591528649296483,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tearing open of small package",
+      "clip_similarity": 0.267377108335495,
+      "visual": 0.05468830720916459,
+      "scene_support": 0.5661746525222809,
+      "object_support": 0.606346600264318,
+      "score": 0.3736316987196455,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crinkling of an item's packaging, a young person speaks and slides an item along a surface",
+      "clip_similarity": 0.2670213282108307,
+      "visual": 0.037315528830691815,
+      "scene_support": 0.06031807790005324,
+      "object_support": 0.1638115531338555,
+      "score": 0.08216510084244935,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person is playing a video game while making commentary",
+      "clip_similarity": 0.26693153381347656,
+      "visual": 0.032930859601814404,
+      "scene_support": 0.6365419070863253,
+      "object_support": 0.65925472320031,
+      "score": 0.4019113329267163,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Scraping with high pitched rings and clinks",
+      "clip_similarity": 0.26649409532546997,
+      "visual": 0.011570695333157733,
+      "scene_support": 0.39680659827128023,
+      "object_support": 0.0,
+      "score": 0.12367025761464716,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast scratches of something sharp onto plastic",
+      "clip_similarity": 0.26647627353668213,
+      "visual": 0.010700455638876722,
+      "scene_support": 0.0,
+      "object_support": 0.06916321168248096,
+      "score": 0.025029145760294975,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks and hit a metal object while a pack is opened",
+      "clip_similarity": 0.2662677764892578,
+      "visual": 0.0005195243659838147,
+      "scene_support": 0.3495983373639437,
+      "object_support": 0.37778650853409734,
+      "score": 0.21842326351580582,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person scrapes a surface nearby multiple times and places an object down on a surface",
+      "clip_similarity": 0.2662571370601654,
+      "visual": 0.0,
+      "scene_support": 0.4046326897474489,
+      "object_support": 0.24345922285507188,
+      "score": 0.19442757378075626,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.17149393260478973
+    ],
+    [
+      "raceway",
+      0.1190289631485939
+    ],
+    [
+      "assembly line",
+      0.08631187677383423
+    ],
+    [
+      "indoor booth",
+      0.041512537747621536
+    ],
+    [
+      "tower",
+      0.04113044962286949
+    ]
+  ],
+  "top_objects": [
+    [
+      "comic book",
+      0.12318974733352661
+    ],
+    [
+      "jigsaw puzzle",
+      0.08285646885633469
+    ],
+    [
+      "wallet",
+      0.05245194956660271
+    ],
+    [
+      "tray",
+      0.05050290375947952
+    ],
+    [
+      "hand-held computer",
+      0.04829215258359909
+    ]
+  ]
+}

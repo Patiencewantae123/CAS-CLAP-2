@@ -119,6 +119,9 @@ class CLAPScorer:
         if sr != self.sample_rate:
             g = np.gcd(sr, self.sample_rate)
             audio = resample_poly(audio, self.sample_rate // g, sr // g).astype(np.float32)
+        # Over 10 s the processor crops at an unseeded random offset, and a shift of
+        # a few ms changes the embedding, so fix the crop to make scores repeatable.
+        audio = audio[: self.processor.feature_extractor.nb_max_samples]
         inputs = self.processor(audio=audio, sampling_rate=self.sample_rate, return_tensors="pt").to(self.device)
         emb = self._as_tensor(self.model.get_audio_features(**inputs))
         return torch.nn.functional.normalize(emb, dim=-1)[0]

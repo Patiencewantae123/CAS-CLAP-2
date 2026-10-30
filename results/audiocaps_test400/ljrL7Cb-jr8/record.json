@@ -1,0 +1,289 @@
+{
+  "id": "ljrL7Cb-jr8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ljrL7Cb-jr8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ljrL7Cb-jr8.wav",
+  "gt_captions": [
+    "A sprayer is emitting liquids with a loud whooshing noise",
+    "Continuous spray",
+    "Humming and vibrating of engines",
+    "Water is spraying out of machines onto surfaces while the machines are running",
+    "A power sprayer sprays surfaces"
+  ],
+  "top_scene": [
+    "ice shelf",
+    0.15774211287498474
+  ],
+  "top_object": [
+    "projectile",
+    0.08782074600458145
+  ],
+  "env_probs": {
+    "indoor": 0.337065190076828,
+    "outdoor": 0.662934809923172
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "A water jet sprays a surface",
+    "casv": "Loud shaking of loose objects against a plastic surface"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4754561185836792,
+    "clap_gt_audio_baseline": 0.3274330496788025,
+    "clap_text_casv": 0.410070538520813,
+    "clap_gt_audio_casv": 0.3007239103317261
+  },
+  "verdicts": [
+    {
+      "caption": "A water jet sprays a surface",
+      "clip_similarity": 0.32958173751831055,
+      "visual": 1.0,
+      "scene_support": 0.21089791977049518,
+      "object_support": 0.02379156887493835,
+      "score": 0.4704068465936301,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Spraying and sloshing of liquid along a surface with static in the background",
+      "clip_similarity": 0.32710856199264526,
+      "visual": 0.8560315604301045,
+      "scene_support": 0.6549756267480956,
+      "object_support": 0.3422067764375241,
+      "score": 0.6415673451277277,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Shaking of a can following by spraying",
+      "clip_similarity": 0.3223131597042084,
+      "visual": 0.5768817073720807,
+      "scene_support": 0.0,
+      "object_support": 0.3153409903636765,
+      "score": 0.32535498005793523,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine motor sharply humming during high pressure spraying",
+      "clip_similarity": 0.3222019076347351,
+      "visual": 0.5704055043388652,
+      "scene_support": 0.08283552315065427,
+      "object_support": 0.10462980657549484,
+      "score": 0.2844018006533908,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High pressure liquid spraying while a motor engine hisses and hums",
+      "clip_similarity": 0.32205095887184143,
+      "visual": 0.5616184782570981,
+      "scene_support": 0.10838449446460625,
+      "object_support": 0.0,
+      "score": 0.25716273964222114,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine accelerating turbulently",
+      "clip_similarity": 0.32123780250549316,
+      "visual": 0.5142830376567005,
+      "scene_support": 0.6774326886950952,
+      "object_support": 0.15545995392965403,
+      "score": 0.45558100785010497,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.21)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic tapping with whooshing effects and water lightly splashing followed by metal tapping as a stream of water gently flows",
+      "clip_similarity": 0.3210357427597046,
+      "visual": 0.5025207401573164,
+      "scene_support": 0.48517587544217794,
+      "object_support": 0.27477654280159425,
+      "score": 0.42899402153605826,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Fast spraying liquid hits against a solid surface",
+      "clip_similarity": 0.3196706175804138,
+      "visual": 0.4230541030987929,
+      "scene_support": 0.2610576136728366,
+      "object_support": 0.11881938158628005,
+      "score": 0.2831847398172521,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Steam hissing with metal screeching and crumpling alongside high pressurized liquid spraying against a metal surface in the background",
+      "clip_similarity": 0.31942781805992126,
+      "visual": 0.40892026272600784,
+      "scene_support": 0.5552221993343978,
+      "object_support": 0.4282579664736961,
+      "score": 0.45861215483283124,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water bubbles while a boat motor idles and then accelerates",
+      "clip_similarity": 0.3182920217514038,
+      "visual": 0.3428033128736438,
+      "scene_support": 0.7619236630982191,
+      "object_support": 0.2434610662092436,
+      "score": 0.43873674394169637,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.31760096549987793,
+      "visual": 0.3025755614848946,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7210302245939578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine is spraying a surface with low whirring in the background",
+      "clip_similarity": 0.31743761897087097,
+      "visual": 0.29306683691348984,
+      "scene_support": 0.32777318880698697,
+      "object_support": 0.3842319492013215,
+      "score": 0.33082827616788846,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pouring as a machine hums followed by clanging on a plastic surface",
+      "clip_similarity": 0.3153172433376312,
+      "visual": 0.1696355769597757,
+      "scene_support": 0.7254175069958042,
+      "object_support": 0.5846986031278858,
+      "score": 0.4608890638210173,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing from a sink, then stopping momentarily, and an object being placed down, followed by the water flowing again",
+      "clip_similarity": 0.31355270743370056,
+      "visual": 0.06691845154037522,
+      "scene_support": 0.45583353236615926,
+      "object_support": 0.38062619509979045,
+      "score": 0.277705298855935,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High speed spinning of a power tool",
+      "clip_similarity": 0.3134877681732178,
+      "visual": 0.06313820873046991,
+      "scene_support": 0.3037770157120733,
+      "object_support": 0.7267585632368709,
+      "score": 0.3344159571768712,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine engine pump running and rattling with pressurized air spraying",
+      "clip_similarity": 0.3132011294364929,
+      "visual": 0.04645240086187454,
+      "scene_support": 0.2308529851159945,
+      "object_support": 0.20458792444280172,
+      "score": 0.14921323321238866,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine accelerating",
+      "clip_similarity": 0.31306546926498413,
+      "visual": 0.03855535392718479,
+      "scene_support": 0.6500934484781004,
+      "object_support": 0.6911106889839692,
+      "score": 0.4177833828094948,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.21)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A spray is released while metal objects taps",
+      "clip_similarity": 0.31274500489234924,
+      "visual": 0.019900488881332643,
+      "scene_support": 0.3012182177654077,
+      "object_support": 0.6268010175298467,
+      "score": 0.2863659661411094,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.3126334249973297,
+      "visual": 0.01340520247459309,
+      "scene_support": 0.5887384147497353,
+      "object_support": 0.6888048830447167,
+      "score": 0.38862507032817284,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something being sprayed against a metal surface",
+      "clip_similarity": 0.31240314245224,
+      "visual": 0.0,
+      "scene_support": 0.5860619079914018,
+      "object_support": 0.7654354540263492,
+      "score": 0.4054492086053253,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "ice shelf",
+      0.15774211287498474
+    ],
+    [
+      "wave",
+      0.054222095757722855
+    ],
+    [
+      "crevasse",
+      0.05140042304992676
+    ],
+    [
+      "ice floe",
+      0.04229575768113136
+    ],
+    [
+      "lock chamber",
+      0.02921583317220211
+    ]
+  ],
+  "top_objects": [
+    [
+      "projectile",
+      0.08782074600458145
+    ],
+    [
+      "paper knife",
+      0.02726133167743683
+    ],
+    [
+      "envelope",
+      0.016743946820497513
+    ],
+    [
+      "cleaver",
+      0.013482577167451382
+    ],
+    [
+      "wing",
+      0.013365643098950386
+    ]
+  ]
+}

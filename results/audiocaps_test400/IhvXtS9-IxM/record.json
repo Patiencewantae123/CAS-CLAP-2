@@ -1,0 +1,283 @@
+{
+  "id": "IhvXtS9-IxM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\IhvXtS9-IxM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\IhvXtS9-IxM.wav",
+  "gt_captions": [
+    "Helicopter engine running",
+    "A helicopter is flying",
+    "A high pitched engine idling",
+    "A helicopter running",
+    "An idle helicopter engine running"
+  ],
+  "top_scene": [
+    "heliport",
+    0.6992723345756531
+  ],
+  "top_object": [
+    "Griffon Bruxellois",
+    0.24088068306446075
+  ],
+  "env_probs": {
+    "indoor": 0.02775254100561142,
+    "outdoor": 0.9722474589943886
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A helicopter engine running and revving as propellers turn",
+    "casv": "A helicopter engine running and revving as propellers turn"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3595564365386963,
+    "clap_gt_audio_baseline": 0.3007205128669739,
+    "clap_text_casv": 0.3595564365386963,
+    "clap_gt_audio_casv": 0.3007205128669739
+  },
+  "verdicts": [
+    {
+      "caption": "A helicopter engine running and revving as propellers turn",
+      "clip_similarity": 0.32265642285346985,
+      "visual": 1.0,
+      "scene_support": 0.39593948726102235,
+      "object_support": 0.49848200173197194,
+      "score": 0.6683264466978982,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter engine running and propellers rotating",
+      "clip_similarity": 0.32011106610298157,
+      "visual": 0.7891431223645359,
+      "scene_support": 0.31964587986468335,
+      "object_support": 0.37085577876506737,
+      "score": 0.5228077465347396,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter engine generates loud wind and hissing noises",
+      "clip_similarity": 0.318909615278244,
+      "visual": 0.6896151605225995,
+      "scene_support": 0.47448533436493473,
+      "object_support": 0.378360367518911,
+      "score": 0.5316997747741935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter's engine and propellers are running",
+      "clip_similarity": 0.31884968280792236,
+      "visual": 0.6846503658789489,
+      "scene_support": 0.7059318262028443,
+      "object_support": 0.5162412546443497,
+      "score": 0.6405120706057378,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter flying with engine sounds",
+      "clip_similarity": 0.3159855604171753,
+      "visual": 0.4473870021626853,
+      "scene_support": 0.9646011515385663,
+      "object_support": 0.568487454789889,
+      "score": 0.6388813827636106,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An helicopter engine running followed by a gust of wind in a microphone",
+      "clip_similarity": 0.3159776031970978,
+      "visual": 0.4467278275381926,
+      "scene_support": 0.4501466639458855,
+      "object_support": 0.5477815323354375,
+      "score": 0.47806958989967396,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Helicopter blades spin in heavy wind",
+      "clip_similarity": 0.3153029978275299,
+      "visual": 0.3908436447665979,
+      "scene_support": 0.721033680806796,
+      "object_support": 0.5115917659199204,
+      "score": 0.5261250919246541,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter hums as it passes with a roaring engine and whooshing blades",
+      "clip_similarity": 0.3149481415748596,
+      "visual": 0.36144741909680733,
+      "scene_support": 0.8326289176843856,
+      "object_support": 0.6953519689127111,
+      "score": 0.6029732336178519,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter engine running idle as wind blows into a microphone",
+      "clip_similarity": 0.3143678903579712,
+      "visual": 0.31337951670402814,
+      "scene_support": 0.38095561194031363,
+      "object_support": 0.40813952054203173,
+      "score": 0.3620803464263148,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A remote-controlled helicopter engine runs",
+      "clip_similarity": 0.3142613470554352,
+      "visual": 0.30455348942851784,
+      "scene_support": 0.09975376255175518,
+      "object_support": 0.0,
+      "score": 0.1517475245369337,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter engine running and propellers spinning",
+      "clip_similarity": 0.31399887800216675,
+      "visual": 0.28281060209553344,
+      "scene_support": 0.0,
+      "object_support": 0.23062024702838244,
+      "score": 0.1823103149467281,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine starting up followed by helicopter propellers turning",
+      "clip_similarity": 0.31365782022476196,
+      "visual": 0.25455743953862714,
+      "scene_support": 0.629133895346806,
+      "object_support": 0.5317138860120281,
+      "score": 0.45007731022310105,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter engine runs and it takes off",
+      "clip_similarity": 0.3127790093421936,
+      "visual": 0.1817569102238725,
+      "scene_support": 0.6073725406003171,
+      "object_support": 0.43227873909154824,
+      "score": 0.38459814799710856,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A high pitched engine accelerating away with light wind",
+      "clip_similarity": 0.31261181831359863,
+      "visual": 0.1679068366530717,
+      "scene_support": 0.4574421382504533,
+      "object_support": 1.0,
+      "score": 0.5043953761363646,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter motor is running and accelerating",
+      "clip_similarity": 0.31125861406326294,
+      "visual": 0.055807649388226695,
+      "scene_support": 0.908763531540217,
+      "object_support": 0.6517794572581547,
+      "score": 0.4904859563948022,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter propeller is spinning quickly",
+      "clip_similarity": 0.3109368681907654,
+      "visual": 0.029154281425594737,
+      "scene_support": 0.6941237709014478,
+      "object_support": 0.5331087326293569,
+      "score": 0.3798314636294793,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter engine whines as it operates",
+      "clip_similarity": 0.31085291504859924,
+      "visual": 0.02219961881437445,
+      "scene_support": 0.7222170180812113,
+      "object_support": 0.5959422372039082,
+      "score": 0.4043276241112856,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Helicopter engine revs faster and louder",
+      "clip_similarity": 0.31075724959373474,
+      "visual": 0.014274710407552611,
+      "scene_support": 0.49677177287418295,
+      "object_support": 0.5149884342099215,
+      "score": 0.30923794628825235,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter motor noise",
+      "clip_similarity": 0.3106329143047333,
+      "visual": 0.003974798297502543,
+      "scene_support": 1.0,
+      "object_support": 0.6548532028586133,
+      "score": 0.498045880176585,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled helicopter engine humming and propellers twirling",
+      "clip_similarity": 0.3105849325656891,
+      "visual": 0.0,
+      "scene_support": 0.50079167643498,
+      "object_support": 0.5211561080789352,
+      "score": 0.30658433535417456,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "heliport",
+      0.6992723345756531
+    ],
+    [
+      "airfield",
+      0.13044846057891846
+    ],
+    [
+      "outdoor hangar",
+      0.08837013691663742
+    ],
+    [
+      "landing deck",
+      0.03178895264863968
+    ],
+    [
+      "runway",
+      0.013052980415523052
+    ]
+  ],
+  "top_objects": [
+    [
+      "Griffon Bruxellois",
+      0.24088068306446075
+    ],
+    [
+      "military aircraft",
+      0.20563963055610657
+    ],
+    [
+      "sidewinder",
+      0.16710637509822845
+    ],
+    [
+      "race car",
+      0.023470262065529823
+    ],
+    [
+      "harvester",
+      0.023161547258496284
+    ]
+  ]
+}

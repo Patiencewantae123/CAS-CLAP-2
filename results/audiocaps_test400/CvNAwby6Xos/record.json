@@ -1,0 +1,285 @@
+{
+  "id": "CvNAwby6Xos",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\CvNAwby6Xos.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\CvNAwby6Xos.wav",
+  "gt_captions": [
+    "A sewing machine operating several times as a man is speaking",
+    "A man speaking followed by a sewing machine operating as a machine motor hums in the background",
+    "A sewing machine operating several times followed by gears cranking as a man is talking",
+    "A sewing machine running as a man is talking",
+    "A man talking as a sewing machine rapidly operates and hums"
+  ],
+  "top_scene": [
+    "fabric store",
+    0.3103764057159424
+  ],
+  "top_object": [
+    "sewing machine",
+    0.21540559828281403
+  ],
+  "env_probs": {
+    "indoor": 0.9471629858016968,
+    "outdoor": 0.05283701419830322
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A sewing machine operating and fabric shuffling",
+    "casv": "Some objects are hit followed by a sewing machine working"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.01788429543375969,
+    "clap_gt_audio_baseline": 0.28677958250045776,
+    "clap_text_casv": -0.061445776373147964,
+    "clap_gt_audio_casv": 0.16826260089874268
+  },
+  "verdicts": [
+    {
+      "caption": "A sewing machine operating and fabric shuffling",
+      "clip_similarity": 0.35189080238342285,
+      "visual": 1.0,
+      "scene_support": 0.3751811850472578,
+      "object_support": 0.481819353091004,
+      "score": 0.6571001614414785,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine running and making stitches",
+      "clip_similarity": 0.3505060076713562,
+      "visual": 0.921421734586545,
+      "scene_support": 0.3144530234792135,
+      "object_support": 0.5674669062870622,
+      "score": 0.6331446727645007,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine runs, paper is ripped apart afterwards it is sprayed",
+      "clip_similarity": 0.3468590974807739,
+      "visual": 0.7144828472572184,
+      "scene_support": 0.766906053538002,
+      "object_support": 0.49986884747655275,
+      "score": 0.6658256092072538,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sewing machine stops and starts and something smacks against metal",
+      "clip_similarity": 0.34518495202064514,
+      "visual": 0.6194857728458029,
+      "scene_support": 0.5317480943905833,
+      "object_support": 0.5055265757298456,
+      "score": 0.5589767101744498,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine running continuously",
+      "clip_similarity": 0.34271472692489624,
+      "visual": 0.4793162578170712,
+      "scene_support": 0.48678064683802075,
+      "object_support": 0.7243438244340125,
+      "score": 0.5550638445084384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some objects are hit followed by a sewing machine working",
+      "clip_similarity": 0.34253066778182983,
+      "visual": 0.46887207567973427,
+      "scene_support": 0.9096927009484458,
+      "object_support": 1.0,
+      "score": 0.7604566405564275,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sewing machine running fast then stopping",
+      "clip_similarity": 0.34082889556884766,
+      "visual": 0.3723073592927178,
+      "scene_support": 0.5883863921229328,
+      "object_support": 0.6316609459499638,
+      "score": 0.514937145138956,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine works followed by an object being hit",
+      "clip_similarity": 0.3394705057144165,
+      "visual": 0.29522740109650386,
+      "scene_support": 0.806220988186373,
+      "object_support": 0.8562621200458538,
+      "score": 0.6168358929082696,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine is running and pulling paper",
+      "clip_similarity": 0.33816057443618774,
+      "visual": 0.2208971579513439,
+      "scene_support": 0.8802438390504357,
+      "object_support": 0.6027043187832217,
+      "score": 0.5332433105306347,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from a sewing machine",
+      "clip_similarity": 0.33796316385269165,
+      "visual": 0.2096953667470499,
+      "scene_support": 0.7982708876833645,
+      "object_support": 0.6912392096491257,
+      "score": 0.530731175898567,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rapid clicking sound coming from a sewing machine",
+      "clip_similarity": 0.3377615213394165,
+      "visual": 0.19825344052599717,
+      "scene_support": 1.0,
+      "object_support": 0.7917053461997152,
+      "score": 0.6168129800703134,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sewing on a machine",
+      "clip_similarity": 0.3375639021396637,
+      "visual": 0.18703981168003192,
+      "scene_support": 0.6105562701705097,
+      "object_support": 0.8114879039051738,
+      "score": 0.5014291768947178,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine is turned on and begins stitching",
+      "clip_similarity": 0.33705148100852966,
+      "visual": 0.15796318155221922,
+      "scene_support": 0.5615752818525451,
+      "object_support": 0.8059444798662707,
+      "score": 0.47344120113653243,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Quick steady vibrations of a sewing machine",
+      "clip_similarity": 0.3368073105812073,
+      "visual": 0.1441080675219081,
+      "scene_support": 0.5423760819288682,
+      "object_support": 0.5326847284944549,
+      "score": 0.3801614701357602,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine sews with repetitive clacking followed by a faint buzz",
+      "clip_similarity": 0.33626213669776917,
+      "visual": 0.11317292765171628,
+      "scene_support": 0.7334002256794233,
+      "object_support": 0.8433008149956558,
+      "score": 0.5182794832632103,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.46)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine operating before and after plastic clanking and fabric tearing",
+      "clip_similarity": 0.3359653949737549,
+      "visual": 0.09633472792026164,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.038533891168104656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine is being used in an articulate way",
+      "clip_similarity": 0.3357047736644745,
+      "visual": 0.08154613128959268,
+      "scene_support": 0.5078714745814568,
+      "object_support": 0.9436414151258172,
+      "score": 0.46807231942801925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine moves and then stops, followed by machinery clicking",
+      "clip_similarity": 0.3355110287666321,
+      "visual": 0.0705523443603784,
+      "scene_support": 0.8690809320625981,
+      "object_support": 0.9504197211109312,
+      "score": 0.5740711336962101,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud vibrations from a sewing machine",
+      "clip_similarity": 0.33442115783691406,
+      "visual": 0.008709122086671831,
+      "scene_support": 0.9444282513792435,
+      "object_support": 0.72500586387227,
+      "score": 0.5043138834101227,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sewing machine rattles as it sews",
+      "clip_similarity": 0.33426767587661743,
+      "visual": 0.0,
+      "scene_support": 0.640909165676989,
+      "object_support": 0.9044211945120763,
+      "score": 0.46359910805671956,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fabric store",
+      0.3103764057159424
+    ],
+    [
+      "auto factory",
+      0.0951719805598259
+    ],
+    [
+      "galley",
+      0.07906936854124069
+    ],
+    [
+      "assembly line",
+      0.06354128569364548
+    ],
+    [
+      "car interior",
+      0.04021281376481056
+    ]
+  ],
+  "top_objects": [
+    [
+      "sewing machine",
+      0.21540559828281403
+    ],
+    [
+      "T-shirt",
+      0.1135241910815239
+    ],
+    [
+      "overskirt",
+      0.08835995942354202
+    ],
+    [
+      "handkerchief",
+      0.06869442015886307
+    ],
+    [
+      "crane (machine)",
+      0.0475175715982914
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "ZY4aGEniU_E",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ZY4aGEniU_E.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ZY4aGEniU_E.wav",
+  "gt_captions": [
+    "Food and oil sizzling followed by oil popping then steam hissing as a man talks and light music plays in the background",
+    "Sizzling and male speech with more sizzling",
+    "Food and oil sizzling followed by steam hissing as a man talks and light rock music plays in the background",
+    "Food and oil sizzling followed by steam hissing as a man talks while music plays in the background",
+    "Food sizzles as a man speaks with music playing"
+  ],
+  "top_scene": [
+    "restaurant kitchen",
+    0.6056737303733826
+  ],
+  "top_object": [
+    "wok",
+    0.13060840964317322
+  ],
+  "env_probs": {
+    "indoor": 0.9861645698547363,
+    "outdoor": 0.013835430145263672
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A middle-aged man talks the entire time while there is a lid lifted and a sizzle of frying food at the end",
+    "casv": "A man talks as food is frying in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.27062270045280457,
+    "clap_gt_audio_baseline": 0.31721845269203186,
+    "clap_text_casv": 0.5903398990631104,
+    "clap_gt_audio_casv": 0.6487690806388855
+  },
+  "verdicts": [
+    {
+      "caption": "A middle-aged man talks the entire time while there is a lid lifted and a sizzle of frying food at the end",
+      "clip_similarity": 0.3093133866786957,
+      "visual": 1.0,
+      "scene_support": 0.5483685060394053,
+      "object_support": 0.17093407355064255,
+      "score": 0.6157907738770144,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while food is frying",
+      "clip_similarity": 0.30857202410697937,
+      "visual": 0.9489078529837641,
+      "scene_support": 0.6213318496344782,
+      "object_support": 0.6888436583955723,
+      "score": 0.7726157936025208,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks as food is frying in the background",
+      "clip_similarity": 0.307425856590271,
+      "visual": 0.8699179477700073,
+      "scene_support": 0.816511054552756,
+      "object_support": 0.7510665417944409,
+      "score": 0.818240458012162,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaks while frying some food",
+      "clip_similarity": 0.30516159534454346,
+      "visual": 0.7138728857943868,
+      "scene_support": 0.7259241888129413,
+      "object_support": 0.5475949135981121,
+      "score": 0.6676048850410707,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks while frying food sizzles",
+      "clip_similarity": 0.30507364869117737,
+      "visual": 0.7078119063023096,
+      "scene_support": 0.19402351386790942,
+      "object_support": 0.29329104808144196,
+      "score": 0.4293191311057292,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while something is frying in the background",
+      "clip_similarity": 0.30207395553588867,
+      "visual": 0.5010834180555983,
+      "scene_support": 0.43676231772767227,
+      "object_support": 0.5241015792730137,
+      "score": 0.48869253632244514,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking over sound of frying food",
+      "clip_similarity": 0.3015096187591553,
+      "visual": 0.46219127720098174,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1848765108803927,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.3007276952266693,
+      "visual": 0.4083038089076476,
+      "scene_support": 0.8852156612997539,
+      "object_support": 0.7247257150005578,
+      "score": 0.6463039364531526,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks while something is frying",
+      "clip_similarity": 0.3005004823207855,
+      "visual": 0.39264508046047836,
+      "scene_support": 0.5002165004786002,
+      "object_support": 0.8349597151831328,
+      "score": 0.5576108968827113,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male speaking about food and sound of frying in background",
+      "clip_similarity": 0.3004615306854248,
+      "visual": 0.38996066833030385,
+      "scene_support": 0.7032671263374174,
+      "object_support": 0.5926043635404658,
+      "score": 0.5447457142954865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A tapping noise followed by a man speaking as food is frying",
+      "clip_similarity": 0.29957225918769836,
+      "visual": 0.32867514916253326,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7314700596650132,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Stirring frying food while man speaks",
+      "clip_similarity": 0.29878729581832886,
+      "visual": 0.27457818581389853,
+      "scene_support": 0.8630942938137575,
+      "object_support": 0.4939070693683246,
+      "score": 0.516931683280184,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An individual conversing something while frying food at the same time",
+      "clip_similarity": 0.2984212636947632,
+      "visual": 0.24935251650800497,
+      "scene_support": 0.870613183001532,
+      "object_support": 0.5013182585057934,
+      "score": 0.5113204390553996,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by sizzle of frying food",
+      "clip_similarity": 0.29693296551704407,
+      "visual": 0.14678414820748226,
+      "scene_support": 0.6933510212308416,
+      "object_support": 0.7574783023237729,
+      "score": 0.49396245634937724,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking with dishes clanging together while he talks",
+      "clip_similarity": 0.29592007398605347,
+      "visual": 0.07697916345748997,
+      "scene_support": 0.7612172155049596,
+      "object_support": 0.32764691363868426,
+      "score": 0.35745090412608915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Running water in sink while man talks",
+      "clip_similarity": 0.295329749584198,
+      "visual": 0.03629604526736293,
+      "scene_support": 0.5137322613302556,
+      "object_support": 0.029728605770043513,
+      "score": 0.17755667823703492,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person speaks while frying some food",
+      "clip_similarity": 0.29506516456604004,
+      "visual": 0.018061759963851835,
+      "scene_support": 0.9898302253061086,
+      "object_support": 0.8407277300866555,
+      "score": 0.5563920906033699,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking and the sound of dishes being set down",
+      "clip_similarity": 0.2949160933494568,
+      "visual": 0.00778828676176099,
+      "scene_support": 0.9272589046838442,
+      "object_support": 0.5586853253721654,
+      "score": 0.44889858372150726,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person talks while frying some food",
+      "clip_similarity": 0.2948378920555115,
+      "visual": 0.0023989237705002208,
+      "scene_support": 0.8042191919818952,
+      "object_support": 0.6811038344113143,
+      "score": 0.4465564774261629,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by some frying and a pop",
+      "clip_similarity": 0.29480308294296265,
+      "visual": 0.0,
+      "scene_support": 0.39377030410461916,
+      "object_support": 0.47470627415313976,
+      "score": 0.2605429734773277,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "restaurant kitchen",
+      0.6056737303733826
+    ],
+    [
+      "pizzeria",
+      0.18437334895133972
+    ],
+    [
+      "kitchen",
+      0.08526210486888885
+    ],
+    [
+      "restaurant",
+      0.030165819451212883
+    ],
+    [
+      "galley",
+      0.021395137533545494
+    ]
+  ],
+  "top_objects": [
+    [
+      "wok",
+      0.13060840964317322
+    ],
+    [
+      "carbonara",
+      0.10284747928380966
+    ],
+    [
+      "dough",
+      0.09761354327201843
+    ],
+    [
+      "pizza",
+      0.03345509618520737
+    ],
+    [
+      "meatloaf",
+      0.03020404651761055
+    ]
+  ]
+}

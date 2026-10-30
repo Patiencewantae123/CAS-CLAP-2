@@ -1,0 +1,283 @@
+{
+  "id": "YEYeQ0lIkBQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\YEYeQ0lIkBQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\YEYeQ0lIkBQ.wav",
+  "gt_captions": [
+    "Several ducks quack and chirp as men speak and wind blows",
+    "A crowd of people talking as a man hollers and laughs while a group of ducks quack",
+    "A man talking then laughing as a ducks quack",
+    "Ducks quack as people communicate",
+    "A man shouting and hollering as ducks quack and chirp while wind blows into a microphone"
+  ],
+  "top_scene": [
+    "rice paddy",
+    0.7652136087417603
+  ],
+  "top_object": [
+    "bittern",
+    0.3696100413799286
+  ],
+  "env_probs": {
+    "indoor": 0.05094318464398384,
+    "outdoor": 0.9490568153560162
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A man speaks over the buzzing of bees, then a rooster crows",
+    "casv": "A man speaks with some distant splashing and quacking ducks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.005128558725118637,
+    "clap_gt_audio_baseline": 0.0900326669216156,
+    "clap_text_casv": 0.3356630802154541,
+    "clap_gt_audio_casv": 0.41225582361221313
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks over the buzzing of bees, then a rooster crows",
+      "clip_similarity": 0.320045530796051,
+      "visual": 1.0,
+      "scene_support": 0.18526042989989328,
+      "object_support": 0.20216302716608986,
+      "score": 0.516227037119795,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An animal quacking with people laughing",
+      "clip_similarity": 0.3199646472930908,
+      "visual": 0.9952566710709367,
+      "scene_support": 0.006856039432898013,
+      "object_support": 0.8708071728277847,
+      "score": 0.6614016321065795,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple livestock communicating with one another in distress followed by a man laughing",
+      "clip_similarity": 0.3188444972038269,
+      "visual": 0.929566633809414,
+      "scene_support": 0.30540677879973577,
+      "object_support": 0.21447964840280542,
+      "score": 0.5277925816845279,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with some distant splashing and quacking ducks",
+      "clip_similarity": 0.3185902237892151,
+      "visual": 0.9146550338010249,
+      "scene_support": 0.23537984653691751,
+      "object_support": 0.8440246853082601,
+      "score": 0.6896833730739632,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man shouting and laughing followed by ducks quacking",
+      "clip_similarity": 0.31566858291625977,
+      "visual": 0.7433184427060394,
+      "scene_support": 0.13368260582346664,
+      "object_support": 0.9460835809010444,
+      "score": 0.621257233099769,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaks while dove coos and rooster crows",
+      "clip_similarity": 0.3140372037887573,
+      "visual": 0.6476479100690002,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2590591640276001,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as several ducks quack in the distance with splashing water and chirping chicks",
+      "clip_similarity": 0.3139917850494385,
+      "visual": 0.6449843753276987,
+      "scene_support": 0.6952477260023375,
+      "object_support": 0.7034792196257389,
+      "score": 0.6776118338195024,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks followed by ducks quacking",
+      "clip_similarity": 0.31128448247909546,
+      "visual": 0.48621743112211013,
+      "scene_support": 0.37372224198384063,
+      "object_support": 0.9365027104835992,
+      "score": 0.5875544581890759,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Many ducks clucking and quacking followed by a man quacking",
+      "clip_similarity": 0.30923622846603394,
+      "visual": 0.36609970428472555,
+      "scene_support": 0.9043477818994867,
+      "object_support": 0.6960207956877278,
+      "score": 0.6265504549900546,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking in foreign language, along with music and duck quacking",
+      "clip_similarity": 0.3080843389034271,
+      "visual": 0.29854833861146646,
+      "scene_support": 0.24124294933685655,
+      "object_support": 0.721585096934244,
+      "score": 0.4082677493259168,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by quacking",
+      "clip_similarity": 0.30744898319244385,
+      "visual": 0.261288563578784,
+      "scene_support": 0.37489709842979824,
+      "object_support": 1.0,
+      "score": 0.516984554960453,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while an animal make loud sounds and a rooster crows",
+      "clip_similarity": 0.30735039710998535,
+      "visual": 0.2555070852820481,
+      "scene_support": 0.4449789115300574,
+      "object_support": 0.3942482619215338,
+      "score": 0.3539709861482966,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several people laughing with a duck quacking",
+      "clip_similarity": 0.3066786527633667,
+      "visual": 0.21611333654914955,
+      "scene_support": 0.2212785202500127,
+      "object_support": 0.9180790787418456,
+      "score": 0.4282526143172173,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male speaking with livestock and birds in the background",
+      "clip_similarity": 0.30644655227661133,
+      "visual": 0.2025020448396636,
+      "scene_support": 0.501323237969409,
+      "object_support": 0.4202551223545986,
+      "score": 0.3574743260330677,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks quacking followed by laughed",
+      "clip_similarity": 0.3055206835269928,
+      "visual": 0.14820543472941702,
+      "scene_support": 1.0,
+      "object_support": 0.8931740222351536,
+      "score": 0.6272343805623128,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks in a normal focused voice and then followed by a couple of quacks of a duck",
+      "clip_similarity": 0.3046684265136719,
+      "visual": 0.09822570835343218,
+      "scene_support": 0.6683733929569592,
+      "object_support": 0.6865264463569263,
+      "score": 0.44576023513553853,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Men speak with rustling and quacking of ducks",
+      "clip_similarity": 0.30453991889953613,
+      "visual": 0.0906895129436603,
+      "scene_support": 0.4540962447278825,
+      "object_support": 0.6641703163762213,
+      "score": 0.37175577350869526,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks quacking and a man speaking",
+      "clip_similarity": 0.3040744364261627,
+      "visual": 0.06339177729773565,
+      "scene_support": 0.1402489963920931,
+      "object_support": 0.8071896725980827,
+      "score": 0.30958831161614697,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks a foreign language briefly as various birds chirp in the background",
+      "clip_similarity": 0.30402201414108276,
+      "visual": 0.06031752689750634,
+      "scene_support": 0.7332577874892017,
+      "object_support": 0.5504747174665401,
+      "score": 0.40924676224572504,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks nearby and then shouts, after which a duck quacks",
+      "clip_similarity": 0.3029934763908386,
+      "visual": 0.0,
+      "scene_support": 0.9271314599319072,
+      "object_support": 0.9286239318857002,
+      "score": 0.5567266175452822,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "rice paddy",
+      0.7652136087417603
+    ],
+    [
+      "farm",
+      0.04377594217658043
+    ],
+    [
+      "natural canal",
+      0.025574831292033195
+    ],
+    [
+      "village",
+      0.018476035445928574
+    ],
+    [
+      "swamp",
+      0.015645036473870277
+    ]
+  ],
+  "top_objects": [
+    [
+      "bittern",
+      0.3696100413799286
+    ],
+    [
+      "cock",
+      0.09514158219099045
+    ],
+    [
+      "goose",
+      0.06327251344919205
+    ],
+    [
+      "duck",
+      0.0559120774269104
+    ],
+    [
+      "thatched roof",
+      0.03000645712018013
+    ]
+  ]
+}

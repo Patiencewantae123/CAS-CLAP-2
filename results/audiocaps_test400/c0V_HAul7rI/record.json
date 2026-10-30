@@ -1,0 +1,283 @@
+{
+  "id": "c0V_HAul7rI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\c0V_HAul7rI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\c0V_HAul7rI.wav",
+  "gt_captions": [
+    "A group of people laughing followed by a man talking",
+    "A group of people laughing followed by a young man talking",
+    "People laugh and speak",
+    "A group of people laughing followed by a man talking",
+    "A group of people laughing followed by a young man talking"
+  ],
+  "top_scene": [
+    "chemistry lab",
+    0.20676983892917633
+  ],
+  "top_object": [
+    "consomme",
+    0.10200989246368408
+  ],
+  "env_probs": {
+    "indoor": 0.7596882581710815,
+    "outdoor": 0.24031174182891846
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A man pours liquid into a pot",
+    "casv": "Liquid is being poured from a sink"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11540645360946655,
+    "clap_gt_audio_baseline": 0.11629772931337357,
+    "clap_text_casv": 0.09410285204648972,
+    "clap_gt_audio_casv": 0.38761425018310547
+  },
+  "verdicts": [
+    {
+      "caption": "A man pours liquid into a pot",
+      "clip_similarity": 0.32860684394836426,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.007586653609972051,
+      "score": 0.40227599608299164,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Liquid is being poured from a sink",
+      "clip_similarity": 0.3225846290588379,
+      "visual": 0.6967006180900148,
+      "scene_support": 0.851593927541434,
+      "object_support": 0.8430757016273266,
+      "score": 0.7870811359866341,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Excited male voice with a glass spilling over liquid",
+      "clip_similarity": 0.3223644495010376,
+      "visual": 0.6856116209328086,
+      "scene_support": 0.2284614004035103,
+      "object_support": 0.0,
+      "score": 0.34278306849417656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks then runs water into a sink",
+      "clip_similarity": 0.3189803957939148,
+      "visual": 0.5151790779982168,
+      "scene_support": 0.8009849488185565,
+      "object_support": 0.8284396229879429,
+      "score": 0.6948990027412365,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone speaks as water runs into a sink",
+      "clip_similarity": 0.31857186555862427,
+      "visual": 0.4946040951840611,
+      "scene_support": 0.8210885185231028,
+      "object_support": 0.773195183983788,
+      "score": 0.6761267488256917,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A water pouring sound with gurgling",
+      "clip_similarity": 0.31614112854003906,
+      "visual": 0.3721838480080931,
+      "scene_support": 0.9396320444108873,
+      "object_support": 0.8135859327716235,
+      "score": 0.6748389323579904,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.31613296270370483,
+      "visual": 0.3717725885033456,
+      "scene_support": 0.12581769627805078,
+      "object_support": 0.13877073260297448,
+      "score": 0.22808556406564584,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks then spills some liquid and tap an object",
+      "clip_similarity": 0.315765380859375,
+      "visual": 0.3532599070013178,
+      "scene_support": 0.8526653649540171,
+      "object_support": 0.5338352000326417,
+      "score": 0.5572541322965248,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water being poured into a glass",
+      "clip_similarity": 0.31389227509498596,
+      "visual": 0.25892388096889135,
+      "scene_support": 0.6120723533561907,
+      "object_support": 0.4317167173293619,
+      "score": 0.4167062735932223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running in a sink accompanied by musical tones",
+      "clip_similarity": 0.3134601414203644,
+      "visual": 0.2371601480534217,
+      "scene_support": 0.3699421965317919,
+      "object_support": 0.4884308845230566,
+      "score": 0.35237598353782323,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pouring into a sink, while something bangs around in the sink, and a man speaks",
+      "clip_similarity": 0.3122633099555969,
+      "visual": 0.17688361356015647,
+      "scene_support": 0.7733820908269485,
+      "object_support": 0.53188774642811,
+      "score": 0.46233439660058007,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water splashes into a sink and a man speaks as he splashes in the water",
+      "clip_similarity": 0.3118932843208313,
+      "visual": 0.15824785439612396,
+      "scene_support": 0.26498387815474495,
+      "object_support": 0.2538073525511557,
+      "score": 0.21893651097021977,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping sounds, followed by a girl talking and then water splashing noises while water is running from a faucet in the background",
+      "clip_similarity": 0.31080782413482666,
+      "visual": 0.10358035920665941,
+      "scene_support": 0.8225227748140264,
+      "object_support": 0.21985314618737717,
+      "score": 0.35414491998308484,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young man speaks quickly followed by water running into a sink",
+      "clip_similarity": 0.31021878123283386,
+      "visual": 0.07391413982222783,
+      "scene_support": 0.657148537584632,
+      "object_support": 0.5080363275326247,
+      "score": 0.3791211154640681,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water runs into a sink",
+      "clip_similarity": 0.31003043055534363,
+      "visual": 0.06442815416527829,
+      "scene_support": 0.8170704348256613,
+      "object_support": 0.8737512835682858,
+      "score": 0.5330177771842954,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water spills out of a sink, and then a person talks nearby",
+      "clip_similarity": 0.309650182723999,
+      "visual": 0.045277570146762605,
+      "scene_support": 0.5187288806921563,
+      "object_support": 0.3729692419636725,
+      "score": 0.28562046485545367,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A faucet is turned on and fills a glass",
+      "clip_similarity": 0.30892905592918396,
+      "visual": 0.008959153225685407,
+      "scene_support": 0.8994326410119939,
+      "object_support": 0.6570254537541397,
+      "score": 0.4705210897201142,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone speaks and runs water into a sink",
+      "clip_similarity": 0.3088909983634949,
+      "visual": 0.007042443782026459,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6028169775128105,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flows rapidly from a faucet while a man speaks with frying sounds",
+      "clip_similarity": 0.3088264465332031,
+      "visual": 0.0037913923685845767,
+      "scene_support": 0.533476036934807,
+      "object_support": 0.40268427280331315,
+      "score": 0.2823646498688699,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Splashing water from a toilet",
+      "clip_similarity": 0.3087511658668518,
+      "visual": 0.0,
+      "scene_support": 0.5385222363877165,
+      "object_support": 0.4081585640356067,
+      "score": 0.28400424012699693,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "chemistry lab",
+      0.20676983892917633
+    ],
+    [
+      "watering hole",
+      0.0662786066532135
+    ],
+    [
+      "kitchen",
+      0.066199392080307
+    ],
+    [
+      "physics laboratory",
+      0.03697892278432846
+    ],
+    [
+      "archaelogical excavation",
+      0.030517637729644775
+    ]
+  ],
+  "top_objects": [
+    [
+      "consomme",
+      0.10200989246368408
+    ],
+    [
+      "water jug",
+      0.05992632731795311
+    ],
+    [
+      "sink",
+      0.05692105367779732
+    ],
+    [
+      "shoji",
+      0.04780387133359909
+    ],
+    [
+      "teapot",
+      0.042365942150354385
+    ]
+  ]
+}

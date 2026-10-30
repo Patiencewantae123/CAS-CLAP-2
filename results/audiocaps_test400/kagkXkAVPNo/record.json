@@ -1,0 +1,283 @@
+{
+  "id": "kagkXkAVPNo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\kagkXkAVPNo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\kagkXkAVPNo.wav",
+  "gt_captions": [
+    "A vehicle engine running then accelerating as a series of vehicle horns honk and a group of people talk in the background",
+    "Hum of a loud engine with several horns honking",
+    "An engine revving followed by a loud honk, then several other honks and a woman talking",
+    "Group of cars are honking their horns and some people are murmuring at the end",
+    "A truck engine running and revving as several vehicle horns honk while a group of people talk in the background"
+  ],
+  "top_scene": [
+    "outdoor ice skating rink",
+    0.3159863352775574
+  ],
+  "top_object": [
+    "snowmobile",
+    0.2636164426803589
+  ],
+  "env_probs": {
+    "indoor": 0.07373572885990143,
+    "outdoor": 0.9262642711400986
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Car going around corner real fast skidding tires",
+    "casv": "Vehicle skidding"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.03329643979668617,
+    "clap_gt_audio_baseline": 0.09891028702259064,
+    "clap_text_casv": 0.155324324965477,
+    "clap_gt_audio_casv": 0.1767721176147461
+  },
+  "verdicts": [
+    {
+      "caption": "Car going around corner real fast skidding tires",
+      "clip_similarity": 0.3250691294670105,
+      "visual": 1.0,
+      "scene_support": 0.5990398752547743,
+      "object_support": 0.6342827728549666,
+      "score": 0.7699967944329222,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A crowd of people talking and laughing with snow shoveling as a vehicle engine runs idle",
+      "clip_similarity": 0.32195502519607544,
+      "visual": 0.8730835053011431,
+      "scene_support": 0.5984806639295618,
+      "object_support": 0.7031142398041166,
+      "score": 0.7397118732405608,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle engine revving followed by tires skidding then a man speaking over an intercom before a truck engine accelerates",
+      "clip_similarity": 0.31975454092025757,
+      "visual": 0.7834019382664916,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3133607753065967,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Snowmobile driving on snow",
+      "clip_similarity": 0.31644535064697266,
+      "visual": 0.6485346399243058,
+      "scene_support": 0.07128636663961943,
+      "object_support": 0.9780714350306515,
+      "score": 0.5742211964708036,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car skidding and crashing",
+      "clip_similarity": 0.3144487738609314,
+      "visual": 0.567163399581933,
+      "scene_support": 0.8608684713790288,
+      "object_support": 0.9128596172363866,
+      "score": 0.7589837864173978,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Vehicle skidding",
+      "clip_similarity": 0.3138858377933502,
+      "visual": 0.5442207277183768,
+      "scene_support": 0.8709591844232869,
+      "object_support": 1.0,
+      "score": 0.7789760464143367,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.30877310037612915,
+      "visual": 0.33584918493938515,
+      "scene_support": 0.0004514790765914015,
+      "object_support": 0.0023511571449439687,
+      "score": 0.13518046484221466,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tires skidding followed by a group of men talking and laughing before cheering",
+      "clip_similarity": 0.30869826674461365,
+      "visual": 0.3327993120477874,
+      "scene_support": 0.42080589949266206,
+      "object_support": 0.31653173515596045,
+      "score": 0.35432101521370174,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two vehicles accelerating from a distance before driving by as tires skid and a man speaking through an intercom",
+      "clip_similarity": 0.3051077127456665,
+      "visual": 0.18646492889095642,
+      "scene_support": 0.6048044846506455,
+      "object_support": 0.4810739799644842,
+      "score": 0.40034951094092147,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.3040710389614105,
+      "visual": 0.14421489761488038,
+      "scene_support": 0.44271540066744175,
+      "object_support": 0.4619541832411983,
+      "score": 0.3290868342185442,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tires skidding and vehicle accelerating",
+      "clip_similarity": 0.3033296465873718,
+      "visual": 0.11399917163946154,
+      "scene_support": 0.6359621455032995,
+      "object_support": 0.5616294333870276,
+      "score": 0.40487714232288274,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle pulling up to a halt and the sound of wind interference",
+      "clip_similarity": 0.30302196741104126,
+      "visual": 0.10145959070244245,
+      "scene_support": 0.8152641028052108,
+      "object_support": 0.6747483138943847,
+      "score": 0.48758756129085556,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Running vehicle followed by skidding",
+      "clip_similarity": 0.30289265513420105,
+      "visual": 0.09618942006260074,
+      "scene_support": 0.5388100755184381,
+      "object_support": 0.7435291007867334,
+      "score": 0.4231775209165917,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car speeds by and tires skid",
+      "clip_similarity": 0.3028169274330139,
+      "visual": 0.09310310902414999,
+      "scene_support": 1.0,
+      "object_support": 0.8619524939059716,
+      "score": 0.5958269917814515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle revving as tires skid followed by a vehicle door closing shut",
+      "clip_similarity": 0.30247366428375244,
+      "visual": 0.07911328984238072,
+      "scene_support": 0.6989145197539222,
+      "object_support": 0.5737245767469962,
+      "score": 0.41343704488722777,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle skidding across pavement and a man speaking in the background",
+      "clip_similarity": 0.30234774947166443,
+      "visual": 0.07398158416058048,
+      "scene_support": 0.4768179505589934,
+      "object_support": 0.4310612105776235,
+      "score": 0.30195638200521724,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple cars driving around with an audience watching",
+      "clip_similarity": 0.30234646797180176,
+      "visual": 0.07392935615009115,
+      "scene_support": 0.9348543715317844,
+      "object_support": 0.4383919317349572,
+      "score": 0.4415456334400589,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle is racing and skidding tires",
+      "clip_similarity": 0.3021894097328186,
+      "visual": 0.06752838835291074,
+      "scene_support": 0.7445973522776029,
+      "object_support": 0.9190172441377583,
+      "score": 0.5260957342657726,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car going fast and breaking hard into a skid",
+      "clip_similarity": 0.30145394802093506,
+      "visual": 0.03755436875161694,
+      "scene_support": 0.7145182593706818,
+      "object_support": 0.781557527329966,
+      "score": 0.46384448351084107,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle driving at a high rate as police sirens wail followed by tires skidding and a vehicle horn honking",
+      "clip_similarity": 0.3005324900150299,
+      "visual": 0.0,
+      "scene_support": 0.6384860692238856,
+      "object_support": 0.632885593249814,
+      "score": 0.3814114987421099,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor ice skating rink",
+      0.3159863352775574
+    ],
+    [
+      "parking lot",
+      0.2987467646598816
+    ],
+    [
+      "snowfield",
+      0.0401063933968544
+    ],
+    [
+      "ski resort",
+      0.02779429592192173
+    ],
+    [
+      "campsite",
+      0.026833053678274155
+    ]
+  ],
+  "top_objects": [
+    [
+      "snowmobile",
+      0.2636164426803589
+    ],
+    [
+      "snowplow",
+      0.23374907672405243
+    ],
+    [
+      "dog sled",
+      0.07433119416236877
+    ],
+    [
+      "tow truck",
+      0.059457968920469284
+    ],
+    [
+      "plow",
+      0.04370655119419098
+    ]
+  ]
+}
