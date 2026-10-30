@@ -1,0 +1,282 @@
+{
+  "id": "FDwK7T1JO_0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\FDwK7T1JO_0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\FDwK7T1JO_0.wav",
+  "gt_captions": [
+    "Two men speaking followed by plastic clacking then a power tool drilling",
+    "An adult male speaks while two metal clinks occur, then a small drill operates with whirring and slight grinding",
+    "A male voice and then drilling",
+    "Two men communicating with each other followed by plastic clacking then a power tool drilling as wind softly blows into a microphone",
+    "Two men talking followed by plastic clacking then a power tool drilling"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.08057792484760284
+  ],
+  "top_object": [
+    "holster",
+    0.13114091753959656
+  ],
+  "env_probs": {
+    "indoor": 0.6741697788238525,
+    "outdoor": 0.32583022117614746
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A man pours liquid into a pot",
+    "casv": "Man talking then tapping on an item"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.12633538246154785,
+    "clap_gt_audio_baseline": 0.17072688043117523,
+    "clap_text_casv": 0.04731008782982826,
+    "clap_gt_audio_casv": 0.3775824010372162
+  },
+  "verdicts": [
+    {
+      "caption": "A man pours liquid into a pot",
+      "clip_similarity": 0.3272167146205902,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled faucet spraying water while a man is talking",
+      "clip_similarity": 0.3191237449645996,
+      "visual": 0.61835649667412,
+      "scene_support": 0.38722635504736397,
+      "object_support": 0.33761106206556357,
+      "score": 0.46479382380352624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Shaking of a can following by spraying",
+      "clip_similarity": 0.31665587425231934,
+      "visual": 0.501978101051099,
+      "scene_support": 0.31511377680752845,
+      "object_support": 0.23302072506066532,
+      "score": 0.36523159098089775,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spraying water with some scratching and a man speaking",
+      "clip_similarity": 0.3147795796394348,
+      "visual": 0.41349690320023724,
+      "scene_support": 0.32651137145765996,
+      "object_support": 0.16956013647494533,
+      "score": 0.31422021365987646,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water runs from a tap while two men speak to each other",
+      "clip_similarity": 0.31426575779914856,
+      "visual": 0.3892663950496177,
+      "scene_support": 0.6424683773534181,
+      "object_support": 0.3642842275391511,
+      "score": 0.4577323394876178,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Shaking a spray can",
+      "clip_similarity": 0.31356626749038696,
+      "visual": 0.35628024245967554,
+      "scene_support": 0.4261959851093833,
+      "object_support": 0.47929418780899513,
+      "score": 0.41415914885938376,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person shaking a spray can and spraying",
+      "clip_similarity": 0.31246083974838257,
+      "visual": 0.30415113113650516,
+      "scene_support": 0.10602594531892728,
+      "object_support": 0.09575561354022508,
+      "score": 0.18219492011234778,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A click and pouring liquid into container",
+      "clip_similarity": 0.31227466464042664,
+      "visual": 0.29537159489052633,
+      "scene_support": 0.7271578263483264,
+      "object_support": 0.6454705077486528,
+      "score": 0.5299371381853043,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pump inflates with pressure, followed by a man talking loudly",
+      "clip_similarity": 0.3121337294578552,
+      "visual": 0.2887254564389122,
+      "scene_support": 0.5079132849342655,
+      "object_support": 0.6079418552527781,
+      "score": 0.4502467246316779,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.3110898733139038,
+      "visual": 0.23949990232467278,
+      "scene_support": 0.5615326979970353,
+      "object_support": 0.25726923526137796,
+      "score": 0.3414405409073931,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks and hit a metal object while a pack is opened",
+      "clip_similarity": 0.3098112642765045,
+      "visual": 0.179204009326237,
+      "scene_support": 0.9132046563670331,
+      "object_support": 0.8384022069843905,
+      "score": 0.5971636627359218,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking then tapping on an item",
+      "clip_similarity": 0.3097743093967438,
+      "visual": 0.17746131284072175,
+      "scene_support": 0.9590651171995086,
+      "object_support": 1.0,
+      "score": 0.6587040602961413,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks then spills some liquid and tap an object",
+      "clip_similarity": 0.30858123302459717,
+      "visual": 0.12119891896601882,
+      "scene_support": 0.8362965627368665,
+      "object_support": 0.6982400369570707,
+      "score": 0.5088405474945887,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking then spraying and clicking sound",
+      "clip_similarity": 0.3082577586174011,
+      "visual": 0.10594470311619429,
+      "scene_support": 1.0,
+      "object_support": 0.8453577573635201,
+      "score": 0.5959852084555337,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A spray can be sprayed in quick bursts then the can is shaken",
+      "clip_similarity": 0.3077772259712219,
+      "visual": 0.08328402720292997,
+      "scene_support": 0.4639757598085279,
+      "object_support": 0.5629565395549623,
+      "score": 0.341393300690219,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spraying followed by choking and laughter, then a man speaks",
+      "clip_similarity": 0.30704808235168457,
+      "visual": 0.04889950122340104,
+      "scene_support": 0.9316660837702981,
+      "object_support": 0.835899905323606,
+      "score": 0.5498295972175317,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A spraying sound with a man talking",
+      "clip_similarity": 0.30649125576019287,
+      "visual": 0.022641000307782686,
+      "scene_support": 0.698878847582764,
+      "object_support": 0.5460400668411427,
+      "score": 0.38253207445028503,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is spraying an aerosol can while talking",
+      "clip_similarity": 0.3063054084777832,
+      "visual": 0.013876923466110878,
+      "scene_support": 0.051348606462806444,
+      "object_support": 0.12108073332119701,
+      "score": 0.05727957132164539,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A doorknob being turned and released",
+      "clip_similarity": 0.30608946084976196,
+      "visual": 0.003693392228979075,
+      "scene_support": 0.907929962823243,
+      "object_support": 0.5820523310554885,
+      "score": 0.448472045055211,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A device sprays a liquid nearby, and then a person steps on a surface",
+      "clip_similarity": 0.3060111403465271,
+      "visual": 0.0,
+      "scene_support": 0.6369509831864476,
+      "object_support": 0.5811584188585459,
+      "score": 0.365432820613498,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.08057792484760284
+    ],
+    [
+      "lock chamber",
+      0.05095195397734642
+    ],
+    [
+      "door elevator",
+      0.03926866874098778
+    ],
+    [
+      "watering hole",
+      0.025855496525764465
+    ],
+    [
+      "bathroom",
+      0.023423362523317337
+    ]
+  ],
+  "top_objects": [
+    [
+      "holster",
+      0.13114091753959656
+    ],
+    [
+      "diaper",
+      0.11661466956138611
+    ],
+    [
+      "water jug",
+      0.053905803710222244
+    ],
+    [
+      "wallet",
+      0.04087108001112938
+    ],
+    [
+      "power drill",
+      0.028348231688141823
+    ]
+  ]
+}

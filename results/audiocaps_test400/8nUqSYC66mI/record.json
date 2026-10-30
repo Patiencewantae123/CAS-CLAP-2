@@ -1,0 +1,283 @@
+{
+  "id": "8nUqSYC66mI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\8nUqSYC66mI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\8nUqSYC66mI.wav",
+  "gt_captions": [
+    "Water splashes and people scream and speak and laugh",
+    "People are shouting, laughing and clapping, water is rushing and splashing, and an adult male speaks and laughs in the foreground",
+    "Several people cheer and scream and speak as water flows hard",
+    "Yelling and water flowing",
+    "Applause together with speech and hollering with running water in our he background"
+  ],
+  "top_scene": [
+    "creek",
+    0.1952303946018219
+  ],
+  "top_object": [
+    "cliff",
+    0.0966072827577591
+  ],
+  "env_probs": {
+    "indoor": 0.12385808676481247,
+    "outdoor": 0.8761419132351875
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A guy is wading through a stream, ends with a cackle",
+    "casv": "A guy is wading through a stream, ends with a cackle"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.19876661896705627,
+    "clap_gt_audio_baseline": 0.10146887600421906,
+    "clap_text_casv": 0.19876661896705627,
+    "clap_gt_audio_casv": 0.10146887600421906
+  },
+  "verdicts": [
+    {
+      "caption": "A guy is wading through a stream, ends with a cackle",
+      "clip_similarity": 0.31480059027671814,
+      "visual": 1.0,
+      "scene_support": 0.8203440951743803,
+      "object_support": 0.7069201707826852,
+      "score": 0.8581792797871196,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.30819016695022583,
+      "visual": 0.6877890789729268,
+      "scene_support": 0.6744588448548364,
+      "object_support": 0.7092414471151202,
+      "score": 0.6902257191801577,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A waterfall is flowing loudly, followed by several men talking",
+      "clip_similarity": 0.3010827898979187,
+      "visual": 0.35210698631563836,
+      "scene_support": 0.3145212194723622,
+      "object_support": 0.48646681288157967,
+      "score": 0.3811392042324379,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People are talking shouting in the background near a waterfall",
+      "clip_similarity": 0.300475537776947,
+      "visual": 0.32342641101505254,
+      "scene_support": 0.5690266653289536,
+      "object_support": 0.8049809897695396,
+      "score": 0.541572860935569,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dribbling water flow is interrupted by splashing and an adult woman speaking",
+      "clip_similarity": 0.2993537187576294,
+      "visual": 0.2704427922741489,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.10817711690965957,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water rushing and people screaming",
+      "clip_similarity": 0.2984364628791809,
+      "visual": 0.22712071008915527,
+      "scene_support": 0.8273423437001591,
+      "object_support": 0.8567903133766019,
+      "score": 0.5960880811586904,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud crash followed by people speaking then rushing water",
+      "clip_similarity": 0.29785364866256714,
+      "visual": 0.19959433933050505,
+      "scene_support": 0.7973945190059473,
+      "object_support": 0.836431233155492,
+      "score": 0.5699854613806338,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running while a man is talking, along with metal thuds in the background",
+      "clip_similarity": 0.2971060574054718,
+      "visual": 0.1642855333128767,
+      "scene_support": 0.542175526240845,
+      "object_support": 0.5239922515263187,
+      "score": 0.38556454665529977,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rushing water then a man shouting",
+      "clip_similarity": 0.2970762848854065,
+      "visual": 0.1628793743648356,
+      "scene_support": 0.7517315659925163,
+      "object_support": 0.7645421387712447,
+      "score": 0.5200338611750626,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rushing water and wind followed by a woman laughing and cheering",
+      "clip_similarity": 0.2968786656856537,
+      "visual": 0.15354580080681712,
+      "scene_support": 0.35684273939026384,
+      "object_support": 0.4345827202849128,
+      "score": 0.2988459582252798,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing followed by men talking and laughing",
+      "clip_similarity": 0.29636338353157043,
+      "visual": 0.12920897577015003,
+      "scene_support": 0.7917392323476998,
+      "object_support": 0.836250326577196,
+      "score": 0.5400804579855287,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks inaudibly under the sound of loud rushing water",
+      "clip_similarity": 0.29607969522476196,
+      "visual": 0.11581035011809483,
+      "scene_support": 0.5989281499654249,
+      "object_support": 0.6424491055222485,
+      "score": 0.41873731669354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water rushing in a stream with a woman talking by it",
+      "clip_similarity": 0.29601991176605225,
+      "visual": 0.11298677168989621,
+      "scene_support": 0.6982528898424843,
+      "object_support": 0.4800040220559925,
+      "score": 0.3986717822455015,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People yell while water falls and splashes",
+      "clip_similarity": 0.29523009061813354,
+      "visual": 0.0756834439211425,
+      "scene_support": 0.6996736850108809,
+      "object_support": 0.7806978267147021,
+      "score": 0.4743848310861319,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rushing water, people laughing happily",
+      "clip_similarity": 0.29495614767074585,
+      "visual": 0.062745092519347,
+      "scene_support": 0.5659502253791449,
+      "object_support": 0.539015661954788,
+      "score": 0.35658780320791866,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water splashes followed by a man speaking then tapping",
+      "clip_similarity": 0.29495352506637573,
+      "visual": 0.06262122666606611,
+      "scene_support": 0.6489880096225354,
+      "object_support": 0.7439058976403938,
+      "score": 0.44291666284530523,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People playing and laughing near a stream",
+      "clip_similarity": 0.2947835922241211,
+      "visual": 0.05459528240006981,
+      "scene_support": 0.554813314803309,
+      "object_support": 0.39224628389527527,
+      "score": 0.3059559925696032,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream is running while people yell in the background",
+      "clip_similarity": 0.2941283583641052,
+      "visual": 0.023648525011049398,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6094594100044197,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female talking and laughing followed by water running",
+      "clip_similarity": 0.2939211428165436,
+      "visual": 0.013861715035343995,
+      "scene_support": 0.5108055566678169,
+      "object_support": 0.6083707751223805,
+      "score": 0.3412975855511968,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing and splashing followed by a man speaking then another man speaking before laughing",
+      "clip_similarity": 0.29362764954566956,
+      "visual": 0.0,
+      "scene_support": 0.4515631671224939,
+      "object_support": 0.49137406495792313,
+      "score": 0.28288116962412513,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "creek",
+      0.1952303946018219
+    ],
+    [
+      "swimming hole",
+      0.08783390372991562
+    ],
+    [
+      "raft",
+      0.07764647156000137
+    ],
+    [
+      "river",
+      0.07497358322143555
+    ],
+    [
+      "crevasse",
+      0.07455788552761078
+    ]
+  ],
+  "top_objects": [
+    [
+      "cliff",
+      0.0966072827577591
+    ],
+    [
+      "stretcher",
+      0.08623755723237991
+    ],
+    [
+      "suspension bridge",
+      0.04998220130801201
+    ],
+    [
+      "diaper",
+      0.044932298362255096
+    ],
+    [
+      "sleeping bag",
+      0.03879328817129135
+    ]
+  ]
+}

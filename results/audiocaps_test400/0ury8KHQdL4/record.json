@@ -1,0 +1,288 @@
+{
+  "id": "0ury8KHQdL4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0ury8KHQdL4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0ury8KHQdL4.wav",
+  "gt_captions": [
+    "A man is speaking while typing",
+    "A man is speaking while typing on a keyboard",
+    "An adult male is speaking and typing on a keyboard",
+    "Typing on a keyboard as a man is talking",
+    "A man speaking"
+  ],
+  "top_scene": [
+    "lecture room",
+    0.11164426803588867
+  ],
+  "top_object": [
+    "packet",
+    0.1928185075521469
+  ],
+  "env_probs": {
+    "indoor": 0.6844974756240845,
+    "outdoor": 0.3155025243759155
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Quacking and some speech with rustling",
+    "casv": "Clicking and whooshing with rustling"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.010977950878441334,
+    "clap_gt_audio_baseline": 0.2648018002510071,
+    "clap_text_casv": -0.03285565599799156,
+    "clap_gt_audio_casv": 0.04995504394173622
+  },
+  "verdicts": [
+    {
+      "caption": "Quacking and some speech with rustling",
+      "clip_similarity": 0.28408282995224,
+      "visual": 1.0,
+      "scene_support": 0.3006144918204898,
+      "object_support": 0.12146679530926476,
+      "score": 0.5266243861389264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats bleat and object clang",
+      "clip_similarity": 0.27589765191078186,
+      "visual": 0.6915847760345957,
+      "scene_support": 0.0,
+      "object_support": 0.1453836657611792,
+      "score": 0.32024901014219204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clicking and whooshing with rustling",
+      "clip_similarity": 0.2749049663543701,
+      "visual": 0.6541806613461618,
+      "scene_support": 0.8392164823871905,
+      "object_support": 1.0,
+      "score": 0.8134372092546218,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rapid, continuous typing",
+      "clip_similarity": 0.26853320002555847,
+      "visual": 0.41409428455605,
+      "scene_support": 0.8335454514331636,
+      "object_support": 0.8305538306569874,
+      "score": 0.6648674984494654,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sequence of quick typing keystroke clanking is followed by paper rustling and people talking loudly in the background",
+      "clip_similarity": 0.26853132247924805,
+      "visual": 0.4140235391351316,
+      "scene_support": 0.7888769232524883,
+      "object_support": 0.5754625706000422,
+      "score": 0.5749112638098118,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person giving a talk with clicking noises",
+      "clip_similarity": 0.26604604721069336,
+      "visual": 0.32037906070294,
+      "scene_support": 1.0,
+      "object_support": 0.846829007152879,
+      "score": 0.6822003264270396,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clanking and male speech",
+      "clip_similarity": 0.2659350335597992,
+      "visual": 0.31619609732324033,
+      "scene_support": 0.6118346884266402,
+      "object_support": 0.43827885912624165,
+      "score": 0.44151250319516067,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Low-level speech and clanking occur along with static",
+      "clip_similarity": 0.265613317489624,
+      "visual": 0.3040739255960302,
+      "scene_support": 0.726976076802168,
+      "object_support": 0.6622498026199131,
+      "score": 0.5383973340650364,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking followed by rapid clicking",
+      "clip_similarity": 0.2645312249660492,
+      "visual": 0.26330098134005303,
+      "scene_support": 0.8737321714186527,
+      "object_support": 0.9082214621431398,
+      "score": 0.639906482604559,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Muffled speech with clanking",
+      "clip_similarity": 0.2640082836151123,
+      "visual": 0.24359669719949198,
+      "scene_support": 0.655834128651079,
+      "object_support": 0.6349213412541574,
+      "score": 0.48466531985136774,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clacking occurs and then a thump, a person types on a keyboard, and then the clacking resumes",
+      "clip_similarity": 0.26302197575569153,
+      "visual": 0.20643289235354295,
+      "scene_support": 0.5383227034036396,
+      "object_support": 0.4698981040049785,
+      "score": 0.38503939916400265,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Beeping occurs from a machine",
+      "clip_similarity": 0.26015979051589966,
+      "visual": 0.09858655140777772,
+      "scene_support": 0.7601421781876125,
+      "object_support": 0.6758651518124246,
+      "score": 0.47023681956312213,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A computer mouse clicks followed by a guy talking",
+      "clip_similarity": 0.26011162996292114,
+      "visual": 0.09677187521406104,
+      "scene_support": 0.5927128273290597,
+      "object_support": 0.4820793714042607,
+      "score": 0.3611464097056205,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking paper crinkling",
+      "clip_similarity": 0.259764164686203,
+      "visual": 0.08367948057139842,
+      "scene_support": 0.044868533826480386,
+      "object_support": 0.31045949275171775,
+      "score": 0.1400702002020188,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person types on a computer, followed by a person talking",
+      "clip_similarity": 0.2588006556034088,
+      "visual": 0.04737472726517293,
+      "scene_support": 0.4710589428049921,
+      "object_support": 0.0,
+      "score": 0.16026757374756678,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks, and banging occurs and then clicking",
+      "clip_similarity": 0.25844457745552063,
+      "visual": 0.033957802040836954,
+      "scene_support": 0.8407198281272805,
+      "object_support": 0.6367579368370238,
+      "score": 0.456826450305626,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Continuous rustling and quacking",
+      "clip_similarity": 0.2583102583885193,
+      "visual": 0.02889669708719766,
+      "scene_support": 0.49667888522979325,
+      "object_support": 0.5518551705492054,
+      "score": 0.32611889556857865,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speech, crashing and clip clopping",
+      "clip_similarity": 0.25795507431030273,
+      "visual": 0.015513460158537119,
+      "scene_support": 0.7119558329874778,
+      "object_support": 0.6843779476381475,
+      "score": 0.42510551825110243,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle engine starts and runs, then a ping occurs",
+      "clip_similarity": 0.257660835981369,
+      "visual": 0.00442664205175196,
+      "scene_support": 0.6203214144783666,
+      "object_support": 0.6923500130463012,
+      "score": 0.39557208507810115,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.92)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.49)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Auto engine over quiet speech",
+      "clip_similarity": 0.2575433552265167,
+      "visual": 0.0,
+      "scene_support": 0.44155961159263957,
+      "object_support": 0.4959280032956238,
+      "score": 0.28124628446647904,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.49)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lecture room",
+      0.11164426803588867
+    ],
+    [
+      "classroom",
+      0.08273672312498093
+    ],
+    [
+      "conference room",
+      0.049697719514369965
+    ],
+    [
+      "assembly line",
+      0.04254951328039169
+    ],
+    [
+      "waiting room",
+      0.023164940997958183
+    ]
+  ],
+  "top_objects": [
+    [
+      "packet",
+      0.1928185075521469
+    ],
+    [
+      "website",
+      0.15833765268325806
+    ],
+    [
+      "envelope",
+      0.0347856841981411
+    ],
+    [
+      "notebook computer",
+      0.03217456489801407
+    ],
+    [
+      "weasel",
+      0.021278059110045433
+    ]
+  ]
+}

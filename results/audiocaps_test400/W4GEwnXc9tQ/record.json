@@ -1,0 +1,286 @@
+{
+  "id": "W4GEwnXc9tQ",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\W4GEwnXc9tQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\W4GEwnXc9tQ.wav",
+  "gt_captions": [
+    "A woman speaks with chirping frogs and distant music playing",
+    "Music plays as a woman speaks while a frog croaks followed by girl and boy speaking",
+    "While music plays in the background, a frog croaks, young females speak and laugh, and a young male speaks",
+    "Music is playing, people are talking and a frog croaks",
+    "A woman speaks an frog croaks followed by wind blowing as others speak"
+  ],
+  "top_scene": [
+    "lawn",
+    0.18603478372097015
+  ],
+  "top_object": [
+    "eastern hog-nosed snake",
+    0.5606334805488586
+  ],
+  "env_probs": {
+    "indoor": 0.1960962414741516,
+    "outdoor": 0.8039037585258484
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A stick falls and then a snake squirms",
+    "casv": "A stick falls and then a snake squirms"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.012815749272704124,
+    "clap_gt_audio_baseline": -0.060662802308797836,
+    "clap_text_casv": 0.012815749272704124,
+    "clap_gt_audio_casv": -0.060662802308797836
+  },
+  "verdicts": [
+    {
+      "caption": "A stick falls and then a snake squirms",
+      "clip_similarity": 0.31522366404533386,
+      "visual": 1.0,
+      "scene_support": 0.679678265379247,
+      "object_support": 0.7183114082608618,
+      "score": 0.8193969020920326,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks nearby, and then a snake hisses",
+      "clip_similarity": 0.30224430561065674,
+      "visual": 0.5963293653552225,
+      "scene_support": 0.7195661597579126,
+      "object_support": 0.893829865419473,
+      "score": 0.7225505536953047,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A snake hisses followed by a man and woman talk",
+      "clip_similarity": 0.30006861686706543,
+      "visual": 0.5286633354558912,
+      "scene_support": 0.7058832782104183,
+      "object_support": 0.7491323993705274,
+      "score": 0.6479700374566402,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking followed by a snake hissing",
+      "clip_similarity": 0.2989981770515442,
+      "visual": 0.4953716190852239,
+      "scene_support": 0.7318773296544628,
+      "object_support": 0.7765550983304993,
+      "score": 0.6506783760295782,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling with a camera followed by a snake hiss",
+      "clip_similarity": 0.2977294921875,
+      "visual": 0.45591428944829254,
+      "scene_support": 0.6567348266253626,
+      "object_support": 0.8968665131468492,
+      "score": 0.6484461177109806,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat hissing and meowing as a snake hisses with a man shouting briefly",
+      "clip_similarity": 0.2965177893638611,
+      "visual": 0.4182291565289043,
+      "scene_support": 0.5628371160653111,
+      "object_support": 0.7653026031478725,
+      "score": 0.5657335783755167,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal and plastic rattling as two men are talking followed by a snake hissing briefly while a large vehicle engine runs idle in the background",
+      "clip_similarity": 0.29492658376693726,
+      "visual": 0.3687411193201883,
+      "scene_support": 0.14228790400146563,
+      "object_support": 0.0,
+      "score": 0.19018281892851502,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.39)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child cries out, then the hissing of a snake",
+      "clip_similarity": 0.2943103611469269,
+      "visual": 0.3495759982278033,
+      "scene_support": 0.7569308449142345,
+      "object_support": 0.7978152743599203,
+      "score": 0.6062542350733677,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music sounds nearby, and then a snake hisses loudly",
+      "clip_similarity": 0.2936217784881592,
+      "visual": 0.32816040975560923,
+      "scene_support": 0.7518589815653982,
+      "object_support": 0.9041340000021851,
+      "score": 0.6280620583725187,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A group of men speaking as a snake hisses followed by camera muffling as birds chirp and a dog barks in the background",
+      "clip_similarity": 0.2902839481830597,
+      "visual": 0.22435065025345566,
+      "scene_support": 0.0,
+      "object_support": 0.05981809977525602,
+      "score": 0.10768569003395907,
+      "conflicts": [
+        "names 'birds', not visible in image (z=-0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A rattlesnake is hissing",
+      "clip_similarity": 0.2892880141735077,
+      "visual": 0.19337613670384388,
+      "scene_support": 0.6299029438828831,
+      "object_support": 0.9103657197507021,
+      "score": 0.5394310537716132,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is speaking while snakes are hissing, and people are communicating in the background",
+      "clip_similarity": 0.2891499102115631,
+      "visual": 0.18908096955473558,
+      "scene_support": 0.7689764625383929,
+      "object_support": 0.6625271187792516,
+      "score": 0.5050834622171876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Chain hitting metal, then a hiss sound",
+      "clip_similarity": 0.28644058108329773,
+      "visual": 0.10481820616987692,
+      "scene_support": 0.8847614170128331,
+      "object_support": 0.4972191984022091,
+      "score": 0.45652146709246333,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A tool motor is operating, hissing and suction are occurring, and an adult male speaks briefly in the background",
+      "clip_similarity": 0.2864302098751068,
+      "visual": 0.10449565153718601,
+      "scene_support": 0.627552760008753,
+      "object_support": 0.3746301156934377,
+      "score": 0.34245312332553157,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A creature bites several times, followed by steam hissing",
+      "clip_similarity": 0.28619706630706787,
+      "visual": 0.09724466046953945,
+      "scene_support": 0.8703568254567476,
+      "object_support": 0.43930255434590615,
+      "score": 0.4317956781286119,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A snake hisses and a group of people are talking and laughing",
+      "clip_similarity": 0.2860209345817566,
+      "visual": 0.09176679300056446,
+      "scene_support": 0.7064726747174344,
+      "object_support": 0.8181380156027899,
+      "score": 0.49408992429629306,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A snake hissing",
+      "clip_similarity": 0.2849269211292267,
+      "visual": 0.05774191365731536,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6230967654629261,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Spraying and hissing",
+      "clip_similarity": 0.2845856547355652,
+      "visual": 0.047128197855753194,
+      "scene_support": 0.6726804541036385,
+      "object_support": 0.20937281825164406,
+      "score": 0.28346726084888607,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horse hoof hitting ground, chain rattles and man speaking",
+      "clip_similarity": 0.28387123346328735,
+      "visual": 0.024909003445217154,
+      "scene_support": 0.7919148123114474,
+      "object_support": 0.28713110356906263,
+      "score": 0.33367737614223986,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks, scraping and rubbing, then a clank occurs",
+      "clip_similarity": 0.28307032585144043,
+      "visual": 0.0,
+      "scene_support": 0.6423963918200647,
+      "object_support": 0.18564887130885052,
+      "score": 0.24841357893867458,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lawn",
+      0.18603478372097015
+    ],
+    [
+      "archaelogical excavation",
+      0.05518890172243118
+    ],
+    [
+      "yard",
+      0.04995610937476158
+    ],
+    [
+      "raceway",
+      0.04402897134423256
+    ],
+    [
+      "landfill",
+      0.034357357770204544
+    ]
+  ],
+  "top_objects": [
+    [
+      "eastern hog-nosed snake",
+      0.5606334805488586
+    ],
+    [
+      "worm snake",
+      0.10235123336315155
+    ],
+    [
+      "ring-necked snake",
+      0.06841954588890076
+    ],
+    [
+      "water snake",
+      0.05744408071041107
+    ],
+    [
+      "boa constrictor",
+      0.047610826790332794
+    ]
+  ]
+}

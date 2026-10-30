@@ -1,0 +1,317 @@
+{
+  "id": "vEWmHtiznF8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\vEWmHtiznF8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\vEWmHtiznF8.wav",
+  "gt_captions": [
+    "A man talks as an engine idles loudly",
+    "An adult male is speaking while a large motor vehicle engine is idling",
+    "An engine running and a male speech",
+    "A bus engine running idle as a man is talking",
+    "A man is talking while a bus is idling in the background."
+  ],
+  "top_scene": [
+    "indoor escalator",
+    0.9421491622924805
+  ],
+  "top_object": [
+    "grand piano",
+    0.4075585901737213
+  ],
+  "env_probs": {
+    "indoor": 0.9913762807846069,
+    "outdoor": 0.008623719215393066
+  },
+  "status": "ACCEPT",
+  "n_rejected": 17,
+  "prompts": {
+    "baseline": "A piano being played while it rains",
+    "casv": "A piano plays over a person crying"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.04648350551724434,
+    "clap_gt_audio_baseline": 0.0018379632383584976,
+    "clap_text_casv": -0.09144444018602371,
+    "clap_gt_audio_casv": -0.12191443145275116
+  },
+  "verdicts": [
+    {
+      "caption": "A piano being played while it rains",
+      "clip_similarity": 0.3388163447380066,
+      "visual": 1.0,
+      "scene_support": 0.5329937673620867,
+      "object_support": 0.6864995082951251,
+      "score": 0.7658479826971635,
+      "conflicts": [
+        "names 'rain', not visible in image (z=-0.16)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A piano playing as rain falls on a surface",
+      "clip_similarity": 0.32719242572784424,
+      "visual": 0.624346395628929,
+      "scene_support": 0.4447711563974327,
+      "object_support": 0.6682543838363197,
+      "score": 0.5836462203216973,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)",
+        "names 'rain', not visible in image (z=-0.16)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A piano plays over a person crying",
+      "clip_similarity": 0.32501524686813354,
+      "visual": 0.5539858670244375,
+      "scene_support": 0.7546891377166214,
+      "object_support": 1.0,
+      "score": 0.7480010881247614,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone plays a ditty on an electronic keyboard",
+      "clip_similarity": 0.32377147674560547,
+      "visual": 0.5137905827035263,
+      "scene_support": 0.9338964126294598,
+      "object_support": 0.8168169452994292,
+      "score": 0.7307302404600772,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An announcement over a loudspeaker in a train station followed by a horn blowing",
+      "clip_similarity": 0.3211856484413147,
+      "visual": 0.4302236099861213,
+      "scene_support": 0.855374581294268,
+      "object_support": 0.0,
+      "score": 0.4287018183827289,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train moves down a track quickly, and sounds its horn",
+      "clip_similarity": 0.3179016709327698,
+      "visual": 0.324094344401949,
+      "scene_support": 0.918055226400389,
+      "object_support": 0.37359991826204675,
+      "score": 0.5171342811595103,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A subway train running on railroad tracks as a train horn blows several times and wind briefly blows into a microphone",
+      "clip_similarity": 0.317584753036499,
+      "visual": 0.31385241567552524,
+      "scene_support": 0.6829008030843129,
+      "object_support": 0.01216937636495996,
+      "score": 0.334062020104992,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A subway train runs on railroad tracks followed by a train horn honking then a series of railroad track thumping and wind blowing into a microphone",
+      "clip_similarity": 0.3154430687427521,
+      "visual": 0.24463897538334997,
+      "scene_support": 0.8788953986958126,
+      "object_support": 0.2581661323899411,
+      "score": 0.4389740494790661,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)",
+        "names 'cars on a road', not visible in image (z=-0.32)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train horn sounds and passes on a track",
+      "clip_similarity": 0.3144584894180298,
+      "visual": 0.21282003619444062,
+      "scene_support": 1.0,
+      "object_support": 0.36793094420107536,
+      "score": 0.4955072977380988,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music plays while a machine runs",
+      "clip_similarity": 0.31432512402534485,
+      "visual": 0.20851002763221133,
+      "scene_support": 0.47077733284143297,
+      "object_support": 0.6917339301906793,
+      "score": 0.4321573899625182,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train sounds its horn as the railroad crossing sounds after a musical intro",
+      "clip_similarity": 0.31227925419807434,
+      "visual": 0.1423930515920064,
+      "scene_support": 0.07026987737510902,
+      "object_support": 0.16795872233361855,
+      "score": 0.12842580054942082,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music playing with an engine running continuously",
+      "clip_similarity": 0.31177330017089844,
+      "visual": 0.12604198670687414,
+      "scene_support": 0.3325403069164934,
+      "object_support": 0.546044968645832,
+      "score": 0.31399237735144725,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train horn sounding as a train runs on railroad tracks",
+      "clip_similarity": 0.3106294870376587,
+      "visual": 0.08907704176422375,
+      "scene_support": 0.7224900255804465,
+      "object_support": 0.33832839499865897,
+      "score": 0.3538763428794211,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle blows as the train passes",
+      "clip_similarity": 0.3104666471481323,
+      "visual": 0.08381449723148165,
+      "scene_support": 0.4662189070528247,
+      "object_support": 0.22565103002592626,
+      "score": 0.24108678001621794,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train rolling down tracks with an accelerating whistle sound that peaks then diminishes",
+      "clip_similarity": 0.3101271986961365,
+      "visual": 0.07284444191890249,
+      "scene_support": 0.9583175542454502,
+      "object_support": 0.40658884532369505,
+      "score": 0.43860969663830457,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.30978822708129883,
+      "visual": 0.06188979669280281,
+      "scene_support": 0.07915645606979772,
+      "object_support": 0.24067963830955696,
+      "score": 0.12070674699092752,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.75)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle blows twice as a vehicle speeds up nearby",
+      "clip_similarity": 0.3095666766166687,
+      "visual": 0.054729885262274854,
+      "scene_support": 0.0,
+      "object_support": 0.005270501538972401,
+      "score": 0.023473104566601663,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)",
+        "names 'cars on a road', not visible in image (z=-0.32)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd clapping followed by a man speaking and a piano playing",
+      "clip_similarity": 0.3084997534751892,
+      "visual": 0.020249816764440456,
+      "scene_support": 0.8433460299000481,
+      "object_support": 0.5138660774722538,
+      "score": 0.4152635589174668,
+      "conflicts": [
+        "names 'a crowd of people', not visible in image (z=-0.14)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle blows, the bell rings, and a train engine is running",
+      "clip_similarity": 0.3082452118396759,
+      "visual": 0.012023719975613538,
+      "scene_support": 0.6611061160966242,
+      "object_support": 0.3236682460823254,
+      "score": 0.3002417966439303,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.99)",
+        "names 'a bell', not visible in image (z=-0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A trains whistle twice as it passes a crossing",
+      "clip_similarity": 0.3078731596469879,
+      "visual": 0.0,
+      "scene_support": 0.3985418901189112,
+      "object_support": 0.2414874391754684,
+      "score": 0.1920087987883139,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor escalator",
+      0.9421491622924805
+    ],
+    [
+      "platform subway station",
+      0.01182018406689167
+    ],
+    [
+      "train interior",
+      0.006415659561753273
+    ],
+    [
+      "staircase",
+      0.005671916529536247
+    ],
+    [
+      "mezzanine",
+      0.0045556011609733105
+    ]
+  ],
+  "top_objects": [
+    [
+      "grand piano",
+      0.4075585901737213
+    ],
+    [
+      "upright piano",
+      0.16424070298671722
+    ],
+    [
+      "accordion",
+      0.06015400588512421
+    ],
+    [
+      "harp",
+      0.036447685211896896
+    ],
+    [
+      "marimba",
+      0.030084963887929916
+    ]
+  ]
+}

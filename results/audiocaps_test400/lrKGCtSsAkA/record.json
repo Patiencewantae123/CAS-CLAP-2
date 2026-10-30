@@ -1,0 +1,289 @@
+{
+  "id": "lrKGCtSsAkA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\lrKGCtSsAkA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\lrKGCtSsAkA.wav",
+  "gt_captions": [
+    "High frequency humming followed by wind blowing",
+    "A toy helicopter flying as wind blows into a microphone",
+    "A toy helicopter engine flying as wind blows into a microphone",
+    "A toy helicopter flying as wind blows into a microphone",
+    "A toy helicopter flying as wind blows into a microphone"
+  ],
+  "top_scene": [
+    "lawn",
+    0.091720812022686
+  ],
+  "top_object": [
+    "duck",
+    0.04279961436986923
+  ],
+  "env_probs": {
+    "indoor": 0.03939028084278107,
+    "outdoor": 0.9606097191572189
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A helicopter takes off from the ground really close by with a dog barking at the end",
+    "casv": "Ducks being shot at from someone with a gun"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2664874196052551,
+    "clap_gt_audio_baseline": 0.3425476551055908,
+    "clap_text_casv": 0.1202496588230133,
+    "clap_gt_audio_casv": 0.06859078258275986
+  },
+  "verdicts": [
+    {
+      "caption": "A helicopter takes off from the ground really close by with a dog barking at the end",
+      "clip_similarity": 0.3161686062812805,
+      "visual": 1.0,
+      "scene_support": 0.7445483834170825,
+      "object_support": 0.403267120723562,
+      "score": 0.7443446512421934,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two ducks make frantic calls to each other",
+      "clip_similarity": 0.31592750549316406,
+      "visual": 0.9870018862528479,
+      "scene_support": 0.2515966205900074,
+      "object_support": 0.536784483617424,
+      "score": 0.6313150857633686,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Ducks being shot at from someone with a gun",
+      "clip_similarity": 0.3138543963432312,
+      "visual": 0.8752373882949496,
+      "scene_support": 0.606454047160816,
+      "object_support": 0.7313534545419454,
+      "score": 0.7514372058288082,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A remote control car moving with a stream flowing in the background",
+      "clip_similarity": 0.3098323941230774,
+      "visual": 0.6584050719957326,
+      "scene_support": 0.3207927749536406,
+      "object_support": 0.10774925092532754,
+      "score": 0.3919246365619835,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.28)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Children talking in the background followed by a duck quacking then a woman talking while a lawn mower engine runs in the distance",
+      "clip_similarity": 0.30961981415748596,
+      "visual": 0.6469445595904871,
+      "scene_support": 0.7881715531714508,
+      "object_support": 0.5640639426091157,
+      "score": 0.6644484725703648,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Natural outdoor sounds followed by a duck making a quacking sound",
+      "clip_similarity": 0.3094644546508789,
+      "visual": 0.6385688900028599,
+      "scene_support": 0.8340607761469929,
+      "object_support": 0.8040238443729784,
+      "score": 0.7468529421571354,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse galloping through the rain on a country side road",
+      "clip_similarity": 0.30622178316116333,
+      "visual": 0.46375149020401735,
+      "scene_support": 0.0,
+      "object_support": 0.04638600739580859,
+      "score": 0.19941639830034955,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A remote control helicopter motor is running",
+      "clip_similarity": 0.30604031682014465,
+      "visual": 0.4539683610808518,
+      "scene_support": 0.3692412706862361,
+      "object_support": 0.16763520595615475,
+      "score": 0.342650287425058,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A remote-controlled helicopter flies while a man speaks",
+      "clip_similarity": 0.3055415749549866,
+      "visual": 0.42708042120957973,
+      "scene_support": 0.2677631809859196,
+      "object_support": 0.07019547038653871,
+      "score": 0.2722197638955694,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks quacking followed by a gunshot",
+      "clip_similarity": 0.30456480383872986,
+      "visual": 0.3744211902994547,
+      "scene_support": 0.8355235833328458,
+      "object_support": 0.7915677905128277,
+      "score": 0.637895888273484,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Ducks in moving in water quacking with natural outdoor noises",
+      "clip_similarity": 0.30433300137519836,
+      "visual": 0.36192436351016555,
+      "scene_support": 0.3162917453947715,
+      "object_support": 0.531155460986386,
+      "score": 0.3990039073184135,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman talking followed by ducks quacking and wind blowing",
+      "clip_similarity": 0.3042146563529968,
+      "visual": 0.35554420162018513,
+      "scene_support": 0.44163724721697367,
+      "object_support": 0.479543173011344,
+      "score": 0.41857180671656935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks while other dogs park in the distance, water splashes, and a pig snorts",
+      "clip_similarity": 0.3037736713886261,
+      "visual": 0.33177002496794655,
+      "scene_support": 0.8917679894938197,
+      "object_support": 0.5319186557554507,
+      "score": 0.5598140035619598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A nearby duck repeatedly quacks",
+      "clip_similarity": 0.30264657735824585,
+      "visual": 0.2710066549057034,
+      "scene_support": 0.8561473000403634,
+      "object_support": 1.0,
+      "score": 0.6652468519743904,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barking, with sounds of sheep, pigs, and birds in the background, followed by the sound of something getting hit",
+      "clip_similarity": 0.30168890953063965,
+      "visual": 0.219377311623752,
+      "scene_support": 0.9981905941607633,
+      "object_support": 0.5790959562030081,
+      "score": 0.5609368897586322,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fast moving stream is followed by a helicopter flying and a woman speaking while the birds tweet",
+      "clip_similarity": 0.3016044795513153,
+      "visual": 0.2148255617787975,
+      "scene_support": 0.6018272476264573,
+      "object_support": 0.3290172668204409,
+      "score": 0.3651835790455885,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone outdoors makes a tapping sound with birds in the background",
+      "clip_similarity": 0.30125972628593445,
+      "visual": 0.1962393838026472,
+      "scene_support": 0.8985299537283485,
+      "object_support": 0.4835862036864379,
+      "score": 0.49313060074549475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A stream flowing as people talk in the background and a goat is baaing",
+      "clip_similarity": 0.2999742329120636,
+      "visual": 0.12693646187809088,
+      "scene_support": 0.7243955728968627,
+      "object_support": 0.44320414651182527,
+      "score": 0.40105450057384273,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Remote control helicopter flying",
+      "clip_similarity": 0.29933369159698486,
+      "visual": 0.09240389589940842,
+      "scene_support": 0.25715280174557026,
+      "object_support": 0.0,
+      "score": 0.11410739888343444,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog breathing heavy and movement in the background",
+      "clip_similarity": 0.29761970043182373,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.643996461319308,
+      "score": 0.4931989383957924,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lawn",
+      0.091720812022686
+    ],
+    [
+      "wild field",
+      0.0860968753695488
+    ],
+    [
+      "park",
+      0.06630828976631165
+    ],
+    [
+      "natural canal",
+      0.054108213633298874
+    ],
+    [
+      "golf course",
+      0.04758622124791145
+    ]
+  ],
+  "top_objects": [
+    [
+      "duck",
+      0.04279961436986923
+    ],
+    [
+      "peacock",
+      0.03793897107243538
+    ],
+    [
+      "goose",
+      0.03439498320221901
+    ],
+    [
+      "Australian Kelpie",
+      0.025316517800092697
+    ],
+    [
+      "beaver",
+      0.024618523195385933
+    ]
+  ]
+}

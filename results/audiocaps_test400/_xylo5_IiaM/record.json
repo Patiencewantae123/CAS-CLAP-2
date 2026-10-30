@@ -1,0 +1,284 @@
+{
+  "id": "_xylo5_IiaM",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\_xylo5_IiaM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\_xylo5_IiaM.wav",
+  "gt_captions": [
+    "A woman talks and a baby whispers",
+    "A woman talking as a baby talks followed by plastic thumping",
+    "A woman and a baby are having a conversation",
+    "A woman speaks then a small child speaks",
+    "A young girl talking as a woman is talking"
+  ],
+  "top_scene": [
+    "playroom",
+    0.47056806087493896
+  ],
+  "top_object": [
+    "mousetrap",
+    0.18520355224609375
+  ],
+  "env_probs": {
+    "indoor": 0.9835220575332642,
+    "outdoor": 0.01647794246673584
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+    "casv": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.01826626993715763,
+    "clap_gt_audio_baseline": 0.3723759949207306,
+    "clap_text_casv": -0.01826626993715763,
+    "clap_gt_audio_casv": 0.3723759949207306
+  },
+  "verdicts": [
+    {
+      "caption": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+      "clip_similarity": 0.3373478651046753,
+      "visual": 1.0,
+      "scene_support": 0.5483020048654347,
+      "object_support": 0.5374307508450679,
+      "score": 0.7257198267131508,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A girl speaks while an animal clip-clops as it walks",
+      "clip_similarity": 0.3305954933166504,
+      "visual": 0.7278335952027446,
+      "scene_support": 0.6131810097951415,
+      "object_support": 0.6243572641261735,
+      "score": 0.6623949202574924,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy helicopter starting up and flying as a woman talks in the background",
+      "clip_similarity": 0.32925644516944885,
+      "visual": 0.6738608680610613,
+      "scene_support": 0.5729882551439791,
+      "object_support": 0.681806303880569,
+      "score": 0.6459827149317889,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.98)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.3268137574195862,
+      "visual": 0.5754039756101077,
+      "scene_support": 0.7131044605975609,
+      "object_support": 0.4995036890835581,
+      "score": 0.5939440351483788,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young woman laugh followed by a toddler laughing",
+      "clip_similarity": 0.325319766998291,
+      "visual": 0.5151860233808542,
+      "scene_support": 0.5865750642047254,
+      "object_support": 0.5248001285705343,
+      "score": 0.5394869671849195,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum cleaner works then stops followed by a baby crying and people talking far away",
+      "clip_similarity": 0.3238333463668823,
+      "visual": 0.4552731850527823,
+      "scene_support": 0.6405124216371368,
+      "object_support": 0.6517569904777448,
+      "score": 0.5697900976555774,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toddler cries and stamps a foot while adults chuckle",
+      "clip_similarity": 0.32217785716056824,
+      "visual": 0.38854573585304564,
+      "scene_support": 0.804552849158055,
+      "object_support": 0.7583443927456069,
+      "score": 0.6242874669123168,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows and a girl is doing baby talk",
+      "clip_similarity": 0.32023561000823975,
+      "visual": 0.31025999548335326,
+      "scene_support": 0.6389556518824213,
+      "object_support": 0.672803251887679,
+      "score": 0.5176316693243713,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman is communicating to a baby, followed by the baby chuckling then suddenly a dog barks",
+      "clip_similarity": 0.32010889053344727,
+      "visual": 0.3051523407281411,
+      "scene_support": 0.6696773195388267,
+      "object_support": 0.557687150639629,
+      "score": 0.4902702773447932,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl talking and cat meowing",
+      "clip_similarity": 0.318678617477417,
+      "visual": 0.24750263070647083,
+      "scene_support": 0.1446167902525046,
+      "object_support": 0.249469194929811,
+      "score": 0.21722684783728302,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Child crying followed by footsteps and laughter",
+      "clip_similarity": 0.3159099221229553,
+      "visual": 0.13590541949557705,
+      "scene_support": 0.9045301807430852,
+      "object_support": 0.8408746533843671,
+      "score": 0.5779836180364665,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children are laughing and speaking and then a cat meows",
+      "clip_similarity": 0.3157394528388977,
+      "visual": 0.1290343505398354,
+      "scene_support": 0.7357440108623657,
+      "object_support": 0.697114856032459,
+      "score": 0.4814714002843816,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Adult female speaking accompanied by toddler laughter followed by slapping",
+      "clip_similarity": 0.3153863847255707,
+      "visual": 0.11480330964496274,
+      "scene_support": 0.6418463558694838,
+      "object_support": 0.6117319366653077,
+      "score": 0.42199481161842256,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A high pitched young woman talks as dogs whine, cry and click on the floor",
+      "clip_similarity": 0.3141455352306366,
+      "visual": 0.06478865456781938,
+      "scene_support": 0.700000654266646,
+      "object_support": 0.710954564580998,
+      "score": 0.44920202748142096,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child pretending to be a cat meowing",
+      "clip_similarity": 0.3140776455402374,
+      "visual": 0.06205223934383694,
+      "scene_support": 0.5677071687226676,
+      "object_support": 0.593051522585962,
+      "score": 0.3730485031301236,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vacuum is running the whole time while a couple of little kids are talking",
+      "clip_similarity": 0.31354182958602905,
+      "visual": 0.0404552203306762,
+      "scene_support": 0.651420586076667,
+      "object_support": 0.5064246334665239,
+      "score": 0.36353565399522775,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People and children talk as a dog bow-wows at the same time",
+      "clip_similarity": 0.31353071331977844,
+      "visual": 0.04000715936555528,
+      "scene_support": 0.38245195277426375,
+      "object_support": 0.4159456116740052,
+      "score": 0.25552213308070276,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby screaming and crying and a rattling sound from a toy followed by a woman talking",
+      "clip_similarity": 0.3131183087825775,
+      "visual": 0.023384457930318712,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6093537831721274,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A girl speaks as a baby talks followed by a child girl speaking in the background",
+      "clip_similarity": 0.3129423260688782,
+      "visual": 0.016291160345763722,
+      "scene_support": 0.8102211074886976,
+      "object_support": 0.6703629657061148,
+      "score": 0.45069168609674914,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An infant talking followed by liquid slurping while a young girl speaks through a television speaker in the background",
+      "clip_similarity": 0.31253814697265625,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "playroom",
+      0.47056806087493896
+    ],
+    [
+      "childs room",
+      0.43346625566482544
+    ],
+    [
+      "nursery",
+      0.019494257867336273
+    ],
+    [
+      "archaelogical excavation",
+      0.008275669999420643
+    ],
+    [
+      "sandbox",
+      0.0060683670453727245
+    ]
+  ],
+  "top_objects": [
+    [
+      "mousetrap",
+      0.18520355224609375
+    ],
+    [
+      "infant bed",
+      0.16853134334087372
+    ],
+    [
+      "diaper",
+      0.02971522882580757
+    ],
+    [
+      "piggy bank",
+      0.02579936571419239
+    ],
+    [
+      "hamster",
+      0.024144675582647324
+    ]
+  ]
+}

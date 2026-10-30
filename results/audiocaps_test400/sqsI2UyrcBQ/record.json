@@ -1,0 +1,298 @@
+{
+  "id": "sqsI2UyrcBQ",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\sqsI2UyrcBQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\sqsI2UyrcBQ.wav",
+  "gt_captions": [
+    "A car engine revs producing a room and a whine",
+    "A revving sound is accelerating",
+    "A vehicle engine accelerating and revving",
+    "A vehicle engine revving then slowing down before revving again",
+    "A vehicle engine revving several times"
+  ],
+  "top_scene": [
+    "indoor garage",
+    0.16094976663589478
+  ],
+  "top_object": [
+    "motorboat",
+    0.34390634298324585
+  ],
+  "env_probs": {
+    "indoor": 0.6074278950691223,
+    "outdoor": 0.3925721049308777
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Revving engine follow by door shutting",
+    "casv": "Revving engine follow by door shutting"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3243226110935211,
+    "clap_gt_audio_baseline": 0.3700014054775238,
+    "clap_text_casv": 0.3243226110935211,
+    "clap_gt_audio_casv": 0.3700014054775238
+  },
+  "verdicts": [
+    {
+      "caption": "Revving engine follow by door shutting",
+      "clip_similarity": 0.3100742995738983,
+      "visual": 1.0,
+      "scene_support": 0.6711588811970954,
+      "object_support": 0.4387574480705052,
+      "score": 0.7329748987802802,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.30829060077667236,
+      "visual": 0.7357210037576887,
+      "scene_support": 0.05654033107663455,
+      "object_support": 0.00819293305138586,
+      "score": 0.3137083807414816,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine revving with a series of plastic clicks",
+      "clip_similarity": 0.30810511112213135,
+      "visual": 0.7082382136186409,
+      "scene_support": 0.49001573193016945,
+      "object_support": 0.3352656176953857,
+      "score": 0.530879690335123,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud engine idling sound with revving up and down",
+      "clip_similarity": 0.3080504834651947,
+      "visual": 0.7001443906229992,
+      "scene_support": 0.4902925235202241,
+      "object_support": 0.40339517915992024,
+      "score": 0.5481640670532429,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine with sound getting lower",
+      "clip_similarity": 0.3078734874725342,
+      "visual": 0.6739200508678892,
+      "scene_support": 0.6203711549270315,
+      "object_support": 0.4761171162331865,
+      "score": 0.5985145016952211,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Low rumbling of a car engine",
+      "clip_similarity": 0.30717921257019043,
+      "visual": 0.5710538749232786,
+      "scene_support": 0.7960243689575407,
+      "object_support": 0.7009437367393156,
+      "score": 0.6775119816783683,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.30695801973342896,
+      "visual": 0.5382811775563101,
+      "scene_support": 0.03351790813343614,
+      "object_support": 0.0,
+      "score": 0.2253678434625549,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A very loud engine on a motorboat",
+      "clip_similarity": 0.30561351776123047,
+      "visual": 0.3390751052020365,
+      "scene_support": 0.0,
+      "object_support": 1.0,
+      "score": 0.4356300420808146,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car racing revving engine",
+      "clip_similarity": 0.30558884143829346,
+      "visual": 0.33541897566554363,
+      "scene_support": 0.8219644012122342,
+      "object_support": 0.6411118841037831,
+      "score": 0.5730904758610226,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine chugging loudly and consistently",
+      "clip_similarity": 0.30536603927612305,
+      "visual": 0.3024078350679342,
+      "scene_support": 0.6279913968654764,
+      "object_support": 0.5006470792198111,
+      "score": 0.45955467685275997,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine starts off idling and then begins to increase in speed and volume",
+      "clip_similarity": 0.3051430284976959,
+      "visual": 0.2693657851626492,
+      "scene_support": 0.5410823680932731,
+      "object_support": 0.29380371145993944,
+      "score": 0.35821213793102347,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine chugging consistently",
+      "clip_similarity": 0.30502504110336304,
+      "visual": 0.25188436386436996,
+      "scene_support": 0.6596586142909192,
+      "object_support": 0.5580335717574227,
+      "score": 0.46606140136025054,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mid frequency of a car engine idling then accelerating",
+      "clip_similarity": 0.3049979507923126,
+      "visual": 0.24787056948191585,
+      "scene_support": 0.4297231801659055,
+      "object_support": 0.22372425501536342,
+      "score": 0.295182458347147,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An automobile engine idling in mid frequency",
+      "clip_similarity": 0.3045673370361328,
+      "visual": 0.18406934282396267,
+      "scene_support": 0.5967287753101902,
+      "object_support": 0.42240487935468773,
+      "score": 0.37936783352904846,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An idling engine sound is followed by an engine revving",
+      "clip_similarity": 0.30454033613204956,
+      "visual": 0.18006879528765526,
+      "scene_support": 0.7467385195039217,
+      "object_support": 0.4998119807549983,
+      "score": 0.4459926681927381,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine accelerating with intermittent tapping",
+      "clip_similarity": 0.3044852018356323,
+      "visual": 0.17189990683051543,
+      "scene_support": 0.795145273218719,
+      "object_support": 0.561979090128923,
+      "score": 0.47589727173649876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine roars",
+      "clip_similarity": 0.3041914105415344,
+      "visual": 0.12837077039241573,
+      "scene_support": 0.7748554611263159,
+      "object_support": 0.7376618752466781,
+      "score": 0.5051035090688645,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine chugging with intermittent horns",
+      "clip_similarity": 0.3038148880004883,
+      "visual": 0.07258388565322406,
+      "scene_support": 0.46478250677150856,
+      "object_support": 0.5173978846836016,
+      "score": 0.32368767169782264,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine revving",
+      "clip_similarity": 0.30358225107192993,
+      "visual": 0.03811559197947622,
+      "scene_support": 1.0,
+      "object_support": 0.7662194901592903,
+      "score": 0.5451120838395775,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car engine revving",
+      "clip_similarity": 0.30332499742507935,
+      "visual": 0.0,
+      "scene_support": 0.8441423273653678,
+      "object_support": 0.5833933056269476,
+      "score": 0.4282606898976946,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.80)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor garage",
+      0.16094976663589478
+    ],
+    [
+      "car interior",
+      0.1306709200143814
+    ],
+    [
+      "raceway",
+      0.1284131407737732
+    ],
+    [
+      "outdoor garage",
+      0.08933530747890472
+    ],
+    [
+      "engine room",
+      0.06734668463468552
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.34390634298324585
+    ],
+    [
+      "oil filter",
+      0.07022606581449509
+    ],
+    [
+      "race car",
+      0.036609455943107605
+    ],
+    [
+      "tool kit",
+      0.02924182452261448
+    ],
+    [
+      "vacuum cleaner",
+      0.025306206196546555
+    ]
+  ]
+}

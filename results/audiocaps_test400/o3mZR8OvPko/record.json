@@ -1,0 +1,283 @@
+{
+  "id": "o3mZR8OvPko",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\o3mZR8OvPko.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\o3mZR8OvPko.wav",
+  "gt_captions": [
+    "A vehicle engine driving by while tires skid",
+    "A race car accelerating and tires skidding",
+    "A racing vehicle accelerating and revving while tires skid and squeal",
+    "A car engine revving and the squealing of tires",
+    "A car accelerating and squealing on road"
+  ],
+  "top_scene": [
+    "raceway",
+    0.9690678715705872
+  ],
+  "top_object": [
+    "race car",
+    0.5116833448410034
+  ],
+  "env_probs": {
+    "indoor": 0.011874886229634285,
+    "outdoor": 0.9881251137703657
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A very fast race car on a track ending with a splashy wet sound",
+    "casv": "A very fast race car on a track ending with a splashy wet sound"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5881609916687012,
+    "clap_gt_audio_baseline": 0.6485451459884644,
+    "clap_text_casv": 0.5881609916687012,
+    "clap_gt_audio_casv": 0.6485451459884644
+  },
+  "verdicts": [
+    {
+      "caption": "A very fast race car on a track ending with a splashy wet sound",
+      "clip_similarity": 0.34452933073043823,
+      "visual": 1.0,
+      "scene_support": 0.6493932626824569,
+      "object_support": 0.6466866690090057,
+      "score": 0.7888239795074388,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Race car speeding by and skidding its tires",
+      "clip_similarity": 0.3344058394432068,
+      "visual": 0.5126287698355764,
+      "scene_support": 0.6831841042578888,
+      "object_support": 0.879642685430035,
+      "score": 0.6738995448406075,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Race car speeding off and its wheels squeal",
+      "clip_similarity": 0.33240360021591187,
+      "visual": 0.41623575999311313,
+      "scene_support": 0.528454252701283,
+      "object_support": 0.7873194703848216,
+      "score": 0.5612264209230766,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tires squeal and engines rev up during a race",
+      "clip_similarity": 0.33112308382987976,
+      "visual": 0.35458836695457546,
+      "scene_support": 0.5023651020529448,
+      "object_support": 0.4315351258390813,
+      "score": 0.422005415149438,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car accelerating is followed by a tire squeal and more acceleration",
+      "clip_similarity": 0.33069610595703125,
+      "visual": 0.33403254038853336,
+      "scene_support": 0.507490664998605,
+      "object_support": 0.576591018362705,
+      "score": 0.4588375211638064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mini race car engine revs along with tire squeal",
+      "clip_similarity": 0.3300860524177551,
+      "visual": 0.30466297454733277,
+      "scene_support": 0.0,
+      "object_support": 0.24597333431958135,
+      "score": 0.19565719011480753,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car accelerating then tires skidding and engine accelerating followed by a man talking",
+      "clip_similarity": 0.3290329575538635,
+      "visual": 0.25396424574593246,
+      "scene_support": 0.6141650273124967,
+      "object_support": 0.7403707907243375,
+      "score": 0.5079464437094232,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car racing, tire screeching, motor, then motor shut off",
+      "clip_similarity": 0.32790133357048035,
+      "visual": 0.19948492065769463,
+      "scene_support": 0.44326071825369245,
+      "object_support": 0.5306177996190617,
+      "score": 0.3719575236249041,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car racing and squealing his tires",
+      "clip_similarity": 0.3278515636920929,
+      "visual": 0.19708886912106516,
+      "scene_support": 0.486434407198452,
+      "object_support": 0.32186800765575013,
+      "score": 0.32132627210468667,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Racing motor races, tires squeal and the car goes past and drives away",
+      "clip_similarity": 0.3272819519042969,
+      "visual": 0.1696662744985509,
+      "scene_support": 0.6783667701146994,
+      "object_support": 0.5555417506518483,
+      "score": 0.4380390660293847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car making very loud noises while accelerating",
+      "clip_similarity": 0.32675477862358093,
+      "visual": 0.14428678010846796,
+      "scene_support": 0.5821334066635844,
+      "object_support": 0.8036879126060987,
+      "score": 0.47346110782429207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car accelerating rapidly with musical notes in the background",
+      "clip_similarity": 0.3266662359237671,
+      "visual": 0.14002410399150622,
+      "scene_support": 0.47782112455163284,
+      "object_support": 0.696132366810289,
+      "score": 0.408195689005179,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car racing sounds followed by engine revving",
+      "clip_similarity": 0.3263891339302063,
+      "visual": 0.12668369250193692,
+      "scene_support": 0.7470015683406714,
+      "object_support": 0.7822479982247535,
+      "score": 0.5094483469704022,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car whooshing past",
+      "clip_similarity": 0.32529571652412415,
+      "visual": 0.07404373152744699,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6296174926109788,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Audio speaker of a males voice at a local speedway while engines make noise",
+      "clip_similarity": 0.3250986337661743,
+      "visual": 0.06455565439467417,
+      "scene_support": 0.08898343924921104,
+      "object_support": 0.0,
+      "score": 0.05251729353263298,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car going fast and breaking hard into a skid",
+      "clip_similarity": 0.3247978687286377,
+      "visual": 0.050076042354156504,
+      "scene_support": 0.387013998221137,
+      "object_support": 0.5804391192188916,
+      "score": 0.31026635217367116,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car accelerates rapidly and tires skid and squeal loudly",
+      "clip_similarity": 0.3244713246822357,
+      "visual": 0.034355361703348734,
+      "scene_support": 0.6193726838771154,
+      "object_support": 0.7797174630619302,
+      "score": 0.4334691887630532,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car motors accelerating, announcer speaking in the background",
+      "clip_similarity": 0.32410791516304016,
+      "visual": 0.016859881201756147,
+      "scene_support": 0.5614004869209253,
+      "object_support": 0.6347863925513619,
+      "score": 0.3656000163223886,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A race car passes by multiple times, after which tires squeal and a car accelerates rapidly",
+      "clip_similarity": 0.3240929841995239,
+      "visual": 0.01614106574076731,
+      "scene_support": 0.7599008429957019,
+      "object_support": 0.772795042254563,
+      "score": 0.4662651918713864,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car going around corner real fast skidding tires",
+      "clip_similarity": 0.32375770807266235,
+      "visual": 0.0,
+      "scene_support": 0.2671306215242418,
+      "object_support": 0.3159591878247684,
+      "score": 0.17492694280470306,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.9690678715705872
+    ],
+    [
+      "runway",
+      0.003802731167525053
+    ],
+    [
+      "performance arena",
+      0.0031731706112623215
+    ],
+    [
+      "cockpit",
+      0.0024843444116413593
+    ],
+    [
+      "bullring",
+      0.0012748588342219591
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.5116833448410034
+    ],
+    [
+      "go-kart",
+      0.18896764516830444
+    ],
+    [
+      "sports car",
+      0.060733627527952194
+    ],
+    [
+      "car wheel",
+      0.038655925542116165
+    ],
+    [
+      "convertible",
+      0.006516024470329285
+    ]
+  ]
+}

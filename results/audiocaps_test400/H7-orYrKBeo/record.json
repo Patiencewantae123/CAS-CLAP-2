@@ -1,0 +1,287 @@
+{
+  "id": "H7-orYrKBeo",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\H7-orYrKBeo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\H7-orYrKBeo.wav",
+  "gt_captions": [
+    "A baby cries, and people are communicating",
+    "A child crying together with murmuring",
+    "A group of people talking as an infant cries while a muffled bus engine runs",
+    "A baby cries with a humming engine and some faint clicking",
+    "A child cries continually, while a motor vehicle engine runs quietly and several adult females and adult males speak"
+  ],
+  "top_scene": [
+    "trench",
+    0.05256621912121773
+  ],
+  "top_object": [
+    "jeans",
+    0.018352970480918884
+  ],
+  "env_probs": {
+    "indoor": 0.2318868339061737,
+    "outdoor": 0.7681131660938263
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Scraping noise and then water splashing",
+    "casv": "Scraping noise and then water splashing"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.14300498366355896,
+    "clap_gt_audio_baseline": 0.16798561811447144,
+    "clap_text_casv": -0.14300498366355896,
+    "clap_gt_audio_casv": 0.16798561811447144
+  },
+  "verdicts": [
+    {
+      "caption": "Scraping noise and then water splashing",
+      "clip_similarity": 0.29959550499916077,
+      "visual": 1.0,
+      "scene_support": 0.8284854927667374,
+      "object_support": 0.7144873183232934,
+      "score": 0.8628918433270092,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain falling on a plastic surface",
+      "clip_similarity": 0.29920482635498047,
+      "visual": 0.9661455979463711,
+      "scene_support": 0.5708859728906764,
+      "object_support": 0.5472349414416,
+      "score": 0.7218945134782314,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain pouring on a surface with vehicle engines revving and accelerating",
+      "clip_similarity": 0.2971752882003784,
+      "visual": 0.7902752203544783,
+      "scene_support": 0.4248464138417126,
+      "object_support": 0.3923058659074781,
+      "score": 0.5612557720665485,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.19)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pressure washer sprays onto a surface",
+      "clip_similarity": 0.297054260969162,
+      "visual": 0.779787560980019,
+      "scene_support": 0.0,
+      "object_support": 0.08313818321288743,
+      "score": 0.3368564793558739,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.29555895924568176,
+      "visual": 0.650211638435296,
+      "scene_support": 1.0,
+      "object_support": 0.975069191612992,
+      "score": 0.8526054128580159,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Raindrops on the windshield of a moving vehicle while the windshield wipers are on at a low constant speed",
+      "clip_similarity": 0.29387545585632324,
+      "visual": 0.5043270310962586,
+      "scene_support": 0.03621120800950943,
+      "object_support": 0.059492091464340875,
+      "score": 0.23044180228065855,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large spraying noise like with a hose",
+      "clip_similarity": 0.2932927906513214,
+      "visual": 0.45383596278055977,
+      "scene_support": 0.5935178615875261,
+      "object_support": 0.509624906396989,
+      "score": 0.5124772155075784,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Spraying and sloshing of liquid along a surface with static in the background",
+      "clip_similarity": 0.29320961236953735,
+      "visual": 0.44662811808365854,
+      "scene_support": 0.4440857988922722,
+      "object_support": 0.4868033675256242,
+      "score": 0.4579179971588323,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some surface is hit by a metallic tool",
+      "clip_similarity": 0.29254838824272156,
+      "visual": 0.38932949741359496,
+      "scene_support": 0.9466225002268027,
+      "object_support": 1.0,
+      "score": 0.7397185490334788,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A water jet sprays a surface",
+      "clip_similarity": 0.29171329736709595,
+      "visual": 0.3169643894767017,
+      "scene_support": 0.14930319221938687,
+      "object_support": 0.23734738978454267,
+      "score": 0.24278093039185955,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain hitting the ground with a popping sound",
+      "clip_similarity": 0.2913038730621338,
+      "visual": 0.28148557527174684,
+      "scene_support": 0.8727424986449991,
+      "object_support": 0.7913048204047214,
+      "score": 0.6118084258236148,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Fast spraying liquid hits against a solid surface",
+      "clip_similarity": 0.29121464490890503,
+      "visual": 0.2737534767326848,
+      "scene_support": 0.2048905647736974,
+      "object_support": 0.2567851881615411,
+      "score": 0.24800411657364546,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falling on a surface and wind blowing heavily on a microphone",
+      "clip_similarity": 0.2902606725692749,
+      "visual": 0.19108665167076858,
+      "scene_support": 0.2537361970183001,
+      "object_support": 0.3208927266061519,
+      "score": 0.24882333775564303,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain on a surface with non English speech ending with a motorcycle passing",
+      "clip_similarity": 0.2900097370147705,
+      "visual": 0.16934173861168286,
+      "scene_support": 0.4989934611027498,
+      "object_support": 0.4517997392256865,
+      "score": 0.352974655543204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A guitar is playing while rain is hitting a surface",
+      "clip_similarity": 0.2899191379547119,
+      "visual": 0.16149084363548089,
+      "scene_support": 0.24210156575301997,
+      "object_support": 0.3770941794407028,
+      "score": 0.25035506101230914,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain pattering and falling on a glass surface",
+      "clip_similarity": 0.2893121838569641,
+      "visual": 0.10889501235741199,
+      "scene_support": 0.03630518575725362,
+      "object_support": 0.0,
+      "score": 0.05444956067014089,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud and heavy rainfall on metal with faint yell in background",
+      "clip_similarity": 0.2889420688152313,
+      "visual": 0.07682255686088163,
+      "scene_support": 0.43138670680105795,
+      "object_support": 0.3101089470000931,
+      "score": 0.253177718884698,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A raspy filing sound on a hard surface",
+      "clip_similarity": 0.2888379991054535,
+      "visual": 0.06780435776321804,
+      "scene_support": 0.736224932482571,
+      "object_support": 0.7831951579903005,
+      "score": 0.48294777024714863,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pressurized air releasing once during scrapping on a metal surface",
+      "clip_similarity": 0.2886008024215698,
+      "visual": 0.04724999160677346,
+      "scene_support": 0.7202891909306821,
+      "object_support": 0.7764397045151732,
+      "score": 0.467918665276466,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water sprays onto metal",
+      "clip_similarity": 0.28805553913116455,
+      "visual": 0.0,
+      "scene_support": 0.40634535891823237,
+      "object_support": 0.4036772118263423,
+      "score": 0.2430067712233724,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "trench",
+      0.05256621912121773
+    ],
+    [
+      "driveway",
+      0.03592720255255699
+    ],
+    [
+      "ocean",
+      0.03419368714094162
+    ],
+    [
+      "ocean deep underwater",
+      0.03179490566253662
+    ],
+    [
+      "shower",
+      0.030547253787517548
+    ]
+  ],
+  "top_objects": [
+    [
+      "jeans",
+      0.018352970480918884
+    ],
+    [
+      "trench coat",
+      0.015564440749585629
+    ],
+    [
+      "manhole cover",
+      0.013986164703965187
+    ],
+    [
+      "shovel",
+      0.013290567323565483
+    ],
+    [
+      "paper towel",
+      0.012579417787492275
+    ]
+  ]
+}

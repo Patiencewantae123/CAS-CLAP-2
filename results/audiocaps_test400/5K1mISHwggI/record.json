@@ -1,0 +1,284 @@
+{
+  "id": "5K1mISHwggI",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\5K1mISHwggI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\5K1mISHwggI.wav",
+  "gt_captions": [
+    "Men are speaking with an engine sound in the background",
+    "A person speaks, traffic passes by",
+    "A man speaks with others speaking in the distance and traffic passing with a few horns honking",
+    "A man speaking with distant hums and horns of passing traffic",
+    "Men speak with traffic passing in the distance with a honk of a horn"
+  ],
+  "top_scene": [
+    "repair shop",
+    0.17752225697040558
+  ],
+  "top_object": [
+    "chainsaw",
+    0.494304358959198
+  ],
+  "env_probs": {
+    "indoor": 0.4828871488571167,
+    "outdoor": 0.5171128511428833
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A chainsaw engine making a prolonged and loud sawing noise",
+    "casv": "The motor of a chainsaw cutting"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09773338586091995,
+    "clap_gt_audio_baseline": 0.26189497113227844,
+    "clap_text_casv": 0.12283621728420258,
+    "clap_gt_audio_casv": 0.28964394330978394
+  },
+  "verdicts": [
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.36661773920059204,
+      "visual": 1.0,
+      "scene_support": 0.03333367013025694,
+      "object_support": 0.7487417226081753,
+      "score": 0.6346226178215296,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The motor of a chainsaw cutting",
+      "clip_similarity": 0.35847222805023193,
+      "visual": 0.6709264021729708,
+      "scene_support": 0.5395877693515092,
+      "object_support": 0.9554142924049644,
+      "score": 0.7168711793961304,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An electric motor run on a power tool",
+      "clip_similarity": 0.35829609632492065,
+      "visual": 0.6638107897246222,
+      "scene_support": 0.73364122429489,
+      "object_support": 0.32625770821949884,
+      "score": 0.5834939956441655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.3552544414997101,
+      "visual": 0.5409298215197311,
+      "scene_support": 0.7255958779570953,
+      "object_support": 0.44389180521947286,
+      "score": 0.5672182335608629,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A medium machine motor running while a saw buzzes cutting wood",
+      "clip_similarity": 0.3541962504386902,
+      "visual": 0.4981795590487474,
+      "scene_support": 0.44095737600638213,
+      "object_support": 0.40940036882366715,
+      "score": 0.45437914706851373,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.26)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A circular saw runs continuously",
+      "clip_similarity": 0.3541163206100464,
+      "visual": 0.49495044355188256,
+      "scene_support": 0.27082470291216587,
+      "object_support": 0.2696002621445112,
+      "score": 0.3601076669377561,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine motor running and sawing wood",
+      "clip_similarity": 0.3527156114578247,
+      "visual": 0.4383626626597702,
+      "scene_support": 0.76982595360022,
+      "object_support": 0.4264491127416543,
+      "score": 0.5342275849664704,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw engine is being turned on",
+      "clip_similarity": 0.34949347376823425,
+      "visual": 0.30819029868716347,
+      "scene_support": 0.4517856899673029,
+      "object_support": 0.8917275681055343,
+      "score": 0.5263300968967165,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw engine running and revving up as it cuts an object",
+      "clip_similarity": 0.3482443690299988,
+      "visual": 0.25772724208011866,
+      "scene_support": 0.0,
+      "object_support": 0.6298526006296672,
+      "score": 0.29204667702094766,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw blade cutting and music playing",
+      "clip_similarity": 0.3480166792869568,
+      "visual": 0.24852871769680507,
+      "scene_support": 0.5876151570916034,
+      "object_support": 0.33549252920667133,
+      "score": 0.3763437929682044,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.3463311195373535,
+      "visual": 0.18043314936284566,
+      "scene_support": 0.4737876079525661,
+      "object_support": 0.659950026669789,
+      "score": 0.4122945501318448,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine motor running and sound of saw",
+      "clip_similarity": 0.3456704914569855,
+      "visual": 0.15374418470251683,
+      "scene_support": 0.8782575767227053,
+      "object_support": 0.31219508625400044,
+      "score": 0.4186334727740184,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw cutting and revving",
+      "clip_similarity": 0.34353500604629517,
+      "visual": 0.06747189874880805,
+      "scene_support": 0.5649990972378113,
+      "object_support": 1.0,
+      "score": 0.4964884886708666,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting some objects",
+      "clip_similarity": 0.3434029817581177,
+      "visual": 0.06213819940089192,
+      "scene_support": 0.7321234416369736,
+      "object_support": 0.6099189661228631,
+      "score": 0.4274680020883078,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine running continuously together with wind",
+      "clip_similarity": 0.3433305621147156,
+      "visual": 0.05921249072923589,
+      "scene_support": 0.8844908091780384,
+      "object_support": 0.0,
+      "score": 0.28903223904510583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter engine running idle",
+      "clip_similarity": 0.3431340157985687,
+      "visual": 0.05127214147426821,
+      "scene_support": 0.7365559820185587,
+      "object_support": 0.07747004527359301,
+      "score": 0.2647166647773528,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine starting up",
+      "clip_similarity": 0.343074232339859,
+      "visual": 0.04885692682597933,
+      "scene_support": 1.0,
+      "object_support": 0.2347628502849114,
+      "score": 0.38997162581586514,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drill cutting through wood",
+      "clip_similarity": 0.34299659729003906,
+      "visual": 0.045720518970150545,
+      "scene_support": 0.4838634004393882,
+      "object_support": 0.4188779011526553,
+      "score": 0.28911059806567324,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power saw cutting wood",
+      "clip_similarity": 0.34207695722579956,
+      "visual": 0.00856763082613344,
+      "scene_support": 0.6683067212511976,
+      "object_support": 0.7217475053990061,
+      "score": 0.42044332032551446,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric saw cutting wood",
+      "clip_similarity": 0.3418648838996887,
+      "visual": 0.0,
+      "scene_support": 0.5813907106429731,
+      "object_support": 0.6373010336169438,
+      "score": 0.3656075232779751,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "repair shop",
+      0.17752225697040558
+    ],
+    [
+      "lock chamber",
+      0.06138294190168381
+    ],
+    [
+      "windmill",
+      0.057467397302389145
+    ],
+    [
+      "construction site",
+      0.052127230912446976
+    ],
+    [
+      "hardware store",
+      0.05164399370551109
+    ]
+  ],
+  "top_objects": [
+    [
+      "chainsaw",
+      0.494304358959198
+    ],
+    [
+      "power drill",
+      0.072458915412426
+    ],
+    [
+      "disc brake",
+      0.06091965362429619
+    ],
+    [
+      "crane (machine)",
+      0.04075856879353523
+    ],
+    [
+      "reel",
+      0.04053359106183052
+    ]
+  ]
+}

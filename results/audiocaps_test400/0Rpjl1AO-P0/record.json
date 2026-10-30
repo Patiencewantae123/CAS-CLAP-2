@@ -1,0 +1,282 @@
+{
+  "id": "0Rpjl1AO-P0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\0Rpjl1AO-P0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\0Rpjl1AO-P0.wav",
+  "gt_captions": [
+    "A car engine is revving while driving",
+    "Car engine accelerates and shifts gears",
+    "A car engine idling then starts to rev shortly after",
+    "A motor vehicle engine is running and vibrating, and it accelerates and then idles",
+    "A vehicle driving then accelerating alongside a series of plastic clicks"
+  ],
+  "top_scene": [
+    "raceway",
+    0.9338647127151489
+  ],
+  "top_object": [
+    "race car",
+    0.3705383837223053
+  ],
+  "env_probs": {
+    "indoor": 0.012561437673866749,
+    "outdoor": 0.9874385623261333
+  },
+  "status": "ACCEPT",
+  "n_rejected": 2,
+  "prompts": {
+    "baseline": "Race cars crashing together and sound of engines",
+    "casv": "A car racing, high pitch whining"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.26146775484085083,
+    "clap_gt_audio_baseline": 0.26473450660705566,
+    "clap_text_casv": 0.2600155174732208,
+    "clap_gt_audio_casv": 0.3320024609565735
+  },
+  "verdicts": [
+    {
+      "caption": "Race cars crashing together and sound of engines",
+      "clip_similarity": 0.31186479330062866,
+      "visual": 1.0,
+      "scene_support": 0.40271298484522966,
+      "object_support": 0.7082263673916885,
+      "score": 0.7332818056710755,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car racing, tire screeching, motor, then motor shut off",
+      "clip_similarity": 0.311821848154068,
+      "visual": 0.9948439959925576,
+      "scene_support": 0.4608894544613198,
+      "object_support": 0.6950047778952697,
+      "score": 0.7447058681039997,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car racing, high pitch whining",
+      "clip_similarity": 0.31032314896583557,
+      "visual": 0.8149098325461571,
+      "scene_support": 1.0,
+      "object_support": 0.9452167127481436,
+      "score": 0.909528946842906,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks over a car racing while people laugh followed by a squeal",
+      "clip_similarity": 0.30971604585647583,
+      "visual": 0.7420208959496207,
+      "scene_support": 0.38006511428052026,
+      "object_support": 0.3136643311395954,
+      "score": 0.504927192005883,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine roars, tires tear through dirt",
+      "clip_similarity": 0.30941903591156006,
+      "visual": 0.7063618147989122,
+      "scene_support": 0.09619725991174867,
+      "object_support": 0.4753751172007225,
+      "score": 0.45401643905330624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles pass by while auto racing with a loud room",
+      "clip_similarity": 0.30919724702835083,
+      "visual": 0.6797337913267497,
+      "scene_support": 0.6622697449966121,
+      "object_support": 0.5985571954503653,
+      "score": 0.6501415986647932,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A race car revs and then blows up and then a car passes by",
+      "clip_similarity": 0.3089942932128906,
+      "visual": 0.6553671103477887,
+      "scene_support": 0.7065626601001503,
+      "object_support": 0.9495183162637159,
+      "score": 0.7589711370482753,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A race car is accelerating away then a horn blows and tires squeal",
+      "clip_similarity": 0.30826523900032043,
+      "visual": 0.5678366967224846,
+      "scene_support": 0.672672164471401,
+      "object_support": 0.9014413067768229,
+      "score": 0.6993687200634611,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Racing vehicles revving and accelerating as tires skid and squeal",
+      "clip_similarity": 0.307771235704422,
+      "visual": 0.5085265493058537,
+      "scene_support": 0.4308648300252855,
+      "object_support": 0.5683605977910846,
+      "score": 0.5031782480672524,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car drives past, tires squeal on pavement, and gravel flies up and down",
+      "clip_similarity": 0.30731111764907837,
+      "visual": 0.45328467153284674,
+      "scene_support": 0.34503693665405144,
+      "object_support": 0.5414358848392441,
+      "score": 0.4472557150611274,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tires squeal and engines rev up during a race",
+      "clip_similarity": 0.3072142004966736,
+      "visual": 0.4416487762988407,
+      "scene_support": 0.5331894428927928,
+      "object_support": 0.5629820956238074,
+      "score": 0.5055109720745163,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car accelerates loudly nearby, followed by a man yelling",
+      "clip_similarity": 0.3068581819534302,
+      "visual": 0.3989051094890511,
+      "scene_support": 0.7917453601943513,
+      "object_support": 0.9458937060590902,
+      "score": 0.6808537636716528,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Car going fast and breaking hard into a skid",
+      "clip_similarity": 0.3064669072628021,
+      "visual": 0.35192858165163876,
+      "scene_support": 0.3946566626452263,
+      "object_support": 0.8386793837563543,
+      "score": 0.5107722465811297,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Race car speeding off and its wheels squeal",
+      "clip_similarity": 0.3057914972305298,
+      "visual": 0.27083870044368114,
+      "scene_support": 0.5640179146903767,
+      "object_support": 1.0,
+      "score": 0.5775408545845855,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle squealing and auto racing",
+      "clip_similarity": 0.30537521839141846,
+      "visual": 0.2208601688850723,
+      "scene_support": 0.8123631195359368,
+      "object_support": 0.9935004148830688,
+      "score": 0.6301031278797306,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background",
+      "clip_similarity": 0.3047572374343872,
+      "visual": 0.14666523543724058,
+      "scene_support": 0.8078401560098498,
+      "object_support": 0.9818462446342289,
+      "score": 0.5955720143681198,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine revs and tires race trying to get out of something",
+      "clip_similarity": 0.30398380756378174,
+      "visual": 0.05380707027336482,
+      "scene_support": 0.3664830025285495,
+      "object_support": 0.6221965437394594,
+      "score": 0.31812669198974863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks, powerful cars speed down a raceway",
+      "clip_similarity": 0.30365505814552307,
+      "visual": 0.014337340775726348,
+      "scene_support": 0.879085094779289,
+      "object_support": 0.64387156298584,
+      "score": 0.4626219336398292,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A whoosh of an engine followed by a crash",
+      "clip_similarity": 0.30361324548721313,
+      "visual": 0.009317303563761271,
+      "scene_support": 0.5747158273975772,
+      "object_support": 0.8425204221322893,
+      "score": 0.42889779628446445,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Audio speaker of a males voice at a local speedway while engines make noise",
+      "clip_similarity": 0.3035356402397156,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.9338647127151489
+    ],
+    [
+      "parking lot",
+      0.020164668560028076
+    ],
+    [
+      "junkyard",
+      0.014291966333985329
+    ],
+    [
+      "outdoor parking garage",
+      0.003770244773477316
+    ],
+    [
+      "indoor parking garage",
+      0.0022003387566655874
+    ]
+  ],
+  "top_objects": [
+    [
+      "race car",
+      0.3705383837223053
+    ],
+    [
+      "tow truck",
+      0.11951860040426254
+    ],
+    [
+      "match",
+      0.04365040734410286
+    ],
+    [
+      "go-kart",
+      0.04058581963181496
+    ],
+    [
+      "semi-trailer truck",
+      0.025683177635073662
+    ]
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "id": "F-47fRplQEc",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\F-47fRplQEc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\F-47fRplQEc.wav",
+  "gt_captions": [
+    "Three young ladies' speech while sheep bleats",
+    "A woman talking as a sheep baa and birds are cawing in the background followed by a woman speaking in the foreground then another woman and kid talking",
+    "Different female voices speaking followed by sheep bleating from a distance and voices of young people shortly thereafter",
+    "Goats bleat followed by female speech and a younger female speaking",
+    "Wind blowing followed by a distant goat bleating and women speaking"
+  ],
+  "top_scene": [
+    "veterinarians office",
+    0.14693164825439453
+  ],
+  "top_object": [
+    "dromedary",
+    0.24202366173267365
+  ],
+  "env_probs": {
+    "indoor": 0.5082502961158752,
+    "outdoor": 0.49174970388412476
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+    "casv": "Multiple livestock communicating with one another in distress followed by a man laughing"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.0023470688611268997,
+    "clap_gt_audio_baseline": 0.22213564813137054,
+    "clap_text_casv": -0.0023470688611268997,
+    "clap_gt_audio_casv": 0.22213564813137054
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple livestock communicating with one another in distress followed by a man laughing",
+      "clip_similarity": 0.3461230993270874,
+      "visual": 1.0,
+      "scene_support": 0.6934404063358235,
+      "object_support": 0.31155799849357946,
+      "score": 0.7014995214488209,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A horse clip clopping with a person talking and traffic noises in the background",
+      "clip_similarity": 0.3178313970565796,
+      "visual": 0.37365229399504235,
+      "scene_support": 0.6833808135864882,
+      "object_support": 0.7746174656168636,
+      "score": 0.5868604013590225,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Group of people laughing while an animal clip-clops",
+      "clip_similarity": 0.31714820861816406,
+      "visual": 0.35852724046948103,
+      "scene_support": 0.4553426415365915,
+      "object_support": 0.16554532162599592,
+      "score": 0.32967728513656863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horse clip clops with adults and a child speaking",
+      "clip_similarity": 0.3117997646331787,
+      "visual": 0.2401184721083166,
+      "scene_support": 0.8239101650434336,
+      "object_support": 0.749502203596123,
+      "score": 0.5680710994351936,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Animals bleating and a person laughing at them",
+      "clip_similarity": 0.311612606048584,
+      "visual": 0.23597498335676692,
+      "scene_support": 0.6336555403691932,
+      "object_support": 0.5101768089426126,
+      "score": 0.4375396981362485,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Horse snorting and woman talking",
+      "clip_similarity": 0.310528039932251,
+      "visual": 0.211963861916258,
+      "scene_support": 0.6695386578305215,
+      "object_support": 0.6778905421289527,
+      "score": 0.48901430475434543,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of a horse are joined by squeaking metal",
+      "clip_similarity": 0.30935487151145935,
+      "visual": 0.1859911812307877,
+      "scene_support": 0.9947555209135726,
+      "object_support": 1.0,
+      "score": 0.6728231287663868,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man laughing and then an animal laughing",
+      "clip_similarity": 0.3090970814228058,
+      "visual": 0.18028398732936976,
+      "scene_support": 0.18547549476131492,
+      "object_support": 0.0,
+      "score": 0.12775624336014238,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman briefly saying something while an animal is responding in excitement",
+      "clip_similarity": 0.30762797594070435,
+      "visual": 0.14775958000331216,
+      "scene_support": 0.5852128743758497,
+      "object_support": 0.5743019773724168,
+      "score": 0.40695828752580476,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Horse walking and man talking, followed by a woman laughing and talking",
+      "clip_similarity": 0.3070416748523712,
+      "visual": 0.13477950767700053,
+      "scene_support": 0.5602438112524236,
+      "object_support": 0.48762741372614943,
+      "score": 0.3682731705643721,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horse hoof hitting ground, chain rattles and man speaking",
+      "clip_similarity": 0.30669790506362915,
+      "visual": 0.12716881615643913,
+      "scene_support": 1.0,
+      "object_support": 0.871579604421266,
+      "score": 0.6123414077889554,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Animals bleating with people talking and children laughing",
+      "clip_similarity": 0.3065614104270935,
+      "visual": 0.12414697244909875,
+      "scene_support": 0.9380975818310118,
+      "object_support": 0.8507086431529538,
+      "score": 0.5863006564748291,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse does clip-clop while someone shouts followed by a woman laughing",
+      "clip_similarity": 0.30621233582496643,
+      "visual": 0.11641883809449662,
+      "scene_support": 0.6353943483556341,
+      "object_support": 0.8655943193872152,
+      "score": 0.4968641355606534,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then a horse neighs then a slap, a crash, and a car alarm",
+      "clip_similarity": 0.30485475063323975,
+      "visual": 0.08636336944810445,
+      "scene_support": 0.9346248450106701,
+      "object_support": 0.9448071495031158,
+      "score": 0.5983749461333776,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking in a strong accent while animals are communicating with one another in the background",
+      "clip_similarity": 0.3034404218196869,
+      "visual": 0.055051658352197864,
+      "scene_support": 0.37485431155462606,
+      "object_support": 0.21465971315459575,
+      "score": 0.19887487075364568,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal bleating with a person and a baby laughing",
+      "clip_similarity": 0.30192050337791443,
+      "visual": 0.02140230702591858,
+      "scene_support": 0.0,
+      "object_support": 0.22988615839308194,
+      "score": 0.077526770328292,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People speak and laugh while a horse clip-clops on wood",
+      "clip_similarity": 0.30161774158477783,
+      "visual": 0.01469948819996424,
+      "scene_support": 0.8314502853999289,
+      "object_support": 0.6586243878537678,
+      "score": 0.4529021972560947,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People laughing with a horse neighing",
+      "clip_similarity": 0.30155301094055176,
+      "visual": 0.013266421708186227,
+      "scene_support": 0.4614245051776957,
+      "object_support": 0.5885634534039109,
+      "score": 0.3203029562577565,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horses hooves clip-clop and then woman begin to talk",
+      "clip_similarity": 0.3009577989578247,
+      "visual": 8.90718123342687e-05,
+      "scene_support": 0.7583990036770514,
+      "object_support": 0.7933382591720942,
+      "score": 0.4655568075796773,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two men laughing followed by a goat baaing and a man talking followed by another man talking",
+      "clip_similarity": 0.30095377564430237,
+      "visual": 0.0,
+      "scene_support": 0.6103978399991705,
+      "object_support": 0.3512813696438019,
+      "score": 0.2885037628928917,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "veterinarians office",
+      0.14693164825439453
+    ],
+    [
+      "corral",
+      0.10494164377450943
+    ],
+    [
+      "stable",
+      0.08937609940767288
+    ],
+    [
+      "archaelogical excavation",
+      0.08857288211584091
+    ],
+    [
+      "pasture",
+      0.08715347200632095
+    ]
+  ],
+  "top_objects": [
+    [
+      "dromedary",
+      0.24202366173267365
+    ],
+    [
+      "hippopotamus",
+      0.06241508945822716
+    ],
+    [
+      "ox",
+      0.04488247632980347
+    ],
+    [
+      "stretcher",
+      0.039738573133945465
+    ],
+    [
+      "wild boar",
+      0.038045015186071396
+    ]
+  ]
+}

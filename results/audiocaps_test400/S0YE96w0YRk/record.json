@@ -1,0 +1,286 @@
+{
+  "id": "S0YE96w0YRk",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\S0YE96w0YRk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\S0YE96w0YRk.wav",
+  "gt_captions": [
+    "A man speaking as a crowd of people laugh and applaud",
+    "An adult male speaks and then an audience laughs and claps somewhat, followed by the adult male speaking again and then the audience laughing and clapping harder",
+    "A man speaking followed by a crowd of people laughing then applauding",
+    "A man speaks, and a crowd applauds",
+    "A man speaks and people laugh and clap"
+  ],
+  "top_scene": [
+    "television studio",
+    0.4790533781051636
+  ],
+  "top_object": [
+    "scoreboard",
+    0.05222954973578453
+  ],
+  "env_probs": {
+    "indoor": 0.8744559288024902,
+    "outdoor": 0.12554407119750977
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A news broadcast with an anxious sounding woman and siren in background",
+    "casv": "A news broadcast with an anxious sounding woman and siren in background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11656507849693298,
+    "clap_gt_audio_baseline": 0.32698893547058105,
+    "clap_text_casv": 0.11656507849693298,
+    "clap_gt_audio_casv": 0.32698893547058105
+  },
+  "verdicts": [
+    {
+      "caption": "A news broadcast with an anxious sounding woman and siren in background",
+      "clip_similarity": 0.2988795340061188,
+      "visual": 1.0,
+      "scene_support": 0.7106547360116787,
+      "object_support": 0.4479063264559454,
+      "score": 0.7475683187402873,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks slowly while a machine is running continuously and water is splashed at the end",
+      "clip_similarity": 0.2731224298477173,
+      "visual": 0.18576102818909046,
+      "scene_support": 0.527915815705849,
+      "object_support": 0.5073734000449345,
+      "score": 0.3848911760008712,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A circular saw runs continuously",
+      "clip_similarity": 0.27312105894088745,
+      "visual": 0.18571769079523176,
+      "scene_support": 0.0,
+      "object_support": 0.10266091136798693,
+      "score": 0.10508534972848879,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sewing machine running continuously",
+      "clip_similarity": 0.2725430727005005,
+      "visual": 0.16744626869749463,
+      "scene_support": 0.5655860385899979,
+      "object_support": 0.5985516987083015,
+      "score": 0.4162198286684876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man makes a speech which is broadcast through loudspeakers",
+      "clip_similarity": 0.27095648646354675,
+      "visual": 0.11729077224409505,
+      "scene_support": 0.9300763652852224,
+      "object_support": 0.6963299238165472,
+      "score": 0.5348381956281689,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Eructation a TV speech",
+      "clip_similarity": 0.27047479152679443,
+      "visual": 0.1020633310063037,
+      "scene_support": 1.0,
+      "object_support": 0.4911645607418859,
+      "score": 0.4881747006250872,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sawing machine works followed an object being hit",
+      "clip_similarity": 0.2703825831413269,
+      "visual": 0.09914842021067626,
+      "scene_support": 0.8146234083653442,
+      "object_support": 0.9079530640096509,
+      "score": 0.556432309796769,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine chugging followed by a man speaking",
+      "clip_similarity": 0.2703353762626648,
+      "visual": 0.097656106474324,
+      "scene_support": 0.6349585456127287,
+      "object_support": 0.7018670693912908,
+      "score": 0.44011012709093544,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speak over a television followed by a child crying",
+      "clip_similarity": 0.26933813095092773,
+      "visual": 0.06613097879388265,
+      "scene_support": 0.8191264349595594,
+      "object_support": 0.641079628904396,
+      "score": 0.46451421067673965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks in Hindi with the sound of a small engine running in the background",
+      "clip_similarity": 0.26869717240333557,
+      "visual": 0.045868862930418045,
+      "scene_support": 0.5453247229615649,
+      "object_support": 0.48859108551999225,
+      "score": 0.3285222877166344,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman are communicating something coming from a broadcast followed by kittens making noises",
+      "clip_similarity": 0.26845601201057434,
+      "visual": 0.0382452500803155,
+      "scene_support": 0.6467534155171015,
+      "object_support": 0.3786576619679477,
+      "score": 0.32292142327764095,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine runs as a container is opened",
+      "clip_similarity": 0.2682880461215973,
+      "visual": 0.03293547721536518,
+      "scene_support": 0.8709163096932118,
+      "object_support": 1.0,
+      "score": 0.5744490837941096,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring during camera muffling followed by a woman giggling",
+      "clip_similarity": 0.2682674825191498,
+      "visual": 0.03228541630748446,
+      "scene_support": 0.11346733047754569,
+      "object_support": 0.0,
+      "score": 0.04695436566625749,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.2682635188102722,
+      "visual": 0.03216011471219731,
+      "scene_support": 0.64744232513216,
+      "object_support": 0.5306539298326121,
+      "score": 0.36629292237431055,
+      "conflicts": [
+        "names 'a dog', not visible in image (z=-1.05)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy train motor buzzing as water trickles and children talk and laugh in the background",
+      "clip_similarity": 0.2678719758987427,
+      "visual": 0.019782578179245346,
+      "scene_support": 0.3151759184847122,
+      "object_support": 0.2720723797657589,
+      "score": 0.18408752074683946,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A saw machine works continuously",
+      "clip_similarity": 0.26786935329437256,
+      "visual": 0.01969967186055911,
+      "scene_support": 0.799400579513533,
+      "object_support": 0.9597559992501384,
+      "score": 0.535626842373325,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female's speech followed by snoring in the background and television playing",
+      "clip_similarity": 0.2676846981048584,
+      "visual": 0.013862313331241834,
+      "scene_support": 0.866660276780382,
+      "object_support": 0.7314465315802855,
+      "score": 0.484976967840697,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Truck engine with female laughter and talking",
+      "clip_similarity": 0.26759934425354004,
+      "visual": 0.01116408950490796,
+      "scene_support": 0.20638211397099482,
+      "object_support": 0.19612743257804977,
+      "score": 0.12521849976667657,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Heavy duty sewing machine running",
+      "clip_similarity": 0.2674102485179901,
+      "visual": 0.005186355504178761,
+      "scene_support": 0.4126840471573608,
+      "object_support": 0.30781387215242223,
+      "score": 0.2182239179946064,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks while a sewing machine stops and starts and a TV plays in the background",
+      "clip_similarity": 0.26724618673324585,
+      "visual": 0.0,
+      "scene_support": 0.6076588316830224,
+      "object_support": 0.3482033613068579,
+      "score": 0.2867586578969641,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "television studio",
+      0.4790533781051636
+    ],
+    [
+      "auto showroom",
+      0.10267619788646698
+    ],
+    [
+      "indoor booth",
+      0.019892165437340736
+    ],
+    [
+      "pet shop",
+      0.018549565225839615
+    ],
+    [
+      "chalet",
+      0.014511563815176487
+    ]
+  ],
+  "top_objects": [
+    [
+      "scoreboard",
+      0.05222954973578453
+    ],
+    [
+      "snowplow",
+      0.04984520003199577
+    ],
+    [
+      "automated teller machine",
+      0.04604804143309593
+    ],
+    [
+      "tobacco shop",
+      0.03567994758486748
+    ],
+    [
+      "stage",
+      0.03415036201477051
+    ]
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "id": "WCYfCfW9NA0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WCYfCfW9NA0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WCYfCfW9NA0.wav",
+  "gt_captions": [
+    "An idle helicopter engine running as birds chirp in the background",
+    "Whirring and whooshing of a low helicopter",
+    "High pitched humming with whooshes of spinning helicopter blades",
+    "High-pitched turbine noise from helicopter, rhythmic squeaking, motor sound grows louder",
+    "Blades of a helicopter spinning and getting ready to take off"
+  ],
+  "top_scene": [
+    "cockpit",
+    0.7770901918411255
+  ],
+  "top_object": [
+    "military aircraft",
+    0.359078586101532
+  ],
+  "env_probs": {
+    "indoor": 0.8170835375785828,
+    "outdoor": 0.18291646242141724
+  },
+  "status": "ACCEPT",
+  "n_rejected": 19,
+  "prompts": {
+    "baseline": "Speech in a helicopter",
+    "casv": "Sound of an aircraft that fly by going support from the air"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22255617380142212,
+    "clap_gt_audio_baseline": 0.28326618671417236,
+    "clap_text_casv": 0.13074928522109985,
+    "clap_gt_audio_casv": 0.24499830603599548
+  },
+  "verdicts": [
+    {
+      "caption": "Speech in a helicopter",
+      "clip_similarity": 0.3278505504131317,
+      "visual": 1.0,
+      "scene_support": 0.4250504025927656,
+      "object_support": 0.10956489667016286,
+      "score": 0.5603845897788785,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.32142627239227295,
+      "visual": 0.774497527520522,
+      "scene_support": 0.2196213361307196,
+      "object_support": 0.10230356957619206,
+      "score": 0.4063764827202823,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The wind noise from a helicopter running",
+      "clip_similarity": 0.31469058990478516,
+      "visual": 0.5380642583136926,
+      "scene_support": 0.13674159124469135,
+      "object_support": 0.17120918384988648,
+      "score": 0.30761093585385046,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying by as a man talks over a radio and wind blows into a microphone",
+      "clip_similarity": 0.30961132049560547,
+      "visual": 0.3597737474671077,
+      "scene_support": 0.36759712853244275,
+      "object_support": 0.2117421422067519,
+      "score": 0.3177112802086015,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Helicopter in flight with faint sound of humans talking below",
+      "clip_similarity": 0.3080662190914154,
+      "visual": 0.3055382075752963,
+      "scene_support": 0.6205460764325191,
+      "object_support": 0.6747981235808715,
+      "score": 0.5108185430341358,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying with a woman speaking in the background",
+      "clip_similarity": 0.307763010263443,
+      "visual": 0.29489509092259525,
+      "scene_support": 0.4242262581509859,
+      "object_support": 0.1948649738938002,
+      "score": 0.30368540598247395,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flies with gunfire sounds and male speech",
+      "clip_similarity": 0.3076956272125244,
+      "visual": 0.292529837654288,
+      "scene_support": 0.5122201243154308,
+      "object_support": 0.7004128583119144,
+      "score": 0.4808018298499187,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter runs followed by a man speaking",
+      "clip_similarity": 0.30538856983184814,
+      "visual": 0.21154841969489174,
+      "scene_support": 0.6269029931753902,
+      "object_support": 0.577031154551008,
+      "score": 0.44579961219587616,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying with engine sounds",
+      "clip_similarity": 0.30445152521133423,
+      "visual": 0.17865664912341267,
+      "scene_support": 0.5448832771045138,
+      "object_support": 0.5382681158585079,
+      "score": 0.39640807753827156,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.66)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks in the background while a small sized helicopter flies",
+      "clip_similarity": 0.30422788858413696,
+      "visual": 0.170806644468226,
+      "scene_support": 0.6159905552329284,
+      "object_support": 0.5041822938878068,
+      "score": 0.4043745125235109,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An approaching helicopter with muffled speech in background",
+      "clip_similarity": 0.3035469353199005,
+      "visual": 0.14690409164754903,
+      "scene_support": 0.6392514041256264,
+      "object_support": 0.498312375376033,
+      "score": 0.4000307705095174,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking in a low tone while a helicopter is flying from above",
+      "clip_similarity": 0.3032272458076477,
+      "visual": 0.1356824765174601,
+      "scene_support": 0.35414766539257203,
+      "object_support": 0.36024434941967015,
+      "score": 0.2685905950506567,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from helicopter blades",
+      "clip_similarity": 0.30300068855285645,
+      "visual": 0.12772995314476165,
+      "scene_support": 0.13521650537637625,
+      "object_support": 0.4312393817498646,
+      "score": 0.22102874739577694,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying closer and closer followed by a man speaking",
+      "clip_similarity": 0.3028636872768402,
+      "visual": 0.12292098840596993,
+      "scene_support": 0.5713157065304176,
+      "object_support": 0.5353400721522343,
+      "score": 0.3811651289671836,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of an aircraft that fly by going support from the air",
+      "clip_similarity": 0.3028499484062195,
+      "visual": 0.1224387319899197,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6489754927959679,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A door is being shut while a helicopter in low frequency is flying in the background",
+      "clip_similarity": 0.3021731376647949,
+      "visual": 0.09868158837061144,
+      "scene_support": 0.33659123572026217,
+      "object_support": 0.3800514055854589,
+      "score": 0.2544654277399609,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking, accompanied by helicopter rotor noises",
+      "clip_similarity": 0.3018483817577362,
+      "visual": 0.08728213464892047,
+      "scene_support": 0.5109964671834415,
+      "object_support": 0.43488387639607656,
+      "score": 0.31867695693342357,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying and a machine gun firing",
+      "clip_similarity": 0.3005480468273163,
+      "visual": 0.041638290950212514,
+      "scene_support": 0.5763263611989448,
+      "object_support": 0.5671774184253293,
+      "score": 0.3597064502673672,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter flying as wind blows into a microphone",
+      "clip_similarity": 0.3000563383102417,
+      "visual": 0.024378532580553038,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.009751413032221216,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Humming and vibrating of a helicopter with a man speaking",
+      "clip_similarity": 0.29936182498931885,
+      "visual": 0.0,
+      "scene_support": 0.6195239698643032,
+      "object_support": 0.5657357568492756,
+      "score": 0.3555779180140736,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.82)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "cockpit",
+      0.7770901918411255
+    ],
+    [
+      "army base",
+      0.07935100048780441
+    ],
+    [
+      "landing deck",
+      0.024148907512426376
+    ],
+    [
+      "airfield",
+      0.01284693367779255
+    ],
+    [
+      "embassy",
+      0.010963399894535542
+    ]
+  ],
+  "top_objects": [
+    [
+      "military aircraft",
+      0.359078586101532
+    ],
+    [
+      "tank suit",
+      0.05998070165514946
+    ],
+    [
+      "missile",
+      0.04499773308634758
+    ],
+    [
+      "parachute",
+      0.03819287195801735
+    ],
+    [
+      "oxygen mask",
+      0.03334686905145645
+    ]
+  ]
+}

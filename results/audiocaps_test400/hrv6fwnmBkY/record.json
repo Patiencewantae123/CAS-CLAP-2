@@ -1,0 +1,286 @@
+{
+  "id": "hrv6fwnmBkY",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\hrv6fwnmBkY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\hrv6fwnmBkY.wav",
+  "gt_captions": [
+    "A rooster clucking followed by a dog whimpering then a man talking and a dog barking",
+    "A rooster clucking followed by a dog whimpering proceeded by a man laughing then talking before a dog barks",
+    "A dog whimpering followed by laughing and barking.",
+    "A rooster cackles and a dog yelps and whimpers followed by a man laughing and then speaking then the dog barks",
+    "A dog whimpers then a male voice laughs and talks as the dog starts to bark shortly after"
+  ],
+  "top_scene": [
+    "farm",
+    0.38902711868286133
+  ],
+  "top_object": [
+    "hen",
+    0.5829765200614929
+  ],
+  "env_probs": {
+    "indoor": 0.0923251360654831,
+    "outdoor": 0.9076748639345169
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A rooster alarm clock following repetitive beeping",
+    "casv": "A rooster screams followed by a goat making noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.033233486115932465,
+    "clap_gt_audio_baseline": 0.22591252624988556,
+    "clap_text_casv": 0.08373129367828369,
+    "clap_gt_audio_casv": 0.3484230041503906
+  },
+  "verdicts": [
+    {
+      "caption": "A rooster alarm clock following repetitive beeping",
+      "clip_similarity": 0.3493373990058899,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.25572144854255413,
+      "score": 0.47671643456276624,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.47)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rooster crowing and sheep bleating",
+      "clip_similarity": 0.3432851731777191,
+      "visual": 0.8302182560583488,
+      "scene_support": 0.6896134947621525,
+      "object_support": 0.5893526008207128,
+      "score": 0.7157771310981991,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Farm animal sounds hitting objects, and a rooster croaks",
+      "clip_similarity": 0.3413592576980591,
+      "visual": 0.7761909778132258,
+      "scene_support": 1.0,
+      "object_support": 0.5990297826382861,
+      "score": 0.7901853259167763,
+      "conflicts": [
+        "names 'a frog', not visible in image (z=-0.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A rooster screams followed by a goat making noises",
+      "clip_similarity": 0.3388734757900238,
+      "visual": 0.7064578912782853,
+      "scene_support": 0.8498936913068886,
+      "object_support": 0.7068332489116295,
+      "score": 0.7496012385768696,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Barnyard noises outdoors with rooster, ducks, and chickens",
+      "clip_similarity": 0.3384253978729248,
+      "visual": 0.693888061211352,
+      "scene_support": 0.587916612984395,
+      "object_support": 0.0,
+      "score": 0.4539302083798593,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rooster and other poultry making noise",
+      "clip_similarity": 0.338300883769989,
+      "visual": 0.6903950947983393,
+      "scene_support": 0.7609844604949494,
+      "object_support": 0.7883350775526781,
+      "score": 0.7409538993336239,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A rooster crows and an animal releases gas",
+      "clip_similarity": 0.33685287833213806,
+      "visual": 0.649774520574057,
+      "scene_support": 0.6250292731503462,
+      "object_support": 0.6811805055037744,
+      "score": 0.651772741825859,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult male speaks as chickens cluck, a dog barks, and music plays",
+      "clip_similarity": 0.3323041796684265,
+      "visual": 0.5221708894941803,
+      "scene_support": 0.850069864065811,
+      "object_support": 0.7737617344308899,
+      "score": 0.6960178353466824,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Chickens clucking as a man talks followed by a child speaking",
+      "clip_similarity": 0.33150339126586914,
+      "visual": 0.49970655069148695,
+      "scene_support": 0.8193702482291968,
+      "object_support": 0.857701156093871,
+      "score": 0.703004041573515,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dog barking chicken clucking a woman speaking",
+      "clip_similarity": 0.33145251870155334,
+      "visual": 0.49827943396888935,
+      "scene_support": 0.46850636108226307,
+      "object_support": 0.49747426625638463,
+      "score": 0.4891059617891501,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rooster crows and someone laughs at a pig",
+      "clip_similarity": 0.32783201336860657,
+      "visual": 0.39671420378256994,
+      "scene_support": 0.45907026339073126,
+      "object_support": 0.47650346872789506,
+      "score": 0.4393578011486159,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice talks as a duck squeaks and chickens cluck in the background",
+      "clip_similarity": 0.3206455409526825,
+      "visual": 0.1951136927961957,
+      "scene_support": 0.8194432086647101,
+      "object_support": 0.7458231339270374,
+      "score": 0.5476253798960025,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man moans nearby, followed by people talking, after which goats bleat loudly, and then a rooster calls in the distance",
+      "clip_similarity": 0.32045531272888184,
+      "visual": 0.18977726277842152,
+      "scene_support": 0.8619980055108263,
+      "object_support": 0.5220063952229961,
+      "score": 0.4911122253315153,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds cooing and a rooster crowing",
+      "clip_similarity": 0.31859642267227173,
+      "visual": 0.13763023380636358,
+      "scene_support": 0.7229176201943096,
+      "object_support": 0.5277558479695279,
+      "score": 0.43025413397169665,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Fast clicking of a cock and mechanical bird coo coos",
+      "clip_similarity": 0.31706082820892334,
+      "visual": 0.09455254414698215,
+      "scene_support": 0.7223666799300434,
+      "object_support": 0.9670402791941037,
+      "score": 0.544643105396037,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while an animal make loud sounds and a rooster crows",
+      "clip_similarity": 0.3167417347431183,
+      "visual": 0.08560108618046046,
+      "scene_support": 0.6456261820480315,
+      "object_support": 0.4985493599198477,
+      "score": 0.37749309706254797,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks briefly, animals bleat, and chickens cackle in the background, and an animal bleats once in the foreground followed by four quiet metal taps",
+      "clip_similarity": 0.31641218066215515,
+      "visual": 0.07635617890542572,
+      "scene_support": 0.6923358087682072,
+      "object_support": 0.26615552486126204,
+      "score": 0.31808987165101105,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chicken bucking while there are low clangs in the background",
+      "clip_similarity": 0.31580451130867004,
+      "visual": 0.05930936579835769,
+      "scene_support": 0.8833551265561037,
+      "object_support": 1.0,
+      "score": 0.5887302842861741,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Chickens cluck and a lock is fiddled with and a door opens for louder clucks",
+      "clip_similarity": 0.31374433636665344,
+      "visual": 0.0015157367416927092,
+      "scene_support": 0.5831613721117455,
+      "object_support": 0.6232151503859225,
+      "score": 0.3625192514459774,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pecking noise followed by quacking and a rooster crowing",
+      "clip_similarity": 0.31369030475616455,
+      "visual": 0.0,
+      "scene_support": 0.8385510128687972,
+      "object_support": 0.64064559173664,
+      "score": 0.44375898138163117,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "farm",
+      0.38902711868286133
+    ],
+    [
+      "corral",
+      0.15733081102371216
+    ],
+    [
+      "lawn",
+      0.0755905956029892
+    ],
+    [
+      "vegetable garden",
+      0.05941305309534073
+    ],
+    [
+      "yard",
+      0.0370066799223423
+    ]
+  ],
+  "top_objects": [
+    [
+      "hen",
+      0.5829765200614929
+    ],
+    [
+      "cock",
+      0.34013086557388306
+    ],
+    [
+      "white stork",
+      0.007506032474339008
+    ],
+    [
+      "sulphur-crested cockatoo",
+      0.0048140608705580235
+    ],
+    [
+      "Griffon Bruxellois",
+      0.003802392864599824
+    ]
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "id": "GuizRlAQ8qQ",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\GuizRlAQ8qQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GuizRlAQ8qQ.wav",
+  "gt_captions": [
+    "Humming and vibrating from a power tool",
+    "Power tools make drilling sounds",
+    "High powered vibrations from a power tool",
+    "High pitched continuous drilling that slows down",
+    "A power tool drilling"
+  ],
+  "top_scene": [
+    "attic",
+    0.17289644479751587
+  ],
+  "top_object": [
+    "power drill",
+    0.3891976773738861
+  ],
+  "env_probs": {
+    "indoor": 0.9182170629501343,
+    "outdoor": 0.08178293704986572
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A power drill going in to a wall",
+    "casv": "A power drill going in to a wall"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.14470410346984863,
+    "clap_gt_audio_baseline": 0.07811930775642395,
+    "clap_text_casv": 0.14470410346984863,
+    "clap_gt_audio_casv": 0.07811930775642395
+  },
+  "verdicts": [
+    {
+      "caption": "A power drill going in to a wall",
+      "clip_similarity": 0.3386596441268921,
+      "visual": 1.0,
+      "scene_support": 0.516125807355643,
+      "object_support": 1.0,
+      "score": 0.8548377422066928,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man using a drill before giving further direction",
+      "clip_similarity": 0.3297272324562073,
+      "visual": 0.6314520363331861,
+      "scene_support": 0.4749504647057956,
+      "object_support": 0.5609971907459674,
+      "score": 0.5633651111688034,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Electronic humming followed by a man speaking then a power tool drilling",
+      "clip_similarity": 0.3252409100532532,
+      "visual": 0.4463480524462927,
+      "scene_support": 0.8188343923260857,
+      "object_support": 0.47886859572609075,
+      "score": 0.56785011739417,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An electric drill humming followed by a man speaking",
+      "clip_similarity": 0.3197776675224304,
+      "visual": 0.22093670957674813,
+      "scene_support": 0.9899151221542813,
+      "object_support": 0.7223219498735794,
+      "score": 0.6020458054390574,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.31883153319358826,
+      "visual": 0.18189956114409941,
+      "scene_support": 0.5545297957457828,
+      "object_support": 0.0,
+      "score": 0.2391187631813746,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking then spraying and clicking sound",
+      "clip_similarity": 0.318450927734375,
+      "visual": 0.16619592229213367,
+      "scene_support": 0.8286267292283639,
+      "object_support": 0.2775146354662368,
+      "score": 0.3983207783252337,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man drilling holes in an object",
+      "clip_similarity": 0.318062961101532,
+      "visual": 0.15018856417022544,
+      "scene_support": 0.3132072812375547,
+      "object_support": 0.3389606006433118,
+      "score": 0.25572579023235015,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drilling followed by a man speaking with metal tapping",
+      "clip_similarity": 0.31749194860458374,
+      "visual": 0.12662880217792538,
+      "scene_support": 0.5845672770420095,
+      "object_support": 0.6126115879881192,
+      "score": 0.40980518038020874,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking followed by plastic snapping and a power tool drilling",
+      "clip_similarity": 0.3169677257537842,
+      "visual": 0.1049995634804015,
+      "scene_support": 0.657821332052818,
+      "object_support": 0.5522951547963845,
+      "score": 0.40503477144692135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while using a drill",
+      "clip_similarity": 0.31655043363571167,
+      "visual": 0.08778224680941063,
+      "scene_support": 0.38120543257545836,
+      "object_support": 0.5877093288420305,
+      "score": 0.32578732714901093,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pressurized air spraying followed by a man speaking",
+      "clip_similarity": 0.3164058029651642,
+      "visual": 0.0818148394530102,
+      "scene_support": 0.4718783750784616,
+      "object_support": 0.11393450767433018,
+      "score": 0.2084698006070416,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spraying intermittently a second apart accompanied by a clicking sound each time",
+      "clip_similarity": 0.3162878155708313,
+      "visual": 0.07694672370522754,
+      "scene_support": 1.0,
+      "object_support": 0.13054080398370452,
+      "score": 0.36994093067720235,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drilling with a man speaking briefly followed by metal rattling",
+      "clip_similarity": 0.3160932958126068,
+      "visual": 0.06892091125618044,
+      "scene_support": 0.7166532004962544,
+      "object_support": 0.7155763733606184,
+      "score": 0.45723723665953403,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by a power drill running",
+      "clip_similarity": 0.3159923851490021,
+      "visual": 0.06475737502935748,
+      "scene_support": 0.6333380314698667,
+      "object_support": 0.7659084992868058,
+      "score": 0.4456769092387447,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High pitched spraying with intermittent drilling",
+      "clip_similarity": 0.31584829092025757,
+      "visual": 0.05881210106105003,
+      "scene_support": 0.7178545030819229,
+      "object_support": 0.08590396637763896,
+      "score": 0.26465238126228857,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by a power tool drilling",
+      "clip_similarity": 0.3157894015312195,
+      "visual": 0.05638234690151011,
+      "scene_support": 0.5783329591212955,
+      "object_support": 0.7159840888318808,
+      "score": 0.4108480531465569,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks before using a power drill",
+      "clip_similarity": 0.31556951999664307,
+      "visual": 0.04731011704873403,
+      "scene_support": 0.43029740843140696,
+      "object_support": 0.8042017275967944,
+      "score": 0.38927378762795406,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking and using some kind of tool such as a drill or electric screwdriver",
+      "clip_similarity": 0.31487199664115906,
+      "visual": 0.018530564364507392,
+      "scene_support": 0.0,
+      "object_support": 0.3833272702935962,
+      "score": 0.12241040683388181,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Electrical humming, a single spray followed by a man speaking",
+      "clip_similarity": 0.31447550654411316,
+      "visual": 0.0021715312984552123,
+      "scene_support": 0.5392119586148801,
+      "object_support": 0.22514557454213102,
+      "score": 0.23017587246648544,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks before a power drill is turned on",
+      "clip_similarity": 0.3144228756427765,
+      "visual": 0.0,
+      "scene_support": 0.36890806019951783,
+      "object_support": 0.7911581172331845,
+      "score": 0.3480198532298107,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "attic",
+      0.17289644479751587
+    ],
+    [
+      "utility room",
+      0.0516299232840538
+    ],
+    [
+      "childs room",
+      0.048793643712997437
+    ],
+    [
+      "recreation room",
+      0.04802809655666351
+    ],
+    [
+      "home theater",
+      0.042695894837379456
+    ]
+  ],
+  "top_objects": [
+    [
+      "power drill",
+      0.3891976773738861
+    ],
+    [
+      "projector",
+      0.04863572493195534
+    ],
+    [
+      "spotlight",
+      0.04283835366368294
+    ],
+    [
+      "hair dryer",
+      0.031267110258340836
+    ],
+    [
+      "wall clock",
+      0.02463267557322979
+    ]
+  ]
+}

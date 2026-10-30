@@ -1,0 +1,282 @@
+{
+  "id": "EzWEO2WD_MM",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\EzWEO2WD_MM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\EzWEO2WD_MM.wav",
+  "gt_captions": [
+    "A drone whirring followed by a crashing sound",
+    "Toy helicopter whirring and crashing",
+    "High frequency humming followed by a smack",
+    "A power tool drilling followed by plastic clanking",
+    "A whirring followed by an object hitting a surface"
+  ],
+  "top_scene": [
+    "bedroom",
+    0.29955023527145386
+  ],
+  "top_object": [
+    "pajamas",
+    0.20860904455184937
+  ],
+  "env_probs": {
+    "indoor": 0.9629018902778625,
+    "outdoor": 0.03709810972213745
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A person snores while a TV is running in the background",
+    "casv": "A person snores while a TV is running in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.15997761487960815,
+    "clap_gt_audio_baseline": 0.24099105596542358,
+    "clap_text_casv": 0.15997761487960815,
+    "clap_gt_audio_casv": 0.24099105596542358
+  },
+  "verdicts": [
+    {
+      "caption": "A person snores while a TV is running in the background",
+      "clip_similarity": 0.31401708722114563,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 0.6459431865360338,
+      "score": 0.8937829559608101,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person snoring repeatedly in white noise",
+      "clip_similarity": 0.31362032890319824,
+      "visual": 0.9812845388332113,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.39251381553328457,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.3119029700756073,
+      "visual": 0.900275115732768,
+      "scene_support": 0.665165782973211,
+      "object_support": 0.5598072138074002,
+      "score": 0.7276019453272906,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Faint audio of a person snoring",
+      "clip_similarity": 0.30242881178855896,
+      "visual": 0.4533702028714941,
+      "scene_support": 0.26190503215773964,
+      "object_support": 0.19924464302357436,
+      "score": 0.3196929837029918,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A camera moves slightly and someone breathes",
+      "clip_similarity": 0.3009980022907257,
+      "visual": 0.3858775798250337,
+      "scene_support": 0.8982104320757314,
+      "object_support": 1.0,
+      "score": 0.7238141615527329,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "White noise with a person snoring",
+      "clip_similarity": 0.29978975653648376,
+      "visual": 0.3288834968517032,
+      "scene_support": 0.40560465489133907,
+      "object_support": 0.4346381093057607,
+      "score": 0.3836262279998112,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Camera noise followed by a man and a woman laughing as a man snores loudly",
+      "clip_similarity": 0.29976916313171387,
+      "visual": 0.32791208667621674,
+      "scene_support": 0.6555702483091116,
+      "object_support": 0.7013233221585501,
+      "score": 0.5382329058107852,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "White noise with loud snoring from two people",
+      "clip_similarity": 0.29961198568344116,
+      "visual": 0.32049787934551416,
+      "scene_support": 0.3290354664468429,
+      "object_support": 0.2749088459659221,
+      "score": 0.3093824454620352,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snores nearby several times at moderate volume, and then a can falls on the floor",
+      "clip_similarity": 0.299187570810318,
+      "visual": 0.3004778325884918,
+      "scene_support": 0.6278924585028242,
+      "object_support": 0.5803292277537556,
+      "score": 0.4826576389123707,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Microphone noise and then light snoring",
+      "clip_similarity": 0.2989440858364105,
+      "visual": 0.2889924185020602,
+      "scene_support": 0.47758180608308376,
+      "object_support": 0.4012980447424387,
+      "score": 0.37926092264848077,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Light audio static followed by a person heavily snoring",
+      "clip_similarity": 0.29834622144699097,
+      "visual": 0.26079059573732283,
+      "scene_support": 0.546096307216018,
+      "object_support": 0.6432346902174988,
+      "score": 0.46111553752498413,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Faint vibrations mixed with snoring",
+      "clip_similarity": 0.2978591024875641,
+      "visual": 0.23781273854727084,
+      "scene_support": 0.5624440449655012,
+      "object_support": 0.6631346537841281,
+      "score": 0.46279870504379705,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "White noise with breathing and faint snoring",
+      "clip_similarity": 0.296906054019928,
+      "visual": 0.19285655041140837,
+      "scene_support": 0.4420089471302073,
+      "object_support": 0.49437683402481425,
+      "score": 0.3580583545110698,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An object bursts and an alarm goes off",
+      "clip_similarity": 0.2954896092414856,
+      "visual": 0.12604152462194432,
+      "scene_support": 0.7745255084015908,
+      "object_support": 0.8268129838365752,
+      "score": 0.5308181575202275,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snores while sleeping",
+      "clip_similarity": 0.29529035091400146,
+      "visual": 0.11664232283713627,
+      "scene_support": 0.3711966538357309,
+      "object_support": 0.37884774522623993,
+      "score": 0.27167024885344576,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "White noise and faint tapping",
+      "clip_similarity": 0.29510554671287537,
+      "visual": 0.10792493571963781,
+      "scene_support": 0.5930595184213551,
+      "object_support": 0.5733652290077413,
+      "score": 0.39309739851658404,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person snores at moderate speed nearby",
+      "clip_similarity": 0.2946886122226715,
+      "visual": 0.08825774562549116,
+      "scene_support": 0.6893830509628878,
+      "object_support": 0.724822846265297,
+      "score": 0.4595648674186519,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring with some clicking",
+      "clip_similarity": 0.2946230173110962,
+      "visual": 0.0851635722589996,
+      "scene_support": 0.46926250732470026,
+      "object_support": 0.46262684602805654,
+      "score": 0.3136322349094269,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Hissing sound and door clicking",
+      "clip_similarity": 0.29451727867126465,
+      "visual": 0.08017578166185647,
+      "scene_support": 0.8119151767788912,
+      "object_support": 0.5263167556789458,
+      "score": 0.4335398924020937,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A camera shuffles then something falls on a hard surface",
+      "clip_similarity": 0.2928175926208496,
+      "visual": 0.0,
+      "scene_support": 0.13271718356940268,
+      "object_support": 0.2745706369626431,
+      "score": 0.12218634615961374,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bedroom",
+      0.29955023527145386
+    ],
+    [
+      "hotel room",
+      0.2322319895029068
+    ],
+    [
+      "television room",
+      0.1281687617301941
+    ],
+    [
+      "bedchamber",
+      0.07276447117328644
+    ],
+    [
+      "hospital room",
+      0.04877885431051254
+    ]
+  ],
+  "top_objects": [
+    [
+      "pajamas",
+      0.20860904455184937
+    ],
+    [
+      "four-poster bed",
+      0.20571476221084595
+    ],
+    [
+      "pillow",
+      0.05983695760369301
+    ],
+    [
+      "television",
+      0.036777254194021225
+    ],
+    [
+      "projector",
+      0.030277373269200325
+    ]
+  ]
+}

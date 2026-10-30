@@ -1,0 +1,282 @@
+{
+  "id": "YIqpIjjee00",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\YIqpIjjee00.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\YIqpIjjee00.wav",
+  "gt_captions": [
+    "Water running from a flushed toilet",
+    "A toilet flushing",
+    "A flush occurs with water splashing and gurgling, and then water runs steadily",
+    "Hissing and gurgling of water flowing down a toilet",
+    "A toilet flushing"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.2811014652252197
+  ],
+  "top_object": [
+    "toilet seat",
+    0.40365326404571533
+  ],
+  "env_probs": {
+    "indoor": 0.6061447262763977,
+    "outdoor": 0.3938552737236023
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "Water finishes flushing down a toilet",
+    "casv": "Water running in a toilet"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.29444199800491333,
+    "clap_gt_audio_baseline": 0.4407241940498352,
+    "clap_text_casv": 0.2811000347137451,
+    "clap_gt_audio_casv": 0.5560604929924011
+  },
+  "verdicts": [
+    {
+      "caption": "Water finishes flushing down a toilet",
+      "clip_similarity": 0.3361944258213043,
+      "visual": 1.0,
+      "scene_support": 0.43943647910156136,
+      "object_support": 0.49232933855065353,
+      "score": 0.6795297452956646,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water rushing down a flushed toilet",
+      "clip_similarity": 0.3345191180706024,
+      "visual": 0.8727035160858607,
+      "scene_support": 0.37691811948931636,
+      "object_support": 0.5055771203629501,
+      "score": 0.6138299783900243,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flowing down a flushed toilet",
+      "clip_similarity": 0.33450156450271606,
+      "visual": 0.8713697268336206,
+      "scene_support": 0.33043910112618424,
+      "object_support": 0.46197090447761974,
+      "score": 0.5862708924145894,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running in a toilet",
+      "clip_similarity": 0.3326435685157776,
+      "visual": 0.7301918709055047,
+      "scene_support": 0.6686450782159481,
+      "object_support": 0.6246427014511216,
+      "score": 0.6800630822623228,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flushing down a toilet",
+      "clip_similarity": 0.33216196298599243,
+      "visual": 0.6935975851394591,
+      "scene_support": 0.38683663001037416,
+      "object_support": 0.4461409146320771,
+      "score": 0.5273322974485191,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water being rapidly flushed down a toilet and eventually ending",
+      "clip_similarity": 0.3309212625026703,
+      "visual": 0.5993242738321418,
+      "scene_support": 0.6204003371448795,
+      "object_support": 0.6131308358762984,
+      "score": 0.6097890614392101,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water is sloshing around in a toilet",
+      "clip_similarity": 0.3308780789375305,
+      "visual": 0.5960430164017582,
+      "scene_support": 0.6969798397857837,
+      "object_support": 0.722841264164685,
+      "score": 0.6643635377458439,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water in a toilet during a flush",
+      "clip_similarity": 0.32858923077583313,
+      "visual": 0.4221273145998972,
+      "scene_support": 0.5615196607047659,
+      "object_support": 0.6040492530339379,
+      "score": 0.51852159996157,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water runs down a flushed toilet",
+      "clip_similarity": 0.3279900550842285,
+      "visual": 0.3765995846910885,
+      "scene_support": 0.6092005736838838,
+      "object_support": 0.7355544359838468,
+      "score": 0.5540663367767547,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flows hard down a toilet",
+      "clip_similarity": 0.32785195112228394,
+      "visual": 0.36610590150792915,
+      "scene_support": 0.6116926810505762,
+      "object_support": 0.6463105906552888,
+      "score": 0.5238433421149311,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flows down a flushed toilet",
+      "clip_similarity": 0.3266611397266388,
+      "visual": 0.27562335965434703,
+      "scene_support": 0.5540484584965566,
+      "object_support": 0.6351777552123169,
+      "score": 0.4670172079744008,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Splashing water from a toilet",
+      "clip_similarity": 0.32630228996276855,
+      "visual": 0.24835654066245622,
+      "scene_support": 0.5980872083981587,
+      "object_support": 0.5396151747793559,
+      "score": 0.44065333121823685,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing and tricking from a toilet",
+      "clip_similarity": 0.32590216398239136,
+      "visual": 0.21795339210460168,
+      "scene_support": 0.48387202062292445,
+      "object_support": 0.29497262995225576,
+      "score": 0.3208347520143947,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running from a flushed toilet",
+      "clip_similarity": 0.32559964060783386,
+      "visual": 0.19496647410886347,
+      "scene_support": 0.8560177609048897,
+      "object_support": 0.7384979234265159,
+      "score": 0.556341294942967,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A strong flush of water after using the toilet",
+      "clip_similarity": 0.32450374960899353,
+      "visual": 0.11169635800805708,
+      "scene_support": 0.8281834687651397,
+      "object_support": 0.7470777873202413,
+      "score": 0.517256920028837,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing from a toilet",
+      "clip_similarity": 0.32397881150245667,
+      "visual": 0.07180949232221993,
+      "scene_support": 0.7001752922978267,
+      "object_support": 0.6077596761015237,
+      "score": 0.4211042874486931,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet flushes during the middle of beat it by Michael Jackson",
+      "clip_similarity": 0.3233843743801117,
+      "visual": 0.026641817576579657,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.010656727030631863,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet flushing noise",
+      "clip_similarity": 0.323340505361557,
+      "visual": 0.02330847669492005,
+      "scene_support": 0.7692637531495334,
+      "object_support": 0.6173925754993044,
+      "score": 0.42532028927261933,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet being flushed",
+      "clip_similarity": 0.3232000768184662,
+      "visual": 0.012638162676998816,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6050552650707994,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Flushed water from a toilet",
+      "clip_similarity": 0.32303375005722046,
+      "visual": 0.0,
+      "scene_support": 0.7132982151416962,
+      "object_support": 0.6175627736025874,
+      "score": 0.39925829662328505,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.2811014652252197
+    ],
+    [
+      "ice floe",
+      0.08698572963476181
+    ],
+    [
+      "archaelogical excavation",
+      0.08667238056659698
+    ],
+    [
+      "iceberg",
+      0.0798729881644249
+    ],
+    [
+      "fountain",
+      0.07371379435062408
+    ]
+  ],
+  "top_objects": [
+    [
+      "toilet seat",
+      0.40365326404571533
+    ],
+    [
+      "toilet paper",
+      0.09049875289201736
+    ],
+    [
+      "diaper",
+      0.038083720952272415
+    ],
+    [
+      "plunger",
+      0.037268344312906265
+    ],
+    [
+      "sink",
+      0.03498019650578499
+    ]
+  ]
+}

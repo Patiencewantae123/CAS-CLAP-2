@@ -1,0 +1,286 @@
+{
+  "id": "3ue0gJM0THk",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\3ue0gJM0THk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\3ue0gJM0THk.wav",
+  "gt_captions": [
+    "Loud vibrations from a revving engine that increases",
+    "Loud high frequency buzzing and revving of a propeller",
+    "Aircraft engine revs and creates propeller which",
+    "A power tool motor running then revving",
+    "A motor is revving up"
+  ],
+  "top_scene": [
+    "outdoor greenhouse",
+    0.199839249253273
+  ],
+  "top_object": [
+    "oil filter",
+    0.1995639055967331
+  ],
+  "env_probs": {
+    "indoor": 0.48706716299057007,
+    "outdoor": 0.5129328370094299
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A machine engine pump running and rattling with pressurized air spraying",
+    "casv": "A machine engine pump running and rattling with pressurized air spraying"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.18226873874664307,
+    "clap_gt_audio_baseline": 0.20894372463226318,
+    "clap_text_casv": 0.18226873874664307,
+    "clap_gt_audio_casv": 0.20894372463226318
+  },
+  "verdicts": [
+    {
+      "caption": "A machine engine pump running and rattling with pressurized air spraying",
+      "clip_similarity": 0.3477588891983032,
+      "visual": 1.0,
+      "scene_support": 0.7365911681381404,
+      "object_support": 0.6273144818631701,
+      "score": 0.8091716950003932,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power tool motor running as high pressure liquid sprays",
+      "clip_similarity": 0.3402770161628723,
+      "visual": 0.6857534469485977,
+      "scene_support": 0.6398326480846342,
+      "object_support": 0.7829756568794001,
+      "score": 0.7011438702686493,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical engine runs while air pressure sprays",
+      "clip_similarity": 0.338397353887558,
+      "visual": 0.6068056503044831,
+      "scene_support": 0.7160666817369734,
+      "object_support": 0.7697437985686463,
+      "score": 0.6884654042134791,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power tool drilling as water splashes with water spraying sharply against a metal surface",
+      "clip_similarity": 0.33789610862731934,
+      "visual": 0.5857528210841224,
+      "scene_support": 0.20411856385009522,
+      "object_support": 0.2373089811420508,
+      "score": 0.3667293919312927,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor runs while water sprays",
+      "clip_similarity": 0.3330049514770508,
+      "visual": 0.38031906570951124,
+      "scene_support": 0.7210851733211076,
+      "object_support": 0.9459126532135484,
+      "score": 0.6522269742442013,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine running continuously together with wind",
+      "clip_similarity": 0.33192235231399536,
+      "visual": 0.33484875984954215,
+      "scene_support": 0.7528198225650166,
+      "object_support": 0.8058352349371596,
+      "score": 0.6015360211904697,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motor running with splashes of water",
+      "clip_similarity": 0.3319041132926941,
+      "visual": 0.334082701731767,
+      "scene_support": 0.6111217274226478,
+      "object_support": 0.7454769688888543,
+      "score": 0.5406126895861574,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool drilling while a muffled spraying of water splashes against a solid surface",
+      "clip_similarity": 0.33114540576934814,
+      "visual": 0.30221618610706036,
+      "scene_support": 0.1177895435643765,
+      "object_support": 0.11144305490225044,
+      "score": 0.18965625398281222,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.32946914434432983,
+      "visual": 0.23181143955087966,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.09272457582035187,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drilling while releasing compressed air",
+      "clip_similarity": 0.32901638746261597,
+      "visual": 0.21279517333316644,
+      "scene_support": 0.5304369210330496,
+      "object_support": 0.7659933952472214,
+      "score": 0.4740471642173479,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A medium machine motor running while a saw buzzes cutting wood",
+      "clip_similarity": 0.3278500437736511,
+      "visual": 0.16380750912197473,
+      "scene_support": 0.4031010400498035,
+      "object_support": 0.35811832575931335,
+      "score": 0.29388881339152495,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine revving with a series of plastic clicks",
+      "clip_similarity": 0.3278081715106964,
+      "visual": 0.1620488299463634,
+      "scene_support": 0.7410256522310874,
+      "object_support": 0.8625689533857619,
+      "score": 0.5458979136636002,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor engine pumping as water is gurgling and spraying",
+      "clip_similarity": 0.3265633285045624,
+      "visual": 0.10976411167925697,
+      "scene_support": 0.7066466806325238,
+      "object_support": 0.7371641741726566,
+      "score": 0.47704890111325693,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small electric motor hum with splashes of water",
+      "clip_similarity": 0.32591089606285095,
+      "visual": 0.08236126149243643,
+      "scene_support": 0.6249563484196639,
+      "object_support": 0.7613240993783991,
+      "score": 0.4488286389363934,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.3256561756134033,
+      "visual": 0.07166273415154682,
+      "scene_support": 0.6218837539048052,
+      "object_support": 0.6344124530106243,
+      "score": 0.40555395573524755,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine motor sharply humming during high pressure spraying",
+      "clip_similarity": 0.3253096044063568,
+      "visual": 0.05710637818486785,
+      "scene_support": 0.5624719169867121,
+      "object_support": 0.47835864701697645,
+      "score": 0.33509172047505364,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running continuously with some tapping",
+      "clip_similarity": 0.3248897194862366,
+      "visual": 0.03947076899968081,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6157883075998722,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine buzzing and spraying water",
+      "clip_similarity": 0.32487761974334717,
+      "visual": 0.038962567045731915,
+      "scene_support": 0.6785241375858084,
+      "object_support": 0.7048945727514102,
+      "score": 0.43061063991945836,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine works while some liquid splashes",
+      "clip_similarity": 0.32425540685653687,
+      "visual": 0.012828970014832988,
+      "scene_support": 0.6695737261783543,
+      "object_support": 0.6369596950695656,
+      "score": 0.39709161438030915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy aircraft engine buzzing and whirring",
+      "clip_similarity": 0.3239499628543854,
+      "visual": 0.0,
+      "scene_support": 0.37379459066040915,
+      "object_support": 0.6556747810401999,
+      "score": 0.3088408115101827,
+      "conflicts": [
+        "names 'an airplane', not visible in image (z=-0.71)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor greenhouse",
+      0.199839249253273
+    ],
+    [
+      "lock chamber",
+      0.12027844786643982
+    ],
+    [
+      "chemistry lab",
+      0.09289205074310303
+    ],
+    [
+      "engine room",
+      0.06345050781965256
+    ],
+    [
+      "physics laboratory",
+      0.06088443845510483
+    ]
+  ],
+  "top_objects": [
+    [
+      "oil filter",
+      0.1995639055967331
+    ],
+    [
+      "power drill",
+      0.09022164344787598
+    ],
+    [
+      "solar thermal collector",
+      0.07275817543268204
+    ],
+    [
+      "espresso machine",
+      0.05233063921332359
+    ],
+    [
+      "sewing machine",
+      0.04387609660625458
+    ]
+  ]
+}

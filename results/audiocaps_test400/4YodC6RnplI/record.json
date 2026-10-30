@@ -1,0 +1,295 @@
+{
+  "id": "4YodC6RnplI",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\4YodC6RnplI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4YodC6RnplI.wav",
+  "gt_captions": [
+    "A girl laughing as a person is snoring",
+    "Snoring is ongoing, while an adult female laugh in the foreground and an adult male speaks briefly in the background",
+    "A female laughs, snoring occurs, and an adult male speaks in the background",
+    "Snoring with some laughter",
+    "An adult female laugh while snoring is occurring, and an adult male speaks in the background"
+  ],
+  "top_scene": [
+    "closet",
+    0.049926530569791794
+  ],
+  "top_object": [
+    "candle",
+    0.024573154747486115
+  ],
+  "env_probs": {
+    "indoor": 0.40376216173171997,
+    "outdoor": 0.59623783826828
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+    "casv": "Loud white noise with faint conversations in background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.001708002295345068,
+    "clap_gt_audio_baseline": 0.341651976108551,
+    "clap_text_casv": -0.06433086842298508,
+    "clap_gt_audio_casv": -0.023493245244026184
+  },
+  "verdicts": [
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.26504722237586975,
+      "visual": 1.0,
+      "scene_support": 0.6123646203216161,
+      "object_support": 0.6488960235859907,
+      "score": 0.7783781931722821,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud white noise with faint conversations in background",
+      "clip_similarity": 0.2635717988014221,
+      "visual": 0.8068856027242833,
+      "scene_support": 0.7968952744784097,
+      "object_support": 0.9486259098111645,
+      "score": 0.8464105963765856,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Something beeps with a tapping noise on a surface",
+      "clip_similarity": 0.2629392743110657,
+      "visual": 0.7240960988605911,
+      "scene_support": 0.8247006640970563,
+      "object_support": 0.8637368443853005,
+      "score": 0.7961696920889434,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sound of an engine running while idle and random sounds of small solid objects moving in the background",
+      "clip_similarity": 0.26193010807037354,
+      "visual": 0.5920089249144761,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8368035699657905,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.30)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very light tick took sound",
+      "clip_similarity": 0.2610863149166107,
+      "visual": 0.4815670090224332,
+      "scene_support": 0.2170163077735042,
+      "object_support": 0.7151950133592525,
+      "score": 0.4722901999488003,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dog is barking with muffled noise in the background",
+      "clip_similarity": 0.2610059380531311,
+      "visual": 0.47104668806877803,
+      "scene_support": 0.7351398541639036,
+      "object_support": 0.7481205828892961,
+      "score": 0.6333968063434711,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mid frequency of a motor vehicle idling then slowly fading away",
+      "clip_similarity": 0.26078519225120544,
+      "visual": 0.4421538377522322,
+      "scene_support": 0.4625025124116554,
+      "object_support": 0.5149331366207041,
+      "score": 0.4700922298106007,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.64)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.30)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Microphone noise and then light snoring",
+      "clip_similarity": 0.26034021377563477,
+      "visual": 0.3839117494470688,
+      "scene_support": 0.3210827913132769,
+      "object_support": 0.5741897654519174,
+      "score": 0.4221464668083858,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud burst of noise with cartoon sounding voices",
+      "clip_similarity": 0.2599544823169708,
+      "visual": 0.3334243508177921,
+      "scene_support": 0.5811437181504822,
+      "object_support": 0.7532513412640739,
+      "score": 0.5336882581514837,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Digital tones and loud clicking, some rolling of a small object",
+      "clip_similarity": 0.25951534509658813,
+      "visual": 0.2759468093820823,
+      "scene_support": 0.7797172152497577,
+      "object_support": 0.978096805311241,
+      "score": 0.6377229299211324,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dogs barking and yipping with w whirring noise in the background",
+      "clip_similarity": 0.2590470016002655,
+      "visual": 0.21464653359910438,
+      "scene_support": 0.8553397806032249,
+      "object_support": 0.9098349603005359,
+      "score": 0.6154110357107699,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.25859159231185913,
+      "visual": 0.1550391830270595,
+      "scene_support": 0.45598733334336017,
+      "object_support": 0.6325073721474685,
+      "score": 0.38856408485807237,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Siren with a vehicle engine noise and voice in the background",
+      "clip_similarity": 0.2580297589302063,
+      "visual": 0.08150225658348968,
+      "scene_support": 0.36472423632940415,
+      "object_support": 0.4702511807944042,
+      "score": 0.28309352777053837,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.64)",
+        "names 'an emergency vehicle', not visible in image (z=-0.92)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.30)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.25786301493644714,
+      "visual": 0.059677564060055935,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.023871025624022376,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.30)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Distant unidentifiable engine whirring",
+      "clip_similarity": 0.25781938433647156,
+      "visual": 0.053966867035157455,
+      "scene_support": 0.7287217533146743,
+      "object_support": 0.7032513107565321,
+      "score": 0.4511786660354249,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.30)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low outside noises with a distant dog barking",
+      "clip_similarity": 0.2577636241912842,
+      "visual": 0.04666856503134252,
+      "scene_support": 0.6112714648829797,
+      "object_support": 0.6980418429239892,
+      "score": 0.4114614183546277,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Camera noise followed by a man and a woman laughing as a man snores loudly",
+      "clip_similarity": 0.2576524317264557,
+      "visual": 0.03211486926638607,
+      "scene_support": 0.5561132615683738,
+      "object_support": 0.6427566858803164,
+      "score": 0.37250693194116147,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Background noises from a video game being played",
+      "clip_similarity": 0.2576223909854889,
+      "visual": 0.028182913937767444,
+      "scene_support": 0.9344974971594366,
+      "object_support": 0.9654239724602319,
+      "score": 0.5812496064610075,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud static noise with one thumping sound",
+      "clip_similarity": 0.2574460208415985,
+      "visual": 0.005098279379468796,
+      "scene_support": 0.499093480855765,
+      "object_support": 0.6119330859781846,
+      "score": 0.3353472818019724,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Voice being drug out ending with a burping sound",
+      "clip_similarity": 0.2574070692062378,
+      "visual": 0.0,
+      "scene_support": 0.7476561079291029,
+      "object_support": 0.8171493875000839,
+      "score": 0.46944164862875604,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "closet",
+      0.049926530569791794
+    ],
+    [
+      "railroad track",
+      0.04346528649330139
+    ],
+    [
+      "ocean",
+      0.031120767816901207
+    ],
+    [
+      "ocean deep underwater",
+      0.02916686050593853
+    ],
+    [
+      "rainforest",
+      0.02565927430987358
+    ]
+  ],
+  "top_objects": [
+    [
+      "candle",
+      0.024573154747486115
+    ],
+    [
+      "spotlight",
+      0.017899269238114357
+    ],
+    [
+      "night snake",
+      0.011930606327950954
+    ],
+    [
+      "wardrobe",
+      0.009285612031817436
+    ],
+    [
+      "lampshade",
+      0.009030255489051342
+    ]
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "id": "GE1aZSnPr2Q",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\GE1aZSnPr2Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GE1aZSnPr2Q.wav",
+  "gt_captions": [
+    "A man laughing",
+    "A person laughing",
+    "A man laughing",
+    "A person laughs",
+    "Brief silence followed by a man laughing"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.11232030391693115
+  ],
+  "top_object": [
+    "Chow Chow",
+    0.09231352061033249
+  ],
+  "env_probs": {
+    "indoor": 0.33137771487236023,
+    "outdoor": 0.6686222851276398
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A dog howls as a baby cries",
+    "casv": "A dog crying for some reason"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.050186119973659515,
+    "clap_gt_audio_baseline": 0.38199561834335327,
+    "clap_text_casv": 0.18591240048408508,
+    "clap_gt_audio_casv": 0.43401268124580383
+  },
+  "verdicts": [
+    {
+      "caption": "A dog howls as a baby cries",
+      "clip_similarity": 0.2982390522956848,
+      "visual": 1.0,
+      "scene_support": 0.7256849911976186,
+      "object_support": 0.7160762710498835,
+      "score": 0.8325283786742507,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby is laughing while a dog is barking",
+      "clip_similarity": 0.295613169670105,
+      "visual": 0.851838524001621,
+      "scene_support": 0.4589359203378775,
+      "object_support": 0.44010961507373597,
+      "score": 0.6104490702241324,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog crying for some reason",
+      "clip_similarity": 0.29458045959472656,
+      "visual": 0.7935694119110998,
+      "scene_support": 0.9751230925319424,
+      "object_support": 1.0,
+      "score": 0.9099646925240226,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog is growling a man is laughing and a child is sighing",
+      "clip_similarity": 0.2886899411678314,
+      "visual": 0.46120577310157074,
+      "scene_support": 0.712286571744546,
+      "object_support": 0.6520080069736145,
+      "score": 0.5937706828560765,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog is sneezing while a woman laughs and another girls talks",
+      "clip_similarity": 0.28754425048828125,
+      "visual": 0.3965619004219012,
+      "scene_support": 0.3257018120042714,
+      "object_support": 0.17759014212845983,
+      "score": 0.3096123464085798,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A yelping dog with a baby crying",
+      "clip_similarity": 0.28657689690589905,
+      "visual": 0.3419804301071653,
+      "scene_support": 0.5110446482053874,
+      "object_support": 0.596732131802146,
+      "score": 0.4691252060451261,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several puppies are barking and vocalizing gently",
+      "clip_similarity": 0.28617292642593384,
+      "visual": 0.31918700362710595,
+      "scene_support": 0.7970432675292214,
+      "object_support": 0.7270710455171812,
+      "score": 0.5849090953647631,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog is barking in low frequency while wind is gusting forcefully and a man is saying something softly in the background",
+      "clip_similarity": 0.28582584857940674,
+      "visual": 0.29960365838278497,
+      "scene_support": 0.9256638319928698,
+      "object_support": 0.702998144839728,
+      "score": 0.6084400564028933,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby laughing with a dog barking",
+      "clip_similarity": 0.28575897216796875,
+      "visual": 0.29583025749593483,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.11833210299837393,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries loudly while an animal howls",
+      "clip_similarity": 0.28525543212890625,
+      "visual": 0.2674187684655341,
+      "scene_support": 0.7438978908535151,
+      "object_support": 0.4378199033902807,
+      "score": 0.4614828456593524,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby laughs delightfully",
+      "clip_similarity": 0.28517401218414307,
+      "visual": 0.2628247705943779,
+      "scene_support": 0.5833337773214425,
+      "object_support": 0.2314958288782284,
+      "score": 0.34957879009765247,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small baby is laughing and dog barks",
+      "clip_similarity": 0.2833716571331024,
+      "visual": 0.16112959883233086,
+      "scene_support": 0.6550962096861969,
+      "object_support": 0.4917188327616418,
+      "score": 0.4084963522672839,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small dog cries several times and a woman speaks a little",
+      "clip_similarity": 0.28225019574165344,
+      "visual": 0.09785282727610566,
+      "scene_support": 0.8775624139455904,
+      "object_support": 0.7275601757542144,
+      "score": 0.5206779078203837,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog sneezes and people laugh and speak",
+      "clip_similarity": 0.2819538414478302,
+      "visual": 0.08113148216967188,
+      "scene_support": 0.8135371720798965,
+      "object_support": 0.7196711963626592,
+      "score": 0.49241510340063543,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man makes noises and a dog yips while another person laughs",
+      "clip_similarity": 0.2819330394268036,
+      "visual": 0.07995775943392261,
+      "scene_support": 0.7319779518042028,
+      "object_support": 0.5580451008226849,
+      "score": 0.4189900195616353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog is barking and snarling in a playful manner",
+      "clip_similarity": 0.28186526894569397,
+      "visual": 0.07613391201115205,
+      "scene_support": 0.8766357473347394,
+      "object_support": 0.9413038517576721,
+      "score": 0.5758354445321843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A puppy cries and yaps",
+      "clip_similarity": 0.28163859248161316,
+      "visual": 0.06334403360411912,
+      "scene_support": 0.8668933796806177,
+      "object_support": 0.6691519957917127,
+      "score": 0.48615122608334677,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers as an infant cries",
+      "clip_similarity": 0.28128618001937866,
+      "visual": 0.04345969069547276,
+      "scene_support": 0.8237114767374333,
+      "object_support": 0.796337812782153,
+      "score": 0.503398663134065,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog snores softly and continuously in the background while a low voice woman chuckles and laughs",
+      "clip_similarity": 0.2808632254600525,
+      "visual": 0.019595116102702422,
+      "scene_support": 1.0,
+      "object_support": 0.7957909849294867,
+      "score": 0.546575341919927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People talk and laugh while a dog growls",
+      "clip_similarity": 0.2805159389972687,
+      "visual": 0.0,
+      "scene_support": 0.817455811132025,
+      "object_support": 0.847077407848851,
+      "score": 0.4993599656942628,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.11232030391693115
+    ],
+    [
+      "mountain snowy",
+      0.09791426360607147
+    ],
+    [
+      "mountain",
+      0.0606146864593029
+    ],
+    [
+      "sky",
+      0.06013862043619156
+    ],
+    [
+      "tundra",
+      0.05685367062687874
+    ]
+  ],
+  "top_objects": [
+    [
+      "Chow Chow",
+      0.09231352061033249
+    ],
+    [
+      "Golden Retriever",
+      0.08647887408733368
+    ],
+    [
+      "Pomeranian",
+      0.07976401597261429
+    ],
+    [
+      "Samoyed",
+      0.059050340205430984
+    ],
+    [
+      "mashed potato",
+      0.037352994084358215
+    ]
+  ]
+}

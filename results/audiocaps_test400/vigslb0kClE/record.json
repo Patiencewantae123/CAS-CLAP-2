@@ -1,0 +1,286 @@
+{
+  "id": "vigslb0kClE",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\vigslb0kClE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\vigslb0kClE.wav",
+  "gt_captions": [
+    "People talking while herding goats near a fast running stream",
+    "Rustling and knocking and then male speech with a goat vocalizing",
+    "Goats bleating and a man speaking",
+    "Loud hissing together with speech, rustling and basing",
+    "A goat vocalizing and male speech"
+  ],
+  "top_scene": [
+    "fishpond",
+    0.0922747403383255
+  ],
+  "top_object": [
+    "snoek",
+    0.14281265437602997
+  ],
+  "env_probs": {
+    "indoor": 0.35337164998054504,
+    "outdoor": 0.646628350019455
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+    "casv": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11643654853105545,
+    "clap_gt_audio_baseline": 0.20436638593673706,
+    "clap_text_casv": -0.0222538523375988,
+    "clap_gt_audio_casv": -0.10329386591911316
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple livestock communicating with one another in distress followed by a man laughing",
+      "clip_similarity": 0.3123956620693207,
+      "visual": 1.0,
+      "scene_support": 0.46584022776156436,
+      "object_support": 0.2111409238405876,
+      "score": 0.6030943454806457,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling",
+      "clip_similarity": 0.3077600300312042,
+      "visual": 0.7419587090138439,
+      "scene_support": 0.7989427055908086,
+      "object_support": 0.8566537819776461,
+      "score": 0.793462429876074,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person is sawing wood with farm animal sounds in the background",
+      "clip_similarity": 0.3057902455329895,
+      "visual": 0.6323111505569887,
+      "scene_support": 0.43291475898506876,
+      "object_support": 0.4958620863134417,
+      "score": 0.5315575138123487,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horse hoof hitting ground, chain rattles and man speaking",
+      "clip_similarity": 0.30421745777130127,
+      "visual": 0.5447623155467447,
+      "scene_support": 0.8267316394013227,
+      "object_support": 0.7394019939126133,
+      "score": 0.6877450162128786,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Tapping noises followed by livestock communicating",
+      "clip_similarity": 0.3031924366950989,
+      "visual": 0.48770477525526923,
+      "scene_support": 1.0,
+      "object_support": 0.9814284396669546,
+      "score": 0.7895104420021941,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.3017755150794983,
+      "visual": 0.4088321900480263,
+      "scene_support": 0.7576207603356925,
+      "object_support": 1.0,
+      "score": 0.6908191041199183,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sequence of pig oinks, birds chirping, and animal movement are in the background followed by a middle aged male speaking and a young woman speaking forcefully",
+      "clip_similarity": 0.30079710483551025,
+      "visual": 0.35436923000356674,
+      "scene_support": 0.08753886018069798,
+      "object_support": 0.0,
+      "score": 0.1680093500556361,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse clip clopping with a person talking and traffic noises in the background",
+      "clip_similarity": 0.300570011138916,
+      "visual": 0.3417281165238597,
+      "scene_support": 0.48930597576612195,
+      "object_support": 0.4410579978702531,
+      "score": 0.41580043870045635,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-3.10)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.2998173236846924,
+      "visual": 0.2998299587753714,
+      "scene_support": 0.6212262116195287,
+      "object_support": 0.9471797623739131,
+      "score": 0.5904537757081811,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman singing and an animal sound being made",
+      "clip_similarity": 0.2984485328197479,
+      "visual": 0.22363655969276452,
+      "scene_support": 0.5114431146453423,
+      "object_support": 0.860213142382801,
+      "score": 0.5009515009855487,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by a pig oinking while clicking occurs",
+      "clip_similarity": 0.2978925108909607,
+      "visual": 0.1926857389328047,
+      "scene_support": 0.5747849860623965,
+      "object_support": 0.6082800197881992,
+      "score": 0.43199379732830057,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Horse clip clops with adults and a child speaking",
+      "clip_similarity": 0.2973366677761078,
+      "visual": 0.161744871805506,
+      "scene_support": 0.45520004997902663,
+      "object_support": 0.4176777374374282,
+      "score": 0.3265612849471388,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talks along with pigs snorting and oinking",
+      "clip_similarity": 0.2967126667499542,
+      "visual": 0.12701001169551837,
+      "scene_support": 0.4016439529840156,
+      "object_support": 0.3211893043106412,
+      "score": 0.2676539818666044,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking and pig snorting with sheep bleating",
+      "clip_similarity": 0.2966974973678589,
+      "visual": 0.12616561185809438,
+      "scene_support": 0.42311946474842405,
+      "object_support": 0.3656297426695622,
+      "score": 0.28709100696863366,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A new baby goat bleeding with male speaking",
+      "clip_similarity": 0.29660168290138245,
+      "visual": 0.1208321236904752,
+      "scene_support": 0.0,
+      "object_support": 0.13135087998792586,
+      "score": 0.08773811347256784,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Horses hoof clip clopping and man speaking",
+      "clip_similarity": 0.29608064889907837,
+      "visual": 0.0918288970545542,
+      "scene_support": 0.27513573173162453,
+      "object_support": 0.31502980807123754,
+      "score": 0.2137812207626803,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman laughing, then talking and laughing again, followed by a sheep baaing",
+      "clip_similarity": 0.2960151731967926,
+      "visual": 0.08818420856178302,
+      "scene_support": 0.3147655299413044,
+      "object_support": 0.5468108298466414,
+      "score": 0.29374659136109693,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Animals bleating with shearing clipping sounds",
+      "clip_similarity": 0.29565465450286865,
+      "visual": 0.0681160261780539,
+      "scene_support": 0.3997138105735391,
+      "object_support": 0.32257280128790994,
+      "score": 0.24393239402965627,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male and female voice talking followed by a goat bleating",
+      "clip_similarity": 0.29536640644073486,
+      "visual": 0.052070770328221036,
+      "scene_support": 0.5332571748165205,
+      "object_support": 0.719268339719779,
+      "score": 0.39658596249217826,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig oinking and smashing bushes",
+      "clip_similarity": 0.2944309711456299,
+      "visual": 0.0,
+      "scene_support": 0.3288138013512187,
+      "object_support": 0.12470422511592028,
+      "score": 0.1360554079401417,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "fishpond",
+      0.0922747403383255
+    ],
+    [
+      "delicatessen",
+      0.0862712413072586
+    ],
+    [
+      "farm",
+      0.07721468806266785
+    ],
+    [
+      "pasture",
+      0.05758874863386154
+    ],
+    [
+      "berth",
+      0.04692920669913292
+    ]
+  ],
+  "top_objects": [
+    [
+      "snoek",
+      0.14281265437602997
+    ],
+    [
+      "fur coat",
+      0.08411311358213425
+    ],
+    [
+      "garfish",
+      0.0682167261838913
+    ],
+    [
+      "sturgeon",
+      0.03954215347766876
+    ],
+    [
+      "sarong",
+      0.03180363401770592
+    ]
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "9MgGaTbmc6g",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\9MgGaTbmc6g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\9MgGaTbmc6g.wav",
+  "gt_captions": [
+    "A vehicle accelerating and revving while tires are skidding",
+    "A car engine accelerating and revving while tires skid",
+    "A vehicle revving and accelerating as tires skid and squeak on a road",
+    "An engine revving and tires squealing",
+    "Car accelerating and skidding on tarmac"
+  ],
+  "top_scene": [
+    "parking lot",
+    0.6095597147941589
+  ],
+  "top_object": [
+    "go-kart",
+    0.14915858209133148
+  ],
+  "env_probs": {
+    "indoor": 0.053736694157123566,
+    "outdoor": 0.9462633058428764
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A car slowly moving pass in the rain followed by a man speaking",
+    "casv": "Cars going by in open area"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0934680849313736,
+    "clap_gt_audio_baseline": 0.18103380501270294,
+    "clap_text_casv": 0.17243099212646484,
+    "clap_gt_audio_casv": 0.3685978949069977
+  },
+  "verdicts": [
+    {
+      "caption": "A car slowly moving pass in the rain followed by a man speaking",
+      "clip_similarity": 0.3361104428768158,
+      "visual": 1.0,
+      "scene_support": 0.21908087764145662,
+      "object_support": 0.0,
+      "score": 0.465724263292437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind gusts blowing and leaves rustling as wind blows into a microphone followed by a vehicle driving by and a woman speaking",
+      "clip_similarity": 0.32689905166625977,
+      "visual": 0.7164313709659662,
+      "scene_support": 0.442563789533323,
+      "object_support": 0.1577635737633804,
+      "score": 0.4666707573753975,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle revving and accelerating away followed by tires skidding as another vehicle horn honks in the background and wind blows into a microphone",
+      "clip_similarity": 0.31972643733024597,
+      "visual": 0.4956255917561488,
+      "scene_support": 0.21435104309292397,
+      "object_support": 0.2878036648731784,
+      "score": 0.34889664909229023,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle accelerating and revving in the distance followed by tires skidding as a man speaks faintly in the background",
+      "clip_similarity": 0.31929394602775574,
+      "visual": 0.4823115371347626,
+      "scene_support": 0.4004866418006084,
+      "object_support": 0.6461137447691692,
+      "score": 0.5069047308248382,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle revving in the distance followed by a man shouting in the distance then a vehicle engine running idle before accelerating and driving off",
+      "clip_similarity": 0.3160513639450073,
+      "visual": 0.38249007317592315,
+      "scene_support": 0.34254490391943937,
+      "object_support": 0.6480232087008457,
+      "score": 0.4501664630564548,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle is revving with low speech in the background followed by loud revving",
+      "clip_similarity": 0.3136693835258484,
+      "visual": 0.3091618531050225,
+      "scene_support": 0.6171980493858803,
+      "object_support": 1.0,
+      "score": 0.6088241560577731,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+      "clip_similarity": 0.31184476613998413,
+      "visual": 0.2529918089939595,
+      "scene_support": 0.0,
+      "object_support": 0.3848002345803791,
+      "score": 0.21663679397169752,
+      "conflicts": [
+        "names 'a boat', not visible in image (z=-0.32)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cars going by in open area",
+      "clip_similarity": 0.3112145662307739,
+      "visual": 0.2335913818285907,
+      "scene_support": 0.9625781560895987,
+      "object_support": 0.9628322400454404,
+      "score": 0.671059671571948,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A siren rings in the distance while several cars are passing by",
+      "clip_similarity": 0.30989140272140503,
+      "visual": 0.19285837486329974,
+      "scene_support": 0.8059853906286886,
+      "object_support": 0.5200337877162061,
+      "score": 0.47494910344878827,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle is speeding along and a man is speaking in the distance",
+      "clip_similarity": 0.30864816904067993,
+      "visual": 0.1545859725351751,
+      "scene_support": 0.7072972663073903,
+      "object_support": 0.9899673635595155,
+      "score": 0.5710137779741418,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.3083491325378418,
+      "visual": 0.14538026525354686,
+      "scene_support": 0.16590134964690648,
+      "object_support": 0.5377538928702957,
+      "score": 0.26924867885657944,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car idles in the distance, followed by a man shouting in the distance and a chain unblinking",
+      "clip_similarity": 0.3077080249786377,
+      "visual": 0.12564405087818448,
+      "scene_support": 0.7904877209785446,
+      "object_support": 0.9641762431392554,
+      "score": 0.5766568095866138,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine revving followed by tires skidding then a man speaking over an intercom before a truck engine accelerates",
+      "clip_similarity": 0.3063647150993347,
+      "visual": 0.08429084677093808,
+      "scene_support": 0.14515449106643014,
+      "object_support": 0.36651339646055864,
+      "score": 0.18721670496647186,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The wind is blowing, an adult male speaks, and a motor vehicle is present in the background",
+      "clip_similarity": 0.3060869574546814,
+      "visual": 0.07574019978421544,
+      "scene_support": 0.5803559263730853,
+      "object_support": 0.41302429955049363,
+      "score": 0.32831014769075983,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car idles and then takes off over a speed bump and scrapes",
+      "clip_similarity": 0.3055272400379181,
+      "visual": 0.0585095451642972,
+      "scene_support": 0.8375547176937967,
+      "object_support": 0.8131912027269333,
+      "score": 0.5186275941919379,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple race vehicles accelerating in the distance before becoming louder and driving by as a man is speaking through an intercom",
+      "clip_similarity": 0.30533266067504883,
+      "visual": 0.05251950501662422,
+      "scene_support": 0.72183446759431,
+      "object_support": 0.9180800537346812,
+      "score": 0.5129821584053471,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two vehicles accelerating from a distance before driving by as tires skid and a man speaking through an intercom",
+      "clip_similarity": 0.304715633392334,
+      "visual": 0.033524591367149366,
+      "scene_support": 0.5895404050964178,
+      "object_support": 0.5820818245366751,
+      "score": 0.3648965054367876,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cars pass by in the distance as a person steps, and then a person talks nearby",
+      "clip_similarity": 0.3046659827232361,
+      "visual": 0.031996117345703026,
+      "scene_support": 1.0,
+      "object_support": 0.7389275580424242,
+      "score": 0.5344767143510084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle skidding across pavement and a man speaking in the background",
+      "clip_similarity": 0.304408997297287,
+      "visual": 0.024084933980197728,
+      "scene_support": 0.42580550515644705,
+      "object_support": 0.333641612320304,
+      "score": 0.2374681088351044,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicles running by and wind blowing on a microphone",
+      "clip_similarity": 0.3036266267299652,
+      "visual": 0.0,
+      "scene_support": 0.3965017772711637,
+      "object_support": 0.20888403218737936,
+      "score": 0.1816157428375629,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "parking lot",
+      0.6095597147941589
+    ],
+    [
+      "outdoor parking garage",
+      0.03931447118520737
+    ],
+    [
+      "raceway",
+      0.03658624365925789
+    ],
+    [
+      "driveway",
+      0.03057367354631424
+    ],
+    [
+      "crosswalk",
+      0.02688085474073887
+    ]
+  ],
+  "top_objects": [
+    [
+      "go-kart",
+      0.14915858209133148
+    ],
+    [
+      "spotlight",
+      0.026889964938163757
+    ],
+    [
+      "night snake",
+      0.019779033958911896
+    ],
+    [
+      "skunk",
+      0.017478622496128082
+    ],
+    [
+      "plow",
+      0.017372895032167435
+    ]
+  ]
+}

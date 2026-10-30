@@ -1,0 +1,282 @@
+{
+  "id": "VQnmlf2OsUg",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\VQnmlf2OsUg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\VQnmlf2OsUg.wav",
+  "gt_captions": [
+    "Helicopter blades spinning",
+    "High pitched vibrations from a small motor",
+    "A toy helicopter flying",
+    "Helicopter rotors are turning.",
+    "A high pitched engine running consistently with intermittent scraping"
+  ],
+  "top_scene": [
+    "tree house",
+    0.6956691741943359
+  ],
+  "top_object": [
+    "birdhouse",
+    0.08975207805633545
+  ],
+  "env_probs": {
+    "indoor": 0.04914599284529686,
+    "outdoor": 0.9508540071547031
+  },
+  "status": "ACCEPT",
+  "n_rejected": 2,
+  "prompts": {
+    "baseline": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+    "casv": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08566690981388092,
+    "clap_gt_audio_baseline": 0.0855509340763092,
+    "clap_text_casv": 0.08566690981388092,
+    "clap_gt_audio_casv": 0.0855509340763092
+  },
+  "verdicts": [
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.3119434714317322,
+      "visual": 1.0,
+      "scene_support": 0.7305623079392745,
+      "object_support": 0.8832616865355778,
+      "score": 0.8841471983424556,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw engine running and revving up as it cuts an object",
+      "clip_similarity": 0.31136390566825867,
+      "visual": 0.950676683338575,
+      "scene_support": 0.08770639361555749,
+      "object_support": 0.06935288771522542,
+      "score": 0.4273884577346649,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.31113797426223755,
+      "visual": 0.9314490357008796,
+      "scene_support": 0.2772921157638857,
+      "object_support": 0.11283637710067723,
+      "score": 0.4896181621397207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Chainsaw buzzing in the wood",
+      "clip_similarity": 0.31093576550483704,
+      "visual": 0.9142402783836703,
+      "scene_support": 0.9927842498738706,
+      "object_support": 0.46225485991141785,
+      "score": 0.8022078442890547,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine engine pump running and rattling with pressurized air spraying",
+      "clip_similarity": 0.31004196405410767,
+      "visual": 0.8381742738589212,
+      "scene_support": 0.45096546346833005,
+      "object_support": 0.5454089405213947,
+      "score": 0.634182030740486,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A remote controlled helicopter motor flying through the air",
+      "clip_similarity": 0.30908846855163574,
+      "visual": 0.7570280717061145,
+      "scene_support": 0.3461186533963216,
+      "object_support": 0.18345425879496566,
+      "score": 0.46168310233983195,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw buzzing and rumbling",
+      "clip_similarity": 0.3083658218383789,
+      "visual": 0.6955280057624608,
+      "scene_support": 0.9390588451130578,
+      "object_support": 0.6310457754087342,
+      "score": 0.7492425884615219,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Male talking with repeat bell ringing and squeaking sounds followed by a train horn",
+      "clip_similarity": 0.3078840374946594,
+      "visual": 0.65452627093711,
+      "scene_support": 0.3462207035729028,
+      "object_support": 0.4986475965657314,
+      "score": 0.5152709984164343,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A medium machine motor running while a saw buzzes cutting wood",
+      "clip_similarity": 0.30778414011001587,
+      "visual": 0.6460246122005905,
+      "scene_support": 0.6263834105398339,
+      "object_support": 0.379276684043594,
+      "score": 0.5601078732552646,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine buzzing and spraying water",
+      "clip_similarity": 0.30718791484832764,
+      "visual": 0.5952835069849547,
+      "scene_support": 0.6427114387928267,
+      "object_support": 0.6250226667376076,
+      "score": 0.6184336344531122,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled motor buzzing followed by a man speaking then wood clacking as a bird chirps in the background",
+      "clip_similarity": 0.3050346076488495,
+      "visual": 0.41202862969087645,
+      "scene_support": 0.9074559693620144,
+      "object_support": 0.6960599509421219,
+      "score": 0.6458662279675915,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine motor sharply humming during high pressure spraying",
+      "clip_similarity": 0.30459511280059814,
+      "visual": 0.3746258965800607,
+      "scene_support": 0.35272324909416136,
+      "object_support": 0.4864032149306208,
+      "score": 0.40158829783945893,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw being used followed by a male voice shouting",
+      "clip_similarity": 0.3034583330154419,
+      "visual": 0.2778814840365632,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.11115259361462529,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tool motor is buzzing and vibrating, a hissing sound is present, and birds chirp in the background",
+      "clip_similarity": 0.3033515512943268,
+      "visual": 0.26879394130000306,
+      "scene_support": 0.9587992478099344,
+      "object_support": 0.7785125842469702,
+      "score": 0.6287111261370726,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks with a bee buzzing and then a motorized vibration with some clicks",
+      "clip_similarity": 0.30260494351387024,
+      "visual": 0.20525469468088345,
+      "scene_support": 0.15247787001788746,
+      "object_support": 0.48556223824668576,
+      "score": 0.27351391035172534,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks while a bird chirps and music plays, followed by a motor running with metal grinding vibration",
+      "clip_similarity": 0.30133357644081116,
+      "visual": 0.09705637675131126,
+      "scene_support": 0.606618928587809,
+      "object_support": 0.7041086787273617,
+      "score": 0.43204083289507567,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks during a clanking and banging sound while outdoor sounds of birds and insects are loudly in the background",
+      "clip_similarity": 0.30126437544822693,
+      "visual": 0.09116710121843581,
+      "scene_support": 0.6212103838921249,
+      "object_support": 0.6085169384322544,
+      "score": 0.4053850371846881,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw motor is running and vibrating",
+      "clip_similarity": 0.3005552887916565,
+      "visual": 0.030821049214256005,
+      "scene_support": 0.7636374581479612,
+      "object_support": 0.5311709718085504,
+      "score": 0.4007709486726559,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing with a slight metal tapping sound near the end",
+      "clip_similarity": 0.3004024624824524,
+      "visual": 0.017814931672229604,
+      "scene_support": 0.725165114892446,
+      "object_support": 0.7766053207927006,
+      "score": 0.45765710337443577,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.3001931309700012,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tree house",
+      0.6956691741943359
+    ],
+    [
+      "windmill",
+      0.01341511681675911
+    ],
+    [
+      "roof garden",
+      0.013049259781837463
+    ],
+    [
+      "outdoor diner",
+      0.010955470614135265
+    ],
+    [
+      "tower",
+      0.009039165452122688
+    ]
+  ],
+  "top_objects": [
+    [
+      "birdhouse",
+      0.08975207805633545
+    ],
+    [
+      "black-and-white colobus",
+      0.07992921769618988
+    ],
+    [
+      "indri",
+      0.07287430763244629
+    ],
+    [
+      "giant panda",
+      0.0458313450217247
+    ],
+    [
+      "Geoffroy's spider monkey",
+      0.04283308610320091
+    ]
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "id": "D9tinq3RMpU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\D9tinq3RMpU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\D9tinq3RMpU.wav",
+  "gt_captions": [
+    "An engine running and wind with various speech in the background",
+    "A motorboat engine operating as a crowd of people talk followed by metal creaking and a man speaking",
+    "A large motor is running smoothly, water is splashing, people are talking in the background, and an adult male speaks in the distance",
+    "A ship engine running as a crowd of people talk followed by a ship hull creaking as wind blows heavily into a microphone",
+    "Outdoor noise from a water vehicle as people are talking"
+  ],
+  "top_scene": [
+    "landing deck",
+    0.6709161400794983
+  ],
+  "top_object": [
+    "catamaran",
+    0.16328206658363342
+  ],
+  "env_probs": {
+    "indoor": 0.04306941106915474,
+    "outdoor": 0.9569305889308453
+  },
+  "status": "ACCEPT",
+  "n_rejected": 17,
+  "prompts": {
+    "baseline": "Motorboat passing by with water and wind noise",
+    "casv": "Motorboat passing by with water and wind noise"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.28813689947128296,
+    "clap_gt_audio_baseline": 0.36301788687705994,
+    "clap_text_casv": 0.28813689947128296,
+    "clap_gt_audio_casv": 0.36301788687705994
+  },
+  "verdicts": [
+    {
+      "caption": "Motorboat passing by with water and wind noise",
+      "clip_similarity": 0.3224668502807617,
+      "visual": 1.0,
+      "scene_support": 0.4509285549270794,
+      "object_support": 0.48323403672079135,
+      "score": 0.6802487774943613,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing heavily into a microphone as a ship engine operates and whistles",
+      "clip_similarity": 0.3198588490486145,
+      "visual": 0.8729001879409859,
+      "scene_support": 0.2583999691972148,
+      "object_support": 0.10952445525382605,
+      "score": 0.4595374025117066,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Constant muffle of a boat engine along with wind hitting a microphone",
+      "clip_similarity": 0.3150967061519623,
+      "visual": 0.6408192135526656,
+      "scene_support": 0.4368636057640954,
+      "object_support": 0.3864475433930571,
+      "score": 0.503321030168212,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind noise on ocean",
+      "clip_similarity": 0.31360989809036255,
+      "visual": 0.5683602657317063,
+      "scene_support": 0.34395967319238574,
+      "object_support": 0.1486321563549832,
+      "score": 0.3751216551568932,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboat travels in ocean with wind noise and people talking in the background",
+      "clip_similarity": 0.30835679173469543,
+      "visual": 0.3123523995154783,
+      "scene_support": 0.29827963960741355,
+      "object_support": 0.4064752764557671,
+      "score": 0.3363674346251455,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speedboat with water spraying",
+      "clip_similarity": 0.3077597916126251,
+      "visual": 0.2832578567756066,
+      "scene_support": 0.0,
+      "object_support": 0.22978854633258677,
+      "score": 0.18223970661001868,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat engine gets louder as it approaches",
+      "clip_similarity": 0.30640357732772827,
+      "visual": 0.2171633401789942,
+      "scene_support": 0.6249779536517447,
+      "object_support": 0.21208648282941395,
+      "score": 0.33798466701594526,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speedboat traveling at high speed with loud wind",
+      "clip_similarity": 0.30600211024284363,
+      "visual": 0.1975980154361422,
+      "scene_support": 0.05919165045794302,
+      "object_support": 0.18756124020156775,
+      "score": 0.15306507337231012,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Windy sounds over water",
+      "clip_similarity": 0.3057493269443512,
+      "visual": 0.1852787307157153,
+      "scene_support": 0.5412775951967528,
+      "object_support": 0.13553695991974618,
+      "score": 0.27715585882123583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very windy, engine or water noise in background",
+      "clip_similarity": 0.30563607811927795,
+      "visual": 0.17975959820715337,
+      "scene_support": 0.5747911496642745,
+      "object_support": 0.0,
+      "score": 0.24434118418214368,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Boat motor revving then trolling",
+      "clip_similarity": 0.30551156401634216,
+      "visual": 0.17369145725431873,
+      "scene_support": 0.8116807142271606,
+      "object_support": 0.5254307227510265,
+      "score": 0.4706100139951836,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat produces a chugging mechanical sound",
+      "clip_similarity": 0.30529558658599854,
+      "visual": 0.16316589059917444,
+      "scene_support": 0.6532084578486241,
+      "object_support": 0.7104402878872713,
+      "score": 0.47436097996043847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat speeds by blowing air around it",
+      "clip_similarity": 0.3048063814640045,
+      "visual": 0.1393246905654787,
+      "scene_support": 0.7670272331398222,
+      "object_support": 1.0,
+      "score": 0.5858380461681381,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Strong wind noise while a water vehicle speeds through the ocean water",
+      "clip_similarity": 0.30432242155075073,
+      "visual": 0.11573911351112687,
+      "scene_support": 0.2257533640864366,
+      "object_support": 0.3892121010638298,
+      "score": 0.23078528494953066,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.60)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat engine runs as wind blows into the microphone",
+      "clip_similarity": 0.30426913499832153,
+      "visual": 0.1131422164255193,
+      "scene_support": 0.44387931270043546,
+      "object_support": 0.35837401432437477,
+      "score": 0.28593288467765077,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat engine running loudly",
+      "clip_similarity": 0.3039102554321289,
+      "visual": 0.09565237598654494,
+      "scene_support": 0.9722650728709438,
+      "object_support": 0.8485456910227697,
+      "score": 0.5845041795627319,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speed boat slowing down at sea, waves heard followed by male voice",
+      "clip_similarity": 0.3037845492362976,
+      "visual": 0.08952613890204121,
+      "scene_support": 0.442588204023738,
+      "object_support": 0.3518847401082493,
+      "score": 0.2741523388004127,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind sounds with sound of a boat motor accelerating",
+      "clip_similarity": 0.30307093262672424,
+      "visual": 0.0547483420816425,
+      "scene_support": 0.521116675485206,
+      "object_support": 0.584472109462486,
+      "score": 0.3535759723169646,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing strongly and boat engine sound at the end",
+      "clip_similarity": 0.3021804690361023,
+      "visual": 0.011351984128136828,
+      "scene_support": 0.8187771542697877,
+      "object_support": 0.5480604353303471,
+      "score": 0.4145920705312951,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat engine accelerates slowly",
+      "clip_similarity": 0.30194753408432007,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.8816591428704741,
+      "score": 0.5644977428611422,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.67)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "landing deck",
+      0.6709161400794983
+    ],
+    [
+      "boat deck",
+      0.13255596160888672
+    ],
+    [
+      "harbor",
+      0.03972005471587181
+    ],
+    [
+      "berth",
+      0.03193916380405426
+    ],
+    [
+      "ocean",
+      0.016614027321338654
+    ]
+  ],
+  "top_objects": [
+    [
+      "catamaran",
+      0.16328206658363342
+    ],
+    [
+      "container ship",
+      0.14241796731948853
+    ],
+    [
+      "fireboat",
+      0.08673053234815598
+    ],
+    [
+      "trimaran",
+      0.04689088463783264
+    ],
+    [
+      "snorkel",
+      0.04640580341219902
+    ]
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "id": "n74IYuCe_ms",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\n74IYuCe_ms.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\n74IYuCe_ms.wav",
+  "gt_captions": [
+    "A river stream flowing followed by a kid talking",
+    "A large volume of water is rushing, splashing and gurgling, and an adult male speaks briefly",
+    "A stream of water rushing and trickling followed by a young man whooshing",
+    "Sounds of a river with man briefly mumbling",
+    "A stream burbles while a man speaks"
+  ],
+  "top_scene": [
+    "creek",
+    0.44316256046295166
+  ],
+  "top_object": [
+    "backpack",
+    0.19723232090473175
+  ],
+  "env_probs": {
+    "indoor": 0.05306678265333176,
+    "outdoor": 0.9469332173466682
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A guy is wading through a stream, ends with a cackle",
+    "casv": "A stream goes by quickly and the whooshing sound is close by"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3193121552467346,
+    "clap_gt_audio_baseline": 0.33032578229904175,
+    "clap_text_casv": 0.2890816926956177,
+    "clap_gt_audio_casv": 0.4036270081996918
+  },
+  "verdicts": [
+    {
+      "caption": "A guy is wading through a stream, ends with a cackle",
+      "clip_similarity": 0.3238811492919922,
+      "visual": 1.0,
+      "scene_support": 0.648859422849977,
+      "object_support": 0.6386565173868906,
+      "score": 0.7862547820710603,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A stream goes by quickly and the whooshing sound is close by",
+      "clip_similarity": 0.3178268074989319,
+      "visual": 0.7321171906523866,
+      "scene_support": 0.9834305269148613,
+      "object_support": 1.0,
+      "score": 0.8878760343354131,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking foreign language near a stream",
+      "clip_similarity": 0.31687334179878235,
+      "visual": 0.6899297689469561,
+      "scene_support": 0.4605886802121752,
+      "object_support": 0.6242974323784191,
+      "score": 0.6014377413559607,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.3166804611682892,
+      "visual": 0.6813954960348333,
+      "scene_support": 0.46089763015193735,
+      "object_support": 0.5854346987934761,
+      "score": 0.5864578970975574,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks and walks into a creek",
+      "clip_similarity": 0.31303152441978455,
+      "visual": 0.5199431927569447,
+      "scene_support": 0.8903592343757314,
+      "object_support": 0.8654666275221397,
+      "score": 0.7347250356721391,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A river stream running as a kid speaks followed by a man speaking",
+      "clip_similarity": 0.3129081726074219,
+      "visual": 0.5144853195209625,
+      "scene_support": 1.0,
+      "object_support": 0.893584070535608,
+      "score": 0.7738693489690674,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking outdoors, others speaking, and moving water sounds",
+      "clip_similarity": 0.3121448755264282,
+      "visual": 0.48071217399789545,
+      "scene_support": 0.3283709173152398,
+      "object_support": 0.6355597372600482,
+      "score": 0.48146406597174457,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks over a stream",
+      "clip_similarity": 0.3099852204322815,
+      "visual": 0.38515521774791195,
+      "scene_support": 0.8386492925440574,
+      "object_support": 0.9213654837237764,
+      "score": 0.6820665199795148,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Walking through a stream",
+      "clip_similarity": 0.3098324239253998,
+      "visual": 0.37839452287454145,
+      "scene_support": 0.9853655291691612,
+      "object_support": 0.7537095924135077,
+      "score": 0.6730803456246173,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Relaxing stream sound with a bird call in the distance",
+      "clip_similarity": 0.30964982509613037,
+      "visual": 0.37031518261919893,
+      "scene_support": 0.6602097607485754,
+      "object_support": 0.5924842508126617,
+      "score": 0.5239342765160506,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping and rustling followed by running water with music in the background",
+      "clip_similarity": 0.3078933656215668,
+      "visual": 0.2925981797419147,
+      "scene_support": 0.36425050075020143,
+      "object_support": 0.6293084034574521,
+      "score": 0.41510694315906194,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking with stream in background",
+      "clip_similarity": 0.3067866265773773,
+      "visual": 0.24362896483700225,
+      "scene_support": 0.5850053339443348,
+      "object_support": 0.749199718442378,
+      "score": 0.4977131016508147,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sounds of a small stream with microphone being submerged",
+      "clip_similarity": 0.3053472340106964,
+      "visual": 0.1799410301785182,
+      "scene_support": 0.9659071031385273,
+      "object_support": 0.9431402164032074,
+      "score": 0.6446906079339276,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is talking above the sounds of a stream",
+      "clip_similarity": 0.30439361929893494,
+      "visual": 0.1377470152461779,
+      "scene_support": 0.6445572826202108,
+      "object_support": 0.8088302742828711,
+      "score": 0.49111507316939573,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man hollering with a steady water stream in the background",
+      "clip_similarity": 0.3039281368255615,
+      "visual": 0.11715109302515711,
+      "scene_support": 0.24260848355839376,
+      "object_support": 0.31199779753082924,
+      "score": 0.21324232153682973,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Flowing water is followed by a tapping sound in the background",
+      "clip_similarity": 0.3039059638977051,
+      "visual": 0.11617002086096995,
+      "scene_support": 0.7866407483782591,
+      "object_support": 0.8979860612470362,
+      "score": 0.5518560512319766,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water streaming sound with some rumble in the background",
+      "clip_similarity": 0.30368053913116455,
+      "visual": 0.10619578719173367,
+      "scene_support": 0.8177091879346918,
+      "object_support": 0.8759094912508445,
+      "score": 0.5505639186323543,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A remote control car moving with a stream flowing in the background",
+      "clip_similarity": 0.3022072911262512,
+      "visual": 0.04100987137932944,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.016403948551731776,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is talking with a sound of rushing water in the background",
+      "clip_similarity": 0.30161476135253906,
+      "visual": 0.014792563894961983,
+      "scene_support": 0.3007635054731443,
+      "object_support": 0.40681421323627376,
+      "score": 0.2181903411708102,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream is trickling, and then a man speaks briefly",
+      "clip_similarity": 0.3012804388999939,
+      "visual": 0.0,
+      "scene_support": 0.9246851987356212,
+      "object_support": 0.9559394155910764,
+      "score": 0.5641873842980093,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "creek",
+      0.44316256046295166
+    ],
+    [
+      "river",
+      0.26988330483436584
+    ],
+    [
+      "natural canal",
+      0.03156476095318794
+    ],
+    [
+      "watering hole",
+      0.02715090662240982
+    ],
+    [
+      "raft",
+      0.026557086035609245
+    ]
+  ],
+  "top_objects": [
+    [
+      "backpack",
+      0.19723232090473175
+    ],
+    [
+      "tank suit",
+      0.10600730031728745
+    ],
+    [
+      "coho salmon",
+      0.08299479633569717
+    ],
+    [
+      "bulletproof vest",
+      0.07755156606435776
+    ],
+    [
+      "indri",
+      0.05175664275884628
+    ]
+  ]
+}

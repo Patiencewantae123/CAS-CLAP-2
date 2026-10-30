@@ -1,0 +1,285 @@
+{
+  "id": "FXdoNvmrYxo",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\FXdoNvmrYxo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\FXdoNvmrYxo.wav",
+  "gt_captions": [
+    "A child talking followed by a man talking as a young boy mumbles while birds chirp in the background",
+    "A girl talking followed by a man then a young boy talking as a bird chirps in the background",
+    "A young girl talking followed by a man talking then a young boy softly talking as birds are chirping in the background",
+    "A child speaks followed by a man and child communicating as birds are tweeting",
+    "A young girl speaking followed by a man speaking then a young boy speaking as birds chirp in the background"
+  ],
+  "top_scene": [
+    "pond",
+    0.11543764173984528
+  ],
+  "top_object": [
+    "stick insect",
+    0.1028638482093811
+  ],
+  "env_probs": {
+    "indoor": 0.2222236841917038,
+    "outdoor": 0.7777763158082962
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+    "casv": "A fishing line being thrown twice"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09911943227052689,
+    "clap_gt_audio_baseline": 0.45120710134506226,
+    "clap_text_casv": 0.0412343367934227,
+    "clap_gt_audio_casv": 0.37789666652679443
+  },
+  "verdicts": [
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.30874186754226685,
+      "visual": 1.0,
+      "scene_support": 0.7663331688881747,
+      "object_support": 0.6051441775533803,
+      "score": 0.8114432039324665,
+      "conflicts": [
+        "names 'a truck or bus', not visible in image (z=-0.95)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.69)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fishing line being thrown twice",
+      "clip_similarity": 0.3064403533935547,
+      "visual": 0.8023626601423943,
+      "scene_support": 0.6594370731308973,
+      "object_support": 0.8093383525311838,
+      "score": 0.7615776917555821,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid talking and a mosquito flying",
+      "clip_similarity": 0.3033074736595154,
+      "visual": 0.533333674560968,
+      "scene_support": 0.5583823391143861,
+      "object_support": 0.6510328469210904,
+      "score": 0.5761580256350302,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man and two kids talk while someone oinks",
+      "clip_similarity": 0.30245304107666016,
+      "visual": 0.45996120241793903,
+      "scene_support": 0.6204422188783791,
+      "object_support": 0.4376469042173349,
+      "score": 0.5014112178958898,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man and a kid talk followed by a gun being fired",
+      "clip_similarity": 0.30178743600845337,
+      "visual": 0.40280386747401126,
+      "scene_support": 0.854808410152447,
+      "object_support": 0.8310896069588439,
+      "score": 0.6668909521229918,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking followed by a young boy talking then a toy helicopter flying",
+      "clip_similarity": 0.30168360471725464,
+      "visual": 0.39388758938031354,
+      "scene_support": 0.20801488472169624,
+      "object_support": 0.3241795570575473,
+      "score": 0.3172133682858985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Child and people laughing followed by slamming",
+      "clip_similarity": 0.3012416958808899,
+      "visual": 0.3559396641296392,
+      "scene_support": 0.9876535024383958,
+      "object_support": 0.835531767409582,
+      "score": 0.689331446606249,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood sticks rolling while a man talks",
+      "clip_similarity": 0.30041301250457764,
+      "visual": 0.28477834705921495,
+      "scene_support": 0.7190167902627489,
+      "object_support": 0.9717011016574142,
+      "score": 0.6211267063997349,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid speaking followed by a man talking then water spraying and kids laughing",
+      "clip_similarity": 0.3002784848213196,
+      "visual": 0.2732260854877593,
+      "scene_support": 0.6770345780595696,
+      "object_support": 0.5285947854909435,
+      "score": 0.47097924326025764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks as objects tap a surface followed by spraying",
+      "clip_similarity": 0.30020326375961304,
+      "visual": 0.2667666463636224,
+      "scene_support": 0.6205808173036763,
+      "object_support": 0.7608850574759265,
+      "score": 0.5211464209793297,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Hose spraying with child laughter",
+      "clip_similarity": 0.2999868094921112,
+      "visual": 0.24817912403453907,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.09927164961381563,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by a young child speaking unintelligible words and a slap",
+      "clip_similarity": 0.2990281283855438,
+      "visual": 0.16585454489617296,
+      "scene_support": 0.6896758782176842,
+      "object_support": 0.7296929952824354,
+      "score": 0.4921524800085051,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid speaking followed by an insect buzzing",
+      "clip_similarity": 0.2989811301231384,
+      "visual": 0.16181867504721736,
+      "scene_support": 0.7976099638033356,
+      "object_support": 1.0,
+      "score": 0.6040104591598876,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power tool vibrating followed by a young boy speaking",
+      "clip_similarity": 0.29884880781173706,
+      "visual": 0.15045579481299873,
+      "scene_support": 0.5328536329456698,
+      "object_support": 0.6304063286995932,
+      "score": 0.4091603064187784,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some objects hit and two boys speech and laugh",
+      "clip_similarity": 0.29869168996810913,
+      "visual": 0.13696365413849407,
+      "scene_support": 0.7040635185345426,
+      "object_support": 0.6573659270231562,
+      "score": 0.4632142953227073,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children communicating to one another followed by something suddenly being zipped",
+      "clip_similarity": 0.29843780398368835,
+      "visual": 0.11516176749090201,
+      "scene_support": 0.8309874613375947,
+      "object_support": 0.816261178916611,
+      "score": 0.5402392990726226,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children talking and shouting while a man shushes them",
+      "clip_similarity": 0.29798007011413574,
+      "visual": 0.07585490318518935,
+      "scene_support": 0.7077843243682628,
+      "object_support": 0.592650398484344,
+      "score": 0.4204723781298577,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kid speaking as another kid moaned followed by a man speaking",
+      "clip_similarity": 0.29777222871780396,
+      "visual": 0.05800699175423421,
+      "scene_support": 0.7715575803411994,
+      "object_support": 0.7796709507772767,
+      "score": 0.48857135603723645,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child talks then objects are hit and several people laugh",
+      "clip_similarity": 0.2976970076560974,
+      "visual": 0.051547552630097304,
+      "scene_support": 1.0,
+      "object_support": 0.9532185991538317,
+      "score": 0.6065846007981884,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A kid talking followed by firecrackers popping three times as crickets chirp in the background",
+      "clip_similarity": 0.29709672927856445,
+      "visual": 0.0,
+      "scene_support": 0.7999290525898615,
+      "object_support": 0.9580712295074321,
+      "score": 0.5274000846291881,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pond",
+      0.11543764173984528
+    ],
+    [
+      "yard",
+      0.09605905413627625
+    ],
+    [
+      "archaelogical excavation",
+      0.06098924204707146
+    ],
+    [
+      "swamp",
+      0.0585591197013855
+    ],
+    [
+      "natural lake",
+      0.043499596416950226
+    ]
+  ],
+  "top_objects": [
+    [
+      "stick insect",
+      0.1028638482093811
+    ],
+    [
+      "projectile",
+      0.04262610152363777
+    ],
+    [
+      "bow",
+      0.03379987180233002
+    ],
+    [
+      "cockroach",
+      0.02315724827349186
+    ],
+    [
+      "diaper",
+      0.0187421552836895
+    ]
+  ]
+}

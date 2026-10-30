@@ -1,0 +1,286 @@
+{
+  "id": "GMP8m09j5vk",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\GMP8m09j5vk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\GMP8m09j5vk.wav",
+  "gt_captions": [
+    "Birds chirp with a low whirring background noise",
+    "Birds chirping loudly",
+    "Birds call while another bird sings",
+    "A bird chirps loudly in the foreground, and birds chirp and thumping occurs in the background",
+    "Birds chirping in the foreground and background as a dog barks in the distance"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.1515403389930725
+  ],
+  "top_object": [
+    "bulbul",
+    0.9174257516860962
+  ],
+  "env_probs": {
+    "indoor": 0.5574042797088623,
+    "outdoor": 0.4425957202911377
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A bird chirping and flying around in a cage with a ticking sound in the background",
+    "casv": "Male voice with bird chirping and slamming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06404086202383041,
+    "clap_gt_audio_baseline": 0.31815576553344727,
+    "clap_text_casv": 0.21225574612617493,
+    "clap_gt_audio_casv": 0.6132150888442993
+  },
+  "verdicts": [
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.35540422797203064,
+      "visual": 1.0,
+      "scene_support": 0.7790443316942584,
+      "object_support": 0.8541244156927996,
+      "score": 0.8899506242161174,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male voice with bird chirping and slamming",
+      "clip_similarity": 0.33263638615608215,
+      "visual": 0.4348043208547604,
+      "scene_support": 0.7258828762851112,
+      "object_support": 0.8236719367403615,
+      "score": 0.638788172249546,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Male talking with repeat bell ringing and squeaking sounds followed by a train horn",
+      "clip_similarity": 0.33232253789901733,
+      "visual": 0.42701325834500403,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.17080530333800162,
+      "conflicts": [
+        "names 'a train', not visible in image (z=-0.21)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.3304322361946106,
+      "visual": 0.3800878464307671,
+      "scene_support": 0.5448368339044939,
+      "object_support": 0.7882590002714134,
+      "score": 0.5519638888250791,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds cooing with blanking sounds",
+      "clip_similarity": 0.32748857140541077,
+      "visual": 0.3070134359022163,
+      "scene_support": 0.688863527639724,
+      "object_support": 0.7668616224061396,
+      "score": 0.5595229193746456,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.3266880512237549,
+      "visual": 0.28714108474139904,
+      "scene_support": 0.6281006190256755,
+      "object_support": 0.7097616615292608,
+      "score": 0.5162151180630405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud cooing of pigeon or doves, with other bird sound in the background",
+      "clip_similarity": 0.3255925178527832,
+      "visual": 0.25994523839645123,
+      "scene_support": 0.1798696460189006,
+      "object_support": 0.7415175499236553,
+      "score": 0.38039425414134725,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Different kind of birds are singing with drums being played in the background",
+      "clip_similarity": 0.32353049516677856,
+      "visual": 0.20875697374446706,
+      "scene_support": 0.692215418698872,
+      "object_support": 0.519131518805406,
+      "score": 0.44690687074907026,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.32343506813049316,
+      "visual": 0.20638806460419168,
+      "scene_support": 0.5618814035933998,
+      "object_support": 0.6904652629922884,
+      "score": 0.4582592258173831,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird whistles continuously",
+      "clip_similarity": 0.3214039206504822,
+      "visual": 0.15596625525180943,
+      "scene_support": 0.8306612178138195,
+      "object_support": 1.0,
+      "score": 0.6115848674448696,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Multiple birds and various animals are communicating out loud",
+      "clip_similarity": 0.3183787763118744,
+      "visual": 0.08086917214689604,
+      "scene_support": 0.8563191172794496,
+      "object_support": 0.576755552383567,
+      "score": 0.4622700697576634,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are chirping loudly in the background while a male and female are communicating, followed by another male and female voice speaking out",
+      "clip_similarity": 0.3178215026855469,
+      "visual": 0.06703524584645593,
+      "scene_support": 0.662460497281031,
+      "object_support": 0.7099538909793335,
+      "score": 0.4385384148166917,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird emits a strange buzzing noise",
+      "clip_similarity": 0.3177575170993805,
+      "visual": 0.06544684861841993,
+      "scene_support": 0.5780650396245115,
+      "object_support": 0.9375098003157981,
+      "score": 0.48085119142946087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A clicking sound and a male and female talk",
+      "clip_similarity": 0.3173801898956299,
+      "visual": 0.05607996584982951,
+      "scene_support": 1.0,
+      "object_support": 0.38164474434785506,
+      "score": 0.43692540964428833,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Beautiful sounds from birds chirping, whistling and communicating outside",
+      "clip_similarity": 0.3156728148460388,
+      "visual": 0.01369557963921854,
+      "scene_support": 0.5598249062197266,
+      "object_support": 0.5226140496285387,
+      "score": 0.330209918610167,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking with high pitch noise in the background",
+      "clip_similarity": 0.3156682252883911,
+      "visual": 0.013581647094683123,
+      "scene_support": 0.7738587637535749,
+      "object_support": 0.1994784278444098,
+      "score": 0.2974338163172687,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird and pigeon sounds and other nature sounds",
+      "clip_similarity": 0.3154515027999878,
+      "visual": 0.00820166356311456,
+      "scene_support": 0.5802692853531864,
+      "object_support": 0.7221779127840919,
+      "score": 0.39401482486642936,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Various bird sounds and a child speaking",
+      "clip_similarity": 0.3152269721031189,
+      "visual": 0.0026278467414922353,
+      "scene_support": 0.6027829400964277,
+      "object_support": 0.60477156212736,
+      "score": 0.3633174893637332,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird chirping with human speech",
+      "clip_similarity": 0.31521183252334595,
+      "visual": 0.0022520173088689086,
+      "scene_support": 0.6361509077738795,
+      "object_support": 0.9016936508540145,
+      "score": 0.46225417451191575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird making whistling sounds",
+      "clip_similarity": 0.3151211142539978,
+      "visual": 0.0,
+      "scene_support": 0.7725689605463973,
+      "object_support": 0.9431594707386665,
+      "score": 0.5147185293855191,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.1515403389930725
+    ],
+    [
+      "shower",
+      0.09416696429252625
+    ],
+    [
+      "pagoda",
+      0.0406041219830513
+    ],
+    [
+      "construction site",
+      0.023595843464136124
+    ],
+    [
+      "embassy",
+      0.018713366240262985
+    ]
+  ],
+  "top_objects": [
+    [
+      "bulbul",
+      0.9174257516860962
+    ],
+    [
+      "coucal",
+      0.060734182596206665
+    ],
+    [
+      "American robin",
+      0.004257763735949993
+    ],
+    [
+      "magpie",
+      0.003250065026804805
+    ],
+    [
+      "junco",
+      0.002628626301884651
+    ]
+  ]
+}

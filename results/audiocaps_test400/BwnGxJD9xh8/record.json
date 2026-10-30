@@ -1,0 +1,282 @@
+{
+  "id": "BwnGxJD9xh8",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\BwnGxJD9xh8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\BwnGxJD9xh8.wav",
+  "gt_captions": [
+    "Birds chirping and wind blowing in the background followed by a man talking then a goat baaing",
+    "A man talking followed by a goat baaing as gusts of wind blow and birds chirp in the distance",
+    "Speech and a goat bleating",
+    "A man speaks and a goat bleats",
+    "A man speaks, and a goat bleats"
+  ],
+  "top_scene": [
+    "pasture",
+    0.17876455187797546
+  ],
+  "top_object": [
+    "Appenzeller Sennenhund",
+    0.2363627851009369
+  ],
+  "env_probs": {
+    "indoor": 0.25456294417381287,
+    "outdoor": 0.7454370558261871
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A new baby goat bleeding with male speaking",
+    "casv": "A goat bleats while some object is tapped"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.12647294998168945,
+    "clap_gt_audio_baseline": 0.1585633009672165,
+    "clap_text_casv": -0.18703585863113403,
+    "clap_gt_audio_casv": -0.19840751588344574
+  },
+  "verdicts": [
+    {
+      "caption": "A new baby goat bleeding with male speaking",
+      "clip_similarity": 0.3281398415565491,
+      "visual": 1.0,
+      "scene_support": 0.4464256271262251,
+      "object_support": 0.5048574178131152,
+      "score": 0.6853849134818021,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat bleats while some object is tapped",
+      "clip_similarity": 0.32186397910118103,
+      "visual": 0.7902948258589544,
+      "scene_support": 0.7360263410642192,
+      "object_support": 0.9185418146234937,
+      "score": 0.8124883770498956,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling",
+      "clip_similarity": 0.31902366876602173,
+      "visual": 0.6953871095593844,
+      "scene_support": 0.903635108171506,
+      "object_support": 0.8268205340557097,
+      "score": 0.7972915364919185,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat snorting as a woman is laughing while leaves rustle in the background",
+      "clip_similarity": 0.31413424015045166,
+      "visual": 0.5320090102829556,
+      "scene_support": 0.651078830534809,
+      "object_support": 0.5524923833560426,
+      "score": 0.5738749682804376,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat is tapping an object and making noises",
+      "clip_similarity": 0.31355488300323486,
+      "visual": 0.5126500469036612,
+      "scene_support": 0.6653226912129147,
+      "object_support": 0.6772376277248153,
+      "score": 0.6078281144427835,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Farm animal goat bleating",
+      "clip_similarity": 0.3064333200454712,
+      "visual": 0.27468616371867366,
+      "scene_support": 0.936638003024835,
+      "object_support": 0.940159897473148,
+      "score": 0.6729138356368644,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Electric shaver being used and sheep bleating",
+      "clip_similarity": 0.304758220911026,
+      "visual": 0.21871346543369455,
+      "scene_support": 0.3718987339067486,
+      "object_support": 0.40679529560906547,
+      "score": 0.32109359502822205,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sheep crying and a dog barking",
+      "clip_similarity": 0.3040836751461029,
+      "visual": 0.19617381640453063,
+      "scene_support": 0.7965469018588099,
+      "object_support": 0.8803521815872692,
+      "score": 0.581539251595636,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat bleats while some liquid flows",
+      "clip_similarity": 0.3040640950202942,
+      "visual": 0.19551955514217487,
+      "scene_support": 0.8123939892175706,
+      "object_support": 0.8099586607661291,
+      "score": 0.5649136170519798,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat bleats continuously",
+      "clip_similarity": 0.3036261796951294,
+      "visual": 0.1808868078224552,
+      "scene_support": 1.0,
+      "object_support": 0.9853467799582213,
+      "score": 0.6679587571164485,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.3027517795562744,
+      "visual": 0.1516691130925944,
+      "scene_support": 0.833272971955641,
+      "object_support": 0.69831612600254,
+      "score": 0.520144374624492,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Objects come in contact with a surface, after which a goat bleats",
+      "clip_similarity": 0.3025336265563965,
+      "visual": 0.14437962688187247,
+      "scene_support": 0.9501550343703739,
+      "object_support": 1.0,
+      "score": 0.6427983610638612,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goat bleeping and a dog barking",
+      "clip_similarity": 0.29954391717910767,
+      "visual": 0.04447980752569743,
+      "scene_support": 0.9066282490535371,
+      "object_support": 0.8831391677095937,
+      "score": 0.5547221480392182,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat baaing as wind blows into a microphone while water sprays briefly",
+      "clip_similarity": 0.2995213270187378,
+      "visual": 0.04372496728693688,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.01748998691477475,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male laughing and baby goat bleating",
+      "clip_similarity": 0.29929983615875244,
+      "visual": 0.03632394795386512,
+      "scene_support": 0.21288122483384597,
+      "object_support": 0.22146563430393013,
+      "score": 0.14483363692287887,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People are communicating with one another followed by a goat making bah noises",
+      "clip_similarity": 0.2991774380207062,
+      "visual": 0.03223406819055434,
+      "scene_support": 0.8548214496203287,
+      "object_support": 0.6665332645502768,
+      "score": 0.46930004152740334,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat bleats lightly",
+      "clip_similarity": 0.2990811765193939,
+      "visual": 0.029017532608500814,
+      "scene_support": 0.9863718609857886,
+      "object_support": 0.9832109966526094,
+      "score": 0.6024818703349197,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some object is moved followed by a goat bleats",
+      "clip_similarity": 0.29906415939331055,
+      "visual": 0.028448912850806522,
+      "scene_support": 0.939780711922387,
+      "object_support": 0.8575901563118093,
+      "score": 0.5505908256105816,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby goat bleating",
+      "clip_similarity": 0.29837822914123535,
+      "visual": 0.005528856207913674,
+      "scene_support": 0.8307189200334605,
+      "object_support": 0.9381444074054368,
+      "score": 0.5328705407148346,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat shouts over the cries of other farm animals",
+      "clip_similarity": 0.29821276664733887,
+      "visual": 0.0,
+      "scene_support": 0.8252226515773906,
+      "object_support": 0.7566999863513442,
+      "score": 0.4745767913786204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pasture",
+      0.17876455187797546
+    ],
+    [
+      "farm",
+      0.11378906667232513
+    ],
+    [
+      "bullring",
+      0.0848902016878128
+    ],
+    [
+      "hayfield",
+      0.05916239321231842
+    ],
+    [
+      "pet shop",
+      0.04677417501807213
+    ]
+  ],
+  "top_objects": [
+    [
+      "Appenzeller Sennenhund",
+      0.2363627851009369
+    ],
+    [
+      "St. Bernard",
+      0.08910812437534332
+    ],
+    [
+      "ram",
+      0.0672723576426506
+    ],
+    [
+      "badger",
+      0.046394843608140945
+    ],
+    [
+      "borzoi",
+      0.03453366458415985
+    ]
+  ]
+}

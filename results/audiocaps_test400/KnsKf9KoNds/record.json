@@ -1,0 +1,282 @@
+{
+  "id": "KnsKf9KoNds",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\KnsKf9KoNds.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\KnsKf9KoNds.wav",
+  "gt_captions": [
+    "A man speaking and another speaks over the phone",
+    "A man speaking followed by another man speaking through a telephone speaker",
+    "A man speaks nearby and another speaks over the phone",
+    "A man speaking on the phone to another person",
+    "Male speech with another male speaking on the phone"
+  ],
+  "top_scene": [
+    "veterinarians office",
+    0.12109465897083282
+  ],
+  "top_object": [
+    "Kuvasz",
+    0.4687519073486328
+  ],
+  "env_probs": {
+    "indoor": 0.39973971247673035,
+    "outdoor": 0.6002602875232697
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Farm animal goat bleating",
+    "casv": "Farm animal goat bleating"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.042706552892923355,
+    "clap_gt_audio_baseline": 0.1552790403366089,
+    "clap_text_casv": 0.042706552892923355,
+    "clap_gt_audio_casv": 0.1552790403366089
+  },
+  "verdicts": [
+    {
+      "caption": "Farm animal goat bleating",
+      "clip_similarity": 0.3127068281173706,
+      "visual": 1.0,
+      "scene_support": 0.6630190322555367,
+      "object_support": 0.698625022164229,
+      "score": 0.8084932163259297,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Liquid flushing briefly in a container followed by an infant goat whimpering then baaing as wood clacks once in the background",
+      "clip_similarity": 0.31220147013664246,
+      "visual": 0.9690942427843432,
+      "scene_support": 0.8453541078707182,
+      "object_support": 0.48305061627922835,
+      "score": 0.7861591143587213,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Baby goat bleating",
+      "clip_similarity": 0.3113778531551361,
+      "visual": 0.9187249848724548,
+      "scene_support": 0.6347029407583125,
+      "object_support": 0.7447828814861627,
+      "score": 0.7813357406223245,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A new baby goat bleeding with male speaking",
+      "clip_similarity": 0.3063737750053406,
+      "visual": 0.6126947443627111,
+      "scene_support": 0.4078529184247145,
+      "object_support": 0.38473123314950286,
+      "score": 0.4828531432173497,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat is tapping an object and making noises",
+      "clip_similarity": 0.30616140365600586,
+      "visual": 0.599706926593131,
+      "scene_support": 0.5599046054976101,
+      "object_support": 0.47813527226766206,
+      "score": 0.551294733966834,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.3045615255832672,
+      "visual": 0.5018645155175807,
+      "scene_support": 0.7615577768498544,
+      "object_support": 0.5003432613924137,
+      "score": 0.5793161176797127,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male is mimicking a goat, and people are laughing",
+      "clip_similarity": 0.30200478434562683,
+      "visual": 0.3455040206463654,
+      "scene_support": 0.39469904497281344,
+      "object_support": 0.27137938794902455,
+      "score": 0.33802513813509755,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small goat bleating",
+      "clip_similarity": 0.30198848247528076,
+      "visual": 0.3445070607361829,
+      "scene_support": 0.8797303101440807,
+      "object_support": 1.0,
+      "score": 0.7017219173376974,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog whimpers multiple times as an object is dragged on a surface",
+      "clip_similarity": 0.3013710379600525,
+      "visual": 0.30674652066459135,
+      "scene_support": 0.9327085150153798,
+      "object_support": 0.892814356964569,
+      "score": 0.6703554698598211,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog wimping or yip",
+      "clip_similarity": 0.3013390600681305,
+      "visual": 0.3047908753563175,
+      "scene_support": 1.0,
+      "object_support": 0.963856962295805,
+      "score": 0.7110734388312685,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats bleating in a musical rhythm",
+      "clip_similarity": 0.2998512089252472,
+      "visual": 0.21379960194507425,
+      "scene_support": 0.535929851978809,
+      "object_support": 0.27480063560188955,
+      "score": 0.3287389870522393,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog whimpers as an infant cries",
+      "clip_similarity": 0.2995581030845642,
+      "visual": 0.19587437211574213,
+      "scene_support": 0.8905922377593412,
+      "object_support": 0.8621078068097604,
+      "score": 0.6041597622170274,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling",
+      "clip_similarity": 0.29890599846839905,
+      "visual": 0.15599415311262912,
+      "scene_support": 0.7523556628264819,
+      "object_support": 0.6660907755888865,
+      "score": 0.48793159276966214,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children speak, a goat makes a bath",
+      "clip_similarity": 0.2986918091773987,
+      "visual": 0.1428951569984034,
+      "scene_support": 0.3761880933003311,
+      "object_support": 0.0017407444453032294,
+      "score": 0.17053671412305166,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sheep crying and making sounds",
+      "clip_similarity": 0.2976246774196625,
+      "visual": 0.0776334686914491,
+      "scene_support": 0.6513779475404868,
+      "object_support": 0.984020159218728,
+      "score": 0.5216728195043441,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Animals bleating with shearing clipping sounds",
+      "clip_similarity": 0.2975207567214966,
+      "visual": 0.07127807708851254,
+      "scene_support": 0.6529567855142455,
+      "object_support": 0.6445084996976572,
+      "score": 0.4177508163989758,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat bleating",
+      "clip_similarity": 0.2973947525024414,
+      "visual": 0.06357214198750429,
+      "scene_support": 0.8847896070592828,
+      "object_support": 0.9416120327894194,
+      "score": 0.5733493487496124,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dog howling and baby crying",
+      "clip_similarity": 0.29714688658714294,
+      "visual": 0.04841361260361457,
+      "scene_support": 0.47161618004798084,
+      "object_support": 0.4941134081082433,
+      "score": 0.30908432148831305,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby moving around outside while a laugh is chuckled followed by a laugh and a goat noise",
+      "clip_similarity": 0.2963605523109436,
+      "visual": 0.0003244220548674244,
+      "scene_support": 0.7369859680821728,
+      "object_support": 0.3416445403252572,
+      "score": 0.32371892134417596,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male laughing and baby goat bleating",
+      "clip_similarity": 0.2963552474975586,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "veterinarians office",
+      0.12109465897083282
+    ],
+    [
+      "watering hole",
+      0.083428755402565
+    ],
+    [
+      "archaelogical excavation",
+      0.06343439221382141
+    ],
+    [
+      "ice floe",
+      0.06121440976858139
+    ],
+    [
+      "pet shop",
+      0.054493535310029984
+    ]
+  ],
+  "top_objects": [
+    [
+      "Kuvasz",
+      0.4687519073486328
+    ],
+    [
+      "Miniature Poodle",
+      0.08405333012342453
+    ],
+    [
+      "Bedlington Terrier",
+      0.07043900340795517
+    ],
+    [
+      "Standard Poodle",
+      0.05151481553912163
+    ],
+    [
+      "diaper",
+      0.031120531260967255
+    ]
+  ]
+}

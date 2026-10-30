@@ -1,0 +1,289 @@
+{
+  "id": "Bvw2gv1fcZw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Bvw2gv1fcZw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Bvw2gv1fcZw.wav",
+  "gt_captions": [
+    "A loud burping followed by a laughing from young girls",
+    "A click followed by loud burps and laughing from young girls",
+    "A person speaks followed by a burping sound and laughter",
+    "Girl speaks then a loud burp followed by girls laughing",
+    "A plastic clack followed by young girl talking then another a young girl burping proceeded by both girls laughing"
+  ],
+  "top_scene": [
+    "closet",
+    0.14124642312526703
+  ],
+  "top_object": [
+    "candle",
+    0.04928501695394516
+  ],
+  "env_probs": {
+    "indoor": 0.8340120911598206,
+    "outdoor": 0.16598790884017944
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Girl crying loudly",
+    "casv": "Girl crying loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.0036125676706433296,
+    "clap_gt_audio_baseline": 0.3085120916366577,
+    "clap_text_casv": -0.0036125676706433296,
+    "clap_gt_audio_casv": 0.3085120916366577
+  },
+  "verdicts": [
+    {
+      "caption": "Girl crying loudly",
+      "clip_similarity": 0.28949883580207825,
+      "visual": 1.0,
+      "scene_support": 0.8587982842730131,
+      "object_support": 0.636961672202931,
+      "score": 0.8487279869427832,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A high pitched young woman talks as dogs whine, cry and click on the floor",
+      "clip_similarity": 0.2866140902042389,
+      "visual": 0.8444931762135416,
+      "scene_support": 0.7118158267685925,
+      "object_support": 0.31383158902531777,
+      "score": 0.6454914952235897,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young lady voicing frustration as she plays a computer game",
+      "clip_similarity": 0.28305113315582275,
+      "visual": 0.652426279811392,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.26097051192455684,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl vocalizing something followed by audio distortion",
+      "clip_similarity": 0.2820771634578705,
+      "visual": 0.5999228859917585,
+      "scene_support": 0.5547397488139878,
+      "object_support": 0.6350638715619069,
+      "score": 0.5969102405094718,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Girl crying and talking",
+      "clip_similarity": 0.2817372679710388,
+      "visual": 0.5816002763251962,
+      "scene_support": 0.5623529633517228,
+      "object_support": 0.5059619127692094,
+      "score": 0.5531345733663582,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A girl speaks, rustling of a camera followed by computer typing",
+      "clip_similarity": 0.2807212173938751,
+      "visual": 0.5268284454297901,
+      "scene_support": 0.38926881332810276,
+      "object_support": 0.2975984681516977,
+      "score": 0.41679156261585626,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-2.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Glasses cling together as music plays in the background",
+      "clip_similarity": 0.27972930669784546,
+      "visual": 0.47335791342346034,
+      "scene_support": 0.45906593956786396,
+      "object_support": 0.8271062306666116,
+      "score": 0.5751948164397268,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A computer keyboard sound followed by a girl speaking",
+      "clip_similarity": 0.27876144647598267,
+      "visual": 0.4211838606806918,
+      "scene_support": 0.6320835291858543,
+      "object_support": 0.5503962053707029,
+      "score": 0.5232174646392438,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-2.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Female voice talks and baby cries far away",
+      "clip_similarity": 0.27845996618270874,
+      "visual": 0.40493208344378306,
+      "scene_support": 0.7651613412451862,
+      "object_support": 0.6600526329857677,
+      "score": 0.5895370256467993,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Deep booming speaking with footsteps and whooshes then faint bursts",
+      "clip_similarity": 0.2752518951892853,
+      "visual": 0.23199588725289377,
+      "scene_support": 1.0,
+      "object_support": 0.6304270172940425,
+      "score": 0.5819264600893702,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.27462705969810486,
+      "visual": 0.19831313106971588,
+      "scene_support": 0.839630065511932,
+      "object_support": 0.9035829795713061,
+      "score": 0.6022891659528578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog is whimpering while a girl sings",
+      "clip_similarity": 0.27281293272972107,
+      "visual": 0.10051971628471135,
+      "scene_support": 0.396817234550623,
+      "object_support": 0.3334559654362147,
+      "score": 0.2592898465099358,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young female is speaking and makes sneezing sounds, and a dog barks in the background",
+      "clip_similarity": 0.27204638719558716,
+      "visual": 0.059197853660103945,
+      "scene_support": 0.23155187058301024,
+      "object_support": 0.20366195334958168,
+      "score": 0.15424328864381914,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Young woman makes fake sneeze sound then speaks",
+      "clip_similarity": 0.27198368310928345,
+      "visual": 0.05581768963218225,
+      "scene_support": 0.33944216489780915,
+      "object_support": 0.21341776642715338,
+      "score": 0.18818505525036167,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female teenager is saying something followed by a sneeze",
+      "clip_similarity": 0.2716399133205414,
+      "visual": 0.03728622952663245,
+      "scene_support": 0.6701831765924136,
+      "object_support": 0.5163111226669324,
+      "score": 0.37086278158845676,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl coughing and talking",
+      "clip_similarity": 0.2715630829334259,
+      "visual": 0.03314456466732535,
+      "scene_support": 0.477203355586892,
+      "object_support": 0.4695727397097167,
+      "score": 0.29729065445591274,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is speaking while a repetitive, faint beeping sound is in the background",
+      "clip_similarity": 0.2715350389480591,
+      "visual": 0.031632808797423105,
+      "scene_support": 0.9776887164208644,
+      "object_support": 0.885541480673294,
+      "score": 0.5716221826472168,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman speaking and sizzle noises",
+      "clip_similarity": 0.27136388421058655,
+      "visual": 0.02240643901968817,
+      "scene_support": 0.7802405127860772,
+      "object_support": 0.7282140505286383,
+      "score": 0.4614989446022899,
+      "conflicts": [
+        "names 'food frying in a pan', not visible in image (z=-1.86)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person is speaking while music plays, ending with a whoosh",
+      "clip_similarity": 0.2710389494895935,
+      "visual": 0.004890313355985573,
+      "scene_support": 0.9194112525961503,
+      "object_support": 1.0,
+      "score": 0.5777795011212393,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female voice and then a dog is crying",
+      "clip_similarity": 0.27094823122024536,
+      "visual": 0.0,
+      "scene_support": 0.711604364948937,
+      "object_support": 0.5523236515531105,
+      "score": 0.3791784049506142,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "closet",
+      0.14124642312526703
+    ],
+    [
+      "basement",
+      0.08532212674617767
+    ],
+    [
+      "attic",
+      0.04841659590601921
+    ],
+    [
+      "bedroom",
+      0.04503970965743065
+    ],
+    [
+      "bathroom",
+      0.03210240602493286
+    ]
+  ],
+  "top_objects": [
+    [
+      "candle",
+      0.04928501695394516
+    ],
+    [
+      "sunglasses",
+      0.04789777100086212
+    ],
+    [
+      "spotlight",
+      0.025842852890491486
+    ],
+    [
+      "maraca",
+      0.020350050181150436
+    ],
+    [
+      "zucchini",
+      0.0167394932359457
+    ]
+  ]
+}

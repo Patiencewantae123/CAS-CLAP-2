@@ -1,0 +1,288 @@
+{
+  "id": "WUpeplQr3A4",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WUpeplQr3A4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WUpeplQr3A4.wav",
+  "gt_captions": [
+    "A loud shrill followed by a power tool drilling and a man screaming while liquid pours and splatters",
+    "A person screeching followed by a man screaming as a power tool drills and liquid sprays and gurgles",
+    "A man shrilling followed by a power tool drilling and a man screaming as liquid splatters",
+    "A man screams while a drill runs",
+    "A power drill running followed by drilling noises and human screaming"
+  ],
+  "top_scene": [
+    "lobby",
+    0.15479978919029236
+  ],
+  "top_object": [
+    "trench coat",
+    0.34285828471183777
+  ],
+  "env_probs": {
+    "indoor": 0.8696144819259644,
+    "outdoor": 0.13038551807403564
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Male speaking followed by cocking gun and rapid gunfire then male laughter and woman speaking",
+    "casv": "Male speaking followed by cocking gun and rapid gunfire then male laughter and woman speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.022183222696185112,
+    "clap_gt_audio_baseline": 0.016662798821926117,
+    "clap_text_casv": 0.022183222696185112,
+    "clap_gt_audio_casv": 0.016662798821926117
+  },
+  "verdicts": [
+    {
+      "caption": "Male speaking followed by cocking gun and rapid gunfire then male laughter and woman speaking",
+      "clip_similarity": 0.3044489622116089,
+      "visual": 1.0,
+      "scene_support": 0.7139364220958972,
+      "object_support": 0.7483697346236132,
+      "score": 0.8386918470158532,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man and woman talk one after another and then a gun is cocked and fired a few times and drums play",
+      "clip_similarity": 0.30151528120040894,
+      "visual": 0.8238239778934332,
+      "scene_support": 0.754192543498298,
+      "object_support": 0.7603549745675059,
+      "score": 0.7838938465771144,
+      "conflicts": [
+        "names 'drums', not visible in image (z=-0.15)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Video game player attacking with weapon and speaking in foreign language",
+      "clip_similarity": 0.3008498549461365,
+      "visual": 0.7838632084589117,
+      "scene_support": 0.8013139290851257,
+      "object_support": 0.8093873531787076,
+      "score": 0.7967556680627146,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Something is sawed while two men talk back and forth",
+      "clip_similarity": 0.29685360193252563,
+      "visual": 0.5438766671200613,
+      "scene_support": 0.7858112166989443,
+      "object_support": 0.6675857018376571,
+      "score": 0.6535697424090049,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks alongside quiet chopping noises",
+      "clip_similarity": 0.2955784797668457,
+      "visual": 0.46730189638262687,
+      "scene_support": 0.7382887434062801,
+      "object_support": 0.7169373149237025,
+      "score": 0.6234885760520456,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man whispering followed by a gunshot firing then a gun cocking alongside a man speaking as a sheep is baaing in the distance while wind blows into a microphone",
+      "clip_similarity": 0.29492631554603577,
+      "visual": 0.42813755038049356,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.17125502015219743,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical cranking while men are communicating followed by a pop and a man screaming",
+      "clip_similarity": 0.2948441505432129,
+      "visual": 0.423203304530844,
+      "scene_support": 0.7502999750848719,
+      "object_support": 0.5664339782371527,
+      "score": 0.564301507808945,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A master talking to her dog with a helicopter sound in the background",
+      "clip_similarity": 0.2947098910808563,
+      "visual": 0.4151406358501507,
+      "scene_support": 0.4931911387742063,
+      "object_support": 0.4053538410858754,
+      "score": 0.43561974829808475,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.2938516139984131,
+      "visual": 0.363598616907801,
+      "scene_support": 0.5665571725762395,
+      "object_support": 0.5289175073322093,
+      "score": 0.474081850735655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Compressed air releasing followed by a series of muffled gunshots firing followed by a gun cocking as metal clanks on a hard surface and a man talking",
+      "clip_similarity": 0.2937910556793213,
+      "visual": 0.3599619148524916,
+      "scene_support": 0.7952413633924927,
+      "object_support": 0.8257936142478641,
+      "score": 0.6302952592331037,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A gunshot firing followed by metal clanking then a gun reloading and cocking as music plays in the background",
+      "clip_similarity": 0.2925615906715393,
+      "visual": 0.28612898838116646,
+      "scene_support": 0.8697024400011617,
+      "object_support": 1.0,
+      "score": 0.6753623273528151,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks, computer keys click, some small slashing",
+      "clip_similarity": 0.28926950693130493,
+      "visual": 0.08842984672875787,
+      "scene_support": 1.0,
+      "object_support": 0.8808002380311424,
+      "score": 0.5996120101008457,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man and a woman talks while objects hit",
+      "clip_similarity": 0.2891876697540283,
+      "visual": 0.0835152877504707,
+      "scene_support": 0.7276110060667572,
+      "object_support": 0.6415674279884952,
+      "score": 0.444159645316764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person chewing, a man screaming, an explosion and then a woman talking",
+      "clip_similarity": 0.2890169620513916,
+      "visual": 0.07326379691739389,
+      "scene_support": 0.6302674478501913,
+      "object_support": 0.4204787365930376,
+      "score": 0.34452937409992623,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man laughs followed by some steps and then a gun is fired several times while something swooshes and later is tapped",
+      "clip_similarity": 0.28884732723236084,
+      "visual": 0.0630767358451395,
+      "scene_support": 0.6181938519246555,
+      "object_support": 0.7540158899956078,
+      "score": 0.43689361691413475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A gun is adjusted, and then multiple gunshots fire nearby",
+      "clip_similarity": 0.2886720895767212,
+      "visual": 0.05255320824414584,
+      "scene_support": 0.7352766114202999,
+      "object_support": 0.8176728382380029,
+      "score": 0.4869061181951492,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Muffled speech followed by a gunshot, more speech and laughter",
+      "clip_similarity": 0.2885875105857849,
+      "visual": 0.04747399543264584,
+      "scene_support": 0.9144203564238995,
+      "object_support": 0.8744310453534337,
+      "score": 0.5556450187062583,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Gunshots with people talking in the background with some reloading",
+      "clip_similarity": 0.28849074244499207,
+      "visual": 0.041662788949580136,
+      "scene_support": 0.8593316325828734,
+      "object_support": 0.7715968099576361,
+      "score": 0.5059436483419849,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks with an echo and creates clicking noises",
+      "clip_similarity": 0.28816917538642883,
+      "visual": 0.022351757858641106,
+      "scene_support": 0.775069586577013,
+      "object_support": 0.7391863195851457,
+      "score": 0.46321747499210403,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while an object is tapped",
+      "clip_similarity": 0.2877969741821289,
+      "visual": 0.0,
+      "scene_support": 0.7643184795352029,
+      "object_support": 0.8484712166508451,
+      "score": 0.48383690885581443,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lobby",
+      0.15479978919029236
+    ],
+    [
+      "elevator lobby",
+      0.06181102618575096
+    ],
+    [
+      "nursing home",
+      0.06074314936995506
+    ],
+    [
+      "waiting room",
+      0.04663223400712013
+    ],
+    [
+      "archive",
+      0.03478028252720833
+    ]
+  ],
+  "top_objects": [
+    [
+      "trench coat",
+      0.34285828471183777
+    ],
+    [
+      "tank suit",
+      0.14510224759578705
+    ],
+    [
+      "bulletproof vest",
+      0.07206232100725174
+    ],
+    [
+      "stretcher",
+      0.015062562189996243
+    ],
+    [
+      "joystick",
+      0.011121316812932491
+    ]
+  ]
+}

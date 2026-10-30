@@ -1,0 +1,282 @@
+{
+  "id": "lYhwCRX2wNc",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\lYhwCRX2wNc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lYhwCRX2wNc.wav",
+  "gt_captions": [
+    "Plates rattling and clanking as a woman talks and a faucet pours water",
+    "Water splashes and a woman speaks",
+    "A woman talking as water trickles followed by porcelain dishes clanking",
+    "Water is running and splashing while an adult female speaks and dishes clink",
+    "A woman speaks with dishes clanging and water running in the background"
+  ],
+  "top_scene": [
+    "restaurant kitchen",
+    0.35320842266082764
+  ],
+  "top_object": [
+    "apron",
+    0.18481996655464172
+  ],
+  "env_probs": {
+    "indoor": 0.9868044853210449,
+    "outdoor": 0.013195514678955078
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A squeaking cabinet sound is followed by a child and mother speaking while clanking dishes",
+    "casv": "A squeaking cabinet sound is followed by a child and mother speaking while clanking dishes"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.21508106589317322,
+    "clap_gt_audio_baseline": 0.18877530097961426,
+    "clap_text_casv": 0.21508106589317322,
+    "clap_gt_audio_casv": 0.18877530097961426
+  },
+  "verdicts": [
+    {
+      "caption": "A squeaking cabinet sound is followed by a child and mother speaking while clanking dishes",
+      "clip_similarity": 0.32125356793403625,
+      "visual": 1.0,
+      "scene_support": 0.903822442914524,
+      "object_support": 0.7287412940269475,
+      "score": 0.8897691210824414,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dishes scraping and clinking food frying while woman speaks",
+      "clip_similarity": 0.3199952244758606,
+      "visual": 0.912371144718464,
+      "scene_support": 0.7132475698725584,
+      "object_support": 0.6541409762694823,
+      "score": 0.7751650217299979,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Food frying is followed by a woman narrating her cooking",
+      "clip_similarity": 0.31952521204948425,
+      "visual": 0.8796402947872629,
+      "scene_support": 0.7052768080360815,
+      "object_support": 0.8495927677350495,
+      "score": 0.8183169906462444,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Scraping of food with a woman speaking and mechanical humming and gurgling",
+      "clip_similarity": 0.3194504380226135,
+      "visual": 0.8744331612841634,
+      "scene_support": 0.7754625236573062,
+      "object_support": 0.7553858389716213,
+      "score": 0.8090277733023437,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman speaking, tapping and moving dishes",
+      "clip_similarity": 0.31936007738113403,
+      "visual": 0.8681406029814939,
+      "scene_support": 0.7855308966324674,
+      "object_support": 0.7731110406650773,
+      "score": 0.814848822381861,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman narrating a recipe and scraping can",
+      "clip_similarity": 0.31877240538597107,
+      "visual": 0.8272161448118562,
+      "scene_support": 0.6665127295064636,
+      "object_support": 0.7061432797297373,
+      "score": 0.7426832606956028,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Scraping dish while woman speaks",
+      "clip_similarity": 0.31759169697761536,
+      "visual": 0.7449936597079108,
+      "scene_support": 0.6241873662662561,
+      "object_support": 0.6916284788721299,
+      "score": 0.6927422174246801,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while frying food",
+      "clip_similarity": 0.31614887714385986,
+      "visual": 0.6445181896857665,
+      "scene_support": 0.6088015410300041,
+      "object_support": 0.6815888248413557,
+      "score": 0.6449243856357145,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while frying something",
+      "clip_similarity": 0.31406211853027344,
+      "visual": 0.49919994022899766,
+      "scene_support": 0.7684013418612647,
+      "object_support": 0.9036082541909659,
+      "score": 0.7012828549072683,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while hit kitchenware",
+      "clip_similarity": 0.31385907530784607,
+      "visual": 0.48506036248622464,
+      "scene_support": 0.8741401218684788,
+      "object_support": 0.8253965872022899,
+      "score": 0.7038851577157205,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Stirring frying food while man speaks",
+      "clip_similarity": 0.31288012862205505,
+      "visual": 0.41688821369793644,
+      "scene_support": 0.8274586446013596,
+      "object_support": 0.8857301762672314,
+      "score": 0.6807119317397519,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks as food fries in a fryer at rapid speed",
+      "clip_similarity": 0.31250452995300293,
+      "visual": 0.39073217402493365,
+      "scene_support": 0.35078574154044423,
+      "object_support": 0.3409336892316985,
+      "score": 0.36380869884161626,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks followed by the sounds of frying food",
+      "clip_similarity": 0.3124089241027832,
+      "visual": 0.3840743484856975,
+      "scene_support": 0.7458648613622676,
+      "object_support": 0.9094048894132741,
+      "score": 0.6502106646269415,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The person pours a coup of water into the cooking pot",
+      "clip_similarity": 0.31222233176231384,
+      "visual": 0.37108038162124696,
+      "scene_support": 0.7007200808551256,
+      "object_support": 0.9867386904415778,
+      "score": 0.6546697840375097,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks while cooking",
+      "clip_similarity": 0.3110318183898926,
+      "visual": 0.28817509583076506,
+      "scene_support": 1.0,
+      "object_support": 0.9291620319220575,
+      "score": 0.6940186479089232,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person speaks while frying some food",
+      "clip_similarity": 0.31011587381362915,
+      "visual": 0.22439030464532758,
+      "scene_support": 0.8951972809695553,
+      "object_support": 1.0,
+      "score": 0.6583153061489976,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Frying food with female narration",
+      "clip_similarity": 0.3091227114200592,
+      "visual": 0.15522819863066295,
+      "scene_support": 0.7982060369312768,
+      "object_support": 0.9844014661111851,
+      "score": 0.5968735303650037,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks as food sizzles with some scraping sounds",
+      "clip_similarity": 0.3082196116447449,
+      "visual": 0.0923378970984084,
+      "scene_support": 0.5770264235609718,
+      "object_support": 0.6032350673687094,
+      "score": 0.3910136061182677,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman chopping and peeling vegetables while talking",
+      "clip_similarity": 0.30715304613113403,
+      "visual": 0.018064125153837693,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0072256500615350775,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talking while washing the dishes",
+      "clip_similarity": 0.30689364671707153,
+      "visual": 0.0,
+      "scene_support": 0.8436838352741318,
+      "object_support": 0.7021169137384147,
+      "score": 0.46374022470376397,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "restaurant kitchen",
+      0.35320842266082764
+    ],
+    [
+      "galley",
+      0.17847129702568054
+    ],
+    [
+      "kitchen",
+      0.16021208465099335
+    ],
+    [
+      "shop bakery",
+      0.07632579654455185
+    ],
+    [
+      "airplane cabin",
+      0.0454658605158329
+    ]
+  ],
+  "top_objects": [
+    [
+      "apron",
+      0.18481996655464172
+    ],
+    [
+      "hot pot",
+      0.07821904122829437
+    ],
+    [
+      "hand plane",
+      0.052232179790735245
+    ],
+    [
+      "sewing machine",
+      0.04329894483089447
+    ],
+    [
+      "bakery",
+      0.039095040410757065
+    ]
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "id": "nD1K1Zo0qrM",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\nD1K1Zo0qrM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\nD1K1Zo0qrM.wav",
+  "gt_captions": [
+    "Loud clicks with gusting wind and several rapid fire gunshots",
+    "Several rapid gunshots with a distant aircraft passing by with a booming engine",
+    "A series of machine gunfire and two gunshots firing as a jet aircraft flies by followed by soft music playing",
+    "An aircraft engine operates and whooshing is ongoing while a machine gun clicks and fires, after which music plays",
+    "Humming and rattling with rapid fire gunshots and loud bursts"
+  ],
+  "top_scene": [
+    "berth",
+    0.022225819528102875
+  ],
+  "top_object": [
+    "horizontal bar",
+    0.018119076266884804
+  ],
+  "env_probs": {
+    "indoor": 0.5085118412971497,
+    "outdoor": 0.49148815870285034
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A tick locking sound with crumpling near the end",
+    "casv": "A mechanical part moving, followed by beeping, which subsequently stops and then the mechanical part moving again"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.05948738008737564,
+    "clap_gt_audio_baseline": 0.18518899381160736,
+    "clap_text_casv": 0.16490772366523743,
+    "clap_gt_audio_casv": 0.3520262837409973
+  },
+  "verdicts": [
+    {
+      "caption": "A tick locking sound with crumpling near the end",
+      "clip_similarity": 0.2862454652786255,
+      "visual": 1.0,
+      "scene_support": 0.15598448037928592,
+      "object_support": 0.19737933565791888,
+      "score": 0.5060091448111614,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A repeating sequence of the same oinking sound with one variation at the end",
+      "clip_similarity": 0.2861550450325012,
+      "visual": 0.9911518877333785,
+      "scene_support": 0.10218894116251365,
+      "object_support": 0.2698537958035113,
+      "score": 0.508073576183159,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large pop sound, afterwards people are heard screaming in the background along with a repeating recording in the back",
+      "clip_similarity": 0.2815715968608856,
+      "visual": 0.542636585806858,
+      "scene_support": 0.7076199508168954,
+      "object_support": 0.8292396158316511,
+      "score": 0.6781125043173071,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snoring and snorting followed by a person laughing quietly",
+      "clip_similarity": 0.28131917119026184,
+      "visual": 0.5179353627026113,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.20717414508104454,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical part moving, followed by beeping, which subsequently stops and then the mechanical part moving again",
+      "clip_similarity": 0.2801673114299774,
+      "visual": 0.4052196279943307,
+      "scene_support": 1.0,
+      "object_support": 0.8568930078913563,
+      "score": 0.7191557535651392,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult male laugh, a loud pop occurs, and two adult males speak and laugh",
+      "clip_similarity": 0.2796618342399597,
+      "visual": 0.35575593908392583,
+      "scene_support": 0.2359995740608793,
+      "object_support": 0.268172141677372,
+      "score": 0.29355389035504575,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bell rhythmic chiming continuously",
+      "clip_similarity": 0.2795847952365875,
+      "visual": 0.3482172541105518,
+      "scene_support": 0.49202543342521515,
+      "object_support": 0.7735070655166085,
+      "score": 0.5189466513267678,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A continuous beep sound",
+      "clip_similarity": 0.2793096601963043,
+      "visual": 0.3212937958226645,
+      "scene_support": 0.8258616512573422,
+      "object_support": 0.8643641035052303,
+      "score": 0.6355852447578375,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An insect buzzing at a high pitch tone continuously",
+      "clip_similarity": 0.2791786789894104,
+      "visual": 0.30847657320835936,
+      "scene_support": 0.4524688389085382,
+      "object_support": 0.591729369303236,
+      "score": 0.436650091746876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two very high-pitched electronic beeps occur in the foreground, while low-pitched electronic beeps occur repeatedly in the background",
+      "clip_similarity": 0.2791714668273926,
+      "visual": 0.30777082397680944,
+      "scene_support": 0.5337710405707012,
+      "object_support": 0.5567492506270264,
+      "score": 0.45026441695004205,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A spray sound is followed by a male voice in the background",
+      "clip_similarity": 0.2790222465991974,
+      "visual": 0.2931688140496591,
+      "scene_support": 0.5353375817663752,
+      "object_support": 0.5781666360800147,
+      "score": 0.45131879097378064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A beep sounds several times followed by an object being tapped",
+      "clip_similarity": 0.27868542075157166,
+      "visual": 0.26020857514479523,
+      "scene_support": 0.7631149585388287,
+      "object_support": 0.723520523643482,
+      "score": 0.5500740747126113,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A high pitched motor operates",
+      "clip_similarity": 0.2785432040691376,
+      "visual": 0.24629190021522435,
+      "scene_support": 0.8577506269380766,
+      "object_support": 1.0,
+      "score": 0.6558419481675126,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.25)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An individual making calling sounds, followed by a cat meowing in response and audio frequency in the background",
+      "clip_similarity": 0.27750468254089355,
+      "visual": 0.14466692719117638,
+      "scene_support": 0.20973713981880435,
+      "object_support": 0.33553924267449686,
+      "score": 0.2214496856244609,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine rotates, followed by oinking, and more rotation, after which a person laughs",
+      "clip_similarity": 0.27733027935028076,
+      "visual": 0.12760062759187862,
+      "scene_support": 0.07782536638983006,
+      "object_support": 0.3297901755673824,
+      "score": 0.17332491362391517,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A series of medium ticktocks are followed by a soft piano note",
+      "clip_similarity": 0.2768353521823883,
+      "visual": 0.07916931565655093,
+      "scene_support": 0.4100778911153816,
+      "object_support": 0.5263253196305132,
+      "score": 0.3125886894863888,
+      "conflicts": [
+        "names 'a piano', not visible in image (z=-0.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ring tone of a cellular phone",
+      "clip_similarity": 0.2767777740955353,
+      "visual": 0.07353498708070622,
+      "scene_support": 0.4603115501682674,
+      "object_support": 0.6985422401663914,
+      "score": 0.37707013193268013,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ding sound followed by tapping",
+      "clip_similarity": 0.2763451635837555,
+      "visual": 0.03120169846426634,
+      "scene_support": 0.7380395794637312,
+      "object_support": 0.8271511592341102,
+      "score": 0.48203790099505894,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A drill spins down, after which an object drops on a surface",
+      "clip_similarity": 0.27624985575675964,
+      "visual": 0.02187530985890848,
+      "scene_support": 0.11695888043760241,
+      "object_support": 0.523485654860219,
+      "score": 0.20088348453290983,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast and deliberate key strokes are typed on a keyboard followed by a series of high pitched computer dings",
+      "clip_similarity": 0.27602630853652954,
+      "visual": 0.0,
+      "scene_support": 0.17731073759648844,
+      "object_support": 0.3362990151098061,
+      "score": 0.15408292581188837,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "berth",
+      0.022225819528102875
+    ],
+    [
+      "lock chamber",
+      0.02193978801369667
+    ],
+    [
+      "mezzanine",
+      0.0193601343780756
+    ],
+    [
+      "barndoor",
+      0.018679603934288025
+    ],
+    [
+      "indoor bow window",
+      0.018598441034555435
+    ]
+  ],
+  "top_objects": [
+    [
+      "horizontal bar",
+      0.018119076266884804
+    ],
+    [
+      "barometer",
+      0.01656530238687992
+    ],
+    [
+      "barrel",
+      0.00920219998806715
+    ],
+    [
+      "analog clock",
+      0.008720415644347668
+    ],
+    [
+      "projectile",
+      0.008630565367639065
+    ]
+  ]
+}

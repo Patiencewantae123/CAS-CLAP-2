@@ -1,0 +1,296 @@
+{
+  "id": "WUyeFOyKIg0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WUyeFOyKIg0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WUyeFOyKIg0.wav",
+  "gt_captions": [
+    "Man speaks midst a crowd, a distant horn blow, then a race car goes by",
+    "A vehicle driving in the distance followed by tires skidding as a vehicle drives by while a crowd of people talk in the background and wind blows into a microphone",
+    "Wind and people speaking and a car passing by",
+    "A race car engine hums in the distance as wind blows into a microphone and a crowd of people talk followed by a race car speeding by",
+    "A racing vehicle driving in the distance then driving by as a crowd of people talk in the background followed by a horn honking while wind blows into a microphone"
+  ],
+  "top_scene": [
+    "raceway",
+    0.3178098499774933
+  ],
+  "top_object": [
+    "mountain bike",
+    0.1991233080625534
+  ],
+  "env_probs": {
+    "indoor": 0.04370691254734993,
+    "outdoor": 0.9562930874526501
+  },
+  "status": "REPAIR",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "A dirt bike speeds by, followed by several other dirt bikes racing together",
+    "casv": "A motorcycle starting up and pulling off"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.13438186049461365,
+    "clap_gt_audio_baseline": 0.349835604429245,
+    "clap_text_casv": 0.2749384045600891,
+    "clap_gt_audio_casv": 0.6532368659973145
+  },
+  "verdicts": [
+    {
+      "caption": "A dirt bike speeds by, followed by several other dirt bikes racing together",
+      "clip_similarity": 0.33538275957107544,
+      "visual": 1.0,
+      "scene_support": 0.24919046849880866,
+      "object_support": 0.2365208225929329,
+      "score": 0.5457133873275225,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several motorcycles race with engines humming and wind blowing",
+      "clip_similarity": 0.3276293873786926,
+      "visual": 0.7617682771604859,
+      "scene_support": 0.5206980792387665,
+      "object_support": 0.2629165514651818,
+      "score": 0.5397917000753789,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crowd cheering and accelerating vehicle with a dog barking in the background and popping at the end",
+      "clip_similarity": 0.3141580820083618,
+      "visual": 0.3478461530008809,
+      "scene_support": 0.7623505980238489,
+      "object_support": 0.3128266641231789,
+      "score": 0.4616916398444607,
+      "conflicts": [
+        "names 'a dog', not visible in image (z=-0.41)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People cheering while cars race",
+      "clip_similarity": 0.3139652907848358,
+      "visual": 0.3419224098618556,
+      "scene_support": 0.6990619070628027,
+      "object_support": 0.08145942271680719,
+      "score": 0.3709253628786252,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several motorcycles moves accelerating",
+      "clip_similarity": 0.31278055906295776,
+      "visual": 0.3055200971387652,
+      "scene_support": 0.5911808726649063,
+      "object_support": 0.4315340974260467,
+      "score": 0.429022529882792,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dirt bike motor accelerating",
+      "clip_similarity": 0.3116864860057831,
+      "visual": 0.2719033813593933,
+      "scene_support": 0.2568005152162806,
+      "object_support": 0.4347088290015563,
+      "score": 0.3162141558091084,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicles race by as shots go off",
+      "clip_similarity": 0.31139692664146423,
+      "visual": 0.263006320246583,
+      "scene_support": 0.8891494702603325,
+      "object_support": 0.4499377610143687,
+      "score": 0.5069286974810436,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind passes, several motorcycles ride down the road",
+      "clip_similarity": 0.3071863651275635,
+      "visual": 0.13363173346177726,
+      "scene_support": 0.5709940582363547,
+      "object_support": 0.2335241754088999,
+      "score": 0.2948081634782873,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sounds of a car race and people cheering them on",
+      "clip_similarity": 0.3069201111793518,
+      "visual": 0.12545075940024505,
+      "scene_support": 0.784343303748143,
+      "object_support": 0.359096611084214,
+      "score": 0.39321227820980514,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine sounds with cheering from a crowd",
+      "clip_similarity": 0.3061234951019287,
+      "visual": 0.10097376850425714,
+      "scene_support": 0.6786140876158838,
+      "object_support": 0.2854058935671088,
+      "score": 0.32959550175660063,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorcycles running",
+      "clip_similarity": 0.30600762367248535,
+      "visual": 0.09741347891938618,
+      "scene_support": 0.6093364926610103,
+      "object_support": 0.4275498364641978,
+      "score": 0.3500312903053169,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle starting up and pulling off",
+      "clip_similarity": 0.3058496415615082,
+      "visual": 0.09255928779556905,
+      "scene_support": 0.7451322390764373,
+      "object_support": 1.0,
+      "score": 0.5605633868411588,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background",
+      "clip_similarity": 0.305835098028183,
+      "visual": 0.0921124201727766,
+      "scene_support": 0.8687796403607346,
+      "object_support": 0.5435914369780467,
+      "score": 0.460556291270745,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of motorcycle starting then racing off",
+      "clip_similarity": 0.3044304847717285,
+      "visual": 0.0489539817919758,
+      "scene_support": 0.789008118538566,
+      "object_support": 0.6213086727702325,
+      "score": 0.4426766301094298,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of several horses with wind blowing and people speaking",
+      "clip_similarity": 0.3040544092655182,
+      "visual": 0.03739860775095555,
+      "scene_support": 0.4389761254931539,
+      "object_support": 0.0014216567522960812,
+      "score": 0.14707877777401723,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several motorcycles accelerate while a man talks far away",
+      "clip_similarity": 0.3037697970867157,
+      "visual": 0.028653554886882055,
+      "scene_support": 0.7016476938317547,
+      "object_support": 0.4230723722893443,
+      "score": 0.3488774417910825,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dirt bike motor, with men yelling in the background",
+      "clip_similarity": 0.30334821343421936,
+      "visual": 0.015699888099951834,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0062799552399807335,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The loud rumble of an engine followed by a crowd cheering",
+      "clip_similarity": 0.3032591938972473,
+      "visual": 0.012964655335031675,
+      "scene_support": 0.7990653039408638,
+      "object_support": 0.41387536990240975,
+      "score": 0.36906806428699473,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.20)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle accelerating while tires skid alongside a group of people cheering and rock music playing in the background",
+      "clip_similarity": 0.3032105565071106,
+      "visual": 0.011470212793233984,
+      "scene_support": 0.6222089274114888,
+      "object_support": 0.24361703283634709,
+      "score": 0.26433587319164437,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple cars roar as they race",
+      "clip_similarity": 0.3028372526168823,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.524371603568449,
+      "score": 0.45731148107053465,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.3178098499774933
+    ],
+    [
+      "field road",
+      0.20524002611637115
+    ],
+    [
+      "wild field",
+      0.09953707456588745
+    ],
+    [
+      "runway",
+      0.039980970323085785
+    ],
+    [
+      "junkyard",
+      0.03726409003138542
+    ]
+  ],
+  "top_objects": [
+    [
+      "mountain bike",
+      0.1991233080625534
+    ],
+    [
+      "race car",
+      0.036249008029699326
+    ],
+    [
+      "kite",
+      0.027097105979919434
+    ],
+    [
+      "Dutch oven",
+      0.026059184223413467
+    ],
+    [
+      "stretcher",
+      0.023422429338097572
+    ]
+  ]
+}

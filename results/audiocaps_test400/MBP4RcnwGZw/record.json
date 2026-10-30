@@ -1,0 +1,282 @@
+{
+  "id": "MBP4RcnwGZw",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\MBP4RcnwGZw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\MBP4RcnwGZw.wav",
+  "gt_captions": [
+    "A woman speaks while a crowd talks and chuckles",
+    "An adult female speaks, an adult male speaks, and a crowd of people laugh and talk in the background",
+    "A woman talking then laughing as a crowd of people talk in the background",
+    "People speak with wind blowing and distant hums of traffic",
+    "A woman speaks with others speaking in the distance and wind blowing"
+  ],
+  "top_scene": [
+    "art gallery",
+    0.13000302016735077
+  ],
+  "top_object": [
+    "purse",
+    0.04878895357251167
+  ],
+  "env_probs": {
+    "indoor": 0.7397578954696655,
+    "outdoor": 0.2602421045303345
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "An English speaking woman opening a package",
+    "casv": "An English speaking woman opening a package"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.16774198412895203,
+    "clap_gt_audio_baseline": 0.29468172788619995,
+    "clap_text_casv": 0.16774198412895203,
+    "clap_gt_audio_casv": 0.29468172788619995
+  },
+  "verdicts": [
+    {
+      "caption": "An English speaking woman opening a package",
+      "clip_similarity": 0.3066183030605316,
+      "visual": 1.0,
+      "scene_support": 0.39502677217344656,
+      "object_support": 0.6960138675491471,
+      "score": 0.7273121919167781,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A women voice speaking over silverware being moved and shuffled",
+      "clip_similarity": 0.2957955002784729,
+      "visual": 0.5346769481517929,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.21387077926071718,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person laughing with people talking in the background",
+      "clip_similarity": 0.2955496311187744,
+      "visual": 0.5241058798204071,
+      "scene_support": 0.5455230116889682,
+      "object_support": 0.47535003742662413,
+      "score": 0.5159042666628406,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A package is being opened and two people talk",
+      "clip_similarity": 0.29223063588142395,
+      "visual": 0.3814067080796277,
+      "scene_support": 0.550759318676557,
+      "object_support": 0.8002052554859551,
+      "score": 0.5578520554806047,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talking along with other people talking in the background",
+      "clip_similarity": 0.29123160243034363,
+      "visual": 0.3384535744305718,
+      "scene_support": 0.551244725520742,
+      "object_support": 0.4693602017098058,
+      "score": 0.4415629079413931,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking and a beeping in the background followed by laughter",
+      "clip_similarity": 0.2905692756175995,
+      "visual": 0.30997703835824264,
+      "scene_support": 0.7298579372530409,
+      "object_support": 0.5893192294055076,
+      "score": 0.5197439653408616,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman expressing surprise and laughing",
+      "clip_similarity": 0.290529727935791,
+      "visual": 0.30827669803390945,
+      "scene_support": 0.3405250234707879,
+      "object_support": 0.42652168774376553,
+      "score": 0.3534246925779298,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Baby crying with people talking in the background",
+      "clip_similarity": 0.2903735041618347,
+      "visual": 0.30155990528322774,
+      "scene_support": 0.19588925914844887,
+      "object_support": 0.3008545089232951,
+      "score": 0.26964709253481434,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People speaking and girl laughing with door closing in background",
+      "clip_similarity": 0.29001083970069885,
+      "visual": 0.2859672591590299,
+      "scene_support": 0.1583519896006355,
+      "object_support": 0.11078753496434622,
+      "score": 0.19512876103310647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks to a woman as a group of people laugh in the background",
+      "clip_similarity": 0.288681298494339,
+      "visual": 0.22880404698935974,
+      "scene_support": 0.22908004828276368,
+      "object_support": 0.25132529645825946,
+      "score": 0.23564322221805084,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A male speaking and people laughing in the background",
+      "clip_similarity": 0.28776952624320984,
+      "visual": 0.1896026815917338,
+      "scene_support": 0.6747928896408711,
+      "object_support": 0.5599873931371391,
+      "score": 0.4462751574700966,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People laughing before woman speaking",
+      "clip_similarity": 0.2877321243286133,
+      "visual": 0.18799459786374725,
+      "scene_support": 0.5294530016816432,
+      "object_support": 0.5728148760981759,
+      "score": 0.4058782024794446,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Packaging being opened while a person talks",
+      "clip_similarity": 0.28695061802864075,
+      "visual": 0.15439397666933186,
+      "scene_support": 0.8899596611953079,
+      "object_support": 1.0,
+      "score": 0.6287454890263251,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Girl squeals while woman speaks",
+      "clip_similarity": 0.286629319190979,
+      "visual": 0.14057983270803862,
+      "scene_support": 0.49440621485829833,
+      "object_support": 0.5059090730016153,
+      "score": 0.35632651944118954,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking while another woman laughs in the background",
+      "clip_similarity": 0.28618133068084717,
+      "visual": 0.12131870553744593,
+      "scene_support": 0.2052074198640242,
+      "object_support": 0.24302722294449042,
+      "score": 0.18299787505753276,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is speaking with low speech in the background",
+      "clip_similarity": 0.2853023111820221,
+      "visual": 0.08352553457572216,
+      "scene_support": 1.0,
+      "object_support": 0.8707832013552378,
+      "score": 0.5946451742368601,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman pretending to be a telephone ringing and speaking while other laugh in background",
+      "clip_similarity": 0.28522351384162903,
+      "visual": 0.08013766734321504,
+      "scene_support": 0.0518616719454446,
+      "object_support": 0.14992199503604775,
+      "score": 0.09259016703173371,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People applauding woman's speech",
+      "clip_similarity": 0.28464943170547485,
+      "visual": 0.05545518379564139,
+      "scene_support": 0.7608543366794251,
+      "object_support": 0.6204826064688965,
+      "score": 0.43658315646275303,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman excitedly speaking and man stuttering",
+      "clip_similarity": 0.28436270356178284,
+      "visual": 0.04312739610882178,
+      "scene_support": 0.6435282526385292,
+      "object_support": 0.5904912736871134,
+      "score": 0.3874568163412215,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talking with talking in the background",
+      "clip_similarity": 0.2833596169948578,
+      "visual": 0.0,
+      "scene_support": 0.9472980222637188,
+      "object_support": 0.78039081274869,
+      "score": 0.5183066505037226,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art gallery",
+      0.13000302016735077
+    ],
+    [
+      "embassy",
+      0.11618351936340332
+    ],
+    [
+      "archive",
+      0.0920543372631073
+    ],
+    [
+      "reception",
+      0.0835685282945633
+    ],
+    [
+      "candy store",
+      0.06085963919758797
+    ]
+  ],
+  "top_objects": [
+    [
+      "purse",
+      0.04878895357251167
+    ],
+    [
+      "envelope",
+      0.03607304021716118
+    ],
+    [
+      "wig",
+      0.029231956228613853
+    ],
+    [
+      "pillow",
+      0.029091347008943558
+    ],
+    [
+      "diaper",
+      0.0183340385556221
+    ]
+  ]
+}

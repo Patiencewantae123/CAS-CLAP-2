@@ -1,0 +1,287 @@
+{
+  "id": "WqXFAY4k79s",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\WqXFAY4k79s.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\WqXFAY4k79s.wav",
+  "gt_captions": [
+    "Rain falling with young female speaking",
+    "A girl speaks while rain pitter-patters followed by male sneezing",
+    "Several loud pops followed by one woman laughing and another speaking",
+    "A person coughs with rain noise in the background, and a woman speaks",
+    "A person laughing followed by a girl shouting as rain is falling on a plastic surface"
+  ],
+  "top_scene": [
+    "wild field",
+    0.1729878932237625
+  ],
+  "top_object": [
+    "miniskirt",
+    0.20712240040302277
+  ],
+  "env_probs": {
+    "indoor": 0.17275908589363098,
+    "outdoor": 0.827240914106369
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A motor vehicle accelerates and speeds while a girl screams near the end",
+    "casv": "Pounding is followed by kids talking and then a young woman begins speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.14699602127075195,
+    "clap_gt_audio_baseline": -0.09914667904376984,
+    "clap_text_casv": 0.21594743430614471,
+    "clap_gt_audio_casv": 0.25878944993019104
+  },
+  "verdicts": [
+    {
+      "caption": "A motor vehicle accelerates and speeds while a girl screams near the end",
+      "clip_similarity": 0.3092247545719147,
+      "visual": 1.0,
+      "scene_support": 0.3732546997921283,
+      "object_support": 0.6308546530486108,
+      "score": 0.7012328058522217,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.44)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.41)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pounding is followed by kids talking and then a young woman begins speaking",
+      "clip_similarity": 0.30660170316696167,
+      "visual": 0.8514035748232763,
+      "scene_support": 0.8141061027070741,
+      "object_support": 0.8879983858568368,
+      "score": 0.8511927764984838,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Spraying followed by a girl laughing and talking in the background",
+      "clip_similarity": 0.30325523018836975,
+      "visual": 0.6618251622041873,
+      "scene_support": 0.7558499674507857,
+      "object_support": 0.4872388191214668,
+      "score": 0.6376567008533507,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing into a microphone followed by a beep then a gunshot and a girl speaking, laughing, and then a man talking",
+      "clip_similarity": 0.30285051465034485,
+      "visual": 0.638897940095457,
+      "scene_support": 0.8722091561480905,
+      "object_support": 0.9258367621105432,
+      "score": 0.7949729515157729,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rock music plays over punching and kicking sounds and a girl is grunting",
+      "clip_similarity": 0.30125948786735535,
+      "visual": 0.5487659312959958,
+      "scene_support": 0.8960734256669238,
+      "object_support": 1.0,
+      "score": 0.7883284002184754,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A lawn mower runs and stops as a young girl screams and a man speaks",
+      "clip_similarity": 0.301104336977005,
+      "visual": 0.5399766000516623,
+      "scene_support": 0.8703881526014373,
+      "object_support": 0.7080137610812716,
+      "score": 0.6895112141254776,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Horse galloping then girl speaks",
+      "clip_similarity": 0.30084317922592163,
+      "visual": 0.5251819573904837,
+      "scene_support": 0.7852550770846831,
+      "object_support": 0.8415815538171165,
+      "score": 0.6981237722267333,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A horse that is running and jumping with a woman speaking",
+      "clip_similarity": 0.29769235849380493,
+      "visual": 0.3466872865345622,
+      "scene_support": 0.5008311260172595,
+      "object_support": 0.6375226988882333,
+      "score": 0.48018106208547273,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A girl shouting followed by thunder and rain",
+      "clip_similarity": 0.29499512910842896,
+      "visual": 0.1938886628432119,
+      "scene_support": 0.5013635620952932,
+      "object_support": 0.5947606751817827,
+      "score": 0.4063927363204075,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barking followed by wood clacking then a man talking while finger snapping proceeded by camera muffling and a dog growling",
+      "clip_similarity": 0.29464495182037354,
+      "visual": 0.1740510443028892,
+      "scene_support": 0.7614691524679418,
+      "object_support": 0.7202822707316513,
+      "score": 0.5141458446810336,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking with some wet splashing and smacking then running water",
+      "clip_similarity": 0.29453253746032715,
+      "visual": 0.1676827466744554,
+      "scene_support": 0.16875543453329891,
+      "object_support": 0.3706895098572556,
+      "score": 0.2289065819869485,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whooshes and chiming followed by a person grunting",
+      "clip_similarity": 0.29373785853385925,
+      "visual": 0.12266401489762944,
+      "scene_support": 1.0,
+      "object_support": 0.9218044690311821,
+      "score": 0.6256069466684064,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman laughing followed by some banging",
+      "clip_similarity": 0.2934504747390747,
+      "visual": 0.10638366123087781,
+      "scene_support": 0.7974232774043509,
+      "object_support": 0.836132799031514,
+      "score": 0.5326202874231106,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fan runs while something rattles",
+      "clip_similarity": 0.29333436489105225,
+      "visual": 0.09980601341529506,
+      "scene_support": 0.7075812609302735,
+      "object_support": 0.7389552509456274,
+      "score": 0.47388335892888833,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person walking in wind and laughing",
+      "clip_similarity": 0.2932926118373871,
+      "visual": 0.09744069396210424,
+      "scene_support": 0.6325763257168687,
+      "object_support": 0.639508197140004,
+      "score": 0.4206016344419035,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speaking with some splashing followed by a girl speaking and clip-clops from a horse",
+      "clip_similarity": 0.2922915816307068,
+      "visual": 0.040732117864155364,
+      "scene_support": 0.29320218809064713,
+      "object_support": 0.45206224667274525,
+      "score": 0.23987217757467985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks with walking fast on a wood surface and a woman speeches",
+      "clip_similarity": 0.29214954376220703,
+      "visual": 0.0326856421226083,
+      "scene_support": 0.4445810325961181,
+      "object_support": 0.5781452166961657,
+      "score": 0.3198921316367284,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl talks nearby and then an object falls and the girl screams",
+      "clip_similarity": 0.2920962870121002,
+      "visual": 0.02966863579651837,
+      "scene_support": 0.9752275481292835,
+      "object_support": 0.9559926341948056,
+      "score": 0.591233509015834,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Running water with a woman shouting in the background",
+      "clip_similarity": 0.29198336601257324,
+      "visual": 0.02327163693274963,
+      "scene_support": 0.5017284844024062,
+      "object_support": 0.6004632999522398,
+      "score": 0.3399661900794937,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A hedge trimmer motor revving then running followed by a child speaking and a bird chirping",
+      "clip_similarity": 0.29157257080078125,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.41)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "wild field",
+      0.1729878932237625
+    ],
+    [
+      "lawn",
+      0.07127480953931808
+    ],
+    [
+      "park",
+      0.07024397701025009
+    ],
+    [
+      "outdoor volleyball court",
+      0.05142620578408241
+    ],
+    [
+      "yard",
+      0.039437584578990936
+    ]
+  ],
+  "top_objects": [
+    [
+      "miniskirt",
+      0.20712240040302277
+    ],
+    [
+      "running shoe",
+      0.0761227086186409
+    ],
+    [
+      "volleyball",
+      0.0576479397714138
+    ],
+    [
+      "swimsuit",
+      0.025792868807911873
+    ],
+    [
+      "gorilla",
+      0.018735511228442192
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "zF3xXn6NTyU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\zF3xXn6NTyU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\zF3xXn6NTyU.wav",
+  "gt_captions": [
+    "A woman talking followed by someone coughs then another woman talking as a stream of water flows and trickles",
+    "A large volume of water is running, splashing and gurgling, a sneeze occurs, and two adult females speak",
+    "Water falling and a woman talks, coughs, then talks again while a man speaks in the background",
+    "A woman speaking then coughing as a river stream flows followed by a series of plastic clacking",
+    "Water runs quickly, while someone talks, coughs, and then talks again close by"
+  ],
+  "top_scene": [
+    "natural canal",
+    0.27246907353401184
+  ],
+  "top_object": [
+    "crutch",
+    0.12208043783903122
+  ],
+  "env_probs": {
+    "indoor": 0.11582213640213013,
+    "outdoor": 0.8841778635978699
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "Water rushing in a stream with a woman talking by it",
+    "casv": "A stream is running while people yell in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.062108222395181656,
+    "clap_gt_audio_baseline": -0.018225979059934616,
+    "clap_text_casv": -0.04181533306837082,
+    "clap_gt_audio_casv": 0.08041807264089584
+  },
+  "verdicts": [
+    {
+      "caption": "Water rushing in a stream with a woman talking by it",
+      "clip_similarity": 0.33386269211769104,
+      "visual": 1.0,
+      "scene_support": 0.5070350116059211,
+      "object_support": 0.0,
+      "score": 0.5521105034817764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Walking through a stream",
+      "clip_similarity": 0.3324591815471649,
+      "visual": 0.9269654383097246,
+      "scene_support": 0.9750862846432227,
+      "object_support": 0.588354060932533,
+      "score": 0.8398182789966165,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A stream is running while people yell in the background",
+      "clip_similarity": 0.32870280742645264,
+      "visual": 0.7314947783715715,
+      "scene_support": 0.8685938135704128,
+      "object_support": 1.0,
+      "score": 0.8531760554197525,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Running water with a woman shouting in the background",
+      "clip_similarity": 0.3249242305755615,
+      "visual": 0.5348687536638245,
+      "scene_support": 0.2517666243388677,
+      "object_support": 0.3461466356820416,
+      "score": 0.39332147947180257,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream runs, a woman talks, and a woman laughs, then a group shout",
+      "clip_similarity": 0.32216617465019226,
+      "visual": 0.39134763607715667,
+      "scene_support": 0.42524598584072154,
+      "object_support": 0.7724282244218369,
+      "score": 0.5158413175096301,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running with two women speaking",
+      "clip_similarity": 0.32158052921295166,
+      "visual": 0.36087237018817714,
+      "scene_support": 0.0,
+      "object_support": 0.046310370453291755,
+      "score": 0.1582420592112584,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream runs as people talk in the background",
+      "clip_similarity": 0.3203730285167694,
+      "visual": 0.29803758579940387,
+      "scene_support": 1.0,
+      "object_support": 0.9754316919844142,
+      "score": 0.7118445419150858,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running followed by a woman speaking",
+      "clip_similarity": 0.319742351770401,
+      "visual": 0.2652190230421607,
+      "scene_support": 0.4761515981345104,
+      "object_support": 0.832840150894944,
+      "score": 0.4987851339257006,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Running water with lady talking",
+      "clip_similarity": 0.31824102997779846,
+      "visual": 0.18709465306489584,
+      "scene_support": 0.42924878287043805,
+      "object_support": 0.5694315004659832,
+      "score": 0.37444194622688476,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is talking around a creek and then an engine starts",
+      "clip_similarity": 0.3180317282676697,
+      "visual": 0.17620320772683146,
+      "scene_support": 0.5752495724782789,
+      "object_support": 0.37032920939303493,
+      "score": 0.3541549176521267,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Running water followed by a man and woman speaking",
+      "clip_similarity": 0.31787964701652527,
+      "visual": 0.16828934676141175,
+      "scene_support": 0.3456445351964136,
+      "object_support": 0.491679738024366,
+      "score": 0.31851302067079856,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks inaudibly under the sound of loud rushing water",
+      "clip_similarity": 0.31753188371658325,
+      "visual": 0.15019276757162486,
+      "scene_support": 0.3236680295889385,
+      "object_support": 0.4563418900711181,
+      "score": 0.2940800829266669,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running while a woman talks",
+      "clip_similarity": 0.3174932301044464,
+      "visual": 0.14818134729489563,
+      "scene_support": 0.46567204552784625,
+      "object_support": 0.8076568259461617,
+      "score": 0.44127120036016065,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking followed by plastic tapping then water flowing",
+      "clip_similarity": 0.31726211309432983,
+      "visual": 0.13615469791476045,
+      "scene_support": 0.17226538051486592,
+      "object_support": 0.6588834205731257,
+      "score": 0.30380651949230164,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running down river and woman speaking",
+      "clip_similarity": 0.316018283367157,
+      "visual": 0.07142945761439662,
+      "scene_support": 0.4519984689712045,
+      "object_support": 0.19796531897934164,
+      "score": 0.2235609194309225,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pours nearby quickly, followed by a woman speaking nearby",
+      "clip_similarity": 0.3156798779964447,
+      "visual": 0.05381983753555267,
+      "scene_support": 0.21822471844895175,
+      "object_support": 0.3031257965885442,
+      "score": 0.17793308952546985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Female talking and laughing followed by water running",
+      "clip_similarity": 0.3153381645679474,
+      "visual": 0.03603807586016519,
+      "scene_support": 0.1862253404978472,
+      "object_support": 0.4748888316431607,
+      "score": 0.21274948198636845,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water streaming along with several female voices laughing and screaming",
+      "clip_similarity": 0.3147348165512085,
+      "visual": 0.004641619805898719,
+      "scene_support": 0.4889797138684597,
+      "object_support": 0.5305916975411461,
+      "score": 0.3077280713452412,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream flowing as people talk in the background and a goat is baaing",
+      "clip_similarity": 0.314726322889328,
+      "visual": 0.0041996346255842735,
+      "scene_support": 0.26587169255890436,
+      "object_support": 0.16416029283437836,
+      "score": 0.13068944946821853,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running from a tap and a woman speaking more running water starting and stopping",
+      "clip_similarity": 0.3146456182003021,
+      "visual": 0.0,
+      "scene_support": 0.268981937036167,
+      "object_support": 0.5223368485507315,
+      "score": 0.23739563567606953,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "natural canal",
+      0.27246907353401184
+    ],
+    [
+      "creek",
+      0.16778938472270966
+    ],
+    [
+      "river",
+      0.10705553740262985
+    ],
+    [
+      "archaelogical excavation",
+      0.06855475902557373
+    ],
+    [
+      "watering hole",
+      0.03398999199271202
+    ]
+  ],
+  "top_objects": [
+    [
+      "crutch",
+      0.12208043783903122
+    ],
+    [
+      "scooter",
+      0.046668943017721176
+    ],
+    [
+      "snorkel",
+      0.037413813173770905
+    ],
+    [
+      "diaper",
+      0.03658436983823776
+    ],
+    [
+      "swimsuit",
+      0.036135125905275345
+    ]
+  ]
+}

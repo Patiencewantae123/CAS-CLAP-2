@@ -1,0 +1,297 @@
+{
+  "id": "52IxrdTxGs4",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\52IxrdTxGs4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\52IxrdTxGs4.wav",
+  "gt_captions": [
+    "A large explosion and a heartbeat, a person speaks",
+    "A loud burst followed by humming and a heartbeat then a man speaks",
+    "An explosion and heart beating as instrumental music plays followed by a man talking",
+    "A quick loud explosion as music plays with pulsating sounds followed by a man talking",
+    "A loud burst followed by musical notes and a heartbeat followed by a man speaking"
+  ],
+  "top_scene": [
+    "closet",
+    0.05395291745662689
+  ],
+  "top_object": [
+    "black stork",
+    0.01830935664474964
+  ],
+  "env_probs": {
+    "indoor": 0.4752134084701538,
+    "outdoor": 0.5247865915298462
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Loud burst of noise with cartoon sounding voices",
+    "casv": "Background noises from a video game being played"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4498496353626251,
+    "clap_gt_audio_baseline": 0.2910604476928711,
+    "clap_text_casv": 0.329101026058197,
+    "clap_gt_audio_casv": 0.4050043225288391
+  },
+  "verdicts": [
+    {
+      "caption": "Loud burst of noise with cartoon sounding voices",
+      "clip_similarity": 0.28081634640693665,
+      "visual": 1.0,
+      "scene_support": 0.6348896475769116,
+      "object_support": 0.6355528664880428,
+      "score": 0.7811327542194864,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Siren with a vehicle engine noise and voice in the background",
+      "clip_similarity": 0.2807520925998688,
+      "visual": 0.9914368327402135,
+      "scene_support": 0.4779603136993378,
+      "object_support": 0.3831042526835809,
+      "score": 0.654894103010961,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.62)",
+        "names 'an emergency vehicle', not visible in image (z=-0.91)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Background noises from a video game being played",
+      "clip_similarity": 0.278841495513916,
+      "visual": 0.7368097038637519,
+      "scene_support": 1.0,
+      "object_support": 0.9030907714482709,
+      "score": 0.865651112979982,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Voice being drug out ending with a burping sound",
+      "clip_similarity": 0.2782476544380188,
+      "visual": 0.6576679270462633,
+      "scene_support": 0.8278382291706876,
+      "object_support": 0.7144841775381766,
+      "score": 0.7257638928311645,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.27776163816452026,
+      "visual": 0.5928960663446874,
+      "scene_support": 0.6484302303139211,
+      "object_support": 0.5492920515782077,
+      "score": 0.5964751111055137,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Faint audio of a person snoring",
+      "clip_similarity": 0.2766996920108795,
+      "visual": 0.4513694712760549,
+      "scene_support": 0.16606288277174996,
+      "object_support": 0.21223840639462865,
+      "score": 0.29403817526033554,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very light tick took sound",
+      "clip_similarity": 0.2764849364757538,
+      "visual": 0.42274879257752923,
+      "scene_support": 0.14527853587264772,
+      "object_support": 0.6342935898782063,
+      "score": 0.4029711547562679,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud siren gets closer and then gets further away with a faint city noise in the background",
+      "clip_similarity": 0.27572283148765564,
+      "visual": 0.3211823207930859,
+      "scene_support": 0.41476134589466646,
+      "object_support": 0.48904649631064995,
+      "score": 0.39961528097882926,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dogs barking outside while a male is talking and metal is clanking followed by a child communicating out loud",
+      "clip_similarity": 0.2756879925727844,
+      "visual": 0.31653930477885106,
+      "scene_support": 0.404896850276651,
+      "object_support": 0.33016103320892315,
+      "score": 0.3471330869572127,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Deep booming speaking with footsteps and whooshes then faint bursts",
+      "clip_similarity": 0.2753055989742279,
+      "visual": 0.2655773385866802,
+      "scene_support": 0.7745554981566181,
+      "object_support": 0.6940831621867504,
+      "score": 0.5468225335376826,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man explaining with loud motor background noises and splashing",
+      "clip_similarity": 0.27522599697113037,
+      "visual": 0.2549687023385867,
+      "scene_support": 0.34865255309835175,
+      "object_support": 0.39341269835442283,
+      "score": 0.3246070563712671,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male voice speaking with some clicking sound",
+      "clip_similarity": 0.2750893235206604,
+      "visual": 0.2367540988815455,
+      "scene_support": 0.5515723978091309,
+      "object_support": 0.6483343405098638,
+      "score": 0.45467366104831664,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunderstorm sounds with lightning and a scared male voice",
+      "clip_similarity": 0.2749853730201721,
+      "visual": 0.22290051474326386,
+      "scene_support": 0.14381253598270038,
+      "object_support": 0.30020346679217824,
+      "score": 0.22236500672976914,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.27435144782066345,
+      "visual": 0.13841668784951702,
+      "scene_support": 0.47872493324978094,
+      "object_support": 1.0,
+      "score": 0.49898415511474103,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Intermittent, high pitched spraying with white noise",
+      "clip_similarity": 0.2739090919494629,
+      "visual": 0.07946349135739705,
+      "scene_support": 0.20538124620667395,
+      "object_support": 0.1688186957418828,
+      "score": 0.14404537912752585,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud siren sound with a whooshing sound and a person talking",
+      "clip_similarity": 0.27384600043296814,
+      "visual": 0.07105522369089985,
+      "scene_support": 0.7226952387444471,
+      "object_support": 0.749600005286759,
+      "score": 0.47011066268572177,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car engine acceleration noise following by man speaking",
+      "clip_similarity": 0.27371373772621155,
+      "visual": 0.05342844433146924,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.021371377732587696,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.62)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking with a sudden popping sound",
+      "clip_similarity": 0.2734729051589966,
+      "visual": 0.021332454245043212,
+      "scene_support": 0.6474947827650975,
+      "object_support": 0.6766419975724965,
+      "score": 0.4057740157992955,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dark drone sound with an explosion",
+      "clip_similarity": 0.2734007239341736,
+      "visual": 0.011712792323335029,
+      "scene_support": 0.5623608429376173,
+      "object_support": 0.7511287597483797,
+      "score": 0.3987319977351331,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male foreign voice heard with engine sound in background",
+      "clip_similarity": 0.27331283688545227,
+      "visual": 0.0,
+      "scene_support": 0.42114932748794964,
+      "object_support": 0.5093865670797926,
+      "score": 0.27916076837032266,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.48)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "closet",
+      0.05395291745662689
+    ],
+    [
+      "ocean deep underwater",
+      0.05001987889409065
+    ],
+    [
+      "ocean",
+      0.03073447197675705
+    ],
+    [
+      "sky",
+      0.014112604781985283
+    ],
+    [
+      "cliff",
+      0.012705445289611816
+    ]
+  ],
+  "top_objects": [
+    [
+      "black stork",
+      0.01830935664474964
+    ],
+    [
+      "spotlight",
+      0.015765689313411713
+    ],
+    [
+      "candle",
+      0.013546980917453766
+    ],
+    [
+      "night snake",
+      0.011357138864696026
+    ],
+    [
+      "wardrobe",
+      0.008946939371526241
+    ]
+  ]
+}

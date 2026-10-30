@@ -1,0 +1,286 @@
+{
+  "id": "2msevPMQB4M",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\2msevPMQB4M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\2msevPMQB4M.wav",
+  "gt_captions": [
+    "A drilling sound with humming in the background",
+    "A power tool drill operating followed by compressed air releasing and steam hissing",
+    "A power tool vibrating and humming",
+    "A power tool is being used to cut",
+    "A machine is drilling"
+  ],
+  "top_scene": [
+    "physics laboratory",
+    0.20272141695022583
+  ],
+  "top_object": [
+    "torch",
+    0.21372878551483154
+  ],
+  "env_probs": {
+    "indoor": 0.8985657691955566,
+    "outdoor": 0.10143423080444336
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Sharp ringing from metal being drilled into by a power tool",
+    "casv": "A machine cutting into an object"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4992993175983429,
+    "clap_gt_audio_baseline": 0.5326587557792664,
+    "clap_text_casv": 0.3452083468437195,
+    "clap_gt_audio_casv": 0.40344858169555664
+  },
+  "verdicts": [
+    {
+      "caption": "Sharp ringing from metal being drilled into by a power tool",
+      "clip_similarity": 0.34694772958755493,
+      "visual": 1.0,
+      "scene_support": 0.49313910608903594,
+      "object_support": 0.45564915900580777,
+      "score": 0.6846364795284532,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Metal being filed by a machine",
+      "clip_similarity": 0.3387219309806824,
+      "visual": 0.6466802185367052,
+      "scene_support": 0.7529942051461144,
+      "object_support": 0.6511576781490943,
+      "score": 0.6799176524032446,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine cutting into an object",
+      "clip_similarity": 0.33601415157318115,
+      "visual": 0.5303739394466945,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8121495757786779,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud drill increases in volume as wood is being cut, then quiets down when the cutting is done",
+      "clip_similarity": 0.33577024936676025,
+      "visual": 0.5198976953287011,
+      "scene_support": 0.39877769425190746,
+      "object_support": 0.3821077874941448,
+      "score": 0.4422247226552961,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sawing machine works followed an object being hit",
+      "clip_similarity": 0.33514368534088135,
+      "visual": 0.4929851151311579,
+      "scene_support": 0.8537039119703095,
+      "object_support": 0.8378079550320277,
+      "score": 0.7046476061531642,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A light hammer tapping in the background is followed by a slow drill",
+      "clip_similarity": 0.33422166109085083,
+      "visual": 0.453381737745713,
+      "scene_support": 0.664737810977667,
+      "object_support": 0.8417140591009279,
+      "score": 0.6332882561218637,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Mechanical welding or saw like cutting sound",
+      "clip_similarity": 0.33052635192871094,
+      "visual": 0.2946584467918423,
+      "scene_support": 0.7115281485471431,
+      "object_support": 0.47583488753696324,
+      "score": 0.4740722895419688,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood cracking while a machine works",
+      "clip_similarity": 0.3304765820503235,
+      "visual": 0.292520699030717,
+      "scene_support": 0.31869091942252714,
+      "object_support": 0.24732959558136794,
+      "score": 0.2868144341134553,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone rubs metal against an object",
+      "clip_similarity": 0.32908201217651367,
+      "visual": 0.2326202387108997,
+      "scene_support": 0.5664034615225253,
+      "object_support": 0.6430336713786098,
+      "score": 0.4558792353547003,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An automatic saw working",
+      "clip_similarity": 0.32854512333869934,
+      "visual": 0.20955944474882104,
+      "scene_support": 0.5990570784229,
+      "object_support": 0.6294503148160389,
+      "score": 0.45237599587121,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine works while wood hits",
+      "clip_similarity": 0.3278900980949402,
+      "visual": 0.1814243800531493,
+      "scene_support": 0.6565687835542166,
+      "object_support": 0.7825707438049778,
+      "score": 0.504311610229018,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine is being used to saw wood",
+      "clip_similarity": 0.326459676027298,
+      "visual": 0.11998397329223395,
+      "scene_support": 0.3979507881356434,
+      "object_support": 0.401856710567531,
+      "score": 0.2879358389278459,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine part spinning until it gets stuck with a clunk and then a rumble",
+      "clip_similarity": 0.3261963427066803,
+      "visual": 0.10867311148546588,
+      "scene_support": 0.9373510592329958,
+      "object_support": 0.8241240182653651,
+      "score": 0.5719117678436946,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine is sawing a hard object",
+      "clip_similarity": 0.32610562443733215,
+      "visual": 0.10477652215321123,
+      "scene_support": 0.5276892206247077,
+      "object_support": 0.3900931372689888,
+      "score": 0.31724531622939345,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A constant sizzle while something wooden hits a metal surface",
+      "clip_similarity": 0.324849933385849,
+      "visual": 0.05084127414886917,
+      "scene_support": 0.6373859822543698,
+      "object_support": 0.7989825593926105,
+      "score": 0.4512470721536418,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A medium machine motor running while a saw buzzes cutting wood",
+      "clip_similarity": 0.32441240549087524,
+      "visual": 0.03204829517816271,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.012819318071265086,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.53)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A metal grinding and vibrating sound is present",
+      "clip_similarity": 0.324146032333374,
+      "visual": 0.020606864346463628,
+      "scene_support": 0.8434856726825024,
+      "object_support": 0.6371763113503324,
+      "score": 0.4524413409484359,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal churning followed by static and an audio feed cutting off then more metal churning while a man yells and horse trots",
+      "clip_similarity": 0.32388219237327576,
+      "visual": 0.009274241035540377,
+      "scene_support": 0.49527888104271856,
+      "object_support": 0.29034271986114185,
+      "score": 0.23939617668537427,
+      "conflicts": [
+        "names 'a horse', not visible in image (z=-0.28)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine motor humming while sawing wood",
+      "clip_similarity": 0.3237411081790924,
+      "visual": 0.0032143021725661676,
+      "scene_support": 0.3676938375665165,
+      "object_support": 0.37216687117974834,
+      "score": 0.22324393349290592,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Grinding noises from a low-powered machine tool",
+      "clip_similarity": 0.3236662745475769,
+      "visual": 0.0,
+      "scene_support": 0.8433595946561858,
+      "object_support": 0.35386989519542733,
+      "score": 0.3591688469554839,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "physics laboratory",
+      0.20272141695022583
+    ],
+    [
+      "auto factory",
+      0.17787347733974457
+    ],
+    [
+      "assembly line",
+      0.13749559223651886
+    ],
+    [
+      "repair shop",
+      0.08813777565956116
+    ],
+    [
+      "chemistry lab",
+      0.040598757565021515
+    ]
+  ],
+  "top_objects": [
+    [
+      "torch",
+      0.21372878551483154
+    ],
+    [
+      "crane (machine)",
+      0.09489858150482178
+    ],
+    [
+      "sawmill",
+      0.08297798037528992
+    ],
+    [
+      "projectile",
+      0.08225955814123154
+    ],
+    [
+      "match",
+      0.042024411261081696
+    ]
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "id": "1Og2TJ3bXW0",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\1Og2TJ3bXW0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\1Og2TJ3bXW0.wav",
+  "gt_captions": [
+    "An aircraft engine running then slowing down after a plastic click",
+    "A quiet whirring of an airplane",
+    "An aircraft engine humming followed by plastic clanking then an aircraft engine slowing down",
+    "The whir of an aircraft engine",
+    "An aircraft engine running then slowing down with a plastic clank in the background"
+  ],
+  "top_scene": [
+    "runway",
+    0.4865896999835968
+  ],
+  "top_object": [
+    "airliner",
+    0.3620193302631378
+  ],
+  "env_probs": {
+    "indoor": 0.14254343509674072,
+    "outdoor": 0.8574565649032593
+  },
+  "status": "ACCEPT",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "A loud airplane engine sound with a whoosh noise near the end",
+    "casv": "An airplane running"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11211967468261719,
+    "clap_gt_audio_baseline": 0.27300336956977844,
+    "clap_text_casv": 0.06338414549827576,
+    "clap_gt_audio_casv": 0.47462064027786255
+  },
+  "verdicts": [
+    {
+      "caption": "A loud airplane engine sound with a whoosh noise near the end",
+      "clip_similarity": 0.3374459147453308,
+      "visual": 1.0,
+      "scene_support": 0.5964571125497125,
+      "object_support": 0.5444283430480302,
+      "score": 0.7422656366793228,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing by an airplane",
+      "clip_similarity": 0.33262893557548523,
+      "visual": 0.7204597693197717,
+      "scene_support": 0.39307555613160244,
+      "object_support": 0.3206084426936376,
+      "score": 0.5022891073754807,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine hissing as it accelerates on a plane",
+      "clip_similarity": 0.32900288701057434,
+      "visual": 0.5100319437982854,
+      "scene_support": 0.7228474415558723,
+      "object_support": 0.845909847528154,
+      "score": 0.674639964244522,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Airplane engine noise",
+      "clip_similarity": 0.3283001780509949,
+      "visual": 0.46925214846688795,
+      "scene_support": 0.6022149761584796,
+      "object_support": 0.5990287626418315,
+      "score": 0.5480739810268485,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The engine of an airplane sounds as it begins to take off",
+      "clip_similarity": 0.3280336260795593,
+      "visual": 0.4537835327730918,
+      "scene_support": 0.8909476407468296,
+      "object_support": 1.0,
+      "score": 0.7487977053332856,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane propeller spins loudly, and then a person bangs on a window multiple times",
+      "clip_similarity": 0.3277910351753235,
+      "visual": 0.4397054321752049,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.17588217287008198,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane running",
+      "clip_similarity": 0.3265921473503113,
+      "visual": 0.3701312514808813,
+      "scene_support": 0.8762163779989495,
+      "object_support": 0.8726904757529655,
+      "score": 0.672724556717927,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Aircraft engine sound followed by an airplane sound",
+      "clip_similarity": 0.3263484239578247,
+      "visual": 0.3559874300202524,
+      "scene_support": 0.7044252624613726,
+      "object_support": 0.738856400959832,
+      "score": 0.5753794710344623,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud airplane sound",
+      "clip_similarity": 0.3245631456375122,
+      "visual": 0.2523836783966877,
+      "scene_support": 0.8154742211428923,
+      "object_support": 0.95803555078498,
+      "score": 0.6330064029370368,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An airplane approaches, followed by a musical whoosh effect",
+      "clip_similarity": 0.32414817810058594,
+      "visual": 0.22830217069091652,
+      "scene_support": 0.7426970421507166,
+      "object_support": 0.6962424747797006,
+      "score": 0.5230027233554918,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine of airplane taking off",
+      "clip_similarity": 0.32365891337394714,
+      "visual": 0.199909028489994,
+      "scene_support": 0.7806384001964624,
+      "object_support": 0.7668681840560692,
+      "score": 0.5442155866717571,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The sound of propeller of an airplane accelerating",
+      "clip_similarity": 0.3230019211769104,
+      "visual": 0.16178228061770694,
+      "scene_support": 0.14699201189688457,
+      "object_support": 0.06908343909775294,
+      "score": 0.12953554754547403,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of an aircraft take off",
+      "clip_similarity": 0.3224788308143616,
+      "visual": 0.13142616001646482,
+      "scene_support": 1.0,
+      "object_support": 0.982202430247758,
+      "score": 0.6472311930809134,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Plane engine running while flying",
+      "clip_similarity": 0.3216628134250641,
+      "visual": 0.08407081941809365,
+      "scene_support": 0.6286393279351674,
+      "object_support": 0.5795995800260171,
+      "score": 0.39610000015559277,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane is in flight, and a man is speaking with slight knocking noises",
+      "clip_similarity": 0.32130166888237,
+      "visual": 0.0631127821889544,
+      "scene_support": 0.6725871119357677,
+      "object_support": 0.7818264306076633,
+      "score": 0.46156917563861105,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud wind sounds with someone speaking and an engine revving",
+      "clip_similarity": 0.3212217092514038,
+      "visual": 0.05847254338009315,
+      "scene_support": 0.4971762805863854,
+      "object_support": 0.36175613502277604,
+      "score": 0.2810687420347857,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very windy, engine or water noise in background",
+      "clip_similarity": 0.32100415229797363,
+      "visual": 0.04584721974808156,
+      "scene_support": 0.5228536662732872,
+      "object_support": 0.13638065813243375,
+      "score": 0.2161091852209489,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane engine spins loudly",
+      "clip_similarity": 0.3206726312637329,
+      "visual": 0.026608301928561423,
+      "scene_support": 0.4035266861309885,
+      "object_support": 0.4065833519727942,
+      "score": 0.25367633220255936,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine spins loudly nearby",
+      "clip_similarity": 0.32023316621780396,
+      "visual": 0.0011051481918980012,
+      "scene_support": 0.5332173944185602,
+      "object_support": 0.5485945001656958,
+      "score": 0.324985627652036,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.35)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft from the distance with some bird sounds while a car pass by",
+      "clip_similarity": 0.3202141225337982,
+      "visual": 0.0,
+      "scene_support": 0.5761227514274215,
+      "object_support": 0.5674901612160237,
+      "score": 0.34308387379303357,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.53)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "runway",
+      0.4865896999835968
+    ],
+    [
+      "landing deck",
+      0.19685404002666473
+    ],
+    [
+      "airfield",
+      0.14359907805919647
+    ],
+    [
+      "airport terminal",
+      0.05603227764368057
+    ],
+    [
+      "airplane cabin",
+      0.046133991330862045
+    ]
+  ],
+  "top_objects": [
+    [
+      "airliner",
+      0.3620193302631378
+    ],
+    [
+      "sliding door",
+      0.06424299627542496
+    ],
+    [
+      "military aircraft",
+      0.048256129026412964
+    ],
+    [
+      "wing",
+      0.04042600095272064
+    ],
+    [
+      "window shade",
+      0.03713705390691757
+    ]
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "id": "paf0nyjg1Js",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\paf0nyjg1Js.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\paf0nyjg1Js.wav",
+  "gt_captions": [
+    "A woman speaking followed by a porcelain plate clanking as food and oil sizzles",
+    "Food and oil sizzling as a woman is talking followed by dinner plates clanking",
+    "A woman talking followed by a plate rattling as food and oil sizzle",
+    "Food and oil sizzling followed by a woman talking then plastic thumping",
+    "A woman is speaking with sizzling background noise"
+  ],
+  "top_scene": [
+    "kitchen",
+    0.4451616704463959
+  ],
+  "top_object": [
+    "wok",
+    0.2997671365737915
+  ],
+  "env_probs": {
+    "indoor": 0.9579120874404907,
+    "outdoor": 0.04208791255950928
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Man speaks while frying some food",
+    "casv": "Person speaks while frying some food"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5778285264968872,
+    "clap_gt_audio_baseline": 0.36090314388275146,
+    "clap_text_casv": 0.7569587230682373,
+    "clap_gt_audio_casv": 0.48940309882164
+  },
+  "verdicts": [
+    {
+      "caption": "Man speaks while frying some food",
+      "clip_similarity": 0.349590003490448,
+      "visual": 1.0,
+      "scene_support": 0.676728291222588,
+      "object_support": 0.54888229794642,
+      "score": 0.7676831767507024,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person speaks while frying some food",
+      "clip_similarity": 0.34334617853164673,
+      "visual": 0.754638846858326,
+      "scene_support": 0.851509393398062,
+      "object_support": 0.8332119023824108,
+      "score": 0.8072719274774722,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man puts ingredients into a frying pan and it begins to sizzle",
+      "clip_similarity": 0.34287166595458984,
+      "visual": 0.7359921112667414,
+      "scene_support": 0.0,
+      "object_support": 0.7604532705760986,
+      "score": 0.5225328256795261,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then removes something from a plate putting it into a frying pan",
+      "clip_similarity": 0.3359967768192291,
+      "visual": 0.46583227541235495,
+      "scene_support": 0.3290123682286299,
+      "object_support": 0.8609452271188627,
+      "score": 0.5433201887691897,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man frying food",
+      "clip_similarity": 0.33554941415786743,
+      "visual": 0.4482524394642782,
+      "scene_support": 0.7321670360626717,
+      "object_support": 0.5653902446887391,
+      "score": 0.5685681600111345,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking over sound of frying food",
+      "clip_similarity": 0.33388954401016235,
+      "visual": 0.383025169930997,
+      "scene_support": 0.07554722210411398,
+      "object_support": 0.0,
+      "score": 0.175874234603633,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dishes scraping and clinking food frying while woman speaks",
+      "clip_similarity": 0.3336220979690552,
+      "visual": 0.3725154472077913,
+      "scene_support": 0.6399344129957127,
+      "object_support": 0.1620587381927206,
+      "score": 0.38960412423964647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Stirring frying food while man speaks",
+      "clip_similarity": 0.333255410194397,
+      "visual": 0.35810586080414486,
+      "scene_support": 0.7591941278311793,
+      "object_support": 0.5688571520680873,
+      "score": 0.541657728291438,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks and puts food into cookware causing it to sizzle",
+      "clip_similarity": 0.3324728012084961,
+      "visual": 0.3273519808496784,
+      "scene_support": 0.4297625585159802,
+      "object_support": 0.8065276121087076,
+      "score": 0.5018278435272777,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person talks while frying some food",
+      "clip_similarity": 0.33234480023384094,
+      "visual": 0.3223219764930739,
+      "scene_support": 0.7417032619234263,
+      "object_support": 0.6924065895096554,
+      "score": 0.5591617460271541,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by scraping then food frying in a pan",
+      "clip_similarity": 0.3296324610710144,
+      "visual": 0.2157362427331369,
+      "scene_support": 0.6468476377719342,
+      "object_support": 0.9409813340210839,
+      "score": 0.5626431886311601,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while frying food sizzles",
+      "clip_similarity": 0.32912713289260864,
+      "visual": 0.19587855847921712,
+      "scene_support": 0.22857478218012112,
+      "object_support": 0.4236964441148973,
+      "score": 0.27403279128019237,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks while food is frying",
+      "clip_similarity": 0.32838284969329834,
+      "visual": 0.1666307520061461,
+      "scene_support": 0.6384492434318676,
+      "object_support": 0.6711525194235791,
+      "score": 0.4595328296590925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pan bangs followed by food frying and a woman speaking",
+      "clip_similarity": 0.32811370491981506,
+      "visual": 0.15605427485958148,
+      "scene_support": 0.9262804946333278,
+      "object_support": 1.0,
+      "score": 0.640305858333831,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Food frying while a man is talking",
+      "clip_similarity": 0.32774993777275085,
+      "visual": 0.14175945921890298,
+      "scene_support": 1.0,
+      "object_support": 0.9423624230310454,
+      "score": 0.6394125105968749,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man voice and food frying",
+      "clip_similarity": 0.3267066776752472,
+      "visual": 0.10076287423466639,
+      "scene_support": 0.49059402590542944,
+      "object_support": 0.6522834391824366,
+      "score": 0.38316838922022634,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Food frying as a man speaks followed by metal scraped against metal",
+      "clip_similarity": 0.3266797363758087,
+      "visual": 0.099704172502799,
+      "scene_support": 0.831033216895241,
+      "object_support": 0.711151874657468,
+      "score": 0.5025371964669323,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Food frying is followed by a woman narrating her cooking",
+      "clip_similarity": 0.32596731185913086,
+      "visual": 0.07170830425026585,
+      "scene_support": 0.5585776626904445,
+      "object_support": 0.49341500370740515,
+      "score": 0.34428112161946123,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An individual conversing something while frying food at the same time",
+      "clip_similarity": 0.3247736692428589,
+      "visual": 0.024802196103415483,
+      "scene_support": 0.7466222872449685,
+      "object_support": 0.39650665721009704,
+      "score": 0.35285956177788586,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frying food and man speaking",
+      "clip_similarity": 0.3241425156593323,
+      "visual": 0.0,
+      "scene_support": 0.790824047530217,
+      "object_support": 0.678153389857829,
+      "score": 0.4406932312164138,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "kitchen",
+      0.4451616704463959
+    ],
+    [
+      "restaurant kitchen",
+      0.40608420968055725
+    ],
+    [
+      "manufactured home",
+      0.021178437396883965
+    ],
+    [
+      "galley",
+      0.01463058777153492
+    ],
+    [
+      "fastfood restaurant",
+      0.01362264808267355
+    ]
+  ],
+  "top_objects": [
+    [
+      "wok",
+      0.2997671365737915
+    ],
+    [
+      "frying pan",
+      0.24390706419944763
+    ],
+    [
+      "hot pot",
+      0.08264605700969696
+    ],
+    [
+      "Dutch oven",
+      0.04779922217130661
+    ],
+    [
+      "Crock Pot",
+      0.03611220791935921
+    ]
+  ]
+}

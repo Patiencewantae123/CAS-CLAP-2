@@ -1,0 +1,284 @@
+{
+  "id": "lHh0SwUhP8U",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\lHh0SwUhP8U.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\lHh0SwUhP8U.wav",
+  "gt_captions": [
+    "A gunshot is followed by a click and clack and then a second gunshot",
+    "Ducks squeaking in the distance followed by a shotgun blast",
+    "Birds chirp followed by some clicking then gunshots",
+    "Birds chirping as a gun cocks followed by a gunshot and a man chuckling while metal clanks then another gunshot alongside ducks quacking",
+    "Metal clicking before a gunshot firing followed by a person sighing and metal clanking while wood clacks proceeded by another gunshot firing as ducks quack in the distance"
+  ],
+  "top_scene": [
+    "tundra",
+    0.28686606884002686
+  ],
+  "top_object": [
+    "ear of corn",
+    0.1160975843667984
+  ],
+  "env_probs": {
+    "indoor": 0.02040594071149826,
+    "outdoor": 0.9795940592885017
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A duck call is blown, ducks quack, rhythmic thumping is present, and an adult male speaks in the background",
+    "casv": "The wind is blowing, duck calls are being blown, and an adult male speaks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.016607601195573807,
+    "clap_gt_audio_baseline": 0.3768392503261566,
+    "clap_text_casv": 0.14667177200317383,
+    "clap_gt_audio_casv": 0.37221869826316833
+  },
+  "verdicts": [
+    {
+      "caption": "A duck call is blown, ducks quack, rhythmic thumping is present, and an adult male speaks in the background",
+      "clip_similarity": 0.3218156099319458,
+      "visual": 1.0,
+      "scene_support": 0.6538673136875961,
+      "object_support": 0.5909459282121559,
+      "score": 0.7734439725699256,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The wind is blowing, duck calls are being blown, and an adult male speaks",
+      "clip_similarity": 0.3215975761413574,
+      "visual": 0.9915454805994435,
+      "scene_support": 0.8799515066222006,
+      "object_support": 0.7365656996715242,
+      "score": 0.8815733541278948,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bugs buzz in the background a man uses a duck call and quacks and talks",
+      "clip_similarity": 0.31723764538764954,
+      "visual": 0.8224839831002062,
+      "scene_support": 0.706576063821401,
+      "object_support": 0.6040599170345616,
+      "score": 0.7221843874968713,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Duck call then a guy talking followed by more duck quacks and bird calls",
+      "clip_similarity": 0.3148796558380127,
+      "visual": 0.7310501354387198,
+      "scene_support": 0.45414662359463387,
+      "object_support": 0.21221451203960542,
+      "score": 0.49232839486575974,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is blowing a duck call, a slight whistle occurs, and geese are honking in the distance",
+      "clip_similarity": 0.3108961582183838,
+      "visual": 0.5765852801686281,
+      "scene_support": 0.8444295265257283,
+      "object_support": 0.7398724964863406,
+      "score": 0.7059247189710719,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.29)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The sound of duck noises are able to heard right before a mans voice, which is then followed by a gun shot",
+      "clip_similarity": 0.3095223903656006,
+      "visual": 0.523315798718648,
+      "scene_support": 0.8094074995456858,
+      "object_support": 0.9601070676896599,
+      "score": 0.7401806896580629,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man whispering followed by a gunshot firing then a gun cocking alongside a man speaking as a sheep is baaing in the distance while wind blows into a microphone",
+      "clip_similarity": 0.30703842639923096,
+      "visual": 0.42699714330618393,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.17079885732247357,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck call is being blown, ducks quack, water splashes, and a dull thump occurs",
+      "clip_similarity": 0.3059050440788269,
+      "visual": 0.3830488966135698,
+      "scene_support": 0.43202712110814506,
+      "object_support": 0.2805588196107777,
+      "score": 0.36699534086110475,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks and does a duck call several times",
+      "clip_similarity": 0.3058471977710724,
+      "visual": 0.3808058372701471,
+      "scene_support": 0.575978352237508,
+      "object_support": 0.6364747402196049,
+      "score": 0.5160582626451927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man whispers and then uses a duck call followed by a more soft talk",
+      "clip_similarity": 0.30338701605796814,
+      "visual": 0.2854093669973282,
+      "scene_support": 0.7642270890779537,
+      "object_support": 0.8061521847799192,
+      "score": 0.5852775289562931,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Duck calls are being blown, and ducks are quacking",
+      "clip_similarity": 0.30178970098495483,
+      "visual": 0.22347157635877857,
+      "scene_support": 0.5091871052756048,
+      "object_support": 0.46060594221670587,
+      "score": 0.38032654479120465,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with bird vocalization in the background",
+      "clip_similarity": 0.3017275929450989,
+      "visual": 0.22106326328732423,
+      "scene_support": 0.6876110373052153,
+      "object_support": 0.8343446060944836,
+      "score": 0.5450119983348394,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Background voices and then a duck call sound and a man's voice",
+      "clip_similarity": 0.3015207350254059,
+      "visual": 0.21304210156517236,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6852168406260689,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A duck call being used extremely quickly",
+      "clip_similarity": 0.3012180030345917,
+      "visual": 0.20130330877254615,
+      "scene_support": 0.41887399770809874,
+      "object_support": 0.5249026543530809,
+      "score": 0.36365431912737234,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man makes a howl before shooting gun and reloading",
+      "clip_similarity": 0.30025190114974976,
+      "visual": 0.16384155981029333,
+      "scene_support": 0.5675442883779364,
+      "object_support": 0.4671764603349672,
+      "score": 0.3759528485379884,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking with rustling followed by a gunshot",
+      "clip_similarity": 0.2993099093437195,
+      "visual": 0.12731470781291893,
+      "scene_support": 0.8397320417255477,
+      "object_support": 0.9876418361387512,
+      "score": 0.5991380464844573,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man shouts followed by cocking a gun followed by gunfire far away, and finally the man shoot nearby",
+      "clip_similarity": 0.29844602942466736,
+      "visual": 0.09381673708247432,
+      "scene_support": 0.8659702451139437,
+      "object_support": 0.8562109377739177,
+      "score": 0.5541810496993481,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds sing in the background while a duck calls",
+      "clip_similarity": 0.297819584608078,
+      "visual": 0.06952559468229681,
+      "scene_support": 0.9035571767958689,
+      "object_support": 0.8322514367686554,
+      "score": 0.5485528219422761,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man briefly talks while wind blows then a gun is fired and a duck quacks",
+      "clip_similarity": 0.2964194118976593,
+      "visual": 0.015232233490805883,
+      "scene_support": 0.7809574703782964,
+      "object_support": 0.8992989710963318,
+      "score": 0.5101698258387108,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A duck call is blown, ducks quack, and guns fire",
+      "clip_similarity": 0.2960265874862671,
+      "visual": 0.0,
+      "scene_support": 0.46117252075116605,
+      "object_support": 0.26869001359383,
+      "score": 0.2189587603034988,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tundra",
+      0.28686606884002686
+    ],
+    [
+      "outdoor hunting lodge",
+      0.2524924874305725
+    ],
+    [
+      "hayfield",
+      0.13282495737075806
+    ],
+    [
+      "marsh",
+      0.07293006032705307
+    ],
+    [
+      "wild field",
+      0.0697394460439682
+    ]
+  ],
+  "top_objects": [
+    [
+      "ear of corn",
+      0.1160975843667984
+    ],
+    [
+      "whistle",
+      0.06322889029979706
+    ],
+    [
+      "wild boar",
+      0.05369390919804573
+    ],
+    [
+      "prairie grouse",
+      0.03858710825443268
+    ],
+    [
+      "harvester",
+      0.030555959790945053
+    ]
+  ]
+}

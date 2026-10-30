@@ -1,0 +1,306 @@
+{
+  "id": "ek9Fsmm3xqk",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\ek9Fsmm3xqk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\ek9Fsmm3xqk.wav",
+  "gt_captions": [
+    "Some rowing sounds in water with light wind",
+    "Water splashing and trickling as wind blows into a microphone",
+    "Splashing with wind blowing hard",
+    "Wind blows and water smashes against kayak",
+    "Wind blows as water splashes"
+  ],
+  "top_scene": [
+    "raft",
+    0.278976172208786
+  ],
+  "top_object": [
+    "motorboat",
+    0.16307033598423004
+  ],
+  "env_probs": {
+    "indoor": 0.02402990311384201,
+    "outdoor": 0.975970096886158
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Motorboat passing by with water and wind noise",
+    "casv": "Motorboat passing by with water and wind noise"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09503016620874405,
+    "clap_gt_audio_baseline": 0.14867690205574036,
+    "clap_text_casv": 0.09503016620874405,
+    "clap_gt_audio_casv": 0.14867690205574036
+  },
+  "verdicts": [
+    {
+      "caption": "Motorboat passing by with water and wind noise",
+      "clip_similarity": 0.3427136540412903,
+      "visual": 1.0,
+      "scene_support": 0.7870604191283304,
+      "object_support": 0.9088112647205372,
+      "score": 0.9087615051546603,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Boat motor revving then trolling",
+      "clip_similarity": 0.33821967244148254,
+      "visual": 0.6919140016058809,
+      "scene_support": 0.8267932454317141,
+      "object_support": 0.8392253379099803,
+      "score": 0.7765711756448608,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Constant muffle of a boat engine along with wind hitting a microphone",
+      "clip_similarity": 0.3378422260284424,
+      "visual": 0.6660380712267417,
+      "scene_support": 0.49885556754710453,
+      "object_support": 0.4037599158487492,
+      "score": 0.5371998735094529,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor runs while waves slap the boat",
+      "clip_similarity": 0.3359660506248474,
+      "visual": 0.5374164114487456,
+      "scene_support": 0.9082638380872807,
+      "object_support": 0.805569780684757,
+      "score": 0.7291166502111096,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat making high-pitched noise",
+      "clip_similarity": 0.33432039618492126,
+      "visual": 0.42459817223787466,
+      "scene_support": 0.7425321466709506,
+      "object_support": 0.8390449149392197,
+      "score": 0.644312387378201,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Hard blowing wind while a motorboat crashes against water waves",
+      "clip_similarity": 0.3334158658981323,
+      "visual": 0.3625878790726753,
+      "scene_support": 0.5385831134168102,
+      "object_support": 0.4788198261612319,
+      "score": 0.4502560335024828,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat is traveling through water with strong wind noise",
+      "clip_similarity": 0.3323984444141388,
+      "visual": 0.29283830250627746,
+      "scene_support": 0.7023927269743643,
+      "object_support": 0.5690945831586773,
+      "score": 0.49858151404242346,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water bubbles while a boat motor idles and then accelerates",
+      "clip_similarity": 0.3323569595813751,
+      "visual": 0.28999429973582647,
+      "scene_support": 0.6763159145365871,
+      "object_support": 0.639147632455176,
+      "score": 0.5106367839918595,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Windy sounds over water",
+      "clip_similarity": 0.33169832825660706,
+      "visual": 0.24484166954404016,
+      "scene_support": 0.8787189992847043,
+      "object_support": 0.5417563014576199,
+      "score": 0.5240792580403133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Boat motor speeding over water",
+      "clip_similarity": 0.33096739649772644,
+      "visual": 0.19473246555835008,
+      "scene_support": 0.8481822513250842,
+      "object_support": 0.7934305277643765,
+      "score": 0.5703768199501782,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Speed boat slowing down at sea, waves heard followed by male voice",
+      "clip_similarity": 0.33060353994369507,
+      "visual": 0.16978819125918632,
+      "scene_support": 0.6903001276646389,
+      "object_support": 0.5082183898955227,
+      "score": 0.42747083177172296,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat running with a loud engine noise humming",
+      "clip_similarity": 0.33041390776634216,
+      "visual": 0.15678791135374123,
+      "scene_support": 0.6999608841720625,
+      "object_support": 0.7692533553729466,
+      "score": 0.5034794364049993,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat travels fast with low splashing noise in the background",
+      "clip_similarity": 0.3301227390766144,
+      "visual": 0.1368267712191823,
+      "scene_support": 0.7358836744831979,
+      "object_support": 0.7065857844494183,
+      "score": 0.4874715461674578,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat engine running as wind blows into a microphone followed by a motorboat engine running idle then starting up as water flows then sprays",
+      "clip_similarity": 0.3296627402305603,
+      "visual": 0.10529143877528088,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.04211657551011236,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A very loud engine on a motorboat",
+      "clip_similarity": 0.32951050996780396,
+      "visual": 0.09485525619520646,
+      "scene_support": 0.5960131100982607,
+      "object_support": 0.9385835264435815,
+      "score": 0.49832109344063524,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboats' engine accelerating",
+      "clip_similarity": 0.3291768431663513,
+      "visual": 0.07198064770528613,
+      "scene_support": 0.5779357484953811,
+      "object_support": 0.4844262846115518,
+      "score": 0.3475008690141943,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat travels across water as the engine accelerates with wind noise in the background",
+      "clip_similarity": 0.32887041568756104,
+      "visual": 0.050973437586193514,
+      "scene_support": 0.4559922564471049,
+      "object_support": 0.33189769374955513,
+      "score": 0.2567563600934754,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud buzzer is followed by a boat accelerating",
+      "clip_similarity": 0.3286747336387634,
+      "visual": 0.03755840727672433,
+      "scene_support": 0.7908005909211473,
+      "object_support": 0.856695718884205,
+      "score": 0.5092722558522954,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat speeds by and waves smack into each other",
+      "clip_similarity": 0.3283520042896271,
+      "visual": 0.01543361848274904,
+      "scene_support": 1.0,
+      "object_support": 0.851223218310806,
+      "score": 0.5615404128863414,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine gets louder as it approaches",
+      "clip_similarity": 0.3281268775463104,
+      "visual": 0.0,
+      "scene_support": 0.6985071401618006,
+      "object_support": 1.0,
+      "score": 0.5095521420485402,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.18)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raft",
+      0.278976172208786
+    ],
+    [
+      "wave",
+      0.1317938268184662
+    ],
+    [
+      "ocean",
+      0.119858518242836
+    ],
+    [
+      "cliff",
+      0.11323587596416473
+    ],
+    [
+      "boathouse",
+      0.03709002211689949
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.16307033598423004
+    ],
+    [
+      "canoe",
+      0.07158803939819336
+    ],
+    [
+      "paddle",
+      0.07145421206951141
+    ],
+    [
+      "cliff",
+      0.042489081621170044
+    ],
+    [
+      "grey whale",
+      0.04106331616640091
+    ]
+  ]
+}

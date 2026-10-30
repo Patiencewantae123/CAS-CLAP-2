@@ -1,0 +1,283 @@
+{
+  "id": "0yETgW44MZU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0yETgW44MZU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0yETgW44MZU.wav",
+  "gt_captions": [
+    "A sudden horn blare as a train passes",
+    "A train horn honking as a train runs on railroad tracks and birds chirping",
+    "A train sounds horn while the engine taps",
+    "A loud, continuous horn followed by brief clanking and more horn honking",
+    "A honking horn from an oncoming train"
+  ],
+  "top_scene": [
+    "platform train station",
+    0.473254919052124
+  ],
+  "top_object": [
+    "electric locomotive",
+    0.6944790482521057
+  ],
+  "env_probs": {
+    "indoor": 0.6646504402160645,
+    "outdoor": 0.33534955978393555
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A man speaks in Hindi with the sound of a small engine running in the background",
+    "casv": "A train engine idling followed by a single hoot from train horn"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.03703943267464638,
+    "clap_gt_audio_baseline": 0.10489076375961304,
+    "clap_text_casv": 0.4175125062465668,
+    "clap_gt_audio_casv": 0.531019926071167
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks in Hindi with the sound of a small engine running in the background",
+      "clip_similarity": 0.3295884132385254,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train horn sounding along with railway crossing bell and moving train sound",
+      "clip_similarity": 0.32060664892196655,
+      "visual": 0.6188678004512206,
+      "scene_support": 0.386229965942373,
+      "object_support": 0.18975301199641986,
+      "score": 0.42034201356212614,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine revving at idle",
+      "clip_similarity": 0.31855064630508423,
+      "visual": 0.5316233825359409,
+      "scene_support": 0.4928015053861346,
+      "object_support": 0.6084914173602474,
+      "score": 0.543037229838291,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male narration followed by engine starting",
+      "clip_similarity": 0.31489598751068115,
+      "visual": 0.3765415861517761,
+      "scene_support": 0.4406954317398584,
+      "object_support": 0.43349543826650444,
+      "score": 0.41287389546261927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine running with faint voices in the background",
+      "clip_similarity": 0.31483832001686096,
+      "visual": 0.37409452363849743,
+      "scene_support": 0.8400924679386428,
+      "object_support": 0.729610935882813,
+      "score": 0.6205488306018356,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine running continuously",
+      "clip_similarity": 0.3144109845161438,
+      "visual": 0.35596096840443936,
+      "scene_support": 0.7790394925391901,
+      "object_support": 0.8809019844246666,
+      "score": 0.6403668304509327,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine running with sweeping sounds",
+      "clip_similarity": 0.31373393535614014,
+      "visual": 0.32723106340357944,
+      "scene_support": 0.48845270845934224,
+      "object_support": 0.5934237617757304,
+      "score": 0.45545536643195356,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine chugging while train horn blares",
+      "clip_similarity": 0.3129301071166992,
+      "visual": 0.2931214147688759,
+      "scene_support": 0.5414895315974277,
+      "object_support": 0.589637357227134,
+      "score": 0.4565866325549188,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine running smoothly with traffic sounds in the background",
+      "clip_similarity": 0.31239962577819824,
+      "visual": 0.27061096891029207,
+      "scene_support": 0.552413553389106,
+      "object_support": 0.5312869478313503,
+      "score": 0.43335453793025375,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A low muffled engine idles followed by a slow rev and hum by the engine",
+      "clip_similarity": 0.3119205832481384,
+      "visual": 0.250283277520917,
+      "scene_support": 0.5175292358676746,
+      "object_support": 0.5540379107002761,
+      "score": 0.42158345497875205,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The low rumble of an engine together with an intermittent siren followed by a man yelling in the background",
+      "clip_similarity": 0.31156450510025024,
+      "visual": 0.23517345689629007,
+      "scene_support": 0.5167307279573878,
+      "object_support": 0.4840643197670207,
+      "score": 0.3943078970758386,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train engine idling followed by a single hoot from train horn",
+      "clip_similarity": 0.31041571497917175,
+      "visual": 0.18642569529455805,
+      "scene_support": 1.0,
+      "object_support": 0.9335586677847446,
+      "score": 0.6546378784532466,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A powerful engine idling and revving before stopping",
+      "clip_similarity": 0.31015443801879883,
+      "visual": 0.1753386683933106,
+      "scene_support": 0.4165089523214901,
+      "object_support": 0.5513841125706421,
+      "score": 0.36050338682496386,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine roars continuously",
+      "clip_similarity": 0.30863744020462036,
+      "visual": 0.11096638102849975,
+      "scene_support": 0.7898970322243106,
+      "object_support": 0.9518074434034424,
+      "score": 0.5668978950997258,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine running continuously",
+      "clip_similarity": 0.3085407316684723,
+      "visual": 0.10686265087057252,
+      "scene_support": 0.9858234134081402,
+      "object_support": 0.9619278495947786,
+      "score": 0.6270704392491047,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train engine running and then train blows horn",
+      "clip_similarity": 0.30829429626464844,
+      "visual": 0.09640541060064951,
+      "scene_support": 0.9173121573371315,
+      "object_support": 1.0,
+      "score": 0.6137558114413992,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine running loudly and continuously",
+      "clip_similarity": 0.30699267983436584,
+      "visual": 0.04117261718078164,
+      "scene_support": 0.6456048462565154,
+      "object_support": 0.8319838230653916,
+      "score": 0.4597456476688847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine chugging with male speech and rustling followed by a whoosh and emergency sirens",
+      "clip_similarity": 0.3064825236797333,
+      "visual": 0.019524650202846938,
+      "scene_support": 0.21334252520719654,
+      "object_support": 0.38289831834036636,
+      "score": 0.18668211314540764,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine humming with metal rattling",
+      "clip_similarity": 0.30628731846809387,
+      "visual": 0.011241311979604018,
+      "scene_support": 0.5870478403793526,
+      "object_support": 0.6225971248371687,
+      "score": 0.36739001435679797,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idles at high speed, followed by a person talking",
+      "clip_similarity": 0.30602240562438965,
+      "visual": 0.0,
+      "scene_support": 0.7843970831698379,
+      "object_support": 0.6946615870240751,
+      "score": 0.4437176010581739,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "platform train station",
+      0.473254919052124
+    ],
+    [
+      "railroad track",
+      0.15249308943748474
+    ],
+    [
+      "train interior",
+      0.04760793223977089
+    ],
+    [
+      "engine room",
+      0.031663015484809875
+    ],
+    [
+      "corridor",
+      0.016971442848443985
+    ]
+  ],
+  "top_objects": [
+    [
+      "electric locomotive",
+      0.6944790482521057
+    ],
+    [
+      "steam locomotive",
+      0.10472773015499115
+    ],
+    [
+      "high-speed train",
+      0.09224648773670197
+    ],
+    [
+      "freight car",
+      0.030152902007102966
+    ],
+    [
+      "passenger car",
+      0.029656391590833664
+    ]
+  ]
+}

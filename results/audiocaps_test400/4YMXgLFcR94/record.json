@@ -1,0 +1,282 @@
+{
+  "id": "4YMXgLFcR94",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\4YMXgLFcR94.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4YMXgLFcR94.wav",
+  "gt_captions": [
+    "Male speaking and then applause",
+    "An adult male speaks, with his voice amplified, after which crowd of people clap",
+    "A man speaks and then an audience claps",
+    "A man speaks followed by applause",
+    "A man speaks, and an audience applauds"
+  ],
+  "top_scene": [
+    "reception",
+    0.20646126568317413
+  ],
+  "top_object": [
+    "prayer rug",
+    0.07005558162927628
+  ],
+  "env_probs": {
+    "indoor": 0.8209971189498901,
+    "outdoor": 0.17900288105010986
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Man sneezes during his speech",
+    "casv": "Low volume voice in the background, followed by a man's speech and a sound of gunshot"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.032613467425107956,
+    "clap_gt_audio_baseline": 0.2462809979915619,
+    "clap_text_casv": -0.11275433003902435,
+    "clap_gt_audio_casv": 0.176978200674057
+  },
+  "verdicts": [
+    {
+      "caption": "Man sneezes during his speech",
+      "clip_similarity": 0.3215458393096924,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Low volume voice in the background, followed by a man's speech and a sound of gunshot",
+      "clip_similarity": 0.31521695852279663,
+      "visual": 0.7122247758637512,
+      "scene_support": 0.989955819510191,
+      "object_support": 1.0,
+      "score": 0.8818766561985578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking followed by laughter and more speech",
+      "clip_similarity": 0.3096206486225128,
+      "visual": 0.4577596674002363,
+      "scene_support": 0.8157001721517603,
+      "object_support": 0.8269815913868079,
+      "score": 0.675908396021665,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking followed by laughter, applause and more speaking",
+      "clip_similarity": 0.3079099953174591,
+      "visual": 0.3799759873377926,
+      "scene_support": 0.7273260859778659,
+      "object_support": 0.7263140556450434,
+      "score": 0.5880824374219897,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man lightly laughing followed by a short speech",
+      "clip_similarity": 0.30715662240982056,
+      "visual": 0.34572000043363726,
+      "scene_support": 0.5039966447217336,
+      "object_support": 0.4227577973768969,
+      "score": 0.4163143328030441,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man performs a speech followed by several pulsating sounds, and a crowd applauds",
+      "clip_similarity": 0.3062223494052887,
+      "visual": 0.30323845711869735,
+      "scene_support": 0.7913652871161987,
+      "object_support": 0.6678510720859954,
+      "score": 0.5590602906081372,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking followed by laughter and clapping",
+      "clip_similarity": 0.3060360252857208,
+      "visual": 0.294766269527227,
+      "scene_support": 0.7319692258071502,
+      "object_support": 0.7426548438818127,
+      "score": 0.5602937287175797,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man gives a speech, rattling followed by spraying",
+      "clip_similarity": 0.30591484904289246,
+      "visual": 0.289256366336741,
+      "scene_support": 0.5117186854466514,
+      "object_support": 0.43489170814806133,
+      "score": 0.3996856646131102,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man gives a speech and people laugh followed by another man screaming from a distance",
+      "clip_similarity": 0.30555838346481323,
+      "visual": 0.2730478193467255,
+      "scene_support": 0.8069831728919957,
+      "object_support": 0.6520971692240574,
+      "score": 0.5469432303735061,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An audience cheers and applauds followed by a man talking",
+      "clip_similarity": 0.3043864667415619,
+      "visual": 0.21976057803844193,
+      "scene_support": 1.0,
+      "object_support": 0.8791728403397258,
+      "score": 0.6516560833172944,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A crowd applauds followed by a man speaking then laughter",
+      "clip_similarity": 0.30432647466659546,
+      "visual": 0.21703272877074684,
+      "scene_support": 0.9400962021190451,
+      "object_support": 0.7988303841910441,
+      "score": 0.6084910674013255,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man giving speech and crowd laughing",
+      "clip_similarity": 0.3038884103298187,
+      "visual": 0.19711387313942522,
+      "scene_support": 0.5090990838517546,
+      "object_support": 0.38068679685975515,
+      "score": 0.34578131346922303,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by applause and more speech",
+      "clip_similarity": 0.30341312289237976,
+      "visual": 0.17550247715273787,
+      "scene_support": 0.8829516191440051,
+      "object_support": 0.8938160385163003,
+      "score": 0.6032312881591868,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man performs a speech followed by a beeping noise",
+      "clip_similarity": 0.30276864767074585,
+      "visual": 0.14619808549158203,
+      "scene_support": 0.6942166468073855,
+      "object_support": 0.7356025739857679,
+      "score": 0.4874250004345788,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Applause and screaming followed by a man making a speech to laughter",
+      "clip_similarity": 0.3026798963546753,
+      "visual": 0.14216254891970123,
+      "scene_support": 0.8466037210081563,
+      "object_support": 0.847439480691768,
+      "score": 0.5650779800778577,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man gives a speech and people begin clapping afterwards",
+      "clip_similarity": 0.30212169885635376,
+      "visual": 0.11678121917110242,
+      "scene_support": 0.8010419141953686,
+      "object_support": 0.719555599413263,
+      "score": 0.5028917417510305,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by insect buzzing and more speech",
+      "clip_similarity": 0.300563246011734,
+      "visual": 0.045918118448012316,
+      "scene_support": 0.5463718489418166,
+      "object_support": 0.5473585335433557,
+      "score": 0.3464863621247566,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man giving a speech followed by applause",
+      "clip_similarity": 0.30020514130592346,
+      "visual": 0.029635040057240117,
+      "scene_support": 0.6666906003771269,
+      "object_support": 0.6038746305998028,
+      "score": 0.3930235853159749,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man gives a speech and people laugh",
+      "clip_similarity": 0.30001065135002136,
+      "visual": 0.02079155057836367,
+      "scene_support": 0.8179385439300406,
+      "object_support": 0.8189989115539256,
+      "score": 0.4993978568765353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A male speech followed by a gunfire",
+      "clip_similarity": 0.29955339431762695,
+      "visual": 0.0,
+      "scene_support": 0.8681924976935311,
+      "object_support": 0.8215415868757294,
+      "score": 0.5069202253707781,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "reception",
+      0.20646126568317413
+    ],
+    [
+      "conference center",
+      0.10226619243621826
+    ],
+    [
+      "auditorium",
+      0.05741560831665993
+    ],
+    [
+      "dining hall",
+      0.035614077001810074
+    ],
+    [
+      "assembly line",
+      0.03195105493068695
+    ]
+  ],
+  "top_objects": [
+    [
+      "prayer rug",
+      0.07005558162927628
+    ],
+    [
+      "speaker",
+      0.0652332529425621
+    ],
+    [
+      "Cardigan Welsh Corgi",
+      0.03730223700404167
+    ],
+    [
+      "suit",
+      0.03343521058559418
+    ],
+    [
+      "handkerchief",
+      0.03326435759663582
+    ]
+  ]
+}

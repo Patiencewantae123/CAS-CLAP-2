@@ -1,0 +1,287 @@
+{
+  "id": "yrxa6_P2I80",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\yrxa6_P2I80.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\yrxa6_P2I80.wav",
+  "gt_captions": [
+    "Birds chirping continuously",
+    "A group of birds chirp and pigeons coo",
+    "Several birds chirping and pigeons cooing",
+    "Pigeons cooing and birds chirping with a series of metal tapping",
+    "Many small, enclosed birds chirping"
+  ],
+  "top_scene": [
+    "tower",
+    0.31455370783805847
+  ],
+  "top_object": [
+    "parallel bars",
+    0.24846191704273224
+  ],
+  "env_probs": {
+    "indoor": 0.07969482988119125,
+    "outdoor": 0.9203051701188087
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Very bold music plays over chirping birds",
+    "casv": "Very bold music plays over chirping birds"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.09406780451536179,
+    "clap_gt_audio_baseline": 0.24409659206867218,
+    "clap_text_casv": 0.09406780451536179,
+    "clap_gt_audio_casv": 0.24409659206867218
+  },
+  "verdicts": [
+    {
+      "caption": "Very bold music plays over chirping birds",
+      "clip_similarity": 0.31392890214920044,
+      "visual": 1.0,
+      "scene_support": 0.7313517072385582,
+      "object_support": 0.8422957657061212,
+      "score": 0.8720942418834039,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.3078958988189697,
+      "visual": 0.7610885169440517,
+      "scene_support": 0.8717805426976145,
+      "object_support": 0.8638879863619494,
+      "score": 0.8251359654954898,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bird flying sounds, followed by a robotic voice, and then the bird chirping and then a popping sound",
+      "clip_similarity": 0.3036579489707947,
+      "visual": 0.5932625059304771,
+      "scene_support": 0.8489758511216935,
+      "object_support": 0.8949508489115525,
+      "score": 0.7604830123821646,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.303236186504364,
+      "visual": 0.5765603940905304,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8306241576362121,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music played on large bells",
+      "clip_similarity": 0.29897236824035645,
+      "visual": 0.40770997429536493,
+      "scene_support": 0.6987429512582282,
+      "object_support": 0.8249351879922076,
+      "score": 0.6201874314932767,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Musical chimes playing with mechanical humming",
+      "clip_similarity": 0.29859864711761475,
+      "visual": 0.392910335906944,
+      "scene_support": 0.5926326773008315,
+      "object_support": 0.9159428702713064,
+      "score": 0.6097367986344189,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds quacking with loud taps",
+      "clip_similarity": 0.2983410954475403,
+      "visual": 0.3827110954800913,
+      "scene_support": 0.6068248609677311,
+      "object_support": 0.687454543229983,
+      "score": 0.5413682594513507,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music playing with birds chirping",
+      "clip_similarity": 0.29552456736564636,
+      "visual": 0.27117445870381607,
+      "scene_support": 0.749356871690699,
+      "object_support": 0.8583196594837607,
+      "score": 0.5907727428338643,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A guitar tune is played with birds chirping in the background",
+      "clip_similarity": 0.2942878007888794,
+      "visual": 0.22219756927151318,
+      "scene_support": 0.7966993017860513,
+      "object_support": 0.8748591264959101,
+      "score": 0.5903465561931938,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw spins faster than slows down as blocks of wood fall in the background",
+      "clip_similarity": 0.294260710477829,
+      "visual": 0.22112477251752,
+      "scene_support": 0.3610901822682518,
+      "object_support": 0.5720793133121893,
+      "score": 0.36840075768114033,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.68)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some birds tweet while an electronic music is played",
+      "clip_similarity": 0.2938360273838043,
+      "visual": 0.2043070016215872,
+      "scene_support": 0.5197968352814502,
+      "object_support": 0.6838397529054948,
+      "score": 0.44281377710471836,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male narration and birds chirping with wind chimes",
+      "clip_similarity": 0.29326096177101135,
+      "visual": 0.18153396953682088,
+      "scene_support": 0.7727235200417374,
+      "object_support": 0.9119640859229814,
+      "score": 0.578019869604144,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone outdoors makes a tapping sound with birds in the background",
+      "clip_similarity": 0.2921478748321533,
+      "visual": 0.1374548870671932,
+      "scene_support": 0.8291842191437166,
+      "object_support": 0.762823737168446,
+      "score": 0.532584341720526,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird emits a strange buzzing noise",
+      "clip_similarity": 0.2920258641242981,
+      "visual": 0.13262317099365292,
+      "scene_support": 0.8582630540477538,
+      "object_support": 0.8478484588540611,
+      "score": 0.5648827222680056,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.44)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Different kind of birds are singing with drums being played in the background",
+      "clip_similarity": 0.2913075089454651,
+      "visual": 0.10417576399887646,
+      "scene_support": 0.751061473908555,
+      "object_support": 0.8789398699545534,
+      "score": 0.5306707087584831,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeon makes lots of different sound",
+      "clip_similarity": 0.28986257314682007,
+      "visual": 0.046955216341444415,
+      "scene_support": 0.509901539622809,
+      "object_support": 0.45413301449586657,
+      "score": 0.30799245277218046,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are chirping and communicating to each other outside",
+      "clip_similarity": 0.28973624110221863,
+      "visual": 0.04195237207282272,
+      "scene_support": 0.950739632244386,
+      "object_support": 0.8850278484316649,
+      "score": 0.5675111930319443,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple pigeons making a cooing sound outdoors",
+      "clip_similarity": 0.28934550285339355,
+      "visual": 0.02647884265411569,
+      "scene_support": 0.4214984542719815,
+      "object_support": 0.3593786747762677,
+      "score": 0.24485467577612102,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A rooster alarm clock following repetitive beeping",
+      "clip_similarity": 0.2889340817928314,
+      "visual": 0.010186258287915516,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.004074503315166207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tapping sound with birds singing in the background",
+      "clip_similarity": 0.2886768579483032,
+      "visual": 0.0,
+      "scene_support": 0.9912893230987823,
+      "object_support": 0.9884721631237009,
+      "score": 0.5939284458667449,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tower",
+      0.31455370783805847
+    ],
+    [
+      "fire escape",
+      0.24673080444335938
+    ],
+    [
+      "skyscraper",
+      0.09122974425554276
+    ],
+    [
+      "tree house",
+      0.057219620794057846
+    ],
+    [
+      "outdoor apartment building",
+      0.04544238746166229
+    ]
+  ],
+  "top_objects": [
+    [
+      "parallel bars",
+      0.24846191704273224
+    ],
+    [
+      "abacus",
+      0.11187612265348434
+    ],
+    [
+      "horizontal bar",
+      0.08324781060218811
+    ],
+    [
+      "chime",
+      0.07403141260147095
+    ],
+    [
+      "birdhouse",
+      0.06238970533013344
+    ]
+  ]
+}
