@@ -1,402 +1,271 @@
 {
   "id": "car",
   "image": "eval\\smoke_images\\car.jpg",
-  "label": null,
   "gt_audio": null,
-  "top_scene": "busy road",
-  "scene_confidence": 0.7853610515594482,
-  "scene_correct": null,
+  "gt_captions": [],
+  "top_scene": [
+    "raceway",
+    0.17046372592449188
+  ],
+  "top_object": [
+    "sports car",
+    0.9124919772148132
+  ],
+  "env_probs": {
+    "indoor": 0.31833380460739136,
+    "outdoor": 0.6816661953926086
+  },
   "status": "ACCEPT",
-  "caption": "Traffic / engine sounds",
-  "baseline_concepts": [
-    "engine sounds",
-    "car movement",
-    "traffic",
-    "nature ambience"
-  ],
-  "verified_concepts": [
-    "engine sounds",
-    "car movement",
-    "traffic",
-    "urban ambience"
-  ],
-  "repaired_concepts": [],
+  "n_rejected": 4,
   "prompts": {
-    "baseline": "engine sounds, car movement, traffic, nature ambience",
-    "casv": "engine sounds, car movement, traffic, urban ambience"
+    "baseline": "A sports car is accelerating it;s engine",
+    "casv": "A sports car is accelerating it;s engine"
   },
   "metrics": {},
   "verdicts": [
     {
-      "concept": "engine sounds",
-      "visual_evidence": 0.9479214365131983,
-      "scene_support": 0.7853610515594482,
+      "caption": "A sports car is accelerating it;s engine",
+      "clip_similarity": 0.29015839099884033,
+      "visual": 1.0,
+      "scene_support": 0.6019518613532231,
+      "object_support": 0.8497604326894976,
+      "score": 0.8355136882128162,
       "conflicts": [],
-      "score": 0.8585132247886358,
       "decision": "ACCEPT"
     },
     {
-      "concept": "car movement",
-      "visual_evidence": 0.8836972865699219,
-      "scene_support": 0.7853610515594482,
+      "caption": "As the engine accelerates, its revs louder and louder as it shifts into higher gears",
+      "clip_similarity": 0.2851879596710205,
+      "visual": 0.8031206986511914,
+      "scene_support": 0.7195719452046262,
+      "object_support": 0.3746174122168637,
+      "score": 0.6495050866869235,
       "conflicts": [],
-      "score": 0.8296123573141614,
       "decision": "ACCEPT"
     },
     {
-      "concept": "traffic",
-      "visual_evidence": 0.8200182545441254,
-      "scene_support": 0.7853610515594482,
+      "caption": "A car engine is roaring, accelerating, revving and making thumping noises",
+      "clip_similarity": 0.2788269817829132,
+      "visual": 0.5511617035643205,
+      "scene_support": 0.6466033174635923,
+      "object_support": 0.42720960036950817,
+      "score": 0.5426085567756583,
       "conflicts": [],
-      "score": 0.800956792902553,
-      "decision": "ACCEPT"
-    },
-    {
-      "concept": "urban ambience",
-      "visual_evidence": 0.6350650364933879,
-      "scene_support": 0.8296637386083603,
-      "conflicts": [],
-      "score": 0.7420943226566228,
-      "decision": "ACCEPT"
-    },
-    {
-      "concept": "nature ambience",
-      "visual_evidence": 0.7806454657870978,
-      "scene_support": 0.026736125349998474,
-      "conflicts": [],
-      "score": 0.3659953285466932,
       "decision": "REPAIR"
     },
     {
-      "concept": "sharp strike",
-      "visual_evidence": 0.7766194216919071,
-      "scene_support": 0.0032985422294586897,
+      "caption": "A music is played while a fast car moves and accelerates",
+      "clip_similarity": 0.27824270725250244,
+      "visual": 0.5280185287055641,
+      "scene_support": 0.7589657548378055,
+      "object_support": 0.47415723769838614,
+      "score": 0.5811443092430831,
       "conflicts": [],
-      "score": 0.3512929379875605,
       "decision": "REPAIR"
     },
     {
-      "concept": "forest environment",
-      "visual_evidence": 0.6588932625944897,
-      "scene_support": 0.026736125349998474,
+      "caption": "A high pitched engine can be heard revving up",
+      "clip_similarity": 0.2780950963497162,
+      "visual": 0.522171645508654,
+      "scene_support": 0.8920333381344815,
+      "object_support": 0.6691098588256427,
+      "score": 0.6772116172914988,
       "conflicts": [],
-      "score": 0.3112068371100195,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "rain falling",
-      "visual_evidence": 0.6173245350730909,
-      "scene_support": 0.054052356630563736,
+      "caption": "A fast car accelerates and switch gears",
+      "clip_similarity": 0.2774322032928467,
+      "visual": 0.49591438264799,
+      "scene_support": 0.8660736599930707,
+      "object_support": 0.7225723584514301,
+      "score": 0.6749595585925463,
       "conflicts": [],
-      "score": 0.307524836929701,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "movement on leaves",
-      "visual_evidence": 0.6684965566611168,
-      "scene_support": 0.0052523487247526646,
+      "caption": "Fast cars accelerate moving away",
+      "clip_similarity": 0.2773590385913849,
+      "visual": 0.4930163212208925,
+      "scene_support": 0.7158177068937999,
+      "object_support": 0.3114653022995896,
+      "score": 0.5053914312463739,
       "conflicts": [],
-      "score": 0.30371224229611654,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "water ambience",
-      "visual_evidence": 0.6490450003839904,
-      "scene_support": 0.0009322546538896859,
+      "caption": "A car revving and accelerating faster with time",
+      "clip_similarity": 0.27066653966903687,
+      "visual": 0.22792574352097347,
+      "scene_support": 0.8277706193091796,
+      "object_support": 0.5107153090710548,
+      "score": 0.4927160759224597,
       "conflicts": [],
-      "score": 0.292582990232435,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "metallic resonance",
-      "visual_evidence": 0.6458883557915279,
-      "scene_support": 0.0032985422294586897,
+      "caption": "Fast cars accelerate and skid",
+      "clip_similarity": 0.2705615162849426,
+      "visual": 0.22376575636452065,
+      "scene_support": 0.9030539194886388,
+      "object_support": 0.552200155957535,
+      "score": 0.5260825251796604,
       "conflicts": [],
-      "score": 0.29246395833238986,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "dog barking",
-      "visual_evidence": 0.5776068852335705,
-      "scene_support": 0.04868655279278755,
+      "caption": "Sports car acceleration and braking",
+      "clip_similarity": 0.27027058601379395,
+      "visual": 0.21224197809514142,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.08489679123805657,
       "conflicts": [],
-      "score": 0.28670070239113987,
       "decision": "REJECT"
     },
     {
-      "concept": "bicycle bell",
-      "visual_evidence": 0.5703879949024093,
-      "scene_support": 0.04430268704891205,
+      "caption": "A roaring, racing engine is followed by a mid-pitched horn honking without rhythm, as vehicles speed by",
+      "clip_similarity": 0.27020809054374695,
+      "visual": 0.20976652603297297,
+      "scene_support": 0.7672037464526652,
+      "object_support": 0.35344553532352635,
+      "score": 0.4201013949460466,
       "conflicts": [],
-      "score": 0.2810410755829858,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "fabric movement",
-      "visual_evidence": 0.5952685339468924,
-      "scene_support": 0.00010411339462734759,
+      "caption": "The car zooms fast as it continues to go faster",
+      "clip_similarity": 0.2694934010505676,
+      "visual": 0.181457600948156,
+      "scene_support": 0.8468275440570221,
+      "object_support": 0.4937517195957649,
+      "score": 0.47475681947509846,
       "conflicts": [],
-      "score": 0.26792810264314665,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "bicycle chain clicking",
-      "visual_evidence": 0.5376132938703196,
-      "scene_support": 0.04430268704891205,
+      "caption": "A sports car revs several times",
+      "clip_similarity": 0.2686532139778137,
+      "visual": 0.14817770369653344,
+      "scene_support": 0.8137502287033397,
+      "object_support": 1.0,
+      "score": 0.6033961500896152,
       "conflicts": [],
-      "score": 0.26629246011854546,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "cat meowing",
-      "visual_evidence": 0.49463817401921584,
-      "scene_support": 0.016719888895750046,
+      "caption": "A series of cars accelerate while mumbled music plays in the background and outside wind and engine noise get softer",
+      "clip_similarity": 0.26766538619995117,
+      "visual": 0.10904974277491447,
+      "scene_support": 0.7271442641202415,
+      "object_support": 0.34607889398451547,
+      "score": 0.3655868445413929,
       "conflicts": [],
-      "score": 0.23178311720130965,
       "decision": "REJECT"
     },
     {
-      "concept": "wind",
-      "visual_evidence": 0.41118306373718816,
-      "scene_support": 0.08078848198056221,
+      "caption": "Cars are accelerating and passing by at a high rate of speed as the engines are roving",
+      "clip_similarity": 0.26756078004837036,
+      "visual": 0.10490628224167117,
+      "scene_support": 0.9404958677685951,
+      "object_support": 0.44930952438654087,
+      "score": 0.4589041305432092,
       "conflicts": [],
-      "score": 0.22946604377104388,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "leaves crunching",
-      "visual_evidence": 0.49067916960410546,
-      "scene_support": 0.0052523487247526646,
+      "caption": "An accelerating automobile produces a strong whooshing, buzzing noise",
+      "clip_similarity": 0.2673017680644989,
+      "visual": 0.09464679064782001,
+      "scene_support": 0.6150893597474336,
+      "object_support": 0.2223014998438999,
+      "score": 0.2890759741365281,
       "conflicts": [],
-      "score": 0.22369441812046142,
       "decision": "REJECT"
     },
     {
-      "concept": "dry foliage",
-      "visual_evidence": 0.4279324090921172,
-      "scene_support": 0.0052523487247526646,
+      "caption": "A car speeding with the humming and revving sounds of an engine",
+      "clip_similarity": 0.26726236939430237,
+      "visual": 0.09308620522760702,
+      "scene_support": 0.8425493317969659,
+      "object_support": 0.6613169715726763,
+      "score": 0.48839437310193545,
       "conflicts": [],
-      "score": 0.1954583758900667,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "metal impact",
-      "visual_evidence": 0.41963391116396215,
-      "scene_support": 0.0032985422294586897,
+      "caption": "A motor is revved up as it thunders",
+      "clip_similarity": 0.26723483204841614,
+      "visual": 0.09199544809577886,
+      "scene_support": 0.7365843594165438,
+      "object_support": 0.5143220052660615,
+      "score": 0.41207008864309314,
       "conflicts": [],
-      "score": 0.19064945824998525,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "seagulls",
-      "visual_evidence": 0.41376690143473077,
-      "scene_support": 0.0009322546538896859,
+      "caption": "A fast car accelerates",
+      "clip_similarity": 0.2662452161312103,
+      "visual": 0.05279665878897627,
+      "scene_support": 1.0,
+      "object_support": 0.7891700749708114,
+      "score": 0.557869686006834,
       "conflicts": [],
-      "score": 0.1867078457052682,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "birds chirping",
-      "visual_evidence": 0.3575909752331491,
-      "scene_support": 0.026736125349998474,
+      "caption": "A car is accelerating very fast",
+      "clip_similarity": 0.26491230726242065,
+      "visual": 0.0,
+      "scene_support": 0.5309631232895909,
+      "object_support": 0.31212106524413624,
+      "score": 0.2529252565601181,
       "conflicts": [],
-      "score": 0.17562080779741626,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "soft friction",
-      "visual_evidence": 0.3773866985162852,
-      "scene_support": 0.00010411339462734759,
-      "conflicts": [],
-      "score": 0.1698812766993734,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "cat purring",
-      "visual_evidence": 0.3379481159174206,
-      "scene_support": 0.016719888895750046,
-      "conflicts": [],
-      "score": 0.1612725910555018,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "crowd cheering",
-      "visual_evidence": 0.3422880546456718,
-      "scene_support": 0.011554302647709846,
-      "conflicts": [],
-      "score": 0.16038449104679273,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "thunder",
-      "visual_evidence": 0.24883875793263863,
-      "scene_support": 0.054052356630563736,
-      "conflicts": [],
-      "score": 0.14170623721649744,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "cloth rubbing",
-      "visual_evidence": 0.2956294854645463,
-      "scene_support": 0.00010411339462734759,
-      "conflicts": [],
-      "score": 0.13309053082609087,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "shoreline",
-      "visual_evidence": 0.27618344478810475,
-      "scene_support": 0.0009322546538896859,
-      "conflicts": [],
-      "score": 0.12479529021428647,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "ocean waves",
-      "visual_evidence": 0.12238173852953499,
-      "scene_support": 0.0009322546538896859,
-      "conflicts": [],
-      "score": 0.055584522397930075,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "keyboard typing",
-      "visual_evidence": 0.16459463249033054,
-      "scene_support": 0.001527448184788227,
-      "conflicts": [
-        "'keyboard typing' is an indoor sound but the image is outdoors (p=0.92).",
-        "'keyboard typing' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "office ambience",
-      "visual_evidence": 0.19492867127475372,
-      "scene_support": 0.001527448184788227,
-      "conflicts": [
-        "'office ambience' is an indoor sound but the image is outdoors (p=0.92).",
-        "'office ambience' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "indoor environment",
-      "visual_evidence": 0.4891051407873481,
-      "scene_support": 0.002999760676175356,
-      "conflicts": [
-        "'indoor environment' is an indoor sound but the image is outdoors (p=0.92).",
-        "'indoor environment' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "mouse clicks",
-      "visual_evidence": 0.5362456667676928,
-      "scene_support": 0.001527448184788227,
-      "conflicts": [
-        "'mouse clicks' is an indoor sound but the image is outdoors (p=0.92).",
-        "'mouse clicks' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "applause",
-      "visual_evidence": 0.4204572213114954,
-      "scene_support": 0.011554302647709846,
-      "conflicts": [
-        "'applause' is an indoor sound but the image is outdoors (p=0.92).",
-        "'applause' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "dishes clattering",
-      "visual_evidence": 0.2054268963220909,
-      "scene_support": 0.0014723124913871288,
-      "conflicts": [
-        "'dishes clattering' is an indoor sound but the image is outdoors (p=0.92).",
-        "'dishes clattering' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "sizzling pan",
-      "visual_evidence": 0.40418167864725374,
-      "scene_support": 0.0014723124913871288,
-      "conflicts": [
-        "'sizzling pan' is an indoor sound but the image is outdoors (p=0.92).",
-        "'sizzling pan' (indoor) contradicts the recognised outdoor scene 'busy road'."
-      ],
-      "score": 0.0,
       "decision": "REJECT"
     }
   ],
-  "recognition": {
-    "scene_probs": {
-      "busy road": 0.7853610515594482,
-      "office": 0.001527448184788227,
-      "beach": 0.0009322546538896859,
-      "forest": 0.026736125349998474,
-      "cloth scratch": 0.00010411339462734759,
-      "leaves": 0.0052523487247526646,
-      "metal hit": 0.0032985422294586897,
-      "rainstorm": 0.054052356630563736,
-      "concert": 0.011554302647709846,
-      "kitchen": 0.0014723124913871288,
-      "cat": 0.016719888895750046,
-      "dog": 0.04868655279278755,
-      "bicycle": 0.04430268704891205
-    },
-    "top_scene": "busy road",
-    "scene_confidence": 0.7853610515594482,
-    "scene_margin": 0.7313086986541748,
-    "env_probs": {
-      "indoor": 0.08263644576072693,
-      "outdoor": 0.9173635244369507
-    },
-    "concept_sims": {
-      "traffic": 0.19593244791030884,
-      "engine sounds": 0.24020040035247803,
-      "car movement": 0.21227897703647614,
-      "urban ambience": 0.1651708483695984,
-      "keyboard typing": 0.09554500877857208,
-      "office ambience": 0.10213333368301392,
-      "indoor environment": 0.1460709273815155,
-      "mouse clicks": 0.15210598707199097,
-      "ocean waves": 0.08449804782867432,
-      "seagulls": 0.13632820546627045,
-      "shoreline": 0.11667013168334961,
-      "water ambience": 0.1671152412891388,
-      "wind": 0.13598743081092834,
-      "birds chirping": 0.12873992323875427,
-      "nature ambience": 0.1880367398262024,
-      "forest environment": 0.16850626468658447,
-      "cloth rubbing": 0.11971525102853775,
-      "fabric movement": 0.15979433059692383,
-      "soft friction": 0.13146239519119263,
-      "leaves crunching": 0.14627224206924438,
-      "dry foliage": 0.13818588852882385,
-      "movement on leaves": 0.16988146305084229,
-      "metal impact": 0.13709969818592072,
-      "metallic resonance": 0.1666732281446457,
-      "sharp strike": 0.18729017674922943,
-      "rain falling": 0.16274815797805786,
-      "thunder": 0.11215263605117798,
-      "crowd cheering": 0.1265895962715149,
-      "applause": 0.13720771670341492,
-      "dishes clattering": 0.10422943532466888,
-      "sizzling pan": 0.13506072759628296,
-      "cat meowing": 0.14677849411964417,
-      "cat purring": 0.12597155570983887,
-      "dog barking": 0.15746653079986572,
-      "bicycle bell": 0.1565229445695877,
-      "bicycle chain clicking": 0.15228179097175598
-    }
-  }
+  "top_scenes": [
+    [
+      "raceway",
+      0.17046372592449188
+    ],
+    [
+      "driveway",
+      0.10948889702558517
+    ],
+    [
+      "auto showroom",
+      0.08928896486759186
+    ],
+    [
+      "outdoor garage",
+      0.06718501448631287
+    ],
+    [
+      "auto factory",
+      0.0498758926987648
+    ]
+  ],
+  "top_objects": [
+    [
+      "sports car",
+      0.9124919772148132
+    ],
+    [
+      "race car",
+      0.028085000813007355
+    ],
+    [
+      "convertible",
+      0.02090195193886757
+    ],
+    [
+      "grille",
+      0.0051770806312561035
+    ],
+    [
+      "passenger car",
+      0.0023497636429965496
+    ]
+  ]
 }

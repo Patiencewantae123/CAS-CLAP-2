@@ -1,401 +1,277 @@
 {
   "id": "bike",
   "image": "eval\\smoke_images\\bike.jpg",
-  "label": "bicycle",
   "gt_audio": null,
-  "top_scene": "bicycle",
-  "scene_confidence": 0.9993584752082825,
-  "scene_correct": true,
-  "status": "ACCEPT",
-  "caption": "Bicycle",
-  "baseline_concepts": [
-    "bicycle bell",
-    "bicycle chain clicking",
-    "metallic resonance",
-    "engine sounds"
+  "gt_captions": [],
+  "top_scene": [
+    "outdoor garage",
+    0.07522737979888916
   ],
-  "verified_concepts": [
-    "bicycle bell",
-    "bicycle chain clicking",
-    "urban ambience"
+  "top_object": [
+    "tandem bicycle",
+    0.7966655492782593
   ],
-  "repaired_concepts": [],
+  "env_probs": {
+    "indoor": 0.1712319701910019,
+    "outdoor": 0.8287680298089981
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 7,
   "prompts": {
-    "baseline": "bicycle bell, bicycle chain clicking, metallic resonance, engine sounds",
-    "casv": "bicycle bell, bicycle chain clicking, urban ambience"
+    "baseline": "Person introducing a bike as the engine runs in resting state in background",
+    "casv": "Person introducing a bike as the engine runs in resting state in background"
   },
   "metrics": {},
   "verdicts": [
     {
-      "concept": "bicycle bell",
-      "visual_evidence": 0.9490542151943756,
-      "scene_support": 0.9993584752082825,
+      "caption": "Person introducing a bike as the engine runs in resting state in background",
+      "clip_similarity": 0.29658883810043335,
+      "visual": 1.0,
+      "scene_support": 0.8298049900037695,
+      "object_support": 0.9306850107017698,
+      "score": 0.9281470002116619,
       "conflicts": [],
-      "score": 0.9767215582020243,
       "decision": "ACCEPT"
     },
     {
-      "concept": "bicycle chain clicking",
-      "visual_evidence": 0.9237286644253186,
-      "scene_support": 0.9993584752082825,
+      "caption": "Wind is blowing and birds chirp in the background, while an adult male speaks, whirring of bicycle gears are present, and rhythmic clacking occurs",
+      "clip_similarity": 0.2960818409919739,
+      "visual": 0.984475864221302,
+      "scene_support": 1.0,
+      "object_support": 0.6657718752943392,
+      "score": 0.8935219082768227,
       "conflicts": [],
-      "score": 0.9653250603559488,
       "decision": "ACCEPT"
     },
     {
-      "concept": "urban ambience",
-      "visual_evidence": 0.5251928125960732,
-      "scene_support": 0.9993741942562337,
+      "caption": "A motorized bicycle accelerating and revving, followed by a males voice",
+      "clip_similarity": 0.28730809688568115,
+      "visual": 0.7158258216056694,
+      "scene_support": 0.6991778756459378,
+      "object_support": 0.8958248482427337,
+      "score": 0.7648311458088692,
       "conflicts": [],
-      "score": 0.7859925725091615,
       "decision": "ACCEPT"
     },
     {
-      "concept": "metallic resonance",
-      "visual_evidence": 0.7276471408294186,
-      "scene_support": 1.5905285408734926e-06,
+      "caption": "A man speaking as heavy machinery hums in the distance followed by bicycles pedaling and a man faintly coughing before wind blows into a microphone",
+      "clip_similarity": 0.28364652395248413,
+      "visual": 0.6037092938580562,
+      "scene_support": 0.0,
+      "object_support": 0.3134062807533786,
+      "score": 0.33550560176923605,
       "conflicts": [],
-      "score": 0.3274420881639359,
       "decision": "REJECT"
     },
     {
-      "concept": "engine sounds",
-      "visual_evidence": 0.7271177568374227,
-      "scene_support": 1.5719047951279208e-05,
+      "caption": "A small motor bike running",
+      "clip_similarity": 0.2790248394012451,
+      "visual": 0.4621943674361815,
+      "scene_support": 0.7892083653419474,
+      "object_support": 0.8467844348523675,
+      "score": 0.6756755870327671,
       "conflicts": [],
-      "score": 0.32721163605321346,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "nature ambience",
-      "visual_evidence": 0.6983178273443682,
-      "scene_support": 0.0002215723361587152,
+      "caption": "Birds chirping in the background as a man talks and a bike is moved",
+      "clip_similarity": 0.2772692143917084,
+      "visual": 0.4084375302278978,
+      "scene_support": 0.8433836405365042,
+      "object_support": 0.6148415196188286,
+      "score": 0.6008425601377589,
       "conflicts": [],
-      "score": 0.314364887089853,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "wind",
-      "visual_evidence": 0.6688129303529151,
-      "scene_support": 0.0002238284898794518,
+      "caption": "A cycle engine stops, an adult male speaks, and the engine starts up",
+      "clip_similarity": 0.2757974863052368,
+      "visual": 0.3633735520266608,
+      "scene_support": 0.9818884525644268,
+      "object_support": 0.6566810547820184,
+      "score": 0.6369202730145979,
       "conflicts": [],
-      "score": 0.3010889243282455,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "movement on leaves",
-      "visual_evidence": 0.6688495629723575,
-      "scene_support": 1.9302406144561246e-05,
+      "caption": "A bicycle being bounced off the ground",
+      "clip_similarity": 0.27420181035995483,
+      "visual": 0.31451431867002727,
+      "scene_support": 0.8931701172350284,
+      "object_support": 1.0,
+      "score": 0.6937567626385195,
       "conflicts": [],
-      "score": 0.3009929196609404,
-      "decision": "REJECT"
+      "decision": "ACCEPT"
     },
     {
-      "concept": "birds chirping",
-      "visual_evidence": 0.6683903879564554,
-      "scene_support": 0.0002215723361587152,
+      "caption": "Vibrating humming is present, an adult male speaks, and a motorcycle engine starts up and idles",
+      "clip_similarity": 0.2741720974445343,
+      "visual": 0.3136045159794934,
+      "scene_support": 0.7599812004065293,
+      "object_support": 0.3849889409632567,
+      "score": 0.4689328488027331,
       "conflicts": [],
-      "score": 0.30089753936529223,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "forest environment",
-      "visual_evidence": 0.6537817248033079,
-      "scene_support": 0.0002215723361587152,
+      "caption": "A man rides a bicycle with his child",
+      "clip_similarity": 0.27383866906166077,
+      "visual": 0.3033950149747865,
+      "scene_support": 0.21398708840103253,
+      "object_support": 0.9088741868116521,
+      "score": 0.45821638855372,
       "conflicts": [],
-      "score": 0.29432364094637586,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     },
     {
-      "concept": "sharp strike",
-      "visual_evidence": 0.651423007390349,
-      "scene_support": 1.5905285408734926e-06,
-      "conflicts": [],
-      "score": 0.2931412281163545,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "dog barking",
-      "visual_evidence": 0.6365108310874501,
-      "scene_support": 0.00016431440599262714,
-      "conflicts": [],
-      "score": 0.2865202469126485,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "water ambience",
-      "visual_evidence": 0.627798300023269,
-      "scene_support": 3.803902188792563e-07,
-      "conflicts": [],
-      "score": 0.28250944422509144,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "cat meowing",
-      "visual_evidence": 0.6002616428200952,
-      "scene_support": 9.326120198238641e-05,
-      "conflicts": [],
-      "score": 0.27016903293013317,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "dry foliage",
-      "visual_evidence": 0.5475894344455007,
-      "scene_support": 1.9302406144561246e-05,
-      "conflicts": [],
-      "score": 0.2464258618238548,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "shoreline",
-      "visual_evidence": 0.5271426839914131,
-      "scene_support": 3.803902188792563e-07,
-      "conflicts": [],
-      "score": 0.23721441701075627,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "crowd cheering",
-      "visual_evidence": 0.5261223296117804,
-      "scene_support": 9.727510769153014e-05,
-      "conflicts": [],
-      "score": 0.23680854963453155,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "cat purring",
-      "visual_evidence": 0.5194803423879713,
-      "scene_support": 9.326120198238641e-05,
-      "conflicts": [],
-      "score": 0.23381744773567736,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "leaves crunching",
-      "visual_evidence": 0.5039274483719269,
-      "scene_support": 1.9302406144561246e-05,
-      "conflicts": [],
-      "score": 0.22677796809074663,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "rain falling",
-      "visual_evidence": 0.4968537268338628,
-      "scene_support": 2.25615372073662e-06,
-      "conflicts": [],
-      "score": 0.22358541795978465,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "metal impact",
-      "visual_evidence": 0.44256290482007643,
-      "scene_support": 1.5905285408734926e-06,
-      "conflicts": [],
-      "score": 0.1991541819597319,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "soft friction",
-      "visual_evidence": 0.42619163420389433,
-      "scene_support": 6.316940471151611e-06,
-      "conflicts": [],
-      "score": 0.1917897097090116,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "fabric movement",
-      "visual_evidence": 0.376948128969994,
-      "scene_support": 6.316940471151611e-06,
-      "conflicts": [],
-      "score": 0.16963013235375646,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "car movement",
-      "visual_evidence": 0.3553089262812097,
-      "scene_support": 1.5719047951279208e-05,
-      "conflicts": [],
-      "score": 0.15989766230291755,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "seagulls",
-      "visual_evidence": 0.3137380176781342,
-      "scene_support": 3.803902188792563e-07,
-      "conflicts": [],
-      "score": 0.14118231716978077,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "cloth rubbing",
-      "visual_evidence": 0.28529457312378026,
-      "scene_support": 6.316940471151611e-06,
-      "conflicts": [],
-      "score": 0.12838603222296027,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "traffic",
-      "visual_evidence": 0.2665760032883249,
-      "scene_support": 1.5719047951279208e-05,
-      "conflicts": [],
-      "score": 0.11996784695611942,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "thunder",
-      "visual_evidence": 0.15015158279854665,
-      "scene_support": 2.25615372073662e-06,
-      "conflicts": [],
-      "score": 0.0675694531438924,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "ocean waves",
-      "visual_evidence": 0.10633950990963689,
-      "scene_support": 3.803902188792563e-07,
-      "conflicts": [],
-      "score": 0.047852988673956987,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "keyboard typing",
-      "visual_evidence": 0.2387630280076988,
-      "scene_support": 1.9478524336591363e-05,
+      "caption": "Sound of riding vehicle followed by a man and kid speaking",
+      "clip_similarity": 0.27113068103790283,
+      "visual": 0.22047703957322315,
+      "scene_support": 0.7863817462627458,
+      "object_support": 0.5171017204028673,
+      "score": 0.4792358558289732,
       "conflicts": [
-        "'keyboard typing' is an indoor sound but the image is outdoors (p=0.99).",
-        "'keyboard typing' (indoor) contradicts the recognised outdoor scene 'bicycle'."
+        "names 'cars on a road', not visible in image (z=-1.56)"
       ],
-      "score": 0.0,
       "decision": "REJECT"
     },
     {
-      "concept": "office ambience",
-      "visual_evidence": 0.34931740663941974,
-      "scene_support": 1.9478524336591363e-05,
-      "conflicts": [
-        "'office ambience' is an indoor sound but the image is outdoors (p=0.99).",
-        "'office ambience' (indoor) contradicts the recognised outdoor scene 'bicycle'."
-      ],
-      "score": 0.0,
+      "caption": "A bike being drive at top speed",
+      "clip_similarity": 0.27041196823120117,
+      "visual": 0.1984702174218546,
+      "scene_support": 0.8855844335548886,
+      "object_support": 0.960484648887763,
+      "score": 0.6332088117015373,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sound of a girl laughing and man speaking and bike riding sound",
+      "clip_similarity": 0.2696082890033722,
+      "visual": 0.17386174284249006,
+      "scene_support": 0.8317030809384528,
+      "object_support": 0.6925149321355146,
+      "score": 0.5268101010591862,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine is idling and vibrating, and adult male and adult female speak",
+      "clip_similarity": 0.26768243312835693,
+      "visual": 0.1148924753750997,
+      "scene_support": 0.7065082856583913,
+      "object_support": 0.5483158110122672,
+      "score": 0.4224042191512374,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Static is ongoing while many flying insects buzz and wooden thumping and scraping occur",
+      "clip_similarity": 0.26651257276535034,
+      "visual": 0.07907161798872465,
+      "scene_support": 0.7129574050835246,
+      "object_support": 0.0,
+      "score": 0.24551586872054723,
+      "conflicts": [],
       "decision": "REJECT"
     },
     {
-      "concept": "indoor environment",
-      "visual_evidence": 0.4128862472537219,
-      "scene_support": 1.9572724674787878e-05,
+      "caption": "A man speaking, then honking a bicycle horn",
+      "clip_similarity": 0.265321284532547,
+      "visual": 0.04259464411840393,
+      "scene_support": 0.4314082040662471,
+      "object_support": 0.42730688908159653,
+      "score": 0.2746523855917146,
       "conflicts": [
-        "'indoor environment' is an indoor sound but the image is outdoors (p=0.99).",
-        "'indoor environment' (indoor) contradicts the recognised outdoor scene 'bicycle'."
+        "names 'cars on a road', not visible in image (z=-1.56)"
       ],
-      "score": 0.0,
       "decision": "REJECT"
     },
     {
-      "concept": "mouse clicks",
-      "visual_evidence": 0.30363688524817606,
-      "scene_support": 1.9478524336591363e-05,
+      "caption": "Wind sound, motor, vehicle",
+      "clip_similarity": 0.26495346426963806,
+      "visual": 0.03133207159426268,
+      "scene_support": 0.809787240133792,
+      "object_support": 0.3284624853439344,
+      "score": 0.354007746281023,
       "conflicts": [
-        "'mouse clicks' is an indoor sound but the image is outdoors (p=0.99).",
-        "'mouse clicks' (indoor) contradicts the recognised outdoor scene 'bicycle'."
+        "names 'cars on a road', not visible in image (z=-1.56)"
       ],
-      "score": 0.0,
       "decision": "REJECT"
     },
     {
-      "concept": "applause",
-      "visual_evidence": 0.3581907418650047,
-      "scene_support": 9.727510769153014e-05,
-      "conflicts": [
-        "'applause' is an indoor sound but the image is outdoors (p=0.99).",
-        "'applause' (indoor) contradicts the recognised outdoor scene 'bicycle'."
-      ],
-      "score": 0.0,
+      "caption": "Wind blowing as the sound of a bicycle chain rattles by",
+      "clip_similarity": 0.2644070088863373,
+      "visual": 0.014599732443180677,
+      "scene_support": 0.6606000601205273,
+      "object_support": 0.5615785354002851,
+      "score": 0.372493471633516,
+      "conflicts": [],
       "decision": "REJECT"
     },
     {
-      "concept": "dishes clattering",
-      "visual_evidence": 0.2657102485394269,
-      "scene_support": 9.420033819651508e-08,
-      "conflicts": [
-        "'dishes clattering' is an indoor sound but the image is outdoors (p=0.99).",
-        "'dishes clattering' (indoor) contradicts the recognised outdoor scene 'bicycle'."
-      ],
-      "score": 0.0,
+      "caption": "A motor cycle engine is idling then gets switched off and is switched on again",
+      "clip_similarity": 0.2640033960342407,
+      "visual": 0.002241199004966044,
+      "scene_support": 0.678222054690594,
+      "object_support": 0.5269148697761885,
+      "score": 0.3624375569420212,
+      "conflicts": [],
       "decision": "REJECT"
     },
     {
-      "concept": "sizzling pan",
-      "visual_evidence": 0.2891881377070063,
-      "scene_support": 9.420033819651508e-08,
-      "conflicts": [
-        "'sizzling pan' is an indoor sound but the image is outdoors (p=0.99).",
-        "'sizzling pan' (indoor) contradicts the recognised outdoor scene 'bicycle'."
-      ],
-      "score": 0.0,
-      "decision": "REJECT"
+      "caption": "A man speaks followed by a bike raising sound",
+      "clip_similarity": 0.26393020153045654,
+      "visual": 0.0,
+      "scene_support": 0.8993921146679772,
+      "object_support": 0.7789706164154431,
+      "score": 0.5035088193250261,
+      "conflicts": [],
+      "decision": "REPAIR"
     }
   ],
-  "recognition": {
-    "scene_probs": {
-      "busy road": 1.5719047951279208e-05,
-      "office": 1.9478524336591363e-05,
-      "beach": 3.803902188792563e-07,
-      "forest": 0.0002215723361587152,
-      "cloth scratch": 6.316940471151611e-06,
-      "leaves": 1.9302406144561246e-05,
-      "metal hit": 1.5905285408734926e-06,
-      "rainstorm": 2.25615372073662e-06,
-      "concert": 9.727510769153014e-05,
-      "kitchen": 9.420033819651508e-08,
-      "cat": 9.326120198238641e-05,
-      "dog": 0.00016431440599262714,
-      "bicycle": 0.9993584752082825
-    },
-    "top_scene": "bicycle",
-    "scene_confidence": 0.9993584752082825,
-    "scene_margin": 0.9991369247436523,
-    "env_probs": {
-      "indoor": 0.01424506027251482,
-      "outdoor": 0.9857549667358398
-    },
-    "concept_sims": {
-      "traffic": 0.1463795006275177,
-      "engine sounds": 0.2197895050048828,
-      "car movement": 0.16171959042549133,
-      "urban ambience": 0.1873910129070282,
-      "keyboard typing": 0.14094744622707367,
-      "office ambience": 0.16075199842453003,
-      "indoor environment": 0.17070138454437256,
-      "mouse clicks": 0.15308721363544464,
-      "ocean waves": 0.10523152351379395,
-      "seagulls": 0.15483161807060242,
-      "shoreline": 0.1876792162656784,
-      "water ambience": 0.20293913781642914,
-      "wind": 0.20957359671592712,
-      "birds chirping": 0.20950332283973694,
-      "nature ambience": 0.21460290253162384,
-      "forest environment": 0.20710031688213348,
-      "cloth rubbing": 0.14983297884464264,
-      "fabric movement": 0.1651563048362732,
-      "soft friction": 0.17271488904953003,
-      "leaves crunching": 0.18425333499908447,
-      "dry foliage": 0.19071045517921448,
-      "movement on leaves": 0.2095796912908554,
-      "metal impact": 0.17517057061195374,
-      "metallic resonance": 0.2198878824710846,
-      "sharp strike": 0.20671692490577698,
-      "rain falling": 0.18321064114570618,
-      "thunder": 0.11979758739471436,
-      "crowd cheering": 0.18752838671207428,
-      "applause": 0.16218236088752747,
-      "dishes clattering": 0.14621615409851074,
-      "sizzling pan": 0.1505337953567505,
-      "cat meowing": 0.1986561119556427,
-      "cat purring": 0.18654729425907135,
-      "dog barking": 0.20431987941265106,
-      "bicycle bell": 0.29145070910453796,
-      "bicycle chain clicking": 0.2755835950374603
-    }
-  }
+  "top_scenes": [
+    [
+      "outdoor garage",
+      0.07522737979888916
+    ],
+    [
+      "campus",
+      0.06450316309928894
+    ],
+    [
+      "park",
+      0.061528805643320084
+    ],
+    [
+      "promenade",
+      0.055648911744356155
+    ],
+    [
+      "cockpit",
+      0.047572359442710876
+    ]
+  ],
+  "top_objects": [
+    [
+      "tandem bicycle",
+      0.7966655492782593
+    ],
+    [
+      "tricycle",
+      0.10728298872709274
+    ],
+    [
+      "unicycle",
+      0.02471707947552204
+    ],
+    [
+      "scooter",
+      0.020875772461295128
+    ],
+    [
+      "mountain bike",
+      0.020245498046278954
+    ]
+  ]
 }

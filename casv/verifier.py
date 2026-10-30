@@ -1,200 +1,224 @@
 # =============================================================================
 # CAS-V: Conflict-Aware Semantic Verification
 #
-# 1. CLIP zero-shot recognition: scene, indoor/outdoor, per-concept evidence.
-# 2. Verification of every candidate sound concept:
-#       score = w_visual * visual_evidence + w_scene * scene_support
-#               - conflict_penalty * n_conflicts
-#    -> ACCEPT / REPAIR / REJECT per concept.
-# 3. Repair: if too few concepts are accepted, fill from the recognised
-#    scene's canonical concepts that have no explicit conflict.
-#
-# The unverified baseline is the top-k concepts by raw CLIP similarity, which
-# isolates the contribution of verification in the comparison.
+# 1. Recognition (CLIP zero-shot)
+#      scene  : Places365 (365 classes); P(indoor) from the official IO labels
+#      object : ImageNet (1000 classes)
+#      source : visibility of each sound source in vocab.SOUND_SOURCES
+# 2. Candidate retrieval: top-k AudioCaps train captions by image-text
+#    similarity. The top-1 caption, unverified, is the baseline prompt.
+# 3. Verification of every candidate caption
+#      score = w_visual * visual + w_scene * scene_support
+#              + w_object * object_support
+#    with explicit conflicts (REJECT):
+#      - environment: caption is indoor/outdoor-specific, image is the other
+#      - hallucinated source: caption names a sound source the image lacks
+# 4. Selection: best ACCEPT caption. Otherwise REPAIR with the best
+#    conflict-free caption, or, if every candidate conflicts, a prompt built
+#    from the recognised scene and object.
 # =============================================================================
 
-from dataclasses import dataclass, field
+import hashlib
+from dataclasses import dataclass
+from pathlib import Path
 
 import numpy as np
 import torch
 from PIL import Image
 from transformers import CLIPModel, CLIPProcessor
 
-from .concepts import CONCEPTS, SCENES, ENV_PROMPTS
+from . import vocab
 
 CLIP_MODEL_ID = "openai/clip-vit-base-patch32"
+CACHE_DIR = vocab.DATA_DIR / "cache"
 
 
 @dataclass
 class VerifierConfig:
-    w_visual: float = 0.45
-    w_scene: float = 0.55
-    conflict_penalty: float = 0.35
-    accept_threshold: float = 0.55
-    repair_threshold: float = 0.35
+    retrieve_k: int = 20
+    support_top_n: int = 5
+    w_visual: float = 0.40
+    w_scene: float = 0.30
+    w_object: float = 0.30
+    accept_threshold: float = 0.60
+    repair_threshold: float = 0.40
     env_conflict_confidence: float = 0.70
-    uncertainty_threshold: float = 0.35
-    max_concepts: int = 4
-    min_concepts: int = 2
-
-
-@dataclass
-class ConceptVerdict:
-    concept: str
-    visual_evidence: float
-    scene_support: float
-    conflicts: list = field(default_factory=list)
-    score: float = 0.0
-    decision: str = "REJECT"
+    source_absent_z: float = 0.0
+    uncertainty_threshold: float = 0.10
 
 
 class CLIPRecognizer:
     def __init__(self, model_id=CLIP_MODEL_ID, device="cpu"):
+        self.model_id = model_id
         self.device = device
         self.model = CLIPModel.from_pretrained(model_id).to(device).eval()
         self.processor = CLIPProcessor.from_pretrained(model_id)
-        self._text_cache = {}
+        self.logit_scale = self.model.logit_scale.exp().item()
+
+    @staticmethod
+    def _tensor(output):
+        return output if torch.is_tensor(output) else output.pooler_output
 
     @torch.no_grad()
-    def _text_embeddings(self, texts):
-        key = tuple(texts)
-        if key not in self._text_cache:
-            inputs = self.processor(text=list(texts), return_tensors="pt", padding=True).to(self.device)
-            emb = self.model.get_text_features(**inputs)
-            if not torch.is_tensor(emb):
-                emb = emb.pooler_output
-            self._text_cache[key] = torch.nn.functional.normalize(emb, dim=-1)
-        return self._text_cache[key]
+    def encode_texts(self, texts, batch_size=256):
+        key = hashlib.sha1(("\n".join(texts) + self.model_id).encode()).hexdigest()[:16]
+        cache = CACHE_DIR / f"clip_text_{key}.npy"
+        if cache.exists():
+            return np.load(cache)
+        chunks = []
+        for start in range(0, len(texts), batch_size):
+            inputs = self.processor(text=texts[start:start + batch_size], return_tensors="pt",
+                                    padding=True, truncation=True, max_length=77).to(self.device)
+            emb = self._tensor(self.model.get_text_features(**inputs))
+            chunks.append(torch.nn.functional.normalize(emb, dim=-1).cpu().numpy())
+        embeddings = np.concatenate(chunks).astype(np.float32)
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        np.save(cache, embeddings)
+        return embeddings
 
     @torch.no_grad()
-    def image_embedding(self, image):
+    def encode_image(self, image):
         inputs = self.processor(images=image, return_tensors="pt").to(self.device)
-        emb = self.model.get_image_features(**inputs)
-        if not torch.is_tensor(emb):
-            emb = emb.pooler_output
-        return torch.nn.functional.normalize(emb, dim=-1)[0]
+        emb = self._tensor(self.model.get_image_features(**inputs))
+        return torch.nn.functional.normalize(emb, dim=-1)[0].cpu().numpy()
 
-    def similarities(self, image_emb, texts):
-        return (self._text_embeddings(texts) @ image_emb).cpu().numpy()
-
-    def probabilities(self, image_emb, texts):
-        logits = self.model.logit_scale.exp().item() * self.similarities(image_emb, texts)
-        logits = logits - logits.max()
-        exp = np.exp(logits)
+    def softmax(self, sims):
+        logits = self.logit_scale * sims
+        exp = np.exp(logits - logits.max())
         return exp / exp.sum()
 
 
-def _sigmoid(x):
-    return 1.0 / (1.0 + np.exp(-x))
+def _minmax(values):
+    values = np.asarray(values, dtype=np.float64)
+    span = values.max() - values.min()
+    return (values - values.min()) / span if span > 1e-8 else np.full_like(values, 0.5)
 
 
 class CASVerifier:
     def __init__(self, recognizer, config=None):
         self.recognizer = recognizer
         self.config = config or VerifierConfig()
-        self.scene_names = list(SCENES)
-        self.concept_names = list(CONCEPTS)
+
+        self.scene_names, self.scene_envs = vocab.load_places365()
+        self.object_names = vocab.load_imagenet()
+        self.captions = vocab.load_audiocaps_captions("train")
+        self.source_names = list(dict.fromkeys(vocab.SOUND_SOURCES.values()))
+
+        print(f"[*] Vocabulary: {len(self.scene_names)} Places365 scenes, {len(self.object_names)} "
+              f"ImageNet objects, {len(self.captions)} AudioCaps train captions")
+        encode = recognizer.encode_texts
+        self.scene_emb = encode([f"a photo of a {n}" for n in self.scene_names])
+        self.object_emb = encode([f"a photo of a {n}" for n in self.object_names])
+        self.source_emb = encode([f"a photo of {s}" for s in self.source_names])
+        self.caption_emb = encode(self.captions)
+        self.indoor_mask = np.array([env == "indoor" for env in self.scene_envs])
 
     def recognise(self, image):
-        image_emb = self.recognizer.image_embedding(image)
+        cfg = self.config
+        image_emb = self.recognizer.encode_image(image)
 
-        scene_probs = self.recognizer.probabilities(
-            image_emb, [SCENES[name]["prompt"] for name in self.scene_names])
-        env_probs = self.recognizer.probabilities(
-            image_emb, [ENV_PROMPTS["indoor"], ENV_PROMPTS["outdoor"]])
-        concept_sims = self.recognizer.similarities(
-            image_emb, [f"a photo of {CONCEPTS[name]['cue']}" for name in self.concept_names])
+        scene_probs = self.recognizer.softmax(self.scene_emb @ image_emb)
+        object_probs = self.recognizer.softmax(self.object_emb @ image_emb)
+        source_sims = self.source_emb @ image_emb
+        source_z = (source_sims - source_sims.mean()) / (source_sims.std() + 1e-8)
 
-        order = np.argsort(scene_probs)[::-1]
+        top_scenes = np.argsort(scene_probs)[::-1][:cfg.support_top_n]
+        top_objects = np.argsort(object_probs)[::-1][:cfg.support_top_n]
+        p_indoor = float(scene_probs[self.indoor_mask].sum())
+
         return {
-            "scene_probs": dict(zip(self.scene_names, scene_probs.tolist())),
-            "top_scene": self.scene_names[order[0]],
-            "scene_confidence": float(scene_probs[order[0]]),
-            "scene_margin": float(scene_probs[order[0]] - scene_probs[order[1]]),
-            "env_probs": {"indoor": float(env_probs[0]), "outdoor": float(env_probs[1])},
-            "concept_sims": dict(zip(self.concept_names, concept_sims.tolist())),
+            "image_emb": image_emb,
+            "top_scenes": [(self.scene_names[i], float(scene_probs[i])) for i in top_scenes],
+            "top_objects": [(self.object_names[i], float(object_probs[i])) for i in top_objects],
+            "scene_idx": top_scenes,
+            "scene_w": scene_probs[top_scenes],
+            "object_idx": top_objects,
+            "object_w": object_probs[top_objects],
+            "env_probs": {"indoor": p_indoor, "outdoor": 1.0 - p_indoor},
+            "source_z": dict(zip(self.source_names, source_z.tolist())),
         }
 
-    def _verify_concept(self, name, recognition, visual_z):
+    def _conflicts(self, caption, recognition):
         cfg = self.config
-        scene_probs = recognition["scene_probs"]
-        env_probs = recognition["env_probs"]
-        top_scene = recognition["top_scene"]
-
-        scene_support = sum(p for s, p in scene_probs.items() if name in SCENES[s]["concepts"])
-
         conflicts = []
-        concept_env = CONCEPTS[name]["env"]
-        if concept_env == "indoor" and env_probs["outdoor"] >= cfg.env_conflict_confidence:
-            conflicts.append(f"'{name}' is an indoor sound but the image is outdoors "
-                             f"(p={env_probs['outdoor']:.2f}).")
-        if concept_env == "outdoor" and env_probs["indoor"] >= cfg.env_conflict_confidence:
-            conflicts.append(f"'{name}' is an outdoor sound but the image is indoors "
-                             f"(p={env_probs['indoor']:.2f}).")
-        scene_env = SCENES[top_scene]["env"]
-        if (recognition["scene_confidence"] >= 0.5 and scene_env != "any"
-                and concept_env not in ("any", scene_env)):
-            conflicts.append(f"'{name}' ({concept_env}) contradicts the recognised "
-                             f"{scene_env} scene '{top_scene}'.")
-
-        visual = float(_sigmoid(visual_z[name]))
-        score = cfg.w_visual * visual + cfg.w_scene * scene_support - cfg.conflict_penalty * len(conflicts)
-        score = float(np.clip(score, 0.0, 1.0))
-
-        if conflicts:
-            decision = "REJECT"
-        elif score >= cfg.accept_threshold:
-            decision = "ACCEPT"
-        elif score >= cfg.repair_threshold:
-            decision = "REPAIR"
-        else:
-            decision = "REJECT"
-
-        return ConceptVerdict(name, visual, float(scene_support), conflicts, score, decision)
+        env = vocab.caption_environment(caption)
+        env_probs = recognition["env_probs"]
+        if env != "any":
+            other = "outdoor" if env == "indoor" else "indoor"
+            if env_probs[other] >= cfg.env_conflict_confidence:
+                conflicts.append(f"{env} sound, but image is {other} (p={env_probs[other]:.2f})")
+        for source in vocab.mentioned_sources(caption):
+            z = recognition["source_z"][source]
+            if z < cfg.source_absent_z:
+                conflicts.append(f"names '{source}', not visible in image (z={z:+.2f})")
+        return conflicts
 
     def verify(self, image):
         cfg = self.config
-        recognition = self.recognise(image)
+        rec = self.recognise(image)
 
-        sims = np.array([recognition["concept_sims"][n] for n in self.concept_names])
-        z = (sims - sims.mean()) / (sims.std() + 1e-8)
-        visual_z = dict(zip(self.concept_names, z))
+        sims = self.caption_emb @ rec["image_emb"]
+        candidates = np.argsort(sims)[::-1][:cfg.retrieve_k]
+        cand_emb = self.caption_emb[candidates]
 
-        verdicts = sorted(
-            (self._verify_concept(n, recognition, visual_z) for n in self.concept_names),
-            key=lambda v: v.score, reverse=True)
+        visual = _minmax(sims[candidates])
+        scene_support = _minmax(cand_emb @ self.scene_emb[rec["scene_idx"]].T @ rec["scene_w"]
+                                / rec["scene_w"].sum())
+        object_support = _minmax(cand_emb @ self.object_emb[rec["object_idx"]].T @ rec["object_w"]
+                                 / rec["object_w"].sum())
 
-        verified = [v.concept for v in verdicts if v.decision == "ACCEPT"][:cfg.max_concepts]
-        repaired = []
-        if len(verified) < cfg.min_concepts:
-            by_name = {v.concept: v for v in verdicts}
-            for name in SCENES[recognition["top_scene"]]["concepts"]:
-                if len(verified) >= cfg.max_concepts:
-                    break
-                if name not in verified and not by_name[name].conflicts:
-                    verified.append(name)
-                    repaired.append(name)
+        verdicts = []
+        for j, idx in enumerate(candidates):
+            caption = self.captions[idx]
+            conflicts = self._conflicts(caption, rec)
+            score = float(cfg.w_visual * visual[j] + cfg.w_scene * scene_support[j]
+                          + cfg.w_object * object_support[j])
+            if conflicts:
+                decision = "REJECT"
+            elif score >= cfg.accept_threshold:
+                decision = "ACCEPT"
+            elif score >= cfg.repair_threshold:
+                decision = "REPAIR"
+            else:
+                decision = "REJECT"
+            verdicts.append({
+                "caption": caption,
+                "clip_similarity": float(sims[idx]),
+                "visual": float(visual[j]),
+                "scene_support": float(scene_support[j]),
+                "object_support": float(object_support[j]),
+                "score": score,
+                "conflicts": conflicts,
+                "decision": decision,
+            })
 
-        if recognition["scene_confidence"] < cfg.uncertainty_threshold:
-            status = "UNCERTAIN"
-        elif repaired:
-            status = "REPAIR"
-        elif verified:
-            status = "ACCEPT"
+        baseline = verdicts[0]["caption"]
+        ranked = sorted(verdicts, key=lambda v: v["score"], reverse=True)
+        accepted = [v for v in ranked if v["decision"] == "ACCEPT"]
+        clean = [v for v in ranked if not v["conflicts"]]
+
+        top_scene, top_scene_p = rec["top_scenes"][0]
+        top_object = rec["top_objects"][0][0]
+        if accepted:
+            prompt, status = accepted[0]["caption"], "ACCEPT"
+        elif clean:
+            prompt, status = clean[0]["caption"], "REPAIR"
         else:
-            status = "REJECT"
+            prompt, status = f"ambient sounds of a {top_scene} with a {top_object}", "REPAIR"
+        if max(top_scene_p, rec["top_objects"][0][1]) < cfg.uncertainty_threshold:
+            status = "UNCERTAIN"
 
-        baseline = sorted(self.concept_names, key=lambda n: recognition["concept_sims"][n],
-                          reverse=True)[:cfg.max_concepts]
-
+        visible_sources = [s for s, z in sorted(rec["source_z"].items(), key=lambda kv: -kv[1])[:3]]
         return {
-            "recognition": recognition,
-            "verdicts": [v.__dict__ for v in verdicts],
-            "verified_concepts": verified,
-            "repaired_concepts": repaired,
+            "top_scenes": rec["top_scenes"],
+            "top_objects": rec["top_objects"],
+            "env_probs": rec["env_probs"],
+            "visible_sources": visible_sources,
+            "verdicts": verdicts,
+            "baseline_prompt": baseline,
+            "casv_prompt": prompt,
             "status": status,
-            "caption": SCENES[recognition["top_scene"]]["caption"],
-            "baseline_concepts": baseline,
+            "n_rejected": sum(v["decision"] == "REJECT" for v in verdicts),
         }
 
 

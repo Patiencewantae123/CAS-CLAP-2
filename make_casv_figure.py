@@ -8,7 +8,7 @@
 # A missing ground-truth recording is shown as an empty panel, never filled in.
 #
 # Usage:
-#   py make_casv_figure.py --run results/main [--items busy_road,office,...]
+#   py make_casv_figure.py --run results/audiocaps_test100 [--items <ytid>,<ytid>,...]
 # =============================================================================
 
 import argparse
@@ -21,17 +21,16 @@ from matplotlib.patches import FancyBboxPatch
 from PIL import Image
 
 from casv.audio import GENERATOR_SAMPLE_RATE, load_audio, mel_spectrogram_db
-from casv.concepts import SCENES
 
 ROW_LABELS = [
     ("Input Image", "black"),
     ("Existing Research\n(Without CAS-V)", "#c0392b"),
-    ("Semantic Text\n(Verified Concepts)", "#1f3a93"),
+    ("Semantic Text\n(Verified Caption)", "#1f3a93"),
     ("Spectrogram\n(Generated Audio)", "#1f3a93"),
-    ("Caption\n(Sound Type)", "#1f3a93"),
+    ("Recognition\n(Scene / Object)", "#1f3a93"),
     ("Target Sound\n(Ground Truth)", "black"),
 ]
-HEIGHT_RATIOS = [1.25, 1.0, 0.7, 1.0, 0.45, 1.0]
+HEIGHT_RATIOS = [1.25, 1.0, 0.85, 1.0, 0.55, 1.0]
 
 
 def draw_spectrogram(ax, wav_path):
@@ -78,7 +77,7 @@ def main():
 
     for col, record in enumerate(items, start=1):
         item_dir = run_dir / record["id"]
-        title = (record["label"] or record["top_scene"] or record["id"]).title()
+        title = record["top_scene"][0].title()
 
         ax = fig.add_subplot(grid[0, col])
         image_file = next(item_dir.glob("input.*"))
@@ -91,20 +90,21 @@ def main():
             draw_spectrogram(ax, item_dir / wav)
             ax.set_xticks([])
             ax.set_yticks([])
-        gt_caption = SCENES[record["label"]]["caption"] if record["label"] else ""
-        ax.set_xlabel(textwrap.fill(gt_caption, 22), fontsize=7.5)
+        gt_caption = record["gt_captions"][0] if record["gt_captions"] else ""
+        ax.set_xlabel(textwrap.fill(gt_caption, 28), fontsize=6.5)
 
-        concepts = ",\n".join(textwrap.fill(", ".join(record["verified_concepts"][i:i + 2]), 26)
-                              for i in range(0, len(record["verified_concepts"]), 2))
-        draw_text_box(fig.add_subplot(grid[2, col]), concepts, "#eef5ea", "#9bbf8a", 7)
-        draw_text_box(fig.add_subplot(grid[4, col]), textwrap.fill(record["caption"], 20),
-                      "#eaf0fb", "#8aa6d6", 7.5)
+        draw_text_box(fig.add_subplot(grid[2, col]), textwrap.fill(record["prompts"]["casv"], 30),
+                      "#eef5ea", "#9bbf8a", 6.5)
+        recognition = (f"{record['top_scene'][0]} / {record['top_object'][0]}\n"
+                       f"{record['status']} ({record['n_rejected']} rejected)")
+        draw_text_box(fig.add_subplot(grid[4, col]), "\n".join(textwrap.fill(line, 30) for line in recognition.split("\n")),
+                      "#eaf0fb", "#8aa6d6", 6.5)
 
     models = results["models"]
     fig.text(0.5, 0.005,
              f"Run '{results['run_name']}' | recognition: {models['clip']} | generator: {models['generator']} "
-             f"| seed {results['settings']['seed']} | baseline = same generator prompted with unverified "
-             f"top-{results['verifier_config']['max_concepts']} CLIP concepts",
+             f"| seed {results['settings']['seed']} | baseline = same generator prompted with the top-1 "
+             f"retrieved AudioCaps caption, unverified | ground truth = AudioCaps test recording",
              ha="center", fontsize=6, color="#555555")
 
     output = Path(args.output) if args.output else run_dir / "casv_comparison.png"

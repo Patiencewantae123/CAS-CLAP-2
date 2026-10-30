@@ -1,379 +1,273 @@
 {
   "id": "pexels",
   "image": "eval\\smoke_images\\pexels.jpg",
-  "label": null,
   "gt_audio": null,
-  "top_scene": "cat",
-  "scene_confidence": 0.9847580194473267,
-  "scene_correct": null,
+  "gt_captions": [],
+  "top_scene": [
+    "veterinarians office",
+    0.23756267130374908
+  ],
+  "top_object": [
+    "scarf",
+    0.7447354197502136
+  ],
+  "env_probs": {
+    "indoor": 0.6080782413482666,
+    "outdoor": 0.3919217586517334
+  },
   "status": "ACCEPT",
-  "caption": "Cat meowing / purring",
-  "baseline_concepts": [
-    "cat meowing",
-    "cat purring",
-    "dog barking",
-    "fabric movement"
-  ],
-  "verified_concepts": [
-    "cat meowing",
-    "cat purring"
-  ],
-  "repaired_concepts": [],
+  "n_rejected": 3,
   "prompts": {
-    "baseline": "cat meowing, cat purring, dog barking, fabric movement",
-    "casv": "cat meowing, cat purring"
+    "baseline": "A cat meows and people are talking",
+    "casv": "In a quiet environment, a cat meows and purrs and brief rustling occurs"
   },
   "metrics": {},
   "verdicts": [
     {
-      "concept": "cat meowing",
-      "visual_evidence": 0.9478542403203166,
-      "scene_support": 0.9847580194473267,
+      "caption": "A cat meows and people are talking",
+      "clip_similarity": 0.26849648356437683,
+      "visual": 1.0,
+      "scene_support": 0.4529651334932297,
+      "object_support": 0.5705477035448544,
+      "score": 0.7070538511114253,
       "conflicts": [],
-      "score": 0.9681513188401722,
       "decision": "ACCEPT"
     },
     {
-      "concept": "cat purring",
-      "visual_evidence": 0.9164209054831557,
-      "scene_support": 0.9847580194473267,
+      "caption": "A dog is barking, simulated meows occur, and an adult male and female speak",
+      "clip_similarity": 0.2683558464050293,
+      "visual": 0.9812203770251071,
+      "scene_support": 0.7407954253686858,
+      "object_support": 0.7512248121135761,
+      "score": 0.8400942220547214,
       "conflicts": [],
-      "score": 0.9540063181634497,
       "decision": "ACCEPT"
     },
     {
-      "concept": "dog barking",
-      "visual_evidence": 0.8500427870429056,
-      "scene_support": 0.01341986283659935,
+      "caption": "A man speaks as cats meow with metal jingling",
+      "clip_similarity": 0.2680753767490387,
+      "visual": 0.9437685796492401,
+      "scene_support": 0.42263370531989664,
+      "object_support": 0.5599664079614507,
+      "score": 0.6722874658441003,
       "conflicts": [],
-      "score": 0.38990017872943716,
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat is meowing, thumping occurs, and an adult female speaks",
+      "clip_similarity": 0.268058180809021,
+      "visual": 0.9414723638288305,
+      "scene_support": 0.9010929247267969,
+      "object_support": 0.9217840143960263,
+      "score": 0.923452027268379,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "In a quiet environment, a cat meows and purrs and brief rustling occurs",
+      "clip_similarity": 0.2676844000816345,
+      "visual": 0.8915605114552119,
+      "scene_support": 0.9489899168662562,
+      "object_support": 0.9967670856990102,
+      "score": 0.9403513053516646,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cat continually meows every time a human voice speaks",
+      "clip_similarity": 0.2668769061565399,
+      "visual": 0.7837338777394411,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3134935510957765,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows, some silence, then begins meowing differently",
+      "clip_similarity": 0.26679903268814087,
+      "visual": 0.773335243530203,
+      "scene_support": 0.45371236522439706,
+      "object_support": 0.4771356939488139,
+      "score": 0.5885885151640445,
+      "conflicts": [],
       "decision": "REPAIR"
     },
     {
-      "concept": "fabric movement",
-      "visual_evidence": 0.675520877414251,
-      "scene_support": 1.8660342902876437e-05,
+      "caption": "A cat is meowing several times in distress and a man speaks",
+      "clip_similarity": 0.26657843589782715,
+      "visual": 0.7438784159692459,
+      "scene_support": 0.9420333579975988,
+      "object_support": 0.9691018110020314,
+      "score": 0.8708919170875874,
       "conflicts": [],
-      "score": 0.3039946580250096,
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cats are caterwauling, thumping occurs, and an electronic device is playing in the background",
+      "clip_similarity": 0.26655784249305725,
+      "visual": 0.7411285283922907,
+      "scene_support": 1.0,
+      "object_support": 0.8464402561958049,
+      "score": 0.8503834882156578,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat purrs as a person talks, and then people talk as a cat meows",
+      "clip_similarity": 0.2663924992084503,
+      "visual": 0.7190498362404142,
+      "scene_support": 0.36216805073085445,
+      "object_support": 0.46606594771710746,
+      "score": 0.5360901340305543,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several thumping noises occur before a cat screams quickly followed by birds chirping and a hollowing sounds",
+      "clip_similarity": 0.26562416553497314,
+      "visual": 0.6164523664553512,
+      "scene_support": 0.8213677936381927,
+      "object_support": 0.7807461009942969,
+      "score": 0.7272151149718873,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat is meowing, and a human is imitating a cat meow",
+      "clip_similarity": 0.2642935514450073,
+      "visual": 0.4387722209620229,
+      "scene_support": 0.5736132811731876,
+      "object_support": 0.587513255489173,
+      "score": 0.5238468493835173,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Beeping occurs, and a cat meows",
+      "clip_similarity": 0.2636018991470337,
+      "visual": 0.34641420231372594,
+      "scene_support": 0.7645085153516793,
+      "object_support": 0.7898251897046004,
+      "score": 0.6048657924423742,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A human mimics a meow",
+      "clip_similarity": 0.26353418827056885,
+      "visual": 0.3373726037973122,
+      "scene_support": 0.6363217546124704,
+      "object_support": 0.8725119237977677,
+      "score": 0.5875991450419964,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cats are meowing, dogs are barking, and then a woman speaks",
+      "clip_similarity": 0.26308125257492065,
+      "visual": 0.27689099541154794,
+      "scene_support": 0.7876816882717766,
+      "object_support": 0.7711987089964354,
+      "score": 0.5784205173450827,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat is meowing in a distress as a woman speaks",
+      "clip_similarity": 0.2625845670700073,
+      "visual": 0.2105673682660586,
+      "scene_support": 0.6078488546847778,
+      "object_support": 0.6083942750045945,
+      "score": 0.44909988621323516,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat makes a vocal sound while someone speaks",
+      "clip_similarity": 0.26167964935302734,
+      "visual": 0.08973149795250773,
+      "scene_support": 0.7314151389148734,
+      "object_support": 0.8682564080892144,
+      "score": 0.5157940632822294,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows with faint sounds of walking, tapping and a machine running",
+      "clip_similarity": 0.2616562247276306,
+      "visual": 0.08660355057843148,
+      "scene_support": 0.29351262400254396,
+      "object_support": 0.2259698497203448,
+      "score": 0.19048616234823923,
+      "conflicts": [],
       "decision": "REJECT"
     },
     {
-      "concept": "applause",
-      "visual_evidence": 0.66113007956439,
-      "scene_support": 0.0012251660227775574,
-      "conflicts": [],
-      "score": 0.2981823771165032,
+      "caption": "Hissing and vehicles outside, woman speaks and beeping squeaking",
+      "clip_similarity": 0.26102811098098755,
+      "visual": 0.0027299896928960573,
+      "scene_support": 0.7602228885506682,
+      "object_support": 0.5710965962753918,
+      "score": 0.4004878413249764,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.36)"
+      ],
       "decision": "REJECT"
     },
     {
-      "concept": "urban ambience",
-      "visual_evidence": 0.6547862942800872,
-      "scene_support": 0.0001856490234786179,
+      "caption": "A person is mimicking the meow of a cat then speaking in a language that is not English",
+      "clip_similarity": 0.2610076665878296,
+      "visual": 0.0,
+      "scene_support": 0.8767775547319152,
+      "object_support": 1.0,
+      "score": 0.5630332664195745,
       "conflicts": [],
-      "score": 0.29475593938895245,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "metallic resonance",
-      "visual_evidence": 0.648120365273631,
-      "scene_support": 7.852634666960512e-07,
-      "conflicts": [],
-      "score": 0.29165459626804063,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "movement on leaves",
-      "visual_evidence": 0.6466340624652579,
-      "scene_support": 5.954871085123159e-06,
-      "conflicts": [],
-      "score": 0.2909886032884629,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "nature ambience",
-      "visual_evidence": 0.6257228485076997,
-      "scene_support": 3.737293127414887e-06,
-      "conflicts": [],
-      "score": 0.28157733733968493,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "rain falling",
-      "visual_evidence": 0.6060782386352724,
-      "scene_support": 2.6810330382431857e-05,
-      "conflicts": [],
-      "score": 0.27274995306758293,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "indoor environment",
-      "visual_evidence": 0.5932013490552388,
-      "scene_support": 0.00035517013020580634,
-      "conflicts": [],
-      "score": 0.26713595064647067,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "mouse clicks",
-      "visual_evidence": 0.5699838052730468,
-      "scene_support": 7.38757589715533e-05,
-      "conflicts": [],
-      "score": 0.2565333440403054,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "forest environment",
-      "visual_evidence": 0.5649561624230626,
-      "scene_support": 3.737293127414887e-06,
-      "conflicts": [],
-      "score": 0.2542323286015982,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "bicycle bell",
-      "visual_evidence": 0.5626658840104195,
-      "scene_support": 5.6685090385144576e-05,
-      "conflicts": [],
-      "score": 0.2532308246044006,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "soft friction",
-      "visual_evidence": 0.553622218550211,
-      "scene_support": 1.8660342902876437e-05,
-      "conflicts": [],
-      "score": 0.24914026153619154,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "sharp strike",
-      "visual_evidence": 0.5530358001144025,
-      "scene_support": 7.852634666960512e-07,
-      "conflicts": [],
-      "score": 0.24886654194638777,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "engine sounds",
-      "visual_evidence": 0.5467691354575367,
-      "scene_support": 0.00012896393309347332,
-      "conflicts": [],
-      "score": 0.24611704111909294,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "water ambience",
-      "visual_evidence": 0.5284149978631959,
-      "scene_support": 2.1956996931749018e-07,
-      "conflicts": [],
-      "score": 0.2377868698019213,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "bicycle chain clicking",
-      "visual_evidence": 0.5159097118889447,
-      "scene_support": 5.6685090385144576e-05,
-      "conflicts": [],
-      "score": 0.23219054714973697,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "crowd cheering",
-      "visual_evidence": 0.4794000345307853,
-      "scene_support": 0.0012251660227775574,
-      "conflicts": [],
-      "score": 0.21640385685138103,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "dishes clattering",
-      "visual_evidence": 0.46787634069054,
-      "scene_support": 0.00028129437123425305,
-      "conflicts": [],
-      "score": 0.21069906521492185,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "cloth rubbing",
-      "visual_evidence": 0.4530095812906744,
-      "scene_support": 1.8660342902876437e-05,
-      "conflicts": [],
-      "score": 0.2038645747694001,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "dry foliage",
-      "visual_evidence": 0.44292117703607337,
-      "scene_support": 5.954871085123159e-06,
-      "conflicts": [],
-      "score": 0.19931780484532985,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "traffic",
-      "visual_evidence": 0.3980824735768369,
-      "scene_support": 0.00012896393309347332,
-      "conflicts": [],
-      "score": 0.17920804327277803,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "leaves crunching",
-      "visual_evidence": 0.3787058296430001,
-      "scene_support": 5.954871085123159e-06,
-      "conflicts": [],
-      "score": 0.17042089851844686,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "metal impact",
-      "visual_evidence": 0.36060104267764415,
-      "scene_support": 7.852634666960512e-07,
-      "conflicts": [],
-      "score": 0.16227090109984654,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "sizzling pan",
-      "visual_evidence": 0.35585460616952613,
-      "scene_support": 0.00028129437123425305,
-      "conflicts": [],
-      "score": 0.1602892846804656,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "car movement",
-      "visual_evidence": 0.33849437211987143,
-      "scene_support": 0.00012896393309347332,
-      "conflicts": [],
-      "score": 0.15239339761714357,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "birds chirping",
-      "visual_evidence": 0.30861519662923564,
-      "scene_support": 3.737293127414887e-06,
-      "conflicts": [],
-      "score": 0.1388788939943761,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "shoreline",
-      "visual_evidence": 0.2911081706148733,
-      "scene_support": 2.1956996931749018e-07,
-      "conflicts": [],
-      "score": 0.13099879754017613,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "office ambience",
-      "visual_evidence": 0.27785142725125844,
-      "scene_support": 7.38757589715533e-05,
-      "conflicts": [],
-      "score": 0.12507377393050065,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "seagulls",
-      "visual_evidence": 0.27690966926425786,
-      "scene_support": 2.1956996931749018e-07,
-      "conflicts": [],
-      "score": 0.12460947193239917,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "keyboard typing",
-      "visual_evidence": 0.2690538354145494,
-      "scene_support": 7.38757589715533e-05,
-      "conflicts": [],
-      "score": 0.1211148576039816,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "wind",
-      "visual_evidence": 0.2635389930195788,
-      "scene_support": 3.0547623509846744e-05,
-      "conflicts": [],
-      "score": 0.11860934805174088,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "ocean waves",
-      "visual_evidence": 0.12041239995812829,
-      "scene_support": 2.1956996931749018e-07,
-      "conflicts": [],
-      "score": 0.05418570074464085,
-      "decision": "REJECT"
-    },
-    {
-      "concept": "thunder",
-      "visual_evidence": 0.10009832148358021,
-      "scene_support": 2.6810330382431857e-05,
-      "conflicts": [],
-      "score": 0.04505899034932143,
-      "decision": "REJECT"
+      "decision": "REPAIR"
     }
   ],
-  "recognition": {
-    "scene_probs": {
-      "busy road": 0.00012896393309347332,
-      "office": 7.38757589715533e-05,
-      "beach": 2.1956996931749018e-07,
-      "forest": 3.737293127414887e-06,
-      "cloth scratch": 1.8660342902876437e-05,
-      "leaves": 5.954871085123159e-06,
-      "metal hit": 7.852634666960512e-07,
-      "rainstorm": 2.6810330382431857e-05,
-      "concert": 0.0012251660227775574,
-      "kitchen": 0.00028129437123425305,
-      "cat": 0.9847580194473267,
-      "dog": 0.01341986283659935,
-      "bicycle": 5.6685090385144576e-05
-    },
-    "top_scene": "cat",
-    "scene_confidence": 0.9847580194473267,
-    "scene_margin": 0.971338152885437,
-    "env_probs": {
-      "indoor": 0.5077903866767883,
-      "outdoor": 0.4922095835208893
-    },
-    "concept_sims": {
-      "traffic": 0.14842793345451355,
-      "engine sounds": 0.17058736085891724,
-      "car movement": 0.13897006213665009,
-      "urban ambience": 0.18726980686187744,
-      "keyboard typing": 0.12682588398456573,
-      "office ambience": 0.1284584403038025,
-      "indoor environment": 0.17757673561573029,
-      "mouse clicks": 0.17405863106250763,
-      "ocean waves": 0.09036199748516083,
-      "seagulls": 0.1282852292060852,
-      "shoreline": 0.13085973262786865,
-      "water ambience": 0.1678651124238968,
-      "wind": 0.12578529119491577,
-      "birds chirping": 0.13393457233905792,
-      "nature ambience": 0.18261609971523285,
-      "forest environment": 0.173303484916687,
-      "cloth rubbing": 0.1567206084728241,
-      "fabric movement": 0.1907026469707489,
-      "soft friction": 0.17160823941230774,
-      "leaves crunching": 0.14542029798030853,
-      "dry foliage": 0.15521660447120667,
-      "movement on leaves": 0.1859474778175354,
-      "metal impact": 0.14255541563034058,
-      "metallic resonance": 0.1861875057220459,
-      "sharp strike": 0.17152076959609985,
-      "rain falling": 0.17955425381660461,
-      "thunder": 0.08270861953496933,
-      "crowd cheering": 0.160631000995636,
-      "applause": 0.18830901384353638,
-      "dishes clattering": 0.15892687439918518,
-      "sizzling pan": 0.14179429411888123,
-      "cat meowing": 0.27058660984039307,
-      "cat purring": 0.2519519329071045,
-      "dog barking": 0.22762998938560486,
-      "bicycle bell": 0.17296016216278076,
-      "bicycle chain clicking": 0.1660173237323761
-    }
-  }
+  "top_scenes": [
+    [
+      "veterinarians office",
+      0.23756267130374908
+    ],
+    [
+      "tundra",
+      0.11735490709543228
+    ],
+    [
+      "pet shop",
+      0.031110189855098724
+    ],
+    [
+      "delicatessen",
+      0.030206218361854553
+    ],
+    [
+      "fabric store",
+      0.023390714079141617
+    ]
+  ],
+  "top_objects": [
+    [
+      "scarf",
+      0.7447354197502136
+    ],
+    [
+      "tabby cat",
+      0.03509802743792534
+    ],
+    [
+      "Persian cat",
+      0.03231341391801834
+    ],
+    [
+      "Siamese cat",
+      0.025467457249760628
+    ],
+    [
+      "cardigan",
+      0.025268450379371643
+    ]
+  ]
 }

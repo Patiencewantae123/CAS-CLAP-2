@@ -1,6 +1,6 @@
 {
   "run_name": "smoke_verify",
-  "timestamp": "2026-10-30T14:46:03.081439",
+  "timestamp": "2026-10-30T15:14:56.055812",
   "environment": {
     "python": "3.14.6",
     "torch": "2.15.0+cpu",
@@ -11,10 +11,16 @@
     "generator": null,
     "clap": null
   },
+  "vocabulary": {
+    "scenes": "Places365",
+    "objects": "ImageNet-1k",
+    "sound_candidates": "AudioCaps train captions"
+  },
   "settings": {
     "manifest": "eval/smoke_manifest.json",
     "output_dir": "results",
     "run_name": "smoke_verify",
+    "limit": null,
     "seed": 42,
     "duration": 5.0,
     "steps": 50,
@@ -23,178 +29,149 @@
     "no_clap": false
   },
   "verifier_config": {
-    "w_visual": 0.45,
-    "w_scene": 0.55,
-    "conflict_penalty": 0.35,
-    "accept_threshold": 0.55,
-    "repair_threshold": 0.35,
+    "retrieve_k": 20,
+    "support_top_n": 5,
+    "w_visual": 0.4,
+    "w_scene": 0.3,
+    "w_object": 0.3,
+    "accept_threshold": 0.6,
+    "repair_threshold": 0.4,
     "env_conflict_confidence": 0.7,
-    "uncertainty_threshold": 0.35,
-    "max_concepts": 4,
-    "min_concepts": 2
+    "source_absent_z": 0.0,
+    "uncertainty_threshold": 0.1
   },
   "summary": {
     "n_items": 5,
-    "scene_accuracy": {
-      "mean": 1.0,
-      "n": 2
+    "status_counts": {
+      "ACCEPT": 3,
+      "REPAIR": 0,
+      "UNCERTAIN": 2
     },
-    "clap_text_baseline": {
-      "mean": null,
-      "n": 0
-    },
-    "clap_text_casv": {
-      "mean": null,
-      "n": 0
-    },
-    "clap_gt_audio_baseline": {
-      "mean": null,
-      "n": 0
-    },
-    "clap_gt_audio_casv": {
-      "mean": null,
-      "n": 0
-    }
+    "prompt_changed": 3
   },
   "items": [
     {
       "id": "car",
       "image": "eval\\smoke_images\\car.jpg",
-      "label": null,
       "gt_audio": null,
-      "top_scene": "busy road",
-      "scene_confidence": 0.7853610515594482,
-      "scene_correct": null,
+      "gt_captions": [],
+      "top_scene": [
+        "raceway",
+        0.17046372592449188
+      ],
+      "top_object": [
+        "sports car",
+        0.9124919772148132
+      ],
+      "env_probs": {
+        "indoor": 0.31833380460739136,
+        "outdoor": 0.6816661953926086
+      },
       "status": "ACCEPT",
-      "caption": "Traffic / engine sounds",
-      "baseline_concepts": [
-        "engine sounds",
-        "car movement",
-        "traffic",
-        "nature ambience"
-      ],
-      "verified_concepts": [
-        "engine sounds",
-        "car movement",
-        "traffic",
-        "urban ambience"
-      ],
-      "repaired_concepts": [],
+      "n_rejected": 4,
       "prompts": {
-        "baseline": "engine sounds, car movement, traffic, nature ambience",
-        "casv": "engine sounds, car movement, traffic, urban ambience"
+        "baseline": "A sports car is accelerating it;s engine",
+        "casv": "A sports car is accelerating it;s engine"
       },
       "metrics": {}
     },
     {
       "id": "cat",
       "image": "eval\\smoke_images\\cat.jpg",
-      "label": "cat",
       "gt_audio": null,
-      "top_scene": "cat",
-      "scene_confidence": 0.986788809299469,
-      "scene_correct": true,
+      "gt_captions": [],
+      "top_scene": [
+        "berth",
+        0.17003148794174194
+      ],
+      "top_object": [
+        "tabby cat",
+        0.7347828149795532
+      ],
+      "env_probs": {
+        "indoor": 0.6735995411872864,
+        "outdoor": 0.3264004588127136
+      },
       "status": "ACCEPT",
-      "caption": "Cat meowing / purring",
-      "baseline_concepts": [
-        "cat purring",
-        "cat meowing",
-        "dog barking",
-        "mouse clicks"
-      ],
-      "verified_concepts": [
-        "cat purring",
-        "cat meowing"
-      ],
-      "repaired_concepts": [],
+      "n_rejected": 8,
       "prompts": {
-        "baseline": "cat purring, cat meowing, dog barking, mouse clicks",
-        "casv": "cat purring, cat meowing"
+        "baseline": "Speech of several adults and musical tones in the background, as an adult snores slowly in the foreground",
+        "casv": "Cats are caterwauling, thumping occurs, and an electronic device is playing in the background"
       },
       "metrics": {}
     },
     {
       "id": "bike",
       "image": "eval\\smoke_images\\bike.jpg",
-      "label": "bicycle",
       "gt_audio": null,
-      "top_scene": "bicycle",
-      "scene_confidence": 0.9993584752082825,
-      "scene_correct": true,
-      "status": "ACCEPT",
-      "caption": "Bicycle",
-      "baseline_concepts": [
-        "bicycle bell",
-        "bicycle chain clicking",
-        "metallic resonance",
-        "engine sounds"
+      "gt_captions": [],
+      "top_scene": [
+        "outdoor garage",
+        0.07522737979888916
       ],
-      "verified_concepts": [
-        "bicycle bell",
-        "bicycle chain clicking",
-        "urban ambience"
+      "top_object": [
+        "tandem bicycle",
+        0.7966655492782593
       ],
-      "repaired_concepts": [],
+      "env_probs": {
+        "indoor": 0.1712319701910019,
+        "outdoor": 0.8287680298089981
+      },
+      "status": "UNCERTAIN",
+      "n_rejected": 7,
       "prompts": {
-        "baseline": "bicycle bell, bicycle chain clicking, metallic resonance, engine sounds",
-        "casv": "bicycle bell, bicycle chain clicking, urban ambience"
+        "baseline": "Person introducing a bike as the engine runs in resting state in background",
+        "casv": "Person introducing a bike as the engine runs in resting state in background"
       },
       "metrics": {}
     },
     {
       "id": "pexels",
       "image": "eval\\smoke_images\\pexels.jpg",
-      "label": null,
       "gt_audio": null,
-      "top_scene": "cat",
-      "scene_confidence": 0.9847580194473267,
-      "scene_correct": null,
+      "gt_captions": [],
+      "top_scene": [
+        "veterinarians office",
+        0.23756267130374908
+      ],
+      "top_object": [
+        "scarf",
+        0.7447354197502136
+      ],
+      "env_probs": {
+        "indoor": 0.6080782413482666,
+        "outdoor": 0.3919217586517334
+      },
       "status": "ACCEPT",
-      "caption": "Cat meowing / purring",
-      "baseline_concepts": [
-        "cat meowing",
-        "cat purring",
-        "dog barking",
-        "fabric movement"
-      ],
-      "verified_concepts": [
-        "cat meowing",
-        "cat purring"
-      ],
-      "repaired_concepts": [],
+      "n_rejected": 3,
       "prompts": {
-        "baseline": "cat meowing, cat purring, dog barking, fabric movement",
-        "casv": "cat meowing, cat purring"
+        "baseline": "A cat meows and people are talking",
+        "casv": "In a quiet environment, a cat meows and purrs and brief rustling occurs"
       },
       "metrics": {}
     },
     {
       "id": "blue",
       "image": "eval\\smoke_images\\blue.jpg",
-      "label": null,
       "gt_audio": null,
-      "top_scene": "concert",
-      "scene_confidence": 0.34456667304039,
-      "scene_correct": null,
+      "gt_captions": [],
+      "top_scene": [
+        "ocean",
+        0.08444136381149292
+      ],
+      "top_object": [
+        "website",
+        0.03772672638297081
+      ],
+      "env_probs": {
+        "indoor": 0.4281827211380005,
+        "outdoor": 0.5718172788619995
+      },
       "status": "UNCERTAIN",
-      "caption": "Crowd / applause",
-      "baseline_concepts": [
-        "water ambience",
-        "indoor environment",
-        "bicycle bell",
-        "dog barking"
-      ],
-      "verified_concepts": [
-        "crowd cheering",
-        "applause"
-      ],
-      "repaired_concepts": [
-        "crowd cheering",
-        "applause"
-      ],
+      "n_rejected": 6,
       "prompts": {
-        "baseline": "water ambience, indoor environment, bicycle bell, dog barking",
-        "casv": "crowd cheering, applause"
+        "baseline": "A large pop sound, afterwards people are heard screaming in the background along with a repeating recording in the back",
+        "casv": "Sound of an engine running while idle and random sounds of small solid objects moving in the background"
       },
       "metrics": {}
     }
