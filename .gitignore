@@ -8,3 +8,7 @@ data/cache/
 
 # Generated audio from experiment runs (results.json and figures are kept)
 results/**/*.wav
+
+# Regenerable packages and app runs
+evaluation/listening_test/stimuli/
+app_data/runs/

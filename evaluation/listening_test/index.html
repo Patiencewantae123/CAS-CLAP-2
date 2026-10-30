@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image-sound listening test</title>
+<style>
+:root { --ink:#111; --muted:#555; --line:#ddd; --accent:#2a78d6; --bg:#fcfcfb; }
+body { font-family: system-ui, sans-serif; color: var(--ink); background: var(--bg); max-width: 980px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.4rem; } .muted { color: var(--muted); }
+.item { border: 1px solid var(--line); border-radius: 10px; padding: 14px; margin: 18px 0; background: #fff; }
+.row { display: flex; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+.row img { width: 300px; max-width: 100%; border-radius: 6px; }
+.clips { display: grid; gap: 8px; } audio { width: 280px; max-width: 100%; }
+fieldset { border: none; padding: 0; margin: 8px 0; } label { margin-right: 14px; }
+.bar { position: sticky; top: 0; background: var(--bg); padding: 8px 0; border-bottom: 1px solid var(--line); z-index: 1; }
+button { background: var(--accent); color: #fff; border: 0; border-radius: 6px; padding: 8px 14px; font-size: 1rem; cursor: pointer; }
+</style></head><body>
+<h1>Does the sound match the picture?</h1>
+<p>For each picture, listen to both sounds (A and B). Judge only <b>how well each sound fits what is visible in the picture</b>,
+not audio quality. Use headphones if you can. There are 61 items; it takes about 30 minutes.</p>
+<div class="bar">Your name or initials: <input id="rater" size="12"> &nbsp;
+<span id="progress" class="muted"></span> &nbsp; <button onclick="download()">Download my ratings (CSV)</button></div>
+<div class="item"><div class="muted">Item 1 of 61</div><div class="row">
+<img src="stimuli/item001.jpg" alt="picture for item 1">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item001_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item001_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item001" value="A"> A</label>
+<label><input type="radio" name="match_item001" value="B"> B</label>
+<label><input type="radio" name="match_item001" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item001"> A</label> <label><input type="checkbox" id="b_item001"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 2 of 61</div><div class="row">
+<img src="stimuli/item002.jpg" alt="picture for item 2">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item002_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item002_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item002" value="A"> A</label>
+<label><input type="radio" name="match_item002" value="B"> B</label>
+<label><input type="radio" name="match_item002" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item002"> A</label> <label><input type="checkbox" id="b_item002"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 3 of 61</div><div class="row">
+<img src="stimuli/item003.jpg" alt="picture for item 3">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item003_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item003_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item003" value="A"> A</label>
+<label><input type="radio" name="match_item003" value="B"> B</label>
+<label><input type="radio" name="match_item003" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item003"> A</label> <label><input type="checkbox" id="b_item003"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 4 of 61</div><div class="row">
+<img src="stimuli/item004.jpg" alt="picture for item 4">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item004_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item004_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item004" value="A"> A</label>
+<label><input type="radio" name="match_item004" value="B"> B</label>
+<label><input type="radio" name="match_item004" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item004"> A</label> <label><input type="checkbox" id="b_item004"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 5 of 61</div><div class="row">
+<img src="stimuli/item005.jpg" alt="picture for item 5">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item005_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item005_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item005" value="A"> A</label>
+<label><input type="radio" name="match_item005" value="B"> B</label>
+<label><input type="radio" name="match_item005" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item005"> A</label> <label><input type="checkbox" id="b_item005"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 6 of 61</div><div class="row">
+<img src="stimuli/item006.jpg" alt="picture for item 6">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item006_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item006_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item006" value="A"> A</label>
+<label><input type="radio" name="match_item006" value="B"> B</label>
+<label><input type="radio" name="match_item006" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item006"> A</label> <label><input type="checkbox" id="b_item006"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 7 of 61</div><div class="row">
+<img src="stimuli/item007.jpg" alt="picture for item 7">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item007_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item007_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item007" value="A"> A</label>
+<label><input type="radio" name="match_item007" value="B"> B</label>
+<label><input type="radio" name="match_item007" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item007"> A</label> <label><input type="checkbox" id="b_item007"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 8 of 61</div><div class="row">
+<img src="stimuli/item008.jpg" alt="picture for item 8">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item008_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item008_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item008" value="A"> A</label>
+<label><input type="radio" name="match_item008" value="B"> B</label>
+<label><input type="radio" name="match_item008" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item008"> A</label> <label><input type="checkbox" id="b_item008"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 9 of 61</div><div class="row">
+<img src="stimuli/item009.jpg" alt="picture for item 9">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item009_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item009_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item009" value="A"> A</label>
+<label><input type="radio" name="match_item009" value="B"> B</label>
+<label><input type="radio" name="match_item009" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item009"> A</label> <label><input type="checkbox" id="b_item009"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 10 of 61</div><div class="row">
+<img src="stimuli/item010.jpg" alt="picture for item 10">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item010_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item010_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item010" value="A"> A</label>
+<label><input type="radio" name="match_item010" value="B"> B</label>
+<label><input type="radio" name="match_item010" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item010"> A</label> <label><input type="checkbox" id="b_item010"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 11 of 61</div><div class="row">
+<img src="stimuli/item011.jpg" alt="picture for item 11">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item011_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item011_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item011" value="A"> A</label>
+<label><input type="radio" name="match_item011" value="B"> B</label>
+<label><input type="radio" name="match_item011" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item011"> A</label> <label><input type="checkbox" id="b_item011"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 12 of 61</div><div class="row">
+<img src="stimuli/item012.jpg" alt="picture for item 12">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item012_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item012_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item012" value="A"> A</label>
+<label><input type="radio" name="match_item012" value="B"> B</label>
+<label><input type="radio" name="match_item012" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item012"> A</label> <label><input type="checkbox" id="b_item012"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 13 of 61</div><div class="row">
+<img src="stimuli/item013.jpg" alt="picture for item 13">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item013_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item013_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item013" value="A"> A</label>
+<label><input type="radio" name="match_item013" value="B"> B</label>
+<label><input type="radio" name="match_item013" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item013"> A</label> <label><input type="checkbox" id="b_item013"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 14 of 61</div><div class="row">
+<img src="stimuli/item014.jpg" alt="picture for item 14">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item014_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item014_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item014" value="A"> A</label>
+<label><input type="radio" name="match_item014" value="B"> B</label>
+<label><input type="radio" name="match_item014" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item014"> A</label> <label><input type="checkbox" id="b_item014"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 15 of 61</div><div class="row">
+<img src="stimuli/item015.jpg" alt="picture for item 15">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item015_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item015_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item015" value="A"> A</label>
+<label><input type="radio" name="match_item015" value="B"> B</label>
+<label><input type="radio" name="match_item015" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item015"> A</label> <label><input type="checkbox" id="b_item015"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 16 of 61</div><div class="row">
+<img src="stimuli/item016.jpg" alt="picture for item 16">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item016_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item016_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item016" value="A"> A</label>
+<label><input type="radio" name="match_item016" value="B"> B</label>
+<label><input type="radio" name="match_item016" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item016"> A</label> <label><input type="checkbox" id="b_item016"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 17 of 61</div><div class="row">
+<img src="stimuli/item017.jpg" alt="picture for item 17">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item017_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item017_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item017" value="A"> A</label>
+<label><input type="radio" name="match_item017" value="B"> B</label>
+<label><input type="radio" name="match_item017" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item017"> A</label> <label><input type="checkbox" id="b_item017"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 18 of 61</div><div class="row">
+<img src="stimuli/item018.jpg" alt="picture for item 18">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item018_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item018_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item018" value="A"> A</label>
+<label><input type="radio" name="match_item018" value="B"> B</label>
+<label><input type="radio" name="match_item018" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item018"> A</label> <label><input type="checkbox" id="b_item018"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 19 of 61</div><div class="row">
+<img src="stimuli/item019.jpg" alt="picture for item 19">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item019_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item019_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item019" value="A"> A</label>
+<label><input type="radio" name="match_item019" value="B"> B</label>
+<label><input type="radio" name="match_item019" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item019"> A</label> <label><input type="checkbox" id="b_item019"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 20 of 61</div><div class="row">
+<img src="stimuli/item020.jpg" alt="picture for item 20">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item020_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item020_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item020" value="A"> A</label>
+<label><input type="radio" name="match_item020" value="B"> B</label>
+<label><input type="radio" name="match_item020" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item020"> A</label> <label><input type="checkbox" id="b_item020"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 21 of 61</div><div class="row">
+<img src="stimuli/item021.jpg" alt="picture for item 21">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item021_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item021_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item021" value="A"> A</label>
+<label><input type="radio" name="match_item021" value="B"> B</label>
+<label><input type="radio" name="match_item021" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item021"> A</label> <label><input type="checkbox" id="b_item021"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 22 of 61</div><div class="row">
+<img src="stimuli/item022.jpg" alt="picture for item 22">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item022_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item022_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item022" value="A"> A</label>
+<label><input type="radio" name="match_item022" value="B"> B</label>
+<label><input type="radio" name="match_item022" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item022"> A</label> <label><input type="checkbox" id="b_item022"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 23 of 61</div><div class="row">
+<img src="stimuli/item023.jpg" alt="picture for item 23">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item023_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item023_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item023" value="A"> A</label>
+<label><input type="radio" name="match_item023" value="B"> B</label>
+<label><input type="radio" name="match_item023" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item023"> A</label> <label><input type="checkbox" id="b_item023"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 24 of 61</div><div class="row">
+<img src="stimuli/item024.jpg" alt="picture for item 24">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item024_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item024_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item024" value="A"> A</label>
+<label><input type="radio" name="match_item024" value="B"> B</label>
+<label><input type="radio" name="match_item024" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item024"> A</label> <label><input type="checkbox" id="b_item024"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 25 of 61</div><div class="row">
+<img src="stimuli/item025.jpg" alt="picture for item 25">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item025_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item025_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item025" value="A"> A</label>
+<label><input type="radio" name="match_item025" value="B"> B</label>
+<label><input type="radio" name="match_item025" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item025"> A</label> <label><input type="checkbox" id="b_item025"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 26 of 61</div><div class="row">
+<img src="stimuli/item026.jpg" alt="picture for item 26">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item026_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item026_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item026" value="A"> A</label>
+<label><input type="radio" name="match_item026" value="B"> B</label>
+<label><input type="radio" name="match_item026" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item026"> A</label> <label><input type="checkbox" id="b_item026"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 27 of 61</div><div class="row">
+<img src="stimuli/item027.jpg" alt="picture for item 27">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item027_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item027_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item027" value="A"> A</label>
+<label><input type="radio" name="match_item027" value="B"> B</label>
+<label><input type="radio" name="match_item027" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item027"> A</label> <label><input type="checkbox" id="b_item027"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 28 of 61</div><div class="row">
+<img src="stimuli/item028.jpg" alt="picture for item 28">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item028_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item028_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item028" value="A"> A</label>
+<label><input type="radio" name="match_item028" value="B"> B</label>
+<label><input type="radio" name="match_item028" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item028"> A</label> <label><input type="checkbox" id="b_item028"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 29 of 61</div><div class="row">
+<img src="stimuli/item029.jpg" alt="picture for item 29">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item029_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item029_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item029" value="A"> A</label>
+<label><input type="radio" name="match_item029" value="B"> B</label>
+<label><input type="radio" name="match_item029" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item029"> A</label> <label><input type="checkbox" id="b_item029"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 30 of 61</div><div class="row">
+<img src="stimuli/item030.jpg" alt="picture for item 30">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item030_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item030_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item030" value="A"> A</label>
+<label><input type="radio" name="match_item030" value="B"> B</label>
+<label><input type="radio" name="match_item030" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item030"> A</label> <label><input type="checkbox" id="b_item030"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 31 of 61</div><div class="row">
+<img src="stimuli/item031.jpg" alt="picture for item 31">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item031_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item031_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item031" value="A"> A</label>
+<label><input type="radio" name="match_item031" value="B"> B</label>
+<label><input type="radio" name="match_item031" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item031"> A</label> <label><input type="checkbox" id="b_item031"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 32 of 61</div><div class="row">
+<img src="stimuli/item032.jpg" alt="picture for item 32">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item032_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item032_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item032" value="A"> A</label>
+<label><input type="radio" name="match_item032" value="B"> B</label>
+<label><input type="radio" name="match_item032" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item032"> A</label> <label><input type="checkbox" id="b_item032"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 33 of 61</div><div class="row">
+<img src="stimuli/item033.jpg" alt="picture for item 33">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item033_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item033_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item033" value="A"> A</label>
+<label><input type="radio" name="match_item033" value="B"> B</label>
+<label><input type="radio" name="match_item033" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item033"> A</label> <label><input type="checkbox" id="b_item033"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 34 of 61</div><div class="row">
+<img src="stimuli/item034.jpg" alt="picture for item 34">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item034_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item034_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item034" value="A"> A</label>
+<label><input type="radio" name="match_item034" value="B"> B</label>
+<label><input type="radio" name="match_item034" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item034"> A</label> <label><input type="checkbox" id="b_item034"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 35 of 61</div><div class="row">
+<img src="stimuli/item035.jpg" alt="picture for item 35">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item035_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item035_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item035" value="A"> A</label>
+<label><input type="radio" name="match_item035" value="B"> B</label>
+<label><input type="radio" name="match_item035" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item035"> A</label> <label><input type="checkbox" id="b_item035"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 36 of 61</div><div class="row">
+<img src="stimuli/item036.jpg" alt="picture for item 36">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item036_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item036_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item036" value="A"> A</label>
+<label><input type="radio" name="match_item036" value="B"> B</label>
+<label><input type="radio" name="match_item036" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item036"> A</label> <label><input type="checkbox" id="b_item036"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 37 of 61</div><div class="row">
+<img src="stimuli/item037.jpg" alt="picture for item 37">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item037_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item037_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item037" value="A"> A</label>
+<label><input type="radio" name="match_item037" value="B"> B</label>
+<label><input type="radio" name="match_item037" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item037"> A</label> <label><input type="checkbox" id="b_item037"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 38 of 61</div><div class="row">
+<img src="stimuli/item038.jpg" alt="picture for item 38">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item038_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item038_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item038" value="A"> A</label>
+<label><input type="radio" name="match_item038" value="B"> B</label>
+<label><input type="radio" name="match_item038" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item038"> A</label> <label><input type="checkbox" id="b_item038"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 39 of 61</div><div class="row">
+<img src="stimuli/item039.jpg" alt="picture for item 39">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item039_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item039_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item039" value="A"> A</label>
+<label><input type="radio" name="match_item039" value="B"> B</label>
+<label><input type="radio" name="match_item039" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item039"> A</label> <label><input type="checkbox" id="b_item039"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 40 of 61</div><div class="row">
+<img src="stimuli/item040.jpg" alt="picture for item 40">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item040_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item040_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item040" value="A"> A</label>
+<label><input type="radio" name="match_item040" value="B"> B</label>
+<label><input type="radio" name="match_item040" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item040"> A</label> <label><input type="checkbox" id="b_item040"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 41 of 61</div><div class="row">
+<img src="stimuli/item041.jpg" alt="picture for item 41">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item041_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item041_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item041" value="A"> A</label>
+<label><input type="radio" name="match_item041" value="B"> B</label>
+<label><input type="radio" name="match_item041" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item041"> A</label> <label><input type="checkbox" id="b_item041"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 42 of 61</div><div class="row">
+<img src="stimuli/item042.jpg" alt="picture for item 42">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item042_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item042_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item042" value="A"> A</label>
+<label><input type="radio" name="match_item042" value="B"> B</label>
+<label><input type="radio" name="match_item042" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item042"> A</label> <label><input type="checkbox" id="b_item042"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 43 of 61</div><div class="row">
+<img src="stimuli/item043.jpg" alt="picture for item 43">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item043_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item043_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item043" value="A"> A</label>
+<label><input type="radio" name="match_item043" value="B"> B</label>
+<label><input type="radio" name="match_item043" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item043"> A</label> <label><input type="checkbox" id="b_item043"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 44 of 61</div><div class="row">
+<img src="stimuli/item044.jpg" alt="picture for item 44">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item044_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item044_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item044" value="A"> A</label>
+<label><input type="radio" name="match_item044" value="B"> B</label>
+<label><input type="radio" name="match_item044" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item044"> A</label> <label><input type="checkbox" id="b_item044"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 45 of 61</div><div class="row">
+<img src="stimuli/item045.jpg" alt="picture for item 45">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item045_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item045_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item045" value="A"> A</label>
+<label><input type="radio" name="match_item045" value="B"> B</label>
+<label><input type="radio" name="match_item045" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item045"> A</label> <label><input type="checkbox" id="b_item045"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 46 of 61</div><div class="row">
+<img src="stimuli/item046.jpg" alt="picture for item 46">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item046_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item046_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item046" value="A"> A</label>
+<label><input type="radio" name="match_item046" value="B"> B</label>
+<label><input type="radio" name="match_item046" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item046"> A</label> <label><input type="checkbox" id="b_item046"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 47 of 61</div><div class="row">
+<img src="stimuli/item047.jpg" alt="picture for item 47">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item047_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item047_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item047" value="A"> A</label>
+<label><input type="radio" name="match_item047" value="B"> B</label>
+<label><input type="radio" name="match_item047" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item047"> A</label> <label><input type="checkbox" id="b_item047"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 48 of 61</div><div class="row">
+<img src="stimuli/item048.jpg" alt="picture for item 48">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item048_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item048_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item048" value="A"> A</label>
+<label><input type="radio" name="match_item048" value="B"> B</label>
+<label><input type="radio" name="match_item048" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item048"> A</label> <label><input type="checkbox" id="b_item048"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 49 of 61</div><div class="row">
+<img src="stimuli/item049.jpg" alt="picture for item 49">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item049_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item049_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item049" value="A"> A</label>
+<label><input type="radio" name="match_item049" value="B"> B</label>
+<label><input type="radio" name="match_item049" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item049"> A</label> <label><input type="checkbox" id="b_item049"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 50 of 61</div><div class="row">
+<img src="stimuli/item050.jpg" alt="picture for item 50">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item050_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item050_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item050" value="A"> A</label>
+<label><input type="radio" name="match_item050" value="B"> B</label>
+<label><input type="radio" name="match_item050" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item050"> A</label> <label><input type="checkbox" id="b_item050"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 51 of 61</div><div class="row">
+<img src="stimuli/item051.jpg" alt="picture for item 51">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item051_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item051_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item051" value="A"> A</label>
+<label><input type="radio" name="match_item051" value="B"> B</label>
+<label><input type="radio" name="match_item051" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item051"> A</label> <label><input type="checkbox" id="b_item051"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 52 of 61</div><div class="row">
+<img src="stimuli/item052.jpg" alt="picture for item 52">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item052_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item052_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item052" value="A"> A</label>
+<label><input type="radio" name="match_item052" value="B"> B</label>
+<label><input type="radio" name="match_item052" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item052"> A</label> <label><input type="checkbox" id="b_item052"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 53 of 61</div><div class="row">
+<img src="stimuli/item053.jpg" alt="picture for item 53">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item053_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item053_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item053" value="A"> A</label>
+<label><input type="radio" name="match_item053" value="B"> B</label>
+<label><input type="radio" name="match_item053" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item053"> A</label> <label><input type="checkbox" id="b_item053"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 54 of 61</div><div class="row">
+<img src="stimuli/item054.jpg" alt="picture for item 54">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item054_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item054_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item054" value="A"> A</label>
+<label><input type="radio" name="match_item054" value="B"> B</label>
+<label><input type="radio" name="match_item054" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item054"> A</label> <label><input type="checkbox" id="b_item054"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 55 of 61</div><div class="row">
+<img src="stimuli/item055.jpg" alt="picture for item 55">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item055_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item055_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item055" value="A"> A</label>
+<label><input type="radio" name="match_item055" value="B"> B</label>
+<label><input type="radio" name="match_item055" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item055"> A</label> <label><input type="checkbox" id="b_item055"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 56 of 61</div><div class="row">
+<img src="stimuli/item056.jpg" alt="picture for item 56">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item056_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item056_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item056" value="A"> A</label>
+<label><input type="radio" name="match_item056" value="B"> B</label>
+<label><input type="radio" name="match_item056" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item056"> A</label> <label><input type="checkbox" id="b_item056"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 57 of 61</div><div class="row">
+<img src="stimuli/item057.jpg" alt="picture for item 57">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item057_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item057_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item057" value="A"> A</label>
+<label><input type="radio" name="match_item057" value="B"> B</label>
+<label><input type="radio" name="match_item057" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item057"> A</label> <label><input type="checkbox" id="b_item057"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 58 of 61</div><div class="row">
+<img src="stimuli/item058.jpg" alt="picture for item 58">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item058_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item058_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item058" value="A"> A</label>
+<label><input type="radio" name="match_item058" value="B"> B</label>
+<label><input type="radio" name="match_item058" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item058"> A</label> <label><input type="checkbox" id="b_item058"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 59 of 61</div><div class="row">
+<img src="stimuli/item059.jpg" alt="picture for item 59">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item059_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item059_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item059" value="A"> A</label>
+<label><input type="radio" name="match_item059" value="B"> B</label>
+<label><input type="radio" name="match_item059" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item059"> A</label> <label><input type="checkbox" id="b_item059"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 60 of 61</div><div class="row">
+<img src="stimuli/item060.jpg" alt="picture for item 60">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item060_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item060_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item060" value="A"> A</label>
+<label><input type="radio" name="match_item060" value="B"> B</label>
+<label><input type="radio" name="match_item060" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item060"> A</label> <label><input type="checkbox" id="b_item060"> B</label></fieldset>
+</div>
+<div class="item"><div class="muted">Item 61 of 61</div><div class="row">
+<img src="stimuli/item061.jpg" alt="picture for item 61">
+<div class="clips">
+<div>Sound A<br><audio controls preload="none" src="stimuli/item061_A.wav"></audio></div>
+<div>Sound B<br><audio controls preload="none" src="stimuli/item061_B.wav"></audio></div>
+</div></div>
+<fieldset><b>Which sound better matches what is visible?</b><br>
+<label><input type="radio" name="match_item061" value="A"> A</label>
+<label><input type="radio" name="match_item061" value="B"> B</label>
+<label><input type="radio" name="match_item061" value="same"> No difference</label></fieldset>
+<fieldset><b>Contains a sound that clearly does not belong to this picture:</b><br>
+<label><input type="checkbox" id="a_item061"> A</label> <label><input type="checkbox" id="b_item061"> B</label></fieldset>
+</div>
+<p><button onclick="download()">Download my ratings (CSV)</button> and send the file back. Thank you.</p>
+<script>
+const ITEMS = ["item001", "item002", "item003", "item004", "item005", "item006", "item007", "item008", "item009", "item010", "item011", "item012", "item013", "item014", "item015", "item016", "item017", "item018", "item019", "item020", "item021", "item022", "item023", "item024", "item025", "item026", "item027", "item028", "item029", "item030", "item031", "item032", "item033", "item034", "item035", "item036", "item037", "item038", "item039", "item040", "item041", "item042", "item043", "item044", "item045", "item046", "item047", "item048", "item049", "item050", "item051", "item052", "item053", "item054", "item055", "item056", "item057", "item058", "item059", "item060", "item061"];
+function answered() { return ITEMS.filter(id => document.querySelector(`input[name="match_${id}"]:checked`)).length; }
+function update() { document.getElementById("progress").textContent = `${answered()} / ${ITEMS.length} answered`; }
+document.addEventListener("change", update); update();
+function download() {
+  const rater = document.getElementById("rater").value.trim();
+  if (!rater) { alert("Please enter your name or initials first."); return; }
+  if (answered() < ITEMS.length && !confirm(`${ITEMS.length - answered()} items are unanswered. Download anyway?`)) return;
+  const rows = [["rater", "item", "better_match", "A_has_unrelated_sound", "B_has_unrelated_sound"]];
+  for (const id of ITEMS) {
+    const m = document.querySelector(`input[name="match_${id}"]:checked`);
+    rows.push([rater, id, m ? m.value : "", document.getElementById(`a_${id}`).checked, document.getElementById(`b_${id}`).checked]);
+  }
+  const blob = new Blob([rows.map(r => r.join(",")).join("\n")], {type: "text/csv"});
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob); link.download = `ratings_${rater.replace(/\W+/g, "_")}.csv`; link.click();
+}
+</script></body></html>

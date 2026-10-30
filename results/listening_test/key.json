@@ -1,0 +1,495 @@
+{
+  "seed": 7,
+  "run": "results\\audiocaps_test100",
+  "n_items": 61,
+  "items": {
+    "item001": {
+      "audiocaps_id": "w_Utn3CwAXE",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A cat meows while some liquid flow",
+        "casv": "Water running while cat meows"
+      }
+    },
+    "item002": {
+      "audiocaps_id": "lHh0SwUhP8U",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A duck call is blown, ducks quack, rhythmic thumping is present, and an adult male speaks in the background",
+        "casv": "The wind is blowing, duck calls are being blown, and an adult male speaks"
+      }
+    },
+    "item003": {
+      "audiocaps_id": "nD1K1Zo0qrM",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A tick locking sound with crumpling near the end",
+        "casv": "A mechanical part moving, followed by beeping, which subsequently stops and then the mechanical part moving again"
+      }
+    },
+    "item004": {
+      "audiocaps_id": "o7-X8DAToGc",
+      "casv": "B",
+      "prompts": {
+        "baseline": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+        "casv": "A car driving quickly down a road followed by speaking"
+      }
+    },
+    "item005": {
+      "audiocaps_id": "BwnGxJD9xh8",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A new baby goat bleeding with male speaking",
+        "casv": "A goat bleats while some object is tapped"
+      }
+    },
+    "item006": {
+      "audiocaps_id": "Jon_DEFqsfM",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Woman talking followed by ducks quacking and wind blowing",
+        "casv": "Natural outdoor sounds followed by a duck making a quacking sound"
+      }
+    },
+    "item007": {
+      "audiocaps_id": "ROootH-mtEI",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A remote control car moving with a stream flowing in the background",
+        "casv": "A cat meows quietly nearby, followed by footsteps"
+      }
+    },
+    "item008": {
+      "audiocaps_id": "TQr9v-PQOc4",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+        "casv": "A man speaks with light breathing and mild tapping noise in the background"
+      }
+    },
+    "item009": {
+      "audiocaps_id": "AFgGoY8Ihhg",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Someone hammers metal as a vehicle passes",
+        "casv": "A truck squealing its tires as someone calls out"
+      }
+    },
+    "item010": {
+      "audiocaps_id": "2msevPMQB4M",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Sharp ringing from metal being drilled into by a power tool",
+        "casv": "A machine cutting into an object"
+      }
+    },
+    "item011": {
+      "audiocaps_id": "K8-b0VtNOqA",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+        "casv": "Tapping noises followed by livestock communicating"
+      }
+    },
+    "item012": {
+      "audiocaps_id": "WCYfCfW9NA0",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Speech in a helicopter",
+        "casv": "Sound of an aircraft that fly by going support from the air"
+      }
+    },
+    "item013": {
+      "audiocaps_id": "CefFMA3klxk",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A car speeding past with a large boom",
+        "casv": "A truck moving away"
+      }
+    },
+    "item014": {
+      "audiocaps_id": "yL3gKa6YLoM",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A fan spins while a person snores",
+        "casv": "Someone breathes heavily while sleeping"
+      }
+    },
+    "item015": {
+      "audiocaps_id": "SoO1HhaEc9Q",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+        "casv": "A man announces a game as kids yell and pigs footsteps fast and squeal"
+      }
+    },
+    "item016": {
+      "audiocaps_id": "4YodC6RnplI",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+        "casv": "Loud white noise with faint conversations in background"
+      }
+    },
+    "item017": {
+      "audiocaps_id": "1Og2TJ3bXW0",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A loud airplane engine sound with a whoosh noise near the end",
+        "casv": "An airplane running"
+      }
+    },
+    "item018": {
+      "audiocaps_id": "a_Rjlu50TfA",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Man snoring fairly loud",
+        "casv": "A person snores, and then makes loud baby-like noises"
+      }
+    },
+    "item019": {
+      "audiocaps_id": "JQz40TkjymY",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A person presses several keyboard keys at the same time",
+        "casv": "A person types on a computer keyboard and then talks"
+      }
+    },
+    "item020": {
+      "audiocaps_id": "YIqpIjjee00",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Water finishes flushing down a toilet",
+        "casv": "Water running in a toilet"
+      }
+    },
+    "item021": {
+      "audiocaps_id": "a3GzZKxUTy8",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A pet dog rubs an object and then pants quietly",
+        "casv": "A dog whimpers multiple times as an object is dragged on a surface"
+      }
+    },
+    "item022": {
+      "audiocaps_id": "PLHXGDnig4M",
+      "casv": "B",
+      "prompts": {
+        "baseline": "People speaking animal barking cat meow",
+        "casv": "Cats are caterwauling, thumping occurs, and an electronic device is playing in the background"
+      }
+    },
+    "item023": {
+      "audiocaps_id": "naPgJvWTIY4",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A motorcycle accelerating with a man laughing in the background and a person cheering",
+        "casv": "A motorcycle engine accelerating and revving then lowering speed"
+      }
+    },
+    "item024": {
+      "audiocaps_id": "C8kR19NvynA",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A man speaking along with sizzling noise and music in the background",
+        "casv": "A man is speaking and crowd cheering"
+      }
+    },
+    "item025": {
+      "audiocaps_id": "paf0nyjg1Js",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Man speaks while frying some food",
+        "casv": "Person speaks while frying some food"
+      }
+    },
+    "item026": {
+      "audiocaps_id": "hrv6fwnmBkY",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A rooster alarm clock following repetitive beeping",
+        "casv": "A rooster screams followed by a goat making noises"
+      }
+    },
+    "item027": {
+      "audiocaps_id": "GPj8h-WcjWs",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A man talking followed by glass clanking while a group of people are talking in the background during a muffled bus engine driving",
+        "casv": "A muffled bus engine running as a group of people talk in the background"
+      }
+    },
+    "item028": {
+      "audiocaps_id": "hGWarNR6xmg",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Loud and heavy rainfall on metal with faint yell in background",
+        "casv": "A thunderstorm happens nearby"
+      }
+    },
+    "item029": {
+      "audiocaps_id": "WqXFAY4k79s",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A motor vehicle accelerates and speeds while a girl screams near the end",
+        "casv": "Pounding is followed by kids talking and then a young woman begins speaking"
+      }
+    },
+    "item030": {
+      "audiocaps_id": "6Nvu6EcpdE8",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Mini race car engine revs along with tire squeal",
+        "casv": "A race car engine is being revved repeatedly"
+      }
+    },
+    "item031": {
+      "audiocaps_id": "elztUCeNQvQ",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A train is moving through a tunnel at a fast speed and blows it horn",
+        "casv": "An engine idles at high speed, followed by a person talking"
+      }
+    },
+    "item032": {
+      "audiocaps_id": "PZBUdlKwX04",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A baby talking, followed by splashing and a woman talking",
+        "casv": "People splashing in a pool and talking"
+      }
+    },
+    "item033": {
+      "audiocaps_id": "vigslb0kClE",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+        "casv": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling"
+      }
+    },
+    "item034": {
+      "audiocaps_id": "1IoHRTUp86c",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Very windy, engine or water noise in background",
+        "casv": "Helicopter in flight with faint sound of humans talking below"
+      }
+    },
+    "item035": {
+      "audiocaps_id": "4YMXgLFcR94",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Man sneezes during his speech",
+        "casv": "Low volume voice in the background, followed by a man's speech and a sound of gunshot"
+      }
+    },
+    "item036": {
+      "audiocaps_id": "CBwXKOpJY_o",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A young boy coughing then sneezing before talking",
+        "casv": "A kid crying and yelling"
+      }
+    },
+    "item037": {
+      "audiocaps_id": "azh_-OkQ-uI",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Goats running around a barn",
+        "casv": "Several goats bleat while someone makes animal sounds"
+      }
+    },
+    "item038": {
+      "audiocaps_id": "0Rpjl1AO-P0",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Race cars crashing together and sound of engines",
+        "casv": "A car racing, high pitch whining"
+      }
+    },
+    "item039": {
+      "audiocaps_id": "g6CY7qvu81k",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Man speaking with ticking in the background",
+        "casv": "A man speaks into a microphone, a guitar plays, the audience laughs, and then a woman speaks"
+      }
+    },
+    "item040": {
+      "audiocaps_id": "FXdoNvmrYxo",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+        "casv": "A fishing line being thrown twice"
+      }
+    },
+    "item041": {
+      "audiocaps_id": "2EsxcKe1A4w",
+      "casv": "A",
+      "prompts": {
+        "baseline": "The wind noise from a helicopter running",
+        "casv": "A gun cocking followed by a gunshot firing during camera audio feedback"
+      }
+    },
+    "item042": {
+      "audiocaps_id": "5K1mISHwggI",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A chainsaw engine making a prolonged and loud sawing noise",
+        "casv": "The motor of a chainsaw cutting"
+      }
+    },
+    "item043": {
+      "audiocaps_id": "GMP8m09j5vk",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A bird chirping and flying around in a cage with a ticking sound in the background",
+        "casv": "Male voice with bird chirping and slamming"
+      }
+    },
+    "item044": {
+      "audiocaps_id": "Dc2WEiRk0rA",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Sharp air noises spraying",
+        "casv": "Rain falls onto a metal roof and a man speaks"
+      }
+    },
+    "item045": {
+      "audiocaps_id": "WUyeFOyKIg0",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A dirt bike speeds by, followed by several other dirt bikes racing together",
+        "casv": "A motorcycle starting up and pulling off"
+      }
+    },
+    "item046": {
+      "audiocaps_id": "9MgGaTbmc6g",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A car slowly moving pass in the rain followed by a man speaking",
+        "casv": "Cars going by in open area"
+      }
+    },
+    "item047": {
+      "audiocaps_id": "TWOgvDaDqlU",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Wood being sawed by machine",
+        "casv": "A machine is being used to saw wood"
+      }
+    },
+    "item048": {
+      "audiocaps_id": "n74IYuCe_ms",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A guy is wading through a stream, ends with a cackle",
+        "casv": "A stream goes by quickly and the whooshing sound is close by"
+      }
+    },
+    "item049": {
+      "audiocaps_id": "5QZ0NtdoKJ8",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A bus engine running idle as wind blows into a microphone",
+        "casv": "A banging sound is followed by speaking sounds and a window crashing"
+      }
+    },
+    "item050": {
+      "audiocaps_id": "lh801oHGtD4",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Beeping sound from a vehicle door",
+        "casv": "A door sliding and then a woman screaming"
+      }
+    },
+    "item051": {
+      "audiocaps_id": "sI7_ycEYzAY",
+      "casv": "A",
+      "prompts": {
+        "baseline": "Chime clock playing music",
+        "casv": "A chime of a clock and rumpling sounds in background"
+      }
+    },
+    "item052": {
+      "audiocaps_id": "EvZ3jOMYWxk",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A girl speaks, rustling of a camera followed by computer typing",
+        "casv": "A girl speaking followed by a monologue"
+      }
+    },
+    "item053": {
+      "audiocaps_id": "GE1aZSnPr2Q",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A dog howls as a baby cries",
+        "casv": "A dog crying for some reason"
+      }
+    },
+    "item054": {
+      "audiocaps_id": "KVAIaRPry24",
+      "casv": "B",
+      "prompts": {
+        "baseline": "An engine works while an insect flies",
+        "casv": "An insect buzzing at a high pitch tone continuously"
+      }
+    },
+    "item055": {
+      "audiocaps_id": "DAN1t9ukkg0",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A person types on a computer keyboard slowly and loudly",
+        "casv": "Typing on a computer keyboard"
+      }
+    },
+    "item056": {
+      "audiocaps_id": "lmPMhs-9IYE",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A man speaks over a car racing while people laugh followed by a squeal",
+        "casv": "A crowd of people shout in the background, then a race car motor accelerates loudly and the crowd cheers in the background"
+      }
+    },
+    "item057": {
+      "audiocaps_id": "L6rnV0oNIII",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A gun cocking followed by a gunshot firing during camera audio feedback",
+        "casv": "An automatic gunfire is triggered for a long period"
+      }
+    },
+    "item058": {
+      "audiocaps_id": "R91bUbtKrRs",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A baby cries and then a woman speaks while pumping something with air",
+        "casv": "An infant cries with low talking and fan noise in the background"
+      }
+    },
+    "item059": {
+      "audiocaps_id": "52IxrdTxGs4",
+      "casv": "B",
+      "prompts": {
+        "baseline": "Loud burst of noise with cartoon sounding voices",
+        "casv": "Background noises from a video game being played"
+      }
+    },
+    "item060": {
+      "audiocaps_id": "FDwK7T1JO_0",
+      "casv": "B",
+      "prompts": {
+        "baseline": "A man pours liquid into a pot",
+        "casv": "Man talking then tapping on an item"
+      }
+    },
+    "item061": {
+      "audiocaps_id": "xpZna_FwDhI",
+      "casv": "A",
+      "prompts": {
+        "baseline": "A sewing machine operating and fabric shuffling",
+        "casv": "A sewing machine clicks then is used lightly"
+      }
+    }
+  }
+}
