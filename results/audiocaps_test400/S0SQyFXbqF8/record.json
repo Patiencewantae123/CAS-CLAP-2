@@ -1,0 +1,283 @@
+{
+  "id": "S0SQyFXbqF8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\S0SQyFXbqF8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\S0SQyFXbqF8.wav",
+  "gt_captions": [
+    "A child talking then laughing with a man as an animal gurgles followed by a man talking",
+    "A woman speaking and person laughing followed by some gurgling and squeaking",
+    "A child talking then laughing with a man as an animal gurgles",
+    "Young child speaking with giggling",
+    "An animal gurgling followed by a bell clinking as a kid yells and a man laughs then speaks"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.12874171137809753
+  ],
+  "top_object": [
+    "American bullfrog",
+    0.7946913242340088
+  ],
+  "env_probs": {
+    "indoor": 0.38678833842277527,
+    "outdoor": 0.6132116615772247
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A frog cracking loudly",
+    "casv": "A frog cracking loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0551070012152195,
+    "clap_gt_audio_baseline": 0.22914637625217438,
+    "clap_text_casv": 0.0551070012152195,
+    "clap_gt_audio_casv": 0.22914637625217438
+  },
+  "verdicts": [
+    {
+      "caption": "A frog cracking loudly",
+      "clip_similarity": 0.34160399436950684,
+      "visual": 1.0,
+      "scene_support": 0.735786087910355,
+      "object_support": 0.7786395996313079,
+      "score": 0.8543277062624989,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bullfrog making a crooking sound",
+      "clip_similarity": 0.3336275815963745,
+      "visual": 0.6993500468424588,
+      "scene_support": 0.4733585365193936,
+      "object_support": 1.0,
+      "score": 0.7217475796928017,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dog barking, bird calls, and frog calls blend together",
+      "clip_similarity": 0.3289502263069153,
+      "visual": 0.5230494103691455,
+      "scene_support": 0.7551626917647275,
+      "object_support": 0.1800399250514955,
+      "score": 0.4897805491925251,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks and a whoosh goes off",
+      "clip_similarity": 0.3282252848148346,
+      "visual": 0.495724642727961,
+      "scene_support": 1.0,
+      "object_support": 0.3783631954286467,
+      "score": 0.6117988157197785,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A squealing frog and children laughter",
+      "clip_similarity": 0.3251074254512787,
+      "visual": 0.3782051138035852,
+      "scene_support": 0.8614747489512901,
+      "object_support": 0.36539272334727096,
+      "score": 0.5193422872110024,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks as a man and woman speak and laugh",
+      "clip_similarity": 0.3249388635158539,
+      "visual": 0.3718516138743544,
+      "scene_support": 0.6251830818290169,
+      "object_support": 0.515909707960464,
+      "score": 0.49106848248658597,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bullfrog belts out a song in the quiet",
+      "clip_similarity": 0.32182031869888306,
+      "visual": 0.25430624858180806,
+      "scene_support": 0.0,
+      "object_support": 0.8986854908472222,
+      "score": 0.37132814668688985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs purr nearby as birds chirp in the background",
+      "clip_similarity": 0.32131680846214294,
+      "visual": 0.23532775118004803,
+      "scene_support": 0.8238454982156536,
+      "object_support": 0.47738659022215346,
+      "score": 0.48450072700336133,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks intensively",
+      "clip_similarity": 0.32113704085350037,
+      "visual": 0.22855188279724742,
+      "scene_support": 0.7696849294807641,
+      "object_support": 0.6555903305247429,
+      "score": 0.5190033311205511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks while birds and bugs chirp in the background",
+      "clip_similarity": 0.3210422992706299,
+      "visual": 0.2249808473879432,
+      "scene_support": 0.8991632764755748,
+      "object_support": 0.5107055889328033,
+      "score": 0.5129529985776906,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog consistently croaks while crickets chirp in the background",
+      "clip_similarity": 0.3209913969039917,
+      "visual": 0.22306221622119526,
+      "scene_support": 0.9422736159013726,
+      "object_support": 0.5577842936700833,
+      "score": 0.5392422593599149,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog snaps and croaks",
+      "clip_similarity": 0.31962335109710693,
+      "visual": 0.17149731863431206,
+      "scene_support": 0.8395561492186686,
+      "object_support": 0.36840069648651125,
+      "score": 0.43098598116527875,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frog making croaking sound",
+      "clip_similarity": 0.3193187117576599,
+      "visual": 0.16001473796306073,
+      "scene_support": 0.5715519756723455,
+      "object_support": 0.6682996393112794,
+      "score": 0.4359613796803118,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks while a music is played",
+      "clip_similarity": 0.31869226694107056,
+      "visual": 0.13640254409594055,
+      "scene_support": 0.3958135624141422,
+      "object_support": 0.5663448588550248,
+      "score": 0.3432085440191263,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone kisses and then a frog croaks",
+      "clip_similarity": 0.3182070553302765,
+      "visual": 0.11811376539229716,
+      "scene_support": 0.7044856414928312,
+      "object_support": 0.0,
+      "score": 0.25859119860476826,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog singing and running water",
+      "clip_similarity": 0.3179238438606262,
+      "visual": 0.10743885205646257,
+      "scene_support": 0.20783593105706627,
+      "object_support": 0.7810628273875284,
+      "score": 0.3396451683559634,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog swallows a buzzing fly and croaks, then a man sings as music plays",
+      "clip_similarity": 0.31715017557144165,
+      "visual": 0.07827745563446258,
+      "scene_support": 0.2591598464788724,
+      "object_support": 0.36188578279868255,
+      "score": 0.21762467103705152,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young person produces a croaking, frog-like burp",
+      "clip_similarity": 0.3154294788837433,
+      "visual": 0.013420308284038292,
+      "scene_support": 0.5981989064295749,
+      "object_support": 0.5607493778224878,
+      "score": 0.3530526085892341,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks several times in a row",
+      "clip_similarity": 0.31524795293807983,
+      "visual": 0.006578164000278584,
+      "scene_support": 0.8779847733468538,
+      "object_support": 0.6590662531453519,
+      "score": 0.46374657354777316,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks several times, followed by a human making imitation frog noises several times",
+      "clip_similarity": 0.3150734305381775,
+      "visual": 0.0,
+      "scene_support": 0.7036298688256463,
+      "object_support": 0.6540030550744372,
+      "score": 0.407289877170025,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.12874171137809753
+    ],
+    [
+      "lawn",
+      0.06808062642812729
+    ],
+    [
+      "pond",
+      0.057273782789707184
+    ],
+    [
+      "swamp",
+      0.04778025671839714
+    ],
+    [
+      "veterinarians office",
+      0.03814740106463432
+    ]
+  ],
+  "top_objects": [
+    [
+      "American bullfrog",
+      0.7946913242340088
+    ],
+    [
+      "tailed frog",
+      0.15313132107257843
+    ],
+    [
+      "tree frog",
+      0.028061654418706894
+    ],
+    [
+      "crayfish",
+      0.0017091715708374977
+    ],
+    [
+      "chameleon",
+      0.0013015917502343655
+    ]
+  ]
+}

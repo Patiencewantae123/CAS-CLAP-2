@@ -1,0 +1,321 @@
+{
+  "id": "Ot0bN_hz2ec",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Ot0bN_hz2ec.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Ot0bN_hz2ec.wav",
+  "gt_captions": [
+    "Train blows horn twice as it speeds down the tracks",
+    "A honk followed by loud gusts of wind as a train passes by",
+    "A train horn honks with a train racing by",
+    "A train horn blowing followed by a train running on railroad tracks passes by",
+    "Train horn blows followed by clickety-clack of rails"
+  ],
+  "top_scene": [
+    "platform train station",
+    0.8578668236732483
+  ],
+  "top_object": [
+    "high-speed train",
+    0.6547331809997559
+  ],
+  "env_probs": {
+    "indoor": 0.9215863347053528,
+    "outdoor": 0.07841366529464722
+  },
+  "status": "REPAIR",
+  "n_rejected": 19,
+  "prompts": {
+    "baseline": "A train whistle blows twice as a vehicle speeds up nearby",
+    "casv": "A trains passing by while a horn is honking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.41764867305755615,
+    "clap_gt_audio_baseline": 0.5826709866523743,
+    "clap_text_casv": 0.5580241680145264,
+    "clap_gt_audio_casv": 0.7916049361228943
+  },
+  "verdicts": [
+    {
+      "caption": "A train whistle blows twice as a vehicle speeds up nearby",
+      "clip_similarity": 0.31580525636672974,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train car running while a man talks in the background",
+      "clip_similarity": 0.3136352300643921,
+      "visual": 0.8049962774305165,
+      "scene_support": 0.7177369851251656,
+      "object_support": 0.6009886431594776,
+      "score": 0.7176161994575996,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train moving is followed by a horn and accelerated train movement",
+      "clip_similarity": 0.31251418590545654,
+      "visual": 0.7042565841273922,
+      "scene_support": 1.0,
+      "object_support": 0.9508087974870958,
+      "score": 0.8669452728970857,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A trains passing by while a horn is honking",
+      "clip_similarity": 0.31148847937583923,
+      "visual": 0.6120841568514025,
+      "scene_support": 0.4398133826704333,
+      "object_support": 0.4530369097316975,
+      "score": 0.5126887504612002,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train whistle blows as the train passes",
+      "clip_similarity": 0.3111414909362793,
+      "visual": 0.5809029507388899,
+      "scene_support": 0.4321594252564993,
+      "object_support": 0.4001783941334603,
+      "score": 0.48206252611254385,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The noise a train makes when it pulls in including honking, hissing and passengers whistling",
+      "clip_similarity": 0.3107113242149353,
+      "visual": 0.5422471464764139,
+      "scene_support": 0.18511957055633893,
+      "object_support": 0.32929103935992937,
+      "score": 0.371222041565446,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast moving train going by while opening a car door",
+      "clip_similarity": 0.31034055352211,
+      "visual": 0.5089288105453162,
+      "scene_support": 0.35269534753227527,
+      "object_support": 0.5842894136363372,
+      "score": 0.4846669525687103,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train blowing a horn while traveling down a track",
+      "clip_similarity": 0.309116005897522,
+      "visual": 0.3988880497485257,
+      "scene_support": 0.5441491905699285,
+      "object_support": 0.4284855804123532,
+      "score": 0.45134565119409487,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle blows, the bell rings, and a train engine is running",
+      "clip_similarity": 0.3090590536594391,
+      "visual": 0.39377018623559845,
+      "scene_support": 0.6309621864268817,
+      "object_support": 0.49088869018933873,
+      "score": 0.4940633374791055,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistle goes off and a train passes by",
+      "clip_similarity": 0.30901989340782166,
+      "visual": 0.3902511529252969,
+      "scene_support": 0.5816184512719923,
+      "object_support": 0.5423551799617955,
+      "score": 0.4932925505402551,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train horn and bell gets louder as train approaches",
+      "clip_similarity": 0.30853718519210815,
+      "visual": 0.34687384506612245,
+      "scene_support": 0.024106173037432677,
+      "object_support": 0.07167408886901894,
+      "score": 0.16748361659838445,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train whistles while someone speaks",
+      "clip_similarity": 0.30799388885498047,
+      "visual": 0.2980519445738863,
+      "scene_support": 0.5513313323760731,
+      "object_support": 0.4727038105799769,
+      "score": 0.4264313207163695,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train horn blaring while a train signal beeps as train speeds past",
+      "clip_similarity": 0.3076421320438385,
+      "visual": 0.26644224125463983,
+      "scene_support": 0.615741425679358,
+      "object_support": 0.57122048295603,
+      "score": 0.4626654690924723,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.30637264251708984,
+      "visual": 0.15236289428438288,
+      "scene_support": 0.5385336702573789,
+      "object_support": 0.6326706574310084,
+      "score": 0.41230645602026933,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train rattles as it passes followed by a train horn blowing twice",
+      "clip_similarity": 0.30538371205329895,
+      "visual": 0.06349525171532788,
+      "scene_support": 0.840000172156208,
+      "object_support": 0.9351757233018446,
+      "score": 0.5579508693235469,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Idling car, train blows horn and passes",
+      "clip_similarity": 0.30523067712783813,
+      "visual": 0.04974316948671391,
+      "scene_support": 0.3112939314398661,
+      "object_support": 0.45722895413717624,
+      "score": 0.25045413346779827,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train running down tracks while train blowing horn multiple times",
+      "clip_similarity": 0.3052218556404114,
+      "visual": 0.048950449654256316,
+      "scene_support": 0.6315367577713733,
+      "object_support": 0.43378805209282884,
+      "score": 0.33917762282096314,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train speeds up and blows its horn as it clicks on the tracks",
+      "clip_similarity": 0.30497217178344727,
+      "visual": 0.026513264666655954,
+      "scene_support": 0.8446887388858373,
+      "object_support": 1.0,
+      "score": 0.5640119275324136,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train running on railroad tracks as a train whistle blows twice",
+      "clip_similarity": 0.30481141805648804,
+      "visual": 0.012067552584641589,
+      "scene_support": 0.52369703304915,
+      "object_support": 0.3603111518832266,
+      "score": 0.2700294765135696,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks very fast with a rustle in the background followed by a train whistle and a train coming close by at the end",
+      "clip_similarity": 0.3046771287918091,
+      "visual": 0.0,
+      "scene_support": 0.638147556161928,
+      "object_support": 0.2702184856384739,
+      "score": 0.2725098125401205,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.92)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "platform train station",
+      0.8578668236732483
+    ],
+    [
+      "railroad track",
+      0.028895575553178787
+    ],
+    [
+      "platform subway station",
+      0.026130180805921555
+    ],
+    [
+      "train interior",
+      0.011068204417824745
+    ],
+    [
+      "landing deck",
+      0.008187953382730484
+    ]
+  ],
+  "top_objects": [
+    [
+      "high-speed train",
+      0.6547331809997559
+    ],
+    [
+      "passenger car",
+      0.24939805269241333
+    ],
+    [
+      "electric locomotive",
+      0.028583910316228867
+    ],
+    [
+      "freight car",
+      0.02213842049241066
+    ],
+    [
+      "balance beam",
+      0.0023298945743590593
+    ]
+  ]
+}

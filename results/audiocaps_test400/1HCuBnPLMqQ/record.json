@@ -1,0 +1,287 @@
+{
+  "id": "1HCuBnPLMqQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1HCuBnPLMqQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1HCuBnPLMqQ.wav",
+  "gt_captions": [
+    "Plastic clacking followed by as person breathing then liquid pouring into containers",
+    "Trickling water sounds with breathing in the background",
+    "A liquid makes a trickling noise",
+    "Plastic clanking followed by a person breathing aloud then liquid pouring into a container",
+    "Gurgling and splashing water"
+  ],
+  "top_scene": [
+    "sandbox",
+    0.48853960633277893
+  ],
+  "top_object": [
+    "bucket",
+    0.18150977790355682
+  ],
+  "env_probs": {
+    "indoor": 0.16590608656406403,
+    "outdoor": 0.834093913435936
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Water pouring and filling up a container",
+    "casv": "Water pouring and filling up a container"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.34623652696609497,
+    "clap_gt_audio_baseline": 0.5885879993438721,
+    "clap_text_casv": 0.34623652696609497,
+    "clap_gt_audio_casv": 0.5885879993438721
+  },
+  "verdicts": [
+    {
+      "caption": "Water pouring and filling up a container",
+      "clip_similarity": 0.3392500877380371,
+      "visual": 1.0,
+      "scene_support": 0.760693485411368,
+      "object_support": 0.7002864472013239,
+      "score": 0.8382939797838076,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A click and pouring liquid into container",
+      "clip_similarity": 0.3387843370437622,
+      "visual": 0.9813404590142012,
+      "scene_support": 0.726169790445629,
+      "object_support": 0.5898470424160853,
+      "score": 0.7873412334641947,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man pours liquid into a pot",
+      "clip_similarity": 0.33633729815483093,
+      "visual": 0.8833038419932803,
+      "scene_support": 0.17089832307640915,
+      "object_support": 0.4668497081558544,
+      "score": 0.5446459461669912,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rubbing with tricking water splashing",
+      "clip_similarity": 0.32910752296447754,
+      "visual": 0.5936547053612152,
+      "scene_support": 0.3804676519230549,
+      "object_support": 0.17127095504871473,
+      "score": 0.402983464236017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.32391345500946045,
+      "visual": 0.38556285476171714,
+      "scene_support": 0.8807919877824352,
+      "object_support": 0.34937479225661244,
+      "score": 0.5232751759164012,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water moving into an object",
+      "clip_similarity": 0.32134342193603516,
+      "visual": 0.2825986765910399,
+      "scene_support": 0.8110420779034292,
+      "object_support": 0.6599399049280531,
+      "score": 0.5543340654858606,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Shaking a spray can",
+      "clip_similarity": 0.3212369978427887,
+      "visual": 0.2783349690878221,
+      "scene_support": 0.4806228644565293,
+      "object_support": 0.30956015098974504,
+      "score": 0.34838889226901115,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bubbling water that moves by motor",
+      "clip_similarity": 0.3202593922615051,
+      "visual": 0.23916879792342757,
+      "scene_support": 0.6020974882294253,
+      "object_support": 0.49858218182285785,
+      "score": 0.42587142018505597,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water runs from a tap into a bucket",
+      "clip_similarity": 0.3200988173484802,
+      "visual": 0.2327356262551729,
+      "scene_support": 0.8223497073498345,
+      "object_support": 1.0,
+      "score": 0.6397991627070194,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Shaking of a can following by spraying",
+      "clip_similarity": 0.31974101066589355,
+      "visual": 0.2184006858229039,
+      "scene_support": 0.2448808034554608,
+      "object_support": 0.329572487975725,
+      "score": 0.2596962617585173,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pouring and splashing sounds",
+      "clip_similarity": 0.31841030716896057,
+      "visual": 0.16508822328406966,
+      "scene_support": 0.7203377281133126,
+      "object_support": 0.3663204179455996,
+      "score": 0.39203273313130155,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Spraying and sloshing of liquid along a surface with static in the background",
+      "clip_similarity": 0.3182506263256073,
+      "visual": 0.158690871057175,
+      "scene_support": 0.5540553948695601,
+      "object_support": 0.2618215485762004,
+      "score": 0.30823943145659816,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping and rustling followed by running water with music in the background",
+      "clip_similarity": 0.318065345287323,
+      "visual": 0.15126788882600586,
+      "scene_support": 0.814618497764052,
+      "object_support": 0.40897693030382265,
+      "score": 0.42758578395076474,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Balloon popping with combustion and people reacting loudly with amazement",
+      "clip_similarity": 0.3178890347480774,
+      "visual": 0.14420429498981535,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.05768171799592614,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large bubbles from a liquid and popping",
+      "clip_similarity": 0.31731194257736206,
+      "visual": 0.12108403957331881,
+      "scene_support": 0.29608648025540013,
+      "object_support": 0.29329995670754444,
+      "score": 0.22524954691821092,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something dropping in water and water being added to something in a bowl",
+      "clip_similarity": 0.3166356086730957,
+      "visual": 0.09398782616586311,
+      "scene_support": 0.9385452103246998,
+      "object_support": 0.7765626102038486,
+      "score": 0.5521274766249098,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talking and scraping a container",
+      "clip_similarity": 0.3155735731124878,
+      "visual": 0.051439105755706635,
+      "scene_support": 0.8389673704663406,
+      "object_support": 0.4399682496014639,
+      "score": 0.40425632832262404,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Liquid flushing briefly in a container followed by an infant goat whimpering then baaing as wood clacks once in the background",
+      "clip_similarity": 0.3147427439689636,
+      "visual": 0.018153292881244225,
+      "scene_support": 1.0,
+      "object_support": 0.3885418002101886,
+      "score": 0.4238238572155542,
+      "conflicts": [
+        "names 'goats or sheep', not visible in image (z=-0.41)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks then spills some liquid and tap an object",
+      "clip_similarity": 0.3147209882736206,
+      "visual": 0.017281686474817738,
+      "scene_support": 0.7736739001125328,
+      "object_support": 0.47388794696732645,
+      "score": 0.3811812287138848,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone uses a paint spray can and sets down the container with a click and finally a little crunching sound",
+      "clip_similarity": 0.3142896294593811,
+      "visual": 0.0,
+      "scene_support": 0.9641101555266481,
+      "object_support": 0.5127416593830649,
+      "score": 0.4430555444729139,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sandbox",
+      0.48853960633277893
+    ],
+    [
+      "nursery",
+      0.051052309572696686
+    ],
+    [
+      "yard",
+      0.025548793375492096
+    ],
+    [
+      "outdoor kennel",
+      0.02233298495411873
+    ],
+    [
+      "ball pit",
+      0.020148983225226402
+    ]
+  ],
+  "top_objects": [
+    [
+      "bucket",
+      0.18150977790355682
+    ],
+    [
+      "steel drum",
+      0.08057382702827454
+    ],
+    [
+      "rain barrel",
+      0.04936524108052254
+    ],
+    [
+      "bubble",
+      0.030844934284687042
+    ],
+    [
+      "scorpion",
+      0.02726389467716217
+    ]
+  ]
+}

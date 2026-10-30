@@ -1,0 +1,283 @@
+{
+  "id": "8VOibo9Q_Dc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\8VOibo9Q_Dc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\8VOibo9Q_Dc.wav",
+  "gt_captions": [
+    "A duck chirping as water lightly trickles and splashes",
+    "A bird chirps and water splashes lightly",
+    "Water splashing and birds chirping",
+    "A small birds chirps as water splashes",
+    "Chirping and water splashing lightly"
+  ],
+  "top_scene": [
+    "indoor jacuzzi",
+    0.8000665307044983
+  ],
+  "top_object": [
+    "cock",
+    0.3037129342556
+  ],
+  "env_probs": {
+    "indoor": 0.9261956810951233,
+    "outdoor": 0.07380431890487671
+  },
+  "status": "ACCEPT",
+  "n_rejected": 15,
+  "prompts": {
+    "baseline": "Bathtub filling, then stops and a woman speaking",
+    "casv": "Bathtub filling, then stops and a woman speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.03034614399075508,
+    "clap_gt_audio_baseline": 0.4343447685241699,
+    "clap_text_casv": 0.03034614399075508,
+    "clap_gt_audio_casv": 0.4343447685241699
+  },
+  "verdicts": [
+    {
+      "caption": "Bathtub filling, then stops and a woman speaking",
+      "clip_similarity": 0.3275301158428192,
+      "visual": 1.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 1.0,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Ducks being shot at from someone with a gun",
+      "clip_similarity": 0.3153431713581085,
+      "visual": 0.4959694913917211,
+      "scene_support": 0.0916992812226757,
+      "object_support": 0.5941414094978251,
+      "score": 0.40414000377283865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A duck crying out and a gunshot going off",
+      "clip_similarity": 0.3116074204444885,
+      "visual": 0.34146542883625536,
+      "scene_support": 0.18581881391964108,
+      "object_support": 0.7612040906109563,
+      "score": 0.42069304289368137,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Duck quacking and a dog barking at the ending",
+      "clip_similarity": 0.309872031211853,
+      "visual": 0.2696927938943341,
+      "scene_support": 0.161041877927977,
+      "object_support": 0.7414026555508217,
+      "score": 0.37861047760137323,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck quacking as a person speaks and water splashes",
+      "clip_similarity": 0.30920910835266113,
+      "visual": 0.24227547478651862,
+      "scene_support": 0.22182367746927806,
+      "object_support": 0.4917499811570179,
+      "score": 0.31098228750249624,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A quacking sound with people talking",
+      "clip_similarity": 0.3078877329826355,
+      "visual": 0.18762572228686375,
+      "scene_support": 0.28526981386656386,
+      "object_support": 0.7327755097895305,
+      "score": 0.3804638860115738,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking followed by quacking",
+      "clip_similarity": 0.3074706792831421,
+      "visual": 0.17037711755773366,
+      "scene_support": 0.13132876031164709,
+      "object_support": 0.7168057483657388,
+      "score": 0.3225911996263092,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks quacking followed by a gunshot",
+      "clip_similarity": 0.30734238028526306,
+      "visual": 0.16507089750921963,
+      "scene_support": 0.2845403512594666,
+      "object_support": 0.8184429228699278,
+      "score": 0.39692334124250617,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping sounds, followed by a girl talking and then water splashing noises while water is running from a faucet in the background",
+      "clip_similarity": 0.30694401264190674,
+      "visual": 0.14859511507286963,
+      "scene_support": 0.5600167193248577,
+      "object_support": 0.43556047581603474,
+      "score": 0.3581112045714156,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks are quacking and a chicken sings",
+      "clip_similarity": 0.30660557746887207,
+      "visual": 0.13459803380203916,
+      "scene_support": 0.12839449784757898,
+      "object_support": 0.8143108306253786,
+      "score": 0.3366508120627029,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bathtub water filling with child speaking and mother talking",
+      "clip_similarity": 0.3064316511154175,
+      "visual": 0.12740474687912912,
+      "scene_support": 0.8542726465140836,
+      "object_support": 0.5352171326273318,
+      "score": 0.46780883249407623,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ducks quack as a woman talks followed by a tap and laughter",
+      "clip_similarity": 0.3060675263404846,
+      "visual": 0.11234518902715601,
+      "scene_support": 0.05727940128893843,
+      "object_support": 0.3071197606486904,
+      "score": 0.15425782419215106,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People are playing with a duck splashing in water",
+      "clip_similarity": 0.30510419607162476,
+      "visual": 0.07250354980574675,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0290014199222987,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bathtub filling while a woman is talking and a baby is whining",
+      "clip_similarity": 0.30481112003326416,
+      "visual": 0.06038244226635376,
+      "scene_support": 0.9070219767633511,
+      "object_support": 0.6328900644296349,
+      "score": 0.4861265892644373,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A duck quacking and gunshot noise",
+      "clip_similarity": 0.3044072687625885,
+      "visual": 0.043679866685073065,
+      "scene_support": 0.18830017403741664,
+      "object_support": 0.8054677255798961,
+      "score": 0.31560231655922305,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person talking and duck hearing in water",
+      "clip_similarity": 0.30412548780441284,
+      "visual": 0.032025903721379693,
+      "scene_support": 0.466954191564074,
+      "object_support": 0.6696079537162904,
+      "score": 0.3537790050726612,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by duck quacking",
+      "clip_similarity": 0.3035927414894104,
+      "visual": 0.009992456662788175,
+      "scene_support": 0.13373713924948807,
+      "object_support": 0.7396386316948046,
+      "score": 0.26600971394840306,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Chickens clucking as a man talks followed by a child speaking",
+      "clip_similarity": 0.30356332659721375,
+      "visual": 0.00877590865166545,
+      "scene_support": 0.22793698616360636,
+      "object_support": 0.7135048855442522,
+      "score": 0.28594292497302376,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A duck is crying and a man speaking",
+      "clip_similarity": 0.3034009337425232,
+      "visual": 0.0020596268759737317,
+      "scene_support": 0.16964702250753558,
+      "object_support": 0.7306859433491757,
+      "score": 0.27092374050740287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks quacking as a woman talks",
+      "clip_similarity": 0.30335113406181335,
+      "visual": 0.0,
+      "scene_support": 0.046178579709416176,
+      "object_support": 0.4651041335355368,
+      "score": 0.15338481397348588,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor jacuzzi",
+      0.8000665307044983
+    ],
+    [
+      "hot spring",
+      0.03455313667654991
+    ],
+    [
+      "indoor swimming pool",
+      0.03127145767211914
+    ],
+    [
+      "bathroom",
+      0.027852851897478104
+    ],
+    [
+      "shower",
+      0.017180146649479866
+    ]
+  ],
+  "top_objects": [
+    [
+      "cock",
+      0.3037129342556
+    ],
+    [
+      "bathtub",
+      0.20628710091114044
+    ],
+    [
+      "tub",
+      0.18909037113189697
+    ],
+    [
+      "duck",
+      0.13834965229034424
+    ],
+    [
+      "goldfish",
+      0.026326697319746017
+    ]
+  ]
+}

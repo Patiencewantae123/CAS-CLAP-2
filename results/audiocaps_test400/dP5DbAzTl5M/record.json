@@ -1,0 +1,317 @@
+{
+  "id": "dP5DbAzTl5M",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\dP5DbAzTl5M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\dP5DbAzTl5M.wav",
+  "gt_captions": [
+    "A motorboat engine running as a man talks followed by wind blowing into a microphone and plastic clacking",
+    "A motorboat engine running as a man is talking followed by a plastic clank while wind blows into a microphone",
+    "A motorboat engine running and a man speaking",
+    "A motorboat engine is running, and a man speaks",
+    "A motorboat engine running idle as wind blows into a microphone while a man talks"
+  ],
+  "top_scene": [
+    "car interior",
+    0.6290005445480347
+  ],
+  "top_object": [
+    "laptop computer",
+    0.64186030626297
+  ],
+  "env_probs": {
+    "indoor": 0.9800862073898315,
+    "outdoor": 0.019913792610168457
+  },
+  "status": "REPAIR",
+  "n_rejected": 17,
+  "prompts": {
+    "baseline": "Typing on a computer keyboard followed by wind blowing into a microphone and a vehicle driving by in the distance",
+    "casv": "Engine sound with lady laughing loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.15858149528503418,
+    "clap_gt_audio_baseline": -0.20740042626857758,
+    "clap_text_casv": 0.18345573544502258,
+    "clap_gt_audio_casv": 0.13799670338630676
+  },
+  "verdicts": [
+    {
+      "caption": "Typing on a computer keyboard followed by wind blowing into a microphone and a vehicle driving by in the distance",
+      "clip_similarity": 0.30671364068984985,
+      "visual": 1.0,
+      "scene_support": 0.027369122976094,
+      "object_support": 0.6529248634927992,
+      "score": 0.604088195940668,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine sound with lady laughing loudly",
+      "clip_similarity": 0.30429020524024963,
+      "visual": 0.8550196743349326,
+      "scene_support": 0.22450602456552796,
+      "object_support": 0.32512867770833886,
+      "score": 0.5068982804161332,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle car door opening",
+      "clip_similarity": 0.3020492494106293,
+      "visual": 0.7209560639206394,
+      "scene_support": 0.953747374671758,
+      "object_support": 0.5314084004190345,
+      "score": 0.7339291580954935,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man slams his car door while talking",
+      "clip_similarity": 0.2990354597568512,
+      "visual": 0.5406582121404999,
+      "scene_support": 0.6468273379719203,
+      "object_support": 0.35064342768915663,
+      "score": 0.515504514554523,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car door shutting",
+      "clip_similarity": 0.29705700278282166,
+      "visual": 0.42229841161169085,
+      "scene_support": 0.9814048882820923,
+      "object_support": 0.5187254056068561,
+      "score": 0.6189584528113609,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks loudly, and then starts typing on a computer keyboard",
+      "clip_similarity": 0.2962614893913269,
+      "visual": 0.3747073810402526,
+      "scene_support": 0.0,
+      "object_support": 1.0,
+      "score": 0.449882952416101,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plastic clicking followed by electronic beeping then plastic clicking and more electronic beeping as a vehicle door opens",
+      "clip_similarity": 0.2949795424938202,
+      "visual": 0.2980158072182612,
+      "scene_support": 0.827491901942317,
+      "object_support": 0.5452180591940947,
+      "score": 0.531019311228228,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical humming and a man speaking followed by a car door opening",
+      "clip_similarity": 0.29492875933647156,
+      "visual": 0.2949777404556744,
+      "scene_support": 0.7574531334798407,
+      "object_support": 0.48621578707538704,
+      "score": 0.49109177234883805,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Keys jingle as a car attempts to start",
+      "clip_similarity": 0.2932473421096802,
+      "visual": 0.19438813442375683,
+      "scene_support": 0.5257044884290863,
+      "object_support": 0.3520409920906467,
+      "score": 0.3410788979254227,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical sound then rubbing and clicking",
+      "clip_similarity": 0.2928283214569092,
+      "visual": 0.16932051782635593,
+      "scene_support": 0.5273983270909538,
+      "object_support": 0.7632929122736689,
+      "score": 0.4549355789399292,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person discusses loud idle sound coming from their vehicle",
+      "clip_similarity": 0.29249808192253113,
+      "visual": 0.14956416935439298,
+      "scene_support": 0.6520433145696896,
+      "object_support": 0.5095292752552023,
+      "score": 0.4082974446892248,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Typing on a computer as wind blows then a man speaks",
+      "clip_similarity": 0.2924354672431946,
+      "visual": 0.14581829008902034,
+      "scene_support": 0.05753028101659524,
+      "object_support": 0.8381029296394832,
+      "score": 0.3270172792324317,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car engine acceleration noise following by man speaking",
+      "clip_similarity": 0.29181429743766785,
+      "visual": 0.10865724224125174,
+      "scene_support": 0.1532516348220131,
+      "object_support": 0.19279420492287166,
+      "score": 0.14727664881996613,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car door closing with traffic sounds in the background",
+      "clip_similarity": 0.2916734516620636,
+      "visual": 0.10023124252295042,
+      "scene_support": 0.7167170437647998,
+      "object_support": 0.45566471607911546,
+      "score": 0.39180702496235476,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.98)",
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle engine roaring and woman speaks with exclamation in voice",
+      "clip_similarity": 0.2916698157787323,
+      "visual": 0.10001372835332858,
+      "scene_support": 0.15316706457273163,
+      "object_support": 0.0,
+      "score": 0.08595561071315093,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car door closing and opening",
+      "clip_similarity": 0.2913094758987427,
+      "visual": 0.07845664782138165,
+      "scene_support": 0.7335562580767631,
+      "object_support": 0.20798342026679778,
+      "score": 0.3138445626316209,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An idle vehicle engine running as wind blows into a microphone followed by a car door closing",
+      "clip_similarity": 0.29119378328323364,
+      "visual": 0.07153541826013625,
+      "scene_support": 0.07826702782422043,
+      "object_support": 0.11583068565997141,
+      "score": 0.08684348134931205,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.98)",
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Beeping sound from a vehicle door",
+      "clip_similarity": 0.29117700457572937,
+      "visual": 0.0705316438544224,
+      "scene_support": 1.0,
+      "object_support": 0.5191082677874325,
+      "score": 0.48394513787799864,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clapping sound followed by a vehicle door closing",
+      "clip_similarity": 0.2901839017868042,
+      "visual": 0.011119966196158557,
+      "scene_support": 0.5738170508224609,
+      "object_support": 0.2970759977513698,
+      "score": 0.26571590105061266,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A police siren whines as a car accelerates and a woman speaks over a radio",
+      "clip_similarity": 0.28999802470207214,
+      "visual": 0.0,
+      "scene_support": 0.13964616781171132,
+      "object_support": 0.06079835768566467,
+      "score": 0.06013335764921279,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.00)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.6290005445480347
+    ],
+    [
+      "airplane cabin",
+      0.1490776538848877
+    ],
+    [
+      "cockpit",
+      0.12624382972717285
+    ],
+    [
+      "home office",
+      0.025115620344877243
+    ],
+    [
+      "office",
+      0.008423758670687675
+    ]
+  ],
+  "top_objects": [
+    [
+      "laptop computer",
+      0.64186030626297
+    ],
+    [
+      "notebook computer",
+      0.17758935689926147
+    ],
+    [
+      "hand-held computer",
+      0.04810372740030289
+    ],
+    [
+      "desktop computer",
+      0.022744836285710335
+    ],
+    [
+      "seat belt",
+      0.011691145598888397
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "wnqUgK_-fo4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\wnqUgK_-fo4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\wnqUgK_-fo4.wav",
+  "gt_captions": [
+    "Firecrackers popping as a crowd of people cheer and whistle",
+    "Firecrackers popping as a crowd of people cheer and whistle",
+    "Several loud pops with people cheering",
+    "A crowd of people talk then cheer and whistle as firecrackers pop in the background",
+    "Several clicks and pops with people cheering and yodeling"
+  ],
+  "top_scene": [
+    "corral",
+    0.41711732745170593
+  ],
+  "top_object": [
+    "missile",
+    0.06296323984861374
+  ],
+  "env_probs": {
+    "indoor": 0.1434847116470337,
+    "outdoor": 0.8565152883529663
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A crowd of people applauding and cheering followed by a kid talking",
+    "casv": "A crowd of people applauding and cheering followed by a kid talking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.318369060754776,
+    "clap_gt_audio_baseline": 0.4535168707370758,
+    "clap_text_casv": 0.318369060754776,
+    "clap_gt_audio_casv": 0.4535168707370758
+  },
+  "verdicts": [
+    {
+      "caption": "A crowd of people applauding and cheering followed by a kid talking",
+      "clip_similarity": 0.32446566224098206,
+      "visual": 1.0,
+      "scene_support": 0.9331951049309638,
+      "object_support": 0.7852317479255713,
+      "score": 0.9155280558569605,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The truck moves fast and then a crowd cheers after a horn blows",
+      "clip_similarity": 0.3167656362056732,
+      "visual": 0.6267893512834217,
+      "scene_support": 0.9236497649002414,
+      "object_support": 0.9541961714978283,
+      "score": 0.8140695214327895,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A firearm cocking followed by multiple gunfire shots then a woman speaking as a crowd of people talk in the background",
+      "clip_similarity": 0.3152916133403778,
+      "visual": 0.5553453032688613,
+      "scene_support": 0.8244356602524229,
+      "object_support": 0.7688518856932965,
+      "score": 0.7001243850912604,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dirt bike motor, with men yelling in the background",
+      "clip_similarity": 0.31439605355262756,
+      "visual": 0.511938638431871,
+      "scene_support": 0.007723400507877904,
+      "object_support": 0.0,
+      "score": 0.2070924755251118,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clops of several horses with wind blowing and people speaking",
+      "clip_similarity": 0.3104410171508789,
+      "visual": 0.32024296176457845,
+      "scene_support": 0.8595434449639157,
+      "object_support": 0.4471094763015937,
+      "score": 0.5200930610854841,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An audience claps as a train approaches blowing a horn",
+      "clip_similarity": 0.3092367947101593,
+      "visual": 0.2618758034927559,
+      "scene_support": 0.6954797082934812,
+      "object_support": 0.6501804318250348,
+      "score": 0.5084483634326571,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crowd cheering and accelerating vehicle with a dog barking in the background and popping at the end",
+      "clip_similarity": 0.3086279630661011,
+      "visual": 0.23236649381039737,
+      "scene_support": 1.0,
+      "object_support": 0.9910412554225608,
+      "score": 0.6902589741509272,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people are communicating while firing machine guns",
+      "clip_similarity": 0.3075440526008606,
+      "visual": 0.17983070678472896,
+      "scene_support": 0.870830908762566,
+      "object_support": 0.8824350383560091,
+      "score": 0.5979120668494641,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Men speaking followed by a child yelling",
+      "clip_similarity": 0.3074033260345459,
+      "visual": 0.17300986580768174,
+      "scene_support": 0.7716631775142521,
+      "object_support": 0.7725145768465037,
+      "score": 0.5324572726312994,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A helicopter flying by as leaves rustle and wind blows into a microphone followed by a kid talking",
+      "clip_similarity": 0.3068297803401947,
+      "visual": 0.14521082205434138,
+      "scene_support": 0.0,
+      "object_support": 0.0005776683948959383,
+      "score": 0.05825762934020534,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man shouts followed by cocking a gun followed by gunfire far away, and finally the man shoot nearby",
+      "clip_similarity": 0.30557841062545776,
+      "visual": 0.08455849427263142,
+      "scene_support": 0.9799328031605256,
+      "object_support": 1.0,
+      "score": 0.6278032386572102,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A horse clip-clops as it moves followed by a man speaking",
+      "clip_similarity": 0.3054943382740021,
+      "visual": 0.0804836123589825,
+      "scene_support": 0.8275944021956021,
+      "object_support": 0.49115490044500654,
+      "score": 0.4278182357357756,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries followed by a gunshot and then a man speaks over a loudspeaker and people applaud",
+      "clip_similarity": 0.3053906261920929,
+      "visual": 0.07545681722977365,
+      "scene_support": 0.7002682076904041,
+      "object_support": 0.781089728769384,
+      "score": 0.47459010782984584,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A large truck revs the motor, a crowd cheers, and an announcer speaks",
+      "clip_similarity": 0.30521923303604126,
+      "visual": 0.06714960493434832,
+      "scene_support": 0.9577788033433438,
+      "object_support": 0.9683845408903908,
+      "score": 0.6047088452438596,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several men and a woman speaking, crowd noise in the background, and a clip-clop sound",
+      "clip_similarity": 0.3046703338623047,
+      "visual": 0.04054514726487455,
+      "scene_support": 0.860672458882624,
+      "object_support": 0.5946161566100048,
+      "score": 0.4528046435537384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mechanical cranking while men are communicating followed by a pop and a man screaming",
+      "clip_similarity": 0.3046109676361084,
+      "visual": 0.037667740397810165,
+      "scene_support": 0.7802587546512743,
+      "object_support": 0.5878905855681893,
+      "score": 0.42551189822496316,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by a series of rapid gunfire",
+      "clip_similarity": 0.3045719563961029,
+      "visual": 0.03577691429892097,
+      "scene_support": 0.9148214289695519,
+      "object_support": 0.9808594429244739,
+      "score": 0.5830150272877761,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two men speak followed by a crowd yelling and cheering",
+      "clip_similarity": 0.3042623698711395,
+      "visual": 0.02077164194196074,
+      "scene_support": 0.8240927646349321,
+      "object_support": 0.6791068347874903,
+      "score": 0.45926853660351097,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children talk nearby as a helicopter flies by",
+      "clip_similarity": 0.3042111396789551,
+      "visual": 0.01828857848589464,
+      "scene_support": 0.34645745129120936,
+      "object_support": 0.44909907827048556,
+      "score": 0.24598239026286634,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorized toy run followed by a man speaking",
+      "clip_similarity": 0.30383381247520447,
+      "visual": 0.0,
+      "scene_support": 0.47754167474856923,
+      "object_support": 0.10076373362648756,
+      "score": 0.173491622512517,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "corral",
+      0.41711732745170593
+    ],
+    [
+      "bullring",
+      0.052617330104112625
+    ],
+    [
+      "raceway",
+      0.040365274995565414
+    ],
+    [
+      "rodeo arena",
+      0.03358669579029083
+    ],
+    [
+      "excavation",
+      0.030343862250447273
+    ]
+  ],
+  "top_objects": [
+    [
+      "missile",
+      0.06296323984861374
+    ],
+    [
+      "projectile",
+      0.0568479485809803
+    ],
+    [
+      "vulture",
+      0.04644327983260155
+    ],
+    [
+      "stretcher",
+      0.03941845893859863
+    ],
+    [
+      "high-speed train",
+      0.025956491008400917
+    ]
+  ]
+}

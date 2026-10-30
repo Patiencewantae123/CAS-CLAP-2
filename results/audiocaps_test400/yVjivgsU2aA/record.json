@@ -1,0 +1,283 @@
+{
+  "id": "yVjivgsU2aA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\yVjivgsU2aA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\yVjivgsU2aA.wav",
+  "gt_captions": [
+    "A motor vehicle revs and skids tires while speeding off",
+    "A man talks in the background while a vehicle engine revs as tires skid then accelerates",
+    "An engine running followed by the engine revving and tires screeching",
+    "A vehicle engine running idle as a man is talking then accelerating with tires skidding and squeaking",
+    "Humming and accelerating of a car engine with squealing tires and people speaking faintly"
+  ],
+  "top_scene": [
+    "raceway",
+    0.8979566693305969
+  ],
+  "top_object": [
+    "go-kart",
+    0.6399949789047241
+  ],
+  "env_probs": {
+    "indoor": 0.02335459366440773,
+    "outdoor": 0.9766454063355923
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+    "casv": "A race vehicle accelerates and moves away"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06916923820972443,
+    "clap_gt_audio_baseline": 0.05167331174015999,
+    "clap_text_casv": 0.4911096692085266,
+    "clap_gt_audio_casv": 0.5671759843826294
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.34752532839775085,
+      "visual": 1.0,
+      "scene_support": 0.12746514570813916,
+      "object_support": 0.29364878579160364,
+      "score": 0.5263341794499229,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race vehicle accelerates and moves away",
+      "clip_similarity": 0.3338206708431244,
+      "visual": 0.4695865711461425,
+      "scene_support": 0.8778426864609384,
+      "object_support": 1.0,
+      "score": 0.7511874343967385,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A small remote control vehicle speeds off",
+      "clip_similarity": 0.33259493112564087,
+      "visual": 0.42214658194237625,
+      "scene_support": 0.4527003027251863,
+      "object_support": 0.5817892398028993,
+      "score": 0.47920549553537617,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled vehicle engine accelerating and driving before tires are skidding",
+      "clip_similarity": 0.33247578144073486,
+      "visual": 0.417535113712255,
+      "scene_support": 0.436969740343647,
+      "object_support": 0.7730069050890632,
+      "score": 0.530007039114715,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A race car accelerating then tires skidding and engine accelerating followed by a man talking",
+      "clip_similarity": 0.33003994822502136,
+      "visual": 0.32326069328891804,
+      "scene_support": 0.7382078497475202,
+      "object_support": 0.7658753800888942,
+      "score": 0.5805292462664915,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle accelerates fast and skids tires followed by an engine starting",
+      "clip_similarity": 0.3294464349746704,
+      "visual": 0.30028986042176825,
+      "scene_support": 0.7392704715474933,
+      "object_support": 0.8773842159184947,
+      "score": 0.6051123504085036,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy motorboat accelerating in the distance along with multiple plastic clicks followed by a man and a woman speaking",
+      "clip_similarity": 0.3286307454109192,
+      "visual": 0.26872010417904213,
+      "scene_support": 0.20590226715736795,
+      "object_support": 0.07479917691261118,
+      "score": 0.19169847489261058,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A music plays followed by a speed car accelerating and skidding",
+      "clip_similarity": 0.32825684547424316,
+      "visual": 0.25424899852243854,
+      "scene_support": 0.7720877418231384,
+      "object_support": 0.8356857243004867,
+      "score": 0.5840316392460629,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat driving accelerating as wind is blowing into a microphone",
+      "clip_similarity": 0.3278958797454834,
+      "visual": 0.24027848746610317,
+      "scene_support": 0.19099456057686315,
+      "object_support": 0.07236776672366994,
+      "score": 0.1751200931766012,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle revving up its engine and racing by",
+      "clip_similarity": 0.32738304138183594,
+      "visual": 0.22043002690984337,
+      "scene_support": 0.8087933767858362,
+      "object_support": 0.9751200496710644,
+      "score": 0.6233460387010075,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle races from afar as a man talks quickly followed by race car passing by and skidding tires",
+      "clip_similarity": 0.3266565501689911,
+      "visual": 0.19231252789892142,
+      "scene_support": 0.7614476721425879,
+      "object_support": 0.6929084513230328,
+      "score": 0.5132318481992548,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A remote control car speed up and slows down as it drives",
+      "clip_similarity": 0.32519322633743286,
+      "visual": 0.13567728488561875,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.054270913954247504,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine accelerating with a series of tires squeaking and a man laughing",
+      "clip_similarity": 0.3245810270309448,
+      "visual": 0.11198324276877258,
+      "scene_support": 0.04806368343236735,
+      "object_support": 0.19976912224933446,
+      "score": 0.11914313881201959,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car accelerates, and then wind rushes by as the car continues to accelerate",
+      "clip_similarity": 0.32434970140457153,
+      "visual": 0.10303021215291434,
+      "scene_support": 0.6176523841546006,
+      "object_support": 0.5886054925923101,
+      "score": 0.4030894478852389,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car is racing and speeding rapidly in a high frequency",
+      "clip_similarity": 0.32351434230804443,
+      "visual": 0.07069918301577104,
+      "scene_support": 0.8219234509945672,
+      "object_support": 0.7942006328618896,
+      "score": 0.5131168983632455,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car accelerates and skids around a turn",
+      "clip_similarity": 0.3227868974208832,
+      "visual": 0.042544773803907636,
+      "scene_support": 0.7540300970640044,
+      "object_support": 0.7960430199311905,
+      "score": 0.4820398446201215,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle accelerating and moving at a high speed",
+      "clip_similarity": 0.3223739266395569,
+      "visual": 0.026561503352484344,
+      "scene_support": 0.5705840429296569,
+      "object_support": 0.7221211012221747,
+      "score": 0.3984361445865432,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine accelerating and tires skidding across a surface",
+      "clip_similarity": 0.3222559094429016,
+      "visual": 0.021993865985981045,
+      "scene_support": 0.51842718781527,
+      "object_support": 0.6041658418733639,
+      "score": 0.34557545530098255,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle revving its engine and taking off",
+      "clip_similarity": 0.3221229016780853,
+      "visual": 0.01684604639842947,
+      "scene_support": 0.6173169755976258,
+      "object_support": 0.7632537444006593,
+      "score": 0.4209096345588573,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car races at high velocity",
+      "clip_similarity": 0.32168763875961304,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.7742172993193404,
+      "score": 0.5322651897958021,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raceway",
+      0.8979566693305969
+    ],
+    [
+      "runway",
+      0.013863159343600273
+    ],
+    [
+      "heliport",
+      0.012074929662048817
+    ],
+    [
+      "sandbox",
+      0.005029040388762951
+    ],
+    [
+      "cockpit",
+      0.004947994835674763
+    ]
+  ],
+  "top_objects": [
+    [
+      "go-kart",
+      0.6399949789047241
+    ],
+    [
+      "race car",
+      0.1131342425942421
+    ],
+    [
+      "snowmobile",
+      0.10949983447790146
+    ],
+    [
+      "lawn mower",
+      0.016742069274187088
+    ],
+    [
+      "amphibious vehicle",
+      0.01311661209911108
+    ]
+  ]
+}

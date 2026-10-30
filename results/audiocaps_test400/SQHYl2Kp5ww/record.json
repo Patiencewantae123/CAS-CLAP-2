@@ -1,0 +1,302 @@
+{
+  "id": "SQHYl2Kp5ww",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SQHYl2Kp5ww.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SQHYl2Kp5ww.wav",
+  "gt_captions": [
+    "Music is ongoing while two adult males speak, and sizzling and crackling occur along with random metal scraping",
+    "Frying and talking right after music starts",
+    "Music plays while two men speak each other with dishes clanking and food sizzling",
+    "Instrumental music playing followed by two men speaking as food and oil sizzle and metal clanking against a pot",
+    "Music then sizzle of frying food while male speaks"
+  ],
+  "top_scene": [
+    "outdoor diner",
+    0.26022207736968994
+  ],
+  "top_object": [
+    "Dutch oven",
+    0.2931647300720215
+  ],
+  "env_probs": {
+    "indoor": 0.3468526005744934,
+    "outdoor": 0.6531473994255066
+  },
+  "status": "REPAIR",
+  "n_rejected": 16,
+  "prompts": {
+    "baseline": "A man speaks and starts up a car engine that idles roughly",
+    "casv": "A man talks over an idling engine then the engine begins to rev"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.1080104410648346,
+    "clap_gt_audio_baseline": -0.06086064875125885,
+    "clap_text_casv": 0.3094063401222229,
+    "clap_gt_audio_casv": 0.34308648109436035
+  },
+  "verdicts": [
+    {
+      "caption": "A man speaks and starts up a car engine that idles roughly",
+      "clip_similarity": 0.31160876154899597,
+      "visual": 1.0,
+      "scene_support": 0.6825527874352622,
+      "object_support": 0.6060169886942226,
+      "score": 0.7865709328388455,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine runs as voices crackle over a radio",
+      "clip_similarity": 0.3077767789363861,
+      "visual": 0.8162848912968932,
+      "scene_support": 0.34364982430650054,
+      "object_support": 0.43411914788585065,
+      "score": 0.5598446481764627,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)",
+        "names 'fire', not visible in image (z=-0.62)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine hums as it accelerates with squealing tires and a man speaks briefly",
+      "clip_similarity": 0.30205288529396057,
+      "visual": 0.5418666986717875,
+      "scene_support": 0.7555811826337219,
+      "object_support": 0.7263429034154918,
+      "score": 0.6613239052834791,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A diesel-powered vehicle blows an air horn and a man speaks",
+      "clip_similarity": 0.301761656999588,
+      "visual": 0.5279044647143543,
+      "scene_support": 0.30896265322355165,
+      "object_support": 0.40689249183134324,
+      "score": 0.4259183294022102,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks over the sounds of a vehicle",
+      "clip_similarity": 0.30158987641334534,
+      "visual": 0.5196688613035229,
+      "scene_support": 0.6994738876165707,
+      "object_support": 0.5455738782492313,
+      "score": 0.5813818742811497,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks, then revs a motorcycle engine",
+      "clip_similarity": 0.29996204376220703,
+      "visual": 0.4416263745056352,
+      "scene_support": 0.3681601711317419,
+      "object_support": 0.5327092750139747,
+      "score": 0.44691138364596905,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks over an idling engine then the engine begins to rev",
+      "clip_similarity": 0.2974661886692047,
+      "visual": 0.32196865784239764,
+      "scene_support": 0.6021349645166512,
+      "object_support": 0.49298825336926155,
+      "score": 0.4573244285027329,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks while food is frying",
+      "clip_similarity": 0.2962198853492737,
+      "visual": 0.26221766911277233,
+      "scene_support": 0.45570254552270073,
+      "object_support": 0.4434278858242539,
+      "score": 0.3746261970491953,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two men yelling as a vehicle engine accelerates followed by leaves rustling",
+      "clip_similarity": 0.2944287359714508,
+      "visual": 0.17634535811444116,
+      "scene_support": 0.13711218283586424,
+      "object_support": 0.09937943946944483,
+      "score": 0.14148562993736918,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine is making really strange sounds",
+      "clip_similarity": 0.2937687039375305,
+      "visual": 0.14470172370436413,
+      "scene_support": 0.492520343967366,
+      "object_support": 0.5706312452854096,
+      "score": 0.37682616625757837,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks over an engine idling",
+      "clip_similarity": 0.2932669520378113,
+      "visual": 0.12064644628854902,
+      "scene_support": 0.16750944299313258,
+      "object_support": 0.14324831066700192,
+      "score": 0.14148590461345997,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine works while a man talks followed by some liquid flowing",
+      "clip_similarity": 0.2928928732872009,
+      "visual": 0.10271214822943099,
+      "scene_support": 0.5696891731446464,
+      "object_support": 0.51853465087778,
+      "score": 0.3675520064985003,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks then a motorcycle engine starts",
+      "clip_similarity": 0.2928794324398041,
+      "visual": 0.10206775941293464,
+      "scene_support": 0.5879842220499408,
+      "object_support": 0.7109922302891352,
+      "score": 0.43052003946689665,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks over an engine sound and people yell and laugh",
+      "clip_similarity": 0.29246634244918823,
+      "visual": 0.08226316210593695,
+      "scene_support": 0.718861744667042,
+      "object_support": 0.5384456486517344,
+      "score": 0.4100974828380077,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine runs noisily and consistently while a few men talk",
+      "clip_similarity": 0.291609525680542,
+      "visual": 0.04118516105434012,
+      "scene_support": 0.26166055721598025,
+      "object_support": 0.8308502332629156,
+      "score": 0.3442273015654048,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine vibrates and revs several times quietly",
+      "clip_similarity": 0.2915971875190735,
+      "visual": 0.04059363783919713,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6162374551356788,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor running in background as man talking, with faint conversation noise in background",
+      "clip_similarity": 0.29153138399124146,
+      "visual": 0.037438847358434495,
+      "scene_support": 0.7771167058688677,
+      "object_support": 0.5048087996446775,
+      "score": 0.3995531905974374,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as a muffled motorbike engine runs during audio feedback",
+      "clip_similarity": 0.29133307933807373,
+      "visual": 0.027931611915049264,
+      "scene_support": 0.05799395741378549,
+      "object_support": 0.3338058648018833,
+      "score": 0.12871259143072034,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man describing an engine while an idling car sounds",
+      "clip_similarity": 0.2911965548992157,
+      "visual": 0.021386278947488742,
+      "scene_support": 0.07303923808579667,
+      "object_support": 0.1284982012786068,
+      "score": 0.06901574338831654,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.37)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine idles as two men talk",
+      "clip_similarity": 0.2907504737377167,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor diner",
+      0.26022207736968994
+    ],
+    [
+      "repair shop",
+      0.08023308962583542
+    ],
+    [
+      "junkyard",
+      0.05238112062215805
+    ],
+    [
+      "campsite",
+      0.05040210857987404
+    ],
+    [
+      "assembly line",
+      0.04302503913640976
+    ]
+  ],
+  "top_objects": [
+    [
+      "Dutch oven",
+      0.2931647300720215
+    ],
+    [
+      "motorboat",
+      0.10643452405929565
+    ],
+    [
+      "breastplate",
+      0.08869967609643936
+    ],
+    [
+      "bulletproof vest",
+      0.0447995699942112
+    ],
+    [
+      "half-track",
+      0.04436301440000534
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "1a2XWJ8NA_Q",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1a2XWJ8NA_Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1a2XWJ8NA_Q.wav",
+  "gt_captions": [
+    "Clicking and sputtering of a running engine with people speaking and wind blowing",
+    "Distant, muffled murmuring together with an engine running continuously and light wind",
+    "A motorboat engine running as two women are talking and wind is blowing into a microphone",
+    "A boat engine sounds, wind blows by, people speak",
+    "An engine running and wind blowing with people talking"
+  ],
+  "top_scene": [
+    "raft",
+    0.37233373522758484
+  ],
+  "top_object": [
+    "pulled rickshaw",
+    0.15609896183013916
+  ],
+  "env_probs": {
+    "indoor": 0.2729746699333191,
+    "outdoor": 0.7270253300666809
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A boat motor is running, a high-pitched hum is present, water is splashing, and an adult male speaks in the background",
+    "casv": "A boat motor is running, a high-pitched hum is present, water is splashing, and an adult male speaks in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.07051175087690353,
+    "clap_gt_audio_baseline": 0.16120240092277527,
+    "clap_text_casv": 0.07051175087690353,
+    "clap_gt_audio_casv": 0.16120240092277527
+  },
+  "verdicts": [
+    {
+      "caption": "A boat motor is running, a high-pitched hum is present, water is splashing, and an adult male speaks in the background",
+      "clip_similarity": 0.31719493865966797,
+      "visual": 1.0,
+      "scene_support": 0.8310597157124813,
+      "object_support": 0.7894145707222014,
+      "score": 0.8861422859304049,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine stops followed by water splashing and a woman speaking",
+      "clip_similarity": 0.3123140335083008,
+      "visual": 0.751750732124343,
+      "scene_support": 0.5811146453044315,
+      "object_support": 0.6366515514711346,
+      "score": 0.666030151882407,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat motor is running and accelerating, water splashes, and an adult male speaks in the background",
+      "clip_similarity": 0.3081303834915161,
+      "visual": 0.5389647792107002,
+      "scene_support": 0.7023342037920586,
+      "object_support": 0.6802081433418641,
+      "score": 0.6303486158244569,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat engine running as water splashes and wind blows into a microphone followed by a muffled beeping then a man talking while ocean waves crash in the background",
+      "clip_similarity": 0.3070734739303589,
+      "visual": 0.48520896617373327,
+      "scene_support": 0.19827946493435095,
+      "object_support": 0.2048359448756122,
+      "score": 0.31501820941248226,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman communicating with a man shortly followed by the man whistling and a boat motor vibrating in the background",
+      "clip_similarity": 0.3069060444831848,
+      "visual": 0.4766932838580982,
+      "scene_support": 0.6746943343515176,
+      "object_support": 0.651537068427009,
+      "score": 0.5885467343767973,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by a woman speaking briefly while a motorboat engine runs",
+      "clip_similarity": 0.3053187429904938,
+      "visual": 0.39596103825236006,
+      "scene_support": 0.6476194216077588,
+      "object_support": 0.6352757742506864,
+      "score": 0.5432529740584776,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine running alongside water spraying and splashing with two women and a man speaking",
+      "clip_similarity": 0.30076444149017334,
+      "visual": 0.16432326245520854,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.06572930498208342,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor is running, water is splashing, and an adult male speaks in the background",
+      "clip_similarity": 0.30069297552108765,
+      "visual": 0.16068840909228707,
+      "scene_support": 0.7554691174146908,
+      "object_support": 0.6958188939816693,
+      "score": 0.4996617670558229,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then switches on a motor boat, boat is riding on the water",
+      "clip_similarity": 0.3005169630050659,
+      "visual": 0.1517361805846081,
+      "scene_support": 0.937309674807466,
+      "object_support": 0.9916433706057562,
+      "score": 0.6393803858578099,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat motor is operating, and water is splashing and gurgling",
+      "clip_similarity": 0.3004865050315857,
+      "visual": 0.1501870479170077,
+      "scene_support": 0.9414642219024619,
+      "object_support": 0.9269502317625078,
+      "score": 0.620599155266294,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks as the wind blows followed by a motorboat traveling and the engine accelerates",
+      "clip_similarity": 0.2998483180999756,
+      "visual": 0.11772801959607351,
+      "scene_support": 0.7558758301380673,
+      "object_support": 0.8760153749540993,
+      "score": 0.5366585693660794,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People speaking with an engine starting and water splashing",
+      "clip_similarity": 0.29967212677001953,
+      "visual": 0.10876669637606029,
+      "scene_support": 0.7399247441215987,
+      "object_support": 0.7945034424383045,
+      "score": 0.5038351345183951,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Males and females are shouting and laughing, water is splashing, and a boat engine is running",
+      "clip_similarity": 0.29938796162605286,
+      "visual": 0.0943136826915498,
+      "scene_support": 0.9190765564241443,
+      "object_support": 0.9635736405978934,
+      "score": 0.6025205321832312,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat motor is running, water is splashing, the wind is blowing, and an adult male speaks in the background",
+      "clip_similarity": 0.29819923639297485,
+      "visual": 0.03385355087885237,
+      "scene_support": 0.8610070955008223,
+      "object_support": 0.8651404385076399,
+      "score": 0.5313856805540795,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talking with water splashing sounds and an engine idling and revving sound",
+      "clip_similarity": 0.2980126738548279,
+      "visual": 0.024364734343452717,
+      "scene_support": 0.611093580390276,
+      "object_support": 0.6852536794775564,
+      "score": 0.3986500716977308,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorized water vehicle operating, with speech and laughter in the background",
+      "clip_similarity": 0.2979053854942322,
+      "visual": 0.018907906942903396,
+      "scene_support": 0.7674409635445154,
+      "object_support": 0.9102805634696097,
+      "score": 0.5108796208813988,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.52)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman yells nearby, followed by a motorboat engine revving up nearby",
+      "clip_similarity": 0.297832727432251,
+      "visual": 0.015212422164420272,
+      "scene_support": 0.7424421556335322,
+      "object_support": 0.8249436286946291,
+      "score": 0.4763007041642165,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motorboat travels in ocean with wind noise and people talking in the background",
+      "clip_similarity": 0.2978014051914215,
+      "visual": 0.01361933172053768,
+      "scene_support": 0.7499263709724922,
+      "object_support": 0.8420040819567595,
+      "score": 0.4830268685669905,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat motor is running, water is splashing and gurgling, and an adult male speaks",
+      "clip_similarity": 0.29769742488861084,
+      "visual": 0.008330756498171964,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6033323025992687,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman and man speak followed by boat motor running",
+      "clip_similarity": 0.29753363132476807,
+      "visual": 0.0,
+      "scene_support": 0.8521802606888311,
+      "object_support": 0.8582875537536452,
+      "score": 0.5131403443327429,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "raft",
+      0.37233373522758484
+    ],
+    [
+      "landing deck",
+      0.11036772280931473
+    ],
+    [
+      "galley",
+      0.10284557193517685
+    ],
+    [
+      "boat deck",
+      0.07156822085380554
+    ],
+    [
+      "berth",
+      0.04682863876223564
+    ]
+  ],
+  "top_objects": [
+    [
+      "pulled rickshaw",
+      0.15609896183013916
+    ],
+    [
+      "lifeboat",
+      0.11519327759742737
+    ],
+    [
+      "stretcher",
+      0.07416244596242905
+    ],
+    [
+      "amphibious vehicle",
+      0.05641820281744003
+    ],
+    [
+      "carousel",
+      0.038919299840927124
+    ]
+  ]
+}

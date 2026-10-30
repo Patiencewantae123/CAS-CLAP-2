@@ -1,0 +1,285 @@
+{
+  "id": "cPiSd5nJLrI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\cPiSd5nJLrI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\cPiSd5nJLrI.wav",
+  "gt_captions": [
+    "People speaking with loud bangs followed by a slow motion rumble",
+    "A group of people screaming and laughing as firecrackers ignite then explode followed by a muffled explosion",
+    "Screaming and a big explosion and then screaming",
+    "A group of people screaming followed by missiles launching and loud popping explosions then a slowed down explosion",
+    "A group of people laughing and screaming alongside firecrackers igniting then exploding followed by a muffled explosion"
+  ],
+  "top_scene": [
+    "indoor stage",
+    0.25123828649520874
+  ],
+  "top_object": [
+    "stage",
+    0.0676581859588623
+  ],
+  "env_probs": {
+    "indoor": 0.7281253337860107,
+    "outdoor": 0.27187466621398926
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A guitar strumming followed by audio feedback proceeded by a crowd screaming and booing then cheering with a man shouting in the background",
+    "casv": "Some fuzzy noise with a man speaking at the end"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5457748770713806,
+    "clap_gt_audio_baseline": 0.5784852504730225,
+    "clap_text_casv": 0.1147564947605133,
+    "clap_gt_audio_casv": 0.24847859144210815
+  },
+  "verdicts": [
+    {
+      "caption": "A guitar strumming followed by audio feedback proceeded by a crowd screaming and booing then cheering with a man shouting in the background",
+      "clip_similarity": 0.2849072515964508,
+      "visual": 1.0,
+      "scene_support": 0.8837730603527636,
+      "object_support": 0.5030290380133089,
+      "score": 0.8160406295098217,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some fuzzy noise with a man speaking at the end",
+      "clip_similarity": 0.2831956446170807,
+      "visual": 0.8254006858477029,
+      "scene_support": 0.8484921014839636,
+      "object_support": 0.9543810475153937,
+      "score": 0.8710222190388883,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People speak in the distance with some banging and faint spraying followed by a man speaking",
+      "clip_similarity": 0.2795301675796509,
+      "visual": 0.451489043461342,
+      "scene_support": 0.5031621681334463,
+      "object_support": 0.6122861161222349,
+      "score": 0.5152301026612411,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Foot steps and then people laugh in a low slow distorted way",
+      "clip_similarity": 0.2794734835624695,
+      "visual": 0.4457067636257509,
+      "scene_support": 0.2296012538203778,
+      "object_support": 0.5862269467595008,
+      "score": 0.4230311656242639,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fan runs and someone begins typing on a keyboard",
+      "clip_similarity": 0.2793227732181549,
+      "visual": 0.4303329523068317,
+      "scene_support": 0.24610942850830356,
+      "object_support": 0.09312241885706618,
+      "score": 0.27390273513234364,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-1.87)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks and shouts while a music plays followed by several gun shots",
+      "clip_similarity": 0.2779984772205353,
+      "visual": 0.29524284359267455,
+      "scene_support": 0.2775746124387819,
+      "object_support": 0.23743284679876156,
+      "score": 0.27259937520833283,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking in background followed by gun shot",
+      "clip_similarity": 0.2776462435722351,
+      "visual": 0.2593118418172532,
+      "scene_support": 0.4092153956622602,
+      "object_support": 0.5437518325804224,
+      "score": 0.3896149051997061,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+      "clip_similarity": 0.2774389684200287,
+      "visual": 0.23816791108300703,
+      "scene_support": 0.1582821648193836,
+      "object_support": 0.1746604445902226,
+      "score": 0.19514994725608467,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crowd cheers followed by a gunshot and a man speaking over a loudspeaker",
+      "clip_similarity": 0.27691030502319336,
+      "visual": 0.18423948731668166,
+      "scene_support": 0.6791734175350739,
+      "object_support": 0.45366888812686673,
+      "score": 0.41354848662525484,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by a door slamming open then a man shouting in the background",
+      "clip_similarity": 0.2767671048641205,
+      "visual": 0.1696317824744023,
+      "scene_support": 0.6188091468129764,
+      "object_support": 0.5075723465477913,
+      "score": 0.4057671609979912,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man yells while others clap in the background",
+      "clip_similarity": 0.27636951208114624,
+      "visual": 0.12907374078848166,
+      "scene_support": 0.36779881798431346,
+      "object_support": 0.3004905103394809,
+      "score": 0.25211629481253095,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking briefly followed by white noise and light beeping",
+      "clip_similarity": 0.27627483010292053,
+      "visual": 0.1194153269937009,
+      "scene_support": 0.5778896785359208,
+      "object_support": 0.6726164030235713,
+      "score": 0.42291795526532794,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is talking and then pauses while the crowd laughs and cheers",
+      "clip_similarity": 0.27618294954299927,
+      "visual": 0.11004268307512707,
+      "scene_support": 1.0,
+      "object_support": 0.8079376202048514,
+      "score": 0.5863983592915062,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man cheers nearby as an audience claps loudly",
+      "clip_similarity": 0.27608853578567505,
+      "visual": 0.10041163022594062,
+      "scene_support": 0.47126776705821705,
+      "object_support": 0.3927641027934738,
+      "score": 0.2993742130458835,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male voice with boots tapping on the floor",
+      "clip_similarity": 0.2760757505893707,
+      "visual": 0.09910742515261327,
+      "scene_support": 0.0,
+      "object_support": 0.19302550951947878,
+      "score": 0.09755062291688893,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is making a speech and a loud camera is flashed",
+      "clip_similarity": 0.27537140250205994,
+      "visual": 0.027257582022034682,
+      "scene_support": 0.8496681334462569,
+      "object_support": 1.0,
+      "score": 0.565803472842691,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crowd noise with dog barking in the background",
+      "clip_similarity": 0.27529263496398926,
+      "visual": 0.01922258433251453,
+      "scene_support": 0.9804343723533527,
+      "object_support": 0.9370576337224616,
+      "score": 0.5829366355557501,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking then spraying and clicking sound",
+      "clip_similarity": 0.27528125047683716,
+      "visual": 0.01806126419729066,
+      "scene_support": 0.4170494715911183,
+      "object_support": 0.5395305612293074,
+      "score": 0.29419851552504395,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man performs a speech followed by several pulsating sounds, and a crowd applauds",
+      "clip_similarity": 0.2752296030521393,
+      "visual": 0.012792762117858793,
+      "scene_support": 0.8704293552306955,
+      "object_support": 0.31526446309742123,
+      "score": 0.36082525034557855,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A firearm cocking followed by multiple gunfire shots then a woman speaking as a crowd of people talk in the background",
+      "clip_similarity": 0.27510419487953186,
+      "visual": 0.0,
+      "scene_support": 0.05249107044224325,
+      "object_support": 0.0,
+      "score": 0.015747321132672975,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor stage",
+      0.25123828649520874
+    ],
+    [
+      "orchestra pit",
+      0.11088594049215317
+    ],
+    [
+      "bar",
+      0.08356630802154541
+    ],
+    [
+      "outdoor stage",
+      0.07632360607385635
+    ],
+    [
+      "discotheque",
+      0.042528312653303146
+    ]
+  ],
+  "top_objects": [
+    [
+      "stage",
+      0.0676581859588623
+    ],
+    [
+      "drumstick",
+      0.02942497655749321
+    ],
+    [
+      "cowboy boot",
+      0.028229689225554466
+    ],
+    [
+      "crutch",
+      0.02616327814757824
+    ],
+    [
+      "jeans",
+      0.020353881642222404
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "pHNMcX-9FDs",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\pHNMcX-9FDs.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\pHNMcX-9FDs.wav",
+  "gt_captions": [
+    "Puppies whining with some rustling and bird chirp",
+    "Dogs are whimpering",
+    "A dog whimpering constantly then ultimately growls",
+    "Whimpering of several small dogs",
+    "Dogs whimpering then a bark and a growl"
+  ],
+  "top_scene": [
+    "yard",
+    0.13273343443870544
+  ],
+  "top_object": [
+    "Redbone Coonhound",
+    0.6294207572937012
+  ],
+  "env_probs": {
+    "indoor": 0.30832982063293457,
+    "outdoor": 0.6916701793670654
+  },
+  "status": "ACCEPT",
+  "n_rejected": 2,
+  "prompts": {
+    "baseline": "Multiple small dogs howl",
+    "casv": "Multiple small dogs howl"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3184361457824707,
+    "clap_gt_audio_baseline": 0.7074015140533447,
+    "clap_text_casv": 0.3184361457824707,
+    "clap_gt_audio_casv": 0.7074015140533447
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple small dogs howl",
+      "clip_similarity": 0.32505542039871216,
+      "visual": 1.0,
+      "scene_support": 0.7249660828029384,
+      "object_support": 0.557083843576994,
+      "score": 0.7846149779139797,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Baby dogs squeak and squeal outside",
+      "clip_similarity": 0.323699414730072,
+      "visual": 0.9224129404983988,
+      "scene_support": 0.7895379655896849,
+      "object_support": 0.5151145893227763,
+      "score": 0.7603609426730978,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Small dog barking with both male and female voices with laughter",
+      "clip_similarity": 0.32206517457962036,
+      "visual": 0.8289060395131285,
+      "scene_support": 0.7211822402277993,
+      "object_support": 0.6216915652873234,
+      "score": 0.7344245574597882,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Small dogs howling and barking with car alarm",
+      "clip_similarity": 0.3167261481285095,
+      "visual": 0.5234210607088899,
+      "scene_support": 0.30580472690011945,
+      "object_support": 0.25667703505068357,
+      "score": 0.3781129528687969,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.89)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dogs howling together",
+      "clip_similarity": 0.31506460905075073,
+      "visual": 0.4283521872729939,
+      "scene_support": 0.3009782218474998,
+      "object_support": 0.4697033533049343,
+      "score": 0.40254534745492776,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple dogs howling",
+      "clip_similarity": 0.314875990152359,
+      "visual": 0.4175599125568261,
+      "scene_support": 0.8285846531532157,
+      "object_support": 0.7830192603025299,
+      "score": 0.6505051390594541,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two dogs howling constantly",
+      "clip_similarity": 0.3139364719390869,
+      "visual": 0.3638031641878596,
+      "scene_support": 0.49824832703783273,
+      "object_support": 0.6203288694355131,
+      "score": 0.4810944246171476,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby goats bleat and walk around in leaves and knock against wood",
+      "clip_similarity": 0.31357041001319885,
+      "visual": 0.3428580685426251,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.13714322741705007,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Many dogs howling at the same time",
+      "clip_similarity": 0.3132200241088867,
+      "visual": 0.32280991340943116,
+      "scene_support": 0.5828610004162472,
+      "object_support": 0.5896882150621071,
+      "score": 0.4808887300072787,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two dogs growling and barking at something",
+      "clip_similarity": 0.3131445050239563,
+      "visual": 0.3184889110187266,
+      "scene_support": 0.8381706057500996,
+      "object_support": 0.7600953633098905,
+      "score": 0.6068753551254877,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music playing while a dog howls in unison",
+      "clip_similarity": 0.3130868077278137,
+      "visual": 0.31518762426718594,
+      "scene_support": 0.7077245342978711,
+      "object_support": 0.8215262130040935,
+      "score": 0.5848502738974637,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Small dogs barking and growling",
+      "clip_similarity": 0.31286975741386414,
+      "visual": 0.30276857911663296,
+      "scene_support": 1.0,
+      "object_support": 0.6551395255138763,
+      "score": 0.6176492893008161,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Small dog yelping barking and male talking and female laughing",
+      "clip_similarity": 0.3118249177932739,
+      "visual": 0.24298561825802556,
+      "scene_support": 0.7800141638542039,
+      "object_support": 0.8152686704730289,
+      "score": 0.57577909760138,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple dogs are communicating with one another by barking and whining",
+      "clip_similarity": 0.31151485443115234,
+      "visual": 0.22524461238869242,
+      "scene_support": 0.6760676659325777,
+      "object_support": 1.0,
+      "score": 0.5929181447352503,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High pitch dog whining and another dog panting followed by both dogs barking",
+      "clip_similarity": 0.30959877371788025,
+      "visual": 0.11561153949778152,
+      "scene_support": 0.7697899382662036,
+      "object_support": 0.6992363251788538,
+      "score": 0.4869524948326298,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dogs growling while a woman is talking followed by dogs barking",
+      "clip_similarity": 0.3094193935394287,
+      "visual": 0.10534787991228399,
+      "scene_support": 0.7853538224006424,
+      "object_support": 0.7839663529693403,
+      "score": 0.5129352045759084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Small dogs barking followed by people speaking",
+      "clip_similarity": 0.30840474367141724,
+      "visual": 0.04729229688389906,
+      "scene_support": 0.9729983129312227,
+      "object_support": 0.665651841369757,
+      "score": 0.5105119650438535,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Small dogs barking with their tags ringing",
+      "clip_similarity": 0.30795302987098694,
+      "visual": 0.02144642741432172,
+      "scene_support": 0.9027727461930553,
+      "object_support": 0.6398168171018964,
+      "score": 0.47135543995421414,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dogs barking and male voice with music",
+      "clip_similarity": 0.307660847902298,
+      "visual": 0.004728547604350332,
+      "scene_support": 0.7746888163613779,
+      "object_support": 0.8534235193303106,
+      "score": 0.49032511974924664,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.3075782060623169,
+      "visual": 0.0,
+      "scene_support": 0.7609044095218391,
+      "object_support": 0.7153118182750468,
+      "score": 0.44286486833906574,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "yard",
+      0.13273343443870544
+    ],
+    [
+      "watering hole",
+      0.11509118229150772
+    ],
+    [
+      "pet shop",
+      0.07376605272293091
+    ],
+    [
+      "assembly line",
+      0.06492743641138077
+    ],
+    [
+      "archaelogical excavation",
+      0.052801840007305145
+    ]
+  ],
+  "top_objects": [
+    [
+      "Redbone Coonhound",
+      0.6294207572937012
+    ],
+    [
+      "Vizsla",
+      0.10307832062244415
+    ],
+    [
+      "Miniature Pinscher",
+      0.04530493915081024
+    ],
+    [
+      "Irish Setter",
+      0.03725815191864967
+    ],
+    [
+      "Australian Terrier",
+      0.018986929208040237
+    ]
+  ]
+}

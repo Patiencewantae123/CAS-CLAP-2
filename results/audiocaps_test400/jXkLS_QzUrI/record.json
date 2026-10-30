@@ -1,0 +1,317 @@
+{
+  "id": "jXkLS_QzUrI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\jXkLS_QzUrI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\jXkLS_QzUrI.wav",
+  "gt_captions": [
+    "Steam hissing followed by a bird cawing during audio feedback humming",
+    "A domestic animal meows",
+    "A small motor is running, five hisses and a meow occur, then five more hisses and a meow occur",
+    "Hissing sounds and bird chirping.",
+    "Mechanical humming followed by meowing"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.6995410323143005
+  ],
+  "top_object": [
+    "grey parrot",
+    0.18612465262413025
+  ],
+  "env_probs": {
+    "indoor": 0.9592190384864807,
+    "outdoor": 0.04078096151351929
+  },
+  "status": "REPAIR",
+  "n_rejected": 17,
+  "prompts": {
+    "baseline": "A bird chirping and flying around in a cage with a ticking sound in the background",
+    "casv": "A parrot is laughing like a woman"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10867339372634888,
+    "clap_gt_audio_baseline": 0.36110013723373413,
+    "clap_text_casv": 0.11204085499048233,
+    "clap_gt_audio_casv": 0.4566684663295746
+  },
+  "verdicts": [
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.3270462155342102,
+      "visual": 1.0,
+      "scene_support": 0.7470117140321955,
+      "object_support": 0.7427560623131824,
+      "score": 0.8469303329036134,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)",
+        "names 'a clock', not visible in image (z=-0.19)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple birds and various animals are communicating out loud",
+      "clip_similarity": 0.31348469853401184,
+      "visual": 0.43675292702217966,
+      "scene_support": 0.9841316057650313,
+      "object_support": 0.5376275600184626,
+      "score": 0.63122892054392,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A parrot is laughing like a woman",
+      "clip_similarity": 0.3120834231376648,
+      "visual": 0.378554108599671,
+      "scene_support": 0.09204335566397816,
+      "object_support": 1.0,
+      "score": 0.4790346501390619,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird whistles as people talk in the background",
+      "clip_similarity": 0.31161919236183167,
+      "visual": 0.3592733286050429,
+      "scene_support": 0.6854933223591376,
+      "object_support": 0.5222760153908481,
+      "score": 0.5060401327670129,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very bold music plays over chirping birds",
+      "clip_similarity": 0.3103625774383545,
+      "visual": 0.3070826572001837,
+      "scene_support": 0.5578272068421725,
+      "object_support": 0.31126055399797237,
+      "score": 0.38355939113211696,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A TV quietly plays with birds chirping",
+      "clip_similarity": 0.31002122163772583,
+      "visual": 0.2929052126307242,
+      "scene_support": 0.30271944799361716,
+      "object_support": 0.20422653732119425,
+      "score": 0.26924588064673316,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird whistling while woman speaks",
+      "clip_similarity": 0.3094198703765869,
+      "visual": 0.2679294420245995,
+      "scene_support": 0.5223809341784115,
+      "object_support": 0.4620544847310935,
+      "score": 0.40250240248269126,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds chirp and someone taps on a microphone",
+      "clip_similarity": 0.3090774416923523,
+      "visual": 0.253707437650312,
+      "scene_support": 0.6533881067153782,
+      "object_support": 0.4505733272328924,
+      "score": 0.432671405244606,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds quacking with loud taps",
+      "clip_similarity": 0.3080686628818512,
+      "visual": 0.2118100811607334,
+      "scene_support": 0.35622434530979197,
+      "object_support": 0.4236615142127509,
+      "score": 0.3186897903210562,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds chirp as two animals fight and people talk",
+      "clip_similarity": 0.30787646770477295,
+      "visual": 0.2038276872347299,
+      "scene_support": 0.7851264404648526,
+      "object_support": 0.43261061920147376,
+      "score": 0.44685219279378985,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Different kind of birds are singing with drums being played in the background",
+      "clip_similarity": 0.3065784275531769,
+      "visual": 0.1499165122545652,
+      "scene_support": 0.7823555102635027,
+      "object_support": 0.5141406944424849,
+      "score": 0.44891546631362234,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chick is chirping constantly near the microphone",
+      "clip_similarity": 0.3062785863876343,
+      "visual": 0.13746328457748022,
+      "scene_support": 0.6202654464922561,
+      "object_support": 0.503908178957913,
+      "score": 0.3922374014660428,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking followed by a door creaking open then closing proceeded by another man talking as birds chirp in the background",
+      "clip_similarity": 0.3057118356227875,
+      "visual": 0.11392456767706025,
+      "scene_support": 0.5538908105479154,
+      "object_support": 0.35604286298799326,
+      "score": 0.3185499291315967,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult male speaks as chickens cluck, a dog barks, and music plays",
+      "clip_similarity": 0.30393102765083313,
+      "visual": 0.039962718296627196,
+      "scene_support": 0.8779831011483054,
+      "object_support": 0.5066735330219958,
+      "score": 0.43138207756974123,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird chirps and sings along with other birds",
+      "clip_similarity": 0.3036292493343353,
+      "visual": 0.02742903541638043,
+      "scene_support": 0.6914117429858542,
+      "object_support": 0.591828096561649,
+      "score": 0.39594356603080316,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male talking with repeat bell ringing and squeaking sounds followed by a train horn",
+      "clip_similarity": 0.3036104440689087,
+      "visual": 0.026648001059533136,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.010659200423813256,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)",
+        "names 'a train', not visible in image (z=-0.18)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird sounds followed by an explosion",
+      "clip_similarity": 0.3036096692085266,
+      "visual": 0.02661581897826843,
+      "scene_support": 0.6977669084080286,
+      "object_support": 0.6003342813203558,
+      "score": 0.4000766845098227,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A hissing sound with voices in the background, then bird sounds",
+      "clip_similarity": 0.30330342054367065,
+      "visual": 0.01389647024457144,
+      "scene_support": 1.0,
+      "object_support": 0.5743647445574728,
+      "score": 0.4778680114650704,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird chirping with human speech",
+      "clip_similarity": 0.30305925011634827,
+      "visual": 0.0037554013291199563,
+      "scene_support": 0.6373822639321183,
+      "object_support": 0.6248319523359381,
+      "score": 0.3801664254120649,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.96)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird is communicating by tweeting, chirping and whistling while a television is playing in the background",
+      "clip_similarity": 0.302968829870224,
+      "visual": 0.0,
+      "scene_support": 0.7513230439404303,
+      "object_support": 0.6278366546471855,
+      "score": 0.4137479095762847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.6995410323143005
+    ],
+    [
+      "locker room",
+      0.027330316603183746
+    ],
+    [
+      "assembly line",
+      0.023798901587724686
+    ],
+    [
+      "elevator lobby",
+      0.01290180440992117
+    ],
+    [
+      "storage room",
+      0.009730586782097816
+    ]
+  ],
+  "top_objects": [
+    [
+      "grey parrot",
+      0.18612465262413025
+    ],
+    [
+      "sulphur-crested cockatoo",
+      0.09023191034793854
+    ],
+    [
+      "cock",
+      0.06698448956012726
+    ],
+    [
+      "prison",
+      0.05280788615345955
+    ],
+    [
+      "macaw",
+      0.037910863757133484
+    ]
+  ]
+}

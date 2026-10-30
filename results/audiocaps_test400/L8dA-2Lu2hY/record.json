@@ -1,0 +1,285 @@
+{
+  "id": "L8dA-2Lu2hY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\L8dA-2Lu2hY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\L8dA-2Lu2hY.wav",
+  "gt_captions": [
+    "Loud wolf whistles occur twice in a quiet environment",
+    "A continuation of intermittent whistling",
+    "A person whistling",
+    "High pitched, rhythmic whistling",
+    "Someone is whistling"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.10786516219377518
+  ],
+  "top_object": [
+    "sulphur-crested cockatoo",
+    0.4657632112503052
+  ],
+  "env_probs": {
+    "indoor": 0.3606039881706238,
+    "outdoor": 0.6393960118293762
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A bird chirping and flying around in a cage with a ticking sound in the background",
+    "casv": "A bird is communicating by tweeting, chirping and whistling while a television is playing in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.156955748796463,
+    "clap_gt_audio_baseline": 0.29314863681793213,
+    "clap_text_casv": 0.19092409312725067,
+    "clap_gt_audio_casv": 0.4946999251842499
+  },
+  "verdicts": [
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.30867820978164673,
+      "visual": 1.0,
+      "scene_support": 0.959268761161738,
+      "object_support": 0.7589668704937483,
+      "score": 0.9154706894966459,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.12)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird is communicating by tweeting, chirping and whistling while a television is playing in the background",
+      "clip_similarity": 0.3011311888694763,
+      "visual": 0.6325279700491925,
+      "scene_support": 0.8673371802549867,
+      "object_support": 0.7033080676111424,
+      "score": 0.7242047623795157,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An old time movie film player whirs then a few footsteps ending with a sweet bird song",
+      "clip_similarity": 0.298303484916687,
+      "visual": 0.4948442238764819,
+      "scene_support": 0.778546397759829,
+      "object_support": 0.0,
+      "score": 0.4315016088785415,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird whistles continuously",
+      "clip_similarity": 0.2963288426399231,
+      "visual": 0.3986969076952099,
+      "scene_support": 1.0,
+      "object_support": 0.5953074235183395,
+      "score": 0.6380709901335858,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.2956447899341583,
+      "visual": 0.36538969425217305,
+      "scene_support": 0.7733614164009431,
+      "object_support": 0.5602514519700346,
+      "score": 0.5462397382121625,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird and pigeon sounds and other nature sounds",
+      "clip_similarity": 0.2928304672241211,
+      "visual": 0.22835749423185756,
+      "scene_support": 0.7285323697145293,
+      "object_support": 0.46458332485587844,
+      "score": 0.4492777060638653,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird vocalization",
+      "clip_similarity": 0.2927738130092621,
+      "visual": 0.225598943595548,
+      "scene_support": 0.7759087205883146,
+      "object_support": 0.27406206892141777,
+      "score": 0.4052308142911389,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird vocalization with running water",
+      "clip_similarity": 0.2919909954071045,
+      "visual": 0.1874827681279294,
+      "scene_support": 0.5766949655503579,
+      "object_support": 0.28995802351868827,
+      "score": 0.33498900397188563,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird whistling as a man speaks through a television speaker in the background",
+      "clip_similarity": 0.2910956144332886,
+      "visual": 0.1438857690131035,
+      "scene_support": 0.2451744873019213,
+      "object_support": 0.5225307499088795,
+      "score": 0.2878658787684816,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bird chirping with human speech",
+      "clip_similarity": 0.29108089208602905,
+      "visual": 0.1431689231349673,
+      "scene_support": 0.8047282605763368,
+      "object_support": 0.5708673569930864,
+      "score": 0.46994625452481387,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird emits a strange buzzing noise",
+      "clip_similarity": 0.2907789945602417,
+      "visual": 0.12846922931812577,
+      "scene_support": 0.772958110098574,
+      "object_support": 0.46758172799402875,
+      "score": 0.4235496431550311,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird making whistling sounds",
+      "clip_similarity": 0.2893347144126892,
+      "visual": 0.05814577800995458,
+      "scene_support": 0.9328589426091085,
+      "object_support": 0.6103343178807255,
+      "score": 0.48621628935093203,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird pecking at food",
+      "clip_similarity": 0.2892577350139618,
+      "visual": 0.05439757375241246,
+      "scene_support": 0.8386451066401213,
+      "object_support": 0.7267901332888437,
+      "score": 0.4913896014796545,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird whistling having fun then clicking sound at end",
+      "clip_similarity": 0.2892039716243744,
+      "visual": 0.05177978030270051,
+      "scene_support": 0.7022257382258839,
+      "object_support": 0.49650486644665975,
+      "score": 0.3803310935228433,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird whistling a song",
+      "clip_similarity": 0.28888028860092163,
+      "visual": 0.03601932871881938,
+      "scene_support": 0.9302091257830077,
+      "object_support": 0.5950539718377978,
+      "score": 0.47198666077376944,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird chirping randomly",
+      "clip_similarity": 0.28859585523605347,
+      "visual": 0.0221699824416293,
+      "scene_support": 0.9185692203104514,
+      "object_support": 0.4085443444524601,
+      "score": 0.4070020624055251,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A domestic bird whistling",
+      "clip_similarity": 0.2885885238647461,
+      "visual": 0.02181301060757767,
+      "scene_support": 0.7655333624685043,
+      "object_support": 0.6611031310002214,
+      "score": 0.4367161522836488,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Various bird sounds and a child speaking",
+      "clip_similarity": 0.28835567831993103,
+      "visual": 0.010475527113897232,
+      "scene_support": 0.6839279066379631,
+      "object_support": 0.39709018868780044,
+      "score": 0.32849563944328797,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Continuous soft cooing of a bird with very faint, brief human speech in the background",
+      "clip_similarity": 0.2883545458316803,
+      "visual": 0.010420385123271371,
+      "scene_support": 0.8103765720852689,
+      "object_support": 1.0,
+      "score": 0.5472811256748892,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons flap their wings and vocalize",
+      "clip_similarity": 0.28814053535461426,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.6114585737297333,
+      "score": 0.18343757211892,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.10786516219377518
+    ],
+    [
+      "marsh",
+      0.0659262165427208
+    ],
+    [
+      "zen garden",
+      0.040264617651700974
+    ],
+    [
+      "landing deck",
+      0.03422412648797035
+    ],
+    [
+      "fire escape",
+      0.026765497401356697
+    ]
+  ],
+  "top_objects": [
+    [
+      "sulphur-crested cockatoo",
+      0.4657632112503052
+    ],
+    [
+      "grey parrot",
+      0.20514905452728271
+    ],
+    [
+      "small white",
+      0.04359012097120285
+    ],
+    [
+      "quill",
+      0.04258498176932335
+    ],
+    [
+      "crane (bird)",
+      0.03978756070137024
+    ]
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "gf6H_MWCqjw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\gf6H_MWCqjw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\gf6H_MWCqjw.wav",
+  "gt_captions": [
+    "A duck quacking followed by plastic camera muffling",
+    "A duck quacking followed by plastic camera muffling",
+    "A duck quacking followed by camera muffling",
+    "A duck quacking followed by plastic camera muffling",
+    "Ducks quack as a stream burbles and low speech in the background"
+  ],
+  "top_scene": [
+    "sky",
+    0.35231176018714905
+  ],
+  "top_object": [
+    "swing",
+    0.06739363074302673
+  ],
+  "env_probs": {
+    "indoor": 0.021429607644677162,
+    "outdoor": 0.9785703923553228
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+    "casv": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.17668139934539795,
+    "clap_gt_audio_baseline": 0.31161829829216003,
+    "clap_text_casv": -0.15998385846614838,
+    "clap_gt_audio_casv": 0.13777664303779602
+  },
+  "verdicts": [
+    {
+      "caption": "Birds are communicating and chirping while a low frequency humming sound is playing. Then all of a sudden air is being pushed out",
+      "clip_similarity": 0.30303919315338135,
+      "visual": 1.0,
+      "scene_support": 0.8460829280320482,
+      "object_support": 0.8379232972968036,
+      "score": 0.9052018675986555,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.3026694655418396,
+      "visual": 0.9642486628550351,
+      "scene_support": 0.9697151282900134,
+      "object_support": 0.7833308470055989,
+      "score": 0.9116132577306977,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music and woman speaking, owl hooting in background and tapping",
+      "clip_similarity": 0.30201199650764465,
+      "visual": 0.9006737596827739,
+      "scene_support": 0.7058774989759,
+      "object_support": 0.8284683510775948,
+      "score": 0.820573258889158,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A group of bats squeaking followed by an echoing thud then a kid talking",
+      "clip_similarity": 0.3013547360897064,
+      "visual": 0.8371190289561048,
+      "scene_support": 0.4432383368026665,
+      "object_support": 0.43594621007541184,
+      "score": 0.5986029756458654,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Thunderstorm sounds with lightning and a scared male voice",
+      "clip_similarity": 0.29927143454551697,
+      "visual": 0.6356712237181852,
+      "scene_support": 0.4735733083685424,
+      "object_support": 0.25073813488886115,
+      "score": 0.47156192246449513,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.29919537901878357,
+      "visual": 0.6283169264109185,
+      "scene_support": 0.6187862671383257,
+      "object_support": 0.6746750775582029,
+      "score": 0.639365173973326,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.86)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mid frequency white noise, followed by a bird communicating out loud",
+      "clip_similarity": 0.2981201112270355,
+      "visual": 0.5243423782736998,
+      "scene_support": 0.8776089991129379,
+      "object_support": 0.8007824321156416,
+      "score": 0.7132543806780538,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A rustling and walking on ground while dark instrumental music plays",
+      "clip_similarity": 0.29795295000076294,
+      "visual": 0.5081784857985983,
+      "scene_support": 0.975661293538985,
+      "object_support": 0.8249909426632528,
+      "score": 0.7434670651801106,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Static noise and wind blowing with very muffled dog barking",
+      "clip_similarity": 0.29787877202033997,
+      "visual": 0.5010057405016599,
+      "scene_support": 0.8032789864504448,
+      "object_support": 0.6101856221248664,
+      "score": 0.6244416787732574,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Chainsaw buzzing in the wood",
+      "clip_similarity": 0.29699084162712097,
+      "visual": 0.41514604850608633,
+      "scene_support": 0.22667630679579986,
+      "object_support": 0.570828982259798,
+      "score": 0.40531000611911383,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird chirping randomly",
+      "clip_similarity": 0.2963644862174988,
+      "visual": 0.35457972150497974,
+      "scene_support": 0.9902590162549474,
+      "object_support": 1.0,
+      "score": 0.7389095934784762,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while tree leaves rustle in the wind and an alarm sounds",
+      "clip_similarity": 0.29611268639564514,
+      "visual": 0.3302315796753965,
+      "scene_support": 0.7301027439985776,
+      "object_support": 0.7796866009261317,
+      "score": 0.5850294353475713,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind is blowing through trees",
+      "clip_similarity": 0.2960366904735565,
+      "visual": 0.3228830459240133,
+      "scene_support": 0.9309943249633829,
+      "object_support": 0.8641192463078033,
+      "score": 0.6676872897509611,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing and clicking noise",
+      "clip_similarity": 0.2959582805633545,
+      "visual": 0.3153010881593508,
+      "scene_support": 1.0,
+      "object_support": 0.8478897166499727,
+      "score": 0.6804873502587321,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dogs growl and yelp as birds chirp, then there is an increasing droning sound in the background",
+      "clip_similarity": 0.2954445779323578,
+      "visual": 0.2656278817779417,
+      "scene_support": 0.8017209791673011,
+      "object_support": 0.649619591856617,
+      "score": 0.5416533240183521,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blows through trees",
+      "clip_similarity": 0.29508692026138306,
+      "visual": 0.23104366469937293,
+      "scene_support": 0.964610837090004,
+      "object_support": 0.9121301333787976,
+      "score": 0.6554397570203896,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Birds singing outdoors with automobile sounds in the background",
+      "clip_similarity": 0.294717013835907,
+      "visual": 0.19527503688675765,
+      "scene_support": 0.7664521541464507,
+      "object_support": 0.6318873054194841,
+      "score": 0.4976118526244835,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing along with leaves being stepped on",
+      "clip_similarity": 0.29402104020118713,
+      "visual": 0.12797687661379564,
+      "scene_support": 0.592026558817722,
+      "object_support": 0.6721134496122851,
+      "score": 0.4304327531745204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dogs barking outside while a male is talking and metal is clanking followed by a child communicating out loud",
+      "clip_similarity": 0.2931062579154968,
+      "visual": 0.039520702692733306,
+      "scene_support": 0.6684897447559695,
+      "object_support": 0.5869726574987137,
+      "score": 0.3924470017534983,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog howling along with an emergency siren",
+      "clip_similarity": 0.292697548866272,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.61)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sky",
+      0.35231176018714905
+    ],
+    [
+      "tree house",
+      0.11323472857475281
+    ],
+    [
+      "park",
+      0.06619526445865631
+    ],
+    [
+      "swamp",
+      0.03258933871984482
+    ],
+    [
+      "wild field",
+      0.02289580926299095
+    ]
+  ],
+  "top_objects": [
+    [
+      "swing",
+      0.06739363074302673
+    ],
+    [
+      "chime",
+      0.029072733595967293
+    ],
+    [
+      "bald eagle",
+      0.023764165118336678
+    ],
+    [
+      "hatchet",
+      0.019713401794433594
+    ],
+    [
+      "cicada",
+      0.016364192590117455
+    ]
+  ]
+}

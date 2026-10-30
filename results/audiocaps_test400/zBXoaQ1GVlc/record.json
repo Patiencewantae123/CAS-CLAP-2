@@ -1,0 +1,283 @@
+{
+  "id": "zBXoaQ1GVlc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\zBXoaQ1GVlc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\zBXoaQ1GVlc.wav",
+  "gt_captions": [
+    "A woman talking while a group of children shout and talk in the background",
+    "A woman speaking together with a crowd of children murmuring",
+    "Several children speaking and screaming with a woman speaking briefly",
+    "A woman speaking as a group of children shout and talk in the background",
+    "Children speak in the distance and a woman speaks nearby with some rustling and banging"
+  ],
+  "top_scene": [
+    "kindergarden classroom",
+    0.15330296754837036
+  ],
+  "top_object": [
+    "diaper",
+    0.1190870925784111
+  ],
+  "env_probs": {
+    "indoor": 0.8811202645301819,
+    "outdoor": 0.11887973546981812
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A child speaks and opens a package",
+    "casv": "A child speaks and opens a package"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.25246739387512207,
+    "clap_gt_audio_baseline": 0.31238433718681335,
+    "clap_text_casv": 0.25246739387512207,
+    "clap_gt_audio_casv": 0.31238433718681335
+  },
+  "verdicts": [
+    {
+      "caption": "A child speaks and opens a package",
+      "clip_similarity": 0.32007303833961487,
+      "visual": 1.0,
+      "scene_support": 0.8844267074437481,
+      "object_support": 1.0,
+      "score": 0.9653280122331245,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaking while crumbling a package",
+      "clip_similarity": 0.3186824321746826,
+      "visual": 0.9603045577319806,
+      "scene_support": 0.6507609018840093,
+      "object_support": 0.8876628354807833,
+      "score": 0.84564894430223,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.30200979113578796,
+      "visual": 0.4843769539973202,
+      "scene_support": 0.7659588599407651,
+      "object_support": 0.6180376727398095,
+      "score": 0.6089497414031004,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child speaks while several objects are moved",
+      "clip_similarity": 0.30145612359046936,
+      "visual": 0.4685722792913503,
+      "scene_support": 0.6768620954631636,
+      "object_support": 0.46036559825925755,
+      "score": 0.5285972198332665,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child is crying furiously along with people communicating in the background",
+      "clip_similarity": 0.2960320711135864,
+      "visual": 0.31374040281588295,
+      "scene_support": 0.8590232807787804,
+      "object_support": 0.7034704465415748,
+      "score": 0.5942442793224598,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks while some object is tapped",
+      "clip_similarity": 0.29578113555908203,
+      "visual": 0.3065773410748846,
+      "scene_support": 0.9169058844881047,
+      "object_support": 0.8157719252351711,
+      "score": 0.6424342793469365,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking is followed by a child screaming in the background",
+      "clip_similarity": 0.2940899729728699,
+      "visual": 0.25830238839618025,
+      "scene_support": 0.9172263861697733,
+      "object_support": 0.7799763203377452,
+      "score": 0.6124817673107277,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young child speaking while crumpling and crinkling a plastic bag",
+      "clip_similarity": 0.2918218970298767,
+      "visual": 0.19355919947255365,
+      "scene_support": 0.22314176600288066,
+      "object_support": 0.559158782266564,
+      "score": 0.3121138442698549,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking with a child briefly speaking alongside plastic crinkling and heavily clanking before a plastic lid rattles close",
+      "clip_similarity": 0.29117268323898315,
+      "visual": 0.17502711669750526,
+      "scene_support": 0.4413076468612073,
+      "object_support": 0.4804234516358776,
+      "score": 0.3465301762281276,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaks quickly before making a snorting sound followed by a woman speaking, and the child speaking first and then snorting",
+      "clip_similarity": 0.2906481623649597,
+      "visual": 0.16005444607499097,
+      "scene_support": 0.8194247187887354,
+      "object_support": 0.7378594855495088,
+      "score": 0.5312070397314697,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crying child with laughing and talking in the background",
+      "clip_similarity": 0.2902979850769043,
+      "visual": 0.15005848699461918,
+      "scene_support": 0.8298309836312454,
+      "object_support": 0.8173517790744972,
+      "score": 0.5541782236095705,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.2899888753890991,
+      "visual": 0.14123481996639656,
+      "scene_support": 1.0,
+      "object_support": 0.7999951612439837,
+      "score": 0.5964924763597537,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks as objects tap a surface followed by spraying",
+      "clip_similarity": 0.28922879695892334,
+      "visual": 0.11953805908249857,
+      "scene_support": 0.783771802802652,
+      "object_support": 0.6966357036685331,
+      "score": 0.49193747557435497,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Beeping is followed by a door opening and closing and a child's voice in the background",
+      "clip_similarity": 0.28905391693115234,
+      "visual": 0.11454603458176482,
+      "scene_support": 0.9116122006881132,
+      "object_support": 0.7494477013640756,
+      "score": 0.5441363844483625,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.2890082597732544,
+      "visual": 0.11324273166166869,
+      "scene_support": 0.9352752646069606,
+      "object_support": 0.8312480815088451,
+      "score": 0.5752540964994092,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman and a child speak while a buzzing noise is in the background",
+      "clip_similarity": 0.28841012716293335,
+      "visual": 0.09616878283247197,
+      "scene_support": 0.839587363738517,
+      "object_support": 0.7808984057811037,
+      "score": 0.524613243988875,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An infant talking followed by liquid slurping while a young girl speaks through a television speaker in the background",
+      "clip_similarity": 0.28821849822998047,
+      "visual": 0.09069865373572386,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.036279461494289546,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young woman laugh followed by a toddler laughing",
+      "clip_similarity": 0.2870377004146576,
+      "visual": 0.05699227971671027,
+      "scene_support": 0.6304356892137669,
+      "object_support": 0.518655672609768,
+      "score": 0.3675243204337446,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaking with beeping in background",
+      "clip_similarity": 0.28592967987060547,
+      "visual": 0.025363363746570534,
+      "scene_support": 0.9800655676934305,
+      "object_support": 0.8281434146798785,
+      "score": 0.5526080402106208,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screams while speaking followed by a quick burp and children speaking from a distance followed by a child screaming",
+      "clip_similarity": 0.2850411534309387,
+      "visual": 0.0,
+      "scene_support": 0.8035784205831586,
+      "object_support": 0.6634170387720447,
+      "score": 0.440098637806561,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "kindergarden classroom",
+      0.15330296754837036
+    ],
+    [
+      "playroom",
+      0.08274666219949722
+    ],
+    [
+      "cafeteria",
+      0.0515013113617897
+    ],
+    [
+      "assembly line",
+      0.05130414664745331
+    ],
+    [
+      "delicatessen",
+      0.043306127190589905
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.1190870925784111
+    ],
+    [
+      "bib",
+      0.11203553527593613
+    ],
+    [
+      "carton",
+      0.07024376839399338
+    ],
+    [
+      "packet",
+      0.04922866448760033
+    ],
+    [
+      "milk can",
+      0.027260124683380127
+    ]
+  ]
+}

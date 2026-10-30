@@ -1,0 +1,283 @@
+{
+  "id": "kgjNIDmO8a8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\kgjNIDmO8a8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\kgjNIDmO8a8.wav",
+  "gt_captions": [
+    "An emergency vehicle siren blasts as a man speaks",
+    "Distant rings of sirens get closer as traffic passes and people speak",
+    "Emergency vehicle siren blasts while a man talks",
+    "Sirens ring and traffic passes as people speak",
+    "A ringing of a siren with passing traffic"
+  ],
+  "top_scene": [
+    "crosswalk",
+    0.2962513267993927
+  ],
+  "top_object": [
+    "car mirror",
+    0.12040790915489197
+  ],
+  "env_probs": {
+    "indoor": 0.2353629171848297,
+    "outdoor": 0.7646370828151703
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A man talks and a car accelerates followed by objects hitting and several people talking",
+    "casv": "A vehicle runs while people talk in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.25405019521713257,
+    "clap_gt_audio_baseline": 0.290877103805542,
+    "clap_text_casv": 0.18424338102340698,
+    "clap_gt_audio_casv": 0.2829008400440216
+  },
+  "verdicts": [
+    {
+      "caption": "A man talks and a car accelerates followed by objects hitting and several people talking",
+      "clip_similarity": 0.3305703401565552,
+      "visual": 1.0,
+      "scene_support": 0.8221095761599312,
+      "object_support": 0.6640030893393267,
+      "score": 0.8458337996497773,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle runs while people talk in the background",
+      "clip_similarity": 0.33029961585998535,
+      "visual": 0.9808507947215312,
+      "scene_support": 0.8591911731930624,
+      "object_support": 0.9404426930921238,
+      "score": 0.9322304777741683,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A group of people make talking sounds as a car passes by",
+      "clip_similarity": 0.3268994390964508,
+      "visual": 0.7403452928032379,
+      "scene_support": 0.5532789474561417,
+      "object_support": 0.47225533793496133,
+      "score": 0.6037984027386261,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man yells happily over popping noise, vehicles, and a reacting crowd",
+      "clip_similarity": 0.32607924938201904,
+      "visual": 0.6823306210211223,
+      "scene_support": 0.6108907157051721,
+      "object_support": 0.4206570232215019,
+      "score": 0.5823965700864511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man laughing with a car running in the background",
+      "clip_similarity": 0.3258444666862488,
+      "visual": 0.6657236814368228,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2662894725747291,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with traffic noise in the background, then an engine starts",
+      "clip_similarity": 0.3255838453769684,
+      "visual": 0.6472890931320882,
+      "scene_support": 0.7161792105998583,
+      "object_support": 0.545616086109082,
+      "score": 0.6374542262655174,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People singing with a vehicle passing in the background",
+      "clip_similarity": 0.32464948296546936,
+      "visual": 0.5811986171423753,
+      "scene_support": 0.5991486686416334,
+      "object_support": 0.6440075040552388,
+      "score": 0.6054262986660117,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle speeds by while people are talking in the background",
+      "clip_similarity": 0.3245023488998413,
+      "visual": 0.570791348707787,
+      "scene_support": 1.0,
+      "object_support": 0.9825147433717946,
+      "score": 0.8230709624946533,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle accelerating while tires skid alongside a group of people cheering and rock music playing in the background",
+      "clip_similarity": 0.3232784867286682,
+      "visual": 0.48422361819638265,
+      "scene_support": 0.6379225406295216,
+      "object_support": 0.6312187741805484,
+      "score": 0.574431841721574,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle moving and people talking in background",
+      "clip_similarity": 0.32321664690971375,
+      "visual": 0.47984948775243474,
+      "scene_support": 0.8263301858672948,
+      "object_support": 1.0,
+      "score": 0.7398388508611624,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Cars passing while man speaks over",
+      "clip_similarity": 0.32026946544647217,
+      "visual": 0.27138580884522956,
+      "scene_support": 0.8856776406136687,
+      "object_support": 0.7040990973877674,
+      "score": 0.5854873449385226,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking, followed by honk and music playing",
+      "clip_similarity": 0.3201597332954407,
+      "visual": 0.26362409882372784,
+      "scene_support": 0.5661307020770485,
+      "object_support": 0.3989907709353956,
+      "score": 0.39498608143322433,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car driving with crowd noise in the background",
+      "clip_similarity": 0.31940600275993347,
+      "visual": 0.21031029975968632,
+      "scene_support": 0.8893474663744656,
+      "object_support": 0.9224832632733627,
+      "score": 0.627673338798223,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A few people talking with vehicle noise in the background followed by cheering and laughing",
+      "clip_similarity": 0.3191918432712555,
+      "visual": 0.19516210632826003,
+      "scene_support": 0.6136349453615348,
+      "object_support": 0.5105123619259126,
+      "score": 0.4153090347175382,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car horn playing a melody with people speaking in the background",
+      "clip_similarity": 0.3190191984176636,
+      "visual": 0.18295037733462624,
+      "scene_support": 0.7069918552969252,
+      "object_support": 0.7584342474231861,
+      "score": 0.5128079817498838,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks followed by a fast vehicle accelerating and moving away while kids laugh",
+      "clip_similarity": 0.3186400532722473,
+      "visual": 0.15613221468021418,
+      "scene_support": 0.5850414677132466,
+      "object_support": 0.6490118105673295,
+      "score": 0.4326688693562585,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while a vehicle moves",
+      "clip_similarity": 0.3178539276123047,
+      "visual": 0.10052700366794552,
+      "scene_support": 0.7055150876428656,
+      "object_support": 0.7706204022392901,
+      "score": 0.4830514484318249,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle accelaring with several people talking in background",
+      "clip_similarity": 0.31756311655044556,
+      "visual": 0.07995699650069564,
+      "scene_support": 0.7271925639128374,
+      "object_support": 0.8173620485436006,
+      "score": 0.49534918233720965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck idles as people talk, and then a child talks nearby",
+      "clip_similarity": 0.31703853607177734,
+      "visual": 0.04285172224798685,
+      "scene_support": 0.388720906029902,
+      "object_support": 0.4822658745826338,
+      "score": 0.2784367230829555,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car passes by while on some object bang in the background",
+      "clip_similarity": 0.3164327144622803,
+      "visual": 0.0,
+      "scene_support": 0.9634746133562587,
+      "object_support": 0.931701267042703,
+      "score": 0.5685527641196885,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "crosswalk",
+      0.2962513267993927
+    ],
+    [
+      "parking lot",
+      0.19909033179283142
+    ],
+    [
+      "street",
+      0.11336644738912582
+    ],
+    [
+      "art school",
+      0.028796572238206863
+    ],
+    [
+      "auto showroom",
+      0.028792671859264374
+    ]
+  ],
+  "top_objects": [
+    [
+      "car mirror",
+      0.12040790915489197
+    ],
+    [
+      "tow truck",
+      0.1158108338713646
+    ],
+    [
+      "moving van",
+      0.09046302735805511
+    ],
+    [
+      "minivan",
+      0.036775749176740646
+    ],
+    [
+      "scooter",
+      0.03024883009493351
+    ]
+  ]
+}

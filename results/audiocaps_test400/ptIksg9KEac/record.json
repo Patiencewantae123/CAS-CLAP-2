@@ -1,0 +1,283 @@
+{
+  "id": "ptIksg9KEac",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ptIksg9KEac.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ptIksg9KEac.wav",
+  "gt_captions": [
+    "Leaves rustling in the wind with dogs barking and birds chirping",
+    "A person clapping followed by a dog barking then knocking on a glass surface as birds chirp during outdoor ambiance",
+    "A person clapping followed by a dog barking then wood clanking as birds chirp and gusts of wind blow in the background",
+    "A dog barks along with outdoor noises",
+    "A dog barks quickly"
+  ],
+  "top_scene": [
+    "watering hole",
+    0.26798275113105774
+  ],
+  "top_object": [
+    "Whippet",
+    0.1469690054655075
+  ],
+  "env_probs": {
+    "indoor": 0.1688469648361206,
+    "outdoor": 0.8311530351638794
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Multiple dogs are communicating with one another by barking and whining",
+    "casv": "Multiple dogs are communicating with one another by barking and whining"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.26761531829833984,
+    "clap_gt_audio_baseline": 0.5403033494949341,
+    "clap_text_casv": 0.26761531829833984,
+    "clap_gt_audio_casv": 0.5403033494949341
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple dogs are communicating with one another by barking and whining",
+      "clip_similarity": 0.33315640687942505,
+      "visual": 1.0,
+      "scene_support": 0.6413570946547571,
+      "object_support": 0.9312930932524398,
+      "score": 0.871795056372159,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking with a series of thumping on a hard surface followed by dogs whimpering and a dog barking in the background",
+      "clip_similarity": 0.3298457860946655,
+      "visual": 0.8796951604501333,
+      "scene_support": 0.28536373051652875,
+      "object_support": 0.33892065886925865,
+      "score": 0.5391633809957895,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "One dog barks, then other dogs join in barking",
+      "clip_similarity": 0.3238811194896698,
+      "visual": 0.6629447968368077,
+      "scene_support": 0.8214661458577414,
+      "object_support": 0.9590703205163039,
+      "score": 0.7993388586469367,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of dog bark followed by a pig oinking and squealing",
+      "clip_similarity": 0.3129313588142395,
+      "visual": 0.2650408124145116,
+      "scene_support": 0.7952835471867883,
+      "object_support": 0.6747170269691438,
+      "score": 0.5470164972125843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks briefly, animals bleat, and chickens cackle in the background, and an animal bleats once in the foreground followed by four quiet metal taps",
+      "clip_similarity": 0.31254827976226807,
+      "visual": 0.2511200806609694,
+      "scene_support": 0.558791931054521,
+      "object_support": 0.0,
+      "score": 0.26808561158074407,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks while another dog growls",
+      "clip_similarity": 0.31124669313430786,
+      "visual": 0.20382164915294068,
+      "scene_support": 0.8579294096145014,
+      "object_support": 1.0,
+      "score": 0.6389074825455267,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music playing while a dog howls in unison",
+      "clip_similarity": 0.3108476996421814,
+      "visual": 0.1893226016411605,
+      "scene_support": 0.5853178043545499,
+      "object_support": 0.8118533814518011,
+      "score": 0.4948803963983695,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male giving a dog a command and dog responding with a bark",
+      "clip_similarity": 0.31075650453567505,
+      "visual": 0.1860086574085606,
+      "scene_support": 0.5643118573852081,
+      "object_support": 0.8150089982387106,
+      "score": 0.48819971965059983,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "One dog barking then others join in",
+      "clip_similarity": 0.3097565174102783,
+      "visual": 0.14967006761096027,
+      "scene_support": 1.0,
+      "object_support": 0.9980309360405831,
+      "score": 0.659277307856559,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High pitch dog whining and another dog panting followed by both dogs barking",
+      "clip_similarity": 0.3096177577972412,
+      "visual": 0.14462767403351415,
+      "scene_support": 0.5968520662086547,
+      "object_support": 0.7126253440267998,
+      "score": 0.45069429268404204,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult female speaks while a pig oinks repeatedly, and slight shuffling occurs",
+      "clip_similarity": 0.309120774269104,
+      "visual": 0.12656776095415603,
+      "scene_support": 0.06910891529903555,
+      "object_support": 0.12666643225429056,
+      "score": 0.10935970864766024,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several dogs barking in a musical rhythm",
+      "clip_similarity": 0.3084222674369812,
+      "visual": 0.1011846809137389,
+      "scene_support": 0.9983685668225657,
+      "object_support": 0.9720162767429892,
+      "score": 0.6315893254351619,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several pigs oink in the foreground, and an adult male speaks briefly in the background",
+      "clip_similarity": 0.30798935890197754,
+      "visual": 0.08545319270369114,
+      "scene_support": 0.0,
+      "object_support": 0.017832814962328865,
+      "score": 0.03953112157017512,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood tapping followed by a dog breathing heavy and then barking",
+      "clip_similarity": 0.30742886662483215,
+      "visual": 0.06508543153293747,
+      "scene_support": 0.6142208251712858,
+      "object_support": 0.670881188087163,
+      "score": 0.41156477659070967,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A loud male voice screams while sticks fall in the background followed by a sequence of oinks, dog barks, and animal movement",
+      "clip_similarity": 0.30704325437545776,
+      "visual": 0.051072645772934175,
+      "scene_support": 0.8682329206227213,
+      "object_support": 0.6451363161242684,
+      "score": 0.47443982933327056,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog howls while another dog barks in the background",
+      "clip_similarity": 0.306557297706604,
+      "visual": 0.033413438368759686,
+      "scene_support": 0.6272359714320527,
+      "object_support": 0.8891506493755574,
+      "score": 0.4682813615897869,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple dogs whimpering with faint reverberating background noise",
+      "clip_similarity": 0.3061493933200836,
+      "visual": 0.018590577351898643,
+      "scene_support": 0.7821658871716045,
+      "object_support": 0.8188915064937555,
+      "score": 0.48775344904036744,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dogs growling while a woman is talking followed by dogs barking",
+      "clip_similarity": 0.30600255727767944,
+      "visual": 0.013254693942088284,
+      "scene_support": 0.672183859297236,
+      "object_support": 0.7073875060334549,
+      "score": 0.4191732871760426,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male whistling with a dog breathing heavily followed by loud barking",
+      "clip_similarity": 0.3056422472000122,
+      "visual": 0.00016136525838476626,
+      "scene_support": 0.4775676473620575,
+      "object_support": 0.6460537209235422,
+      "score": 0.3371509565890338,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Dog growling followed by a series of dog barking",
+      "clip_similarity": 0.30563780665397644,
+      "visual": 0.0,
+      "scene_support": 0.7518932825958592,
+      "object_support": 0.7723768455978954,
+      "score": 0.4572810384581264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "watering hole",
+      0.26798275113105774
+    ],
+    [
+      "outdoor kennel",
+      0.21617625653743744
+    ],
+    [
+      "yard",
+      0.12717221677303314
+    ],
+    [
+      "corral",
+      0.06852371245622635
+    ],
+    [
+      "assembly line",
+      0.052992843091487885
+    ]
+  ],
+  "top_objects": [
+    [
+      "Whippet",
+      0.1469690054655075
+    ],
+    [
+      "American Staffordshire Terrier",
+      0.1450236588716507
+    ],
+    [
+      "Great Dane",
+      0.09429655224084854
+    ],
+    [
+      "Dobermann",
+      0.08671443909406662
+    ],
+    [
+      "Weimaraner",
+      0.07766052335500717
+    ]
+  ]
+}

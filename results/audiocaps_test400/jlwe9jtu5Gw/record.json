@@ -1,0 +1,285 @@
+{
+  "id": "jlwe9jtu5Gw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\jlwe9jtu5Gw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\jlwe9jtu5Gw.wav",
+  "gt_captions": [
+    "A person whistling",
+    "While an electronic device plays in the background, two wolf whistles occur followed by metal thumping",
+    "A couple of whistling sounds one after another",
+    "Two bursts of whistling occur",
+    "A person whistling followed by metal rattling in the background"
+  ],
+  "top_scene": [
+    "childs room",
+    0.28112390637397766
+  ],
+  "top_object": [
+    "titi",
+    0.10445111989974976
+  ],
+  "env_probs": {
+    "indoor": 0.8063534498214722,
+    "outdoor": 0.19364655017852783
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A young woman laugh followed by a toddler laughing",
+    "casv": "A child screaming then a child speaking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06004040688276291,
+    "clap_gt_audio_baseline": 0.4428144097328186,
+    "clap_text_casv": 0.1126897856593132,
+    "clap_gt_audio_casv": 0.45126375555992126
+  },
+  "verdicts": [
+    {
+      "caption": "A young woman laugh followed by a toddler laughing",
+      "clip_similarity": 0.340206503868103,
+      "visual": 1.0,
+      "scene_support": 0.39593326116278116,
+      "object_support": 0.21406022595329988,
+      "score": 0.5829980461348243,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child talks and laughs while a television plays in the background",
+      "clip_similarity": 0.3360786437988281,
+      "visual": 0.690919355810492,
+      "scene_support": 0.6438532027477013,
+      "object_support": 0.531899934271143,
+      "score": 0.6290936834298502,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child laughing while someone else makes funny noise",
+      "clip_similarity": 0.33469951152801514,
+      "visual": 0.5876544477148321,
+      "scene_support": 0.41160940983933897,
+      "object_support": 0.23589058703324106,
+      "score": 0.4293117781477068,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming with people laughing and talking",
+      "clip_similarity": 0.3343570828437805,
+      "visual": 0.5620145092149805,
+      "scene_support": 0.4180241060084921,
+      "object_support": 0.31935843958036825,
+      "score": 0.44602056736265033,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child screaming then a child speaking",
+      "clip_similarity": 0.3341049253940582,
+      "visual": 0.5431337851377617,
+      "scene_support": 0.7698293159915196,
+      "object_support": 0.7889314358856172,
+      "score": 0.6848817396182456,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child laughs followed by a farting sound",
+      "clip_similarity": 0.33188575506210327,
+      "visual": 0.3769695779563474,
+      "scene_support": 0.6458452665971063,
+      "object_support": 0.6635004100135892,
+      "score": 0.5435915341657476,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People laugh followed by a laughing baby",
+      "clip_similarity": 0.33012068271636963,
+      "visual": 0.24480674091612015,
+      "scene_support": 0.6317097569235769,
+      "object_support": 0.6904979655237772,
+      "score": 0.4945850131006543,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone makes fart spit noises at a baby that is laughing back",
+      "clip_similarity": 0.3293881118297577,
+      "visual": 0.18995423192875266,
+      "scene_support": 0.5554350102872401,
+      "object_support": 0.6455553113935054,
+      "score": 0.4362787892757247,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person breathes, followed by a baby laughing",
+      "clip_similarity": 0.3293136656284332,
+      "visual": 0.18437994416786238,
+      "scene_support": 0.3962359076556251,
+      "object_support": 0.37146013074634165,
+      "score": 0.304060789187735,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby laughing with a person making sneezing noises",
+      "clip_similarity": 0.3291162848472595,
+      "visual": 0.16960071765049797,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.06784028706019919,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child burping followed by two children laughing then a child whispering",
+      "clip_similarity": 0.3291111886501312,
+      "visual": 0.16921913109841139,
+      "scene_support": 0.43139066650744773,
+      "object_support": 0.3083058569819979,
+      "score": 0.28959660948619825,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child laughing very hard",
+      "clip_similarity": 0.32901957631111145,
+      "visual": 0.16235949916207162,
+      "scene_support": 0.7178391118715338,
+      "object_support": 0.7815926067947754,
+      "score": 0.5147733152647214,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child speaks as the TV plays in the background",
+      "clip_similarity": 0.3286858797073364,
+      "visual": 0.13737339025146778,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.654949356100587,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby making hilarious noises followed by a woman laughing in response",
+      "clip_similarity": 0.32808294892311096,
+      "visual": 0.09222790758910938,
+      "scene_support": 0.4584714590262457,
+      "object_support": 0.5195045145346529,
+      "score": 0.3302839551039133,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child screaming followed by a young boy talking",
+      "clip_similarity": 0.3280281126499176,
+      "visual": 0.08812194702864577,
+      "scene_support": 0.5381684993158153,
+      "object_support": 0.3930946208068619,
+      "score": 0.31462771484826146,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaking and laughing with wind noise at the end",
+      "clip_similarity": 0.3279464542865753,
+      "visual": 0.08200763619404235,
+      "scene_support": 0.20522642695080723,
+      "object_support": 0.19406043059466344,
+      "score": 0.15258911174125814,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.81)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child screaming followed by children speaking with some tapping in the background",
+      "clip_similarity": 0.32758888602256775,
+      "visual": 0.05523409553945404,
+      "scene_support": 0.7200539517292547,
+      "object_support": 0.6297672301937612,
+      "score": 0.4270399927926864,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Blowing sound then baby laughing",
+      "clip_similarity": 0.3275720179080963,
+      "visual": 0.05397106636705056,
+      "scene_support": 0.557549228995335,
+      "object_support": 0.5853800311931907,
+      "score": 0.3644672046033779,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young kid speaks and then begins to burp",
+      "clip_similarity": 0.3270294666290283,
+      "visual": 0.013346603321811354,
+      "scene_support": 0.7854463448486474,
+      "object_support": 0.8871276197139796,
+      "score": 0.5071108306975126,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone makes a baby laugh with their hiccup sounds",
+      "clip_similarity": 0.3268512189388275,
+      "visual": 0.0,
+      "scene_support": 0.50077501776531,
+      "object_support": 0.6753028570370562,
+      "score": 0.35282336244070983,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.28112390637397766
+    ],
+    [
+      "playroom",
+      0.17338216304779053
+    ],
+    [
+      "waiting room",
+      0.051991187036037445
+    ],
+    [
+      "nursery",
+      0.044480521231889725
+    ],
+    [
+      "door elevator",
+      0.02471429668366909
+    ]
+  ],
+  "top_objects": [
+    [
+      "titi",
+      0.10445111989974976
+    ],
+    [
+      "infant bed",
+      0.041721537709236145
+    ],
+    [
+      "diaper",
+      0.026359155774116516
+    ],
+    [
+      "bib",
+      0.023726146668195724
+    ],
+    [
+      "abacus",
+      0.01897955872118473
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "yVVLq4ao1Ck",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\yVVLq4ao1Ck.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\yVVLq4ao1Ck.wav",
+  "gt_captions": [
+    "Several birds chirp with some hissing",
+    "Several birds tweeting loudly followed by insects chirping",
+    "Insects trill in the background, while birds chirp and flies buzz",
+    "Birds chirping with insects buzzing and outdoor ambiance",
+    "A bird is chirping while a fly is buzzing and another insect is making ringing sounds"
+  ],
+  "top_scene": [
+    "broadleaf forest",
+    0.09153039008378983
+  ],
+  "top_object": [
+    "common sorrel",
+    0.08586928993463516
+  ],
+  "env_probs": {
+    "indoor": 0.21934513747692108,
+    "outdoor": 0.7806548625230789
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A young woman laughing with a clanking and mixing sound in the background",
+    "casv": "A person files wood rapidly nearby quietly"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.13231061398983002,
+    "clap_gt_audio_baseline": -0.033908501267433167,
+    "clap_text_casv": 0.004418928176164627,
+    "clap_gt_audio_casv": 0.08248467743396759
+  },
+  "verdicts": [
+    {
+      "caption": "A young woman laughing with a clanking and mixing sound in the background",
+      "clip_similarity": 0.27724915742874146,
+      "visual": 1.0,
+      "scene_support": 0.21566148558375928,
+      "object_support": 0.2877196393032662,
+      "score": 0.5510143374661076,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child whispering as dogs bark in the background alongside camera muffling and footsteps shuffling on grass",
+      "clip_similarity": 0.2768026292324066,
+      "visual": 0.9627515568869719,
+      "scene_support": 0.7180674916405465,
+      "object_support": 0.7454377733081089,
+      "score": 0.8241522022393855,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking as plastic crinkles followed by gravel crunching and plastic crumples",
+      "clip_similarity": 0.27644822001457214,
+      "visual": 0.9331874852390956,
+      "scene_support": 0.30296853705034593,
+      "object_support": 0.4274714692998547,
+      "score": 0.5924069960006985,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is sawing wood with farm animal sounds in the background",
+      "clip_similarity": 0.27597105503082275,
+      "visual": 0.8933833857474922,
+      "scene_support": 0.6489905242751282,
+      "object_support": 0.5290189765937442,
+      "score": 0.7107562045596585,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young woman speaking while footsteps walk on foliage and gravel",
+      "clip_similarity": 0.27574118971824646,
+      "visual": 0.8742085047669952,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.3496834019067981,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman laughing, followed by laughing in a lower pitch",
+      "clip_similarity": 0.27387839555740356,
+      "visual": 0.718818133227262,
+      "scene_support": 0.4510632258532078,
+      "object_support": 0.4553626067230107,
+      "score": 0.5594550030637703,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person files wood rapidly nearby quietly",
+      "clip_similarity": 0.27336299419403076,
+      "visual": 0.6758244353565613,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8703297741426246,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talks nearby and a metal object is tapped",
+      "clip_similarity": 0.2713814973831177,
+      "visual": 0.5105321383733794,
+      "scene_support": 0.7631578770779525,
+      "object_support": 0.8360404751296713,
+      "score": 0.6839723610116388,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Tapping against the ground takes place while someone whistles in the background",
+      "clip_similarity": 0.2688218653202057,
+      "visual": 0.29701301445636363,
+      "scene_support": 0.7735864756356238,
+      "object_support": 0.8691922145057818,
+      "score": 0.6116388128249671,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sequence of birds chirping is followed by movement sounds while a medium voice woman speaks slightly",
+      "clip_similarity": 0.26753368973731995,
+      "visual": 0.1895561162972815,
+      "scene_support": 0.6786631450602558,
+      "object_support": 0.6534663089250581,
+      "score": 0.47546128271450677,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking briefly in the background followed by a woman speaking with a child mumbling alongside leaves heavily rustling and wind blowing into a microphone",
+      "clip_similarity": 0.26735734939575195,
+      "visual": 0.1748461758381086,
+      "scene_support": 0.0576666404961922,
+      "object_support": 0.04498421705949408,
+      "score": 0.10073372760194933,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A girl is speaking and scraping an object",
+      "clip_similarity": 0.2672560214996338,
+      "visual": 0.16639361583114767,
+      "scene_support": 0.5238077503524626,
+      "object_support": 0.5937623156482201,
+      "score": 0.4018284661326639,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman singing and an animal sound being made",
+      "clip_similarity": 0.2663298547267914,
+      "visual": 0.0891347313204639,
+      "scene_support": 0.649938700696336,
+      "object_support": 0.6778956381897993,
+      "score": 0.43400419419402614,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Insects, rural and natural sounds and a child speaks",
+      "clip_similarity": 0.2662110924720764,
+      "visual": 0.07922783378289351,
+      "scene_support": 0.7758062687009849,
+      "object_support": 0.8502258325850967,
+      "score": 0.5195007638989819,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talking as wood thumps in the background followed by a person whistling",
+      "clip_similarity": 0.26618829369544983,
+      "visual": 0.0773260077813273,
+      "scene_support": 0.7655742842207472,
+      "object_support": 0.8071686244371206,
+      "score": 0.5027532757098911,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman laughing followed by wood clanking three times",
+      "clip_similarity": 0.2659882605075836,
+      "visual": 0.06063965990876207,
+      "scene_support": 0.6332043598668392,
+      "object_support": 0.5853818125154596,
+      "score": 0.38983171567819447,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is speaking followed by chopping and swishing sounds",
+      "clip_similarity": 0.2658630311489105,
+      "visual": 0.05019329015898271,
+      "scene_support": 0.7373370133046666,
+      "object_support": 0.8053157457997258,
+      "score": 0.48287314379491075,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood tapping followed by a young girl speaking",
+      "clip_similarity": 0.26566505432128906,
+      "visual": 0.03367847953361757,
+      "scene_support": 0.58447862711033,
+      "object_support": 0.603275952971149,
+      "score": 0.3697977658378907,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Camera muffling followed by plastic scrapping and a person talking faintly in the distance followed by a dog barking as leaves rustle alongside wind blowing into a microphone",
+      "clip_similarity": 0.265452116727829,
+      "visual": 0.01591567328369526,
+      "scene_support": 0.5785080682230718,
+      "object_support": 0.7578368180865765,
+      "score": 0.40726973520637255,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking then sniffing followed by plastic clicking and a goat baaing as metal clangs in the background",
+      "clip_similarity": 0.26526132225990295,
+      "visual": 0.0,
+      "scene_support": 0.4770313824251172,
+      "object_support": 0.48560473283978706,
+      "score": 0.2887908345794713,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "broadleaf forest",
+      0.09153039008378983
+    ],
+    [
+      "excavation",
+      0.07073163241147995
+    ],
+    [
+      "sandbox",
+      0.0618683360517025
+    ],
+    [
+      "nursery",
+      0.061753980815410614
+    ],
+    [
+      "tree farm",
+      0.05765003338456154
+    ]
+  ],
+  "top_objects": [
+    [
+      "common sorrel",
+      0.08586928993463516
+    ],
+    [
+      "dust jacket",
+      0.03090866655111313
+    ],
+    [
+      "sweatshirt",
+      0.027025848627090454
+    ],
+    [
+      "earth star",
+      0.02636859379708767
+    ],
+    [
+      "gyromitra",
+      0.02562614344060421
+    ]
+  ]
+}

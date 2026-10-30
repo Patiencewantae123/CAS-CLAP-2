@@ -1,0 +1,286 @@
+{
+  "id": "1_z6NcidGzM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1_z6NcidGzM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1_z6NcidGzM.wav",
+  "gt_captions": [
+    "Splashing water with children speaking and people screaming with a distant blow of a whistle",
+    "Two quick whistle sounds with water splashing and mixed with kids playing",
+    "Various speech and a whistle blown and water splashing",
+    "Water running with clanking and children murmuring in the distance",
+    "Water splashes with people speaking in the distance and a faint whistle"
+  ],
+  "top_scene": [
+    "indoor swimming pool",
+    0.5408049821853638
+  ],
+  "top_object": [
+    "swimming cap",
+    0.6155792474746704
+  ],
+  "env_probs": {
+    "indoor": 0.5740713477134705,
+    "outdoor": 0.42592865228652954
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Multiple women speak as a child splashes in water",
+    "casv": "Water running with girl's voice"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2864636480808258,
+    "clap_gt_audio_baseline": 0.4853466749191284,
+    "clap_text_casv": 0.2869684100151062,
+    "clap_gt_audio_casv": 0.23599322140216827
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple women speak as a child splashes in water",
+      "clip_similarity": 0.30044329166412354,
+      "visual": 1.0,
+      "scene_support": 0.5896518558977891,
+      "object_support": 0.03402229233859498,
+      "score": 0.5871022444709153,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman yells and an object is dropped as water is running",
+      "clip_similarity": 0.2913209795951843,
+      "visual": 0.5854945995428299,
+      "scene_support": 0.5110611745707568,
+      "object_support": 0.33524893986670107,
+      "score": 0.48809087414836927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running with girl's voice",
+      "clip_similarity": 0.2910679280757904,
+      "visual": 0.5739962841387977,
+      "scene_support": 0.7615759101379752,
+      "object_support": 0.5527300894056689,
+      "score": 0.6238903135186123,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water splashing with e person talking and crumpling and whirring sounds",
+      "clip_similarity": 0.2894771099090576,
+      "visual": 0.501711679504263,
+      "scene_support": 0.8873299057208672,
+      "object_support": 0.5112525108420237,
+      "score": 0.6202593967705725,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Flapping noise in water with child talking",
+      "clip_similarity": 0.2884620428085327,
+      "visual": 0.45558841691312685,
+      "scene_support": 0.5994015531121613,
+      "object_support": 0.3643900240253119,
+      "score": 0.4713728399064927,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female talking and laughing followed by water running",
+      "clip_similarity": 0.28823697566986084,
+      "visual": 0.4453616735458849,
+      "scene_support": 0.6663254886128857,
+      "object_support": 0.5237806825989348,
+      "score": 0.5351765207819001,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping sounds, followed by a girl talking and then water splashing noises while water is running from a faucet in the background",
+      "clip_similarity": 0.2874298095703125,
+      "visual": 0.40868514847194687,
+      "scene_support": 0.7040739509368543,
+      "object_support": 0.37621887978154034,
+      "score": 0.48756190860429716,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Someone moves under water followed by some gas bursting and a child talking",
+      "clip_similarity": 0.2866917848587036,
+      "visual": 0.3751503136273522,
+      "scene_support": 0.8162637440927117,
+      "object_support": 0.49382737660223447,
+      "score": 0.5430874616594248,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water splashing sounds with a person talking",
+      "clip_similarity": 0.2859203517436981,
+      "visual": 0.34009744656418256,
+      "scene_support": 0.7516207936545631,
+      "object_support": 0.5908327461938042,
+      "score": 0.5387750405801832,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plastic squeaking followed by a woman laughing and liquid splashing then a kid and woman talking",
+      "clip_similarity": 0.2840653657913208,
+      "visual": 0.25580941857063927,
+      "scene_support": 0.7846879526941984,
+      "object_support": 0.7142055673955949,
+      "score": 0.5519918234551937,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water splashing and buzzing noises with a person talking",
+      "clip_similarity": 0.28358155488967896,
+      "visual": 0.23382571202617353,
+      "scene_support": 0.9046753663112399,
+      "object_support": 0.8437304438774841,
+      "score": 0.6180520278670866,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks with some humming followed by water splashing",
+      "clip_similarity": 0.2827862501144409,
+      "visual": 0.19768814932778664,
+      "scene_support": 0.6112101925954072,
+      "object_support": 0.25363114800729947,
+      "score": 0.3385276619119267,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water splashing sound with a person talking",
+      "clip_similarity": 0.28057968616485596,
+      "visual": 0.09742489735339682,
+      "scene_support": 0.6845015317390581,
+      "object_support": 0.5282925398999602,
+      "score": 0.4028081804330642,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Underwater sounds of people talking above the water followed by a mechanical whirl sound",
+      "clip_similarity": 0.2801274061203003,
+      "visual": 0.0768739098876575,
+      "scene_support": 0.8399018024650312,
+      "object_support": 0.6981589346590288,
+      "score": 0.492167785092281,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water splashing sounds with people talking",
+      "clip_similarity": 0.27994275093078613,
+      "visual": 0.06848343029239386,
+      "scene_support": 0.7094801586359211,
+      "object_support": 0.4580651090329046,
+      "score": 0.3776569524176052,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman speaking while water runs young child squeals",
+      "clip_similarity": 0.2798171043395996,
+      "visual": 0.06277422080665605,
+      "scene_support": 0.4515548932532238,
+      "object_support": 0.08308469250664087,
+      "score": 0.1855015640506218,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking with water splashing noises",
+      "clip_similarity": 0.27933189272880554,
+      "visual": 0.040726867951509635,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6162907471806038,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A siren going with an engine noise in the background",
+      "clip_similarity": 0.2785734534263611,
+      "visual": 0.006264421983164873,
+      "scene_support": 0.5443509701014035,
+      "object_support": 0.8673907811070899,
+      "score": 0.42602829415581395,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.51)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People talking with water splashing sounds and laughing near the end",
+      "clip_similarity": 0.27856290340423584,
+      "visual": 0.005785043387825409,
+      "scene_support": 0.6540579211095016,
+      "object_support": 0.5049122791662473,
+      "score": 0.3500050774378548,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Crumpling sound with woman talking, followed by shaking and more crumpling",
+      "clip_similarity": 0.2784355878829956,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor swimming pool",
+      0.5408049821853638
+    ],
+    [
+      "outdoor swimming pool",
+      0.37828299403190613
+    ],
+    [
+      "water park",
+      0.018805066123604774
+    ],
+    [
+      "swimming hole",
+      0.013898871839046478
+    ],
+    [
+      "raft",
+      0.012595972046256065
+    ]
+  ],
+  "top_objects": [
+    [
+      "swimming cap",
+      0.6155792474746704
+    ],
+    [
+      "swimsuit",
+      0.19525445997714996
+    ],
+    [
+      "bikini",
+      0.03830799460411072
+    ],
+    [
+      "motorboat",
+      0.026050640270113945
+    ],
+    [
+      "snorkel",
+      0.02577337808907032
+    ]
+  ]
+}

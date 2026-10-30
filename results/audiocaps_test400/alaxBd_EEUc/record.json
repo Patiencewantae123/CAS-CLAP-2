@@ -1,0 +1,287 @@
+{
+  "id": "alaxBd_EEUc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\alaxBd_EEUc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\alaxBd_EEUc.wav",
+  "gt_captions": [
+    "A man talking followed by a series of belches",
+    "A man speaks followed by eructation",
+    "A man speaks briefly followed by a succession of several eructations",
+    "A man speaks followed by burping",
+    "A man talking followed by a series of belches"
+  ],
+  "top_scene": [
+    "nursing home",
+    0.03829916939139366
+  ],
+  "top_object": [
+    "wild boar",
+    0.09674302488565445
+  ],
+  "env_probs": {
+    "indoor": 0.6748082637786865,
+    "outdoor": 0.3251917362213135
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A person making a speech with rustling and flapping noises in background",
+    "casv": "A person making a speech with rustling and flapping noises in background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11077317595481873,
+    "clap_gt_audio_baseline": 0.21623587608337402,
+    "clap_text_casv": 0.11077317595481873,
+    "clap_gt_audio_casv": 0.21623587608337402
+  },
+  "verdicts": [
+    {
+      "caption": "A person making a speech with rustling and flapping noises in background",
+      "clip_similarity": 0.2905919849872589,
+      "visual": 1.0,
+      "scene_support": 0.7750614187799029,
+      "object_support": 0.8349014149999554,
+      "score": 0.8829888501339576,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several men speaking as a kid whimpers and an electric razor operates in the background followed by microphone distortion",
+      "clip_similarity": 0.28746548295021057,
+      "visual": 0.7530513138598502,
+      "scene_support": 0.44924313071425964,
+      "object_support": 0.4567524588530456,
+      "score": 0.5730192024141316,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks in a moderate voice while frequent typing on a computer keyboard is in the background",
+      "clip_similarity": 0.28531959652900696,
+      "visual": 0.5835571551985914,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23342286207943658,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-0.59)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An insect making noise in the background of a man speaking",
+      "clip_similarity": 0.2842336893081665,
+      "visual": 0.4977861055466236,
+      "scene_support": 0.8545973387224407,
+      "object_support": 1.0,
+      "score": 0.7554936438353816,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A series of hiccups together with a child speaking in the background followed later by a man talking",
+      "clip_similarity": 0.2836553752422333,
+      "visual": 0.45210761339588573,
+      "scene_support": 0.5240501089589852,
+      "object_support": 0.6003542563007477,
+      "score": 0.5181643549362741,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn blows and faint speech occurs briefly in the background, while an adult male speaks in the foreground and random clicking and clattering occur",
+      "clip_similarity": 0.2825070023536682,
+      "visual": 0.36140267456340025,
+      "scene_support": 0.6879663018468244,
+      "object_support": 0.6620550429879044,
+      "score": 0.5495674732757787,
+      "conflicts": [
+        "names 'a train', not visible in image (z=-0.33)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person whistling followed by camera muffling",
+      "clip_similarity": 0.28245919942855835,
+      "visual": 0.35762693112563765,
+      "scene_support": 0.8162101751865695,
+      "object_support": 0.8659095751273678,
+      "score": 0.6476866975444362,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking gibberish and faint audio of a woman talking and the trotting of an animal like a horse in the background",
+      "clip_similarity": 0.28184664249420166,
+      "visual": 0.3092437449537095,
+      "scene_support": 0.9628356119355742,
+      "object_support": 0.956952148261082,
+      "score": 0.6996338260404806,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaking with ticking in the background",
+      "clip_similarity": 0.28084081411361694,
+      "visual": 0.22979777174642257,
+      "scene_support": 1.0,
+      "object_support": 0.9082882850770849,
+      "score": 0.6644055942216945,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult male speaks briefly, animals bleat, and chickens cackle in the background, and an animal bleats once in the foreground followed by four quiet metal taps",
+      "clip_similarity": 0.28083857893943787,
+      "visual": 0.22962122513929528,
+      "scene_support": 0.31925591361195993,
+      "object_support": 0.5141552651980652,
+      "score": 0.34187184369872564,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking a foreign language and female voices yelling and screaming",
+      "clip_similarity": 0.2801671326160431,
+      "visual": 0.1765866243582531,
+      "scene_support": 0.8474988130166421,
+      "object_support": 0.7289680067594662,
+      "score": 0.5435746956761337,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A grown male speaks as a child speaks in the background",
+      "clip_similarity": 0.27986234426498413,
+      "visual": 0.15251272901037388,
+      "scene_support": 0.9648000389574025,
+      "object_support": 0.9342086183194172,
+      "score": 0.6307076887871954,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person chanting while a dog barks in the background",
+      "clip_similarity": 0.27935606241226196,
+      "visual": 0.11252374551865862,
+      "scene_support": 0.3937858073312962,
+      "object_support": 0.616721091819053,
+      "score": 0.3481615679525682,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person making a whistling and bubble sound",
+      "clip_similarity": 0.2792810797691345,
+      "visual": 0.10660119533822798,
+      "scene_support": 0.4341612592980363,
+      "object_support": 0.5584364926925018,
+      "score": 0.3404198037324526,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking along with light clanging noises of pots and pans in the background",
+      "clip_similarity": 0.27883443236351013,
+      "visual": 0.0713224753246692,
+      "scene_support": 0.7157166335934552,
+      "object_support": 0.7051928157178652,
+      "score": 0.45480182492326376,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks along with quiet electronic squealing, brief electronic static then occurs followed by two three-tone electronic beeps, and then music plays while an adult female speaks",
+      "clip_similarity": 0.27875837683677673,
+      "visual": 0.06531518277281748,
+      "scene_support": 0.6601823693405242,
+      "object_support": 0.6551112792516629,
+      "score": 0.4207141676867831,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man with a distinct voice is communicating with another man followed by animal noises in the background and loud bang",
+      "clip_similarity": 0.2784985899925232,
+      "visual": 0.04479575911510133,
+      "scene_support": 0.95401029936329,
+      "object_support": 0.8722822190556352,
+      "score": 0.565806059171718,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "While music plays faintly in the background, an adult male speaks, random metal clacking occurs faintly in the background, and a second adult male speaks briefly",
+      "clip_similarity": 0.27809759974479675,
+      "visual": 0.013123297796462947,
+      "scene_support": 0.9654355315859315,
+      "object_support": 0.926696570121766,
+      "score": 0.5728889496308944,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks over a microphone that squeaks at the end",
+      "clip_similarity": 0.27803030610084534,
+      "visual": 0.007808067944550242,
+      "scene_support": 0.5289139406630063,
+      "object_support": 0.64167011633832,
+      "score": 0.354298444278218,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young male voice is speaking while a sequence of gun shots are followed by screams and crinkling-crankling movement, while a medium voice man narrates",
+      "clip_similarity": 0.27793145179748535,
+      "visual": 0.0,
+      "scene_support": 0.6706268489548459,
+      "object_support": 0.6607649603010975,
+      "score": 0.399417542776783,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "nursing home",
+      0.03829916939139366
+    ],
+    [
+      "music studio",
+      0.0265749953687191
+    ],
+    [
+      "archive",
+      0.026183905079960823
+    ],
+    [
+      "closet",
+      0.02573556639254093
+    ],
+    [
+      "basement",
+      0.024774160236120224
+    ]
+  ],
+  "top_objects": [
+    [
+      "wild boar",
+      0.09674302488565445
+    ],
+    [
+      "titi",
+      0.0633934959769249
+    ],
+    [
+      "toaster",
+      0.032863467931747437
+    ],
+    [
+      "cockroach",
+      0.028004992753267288
+    ],
+    [
+      "scorpion",
+      0.01944546215236187
+    ]
+  ]
+}

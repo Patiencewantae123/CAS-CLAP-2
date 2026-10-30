@@ -1,0 +1,283 @@
+{
+  "id": "KtinboYbmHQ",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\KtinboYbmHQ.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\KtinboYbmHQ.wav",
+  "gt_captions": [
+    "A vehicle driving by while revving as tires skid and squeal",
+    "A motor vehicle speeds and skids the tires",
+    "Tires squeal and an engine hums as a vehicle approaches",
+    "Tires skidding and squealing as a vehicle engine accelerates and revs several times",
+    "Tires squealing and an engine revving"
+  ],
+  "top_scene": [
+    "field road",
+    0.21863220632076263
+  ],
+  "top_object": [
+    "geyser",
+    0.0676487609744072
+  ],
+  "env_probs": {
+    "indoor": 0.02081393077969551,
+    "outdoor": 0.9791860692203045
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A motorcycle engine idling and a spraying sound at the end",
+    "casv": "An engine humming as a vehicle speeds down a road"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.1505645215511322,
+    "clap_gt_audio_baseline": 0.044525615870952606,
+    "clap_text_casv": 0.25952744483947754,
+    "clap_gt_audio_casv": 0.410950243473053
+  },
+  "verdicts": [
+    {
+      "caption": "A motorcycle engine idling and a spraying sound at the end",
+      "clip_similarity": 0.3576417565345764,
+      "visual": 1.0,
+      "scene_support": 0.3153941546730928,
+      "object_support": 0.4101825967529549,
+      "score": 0.6176730254278143,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine revs as it passes followed by a passing car",
+      "clip_similarity": 0.34532812237739563,
+      "visual": 0.5909774421203833,
+      "scene_support": 0.6882175008595558,
+      "object_support": 0.5859173938494321,
+      "score": 0.6186314452608497,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An engine revving with a motorcycle at the end",
+      "clip_similarity": 0.3346109688282013,
+      "visual": 0.23498525476732823,
+      "scene_support": 0.5612666570170394,
+      "object_support": 0.709415049541272,
+      "score": 0.47519861387442475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car doing a burnout",
+      "clip_similarity": 0.334184467792511,
+      "visual": 0.22081815004994274,
+      "scene_support": 0.5624050522318675,
+      "object_support": 0.7723054609189507,
+      "score": 0.4887404139652225,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine rumbles through a loud exhaust",
+      "clip_similarity": 0.33401450514793396,
+      "visual": 0.21517249298871363,
+      "scene_support": 0.3725925375346593,
+      "object_support": 0.5474324702248521,
+      "score": 0.36207649952333887,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idling followed by a person talking, the car accelerates with a large bang and laughing",
+      "clip_similarity": 0.3339405655860901,
+      "visual": 0.21271643912777916,
+      "scene_support": 0.6822030012079421,
+      "object_support": 0.8236917220616324,
+      "score": 0.536854992631984,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine revs as a vehicle spins tires causing a burnout",
+      "clip_similarity": 0.3337613344192505,
+      "visual": 0.2067629091319468,
+      "scene_support": 0.48618342898200345,
+      "object_support": 0.7167582084752883,
+      "score": 0.44358765488996627,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine humming as a vehicle speeds down a road",
+      "clip_similarity": 0.33224785327911377,
+      "visual": 0.15648953578503144,
+      "scene_support": 1.0,
+      "object_support": 0.8618828287494494,
+      "score": 0.6211606629388473,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle's engine swooshing on",
+      "clip_similarity": 0.33211156725883484,
+      "visual": 0.15196251671769834,
+      "scene_support": 0.4397761112610715,
+      "object_support": 0.7537814069925034,
+      "score": 0.4188522621631518,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine revving followed by another car passing by with a whoosh",
+      "clip_similarity": 0.3317953944206238,
+      "visual": 0.1414601888617314,
+      "scene_support": 0.8936476329942489,
+      "object_support": 0.8384471067240488,
+      "score": 0.5762124974601819,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle idling followed by a light engine rev",
+      "clip_similarity": 0.3310244679450989,
+      "visual": 0.1158522883076591,
+      "scene_support": 0.5372182211042564,
+      "object_support": 0.6371038141854137,
+      "score": 0.3986375259099647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle revving in the distance followed by a man shouting in the distance then a vehicle engine running idle before accelerating and driving off",
+      "clip_similarity": 0.330902636051178,
+      "visual": 0.11180539262708668,
+      "scene_support": 0.548292689711889,
+      "object_support": 0.3026761684459858,
+      "score": 0.30001281449819717,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An idle truck engine running before briefly accelerating as metal creaks in the distance",
+      "clip_similarity": 0.3307923972606659,
+      "visual": 0.10814358560105014,
+      "scene_support": 0.6155540689913575,
+      "object_support": 0.685981592000933,
+      "score": 0.4337181325381072,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A muffled motorcycle engine running idle as a person whistles followed by a muffled motorcycle engine accelerating as wind blows heavily into a microphone",
+      "clip_similarity": 0.33050957322120667,
+      "visual": 0.09874900634257842,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.03949960253703137,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine idles nearby at moderate speed",
+      "clip_similarity": 0.33036184310913086,
+      "visual": 0.09384184834634617,
+      "scene_support": 0.7505606129165042,
+      "object_support": 0.823358842757554,
+      "score": 0.5097125760407559,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The low rumble of an engine together with an intermittent siren followed by a man yelling in the background",
+      "clip_similarity": 0.32961803674697876,
+      "visual": 0.06913479785815473,
+      "scene_support": 0.6389431137086864,
+      "object_support": 0.7195633393455412,
+      "score": 0.43520585505953013,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Continuous steam with a vehicle moving across",
+      "clip_similarity": 0.3295702040195465,
+      "visual": 0.06754593592877146,
+      "scene_support": 0.6439687439010661,
+      "object_support": 1.0,
+      "score": 0.5202089975418284,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine revving several times before turning off followed by a muffled woman talking through a radio and birds chirping in the distance",
+      "clip_similarity": 0.3293765187263489,
+      "visual": 0.06111228254617847,
+      "scene_support": 0.7200903935352714,
+      "object_support": 0.4687818089386019,
+      "score": 0.3811065737606334,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine is running along with wind noise followed by engine idling loudly",
+      "clip_similarity": 0.3275783061981201,
+      "visual": 0.0013809734526415202,
+      "scene_support": 0.43098408376571923,
+      "object_support": 0.5985305756434252,
+      "score": 0.3094067872037999,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorized bicycle accelerating and revving, followed by a males voice",
+      "clip_similarity": 0.3275367319583893,
+      "visual": 0.0,
+      "scene_support": 0.5588259967912816,
+      "object_support": 0.5737344642171732,
+      "score": 0.3397681383025365,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "field road",
+      0.21863220632076263
+    ],
+    [
+      "forest road",
+      0.19156822562217712
+    ],
+    [
+      "raceway",
+      0.15185166895389557
+    ],
+    [
+      "driveway",
+      0.14411839842796326
+    ],
+    [
+      "highway",
+      0.02105276845395565
+    ]
+  ],
+  "top_objects": [
+    [
+      "geyser",
+      0.0676487609744072
+    ],
+    [
+      "whistle",
+      0.0469113327562809
+    ],
+    [
+      "go-kart",
+      0.046828724443912506
+    ],
+    [
+      "moving van",
+      0.038765035569667816
+    ],
+    [
+      "steam locomotive",
+      0.03864425793290138
+    ]
+  ]
+}

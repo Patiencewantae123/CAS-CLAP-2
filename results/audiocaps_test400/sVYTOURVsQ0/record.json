@@ -1,0 +1,298 @@
+{
+  "id": "sVYTOURVsQ0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\sVYTOURVsQ0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\sVYTOURVsQ0.wav",
+  "gt_captions": [
+    "A man talking as a stream of water trickles in the background",
+    "Water trickling while a man speaks",
+    "Water trickling with man speaking",
+    "A man talking as water streams in the background",
+    "A man talking as water streams in the background"
+  ],
+  "top_scene": [
+    "sandbox",
+    0.12873852252960205
+  ],
+  "top_object": [
+    "golf cart",
+    0.1961565464735031
+  ],
+  "env_probs": {
+    "indoor": 0.3484172523021698,
+    "outdoor": 0.6515827476978302
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "Motorized water vehicle operating, with speech and laughter in the background",
+    "casv": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.12975938618183136,
+    "clap_gt_audio_baseline": 0.34640926122665405,
+    "clap_text_casv": -0.06906748563051224,
+    "clap_gt_audio_casv": 0.41284191608428955
+  },
+  "verdicts": [
+    {
+      "caption": "Motorized water vehicle operating, with speech and laughter in the background",
+      "clip_similarity": 0.31741830706596375,
+      "visual": 1.0,
+      "scene_support": 0.5447964478600207,
+      "object_support": 1.0,
+      "score": 0.8634389343580062,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.3119714558124542,
+      "visual": 0.8152865662681653,
+      "scene_support": 0.800222175690507,
+      "object_support": 0.5804101760310405,
+      "score": 0.7403043320237305,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power tool vibrating followed by a young boy speaking",
+      "clip_similarity": 0.310194730758667,
+      "visual": 0.7550343269085973,
+      "scene_support": 0.6100001001650815,
+      "object_support": 0.5178492328683105,
+      "score": 0.6403685306734566,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Typing on a computer keyboard as a young boy is speaking",
+      "clip_similarity": 0.3073621094226837,
+      "visual": 0.6589745688796986,
+      "scene_support": 0.35491922640122603,
+      "object_support": 0.3942606674549555,
+      "score": 0.48834379570873393,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy is using vulgar language and uses a machine that makes vehicle honking",
+      "clip_similarity": 0.306418776512146,
+      "visual": 0.6269842954266835,
+      "scene_support": 0.4179364180680636,
+      "object_support": 0.5272256896137989,
+      "score": 0.5343423504752322,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young boy is talking while making meowing sounds, followed by a male laughing",
+      "clip_similarity": 0.3062680959701538,
+      "visual": 0.6218744220314779,
+      "scene_support": 0.04115306226118379,
+      "object_support": 0.0,
+      "score": 0.2610956874909463,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.83)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young boy talking and typing noise",
+      "clip_similarity": 0.30015936493873596,
+      "visual": 0.4147153438704259,
+      "scene_support": 0.5298632651240927,
+      "object_support": 0.4332566793706352,
+      "score": 0.4548221208965888,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young boy talking, followed by a motorcycle engine running",
+      "clip_similarity": 0.2984878718852997,
+      "visual": 0.35803172851372017,
+      "scene_support": 0.0,
+      "object_support": 0.2794595170655355,
+      "score": 0.22705054652514872,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A water vehicle moves while a child talks nearby",
+      "clip_similarity": 0.29732048511505127,
+      "visual": 0.31844334822028647,
+      "scene_support": 0.5186877038776765,
+      "object_support": 0.7841675009914025,
+      "score": 0.5182339007488383,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A voice over a loudspeaker, a child laughing, aircraft engines in the background",
+      "clip_similarity": 0.2948797643184662,
+      "visual": 0.23567370790241515,
+      "scene_support": 0.3923313613531635,
+      "object_support": 0.37678552139073296,
+      "score": 0.32500454798413503,
+      "conflicts": [
+        "names 'an airplane', not visible in image (z=-0.64)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.29344508051872253,
+      "visual": 0.18702075987132336,
+      "scene_support": 0.23792545714627775,
+      "object_support": 0.6022775796583776,
+      "score": 0.32686921498992594,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A remote control car moving with a stream flowing in the background",
+      "clip_similarity": 0.29301193356513977,
+      "visual": 0.1723318951707856,
+      "scene_support": 0.06358860960850239,
+      "object_support": 0.46791988162617565,
+      "score": 0.22838530543871766,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.79)",
+        "names 'a stream or river', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child speaks with some humming followed by clicks and vibrations of an engine starting",
+      "clip_similarity": 0.2922391891479492,
+      "visual": 0.1461266128795895,
+      "scene_support": 0.5363511005519096,
+      "object_support": 0.48103865636139687,
+      "score": 0.36366757222582774,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine gun fires loudly multiple times, followed by laughter, after which a machine gun fires rapidly",
+      "clip_similarity": 0.2910732626914978,
+      "visual": 0.10658775469777867,
+      "scene_support": 1.0,
+      "object_support": 0.8801997884524624,
+      "score": 0.6066950384148502,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Typing on a computer keyboard as a young man is talking",
+      "clip_similarity": 0.2905004620552063,
+      "visual": 0.08716295907755466,
+      "scene_support": 0.6411123284613356,
+      "object_support": 0.5995197769398685,
+      "score": 0.4070548152513831,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks in the foreground, and a miniature motor operates and hums in the background",
+      "clip_similarity": 0.28999459743499756,
+      "visual": 0.07000809534926733,
+      "scene_support": 0.2891670510302933,
+      "object_support": 0.4822384890372992,
+      "score": 0.25942490015998465,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tape player reel moves nearby as a child talks, followed by a man speaking",
+      "clip_similarity": 0.28961053490638733,
+      "visual": 0.05698377999246051,
+      "scene_support": 0.5464157833457903,
+      "object_support": 0.4405535469736305,
+      "score": 0.31888431109281046,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kid talking while plastic crinkles followed by gear cranking",
+      "clip_similarity": 0.28852781653404236,
+      "visual": 0.020266671517812297,
+      "scene_support": 0.6591139015300932,
+      "object_support": 0.42563574819898226,
+      "score": 0.33353156352584756,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young boy speaking with a constant hissing noise throughout",
+      "clip_similarity": 0.28833913803100586,
+      "visual": 0.01386821256507357,
+      "scene_support": 0.7163434593871137,
+      "object_support": 0.514049641898882,
+      "score": 0.3746652154118282,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine gun fires repeatedly with echo",
+      "clip_similarity": 0.2879301905632019,
+      "visual": 0.0,
+      "scene_support": 0.9612780873620762,
+      "object_support": 0.8102357689332509,
+      "score": 0.5314541568885981,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sandbox",
+      0.12873852252960205
+    ],
+    [
+      "playground",
+      0.05848768725991249
+    ],
+    [
+      "outdoor museum",
+      0.043499935418367386
+    ],
+    [
+      "cockpit",
+      0.038995321840047836
+    ],
+    [
+      "tree house",
+      0.035211265087127686
+    ]
+  ],
+  "top_objects": [
+    [
+      "golf cart",
+      0.1961565464735031
+    ],
+    [
+      "amphibious vehicle",
+      0.12239044159650803
+    ],
+    [
+      "lawn mower",
+      0.08681562542915344
+    ],
+    [
+      "go-kart",
+      0.074882872402668
+    ],
+    [
+      "scooter",
+      0.039273008704185486
+    ]
+  ]
+}

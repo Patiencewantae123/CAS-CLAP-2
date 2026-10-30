@@ -1,0 +1,293 @@
+{
+  "id": "jf4iyQPJSvk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\jf4iyQPJSvk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\jf4iyQPJSvk.wav",
+  "gt_captions": [
+    "Water is falling, splashing and gurgling",
+    "Water is trickling while wind is blowing in the background",
+    "Water flowing and trickling",
+    "A stream of water trickling onto a hard surface and splashing",
+    "Water trickles down continuously"
+  ],
+  "top_scene": [
+    "cliff",
+    0.35088256001472473
+  ],
+  "top_object": [
+    "cliff",
+    0.6265981793403625
+  ],
+  "env_probs": {
+    "indoor": 0.011135013774037361,
+    "outdoor": 0.9888649862259626
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Waterfall and thunder sounds with crying baby sounds",
+    "casv": "Sound of waterfall followed by a laughing sound"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10358148068189621,
+    "clap_gt_audio_baseline": 0.19741517305374146,
+    "clap_text_casv": 0.3925326466560364,
+    "clap_gt_audio_casv": 0.43905678391456604
+  },
+  "verdicts": [
+    {
+      "caption": "Waterfall and thunder sounds with crying baby sounds",
+      "clip_similarity": 0.3001739978790283,
+      "visual": 1.0,
+      "scene_support": 0.38701068657019233,
+      "object_support": 0.3976424061102913,
+      "score": 0.6353959278041451,
+      "conflicts": [
+        "names 'a baby', not visible in image (z=-0.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine revs and accelerates kicking up rocks before coming to a stop",
+      "clip_similarity": 0.30000418424606323,
+      "visual": 0.9851213557374695,
+      "scene_support": 0.4499134487956312,
+      "object_support": 0.5435892757680746,
+      "score": 0.6920993596640995,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.95)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rushing water with faint music in the background",
+      "clip_similarity": 0.29928967356681824,
+      "visual": 0.9225177235517606,
+      "scene_support": 0.5794365783207116,
+      "object_support": 0.5228631615194012,
+      "score": 0.6996970113727381,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sound of waterfall followed by a laughing sound",
+      "clip_similarity": 0.2991402745246887,
+      "visual": 0.9094277544945361,
+      "scene_support": 0.9422929111247235,
+      "object_support": 0.9835691805212301,
+      "score": 0.9415297292916005,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Nature sounds followed by small banging sound",
+      "clip_similarity": 0.29847052693367004,
+      "visual": 0.8507461517371039,
+      "scene_support": 0.7774515579867058,
+      "object_support": 0.7908000002569725,
+      "score": 0.8107739281679451,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Running water followed by metal music",
+      "clip_similarity": 0.29826003313064575,
+      "visual": 0.8323032130873579,
+      "scene_support": 0.22520220208113054,
+      "object_support": 0.14762875444803278,
+      "score": 0.44477057219369215,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rainstorm with rain sounds",
+      "clip_similarity": 0.2935061752796173,
+      "visual": 0.415782121081561,
+      "scene_support": 0.4908090554278855,
+      "object_support": 0.4805693481957642,
+      "score": 0.4577263695197193,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "The sound of water flowing can be heard down rocks",
+      "clip_similarity": 0.29274195432662964,
+      "visual": 0.3488229994908151,
+      "scene_support": 0.8604750367078549,
+      "object_support": 0.8491719383497357,
+      "score": 0.6524232923136032,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud flow of water in a nearby stream",
+      "clip_similarity": 0.29180896282196045,
+      "visual": 0.2670766258013134,
+      "scene_support": 0.7897130869842856,
+      "object_support": 0.7545257669503856,
+      "score": 0.5701023065009267,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.2915925681591034,
+      "visual": 0.24811666862507017,
+      "scene_support": 0.656420980896309,
+      "object_support": 0.651858200023513,
+      "score": 0.4917304217259747,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A strong and powerful flowing waterfall",
+      "clip_similarity": 0.29152369499206543,
+      "visual": 0.2420821746112569,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6968328698445028,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rain falls while an engine works",
+      "clip_similarity": 0.2911052703857422,
+      "visual": 0.20542086091418277,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.08216834436567311,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.95)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A drone flies as winds blows in the background",
+      "clip_similarity": 0.2910730242729187,
+      "visual": 0.20259553745120312,
+      "scene_support": 0.41013110784241047,
+      "object_support": 0.48539978812620177,
+      "score": 0.3496974837710649,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A waterfall is pouring into a stream",
+      "clip_similarity": 0.29098284244537354,
+      "visual": 0.19469403209170552,
+      "scene_support": 0.8878859526940119,
+      "object_support": 0.8773213447112176,
+      "score": 0.607439802058251,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music plays in the background while water rushes down a stream",
+      "clip_similarity": 0.29096752405166626,
+      "visual": 0.19335187288655623,
+      "scene_support": 0.6595526908905995,
+      "object_support": 0.579211441442078,
+      "score": 0.44896998885442574,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine revving with rainfall",
+      "clip_similarity": 0.2904502749443054,
+      "visual": 0.1480318044729936,
+      "scene_support": 0.05566848612774724,
+      "object_support": 0.04433096254819037,
+      "score": 0.08921255639197874,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.95)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of running water",
+      "clip_similarity": 0.28987544775009155,
+      "visual": 0.0976668886190644,
+      "scene_support": 0.6559794462023465,
+      "object_support": 0.6261358986038044,
+      "score": 0.423701358889471,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water trickling with faint engine sound in the background",
+      "clip_similarity": 0.28956007957458496,
+      "visual": 0.0700351207029363,
+      "scene_support": 0.6050364867624127,
+      "object_support": 0.5773850096396796,
+      "score": 0.3827404972018022,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.95)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sound of a waterfall stream and splash of water",
+      "clip_similarity": 0.2893185019493103,
+      "visual": 0.048868695572702466,
+      "scene_support": 0.8209918208786735,
+      "object_support": 0.7961514518623116,
+      "score": 0.5046904600513765,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sound of someone walking through running water",
+      "clip_similarity": 0.2887607514858246,
+      "visual": 0.0,
+      "scene_support": 0.5889390031850323,
+      "object_support": 0.5411795164677593,
+      "score": 0.33903555589583745,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "cliff",
+      0.35088256001472473
+    ],
+    [
+      "canyon",
+      0.1674307882785797
+    ],
+    [
+      "mountain path",
+      0.07777823507785797
+    ],
+    [
+      "valley",
+      0.0730583593249321
+    ],
+    [
+      "volcano",
+      0.04638746753334999
+    ]
+  ],
+  "top_objects": [
+    [
+      "cliff",
+      0.6265981793403625
+    ],
+    [
+      "valley",
+      0.13046598434448242
+    ],
+    [
+      "volcano",
+      0.08283770084381104
+    ],
+    [
+      "mountain bike",
+      0.020376864820718765
+    ],
+    [
+      "alp",
+      0.009267420507967472
+    ]
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "id": "4Ujigme2IxY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\4Ujigme2IxY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\4Ujigme2IxY.wav",
+  "gt_captions": [
+    "A motor vehicle is running and vibrating, and a high-pitched squeal occurs",
+    "Vehicle engine running then a high whistle",
+    "An engine humming and brakes squealing",
+    "An emergency siren with horn honking",
+    "An engine running and screeching with rustling"
+  ],
+  "top_scene": [
+    "car interior",
+    0.9625704288482666
+  ],
+  "top_object": [
+    "radio",
+    0.3065604865550995
+  ],
+  "env_probs": {
+    "indoor": 0.998136043548584,
+    "outdoor": 0.0018639564514160156
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A vehicle horn is being used to play a song",
+    "casv": "A vehicle horn is being used to play a song"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.41557449102401733,
+    "clap_gt_audio_baseline": 0.3934677541255951,
+    "clap_text_casv": 0.41557449102401733,
+    "clap_gt_audio_casv": 0.3934677541255951
+  },
+  "verdicts": [
+    {
+      "caption": "A vehicle horn is being used to play a song",
+      "clip_similarity": 0.3225005567073822,
+      "visual": 1.0,
+      "scene_support": 0.6561444022390551,
+      "object_support": 0.859904335244513,
+      "score": 0.8548146212450705,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car horn blowing with speech and water",
+      "clip_similarity": 0.31073129177093506,
+      "visual": 0.5126841728571782,
+      "scene_support": 0.35936616628829576,
+      "object_support": 0.512862240526762,
+      "score": 0.4667421911873886,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle revs engine with low speech in the background",
+      "clip_similarity": 0.31072133779525757,
+      "visual": 0.5122720205335768,
+      "scene_support": 0.8352973087643789,
+      "object_support": 1.0,
+      "score": 0.7554980008427443,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An idle vehicle engine running as wind blows into a microphone followed by a car door closing",
+      "clip_similarity": 0.30696648359298706,
+      "visual": 0.3567992793504282,
+      "scene_support": 0.3941287952747789,
+      "object_support": 0.34759430791820156,
+      "score": 0.36523664269806544,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks as the car is accelerated and the beep of the dashboard starts",
+      "clip_similarity": 0.30675172805786133,
+      "visual": 0.34790715466818034,
+      "scene_support": 1.0,
+      "object_support": 0.6601350284904922,
+      "score": 0.6372033704144198,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine revving while a man speaks from a radio",
+      "clip_similarity": 0.3059804439544678,
+      "visual": 0.31597151953404573,
+      "scene_support": 0.6154460467012777,
+      "object_support": 0.9152097235678412,
+      "score": 0.5855853388943539,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An accelerating and gear shifting noise from a car",
+      "clip_similarity": 0.3058263957500458,
+      "visual": 0.30959303043016856,
+      "scene_support": 0.7490076339100543,
+      "object_support": 0.9065234923446355,
+      "score": 0.6204965500484744,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat driving accelerating as wind is blowing into a microphone",
+      "clip_similarity": 0.30561619997024536,
+      "visual": 0.3008897060638219,
+      "scene_support": 0.2908235116971316,
+      "object_support": 0.21443262772299831,
+      "score": 0.2719327242515678,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=1.00)",
+        "names 'a boat', not visible in image (z=-0.56)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine is idling, making a continuous clicking and soft tapping sound",
+      "clip_similarity": 0.30454984307289124,
+      "visual": 0.25673634591179445,
+      "scene_support": 0.7515188487110939,
+      "object_support": 0.9404380369397664,
+      "score": 0.6102816040599759,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male speaking into a radio and a car running and police siren in the background",
+      "clip_similarity": 0.3039710223674774,
+      "visual": 0.2327698116932797,
+      "scene_support": 0.3009151615385184,
+      "object_support": 0.5004242563357193,
+      "score": 0.33350975003958316,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An emergency siren wailing as a man speaks over a radio while a muffled vehicle engine accelerates followed by another man yelling in the distance",
+      "clip_similarity": 0.3031907081604004,
+      "visual": 0.2004602778943212,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.08018411115772849,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle is revving with low speech in the background followed by loud revving",
+      "clip_similarity": 0.30299288034439087,
+      "visual": 0.19226905895999408,
+      "scene_support": 0.6217015679085183,
+      "object_support": 0.6438682287431916,
+      "score": 0.45657856257951057,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plastic clicking followed by electronic beeping then plastic clicking and more electronic beeping as a vehicle door opens",
+      "clip_similarity": 0.3027365803718567,
+      "visual": 0.1816567536217577,
+      "scene_support": 0.8107220217495547,
+      "object_support": 0.649403547928603,
+      "score": 0.5107003723521504,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle is idling and making light tapping sounds in mid frequency",
+      "clip_similarity": 0.30184268951416016,
+      "visual": 0.1446444877711691,
+      "scene_support": 0.7011861954251422,
+      "object_support": 0.9954636097682394,
+      "score": 0.5668527366664821,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine revs along with a siren sound and people communicating",
+      "clip_similarity": 0.30166661739349365,
+      "visual": 0.13735408080159925,
+      "scene_support": 0.5754340711126216,
+      "object_support": 0.8095025177213045,
+      "score": 0.47042260897081756,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car making a revving engine noise while pumping the accelerator",
+      "clip_similarity": 0.301644891500473,
+      "visual": 0.1364545028258348,
+      "scene_support": 0.8055412779613635,
+      "object_support": 0.7822413179927957,
+      "score": 0.5309165799165817,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man briefly speaking followed by another man speaking over a radio intercom as a muffled vehicle engine accelerates and an emergency siren wails",
+      "clip_similarity": 0.30054712295532227,
+      "visual": 0.09100051827537699,
+      "scene_support": 0.4879172854112774,
+      "object_support": 0.6254510943093605,
+      "score": 0.37041072122634217,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking while starting to drive the car",
+      "clip_similarity": 0.29896488785743713,
+      "visual": 0.025486808657666775,
+      "scene_support": 0.9778993396187583,
+      "object_support": 0.9033383760563654,
+      "score": 0.5745660381656038,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle sound driving on a road",
+      "clip_similarity": 0.29838576912879944,
+      "visual": 0.001507934549223821,
+      "scene_support": 0.6540588766940058,
+      "object_support": 0.7720315552755111,
+      "score": 0.42843030341054456,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine revving and a woman talking on an intercom",
+      "clip_similarity": 0.2983493506908417,
+      "visual": 0.0,
+      "scene_support": 0.2289420144389574,
+      "object_support": 0.23838343294462744,
+      "score": 0.14019763421507545,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.9625704288482666
+    ],
+    [
+      "cockpit",
+      0.029548004269599915
+    ],
+    [
+      "bus interior",
+      0.0012520954478532076
+    ],
+    [
+      "auto showroom",
+      0.000855450751259923
+    ],
+    [
+      "indoor garage",
+      0.0005610793014056981
+    ]
+  ],
+  "top_objects": [
+    [
+      "radio",
+      0.3065604865550995
+    ],
+    [
+      "taxicab",
+      0.1513817459344864
+    ],
+    [
+      "CD player",
+      0.11222304403781891
+    ],
+    [
+      "odometer",
+      0.05345451459288597
+    ],
+    [
+      "minivan",
+      0.033515289425849915
+    ]
+  ]
+}

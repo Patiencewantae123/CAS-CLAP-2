@@ -1,0 +1,287 @@
+{
+  "id": "1Uh74_rZ72k",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\1Uh74_rZ72k.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\1Uh74_rZ72k.wav",
+  "gt_captions": [
+    "Metal shuffling followed by plastic clicking as wind blows into a microphone",
+    "Wind is blowing and water gurgles",
+    "Wind blowing with passing distant traffic and some rumbling",
+    "Distant thumping with some lights wind",
+    "Wind blows hard"
+  ],
+  "top_scene": [
+    "water park",
+    0.933333158493042
+  ],
+  "top_object": [
+    "bobsleigh",
+    0.10260225832462311
+  ],
+  "env_probs": {
+    "indoor": 0.009587258100509644,
+    "outdoor": 0.9904127418994904
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Going down water slide",
+    "casv": "Going down water slide"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.14473745226860046,
+    "clap_gt_audio_baseline": 0.23724141716957092,
+    "clap_text_casv": 0.14473745226860046,
+    "clap_gt_audio_casv": 0.23724141716957092
+  },
+  "verdicts": [
+    {
+      "caption": "Going down water slide",
+      "clip_similarity": 0.33799999952316284,
+      "visual": 1.0,
+      "scene_support": 0.9530413736451536,
+      "object_support": 0.7354241488723992,
+      "score": 0.9065396567552657,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Large objects being slid, along with a mechanical sound",
+      "clip_similarity": 0.31629201769828796,
+      "visual": 0.5089831136876874,
+      "scene_support": 0.7849335618500062,
+      "object_support": 1.0,
+      "score": 0.7390733140300768,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud music plays continuously and a big water splash happens",
+      "clip_similarity": 0.3095044791698456,
+      "visual": 0.35545451481344165,
+      "scene_support": 0.8994581022402737,
+      "object_support": 0.6549061125937488,
+      "score": 0.6084910703755834,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water trickling with faint engine sound in the background",
+      "clip_similarity": 0.30807146430015564,
+      "visual": 0.32304088442482054,
+      "scene_support": 0.7609544024400491,
+      "object_support": 0.7127884387040619,
+      "score": 0.5713392061131615,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People yell while water falls and splashes",
+      "clip_similarity": 0.3047884702682495,
+      "visual": 0.24878223061107554,
+      "scene_support": 0.8422129626381766,
+      "object_support": 0.505448911420797,
+      "score": 0.5038114544621223,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running with kids talking in the background then louder water splashes",
+      "clip_similarity": 0.30319151282310486,
+      "visual": 0.2126603525565405,
+      "scene_support": 0.857851154724332,
+      "object_support": 0.22374013865771714,
+      "score": 0.40954152903723096,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person jumps on a surface multiple times nearby",
+      "clip_similarity": 0.3024671971797943,
+      "visual": 0.19627692203983957,
+      "scene_support": 0.5215996384629127,
+      "object_support": 0.5522754449046375,
+      "score": 0.40067329382620087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children screaming in the background as the sound of water flowing by",
+      "clip_similarity": 0.3023514151573181,
+      "visual": 0.19365802689676093,
+      "scene_support": 0.9315628729472859,
+      "object_support": 0.6528765670131889,
+      "score": 0.5527950427468468,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A soft swoosh sound is followed by a train rushing by fast. Blaring a train horn while during the whole time water is running in the background",
+      "clip_similarity": 0.299479603767395,
+      "visual": 0.12869998988843573,
+      "scene_support": 0.7946951447820622,
+      "object_support": 0.8423759701803262,
+      "score": 0.5426013304440908,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water trickles out of a faucet into a pool",
+      "clip_similarity": 0.298559308052063,
+      "visual": 0.10788364960059321,
+      "scene_support": 0.2770388056876832,
+      "object_support": 0.0,
+      "score": 0.12626510154654225,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toy motorboat engine buzzing alongside camera muffling and water lightly trickling with wind blowing briefly into a microphone",
+      "clip_similarity": 0.2973583936691284,
+      "visual": 0.08071994337524015,
+      "scene_support": 0.0,
+      "object_support": 0.24045825883820024,
+      "score": 0.10442545500155613,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud explosion followed by a splash with tricking background noises",
+      "clip_similarity": 0.2969765365123749,
+      "visual": 0.07208264518521015,
+      "scene_support": 1.0,
+      "object_support": 0.758703768991682,
+      "score": 0.5564441887715886,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Consistent repetitive whooshing with distant splashes of water",
+      "clip_similarity": 0.29667338728904724,
+      "visual": 0.06522565640904648,
+      "scene_support": 0.8619514845290351,
+      "object_support": 0.6144522476171147,
+      "score": 0.4690113822074635,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A continuous spraying sound is interrupted by a swooshing",
+      "clip_similarity": 0.2964513897895813,
+      "visual": 0.060204253598031617,
+      "scene_support": 0.45408430046407594,
+      "object_support": 0.47037491146892024,
+      "score": 0.3014194650191115,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pumping noise and water splashing",
+      "clip_similarity": 0.2961083650588989,
+      "visual": 0.052445313289965954,
+      "scene_support": 0.7555215572198516,
+      "object_support": 0.4505261649225477,
+      "score": 0.3827924419587062,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tapping noise followed by water running",
+      "clip_similarity": 0.2960163354873657,
+      "visual": 0.0503636792611817,
+      "scene_support": 0.8250171101994735,
+      "object_support": 0.8511239393270487,
+      "score": 0.5229877865624293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water being poured and then landing and splashing on a surface",
+      "clip_similarity": 0.2955247163772583,
+      "visual": 0.03924365499342748,
+      "scene_support": 0.7509432022951732,
+      "object_support": 0.6278326022435894,
+      "score": 0.42933020335899974,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small thump in the background is followed by two closer mechanical clicks",
+      "clip_similarity": 0.2947533130645752,
+      "visual": 0.021795139708112844,
+      "scene_support": 0.7030795096082233,
+      "object_support": 0.8472610027001325,
+      "score": 0.4738202095757519,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tap tapping and water splashing",
+      "clip_similarity": 0.2938772141933441,
+      "visual": 0.001978496073342546,
+      "scene_support": 0.6755473836282107,
+      "object_support": 0.45589504529338964,
+      "score": 0.34022412710581706,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine buzzing and spraying water",
+      "clip_similarity": 0.29378974437713623,
+      "visual": 0.0,
+      "scene_support": 0.6520690901289444,
+      "object_support": 0.6937970182418486,
+      "score": 0.4037598325112379,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "water park",
+      0.933333158493042
+    ],
+    [
+      "amusement park",
+      0.022658709436655045
+    ],
+    [
+      "playground",
+      0.006474258378148079
+    ],
+    [
+      "outdoor swimming pool",
+      0.005673722829669714
+    ],
+    [
+      "raceway",
+      0.0031171971932053566
+    ]
+  ],
+  "top_objects": [
+    [
+      "bobsleigh",
+      0.10260225832462311
+    ],
+    [
+      "swimming cap",
+      0.04086002707481384
+    ],
+    [
+      "mousetrap",
+      0.021705107763409615
+    ],
+    [
+      "water tower",
+      0.020763209089636803
+    ],
+    [
+      "go-kart",
+      0.019236482679843903
+    ]
+  ]
+}

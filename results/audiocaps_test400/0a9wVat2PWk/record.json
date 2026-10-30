@@ -1,0 +1,283 @@
+{
+  "id": "0a9wVat2PWk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0a9wVat2PWk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0a9wVat2PWk.wav",
+  "gt_captions": [
+    "A train sounds horn while traveling on train track",
+    "A train horn blowing as a train runs on railroad tracks while a man talks quietly in the background",
+    "A train sounds horn and travels",
+    "A muffled train running on railroad tracks followed by a train horn honking",
+    "Train horn sounds as it moves along tracks"
+  ],
+  "top_scene": [
+    "golf course",
+    0.18435758352279663
+  ],
+  "top_object": [
+    "high-speed train",
+    0.6450867056846619
+  ],
+  "env_probs": {
+    "indoor": 0.06469956040382385,
+    "outdoor": 0.9353004395961761
+  },
+  "status": "ACCEPT",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "A train blowing a horn while traveling down a track",
+    "casv": "Airplane take off at a high speed"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.6430363059043884,
+    "clap_gt_audio_baseline": 0.40303581953048706,
+    "clap_text_casv": 0.12869322299957275,
+    "clap_gt_audio_casv": 0.19137677550315857
+  },
+  "verdicts": [
+    {
+      "caption": "A train blowing a horn while traveling down a track",
+      "clip_similarity": 0.3398444950580597,
+      "visual": 1.0,
+      "scene_support": 0.3577185014506459,
+      "object_support": 0.598578188367794,
+      "score": 0.686889006945532,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Airplane take off at a high speed",
+      "clip_similarity": 0.3377460837364197,
+      "visual": 0.874616250329437,
+      "scene_support": 0.7544823514003671,
+      "object_support": 0.7511289775248636,
+      "score": 0.801529898809344,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Train blowing horn while riding the tracks",
+      "clip_similarity": 0.3342830538749695,
+      "visual": 0.6676941541836727,
+      "scene_support": 0.060055295467813866,
+      "object_support": 0.21912724045382168,
+      "score": 0.3508324224499597,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train going by blowing horn",
+      "clip_similarity": 0.3302242159843445,
+      "visual": 0.4251714853516251,
+      "scene_support": 0.4931319077713329,
+      "object_support": 0.6816692730642455,
+      "score": 0.5225089483913236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train blowing horn as passing by on tracks",
+      "clip_similarity": 0.32823896408081055,
+      "visual": 0.3065492089948786,
+      "scene_support": 0.07433755319219781,
+      "object_support": 0.2531994617927427,
+      "score": 0.22088078809343362,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter running",
+      "clip_similarity": 0.32763755321502686,
+      "visual": 0.2706138570136262,
+      "scene_support": 0.5014778385265789,
+      "object_support": 0.32349269931822333,
+      "score": 0.3557367041588912,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter running continuously",
+      "clip_similarity": 0.32753288745880127,
+      "visual": 0.26435989486505546,
+      "scene_support": 0.4753900761172859,
+      "object_support": 0.42174637338959037,
+      "score": 0.374884892798085,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Railroad signal ringing as a train goes by blowing a horn",
+      "clip_similarity": 0.32711488008499146,
+      "visual": 0.23938322257124744,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.09575328902849899,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train running across the track while a train horn blows",
+      "clip_similarity": 0.3261375427246094,
+      "visual": 0.18098560449031634,
+      "scene_support": 0.6870944684553896,
+      "object_support": 0.8125274383660142,
+      "score": 0.5222808138425477,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Train running down tracks while train blowing horn multiple times",
+      "clip_similarity": 0.3258417248725891,
+      "visual": 0.16330997001232272,
+      "scene_support": 0.4711519038200711,
+      "object_support": 0.5755418261552591,
+      "score": 0.3793321069975282,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast moving train going by while opening a car door",
+      "clip_similarity": 0.3252813220024109,
+      "visual": 0.1298249175516949,
+      "scene_support": 0.2963035723402791,
+      "object_support": 0.5220011200785953,
+      "score": 0.2974213747463403,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.324917733669281,
+      "visual": 0.10809987819732034,
+      "scene_support": 0.44437433544437266,
+      "object_support": 0.709883625732382,
+      "score": 0.3895173396319545,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train going by on tracks and blowing horn",
+      "clip_similarity": 0.32451438903808594,
+      "visual": 0.08399933044141006,
+      "scene_support": 0.46176155244634165,
+      "object_support": 0.5322776038861032,
+      "score": 0.3318114790762975,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud horn from a train",
+      "clip_similarity": 0.32448047399520874,
+      "visual": 0.08197284726228889,
+      "scene_support": 0.28721844484549014,
+      "object_support": 0.4804567642543053,
+      "score": 0.2630917016348542,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train running and blowing a horn",
+      "clip_similarity": 0.3242649435997009,
+      "visual": 0.06909452885156456,
+      "scene_support": 0.6317779124462528,
+      "object_support": 0.8096435919401802,
+      "score": 0.4600642628565557,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn blowing several times as a train running on railroad tracks passes by",
+      "clip_similarity": 0.32414549589157104,
+      "visual": 0.06195731920137331,
+      "scene_support": 0.22732908017731843,
+      "object_support": 0.39631501261274943,
+      "score": 0.21187615551756966,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Train moves down a track quickly, and sounds its horn",
+      "clip_similarity": 0.3233715295791626,
+      "visual": 0.01571147723144646,
+      "scene_support": 0.5190026837503247,
+      "object_support": 0.6795293771461252,
+      "score": 0.3658442091615135,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A train driving on a railroad",
+      "clip_similarity": 0.32331639528274536,
+      "visual": 0.012417106509676546,
+      "scene_support": 0.7941081802219366,
+      "object_support": 1.0,
+      "score": 0.5431992966704515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing as a train passes with a blowing horn",
+      "clip_similarity": 0.3232269883155823,
+      "visual": 0.007074883717617226,
+      "scene_support": 0.2363725862340701,
+      "object_support": 0.39762374851387877,
+      "score": 0.19302885391143154,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane in the process of taking off",
+      "clip_similarity": 0.32310858368873596,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.7269648243114009,
+      "score": 0.5180894472934202,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "golf course",
+      0.18435758352279663
+    ],
+    [
+      "ski slope",
+      0.10099515318870544
+    ],
+    [
+      "park",
+      0.0446125790476799
+    ],
+    [
+      "outdoor volleyball court",
+      0.042096950113773346
+    ],
+    [
+      "raceway",
+      0.03508426994085312
+    ]
+  ],
+  "top_objects": [
+    [
+      "high-speed train",
+      0.6450867056846619
+    ],
+    [
+      "swing",
+      0.09122300893068314
+    ],
+    [
+      "tram",
+      0.0284155011177063
+    ],
+    [
+      "projectile",
+      0.009236183948814869
+    ],
+    [
+      "moving van",
+      0.008834603242576122
+    ]
+  ]
+}

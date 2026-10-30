@@ -1,0 +1,291 @@
+{
+  "id": "AMQei29haCw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\AMQei29haCw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\AMQei29haCw.wav",
+  "gt_captions": [
+    "Drilling with intermittent stopping and a man moaning briefly",
+    "A tool running and a male vocalizing",
+    "Buzzing and humming of a motor with a man speaking",
+    "A drill running and a man vocalizing",
+    "A power tool drill running before turning off and on as a man is talking and wood is clanking and scrapping in the background"
+  ],
+  "top_scene": [
+    "repair shop",
+    0.23035262525081635
+  ],
+  "top_object": [
+    "digital watch",
+    0.15098576247692108
+  ],
+  "env_probs": {
+    "indoor": 0.7266595363616943,
+    "outdoor": 0.27334046363830566
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "High pitched vibrations of a power tool with some rustling and scraping",
+    "casv": "Mechanical grinding sound from a device"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.21279996633529663,
+    "clap_gt_audio_baseline": 0.5095340013504028,
+    "clap_text_casv": 0.14465254545211792,
+    "clap_gt_audio_casv": 0.26858288049697876
+  },
+  "verdicts": [
+    {
+      "caption": "High pitched vibrations of a power tool with some rustling and scraping",
+      "clip_similarity": 0.323480486869812,
+      "visual": 1.0,
+      "scene_support": 0.4997748914003107,
+      "object_support": 0.18100751644304827,
+      "score": 0.6042347223530077,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A power tool spins at high speed, and then spins again",
+      "clip_similarity": 0.3217952847480774,
+      "visual": 0.846687344778596,
+      "scene_support": 0.159218028156827,
+      "object_support": 0.15049777973523087,
+      "score": 0.4315896802790558,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A mechanical buzzing that revs up and down",
+      "clip_similarity": 0.32137230038642883,
+      "visual": 0.8082059930374049,
+      "scene_support": 0.7763549442095714,
+      "object_support": 0.724608457789322,
+      "score": 0.77357141781463,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vibrations from a power tool running",
+      "clip_similarity": 0.3210854232311249,
+      "visual": 0.7821071068357066,
+      "scene_support": 0.643498282279424,
+      "object_support": 0.3344839266273466,
+      "score": 0.6062375054063138,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The dials on a rotary phone are being turned",
+      "clip_similarity": 0.31925004720687866,
+      "visual": 0.6151322567700934,
+      "scene_support": 0.44626934886154535,
+      "object_support": 0.5184585764304369,
+      "score": 0.5354712802956321,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Powered tool being used to screw something in",
+      "clip_similarity": 0.3191920518875122,
+      "visual": 0.6098560846790374,
+      "scene_support": 0.7763522402023679,
+      "object_support": 0.8877397695806482,
+      "score": 0.7431700368065197,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Metal clicking and vibration occurs, then ticking",
+      "clip_similarity": 0.31878384947776794,
+      "visual": 0.5727195332241587,
+      "scene_support": 0.7766408929713389,
+      "object_support": 0.9420272551761222,
+      "score": 0.7446882577339018,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Quick vibrations of a power tool",
+      "clip_similarity": 0.31842201948165894,
+      "visual": 0.5398017504094049,
+      "scene_support": 0.6421983308163532,
+      "object_support": 0.33261432307350797,
+      "score": 0.5083644963307203,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mechanical grinding sound from a device",
+      "clip_similarity": 0.31804901361465454,
+      "visual": 0.5058672335072174,
+      "scene_support": 0.8905924885383895,
+      "object_support": 1.0,
+      "score": 0.7695246399644038,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motor of a helicopter toy whirring",
+      "clip_similarity": 0.31729376316070557,
+      "visual": 0.4371576995238973,
+      "scene_support": 0.00865147104751887,
+      "object_support": 0.7334567943816379,
+      "score": 0.39749555943830595,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An electric motor run on a power tool",
+      "clip_similarity": 0.31697988510131836,
+      "visual": 0.4086023837669591,
+      "scene_support": 0.32004764460692525,
+      "object_support": 0.340636638038915,
+      "score": 0.3616462383005357,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The whirling sound of a drilling power tool",
+      "clip_similarity": 0.31476694345474243,
+      "visual": 0.20727818929148545,
+      "scene_support": 0.3684973696769928,
+      "object_support": 0.0,
+      "score": 0.193460486619692,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Power tool cutting through a piece of material",
+      "clip_similarity": 0.3143060505390167,
+      "visual": 0.1653480755257193,
+      "scene_support": 0.33246985369969023,
+      "object_support": 0.3041652184756452,
+      "score": 0.25712975186288833,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whirling and vibrations of a running power tool",
+      "clip_similarity": 0.313768208026886,
+      "visual": 0.11641740865660959,
+      "scene_support": 0.4177177368000508,
+      "object_support": 0.196219934006709,
+      "score": 0.23074826470467177,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small remote control vehicle engine hums with a high pitched ring",
+      "clip_similarity": 0.31373703479766846,
+      "visual": 0.1135813983753945,
+      "scene_support": 0.0,
+      "object_support": 0.1918766875294613,
+      "score": 0.1029955656089962,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power tool drill operating as machine gears buzz and bleep",
+      "clip_similarity": 0.313369482755661,
+      "visual": 0.08014304770787467,
+      "scene_support": 0.305003900530391,
+      "object_support": 0.40633454229646393,
+      "score": 0.24545875193120634,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A small thump in the background is followed by two closer mechanical clicks",
+      "clip_similarity": 0.31296074390411377,
+      "visual": 0.04295769301679916,
+      "scene_support": 1.0,
+      "object_support": 0.6074778835804765,
+      "score": 0.49942644228086264,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power tool motor revving up",
+      "clip_similarity": 0.3129347264766693,
+      "visual": 0.040590736061253484,
+      "scene_support": 0.8955976058720221,
+      "object_support": 0.8633960101563516,
+      "score": 0.5439343792330135,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High speed revving of a small powerful motor",
+      "clip_similarity": 0.31263357400894165,
+      "visual": 0.013193141518539807,
+      "scene_support": 0.4836590084675986,
+      "object_support": 0.3374908576032461,
+      "score": 0.25162221642866933,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A very small motor starts and clicking is present",
+      "clip_similarity": 0.3124885559082031,
+      "visual": 0.0,
+      "scene_support": 0.9303278743934574,
+      "object_support": 0.64276510297412,
+      "score": 0.4719278932102732,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "repair shop",
+      0.23035262525081635
+    ],
+    [
+      "lock chamber",
+      0.14350466430187225
+    ],
+    [
+      "archaelogical excavation",
+      0.09101482480764389
+    ],
+    [
+      "hardware store",
+      0.059792667627334595
+    ],
+    [
+      "assembly line",
+      0.05496814474463463
+    ]
+  ],
+  "top_objects": [
+    [
+      "digital watch",
+      0.15098576247692108
+    ],
+    [
+      "magnetic compass",
+      0.13983756303787231
+    ],
+    [
+      "disc brake",
+      0.11306174844503403
+    ],
+    [
+      "power drill",
+      0.10122175514698029
+    ],
+    [
+      "reel",
+      0.09497519582509995
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "MTIF_l_8d4Q",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\MTIF_l_8d4Q.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\MTIF_l_8d4Q.wav",
+  "gt_captions": [
+    "A baby is crying, and a woman speaks",
+    "An infant crying followed by a child speaking in the background then a young woman talking",
+    "A baby is crying and a child speaks in the background, then an adult female speaks and the baby sobs",
+    "An infant crying with another infant crying in the background followed by a woman speaking",
+    "An infant crying followed by a child speaking in the background then a young woman talking"
+  ],
+  "top_scene": [
+    "childs room",
+    0.09090563654899597
+  ],
+  "top_object": [
+    "shoji",
+    0.10942116379737854
+  ],
+  "env_probs": {
+    "indoor": 0.6263480186462402,
+    "outdoor": 0.37365198135375977
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "An infant crying with muffled speech in the background",
+    "casv": "An infant crying with muffled speech in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.254876971244812,
+    "clap_gt_audio_baseline": 0.4658476412296295,
+    "clap_text_casv": 0.254876971244812,
+    "clap_gt_audio_casv": 0.4658476412296295
+  },
+  "verdicts": [
+    {
+      "caption": "An infant crying with muffled speech in the background",
+      "clip_similarity": 0.341572642326355,
+      "visual": 1.0,
+      "scene_support": 0.64875594323956,
+      "object_support": 0.7591651962737397,
+      "score": 0.8223763418539899,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby crying and a recorded voice singing",
+      "clip_similarity": 0.34039056301116943,
+      "visual": 0.9185130856923327,
+      "scene_support": 0.669904187531728,
+      "object_support": 0.7464610013850153,
+      "score": 0.792314790951956,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Baby crying and female singing",
+      "clip_similarity": 0.33926600217819214,
+      "visual": 0.8409912214203097,
+      "scene_support": 0.5118584544134108,
+      "object_support": 0.5051169673857362,
+      "score": 0.641489115107868,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant whining with brief female speech and laughter in the background",
+      "clip_similarity": 0.3380318284034729,
+      "visual": 0.7559131633497893,
+      "scene_support": 0.645884611873828,
+      "object_support": 0.7358574762365531,
+      "score": 0.71688789177303,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant whining and crying with brief male speech",
+      "clip_similarity": 0.33503466844558716,
+      "visual": 0.5493032400416639,
+      "scene_support": 0.3073837895488663,
+      "object_support": 0.3240768778340638,
+      "score": 0.4091594962315446,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries followed by several people laughing and talking",
+      "clip_similarity": 0.33429622650146484,
+      "visual": 0.4983985717602151,
+      "scene_support": 0.5873450033549578,
+      "object_support": 0.6399863395753884,
+      "score": 0.5675588315831899,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby with a funny cry",
+      "clip_similarity": 0.33393168449401855,
+      "visual": 0.47326878314052506,
+      "scene_support": 0.8362404295627025,
+      "object_support": 0.8501990247974652,
+      "score": 0.6952393495642604,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant crying rapidly with brief male speech",
+      "clip_similarity": 0.3332887291908264,
+      "visual": 0.42894650880426005,
+      "scene_support": 0.3552363763894249,
+      "object_support": 0.4113062781034777,
+      "score": 0.40154139986957477,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby crying with adults speaking near and far",
+      "clip_similarity": 0.3331308364868164,
+      "visual": 0.41806213829190575,
+      "scene_support": 0.29841988697235483,
+      "object_support": 0.30521790274536587,
+      "score": 0.34831619223207855,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Baby crying then voice becomes robotic",
+      "clip_similarity": 0.33257147669792175,
+      "visual": 0.3795025403027819,
+      "scene_support": 0.6214951100890546,
+      "object_support": 0.5603733849393818,
+      "score": 0.5063615646296437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Infant crying with speech in the background",
+      "clip_similarity": 0.3317369222640991,
+      "visual": 0.3219723350446736,
+      "scene_support": 0.5141028330576236,
+      "object_support": 0.4269558123209441,
+      "score": 0.41110652763143973,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A child crying with speech in the background",
+      "clip_similarity": 0.33093854784965515,
+      "visual": 0.26693620789188766,
+      "scene_support": 0.8671981218642355,
+      "object_support": 0.6678657483825677,
+      "score": 0.5672936442307961,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An infant crying with speech",
+      "clip_similarity": 0.3305443227291107,
+      "visual": 0.23976020692219668,
+      "scene_support": 0.2279761838036413,
+      "object_support": 0.2645880053882786,
+      "score": 0.24367333952645465,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby cries with talking and laughter in the background",
+      "clip_similarity": 0.3303365707397461,
+      "visual": 0.2254387749022605,
+      "scene_support": 0.8424955440716536,
+      "object_support": 1.0,
+      "score": 0.6429241731824002,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries and cries as a voice from a TV is in the background",
+      "clip_similarity": 0.3302139639854431,
+      "visual": 0.21698684959312012,
+      "scene_support": 1.0,
+      "object_support": 0.8944914337753999,
+      "score": 0.6551421699698681,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An infant cries with low talking and fan noise in the background",
+      "clip_similarity": 0.3300178050994873,
+      "visual": 0.20346459087052365,
+      "scene_support": 0.8839312738109918,
+      "object_support": 0.789511070635779,
+      "score": 0.5834185396822407,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries as a woman talks in a comforting soothing voice",
+      "clip_similarity": 0.3297656774520874,
+      "visual": 0.18608411247593748,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.074433644990375,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child crying with a distant speech",
+      "clip_similarity": 0.3292796015739441,
+      "visual": 0.1525763580296372,
+      "scene_support": 0.6053576833336269,
+      "object_support": 0.5593792095926537,
+      "score": 0.41045161108973904,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl yelling then sighing before talking normally as an infant is crying",
+      "clip_similarity": 0.327610045671463,
+      "visual": 0.03748513106236633,
+      "scene_support": 0.5240291841287279,
+      "object_support": 0.6127869163488721,
+      "score": 0.35603888256822647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Infant crying and screaming with speech in the background",
+      "clip_similarity": 0.3270662724971771,
+      "visual": 0.0,
+      "scene_support": 0.44003033073958003,
+      "object_support": 0.3610260496708217,
+      "score": 0.2403169141231205,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "childs room",
+      0.09090563654899597
+    ],
+    [
+      "nursery",
+      0.05341244116425514
+    ],
+    [
+      "tundra",
+      0.03190814331173897
+    ],
+    [
+      "playroom",
+      0.023711079731583595
+    ],
+    [
+      "sandbox",
+      0.022818688303232193
+    ]
+  ],
+  "top_objects": [
+    [
+      "shoji",
+      0.10942116379737854
+    ],
+    [
+      "infant bed",
+      0.06577349454164505
+    ],
+    [
+      "bib",
+      0.04032333940267563
+    ],
+    [
+      "titi",
+      0.04026500880718231
+    ],
+    [
+      "diaper",
+      0.03982316330075264
+    ]
+  ]
+}

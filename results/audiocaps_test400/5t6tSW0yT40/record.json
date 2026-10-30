@@ -1,0 +1,283 @@
+{
+  "id": "5t6tSW0yT40",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\5t6tSW0yT40.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\5t6tSW0yT40.wav",
+  "gt_captions": [
+    "A machine is used to spray an object",
+    "A sprayer sprays with low machine noise in the background",
+    "A motor hums softly followed by spraying",
+    "White noise followed by a consistent hissing",
+    "Short spraying that stops near the end"
+  ],
+  "top_scene": [
+    "art studio",
+    0.3128035068511963
+  ],
+  "top_object": [
+    "bulletproof vest",
+    0.06377047300338745
+  ],
+  "env_probs": {
+    "indoor": 0.7391719818115234,
+    "outdoor": 0.26082801818847656
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A sliding sound and spraying paint",
+    "casv": "A sliding sound and spraying paint"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.13865813612937927,
+    "clap_gt_audio_baseline": 0.1916499137878418,
+    "clap_text_casv": 0.13865813612937927,
+    "clap_gt_audio_casv": 0.1916499137878418
+  },
+  "verdicts": [
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.31708642840385437,
+      "visual": 1.0,
+      "scene_support": 0.8630721829121404,
+      "object_support": 0.6348138004510595,
+      "score": 0.8493657950089599,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Paint gun shooting faster then slower",
+      "clip_similarity": 0.30297204852104187,
+      "visual": 0.5317340178032037,
+      "scene_support": 0.5656302643228412,
+      "object_support": 0.3522085411787186,
+      "score": 0.4880452487717495,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sanding and rubbing with a man speaking",
+      "clip_similarity": 0.3010266423225403,
+      "visual": 0.4671922134960663,
+      "scene_support": 0.43058330638659,
+      "object_support": 0.311273881109062,
+      "score": 0.40943404164712216,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing while a sanding sound occurs and a man speaking",
+      "clip_similarity": 0.2991626560688019,
+      "visual": 0.4053516394747432,
+      "scene_support": 0.7162409081217249,
+      "object_support": 0.6182392468059604,
+      "score": 0.5624847022682029,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sander sanding wood",
+      "clip_similarity": 0.29753372073173523,
+      "visual": 0.3513092364871746,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.14052369459486985,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone sprays painting an object",
+      "clip_similarity": 0.29453444480895996,
+      "visual": 0.2518037040076489,
+      "scene_support": 0.8712522257539322,
+      "object_support": 0.49629511680355753,
+      "score": 0.5109856843703064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A back and forth sanding noise",
+      "clip_similarity": 0.29443880915641785,
+      "visual": 0.24863084603283991,
+      "scene_support": 0.8203115843696651,
+      "object_support": 0.581808812161814,
+      "score": 0.5200884573725797,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations of a power tool with a man speaking",
+      "clip_similarity": 0.29341840744018555,
+      "visual": 0.2147774698410407,
+      "scene_support": 0.7507212078165795,
+      "object_support": 0.6888176046368218,
+      "score": 0.5177726316724367,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A soft spraying sound",
+      "clip_similarity": 0.2924768030643463,
+      "visual": 0.18353831505322868,
+      "scene_support": 0.9854042788133642,
+      "object_support": 0.7527916180528011,
+      "score": 0.5948740950811411,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood scraping and a man speaking",
+      "clip_similarity": 0.2905738353729248,
+      "visual": 0.12040447265202082,
+      "scene_support": 0.4387379322128195,
+      "object_support": 0.31804382630446804,
+      "score": 0.2751963166159946,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast wood scraping and older man speaking",
+      "clip_similarity": 0.2902158200740814,
+      "visual": 0.10852677154532718,
+      "scene_support": 0.7199397899142458,
+      "object_support": 0.4261342350662548,
+      "score": 0.38723291611228106,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A paintbrush making strokes on a wooden surface",
+      "clip_similarity": 0.2897535264492035,
+      "visual": 0.09318947864871252,
+      "scene_support": 0.8095587747304032,
+      "object_support": 0.5494170678818444,
+      "score": 0.44496854424315924,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Paint is being sprayed out of a spray paint can and the can is shaken immediately afterwards",
+      "clip_similarity": 0.28946834802627563,
+      "visual": 0.08372825148730807,
+      "scene_support": 0.8581469301187398,
+      "object_support": 0.5246962296871246,
+      "score": 0.44834424853668253,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A mechanical door sliding",
+      "clip_similarity": 0.28843390941619873,
+      "visual": 0.049409180030275134,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.61976367201211,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks with some light sanding",
+      "clip_similarity": 0.2883825898170471,
+      "visual": 0.047706574410885605,
+      "scene_support": 0.3275194263661999,
+      "object_support": 0.3203842401327122,
+      "score": 0.21345372971402787,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sanding and rubbing against a wooden surface followed by a man speaking",
+      "clip_similarity": 0.288213312625885,
+      "visual": 0.042090546583863214,
+      "scene_support": 0.13459368782539075,
+      "object_support": 0.1494616527073701,
+      "score": 0.10205282079337355,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Some liquid flows while an object is tapped and a man sings",
+      "clip_similarity": 0.2876913845539093,
+      "visual": 0.02477479036297535,
+      "scene_support": 0.9404853520327259,
+      "object_support": 0.7518003294644899,
+      "score": 0.5175956205943549,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking followed by footsteps then a machine running and sanding an object",
+      "clip_similarity": 0.28752654790878296,
+      "visual": 0.01930608439268295,
+      "scene_support": 0.8053324898649651,
+      "object_support": 0.6207441033673123,
+      "score": 0.4355454117267564,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Electronic vibrations from a power tool, a man speaks",
+      "clip_similarity": 0.2870842218399048,
+      "visual": 0.00463124548270649,
+      "scene_support": 0.7170810816917,
+      "object_support": 0.49834312365919825,
+      "score": 0.36647975979835207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood scratching and being sanded as a man speaks",
+      "clip_similarity": 0.2869446277618408,
+      "visual": 0.0,
+      "scene_support": 0.22201127668257112,
+      "object_support": 0.04975840235778454,
+      "score": 0.0815309037121067,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art studio",
+      0.3128035068511963
+    ],
+    [
+      "manufactured home",
+      0.06695736199617386
+    ],
+    [
+      "indoor booth",
+      0.04775315895676613
+    ],
+    [
+      "exterior gazebo",
+      0.042716674506664276
+    ],
+    [
+      "ticket booth",
+      0.04100022464990616
+    ]
+  ],
+  "top_objects": [
+    [
+      "bulletproof vest",
+      0.06377047300338745
+    ],
+    [
+      "punching bag",
+      0.04028971120715141
+    ],
+    [
+      "bassinet",
+      0.03761034458875656
+    ],
+    [
+      "sliding door",
+      0.03200549632310867
+    ],
+    [
+      "fire screen sheet",
+      0.02944202534854412
+    ]
+  ]
+}

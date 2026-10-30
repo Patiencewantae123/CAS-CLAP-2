@@ -1,0 +1,283 @@
+{
+  "id": "BMayJId0X1s",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BMayJId0X1s.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BMayJId0X1s.wav",
+  "gt_captions": [
+    "A man speaking as a baby is crying over a radio",
+    "A baby crying over a radio as a man is talking",
+    "A man talking as a baby is crying",
+    "A baby cries while an adult male speaks",
+    "A baby crying and a man speaking"
+  ],
+  "top_scene": [
+    "basement",
+    0.10947982966899872
+  ],
+  "top_object": [
+    "gorilla",
+    0.05880208685994148
+  ],
+  "env_probs": {
+    "indoor": 0.8028496503829956,
+    "outdoor": 0.1971503496170044
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A pig squealing as a man talks followed by a child laughing in the background",
+    "casv": "Pig squealing while a man speaks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4019826054573059,
+    "clap_gt_audio_baseline": 0.3554461598396301,
+    "clap_text_casv": 0.21586760878562927,
+    "clap_gt_audio_casv": 0.25250303745269775
+  },
+  "verdicts": [
+    {
+      "caption": "A pig squealing as a man talks followed by a child laughing in the background",
+      "clip_similarity": 0.2816339433193207,
+      "visual": 1.0,
+      "scene_support": 0.6137806990972257,
+      "object_support": 0.9174790620636125,
+      "score": 0.8593779283482514,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pig squealing while a man speaks",
+      "clip_similarity": 0.28117382526397705,
+      "visual": 0.9428485759341383,
+      "scene_support": 0.6374018797579605,
+      "object_support": 1.0,
+      "score": 0.8683599943010434,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Light snoring and background video camera noises",
+      "clip_similarity": 0.28032630681991577,
+      "visual": 0.8375780145256939,
+      "scene_support": 0.8055487134443468,
+      "object_support": 0.43044932101139677,
+      "score": 0.7058306161470007,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An explosion followed by footsteps. A man is hit by a heavy metal object and he screams",
+      "clip_similarity": 0.2801080346107483,
+      "visual": 0.810466347328442,
+      "scene_support": 0.8451594712695966,
+      "object_support": 0.5774448960639799,
+      "score": 0.7509678491314498,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pig starts oinking and then a woman in screaming in terror and someone is laughing",
+      "clip_similarity": 0.2800465226173401,
+      "visual": 0.8028259211821931,
+      "scene_support": 0.3157110828575591,
+      "object_support": 0.7241313831685673,
+      "score": 0.6330831082807151,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A pig oinking and smashing bushes",
+      "clip_similarity": 0.2796775698661804,
+      "visual": 0.7569981713321142,
+      "scene_support": 0.0,
+      "object_support": 0.4450194219500955,
+      "score": 0.43630509511787435,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking, followed by a girl talking and a pig oinking while sleeping",
+      "clip_similarity": 0.27945011854171753,
+      "visual": 0.7287463630238912,
+      "scene_support": 0.07826769623262293,
+      "object_support": 0.0,
+      "score": 0.31497885407934334,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig oinking followed by belching and wheezing then shuffling and a hollowed metal object clanging ending with an electronic whoosh and metal door sliding shut",
+      "clip_similarity": 0.27899783849716187,
+      "visual": 0.6725685010105796,
+      "scene_support": 0.6724463581392766,
+      "object_support": 0.8937361178969545,
+      "score": 0.7388821432151012,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A child grunts several times, followed by an explosion nearby",
+      "clip_similarity": 0.2782919704914093,
+      "visual": 0.58489238992826,
+      "scene_support": 0.8006244896804076,
+      "object_support": 0.5880370489724212,
+      "score": 0.6505554175671526,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Males yell and scream, followed by an explosion",
+      "clip_similarity": 0.2781820297241211,
+      "visual": 0.5712366088945814,
+      "scene_support": 0.8548077215350414,
+      "object_support": 0.5234993468264776,
+      "score": 0.6419867640662882,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man out of breath, then a pig screams",
+      "clip_similarity": 0.2772662043571472,
+      "visual": 0.4574816207772209,
+      "scene_support": 0.7081689916451708,
+      "object_support": 0.9570048962025843,
+      "score": 0.6825448146652149,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Large explosion and person talking",
+      "clip_similarity": 0.27712711691856384,
+      "visual": 0.4402055215405231,
+      "scene_support": 0.6541739032910963,
+      "object_support": 0.547598504457866,
+      "score": 0.5366139309408979,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some smacking and crashing followed by a person speaking and a small explosion",
+      "clip_similarity": 0.2761128544807434,
+      "visual": 0.3142236305350519,
+      "scene_support": 0.8128428116080871,
+      "object_support": 0.5542064721353057,
+      "score": 0.5358042373370386,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig squeals loudly and then once again after a man talks",
+      "clip_similarity": 0.27581578493118286,
+      "visual": 0.27732451821634546,
+      "scene_support": 0.6338612182265457,
+      "object_support": 0.9625123444598065,
+      "score": 0.5898418760924438,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An animal snorting as chickens cluck in the background followed by a man talking then laughing",
+      "clip_similarity": 0.2755071818828583,
+      "visual": 0.23899282599521732,
+      "scene_support": 0.7134684542570219,
+      "object_support": 0.7549216711539861,
+      "score": 0.5361141680213893,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog screaming followed by two girls laughing then talking",
+      "clip_similarity": 0.2754096984863281,
+      "visual": 0.22688437932642833,
+      "scene_support": 0.21297844263300278,
+      "object_support": 0.12438780142138875,
+      "score": 0.1919636249468888,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud male voice screams while sticks fall in the background followed by a sequence of oinks, dog barks, and animal movement",
+      "clip_similarity": 0.27502551674842834,
+      "visual": 0.17916503172405623,
+      "scene_support": 0.8564203052431768,
+      "object_support": 0.689273747275556,
+      "score": 0.5353742284452424,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with some groaning followed by ringing then an explosion",
+      "clip_similarity": 0.27497708797454834,
+      "visual": 0.17314967683662666,
+      "scene_support": 0.7244137941154583,
+      "object_support": 0.5369183377166994,
+      "score": 0.44765951028429796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man exclaims loudly at an explosion",
+      "clip_similarity": 0.273636132478714,
+      "visual": 0.0065891271997690105,
+      "scene_support": 0.5105695769339212,
+      "object_support": 0.30794238212556874,
+      "score": 0.2481892385977546,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A crash sound along with a man screaming out",
+      "clip_similarity": 0.2735830843448639,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 0.8081326167482701,
+      "score": 0.542439785024481,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "basement",
+      0.10947982966899872
+    ],
+    [
+      "catacomb",
+      0.09001152217388153
+    ],
+    [
+      "childs room",
+      0.06402269005775452
+    ],
+    [
+      "pet shop",
+      0.06201232969760895
+    ],
+    [
+      "slum",
+      0.06082543730735779
+    ]
+  ],
+  "top_objects": [
+    [
+      "gorilla",
+      0.05880208685994148
+    ],
+    [
+      "wombat",
+      0.04467662423849106
+    ],
+    [
+      "orangutan",
+      0.044008899480104446
+    ],
+    [
+      "hippopotamus",
+      0.03259721398353577
+    ],
+    [
+      "crash helmet",
+      0.031867556273937225
+    ]
+  ]
+}

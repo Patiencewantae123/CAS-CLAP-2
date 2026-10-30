@@ -1,0 +1,283 @@
+{
+  "id": "Boe3MeEpn_c",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Boe3MeEpn_c.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Boe3MeEpn_c.wav",
+  "gt_captions": [
+    "A metal pan clacking followed by compressed air spraying then an aerosol can tapping a hard surface while a man talks",
+    "A man speaks with some faint banging and a few sprays",
+    "A man speaking, with the clinking of dishes in the background, following by the hiss of an oil mister spraying",
+    "A woman is speaking as dishes tap a surface followed by a spray hissing sound",
+    "A woman speaking click of moving dishes followed by spraying of a can"
+  ],
+  "top_scene": [
+    "kitchen",
+    0.5403856635093689
+  ],
+  "top_object": [
+    "baguette",
+    0.27838918566703796
+  ],
+  "env_probs": {
+    "indoor": 0.9628148674964905,
+    "outdoor": 0.03718513250350952
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Soft repeated tapping followed by a loud tap",
+    "casv": "Soft repeated tapping followed by a loud tap"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.06758862733840942,
+    "clap_gt_audio_baseline": 0.23548555374145508,
+    "clap_text_casv": -0.06758862733840942,
+    "clap_gt_audio_casv": 0.23548555374145508
+  },
+  "verdicts": [
+    {
+      "caption": "Soft repeated tapping followed by a loud tap",
+      "clip_similarity": 0.2932024598121643,
+      "visual": 1.0,
+      "scene_support": 0.5093313275024923,
+      "object_support": 0.6297078095671959,
+      "score": 0.7417117411209065,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pans are clanking while a man and woman are communicating with each other and frying foods",
+      "clip_similarity": 0.2883802354335785,
+      "visual": 0.65355974444178,
+      "scene_support": 0.22327991442506795,
+      "object_support": 0.0,
+      "score": 0.3284078721042324,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Woman narrating a recipe and scraping can",
+      "clip_similarity": 0.2878483533859253,
+      "visual": 0.6153480524819294,
+      "scene_support": 0.4304839336297822,
+      "object_support": 0.28678505324527076,
+      "score": 0.46131991705528763,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking while loudly cutting and a frying sound in the back",
+      "clip_similarity": 0.2871628999710083,
+      "visual": 0.5661034222876914,
+      "scene_support": 0.636315197920894,
+      "object_support": 0.6949696716259086,
+      "score": 0.6258268297791173,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man puts ingredients into a frying pan and it begins to sizzle",
+      "clip_similarity": 0.28681427240371704,
+      "visual": 0.5410571751567264,
+      "scene_support": 0.0,
+      "object_support": 0.22489378331361287,
+      "score": 0.28389100505677445,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pan bangs followed by food frying and a woman speaking",
+      "clip_similarity": 0.2849133014678955,
+      "visual": 0.40448682813195846,
+      "scene_support": 0.9512204414636638,
+      "object_support": 0.8552610187586449,
+      "score": 0.7037391693194761,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A machine taps continuously and a thumb takes place in the background",
+      "clip_similarity": 0.2831944525241852,
+      "visual": 0.2810005652427118,
+      "scene_support": 0.8186110468093262,
+      "object_support": 0.8278089934040025,
+      "score": 0.6063262381610832,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A squeaking cabinet sound is followed by a child and mother speaking while clanking dishes",
+      "clip_similarity": 0.28310003876686096,
+      "visual": 0.27421765270117504,
+      "scene_support": 0.7920287851349924,
+      "object_support": 0.4386964319713313,
+      "score": 0.47890462621236707,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dishes scraping and clinking food frying while woman speaks",
+      "clip_similarity": 0.28269702196121216,
+      "visual": 0.24526395121784111,
+      "scene_support": 0.5453571962548844,
+      "object_support": 0.30954502657264593,
+      "score": 0.35457624733539556,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tapping noise followed by a man speaking as food is frying",
+      "clip_similarity": 0.2823468744754791,
+      "visual": 0.22010850947209756,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.688043403788839,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A continuous sizzle is interrupted by a few sizzles and taps",
+      "clip_similarity": 0.2822429835796356,
+      "visual": 0.2126447363913535,
+      "scene_support": 0.6492224422914732,
+      "object_support": 0.8541590776905402,
+      "score": 0.5360723505511454,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person pours water, followed by sneezing and noises, after which a microwave turns on",
+      "clip_similarity": 0.2813631594181061,
+      "visual": 0.14943604193073207,
+      "scene_support": 0.6643135099749867,
+      "object_support": 0.7153449314623084,
+      "score": 0.4736719492034813,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping noises are followed by a high-pitched machine starting",
+      "clip_similarity": 0.28115275502204895,
+      "visual": 0.13432008153197902,
+      "scene_support": 0.8230491207268097,
+      "object_support": 0.9828571006300408,
+      "score": 0.5954998990198468,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An individual conversing something while frying food at the same time",
+      "clip_similarity": 0.2808588147163391,
+      "visual": 0.11320269946216299,
+      "scene_support": 0.6555822576334236,
+      "object_support": 0.5453134685453421,
+      "score": 0.4055497976384949,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Moving of objects with a whoosh noise followed by knocking",
+      "clip_similarity": 0.2807616591453552,
+      "visual": 0.10622280839984927,
+      "scene_support": 0.48877579471714494,
+      "object_support": 0.6666191404772731,
+      "score": 0.38910760391826515,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Something is fried while objects are tapped and a music is played",
+      "clip_similarity": 0.280241459608078,
+      "visual": 0.06885041622417869,
+      "scene_support": 0.8693683422396917,
+      "object_support": 0.8990456799128532,
+      "score": 0.558064373135435,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A machine rubs several times nearby and then increases in speed",
+      "clip_similarity": 0.27990129590034485,
+      "visual": 0.0444122332225686,
+      "scene_support": 0.7813498140892683,
+      "object_support": 0.954567426187336,
+      "score": 0.5385400653720087,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaks while frying some food",
+      "clip_similarity": 0.27977094054222107,
+      "visual": 0.03504718920215135,
+      "scene_support": 0.6182621430793929,
+      "object_support": 0.4710656791651851,
+      "score": 0.34081722235423395,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ding sound followed by tapping",
+      "clip_similarity": 0.2797689139842987,
+      "visual": 0.034901596382446644,
+      "scene_support": 0.7194067020227064,
+      "object_support": 0.9504769861672707,
+      "score": 0.5149257450099718,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some liquid flows while kitchenware hits",
+      "clip_similarity": 0.2792831063270569,
+      "visual": 0.0,
+      "scene_support": 0.7546919296673812,
+      "object_support": 0.6780232524779547,
+      "score": 0.42981455464360074,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "kitchen",
+      0.5403856635093689
+    ],
+    [
+      "delicatessen",
+      0.08814691007137299
+    ],
+    [
+      "galley",
+      0.07793580740690231
+    ],
+    [
+      "restaurant kitchen",
+      0.07401945441961288
+    ],
+    [
+      "shop bakery",
+      0.051546525210142136
+    ]
+  ],
+  "top_objects": [
+    [
+      "baguette",
+      0.27838918566703796
+    ],
+    [
+      "dough",
+      0.22389476001262665
+    ],
+    [
+      "toaster",
+      0.13921470940113068
+    ],
+    [
+      "microwave oven",
+      0.057258620858192444
+    ],
+    [
+      "bakery",
+      0.04431258514523506
+    ]
+  ]
+}

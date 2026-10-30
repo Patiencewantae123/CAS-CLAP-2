@@ -1,0 +1,283 @@
+{
+  "id": "Z1Cyj4N05lk",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Z1Cyj4N05lk.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Z1Cyj4N05lk.wav",
+  "gt_captions": [
+    "A person whistling then a man speaking with plastic tapping",
+    "A man whistles and then speaks loudly while some rustling and banging in the background",
+    "Whistling with small rustling and groaning",
+    "A man whistling followed by a man yelling as plastic rustles and clanks in the background",
+    "Musical whistling followed by a man speaking"
+  ],
+  "top_scene": [
+    "pet shop",
+    0.4686293601989746
+  ],
+  "top_object": [
+    "infant bed",
+    0.11965259909629822
+  ],
+  "env_probs": {
+    "indoor": 0.9439648389816284,
+    "outdoor": 0.05603516101837158
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A cat meows, and then a bunch of kittens meow",
+    "casv": "One dog barks, then other dogs join in barking"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.10217052698135376,
+    "clap_gt_audio_baseline": 0.2620410919189453,
+    "clap_text_casv": -0.13026905059814453,
+    "clap_gt_audio_casv": 0.2621667981147766
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meows, and then a bunch of kittens meow",
+      "clip_similarity": 0.3054739236831665,
+      "visual": 1.0,
+      "scene_support": 0.40618910222517635,
+      "object_support": 0.0,
+      "score": 0.5218567306675529,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and then a dog whimpers",
+      "clip_similarity": 0.30292871594429016,
+      "visual": 0.8582466355506277,
+      "scene_support": 0.7657031285405683,
+      "object_support": 0.4154678981918566,
+      "score": 0.6976499622399785,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A pet dog rubs an object and then pants quietly",
+      "clip_similarity": 0.30166110396385193,
+      "visual": 0.7876479726993274,
+      "scene_support": 0.0,
+      "object_support": 0.1691092128431783,
+      "score": 0.36579195293268446,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "One dog barks, then other dogs join in barking",
+      "clip_similarity": 0.2957943379878998,
+      "visual": 0.46090300692475716,
+      "scene_support": 0.9662363853346828,
+      "object_support": 0.8531805838378685,
+      "score": 0.7301862935216683,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A puppy and a baby cry while a woman groans quietly",
+      "clip_similarity": 0.2954742908477783,
+      "visual": 0.4430782305021279,
+      "scene_support": 0.32804054564406243,
+      "object_support": 0.38348270486358793,
+      "score": 0.39068826735314627,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A kitten meows and someone speaks",
+      "clip_similarity": 0.29461613297462463,
+      "visual": 0.39528379553708365,
+      "scene_support": 0.5774513950783268,
+      "object_support": 0.30262499266895165,
+      "score": 0.422136434539017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman are communicating something coming from a broadcast followed by kittens making noises",
+      "clip_similarity": 0.29454129934310913,
+      "visual": 0.391115994662028,
+      "scene_support": 0.8243727057117392,
+      "object_support": 0.4085596638219926,
+      "score": 0.5263261087249307,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and a girl is doing baby talk",
+      "clip_similarity": 0.2944626808166504,
+      "visual": 0.3867373970083456,
+      "scene_support": 0.5408009426409052,
+      "object_support": 0.2965548846604463,
+      "score": 0.4059017069937437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People and children talk as a dog bow-wows at the same time",
+      "clip_similarity": 0.29361292719841003,
+      "visual": 0.3394110304808822,
+      "scene_support": 0.30158466395758116,
+      "object_support": 0.25743368299592323,
+      "score": 0.3034699162784042,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Kitten meows and then male makes funny noise in response",
+      "clip_similarity": 0.29277855157852173,
+      "visual": 0.2929411296051627,
+      "scene_support": 0.29867592186957115,
+      "object_support": 0.0632925204212318,
+      "score": 0.225766984529306,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows and two farts go off",
+      "clip_similarity": 0.2925078272819519,
+      "visual": 0.27786335057330086,
+      "scene_support": 0.7312536821910358,
+      "object_support": 0.35439583296393945,
+      "score": 0.43684019477581293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Puppy whimpers followed by woman speaking then puppy whimpers louder",
+      "clip_similarity": 0.29142653942108154,
+      "visual": 0.21764186457219872,
+      "scene_support": 0.6649455413387314,
+      "object_support": 0.5809463667324529,
+      "score": 0.4608243182502348,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers as an infant cries",
+      "clip_similarity": 0.29081839323043823,
+      "visual": 0.18377163571660945,
+      "scene_support": 0.9368913999123827,
+      "object_support": 1.0,
+      "score": 0.6545760742603586,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is doing baby talk and cat meows a little",
+      "clip_similarity": 0.28874507546424866,
+      "visual": 0.06829981609225928,
+      "scene_support": 0.4353905766122332,
+      "object_support": 0.2446299218612543,
+      "score": 0.23132607597894994,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple dogs are communicating with one another by barking and whining",
+      "clip_similarity": 0.2885929346084595,
+      "visual": 0.05982644951832106,
+      "scene_support": 0.6958661268637552,
+      "object_support": 0.728237697818962,
+      "score": 0.45116172721214354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and a dog starts panting",
+      "clip_similarity": 0.2884539067745209,
+      "visual": 0.05208340249238144,
+      "scene_support": 0.7561294318473647,
+      "object_support": 0.38551493965353806,
+      "score": 0.3633266724472234,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Cats communicating vocally to each other by meowing",
+      "clip_similarity": 0.2883666753768921,
+      "visual": 0.04722511768103626,
+      "scene_support": 0.23955541791924106,
+      "object_support": 0.14756275036382457,
+      "score": 0.1350254975573342,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog barks while another dog growls",
+      "clip_similarity": 0.2881927192211151,
+      "visual": 0.037536764949973114,
+      "scene_support": 1.0,
+      "object_support": 0.8708937604936284,
+      "score": 0.5762828341280778,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man makes sounds of a cat while a dog whines",
+      "clip_similarity": 0.2879602313041687,
+      "visual": 0.024588531327388974,
+      "scene_support": 0.6605057631010469,
+      "object_support": 0.4888629441762834,
+      "score": 0.3546460247141547,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Static continues while a dog whimpers then barks",
+      "clip_similarity": 0.2875187397003174,
+      "visual": 0.0,
+      "scene_support": 0.8742616734897352,
+      "object_support": 0.6049553794891589,
+      "score": 0.4437651158936682,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pet shop",
+      0.4686293601989746
+    ],
+    [
+      "veterinarians office",
+      0.10730362683534622
+    ],
+    [
+      "childs room",
+      0.09884218126535416
+    ],
+    [
+      "stable",
+      0.04359946399927139
+    ],
+    [
+      "nursery",
+      0.04209185391664505
+    ]
+  ],
+  "top_objects": [
+    [
+      "infant bed",
+      0.11965259909629822
+    ],
+    [
+      "Schipperke",
+      0.10185899585485458
+    ],
+    [
+      "toy terrier",
+      0.09970022737979889
+    ],
+    [
+      "Bouvier des Flandres",
+      0.06928210705518723
+    ],
+    [
+      "Miniature Pinscher",
+      0.03681939095258713
+    ]
+  ]
+}
