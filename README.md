@@ -99,7 +99,7 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 ## Development
 
 ```
-py -m pytest                         # 42 tests, ~15 s, no model downloads
+py -m pytest                         # 48 tests, ~15 s, no model downloads
 py -m ruff check casv scripts tests app.py app_gradio.py board.py  # lint
 py -m ruff format casv scripts tests app.py app_gradio.py board.py # format
 ```
@@ -133,15 +133,18 @@ Uploads only; the Figure 5 recordings (YouTube audio) are not published.
 
 1. Hugging Face account with a verified email, older than 30 days (needed for free ZeroGPU).
 2. Create the Space at https://huggingface.co/new-space: SDK **Gradio**, hardware **ZeroGPU**, public.
-3. Build and upload the bundle (only the files the Space needs, never git-ignored ones):
+3. Deploy it with one command:
    ```
-   py -m scripts.build_space                  # -> dist/hf_space/ (~96 MB)
-   hf auth login                              # write token from https://huggingface.co/settings/tokens
-   hf upload <user>/<space> dist/hf_space . --repo-type space
+   py -m scripts.deploy_space <user>/<space>
    ```
-4. The first build takes a few minutes; the Space is then at `https://huggingface.co/spaces/<user>/<space>`.
+   The first time, it asks for a **Write** token from https://huggingface.co/settings/tokens
+   (pasted into the terminal, hidden; it refuses incomplete or read-only tokens and saves a valid
+   one). It checks the Space is yours and on ZeroGPU, builds the bundle (`scripts/build_space.py`:
+   only the files the Space needs, never git-ignored ones, ~96 MB), uploads it in place of the
+   Space's files, and follows the build until the Space runs, or prints the end of its error log.
+4. The Space is then at `https://huggingface.co/spaces/<user>/<space>` (first build: 5-10 min).
 
-Rebuild and upload again after changing `app_gradio.py`, `board.py`, `casv/` or `space/`.
+Run the same command again after changing `app_gradio.py`, `board.py`, `casv/` or `space/`.
 To try the Gradio app locally: `py -m pip install gradio==6.31.0 spaces` then `py app_gradio.py`.
 
 **Temporary, from your PC.** `streamlit run app.py`, then in a second terminal
