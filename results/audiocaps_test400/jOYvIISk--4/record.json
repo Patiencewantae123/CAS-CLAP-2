@@ -1,0 +1,285 @@
+{
+  "id": "jOYvIISk--4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\jOYvIISk--4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\jOYvIISk--4.wav",
+  "gt_captions": [
+    "A man speaks as water flows from a faucet in quick bursts",
+    "A man speaking as a faucet pours water several times while water drains down a pipe",
+    "A man speaking followed by a faucet turning on and off while pouring water twice proceeded by water draining down a pipe",
+    "A man talking as a sink faucet turns on and off twice as water sprays then drains down a pipe",
+    "A man is speaking as tap water runs"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.2904169261455536
+  ],
+  "top_object": [
+    "sink",
+    0.5035219192504883
+  ],
+  "env_probs": {
+    "indoor": 0.7652814388275146,
+    "outdoor": 0.23471856117248535
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Pots and pans rattle as water stream out of a faucet and a woman speaks the entire time",
+    "casv": "Water runs from faucet as woman speaks"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.26819342374801636,
+    "clap_gt_audio_baseline": 0.4297775626182556,
+    "clap_text_casv": 0.37673836946487427,
+    "clap_gt_audio_casv": 0.5299385786056519
+  },
+  "verdicts": [
+    {
+      "caption": "Pots and pans rattle as water stream out of a faucet and a woman speaks the entire time",
+      "clip_similarity": 0.3502732515335083,
+      "visual": 1.0,
+      "scene_support": 0.13844236684796218,
+      "object_support": 0.19440508541661686,
+      "score": 0.4998542356793737,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.77)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Faucet runs while woman speaks",
+      "clip_similarity": 0.3479782044887543,
+      "visual": 0.8527025915575932,
+      "scene_support": 0.5768652166478693,
+      "object_support": 0.3827711057805971,
+      "score": 0.6289719333515772,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water trickling as faucet runs over sink",
+      "clip_similarity": 0.3477269411087036,
+      "visual": 0.8365763666932536,
+      "scene_support": 0.3407935666282659,
+      "object_support": 0.7737712146930925,
+      "score": 0.6689999810737091,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water runs from faucet as woman speaks",
+      "clip_similarity": 0.34601131081581116,
+      "visual": 0.7264662508392102,
+      "scene_support": 0.950623595592947,
+      "object_support": 0.5400205605540193,
+      "score": 0.737779747179774,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water from a faucet running in short bursts interrupted by banging and splashing water",
+      "clip_similarity": 0.3453519642353058,
+      "visual": 0.6841490169525242,
+      "scene_support": 0.8035246407049627,
+      "object_support": 0.6132288835937936,
+      "score": 0.6986856640706365,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A water faucet is turned on and runs into a sink",
+      "clip_similarity": 0.3448730707168579,
+      "visual": 0.653413361947771,
+      "scene_support": 0.3311447180477425,
+      "object_support": 1.0,
+      "score": 0.6607087601934312,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flowing from a faucet is stopped before a child speaks",
+      "clip_similarity": 0.3444620370864868,
+      "visual": 0.6270329926761576,
+      "scene_support": 0.0,
+      "object_support": 0.29134411301398067,
+      "score": 0.33821643097465726,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaks, screws in faucet part, hammering in background, water runs from faucet",
+      "clip_similarity": 0.3419482409954071,
+      "visual": 0.4656961475709288,
+      "scene_support": 0.40122646511716276,
+      "object_support": 0.0,
+      "score": 0.3066463985635204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone laughing while turning off water faucet",
+      "clip_similarity": 0.34112727642059326,
+      "visual": 0.4130061800299534,
+      "scene_support": 0.15411041122247535,
+      "object_support": 0.27024324676118144,
+      "score": 0.29250856940707837,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man mumbles, turns on a faucet and it runs for a few seconds",
+      "clip_similarity": 0.34097933769226074,
+      "visual": 0.403511389349538,
+      "scene_support": 1.0,
+      "object_support": 0.5256191409726152,
+      "score": 0.6190902980315998,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaks in a foreign language while faucet is running",
+      "clip_similarity": 0.3397536277770996,
+      "visual": 0.3248446385227605,
+      "scene_support": 0.38383470269317993,
+      "object_support": 0.17141286070623113,
+      "score": 0.29651212442892755,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water slowly pours into sink and then runs fast out of a faucet into sink",
+      "clip_similarity": 0.33907759189605713,
+      "visual": 0.2814562759533523,
+      "scene_support": 0.012914931578065602,
+      "object_support": 0.8818809453604605,
+      "score": 0.3810212734628987,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A faucet pouring out water with a blowing noise",
+      "clip_similarity": 0.3386349081993103,
+      "visual": 0.2530445876441481,
+      "scene_support": 0.3042431444209741,
+      "object_support": 0.5907424378866726,
+      "score": 0.3697135097499532,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flows from a tap as someone washes something under the faucet",
+      "clip_similarity": 0.3383064568042755,
+      "visual": 0.23196439262221866,
+      "scene_support": 0.2585948416269273,
+      "object_support": 0.6431495368562541,
+      "score": 0.3633090705938419,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water pours out of a faucet loudly nearby, followed by a child laughing",
+      "clip_similarity": 0.3375752866268158,
+      "visual": 0.18503747994024633,
+      "scene_support": 0.8149170698174897,
+      "object_support": 0.5285640285935147,
+      "score": 0.47705932149939984,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water faucet dripping followed by a man screaming",
+      "clip_similarity": 0.33656319975852966,
+      "visual": 0.12008117625231202,
+      "scene_support": 0.9501546682879058,
+      "object_support": 0.3871562947437767,
+      "score": 0.4492257594104295,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water dripping from a faucet is stopped",
+      "clip_similarity": 0.3362908959388733,
+      "visual": 0.10260456415582626,
+      "scene_support": 0.6421670141161799,
+      "object_support": 0.49052966006019405,
+      "score": 0.3808508279152427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flows rapidly from a faucet while a man speaks with frying sounds",
+      "clip_similarity": 0.3361547589302063,
+      "visual": 0.09386721447247869,
+      "scene_support": 0.4237073410008273,
+      "object_support": 0.48585492324325474,
+      "score": 0.3104155650622161,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water is splashing into a sink and woman speaks briefly",
+      "clip_similarity": 0.33492720127105713,
+      "visual": 0.015081874398685573,
+      "scene_support": 0.6784963582570067,
+      "object_support": 0.7121166479390303,
+      "score": 0.4232166516182853,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flowing from faucet, followed by splashing sounds",
+      "clip_similarity": 0.33469220995903015,
+      "visual": 0.0,
+      "scene_support": 0.8399489793274736,
+      "object_support": 0.6007050091778701,
+      "score": 0.4321961965516031,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.2904169261455536
+    ],
+    [
+      "wet bar",
+      0.09483972191810608
+    ],
+    [
+      "manufactured home",
+      0.08620806038379669
+    ],
+    [
+      "shower",
+      0.07597886770963669
+    ],
+    [
+      "nursing home",
+      0.07037681341171265
+    ]
+  ],
+  "top_objects": [
+    [
+      "sink",
+      0.5035219192504883
+    ],
+    [
+      "soap dispenser",
+      0.10488848388195038
+    ],
+    [
+      "paper towel",
+      0.028424106538295746
+    ],
+    [
+      "plunger",
+      0.02631860412657261
+    ],
+    [
+      "water jug",
+      0.023643963038921356
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "IJ6pm5Kns8A",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\IJ6pm5Kns8A.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\IJ6pm5Kns8A.wav",
+  "gt_captions": [
+    "A woman speaks, then a phone chimes, then there is a burp followed by laughter",
+    "A man talking followed by a woman talking while an electronic beep plays with a person claps before someone belches then a man and woman laugh",
+    "Woman speaks, girl speaks, clapping, croaking noise interrupts, followed by laughter",
+    "A man talking followed by a person clapping then electronic chimes alongside a woman talking before another person claps proceeded by a person belching and two people laughing",
+    "Clicking followed by a burp and laughing"
+  ],
+  "top_scene": [
+    "dorm room",
+    0.05984973534941673
+  ],
+  "top_object": [
+    "titi",
+    0.08039402961730957
+  ],
+  "env_probs": {
+    "indoor": 0.7086503505706787,
+    "outdoor": 0.2913496494293213
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A non-english speaking female talks while a large truck motor is humming",
+    "casv": "A human female voice with chanting in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.033514246344566345,
+    "clap_gt_audio_baseline": 0.3682359755039215,
+    "clap_text_casv": -0.12547092139720917,
+    "clap_gt_audio_casv": 0.23194457590579987
+  },
+  "verdicts": [
+    {
+      "caption": "A non-english speaking female talks while a large truck motor is humming",
+      "clip_similarity": 0.26753896474838257,
+      "visual": 1.0,
+      "scene_support": 0.38878093122375296,
+      "object_support": 0.3532286674300168,
+      "score": 0.6226028795961309,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.45)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A human female voice with chanting in the background",
+      "clip_similarity": 0.2668015956878662,
+      "visual": 0.8817371852475001,
+      "scene_support": 0.6261359710044778,
+      "object_support": 0.8272274253485836,
+      "score": 0.7887038930049186,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman burping followed by laughter",
+      "clip_similarity": 0.2646421194076538,
+      "visual": 0.5353899393916219,
+      "scene_support": 0.341229573392017,
+      "object_support": 0.42440719787976816,
+      "score": 0.4438470071381843,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman crying and talking",
+      "clip_similarity": 0.264525830745697,
+      "visual": 0.5167390015869071,
+      "scene_support": 0.501725841122904,
+      "object_support": 0.604577480932621,
+      "score": 0.5385865972514203,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female laughing, dogs barking",
+      "clip_similarity": 0.2643479108810425,
+      "visual": 0.48820335353612604,
+      "scene_support": 0.2945327301102173,
+      "object_support": 0.38494699718179703,
+      "score": 0.3991252596020547,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks followed by a faint male voice and laughter",
+      "clip_similarity": 0.26414865255355835,
+      "visual": 0.4562453396554691,
+      "scene_support": 0.8074200153511162,
+      "object_support": 0.8309506924633762,
+      "score": 0.6740093482065354,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female talking and many laughing",
+      "clip_similarity": 0.2637089192867279,
+      "visual": 0.3857187924210848,
+      "scene_support": 0.8088415008846602,
+      "object_support": 0.6548299759622112,
+      "score": 0.5933889600224953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman is speaking while a repetitive, faint beeping sound is in the background",
+      "clip_similarity": 0.26370126008987427,
+      "visual": 0.38449037340114334,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.7537961493604572,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female sneezing and talking",
+      "clip_similarity": 0.2634183466434479,
+      "visual": 0.33911534711202035,
+      "scene_support": 0.58317429546029,
+      "object_support": 0.4661973432795118,
+      "score": 0.4504576304667487,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman laughing followed by a modified laughter",
+      "clip_similarity": 0.26320141553878784,
+      "visual": 0.3043228877884634,
+      "scene_support": 0.10147795074193197,
+      "object_support": 0.2007438198112584,
+      "score": 0.21239568628134248,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks and laughs with some faint chanting",
+      "clip_similarity": 0.2627055048942566,
+      "visual": 0.22478634112766,
+      "scene_support": 0.5179500230730523,
+      "object_support": 0.6194032650188546,
+      "score": 0.43112052287863606,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks followed by several burps then laughter",
+      "clip_similarity": 0.2626754641532898,
+      "visual": 0.2199682618587844,
+      "scene_support": 0.8826155565707183,
+      "object_support": 0.8295561791764988,
+      "score": 0.601638825467679,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young female is speaking and makes sneezing sounds, and a dog barks in the background",
+      "clip_similarity": 0.26228517293930054,
+      "visual": 0.15737147008775787,
+      "scene_support": 0.27338552403655514,
+      "object_support": 0.18594006689138456,
+      "score": 0.20074626531348508,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The distant audio from a television and a young woman laughing",
+      "clip_similarity": 0.26184001564979553,
+      "visual": 0.08597499187427107,
+      "scene_support": 0.298069052196114,
+      "object_support": 0.35107497205912214,
+      "score": 0.2291332040262793,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female burping and then laughing",
+      "clip_similarity": 0.2618188261985779,
+      "visual": 0.08257652524711775,
+      "scene_support": 0.58566131541906,
+      "object_support": 0.7124694615285223,
+      "score": 0.42246984318312175,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman sneezing and breathing",
+      "clip_similarity": 0.2617451548576355,
+      "visual": 0.07076075942106572,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.028304303768426287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks in a shaky, raspy voice",
+      "clip_similarity": 0.26159337162971497,
+      "visual": 0.04641703152782823,
+      "scene_support": 0.9623271550114901,
+      "object_support": 0.9898573273575283,
+      "score": 0.6042221573218368,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female talking followed by a child communicating, and muffled background noise",
+      "clip_similarity": 0.2615061104297638,
+      "visual": 0.03242165841347533,
+      "scene_support": 0.16776080085521022,
+      "object_support": 0.0888814657751785,
+      "score": 0.08996134335450674,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female speaking with muffled voices in the background",
+      "clip_similarity": 0.2613162398338318,
+      "visual": 0.0019692943043420072,
+      "scene_support": 0.899333664163028,
+      "object_support": 0.9225116244174394,
+      "score": 0.547341304295877,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman laughing then a clinking",
+      "clip_similarity": 0.26130396127700806,
+      "visual": 0.0,
+      "scene_support": 0.5233750889877771,
+      "object_support": 0.5319752607864888,
+      "score": 0.3166051049322798,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "dorm room",
+      0.05984973534941673
+    ],
+    [
+      "closet",
+      0.05343286693096161
+    ],
+    [
+      "dressing room",
+      0.033541999757289886
+    ],
+    [
+      "manufactured home",
+      0.032195620238780975
+    ],
+    [
+      "living room",
+      0.03218383714556694
+    ]
+  ],
+  "top_objects": [
+    [
+      "titi",
+      0.08039402961730957
+    ],
+    [
+      "yawl",
+      0.06388553231954575
+    ],
+    [
+      "pajamas",
+      0.04458041489124298
+    ],
+    [
+      "sarong",
+      0.02835465967655182
+    ],
+    [
+      "bra",
+      0.024440724402666092
+    ]
+  ]
+}

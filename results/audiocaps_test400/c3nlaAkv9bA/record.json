@@ -1,0 +1,283 @@
+{
+  "id": "c3nlaAkv9bA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\c3nlaAkv9bA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\c3nlaAkv9bA.wav",
+  "gt_captions": [
+    "Male speech and a goat bleating",
+    "A man speaking softly followed by a goat speaking then a cow mooing in the distance as birds chirp in the background",
+    "A male voice talking and the bleat of a goat",
+    "A man talking followed by goats baaing then a cow mooing",
+    "A man talking softly followed by a goat baaing and a cow mooing in the background"
+  ],
+  "top_scene": [
+    "farm",
+    0.23932144045829773
+  ],
+  "top_object": [
+    "Kuvasz",
+    0.4467330873012543
+  ],
+  "env_probs": {
+    "indoor": 0.24400296807289124,
+    "outdoor": 0.7559970319271088
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Baby goats bleat and walk around in leaves and knock against wood",
+    "casv": "A goat shouts over the cries of other farm animals"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.0971706360578537,
+    "clap_gt_audio_baseline": 0.1889665573835373,
+    "clap_text_casv": -0.02680615708231926,
+    "clap_gt_audio_casv": 0.21845605969429016
+  },
+  "verdicts": [
+    {
+      "caption": "Baby goats bleat and walk around in leaves and knock against wood",
+      "clip_similarity": 0.360639750957489,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.14006545321645522,
+      "score": 0.4420196359649366,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat shouts over the cries of other farm animals",
+      "clip_similarity": 0.3455522060394287,
+      "visual": 0.5855761162751671,
+      "scene_support": 0.6872572484700245,
+      "object_support": 0.7409874464939337,
+      "score": 0.6627038549992543,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A new baby goat bleeding with male speaking",
+      "clip_similarity": 0.3399437963962555,
+      "visual": 0.4315246176074526,
+      "scene_support": 0.16584109262885682,
+      "object_support": 0.5285928665961559,
+      "score": 0.3809400348104849,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.33624160289764404,
+      "visual": 0.3298329629129369,
+      "scene_support": 0.7381712322086419,
+      "object_support": 0.7769878230437407,
+      "score": 0.5864809017408895,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby goat bleating",
+      "clip_similarity": 0.33568641543388367,
+      "visual": 0.31458310309966153,
+      "scene_support": 0.6518373461583672,
+      "object_support": 0.9030722034254958,
+      "score": 0.5923061061150234,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat is tapping an object and making noises",
+      "clip_similarity": 0.3331241011619568,
+      "visual": 0.24420159055653107,
+      "scene_support": 0.41574568017947044,
+      "object_support": 0.7142396739521671,
+      "score": 0.4366762424621037,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat gallops and then bleats multiple times loudly nearby",
+      "clip_similarity": 0.33166074752807617,
+      "visual": 0.20400627054195983,
+      "scene_support": 0.8375347323824601,
+      "object_support": 0.8128060159369168,
+      "score": 0.5767047327125969,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A small goat screaming and bleating",
+      "clip_similarity": 0.3291338384151459,
+      "visual": 0.13459726502863084,
+      "scene_support": 0.7832899413019611,
+      "object_support": 0.7995337427389568,
+      "score": 0.5286860112237277,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat bleats while some object is tapped",
+      "clip_similarity": 0.328408420085907,
+      "visual": 0.11467151282964345,
+      "scene_support": 0.6138294280505098,
+      "object_support": 0.9132252044720827,
+      "score": 0.5039849948886351,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats running around a barn",
+      "clip_similarity": 0.3279367685317993,
+      "visual": 0.10171621295284405,
+      "scene_support": 0.06931120464782427,
+      "object_support": 0.0,
+      "score": 0.06147984657548491,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A goat bleating very loudly",
+      "clip_similarity": 0.3279355466365814,
+      "visual": 0.10168264999979534,
+      "scene_support": 0.6857681640043717,
+      "object_support": 0.8782642161395893,
+      "score": 0.5098827740431064,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult and baby goat bleating and a woman speaks briefly",
+      "clip_similarity": 0.32681015133857727,
+      "visual": 0.07077035163332883,
+      "scene_support": 0.5501559362049604,
+      "object_support": 0.6697990442279899,
+      "score": 0.3942946347832166,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby moving around outside while a laugh is chuckled followed by a laugh and a goat noise",
+      "clip_similarity": 0.3262614607810974,
+      "visual": 0.05569894849723924,
+      "scene_support": 0.76360621543956,
+      "object_support": 0.5133902218875113,
+      "score": 0.405378510597017,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A farm animal squeaks shortly followed by goats bleating",
+      "clip_similarity": 0.32623904943466187,
+      "visual": 0.05508335482180937,
+      "scene_support": 1.0,
+      "object_support": 0.7982340921550277,
+      "score": 0.5615035695752321,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby talks in the distance as goats bleat",
+      "clip_similarity": 0.32578662037849426,
+      "visual": 0.04265605749906883,
+      "scene_support": 0.8466653161365836,
+      "object_support": 0.7906194798075166,
+      "score": 0.5082478617828575,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats baaing followed by a person whistling",
+      "clip_similarity": 0.3249235451221466,
+      "visual": 0.018949152126131213,
+      "scene_support": 0.8099313980737439,
+      "object_support": 0.8723905928998211,
+      "score": 0.512276258142522,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat briefly bleats",
+      "clip_similarity": 0.3247658610343933,
+      "visual": 0.014617893965626624,
+      "scene_support": 0.9262925698336597,
+      "object_support": 1.0,
+      "score": 0.5837349285363486,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meowing as children laugh and a man talks in the background followed by a goat screaming",
+      "clip_similarity": 0.3247491419315338,
+      "visual": 0.014158654534887053,
+      "scene_support": 0.5537123320903454,
+      "object_support": 0.4464081024658475,
+      "score": 0.30569959218081266,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goat bleating followed by a high-powered gunshot and high-pitched shrieking",
+      "clip_similarity": 0.32456672191619873,
+      "visual": 0.00914795122729896,
+      "scene_support": 0.7565039277916582,
+      "object_support": 0.8083018157453195,
+      "score": 0.47310090355201284,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "There is a goat that is being very loud",
+      "clip_similarity": 0.32423368096351624,
+      "visual": 0.0,
+      "scene_support": 0.5139182128985627,
+      "object_support": 0.8233975867587368,
+      "score": 0.4011947398971898,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "farm",
+      0.23932144045829773
+    ],
+    [
+      "corral",
+      0.15535977482795715
+    ],
+    [
+      "nursery",
+      0.10009127855300903
+    ],
+    [
+      "stable",
+      0.07484674453735352
+    ],
+    [
+      "yard",
+      0.04447151720523834
+    ]
+  ],
+  "top_objects": [
+    [
+      "Kuvasz",
+      0.4467330873012543
+    ],
+    [
+      "ram",
+      0.03839467838406563
+    ],
+    [
+      "Whippet",
+      0.026828356087207794
+    ],
+    [
+      "husky",
+      0.026701292023062706
+    ],
+    [
+      "English Setter",
+      0.022685309872031212
+    ]
+  ]
+}

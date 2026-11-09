@@ -12,7 +12,8 @@ data/
       val.csv                       used only for tuning
       test.csv                      used only for evaluation
     pairs/                        image + ground-truth audio pairs              git-ignored
-      val/  test/  categories/      frames/<ytid>.jpg, audio/<ytid>.wav (16 kHz mono),
+      val/  test/  test400/  categories/
+                                    frames/<ytid>.jpg, audio/<ytid>.wav (16 kHz mono),
                                     manifest.json, failed.json (unavailable videos)
   places365/                                                                    git-ignored
     filelists/                      official split lists (places365_val.txt, ...)
@@ -33,6 +34,7 @@ data/
 ```
 # AudioCaps pairs (needs Node.js for yt-dlp); deterministic sample with --seed 0
 py -m scripts.download_data --split test --n 100
+py -m scripts.download_data --split test --n 400 --out data/audiocaps/pairs/test400
 py -m scripts.download_data --split val --n 100
 
 # Places365 val

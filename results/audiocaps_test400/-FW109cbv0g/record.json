@@ -1,0 +1,283 @@
+{
+  "id": "-FW109cbv0g",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-FW109cbv0g.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-FW109cbv0g.wav",
+  "gt_captions": [
+    "Speech followed by quietness and a man speaks and laughs",
+    "A man laughs and talks with another man sneezing",
+    "Speech and then a sneeze and laughter",
+    "A man speaks followed by a sneeze and a laugh",
+    "Muffled speech followed by laughter"
+  ],
+  "top_scene": [
+    "wild field",
+    0.08670086413621902
+  ],
+  "top_object": [
+    "broom",
+    0.21516385674476624
+  ],
+  "env_probs": {
+    "indoor": 0.11056477576494217,
+    "outdoor": 0.8894352242350578
+  },
+  "status": "REPAIR",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "A guy is wading through a stream, ends with a cackle",
+    "casv": "A stick falls and then a snake squirms"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0979476273059845,
+    "clap_gt_audio_baseline": 0.2873896360397339,
+    "clap_text_casv": -0.01649799942970276,
+    "clap_gt_audio_casv": 0.15262946486473083
+  },
+  "verdicts": [
+    {
+      "caption": "A guy is wading through a stream, ends with a cackle",
+      "clip_similarity": 0.3058933615684509,
+      "visual": 1.0,
+      "scene_support": 0.42056962000549414,
+      "object_support": 0.03584559712049393,
+      "score": 0.5369245651377965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A stick falls and then a snake squirms",
+      "clip_similarity": 0.29933273792266846,
+      "visual": 0.7753446298163471,
+      "scene_support": 0.32281493180478804,
+      "object_support": 0.5581363125179244,
+      "score": 0.5744232252233525,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person saws a log multiple time as a man talks nearby",
+      "clip_similarity": 0.2897191047668457,
+      "visual": 0.4461450853767558,
+      "scene_support": 0.0510131647634201,
+      "object_support": 0.5836980514354029,
+      "score": 0.3688713990103492,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood sticks rolling while a man talks",
+      "clip_similarity": 0.2862500548362732,
+      "visual": 0.32735444314271367,
+      "scene_support": 0.2627654220887215,
+      "object_support": 0.7934560195404262,
+      "score": 0.4478082097458298,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks, then loudly scrapes a wooden object",
+      "clip_similarity": 0.28298383951187134,
+      "visual": 0.21550946430831153,
+      "scene_support": 0.0,
+      "object_support": 0.3666755818787037,
+      "score": 0.19620646028693572,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks and walks into a creek",
+      "clip_similarity": 0.2818291187286377,
+      "visual": 0.1759683720246721,
+      "scene_support": 0.7313107865595913,
+      "object_support": 0.23973563711005347,
+      "score": 0.36170127591076223,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person hammers wood and then saws it nearby",
+      "clip_similarity": 0.2805655002593994,
+      "visual": 0.1326982973633829,
+      "scene_support": 0.26928714930943887,
+      "object_support": 0.9035835930023104,
+      "score": 0.40494054163887794,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees fly in the distance, followed by a person walking through grass",
+      "clip_similarity": 0.2797846794128418,
+      "visual": 0.10596065688871835,
+      "scene_support": 0.5305412963155723,
+      "object_support": 0.0,
+      "score": 0.20154665165015903,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Thrusting and rubbing back and forth against a wood",
+      "clip_similarity": 0.2797220051288605,
+      "visual": 0.10381450200634355,
+      "scene_support": 0.7906316597650989,
+      "object_support": 0.3574286809890085,
+      "score": 0.38594390302876963,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talking as insects buzz followed by footsteps walking on grass",
+      "clip_similarity": 0.279257595539093,
+      "visual": 0.08791172904769097,
+      "scene_support": 0.5565882906312685,
+      "object_support": 0.06362239028650055,
+      "score": 0.2212278958944071,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fan runs while something rattles",
+      "clip_similarity": 0.2789662480354309,
+      "visual": 0.07793511938050315,
+      "scene_support": 0.3280155651159205,
+      "object_support": 0.4402724832517538,
+      "score": 0.26166046226250356,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person hammers on wood several times nearby",
+      "clip_similarity": 0.27864643931388855,
+      "visual": 0.06698391251280754,
+      "scene_support": 0.22915344333579343,
+      "object_support": 0.717767158292275,
+      "score": 0.31086974549354357,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Chopping wood with an are",
+      "clip_similarity": 0.27812203764915466,
+      "visual": 0.04902683152837251,
+      "scene_support": 0.5305608622798731,
+      "object_support": 1.0,
+      "score": 0.47877899129531093,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person laughing, rustling leaves and breathing noises",
+      "clip_similarity": 0.2780800759792328,
+      "visual": 0.04758993848301649,
+      "scene_support": 0.5502332654263933,
+      "object_support": 0.2230238036161389,
+      "score": 0.2510130961059662,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A stream goes by quickly and the whooshing sound is close by",
+      "clip_similarity": 0.2778477072715759,
+      "visual": 0.039632939140231783,
+      "scene_support": 1.0,
+      "object_support": 0.5429725035526582,
+      "score": 0.4787449267218902,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person takes the cap off something, sets it down, and drills into the wood and speaks",
+      "clip_similarity": 0.2776133120059967,
+      "visual": 0.03160654439468839,
+      "scene_support": 0.5691089425065878,
+      "object_support": 0.8407113694732399,
+      "score": 0.43558871135182364,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks and something walks through brush",
+      "clip_similarity": 0.2774336040019989,
+      "visual": 0.02545280500300033,
+      "scene_support": 0.9643030720911868,
+      "object_support": 0.7795502221821217,
+      "score": 0.5333371102831926,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person saws wood several times nearby",
+      "clip_similarity": 0.2768561542034149,
+      "visual": 0.005679197299294208,
+      "scene_support": 0.689315183423089,
+      "object_support": 0.8940705246978227,
+      "score": 0.47728739135599113,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sweeping and dog barking",
+      "clip_similarity": 0.27670276165008545,
+      "visual": 0.0004265776228400681,
+      "scene_support": 0.17364010678320677,
+      "object_support": 0.909646152011884,
+      "score": 0.32515650868766327,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man makes a buzzing noise, followed by hammering and childish noises",
+      "clip_similarity": 0.2766903042793274,
+      "visual": 0.0,
+      "scene_support": 0.3566280486707275,
+      "object_support": 0.4518871785287322,
+      "score": 0.24255456815983792,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "wild field",
+      0.08670086413621902
+    ],
+    [
+      "marsh",
+      0.07024464756250381
+    ],
+    [
+      "archaelogical excavation",
+      0.06711400300264359
+    ],
+    [
+      "forest path",
+      0.047450557351112366
+    ],
+    [
+      "golf course",
+      0.041834574192762375
+    ]
+  ],
+  "top_objects": [
+    [
+      "broom",
+      0.21516385674476624
+    ],
+    [
+      "mop",
+      0.10566377639770508
+    ],
+    [
+      "shovel",
+      0.06261326372623444
+    ],
+    [
+      "hatchet",
+      0.058472953736782074
+    ],
+    [
+      "pan flute",
+      0.05689673125743866
+    ]
+  ]
+}

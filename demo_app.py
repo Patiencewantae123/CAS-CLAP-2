@@ -215,7 +215,9 @@ with st.expander(f"All {len(result['verdicts'])} candidates and verification sco
     )
 
 st.subheader("Audio")
-st.caption("Generated on demand: about 1-2 minutes per clip on CPU, seconds on a GPU.")
+st.caption(
+    "Generated on demand: about 20 s per clip at the default settings on a recent CPU (more on older ones), seconds on a GPU."
+)
 if st.button("Generate baseline and CAS-V audio", type="primary"):
     st.session_state["last_run"] = str(generate_run(result, image_bytes, example, config, settings))
 

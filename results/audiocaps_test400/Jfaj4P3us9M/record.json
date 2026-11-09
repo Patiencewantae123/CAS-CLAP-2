@@ -1,0 +1,298 @@
+{
+  "id": "Jfaj4P3us9M",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Jfaj4P3us9M.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Jfaj4P3us9M.wav",
+  "gt_captions": [
+    "A telephone dialing tone followed by a plastic switch flipping on and off",
+    "A telephone dialing tone followed by a plastic switch flipping",
+    "A phone dial tone playing followed by a plastic switch flipping",
+    "A telephone dialing tone beeping as a plastic switch flip on and off",
+    "Dialing and clicking"
+  ],
+  "top_scene": [
+    "conference center",
+    0.1177845448255539
+  ],
+  "top_object": [
+    "academic gown",
+    0.1354655623435974
+  ],
+  "env_probs": {
+    "indoor": 0.7308659553527832,
+    "outdoor": 0.2691340446472168
+  },
+  "status": "ACCEPT",
+  "n_rejected": 15,
+  "prompts": {
+    "baseline": "A rapid series of plastic clicking and clanking followed by wind blowing into a microphone",
+    "casv": "A machine is in use with vibration sounds"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.025295143947005272,
+    "clap_gt_audio_baseline": 0.22590497136116028,
+    "clap_text_casv": -0.09571966528892517,
+    "clap_gt_audio_casv": 0.1116655245423317
+  },
+  "verdicts": [
+    {
+      "caption": "A rapid series of plastic clicking and clanking followed by wind blowing into a microphone",
+      "clip_similarity": 0.2552046775817871,
+      "visual": 1.0,
+      "scene_support": 0.2787762470926923,
+      "object_support": 0.43362387553615933,
+      "score": 0.6137200367886555,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fast and deliberate key strokes are typed on a keyboard followed by a series of high pitched computer dings",
+      "clip_similarity": 0.2488260269165039,
+      "visual": 0.48692944416877015,
+      "scene_support": 0.46996248887828673,
+      "object_support": 0.3900806511996064,
+      "score": 0.452784719690876,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A jet powered engine starts",
+      "clip_similarity": 0.2485327571630478,
+      "visual": 0.4633401173173778,
+      "scene_support": 0.4909866684015636,
+      "object_support": 0.4575999582838623,
+      "score": 0.4699120349325789,
+      "conflicts": [
+        "names 'an airplane', not visible in image (z=-0.52)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Plastic rattling and metal clanking between compressed air spraying while a crowd of people talk in the background and an electronic device beeps once",
+      "clip_similarity": 0.248085618019104,
+      "visual": 0.4273742146279956,
+      "scene_support": 0.39794740009433505,
+      "object_support": 0.0671482741285071,
+      "score": 0.3104783881180509,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle is revving with low speech in the background followed by loud revving",
+      "clip_similarity": 0.2479104995727539,
+      "visual": 0.41328845835760464,
+      "scene_support": 0.46683786725749543,
+      "object_support": 0.45741611312560837,
+      "score": 0.44259157745797295,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.93)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person whistling alongside several plastic squeaks",
+      "clip_similarity": 0.24750295281410217,
+      "visual": 0.3805071927011044,
+      "scene_support": 0.3043768196086723,
+      "object_support": 0.23806276674261143,
+      "score": 0.3149347529858269,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low-level speech and clanking occur along with static",
+      "clip_similarity": 0.2473953813314438,
+      "visual": 0.3718546165850431,
+      "scene_support": 0.573952691529908,
+      "object_support": 0.5122714971814866,
+      "score": 0.47460910324743555,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Typing on a computer keyboard followed by a man speaking then plastic cranking",
+      "clip_similarity": 0.2473355084657669,
+      "visual": 0.3670387070637335,
+      "scene_support": 0.35092265793435223,
+      "object_support": 0.0,
+      "score": 0.25209228020579905,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A conversation or speech in a vehicle while signaling to turn",
+      "clip_similarity": 0.24713106453418732,
+      "visual": 0.3505941379665787,
+      "scene_support": 0.5370578196562615,
+      "object_support": 0.34903571543176204,
+      "score": 0.4060657157130385,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.93)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine is in use with vibration sounds",
+      "clip_similarity": 0.245878666639328,
+      "visual": 0.2498567692414643,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6999427076965856,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A muffled vehicle engine revving and accelerating as plastic constantly rattles",
+      "clip_similarity": 0.24566319584846497,
+      "visual": 0.23252524816676615,
+      "scene_support": 0.5874336838668442,
+      "object_support": 0.711438645188204,
+      "score": 0.4826717979832209,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.93)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor vehicle revs engine with low speech in the background",
+      "clip_similarity": 0.24529443681240082,
+      "visual": 0.20286389602046223,
+      "scene_support": 0.7040699597178623,
+      "object_support": 0.7210059472237376,
+      "score": 0.5086683304906648,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.93)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An electronic motor rumbling with rapid tapping on a plastic surface",
+      "clip_similarity": 0.24514256417751312,
+      "visual": 0.19064793040543293,
+      "scene_support": 0.6592397416690311,
+      "object_support": 0.6466803581169978,
+      "score": 0.46803520209798183,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plastic crumpling followed by a series of electronic telephone rings",
+      "clip_similarity": 0.2447836995124817,
+      "visual": 0.16178243787141114,
+      "scene_support": 0.0,
+      "object_support": 0.15248986511782134,
+      "score": 0.11045993468391085,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A constant loud rustling in a microphone accompanies indistinct background speech of several persons",
+      "clip_similarity": 0.24449032545089722,
+      "visual": 0.13818472093374468,
+      "scene_support": 0.7217592818490628,
+      "object_support": 0.6476711163880242,
+      "score": 0.466103007844624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Aircraft engine acceleration, accompanied by wind",
+      "clip_similarity": 0.24430996179580688,
+      "visual": 0.12367706318214398,
+      "scene_support": 0.353821381520095,
+      "object_support": 0.4231928355207564,
+      "score": 0.28257509038511297,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.73)",
+        "names 'an airplane', not visible in image (z=-0.52)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.24373148381710052,
+      "visual": 0.07714684328996857,
+      "scene_support": 0.30566714918486954,
+      "object_support": 0.13238723272256628,
+      "score": 0.16227505188821817,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Microphone static with a machine working",
+      "clip_similarity": 0.24372915923595428,
+      "visual": 0.0769598642244324,
+      "scene_support": 0.5582000685525237,
+      "object_support": 0.5355964338050466,
+      "score": 0.35892289639704406,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sequence of quick typing keystroke clanking is followed by paper rustling and people talking loudly in the background",
+      "clip_similarity": 0.2433496117591858,
+      "visual": 0.04643073744064014,
+      "scene_support": 0.6270857165576031,
+      "object_support": 0.42654349709591505,
+      "score": 0.33466105907231153,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Acceleration reviving of a speed engine",
+      "clip_similarity": 0.24277237057685852,
+      "visual": 0.0,
+      "scene_support": 0.6328024428312313,
+      "object_support": 0.6301723999614928,
+      "score": 0.37889245283781725,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "conference center",
+      0.1177845448255539
+    ],
+    [
+      "physics laboratory",
+      0.06278416514396667
+    ],
+    [
+      "conference room",
+      0.06263070553541183
+    ],
+    [
+      "lecture room",
+      0.051290757954120636
+    ],
+    [
+      "indoor booth",
+      0.051115065813064575
+    ]
+  ],
+  "top_objects": [
+    [
+      "academic gown",
+      0.1354655623435974
+    ],
+    [
+      "square academic cap",
+      0.10910031199455261
+    ],
+    [
+      "website",
+      0.0497562550008297
+    ],
+    [
+      "dust jacket",
+      0.04176612198352814
+    ],
+    [
+      "solar thermal collector",
+      0.032331470400094986
+    ]
+  ]
+}

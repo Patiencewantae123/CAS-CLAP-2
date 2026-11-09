@@ -1,0 +1,289 @@
+{
+  "id": "_z-bidQYVao",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\_z-bidQYVao.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\_z-bidQYVao.wav",
+  "gt_captions": [
+    "A man making a horn sound and then speaking",
+    "A faint siren followed by a man speaking and wooing",
+    "Male rapping and screaming",
+    "Wooing with some humming",
+    "A man vocalizing a high-pitch sound and then speaking"
+  ],
+  "top_scene": [
+    "candy store",
+    0.2704026699066162
+  ],
+  "top_object": [
+    "barbershop",
+    0.46992212533950806
+  ],
+  "env_probs": {
+    "indoor": 0.893309473991394,
+    "outdoor": 0.10669052600860596
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A man giving out a loud burp",
+    "casv": "A man giving out a loud burp"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.10045230388641357,
+    "clap_gt_audio_baseline": 0.1837923228740692,
+    "clap_text_casv": -0.10045230388641357,
+    "clap_gt_audio_casv": 0.1837923228740692
+  },
+  "verdicts": [
+    {
+      "caption": "A man giving out a loud burp",
+      "clip_similarity": 0.29410701990127563,
+      "visual": 1.0,
+      "scene_support": 0.5884306529628311,
+      "object_support": 0.8296747705589167,
+      "score": 0.8254316270565243,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person snickers over a low rumble",
+      "clip_similarity": 0.2882317900657654,
+      "visual": 0.6946813156859526,
+      "scene_support": 0.4963517315672752,
+      "object_support": 0.521896468920763,
+      "score": 0.5833469864207925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man delivers a speech over crowd noise",
+      "clip_similarity": 0.28703761100769043,
+      "visual": 0.6326232874802923,
+      "scene_support": 0.4223195621792767,
+      "object_support": 0.6333225470156553,
+      "score": 0.5697419477505965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person snoring as a fan blows air in the background",
+      "clip_similarity": 0.28697526454925537,
+      "visual": 0.6293833225437752,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.2517533290175101,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man yells happily over popping noise, vehicles, and a reacting crowd",
+      "clip_similarity": 0.2857465147972107,
+      "visual": 0.5655287554631818,
+      "scene_support": 0.37681160108970485,
+      "object_support": 0.38662140317791277,
+      "score": 0.4552414034655581,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man talks while several people shouts and a sudden pop",
+      "clip_similarity": 0.2845623791217804,
+      "visual": 0.5039926527754977,
+      "scene_support": 0.7009764671836413,
+      "object_support": 0.8730401602427068,
+      "score": 0.6738020493381034,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks with some rustling then vibrations",
+      "clip_similarity": 0.28258591890335083,
+      "visual": 0.40128173756284014,
+      "scene_support": 0.6685628317120655,
+      "object_support": 0.6919815685746247,
+      "score": 0.5686760151111432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Men argue and someone blows a whistle",
+      "clip_similarity": 0.28251954913139343,
+      "visual": 0.39783269267105065,
+      "scene_support": 0.5180512663091023,
+      "object_support": 0.6601475333985393,
+      "score": 0.5125927169807127,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man announces as car tires squeal",
+      "clip_similarity": 0.27946504950523376,
+      "visual": 0.23909919062826204,
+      "scene_support": 0.4340040001463584,
+      "object_support": 0.13213727224275365,
+      "score": 0.2654820579680384,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks and people cheer in the background then something bumps",
+      "clip_similarity": 0.2792145609855652,
+      "visual": 0.22608202748704478,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6904328109948179,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talks and then something is rubbed",
+      "clip_similarity": 0.27908650040626526,
+      "visual": 0.21942708994774549,
+      "scene_support": 0.5297029161912791,
+      "object_support": 0.6336739564603698,
+      "score": 0.4367838977745929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with some high pitched ringing and then rustling",
+      "clip_similarity": 0.2788487374782562,
+      "visual": 0.20707123896135274,
+      "scene_support": 0.7447133964987077,
+      "object_support": 0.6584585717548802,
+      "score": 0.5037800860606174,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People huff, clap and laugh while a man burps",
+      "clip_similarity": 0.2786995768547058,
+      "visual": 0.19931979321218055,
+      "scene_support": 0.6629898076574909,
+      "object_support": 0.6873188045050691,
+      "score": 0.48482050093364015,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man slams his car door while talking",
+      "clip_similarity": 0.2785179615020752,
+      "visual": 0.1898817691571445,
+      "scene_support": 0.3021878206045077,
+      "object_support": 0.5499118547976174,
+      "score": 0.33158261028349534,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks frantically over the radio",
+      "clip_similarity": 0.2783149480819702,
+      "visual": 0.1793317494881413,
+      "scene_support": 0.6755633254340976,
+      "object_support": 0.7200679684434319,
+      "score": 0.4904220879585154,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man delivers a speech, a very loud crowd reacts",
+      "clip_similarity": 0.27750325202941895,
+      "visual": 0.1371502556970416,
+      "scene_support": 0.6402006630796185,
+      "object_support": 0.6649288981556861,
+      "score": 0.44639897064940803,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Something is rubbed followed by a man talking",
+      "clip_similarity": 0.276720255613327,
+      "visual": 0.09646019892021819,
+      "scene_support": 0.6077456861096843,
+      "object_support": 0.6138947294440117,
+      "score": 0.40507620423419605,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaks on gurgling speech",
+      "clip_similarity": 0.2764872908592224,
+      "visual": 0.08435369513974285,
+      "scene_support": 0.5994151365956369,
+      "object_support": 0.6014702092643244,
+      "score": 0.39400708181388555,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fan runs while something rattles",
+      "clip_similarity": 0.275169312953949,
+      "visual": 0.015862199273331,
+      "scene_support": 0.3865221013075793,
+      "object_support": 0.23035255152540984,
+      "score": 0.19140727555922915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man yelling then multiple men speak",
+      "clip_similarity": 0.2748640775680542,
+      "visual": 0.0,
+      "scene_support": 0.6040235256885141,
+      "object_support": 0.7008656385988135,
+      "score": 0.3914667492861983,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "candy store",
+      0.2704026699066162
+    ],
+    [
+      "ticket booth",
+      0.09156345576047897
+    ],
+    [
+      "bar",
+      0.04597289860248566
+    ],
+    [
+      "lobby",
+      0.039055485278367996
+    ],
+    [
+      "drugstore",
+      0.03600836545228958
+    ]
+  ],
+  "top_objects": [
+    [
+      "barbershop",
+      0.46992212533950806
+    ],
+    [
+      "ruler",
+      0.04156540706753731
+    ],
+    [
+      "toy store",
+      0.028111528605222702
+    ],
+    [
+      "refrigerator",
+      0.02453465573489666
+    ],
+    [
+      "bobsleigh",
+      0.021201854571700096
+    ]
+  ]
+}

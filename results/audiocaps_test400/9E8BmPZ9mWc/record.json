@@ -1,0 +1,285 @@
+{
+  "id": "9E8BmPZ9mWc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\9E8BmPZ9mWc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\9E8BmPZ9mWc.wav",
+  "gt_captions": [
+    "Humming of loud engines with men speaking",
+    "A truck revs up and moves, then men talk",
+    "A truck engine running as a group of men are talking",
+    "An engine chugging followed by distant speech",
+    "A truck engine is running with people talking in the background"
+  ],
+  "top_scene": [
+    "runway",
+    0.2687847316265106
+  ],
+  "top_object": [
+    "military aircraft",
+    0.23055492341518402
+  ],
+  "env_probs": {
+    "indoor": 0.12762051820755005,
+    "outdoor": 0.87237948179245
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Airplane take off at a high speed",
+    "casv": "Airplane take off at a high speed"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08145201206207275,
+    "clap_gt_audio_baseline": 0.2505308985710144,
+    "clap_text_casv": 0.08145201206207275,
+    "clap_gt_audio_casv": 0.2505308985710144
+  },
+  "verdicts": [
+    {
+      "caption": "Airplane take off at a high speed",
+      "clip_similarity": 0.3390018939971924,
+      "visual": 1.0,
+      "scene_support": 0.6098356858215239,
+      "object_support": 0.6392220535755839,
+      "score": 0.7747173218191323,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine of airplane taking off",
+      "clip_similarity": 0.3362845182418823,
+      "visual": 0.8498360515346598,
+      "scene_support": 0.513707665386337,
+      "object_support": 0.6516018177805601,
+      "score": 0.6895272655639331,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blowing with aircraft motor running",
+      "clip_similarity": 0.3339247405529022,
+      "visual": 0.7194332043814012,
+      "scene_support": 0.38584249755046973,
+      "object_support": 0.33699801977819716,
+      "score": 0.5046254369511606,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Helicopter blades spin followed by an explosion",
+      "clip_similarity": 0.3295741081237793,
+      "visual": 0.47901443174687874,
+      "scene_support": 0.22066558355167804,
+      "object_support": 0.18713546428619685,
+      "score": 0.31394608705011395,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane in the process of taking off",
+      "clip_similarity": 0.32955193519592285,
+      "visual": 0.4777891413579972,
+      "scene_support": 0.8766613763073292,
+      "object_support": 0.9816870769133762,
+      "score": 0.7486201925094105,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sound of an aircraft take off",
+      "clip_similarity": 0.3287534713745117,
+      "visual": 0.4336655121927922,
+      "scene_support": 1.0,
+      "object_support": 0.9201440652647477,
+      "score": 0.7495094244565412,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter speeding up it's engine",
+      "clip_similarity": 0.32773712277412415,
+      "visual": 0.37750142868200587,
+      "scene_support": 0.0,
+      "object_support": 0.08270991627219867,
+      "score": 0.17581354635446195,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large airplane comes in for a landing",
+      "clip_similarity": 0.3269953429698944,
+      "visual": 0.33651019510773167,
+      "scene_support": 0.8890239130502835,
+      "object_support": 0.8134245226224202,
+      "score": 0.6453386087449038,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A helicopter takes off",
+      "clip_similarity": 0.32654303312301636,
+      "visual": 0.31151525931195995,
+      "scene_support": 0.5433637294215978,
+      "object_support": 0.457263840909671,
+      "score": 0.4247943748241646,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Airplane engine running then idling",
+      "clip_similarity": 0.3253573477268219,
+      "visual": 0.24599351452479648,
+      "scene_support": 0.48023315145766615,
+      "object_support": 0.644965297326025,
+      "score": 0.435956940445026,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Plane engine running while flying",
+      "clip_similarity": 0.3252796232700348,
+      "visual": 0.24169841058097538,
+      "scene_support": 0.3427000867118069,
+      "object_support": 0.5388672951131008,
+      "score": 0.3611495787798624,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle running with an airplane flying in the background",
+      "clip_similarity": 0.3246614933013916,
+      "visual": 0.20754014719953623,
+      "scene_support": 0.3697623094766301,
+      "object_support": 0.43203665587228096,
+      "score": 0.32355574848448776,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.00)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter running continuously",
+      "clip_similarity": 0.3242771029472351,
+      "visual": 0.186298486667556,
+      "scene_support": 0.193891356679783,
+      "object_support": 0.18321930918934012,
+      "score": 0.18765259442775933,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane takes off",
+      "clip_similarity": 0.32404524087905884,
+      "visual": 0.17348563824618785,
+      "scene_support": 0.9922059546281253,
+      "object_support": 1.0,
+      "score": 0.6670560416869127,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Helicopter running",
+      "clip_similarity": 0.324031800031662,
+      "visual": 0.17274288829271264,
+      "scene_support": 0.3701291912010994,
+      "object_support": 0.21910426115507434,
+      "score": 0.24586719102393717,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine works nearby while wind blows strongly",
+      "clip_similarity": 0.32329535484313965,
+      "visual": 0.13204644904587098,
+      "scene_support": 0.27040810896262,
+      "object_support": 0.35204710495776076,
+      "score": 0.23955514379446263,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The engine of an airplane sounds as it begins to take off",
+      "clip_similarity": 0.32286524772644043,
+      "visual": 0.10827845053466469,
+      "scene_support": 0.8023803486628539,
+      "object_support": 0.9046385832481343,
+      "score": 0.5554170597871624,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing by an airplane",
+      "clip_similarity": 0.3226850628852844,
+      "visual": 0.0983213192293187,
+      "scene_support": 0.09413897053989839,
+      "object_support": 0.0,
+      "score": 0.067570218853697,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Airplane engine running",
+      "clip_similarity": 0.3218582272529602,
+      "visual": 0.05262984537296423,
+      "scene_support": 0.3932834349144934,
+      "object_support": 0.5010434072425974,
+      "score": 0.28934999079631296,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter running",
+      "clip_similarity": 0.3209058344364166,
+      "visual": 0.0,
+      "scene_support": 0.21897892934396415,
+      "object_support": 0.0976606659490427,
+      "score": 0.09499187858790205,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "runway",
+      0.2687847316265106
+    ],
+    [
+      "airfield",
+      0.15931926667690277
+    ],
+    [
+      "sand desert",
+      0.13447792828083038
+    ],
+    [
+      "archaelogical excavation",
+      0.07393180578947067
+    ],
+    [
+      "sandbox",
+      0.063055120408535
+    ]
+  ],
+  "top_objects": [
+    [
+      "military aircraft",
+      0.23055492341518402
+    ],
+    [
+      "airliner",
+      0.15506058931350708
+    ],
+    [
+      "missile",
+      0.09553825110197067
+    ],
+    [
+      "warthog",
+      0.03623533621430397
+    ],
+    [
+      "high-speed train",
+      0.0285858865827322
+    ]
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "id": "BGEMgl1xjac",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BGEMgl1xjac.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BGEMgl1xjac.wav",
+  "gt_captions": [
+    "Insects and birds vocalizing together",
+    "Birds chirping with an animal clicking and calling out as crickets chirp",
+    "Various insects and bugs are chirping with a rodent breathing sound in the background",
+    "Rhythmic clicking and simulated squeaking are ongoing, crickets chirp, a bird of prey repeatedly screeches",
+    "Insects chirping and clicking"
+  ],
+  "top_scene": [
+    "tree house",
+    0.08013510704040527
+  ],
+  "top_object": [
+    "fox squirrel",
+    0.16785159707069397
+  ],
+  "env_probs": {
+    "indoor": 0.4566935896873474,
+    "outdoor": 0.5433064103126526
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Squeaking and dull thwacking are ongoing, and several adult males are speaking",
+    "casv": "A female voice talking followed by rustling leaves and then some squeaking noises"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.002277333289384842,
+    "clap_gt_audio_baseline": 0.21282589435577393,
+    "clap_text_casv": 0.019123680889606476,
+    "clap_gt_audio_casv": 0.13971367478370667
+  },
+  "verdicts": [
+    {
+      "caption": "Squeaking and dull thwacking are ongoing, and several adult males are speaking",
+      "clip_similarity": 0.28113457560539246,
+      "visual": 1.0,
+      "scene_support": 0.21546825703431846,
+      "object_support": 0.6774201806484418,
+      "score": 0.6678665313048281,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Two adult females speak, followed by a wolf whistle",
+      "clip_similarity": 0.27804166078567505,
+      "visual": 0.8221969041520684,
+      "scene_support": 0.43606335715665445,
+      "object_support": 0.6825693321374849,
+      "score": 0.6644685684490691,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling and distant speech with nature sounds",
+      "clip_similarity": 0.2770894467830658,
+      "visual": 0.7674567617807551,
+      "scene_support": 0.8216842524628163,
+      "object_support": 0.36322130493428717,
+      "score": 0.6624543719314331,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rhythmic thumping is present, and an adult male speaks",
+      "clip_similarity": 0.2735753059387207,
+      "visual": 0.5654385499027729,
+      "scene_support": 0.4884183246410405,
+      "object_support": 0.6095039936158643,
+      "score": 0.5555521154381806,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A female voice talking followed by rustling leaves and then some squeaking noises",
+      "clip_similarity": 0.2734832167625427,
+      "visual": 0.5601445985420218,
+      "scene_support": 0.970496506986028,
+      "object_support": 1.0,
+      "score": 0.8152067915126171,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Children and adults speak with a distant humming",
+      "clip_similarity": 0.27259862422943115,
+      "visual": 0.5092918269271953,
+      "scene_support": 0.6938451725581096,
+      "object_support": 0.40703808588922397,
+      "score": 0.5339817083050782,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A rustling sound and a brief tapping and drumming",
+      "clip_similarity": 0.272367924451828,
+      "visual": 0.4960295364794367,
+      "scene_support": 0.9382163093168502,
+      "object_support": 0.3682592283952797,
+      "score": 0.5903544759054137,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Continuous white noise together with intermittent tapping followed by rustling",
+      "clip_similarity": 0.27203550934791565,
+      "visual": 0.47691991399470607,
+      "scene_support": 0.5403255988023952,
+      "object_support": 0.1735598618653823,
+      "score": 0.4049336037982157,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rattling with rustling leaves and high pitched ringing",
+      "clip_similarity": 0.2702210545539856,
+      "visual": 0.372611939659234,
+      "scene_support": 0.931419419226064,
+      "object_support": 0.5736973962048291,
+      "score": 0.6005798204929614,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Rustling and footfalls occur, animals bleat, and an adult male hums very briefly",
+      "clip_similarity": 0.2700299918651581,
+      "visual": 0.36162827552532617,
+      "scene_support": 1.0,
+      "object_support": 0.8739124370590603,
+      "score": 0.7068250413278485,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clinking and thumping are ongoing, babies are vocalizing, and an adult female is speaking",
+      "clip_similarity": 0.2689438462257385,
+      "visual": 0.2991887747672118,
+      "scene_support": 0.0,
+      "object_support": 0.1769399580511437,
+      "score": 0.17275749732222784,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tapping sound is followed by multiple animal vocalizations",
+      "clip_similarity": 0.2676905393600464,
+      "visual": 0.22713963867497022,
+      "scene_support": 0.6893048580258837,
+      "object_support": 0.9997378196481663,
+      "score": 0.5975686587722031,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping with a baby cooing in the background followed by whistling",
+      "clip_similarity": 0.2676136791706085,
+      "visual": 0.22272115952954077,
+      "scene_support": 0.14384537376859186,
+      "object_support": 0.0,
+      "score": 0.13224207594239387,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A distant, soft voice is followed by a loud and persistent drill, in turn followed by a louder male voice and then more loud drilling",
+      "clip_similarity": 0.26751840114593506,
+      "visual": 0.21724389011196107,
+      "scene_support": 0.17157117217178547,
+      "object_support": 0.1037854605546571,
+      "score": 0.16950454586271718,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.43)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal whines, and an adult female and two adult males speak",
+      "clip_similarity": 0.2673948407173157,
+      "visual": 0.21014074372306982,
+      "scene_support": 0.6857776382718435,
+      "object_support": 0.7465775312321241,
+      "score": 0.5137628483404182,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A distant humming with rustling",
+      "clip_similarity": 0.2656281292438507,
+      "visual": 0.10857740048142406,
+      "scene_support": 0.9541189797823707,
+      "object_support": 0.46673664027796413,
+      "score": 0.46968764621067005,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A group of bats squeaking followed by an echoing thud then a kid talking",
+      "clip_similarity": 0.26558974385261536,
+      "visual": 0.10637073078801065,
+      "scene_support": 0.03331240744317816,
+      "object_support": 0.4257446981306629,
+      "score": 0.18026542398735657,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rhythmic clicking and thumping are occurring, and an adult male speaks in the background",
+      "clip_similarity": 0.2655567228794098,
+      "visual": 0.10447244661075751,
+      "scene_support": 0.7576832222651472,
+      "object_support": 0.776562312413048,
+      "score": 0.5020626390477615,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult male speaks, followed by crunching and rustling and an adult male grunting with exertion",
+      "clip_similarity": 0.2650340497493744,
+      "visual": 0.07442541781954308,
+      "scene_support": 0.5276272052668856,
+      "object_support": 0.604448414912324,
+      "score": 0.3693928531815801,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "White noise followed by male speech and rustling",
+      "clip_similarity": 0.2637394070625305,
+      "visual": 0.0,
+      "scene_support": 0.4363621547228124,
+      "object_support": 0.256774316565561,
+      "score": 0.207940941386512,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tree house",
+      0.08013510704040527
+    ],
+    [
+      "broadleaf forest",
+      0.0746840164065361
+    ],
+    [
+      "assembly line",
+      0.06435255706310272
+    ],
+    [
+      "nursery",
+      0.04262881726026535
+    ],
+    [
+      "bedchamber",
+      0.039863698184490204
+    ]
+  ],
+  "top_objects": [
+    [
+      "fox squirrel",
+      0.16785159707069397
+    ],
+    [
+      "three-toed sloth",
+      0.15123574435710907
+    ],
+    [
+      "porcupine",
+      0.0858624279499054
+    ],
+    [
+      "European polecat",
+      0.06792847067117691
+    ],
+    [
+      "fur coat",
+      0.05010279268026352
+    ]
+  ]
+}

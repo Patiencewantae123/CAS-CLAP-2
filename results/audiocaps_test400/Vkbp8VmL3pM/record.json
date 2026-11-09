@@ -1,0 +1,283 @@
+{
+  "id": "Vkbp8VmL3pM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Vkbp8VmL3pM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Vkbp8VmL3pM.wav",
+  "gt_captions": [
+    "A baby cries and shout from time to time",
+    "A baby crying and cooing",
+    "An infant crying as clothes rustle",
+    "An infant crying as cloth shuffles",
+    "An infant crying as fabric shuffles"
+  ],
+  "top_scene": [
+    "sandbox",
+    0.09235064685344696
+  ],
+  "top_object": [
+    "titi",
+    0.17690633237361908
+  ],
+  "env_probs": {
+    "indoor": 0.6125447750091553,
+    "outdoor": 0.3874552249908447
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A baby laughs at someone sneezing",
+    "casv": "A baby with a funny cry"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.13635370135307312,
+    "clap_gt_audio_baseline": 0.4508015811443329,
+    "clap_text_casv": 0.431343674659729,
+    "clap_gt_audio_casv": 0.6315649747848511
+  },
+  "verdicts": [
+    {
+      "caption": "A baby laughs at someone sneezing",
+      "clip_similarity": 0.3354206681251526,
+      "visual": 1.0,
+      "scene_support": 0.4358468564827827,
+      "object_support": 0.4798116493407558,
+      "score": 0.6746975517470615,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby laughs loudly while someone sneezes",
+      "clip_similarity": 0.3330267369747162,
+      "visual": 0.8044644052531006,
+      "scene_support": 0.6718587499509584,
+      "object_support": 0.697088875363236,
+      "score": 0.7324700496954987,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone makes a baby laugh with their hiccup sounds",
+      "clip_similarity": 0.33266377449035645,
+      "visual": 0.7748177359087645,
+      "scene_support": 0.7478355778835003,
+      "object_support": 0.7585612784331964,
+      "score": 0.7618461512585147,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Someone makes fart spit noises at a baby that is laughing back",
+      "clip_similarity": 0.3318285346031189,
+      "visual": 0.706595586713891,
+      "scene_support": 0.7663974149779748,
+      "object_support": 0.7358017712349153,
+      "score": 0.7332979905494234,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby with a funny cry",
+      "clip_similarity": 0.33118635416030884,
+      "visual": 0.6541424763573959,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.8616569905429583,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby laughs very loudly, and then sneezes",
+      "clip_similarity": 0.3303927481174469,
+      "visual": 0.5893209673689463,
+      "scene_support": 0.8686785399822357,
+      "object_support": 0.8600263844071869,
+      "score": 0.7543398642644052,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries then someone whimpers followed by a woman and a man laughing",
+      "clip_similarity": 0.33020853996276855,
+      "visual": 0.5742748992831148,
+      "scene_support": 0.5148903108625337,
+      "object_support": 0.6066803337070092,
+      "score": 0.5661811530841088,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby laughing as a person talks",
+      "clip_similarity": 0.3301656246185303,
+      "visual": 0.5707695865434939,
+      "scene_support": 0.6761898452730024,
+      "object_support": 0.7149718279169099,
+      "score": 0.6456563365743713,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries several times, and then a woman laughs",
+      "clip_similarity": 0.32938122749328613,
+      "visual": 0.5067002592470881,
+      "scene_support": 0.8099842873984678,
+      "object_support": 0.8704303766393833,
+      "score": 0.7068045029101906,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby sneezing followed by a mans laughter and then a women laughter",
+      "clip_similarity": 0.3272492289543152,
+      "visual": 0.33255924343666704,
+      "scene_support": 0.6007179044547766,
+      "object_support": 0.537516701397315,
+      "score": 0.4744940791302943,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "As a baby cries, some adults are trying to amuse the baby and finally the baby laughs",
+      "clip_similarity": 0.32696646451950073,
+      "visual": 0.30946312727449765,
+      "scene_support": 0.9459082597602397,
+      "object_support": 0.9230882706501904,
+      "score": 0.684484210032928,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby laughs followed by a fart noise and more laughs",
+      "clip_similarity": 0.3267116844654083,
+      "visual": 0.28865276712795607,
+      "scene_support": 0.7959574299766594,
+      "object_support": 0.7749848117929179,
+      "score": 0.5867437793820556,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman mimics coughing, followed by a baby laughing loudly",
+      "clip_similarity": 0.3266461491584778,
+      "visual": 0.28329986246515987,
+      "scene_support": 0.27139965641949493,
+      "object_support": 0.19963638390607466,
+      "score": 0.25463075708373484,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby laughing with a person making sneezing noises",
+      "clip_similarity": 0.32544201612472534,
+      "visual": 0.1849466291792943,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.07397865167171773,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Baby crying following by speech and more crying and some laughing",
+      "clip_similarity": 0.3252555727958679,
+      "visual": 0.16971799272160756,
+      "scene_support": 0.8057014296988108,
+      "object_support": 0.7034045794907685,
+      "score": 0.5206189998455168,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man laughing as a baby is whimpering during plastic tapping",
+      "clip_similarity": 0.3247225880622864,
+      "visual": 0.12618395589148135,
+      "scene_support": 0.4849456812213509,
+      "object_support": 0.6088221665055412,
+      "score": 0.3786039366746602,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people are communicating with a baby then suddenly the baby starts crying loudly",
+      "clip_similarity": 0.3246598243713379,
+      "visual": 0.12105743600978566,
+      "scene_support": 0.7150899503023855,
+      "object_support": 0.5573371004966642,
+      "score": 0.43015108964362925,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby cries and then makes sucking noise",
+      "clip_similarity": 0.3245922923088074,
+      "visual": 0.11554143693479875,
+      "scene_support": 0.6323334853354412,
+      "object_support": 0.4840108578085402,
+      "score": 0.3811198777171139,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby is laughing and a man fake sneezes",
+      "clip_similarity": 0.3243749737739563,
+      "visual": 0.09779092270055136,
+      "scene_support": 0.636963653916284,
+      "object_support": 0.6258087473937938,
+      "score": 0.4179480894732438,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby laughs as a woman makes funny sounds",
+      "clip_similarity": 0.3231777250766754,
+      "visual": 0.0,
+      "scene_support": 0.6838101032735336,
+      "object_support": 0.5971226019101951,
+      "score": 0.3842798115551186,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sandbox",
+      0.09235064685344696
+    ],
+    [
+      "nursery",
+      0.07522359490394592
+    ],
+    [
+      "childs room",
+      0.06927372515201569
+    ],
+    [
+      "sauna",
+      0.035842414945364
+    ],
+    [
+      "hospital room",
+      0.029891248792409897
+    ]
+  ],
+  "top_objects": [
+    [
+      "titi",
+      0.17690633237361908
+    ],
+    [
+      "infant bed",
+      0.13919903337955475
+    ],
+    [
+      "diaper",
+      0.07627638429403305
+    ],
+    [
+      "bib",
+      0.0531248115003109
+    ],
+    [
+      "yawl",
+      0.03486423194408417
+    ]
+  ]
+}

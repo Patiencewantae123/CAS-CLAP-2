@@ -1,0 +1,285 @@
+{
+  "id": "Ivg_q4t-3w0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Ivg_q4t-3w0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Ivg_q4t-3w0.wav",
+  "gt_captions": [
+    "A person speaks and then a loud click occurs",
+    "A woman is talking followed by a tapping noise",
+    "White noise followed by brief, muffled speech and rustling",
+    "A female speaking and then a door slamming",
+    "Female speech followed by a thumping noise"
+  ],
+  "top_scene": [
+    "kitchen",
+    0.594640851020813
+  ],
+  "top_object": [
+    "English Setter",
+    0.09653162956237793
+  ],
+  "env_probs": {
+    "indoor": 0.912109911441803,
+    "outdoor": 0.08789008855819702
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A dog growling and barking as a cat hisses with tapping on a plastic surface several times",
+    "casv": "A dog growling and barking as a cat hisses with tapping on a plastic surface several times"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.014715342782437801,
+    "clap_gt_audio_baseline": 0.17570120096206665,
+    "clap_text_casv": -0.014715342782437801,
+    "clap_gt_audio_casv": 0.17570120096206665
+  },
+  "verdicts": [
+    {
+      "caption": "A dog growling and barking as a cat hisses with tapping on a plastic surface several times",
+      "clip_similarity": 0.3288397192955017,
+      "visual": 1.0,
+      "scene_support": 0.4566603672288064,
+      "object_support": 0.8609578721436701,
+      "score": 0.795285471811743,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vacuum cleaner running and the sound of a dog",
+      "clip_similarity": 0.32874083518981934,
+      "visual": 0.9922765722692166,
+      "scene_support": 0.3667603305939992,
+      "object_support": 0.5696374479540695,
+      "score": 0.6778299624721074,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dog howling with clock ticking in the background",
+      "clip_similarity": 0.3252641558647156,
+      "visual": 0.7207275571342777,
+      "scene_support": 0.5638110880725126,
+      "object_support": 1.0,
+      "score": 0.7574343492754649,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vacuum is going while dog is bow-wow",
+      "clip_similarity": 0.3242191672325134,
+      "visual": 0.6391078253825634,
+      "scene_support": 0.15370737690095765,
+      "object_support": 0.5646935694808324,
+      "score": 0.47116341406756235,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers multiple times as an object is dragged on a surface",
+      "clip_similarity": 0.3228427469730377,
+      "visual": 0.5316013426380697,
+      "scene_support": 0.61329431242276,
+      "object_support": 0.9654649800466053,
+      "score": 0.6862683247960375,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog whimpers as a small motor runs and then begins clicking",
+      "clip_similarity": 0.3224242329597473,
+      "visual": 0.4989129473326474,
+      "scene_support": 0.6035453311233768,
+      "object_support": 0.7775487455095164,
+      "score": 0.613893401922927,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.61)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man makes sounds of a cat while a dog whines",
+      "clip_similarity": 0.3211063742637634,
+      "visual": 0.3959804656402903,
+      "scene_support": 0.5412952044006742,
+      "object_support": 0.6112425819551884,
+      "score": 0.5041535221628749,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Static continues while a dog whimpers then barks",
+      "clip_similarity": 0.32036471366882324,
+      "visual": 0.3380524299235106,
+      "scene_support": 0.7025558165486264,
+      "object_support": 0.674793720090383,
+      "score": 0.548425832961107,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and then a dog whimpers",
+      "clip_similarity": 0.32020193338394165,
+      "visual": 0.32533833641370385,
+      "scene_support": 0.5931353304768803,
+      "object_support": 0.37026442738053467,
+      "score": 0.41915526192270597,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People are communicating while dog is excitedly barking repeatedly in the background",
+      "clip_similarity": 0.3198988437652588,
+      "visual": 0.3016652622660044,
+      "scene_support": 0.7129320869378641,
+      "object_support": 0.9132663133764902,
+      "score": 0.6085256250007081,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog pouncing around on the floor, a woman speaks",
+      "clip_similarity": 0.3195543587207794,
+      "visual": 0.2747589629470999,
+      "scene_support": 0.7786428443601604,
+      "object_support": 0.9649776039776324,
+      "score": 0.6329897196801777,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog is reacting to something violently while growling",
+      "clip_similarity": 0.3192511200904846,
+      "visual": 0.2510742501198784,
+      "scene_support": 0.5113961421955212,
+      "object_support": 0.9335125359964297,
+      "score": 0.5339023035055366,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog howling at a woman screaming at it",
+      "clip_similarity": 0.3192334771156311,
+      "visual": 0.24969623046447642,
+      "scene_support": 0.12774023204543092,
+      "object_support": 0.9161785003357895,
+      "score": 0.41305411190015673,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog whimpers in a funny way while his owner laughs",
+      "clip_similarity": 0.31893840432167053,
+      "visual": 0.22664931727505924,
+      "scene_support": 0.0,
+      "object_support": 0.33336523117747013,
+      "score": 0.19066929626326473,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows and something falls to the floor as a man laughs",
+      "clip_similarity": 0.3180493414402008,
+      "visual": 0.15720829977514073,
+      "scene_support": 0.5010034751534492,
+      "object_support": 0.0,
+      "score": 0.21318436245609107,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog is jumping around on the floor and crashes into something",
+      "clip_similarity": 0.3178010880947113,
+      "visual": 0.13781825969152844,
+      "scene_support": 0.8940036035158172,
+      "object_support": 0.9713873464413357,
+      "score": 0.6147445888637573,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog whimpers with knocking noises in the background",
+      "clip_similarity": 0.3165619671344757,
+      "visual": 0.041035656258583526,
+      "scene_support": 1.0,
+      "object_support": 0.8763883824028502,
+      "score": 0.5793307772242884,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music playing while a dog howls in unison",
+      "clip_similarity": 0.31625521183013916,
+      "visual": 0.017076270594643415,
+      "scene_support": 0.4926369659258815,
+      "object_support": 0.8828576100353491,
+      "score": 0.41947888102622655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Dog growling followed by a series of dog barking",
+      "clip_similarity": 0.3161489963531494,
+      "visual": 0.008780219831378812,
+      "scene_support": 0.6803805147799429,
+      "object_support": 0.9014279026822638,
+      "score": 0.47805461317121356,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A dog barks after the doorbell rings",
+      "clip_similarity": 0.316036581993103,
+      "visual": 0.0,
+      "scene_support": 0.8927171689820302,
+      "object_support": 0.8396590206672166,
+      "score": 0.519712856894774,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "kitchen",
+      0.594640851020813
+    ],
+    [
+      "restaurant kitchen",
+      0.07616397738456726
+    ],
+    [
+      "galley",
+      0.028305355459451675
+    ],
+    [
+      "home office",
+      0.020574072375893593
+    ],
+    [
+      "pantry",
+      0.020507117733359337
+    ]
+  ],
+  "top_objects": [
+    [
+      "English Setter",
+      0.09653162956237793
+    ],
+    [
+      "Saluki",
+      0.05473175644874573
+    ],
+    [
+      "Whippet",
+      0.0536019429564476
+    ],
+    [
+      "Clumber Spaniel",
+      0.03739592432975769
+    ],
+    [
+      "borzoi",
+      0.032790716737508774
+    ]
+  ]
+}

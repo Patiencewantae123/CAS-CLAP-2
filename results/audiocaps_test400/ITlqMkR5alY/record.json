@@ -1,0 +1,283 @@
+{
+  "id": "ITlqMkR5alY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\ITlqMkR5alY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\ITlqMkR5alY.wav",
+  "gt_captions": [
+    "Wind blowing followed by a scream with people speaking faintly in the distance",
+    "Background rustling followed by a goat screaming",
+    "Wind blows hard followed by screaming",
+    "A goat vocalizing softly and then screaming loudly",
+    "A cat meowing followed by a person screaming as a man talks in the background and wind blows into a microphone"
+  ],
+  "top_scene": [
+    "pasture",
+    0.17353680729866028
+  ],
+  "top_object": [
+    "ram",
+    0.5286118388175964
+  ],
+  "env_probs": {
+    "indoor": 0.17932434380054474,
+    "outdoor": 0.8206756561994553
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A goat shouts over the cries of other farm animals",
+    "casv": "A goat shouts over the cries of other farm animals"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22181007266044617,
+    "clap_gt_audio_baseline": 0.3057398498058319,
+    "clap_text_casv": 0.22181007266044617,
+    "clap_gt_audio_casv": 0.3057398498058319
+  },
+  "verdicts": [
+    {
+      "caption": "A goat shouts over the cries of other farm animals",
+      "clip_similarity": 0.3280368447303772,
+      "visual": 1.0,
+      "scene_support": 0.7372206351873635,
+      "object_support": 0.6014185343468712,
+      "score": 0.8015917508602703,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat is tapping an object and making noises",
+      "clip_similarity": 0.32360994815826416,
+      "visual": 0.7337393929182157,
+      "scene_support": 0.404736063472608,
+      "object_support": 0.613893500041206,
+      "score": 0.5990846262214304,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sheep vocalizing itself, followed by a man's voice",
+      "clip_similarity": 0.32346728444099426,
+      "visual": 0.7251587253218422,
+      "scene_support": 0.6726758725671415,
+      "object_support": 0.921431197028979,
+      "score": 0.768295611007573,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sheep crying and making sounds",
+      "clip_similarity": 0.3214787542819977,
+      "visual": 0.6055563721360431,
+      "scene_support": 0.6940174826442087,
+      "object_support": 0.8660718607209619,
+      "score": 0.7102493518639683,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "There is a goat that is being very loud",
+      "clip_similarity": 0.32146212458610535,
+      "visual": 0.6045561606217802,
+      "scene_support": 0.5791888659345439,
+      "object_support": 0.7303358881079363,
+      "score": 0.6346798904614561,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An adult male is mimicking a goat, and people are laughing",
+      "clip_similarity": 0.31728294491767883,
+      "visual": 0.3531947616162558,
+      "scene_support": 0.0,
+      "object_support": 0.1120150277781048,
+      "score": 0.1748824129799338,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.31718042492866516,
+      "visual": 0.34702858310538787,
+      "scene_support": 0.7841680917031575,
+      "object_support": 0.5887434250200471,
+      "score": 0.5506848882591164,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A series of goats and sheep baaing as a woman laughs briefly followed by a man speaking",
+      "clip_similarity": 0.3165619969367981,
+      "visual": 0.30983254523357984,
+      "scene_support": 0.45309438848636413,
+      "object_support": 0.3205372221371939,
+      "score": 0.3560225012804993,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goats bleating in a musical rhythm",
+      "clip_similarity": 0.31651169061660767,
+      "visual": 0.30680681577824703,
+      "scene_support": 0.36695233294124235,
+      "object_support": 0.31766064796828053,
+      "score": 0.3281066205841557,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sheep bleating with people laughing and talking in the background",
+      "clip_similarity": 0.3161574602127075,
+      "visual": 0.2855012350281959,
+      "scene_support": 0.4552228822969282,
+      "object_support": 0.5846267452066908,
+      "score": 0.42615538226236405,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat gallops and then bleats multiple times loudly nearby",
+      "clip_similarity": 0.31580278277397156,
+      "visual": 0.2641687668718474,
+      "scene_support": 1.0,
+      "object_support": 0.6673684775086958,
+      "score": 0.6058780500013476,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats bleat loudly several times nearby",
+      "clip_similarity": 0.31575530767440796,
+      "visual": 0.26131332432306476,
+      "scene_support": 0.07658557961917753,
+      "object_support": 0.0,
+      "score": 0.12750100361497915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goats bleat as a man speaks quietly",
+      "clip_similarity": 0.3149226903915405,
+      "visual": 0.21123463384730104,
+      "scene_support": 0.4044494087334144,
+      "object_support": 0.5755313290191262,
+      "score": 0.3784880748646826,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A goat makes baa sounds",
+      "clip_similarity": 0.31439632177352905,
+      "visual": 0.179575609179002,
+      "scene_support": 0.7995584858040007,
+      "object_support": 1.0,
+      "score": 0.6116977894128011,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A goat bleating very loudly",
+      "clip_similarity": 0.3138592839241028,
+      "visual": 0.14727487174707196,
+      "scene_support": 0.7941818972589876,
+      "object_support": 0.7524033587502665,
+      "score": 0.522885525501605,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sheep coughing",
+      "clip_similarity": 0.3137137293815613,
+      "visual": 0.1385203322566421,
+      "scene_support": 0.3657141162632084,
+      "object_support": 0.5778369051777027,
+      "score": 0.3384734393349301,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sheep bleats while people chat in the background",
+      "clip_similarity": 0.3133485019207001,
+      "visual": 0.11655332131167523,
+      "scene_support": 0.3527223963018244,
+      "object_support": 0.45942905431479586,
+      "score": 0.29026676370965615,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sheep lets out two deep bleats",
+      "clip_similarity": 0.3118254542350769,
+      "visual": 0.02494792805647072,
+      "scene_support": 0.7615381827407488,
+      "object_support": 0.8055630772933778,
+      "score": 0.4801095492328262,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sheep bleats a very high pitched bleat",
+      "clip_similarity": 0.3117828369140625,
+      "visual": 0.022384661989452968,
+      "scene_support": 0.5803572311129123,
+      "object_support": 0.7894632880328497,
+      "score": 0.4199000205395098,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A goat is baaing as a man is talking before laughing followed by wind blowing into a microphone",
+      "clip_similarity": 0.31141066551208496,
+      "visual": 0.0,
+      "scene_support": 0.6535543540218978,
+      "object_support": 0.5829039402133034,
+      "score": 0.37093748827056033,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pasture",
+      0.17353680729866028
+    ],
+    [
+      "farm",
+      0.15891863405704498
+    ],
+    [
+      "corral",
+      0.1200416088104248
+    ],
+    [
+      "tundra",
+      0.0867895558476448
+    ],
+    [
+      "wild field",
+      0.03540817275643349
+    ]
+  ],
+  "top_objects": [
+    [
+      "ram",
+      0.5286118388175964
+    ],
+    [
+      "llama",
+      0.12701550126075745
+    ],
+    [
+      "bighorn sheep",
+      0.052950359880924225
+    ],
+    [
+      "wool",
+      0.036337077617645264
+    ],
+    [
+      "lawn mower",
+      0.020251881331205368
+    ]
+  ]
+}

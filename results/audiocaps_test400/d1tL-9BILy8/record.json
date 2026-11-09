@@ -1,0 +1,283 @@
+{
+  "id": "d1tL-9BILy8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\d1tL-9BILy8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\d1tL-9BILy8.wav",
+  "gt_captions": [
+    "Pigeons cooing as air lightly hisses in the background followed by a camera muffling",
+    "Birds coo quietly, engine runs in the background",
+    "Pigeons cooing followed by camera muffling",
+    "Pigeons cooing followed by footsteps shuffling on gravel",
+    "Pigeons coo with a distant humming"
+  ],
+  "top_scene": [
+    "yard",
+    0.26577839255332947
+  ],
+  "top_object": [
+    "small white",
+    0.44580087065696716
+  ],
+  "env_probs": {
+    "indoor": 0.41952526569366455,
+    "outdoor": 0.5804747343063354
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Dove coo and flap their wings while two men speak",
+    "casv": "Loud cooing of pigeon or doves, with other bird sound in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4661010503768921,
+    "clap_gt_audio_baseline": 0.7227891087532043,
+    "clap_text_casv": 0.5224308371543884,
+    "clap_gt_audio_casv": 0.8499737977981567
+  },
+  "verdicts": [
+    {
+      "caption": "Dove coo and flap their wings while two men speak",
+      "clip_similarity": 0.3267405331134796,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud cooing of pigeon or doves, with other bird sound in the background",
+      "clip_similarity": 0.3238506019115448,
+      "visual": 0.8482474988302052,
+      "scene_support": 0.831774335599828,
+      "object_support": 0.8136707828852568,
+      "score": 0.8329325350776076,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A group of birds, pigeons or doves, are cooing",
+      "clip_similarity": 0.3175981342792511,
+      "visual": 0.5199256339191958,
+      "scene_support": 0.90582345828968,
+      "object_support": 1.0,
+      "score": 0.7797172910545822,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pigeon makes lots of different sound",
+      "clip_similarity": 0.3161871135234833,
+      "visual": 0.44583185315828927,
+      "scene_support": 0.7338790173235884,
+      "object_support": 0.5235807083110874,
+      "score": 0.5555706589537184,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Doves are cooing along with other bird speech",
+      "clip_similarity": 0.31528764963150024,
+      "visual": 0.3986003151794755,
+      "scene_support": 0.3591702598051288,
+      "object_support": 0.38860146163075737,
+      "score": 0.3837716425025561,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds, pigeons and doves are flapping around and making various sounds",
+      "clip_similarity": 0.31288763880729675,
+      "visual": 0.27257390833504175,
+      "scene_support": 0.9090814226741298,
+      "object_support": 0.7223785658106999,
+      "score": 0.5984675598794656,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two men talk while pigeons coo and objects are hit",
+      "clip_similarity": 0.31272417306900024,
+      "visual": 0.2639901971984394,
+      "scene_support": 0.6415841253542702,
+      "object_support": 0.30063494250498024,
+      "score": 0.38826179923715093,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds cooing with blanking sounds",
+      "clip_similarity": 0.31224802136421204,
+      "visual": 0.23898710643645316,
+      "scene_support": 1.0,
+      "object_support": 0.7668687460172571,
+      "score": 0.6256554663797584,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man briefly talks as pigeons coo and make flapping noises",
+      "clip_similarity": 0.31177666783332825,
+      "visual": 0.2142359714617035,
+      "scene_support": 0.8318299892449331,
+      "object_support": 0.544139985877409,
+      "score": 0.498485381121384,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons are squawking with other animal noises",
+      "clip_similarity": 0.31171196699142456,
+      "visual": 0.21083848069095354,
+      "scene_support": 0.6834968854828858,
+      "object_support": 0.4652727784188439,
+      "score": 0.4289662914469003,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male voices talking and laughing with pigeons cooing",
+      "clip_similarity": 0.3112523853778839,
+      "visual": 0.1867054981134615,
+      "scene_support": 0.6003982018307267,
+      "object_support": 0.2203038079327627,
+      "score": 0.3208928021744314,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple pigeons cooing",
+      "clip_similarity": 0.3107040524482727,
+      "visual": 0.15791211594348054,
+      "scene_support": 0.6346332633488746,
+      "object_support": 0.4559386643243833,
+      "score": 0.3903364246793696,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Pigeons coo as a man talks continuously",
+      "clip_similarity": 0.3099568784236908,
+      "visual": 0.11867743555956876,
+      "scene_support": 0.6053068533289924,
+      "object_support": 0.33808621669565814,
+      "score": 0.33048889523122266,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple pigeons making a cooing sound outdoors",
+      "clip_similarity": 0.30945417284965515,
+      "visual": 0.09227998078250269,
+      "scene_support": 0.6174407393030216,
+      "object_support": 0.3872563709533897,
+      "score": 0.3383211253899244,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talks nearby as pigeons coo in the background, and then pigeons coo more loudly nearby",
+      "clip_similarity": 0.3093335032463074,
+      "visual": 0.08594352747491787,
+      "scene_support": 0.8654990531923626,
+      "object_support": 0.608788729483492,
+      "score": 0.4766637457927236,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A flock of pigeons cooing as leaves rustle with plastic clicking briefly in the background",
+      "clip_similarity": 0.3093092143535614,
+      "visual": 0.084668099110956,
+      "scene_support": 0.8793618196515803,
+      "object_support": 0.5439074798064172,
+      "score": 0.46084802948178166,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several pigeons coo and an object is hit",
+      "clip_similarity": 0.3084806203842163,
+      "visual": 0.04115799505791071,
+      "scene_support": 0.8542956961644899,
+      "object_support": 0.5991015506145624,
+      "score": 0.4524823720568799,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pigeons coo and flutter their wings",
+      "clip_similarity": 0.3082121014595032,
+      "visual": 0.027057860629326087,
+      "scene_support": 0.6415120538838592,
+      "object_support": 0.45859899304778146,
+      "score": 0.34085645833122263,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking, doves cooing",
+      "clip_similarity": 0.3078528642654419,
+      "visual": 0.008194040384913325,
+      "scene_support": 0.468294814054215,
+      "object_support": 0.5468468158150055,
+      "score": 0.30782010511473146,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds quacking with loud taps",
+      "clip_similarity": 0.3076968193054199,
+      "visual": 0.0,
+      "scene_support": 0.8666953282938957,
+      "object_support": 0.5073919707903484,
+      "score": 0.41222618972527325,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "yard",
+      0.26577839255332947
+    ],
+    [
+      "pet shop",
+      0.1846701055765152
+    ],
+    [
+      "assembly line",
+      0.03885148838162422
+    ],
+    [
+      "playground",
+      0.02965214103460312
+    ],
+    [
+      "nursery",
+      0.024878187105059624
+    ]
+  ],
+  "top_objects": [
+    [
+      "small white",
+      0.44580087065696716
+    ],
+    [
+      "sulphur-crested cockatoo",
+      0.1556795835494995
+    ],
+    [
+      "ptarmigan",
+      0.05531890317797661
+    ],
+    [
+      "junco",
+      0.050027962774038315
+    ],
+    [
+      "chain-link fence",
+      0.027820441871881485
+    ]
+  ]
+}

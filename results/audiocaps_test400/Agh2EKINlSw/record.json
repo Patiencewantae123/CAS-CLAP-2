@@ -1,0 +1,283 @@
+{
+  "id": "Agh2EKINlSw",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Agh2EKINlSw.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Agh2EKINlSw.wav",
+  "gt_captions": [
+    "Rain noise on surface as men are speaking",
+    "Wind, rain and people talking",
+    "Hard rain falls on a metal surface, then three adult males speak while soft rhythmic whooshing occurs",
+    "A man talking followed by a vehicle accelerating then two men talking as rain falls on a surface",
+    "A man talking followed by two men talking then a vehicle accelerating as rain falls on a surface"
+  ],
+  "top_scene": [
+    "highway",
+    0.31161361932754517
+  ],
+  "top_object": [
+    "missile",
+    0.0650596171617508
+  ],
+  "env_probs": {
+    "indoor": 0.08240079134702682,
+    "outdoor": 0.9175992086529732
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Heavy rain hitting a vehicle",
+    "casv": "Wind blows while a vehicle moves"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2761373817920685,
+    "clap_gt_audio_baseline": 0.34236830472946167,
+    "clap_text_casv": 0.24505051970481873,
+    "clap_gt_audio_casv": 0.2734678089618683
+  },
+  "verdicts": [
+    {
+      "caption": "Heavy rain hitting a vehicle",
+      "clip_similarity": 0.34955114126205444,
+      "visual": 1.0,
+      "scene_support": 0.560677222927173,
+      "object_support": 0.370920894806447,
+      "score": 0.679479435320086,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle engine accelerating turbulently",
+      "clip_similarity": 0.3379988670349121,
+      "visual": 0.6440874984850099,
+      "scene_support": 0.550290715968691,
+      "object_support": 0.427452508124622,
+      "score": 0.5509579666219978,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat driving accelerating as wind is blowing into a microphone",
+      "clip_similarity": 0.3320266902446747,
+      "visual": 0.46009148704086616,
+      "scene_support": 0.34508188563014647,
+      "object_support": 0.14354532980596413,
+      "score": 0.3306247594471797,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle driving by twice as wind blows into a microphone",
+      "clip_similarity": 0.33116614818573,
+      "visual": 0.4335791596120156,
+      "scene_support": 0.7971018115128612,
+      "object_support": 0.6737724846855665,
+      "score": 0.6146939527043345,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blows while a vehicle moves",
+      "clip_similarity": 0.3282507061958313,
+      "visual": 0.3437576897226742,
+      "scene_support": 0.9910618285268977,
+      "object_support": 0.9895452316036598,
+      "score": 0.7316851939282369,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind against a microphone on a speeding car",
+      "clip_similarity": 0.3266160190105438,
+      "visual": 0.2933948266300376,
+      "scene_support": 0.5086268574512063,
+      "object_support": 0.17587601041807743,
+      "score": 0.32270879101280014,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle traveling with strong winds blowing",
+      "clip_similarity": 0.32509005069732666,
+      "visual": 0.24638146900789265,
+      "scene_support": 0.7419481250415644,
+      "object_support": 0.7157318472770713,
+      "score": 0.5358565792987477,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle pulling up to a halt and the sound of wind interference",
+      "clip_similarity": 0.3218510150909424,
+      "visual": 0.14659044582946168,
+      "scene_support": 1.0,
+      "object_support": 0.9981503434112998,
+      "score": 0.6580812813551746,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck struggles to drive forward while the wind blows and two men speak",
+      "clip_similarity": 0.3216524124145508,
+      "visual": 0.14047172202042757,
+      "scene_support": 0.5181479337452349,
+      "object_support": 0.48181773544407136,
+      "score": 0.3561783895649629,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A ship engine running as ocean waves crash and wind blows into a microphone",
+      "clip_similarity": 0.3216322064399719,
+      "visual": 0.13984919879976054,
+      "scene_support": 0.21759667360409693,
+      "object_support": 0.004325757547143851,
+      "score": 0.12251640886527645,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine revving several times as wind blows into a microphone and rain falls on a hard surface",
+      "clip_similarity": 0.32105565071105957,
+      "visual": 0.12208616896639109,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.048834467586556435,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine running as wind blows heavily into a microphone",
+      "clip_similarity": 0.32078760862350464,
+      "visual": 0.1138280954462151,
+      "scene_support": 0.29877219535077615,
+      "object_support": 0.21010059261313635,
+      "score": 0.19819307456765978,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine rumbles as water sprays nearby",
+      "clip_similarity": 0.3196915090084076,
+      "visual": 0.0800585061646326,
+      "scene_support": 0.5234346930131314,
+      "object_support": 0.6199765069872019,
+      "score": 0.37504676246595303,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rain falls and thunder rolls while a vehicle runs",
+      "clip_similarity": 0.3196774423122406,
+      "visual": 0.07962512716735408,
+      "scene_support": 0.6161598533900646,
+      "object_support": 0.6202009693970325,
+      "score": 0.40275829770307076,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain falls hard as sirens ring and a car speeds down a road during which a woman speaks over a radio with music playing",
+      "clip_similarity": 0.31958019733428955,
+      "visual": 0.07662911939591376,
+      "scene_support": 0.24363770099839188,
+      "object_support": 0.01926383883598974,
+      "score": 0.10952210970867998,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle drives away while some wind blows",
+      "clip_similarity": 0.3194578289985657,
+      "visual": 0.07285908938992725,
+      "scene_support": 0.9623307801864135,
+      "object_support": 1.0,
+      "score": 0.617842869811895,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car accelerating with wind in the background",
+      "clip_similarity": 0.31903767585754395,
+      "visual": 0.05991464637375633,
+      "scene_support": 0.6828399694175816,
+      "object_support": 0.3658872173513759,
+      "score": 0.3385840145801898,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Hard blowing wind while a motorboat crashes against water waves",
+      "clip_similarity": 0.31887087225914,
+      "visual": 0.05477561618780736,
+      "scene_support": 0.37856766984913653,
+      "object_support": 0.032922052730320825,
+      "score": 0.14535716324896014,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing heavily into a microphone as a ship engine operates and whistles",
+      "clip_similarity": 0.31721556186676025,
+      "visual": 0.003777375412720041,
+      "scene_support": 0.28040578387978055,
+      "object_support": 0.1113090744864478,
+      "score": 0.11902540767495651,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle engine revving several times as wind blows into a microphone",
+      "clip_similarity": 0.3170929551124573,
+      "visual": 0.0,
+      "scene_support": 0.5665044858230496,
+      "object_support": 0.5425666521161787,
+      "score": 0.33272134138176845,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "highway",
+      0.31161361932754517
+    ],
+    [
+      "wind farm",
+      0.1683705598115921
+    ],
+    [
+      "ocean deep underwater",
+      0.04220885410904884
+    ],
+    [
+      "wave",
+      0.03995644301176071
+    ],
+    [
+      "desert road",
+      0.027856232598423958
+    ]
+  ],
+  "top_objects": [
+    [
+      "missile",
+      0.0650596171617508
+    ],
+    [
+      "plow",
+      0.043793417513370514
+    ],
+    [
+      "moving van",
+      0.03422030806541443
+    ],
+    [
+      "traffic light",
+      0.025921756401658058
+    ],
+    [
+      "tow truck",
+      0.025509366765618324
+    ]
+  ]
+}

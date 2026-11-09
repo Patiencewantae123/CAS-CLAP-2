@@ -1,0 +1,283 @@
+{
+  "id": "3IScngdQA4I",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3IScngdQA4I.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3IScngdQA4I.wav",
+  "gt_captions": [
+    "Some groaning followed by a woman speaking",
+    "A woman speaks in a high pitch",
+    "A door shutting and a female speaking",
+    "A woman talking as a door closes shut followed by another woman talking",
+    "A woman whispers and then another woman speaks"
+  ],
+  "top_scene": [
+    "discotheque",
+    0.19067417085170746
+  ],
+  "top_object": [
+    "home theater",
+    0.10619964450597763
+  ],
+  "env_probs": {
+    "indoor": 0.9700186252593994,
+    "outdoor": 0.029981374740600586
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A sharp rapping is interrupted by a woman speaking",
+    "casv": "A woman is speaking while a repetitive, faint beeping sound is in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.08428135514259338,
+    "clap_gt_audio_baseline": 0.22875718772411346,
+    "clap_text_casv": 0.35000836849212646,
+    "clap_gt_audio_casv": 0.5290322303771973
+  },
+  "verdicts": [
+    {
+      "caption": "A sharp rapping is interrupted by a woman speaking",
+      "clip_similarity": 0.30563801527023315,
+      "visual": 1.0,
+      "scene_support": 0.8322178142025678,
+      "object_support": 0.8680033853898512,
+      "score": 0.9100663598777257,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman is speaking while a repetitive, faint beeping sound is in the background",
+      "clip_similarity": 0.30279362201690674,
+      "visual": 0.8173229491849183,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.9269291796739674,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Female making speech, audience clapping and cheering",
+      "clip_similarity": 0.3002084791660309,
+      "visual": 0.651295881239437,
+      "scene_support": 0.6973043906499107,
+      "object_support": 0.7474019005098459,
+      "score": 0.6939302398437017,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman gives a speech and people begin clapping",
+      "clip_similarity": 0.2982748746871948,
+      "visual": 0.5271129247429962,
+      "scene_support": 0.6157611942434205,
+      "object_support": 0.7191233227920766,
+      "score": 0.6113105250078475,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman talking followed by a series of electronic beeps",
+      "clip_similarity": 0.29801544547080994,
+      "visual": 0.5104514578065815,
+      "scene_support": 0.3726126042333683,
+      "object_support": 0.459868978584711,
+      "score": 0.4539250579680564,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Computer noise with electronic popping and whirring sound followed by a woman speaking",
+      "clip_similarity": 0.2975868284702301,
+      "visual": 0.4829241496527027,
+      "scene_support": 0.879520356584544,
+      "object_support": 0.8896780300423064,
+      "score": 0.7239291758491362,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Audience clapping followed by a woman speaking into a microphone",
+      "clip_similarity": 0.2948265075683594,
+      "visual": 0.3056465242514781,
+      "scene_support": 0.5772474639975292,
+      "object_support": 0.5892434028123845,
+      "score": 0.4722058697435654,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Female speech with crowd voice in the background",
+      "clip_similarity": 0.2938980162143707,
+      "visual": 0.24601550731822158,
+      "scene_support": 0.7970494489180479,
+      "object_support": 0.7934108243270106,
+      "score": 0.5755442849008061,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Audience clapping and woman begins to speak",
+      "clip_similarity": 0.2927737832069397,
+      "visual": 0.1738132652455772,
+      "scene_support": 0.863859565025047,
+      "object_support": 0.9209752653990361,
+      "score": 0.6049757552254558,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman giving a speech followed laughter then a burp, then an exclamation",
+      "clip_similarity": 0.2927438020706177,
+      "visual": 0.17188777004304612,
+      "scene_support": 0.30373302425523746,
+      "object_support": 0.349234240013568,
+      "score": 0.2646452872978601,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An electronic buzzing in the background while a woman speaks",
+      "clip_similarity": 0.2925587296485901,
+      "visual": 0.16000176089024487,
+      "scene_support": 0.9791515376993,
+      "object_support": 0.9334683891700564,
+      "score": 0.6377866824169047,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A young woman talking followed by a person whistling then a group of women laughing before rap music plays and a young woman talks",
+      "clip_similarity": 0.2914696931838989,
+      "visual": 0.09005996596888201,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0360239863875528,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult female speaks using amplification, and a crowd of people clap and talk",
+      "clip_similarity": 0.2913329601287842,
+      "visual": 0.08127848287821339,
+      "scene_support": 0.5137165329355384,
+      "object_support": 0.5419090669308313,
+      "score": 0.34919907311119625,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult female speaking, followed by electronic beeping",
+      "clip_similarity": 0.2913043797016144,
+      "visual": 0.07944294619906099,
+      "scene_support": 0.6508270104683511,
+      "object_support": 0.6536280333186677,
+      "score": 0.4231136916157301,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A whooshing effect followed by a dog barking then a person clapping before a woman speaks while soft music plays in the background",
+      "clip_similarity": 0.2912612557411194,
+      "visual": 0.0766733720856788,
+      "scene_support": 0.8789247373372779,
+      "object_support": 0.8884583425796473,
+      "score": 0.560884272809349,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman gives a speech and then an audience claps",
+      "clip_similarity": 0.29121896624565125,
+      "visual": 0.07395739028409667,
+      "scene_support": 0.6945933989408829,
+      "object_support": 0.7120067355381685,
+      "score": 0.4515629964573541,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks followed by clapping",
+      "clip_similarity": 0.29090484976768494,
+      "visual": 0.05378371291364173,
+      "scene_support": 0.39221259135511427,
+      "object_support": 0.5359152529213305,
+      "score": 0.29995183844839013,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is speaking and audience clapping",
+      "clip_similarity": 0.29063862562179565,
+      "visual": 0.036685851438283665,
+      "scene_support": 0.851307440888218,
+      "object_support": 0.9214179871687778,
+      "score": 0.5464919689924121,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Tapping noises followed by clapping and a woman speaking",
+      "clip_similarity": 0.29016178846359253,
+      "visual": 0.006061673266815067,
+      "scene_support": 0.8439549118018466,
+      "object_support": 0.9334502177541342,
+      "score": 0.5356462081735203,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.2900674045085907,
+      "visual": 0.0,
+      "scene_support": 0.8188357581416202,
+      "object_support": 0.817778693078728,
+      "score": 0.4909843353661044,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "discotheque",
+      0.19067417085170746
+    ],
+    [
+      "home theater",
+      0.11148113012313843
+    ],
+    [
+      "television studio",
+      0.06827415525913239
+    ],
+    [
+      "television room",
+      0.05902721732854843
+    ],
+    [
+      "indoor booth",
+      0.05375022813677788
+    ]
+  ],
+  "top_objects": [
+    [
+      "home theater",
+      0.10619964450597763
+    ],
+    [
+      "T-shirt",
+      0.07518211007118225
+    ],
+    [
+      "television",
+      0.03655232489109039
+    ],
+    [
+      "CRT screen",
+      0.029254328459501266
+    ],
+    [
+      "projector",
+      0.02878820337355137
+    ]
+  ]
+}

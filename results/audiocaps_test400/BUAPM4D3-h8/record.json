@@ -1,0 +1,295 @@
+{
+  "id": "BUAPM4D3-h8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BUAPM4D3-h8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BUAPM4D3-h8.wav",
+  "gt_captions": [
+    "A woman and a child is communicating, and birds chirp",
+    "A girl speaks with some rustling of grass and a distant bird chirping",
+    "Women, child talking and birds chirping",
+    "A woman and child speak while birds call",
+    "A child speaks followed by a woman speaking and birds tweeting"
+  ],
+  "top_scene": [
+    "lawn",
+    0.824857771396637
+  ],
+  "top_object": [
+    "lawn mower",
+    0.30498749017715454
+  ],
+  "env_probs": {
+    "indoor": 0.0007731234654784203,
+    "outdoor": 0.9992268765345216
+  },
+  "status": "ACCEPT",
+  "n_rejected": 16,
+  "prompts": {
+    "baseline": "An animal walking through grass and sniffing",
+    "casv": "An animal walking through grass and sniffing"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.13164949417114258,
+    "clap_gt_audio_baseline": 0.4057842493057251,
+    "clap_text_casv": 0.13164949417114258,
+    "clap_gt_audio_casv": 0.4057842493057251
+  },
+  "verdicts": [
+    {
+      "caption": "An animal walking through grass and sniffing",
+      "clip_similarity": 0.31357085704803467,
+      "visual": 1.0,
+      "scene_support": 0.5982966442331364,
+      "object_support": 0.1236742285625185,
+      "score": 0.6165912618386965,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A lawn mower engine running while leaves rustle and crunch and metal clacks against a plastic surface",
+      "clip_similarity": 0.30618423223495483,
+      "visual": 0.7484088652849425,
+      "scene_support": 0.19405678015059147,
+      "object_support": 0.5103225606282876,
+      "score": 0.5106773483476408,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A lawn mowers engine with loud vibrations",
+      "clip_similarity": 0.29992708563804626,
+      "visual": 0.5352881704843749,
+      "scene_support": 0.42096482867721796,
+      "object_support": 0.7061998211620647,
+      "score": 0.5522646631455348,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud shaking of loose objects against a plastic surface",
+      "clip_similarity": 0.2943364679813385,
+      "visual": 0.34486969444123006,
+      "scene_support": 0.44340437149146006,
+      "object_support": 0.25314915465662796,
+      "score": 0.34691393562091843,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A child whispering as dogs bark in the background alongside camera muffling and footsteps shuffling on grass",
+      "clip_similarity": 0.29409489035606384,
+      "visual": 0.33664147243149745,
+      "scene_support": 0.5610485339391442,
+      "object_support": 0.1327004528227436,
+      "score": 0.34278128500116534,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A lawn mower engine running",
+      "clip_similarity": 0.293281227350235,
+      "visual": 0.30892781374537376,
+      "scene_support": 0.40259744691638494,
+      "object_support": 0.726385516672978,
+      "score": 0.4622660145749584,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Lawnmower type engine sound that grows stronger than fades off",
+      "clip_similarity": 0.29287517070770264,
+      "visual": 0.2950973764294835,
+      "scene_support": 0.43487832998983544,
+      "object_support": 0.6374558076187506,
+      "score": 0.4397391918543692,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A lawn mower idling followed by a lawn mower cutting grass",
+      "clip_similarity": 0.29099041223526,
+      "visual": 0.23090181556845382,
+      "scene_support": 0.564635136222148,
+      "object_support": 0.7316329144537328,
+      "score": 0.4812411414301458,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse huffs and runs through the grass",
+      "clip_similarity": 0.29069364070892334,
+      "visual": 0.22079366916172832,
+      "scene_support": 0.7206189411796251,
+      "object_support": 0.3929382881836494,
+      "score": 0.4223846364736737,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees fly in the distance, followed by a person walking through grass",
+      "clip_similarity": 0.2879946827888489,
+      "visual": 0.1288661782111484,
+      "scene_support": 0.5700713469137036,
+      "object_support": 0.06895284342770588,
+      "score": 0.24325372838688222,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Footsteps on grass with a pig oinking",
+      "clip_similarity": 0.2878407835960388,
+      "visual": 0.12362431558367998,
+      "scene_support": 0.33158350172699996,
+      "object_support": 0.004322181950097215,
+      "score": 0.15022143133660115,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A lawn mower shifts gears and accelerates",
+      "clip_similarity": 0.2867622971534729,
+      "visual": 0.08689067407267552,
+      "scene_support": 0.7880063083639448,
+      "object_support": 1.0,
+      "score": 0.5711581621382535,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking as insects buzz followed by footsteps walking on grass",
+      "clip_similarity": 0.2862291932106018,
+      "visual": 0.06873295937860988,
+      "scene_support": 0.541379503667285,
+      "object_support": 0.12177566658499098,
+      "score": 0.22643973482712676,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A burst, popping noise outdoors",
+      "clip_similarity": 0.28613415360450745,
+      "visual": 0.06549587573821546,
+      "scene_support": 0.4951158930308179,
+      "object_support": 0.24732697747978527,
+      "score": 0.24893121144846714,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Walking on dry grass with small crunches",
+      "clip_similarity": 0.286063015460968,
+      "visual": 0.0630728846282683,
+      "scene_support": 0.3809130552420603,
+      "object_support": 0.0,
+      "score": 0.1395030704239254,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person shouts and dribbles a ball, followed by a beeping sound in the background",
+      "clip_similarity": 0.2860322594642639,
+      "visual": 0.06202532416514912,
+      "scene_support": 0.0,
+      "object_support": 0.07784541656192025,
+      "score": 0.04816375463463572,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog growling and grass rustling as another dog barks in the background",
+      "clip_similarity": 0.2855309247970581,
+      "visual": 0.04494968258511936,
+      "scene_support": 0.7867699860328727,
+      "object_support": 0.33783663377363954,
+      "score": 0.3553618589760014,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A lawnmower is running",
+      "clip_similarity": 0.2847744822502136,
+      "visual": 0.01918497359782205,
+      "scene_support": 1.0,
+      "object_support": 0.9689567415855479,
+      "score": 0.5983610119147932,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talking as sheep talk and footsteps shuffling on grass",
+      "clip_similarity": 0.2844013273715973,
+      "visual": 0.006475182358756976,
+      "scene_support": 0.47291181696969403,
+      "object_support": 0.08099417344733986,
+      "score": 0.16876187006861298,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sound of lawn mower type engine idling",
+      "clip_similarity": 0.2842112183570862,
+      "visual": 0.0,
+      "scene_support": 0.41599857647428756,
+      "object_support": 0.5502058863774498,
+      "score": 0.2898613388555212,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.58)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lawn",
+      0.824857771396637
+    ],
+    [
+      "soccer field",
+      0.0817592591047287
+    ],
+    [
+      "football field",
+      0.0435105562210083
+    ],
+    [
+      "pasture",
+      0.008683939464390278
+    ],
+    [
+      "wild field",
+      0.00852021761238575
+    ]
+  ],
+  "top_objects": [
+    [
+      "lawn mower",
+      0.30498749017715454
+    ],
+    [
+      "soccer ball",
+      0.09351634234189987
+    ],
+    [
+      "hay",
+      0.03019692935049534
+    ],
+    [
+      "rugby ball",
+      0.023956362158060074
+    ],
+    [
+      "grasshopper",
+      0.01935931108891964
+    ]
+  ]
+}

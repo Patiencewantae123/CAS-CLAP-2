@@ -1,0 +1,283 @@
+{
+  "id": "lJayhiVzl_E",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\lJayhiVzl_E.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\lJayhiVzl_E.wav",
+  "gt_captions": [
+    "A motorboat engine running as wind blows into a microphone",
+    "The wind is blowing while a boat motor runs and water splashes, and the boat motor advances and gets louder but then fades somewhat",
+    "Humming and rumbling of a powerful engine with wind blowing",
+    "Water trickling as a motorboat engine runs and wind blows on a microphone",
+    "Motorboat motor and high winds"
+  ],
+  "top_scene": [
+    "boat deck",
+    0.5084609985351562
+  ],
+  "top_object": [
+    "motorboat",
+    0.3737165927886963
+  ],
+  "env_probs": {
+    "indoor": 0.06685014069080353,
+    "outdoor": 0.9331498593091965
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "A boat produces a chugging mechanical sound",
+    "casv": "A boat produces a chugging mechanical sound"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4129715859889984,
+    "clap_gt_audio_baseline": 0.477302610874176,
+    "clap_text_casv": 0.4129715859889984,
+    "clap_gt_audio_casv": 0.477302610874176
+  },
+  "verdicts": [
+    {
+      "caption": "A boat produces a chugging mechanical sound",
+      "clip_similarity": 0.32385948300361633,
+      "visual": 1.0,
+      "scene_support": 0.70473027834419,
+      "object_support": 0.43622739859912035,
+      "score": 0.7422873030829931,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat motor accelerates while the exhaust pops",
+      "clip_similarity": 0.31710612773895264,
+      "visual": 0.6833914095617597,
+      "scene_support": 0.818751780124669,
+      "object_support": 0.6424004934376093,
+      "score": 0.7117022458933874,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman yells nearby, followed by a motorboat engine revving up nearby",
+      "clip_similarity": 0.30953437089920044,
+      "visual": 0.328414784428678,
+      "scene_support": 0.3202375199976194,
+      "object_support": 0.3093111945302124,
+      "score": 0.3202305281298207,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Boat motor revving then trolling",
+      "clip_similarity": 0.3083394765853882,
+      "visual": 0.2723961404224522,
+      "scene_support": 0.7978656925163204,
+      "object_support": 0.607374842369013,
+      "score": 0.5305306166345809,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat coasting on water with a loud engine",
+      "clip_similarity": 0.3082329034805298,
+      "visual": 0.26739981501300775,
+      "scene_support": 0.07383638298505475,
+      "object_support": 0.47071739410278607,
+      "score": 0.2703260591315554,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine motorboat sounds with wind in the background followed by a man laughing",
+      "clip_similarity": 0.3080143630504608,
+      "visual": 0.2571542741216611,
+      "scene_support": 0.3516066820743394,
+      "object_support": 0.5212050663987169,
+      "score": 0.3647052341905813,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat stirs up water, starts up and moves through water",
+      "clip_similarity": 0.30691251158714294,
+      "visual": 0.20549763456965375,
+      "scene_support": 0.19467443379636648,
+      "object_support": 0.6958196292751019,
+      "score": 0.349347272749302,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat engine starts and accelerates across water",
+      "clip_similarity": 0.306897908449173,
+      "visual": 0.20481301503648044,
+      "scene_support": 0.50063553107584,
+      "object_support": 0.5588016201445538,
+      "score": 0.3997563513807103,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor runs while waves slap the boat",
+      "clip_similarity": 0.30679264664649963,
+      "visual": 0.19987816566674957,
+      "scene_support": 0.3951217853251128,
+      "object_support": 0.45478072591700514,
+      "score": 0.3349220196393352,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud boating motor speeds by and water is constantly moving",
+      "clip_similarity": 0.30647778511047363,
+      "visual": 0.18511693022190057,
+      "scene_support": 0.8498672965769177,
+      "object_support": 0.6518458458934802,
+      "score": 0.5245607148298796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motor boat engine whirring while young adult speaks",
+      "clip_similarity": 0.30491772294044495,
+      "visual": 0.1119786063381797,
+      "scene_support": 0.269548071513896,
+      "object_support": 0.4642510919015346,
+      "score": 0.2649311915599011,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A speedboat accelerates loudly, and then people talk nearby",
+      "clip_similarity": 0.30486437678337097,
+      "visual": 0.10947764926801597,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.04379105970720639,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat engine accelerates slowly",
+      "clip_similarity": 0.3046520948410034,
+      "visual": 0.09952551674802927,
+      "scene_support": 1.0,
+      "object_support": 0.6939783895314112,
+      "score": 0.548003723558635,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cruising motorboat",
+      "clip_similarity": 0.30463141202926636,
+      "visual": 0.09855587193982054,
+      "scene_support": 0.946952639118957,
+      "object_support": 1.0,
+      "score": 0.6235081405116153,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat motor hums smoothly over stable water",
+      "clip_similarity": 0.30415624380111694,
+      "visual": 0.07627919063999351,
+      "scene_support": 0.6718789189311741,
+      "object_support": 0.5421621328120758,
+      "score": 0.3947239917789724,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat engine running loudly",
+      "clip_similarity": 0.3036401867866516,
+      "visual": 0.052085574647281224,
+      "scene_support": 0.9720146689357795,
+      "object_support": 0.6464166900024586,
+      "score": 0.5063636375403839,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat making high-pitched noise",
+      "clip_similarity": 0.30306121706962585,
+      "visual": 0.02494250593104065,
+      "scene_support": 0.5859688625198205,
+      "object_support": 0.5833240295208445,
+      "score": 0.36076486998461577,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A fast motorboat runs along with water breaking and splashing while the mic has static",
+      "clip_similarity": 0.3029194176197052,
+      "visual": 0.018294710545655738,
+      "scene_support": 0.27963367336961836,
+      "object_support": 0.48490738588492677,
+      "score": 0.23668020199462583,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboat passing by with water and wind noise",
+      "clip_similarity": 0.3028062582015991,
+      "visual": 0.012989607754922973,
+      "scene_support": 0.387877297866401,
+      "object_support": 0.5922904644158151,
+      "score": 0.29924617178663404,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat travels on water as the engine accelerates",
+      "clip_similarity": 0.3025291860103607,
+      "visual": 0.0,
+      "scene_support": 0.584056601233653,
+      "object_support": 0.9274058591445495,
+      "score": 0.4534387381134607,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "boat deck",
+      0.5084609985351562
+    ],
+    [
+      "landing deck",
+      0.3758241832256317
+    ],
+    [
+      "berth",
+      0.031826913356781006
+    ],
+    [
+      "galley",
+      0.028782136738300323
+    ],
+    [
+      "harbor",
+      0.013969833962619305
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.3737165927886963
+    ],
+    [
+      "yawl",
+      0.28630900382995605
+    ],
+    [
+      "catamaran",
+      0.14028868079185486
+    ],
+    [
+      "trimaran",
+      0.07520678639411926
+    ],
+    [
+      "amphibious vehicle",
+      0.021342715248465538
+    ]
+  ]
+}

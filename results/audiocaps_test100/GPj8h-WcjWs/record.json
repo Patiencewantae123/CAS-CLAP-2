@@ -29,9 +29,9 @@
   },
   "metrics": {
     "clap_text_baseline": 0.3884274363517761,
-    "clap_gt_audio_baseline": 0.6915339231491089,
+    "clap_gt_audio_baseline": 0.7348973155021667,
     "clap_text_casv": 0.47758886218070984,
-    "clap_gt_audio_casv": 0.6691558957099915
+    "clap_gt_audio_casv": 0.6853276491165161
   },
   "verdicts": [
     {

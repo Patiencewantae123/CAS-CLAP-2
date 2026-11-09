@@ -1,0 +1,287 @@
+{
+  "id": "Qt0_xTadAT0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Qt0_xTadAT0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Qt0_xTadAT0.wav",
+  "gt_captions": [
+    "Frogs croaking with rustling in the background",
+    "Two instances of bird wings flapping while frogs are croaking",
+    "A group of frogs croaking as plastic flutters in the background",
+    "Frogs chirp loudly",
+    "High pitched croaking of frogs with some rustling"
+  ],
+  "top_scene": [
+    "rainforest",
+    0.5843570828437805
+  ],
+  "top_object": [
+    "tailed frog",
+    0.39051392674446106
+  ],
+  "env_probs": {
+    "indoor": 0.12867647409439087,
+    "outdoor": 0.8713235259056091
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Frogs making strange croaking sounds",
+    "casv": "Frogs making strange croaking sounds"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.5948891639709473,
+    "clap_gt_audio_baseline": 0.5508991479873657,
+    "clap_text_casv": 0.5948891639709473,
+    "clap_gt_audio_casv": 0.5508991479873657
+  },
+  "verdicts": [
+    {
+      "caption": "Frogs making strange croaking sounds",
+      "clip_similarity": 0.35338521003723145,
+      "visual": 1.0,
+      "scene_support": 0.46353884226299374,
+      "object_support": 0.6727628429554554,
+      "score": 0.7408905055655348,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Frogs croaking with music in the background",
+      "clip_similarity": 0.338615357875824,
+      "visual": 0.5601007626432619,
+      "scene_support": 0.7607755069518526,
+      "object_support": 0.6090201550274632,
+      "score": 0.6349790036510995,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A group of frogs are croaking with white noise",
+      "clip_similarity": 0.3356778025627136,
+      "visual": 0.4726098163691364,
+      "scene_support": 0.26615465425624496,
+      "object_support": 0.6122589004781005,
+      "score": 0.45256799296795824,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frogs purr nearby as birds chirp in the background",
+      "clip_similarity": 0.33548077940940857,
+      "visual": 0.46674175933421386,
+      "scene_support": 0.5375820874046648,
+      "object_support": 0.48218811439924125,
+      "score": 0.4926277642748574,
+      "conflicts": [
+        "names 'a cat', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A variety of frogs call outdoors, while several bird species vocalize nearby",
+      "clip_similarity": 0.3321795165538788,
+      "visual": 0.3684182963373241,
+      "scene_support": 1.0,
+      "object_support": 0.8083341530383124,
+      "score": 0.6898675644464233,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A frog croaks nearby several times, followed by a woman talking and a woman laughing",
+      "clip_similarity": 0.3320869505405426,
+      "visual": 0.3656613480465255,
+      "scene_support": 0.12778520852463532,
+      "object_support": 0.3027121912596376,
+      "score": 0.2754137591538921,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs croak in a group",
+      "clip_similarity": 0.3293894827365875,
+      "visual": 0.2853210699728743,
+      "scene_support": 0.4883617485265074,
+      "object_support": 0.7706623337668662,
+      "score": 0.4918356526771618,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frogs croak loudly and rapidly nearby",
+      "clip_similarity": 0.32680416107177734,
+      "visual": 0.2083209066507605,
+      "scene_support": 0.7138712919004515,
+      "object_support": 0.6311776913950408,
+      "score": 0.48684305764895186,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Two frogs croaking back and forth",
+      "clip_similarity": 0.32636022567749023,
+      "visual": 0.19509891639327964,
+      "scene_support": 0.3730351820292308,
+      "object_support": 0.5186698434788523,
+      "score": 0.3455510742097368,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds singing with frogs mixed in",
+      "clip_similarity": 0.3249255120754242,
+      "visual": 0.1523679931262693,
+      "scene_support": 0.3208489050242249,
+      "object_support": 0.23523104143821186,
+      "score": 0.22777118118923875,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs croaking over piano music",
+      "clip_similarity": 0.32472938299179077,
+      "visual": 0.14652656469685996,
+      "scene_support": 0.33298496066689515,
+      "object_support": 0.020512661709576704,
+      "score": 0.16465991259168553,
+      "conflicts": [
+        "names 'a piano', not visible in image (z=-0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks then smaller frogs croak followed by music playing with some faint banging",
+      "clip_similarity": 0.3233709931373596,
+      "visual": 0.10606883672049196,
+      "scene_support": 0.29296568284265906,
+      "object_support": 0.562184034090012,
+      "score": 0.2989724497679981,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs croak loudly and quickly",
+      "clip_similarity": 0.32300063967704773,
+      "visual": 0.09503838069674633,
+      "scene_support": 0.6564485946605377,
+      "object_support": 0.559259205286915,
+      "score": 0.40272769226293437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks as a man and woman speak and laugh",
+      "clip_similarity": 0.3228569030761719,
+      "visual": 0.09075738855040973,
+      "scene_support": 0.3426292879040936,
+      "object_support": 0.5691976727664861,
+      "score": 0.3098510436213378,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "One frog croaks nearby while several frogs croak far away",
+      "clip_similarity": 0.3227788805961609,
+      "visual": 0.08843359890929232,
+      "scene_support": 0.5829205594282253,
+      "object_support": 0.6417154542926432,
+      "score": 0.40276424367997743,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks multiple times nearby",
+      "clip_similarity": 0.3221667408943176,
+      "visual": 0.0702018803345973,
+      "scene_support": 0.7400804686708281,
+      "object_support": 1.0,
+      "score": 0.5501048927350873,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frogs vocalize and crickets sing",
+      "clip_similarity": 0.3213571012020111,
+      "visual": 0.04608790280203939,
+      "scene_support": 0.7892551658302887,
+      "object_support": 0.528596774369829,
+      "score": 0.4137907431808511,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog screaming followed by two girls laughing then talking",
+      "clip_similarity": 0.32019534707069397,
+      "visual": 0.011486692798204877,
+      "scene_support": 0.1174400101494805,
+      "object_support": 0.0,
+      "score": 0.0398266801641261,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs in an outdoor setting",
+      "clip_similarity": 0.3201572597026825,
+      "visual": 0.010352314203343132,
+      "scene_support": 0.0,
+      "object_support": 0.3285948313654342,
+      "score": 0.10271937509096751,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Frogs rabbiting and cooing",
+      "clip_similarity": 0.3198096752166748,
+      "visual": 0.0,
+      "scene_support": 0.63723111032377,
+      "object_support": 0.3366510133375108,
+      "score": 0.29216463709838425,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "rainforest",
+      0.5843570828437805
+    ],
+    [
+      "watering hole",
+      0.07750999182462692
+    ],
+    [
+      "pond",
+      0.016963766887784004
+    ],
+    [
+      "pet shop",
+      0.015930939465761185
+    ],
+    [
+      "fishpond",
+      0.01586795225739479
+    ]
+  ],
+  "top_objects": [
+    [
+      "tailed frog",
+      0.39051392674446106
+    ],
+    [
+      "tree frog",
+      0.35531818866729736
+    ],
+    [
+      "fire salamander",
+      0.09547348320484161
+    ],
+    [
+      "newt",
+      0.022276876494288445
+    ],
+    [
+      "night snake",
+      0.020720141008496284
+    ]
+  ]
+}

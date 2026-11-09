@@ -1,0 +1,305 @@
+{
+  "id": "2EsxcKe1A4w",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\2EsxcKe1A4w.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\2EsxcKe1A4w.wav",
+  "gt_captions": [
+    "A dog barks with distant birds chirping then people speak",
+    "A dog barking during camera muffling and footsteps shuffling on dirt followed by a man talking then a bicycle riding",
+    "A large dog barks",
+    "A dog barking followed by a man talking in the distance while gravel and dirt shuffle during a series of camera muffles",
+    "A dog barking while wind blows into a microphone followed by a man speaking in the distance proceeded by a bicycle pedaling alongside leaves rustling and a camera muffling"
+  ],
+  "top_scene": [
+    "highway",
+    0.029507962986826897
+  ],
+  "top_object": [
+    "missile",
+    0.0258413627743721
+  ],
+  "env_probs": {
+    "indoor": 0.43223071098327637,
+    "outdoor": 0.5677692890167236
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 13,
+  "prompts": {
+    "baseline": "The wind noise from a helicopter running",
+    "casv": "A gun cocking followed by a gunshot firing during camera audio feedback"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.009176659397780895,
+    "clap_gt_audio_baseline": -0.013278478756546974,
+    "clap_text_casv": -0.008359319530427456,
+    "clap_gt_audio_casv": 0.39123860001564026
+  },
+  "verdicts": [
+    {
+      "caption": "The wind noise from a helicopter running",
+      "clip_similarity": 0.28930169343948364,
+      "visual": 1.0,
+      "scene_support": 0.3845176753845091,
+      "object_support": 0.22169495095452393,
+      "score": 0.58186378790171,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An aircraft engine running noise",
+      "clip_similarity": 0.2863161265850067,
+      "visual": 0.5719394949365466,
+      "scene_support": 0.815646057915349,
+      "object_support": 1.0,
+      "score": 0.7734696153492233,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An aircraft engine accelerates with wind noise in the background",
+      "clip_similarity": 0.28555920720100403,
+      "visual": 0.4634149468016921,
+      "scene_support": 0.6187280911885205,
+      "object_support": 0.741946735095543,
+      "score": 0.5935684266058958,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A gun cocking followed by a gunshot firing during camera audio feedback",
+      "clip_similarity": 0.2855132818222046,
+      "visual": 0.45683032089903003,
+      "scene_support": 0.7170836687999559,
+      "object_support": 0.8823333235189534,
+      "score": 0.6625572260552848,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car engine accelerating",
+      "clip_similarity": 0.285504013299942,
+      "visual": 0.4555014314404136,
+      "scene_support": 0.7498479393581708,
+      "object_support": 0.7651241481307004,
+      "score": 0.6366921988228268,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.91)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A muffled helicopter flying with plastic rattling followed by audio distortion then a man speaking faintly in the background",
+      "clip_similarity": 0.2853394150733948,
+      "visual": 0.43190189291971115,
+      "scene_support": 0.0,
+      "object_support": 0.066235173680551,
+      "score": 0.19263130927204977,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A helicopter speeding up it's engine",
+      "clip_similarity": 0.2853294610977173,
+      "visual": 0.43047472546254756,
+      "scene_support": 0.598318324447513,
+      "object_support": 0.6723063490733338,
+      "score": 0.5533772922412731,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking with spraying sounds in the background",
+      "clip_similarity": 0.2847413420677185,
+      "visual": 0.3461522027090544,
+      "scene_support": 0.815606321207165,
+      "object_support": 0.9264901059726541,
+      "score": 0.6610898092375674,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Plane engine running while flying",
+      "clip_similarity": 0.2844110131263733,
+      "visual": 0.29879075332222366,
+      "scene_support": 0.7106088431334743,
+      "object_support": 0.8329028217852055,
+      "score": 0.5825698008044933,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.28434014320373535,
+      "visual": 0.2886296628637354,
+      "scene_support": 0.573371348117496,
+      "object_support": 0.31492099046721733,
+      "score": 0.3819395667209082,
+      "conflicts": [
+        "names 'a stream or river', not visible in image (z=-1.70)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A loud car driving by with bad quality",
+      "clip_similarity": 0.2840845286846161,
+      "visual": 0.2519805153185489,
+      "scene_support": 0.9925064696328012,
+      "object_support": 0.8519066697770702,
+      "score": 0.654116147950381,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine running then accelerating",
+      "clip_similarity": 0.2839560806751251,
+      "visual": 0.2335640729820963,
+      "scene_support": 0.46738135544620935,
+      "object_support": 0.45160227301037986,
+      "score": 0.3691207177298153,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An airplane engine spins loudly",
+      "clip_similarity": 0.2838234007358551,
+      "visual": 0.21454087082852627,
+      "scene_support": 0.6034448113567512,
+      "object_support": 0.715904278088189,
+      "score": 0.4816210751648926,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person talking and a spraying sound",
+      "clip_similarity": 0.2836571931838989,
+      "visual": 0.19071059265906082,
+      "scene_support": 0.6625445852639127,
+      "object_support": 0.7192709878626319,
+      "score": 0.4908289090015877,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vibrations from a powerful car speeding by",
+      "clip_similarity": 0.28362444043159485,
+      "visual": 0.18601461351108833,
+      "scene_support": 0.8316685308300411,
+      "object_support": 0.7192545676501431,
+      "score": 0.5396827749484906,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with some faint bursts of spraying",
+      "clip_similarity": 0.2836078405380249,
+      "visual": 0.18363457676366277,
+      "scene_support": 0.6177161597903347,
+      "object_support": 0.69931137026107,
+      "score": 0.46856208972088653,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind against a microphone on a speeding car",
+      "clip_similarity": 0.2828638553619385,
+      "visual": 0.07696449173182925,
+      "scene_support": 0.19628263094938672,
+      "object_support": 0.0,
+      "score": 0.0896705859775477,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Airplane take off at a high speed",
+      "clip_similarity": 0.28239381313323975,
+      "visual": 0.009571422467205059,
+      "scene_support": 0.8144738250239211,
+      "object_support": 0.918685975326649,
+      "score": 0.523776509092053,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A faint background noise and someone types on a computer",
+      "clip_similarity": 0.28233611583709717,
+      "visual": 0.001298978763406401,
+      "scene_support": 1.0,
+      "object_support": 0.9853509056030295,
+      "score": 0.5961248631862714,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A continuous spraying sound is interrupted by a swooshing",
+      "clip_similarity": 0.2823270559310913,
+      "visual": 0.0,
+      "scene_support": 0.5240603510286614,
+      "object_support": 0.6099095416156131,
+      "score": 0.34019096779328234,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "highway",
+      0.029507962986826897
+    ],
+    [
+      "trench",
+      0.02660529315471649
+    ],
+    [
+      "cliff",
+      0.02060643956065178
+    ],
+    [
+      "door elevator",
+      0.02037440985441208
+    ],
+    [
+      "wave",
+      0.01824658364057541
+    ]
+  ],
+  "top_objects": [
+    [
+      "missile",
+      0.0258413627743721
+    ],
+    [
+      "projectile",
+      0.014395922422409058
+    ],
+    [
+      "ski",
+      0.009757447056472301
+    ],
+    [
+      "ski mask",
+      0.007467508316040039
+    ],
+    [
+      "running shoe",
+      0.0069904448464512825
+    ]
+  ]
+}

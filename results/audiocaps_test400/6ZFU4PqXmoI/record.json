@@ -1,0 +1,287 @@
+{
+  "id": "6ZFU4PqXmoI",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\6ZFU4PqXmoI.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\6ZFU4PqXmoI.wav",
+  "gt_captions": [
+    "Roaring is present, cracking occurs, a metal clink, and an adult male speaks",
+    "Water sloshes as a motor runs, then a man briefly speaks",
+    "A construction vehicle engine running and water splashing as wood crackles and snaps followed by electronic beeping and a man talking",
+    "A vehicle engine works and then a man talks",
+    "Humming and vibrating followed by rustling and splashes with a man speaking briefly"
+  ],
+  "top_scene": [
+    "boathouse",
+    0.3184678256511688
+  ],
+  "top_object": [
+    "motorboat",
+    0.30332881212234497
+  ],
+  "env_probs": {
+    "indoor": 0.20074346661567688,
+    "outdoor": 0.7992565333843231
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A loud buzzer is followed by a boat accelerating",
+    "casv": "A motorboat engine starts and accelerates across water"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.01855027675628662,
+    "clap_gt_audio_baseline": 0.1846250295639038,
+    "clap_text_casv": 0.14957576990127563,
+    "clap_gt_audio_casv": 0.27121004462242126
+  },
+  "verdicts": [
+    {
+      "caption": "A loud buzzer is followed by a boat accelerating",
+      "clip_similarity": 0.34679484367370605,
+      "visual": 1.0,
+      "scene_support": 0.9518936002948964,
+      "object_support": 0.7647592065978475,
+      "score": 0.9149958420678231,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.72)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman communicating with a man shortly followed by the man whistling and a boat motor vibrating in the background",
+      "clip_similarity": 0.34084945917129517,
+      "visual": 0.731304927571368,
+      "scene_support": 0.4608373517994704,
+      "object_support": 0.18267994089043976,
+      "score": 0.4855771588355202,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat engine starts and accelerates across water",
+      "clip_similarity": 0.3350192904472351,
+      "visual": 0.4678169047282327,
+      "scene_support": 0.8681847503911893,
+      "object_support": 0.7455383990392035,
+      "score": 0.6712437067204109,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorboat stirs up water, starts up and moves through water",
+      "clip_similarity": 0.3331320881843567,
+      "visual": 0.38252688715140987,
+      "scene_support": 0.8477300681571979,
+      "object_support": 0.8477214790162835,
+      "score": 0.6616462190126083,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An idle motorboat engine running",
+      "clip_similarity": 0.3323647379875183,
+      "visual": 0.34784734428349195,
+      "scene_support": 0.7480529873314877,
+      "object_support": 0.7004567153746947,
+      "score": 0.5736918485252515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman yells nearby, followed by a motorboat engine revving up nearby",
+      "clip_similarity": 0.3320808708667755,
+      "visual": 0.3350182839364002,
+      "scene_support": 0.5890298695534425,
+      "object_support": 0.5796395771502167,
+      "score": 0.48460814758565784,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine motorboat sounds with wind in the background followed by a man laughing",
+      "clip_similarity": 0.33194828033447266,
+      "visual": 0.3290260015758531,
+      "scene_support": 0.7158645093584497,
+      "object_support": 0.7167867957899517,
+      "score": 0.5614057921748616,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat produces a chugging mechanical sound",
+      "clip_similarity": 0.3313618302345276,
+      "visual": 0.302522038372696,
+      "scene_support": 0.8635097571617718,
+      "object_support": 0.6867379576688978,
+      "score": 0.5860831297982793,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Woman and man speak followed by boat motor running",
+      "clip_similarity": 0.3306257426738739,
+      "visual": 0.26925537574667824,
+      "scene_support": 0.7041518716899374,
+      "object_support": 0.5321736423162007,
+      "score": 0.4785998045005127,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat making high-pitched noise",
+      "clip_similarity": 0.32963722944259644,
+      "visual": 0.22458061431332538,
+      "scene_support": 0.8189842433497834,
+      "object_support": 0.7417451512243236,
+      "score": 0.5580510640975622,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A speedboat engine running as wind blows into a microphone followed by a motorboat engine running idle then starting up as water flows then sprays",
+      "clip_similarity": 0.32960250973701477,
+      "visual": 0.2230114956462008,
+      "scene_support": 0.010427637518054887,
+      "object_support": 0.0,
+      "score": 0.09233288951389679,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorboat putters through water",
+      "clip_similarity": 0.32837432622909546,
+      "visual": 0.16750510131927188,
+      "scene_support": 0.7446310220570534,
+      "object_support": 0.576049008424709,
+      "score": 0.46320604967223744,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Constant muffle of a boat engine along with wind hitting a microphone",
+      "clip_similarity": 0.32807233929634094,
+      "visual": 0.15385713612272797,
+      "scene_support": 0.6644165450469427,
+      "object_support": 0.4547857101041513,
+      "score": 0.3973035309944194,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat motor running and a man speaking",
+      "clip_similarity": 0.32749107480049133,
+      "visual": 0.1275875305574075,
+      "scene_support": 0.8512719291646605,
+      "object_support": 0.6179933794454132,
+      "score": 0.49181460480598516,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorboat travels on water as the engine accelerates",
+      "clip_similarity": 0.3267342150211334,
+      "visual": 0.09338209049706717,
+      "scene_support": 0.9888511073663938,
+      "object_support": 1.0,
+      "score": 0.634008168408745,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toy motorboat engine buzzing alongside camera muffling and water lightly trickling with wind blowing briefly into a microphone",
+      "clip_similarity": 0.32658088207244873,
+      "visual": 0.08645237758517352,
+      "scene_support": 0.0,
+      "object_support": 0.015080299947312307,
+      "score": 0.0391050410182631,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.72)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water flowing strongly and boat engine sound at the end",
+      "clip_similarity": 0.325907826423645,
+      "visual": 0.05603437245354937,
+      "scene_support": 1.0,
+      "object_support": 0.6778675321403799,
+      "score": 0.5257740086235336,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Motorboat passing by with water and wind noise",
+      "clip_similarity": 0.3258562684059143,
+      "visual": 0.05370426490494373,
+      "scene_support": 0.8251844983750601,
+      "object_support": 0.7733045472849872,
+      "score": 0.5010284196599917,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A very loud engine on a motorboat",
+      "clip_similarity": 0.32567936182022095,
+      "visual": 0.04570916755897664,
+      "scene_support": 0.742234517934521,
+      "object_support": 0.7693747017468543,
+      "score": 0.47176643292800324,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water slaps against boat while the wind blows",
+      "clip_similarity": 0.32466796040534973,
+      "visual": 0.0,
+      "scene_support": 0.6218653143054886,
+      "object_support": 0.38641012313309053,
+      "score": 0.30248263123157376,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "boathouse",
+      0.3184678256511688
+    ],
+    [
+      "berth",
+      0.1810968816280365
+    ],
+    [
+      "harbor",
+      0.1696542650461197
+    ],
+    [
+      "natural canal",
+      0.11491494625806808
+    ],
+    [
+      "raft",
+      0.03906214237213135
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.30332881212234497
+    ],
+    [
+      "yawl",
+      0.21147510409355164
+    ],
+    [
+      "schooner",
+      0.17992182075977325
+    ],
+    [
+      "boathouse",
+      0.07040801644325256
+    ],
+    [
+      "trimaran",
+      0.053642015904188156
+    ]
+  ]
+}

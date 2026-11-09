@@ -1,0 +1,293 @@
+{
+  "id": "BDpU2Qh77NE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BDpU2Qh77NE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BDpU2Qh77NE.wav",
+  "gt_captions": [
+    "A bird whistling followed by a group of people softly talking then an electronic beep",
+    "Birds chirping followed by whispering",
+    "A bird making vocalizations from a distance followed by several people whispering nearby",
+    "Birds chirp followed by people communicating",
+    "Birds chirping in the distance followed by people speaking and a camera click"
+  ],
+  "top_scene": [
+    "watering hole",
+    0.2739478349685669
+  ],
+  "top_object": [
+    "lion",
+    0.5097331404685974
+  ],
+  "env_probs": {
+    "indoor": 0.19201861321926117,
+    "outdoor": 0.8079813867807388
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Roaring is present, and dogs are barking and adult males are speaking in the background",
+    "casv": "Roaring is present, an adult male speaks, and dogs are barking and yipping"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.0625317394733429,
+    "clap_gt_audio_baseline": 0.23488754034042358,
+    "clap_text_casv": -0.018947940319776535,
+    "clap_gt_audio_casv": 0.2999376952648163
+  },
+  "verdicts": [
+    {
+      "caption": "Roaring is present, and dogs are barking and adult males are speaking in the background",
+      "clip_similarity": 0.2952665090560913,
+      "visual": 1.0,
+      "scene_support": 0.612763427912049,
+      "object_support": 0.822623881566838,
+      "score": 0.8306161928436662,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Roaring is present, an adult male speaks, and dogs are barking and yipping",
+      "clip_similarity": 0.29247814416885376,
+      "visual": 0.8946819815033275,
+      "scene_support": 0.6855132040861968,
+      "object_support": 0.8933129339854207,
+      "score": 0.8315206340228162,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Adult males and females are speaking, and a roar is present in the background",
+      "clip_similarity": 0.2836839556694031,
+      "visual": 0.5625208245157456,
+      "scene_support": 0.3343116836002124,
+      "object_support": 0.33659665251394993,
+      "score": 0.426280830640547,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Animals squeal nearby, followed by people talking and laughing",
+      "clip_similarity": 0.280262291431427,
+      "visual": 0.4332827541491441,
+      "scene_support": 0.8355854329983048,
+      "object_support": 0.6548746576603175,
+      "score": 0.6204511288572443,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Unknown animal call and a roar, followed by a dog barking angrily",
+      "clip_similarity": 0.2777802348136902,
+      "visual": 0.33953416121101876,
+      "scene_support": 0.5202055191193536,
+      "object_support": 0.6206956614120022,
+      "score": 0.4780840186438142,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Scratching and scraping, breathing is present, and a young male speaks",
+      "clip_similarity": 0.2756001949310303,
+      "visual": 0.2571929003034751,
+      "scene_support": 0.48314767989661395,
+      "object_support": 0.36166512045044924,
+      "score": 0.35632100022550894,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone roars followed by another one roaring and a baby crying",
+      "clip_similarity": 0.27515271306037903,
+      "visual": 0.24029127306455825,
+      "scene_support": 0.5254316433297711,
+      "object_support": 0.7094976794403479,
+      "score": 0.466595306056859,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Quiet hissing is ongoing in the background, an adult male speaks briefly, then a tune is whistled accompanied by an adult female speaking in the background",
+      "clip_similarity": 0.27502959966659546,
+      "visual": 0.23564121498104407,
+      "scene_support": 0.28808590833229525,
+      "object_support": 0.0,
+      "score": 0.1806822584921062,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An adult female speaks, then loud hissing occurs, strong wind blows, a motor vehicle engine runs, and adult males shout while crackling is present",
+      "clip_similarity": 0.2737496495246887,
+      "visual": 0.18729682026529307,
+      "scene_support": 0.33402830440898684,
+      "object_support": 0.23930547508780078,
+      "score": 0.2469188619551535,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.51)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Metal clattering is present, and several adult males are speaking",
+      "clip_similarity": 0.2730739116668701,
+      "visual": 0.16177384350770393,
+      "scene_support": 0.6013058754195141,
+      "object_support": 0.34279490008066676,
+      "score": 0.3479397700531358,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Squeaking and dull thwacking are ongoing, and several adult males are speaking",
+      "clip_similarity": 0.27254635095596313,
+      "visual": 0.14184759606292832,
+      "scene_support": 0.4394868869739546,
+      "object_support": 0.06740370325990144,
+      "score": 0.20880621549532816,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Unknown animal making noise while car engine revs by",
+      "clip_similarity": 0.2720024585723877,
+      "visual": 0.12130449269228345,
+      "scene_support": 0.04854453096372965,
+      "object_support": 0.2974528815828972,
+      "score": 0.15232102084090143,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.51)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal makes a howling noise as an emergency vehicle siren sounds off",
+      "clip_similarity": 0.27175581455230713,
+      "visual": 0.11198861743225841,
+      "scene_support": 0.1998012703255364,
+      "object_support": 0.256143584396846,
+      "score": 0.18157890338961807,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.51)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal is communicating out loud while making a grunting sound",
+      "clip_similarity": 0.27170565724372864,
+      "visual": 0.11009414932416003,
+      "scene_support": 0.5375455573937564,
+      "object_support": 0.6519469353418085,
+      "score": 0.40088540755033353,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Lgun is cocked and fired, a man screams and a big cat roars",
+      "clip_similarity": 0.2716737389564514,
+      "visual": 0.10888857870991563,
+      "scene_support": 0.40933140722901046,
+      "object_support": 1.0,
+      "score": 0.4663548536526694,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male whistling with a dog breathing heavily followed by loud barking",
+      "clip_similarity": 0.27137887477874756,
+      "visual": 0.09775140255927671,
+      "scene_support": 0.08710085603827149,
+      "object_support": 0.17000122297261405,
+      "score": 0.11623118472697636,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male foreign voice heard with engine sound in background",
+      "clip_similarity": 0.2703840732574463,
+      "visual": 0.06017722225724243,
+      "scene_support": 0.37883499827714195,
+      "object_support": 0.3640208868898571,
+      "score": 0.2469276544529967,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.03)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An animal imitates a beeping sound multiple times nearby",
+      "clip_similarity": 0.27010872960090637,
+      "visual": 0.049777346528947206,
+      "scene_support": 1.0,
+      "object_support": 0.8464174932026194,
+      "score": 0.5738361865723647,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male speaking with a hissing sound in the background",
+      "clip_similarity": 0.26933062076568604,
+      "visual": 0.020387763739677794,
+      "scene_support": 0.7842690310252863,
+      "object_support": 0.7437810607249139,
+      "score": 0.4665701330209312,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Eater running followed by female speech",
+      "clip_similarity": 0.2687908411026001,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.11077784764231881,
+      "score": 0.03323335429269564,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "watering hole",
+      0.2739478349685669
+    ],
+    [
+      "outdoor hunting lodge",
+      0.09885086864233017
+    ],
+    [
+      "outdoor museum",
+      0.06484530121088028
+    ],
+    [
+      "archaelogical excavation",
+      0.03262990713119507
+    ],
+    [
+      "natural history museum",
+      0.03122672811150551
+    ]
+  ],
+  "top_objects": [
+    [
+      "lion",
+      0.5097331404685974
+    ],
+    [
+      "impala",
+      0.2508438229560852
+    ],
+    [
+      "cougar",
+      0.12170709669589996
+    ],
+    [
+      "gazelle",
+      0.01826213113963604
+    ],
+    [
+      "warthog",
+      0.012521263211965561
+    ]
+  ]
+}

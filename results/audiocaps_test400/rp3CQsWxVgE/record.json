@@ -1,0 +1,283 @@
+{
+  "id": "rp3CQsWxVgE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\rp3CQsWxVgE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\rp3CQsWxVgE.wav",
+  "gt_captions": [
+    "A musical horn",
+    "A vehicle horn honking a melody",
+    "White noise followed by a musical horn honking",
+    "A vehicle horn blares out a musical tune",
+    "Traffic is present nearby, and a car horn plays the theme to the godfather"
+  ],
+  "top_scene": [
+    "car interior",
+    0.504469096660614
+  ],
+  "top_object": [
+    "car mirror",
+    0.4580201506614685
+  ],
+  "env_probs": {
+    "indoor": 0.9890109896659851,
+    "outdoor": 0.010989010334014893
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "A car horn blowing with speech and water",
+    "casv": "A vehicle horn is being used to play a song"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.590456485748291,
+    "clap_gt_audio_baseline": 0.4432183504104614,
+    "clap_text_casv": 0.8155028820037842,
+    "clap_gt_audio_casv": 0.6166313290596008
+  },
+  "verdicts": [
+    {
+      "caption": "A car horn blowing with speech and water",
+      "clip_similarity": 0.33317309617996216,
+      "visual": 1.0,
+      "scene_support": 0.24693883767828095,
+      "object_support": 0.7484086793824201,
+      "score": 0.6986042551182103,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A vehicle horn is being used to play a song",
+      "clip_similarity": 0.3280417323112488,
+      "visual": 0.7010281173870087,
+      "scene_support": 0.7970536807666766,
+      "object_support": 0.9529472691388274,
+      "score": 0.8054115319264546,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Quick gear shifting of a car with the car speeding by",
+      "clip_similarity": 0.3238674998283386,
+      "visual": 0.4578221830955345,
+      "scene_support": 0.47840949938161415,
+      "object_support": 0.6213347256231582,
+      "score": 0.5130521407396456,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Blinker clicking followed by muffled sound",
+      "clip_similarity": 0.3230498731136322,
+      "visual": 0.4101842832262848,
+      "scene_support": 0.870983995077283,
+      "object_support": 0.7093933541436227,
+      "score": 0.6381869180567856,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.3209795355796814,
+      "visual": 0.2895589044758963,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.11582356179035852,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car horn beeping different tones",
+      "clip_similarity": 0.3207865059375763,
+      "visual": 0.27831229695072296,
+      "scene_support": 0.8125578023236686,
+      "object_support": 0.882223495313982,
+      "score": 0.6197593080715844,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motor vehicle sound driving on a road",
+      "clip_similarity": 0.3198642134666443,
+      "visual": 0.22457619025294015,
+      "scene_support": 0.6461858081968112,
+      "object_support": 0.6501892974596529,
+      "score": 0.47874300779811524,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An accelerating and gear shifting noise from a car",
+      "clip_similarity": 0.319842129945755,
+      "visual": 0.22328952417664658,
+      "scene_support": 0.7979955768656671,
+      "object_support": 0.7153730061875433,
+      "score": 0.5433263845866217,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicle is accelerating and shifting gears driving fast",
+      "clip_similarity": 0.3197554647922516,
+      "visual": 0.21824009779356737,
+      "scene_support": 0.7657261921443672,
+      "object_support": 0.5579210023640362,
+      "score": 0.48439019746994794,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle accelerating and shifting gears",
+      "clip_similarity": 0.3196007013320923,
+      "visual": 0.20922301691071649,
+      "scene_support": 0.9873349701773518,
+      "object_support": 0.6621205653162195,
+      "score": 0.578525867412358,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car horn and engine revving",
+      "clip_similarity": 0.31952404975891113,
+      "visual": 0.20475701806020763,
+      "scene_support": 0.7703077307371281,
+      "object_support": 0.7799092366686398,
+      "score": 0.5469678974458134,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Speeding car shifting gears and low voice",
+      "clip_similarity": 0.31911903619766235,
+      "visual": 0.18115945803749564,
+      "scene_support": 0.9076381315608303,
+      "object_support": 0.7538910850603388,
+      "score": 0.5709225482013489,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple beeps of a car horn",
+      "clip_similarity": 0.3189057409763336,
+      "visual": 0.1687321043154537,
+      "scene_support": 0.7509860665176042,
+      "object_support": 1.0,
+      "score": 0.5927886616814627,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.31879740953445435,
+      "visual": 0.1624203213366047,
+      "scene_support": 0.07068180848924983,
+      "object_support": 0.02282678211246126,
+      "score": 0.09302070571515522,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor vehicle revs engine with low speech in the background",
+      "clip_similarity": 0.31781500577926636,
+      "visual": 0.10518191305193374,
+      "scene_support": 1.0,
+      "object_support": 0.83709098180237,
+      "score": 0.5932000597614844,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor idling and clicking while a man speaks",
+      "clip_similarity": 0.31774383783340454,
+      "visual": 0.1010354102311658,
+      "scene_support": 0.6438938204061242,
+      "object_support": 0.4172473604946226,
+      "score": 0.3587565183626903,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine running idle then accelerating",
+      "clip_similarity": 0.31715452671051025,
+      "visual": 0.06670000538281355,
+      "scene_support": 0.49761175115909273,
+      "object_support": 0.5804330381065281,
+      "score": 0.3500934389328117,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car making a revving engine noise while pumping the accelerator",
+      "clip_similarity": 0.3169896900653839,
+      "visual": 0.05709602418446034,
+      "scene_support": 0.8270999226256115,
+      "object_support": 0.7153634844486199,
+      "score": 0.4855774317960535,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car accelerating loudly and whizzing by",
+      "clip_similarity": 0.3167344033718109,
+      "visual": 0.04222209488684805,
+      "scene_support": 0.616064019690868,
+      "object_support": 0.6736349926021379,
+      "score": 0.40379854164264095,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car shifting gears and loud engine acceleration",
+      "clip_similarity": 0.3160097301006317,
+      "visual": 0.0,
+      "scene_support": 0.7659418656366328,
+      "object_support": 0.601362349245746,
+      "score": 0.41019126446471366,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.504469096660614
+    ],
+    [
+      "cockpit",
+      0.4445670247077942
+    ],
+    [
+      "bus interior",
+      0.01989629492163658
+    ],
+    [
+      "auto showroom",
+      0.004620125517249107
+    ],
+    [
+      "auto factory",
+      0.003450125688686967
+    ]
+  ],
+  "top_objects": [
+    [
+      "car mirror",
+      0.4580201506614685
+    ],
+    [
+      "car wheel",
+      0.10699693113565445
+    ],
+    [
+      "odometer",
+      0.03448918089270592
+    ],
+    [
+      "taxicab",
+      0.023083459585905075
+    ],
+    [
+      "seat belt",
+      0.017520522698760033
+    ]
+  ]
+}

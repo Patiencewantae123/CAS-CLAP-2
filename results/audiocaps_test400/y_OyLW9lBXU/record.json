@@ -1,0 +1,283 @@
+{
+  "id": "y_OyLW9lBXU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\y_OyLW9lBXU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\y_OyLW9lBXU.wav",
+  "gt_captions": [
+    "An infant crying together with speech",
+    "A group of infants crying as a man and a woman talk",
+    "A baby cries and people speak",
+    "A lady laughing while a baby cries, then the lady speaks and a couple men also talk as well",
+    "Babies crying as a woman is laughing and a man is talking"
+  ],
+  "top_scene": [
+    "sandbox",
+    0.23884613811969757
+  ],
+  "top_object": [
+    "diaper",
+    0.22636067867279053
+  ],
+  "env_probs": {
+    "indoor": 0.32538020610809326,
+    "outdoor": 0.6746197938919067
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "A baby cries, while two women react to a screech and then laugh",
+    "casv": "A person yelling, another person laughing, and a baby crying and then screaming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4522813558578491,
+    "clap_gt_audio_baseline": 0.5803354978561401,
+    "clap_text_casv": 0.0897504985332489,
+    "clap_gt_audio_casv": 0.22639906406402588
+  },
+  "verdicts": [
+    {
+      "caption": "A baby cries, while two women react to a screech and then laugh",
+      "clip_similarity": 0.3348747491836548,
+      "visual": 1.0,
+      "scene_support": 0.06751712781835137,
+      "object_support": 0.05888697057635088,
+      "score": 0.43792122951841067,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person yelling, another person laughing, and a baby crying and then screaming",
+      "clip_similarity": 0.3333870768547058,
+      "visual": 0.8532617642217153,
+      "scene_support": 0.7659416511037072,
+      "object_support": 0.7281556037174448,
+      "score": 0.7895338821350317,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries then someone whimpers followed by a woman and a man laughing",
+      "clip_similarity": 0.33147913217544556,
+      "visual": 0.6650694918044352,
+      "scene_support": 0.49617947538911683,
+      "object_support": 0.6637358116298718,
+      "score": 0.6140023828274707,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby crying with adults speaking near and far",
+      "clip_similarity": 0.33122938871383667,
+      "visual": 0.640435764174682,
+      "scene_support": 0.5158780720254624,
+      "object_support": 0.6441795540535576,
+      "score": 0.6041915934935789,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Babies crying with people talking",
+      "clip_similarity": 0.3302597999572754,
+      "visual": 0.5447992850927733,
+      "scene_support": 0.7947924239427249,
+      "object_support": 0.8264195716857069,
+      "score": 0.7042833127256388,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Baby crying with a man slightly laughing and then one woman talking and another woman talking",
+      "clip_similarity": 0.329382061958313,
+      "visual": 0.45822260894104366,
+      "scene_support": 0.329382011359462,
+      "object_support": 0.34128347353340927,
+      "score": 0.3844886890442788,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People laughing followed by a burp and a baby laughing",
+      "clip_similarity": 0.32849761843681335,
+      "visual": 0.37098452602121207,
+      "scene_support": 0.66647892642552,
+      "object_support": 0.7214289387650149,
+      "score": 0.5647661699656453,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toddler cries and stamps a foot while adults chuckle",
+      "clip_similarity": 0.3281782567501068,
+      "visual": 0.3394839263457423,
+      "scene_support": 1.0,
+      "object_support": 0.7533607611211108,
+      "score": 0.6618017988746302,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person screaming, a child yelling, and another child laughing",
+      "clip_similarity": 0.3280735909938812,
+      "visual": 0.3291601015920796,
+      "scene_support": 0.4045241330767907,
+      "object_support": 0.1853616427285751,
+      "score": 0.3086297733784416,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two people laugh and talk while a baby whimpers",
+      "clip_similarity": 0.3280646502971649,
+      "visual": 0.328278225901277,
+      "scene_support": 0.7241920319359637,
+      "object_support": 0.9099210226646586,
+      "score": 0.6215452067406975,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby crying as a group of people talk and wood clangs",
+      "clip_similarity": 0.32772400975227356,
+      "visual": 0.29467876208169697,
+      "scene_support": 0.7090473670555052,
+      "object_support": 0.7168732321933659,
+      "score": 0.5456476846073401,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries followed by several people laughing and talking",
+      "clip_similarity": 0.3269052505493164,
+      "visual": 0.21391952590362862,
+      "scene_support": 0.7397496397185566,
+      "object_support": 0.9736502222385482,
+      "score": 0.5995877689485829,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby crying with people speaking",
+      "clip_similarity": 0.3268149793148041,
+      "visual": 0.20501552101215811,
+      "scene_support": 0.6888131648509167,
+      "object_support": 0.8188406861844764,
+      "score": 0.5343023637154811,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby whining, a male speaking, then a male and female laughing as the baby whines",
+      "clip_similarity": 0.3264313340187073,
+      "visual": 0.16717423511981752,
+      "scene_support": 0.6927306636114458,
+      "object_support": 0.816851192006759,
+      "score": 0.5197442507333885,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Multiple baby cries, woman laugh, background music",
+      "clip_similarity": 0.3262622058391571,
+      "visual": 0.15049208663546787,
+      "scene_support": 0.7661548657903458,
+      "object_support": 0.6707122653638468,
+      "score": 0.4912569740004449,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby laughs at someone sneezing",
+      "clip_similarity": 0.32623255252838135,
+      "visual": 0.14756719892763917,
+      "scene_support": 0.3466414833576946,
+      "object_support": 0.4464313264518973,
+      "score": 0.2969487225139332,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby crying with people talking",
+      "clip_similarity": 0.32621827721595764,
+      "visual": 0.14615913740799097,
+      "scene_support": 0.6843902445289882,
+      "object_support": 0.7876222312015575,
+      "score": 0.5000673976823601,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby crying a woman speaking then second child crying",
+      "clip_similarity": 0.32493188977241516,
+      "visual": 0.01927486301530936,
+      "scene_support": 0.4074622571471875,
+      "object_support": 0.4051294860963156,
+      "score": 0.25148746817917467,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People laugh followed by a laughing baby",
+      "clip_similarity": 0.3248674273490906,
+      "visual": 0.01291653928462244,
+      "scene_support": 0.8738783751499567,
+      "object_support": 1.0,
+      "score": 0.5673301282588359,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cries while a man and two women speak",
+      "clip_similarity": 0.32473647594451904,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sandbox",
+      0.23884613811969757
+    ],
+    [
+      "playground",
+      0.07973608374595642
+    ],
+    [
+      "stable",
+      0.0646648034453392
+    ],
+    [
+      "nursing home",
+      0.057683803141117096
+    ],
+    [
+      "outdoor library",
+      0.041742775589227676
+    ]
+  ],
+  "top_objects": [
+    [
+      "diaper",
+      0.22636067867279053
+    ],
+    [
+      "cradle",
+      0.0471571683883667
+    ],
+    [
+      "infant bed",
+      0.043398331850767136
+    ],
+    [
+      "park bench",
+      0.04009389132261276
+    ],
+    [
+      "swing",
+      0.039974089711904526
+    ]
+  ]
+}

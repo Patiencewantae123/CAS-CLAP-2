@@ -1,0 +1,289 @@
+{
+  "id": "BLMWD6fxhpo",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BLMWD6fxhpo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BLMWD6fxhpo.wav",
+  "gt_captions": [
+    "Footsteps are followed by oinking and then a squeal",
+    "A man makes sound followed by oinking sounds",
+    "A grunt from a person followed by footsteps and oinks from a pig with a single squeal",
+    "Footsteps on grass followed by a man grunting then bubbles popping proceeded by a pig oinking",
+    "A walking in the grass and a pig oink sound"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.43830257654190063
+  ],
+  "top_object": [
+    "wild boar",
+    0.06976193189620972
+  ],
+  "env_probs": {
+    "indoor": 0.6101149320602417,
+    "outdoor": 0.3898850679397583
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Amplified male voice while horse clip-clops",
+    "casv": "Amplified male voice while horse clip-clops"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.0868835300207138,
+    "clap_gt_audio_baseline": 0.2174636274576187,
+    "clap_text_casv": -0.0868835300207138,
+    "clap_gt_audio_casv": 0.2174636274576187
+  },
+  "verdicts": [
+    {
+      "caption": "Amplified male voice while horse clip-clops",
+      "clip_similarity": 0.30680471658706665,
+      "visual": 1.0,
+      "scene_support": 0.648540903765703,
+      "object_support": 0.36232644906847394,
+      "score": 0.7032602058502531,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of a mine craft door opening and closing",
+      "clip_similarity": 0.306232750415802,
+      "visual": 0.9788348118380364,
+      "scene_support": 0.29166218914408054,
+      "object_support": 0.0,
+      "score": 0.47903258147843875,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig oinks loudly while a metallic object is hit",
+      "clip_similarity": 0.28808528184890747,
+      "visual": 0.30730106355291076,
+      "scene_support": 0.9220054391566677,
+      "object_support": 0.9152581946915553,
+      "score": 0.6740995155756313,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A pig is making oinking noises",
+      "clip_similarity": 0.2875809073448181,
+      "visual": 0.28863705540091666,
+      "scene_support": 0.8815161104393784,
+      "object_support": 0.9535274965468404,
+      "score": 0.6659679042562323,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Pig is oinking and eating",
+      "clip_similarity": 0.2863694429397583,
+      "visual": 0.24380770469313123,
+      "scene_support": 0.6137432264163563,
+      "object_support": 0.7696616742681723,
+      "score": 0.5125445520826111,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig oinking, followed by a pig screaming",
+      "clip_similarity": 0.28620755672454834,
+      "visual": 0.23781722417542667,
+      "scene_support": 0.6122057140452432,
+      "object_support": 0.8604995466904085,
+      "score": 0.5369384678908662,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pig snorting then oinking with some walking on sand",
+      "clip_similarity": 0.2855607867240906,
+      "visual": 0.21388397524405253,
+      "scene_support": 0.03685821445667424,
+      "object_support": 0.3070418564645879,
+      "score": 0.18872361137399968,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Running water suddenly stops for an industrial clank and a musical note",
+      "clip_similarity": 0.28502482175827026,
+      "visual": 0.19405098525318382,
+      "scene_support": 0.592514884788021,
+      "object_support": 0.17281954730409044,
+      "score": 0.3072207237289069,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig squeals loudly and then once again after a man talks",
+      "clip_similarity": 0.2830682694911957,
+      "visual": 0.12165020534379094,
+      "scene_support": 0.8063839076711046,
+      "object_support": 0.9005202392784251,
+      "score": 0.5607313262223752,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pig making oink sounds",
+      "clip_similarity": 0.28257644176483154,
+      "visual": 0.10345048148818005,
+      "scene_support": 0.638134515048609,
+      "object_support": 0.7938254007750611,
+      "score": 0.47096816734237307,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig oinks and some animal starts screaming",
+      "clip_similarity": 0.28247860074043274,
+      "visual": 0.09982994622683541,
+      "scene_support": 0.930197238940394,
+      "object_support": 0.9243008940099369,
+      "score": 0.5962814183758334,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Pig starts oinking and then a woman in screaming in terror and someone is laughing",
+      "clip_similarity": 0.2824406027793884,
+      "visual": 0.09842385958101926,
+      "scene_support": 0.31877455905482815,
+      "object_support": 0.6049408108560336,
+      "score": 0.3164841548056662,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig oinks nearby, and then an object slams",
+      "clip_similarity": 0.2821286916732788,
+      "visual": 0.08688181814171589,
+      "scene_support": 1.0,
+      "object_support": 0.9796238417352624,
+      "score": 0.6286398797772651,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A pig oinking and smashing bushes",
+      "clip_similarity": 0.2817980945110321,
+      "visual": 0.07464831291658763,
+      "scene_support": 0.0,
+      "object_support": 0.41885566536307195,
+      "score": 0.15551602477555665,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An idling machine sound is followed by a pig oink",
+      "clip_similarity": 0.28176963329315186,
+      "visual": 0.07359512644854495,
+      "scene_support": 0.7678454011021093,
+      "object_support": 0.8039909462735843,
+      "score": 0.500988954792126,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.34)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Farm animal sounds hitting objects, and a rooster croaks",
+      "clip_similarity": 0.2805074155330658,
+      "visual": 0.026887685107171374,
+      "scene_support": 0.564655551389059,
+      "object_support": 0.4844822370241028,
+      "score": 0.3254964105668171,
+      "conflicts": [
+        "names 'a frog', not visible in image (z=-0.12)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig oinks nearby and clangs its hooves on the floor",
+      "clip_similarity": 0.28042033314704895,
+      "visual": 0.023665265358877426,
+      "scene_support": 0.7227037072384068,
+      "object_support": 0.8456820044002913,
+      "score": 0.4799818196351604,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person is sawing wood with farm animal sounds in the background",
+      "clip_similarity": 0.2803903818130493,
+      "visual": 0.022556938238057638,
+      "scene_support": 0.32708659441009796,
+      "object_support": 0.22637384449203676,
+      "score": 0.17506090696586346,
+      "conflicts": [
+        "names 'a power tool', not visible in image (z=-0.06)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A pig oinks along with the sounds of other farm animals",
+      "clip_similarity": 0.28036725521087646,
+      "visual": 0.021701155306956987,
+      "scene_support": 0.6674381782507378,
+      "object_support": 0.8947957374035789,
+      "score": 0.47735063681907774,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A pig is oinking",
+      "clip_similarity": 0.2797808051109314,
+      "visual": 0.0,
+      "scene_support": 0.9787979599029398,
+      "object_support": 1.0,
+      "score": 0.5936393879708819,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.43830257654190063
+    ],
+    [
+      "crevasse",
+      0.032032594084739685
+    ],
+    [
+      "cliff",
+      0.025562291964888573
+    ],
+    [
+      "lobby",
+      0.02335629053413868
+    ],
+    [
+      "sandbox",
+      0.018792452290654182
+    ]
+  ],
+  "top_objects": [
+    [
+      "wild boar",
+      0.06976193189620972
+    ],
+    [
+      "pig",
+      0.053976673632860184
+    ],
+    [
+      "chest",
+      0.04236096143722534
+    ],
+    [
+      "plunger",
+      0.033248357474803925
+    ],
+    [
+      "alp",
+      0.022814787924289703
+    ]
+  ]
+}

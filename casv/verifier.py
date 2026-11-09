@@ -50,6 +50,12 @@ class VerifierConfig:
     uncertainty_threshold: float = 0.10
 
 
+def text_cache_path(texts, model_id=CLIP_MODEL_ID):
+    """Disk cache file of the CLIP embeddings of texts (keyed by content and model)."""
+    key = hashlib.sha1(("\n".join(texts) + model_id).encode()).hexdigest()[:16]
+    return CACHE_DIR / f"clip_text_{key}.npy"
+
+
 class CLIPRecognizer:
     """CLIP zero-shot encoder with a disk cache for text embeddings."""
 
@@ -67,8 +73,7 @@ class CLIPRecognizer:
     @torch.no_grad()
     def encode_texts(self, texts, batch_size=256):
         """L2-normalised CLIP text embeddings, cached on disk by content hash."""
-        key = hashlib.sha1(("\n".join(texts) + self.model_id).encode()).hexdigest()[:16]
-        cache = CACHE_DIR / f"clip_text_{key}.npy"
+        cache = text_cache_path(texts, self.model_id)
         if cache.exists():
             return np.load(cache)
         chunks = []

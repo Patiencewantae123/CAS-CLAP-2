@@ -1,0 +1,288 @@
+{
+  "id": "-EQByFLFqig",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\-EQByFLFqig.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\-EQByFLFqig.wav",
+  "gt_captions": [
+    "A man speaking as rain lightly falls followed by thunder",
+    "A man speaks with rain falling and thunder cracking",
+    "A man speaks as rain pitter-patters and thunder rumbles",
+    "A man speaks as rain falls and distant thunder roars",
+    "Man speaking, rain, thunder"
+  ],
+  "top_scene": [
+    "swamp",
+    0.35949718952178955
+  ],
+  "top_object": [
+    "tailed frog",
+    0.8703676462173462
+  ],
+  "env_probs": {
+    "indoor": 0.23846451938152313,
+    "outdoor": 0.7615354806184769
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A large volume of water splashes in the background, while a frog croaks seven times in the foreground",
+    "casv": "A frog croaks several times"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.0449020080268383,
+    "clap_gt_audio_baseline": 0.29774802923202515,
+    "clap_text_casv": 0.11872270703315735,
+    "clap_gt_audio_casv": 0.3852614164352417
+  },
+  "verdicts": [
+    {
+      "caption": "A large volume of water splashes in the background, while a frog croaks seven times in the foreground",
+      "clip_similarity": 0.33627942204475403,
+      "visual": 1.0,
+      "scene_support": 0.06659033017008449,
+      "object_support": 0.2842602548117261,
+      "score": 0.5052551754945432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle engine starting up and chugging while frogs croak in the background",
+      "clip_similarity": 0.3245777487754822,
+      "visual": 0.5526506477082408,
+      "scene_support": 0.02048706516381031,
+      "object_support": 0.0,
+      "score": 0.22720637863243942,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.50)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks as a man and woman speak and laugh",
+      "clip_similarity": 0.31930702924728394,
+      "visual": 0.35115357008579146,
+      "scene_support": 0.41091950846959324,
+      "object_support": 0.5657022147386731,
+      "score": 0.43344794499679645,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine works while some frogs croak",
+      "clip_similarity": 0.316069632768631,
+      "visual": 0.22738945665424798,
+      "scene_support": 0.534996525805199,
+      "object_support": 0.37753915728925597,
+      "score": 0.36471648759003567,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.85)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple frogs croak quickly",
+      "clip_similarity": 0.3153983950614929,
+      "visual": 0.20172836130384753,
+      "scene_support": 0.7315291099208708,
+      "object_support": 0.5627944501750121,
+      "score": 0.4689884125503039,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks several times",
+      "clip_similarity": 0.31415385007858276,
+      "visual": 0.1541500039876497,
+      "scene_support": 1.0,
+      "object_support": 0.9097016862433607,
+      "score": 0.6345705074680681,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A frog croaks nearby several times, followed by a woman talking and a woman laughing",
+      "clip_similarity": 0.3138783574104309,
+      "visual": 0.14361805152043386,
+      "scene_support": 0.0,
+      "object_support": 0.35315866979394406,
+      "score": 0.16339482154635676,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks multiple times nearby",
+      "clip_similarity": 0.31331169605255127,
+      "visual": 0.12195485980563056,
+      "scene_support": 0.7373530835597271,
+      "object_support": 1.0,
+      "score": 0.5699878689901703,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks several times in a row",
+      "clip_similarity": 0.3133015036582947,
+      "visual": 0.12156520946554102,
+      "scene_support": 0.744518840598932,
+      "object_support": 0.94590465549232,
+      "score": 0.555753132613592,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks multiple times",
+      "clip_similarity": 0.3131830394268036,
+      "visual": 0.11703637875835982,
+      "scene_support": 0.9170010072585987,
+      "object_support": 0.9489086519780342,
+      "score": 0.6065874492743337,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A frog croaks",
+      "clip_similarity": 0.31274479627609253,
+      "visual": 0.10028255346298891,
+      "scene_support": 0.9193301546108791,
+      "object_support": 0.9255414606133147,
+      "score": 0.5935745059524536,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Frogs vocalize and a stream runs",
+      "clip_similarity": 0.31264162063598633,
+      "visual": 0.09633819826594206,
+      "scene_support": 0.7633988604051581,
+      "object_support": 0.45774404285389547,
+      "score": 0.4048781502840929,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog croaks several times, followed by a human making imitation frog noises several times",
+      "clip_similarity": 0.31187745928764343,
+      "visual": 0.06712467671554385,
+      "scene_support": 0.5270917194795856,
+      "object_support": 0.7975800532552658,
+      "score": 0.4242514025066729,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Squeaking of frogs",
+      "clip_similarity": 0.3117831349372864,
+      "visual": 0.06351870207699582,
+      "scene_support": 0.7029670286755544,
+      "object_support": 0.411217729145112,
+      "score": 0.3596629081769982,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog screaming followed by two girls laughing then talking",
+      "clip_similarity": 0.31174665689468384,
+      "visual": 0.062124164017727954,
+      "scene_support": 0.06482191712184882,
+      "object_support": 0.05376503493738943,
+      "score": 0.060425751224862656,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog snaps and croaks",
+      "clip_similarity": 0.3111562132835388,
+      "visual": 0.039551788176049034,
+      "scene_support": 0.7936534603053902,
+      "object_support": 0.5448869899122937,
+      "score": 0.41738285033572475,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several frogs croak",
+      "clip_similarity": 0.3105398118495941,
+      "visual": 0.01598705722846954,
+      "scene_support": 0.7191811658115653,
+      "object_support": 0.6583537891189265,
+      "score": 0.41965530937053536,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talks while some frogs croak",
+      "clip_similarity": 0.3105306923389435,
+      "visual": 0.015638422713652574,
+      "scene_support": 0.38126027429560055,
+      "object_support": 0.3673859092538177,
+      "score": 0.23084922415028647,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks followed by a man speaking while music plays",
+      "clip_similarity": 0.31034383177757263,
+      "visual": 0.008494833145344135,
+      "scene_support": 0.44068926845910067,
+      "object_support": 0.4501016677252178,
+      "score": 0.27063521411343316,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog croaks intensively",
+      "clip_similarity": 0.31012162566185,
+      "visual": 0.0,
+      "scene_support": 0.6687592887737456,
+      "object_support": 0.8427102238354507,
+      "score": 0.45344085378275883,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "swamp",
+      0.35949718952178955
+    ],
+    [
+      "lobby",
+      0.06320751458406448
+    ],
+    [
+      "wild field",
+      0.0435447134077549
+    ],
+    [
+      "clothing store",
+      0.03433132916688919
+    ],
+    [
+      "rainforest",
+      0.03413264453411102
+    ]
+  ],
+  "top_objects": [
+    [
+      "tailed frog",
+      0.8703676462173462
+    ],
+    [
+      "website",
+      0.03860632702708244
+    ],
+    [
+      "tree frog",
+      0.01899968460202217
+    ],
+    [
+      "American bullfrog",
+      0.011000515893101692
+    ],
+    [
+      "newt",
+      0.006202247459441423
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "gwQMkQmBITE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\gwQMkQmBITE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\gwQMkQmBITE.wav",
+  "gt_captions": [
+    "Wood thumping as a man is talking",
+    "A man is talking with tapping background noises",
+    "A man talking followed by several lights scrapping on a wooden surface as wood clanks in the background",
+    "A man is talking with thumping noises in the background",
+    "Wood thumping and rubbing as a man is talking followed by footsteps on a wooden surface"
+  ],
+  "top_scene": [
+    "door elevator",
+    0.14871180057525635
+  ],
+  "top_object": [
+    "balance beam",
+    0.12191476672887802
+  ],
+  "env_probs": {
+    "indoor": 0.8070522546768188,
+    "outdoor": 0.19294774532318115
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Rubbing and tapping noises on wood",
+    "casv": "Rubbing and tapping noises on wood"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3094494342803955,
+    "clap_gt_audio_baseline": 0.48515990376472473,
+    "clap_text_casv": 0.3094494342803955,
+    "clap_gt_audio_casv": 0.48515990376472473
+  },
+  "verdicts": [
+    {
+      "caption": "Rubbing and tapping noises on wood",
+      "clip_similarity": 0.33614248037338257,
+      "visual": 1.0,
+      "scene_support": 0.5877811758777379,
+      "object_support": 0.5985777058727358,
+      "score": 0.7559076645251421,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wood cracking while a machine works",
+      "clip_similarity": 0.32555001974105835,
+      "visual": 0.5825926830643191,
+      "scene_support": 0.2812601544783965,
+      "object_support": 0.12853103733095922,
+      "score": 0.3559744307685343,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person uses a drill on wood",
+      "clip_similarity": 0.3226197361946106,
+      "visual": 0.46712170465435277,
+      "scene_support": 0.31459203975776956,
+      "object_support": 0.5943866027269677,
+      "score": 0.45954227460716235,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A saw is rubbing a surface",
+      "clip_similarity": 0.31980371475219727,
+      "visual": 0.35615334748867883,
+      "scene_support": 0.4394449898781028,
+      "object_support": 0.8042245761825396,
+      "score": 0.5155622088136642,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rubbing and sawing of wood",
+      "clip_similarity": 0.3185175061225891,
+      "visual": 0.3054689114789831,
+      "scene_support": 0.4456545348705874,
+      "object_support": 0.7458544186345636,
+      "score": 0.47964025064313853,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Banging and sliding of wood",
+      "clip_similarity": 0.31672972440719604,
+      "visual": 0.23501944794152466,
+      "scene_support": 0.6316289738220805,
+      "object_support": 0.9425294303152587,
+      "score": 0.5662553004178117,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Scraping of metal on wood",
+      "clip_similarity": 0.31644004583358765,
+      "visual": 0.2236043518292339,
+      "scene_support": 0.3767582995212734,
+      "object_support": 0.3797554763670287,
+      "score": 0.3163958734981842,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A machine taps continuously and a thumb takes place in the background",
+      "clip_similarity": 0.31442829966545105,
+      "visual": 0.1443293278716248,
+      "scene_support": 0.5843227886043946,
+      "object_support": 0.6062641069091602,
+      "score": 0.41490779980271636,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person hammers wood and then saws it nearby",
+      "clip_similarity": 0.31384408473968506,
+      "visual": 0.1213077096525677,
+      "scene_support": 0.3591909432913108,
+      "object_support": 0.6401671792225422,
+      "score": 0.348330520615183,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A low hum and then a buzz occurs while sawing",
+      "clip_similarity": 0.31324654817581177,
+      "visual": 0.09776113793945772,
+      "scene_support": 0.6005143487666924,
+      "object_support": 0.5964941643014712,
+      "score": 0.3982070090962322,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door sliding close followed by metal clacking together",
+      "clip_similarity": 0.3128806948661804,
+      "visual": 0.08334429433097203,
+      "scene_support": 1.0,
+      "object_support": 0.4830802322346894,
+      "score": 0.47826178740279557,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.3125509023666382,
+      "visual": 0.07034846577350194,
+      "scene_support": 0.0,
+      "object_support": 0.21450947666611653,
+      "score": 0.09249222930923573,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A series of wood clanking and sliding",
+      "clip_similarity": 0.31219911575317383,
+      "visual": 0.05648593547417276,
+      "scene_support": 0.5802066952222907,
+      "object_support": 0.785667186583511,
+      "score": 0.4323565387314096,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A hand saw cutting",
+      "clip_similarity": 0.31192296743392944,
+      "visual": 0.045604013604163926,
+      "scene_support": 0.5537346759689653,
+      "object_support": 1.0,
+      "score": 0.48436200823235515,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A piece of wood splintering and splitting",
+      "clip_similarity": 0.3118619918823242,
+      "visual": 0.04320120633608298,
+      "scene_support": 0.5081609425093617,
+      "object_support": 0.9741885694228458,
+      "score": 0.4619853361140954,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Sawing of something wooden by a blade at a steady medium rate",
+      "clip_similarity": 0.3118422031402588,
+      "visual": 0.042421409646930607,
+      "scene_support": 0.25826172706499734,
+      "object_support": 0.7592451830208021,
+      "score": 0.3222206368845121,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sliding sound and spraying paint",
+      "clip_similarity": 0.31177669763565063,
+      "visual": 0.0398400947030196,
+      "scene_support": 0.3896891317758065,
+      "object_support": 0.0,
+      "score": 0.1328427774139498,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Knocking of wood on metal with the high pitched running of a saw",
+      "clip_similarity": 0.31171172857284546,
+      "visual": 0.0372799188259832,
+      "scene_support": 0.5356946749263665,
+      "object_support": 0.6698768238737137,
+      "score": 0.3765834171704173,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A rubbing and scratching noise",
+      "clip_similarity": 0.3115729093551636,
+      "visual": 0.031809598075875155,
+      "scene_support": 0.609084076909042,
+      "object_support": 0.267809863853072,
+      "score": 0.27579202145898424,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A series of rasping noises against a wooden surface",
+      "clip_similarity": 0.31076568365097046,
+      "visual": 0.0,
+      "scene_support": 0.4613304430176286,
+      "object_support": 0.6616333137299113,
+      "score": 0.336889127024262,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "door elevator",
+      0.14871180057525635
+    ],
+    [
+      "closet",
+      0.09089305251836777
+    ],
+    [
+      "staircase",
+      0.061968542635440826
+    ],
+    [
+      "attic",
+      0.05861951410770416
+    ],
+    [
+      "galley",
+      0.030636770650744438
+    ]
+  ],
+  "top_objects": [
+    [
+      "balance beam",
+      0.12191476672887802
+    ],
+    [
+      "hand plane",
+      0.1026020348072052
+    ],
+    [
+      "horizontal bar",
+      0.07358037680387497
+    ],
+    [
+      "nail",
+      0.037986185401678085
+    ],
+    [
+      "sliding door",
+      0.023225851356983185
+    ]
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "id": "4abZbau8tZo",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\4abZbau8tZo.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\4abZbau8tZo.wav",
+  "gt_captions": [
+    "An engine idling and ticking with distant traffic and a man speaking",
+    "A man talking with light tapping and a vehicle passing by in the background",
+    "Waves roll in and a man speaks",
+    "Swirling wind followed by a man speaking and then a child talks",
+    "A man talking as rain falls on a hard surface as vehicles drive by followed by a child talking in the background"
+  ],
+  "top_scene": [
+    "beach house",
+    0.3013319671154022
+  ],
+  "top_object": [
+    "lighthouse",
+    0.06865096092224121
+  ],
+  "env_probs": {
+    "indoor": 0.05970187485218048,
+    "outdoor": 0.9402981251478195
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "Wind noise on ocean",
+    "casv": "Wind noise on ocean"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1811700165271759,
+    "clap_gt_audio_baseline": 0.39814454317092896,
+    "clap_text_casv": 0.1811700165271759,
+    "clap_gt_audio_casv": 0.39814454317092896
+  },
+  "verdicts": [
+    {
+      "caption": "Wind noise on ocean",
+      "clip_similarity": 0.3229385018348694,
+      "visual": 1.0,
+      "scene_support": 0.9314907070100347,
+      "object_support": 0.7457783574026232,
+      "score": 0.9031807193237974,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Large waves hit against a beach continuously in almost a thunder",
+      "clip_similarity": 0.3156339228153229,
+      "visual": 0.6147313190250588,
+      "scene_support": 0.3926342709238426,
+      "object_support": 0.0,
+      "score": 0.36368280888717636,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blows by loudly as waves crash nearby",
+      "clip_similarity": 0.3153446614742279,
+      "visual": 0.5994746786297003,
+      "scene_support": 0.7867254790927786,
+      "object_support": 0.7433724146174338,
+      "score": 0.6988192395649439,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Thunder booms while rain falls",
+      "clip_similarity": 0.31288349628448486,
+      "visual": 0.46966434133628426,
+      "scene_support": 0.20370470140237373,
+      "object_support": 0.3134997887551465,
+      "score": 0.34302708358176975,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud rainstorm with thunder in the background",
+      "clip_similarity": 0.31085097789764404,
+      "visual": 0.36246231424340836,
+      "scene_support": 0.26104051225500874,
+      "object_support": 0.24240554041403992,
+      "score": 0.29601874149807794,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud and heavy rainfall on metal with faint yell in background",
+      "clip_similarity": 0.3098786175251007,
+      "visual": 0.3111766758569089,
+      "scene_support": 0.0,
+      "object_support": 0.046685704344780005,
+      "score": 0.13847638164619755,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Waves crash as wind blows nearby",
+      "clip_similarity": 0.3097512125968933,
+      "visual": 0.30445690069822784,
+      "scene_support": 0.6622714007001552,
+      "object_support": 0.6135846417299119,
+      "score": 0.5045395730083112,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind is gusting followed by a tapping sound",
+      "clip_similarity": 0.30879831314086914,
+      "visual": 0.25419769814298426,
+      "scene_support": 0.6736065100220318,
+      "object_support": 0.7416351180071741,
+      "score": 0.5262515676659555,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A very loud explosion with a wind sound at the end",
+      "clip_similarity": 0.3081817030906677,
+      "visual": 0.22167555825219826,
+      "scene_support": 0.8734092331535183,
+      "object_support": 0.9436508791217895,
+      "score": 0.6337882569834716,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blows nearby as waves splash several times",
+      "clip_similarity": 0.30817264318466187,
+      "visual": 0.22119770757424762,
+      "scene_support": 0.7836998411239164,
+      "object_support": 0.6560957453984717,
+      "score": 0.5204177589864154,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Winds blow past the microphone while high waves crash in the background",
+      "clip_similarity": 0.3067631125450134,
+      "visual": 0.14685420209939923,
+      "scene_support": 0.7141405445804456,
+      "object_support": 0.7398238561120769,
+      "score": 0.4949310010475164,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Winds gushing as thunder later erupts",
+      "clip_similarity": 0.3057538866996765,
+      "visual": 0.09362415157926506,
+      "scene_support": 0.45762845922295153,
+      "object_support": 0.4973703861934624,
+      "score": 0.3239493142566302,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Static noise and wind blowing with very muffled dog barking",
+      "clip_similarity": 0.3056131601333618,
+      "visual": 0.08620174729872898,
+      "scene_support": 0.629099427083214,
+      "object_support": 0.5142125774120672,
+      "score": 0.37747430026807594,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud waves hitting the shore and water moving around",
+      "clip_similarity": 0.30554676055908203,
+      "visual": 0.08269960483006435,
+      "scene_support": 0.6665430581697384,
+      "object_support": 0.4369585001497057,
+      "score": 0.36413030942785896,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Waves hitting each other and piano music",
+      "clip_similarity": 0.3047861158847809,
+      "visual": 0.04258058228620112,
+      "scene_support": 0.831368970790185,
+      "object_support": 0.7140265399276442,
+      "score": 0.4806508861298292,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy wave sound with wind blowing and a man talking",
+      "clip_similarity": 0.30461248755455017,
+      "visual": 0.03342282554363374,
+      "scene_support": 0.6776827246904438,
+      "object_support": 0.5704173180542751,
+      "score": 0.38779914304086915,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Very loud waves with soft voices in the background",
+      "clip_similarity": 0.30442529916763306,
+      "visual": 0.02354986466137049,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6094199458645482,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Waves break nearby while wind blows",
+      "clip_similarity": 0.3042946755886078,
+      "visual": 0.016660326761838592,
+      "scene_support": 0.9245327140299274,
+      "object_support": 0.8951266936570922,
+      "score": 0.5525619530108412,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal rattling with slight wind in background",
+      "clip_similarity": 0.3040087819099426,
+      "visual": 0.0015813084934814252,
+      "scene_support": 0.7501971622393045,
+      "object_support": 0.8397521393718986,
+      "score": 0.47761731388075346,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy wind blowing into a microphone with ocean waves in the background",
+      "clip_similarity": 0.3039788007736206,
+      "visual": 0.0,
+      "scene_support": 0.45246842538440907,
+      "object_support": 0.33831780456833266,
+      "score": 0.2372358689858225,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "beach house",
+      0.3013319671154022
+    ],
+    [
+      "lighthouse",
+      0.07088815420866013
+    ],
+    [
+      "cliff",
+      0.06180475652217865
+    ],
+    [
+      "exterior balcony",
+      0.054821185767650604
+    ],
+    [
+      "coast",
+      0.054128989577293396
+    ]
+  ],
+  "top_objects": [
+    [
+      "lighthouse",
+      0.06865096092224121
+    ],
+    [
+      "cliff",
+      0.059854231774806976
+    ],
+    [
+      "cannon",
+      0.0569901205599308
+    ],
+    [
+      "yawl",
+      0.043904613703489304
+    ],
+    [
+      "motorboat",
+      0.03878479823470116
+    ]
+  ]
+}

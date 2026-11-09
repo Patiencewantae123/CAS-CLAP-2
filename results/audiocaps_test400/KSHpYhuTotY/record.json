@@ -1,0 +1,283 @@
+{
+  "id": "KSHpYhuTotY",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\KSHpYhuTotY.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\KSHpYhuTotY.wav",
+  "gt_captions": [
+    "A man talking as metal clanks together followed by footsteps on grass as insects buzz in the background",
+    "A person speaks with the buzzing of nearby insects",
+    "A man speaking as footsteps walk on grass while insects are buzzing",
+    "A man talking as metal clanks together followed by footsteps on grass while insects buzz in the background",
+    "Insects buzz and men speak"
+  ],
+  "top_scene": [
+    "sandbox",
+    0.3421059846878052
+  ],
+  "top_object": [
+    "apiary",
+    0.7814426422119141
+  ],
+  "env_probs": {
+    "indoor": 0.2643483877182007,
+    "outdoor": 0.7356516122817993
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Bees fly nearby and wood objects are tapped",
+    "casv": "Bees fly nearby and wood objects are tapped"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.27191171050071716,
+    "clap_gt_audio_baseline": 0.6062445640563965,
+    "clap_text_casv": 0.27191171050071716,
+    "clap_gt_audio_casv": 0.6062445640563965
+  },
+  "verdicts": [
+    {
+      "caption": "Bees fly nearby and wood objects are tapped",
+      "clip_similarity": 0.3553723692893982,
+      "visual": 1.0,
+      "scene_support": 0.893725508738895,
+      "object_support": 1.0,
+      "score": 0.9681176526216686,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several bees flies while wood is tapped",
+      "clip_similarity": 0.3528482913970947,
+      "visual": 0.9327891007465144,
+      "scene_support": 0.2873854780101619,
+      "object_support": 0.5825998022796077,
+      "score": 0.6341112243855367,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bees buzzing with a slight metal tapping sound near the end",
+      "clip_similarity": 0.3498622179031372,
+      "visual": 0.8532762277968103,
+      "scene_support": 0.7125271360330008,
+      "object_support": 0.8427814988865678,
+      "score": 0.8079030815945947,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bee buzzing sounds are continuous while a low, muffled, tapping movement is in the background",
+      "clip_similarity": 0.3470882177352905,
+      "visual": 0.7794104226333461,
+      "scene_support": 0.8263946289957378,
+      "object_support": 0.6009843182428186,
+      "score": 0.7399778532249054,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Grinding noise against wood as bees are buzzing all around",
+      "clip_similarity": 0.33789682388305664,
+      "visual": 0.5346628860833427,
+      "scene_support": 0.783190054281044,
+      "object_support": 0.30601280162567124,
+      "score": 0.5406260112053517,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees fly while some objects are tapped",
+      "clip_similarity": 0.33469346165657043,
+      "visual": 0.44936407001538736,
+      "scene_support": 0.5707158885027015,
+      "object_support": 0.6975246129760534,
+      "score": 0.5602177784497814,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Several bees fly and wood is tapped followed by a man talking",
+      "clip_similarity": 0.32857179641723633,
+      "visual": 0.28635696674054834,
+      "scene_support": 0.8008611706486133,
+      "object_support": 0.6375625908198569,
+      "score": 0.5460699151367604,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks with a bee buzzing and then a motorized vibration with some clicks",
+      "clip_similarity": 0.3283291459083557,
+      "visual": 0.27989569272205966,
+      "scene_support": 0.22328249186442728,
+      "object_support": 0.0,
+      "score": 0.17894302464815204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man is speaking with a machine in use, and bees are buzzing",
+      "clip_similarity": 0.32573187351226807,
+      "visual": 0.21073577738046206,
+      "scene_support": 0.47450095735505454,
+      "object_support": 0.3866524679239827,
+      "score": 0.34264033853589604,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees buzzing around while an individual is blowing into something",
+      "clip_similarity": 0.32553061842918396,
+      "visual": 0.20537677671147975,
+      "scene_support": 0.6147488342054971,
+      "object_support": 0.7981699150418098,
+      "score": 0.506026335458784,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays and bees buzz while someone speaks",
+      "clip_similarity": 0.32527369260787964,
+      "visual": 0.19853538106994317,
+      "scene_support": 1.0,
+      "object_support": 0.7113135019467494,
+      "score": 0.5928082030120021,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bees buzzing and men speaking clicking",
+      "clip_similarity": 0.32191145420074463,
+      "visual": 0.10900602560226264,
+      "scene_support": 0.8409102743739485,
+      "object_support": 0.6513253758795846,
+      "score": 0.491273105316965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks and laughs while bees fly",
+      "clip_similarity": 0.32180094718933105,
+      "visual": 0.10606345571027591,
+      "scene_support": 0.0,
+      "object_support": 0.15528078772232667,
+      "score": 0.08900961860080836,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees are buzzing as a man speaks followed by a woman speaking",
+      "clip_similarity": 0.32171374559402466,
+      "visual": 0.10374146015904796,
+      "scene_support": 0.6879986161895054,
+      "object_support": 0.5509826114486399,
+      "score": 0.41319095235506276,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaks while bees buzz",
+      "clip_similarity": 0.32096782326698303,
+      "visual": 0.08387911338813751,
+      "scene_support": 0.5810076797891245,
+      "object_support": 0.6667240060266568,
+      "score": 0.4078711510999894,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A swarm of bees are buzzing gently",
+      "clip_similarity": 0.3194429874420166,
+      "visual": 0.04327593417467977,
+      "scene_support": 0.5766976368084015,
+      "object_support": 0.7526085504364373,
+      "score": 0.4161022298433235,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A swarm of bees are buzzing loudly",
+      "clip_similarity": 0.3191668689250946,
+      "visual": 0.03592347731134183,
+      "scene_support": 0.5975433772517595,
+      "object_support": 0.6748235810683728,
+      "score": 0.39607947842057645,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bees buzzing while man speaking",
+      "clip_similarity": 0.3190292716026306,
+      "visual": 0.032259549266222425,
+      "scene_support": 0.3548384586793109,
+      "object_support": 0.45616115885300756,
+      "score": 0.2562037049661845,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several men talk while bees fly",
+      "clip_similarity": 0.318256139755249,
+      "visual": 0.01167267004887618,
+      "scene_support": 0.5236663316871655,
+      "object_support": 0.38715647420498533,
+      "score": 0.2779159097871957,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man talks loudly nearby as bees swarm around",
+      "clip_similarity": 0.3178177773952484,
+      "visual": 0.0,
+      "scene_support": 0.4890309675480877,
+      "object_support": 0.38674483560894735,
+      "score": 0.2627327409471105,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sandbox",
+      0.3421059846878052
+    ],
+    [
+      "outdoor library",
+      0.07710076868534088
+    ],
+    [
+      "sauna",
+      0.07041171193122864
+    ],
+    [
+      "archaelogical excavation",
+      0.07013104856014252
+    ],
+    [
+      "outdoor kennel",
+      0.06750177592039108
+    ]
+  ],
+  "top_objects": [
+    [
+      "apiary",
+      0.7814426422119141
+    ],
+    [
+      "crate",
+      0.17628422379493713
+    ],
+    [
+      "chest",
+      0.01253790594637394
+    ],
+    [
+      "pan flute",
+      0.0031513720750808716
+    ],
+    [
+      "bee",
+      0.002499301452189684
+    ]
+  ]
+}

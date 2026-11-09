@@ -1,0 +1,285 @@
+{
+  "id": "huMLK0oA3L8",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\huMLK0oA3L8.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\huMLK0oA3L8.wav",
+  "gt_captions": [
+    "A man speaks then whistles with a playing guitar",
+    "A man speaks then whistles with a playing guitar",
+    "A man talking then whistling as guitar music plays",
+    "A man speaks followed by whistling and guitar music",
+    "A man speaks followed by whistling and guitar music"
+  ],
+  "top_scene": [
+    "music studio",
+    0.2135598063468933
+  ],
+  "top_object": [
+    "acoustic guitar",
+    0.37994030117988586
+  ],
+  "env_probs": {
+    "indoor": 0.6767985820770264,
+    "outdoor": 0.32320141792297363
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A person is playing a guitar and whistling",
+    "casv": "A person is playing a guitar and whistling"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.49779531359672546,
+    "clap_gt_audio_baseline": 0.8171631097793579,
+    "clap_text_casv": 0.49779531359672546,
+    "clap_gt_audio_casv": 0.8171631097793579
+  },
+  "verdicts": [
+    {
+      "caption": "A person is playing a guitar and whistling",
+      "clip_similarity": 0.30806460976600647,
+      "visual": 1.0,
+      "scene_support": 0.6424269612985083,
+      "object_support": 1.0,
+      "score": 0.8927280883895525,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man is whistling and strumming a guitar",
+      "clip_similarity": 0.3037905693054199,
+      "visual": 0.7970893306111245,
+      "scene_support": 0.062080805522435493,
+      "object_support": 0.7863770577164318,
+      "score": 0.57337309121611,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Strumming of a guitar with a frog croaking in the background",
+      "clip_similarity": 0.3029441833496094,
+      "visual": 0.7569070388339212,
+      "scene_support": 0.2607577817548404,
+      "object_support": 0.5334576250589348,
+      "score": 0.541027437577701,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person whistling followed by a guitar playing music",
+      "clip_similarity": 0.29973429441452026,
+      "visual": 0.6045171121383063,
+      "scene_support": 0.5183107492993015,
+      "object_support": 0.8208730109285961,
+      "score": 0.6435619729236919,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Whistling with guitar music",
+      "clip_similarity": 0.2978992462158203,
+      "visual": 0.5173979419309289,
+      "scene_support": 0.757675425496582,
+      "object_support": 0.7351444083721552,
+      "score": 0.6548051269329928,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chime melody playing",
+      "clip_similarity": 0.2967711091041565,
+      "visual": 0.4638394745740889,
+      "scene_support": 0.8339667296677985,
+      "object_support": 0.6857407548414934,
+      "score": 0.6414480351824232,
+      "conflicts": [
+        "names 'a bell', not visible in image (z=-0.22)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid tapping against a surface",
+      "clip_similarity": 0.2950068414211273,
+      "visual": 0.3800806192600516,
+      "scene_support": 0.7049079952498262,
+      "object_support": 0.43586670020082036,
+      "score": 0.49426465633921457,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Continuous, rapid tapping",
+      "clip_similarity": 0.2940310537815094,
+      "visual": 0.3337549644231082,
+      "scene_support": 0.7468937495071815,
+      "object_support": 0.4225041860007214,
+      "score": 0.48432136642161416,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person whistles while an electric guitar is played",
+      "clip_similarity": 0.29399773478507996,
+      "visual": 0.332173140401738,
+      "scene_support": 0.2632338218111352,
+      "object_support": 0.8146861133992787,
+      "score": 0.45624523672381934,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man sing and play a guitar followed by someone whistling",
+      "clip_similarity": 0.29398274421691895,
+      "visual": 0.3314614610790643,
+      "scene_support": 0.5882772495824482,
+      "object_support": 0.7759137864597394,
+      "score": 0.5418418952442821,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rapid tapping",
+      "clip_similarity": 0.293520450592041,
+      "visual": 0.3095140064999102,
+      "scene_support": 0.7073099631789845,
+      "object_support": 0.3642143663083281,
+      "score": 0.4452629014461578,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High pitched whooshing alternating with lower tones",
+      "clip_similarity": 0.2934124171733856,
+      "visual": 0.3043851048206016,
+      "scene_support": 1.0,
+      "object_support": 0.46248443469185113,
+      "score": 0.5604993723357959,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Some rustling with faint tapping",
+      "clip_similarity": 0.2914833724498749,
+      "visual": 0.2128034364348686,
+      "scene_support": 0.7270573533312147,
+      "object_support": 0.3279567163295177,
+      "score": 0.4016255954721672,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Continuous, rapid tapping with brief rustling",
+      "clip_similarity": 0.29026341438293457,
+      "visual": 0.15488575636797358,
+      "scene_support": 0.7140152827524247,
+      "object_support": 0.36341639189427205,
+      "score": 0.3851838049411984,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rapid, continuous tapping",
+      "clip_similarity": 0.28996965289115906,
+      "visual": 0.14093938840854073,
+      "scene_support": 0.6591941430452246,
+      "object_support": 0.38475211261322584,
+      "score": 0.36955963206095144,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "High pitched rubbing with some intermittent tapping",
+      "clip_similarity": 0.28976142406463623,
+      "visual": 0.13105369570969144,
+      "scene_support": 0.32595320075219053,
+      "object_support": 0.0,
+      "score": 0.15020743850953372,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A guitar is playing while rain is hitting a surface",
+      "clip_similarity": 0.2895796597003937,
+      "visual": 0.12242440706359414,
+      "scene_support": 0.0,
+      "object_support": 0.5272153500281118,
+      "score": 0.2071343678338712,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Whistling a song and snapping of fingers",
+      "clip_similarity": 0.28895142674446106,
+      "visual": 0.09259895950502207,
+      "scene_support": 0.7986420906499471,
+      "object_support": 0.49315280267842515,
+      "score": 0.42457805180052044,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Guitar music playing with birds chirping then a man sings",
+      "clip_similarity": 0.2872033417224884,
+      "visual": 0.009608378290809433,
+      "scene_support": 0.4822692832446459,
+      "object_support": 0.5550710024173817,
+      "score": 0.31504543701493204,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Continuous rapid tapping",
+      "clip_similarity": 0.28700095415115356,
+      "visual": 0.0,
+      "scene_support": 0.5449755203566932,
+      "object_support": 0.2904507651709357,
+      "score": 0.25062788565828864,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "music studio",
+      0.2135598063468933
+    ],
+    [
+      "clean room",
+      0.059944361448287964
+    ],
+    [
+      "bedroom",
+      0.025532899424433708
+    ],
+    [
+      "indoor stage",
+      0.025056058540940285
+    ],
+    [
+      "closet",
+      0.02372599206864834
+    ]
+  ],
+  "top_objects": [
+    [
+      "acoustic guitar",
+      0.37994030117988586
+    ],
+    [
+      "plectrum",
+      0.24401529133319855
+    ],
+    [
+      "electric guitar",
+      0.17798073589801788
+    ],
+    [
+      "banjo",
+      0.03291935846209526
+    ],
+    [
+      "ocarina",
+      0.030636083334684372
+    ]
+  ]
+}

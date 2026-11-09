@@ -1,0 +1,291 @@
+{
+  "id": "SZ6CcXINiiE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SZ6CcXINiiE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SZ6CcXINiiE.wav",
+  "gt_captions": [
+    "A man speaks followed by a loud burst then laughter",
+    "A man talking followed by footsteps shuffling then a loud popping explosion proceeded by a man laughing as music plays in the background",
+    "A man speaks followed by a loud bursts and then laughter",
+    "A man talking as music is playing in the background followed by a popping explosion then a man laughing",
+    "A man briefly talks followed by a loud burst then laughter"
+  ],
+  "top_scene": [
+    "cockpit",
+    0.36601269245147705
+  ],
+  "top_object": [
+    "crash helmet",
+    0.2685588300228119
+  ],
+  "env_probs": {
+    "indoor": 0.9036774635314941,
+    "outdoor": 0.09632253646850586
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A motorbike engine stuttering before starting up",
+    "casv": "A motorbike revs its engine"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.20306919515132904,
+    "clap_gt_audio_baseline": 0.31661999225616455,
+    "clap_text_casv": 0.0980539619922638,
+    "clap_gt_audio_casv": 0.15341448783874512
+  },
+  "verdicts": [
+    {
+      "caption": "A motorbike engine stuttering before starting up",
+      "clip_similarity": 0.3327389061450958,
+      "visual": 1.0,
+      "scene_support": 0.8204893251614531,
+      "object_support": 0.536079077211092,
+      "score": 0.8069705207117636,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorbike revs its engine",
+      "clip_similarity": 0.3312378525733948,
+      "visual": 0.8892141810775261,
+      "scene_support": 0.9367813253882467,
+      "object_support": 1.0,
+      "score": 0.9367200700474845,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motorcycle engine runs in idle followed by a horn beeping",
+      "clip_similarity": 0.32927966117858887,
+      "visual": 0.7446891345565884,
+      "scene_support": 0.9201729726829726,
+      "object_support": 0.7992257831355717,
+      "score": 0.8136952805681986,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine idling and a spraying sound at the end",
+      "clip_similarity": 0.3291480541229248,
+      "visual": 0.7349758267089571,
+      "scene_support": 0.5404652557919206,
+      "object_support": 0.2545375791472985,
+      "score": 0.5324911811653485,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine works and stops then someone tries to start engine several times",
+      "clip_similarity": 0.32852959632873535,
+      "visual": 0.6893303184539652,
+      "scene_support": 0.7461218014959833,
+      "object_support": 0.6705113990046923,
+      "score": 0.7007220875317888,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine revving on a motorcycle and changes gear",
+      "clip_similarity": 0.32808899879455566,
+      "visual": 0.6568118530510256,
+      "scene_support": 0.7776034150704249,
+      "object_support": 0.6863531489181625,
+      "score": 0.7019117104169865,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle revs its engine",
+      "clip_similarity": 0.327381432056427,
+      "visual": 0.6045896259408667,
+      "scene_support": 1.0,
+      "object_support": 0.9886963274856287,
+      "score": 0.8384447486220353,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorcycle engine is running and vibrating, and scraping occurs",
+      "clip_similarity": 0.3253829777240753,
+      "visual": 0.45709295829172475,
+      "scene_support": 0.9612158811504768,
+      "object_support": 0.9283846078725113,
+      "score": 0.7497173300235863,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A motorbike engine running with wind blowing in a microphone",
+      "clip_similarity": 0.32328733801841736,
+      "visual": 0.3024234879045562,
+      "scene_support": 0.2745670043572387,
+      "object_support": 0.23413981476991064,
+      "score": 0.2735814408999673,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind sounds motorcycle engine",
+      "clip_similarity": 0.3232108950614929,
+      "visual": 0.29678158694686274,
+      "scene_support": 0.567294555311082,
+      "object_support": 0.5380574690270072,
+      "score": 0.4503182420801719,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine sputtering noise",
+      "clip_similarity": 0.32273411750793457,
+      "visual": 0.26159284171443403,
+      "scene_support": 0.5850027343242744,
+      "object_support": 0.6297258352859267,
+      "score": 0.46905570756883397,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine works in idle while wind blows fast and two men talk",
+      "clip_similarity": 0.32244935631752014,
+      "visual": 0.24057593580770467,
+      "scene_support": 0.0,
+      "object_support": 0.06104315325627482,
+      "score": 0.11454332029996432,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud idling engine with clanking and clunking sounds",
+      "clip_similarity": 0.32220542430877686,
+      "visual": 0.2225724428881254,
+      "scene_support": 0.5666946500522173,
+      "object_support": 0.0,
+      "score": 0.2590373721709154,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine accelerates",
+      "clip_similarity": 0.32203730940818787,
+      "visual": 0.21016465992424677,
+      "scene_support": 0.917185639584968,
+      "object_support": 0.8979753039834235,
+      "score": 0.6286141470402162,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motorcycle idling fast along with a rattling",
+      "clip_similarity": 0.32132136821746826,
+      "visual": 0.15732435321599353,
+      "scene_support": 0.6733204938976101,
+      "object_support": 0.6673690909827718,
+      "score": 0.46513661675051193,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine idles then turns off",
+      "clip_similarity": 0.32085177302360535,
+      "visual": 0.1226657047207204,
+      "scene_support": 0.820823418740577,
+      "object_support": 0.822233058276195,
+      "score": 0.5419832249933197,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine runs and changes gear as the wind blows wildly",
+      "clip_similarity": 0.3204590678215027,
+      "visual": 0.09368195075599273,
+      "scene_support": 0.14033515438720348,
+      "object_support": 0.28982177865263414,
+      "score": 0.1665198602143484,
+      "conflicts": [
+        "outdoor sound, but image is indoor (p=0.90)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine running idle",
+      "clip_similarity": 0.32041552662849426,
+      "visual": 0.09046837676020711,
+      "scene_support": 0.7474996326799609,
+      "object_support": 0.5852558655862796,
+      "score": 0.436014000183955,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motorcycle engine works in idle and then moves",
+      "clip_similarity": 0.319253146648407,
+      "visual": 0.004678488630414796,
+      "scene_support": 0.6575156728297178,
+      "object_support": 0.6543926210901351,
+      "score": 0.3954438836281218,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motorcycle engine idling and then revving up",
+      "clip_similarity": 0.31918975710868835,
+      "visual": 0.0,
+      "scene_support": 0.7258762183289347,
+      "object_support": 0.8163091765359276,
+      "score": 0.4626556184594587,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "cockpit",
+      0.36601269245147705
+    ],
+    [
+      "car interior",
+      0.1860683709383011
+    ],
+    [
+      "auto showroom",
+      0.11122459918260574
+    ],
+    [
+      "indoor garage",
+      0.045795783400535583
+    ],
+    [
+      "raceway",
+      0.02614431455731392
+    ]
+  ],
+  "top_objects": [
+    [
+      "crash helmet",
+      0.2685588300228119
+    ],
+    [
+      "car mirror",
+      0.08834114670753479
+    ],
+    [
+      "moped",
+      0.07753400504589081
+    ],
+    [
+      "oil filter",
+      0.03521374985575676
+    ],
+    [
+      "motorboat",
+      0.034130338579416275
+    ]
+  ]
+}

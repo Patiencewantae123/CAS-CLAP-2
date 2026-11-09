@@ -1,0 +1,283 @@
+{
+  "id": "3xDZ-kdGE3o",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3xDZ-kdGE3o.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3xDZ-kdGE3o.wav",
+  "gt_captions": [
+    "A door closes followed by a toilet flushing",
+    "White noise followed by clanking and then a toilet flushing",
+    "Metal clacking followed by a door closing as water trickles then a toilet flushing",
+    "Footsteps then a toilet flushing",
+    "Metal rattling followed by a door slamming shut then plastic clacking proceeded by a toilet flushing"
+  ],
+  "top_scene": [
+    "bathroom",
+    0.37134048342704773
+  ],
+  "top_object": [
+    "sandal",
+    0.09184422343969345
+  ],
+  "env_probs": {
+    "indoor": 0.9174422025680542,
+    "outdoor": 0.0825577974319458
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A female voice followed by a toilet flush and then a man communicating",
+    "casv": "A female voice followed by a toilet flush and then a man communicating"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.14129912853240967,
+    "clap_gt_audio_baseline": 0.41779375076293945,
+    "clap_text_casv": 0.14129912853240967,
+    "clap_gt_audio_casv": 0.41779375076293945
+  },
+  "verdicts": [
+    {
+      "caption": "A female voice followed by a toilet flush and then a man communicating",
+      "clip_similarity": 0.30848175287246704,
+      "visual": 1.0,
+      "scene_support": 0.7190369513812228,
+      "object_support": 0.5505615280379945,
+      "score": 0.7808795438257652,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman talking followed by a toilet flush",
+      "clip_similarity": 0.30783000588417053,
+      "visual": 0.9475963174365831,
+      "scene_support": 0.6741803078501954,
+      "object_support": 0.4539963488975279,
+      "score": 0.7174915239989502,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water flushing and tricking from a toilet",
+      "clip_similarity": 0.3078227639198303,
+      "visual": 0.9470140276719432,
+      "scene_support": 0.5520171401511743,
+      "object_support": 0.30225955473833166,
+      "score": 0.6350886195356291,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Toilet flushing and footsteps clicking",
+      "clip_similarity": 0.30758407711982727,
+      "visual": 0.9278224279805808,
+      "scene_support": 0.5961184776444324,
+      "object_support": 0.4077934594616004,
+      "score": 0.6723025523240421,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks then urinates in a toilet",
+      "clip_similarity": 0.307243287563324,
+      "visual": 0.9004212614840481,
+      "scene_support": 0.5247639090198143,
+      "object_support": 0.21256329717837713,
+      "score": 0.5813666664530767,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Splashing water from a toilet",
+      "clip_similarity": 0.3055739104747772,
+      "visual": 0.7661950838449336,
+      "scene_support": 0.7133662432188275,
+      "object_support": 0.4195371189416844,
+      "score": 0.6463490421861271,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Something falls into water, followed by a man saying something. Then all of a sudden the man is laughing and making childish sounds and proceeds to flush the toilet",
+      "clip_similarity": 0.30466750264167786,
+      "visual": 0.6933154093521008,
+      "scene_support": 0.6789208944180879,
+      "object_support": 0.5192733081844947,
+      "score": 0.6367844245216151,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks and pours water into a toilet",
+      "clip_similarity": 0.30391833186149597,
+      "visual": 0.633078371889063,
+      "scene_support": 0.39843344694630645,
+      "object_support": 0.11718454630670941,
+      "score": 0.4079167467315299,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A toilet flushing followed by footsteps shuffling",
+      "clip_similarity": 0.30228888988494873,
+      "visual": 0.5020631748450821,
+      "scene_support": 0.6983429027711865,
+      "object_support": 0.6809102071238506,
+      "score": 0.614601202906544,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A toilet flushing away water while a bathroom stall door makes noise",
+      "clip_similarity": 0.30136168003082275,
+      "visual": 0.42751091493776927,
+      "scene_support": 0.7915375902292501,
+      "object_support": 0.0025222852876893515,
+      "score": 0.40922232863018954,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking and a sink running",
+      "clip_similarity": 0.3004991412162781,
+      "visual": 0.3581585265912326,
+      "scene_support": 0.18923629767387334,
+      "object_support": 0.18212844151214694,
+      "score": 0.2546728323922991,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Sneakers skid on a floor, followed by a man talking loudly nearby",
+      "clip_similarity": 0.30033767223358154,
+      "visual": 0.34517562146852043,
+      "scene_support": 0.0,
+      "object_support": 0.8049810783594764,
+      "score": 0.3795645720952511,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone closes a door after flushing a toilet",
+      "clip_similarity": 0.2999400794506073,
+      "visual": 0.31320719451353646,
+      "scene_support": 0.9445058298417354,
+      "object_support": 0.4830731432727657,
+      "score": 0.5535565697397649,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Foot steps followed by a toilet flush",
+      "clip_similarity": 0.29977911710739136,
+      "visual": 0.3002650257118073,
+      "scene_support": 0.7950904593381586,
+      "object_support": 1.0,
+      "score": 0.6586331480861705,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water running in a toilet",
+      "clip_similarity": 0.29825419187545776,
+      "visual": 0.17765349206120992,
+      "scene_support": 0.7750812763797961,
+      "object_support": 0.4960368374875326,
+      "score": 0.45239683098468253,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water flushing down a toilet, followed by a child talking",
+      "clip_similarity": 0.2972281873226166,
+      "visual": 0.09515764956220436,
+      "scene_support": 0.28328141139910545,
+      "object_support": 0.0,
+      "score": 0.12304748324461337,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Toilet flushing followed by yelling from a background",
+      "clip_similarity": 0.2969421446323395,
+      "visual": 0.07215840198601546,
+      "scene_support": 1.0,
+      "object_support": 0.6607205226285537,
+      "score": 0.5270795175829722,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks then runs water into a sink",
+      "clip_similarity": 0.29687732458114624,
+      "visual": 0.0669465491543619,
+      "scene_support": 0.3743803688299749,
+      "object_support": 0.4397844145213539,
+      "score": 0.2710280546671434,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone speaks as water runs into a sink",
+      "clip_similarity": 0.2967090308666229,
+      "visual": 0.05341490182546643,
+      "scene_support": 0.40405325293188826,
+      "object_support": 0.3128407905681053,
+      "score": 0.23643417378018464,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A toilet flushing followed by a woman communicating and a man responding",
+      "clip_similarity": 0.2960447072982788,
+      "visual": 0.0,
+      "scene_support": 0.5298613249888041,
+      "object_support": 0.13113302999497103,
+      "score": 0.19829830649513253,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bathroom",
+      0.37134048342704773
+    ],
+    [
+      "locker room",
+      0.09676967561244965
+    ],
+    [
+      "door elevator",
+      0.08038218319416046
+    ],
+    [
+      "shower",
+      0.06221863627433777
+    ],
+    [
+      "elevator lobby",
+      0.05413656309247017
+    ]
+  ],
+  "top_objects": [
+    [
+      "sandal",
+      0.09184422343969345
+    ],
+    [
+      "running shoe",
+      0.03722567483782768
+    ],
+    [
+      "toilet seat",
+      0.02930896170437336
+    ],
+    [
+      "sock",
+      0.028155798092484474
+    ],
+    [
+      "bathtub",
+      0.02759726159274578
+    ]
+  ]
+}

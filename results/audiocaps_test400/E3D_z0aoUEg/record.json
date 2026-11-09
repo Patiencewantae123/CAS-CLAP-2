@@ -1,0 +1,285 @@
+{
+  "id": "E3D_z0aoUEg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\E3D_z0aoUEg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\E3D_z0aoUEg.wav",
+  "gt_captions": [
+    "Frogs croaking and a humming with insects vocalizing",
+    "A frog croaking and insects vocalizing with a humming",
+    "A croaking frog with brief bird chirps",
+    "Crickets chirping very loudly",
+    "Ambient horror music plays as birds chirp and frogs croak"
+  ],
+  "top_scene": [
+    "sky",
+    0.18457092344760895
+  ],
+  "top_object": [
+    "missile",
+    0.06740967184305191
+  ],
+  "env_probs": {
+    "indoor": 0.21351702511310577,
+    "outdoor": 0.7864829748868942
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Low frequency of something making light rumbling, tapping vibration sounds",
+    "casv": "Low frequency of something making light rumbling, tapping vibration sounds"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.07057218253612518,
+    "clap_gt_audio_baseline": 0.006363954395055771,
+    "clap_text_casv": -0.07057218253612518,
+    "clap_gt_audio_casv": 0.006363954395055771
+  },
+  "verdicts": [
+    {
+      "caption": "Low frequency of something making light rumbling, tapping vibration sounds",
+      "clip_similarity": 0.28883808851242065,
+      "visual": 1.0,
+      "scene_support": 0.7515364616705258,
+      "object_support": 0.8182933061850917,
+      "score": 0.8709489303566853,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "High frequency spraying with people speaking faintly",
+      "clip_similarity": 0.28877994418144226,
+      "visual": 0.9941374792663286,
+      "scene_support": 0.567668826461021,
+      "object_support": 0.4672380527399523,
+      "score": 0.7081270554668234,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dual explosion goes off and a man narrates over it",
+      "clip_similarity": 0.28625959157943726,
+      "visual": 0.740017788889156,
+      "scene_support": 0.6702062483652329,
+      "object_support": 0.5965826095702658,
+      "score": 0.676043772936312,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A sibilant sound caused by a rigid object sweeping through the air",
+      "clip_similarity": 0.2858225107192993,
+      "visual": 0.6959482199091325,
+      "scene_support": 0.9223707239319375,
+      "object_support": 0.9428242918898883,
+      "score": 0.8379377927102007,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A rustling and walking on ground while dark instrumental music plays",
+      "clip_similarity": 0.2852438688278198,
+      "visual": 0.6376054712853675,
+      "scene_support": 0.9144961932966209,
+      "object_support": 0.7485317535888624,
+      "score": 0.753950572579792,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Dogs barking outside while a male is talking and metal is clanking followed by a child communicating out loud",
+      "clip_similarity": 0.2847026288509369,
+      "visual": 0.5830338469674752,
+      "scene_support": 0.5523538013492424,
+      "object_support": 0.4018897912774701,
+      "score": 0.5194866165750038,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Static noise in the background followed by two adults speaking",
+      "clip_similarity": 0.28467002511024475,
+      "visual": 0.5797465083295271,
+      "scene_support": 0.9024234928983083,
+      "object_support": 0.8449527705348997,
+      "score": 0.7561114823617732,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.28403908014297485,
+      "visual": 0.5161301954373904,
+      "scene_support": 0.7183377424502285,
+      "object_support": 0.8726537797612514,
+      "score": 0.6837495348384002,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "People talking and laughing with an explosion sound in the background",
+      "clip_similarity": 0.282954603433609,
+      "visual": 0.4067856198466309,
+      "scene_support": 0.9880861682462833,
+      "object_support": 0.9326671870987308,
+      "score": 0.7389402545421566,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Thunderstorm sounds with lightning and a scared male voice",
+      "clip_similarity": 0.28281715512275696,
+      "visual": 0.39292711363253924,
+      "scene_support": 0.42568063364890557,
+      "object_support": 0.3506932655444191,
+      "score": 0.3900830152110131,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with light breathing and mild tapping noise in the background",
+      "clip_similarity": 0.28262144327163696,
+      "visual": 0.3731940671650761,
+      "scene_support": 0.8974687221870156,
+      "object_support": 1.0,
+      "score": 0.7185182435221351,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Television static followed by an electronic whoosh and laser ripple then rap music plays",
+      "clip_similarity": 0.2826171815395355,
+      "visual": 0.3727643693358013,
+      "scene_support": 0.8473662914089806,
+      "object_support": 0.8130513742010356,
+      "score": 0.6472310474173254,
+      "conflicts": [
+        "indoor sound, but image is outdoor (p=0.79)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.2825244963169098,
+      "visual": 0.36341919276905693,
+      "scene_support": 0.8898087958810013,
+      "object_support": 0.6792776988393412,
+      "score": 0.6160936255237255,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Helicopter in flight with faint sound of humans talking below",
+      "clip_similarity": 0.2813209891319275,
+      "visual": 0.24207312675785475,
+      "scene_support": 0.7252296573528095,
+      "object_support": 0.5564596460074879,
+      "score": 0.4813360417112311,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A howl in the background followed by a woman screaming in terror",
+      "clip_similarity": 0.2803152799606323,
+      "visual": 0.1406704488088656,
+      "scene_support": 0.9632179590031125,
+      "object_support": 0.9111751127957362,
+      "score": 0.6185861010632008,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Music and woman speaking, owl hooting in background and tapping",
+      "clip_similarity": 0.2800147235393524,
+      "visual": 0.11036623476525878,
+      "scene_support": 0.6135155963367173,
+      "object_support": 0.6008509013192391,
+      "score": 0.40845644320289043,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "High pitched powerful spraying with a man speaking",
+      "clip_similarity": 0.2799263894557953,
+      "visual": 0.10145977066756412,
+      "scene_support": 0.4538253989709525,
+      "object_support": 0.33131695691220747,
+      "score": 0.27612661503197367,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks with a distant bursts and whoosh",
+      "clip_similarity": 0.2797894775867462,
+      "visual": 0.0876553522921224,
+      "scene_support": 0.9103142614890117,
+      "object_support": 0.8404123496588686,
+      "score": 0.560280124261213,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Digital tones and loud clicking, some rolling of a small object",
+      "clip_similarity": 0.27892017364501953,
+      "visual": 6.0097598499963945e-06,
+      "scene_support": 1.0,
+      "object_support": 0.917473906492756,
+      "score": 0.5752445758517668,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Balloon popping with combustion and people reacting loudly with amazement",
+      "clip_similarity": 0.27892011404037476,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "sky",
+      0.18457092344760895
+    ],
+    [
+      "discotheque",
+      0.03199571371078491
+    ],
+    [
+      "snowfield",
+      0.028252223506569862
+    ],
+    [
+      "ice floe",
+      0.026750098913908005
+    ],
+    [
+      "mountain",
+      0.02579326741397381
+    ]
+  ],
+  "top_objects": [
+    [
+      "missile",
+      0.06740967184305191
+    ],
+    [
+      "night snake",
+      0.04782285913825035
+    ],
+    [
+      "spotlight",
+      0.04205286502838135
+    ],
+    [
+      "chime",
+      0.03554849326610565
+    ],
+    [
+      "basketball",
+      0.02473301813006401
+    ]
+  ]
+}

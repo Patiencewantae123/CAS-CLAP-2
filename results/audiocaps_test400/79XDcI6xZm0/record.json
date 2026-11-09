@@ -1,0 +1,289 @@
+{
+  "id": "79XDcI6xZm0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\79XDcI6xZm0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\79XDcI6xZm0.wav",
+  "gt_captions": [
+    "A man is giving a speech while the crowd is chanting and clapping in the background",
+    "A man speaking on a microphone as a crowd of people chant and clap",
+    "A crowd chants, an adult male speaks in the foreground, a member of the crowd shouts, and the adult male continues to speak",
+    "Over a smattering of applause, the amplified speech of an older man is met with a shouted response",
+    "A man speaking on a microphone as a crowd of people chant and clap while wind blows into a microphone"
+  ],
+  "top_scene": [
+    "bullring",
+    0.2693701386451721
+  ],
+  "top_object": [
+    "badger",
+    0.07984265685081482
+  ],
+  "env_probs": {
+    "indoor": 0.11147944629192352,
+    "outdoor": 0.8885205537080765
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A man jabbers loudly and constantly as the rest of the crowd joins in while a racing car comes closer and moves further away",
+    "casv": "An announcer speaking on a loud speaker with racing motors accelerating and decelerating"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.08135072886943817,
+    "clap_gt_audio_baseline": 0.35012200474739075,
+    "clap_text_casv": 0.1708090603351593,
+    "clap_gt_audio_casv": 0.4089137315750122
+  },
+  "verdicts": [
+    {
+      "caption": "A man jabbers loudly and constantly as the rest of the crowd joins in while a racing car comes closer and moves further away",
+      "clip_similarity": 0.33716481924057007,
+      "visual": 1.0,
+      "scene_support": 0.940733832178876,
+      "object_support": 0.7425314751154451,
+      "score": 0.9049795921882964,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.84)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking over a megaphone with a crowd cheering and clapping",
+      "clip_similarity": 0.3361387252807617,
+      "visual": 0.9164316331632678,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.36657265326530714,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An announcer speaking on a loud speaker with racing motors accelerating and decelerating",
+      "clip_similarity": 0.32911694049835205,
+      "visual": 0.3445550706556828,
+      "scene_support": 1.0,
+      "object_support": 0.9249074158094243,
+      "score": 0.7152942530051004,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man giving a speech loudly followed by cheering",
+      "clip_similarity": 0.3289521634578705,
+      "visual": 0.33113510259758544,
+      "scene_support": 0.7796071670420366,
+      "object_support": 0.9186116407166897,
+      "score": 0.6419196833666521,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man talking on over a microphone, people laughing, cheering, and screaming in the background",
+      "clip_similarity": 0.3285592198371887,
+      "visual": 0.299132520060777,
+      "scene_support": 0.6137964891516381,
+      "object_support": 0.6218719778850748,
+      "score": 0.49035354813532467,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clapping from a crowd as a man speaks over a loudspeaker",
+      "clip_similarity": 0.3275071382522583,
+      "visual": 0.21344763809533057,
+      "scene_support": 0.4988236377303219,
+      "object_support": 0.5446973460786265,
+      "score": 0.3984353503808168,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking as a man shouts then sings over an intercom in the distance alongside a crowd of people cheering",
+      "clip_similarity": 0.3274537920951843,
+      "visual": 0.20910295681046995,
+      "scene_support": 0.6603941402223825,
+      "object_support": 0.6080220748183535,
+      "score": 0.46416604723640875,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vehicle revving and accelerating as a crowd of people cheer followed by a man talking and wind blowing into a microphone",
+      "clip_similarity": 0.3273738920688629,
+      "visual": 0.20259564366817315,
+      "scene_support": 0.4050383095243701,
+      "object_support": 0.25274995224776414,
+      "score": 0.2783747359989095,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.84)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A racing vehicle engine revving followed by a bursting pop then a crowd of people gasping and applauding as a man speaks in the foreground",
+      "clip_similarity": 0.32716310024261475,
+      "visual": 0.18542808460235244,
+      "scene_support": 0.6357356894080306,
+      "object_support": 0.41284502557063296,
+      "score": 0.38874544833454006,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.84)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaking into a microphone, crowd cheering",
+      "clip_similarity": 0.32705366611480713,
+      "visual": 0.17651541997776687,
+      "scene_support": 0.5613056057395936,
+      "object_support": 0.5842402080343074,
+      "score": 0.4142699121232771,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A crowd cheering followed by a man speaking on a microphone",
+      "clip_similarity": 0.3269686698913574,
+      "visual": 0.16959305627697221,
+      "scene_support": 0.823697822315355,
+      "object_support": 0.8185635626125812,
+      "score": 0.5605156379891697,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man is announcing to a crowd, an animal yips and whistling in the background",
+      "clip_similarity": 0.3268400728702545,
+      "visual": 0.1591197044645848,
+      "scene_support": 0.8951756671704789,
+      "object_support": 0.8754596622701187,
+      "score": 0.5948384806180131,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking over a microphone as a crowd rustles and speaks quietly",
+      "clip_similarity": 0.3268187940120697,
+      "visual": 0.1573866863431376,
+      "scene_support": 0.5467798598345467,
+      "object_support": 0.49921766546964386,
+      "score": 0.37675393212851216,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person speaks on a microphone and people clap followed by engines humming and a clanking",
+      "clip_similarity": 0.32628685235977173,
+      "visual": 0.11406366050320632,
+      "scene_support": 0.8494639337343449,
+      "object_support": 0.9643495092674431,
+      "score": 0.589769497101819,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking over a loudspeaker, some more faint hitter chatter",
+      "clip_similarity": 0.3261786103248596,
+      "visual": 0.10524808372856179,
+      "scene_support": 0.8403341677100769,
+      "object_support": 1.0,
+      "score": 0.5941994838044478,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking followed by a crowd of people chanting and clapping before cheering shortly after a whistling blowing in the distance then a plastic thud and a man yelling",
+      "clip_similarity": 0.326101154088974,
+      "visual": 0.09893980067864407,
+      "scene_support": 0.7624633781469667,
+      "object_support": 0.7907379211910135,
+      "score": 0.5055363100728517,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks over a microphone followed by a crowd cheering",
+      "clip_similarity": 0.3256993591785431,
+      "visual": 0.06621634085602357,
+      "scene_support": 0.6950324303486355,
+      "object_support": 0.6782857924941005,
+      "score": 0.43848200319523023,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaking as plastic thumps three times while a crowd of people talk in the background",
+      "clip_similarity": 0.32560065388679504,
+      "visual": 0.05817746688090719,
+      "scene_support": 0.5324881564303529,
+      "object_support": 0.42998268887450614,
+      "score": 0.3120122403438206,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks into the microphone in front of an audience and crowd cheers, whistles and claps",
+      "clip_similarity": 0.3255138099193573,
+      "visual": 0.05110461701270395,
+      "scene_support": 0.7789942989917548,
+      "object_support": 0.8593943562622608,
+      "score": 0.5119584433812863,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man talking into a microphone and slight chatter from the crowd",
+      "clip_similarity": 0.3248863220214844,
+      "visual": 0.0,
+      "scene_support": 0.5444587626601707,
+      "object_support": 0.6395024542894543,
+      "score": 0.3551883650848875,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "bullring",
+      0.2693701386451721
+    ],
+    [
+      "raceway",
+      0.10461725294589996
+    ],
+    [
+      "tower",
+      0.09801542013883591
+    ],
+    [
+      "football stadium",
+      0.04733699560165405
+    ],
+    [
+      "racecourse",
+      0.038442518562078476
+    ]
+  ],
+  "top_objects": [
+    [
+      "badger",
+      0.07984265685081482
+    ],
+    [
+      "neck brace",
+      0.04990910738706589
+    ],
+    [
+      "European polecat",
+      0.037551842629909515
+    ],
+    [
+      "cornet",
+      0.03647175431251526
+    ],
+    [
+      "collie",
+      0.02017064206302166
+    ]
+  ]
+}

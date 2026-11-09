@@ -1,0 +1,305 @@
+{
+  "id": "3fomsZXG3aM",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\3fomsZXG3aM.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\3fomsZXG3aM.wav",
+  "gt_captions": [
+    "An idle vehicle engine running followed by a gear cranking then revving",
+    "An engine is idling and then is revved up",
+    "A vehicle engine running idle then revving after two metal clicks",
+    "An engine hums and then revs",
+    "An engine humming and ticking as it idles then revs"
+  ],
+  "top_scene": [
+    "car interior",
+    0.24397483468055725
+  ],
+  "top_object": [
+    "motorboat",
+    0.3169021010398865
+  ],
+  "env_probs": {
+    "indoor": 0.6400935053825378,
+    "outdoor": 0.35990649461746216
+  },
+  "status": "ACCEPT",
+  "n_rejected": 12,
+  "prompts": {
+    "baseline": "Car engine is running then shuts off. Sounds of cars driving by",
+    "casv": "The engine tries to start, and shuts off"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.19099968671798706,
+    "clap_gt_audio_baseline": 0.36830827593803406,
+    "clap_text_casv": 0.27650725841522217,
+    "clap_gt_audio_casv": 0.5466914176940918
+  },
+  "verdicts": [
+    {
+      "caption": "Car engine is running then shuts off. Sounds of cars driving by",
+      "clip_similarity": 0.31953537464141846,
+      "visual": 1.0,
+      "scene_support": 0.5648278183607528,
+      "object_support": 0.4002093086777035,
+      "score": 0.6895111381115369,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The engine tries to start, and shuts off",
+      "clip_similarity": 0.31638720631599426,
+      "visual": 0.8128764259902218,
+      "scene_support": 0.8668158957569052,
+      "object_support": 0.7792881233761693,
+      "score": 0.8189817761360111,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Engine vehicle starting and low humming, muffled engine idling noise",
+      "clip_similarity": 0.31256240606307983,
+      "visual": 0.5855346134769361,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23421384539077447,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An auto engine running",
+      "clip_similarity": 0.3110599219799042,
+      "visual": 0.4962286544320839,
+      "scene_support": 0.9985777495710021,
+      "object_support": 0.8111446411420054,
+      "score": 0.7414081789867358,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car engine trying to start",
+      "clip_similarity": 0.3093370199203491,
+      "visual": 0.3938212995110891,
+      "scene_support": 1.0,
+      "object_support": 0.8731357512011939,
+      "score": 0.7194692451647938,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor is running and vibrating, rustling and crackling occur, the motor stops, and the motor attempts to start again",
+      "clip_similarity": 0.30854472517967224,
+      "visual": 0.3467281938638135,
+      "scene_support": 0.5163905428208158,
+      "object_support": 0.6797433787154232,
+      "score": 0.4975314540063971,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is attempted to be started",
+      "clip_similarity": 0.3074932098388672,
+      "visual": 0.2842273081556012,
+      "scene_support": 0.9401854357267878,
+      "object_support": 0.9178161609967445,
+      "score": 0.6710914022793002,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor vehicle engine is idling with thumping and people talking in the background followed by an engine accelerating",
+      "clip_similarity": 0.306860089302063,
+      "visual": 0.24659533763197053,
+      "scene_support": 0.6649163695306788,
+      "object_support": 0.755016803864859,
+      "score": 0.5246180870714495,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A motor is running, and scraping and creaking occur",
+      "clip_similarity": 0.30551132559776306,
+      "visual": 0.16642634450506624,
+      "scene_support": 0.9235779818480823,
+      "object_support": 1.0,
+      "score": 0.6436439323564511,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car engine starts then idles then somethings beeps",
+      "clip_similarity": 0.30544087290763855,
+      "visual": 0.16223871607737547,
+      "scene_support": 0.766212761517191,
+      "object_support": 0.7453235767517947,
+      "score": 0.518356387911646,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motor engine attempting to start and failing then it starts",
+      "clip_similarity": 0.3050583004951477,
+      "visual": 0.13949904343513073,
+      "scene_support": 0.5817668924399886,
+      "object_support": 0.6100786132792071,
+      "score": 0.41335326908981096,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is running and vibrating followed by a sudden rev of the engine",
+      "clip_similarity": 0.3048882782459259,
+      "visual": 0.12939311273294127,
+      "scene_support": 0.8320422301172606,
+      "object_support": 0.7688029659434101,
+      "score": 0.5320108039113777,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine struggling and failing to start",
+      "clip_similarity": 0.3045549988746643,
+      "visual": 0.10958336285694041,
+      "scene_support": 0.847385381981445,
+      "object_support": 0.7003437276429105,
+      "score": 0.5081520780300828,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idles and hums then shuts off",
+      "clip_similarity": 0.3044290244579315,
+      "visual": 0.10209558563026996,
+      "scene_support": 0.7364491338209008,
+      "object_support": 0.6630925207709875,
+      "score": 0.4607007306296744,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is turning over and having trouble starting initially",
+      "clip_similarity": 0.30402785539627075,
+      "visual": 0.07825054913909162,
+      "scene_support": 0.5363627982169696,
+      "object_support": 0.5483528745875238,
+      "score": 0.3567149214969847,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Engine starting and then dying",
+      "clip_similarity": 0.3031621277332306,
+      "visual": 0.026792673421667967,
+      "scene_support": 0.767782954578753,
+      "object_support": 0.6311170640363821,
+      "score": 0.4303870749532077,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Engine starting, dying then starting again and revving",
+      "clip_similarity": 0.3028034567832947,
+      "visual": 0.005473676751930844,
+      "scene_support": 0.75965968906318,
+      "object_support": 0.6126235486009132,
+      "score": 0.41387444200000023,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A motor vehicle engine is running and vibrating",
+      "clip_similarity": 0.3027403950691223,
+      "visual": 0.0017253595975341882,
+      "scene_support": 0.7559103796408068,
+      "object_support": 0.9110760868720665,
+      "score": 0.5007860837928757,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine is attempting to start but fails",
+      "clip_similarity": 0.30271390080451965,
+      "visual": 0.00015057039608871255,
+      "scene_support": 0.8686469538469015,
+      "object_support": 0.8401830823362483,
+      "score": 0.5127092390133804,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-1.42)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine idles and then begins hesitating before returning to idle",
+      "clip_similarity": 0.3027113676071167,
+      "visual": 0.0,
+      "scene_support": 0.6579359072492604,
+      "object_support": 0.6261831887238686,
+      "score": 0.3852357287919387,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "car interior",
+      0.24397483468055725
+    ],
+    [
+      "tundra",
+      0.21508413553237915
+    ],
+    [
+      "auto factory",
+      0.10921826958656311
+    ],
+    [
+      "engine room",
+      0.09029608219861984
+    ],
+    [
+      "repair shop",
+      0.03814796358346939
+    ]
+  ],
+  "top_objects": [
+    [
+      "motorboat",
+      0.3169021010398865
+    ],
+    [
+      "oil filter",
+      0.19688424468040466
+    ],
+    [
+      "sports car",
+      0.02611885592341423
+    ],
+    [
+      "grille",
+      0.02507488802075386
+    ],
+    [
+      "convertible",
+      0.023300305008888245
+    ]
+  ]
+}

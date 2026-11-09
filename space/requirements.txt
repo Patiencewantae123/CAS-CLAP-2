@@ -1,0 +1,13 @@
+# Hugging Face Space (Gradio SDK on ZeroGPU, Python 3.12). Gradio itself comes from sdk_version in README.md.
+# Same versions as the repository's requirements.txt, except torch: 2.13.0 is the newest version on the
+# ZeroGPU support list (the reported results were produced with 2.15.0 on CPU).
+torch==2.13.0
+transformers==5.21.0
+diffusers==0.42.1
+accelerate==1.15.0
+numpy==2.5.1
+scipy==1.18.1
+matplotlib==3.11.0
+soundfile==0.14.0
+pillow==12.3.0
+spaces

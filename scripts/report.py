@@ -8,7 +8,7 @@
 # scripts. Missing inputs are reported, never filled in.
 #
 # Usage:
-#   py -m scripts.report --run results/audiocaps_test100
+#   py -m scripts.report
 # =============================================================================
 
 import argparse
@@ -68,34 +68,47 @@ def ci(block):
 def main():
     setup_logging()
     parser = argparse.ArgumentParser(description="Assemble journal_results/ from experiment outputs.")
-    parser.add_argument("--run", default="results/audiocaps_test100")
+    parser.add_argument("--run", default="results/audiocaps_test400")
     parser.add_argument("--places", default="results/places365/eval.json")
-    parser.add_argument("--tuning", default="results/tuning/tuning_results.json")
+    parser.add_argument("--tuning", default="results/tuning_test400/tuning_results.json")
     parser.add_argument("--categories", default="results/categories7")
     args = parser.parse_args()
     run_dir = Path(args.run)
+    results_path = run_dir / "results.json"
+    stats_path = run_dir / "graph_stats.json"
+    n_test = json.loads(results_path.read_text())["summary"]["n_items"] if results_path.exists() else None
     # graphs/ holds charts with statistics; comparisons/<set>/ holds comparison images
     for old in ("figures", "qualitative"):  # earlier layouts
         if (OUT / old).exists():
             shutil.rmtree(OUT / old)
-    for folder in ("graphs", "comparisons/fig5_categories", "comparisons/figS1_random20"):
+    for folder in ("graphs", "comparisons/fig5_categories", "comparisons/figS1_random20", "comparisons/figS2_selected"):
         (OUT / folder).mkdir(parents=True, exist_ok=True)
         for stale in (OUT / folder).glob("*.png"):
             stale.unlink()
 
-    figures = [
-        (Path(args.places).with_name("fig_places365_recognition.png"), "graphs/fig1_scene_recognition.png"),
-        (Path(args.tuning).with_name("fig_prompt_selection.png"), "graphs/fig2_prompt_selection.png"),
-        (run_dir / "fig_clap_comparison.png", "graphs/fig3_generated_audio_clap.png"),
-        (run_dir / "fig_verification_stats.png", "graphs/fig4_verification_statistics.png"),
-        (
-            Path(args.categories) / "comparisons" / "casv_comparison_1.png",
-            "comparisons/fig5_categories/fig5_categories.png",
-        ),
-    ] + [
-        (p, f"comparisons/figS1_random20/figS1{chr(ord('a') + i)}_random20.png")
-        for i, p in enumerate(sorted((run_dir / "comparisons").glob("casv_comparison_*.png")))
-    ]
+    figures = (
+        [
+            (Path(args.places).with_name("fig_places365_recognition.png"), "graphs/fig1_scene_recognition.png"),
+            (Path(args.tuning).with_name("fig_prompt_selection.png"), "graphs/fig2_prompt_selection.png"),
+            (run_dir / "fig_clap_comparison.png", "graphs/fig3_generated_audio_clap.png"),
+            (run_dir / "fig_verification_stats.png", "graphs/fig4_verification_statistics.png"),
+            (
+                Path(args.categories) / "comparisons" / "casv_comparison_1.png",
+                "comparisons/fig5_categories/fig5_categories.png",
+            ),
+        ]
+        + [
+            (p, f"comparisons/figS1_random20/figS1{chr(ord('a') + i)}_random20.png")
+            for i, p in enumerate(sorted((run_dir / "comparisons").glob("casv_comparison_*.png")))
+        ]
+        + [
+            (
+                run_dir / "comparisons_selected" / f"casv_comparison_{i}.png",
+                f"comparisons/figS2_selected/figS2_page{i}.png",
+            )
+            for i in range(1, len(list((run_dir / "comparisons_selected").glob("casv_comparison_*.png"))) + 1)
+        ]
+    )
     missing = []
     for src, dest in figures:
         if src.exists():
@@ -145,7 +158,7 @@ def main():
                 ["Split", "Method", "Mean [95% CI]", "n"],
                 rows,
                 "CLAP cosine between the selected prompt and the real AudioCaps recording. "
-                "Tuned on val only; test evaluated once.",
+                "Tuned on val only; test is never used for tuning.",
             )
         )
         lines = []
@@ -208,33 +221,35 @@ def main():
                 ["Category", "AudioCaps id", "Prompt changed", "Baseline", "CAS-V", "Δ"],
                 rows,
                 "Scores for the seven Figure 5 columns. Seven examples are illustrative, not a benchmark; "
-                "see Table 3 for the 100-item test result.",
+                "see Table 3 for the full test result.",
             )
         )
     else:
         missing.append(str(categories_path))
 
-    results_path = run_dir / "results.json"
-    stats_path = run_dir / "graph_stats.json"
     if results_path.exists() and stats_path.exists():
         res = json.loads(results_path.read_text())
         stats = json.loads(stats_path.read_text())
         rows = []
-        for key, label in (("clap_text", "CLAP(audio, GT captions)"), ("clap_gt_audio", "CLAP(audio, GT recording)")):
-            if key in stats.get("clap", {}):
-                c = stats["clap"][key]
-                p_value = "n/a" if c["wilcoxon_p_changed_items"] is None else f"{c['wilcoxon_p_changed_items']:.3g}"
-                rows.append(
-                    [
-                        label,
-                        f"{c['baseline_mean']:.3f}",
-                        f"{c['casv_mean']:.3f}",
-                        f"{c['mean_diff']:+.3f} [{c['mean_diff_ci95'][0]:+.3f}, {c['mean_diff_ci95'][1]:+.3f}]",
-                        f"{c['casv_better']}/{c['casv_worse']}",
-                        p_value,
-                        c["n"],
-                    ]
-                )
+        for group, suffix in (("clap", ""), ("clap_new_items", ", new items only")):
+            for key, label in (
+                ("clap_text", "CLAP(audio, GT captions)"),
+                ("clap_gt_audio", "CLAP(audio, GT recording)"),
+            ):
+                if key in stats.get(group, {}):
+                    c = stats[group][key]
+                    p_value = "n/a" if c["wilcoxon_p_changed_items"] is None else f"{c['wilcoxon_p_changed_items']:.3g}"
+                    rows.append(
+                        [
+                            label + suffix,
+                            f"{c['baseline_mean']:.3f}",
+                            f"{c['casv_mean']:.3f}",
+                            f"{c['mean_diff']:+.3f} [{c['mean_diff_ci95'][0]:+.3f}, {c['mean_diff_ci95'][1]:+.3f}]",
+                            f"{c['casv_better']}/{c['casv_worse']}",
+                            p_value,
+                            c["n"],
+                        ]
+                    )
         sections.append(
             "## Table 3. Generated audio (AudioLDM-S), baseline vs CAS-V\n\n"
             + write_table(
@@ -245,6 +260,18 @@ def main():
                 f"CAS-V changed the prompt on {res['summary']['prompt_changed']} of {res['summary']['n_items']} items.",
             )
         )
+        if "clap_new_items" in stats:
+            earlier = "; ".join(
+                f"{e['run']}: {e['n_shared']} of its {e['n_items']} items are in this sample, "
+                f"{'same' if e['same_config'] else 'DIFFERENT'} verifier configuration"
+                for e in stats["earlier_runs"]
+            )
+            n_new = next(iter(stats["clap_new_items"].values()))["n"]
+            sections.append(
+                f"- The primary result uses all {res['summary']['n_items']} items, drawn in the same seeded clip "
+                "order as the earlier test results; an earlier clip is absent here if its download failed. "
+                f"The new-items rows are a sensitivity analysis on the {n_new} clips in no earlier run ({earlier})."
+            )
         v = stats["verification"]
         conflicts = Counter(v["conflicts"]).most_common(8)
         sections.append(
@@ -274,9 +301,9 @@ from result files in `results/`; nothing is entered by hand.
 | Sound candidates | AudioCaps **train** captions (test/val captions never enter the candidate pool) |
 | Verification | visual + scene + object support; explicit conflicts: indoor/outdoor, absent sound source |
 | Generator | AudioLDM-S (`cvssp/audioldm-s-full-v2`), same seed for both arms |
-| Evaluation | AudioCaps test clips: video frame as input, real recording + 5 human captions as ground truth; CLAP (`laion/clap-htsat-unfused`) |
+| Evaluation | AudioCaps test clips: video frame as input, real recording + 5 human captions as ground truth; CLAP (`laion/clap-htsat-unfused`), clips over 10 s cropped to their first 10 s |
 | Baseline | same generator prompted with the top-1 retrieved caption, unverified |
-| Tuning | grid search on AudioCaps **val**; test scored once |
+| Tuning | grid search on AudioCaps **val**; test is never used for tuning |
 
 ## Figures
 
@@ -288,14 +315,19 @@ from result files in `results/`; nothing is entered by hand.
 | `graphs/fig4_verification_statistics.png` | Candidate decisions and conflict types |
 | `comparisons/fig5_categories/` | One AudioCaps test clip per category: first clip in seeded order whose captions match the category rule and whose frame passed visual screening (frames only, before generation). Rejections and the one relabel (forest → field) are listed in `data/audiocaps/pairs/categories/selection_rule.json` |
 | `comparisons/figS1_random20/` | Supplementary: first 20 items of the random test sample (not selected) |
+| `comparisons/figS2_selected/` | Illustrations, not results: clear examples of named sound categories where CAS-V's verified caption names the sound, so they show what the method does when it works. No CLAP score was used; the rule and its counts are in each page's caption and in `selected_clips.json` next to the run |
 
 LaTeX versions of all tables are in `tables/`.
 """
-    limitations = """
+    sample_note = (
+        f"- Results rest on {n_test} test pairs; report confidence intervals with every mean.\n" if n_test else ""
+    )
+    limitations = f"""
 ## Limitations
 
-- Sample sizes are small (100 test pairs); report confidence intervals with every mean.
-- CLAP similarity is an automatic proxy; no listening test has been run.
+{sample_note}- CLAP similarity is an automatic proxy; no listening test has been run.
+- CLAP embeddings of a recording change when it is shifted by a few milliseconds, so single-item scores
+  are noisy; compare means with their confidence intervals, not individual items.
 - AudioCaps frames are single video frames; off-screen sounds (narration, music) in the ground truth
   cannot be recovered from the image by any method.
 - Places365/ImageNet are used for zero-shot vocabularies and Places365 val for recognition accuracy only;

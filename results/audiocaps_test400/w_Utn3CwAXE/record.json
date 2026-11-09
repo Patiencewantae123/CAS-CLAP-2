@@ -1,0 +1,282 @@
+{
+  "id": "w_Utn3CwAXE",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\w_Utn3CwAXE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\w_Utn3CwAXE.wav",
+  "gt_captions": [
+    "A toilet flushes and a door creaks as it opens",
+    "A toilet flushing followed by plastic clacking and a door slowly creaking",
+    "A toilet flushes followed by a metal latch clanking then a door slowly creaking open",
+    "Water trickles down followed by some rattling",
+    "A toilet flushing with footsteps and door opening"
+  ],
+  "top_scene": [
+    "indoor jacuzzi",
+    0.09438040852546692
+  ],
+  "top_object": [
+    "Chihuahua",
+    0.037774354219436646
+  ],
+  "env_probs": {
+    "indoor": 0.7787623405456543,
+    "outdoor": 0.2212376594543457
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A cat meows while some liquid flow",
+    "casv": "Water running while cat meows"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.2658229172229767,
+    "clap_gt_audio_baseline": 0.2766376733779907,
+    "clap_text_casv": 0.039332129061222076,
+    "clap_gt_audio_casv": 0.15211240947246552
+  },
+  "verdicts": [
+    {
+      "caption": "A cat meows while some liquid flow",
+      "clip_similarity": 0.3298877477645874,
+      "visual": 1.0,
+      "scene_support": 0.26990228074822026,
+      "object_support": 0.2745116878240692,
+      "score": 0.5633241905716868,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum cleaner running and the sound of a dog",
+      "clip_similarity": 0.3248312473297119,
+      "visual": 0.6868259350387342,
+      "scene_support": 0.42175127083182845,
+      "object_support": 0.4860638002668721,
+      "score": 0.5470748953451039,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Water running while cat meows",
+      "clip_similarity": 0.3240378797054291,
+      "visual": 0.6376887566472057,
+      "scene_support": 0.9784452913008488,
+      "object_support": 0.49884231092816766,
+      "score": 0.6982617833275873,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog growling and barking as a cat hisses with tapping on a plastic surface several times",
+      "clip_similarity": 0.3231068253517151,
+      "visual": 0.5800239585506,
+      "scene_support": 0.6491344042832158,
+      "object_support": 0.6001620701490679,
+      "score": 0.6067985257499251,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat meows and something falls to the floor as a man laughs",
+      "clip_similarity": 0.3225025534629822,
+      "visual": 0.5425984137150704,
+      "scene_support": 0.5428288749335125,
+      "object_support": 0.44995388838777495,
+      "score": 0.5148741944824144,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and splashes in water",
+      "clip_similarity": 0.32101625204086304,
+      "visual": 0.4505444202233793,
+      "scene_support": 0.4897512620762769,
+      "object_support": 0.2686249510913503,
+      "score": 0.4077306320396399,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows while an object clacks",
+      "clip_similarity": 0.32028913497924805,
+      "visual": 0.40551046663799517,
+      "scene_support": 0.23190026843061845,
+      "object_support": 0.4546630249344039,
+      "score": 0.3681731746647048,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows followed by some rolling vibrations",
+      "clip_similarity": 0.3200991451740265,
+      "visual": 0.3937434589280671,
+      "scene_support": 0.5111469115886291,
+      "object_support": 0.6198791300549736,
+      "score": 0.49680519606430773,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows and some surface is tapped",
+      "clip_similarity": 0.31971004605293274,
+      "visual": 0.3696446271381345,
+      "scene_support": 0.8141517439234648,
+      "object_support": 0.8920495236819,
+      "score": 0.6597182311368632,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Baby crawling on floor while communicating followed by a man saying something and a cat meowing",
+      "clip_similarity": 0.3187240958213806,
+      "visual": 0.3085798559902837,
+      "scene_support": 0.2275027926561352,
+      "object_support": 0.0,
+      "score": 0.19168278019295404,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing with music playing",
+      "clip_similarity": 0.3186141550540924,
+      "visual": 0.30177068086213865,
+      "scene_support": 0.19763395811490056,
+      "object_support": 0.45362069390549237,
+      "score": 0.31608466795097334,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meows, then a woman's voice is heard while in the background water can be heard splashing",
+      "clip_similarity": 0.31796133518218994,
+      "visual": 0.26133831946826047,
+      "scene_support": 1.0,
+      "object_support": 0.7120833915391038,
+      "score": 0.6181603452490353,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cat crying and moving",
+      "clip_similarity": 0.31785905361175537,
+      "visual": 0.2550035162587745,
+      "scene_support": 0.8218865441035373,
+      "object_support": 1.0,
+      "score": 0.6485673697345711,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Object is moving, and a cat meows",
+      "clip_similarity": 0.31683632731437683,
+      "visual": 0.19166102157930778,
+      "scene_support": 0.7741965139771436,
+      "object_support": 0.7243600157013358,
+      "score": 0.526231367535267,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows following an audibly loud popping sound",
+      "clip_similarity": 0.3167887032032013,
+      "visual": 0.18871142498001917,
+      "scene_support": 0.44689137789763156,
+      "object_support": 0.644411519116882,
+      "score": 0.4028754390963617,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A vacuum is going while dog is bow-wow",
+      "clip_similarity": 0.3164235055446625,
+      "visual": 0.16609292890512378,
+      "scene_support": 0.24953030113989985,
+      "object_support": 0.20904584044181182,
+      "score": 0.20401001403656302,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A dog whimpers multiple times as an object is dragged on a surface",
+      "clip_similarity": 0.3161914348602295,
+      "visual": 0.15171964435026736,
+      "scene_support": 0.7290704012012617,
+      "object_support": 0.8992965371727861,
+      "score": 0.5491979392523212,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A cat meows with faint sounds of walking, tapping and a machine running",
+      "clip_similarity": 0.3160157799720764,
+      "visual": 0.14084046890833546,
+      "scene_support": 0.18366082744340084,
+      "object_support": 0.41490021371262636,
+      "score": 0.23590449991014234,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A cat meowing and singing",
+      "clip_similarity": 0.31406357884407043,
+      "visual": 0.019931003804204376,
+      "scene_support": 0.5738818978241724,
+      "object_support": 0.7567291664954732,
+      "score": 0.4071557208175754,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A kitten meowing",
+      "clip_similarity": 0.3137417733669281,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.5265307696246154,
+      "score": 0.15795923088738462,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor jacuzzi",
+      0.09438040852546692
+    ],
+    [
+      "shower",
+      0.07837823778390884
+    ],
+    [
+      "pet shop",
+      0.03775686025619507
+    ],
+    [
+      "bathroom",
+      0.03647777810692787
+    ],
+    [
+      "door elevator",
+      0.03505672514438629
+    ]
+  ],
+  "top_objects": [
+    [
+      "Chihuahua",
+      0.037774354219436646
+    ],
+    [
+      "Indian cobra",
+      0.0267525315284729
+    ],
+    [
+      "skunk",
+      0.025647994130849838
+    ],
+    [
+      "toilet paper",
+      0.0185402724891901
+    ],
+    [
+      "cottontail rabbit",
+      0.015681562945246696
+    ]
+  ]
+}

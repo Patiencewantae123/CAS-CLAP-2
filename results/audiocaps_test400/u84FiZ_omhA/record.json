@@ -1,0 +1,283 @@
+{
+  "id": "u84FiZ_omhA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\u84FiZ_omhA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\u84FiZ_omhA.wav",
+  "gt_captions": [
+    "A woman singing then choking followed by birds chirping",
+    "An adult female holds a high musical note and then gags, after which birds chirp",
+    "Loud high humming and croaking sound",
+    "A woman singing then choking",
+    "Person singing a long note and birds chirping"
+  ],
+  "top_scene": [
+    "watering hole",
+    0.19523152709007263
+  ],
+  "top_object": [
+    "jay",
+    0.47467267513275146
+  ],
+  "env_probs": {
+    "indoor": 0.6017536520957947,
+    "outdoor": 0.3982463479042053
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "Birds singing along with a baby making noises while sleeping",
+    "casv": "A baby bird is making a bird call"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.06517002731561661,
+    "clap_gt_audio_baseline": 0.3409613072872162,
+    "clap_text_casv": 0.4192942976951599,
+    "clap_gt_audio_casv": 0.4402658939361572
+  },
+  "verdicts": [
+    {
+      "caption": "Birds singing along with a baby making noises while sleeping",
+      "clip_similarity": 0.33151954412460327,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.18311123108531666,
+      "score": 0.454933369325595,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby bird is making a bird call",
+      "clip_similarity": 0.32690155506134033,
+      "visual": 0.7377470352386449,
+      "scene_support": 0.5957208982128137,
+      "object_support": 0.8673481201541668,
+      "score": 0.7340195196055521,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Tapping with a baby cooing in the background followed by whistling",
+      "clip_similarity": 0.32406294345855713,
+      "visual": 0.5765439014854694,
+      "scene_support": 0.6678804677663343,
+      "object_support": 0.0811361557265188,
+      "score": 0.4553225476420437,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult female is speaking, and a second female responds",
+      "clip_similarity": 0.32189762592315674,
+      "visual": 0.4535767537661397,
+      "scene_support": 0.8530763215183987,
+      "object_support": 0.39757232195078057,
+      "score": 0.5566252945472097,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird sounds followed by an explosion",
+      "clip_similarity": 0.3210119605064392,
+      "visual": 0.40328031994205027,
+      "scene_support": 0.6849962710339351,
+      "object_support": 0.9603209309998351,
+      "score": 0.6549072885869511,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman crying followed by an infant crying as a bird is squawking",
+      "clip_similarity": 0.31935131549835205,
+      "visual": 0.30897323717921593,
+      "scene_support": 0.3968827655340876,
+      "object_support": 0.48253505496318294,
+      "score": 0.38741464102086753,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Two males speak, a crowd cheers, and an adult female speaks",
+      "clip_similarity": 0.31873852014541626,
+      "visual": 0.27417293862982073,
+      "scene_support": 0.7526206931951653,
+      "object_support": 0.3840998185390141,
+      "score": 0.4506853289721821,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Different kind of birds are singing with drums being played in the background",
+      "clip_similarity": 0.31832998991012573,
+      "visual": 0.2509727395968906,
+      "scene_support": 0.8815921930245689,
+      "object_support": 0.9066936608629145,
+      "score": 0.6368748520050012,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A baby cries, and adult male speaks, and an adult female speaks in the background",
+      "clip_similarity": 0.3179550766944885,
+      "visual": 0.22968163193463054,
+      "scene_support": 0.43882412263618276,
+      "object_support": 0.0,
+      "score": 0.22351988956470703,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A baby yells, followed by laughter, after which birds chirp nearby",
+      "clip_similarity": 0.3177945017814636,
+      "visual": 0.220562674217281,
+      "scene_support": 0.538718745376535,
+      "object_support": 0.42737511435041464,
+      "score": 0.37805322760499727,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird sings amid other wildlife noise",
+      "clip_similarity": 0.31707632541656494,
+      "visual": 0.17977784810876404,
+      "scene_support": 0.7551177417260735,
+      "object_support": 0.9257065730867864,
+      "score": 0.5761584336873635,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling and tapping followed by a brief female speech",
+      "clip_similarity": 0.31691455841064453,
+      "visual": 0.17059119211585883,
+      "scene_support": 0.9457249744105365,
+      "object_support": 0.19806901516174022,
+      "score": 0.41137467371802655,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A baby cooing after a person makes a noise",
+      "clip_similarity": 0.3157310485839844,
+      "visual": 0.10338034414418379,
+      "scene_support": 0.6947845804988663,
+      "object_support": 0.3370795279015012,
+      "score": 0.35091137017778373,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple burps occur, and a young adult male begins to speak",
+      "clip_similarity": 0.3157135844230652,
+      "visual": 0.10238856440729313,
+      "scene_support": 1.0,
+      "object_support": 0.3505952220272641,
+      "score": 0.4461339923710965,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Young female speaking then older male speaking with birds chirping in the background",
+      "clip_similarity": 0.3152042031288147,
+      "visual": 0.07346109126235283,
+      "scene_support": 0.3740530388808875,
+      "object_support": 0.5172681873397219,
+      "score": 0.2967808043711239,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds are cooing and flapping wings along with men communicating",
+      "clip_similarity": 0.31482207775115967,
+      "visual": 0.05176040903298091,
+      "scene_support": 0.7824741614355463,
+      "object_support": 1.0,
+      "score": 0.5554464120438563,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Baby making cooing sounds",
+      "clip_similarity": 0.3141579329967499,
+      "visual": 0.014044007264024968,
+      "scene_support": 0.9732275333568847,
+      "object_support": 0.31555495568452785,
+      "score": 0.3922523496180337,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young female is speaking, a squeak occurs, and then a clicking sound",
+      "clip_similarity": 0.3140154480934143,
+      "visual": 0.005952370878232804,
+      "scene_support": 0.4281704514917374,
+      "object_support": 0.5415065760861415,
+      "score": 0.2932840566246568,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds coo and flap their wings as a man speaks",
+      "clip_similarity": 0.3139386475086212,
+      "visual": 0.0015909094755583838,
+      "scene_support": 0.48966789556479495,
+      "object_support": 0.9347190354073874,
+      "score": 0.4279524430818781,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young female and young male speak in the background, and a sneeze occurs in the foreground",
+      "clip_similarity": 0.3139106333255768,
+      "visual": 0.0,
+      "scene_support": 0.6200687820623145,
+      "object_support": 0.31512004918942427,
+      "score": 0.28055664937552166,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "watering hole",
+      0.19523152709007263
+    ],
+    [
+      "assembly line",
+      0.13064344227313995
+    ],
+    [
+      "beauty salon",
+      0.0817435011267662
+    ],
+    [
+      "nursery",
+      0.04282324016094208
+    ],
+    [
+      "shower",
+      0.0347287654876709
+    ]
+  ],
+  "top_objects": [
+    [
+      "jay",
+      0.47467267513275146
+    ],
+    [
+      "cock",
+      0.08101540058851242
+    ],
+    [
+      "vulture",
+      0.03232955560088158
+    ],
+    [
+      "cradle",
+      0.02727103978395462
+    ],
+    [
+      "crane (bird)",
+      0.026738572865724564
+    ]
+  ]
+}

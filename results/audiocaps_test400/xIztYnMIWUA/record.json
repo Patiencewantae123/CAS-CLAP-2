@@ -1,0 +1,283 @@
+{
+  "id": "xIztYnMIWUA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\xIztYnMIWUA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\xIztYnMIWUA.wav",
+  "gt_captions": [
+    "A telephone ringing",
+    "A telephone rings repeatedly, with some buzzing in the background",
+    "An old fashioned telephone ring occurs repeatedly, and buzzing is present in the background",
+    "A telephone rings several times",
+    "A telephone bell rings"
+  ],
+  "top_scene": [
+    "tower",
+    0.29543501138687134
+  ],
+  "top_object": [
+    "mobile phone",
+    0.5575506687164307
+  ],
+  "env_probs": {
+    "indoor": 0.4259377717971802,
+    "outdoor": 0.5740622282028198
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "A phone rings three times and then connects",
+    "casv": "A phone rings three times and then connects"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.37502241134643555,
+    "clap_gt_audio_baseline": 0.5523813366889954,
+    "clap_text_casv": 0.37502241134643555,
+    "clap_gt_audio_casv": 0.5523813366889954
+  },
+  "verdicts": [
+    {
+      "caption": "A phone rings three times and then connects",
+      "clip_similarity": 0.32185477018356323,
+      "visual": 1.0,
+      "scene_support": 0.6299784819684567,
+      "object_support": 0.610529964110507,
+      "score": 0.7721525338236891,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A cellphone ringing a variety of tones",
+      "clip_similarity": 0.31598037481307983,
+      "visual": 0.7257640852124747,
+      "scene_support": 0.565076093006108,
+      "object_support": 0.9259423457507912,
+      "score": 0.7376111657120596,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A phone ringing several times",
+      "clip_similarity": 0.31585243344306946,
+      "visual": 0.7197913652249405,
+      "scene_support": 0.6351674471532034,
+      "object_support": 0.8280873558338507,
+      "score": 0.7268929869860924,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A phone is ringing in a very low tone followed by a man picking up the phone and communicating",
+      "clip_similarity": 0.314218670129776,
+      "visual": 0.6435219709280324,
+      "scene_support": 0.3565435022280202,
+      "object_support": 0.7896486849755368,
+      "score": 0.6012664445322801,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Digital ringing of a telephone",
+      "clip_similarity": 0.3140292167663574,
+      "visual": 0.6346776706809429,
+      "scene_support": 0.6971727008142821,
+      "object_support": 1.0,
+      "score": 0.7630228785166617,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A digital beep and a door sliding",
+      "clip_similarity": 0.3131941556930542,
+      "visual": 0.5956942991340739,
+      "scene_support": 0.06765949753446607,
+      "object_support": 0.04162936983460401,
+      "score": 0.27106437986435056,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A voice message plays and a key is pressed on a phone",
+      "clip_similarity": 0.3097352087497711,
+      "visual": 0.43421938650579883,
+      "scene_support": 0.16352640478714164,
+      "object_support": 0.7019678638284442,
+      "score": 0.4333360351869953,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ring tone of a cellular phone",
+      "clip_similarity": 0.30814653635025024,
+      "visual": 0.36005498297086125,
+      "scene_support": 0.5834160495446472,
+      "object_support": 0.8085064015922498,
+      "score": 0.5615987285294136,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man talking then tapping on an item",
+      "clip_similarity": 0.3073056638240814,
+      "visual": 0.3208003138704005,
+      "scene_support": 0.0,
+      "object_support": 0.09855850287933109,
+      "score": 0.15788767641195953,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A phone rings nearby several times",
+      "clip_similarity": 0.30629298090934753,
+      "visual": 0.2735249760701645,
+      "scene_support": 1.0,
+      "object_support": 0.9668080893658709,
+      "score": 0.6994524172378271,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A telephone rings several times over and over",
+      "clip_similarity": 0.30624499917030334,
+      "visual": 0.27128503216615096,
+      "scene_support": 0.8949382996146606,
+      "object_support": 0.7457105903591486,
+      "score": 0.6007086798586031,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The ringing of an alarm on a machine",
+      "clip_similarity": 0.3055385649204254,
+      "visual": 0.23830637980544486,
+      "scene_support": 0.37603114619854017,
+      "object_support": 0.06384779323293793,
+      "score": 0.22728623375162138,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Phone ringing followed by a squaring noise",
+      "clip_similarity": 0.30421361327171326,
+      "visual": 0.17645332012554815,
+      "scene_support": 0.5768099784110688,
+      "object_support": 0.45053007682286406,
+      "score": 0.3787833446203991,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A digital alarm ringing",
+      "clip_similarity": 0.3033892512321472,
+      "visual": 0.13796941433118892,
+      "scene_support": 0.4781655789484879,
+      "object_support": 0.5333426634117843,
+      "score": 0.35864023844055726,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "The phone rings as someone picks it up and talks in another language",
+      "clip_similarity": 0.3031995892524719,
+      "visual": 0.12911537519756028,
+      "scene_support": 0.7381748313475535,
+      "object_support": 0.7497316036995952,
+      "score": 0.49801808059316865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ding sound followed by tapping",
+      "clip_similarity": 0.3026721775531769,
+      "visual": 0.10449407875698417,
+      "scene_support": 0.38087181705064715,
+      "object_support": 0.05648016215551112,
+      "score": 0.17300322526464113,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mechanical beep of an alarm",
+      "clip_similarity": 0.3018662929534912,
+      "visual": 0.06687276005609599,
+      "scene_support": 0.0151078205814477,
+      "object_support": 0.24039009746801082,
+      "score": 0.10339847943727595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping sounds with people talking and a phone ringing in the background",
+      "clip_similarity": 0.3008270263671875,
+      "visual": 0.018356409856866193,
+      "scene_support": 0.5552830844166203,
+      "object_support": 0.3883222483860999,
+      "score": 0.29042416378356256,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks then places a phone on a charger",
+      "clip_similarity": 0.30045074224472046,
+      "visual": 0.0007902410791799301,
+      "scene_support": 0.1492286122464896,
+      "object_support": 0.35790400100689707,
+      "score": 0.15245588040768798,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An item making a ticking sound and alarm goes off",
+      "clip_similarity": 0.30043381452560425,
+      "visual": 0.0,
+      "scene_support": 0.29252115467104356,
+      "object_support": 0.0,
+      "score": 0.08775634640131307,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "tower",
+      0.29543501138687134
+    ],
+    [
+      "phone booth",
+      0.0776580199599266
+    ],
+    [
+      "archaelogical excavation",
+      0.059306155890226364
+    ],
+    [
+      "hotel room",
+      0.03813685104250908
+    ],
+    [
+      "skyscraper",
+      0.03581395745277405
+    ]
+  ],
+  "top_objects": [
+    [
+      "mobile phone",
+      0.5575506687164307
+    ],
+    [
+      "remote control",
+      0.19277773797512054
+    ],
+    [
+      "hand-held computer",
+      0.07365072518587112
+    ],
+    [
+      "rotary dial telephone",
+      0.02018936164677143
+    ],
+    [
+      "modem",
+      0.017947889864444733
+    ]
+  ]
+}

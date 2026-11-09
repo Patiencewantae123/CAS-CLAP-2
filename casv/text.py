@@ -37,8 +37,10 @@ def clean_phrase(phrase):
 def verified_concepts(caption, limit=4):
     """Short concept phrases taken from the verified caption."""
     parts = [clean_phrase(p) for p in re.split(CLAUSE_SPLIT, caption, flags=re.IGNORECASE)]
-    parts = [p for p in parts if p and p.split()[0] not in NOT_A_SOURCE]
-    return list(dict.fromkeys(parts))[:limit]
+    parts = [p for p in parts if p]
+    # Keep everything when no clause passes, so "Soft repeated tapping" is not left empty
+    sources = [p for p in parts if p.split()[0] not in NOT_A_SOURCE] or parts
+    return list(dict.fromkeys(sources))[:limit]
 
 
 def short_head(concept, max_words=3, keep_whole=5):

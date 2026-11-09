@@ -1,0 +1,284 @@
+{
+  "id": "K8-b0VtNOqA",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\K8-b0VtNOqA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\K8-b0VtNOqA.wav",
+  "gt_captions": [
+    "Floor sweeping and a man then a woman talking in the background followed by horses neighing",
+    "Horses snorting and neighing as a man talks followed by a door creaking shut before woman talks in the background",
+    "Horses snorting then neighing as footsteps shuffle and people talk in the background",
+    "A door banging, a loud squeal, and some low voices in the background",
+    "A horse vocalizing and muffled speech"
+  ],
+  "top_scene": [
+    "corral",
+    0.35029855370521545
+  ],
+  "top_object": [
+    "butcher shop",
+    0.2587696611881256
+  ],
+  "env_probs": {
+    "indoor": 0.47388750314712524,
+    "outdoor": 0.5261124968528748
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "Multiple livestock communicating with one another in distress followed by a man laughing",
+    "casv": "Tapping noises followed by livestock communicating"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.21127957105636597,
+    "clap_gt_audio_baseline": 0.36964237689971924,
+    "clap_text_casv": -0.06155514717102051,
+    "clap_gt_audio_casv": 0.4399526119232178
+  },
+  "verdicts": [
+    {
+      "caption": "Multiple livestock communicating with one another in distress followed by a man laughing",
+      "clip_similarity": 0.326413094997406,
+      "visual": 1.0,
+      "scene_support": 0.5750168503272518,
+      "object_support": 0.6409847310235546,
+      "score": 0.764800474405242,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Tapping noises followed by livestock communicating",
+      "clip_similarity": 0.32416751980781555,
+      "visual": 0.8717799929890718,
+      "scene_support": 0.8937388368157343,
+      "object_support": 1.0,
+      "score": 0.916833648240349,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Several goats bleat while someone makes animal sounds",
+      "clip_similarity": 0.32388097047805786,
+      "visual": 0.8554183243881603,
+      "scene_support": 0.682877093183696,
+      "object_support": 0.8113510255455689,
+      "score": 0.7904357653740436,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats bleating and rustling with mechanical humming",
+      "clip_similarity": 0.3229239583015442,
+      "visual": 0.8007739247924799,
+      "scene_support": 0.5572328863942618,
+      "object_support": 0.7914905831993531,
+      "score": 0.7249266107950765,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats bleating in a musical rhythm",
+      "clip_similarity": 0.32272469997406006,
+      "visual": 0.7893964816031201,
+      "scene_support": 0.4141737340577252,
+      "object_support": 0.6751220822645595,
+      "score": 0.6425473375379335,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats running around a barn",
+      "clip_similarity": 0.31734728813171387,
+      "visual": 0.4823518601081589,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.19294074404326356,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several different goats' bah repeatedly",
+      "clip_similarity": 0.31369706988334656,
+      "visual": 0.27392819584313216,
+      "scene_support": 0.7560077655180549,
+      "object_support": 0.6121602253868381,
+      "score": 0.5200216756087208,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman speaks with several goats bleating",
+      "clip_similarity": 0.31282007694244385,
+      "visual": 0.22385281134817425,
+      "scene_support": 0.1216898622280947,
+      "object_support": 0.4180149921520979,
+      "score": 0.25145258085332745,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goats and other farm animals are making noises",
+      "clip_similarity": 0.3121286630630493,
+      "visual": 0.18437379818736876,
+      "scene_support": 1.0,
+      "object_support": 0.9351296915249476,
+      "score": 0.6542884267324318,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Goats baaing followed by a person whistling",
+      "clip_similarity": 0.31137001514434814,
+      "visual": 0.14105579133299526,
+      "scene_support": 0.7822090791630139,
+      "object_support": 0.9110248364622666,
+      "score": 0.5643924912207823,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind and a sequence of clanking sounds are in the background while a small farm animal fleets and is followed by a soft voice woman and man speaking",
+      "clip_similarity": 0.31118693947792053,
+      "visual": 0.13060236125339061,
+      "scene_support": 0.6455936331221224,
+      "object_support": 0.7024704186593247,
+      "score": 0.45666016003579035,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Children and adults speak and goats bleat with some light banging",
+      "clip_similarity": 0.3111701011657715,
+      "visual": 0.12964091114839685,
+      "scene_support": 0.620137918101108,
+      "object_support": 0.670931534384175,
+      "score": 0.4391772002049436,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats making noise with some rustling",
+      "clip_similarity": 0.310508668422699,
+      "visual": 0.09187378967896075,
+      "scene_support": 0.70228130997494,
+      "object_support": 0.6891685314809285,
+      "score": 0.4541844683083448,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Humming and rustling with goats bleating",
+      "clip_similarity": 0.31049659848213196,
+      "visual": 0.09118460863024841,
+      "scene_support": 0.6248297953107442,
+      "object_support": 0.7785125668708076,
+      "score": 0.4574765521065649,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats making noises, and other animals making noises",
+      "clip_similarity": 0.3101031184196472,
+      "visual": 0.0687173064422262,
+      "scene_support": 0.96478042145731,
+      "object_support": 0.8828132990234783,
+      "score": 0.5817650387211271,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats bleating with some light knocking",
+      "clip_similarity": 0.31008535623550415,
+      "visual": 0.06770310420757793,
+      "scene_support": 0.43330068293607565,
+      "object_support": 0.8021340020755008,
+      "score": 0.3977116471865041,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A goat baaing as an animal repeatedly coughs and a pig snorting several times during plastic camera muffling and a metal rattling",
+      "clip_similarity": 0.30969101190567017,
+      "visual": 0.04518645325310472,
+      "scene_support": 0.8287719400839164,
+      "object_support": 0.8744260667623961,
+      "score": 0.5290339833551356,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Goats are vocalizing",
+      "clip_similarity": 0.30916765332221985,
+      "visual": 0.015303222644617412,
+      "scene_support": 0.578514459017534,
+      "object_support": 0.6567984923300565,
+      "score": 0.3767151744621241,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Goats bleat and rain falls",
+      "clip_similarity": 0.3089231550693512,
+      "visual": 0.0013426267837877391,
+      "scene_support": 0.37858110414132395,
+      "object_support": 0.3858985950141617,
+      "score": 0.22988096046016077,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Several goats are bleating while someone hammers in the background",
+      "clip_similarity": 0.3088996410369873,
+      "visual": 0.0,
+      "scene_support": 0.34652742104039996,
+      "object_support": 0.6446195847089321,
+      "score": 0.29734410172479964,
+      "conflicts": [
+        "names 'a hammer', not visible in image (z=-0.60)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "corral",
+      0.35029855370521545
+    ],
+    [
+      "stable",
+      0.20722028613090515
+    ],
+    [
+      "farm",
+      0.08662232756614685
+    ],
+    [
+      "assembly line",
+      0.077933669090271
+    ],
+    [
+      "pet shop",
+      0.04280801862478256
+    ]
+  ],
+  "top_objects": [
+    [
+      "butcher shop",
+      0.2587696611881256
+    ],
+    [
+      "bullock cart",
+      0.062208570539951324
+    ],
+    [
+      "Australian Kelpie",
+      0.02632770873606205
+    ],
+    [
+      "Mexican hairless dog",
+      0.02507372573018074
+    ],
+    [
+      "Dobermann",
+      0.024758460000157356
+    ]
+  ]
+}

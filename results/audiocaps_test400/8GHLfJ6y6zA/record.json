@@ -1,0 +1,295 @@
+{
+  "id": "8GHLfJ6y6zA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\8GHLfJ6y6zA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\8GHLfJ6y6zA.wav",
+  "gt_captions": [
+    "A person speaks with some whistling and typing with faint booms",
+    "A person speaks followed by clicking",
+    "A man talking with keyboard typing and computer mouse clicking",
+    "Some whooshing followed by a man speaking and clicking on a computer",
+    "A slide whistle followed by typing on a computer keyboard and a computer mouse clicking as a man is talking while woodwind music plays in the background"
+  ],
+  "top_scene": [
+    "landing deck",
+    0.13870784640312195
+  ],
+  "top_object": [
+    "crane (bird)",
+    0.05063678324222565
+  ],
+  "env_probs": {
+    "indoor": 0.5390715003013611,
+    "outdoor": 0.4609284996986389
+  },
+  "status": "ACCEPT",
+  "n_rejected": 11,
+  "prompts": {
+    "baseline": "Birds quacking followed by clicking and clacking of items",
+    "casv": "Birds quacking followed by clicking and clacking of items"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.11746303737163544,
+    "clap_gt_audio_baseline": 0.37866148352622986,
+    "clap_text_casv": 0.11746303737163544,
+    "clap_gt_audio_casv": 0.37866148352622986
+  },
+  "verdicts": [
+    {
+      "caption": "Birds quacking followed by clicking and clacking of items",
+      "clip_similarity": 0.28984230756759644,
+      "visual": 1.0,
+      "scene_support": 0.9618678774537013,
+      "object_support": 0.8730918472746552,
+      "score": 0.9504879174185069,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A duck quacks and chatters rhythmically",
+      "clip_similarity": 0.28191569447517395,
+      "visual": 0.6871377016166977,
+      "scene_support": 0.6113397506051944,
+      "object_support": 0.5401271949469374,
+      "score": 0.6202951643123187,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person repeatedly and with fast motion types on a computer keyboard",
+      "clip_similarity": 0.28146517276763916,
+      "visual": 0.669355673498579,
+      "scene_support": 0.45199209711273053,
+      "object_support": 0.02231853124800044,
+      "score": 0.41003545790765095,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-0.48)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Duck quacking rhythmically",
+      "clip_similarity": 0.27806687355041504,
+      "visual": 0.5352252837219806,
+      "scene_support": 0.5600068141344258,
+      "object_support": 0.5559174444007715,
+      "score": 0.5488673910493514,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds, pigeons and doves are flapping around and making various sounds",
+      "clip_similarity": 0.27616703510284424,
+      "visual": 0.4602389287260271,
+      "scene_support": 0.6755415948217607,
+      "object_support": 0.7962509940675875,
+      "score": 0.6256333481572153,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A loud, computer-generated, cartoon voice is followed by laughter and a medium male voice in the background with a loud static sound",
+      "clip_similarity": 0.2757760286331177,
+      "visual": 0.44480595863211186,
+      "scene_support": 0.5988002345973218,
+      "object_support": 0.19949679613159169,
+      "score": 0.4174114926715188,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bird and animal sounds are followed by clicking gun sounds",
+      "clip_similarity": 0.2722686529159546,
+      "visual": 0.30637033482016823,
+      "scene_support": 0.8797223554526591,
+      "object_support": 0.8740784879203649,
+      "score": 0.6486883869399744,
+      "conflicts": [
+        "names 'a gun', not visible in image (z=-0.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Birds cluck and flap wings",
+      "clip_similarity": 0.2710200846195221,
+      "visual": 0.25708952063689233,
+      "scene_support": 0.6523691375028209,
+      "object_support": 0.8012447554365214,
+      "score": 0.5389199761365596,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bird chirping and flying around in a cage with a ticking sound in the background",
+      "clip_similarity": 0.2697955369949341,
+      "visual": 0.20875679897615418,
+      "scene_support": 0.8675713205402779,
+      "object_support": 1.0,
+      "score": 0.643774115752545,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.23)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wings flap and pigeons coo",
+      "clip_similarity": 0.26945480704307556,
+      "visual": 0.19530823593623547,
+      "scene_support": 0.35601903683089947,
+      "object_support": 0.5883349025128201,
+      "score": 0.36142947617761,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sequence of a whipping sound and a short grunt followed by a male voice talking accompanied by some keypad sound effects",
+      "clip_similarity": 0.26890456676483154,
+      "visual": 0.1735903299267875,
+      "scene_support": 0.5361498003219741,
+      "object_support": 0.0,
+      "score": 0.23028107206730725,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person moves things around while doves coo and flap their wings",
+      "clip_similarity": 0.26862961053848267,
+      "visual": 0.16273784653605103,
+      "scene_support": 0.43120018657150344,
+      "object_support": 0.6255381676249326,
+      "score": 0.3821166448733513,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Duck quacks, popping, scratches and explosions",
+      "clip_similarity": 0.26862940192222595,
+      "visual": 0.16272961248188508,
+      "scene_support": 0.2616281883894441,
+      "object_support": 0.25211839230705946,
+      "score": 0.21921581920170513,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Beeping is followed by a door opening and closing and a child's voice in the background",
+      "clip_similarity": 0.26569420099258423,
+      "visual": 0.04687764666026763,
+      "scene_support": 0.8242217334428792,
+      "object_support": 0.2677343942814834,
+      "score": 0.3463378969814158,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bird is whistling, a creaking sound occurs, a dog pants, and a tapping sound is present",
+      "clip_similarity": 0.2655662000179291,
+      "visual": 0.04182546628272448,
+      "scene_support": 0.9498469648500042,
+      "object_support": 0.9461306776113128,
+      "score": 0.5855234792514847,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse clip-clops and birds squawk along with a woman speaking and children talking",
+      "clip_similarity": 0.26533639430999756,
+      "visual": 0.03275506747219242,
+      "scene_support": 0.0,
+      "object_support": 0.06042731194983501,
+      "score": 0.03123022057382747,
+      "conflicts": [
+        "names 'a horse', not visible in image (z=-0.22)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Duck quacking and a dog barking at the ending",
+      "clip_similarity": 0.2646780014038086,
+      "visual": 0.006768392524419852,
+      "scene_support": 0.7846199202796561,
+      "object_support": 0.6467300889404839,
+      "score": 0.4321123597758099,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Upbeat music plays birds chirp and sound effects go off",
+      "clip_similarity": 0.2646388113498688,
+      "visual": 0.005221566634671485,
+      "scene_support": 1.0,
+      "object_support": 0.8480179206391283,
+      "score": 0.5564940028456071,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A duck is quacking and a gun is fired",
+      "clip_similarity": 0.2646186649799347,
+      "visual": 0.004426392260930119,
+      "scene_support": 0.45340772725358325,
+      "object_support": 0.6752061261985941,
+      "score": 0.3403547129400253,
+      "conflicts": [
+        "names 'a gun', not visible in image (z=-0.17)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Ducks are quacking as an engine is idling and speech background",
+      "clip_similarity": 0.2645065188407898,
+      "visual": 0.0,
+      "scene_support": 0.5434976247964088,
+      "object_support": 0.4951450653113831,
+      "score": 0.31159280703233755,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-0.73)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "landing deck",
+      0.13870784640312195
+    ],
+    [
+      "pet shop",
+      0.09155988693237305
+    ],
+    [
+      "lobby",
+      0.07623662799596786
+    ],
+    [
+      "rope bridge",
+      0.04977654293179512
+    ],
+    [
+      "assembly line",
+      0.042424142360687256
+    ]
+  ],
+  "top_objects": [
+    [
+      "crane (bird)",
+      0.05063678324222565
+    ],
+    [
+      "mousetrap",
+      0.0386030487716198
+    ],
+    [
+      "grey parrot",
+      0.030697068199515343
+    ],
+    [
+      "suspension bridge",
+      0.03019874170422554
+    ],
+    [
+      "website",
+      0.028129803016781807
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "0AsXkZkqelg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\0AsXkZkqelg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\0AsXkZkqelg.wav",
+  "gt_captions": [
+    "An idle vehicle engine running normally before stuttering",
+    "A vehicle running idle then stuttering",
+    "A loud bang followed by an engine idling loudly",
+    "An engine idles loudly",
+    "Large engine running with loud exhaust"
+  ],
+  "top_scene": [
+    "outdoor garage",
+    0.45933371782302856
+  ],
+  "top_object": [
+    "impala",
+    0.19270464777946472
+  ],
+  "env_probs": {
+    "indoor": 0.4781551659107208,
+    "outdoor": 0.5218448340892792
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A motors rev and revs while there is some wildlife sounds in the background",
+    "casv": "An engine turns over to start a car"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3337032198905945,
+    "clap_gt_audio_baseline": 0.42283788323402405,
+    "clap_text_casv": 0.28807154297828674,
+    "clap_gt_audio_casv": 0.27610135078430176
+  },
+  "verdicts": [
+    {
+      "caption": "A motors rev and revs while there is some wildlife sounds in the background",
+      "clip_similarity": 0.3134411573410034,
+      "visual": 1.0,
+      "scene_support": 0.08752009594090572,
+      "object_support": 0.0,
+      "score": 0.42625602878227176,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "People are communicating with one another while a car engine is clicking and sounds of spray being forced out of a can",
+      "clip_similarity": 0.3120943605899811,
+      "visual": 0.8794684888686185,
+      "scene_support": 0.20545819784486297,
+      "object_support": 0.1843150182980103,
+      "score": 0.46871936039030937,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine works in idle while some door is opened",
+      "clip_similarity": 0.31045806407928467,
+      "visual": 0.7330282105240697,
+      "scene_support": 0.7577242717397291,
+      "object_support": 0.1695597566043474,
+      "score": 0.5713964927128509,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Metal clanks and a motor starts to rev but dies down before revving loudly",
+      "clip_similarity": 0.3099442720413208,
+      "visual": 0.6870464165406435,
+      "scene_support": 0.19593061743252077,
+      "object_support": 0.2724519179054292,
+      "score": 0.4153333272176424,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An engine turns over to start a car",
+      "clip_similarity": 0.3096778690814972,
+      "visual": 0.6632046963307915,
+      "scene_support": 0.9503792637948827,
+      "object_support": 0.8156199771400624,
+      "score": 0.7950816508128,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A car engine idles, followed by a door opening nearby while the engine is still idling",
+      "clip_similarity": 0.30854707956314087,
+      "visual": 0.5620047422058992,
+      "scene_support": 0.41932057793172106,
+      "object_support": 0.11877184714332036,
+      "score": 0.3862296244048722,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car making a revving engine noise while pumping the accelerator",
+      "clip_similarity": 0.3074595332145691,
+      "visual": 0.46467483350269784,
+      "scene_support": 0.5699920707418689,
+      "object_support": 0.5027460558095118,
+      "score": 0.5076913713664933,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car revving its engine, and then coming to a stop",
+      "clip_similarity": 0.30687546730041504,
+      "visual": 0.4124038823143458,
+      "scene_support": 0.7264489082461167,
+      "object_support": 0.6960409900194782,
+      "score": 0.5917085224054168,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "This is how a worn out engine sounds when trying to start",
+      "clip_similarity": 0.3063462972640991,
+      "visual": 0.3650458351003251,
+      "scene_support": 0.2669572329279331,
+      "object_support": 0.13810528726986257,
+      "score": 0.26753709009946874,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car speeds by then another revs its engine",
+      "clip_similarity": 0.3059276044368744,
+      "visual": 0.3275749404557105,
+      "scene_support": 0.4039297112315915,
+      "object_support": 0.5797772355571859,
+      "score": 0.42614206021891743,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A car engine is revved a few times before being turned off then a man speaks and a door shuts",
+      "clip_similarity": 0.30588147044181824,
+      "visual": 0.3234461807639272,
+      "scene_support": 0.2997779184190535,
+      "object_support": 0.318767668278625,
+      "score": 0.31494214831487444,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine starting up followed by a car from a distance",
+      "clip_similarity": 0.30465903878211975,
+      "visual": 0.21404471756136462,
+      "scene_support": 0.5430783188310008,
+      "object_support": 0.29504719408582303,
+      "score": 0.337055540899593,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Car revving motor then squealing tires",
+      "clip_similarity": 0.3045758008956909,
+      "visual": 0.20659534687715872,
+      "scene_support": 0.7223387882056702,
+      "object_support": 0.450585311909687,
+      "score": 0.43451536878547065,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man yells while loud engine roars",
+      "clip_similarity": 0.30385226011276245,
+      "visual": 0.1418420989462061,
+      "scene_support": 0.0,
+      "object_support": 0.14913284688252823,
+      "score": 0.10147669364324091,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine turns over then sputters to a stop",
+      "clip_similarity": 0.30341020226478577,
+      "visual": 0.10228015288146353,
+      "scene_support": 0.72645722201611,
+      "object_support": 0.6254313323536217,
+      "score": 0.44647862746350486,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Car engine accelerating followed by music",
+      "clip_similarity": 0.3033512234687805,
+      "visual": 0.09700184834009458,
+      "scene_support": 0.46904315781925654,
+      "object_support": 0.5569420615887269,
+      "score": 0.34659630515843287,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle engine accelerates then man laughs followed by tires squealing",
+      "clip_similarity": 0.3032793402671814,
+      "visual": 0.09056866463429271,
+      "scene_support": 0.16960194708493243,
+      "object_support": 0.08012199189455022,
+      "score": 0.11114464754756187,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running while people are talking in the background",
+      "clip_similarity": 0.30325132608413696,
+      "visual": 0.08806153665607805,
+      "scene_support": 0.41591193223446077,
+      "object_support": 0.2860843031781814,
+      "score": 0.2458234852862239,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car engine running idle then accelerating",
+      "clip_similarity": 0.3029271364212036,
+      "visual": 0.05904819820180247,
+      "scene_support": 0.2926363899947935,
+      "object_support": 0.4559203291707198,
+      "score": 0.24818629503037498,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A car starting up and then dying",
+      "clip_similarity": 0.3022673428058624,
+      "visual": 0.0,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "outdoor garage",
+      0.45933371782302856
+    ],
+    [
+      "indoor garage",
+      0.28235486149787903
+    ],
+    [
+      "repair shop",
+      0.08469264209270477
+    ],
+    [
+      "auto showroom",
+      0.07473144680261612
+    ],
+    [
+      "gas station",
+      0.02942415326833725
+    ]
+  ],
+  "top_objects": [
+    [
+      "impala",
+      0.19270464777946472
+    ],
+    [
+      "sports car",
+      0.0735718309879303
+    ],
+    [
+      "car mirror",
+      0.05525641515851021
+    ],
+    [
+      "station wagon",
+      0.05473843589425087
+    ],
+    [
+      "motorboat",
+      0.046457938849925995
+    ]
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "id": "mYQrjcYNrW0",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\mYQrjcYNrW0.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\mYQrjcYNrW0.wav",
+  "gt_captions": [
+    "A horn beeping rapidly then a long loud beep",
+    "A bus is tooting the horn",
+    "A bus horn honking as wind is blowing into a microphone before a bus drives by",
+    "A vehicle horn is repeatedly tooting followed by a passing engine rumble",
+    "A large motor vehicle engine is running, and a motor vehicle horn blows repeatedly and then stops"
+  ],
+  "top_scene": [
+    "indoor bus station",
+    0.3285672962665558
+  ],
+  "top_object": [
+    "minibus",
+    0.37825655937194824
+  ],
+  "env_probs": {
+    "indoor": 0.6620172262191772,
+    "outdoor": 0.33798277378082275
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A bus door opens and vehicles pass by",
+    "casv": "A bus door opens and vehicles pass by"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.22733262181282043,
+    "clap_gt_audio_baseline": 0.297974169254303,
+    "clap_text_casv": 0.22733262181282043,
+    "clap_gt_audio_casv": 0.297974169254303
+  },
+  "verdicts": [
+    {
+      "caption": "A bus door opens and vehicles pass by",
+      "clip_similarity": 0.30457958579063416,
+      "visual": 1.0,
+      "scene_support": 0.9779370035913252,
+      "object_support": 0.37631722038779214,
+      "score": 0.8062762671937352,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A woman speaks and laughs as a bus accelerates",
+      "clip_similarity": 0.3037394881248474,
+      "visual": 0.9380884713964741,
+      "scene_support": 0.29340698450229935,
+      "object_support": 0.2547418415113139,
+      "score": 0.5396800363626736,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks on an intercom and then a bus accelerates",
+      "clip_similarity": 0.30196958780288696,
+      "visual": 0.8076545482099049,
+      "scene_support": 0.6890447529663192,
+      "object_support": 0.5071461769092671,
+      "score": 0.6819190982466379,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Bus engine accelerates while several men speak",
+      "clip_similarity": 0.30024275183677673,
+      "visual": 0.6803942799537019,
+      "scene_support": 0.40497503910933036,
+      "object_support": 0.5053433050726465,
+      "score": 0.5452532152360738,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bus driving off on road",
+      "clip_similarity": 0.29983755946159363,
+      "visual": 0.6505333716953906,
+      "scene_support": 0.6205332510193785,
+      "object_support": 1.0,
+      "score": 0.7463733239839698,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of an engine of a big vehicle like a bus while in idle",
+      "clip_similarity": 0.2983609139919281,
+      "visual": 0.5417110502491703,
+      "scene_support": 0.5214399578869682,
+      "object_support": 0.7714377713041127,
+      "score": 0.6045477388569924,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A man speaks while a bus idles then accelerates in the background",
+      "clip_similarity": 0.2975303828716278,
+      "visual": 0.48050453426339357,
+      "scene_support": 0.6385773210480339,
+      "object_support": 0.2623672147680568,
+      "score": 0.46248517445018467,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bus engine running idle as wind blows into a microphone",
+      "clip_similarity": 0.2959262728691101,
+      "visual": 0.3622886334834871,
+      "scene_support": 0.3441629816306383,
+      "object_support": 0.2571438986382014,
+      "score": 0.32530751747404674,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bus engine and hydraulics noise from doors",
+      "clip_similarity": 0.2952934205532074,
+      "visual": 0.315650181963537,
+      "scene_support": 0.5341499437297841,
+      "object_support": 0.49156584051495,
+      "score": 0.43397480805883504,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bus moving with human speech and kids laugh",
+      "clip_similarity": 0.29490336775779724,
+      "visual": 0.28690499460808105,
+      "scene_support": 0.29109321618168765,
+      "object_support": 0.32737160423697664,
+      "score": 0.3003014439688317,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talks which is followed by a bus engine idling, after which the bus accelerates",
+      "clip_similarity": 0.2946852743625641,
+      "visual": 0.2708324639641915,
+      "scene_support": 0.401512256588687,
+      "object_support": 0.08528935561381179,
+      "score": 0.25437346924642623,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A clapping sound followed by a vehicle door closing",
+      "clip_similarity": 0.29400578141212463,
+      "visual": 0.22075680139509038,
+      "scene_support": 0.0,
+      "object_support": 0.07851149919349204,
+      "score": 0.11185617031608378,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus driving off as pressurized air releases",
+      "clip_similarity": 0.2937619090080261,
+      "visual": 0.2027844703949608,
+      "scene_support": 1.0,
+      "object_support": 0.9954282693949216,
+      "score": 0.6797422689764607,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bus engine running idle then accelerating after compressed air releases and a door slides shut",
+      "clip_similarity": 0.2928105294704437,
+      "visual": 0.13267195389524963,
+      "scene_support": 0.6950539048556781,
+      "object_support": 0.5879777154712832,
+      "score": 0.4379782676561882,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Vehicles passing with door opening",
+      "clip_similarity": 0.2924691438674927,
+      "visual": 0.10751332605625605,
+      "scene_support": 0.44501127590419287,
+      "object_support": 0.0,
+      "score": 0.1765087131937603,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Multiple people laughing and then a bus takes off",
+      "clip_similarity": 0.29213082790374756,
+      "visual": 0.0825809172192194,
+      "scene_support": 0.7432512904548749,
+      "object_support": 0.631940752801514,
+      "score": 0.44558997986460436,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bus running and man screaming",
+      "clip_similarity": 0.29198208451271057,
+      "visual": 0.07161917897876396,
+      "scene_support": 0.6908644626697179,
+      "object_support": 0.6645762263933146,
+      "score": 0.43527987831041537,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bus engine slowing",
+      "clip_similarity": 0.29150110483169556,
+      "visual": 0.03617307730320594,
+      "scene_support": 0.8196537392367362,
+      "object_support": 0.8557087397515774,
+      "score": 0.5170779746177764,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Bus accelerating with man talking in background",
+      "clip_similarity": 0.2911149859428406,
+      "visual": 0.007717801678413216,
+      "scene_support": 0.6047426129492326,
+      "object_support": 0.5287138096641221,
+      "score": 0.3431240474553717,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bus engine runs continuously",
+      "clip_similarity": 0.2910102605819702,
+      "visual": 0.0,
+      "scene_support": 0.9780699184759559,
+      "object_support": 0.7453113181468847,
+      "score": 0.5170143709868522,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "indoor bus station",
+      0.3285672962665558
+    ],
+    [
+      "youth hostel",
+      0.06428616493940353
+    ],
+    [
+      "outdoor hotel",
+      0.06421986222267151
+    ],
+    [
+      "campus",
+      0.0431167371571064
+    ],
+    [
+      "hospital",
+      0.03544379770755768
+    ]
+  ],
+  "top_objects": [
+    [
+      "minibus",
+      0.37825655937194824
+    ],
+    [
+      "school bus",
+      0.2223006933927536
+    ],
+    [
+      "trolleybus",
+      0.06578118354082108
+    ],
+    [
+      "limousine",
+      0.050307437777519226
+    ],
+    [
+      "passenger car",
+      0.026802346110343933
+    ]
+  ]
+}

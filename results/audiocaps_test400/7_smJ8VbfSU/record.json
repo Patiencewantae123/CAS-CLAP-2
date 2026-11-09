@@ -1,0 +1,287 @@
+{
+  "id": "7_smJ8VbfSU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\7_smJ8VbfSU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\7_smJ8VbfSU.wav",
+  "gt_captions": [
+    "A woman speaking while a crowd murmurs in the background",
+    "A woman is speaking with people communicating in the background",
+    "Female speaking",
+    "A female speaking",
+    "A woman speaking"
+  ],
+  "top_scene": [
+    "art school",
+    0.044844646006822586
+  ],
+  "top_object": [
+    "mask",
+    0.30732786655426025
+  ],
+  "env_probs": {
+    "indoor": 0.5661933422088623,
+    "outdoor": 0.4338066577911377
+  },
+  "status": "ACCEPT",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A human female voice with chanting in the background",
+    "casv": "An computer-generated female voice narrating"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.1509818732738495,
+    "clap_gt_audio_baseline": 0.42520076036453247,
+    "clap_text_casv": 0.4865291118621826,
+    "clap_gt_audio_casv": 0.4563728868961334
+  },
+  "verdicts": [
+    {
+      "caption": "A human female voice with chanting in the background",
+      "clip_similarity": 0.29124775528907776,
+      "visual": 1.0,
+      "scene_support": 0.6256308026877073,
+      "object_support": 0.7426119999939969,
+      "score": 0.8104728408045113,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An computer-generated female voice narrating",
+      "clip_similarity": 0.29014065861701965,
+      "visual": 0.8839139510756115,
+      "scene_support": 0.7829022267451046,
+      "object_support": 0.8243748846269868,
+      "score": 0.835748713841872,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Person speaking with camera shutter noise in background",
+      "clip_similarity": 0.2900347411632538,
+      "visual": 0.8728078399020012,
+      "scene_support": 0.6213487792864378,
+      "object_support": 0.8199828309948568,
+      "score": 0.7815226190451888,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A dog barks rapidly as a woman speaks",
+      "clip_similarity": 0.28973448276519775,
+      "visual": 0.8413238584517694,
+      "scene_support": 0.4450980938838858,
+      "object_support": 0.43152208333270803,
+      "score": 0.5995155965456859,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A young girl sneezes several times before talking",
+      "clip_similarity": 0.28955456614494324,
+      "visual": 0.8224584692691341,
+      "scene_support": 0.26390495906171874,
+      "object_support": 0.31605076862814546,
+      "score": 0.5029701060146129,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A girl speaking with crinkling plastic",
+      "clip_similarity": 0.28946834802627563,
+      "visual": 0.813417957275534,
+      "scene_support": 0.28631239486621873,
+      "object_support": 0.3191911657664445,
+      "score": 0.5070182511000125,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person talking with a crinkling sound",
+      "clip_similarity": 0.28682655096054077,
+      "visual": 0.5364089198885014,
+      "scene_support": 0.7699835503387515,
+      "object_support": 1.0,
+      "score": 0.7455586330570261,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman speaking with light background noise",
+      "clip_similarity": 0.2849942147731781,
+      "visual": 0.34427694653816826,
+      "scene_support": 0.0,
+      "object_support": 0.1263152523498575,
+      "score": 0.17560535432022456,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "An engine running consistently with distant speech and laughter",
+      "clip_similarity": 0.28497934341430664,
+      "visual": 0.3427175910301121,
+      "scene_support": 1.0,
+      "object_support": 0.9643773159021907,
+      "score": 0.726400231182702,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.14)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman talks at a normal speed and at a medium volume",
+      "clip_similarity": 0.28479427099227905,
+      "visual": 0.32331158360520496,
+      "scene_support": 0.3948906143994944,
+      "object_support": 0.4293091726610607,
+      "score": 0.3765845695602485,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A young girl vocalizing something followed by audio distortion",
+      "clip_similarity": 0.28469008207321167,
+      "visual": 0.31238672016599794,
+      "scene_support": 0.531662112805643,
+      "object_support": 0.47595889043803474,
+      "score": 0.4272409890395025,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Crinkling, a female talking and laughing",
+      "clip_similarity": 0.2846432328224182,
+      "visual": 0.3074742815714804,
+      "scene_support": 0.10638086541946636,
+      "object_support": 0.0,
+      "score": 0.15490397225443206,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Female speaking, computer speech",
+      "clip_similarity": 0.2841111421585083,
+      "visual": 0.2516812289846377,
+      "scene_support": 0.3919340898318789,
+      "object_support": 0.49223717840007086,
+      "score": 0.36592387206344,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person whistles multiple times at medium volume and medium speed nearby",
+      "clip_similarity": 0.28407084941864014,
+      "visual": 0.24745628179647755,
+      "scene_support": 0.42086853282032693,
+      "object_support": 0.47289953580653055,
+      "score": 0.3671129333066483,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking with distant, low frequency buzzing",
+      "clip_similarity": 0.283761590719223,
+      "visual": 0.21502856214297322,
+      "scene_support": 0.5762707827994163,
+      "object_support": 0.5560986737543842,
+      "score": 0.4257222618233294,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An adult female speaks, metal clinks, and a young female laugh, and this is repeated five times, then a young female speaks, laughs and sneezes and this is repeated twice and then two extra sneezes, then an adult male begins to speak",
+      "clip_similarity": 0.2836972177028656,
+      "visual": 0.20827864651691855,
+      "scene_support": 0.5659752232785941,
+      "object_support": 0.5308284195060309,
+      "score": 0.4123525514421549,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman talking as a child cries followed by plastic snapping",
+      "clip_similarity": 0.2829084098339081,
+      "visual": 0.12556718041024487,
+      "scene_support": 0.4467157600765792,
+      "object_support": 0.6501695139100458,
+      "score": 0.3792924543600854,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaks in a shaky, raspy voice",
+      "clip_similarity": 0.2823290228843689,
+      "visual": 0.06481481481481481,
+      "scene_support": 0.8318846943801638,
+      "object_support": 0.970774421183911,
+      "score": 0.5667236605951482,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A woman whispers and sneezes twice and snuffs",
+      "clip_similarity": 0.2821510136127472,
+      "visual": 0.04614942313221085,
+      "scene_support": 0.6692102071542086,
+      "object_support": 0.8459269386793373,
+      "score": 0.4730009130029481,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A computer keyboard sound followed by a girl speaking",
+      "clip_similarity": 0.2817108929157257,
+      "visual": 0.0,
+      "scene_support": 0.43910314495218444,
+      "object_support": 0.38923365305102525,
+      "score": 0.2485010394009629,
+      "conflicts": [
+        "names 'a computer keyboard', not visible in image (z=-1.04)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "art school",
+      0.044844646006822586
+    ],
+    [
+      "tundra",
+      0.043210409581661224
+    ],
+    [
+      "art gallery",
+      0.03659415245056152
+    ],
+    [
+      "archaelogical excavation",
+      0.03548004478216171
+    ],
+    [
+      "television studio",
+      0.03443634882569313
+    ]
+  ],
+  "top_objects": [
+    [
+      "mask",
+      0.30732786655426025
+    ],
+    [
+      "face powder",
+      0.08216534554958344
+    ],
+    [
+      "sunscreen",
+      0.06447694450616837
+    ],
+    [
+      "ski mask",
+      0.062406253069639206
+    ],
+    [
+      "ski",
+      0.04503843933343887
+    ]
+  ]
+}

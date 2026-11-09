@@ -1,0 +1,291 @@
+{
+  "id": "Rk-ujWKzPuc",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Rk-ujWKzPuc.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Rk-ujWKzPuc.wav",
+  "gt_captions": [
+    "Heavy rain hitting the ground",
+    "Continuous rainfall",
+    "Hard rain is falling and splashing on a surface",
+    "Continuous rainfall",
+    "Continuous and steady rainfall"
+  ],
+  "top_scene": [
+    "forest road",
+    0.039797592908144
+  ],
+  "top_object": [
+    "ski mask",
+    0.10353195667266846
+  ],
+  "env_probs": {
+    "indoor": 0.3548067808151245,
+    "outdoor": 0.6451932191848755
+  },
+  "status": "ACCEPT",
+  "n_rejected": 6,
+  "prompts": {
+    "baseline": "A crow caws multiple times and a man speaks",
+    "casv": "A female speaking with muffled voices in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.04319386184215546,
+    "clap_gt_audio_baseline": 0.049159787595272064,
+    "clap_text_casv": 0.06938724219799042,
+    "clap_gt_audio_casv": 0.22442761063575745
+  },
+  "verdicts": [
+    {
+      "caption": "A crow caws multiple times and a man speaks",
+      "clip_similarity": 0.28724008798599243,
+      "visual": 1.0,
+      "scene_support": 0.6898811142700052,
+      "object_support": 0.7756114824377257,
+      "score": 0.8396477790123194,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The loud buzz of a bee and then a man yells and finally spooky music plays",
+      "clip_similarity": 0.2863105535507202,
+      "visual": 0.9310062600924636,
+      "scene_support": 0.6478802689995089,
+      "object_support": 0.7436010622669549,
+      "score": 0.7898469034169247,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "An electronic beeping followed by footsteps walking on foliage then a person whistling",
+      "clip_similarity": 0.28476473689079285,
+      "visual": 0.8162696042648262,
+      "scene_support": 0.9196758231114955,
+      "object_support": 0.7175052150532293,
+      "score": 0.8176621531553478,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Humming and rattling as a vehicle moves down a wet road",
+      "clip_similarity": 0.2843499779701233,
+      "visual": 0.7854845488530537,
+      "scene_support": 0.872032014620049,
+      "object_support": 0.6087856082036608,
+      "score": 0.7584391063883344,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.50)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A mumbled female voice speaks while insects buzz in the background followed by a woman narrating forcefully",
+      "clip_similarity": 0.28338566422462463,
+      "visual": 0.7139093503218528,
+      "scene_support": 0.8696013727818986,
+      "object_support": 0.6610856489399805,
+      "score": 0.7447698466453049,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female speaking with muffled voices in the background",
+      "clip_similarity": 0.28266289830207825,
+      "visual": 0.660262791160661,
+      "scene_support": 0.9902025909888686,
+      "object_support": 1.0,
+      "score": 0.861165893760925,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of water flowing (stream) in the background with a faint background of males talking toward the end of the clip",
+      "clip_similarity": 0.2812386453151703,
+      "visual": 0.5545490742584113,
+      "scene_support": 0.5687124691094723,
+      "object_support": 0.48878568390413857,
+      "score": 0.5390690756074478,
+      "conflicts": [
+        "names 'a stream or river', not visible in image (z=-0.71)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks followed by a clicking sound that gets fast and an engine starting is heard",
+      "clip_similarity": 0.28012868762016296,
+      "visual": 0.47216360298183907,
+      "scene_support": 0.9125859211589598,
+      "object_support": 0.8564600658688782,
+      "score": 0.719579237301087,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A female voice talking followed by rustling leaves and then some squeaking noises",
+      "clip_similarity": 0.27785903215408325,
+      "visual": 0.3037007543079612,
+      "scene_support": 0.8863390004285052,
+      "object_support": 0.7552934741929974,
+      "score": 0.6139700441096353,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A male voice speaking in a foreign language with faint children's voices in the background",
+      "clip_similarity": 0.2767500877380371,
+      "visual": 0.2213904926228239,
+      "scene_support": 0.8120138960904283,
+      "object_support": 0.7631190110868081,
+      "score": 0.5610960692023005,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A howl in the background followed by a woman screaming in terror",
+      "clip_similarity": 0.27668413519859314,
+      "visual": 0.2164952330391311,
+      "scene_support": 1.0,
+      "object_support": 0.9684106637370582,
+      "score": 0.6771212923367699,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A bunch of birds close by singing and tweeting and a faint clicking in the background",
+      "clip_similarity": 0.27642667293548584,
+      "visual": 0.19738536067423187,
+      "scene_support": 0.7699665805090798,
+      "object_support": 0.5955687779056801,
+      "score": 0.4886147517941207,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A sequence of birds chirping and a faint siren are in the background when a low voice male speaks followed a series of male and female radio voice ads",
+      "clip_similarity": 0.27601438760757446,
+      "visual": 0.1667839051474329,
+      "scene_support": 0.5433303853220344,
+      "object_support": 0.47798748387224976,
+      "score": 0.3731089228172584,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-1.73)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A rustling and walking on ground while dark instrumental music plays",
+      "clip_similarity": 0.27545884251594543,
+      "visual": 0.1255491406198155,
+      "scene_support": 0.9447228314996312,
+      "object_support": 0.7875390389729716,
+      "score": 0.569898217389707,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Creaking mixed with a man speaking and multiple large footsteps",
+      "clip_similarity": 0.2753480076789856,
+      "visual": 0.11732253854491562,
+      "scene_support": 0.9604792018455073,
+      "object_support": 0.923803210930392,
+      "score": 0.612213739250736,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A whooshing effect followed by a dog barking then a person clapping before a woman speaks while soft music plays in the background",
+      "clip_similarity": 0.2752959132194519,
+      "visual": 0.11345588072643617,
+      "scene_support": 0.8343680722549742,
+      "object_support": 0.8538999703348753,
+      "score": 0.5518627650675293,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks in Hindi with the sound of a small engine running in the background",
+      "clip_similarity": 0.2750343680381775,
+      "visual": 0.0940429579489902,
+      "scene_support": 0.5667714775993535,
+      "object_support": 0.6803911632939739,
+      "score": 0.4117659754475943,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rain falling heavily on a surface as a muffled man speaks followed by camera muffling",
+      "clip_similarity": 0.2743892967700958,
+      "visual": 0.04616320481341385,
+      "scene_support": 0.3713119693824242,
+      "object_support": 0.35483558092783235,
+      "score": 0.2363095470184425,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Rustling leaves with insects buzzing and a man speaking",
+      "clip_similarity": 0.2739294171333313,
+      "visual": 0.012029110535978941,
+      "scene_support": 0.6406504669532499,
+      "object_support": 0.3495076866738298,
+      "score": 0.30185909030251545,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A vehicle driving on wet terrain then accelerating with plastic clicking in the background",
+      "clip_similarity": 0.273767352104187,
+      "visual": 0.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.0,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-2.50)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "forest road",
+      0.039797592908144
+    ],
+    [
+      "manufactured home",
+      0.03676094487309456
+    ],
+    [
+      "broadleaf forest",
+      0.029982125386595726
+    ],
+    [
+      "archive",
+      0.02676275558769703
+    ],
+    [
+      "burial chamber",
+      0.020102227106690407
+    ]
+  ],
+  "top_objects": [
+    [
+      "ski mask",
+      0.10353195667266846
+    ],
+    [
+      "indri",
+      0.05594342201948166
+    ],
+    [
+      "abaya",
+      0.029508406296372414
+    ],
+    [
+      "mask",
+      0.029423989355564117
+    ],
+    [
+      "cloak",
+      0.02429828979074955
+    ]
+  ]
+}

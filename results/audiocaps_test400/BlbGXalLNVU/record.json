@@ -1,0 +1,285 @@
+{
+  "id": "BlbGXalLNVU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\BlbGXalLNVU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\BlbGXalLNVU.wav",
+  "gt_captions": [
+    "A man talking as water splashes",
+    "Waves crashing onto shore followed by a man talking",
+    "Surf comes ashore as a man speaks",
+    "Water splashes and wind blows as men speak",
+    "Water moving with male voices soft in the background"
+  ],
+  "top_scene": [
+    "pier",
+    0.2559153139591217
+  ],
+  "top_object": [
+    "pier",
+    0.16653794050216675
+  ],
+  "env_probs": {
+    "indoor": 0.06051164120435715,
+    "outdoor": 0.9394883587956429
+  },
+  "status": "ACCEPT",
+  "n_rejected": 5,
+  "prompts": {
+    "baseline": "Waves crash while children and a man speak",
+    "casv": "Waves crash while children and a man speak"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.387336790561676,
+    "clap_gt_audio_baseline": 0.4023119807243347,
+    "clap_text_casv": 0.387336790561676,
+    "clap_gt_audio_casv": 0.4023119807243347
+  },
+  "verdicts": [
+    {
+      "caption": "Waves crash while children and a man speak",
+      "clip_similarity": 0.3336438536643982,
+      "visual": 1.0,
+      "scene_support": 0.694647344189795,
+      "object_support": 0.644648888820427,
+      "score": 0.8017888699030666,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Motorboat travels in ocean with wind noise and people talking in the background",
+      "clip_similarity": 0.328460693359375,
+      "visual": 0.7873197479895909,
+      "scene_support": 0.7393602509431199,
+      "object_support": 0.7517275934868762,
+      "score": 0.7622542525248351,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water waves crash while two men are laughing while a dog whimpers and barks",
+      "clip_similarity": 0.3236748278141022,
+      "visual": 0.5909416638948131,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.23637666555792525,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A boat traveling quickly across windy waters ending with distorted speech",
+      "clip_similarity": 0.32170018553733826,
+      "visual": 0.5099163063256961,
+      "scene_support": 0.9076309268938217,
+      "object_support": 0.9474131239768153,
+      "score": 0.7604797377914696,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water slaps against boat while the wind blows",
+      "clip_similarity": 0.32117021083831787,
+      "visual": 0.4881698917998787,
+      "scene_support": 0.533185587973223,
+      "object_support": 0.6057988948536327,
+      "score": 0.5369633015680082,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat running on water and people speaking",
+      "clip_similarity": 0.3211365342140198,
+      "visual": 0.4867880412451819,
+      "scene_support": 0.9118128642395751,
+      "object_support": 0.9492504704616814,
+      "score": 0.7530342169084497,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind and waves crash while a woman briefly speaks",
+      "clip_similarity": 0.3201189339160919,
+      "visual": 0.4450329198379933,
+      "scene_support": 0.6265124524072235,
+      "object_support": 0.6278419180288447,
+      "score": 0.5543194790660178,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blows while people talk, and then a boat motor revs up",
+      "clip_similarity": 0.3181927502155304,
+      "visual": 0.36599595961572323,
+      "scene_support": 0.6363779718746234,
+      "object_support": 0.694392028295307,
+      "score": 0.5456293838972683,
+      "conflicts": [
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.91)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water speedboat moves along as someone laughs in the background",
+      "clip_similarity": 0.3161238431930542,
+      "visual": 0.28110264337005225,
+      "scene_support": 0.48383559140030613,
+      "object_support": 0.5611775619516094,
+      "score": 0.42594500335359553,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A fishing line being thrown twice",
+      "clip_similarity": 0.3151293992996216,
+      "visual": 0.2402976970787924,
+      "scene_support": 0.44234459074132065,
+      "object_support": 0.43538351077804394,
+      "score": 0.3594375092873263,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Motorboat speeding by with human speech and applause",
+      "clip_similarity": 0.3136465549468994,
+      "visual": 0.17945224911463734,
+      "scene_support": 0.5146865070138728,
+      "object_support": 0.520937791230543,
+      "score": 0.3824681891191797,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Children screaming in the background as the sound of water flowing by",
+      "clip_similarity": 0.31312140822410583,
+      "visual": 0.15790394059754642,
+      "scene_support": 0.8471623975962932,
+      "object_support": 0.7644884654519812,
+      "score": 0.5466568351535008,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Waves crash as several people talk and laugh",
+      "clip_similarity": 0.3130492866039276,
+      "visual": 0.15494457923262048,
+      "scene_support": 0.8057305309201293,
+      "object_support": 0.7479904290251109,
+      "score": 0.5280941196766202,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Boat rushing through water then a man yelling",
+      "clip_similarity": 0.31258314847946167,
+      "visual": 0.1358175663777417,
+      "scene_support": 0.8904094983511922,
+      "object_support": 0.8848573382180905,
+      "score": 0.5869070775218814,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Men talking in heavy winds are interrupted by a dog barking",
+      "clip_similarity": 0.31238844990730286,
+      "visual": 0.1278285135690387,
+      "scene_support": 0.17951374842701365,
+      "object_support": 0.2299160571417324,
+      "score": 0.17396034709823932,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Water running while people speak",
+      "clip_similarity": 0.3122536838054657,
+      "visual": 0.12229866559705727,
+      "scene_support": 0.8463210822952407,
+      "object_support": 0.7988045694901214,
+      "score": 0.5424571617744316,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat speeds by and waves smack into each other",
+      "clip_similarity": 0.3113590478897095,
+      "visual": 0.08558913302940774,
+      "scene_support": 0.906515444945142,
+      "object_support": 0.9213017518546759,
+      "score": 0.5825808122517084,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A boat speeds by blowing air around it",
+      "clip_similarity": 0.3102911114692688,
+      "visual": 0.041768573049756404,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.6167074292199025,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A boat is traveling in water, people are talking and a horn sounds",
+      "clip_similarity": 0.309705913066864,
+      "visual": 0.017756168189555655,
+      "scene_support": 0.9378371924976895,
+      "object_support": 0.9165012883675514,
+      "score": 0.5634040115353945,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Windy sounds over water",
+      "clip_similarity": 0.3092731833457947,
+      "visual": 0.0,
+      "scene_support": 0.9286342424287223,
+      "object_support": 0.8819237454141218,
+      "score": 0.5431673963528532,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "pier",
+      0.2559153139591217
+    ],
+    [
+      "ocean",
+      0.13738034665584564
+    ],
+    [
+      "raft",
+      0.1138334572315216
+    ],
+    [
+      "bridge",
+      0.0689062625169754
+    ],
+    [
+      "cliff",
+      0.06608109921216965
+    ]
+  ],
+  "top_objects": [
+    [
+      "pier",
+      0.16653794050216675
+    ],
+    [
+      "dock",
+      0.06944824755191803
+    ],
+    [
+      "submarine",
+      0.05440802499651909
+    ],
+    [
+      "shipwreck",
+      0.04647129774093628
+    ],
+    [
+      "cliff",
+      0.043002624064683914
+    ]
+  ]
+}

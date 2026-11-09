@@ -1,0 +1,283 @@
+{
+  "id": "tJhVH3VIrnE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\tJhVH3VIrnE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\tJhVH3VIrnE.wav",
+  "gt_captions": [
+    "Wood cracking as metal clanks and slams against a wooden surface",
+    "Cracking and banging",
+    "A object is hitting a surface followed by a loud boom",
+    "Wood cracking and metal clanking with a series of hammering on a wooden surface",
+    "Wood cracking and loud cluttering"
+  ],
+  "top_scene": [
+    "door elevator",
+    0.18127678334712982
+  ],
+  "top_object": [
+    "rifle",
+    0.19186317920684814
+  ],
+  "env_probs": {
+    "indoor": 0.8797755241394043,
+    "outdoor": 0.1202244758605957
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Door being slammed shut followed by laughter and a male's voice in the background",
+    "casv": "Door being slammed shut followed by laughter and a male's voice in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.3095971941947937,
+    "clap_gt_audio_baseline": 0.5390722751617432,
+    "clap_text_casv": 0.3095971941947937,
+    "clap_gt_audio_casv": 0.5390722751617432
+  },
+  "verdicts": [
+    {
+      "caption": "Door being slammed shut followed by laughter and a male's voice in the background",
+      "clip_similarity": 0.28983086347579956,
+      "visual": 1.0,
+      "scene_support": 0.8505448494838744,
+      "object_support": 0.4024252367865546,
+      "score": 0.7758910258811287,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Opening and slamming of door with a man speaking",
+      "clip_similarity": 0.28452903032302856,
+      "visual": 0.7488643133224729,
+      "scene_support": 0.9533657491389282,
+      "object_support": 0.36530433792170297,
+      "score": 0.6951467514471785,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A door is opened while a man is laughing maliciously in the background",
+      "clip_similarity": 0.2828661799430847,
+      "visual": 0.6700989014401834,
+      "scene_support": 0.76145762439932,
+      "object_support": 0.3115468873055106,
+      "score": 0.5899409140875225,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Male speaking followed by cocking gun and rapid gunfire then male laughter and woman speaking",
+      "clip_similarity": 0.27995654940605164,
+      "visual": 0.5322763706587689,
+      "scene_support": 0.06716178833807322,
+      "object_support": 0.4167554159204417,
+      "score": 0.358085709541062,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Video game player attacking with weapon and speaking in foreign language",
+      "clip_similarity": 0.27964121103286743,
+      "visual": 0.5173395145557058,
+      "scene_support": 0.18740752050140128,
+      "object_support": 0.6436773967949221,
+      "score": 0.45626128101117935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door opening followed by a man screaming",
+      "clip_similarity": 0.27929940819740295,
+      "visual": 0.5011490975208291,
+      "scene_support": 0.9499136987400275,
+      "object_support": 0.3970134158734633,
+      "score": 0.6045377733923789,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A door unlocking and opening and men shouting",
+      "clip_similarity": 0.27898550033569336,
+      "visual": 0.48628000146813444,
+      "scene_support": 0.8321868765154475,
+      "object_support": 0.4473343535619585,
+      "score": 0.5783683696104756,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rapid gunfire followed by laughing",
+      "clip_similarity": 0.278695672750473,
+      "visual": 0.4725515329299728,
+      "scene_support": 0.2865595168164539,
+      "object_support": 0.740926192087511,
+      "score": 0.49726632584317865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door opening followed by a man's speech",
+      "clip_similarity": 0.27660197019577026,
+      "visual": 0.37337764087737974,
+      "scene_support": 0.9267228552131396,
+      "object_support": 0.317752022397165,
+      "score": 0.5226935196340432,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An object hits a door",
+      "clip_similarity": 0.27516597509384155,
+      "visual": 0.30535784364933044,
+      "scene_support": 1.0,
+      "object_support": 0.7057584415941272,
+      "score": 0.6338706699379704,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A person walking and opening a door",
+      "clip_similarity": 0.2738150656223297,
+      "visual": 0.24136835775047927,
+      "scene_support": 0.7849232863312778,
+      "object_support": 0.102657070667452,
+      "score": 0.36282145019981066,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door being broken into by a bunch of males",
+      "clip_similarity": 0.27292194962501526,
+      "visual": 0.1990634996372014,
+      "scene_support": 0.9028136539720576,
+      "object_support": 0.22021736808492628,
+      "score": 0.41653470647197566,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Person and tools rustling against door lock",
+      "clip_similarity": 0.2727010250091553,
+      "visual": 0.18859880685844643,
+      "scene_support": 0.6927374966682797,
+      "object_support": 0.45772278057062776,
+      "score": 0.4205776059150508,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Gun being fired repeatedly",
+      "clip_similarity": 0.27146217226982117,
+      "visual": 0.12991719157177906,
+      "scene_support": 0.2818192874905871,
+      "object_support": 1.0,
+      "score": 0.43651266287588775,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man gives a speech as the door slams shut",
+      "clip_similarity": 0.27082177996635437,
+      "visual": 0.09958327569023492,
+      "scene_support": 0.6853003206214726,
+      "object_support": 0.41042928933674944,
+      "score": 0.3685521932635606,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door being slammed and a man speaking",
+      "clip_similarity": 0.2707110345363617,
+      "visual": 0.09433751845755539,
+      "scene_support": 0.919158879713899,
+      "object_support": 0.43208322087329265,
+      "score": 0.4431076375591796,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Door opening followed by young man scaring a young women",
+      "clip_similarity": 0.27039384841918945,
+      "visual": 0.07931313895609995,
+      "scene_support": 0.5529713769644211,
+      "object_support": 0.07343297182139173,
+      "score": 0.21964656021818385,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man laughs followed by some steps and then a gun is fired several times while something swooshes and later is tapped",
+      "clip_similarity": 0.2693144977092743,
+      "visual": 0.028186769285498504,
+      "scene_support": 0.0,
+      "object_support": 0.3601903422197817,
+      "score": 0.11933181038013391,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman is laughing while a door is being opened",
+      "clip_similarity": 0.26931339502334595,
+      "visual": 0.028134537580006266,
+      "scene_support": 0.5523575641048865,
+      "object_support": 0.0,
+      "score": 0.17696108426346843,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man hitting a door and breathing heavily",
+      "clip_similarity": 0.2687194347381592,
+      "visual": 0.0,
+      "scene_support": 0.7669239746711625,
+      "object_support": 0.4231559988069264,
+      "score": 0.3570239920434266,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "door elevator",
+      0.18127678334712982
+    ],
+    [
+      "elevator lobby",
+      0.07358129322528839
+    ],
+    [
+      "corridor",
+      0.0669914186000824
+    ],
+    [
+      "locker room",
+      0.04769814759492874
+    ],
+    [
+      "embassy",
+      0.0463387668132782
+    ]
+  ],
+  "top_objects": [
+    [
+      "rifle",
+      0.19186317920684814
+    ],
+    [
+      "safe",
+      0.08928918838500977
+    ],
+    [
+      "missile",
+      0.08590542525053024
+    ],
+    [
+      "assault rifle",
+      0.05144049972295761
+    ],
+    [
+      "alp",
+      0.026401840150356293
+    ]
+  ]
+}

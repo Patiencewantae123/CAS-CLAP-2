@@ -1,0 +1,283 @@
+{
+  "id": "txeXrpoMST4",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\txeXrpoMST4.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\txeXrpoMST4.wav",
+  "gt_captions": [
+    "Water running and someone gets closer as the water gets louder",
+    "Water running then growing louder",
+    "Water turning on and running continuously",
+    "Water flowing and splashing, increases in volume suddenly",
+    "Water trickling into a container"
+  ],
+  "top_scene": [
+    "closet",
+    0.1733616441488266
+  ],
+  "top_object": [
+    "sliding door",
+    0.3073084354400635
+  ],
+  "env_probs": {
+    "indoor": 0.8654031753540039,
+    "outdoor": 0.1345968246459961
+  },
+  "status": "ACCEPT",
+  "n_rejected": 9,
+  "prompts": {
+    "baseline": "A door opening followed by a man screaming",
+    "casv": "A door opening followed by a man screaming"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.10993841290473938,
+    "clap_gt_audio_baseline": 0.23568212985992432,
+    "clap_text_casv": -0.10993841290473938,
+    "clap_gt_audio_casv": 0.23568212985992432
+  },
+  "verdicts": [
+    {
+      "caption": "A door opening followed by a man screaming",
+      "clip_similarity": 0.3216559588909149,
+      "visual": 1.0,
+      "scene_support": 0.9906190879869137,
+      "object_support": 0.8346819486961466,
+      "score": 0.9475903110049181,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Opening and slamming of door with a man speaking",
+      "clip_similarity": 0.32098880410194397,
+      "visual": 0.9537283353486498,
+      "scene_support": 0.9614732519086246,
+      "object_support": 0.9105684038789192,
+      "score": 0.9431038308757229,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Man speaks followed by a door slide and then a metallic click",
+      "clip_similarity": 0.31837376952171326,
+      "visual": 0.7723581268925888,
+      "scene_support": 0.18812786977350077,
+      "object_support": 0.38345708079714874,
+      "score": 0.48041873592823037,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door sliding and then a woman screaming",
+      "clip_similarity": 0.31820881366729736,
+      "visual": 0.7609173306875846,
+      "scene_support": 0.9072673168379105,
+      "object_support": 1.0,
+      "score": 0.8765471273264069,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Door sound with woman chuckling",
+      "clip_similarity": 0.3174022138118744,
+      "visual": 0.7049742142849761,
+      "scene_support": 0.28293760394577544,
+      "object_support": 0.3132830430546219,
+      "score": 0.46085587981410964,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A teenage boy speaks and then closes a door",
+      "clip_similarity": 0.3171958327293396,
+      "visual": 0.6906603003338191,
+      "scene_support": 0.9088844582886889,
+      "object_support": 0.7205598471221566,
+      "score": 0.7650974117567813,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman talking as she closes the door",
+      "clip_similarity": 0.3169185519218445,
+      "visual": 0.6714290143552538,
+      "scene_support": 0.5147220778962494,
+      "object_support": 0.4951848011282402,
+      "score": 0.5715436694494485,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Door screeching followed by child speaking",
+      "clip_similarity": 0.3123527765274048,
+      "visual": 0.35476183094079106,
+      "scene_support": 0.5956363283803974,
+      "object_support": 0.32242247934455026,
+      "score": 0.41732237469380074,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A door opening followed by a man's speech",
+      "clip_similarity": 0.3123335838317871,
+      "visual": 0.35343068861811305,
+      "scene_support": 0.8291199817030576,
+      "object_support": 0.6823155684416452,
+      "score": 0.5948029404906561,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Door closing while man is speaking",
+      "clip_similarity": 0.31146687269210815,
+      "visual": 0.2933184509968065,
+      "scene_support": 0.8032668494703582,
+      "object_support": 0.6409161880242092,
+      "score": 0.5505822916470928,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Door shutting closed and parts being moved while woman is talking",
+      "clip_similarity": 0.310835063457489,
+      "visual": 0.2494982378900154,
+      "scene_support": 0.35875183031574653,
+      "object_support": 0.49880388841471246,
+      "score": 0.3570660107751438,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Door opening followed by young man scaring a young women",
+      "clip_similarity": 0.31081610918045044,
+      "visual": 0.24818363149681166,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.09927345259872467,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Someone talks with voice on fast forward effect followed by a door opening",
+      "clip_similarity": 0.3104594349861145,
+      "visual": 0.22344588100331753,
+      "scene_support": 0.5005916674331826,
+      "object_support": 0.3185250007283494,
+      "score": 0.3351133528497866,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Door knob and door opening with creaking",
+      "clip_similarity": 0.3098187744617462,
+      "visual": 0.1790117715147945,
+      "scene_support": 0.35953989156078386,
+      "object_support": 0.32171463162244957,
+      "score": 0.2759810655608878,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man briefly talks then a beep is followed by a door opening",
+      "clip_similarity": 0.3093210756778717,
+      "visual": 0.14449301873727508,
+      "scene_support": 0.48942332313245646,
+      "object_support": 0.4363643818795299,
+      "score": 0.3355335189985059,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music plays followed by a door opening and a woman sneezing",
+      "clip_similarity": 0.3091174066066742,
+      "visual": 0.1303672009838878,
+      "scene_support": 0.5210787738065347,
+      "object_support": 0.3323301893816367,
+      "score": 0.3081695693500065,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A door opening followed by a mans speech",
+      "clip_similarity": 0.3088949918746948,
+      "visual": 0.11494124577558677,
+      "scene_support": 1.0,
+      "object_support": 0.7305970414986518,
+      "score": 0.5651556107598302,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A man speaks followed by some clicking and a door opening and shutting",
+      "clip_similarity": 0.3077702522277832,
+      "visual": 0.03693299848076148,
+      "scene_support": 0.6717003975110192,
+      "object_support": 0.46481209124761397,
+      "score": 0.3557269460198945,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A man speaks normally while opening doors several times",
+      "clip_similarity": 0.30747342109680176,
+      "visual": 0.016345766285306793,
+      "scene_support": 0.001757600316218897,
+      "object_support": 0.1306475403910211,
+      "score": 0.04625984872629472,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person walking and opening a door",
+      "clip_similarity": 0.30723774433135986,
+      "visual": 0.0,
+      "scene_support": 0.4475926842062085,
+      "object_support": 0.48268524623065695,
+      "score": 0.27908337913105963,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "closet",
+      0.1733616441488266
+    ],
+    [
+      "door elevator",
+      0.16315482556819916
+    ],
+    [
+      "corridor",
+      0.07550373673439026
+    ],
+    [
+      "pantry",
+      0.049140773713588715
+    ],
+    [
+      "manufactured home",
+      0.03826627880334854
+    ]
+  ],
+  "top_objects": [
+    [
+      "sliding door",
+      0.3073084354400635
+    ],
+    [
+      "wardrobe",
+      0.216902494430542
+    ],
+    [
+      "china cabinet",
+      0.02277778461575508
+    ],
+    [
+      "refrigerator",
+      0.019990142434835434
+    ],
+    [
+      "baluster",
+      0.016663726419210434
+    ]
+  ]
+}

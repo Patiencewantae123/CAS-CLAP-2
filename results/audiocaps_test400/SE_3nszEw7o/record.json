@@ -1,0 +1,283 @@
+{
+  "id": "SE_3nszEw7o",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\SE_3nszEw7o.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\SE_3nszEw7o.wav",
+  "gt_captions": [
+    "Hissing together with an engine chugging",
+    "A steam engine running on railroad tracks as steam hisses and metal clacking occur in the background",
+    "Hissing and clinking",
+    "A steam engine running on railroad tracks as steam releases and hisses",
+    "A steam engine running on railroad tracks as steam releases and hissing while a man talks in the background"
+  ],
+  "top_scene": [
+    "industrial area",
+    0.19033145904541016
+  ],
+  "top_object": [
+    "steam locomotive",
+    0.6265403628349304
+  ],
+  "env_probs": {
+    "indoor": 0.17295636236667633,
+    "outdoor": 0.8270436376333237
+  },
+  "status": "ACCEPT",
+  "n_rejected": 3,
+  "prompts": {
+    "baseline": "A steam engine train is moving while an announcer speaks and wind blows",
+    "casv": "A train engine chugs and whistles as it moves away on the rails"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4321240186691284,
+    "clap_gt_audio_baseline": 0.48561471700668335,
+    "clap_text_casv": 0.38403773307800293,
+    "clap_gt_audio_casv": 0.3506912887096405
+  },
+  "verdicts": [
+    {
+      "caption": "A steam engine train is moving while an announcer speaks and wind blows",
+      "clip_similarity": 0.3331539034843445,
+      "visual": 1.0,
+      "scene_support": 0.3812857528518534,
+      "object_support": 0.4555374546682651,
+      "score": 0.6510469622560355,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large machine outdoors making engine sounds",
+      "clip_similarity": 0.32859811186790466,
+      "visual": 0.7388402276287758,
+      "scene_support": 0.9425471499200949,
+      "object_support": 0.3235368786783692,
+      "score": 0.6753612996310495,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam engine running on railroad tracks followed by a train whistle blowing as a group of people talk in the background",
+      "clip_similarity": 0.32820820808410645,
+      "visual": 0.7164890772697531,
+      "scene_support": 0.5180362853883033,
+      "object_support": 0.5146099605770771,
+      "score": 0.5963895046975154,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam engine slowly running on railroad tracks alongside a group of people talking followed by a train horn whistling",
+      "clip_similarity": 0.32810360193252563,
+      "visual": 0.7104925521791645,
+      "scene_support": 0.5833648618558083,
+      "object_support": 0.6596125253513625,
+      "score": 0.6570902370338171,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam engine hissing and running on railroad tracks",
+      "clip_similarity": 0.3276859223842621,
+      "visual": 0.6865491621094785,
+      "scene_support": 0.5890163495094359,
+      "object_support": 0.8448563119181909,
+      "score": 0.7047814632720795,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A train engine chugs and whistles as it moves away on the rails",
+      "clip_similarity": 0.3260284662246704,
+      "visual": 0.5915358450402246,
+      "scene_support": 0.9596784681867355,
+      "object_support": 1.0,
+      "score": 0.8245178784721106,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Steam engine hiss with multiple voices",
+      "clip_similarity": 0.32488998770713806,
+      "visual": 0.5262728094317993,
+      "scene_support": 0.6735211645059777,
+      "object_support": 0.5754514956942443,
+      "score": 0.5852009218327863,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam engine running on railroad tracks as steam hisses followed by compressed air releasing",
+      "clip_similarity": 0.3244341015815735,
+      "visual": 0.5001392355540977,
+      "scene_support": 0.3752894219836564,
+      "object_support": 0.6745159747559127,
+      "score": 0.5149973132435098,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train horn blows as a train passes with a humming engine",
+      "clip_similarity": 0.32223790884017944,
+      "visual": 0.37424296006245955,
+      "scene_support": 0.8636982562756539,
+      "object_support": 0.6286189485639866,
+      "score": 0.5973923454768759,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam engine running on railroad tracks as wind blows into a microphone",
+      "clip_similarity": 0.3209824562072754,
+      "visual": 0.30227440850515686,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.12090976340206275,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam engine running on railroad tracks as steam hisses",
+      "clip_similarity": 0.3208897113800049,
+      "visual": 0.296957831273843,
+      "scene_support": 0.5172431459947938,
+      "object_support": 0.831506184662592,
+      "score": 0.5234079317067529,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train engine goes by quickly blowing the horn",
+      "clip_similarity": 0.3202798068523407,
+      "visual": 0.2619951856958105,
+      "scene_support": 0.8968618282207863,
+      "object_support": 0.7253522877960117,
+      "score": 0.5914623090833636,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam locomotive ring its train horn loudly nearby as it squeaks",
+      "clip_similarity": 0.32023942470550537,
+      "visual": 0.25968028783320435,
+      "scene_support": 0.7494984994393835,
+      "object_support": 0.8992075512506672,
+      "score": 0.5984839303402969,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chugging steam engine",
+      "clip_similarity": 0.3200128376483917,
+      "visual": 0.24669123362700932,
+      "scene_support": 1.0,
+      "object_support": 0.943470292858477,
+      "score": 0.6817175813083468,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A steam engine is chugging",
+      "clip_similarity": 0.3178824186325073,
+      "visual": 0.124565422772103,
+      "scene_support": 0.8744420929421431,
+      "object_support": 0.906700046322079,
+      "score": 0.5841688108881078,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A steam engine whistle blowing as steam hisses and a group of people talk in the background",
+      "clip_similarity": 0.3172307014465332,
+      "visual": 0.08720587556954175,
+      "scene_support": 0.5580558330722377,
+      "object_support": 0.6047500660711301,
+      "score": 0.383724119970827,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam engine train hissing steam noise",
+      "clip_similarity": 0.3169799745082855,
+      "visual": 0.0728330078809032,
+      "scene_support": 0.7016411581214518,
+      "object_support": 0.9929632077779454,
+      "score": 0.5375145129221804,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Steam engine train going down tracks",
+      "clip_similarity": 0.3162432312965393,
+      "visual": 0.03059936207906871,
+      "scene_support": 0.6425700080988892,
+      "object_support": 0.9537872203109304,
+      "score": 0.4911469133545734,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A train passes while continuously blowing its horn",
+      "clip_similarity": 0.31571581959724426,
+      "visual": 0.0003656001052381611,
+      "scene_support": 0.8193134861284354,
+      "object_support": 0.509990475347806,
+      "score": 0.3989374284849676,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A steam engine running as steam hisses and releases",
+      "clip_similarity": 0.3157094419002533,
+      "visual": 0.0,
+      "scene_support": 0.6773169030320586,
+      "object_support": 0.7261046601399378,
+      "score": 0.4210264689515989,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "industrial area",
+      0.19033145904541016
+    ],
+    [
+      "butte",
+      0.1166597306728363
+    ],
+    [
+      "oilrig",
+      0.08418229222297668
+    ],
+    [
+      "railroad track",
+      0.06457953155040741
+    ],
+    [
+      "loading dock",
+      0.04349007084965706
+    ]
+  ],
+  "top_objects": [
+    [
+      "steam locomotive",
+      0.6265403628349304
+    ],
+    [
+      "drilling rig",
+      0.08959516137838364
+    ],
+    [
+      "crane (machine)",
+      0.0808989554643631
+    ],
+    [
+      "electric locomotive",
+      0.07465635985136032
+    ],
+    [
+      "freight car",
+      0.04370460659265518
+    ]
+  ]
+}

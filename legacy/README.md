@@ -9,6 +9,8 @@ Kept for history only. **Nothing in this folder may be cited as an experimental 
 | `paper_results/` | Output of the scripts above. Synthetic. |
 | `MSA-I2A/` | Architecture skeleton. Its dataset returns `torch.randn`, inference ignores the input image, validation is a stub. Never trained. |
 | `generated_test_input.jpg`, `output_sound.wav` | Artifacts of `generate_advanced_audio.py`. |
+| `app_prototype.py` | The former `app.py` (until 2026-11-09). Scene, mood and "conflict" scores come from pixel brightness and colour, candidates from a hand-written list of 10 sounds, and audio is sine tones and noise. Not the CAS-V method; the current `app.py` runs the real pipeline. |
+| `app_heuristic.py` | Earlier, longer version of the same heuristic prototype. |
 
 All reported results come from the CAS-V pipeline (`casv/`, `scripts/`) and are
 collected in `journal_results/`.

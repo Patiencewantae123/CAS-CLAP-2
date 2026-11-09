@@ -8,3 +8,17 @@ data/cache/
 
 # Generated audio from experiment runs (results.json and figures are kept)
 results/**/*.wav
+
+# Regenerable packages and app runs
+evaluation/listening_test/stimuli/
+evaluation/listening_test.zip
+app_data/runs/
+
+# Kept out of this public repository until rating has finished (see README)
+results/listening_test/key.json
+evaluation/ratings/
+
+# Hugging Face Space bundle (py -m scripts.build_space)
+dist/
+# Local clone of the Hugging Face Space (has its own git remote)
+cas-v-board/

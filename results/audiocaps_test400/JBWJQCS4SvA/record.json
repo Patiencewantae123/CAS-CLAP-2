@@ -1,0 +1,283 @@
+{
+  "id": "JBWJQCS4SvA",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\JBWJQCS4SvA.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\JBWJQCS4SvA.wav",
+  "gt_captions": [
+    "Bird chirping while waves come in with high wind",
+    "Wind blowing heavily into a microphone as seagulls squawk and ocean waves crash in the background",
+    "Wind noise on microphone with waves splashing in the background",
+    "Seagulls squawking as ocean waves crash while wind blows heavily into a microphone",
+    "Wind blows and birds chirp with ocean waves in the background"
+  ],
+  "top_scene": [
+    "beach house",
+    0.9173862338066101
+  ],
+  "top_object": [
+    "mobile home",
+    0.3347318470478058
+  ],
+  "env_probs": {
+    "indoor": 0.006107321474701166,
+    "outdoor": 0.9938926785252988
+  },
+  "status": "ACCEPT",
+  "n_rejected": 4,
+  "prompts": {
+    "baseline": "Waves crash on a beach store as multiple people are talking",
+    "casv": "Wind blows nearby as waves splash several times"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.4476667642593384,
+    "clap_gt_audio_baseline": 0.6507495045661926,
+    "clap_text_casv": 0.48814719915390015,
+    "clap_gt_audio_casv": 0.7007433176040649
+  },
+  "verdicts": [
+    {
+      "caption": "Waves crash on a beach store as multiple people are talking",
+      "clip_similarity": 0.32528603076934814,
+      "visual": 1.0,
+      "scene_support": 0.9499685660867295,
+      "object_support": 0.33970771820208806,
+      "score": 0.7869028852866452,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blows nearby as waves splash several times",
+      "clip_similarity": 0.32486775517463684,
+      "visual": 0.9839141138607961,
+      "scene_support": 0.8293472165474676,
+      "object_support": 0.8472234471364954,
+      "score": 0.8965368446495072,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind and waves crash while a woman briefly speaks",
+      "clip_similarity": 0.32373616099357605,
+      "visual": 0.9403956887303668,
+      "scene_support": 0.6175306407484198,
+      "object_support": 0.6596314491736487,
+      "score": 0.7593069024687673,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blows by loudly as waves crash nearby",
+      "clip_similarity": 0.318554162979126,
+      "visual": 0.7411083502195979,
+      "scene_support": 0.8096907769269223,
+      "object_support": 0.9048388599395065,
+      "score": 0.8108022311477678,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Woman speaks while wind blows and waves splash",
+      "clip_similarity": 0.3161327838897705,
+      "visual": 0.6479878602275749,
+      "scene_support": 0.03180210566243606,
+      "object_support": 0.0,
+      "score": 0.2687357757897608,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind roars, waves crash against a beach",
+      "clip_similarity": 0.31444546580314636,
+      "visual": 0.5830976133060708,
+      "scene_support": 1.0,
+      "object_support": 0.5689048438286058,
+      "score": 0.7039104984710101,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind blows nearby as waves splash",
+      "clip_similarity": 0.31207114458084106,
+      "visual": 0.4917868571376177,
+      "scene_support": 0.9001818132860674,
+      "object_support": 1.0,
+      "score": 0.7667692868408673,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Wind gusts and waves crash as people speak",
+      "clip_similarity": 0.31015652418136597,
+      "visual": 0.4181551030138544,
+      "scene_support": 0.5820384161054025,
+      "object_support": 0.7525722164599494,
+      "score": 0.5676452309751474,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Ocean waves crash as wind blows heavily",
+      "clip_similarity": 0.3096913695335388,
+      "visual": 0.40026635981038483,
+      "scene_support": 0.35729530200556564,
+      "object_support": 0.28481140805793465,
+      "score": 0.35273855694320405,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Large waves hit against a beach continuously in almost a thunder",
+      "clip_similarity": 0.3093883693218231,
+      "visual": 0.38861369116932415,
+      "scene_support": 0.5675144262344982,
+      "object_support": 0.1250327621437311,
+      "score": 0.36320963298119846,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Men talking in heavy winds are interrupted by a dog barking",
+      "clip_similarity": 0.3090171813964844,
+      "visual": 0.37433868498024075,
+      "scene_support": 0.0,
+      "object_support": 0.14261190368240284,
+      "score": 0.19251904509681717,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "People are communicating and laughing while gusts of wind and ocean currents are in progress",
+      "clip_similarity": 0.30686938762664795,
+      "visual": 0.2917396367237285,
+      "scene_support": 0.4634336369798624,
+      "object_support": 0.7303212863877174,
+      "score": 0.4748223316997653,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind noise on ocean",
+      "clip_similarity": 0.30674034357070923,
+      "visual": 0.28677690875915757,
+      "scene_support": 0.9721842062439342,
+      "object_support": 0.7639790322280121,
+      "score": 0.6355597350452469,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Water crashes against a shore as wind blows and a man speaks",
+      "clip_similarity": 0.30636703968048096,
+      "visual": 0.2724205275849738,
+      "scene_support": 0.6243910776856679,
+      "object_support": 0.6538379842120626,
+      "score": 0.49243692960330865,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Waves crash as wind blows nearby",
+      "clip_similarity": 0.30556467175483704,
+      "visual": 0.2415633624602294,
+      "scene_support": 0.6565912291772276,
+      "object_support": 0.6329143091379985,
+      "score": 0.4834770064786596,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blows as waves crash against a shoreline",
+      "clip_similarity": 0.30411380529403687,
+      "visual": 0.1857664835920523,
+      "scene_support": 0.7488061551933859,
+      "object_support": 0.616902160748778,
+      "score": 0.48401908821947004,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Waves crash nearby as wind blows at moderate speed",
+      "clip_similarity": 0.30409544706344604,
+      "visual": 0.1850604696368154,
+      "scene_support": 0.5950463196565567,
+      "object_support": 0.6779055829177251,
+      "score": 0.45590975862701066,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blows as waves crash against a shore",
+      "clip_similarity": 0.30021193623542786,
+      "visual": 0.03570986494044726,
+      "scene_support": 0.9672285356713453,
+      "object_support": 0.8871131427435733,
+      "score": 0.5705864495006545,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Music plays while wind blows and surf crashes nearby",
+      "clip_similarity": 0.30014291405677795,
+      "visual": 0.0330554358490047,
+      "scene_support": 0.737035120520082,
+      "object_support": 0.9361383525144558,
+      "score": 0.5151742162499632,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Heavy wave sound with wind blowing and a man talking",
+      "clip_similarity": 0.29928338527679443,
+      "visual": 0.0,
+      "scene_support": 0.7217969896028088,
+      "object_support": 0.8356067052152364,
+      "score": 0.46722110844541354,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "beach house",
+      0.9173862338066101
+    ],
+    [
+      "manufactured home",
+      0.01292341947555542
+    ],
+    [
+      "house",
+      0.01112253125756979
+    ],
+    [
+      "beach",
+      0.009158747270703316
+    ],
+    [
+      "boardwalk",
+      0.009008829481899738
+    ]
+  ],
+  "top_objects": [
+    [
+      "mobile home",
+      0.3347318470478058
+    ],
+    [
+      "amphibious vehicle",
+      0.06844878196716309
+    ],
+    [
+      "moving van",
+      0.04168052598834038
+    ],
+    [
+      "seashore",
+      0.04051343351602554
+    ],
+    [
+      "shipwreck",
+      0.03686925768852234
+    ]
+  ]
+}

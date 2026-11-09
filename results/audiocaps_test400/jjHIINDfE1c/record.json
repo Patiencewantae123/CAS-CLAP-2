@@ -1,0 +1,284 @@
+{
+  "id": "jjHIINDfE1c",
+  "image": "data\\audiocaps\\pairs\\test\\frames\\jjHIINDfE1c.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test\\audio\\jjHIINDfE1c.wav",
+  "gt_captions": [
+    "Humming from an engine followed by loud honks of a horn",
+    "A tractor engine driving by followed by a car horn honking and wind blowing on a microphone",
+    "A tractor driving by as a car horn honks while wind blows into a microphone",
+    "A vehicle is in motion, and the horn sounds",
+    "Humming of a passing vehicle with a honking engine and wind blowing"
+  ],
+  "top_scene": [
+    "farm",
+    0.1178710088133812
+  ],
+  "top_object": [
+    "tractor",
+    0.5980978608131409
+  ],
+  "env_probs": {
+    "indoor": 0.3556849956512451,
+    "outdoor": 0.6443150043487549
+  },
+  "status": "ACCEPT",
+  "n_rejected": 10,
+  "prompts": {
+    "baseline": "Truck blows horn, while tires screech",
+    "casv": "Truck blows horn, while tires screech"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.20520074665546417,
+    "clap_gt_audio_baseline": 0.21663324534893036,
+    "clap_text_casv": 0.20520074665546417,
+    "clap_gt_audio_casv": 0.21663324534893036
+  },
+  "verdicts": [
+    {
+      "caption": "Truck blows horn, while tires screech",
+      "clip_similarity": 0.3360234200954437,
+      "visual": 1.0,
+      "scene_support": 0.6080520042330056,
+      "object_support": 0.5918564501560155,
+      "score": 0.7599725363167065,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck accelerates by then another truck passes and skids its tires",
+      "clip_similarity": 0.3300248980522156,
+      "visual": 0.7644982349974786,
+      "scene_support": 0.5331086646615394,
+      "object_support": 0.5450699882999204,
+      "score": 0.6292528898874293,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck squealing its tires as someone calls out",
+      "clip_similarity": 0.32296931743621826,
+      "visual": 0.48749638750726887,
+      "scene_support": 0.6949779802942857,
+      "object_support": 0.6742562741785046,
+      "score": 0.6057688313447447,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Child yells as truck engine idles then accelerates and a snap occurs",
+      "clip_similarity": 0.3215598464012146,
+      "visual": 0.4321606041140881,
+      "scene_support": 0.0,
+      "object_support": 0.144960175561816,
+      "score": 0.21635229431418004,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck engine idling with music in the background",
+      "clip_similarity": 0.31733977794647217,
+      "visual": 0.2664808646113777,
+      "scene_support": 0.5674628353503542,
+      "object_support": 0.5322198194671657,
+      "score": 0.43649714228980707,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Birds are chirping in the background while a child male child speaks followed by multiple adult males communicating and chuckling in laughter and a truck engine",
+      "clip_similarity": 0.3168514370918274,
+      "visual": 0.24730861978791888,
+      "scene_support": 0.5691528290937816,
+      "object_support": 0.17746535226246285,
+      "score": 0.3229089023220409,
+      "conflicts": [
+        "names 'birds', not visible in image (z=-0.44)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck engine slows and then air brakes hiss followed by machinery operating",
+      "clip_similarity": 0.3162282705307007,
+      "visual": 0.22284312245736088,
+      "scene_support": 0.6544524281973935,
+      "object_support": 0.5126570439069086,
+      "score": 0.43927009061423494,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck engine revving then turning off as tires skid on dirt and gravel",
+      "clip_similarity": 0.3161278963088989,
+      "visual": 0.21890243403032505,
+      "scene_support": 0.2594475075773124,
+      "object_support": 0.35085776046100564,
+      "score": 0.2706525540236254,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Vehicle engine accelerates then man laughs followed by tires squealing",
+      "clip_similarity": 0.3151566982269287,
+      "visual": 0.18077323139961132,
+      "scene_support": 0.6269517214978821,
+      "object_support": 0.40955691252999715,
+      "score": 0.38326188276820833,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tractor engine running",
+      "clip_similarity": 0.3145998418331146,
+      "visual": 0.15891106891173584,
+      "scene_support": 0.8509912325005435,
+      "object_support": 1.0,
+      "score": 0.6188617973148574,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A truck turning on and beeping it horn",
+      "clip_similarity": 0.314004123210907,
+      "visual": 0.13552317670032865,
+      "scene_support": 0.9623283522312066,
+      "object_support": 0.7734952060850806,
+      "score": 0.5749563381750176,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A firetruck siren with some vehicle and wind blowing",
+      "clip_similarity": 0.3136291205883026,
+      "visual": 0.12080058689112678,
+      "scene_support": 0.25556909640377073,
+      "object_support": 0.2158114754311319,
+      "score": 0.1897344063069215,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Truck vehicle is in its clinker, while a bull horn decimates a speech",
+      "clip_similarity": 0.31257012486457825,
+      "visual": 0.07922445192488824,
+      "scene_support": 0.5398072356072554,
+      "object_support": 0.44216991009731593,
+      "score": 0.3262829244813267,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Fire truck siren with engine sounds",
+      "clip_similarity": 0.3117119073867798,
+      "visual": 0.0455308638508529,
+      "scene_support": 0.03711126686467161,
+      "object_support": 0.0,
+      "score": 0.029345725599742644,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck running and then its engine winds down",
+      "clip_similarity": 0.31103742122650146,
+      "visual": 0.019050560857778356,
+      "scene_support": 1.0,
+      "object_support": 0.842238586360184,
+      "score": 0.5602918002511665,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck is revving its engine and spinning its tires",
+      "clip_similarity": 0.3110017776489258,
+      "visual": 0.01765119525245328,
+      "scene_support": 0.7298150853654286,
+      "object_support": 0.6703946416926404,
+      "score": 0.427123396218402,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Rough sound of a large truck engine",
+      "clip_similarity": 0.31091946363449097,
+      "visual": 0.01441954993313232,
+      "scene_support": 0.5202956908202084,
+      "object_support": 0.46185739412986826,
+      "score": 0.3004137454582759,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A large truck slowly moves forward then brakes squeal",
+      "clip_similarity": 0.3108066916465759,
+      "visual": 0.009992125643374717,
+      "scene_support": 0.8991225862270212,
+      "object_support": 0.6924836298479337,
+      "score": 0.4814787150798363,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A truck releases its air brake and honks its horn twice quickly",
+      "clip_similarity": 0.3107718825340271,
+      "visual": 0.008625521105732836,
+      "scene_support": 0.2851553272972989,
+      "object_support": 0.3207099202991618,
+      "score": 0.18520978272123134,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A truck struggles to drive forward while the wind blows and two men speak",
+      "clip_similarity": 0.310552179813385,
+      "visual": 0.0,
+      "scene_support": 0.12039559683332236,
+      "object_support": 0.10637762591442054,
+      "score": 0.06803196682432287,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "farm",
+      0.1178710088133812
+    ],
+    [
+      "cockpit",
+      0.08393355458974838
+    ],
+    [
+      "auto factory",
+      0.061773981899023056
+    ],
+    [
+      "assembly line",
+      0.06143053248524666
+    ],
+    [
+      "sandbox",
+      0.05437225103378296
+    ]
+  ],
+  "top_objects": [
+    [
+      "tractor",
+      0.5980978608131409
+    ],
+    [
+      "tow truck",
+      0.0704789012670517
+    ],
+    [
+      "forklift",
+      0.06312242895364761
+    ],
+    [
+      "harvester",
+      0.04818469285964966
+    ],
+    [
+      "semi-trailer truck",
+      0.030075037851929665
+    ]
+  ]
+}

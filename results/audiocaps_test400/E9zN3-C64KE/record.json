@@ -1,0 +1,285 @@
+{
+  "id": "E9zN3-C64KE",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\E9zN3-C64KE.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\E9zN3-C64KE.wav",
+  "gt_captions": [
+    "A woman talking before and after a pig oinking then cloth rustling followed by camera muffling",
+    "A woman speaks affectionately as a pig oinks quietly, then wood creaks",
+    "Scratching noises accompanied by a female voice",
+    "A woman talking followed by a pig oinking then fabric rustling and a camera muffle",
+    "A woman talking followed by a pig oinking then fabric rustling before camera muffling and footsteps walking on a hard surface"
+  ],
+  "top_scene": [
+    "marsh",
+    0.022512951865792274
+  ],
+  "top_object": [
+    "green mamba",
+    0.025123778730630875
+  ],
+  "env_probs": {
+    "indoor": 0.3739113211631775,
+    "outdoor": 0.6260886788368225
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 14,
+  "prompts": {
+    "baseline": "Fly noise in background as frog croaks twice, frog spits out its tongue and grabs the fly and swallows with a *gulp*, croaks twice again then jumps then croaks twice again and then croaks twice again and sticks tongue out. Speech by man in late 30s speaking foreign language (possibly Spanish",
+    "casv": "Fly noise in background as frog croaks twice, frog spits out its tongue and grabs the fly and swallows with a *gulp*, croaks twice again then jumps then croaks twice again and then croaks twice again and sticks tongue out. Speech by man in late 30s speaking foreign language (possibly Spanish"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.24416658282279968,
+    "clap_gt_audio_baseline": 0.3890312910079956,
+    "clap_text_casv": 0.24416658282279968,
+    "clap_gt_audio_casv": 0.3890312910079956
+  },
+  "verdicts": [
+    {
+      "caption": "Fly noise in background as frog croaks twice, frog spits out its tongue and grabs the fly and swallows with a *gulp*, croaks twice again then jumps then croaks twice again and then croaks twice again and sticks tongue out. Speech by man in late 30s speaking foreign language (possibly Spanish",
+      "clip_similarity": 0.27548399567604065,
+      "visual": 1.0,
+      "scene_support": 0.3304689552611264,
+      "object_support": 0.3991130267650032,
+      "score": 0.6188745946078389,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Voice being drug out ending with a burping sound",
+      "clip_similarity": 0.2672048807144165,
+      "visual": 0.3179935629429773,
+      "scene_support": 0.8274074419727588,
+      "object_support": 0.19386460321160096,
+      "score": 0.4335790387324988,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "White noise with muffled speech and high pitched rubbing",
+      "clip_similarity": 0.2667955756187439,
+      "visual": 0.2842763466387122,
+      "scene_support": 0.9408097286736384,
+      "object_support": 0.41929179250609827,
+      "score": 0.5217409950094059,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A frog screaming followed by two girls laughing then talking",
+      "clip_similarity": 0.2665649652481079,
+      "visual": 0.2652794178661475,
+      "scene_support": 0.23373152618161935,
+      "object_support": 0.40569240875057183,
+      "score": 0.29793894762611633,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A female voice overlapped by a cat meowing",
+      "clip_similarity": 0.2660723626613617,
+      "visual": 0.2247004264366151,
+      "scene_support": 0.434475703169143,
+      "object_support": 0.031175563613157018,
+      "score": 0.22957555060933604,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A frog cracking loudly",
+      "clip_similarity": 0.2659268081188202,
+      "visual": 0.21271011884741817,
+      "scene_support": 0.5910835707916618,
+      "object_support": 1.0,
+      "score": 0.5624091187764658,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bug buzzes around microphone",
+      "clip_similarity": 0.2658645212650299,
+      "visual": 0.20757913136555461,
+      "scene_support": 0.7217218324039575,
+      "object_support": 0.340898864360154,
+      "score": 0.4018178615754553,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A person giving a speech with tick took noises in background",
+      "clip_similarity": 0.26581770181655884,
+      "visual": 0.2037222981913883,
+      "scene_support": 0.618274535979882,
+      "object_support": 0.25795888961321434,
+      "score": 0.34435894695448427,
+      "conflicts": [
+        "names 'a clock', not visible in image (z=-0.11)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A strange reed frog noise with associated throat noises",
+      "clip_similarity": 0.2654055058956146,
+      "visual": 0.1697669451475343,
+      "scene_support": 0.42974750123505384,
+      "object_support": 0.3439669990115658,
+      "score": 0.30002112813299964,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.2643738090991974,
+      "visual": 0.08477913431157615,
+      "scene_support": 0.6375510125412488,
+      "object_support": 0.25809039000148326,
+      "score": 0.3026040744874501,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Microphone wind noise blows loudly as water rushes in the background",
+      "clip_similarity": 0.26427674293518066,
+      "visual": 0.07678314090084427,
+      "scene_support": 0.619053101734959,
+      "object_support": 0.0,
+      "score": 0.2164291868808254,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaking and noises in background",
+      "clip_similarity": 0.2641882002353668,
+      "visual": 0.06948928261920953,
+      "scene_support": 1.0,
+      "object_support": 0.3487147239302038,
+      "score": 0.4324101302267449,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Deep booming speaking with footsteps and whooshes then faint bursts",
+      "clip_similarity": 0.2641719877719879,
+      "visual": 0.06815375286316466,
+      "scene_support": 0.81222059126363,
+      "object_support": 0.09047039745524936,
+      "score": 0.29806879776092965,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male voice talking followed by scraping noises",
+      "clip_similarity": 0.2640940546989441,
+      "visual": 0.06173388096600046,
+      "scene_support": 0.6530751572094174,
+      "object_support": 0.05526444042533832,
+      "score": 0.23719543167682688,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Bullfrog belts out a song in the quiet",
+      "clip_similarity": 0.26362621784210205,
+      "visual": 0.023195009439543956,
+      "scene_support": 0.0,
+      "object_support": 0.71523061179465,
+      "score": 0.22384718731421258,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male voice speaking with some clicking sound",
+      "clip_similarity": 0.26360875368118286,
+      "visual": 0.021756368930275036,
+      "scene_support": 0.6464023161189993,
+      "object_support": 0.13473617033475885,
+      "score": 0.24304409350823744,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male speaking with a sudden popping sound",
+      "clip_similarity": 0.2635880708694458,
+      "visual": 0.020052586484144267,
+      "scene_support": 0.7346110265199277,
+      "object_support": 0.12736840924416568,
+      "score": 0.2666148653228857,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A woman makes quack sounds along with insect sounds in the background",
+      "clip_similarity": 0.2634131610393524,
+      "visual": 0.00564408623004991,
+      "scene_support": 0.40053023624778983,
+      "object_support": 0.09192126429833013,
+      "score": 0.14999308465585595,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Background noises from a video game being played",
+      "clip_similarity": 0.2633548080921173,
+      "visual": 0.0008371611154619485,
+      "scene_support": 0.9712057472861785,
+      "object_support": 0.3235096518792091,
+      "score": 0.3887494841958011,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.2633446455001831,
+      "visual": 0.0,
+      "scene_support": 0.7073282565097734,
+      "object_support": 0.05105518155155501,
+      "score": 0.22751503141839852,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "marsh",
+      0.022512951865792274
+    ],
+    [
+      "closet",
+      0.018639380112290382
+    ],
+    [
+      "swamp",
+      0.017894402146339417
+    ],
+    [
+      "ocean",
+      0.013649353757500648
+    ],
+    [
+      "ocean deep underwater",
+      0.012027442455291748
+    ]
+  ],
+  "top_objects": [
+    [
+      "green mamba",
+      0.025123778730630875
+    ],
+    [
+      "night snake",
+      0.01756785251200199
+    ],
+    [
+      "smooth green snake",
+      0.017174776643514633
+    ],
+    [
+      "American alligator",
+      0.010789476335048676
+    ],
+    [
+      "American bullfrog",
+      0.008508230559527874
+    ]
+  ]
+}

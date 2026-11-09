@@ -1,0 +1,285 @@
+{
+  "id": "JhGp7HmRQxg",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\JhGp7HmRQxg.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\JhGp7HmRQxg.wav",
+  "gt_captions": [
+    "Birds chirping and a horse neighing",
+    "Wind blowing and metal bangs followed by a horse neigh",
+    "A metal clack followed by a horse neighing as gusts of wind blow and birds chirp in the background",
+    "A metal clack followed by a horse neighing as birds chirp and gusts of wind blow in the background",
+    "Humming of engines followed by the neigh of a horse and birds chirping in the background"
+  ],
+  "top_scene": [
+    "stable",
+    0.409525603055954
+  ],
+  "top_object": [
+    "Groenendael",
+    0.4557481110095978
+  ],
+  "env_probs": {
+    "indoor": 0.5020656585693359,
+    "outdoor": 0.49793434143066406
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A horse does clip-clop while someone shouts followed by a woman laughing",
+    "casv": "Clip clops of a horse with distant humming"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.19783878326416016,
+    "clap_gt_audio_baseline": 0.41153258085250854,
+    "clap_text_casv": -0.0025876499712467194,
+    "clap_gt_audio_casv": 0.16280469298362732
+  },
+  "verdicts": [
+    {
+      "caption": "A horse does clip-clop while someone shouts followed by a woman laughing",
+      "clip_similarity": 0.32728111743927,
+      "visual": 1.0,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.4,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of a horse with heavy breathing and wind blowing hard",
+      "clip_similarity": 0.3228742480278015,
+      "visual": 0.6351555406419013,
+      "scene_support": 0.46282783947329426,
+      "object_support": 0.719575319038057,
+      "score": 0.608783163810166,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip clops of a horse with distant humming",
+      "clip_similarity": 0.32278239727020264,
+      "visual": 0.6275512218230627,
+      "scene_support": 1.0,
+      "object_support": 1.0,
+      "score": 0.851020488729225,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip clop of horse running with a male speaking",
+      "clip_similarity": 0.3217141330242157,
+      "visual": 0.5391096877343966,
+      "scene_support": 0.20439081628975223,
+      "object_support": 0.3887973232029746,
+      "score": 0.39360031694157666,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clop of horse and loud voice talking and laughing",
+      "clip_similarity": 0.3215579390525818,
+      "visual": 0.526178398010343,
+      "scene_support": 0.46946071933456945,
+      "object_support": 0.356609169849637,
+      "score": 0.45829232595939917,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Distant clip clops of a horse with people speaking faintly",
+      "clip_similarity": 0.32155048847198486,
+      "visual": 0.5255615648809758,
+      "scene_support": 0.879526877930982,
+      "object_support": 0.6575244590673811,
+      "score": 0.6713400270518993,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "The sound of a horse walking on wood",
+      "clip_similarity": 0.32143211364746094,
+      "visual": 0.5157613201215901,
+      "scene_support": 0.4074530542284234,
+      "object_support": 0.827026674911025,
+      "score": 0.5766484467904707,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A horse running with fast clip-clops with people speaking",
+      "clip_similarity": 0.32128939032554626,
+      "visual": 0.5039452646954324,
+      "scene_support": 0.03855480310609004,
+      "object_support": 0.2194791578346565,
+      "score": 0.27898829416039694,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse running with quick clip-clops and then men speak and laugh",
+      "clip_similarity": 0.3209667205810547,
+      "visual": 0.4772314555287987,
+      "scene_support": 0.8353774283849212,
+      "object_support": 0.619584211364393,
+      "score": 0.6273810741363137,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Clip-clop of horse running and female speech",
+      "clip_similarity": 0.32012492418289185,
+      "visual": 0.4075391812403774,
+      "scene_support": 0.4057770631510234,
+      "object_support": 0.5185322284790193,
+      "score": 0.44030845998516377,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip-clops of a horse are joined by squeaking metal",
+      "clip_similarity": 0.32009053230285645,
+      "visual": 0.4046918795152185,
+      "scene_support": 0.5525584394260381,
+      "object_support": 0.5693456695404735,
+      "score": 0.4984479844960409,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip clops of a horse getting closer and louder",
+      "clip_similarity": 0.31982189416885376,
+      "visual": 0.3824513442027555,
+      "scene_support": 0.8977465228691686,
+      "object_support": 0.8321035728540025,
+      "score": 0.6719355663980535,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A horse clip-clops as it moves followed by a man speaking",
+      "clip_similarity": 0.3192872405052185,
+      "visual": 0.33818739883936677,
+      "scene_support": 0.06088733415297373,
+      "object_support": 0.37809240988247655,
+      "score": 0.2669688827463818,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse runs and neighs while wind blows followed by a woman briefly talking",
+      "clip_similarity": 0.3190421760082245,
+      "visual": 0.31789852354822157,
+      "scene_support": 0.548666816177619,
+      "object_support": 0.6373512861819453,
+      "score": 0.4829648401271579,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A buzzing noise and a clip-clop sound",
+      "clip_similarity": 0.3170660734176636,
+      "visual": 0.15429710631242352,
+      "scene_support": 0.5434756490710965,
+      "object_support": 0.5767976458083022,
+      "score": 0.39780083098878893,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse makes a noise with faint clip-clop sounds",
+      "clip_similarity": 0.31676051020622253,
+      "visual": 0.12899954601081678,
+      "scene_support": 0.48390487899624757,
+      "object_support": 0.4001102234869086,
+      "score": 0.3168043491492736,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clops from a horse first near then distant with the chirping of a bird far away",
+      "clip_similarity": 0.31644967198371887,
+      "visual": 0.1032652678536181,
+      "scene_support": 0.4693215540061593,
+      "object_support": 0.694651989502919,
+      "score": 0.39049817019417077,
+      "conflicts": [
+        "names 'birds', not visible in image (z=-0.09)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Clip-clops of several horses with wind blowing and people speaking",
+      "clip_similarity": 0.31604376435279846,
+      "visual": 0.06966019896569421,
+      "scene_support": 0.4945144832060488,
+      "object_support": 0.39286090954022534,
+      "score": 0.2940766974101599,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A horse is being moved around while the camera is making a lot of noises",
+      "clip_similarity": 0.3160398304462433,
+      "visual": 0.06933451107338834,
+      "scene_support": 0.8979747940553378,
+      "object_support": 0.6925178311822865,
+      "score": 0.5048815920006426,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Clip clops from a horse with faint speaking from people",
+      "clip_similarity": 0.31520235538482666,
+      "visual": 0.0,
+      "scene_support": 0.85033519821548,
+      "object_support": 0.6753122137136216,
+      "score": 0.45769422357873046,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "stable",
+      0.409525603055954
+    ],
+    [
+      "barndoor",
+      0.10284927487373352
+    ],
+    [
+      "racecourse",
+      0.08958687633275986
+    ],
+    [
+      "corral",
+      0.057363707572221756
+    ],
+    [
+      "farm",
+      0.04549707472324371
+    ]
+  ],
+  "top_objects": [
+    [
+      "Groenendael",
+      0.4557481110095978
+    ],
+    [
+      "split-rail fence",
+      0.055451054126024246
+    ],
+    [
+      "horse-drawn vehicle",
+      0.0425252802670002
+    ],
+    [
+      "harvester",
+      0.01911434344947338
+    ],
+    [
+      "hay",
+      0.017275651916861534
+    ]
+  ]
+}

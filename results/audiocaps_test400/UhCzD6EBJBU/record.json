@@ -1,0 +1,283 @@
+{
+  "id": "UhCzD6EBJBU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\UhCzD6EBJBU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\UhCzD6EBJBU.wav",
+  "gt_captions": [
+    "A power tool vibrating quick followed by a man speaking and some bangs",
+    "A power tool drilling followed by a man talking then wooden thump followed by a door closing shut",
+    "A power tool drilling followed by metal clacking then a man talking proceeded by a door closing shut",
+    "A small tool motor runs and whirs twice with metal clicking, an adult male speaks, a door shuts and clicks, and three thumps occur",
+    "A power drill operating with a man speaking and a click"
+  ],
+  "top_scene": [
+    "lock chamber",
+    0.15230977535247803
+  ],
+  "top_object": [
+    "snail",
+    0.331642746925354
+  ],
+  "env_probs": {
+    "indoor": 0.5469567775726318,
+    "outdoor": 0.45304322242736816
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "A tick locking sound with crumpling near the end",
+    "casv": "A tick locking sound with crumpling near the end"
+  },
+  "metrics": {
+    "clap_text_baseline": -0.14833319187164307,
+    "clap_gt_audio_baseline": 0.3923273980617523,
+    "clap_text_casv": -0.14833319187164307,
+    "clap_gt_audio_casv": 0.3923273980617523
+  },
+  "verdicts": [
+    {
+      "caption": "A tick locking sound with crumpling near the end",
+      "clip_similarity": 0.3298991024494171,
+      "visual": 1.0,
+      "scene_support": 0.5118618192426492,
+      "object_support": 0.5374807468779882,
+      "score": 0.7148027698361912,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A soft tick locking sound",
+      "clip_similarity": 0.31914222240448,
+      "visual": 0.5385731525846684,
+      "scene_support": 0.5705273387066572,
+      "object_support": 0.8106139813452278,
+      "score": 0.6297716570494328,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A tick locking sound",
+      "clip_similarity": 0.31840550899505615,
+      "visual": 0.5069711132815496,
+      "scene_support": 0.7094379101200227,
+      "object_support": 0.8909634863467452,
+      "score": 0.6829088642526502,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Some metallic object hits followed by someone laughing and talking while a music is played",
+      "clip_similarity": 0.31582218408584595,
+      "visual": 0.396156874977628,
+      "scene_support": 0.7150931067312412,
+      "object_support": 0.5327145613723683,
+      "score": 0.532805050422134,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Random high-pitched metal squeaking occurs while water runs, splashes and gurgles down a drain",
+      "clip_similarity": 0.315282940864563,
+      "visual": 0.37302551174337917,
+      "scene_support": 0.6031171585643015,
+      "object_support": 0.255565225855583,
+      "score": 0.406814920023317,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "An object falls into water and it leads into a small motor running",
+      "clip_similarity": 0.3140960931777954,
+      "visual": 0.3221145241540829,
+      "scene_support": 0.7752719678467873,
+      "object_support": 0.6585982009424726,
+      "score": 0.5590068602984111,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A ding sound followed by tapping",
+      "clip_similarity": 0.31316444277763367,
+      "visual": 0.2821504727521899,
+      "scene_support": 0.9061531062187451,
+      "object_support": 0.7520787645937234,
+      "score": 0.6103297503446165,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Sharp ringing from metal being drilled into by a power tool",
+      "clip_similarity": 0.3124023377895355,
+      "visual": 0.249459236948818,
+      "scene_support": 0.4113440996923053,
+      "object_support": 0.2252652493315087,
+      "score": 0.2907664994866714,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A bell chiming followed by continuous muffled tick-tocking",
+      "clip_similarity": 0.3108174204826355,
+      "visual": 0.18147266525872252,
+      "scene_support": 0.7278848106031487,
+      "object_support": 0.7016433148007123,
+      "score": 0.5014475037246473,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A piercing beep goes off a number of times and then a soft explosion blows up",
+      "clip_similarity": 0.30997371673583984,
+      "visual": 0.1452811712186217,
+      "scene_support": 0.3941858310615961,
+      "object_support": 0.37376937479601713,
+      "score": 0.2884990302447326,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Audio hissing as a kid talks followed by a series of plastic clicking",
+      "clip_similarity": 0.30984124541282654,
+      "visual": 0.13959868478244195,
+      "scene_support": 0.48551262415709184,
+      "object_support": 0.2842814362685875,
+      "score": 0.2867776920406806,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A tapping noise followed by water running",
+      "clip_similarity": 0.30958911776542664,
+      "visual": 0.12878342375880178,
+      "scene_support": 1.0,
+      "object_support": 0.7124548374721581,
+      "score": 0.5652498207451682,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Hissing of a coffee maker spewing water",
+      "clip_similarity": 0.3093975782394409,
+      "visual": 0.12056714921992054,
+      "scene_support": 0.31152169927915463,
+      "object_support": 0.1993947791831523,
+      "score": 0.2015018032266603,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Man speaks, screws in faucet part, hammering in background, water runs from faucet",
+      "clip_similarity": 0.3087986707687378,
+      "visual": 0.0948764298900065,
+      "scene_support": 0.24485976334510104,
+      "object_support": 0.0,
+      "score": 0.1114085009595329,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A single ring of a bell with some clicking and banging",
+      "clip_similarity": 0.3086310923099518,
+      "visual": 0.08768798866826552,
+      "scene_support": 0.8627249808306773,
+      "object_support": 1.0,
+      "score": 0.5938926897165093,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "House fly going from faint to louder noise",
+      "clip_similarity": 0.3076831102371216,
+      "visual": 0.0470233742591674,
+      "scene_support": 0.0,
+      "object_support": 0.2648805876997601,
+      "score": 0.09827352601359499,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Music playing while a fly is buzzing and eating",
+      "clip_similarity": 0.30703508853912354,
+      "visual": 0.019225852309045444,
+      "scene_support": 0.025048243616960463,
+      "object_support": 0.38419268581767796,
+      "score": 0.1304626197540097,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Tapping occurs and squeaking is present",
+      "clip_similarity": 0.30680257081985474,
+      "visual": 0.009251778253910624,
+      "scene_support": 0.7354855210014961,
+      "object_support": 0.7252057006418662,
+      "score": 0.4419080777945729,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mechanical grinding sound from a device",
+      "clip_similarity": 0.30663609504699707,
+      "visual": 0.0021106378191524723,
+      "scene_support": 0.9663566065666511,
+      "object_support": 0.676329395867092,
+      "score": 0.4936500558577839,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A bell sounds with wind noise in the background",
+      "clip_similarity": 0.306586891412735,
+      "visual": 0.0,
+      "scene_support": 0.7532937725818565,
+      "object_support": 0.7958046802979725,
+      "score": 0.46472953586394866,
+      "conflicts": [],
+      "decision": "REPAIR"
+    }
+  ],
+  "top_scenes": [
+    [
+      "lock chamber",
+      0.15230977535247803
+    ],
+    [
+      "shower",
+      0.04855899140238762
+    ],
+    [
+      "archaelogical excavation",
+      0.04358823224902153
+    ],
+    [
+      "zen garden",
+      0.03526356816291809
+    ],
+    [
+      "bullring",
+      0.033181753009557724
+    ]
+  ],
+  "top_objects": [
+    [
+      "snail",
+      0.331642746925354
+    ],
+    [
+      "hook",
+      0.04151740297675133
+    ],
+    [
+      "slug",
+      0.040161143988370895
+    ],
+    [
+      "dung beetle",
+      0.03667120635509491
+    ],
+    [
+      "acorn",
+      0.03301272913813591
+    ]
+  ]
+}

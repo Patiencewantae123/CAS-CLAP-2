@@ -1,0 +1,285 @@
+{
+  "id": "Ls2vrr9TamU",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Ls2vrr9TamU.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Ls2vrr9TamU.wav",
+  "gt_captions": [
+    "Humming from a motor with loud dry cracking",
+    "A machine is chopping wood",
+    "Drilling and crackling",
+    "Crackling with an engine running",
+    "Heavy machinery operating followed by wood crunching and cracking as wind blows into a microphone"
+  ],
+  "top_scene": [
+    "archaelogical excavation",
+    0.2509041130542755
+  ],
+  "top_object": [
+    "chainsaw",
+    0.25237002968788147
+  ],
+  "env_probs": {
+    "indoor": 0.31135568022727966,
+    "outdoor": 0.6886443197727203
+  },
+  "status": "ACCEPT",
+  "n_rejected": 7,
+  "prompts": {
+    "baseline": "Chainsaw cutting wood",
+    "casv": "A chainsaw cutting wood loudly"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.29727408289909363,
+    "clap_gt_audio_baseline": 0.17150217294692993,
+    "clap_text_casv": 0.3306627869606018,
+    "clap_gt_audio_casv": 0.3067612051963806
+  },
+  "verdicts": [
+    {
+      "caption": "Chainsaw cutting wood",
+      "clip_similarity": 0.3484116792678833,
+      "visual": 1.0,
+      "scene_support": 0.518587388799148,
+      "object_support": 0.7652215160653537,
+      "score": 0.7851426714593506,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A chainsaw cutting wood loudly",
+      "clip_similarity": 0.34769347310066223,
+      "visual": 0.9704646314605172,
+      "scene_support": 0.6528537815991587,
+      "object_support": 0.9492357633887001,
+      "score": 0.8688127160805645,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A drill cutting through wood",
+      "clip_similarity": 0.33982616662979126,
+      "visual": 0.646931074335396,
+      "scene_support": 0.6390937754192261,
+      "object_support": 0.5458110467449562,
+      "score": 0.614243876383413,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A drill drilling through wood with a squeak",
+      "clip_similarity": 0.33806926012039185,
+      "visual": 0.5746803981189724,
+      "scene_support": 0.766461082748102,
+      "object_support": 0.421288788923201,
+      "score": 0.5861971207489798,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw being used to cut wood",
+      "clip_similarity": 0.33328866958618164,
+      "visual": 0.37808433739369585,
+      "scene_support": 0.026514853679519914,
+      "object_support": 0.7496277941090383,
+      "score": 0.38407652929404584,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Wood being cut by a power saw",
+      "clip_similarity": 0.331037312746048,
+      "visual": 0.285499983454605,
+      "scene_support": 0.41426745957409045,
+      "object_support": 0.2688705520113602,
+      "score": 0.3191413968574772,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A chainsaw engine making a prolonged and loud sawing noise",
+      "clip_similarity": 0.33055993914604187,
+      "visual": 0.2658685658329013,
+      "scene_support": 0.0,
+      "object_support": 0.39503914573995497,
+      "score": 0.224859170055147,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power drill is being used to cut wood",
+      "clip_similarity": 0.33011186122894287,
+      "visual": 0.24744189808772002,
+      "scene_support": 0.6445504168005882,
+      "object_support": 0.6212365262070968,
+      "score": 0.4787128421373935,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting a piece of wood",
+      "clip_similarity": 0.3294333517551422,
+      "visual": 0.21953900852639358,
+      "scene_support": 0.589291979284351,
+      "object_support": 0.7446151599293427,
+      "score": 0.48798774517466553,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Cutting wood with a saw",
+      "clip_similarity": 0.328692764043808,
+      "visual": 0.1890832257882655,
+      "scene_support": 0.8829974144523057,
+      "object_support": 0.8390803210355018,
+      "score": 0.5922566109616484,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw cutting wood",
+      "clip_similarity": 0.32849544286727905,
+      "visual": 0.1809686287054025,
+      "scene_support": 0.7745621283246451,
+      "object_support": 0.8015923834031478,
+      "score": 0.5452338050004989,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A drill loudly cuts into a block of material nearby",
+      "clip_similarity": 0.32745444774627686,
+      "visual": 0.13815895099744221,
+      "scene_support": 0.9119722859451136,
+      "object_support": 0.539802644879672,
+      "score": 0.4907960596464125,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Chainsaw buzzing in the wood",
+      "clip_similarity": 0.3274092674255371,
+      "visual": 0.13630096441269363,
+      "scene_support": 0.5306479135140504,
+      "object_support": 0.5442329058371902,
+      "score": 0.3769846315704496,
+      "conflicts": [
+        "names 'insects', not visible in image (z=-0.16)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A power drill saws into wood followed by metal scraping",
+      "clip_similarity": 0.3254223167896271,
+      "visual": 0.0545899989827646,
+      "scene_support": 0.7105593620691003,
+      "object_support": 0.5911160624569632,
+      "score": 0.41233862695092494,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A chainsaw cutting and revving",
+      "clip_similarity": 0.32539597153663635,
+      "visual": 0.05350658200326741,
+      "scene_support": 0.7574307481994739,
+      "object_support": 1.0,
+      "score": 0.548631857261149,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A light hammer tapping in the background is followed by a slow drill",
+      "clip_similarity": 0.32531362771987915,
+      "visual": 0.05012029114992947,
+      "scene_support": 1.0,
+      "object_support": 0.516450383913705,
+      "score": 0.4749832316340833,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wood cracking while a machine works",
+      "clip_similarity": 0.3246442675590515,
+      "visual": 0.022593656127862814,
+      "scene_support": 0.8496289971266072,
+      "object_support": 0.27184276767895,
+      "score": 0.3454789918928123,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Mechanical tool sawing into wood",
+      "clip_similarity": 0.3246226906776428,
+      "visual": 0.021706332719315338,
+      "scene_support": 0.522945528768184,
+      "object_support": 0.49848975234352416,
+      "score": 0.3151131174212386,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A person saws a log multiple time as a man talks nearby",
+      "clip_similarity": 0.32454556226730347,
+      "visual": 0.01853451920920365,
+      "scene_support": 0.8173498848849609,
+      "object_support": 0.5260707067476236,
+      "score": 0.41043998517345676,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "A power saw spins faster than slows down as blocks of wood fall in the background",
+      "clip_similarity": 0.32409486174583435,
+      "visual": 0.0,
+      "scene_support": 0.36050572448444235,
+      "object_support": 0.0,
+      "score": 0.1081517173453327,
+      "conflicts": [],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "archaelogical excavation",
+      0.2509041130542755
+    ],
+    [
+      "sandbox",
+      0.1809384673833847
+    ],
+    [
+      "trench",
+      0.11993430554866791
+    ],
+    [
+      "outdoor cabin",
+      0.06302686780691147
+    ],
+    [
+      "windmill",
+      0.030372822657227516
+    ]
+  ],
+  "top_objects": [
+    [
+      "chainsaw",
+      0.25237002968788147
+    ],
+    [
+      "hatchet",
+      0.19310466945171356
+    ],
+    [
+      "mortar",
+      0.17161725461483002
+    ],
+    [
+      "hammer",
+      0.08720877021551132
+    ],
+    [
+      "projectile",
+      0.054375600069761276
+    ]
+  ]
+}

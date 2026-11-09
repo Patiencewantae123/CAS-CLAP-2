@@ -1,0 +1,292 @@
+{
+  "id": "Lbken4JCr94",
+  "label": null,
+  "image": "data\\audiocaps\\pairs\\test400\\frames\\Lbken4JCr94.jpg",
+  "gt_audio": "data\\audiocaps\\pairs\\test400\\audio\\Lbken4JCr94.wav",
+  "gt_captions": [
+    "Thunder and a gentle rain",
+    "Thunder roars in the distance as rain falls",
+    "Rolling thunder with lightning strikes",
+    "Rain falling with thunder in the distance",
+    "Rain and thunder"
+  ],
+  "top_scene": [
+    "berth",
+    0.03007942996919155
+  ],
+  "top_object": [
+    "night snake",
+    0.047618571668863297
+  ],
+  "env_probs": {
+    "indoor": 0.4184216260910034,
+    "outdoor": 0.5815783739089966
+  },
+  "status": "UNCERTAIN",
+  "n_rejected": 8,
+  "prompts": {
+    "baseline": "A woman speaking with light tapping noises in the background",
+    "casv": "A woman speaking with light tapping noises in the background"
+  },
+  "metrics": {
+    "clap_text_baseline": 0.005895733833312988,
+    "clap_gt_audio_baseline": 0.15764711797237396,
+    "clap_text_casv": 0.005895733833312988,
+    "clap_gt_audio_casv": 0.15764711797237396
+  },
+  "verdicts": [
+    {
+      "caption": "A woman speaking with light tapping noises in the background",
+      "clip_similarity": 0.28022241592407227,
+      "visual": 1.0,
+      "scene_support": 0.7296097397247734,
+      "object_support": 1.0,
+      "score": 0.9188829219174319,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud siren gets closer and then gets further away with a faint city noise in the background",
+      "clip_similarity": 0.2792372703552246,
+      "visual": 0.906001717538801,
+      "scene_support": 0.5007959892753712,
+      "object_support": 0.4428225519144491,
+      "score": 0.6454862493724665,
+      "conflicts": [
+        "names 'an emergency vehicle', not visible in image (z=-0.38)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Digital tones and loud clicking, some rolling of a small object",
+      "clip_similarity": 0.2761864960193634,
+      "visual": 0.6149101704458207,
+      "scene_support": 0.9920706201685109,
+      "object_support": 0.9053390818131865,
+      "score": 0.8151869787728375,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Siren with a vehicle engine noise and voice in the background",
+      "clip_similarity": 0.27573609352111816,
+      "visual": 0.5719347335255612,
+      "scene_support": 0.567487950712344,
+      "object_support": 0.4113755894909093,
+      "score": 0.5224329554712005,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.77)",
+        "names 'an emergency vehicle', not visible in image (z=-0.38)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.01)"
+      ],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Low outside noises with a distant dog barking",
+      "clip_similarity": 0.27481088042259216,
+      "visual": 0.48365494531743186,
+      "scene_support": 0.7880910717862928,
+      "object_support": 0.5726524524633323,
+      "score": 0.6016850354018602,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Loud burst of noise with cartoon sounding voices",
+      "clip_similarity": 0.27414393424987793,
+      "visual": 0.42001785785375895,
+      "scene_support": 0.8182855982987056,
+      "object_support": 0.6157684666896123,
+      "score": 0.5982233626379989,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Wind blowing sounds with musical sounds in the background and a faint sound of a horn at the end",
+      "clip_similarity": 0.27381354570388794,
+      "visual": 0.388493627476071,
+      "scene_support": 0.7551198693516269,
+      "object_support": 0.5556370728643975,
+      "score": 0.5486245336552357,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Man speaking loud with lots of noise interference",
+      "clip_similarity": 0.27371087670326233,
+      "visual": 0.37869740037421873,
+      "scene_support": 0.0,
+      "object_support": 0.0,
+      "score": 0.1514789601496875,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "A sibilant sound caused by a rigid object sweeping through the air",
+      "clip_similarity": 0.2736973464488983,
+      "visual": 0.3774064026661662,
+      "scene_support": 0.7572836335318442,
+      "object_support": 0.8556908139050414,
+      "score": 0.6348548952975321,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "A large pop sound, afterwards people are heard screaming in the background along with a repeating recording in the back",
+      "clip_similarity": 0.27366966009140015,
+      "visual": 0.3747646914970455,
+      "scene_support": 0.9285599625354382,
+      "object_support": 0.8183130143893146,
+      "score": 0.673967769676244,
+      "conflicts": [],
+      "decision": "ACCEPT"
+    },
+    {
+      "caption": "Intermittent, high pitched spraying with white noise",
+      "clip_similarity": 0.2724238932132721,
+      "visual": 0.25589906331575984,
+      "scene_support": 0.28455223613287184,
+      "object_support": 0.19580336817443497,
+      "score": 0.24646630661849597,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Person speaking with camera shutter noise in background",
+      "clip_similarity": 0.2714298367500305,
+      "visual": 0.16105054227590954,
+      "scene_support": 0.65234040746691,
+      "object_support": 0.8118502013779444,
+      "score": 0.5036773995638202,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Continuous buzzing and distant speech",
+      "clip_similarity": 0.2707832157611847,
+      "visual": 0.09935279498160186,
+      "scene_support": 0.9746815711236317,
+      "object_support": 0.8319511620745249,
+      "score": 0.5817309379520877,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Random buzzing of an insect, varying in loudness",
+      "clip_similarity": 0.2707067131996155,
+      "visual": 0.09205325507726081,
+      "scene_support": 0.5924926271493369,
+      "object_support": 0.5579817521994578,
+      "score": 0.3819636158355427,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Male voice with large spraying noise in background",
+      "clip_similarity": 0.2706816792488098,
+      "visual": 0.08966462495663499,
+      "scene_support": 0.47670272055867835,
+      "object_support": 0.3692214795089639,
+      "score": 0.2896431100029466,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud white noise with faint conversations in background",
+      "clip_similarity": 0.27054479718208313,
+      "visual": 0.07660393668992738,
+      "scene_support": 1.0,
+      "object_support": 0.8177743963190406,
+      "score": 0.5759738935716832,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Static noise in the background followed by two adults speaking",
+      "clip_similarity": 0.27031004428863525,
+      "visual": 0.054204842094487386,
+      "scene_support": 0.9592506556961656,
+      "object_support": 0.7914002258331371,
+      "score": 0.5468772012965857,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Loud white noise with an intermittent sneeze",
+      "clip_similarity": 0.2699829041957855,
+      "visual": 0.02299056491102353,
+      "scene_support": 0.6948993007234215,
+      "object_support": 0.5311764457245681,
+      "score": 0.37701894989880635,
+      "conflicts": [],
+      "decision": "REJECT"
+    },
+    {
+      "caption": "Loud horn repeated multiple times with volume increase, muffled speech in the background",
+      "clip_similarity": 0.2697922885417938,
+      "visual": 0.004802852706829776,
+      "scene_support": 0.8821451645641495,
+      "object_support": 0.686120923379768,
+      "score": 0.4724009674659071,
+      "conflicts": [],
+      "decision": "REPAIR"
+    },
+    {
+      "caption": "Mid frequency of a motor vehicle idling then slowly fading away",
+      "clip_similarity": 0.269741952419281,
+      "visual": 0.0,
+      "scene_support": 0.5271239978826685,
+      "object_support": 0.4842641402339245,
+      "score": 0.3034164414349779,
+      "conflicts": [
+        "names 'cars on a road', not visible in image (z=-0.77)",
+        "names 'a motor vehicle with an engine', not visible in image (z=-1.01)"
+      ],
+      "decision": "REJECT"
+    }
+  ],
+  "top_scenes": [
+    [
+      "berth",
+      0.03007942996919155
+    ],
+    [
+      "closet",
+      0.024725066497921944
+    ],
+    [
+      "stable",
+      0.0178118534386158
+    ],
+    [
+      "highway",
+      0.014621343463659286
+    ],
+    [
+      "ocean",
+      0.01448944490402937
+    ]
+  ],
+  "top_objects": [
+    [
+      "night snake",
+      0.047618571668863297
+    ],
+    [
+      "spotlight",
+      0.046220630407333374
+    ],
+    [
+      "torch",
+      0.028214575722813606
+    ],
+    [
+      "candle",
+      0.023442067205905914
+    ],
+    [
+      "space shuttle",
+      0.016508473083376884
+    ]
+  ]
+}
