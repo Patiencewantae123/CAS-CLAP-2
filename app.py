@@ -33,13 +33,15 @@ import board
 from casv.audio import AUDIOLDM_MODEL_ID
 from casv.text import sound_type, verified_concepts
 from casv.verifier import CLIP_MODEL_ID, CASVerifier, CLIPRecognizer, VerifierConfig
-from scripts.figures import GT_WINDOW, draw_spectrogram
+from scripts.figures import draw_spectrogram
 
 ROOT = Path(__file__).resolve().parent
 RUNS_DIR = ROOT / "app_data" / "runs"
 CLIPS_DIR = RUNS_DIR / "clips"
 RECORDINGS_DIR = RUNS_DIR / "recordings"
+LISTEN_DIR = RUNS_DIR / "listen"  # loudness-matched copies for the players
 EXAMPLES_DIR = ROOT / "data" / "audiocaps" / "pairs" / "categories"
+GRAPHS_DIR = ROOT / "journal_results" / "graphs"
 TUNED_CONFIG = ROOT / "results" / "tuning_test400" / "casv_tuned_config.json"
 MAX_COLUMNS = 7  # as in the target figure
 MIN_GRID_UNITS = 4  # fewer images do not stretch to the full page width
@@ -113,6 +115,18 @@ def thumbnail(image_bytes: bytes) -> bytes:
     return buffer.getvalue()
 
 
+@st.cache_data(show_spinner=False, max_entries=512)
+def listening_path(path: str, mtime: float, window: tuple | None) -> str:
+    """Loudness-matched copy for the player (board.LISTEN_NOTE); mtime invalidates the cache."""
+    return str(board.listening_copy(Path(path), LISTEN_DIR, window))
+
+
+@st.cache_data(show_spinner=False, max_entries=64)
+def verification_png(image_bytes: bytes, config_name: str, _result: dict, _config: VerifierConfig) -> bytes:
+    """Why-this-caption graph; the image and configuration determine the result, so they are the cache key."""
+    return board.verification_chart(_result, _config)
+
+
 @st.cache_data(show_spinner=False, max_entries=256)
 def spectrogram_png(path: str, mtime: float, window: tuple | None) -> bytes:
     """Panel in the paper-figure style (scripts/figures.py); mtime invalidates the cache."""
@@ -138,29 +152,6 @@ def store_recording(upload) -> Path | None:
     except RuntimeError as error:  # soundfile cannot decode it
         st.sidebar.error(f"Could not read {upload.name}: {error}")
         return None
-
-
-# -----------------------------------------------------------------------------
-# Columns of the board
-# -----------------------------------------------------------------------------
-
-
-def load_examples() -> list[dict]:
-    """Figure 5 examples with their real recordings, if the data is present."""
-    manifest = EXAMPLES_DIR / "manifest.json"
-    return json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else []
-
-
-def example_item(entry: dict) -> dict:
-    return {
-        "id": entry["id"],
-        "title": entry["label"].title(),
-        "image": (EXAMPLES_DIR / entry["image"]).read_bytes(),
-        "source": f"AudioCaps {entry['id']}",
-        "gt_audio": EXAMPLES_DIR / entry["gt_audio"],
-        "gt_window": GT_WINDOW,  # 5 s of the 10 s clip, centred on the frame, as in the paper figures
-        "gt_captions": entry["captions"],
-    }
 
 
 # -----------------------------------------------------------------------------
@@ -197,10 +188,7 @@ def audio_panel(cell, path: Path | None, empty_text: str, window: tuple | None =
         return
     window = tuple(window) if window else None
     cell.image(spectrogram_png(str(path), path.stat().st_mtime, window), width="stretch")
-    if window:
-        cell.audio(str(path), start_time=window[0], end_time=window[1])
-    else:
-        cell.audio(str(path))
+    cell.audio(listening_path(str(path), path.stat().st_mtime, window))  # same loudness for every player
 
 
 # -----------------------------------------------------------------------------
@@ -210,11 +198,11 @@ def audio_panel(cell, path: Path | None, empty_text: str, window: tuple | None =
 with st.sidebar:
     st.header("Images")
     items = []
-    examples = load_examples()
+    examples = board.load_examples(EXAMPLES_DIR)
     if examples:
         names = [entry["label"] for entry in examples]
         picked = st.multiselect("Figure 5 examples (with real recordings)", names, default=names, format_func=str.title)
-        items += [example_item(entry) for entry in examples if entry["label"] in picked]
+        items += [board.example_item(entry, EXAMPLES_DIR) for entry in examples if entry["label"] in picked]
     else:
         st.caption(
             "Figure 5 examples not found in `data/audiocaps/pairs/categories/` "
@@ -298,7 +286,7 @@ shared = 2 * len(items) - len(clips)
 info_col.caption(
     f"{len(clips)} clips for {len(items)} images"
     + (f" ({shared} prompt{'s' * (shared != 1)} shared, e.g. CAS-V kept the baseline caption)" if shared else "")
-    + ". About 1-2 min per clip on CPU, seconds on a GPU. Clips are cached by prompt and settings, "
+    + ". About 20 s per clip at the default settings on a recent CPU (more on older ones), seconds on a GPU. Clips are cached by prompt and settings, "
     "so changing the seed, duration or steps needs new clips."
 )
 
@@ -343,6 +331,7 @@ for cell, item in zip(board_row("target", label("Target Sound", "(Ground Truth)"
     audio_panel(cell, item["gt_audio"], empty, item["gt_window"])
     if item["gt_captions"]:
         note(cell, esc(item["gt_captions"][0]))
+st.caption(board.LISTEN_NOTE)
 
 # -----------------------------------------------------------------------------
 # Figure export and details
@@ -387,6 +376,7 @@ for tab, item in zip(st.tabs([item["title"] for item in items]), items, strict=T
         info.info(result["baseline_prompt"])
         info.markdown(f"**Ours (CAS-V)**: verified caption · status **{result['status']}**")
         info.success(result["casv_prompt"])
+        st.image(verification_png(item["image"], config_name, result, config), width="stretch")
         st.dataframe(
             [
                 {
@@ -403,3 +393,14 @@ for tab, item in zip(st.tabs([item["title"] for item in items]), items, strict=T
             hide_index=True,
             width="stretch",
         )
+
+st.subheader("Paper results")
+st.caption(board.PAPER_RESULTS_INTRO)
+graphs = [(name, title, caption) for name, title, caption in board.PAPER_GRAPHS if (GRAPHS_DIR / name).exists()]
+if graphs:
+    for tab, (name, _, caption) in zip(st.tabs([title for _, title, _ in graphs]), graphs, strict=True):
+        with tab:
+            st.image(str(GRAPHS_DIR / name), width="stretch")
+            st.caption(caption)
+else:
+    st.info("The evaluation graphs are produced by `py -m scripts.plots` into `journal_results/graphs/`.")

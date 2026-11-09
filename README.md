@@ -116,13 +116,21 @@ image, existing research (top-1 retrieved caption, unverified), ours (verified
 concepts, generated audio, sound type) and the target sound. Columns are Figure 5
 examples (with their real recordings) and/or your own uploads (up to 7 in all),
 each with an optional real recording. Recognition, verified concepts and sound
-types appear instantly. Audio is generated on request (about 1-2 min per clip on
-CPU) with the same seed for both prompts, and cached by prompt and settings in
+types appear instantly. Audio is generated on request (about 20 s per clip at the
+default settings on a recent CPU) with the same seed for both prompts, and cached by prompt and settings in
 `app_data/runs/clips/`. A panel without real data says "not generated yet" or
 "not provided". **Build figure** renders the board with `scripts/figures.py` into
 `app_data/runs/figure_<timestamp>/`; its caption file says the images were picked
 by hand, so such a figure is an illustration, not a result. A tab per image lists
-the recognition and all 20 candidates with their verification scores.
+the recognition and all 20 candidates with their verification scores, with a
+"why this caption" graph: the candidates by score, coloured by decision, with the
+thresholds, the baseline and the CAS-V choice, beside the recognised scenes and
+objects (`board.verification_chart`). A **Paper results** section shows the
+evaluation graphs from `journal_results/graphs/`.
+
+`app_gradio.py` shows the board, a card per image to listen to all three sounds
+(with the table of all candidates and their scores) and a summary table; it shows
+no graphs.
 
 ## Hosting
 
