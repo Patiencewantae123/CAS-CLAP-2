@@ -1,0 +1,26 @@
+# Lint and test suite on every push and pull request (no model downloads, about a minute).
+name: tests
+
+on:
+  push:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"  # the version requirements.txt was pinned with
+          cache: pip
+      - name: Install (CPU-only PyTorch, then the pinned requirements)
+        run: |
+          python -m pip install --upgrade pip
+          pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+      - name: Lint
+        run: ruff check casv scripts tests app.py app_gradio.py board.py
+      - name: Tests
+        run: pytest
