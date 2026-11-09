@@ -129,8 +129,8 @@ objects (`board.verification_chart`). A **Paper results** section shows the
 evaluation graphs from `journal_results/graphs/`.
 
 `app_gradio.py` shows the board, a card per image to listen to all three sounds
-(with the table of all candidates and their scores) and a summary table; it shows
-no graphs.
+(with the table of all candidates and their scores) and a summary table; the
+paper's evaluation graphs sit under **More info** at the bottom.
 
 ## Hosting
 

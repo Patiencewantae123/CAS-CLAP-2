@@ -3,7 +3,8 @@
 #
 # Copies only what the Space needs into dist/hf_space/ (git-ignored):
 #   app_gradio.py, board.py, casv/*.py, scripts/figures.py
-#   data/vocab/, AudioCaps train captions, tuned verifier config (ablation)
+#   data/vocab/, AudioCaps train captions, tuned verifier config (ablation),
+#   the paper's evaluation graphs (shown under "More info")
 #   the cached CLIP text embeddings the verifier loads (else the Space would
 #   spend minutes re-encoding ~46k captions on every start)
 #   space/README.md (Space settings) and space/requirements.txt
@@ -36,6 +37,10 @@ FILES = [
     "scripts/figures.py",
     "data/audiocaps/splits/train.csv",
     "results/tuning_test400/casv_tuned_config.json",
+    "journal_results/graphs/fig1_scene_recognition.png",
+    "journal_results/graphs/fig2_prompt_selection.png",
+    "journal_results/graphs/fig3_generated_audio_clap.png",
+    "journal_results/graphs/fig4_verification_statistics.png",
     "LICENSE",
 ]
 FOLDERS = {"casv": "*.py", "data/vocab": "*"}

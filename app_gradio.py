@@ -55,6 +55,7 @@ else:  # git-ignored; clips shared with app.py (same model, prompt and settings 
 RECORDINGS_DIR = WORK_DIR / "recordings"
 LISTEN_DIR = WORK_DIR / "listen"  # loudness-matched copies for the players
 EXAMPLES_DIR = ROOT / "data" / "audiocaps" / "pairs" / "categories"  # local only, never in the Space bundle
+GRAPHS_DIR = ROOT / "journal_results" / "graphs"  # the paper's evaluation graphs, under "More info"
 TUNED_CONFIG = ROOT / "results" / "tuning_test400" / "casv_tuned_config.json"
 REPO_URL = "https://github.com/Patiencewantae123/CAS-CLAP-2"
 MAX_IMAGES = 7  # as in the target figure
@@ -447,8 +448,22 @@ with gr.Blocks(title="CAS-V comparison board", fill_width=True) as demo:
                 table = gr.Dataframe(
                     headers=HEADERS, wrap=True, interactive=False, label="Recognition and verification"
                 )
-    with gr.Accordion("How it works, and what it shows", open=False):
+    with gr.Accordion("More info: how it works, what it shows, and the paper's results", open=False):
         gr.Markdown(HOW_IT_WORKS)
+        graphs = [(name, title, caption) for name, title, caption in board.PAPER_GRAPHS if (GRAPHS_DIR / name).exists()]
+        if graphs:
+            gr.Markdown(f"### Paper results\n{board.PAPER_RESULTS_INTRO}")
+            for name, title, caption in graphs:
+                gr.Markdown(f"#### {title}")
+                gr.Image(
+                    str(GRAPHS_DIR / name),
+                    show_label=False,
+                    interactive=False,
+                    container=False,
+                    height=380,
+                    buttons=["fullscreen"],
+                )
+                gr.Markdown(caption, elem_classes="casv-caption")
 
     examples_button.click(load_examples, outputs=[images, recordings])
     button.click(
@@ -466,7 +481,7 @@ if __name__ == "__main__":
         help="also print a public https://....gradio.live link, served from this PC while it runs (about a week)",
     )
     demo.queue().launch(
-        allowed_paths=[str(WORK_DIR), str(CLIPS_DIR), str(EXAMPLES_DIR)],
+        allowed_paths=[str(WORK_DIR), str(CLIPS_DIR), str(EXAMPLES_DIR), str(GRAPHS_DIR)],
         share=parser.parse_args().share,
         theme=THEME,
         css=CSS,
