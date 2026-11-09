@@ -23,4 +23,12 @@ jobs:
       - name: Lint
         run: ruff check casv scripts tests app.py app_gradio.py board.py
       - name: Tests
-        run: pytest
+        # On failure, the end of the output also becomes an error annotation, readable on the PR without opening logs
+        run: |
+          set +e
+          pytest -rfE 2>&1 | tee pytest.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ]; then
+            echo "::error title=pytest exit code $status::$(tail -n 60 pytest.log | sed -e 's/%/%25/g' | sed -e ':a;N;$!ba;s/\n/%0A/g')"
+          fi
+          exit "$status"
