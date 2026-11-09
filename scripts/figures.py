@@ -162,7 +162,9 @@ def render_page(run_dir, items, output, provenance):
         ax.set_title(textwrap.fill(title, 18), fontsize=9.5, fontweight="bold", pad=4)
         ax.axis("off")
 
-        for row, wav, window in ((1, "baseline.wav", None), (3, "casv.wav", None), (5, "gt.wav", GT_WINDOW)):
+        # AudioCaps clips are 10 s around the frame; app.py passes None for a whole uploaded recording
+        gt_window = record.get("gt_window", GT_WINDOW)
+        for row, wav, window in ((1, "baseline.wav", None), (3, "casv.wav", None), (5, "gt.wav", gt_window)):
             draw_spectrogram(fig.add_subplot(grid[row, col]), item_dir / wav, window)
         gt_caption = record["gt_captions"][0] if record["gt_captions"] else ""
         fig.axes[-1].set_xlabel(shorten(gt_caption, 30, 3), fontsize=6.5, labelpad=3)
@@ -171,7 +173,7 @@ def render_page(run_dir, items, output, provenance):
         draw_text_box(fig.add_subplot(grid[4, col]), shorten(sound_type(concepts), 24, 2), "#eaf0fb", "#8aa6d6", 6.8)
 
         lines.append(
-            f"({col}) {title} — AudioCaps {record['id']}; recognised scene/object: "
+            f"({col}) {title} — {record.get('source', 'AudioCaps ' + record['id'])}; recognised scene/object: "
             f"{record['top_scene'][0]} / {record['top_object'][0]} ({record['status']}, "
             f"{record['n_rejected']} of 20 candidates rejected); baseline prompt: "
             f'"{record["prompts"]["baseline"]}"; CAS-V prompt: "{record["prompts"]["casv"]}"; '

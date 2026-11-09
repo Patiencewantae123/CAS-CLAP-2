@@ -39,8 +39,8 @@ journal_results/      graphs/ (charts), comparisons/<set>/ (comparison images), 
 docs/                 target figure layout
 notebooks/            exploratory Colab notebooks
 legacy/               earlier code; synthetic outputs, not results (see legacy/README.md)
-demo_app.py           Streamlit demo of the real CAS-V pipeline (streamlit run demo_app.py)
-app.py                earlier heuristic prototype (pixel statistics, sine tones); not the paper's method
+app.py                Streamlit comparison board of the real pipeline, laid out like docs/target_figure.png
+demo_app.py           single-image Streamlit demo of the same pipeline
 evaluation/            blind listening-test package for raters
 ```
 
@@ -97,20 +97,29 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 
 ```
 py -m pytest                         # 38 tests, ~10 s, no model downloads
-py -m ruff check casv scripts tests  # lint
-py -m ruff format casv scripts tests # format
+py -m ruff check casv scripts tests app.py  # lint
+py -m ruff format casv scripts tests app.py # format
 ```
 
 ## Demo
 
 ```
-streamlit run demo_app.py
+py -m streamlit run app.py        # comparison board (target-figure layout)
+py -m streamlit run demo_app.py   # one image at a time
 ```
 
-Upload an image or pick a Figure 5 example: recognition, all 20 candidates with
-their verification scores, and the baseline vs CAS-V prompts appear instantly.
-Audio is generated on request (about 1-2 min per clip on CPU) and saved to
-`app_data/runs/`.
+`app.py` puts one image per column, with the rows of the target figure: input
+image, existing research (top-1 retrieved caption, unverified), ours (verified
+concepts, generated audio, sound type) and the target sound. Columns are Figure 5
+examples (with their real recordings) and/or your own uploads (up to 7 in all),
+each with an optional real recording. Recognition, verified concepts and sound
+types appear instantly. Audio is generated on request (about 1-2 min per clip on
+CPU) with the same seed for both prompts, and cached by prompt and settings in
+`app_data/runs/clips/`. A panel without real data says "not generated yet" or
+"not provided". **Build figure** renders the board with `scripts/figures.py` into
+`app_data/runs/figure_<timestamp>/`; its caption file says the images were picked
+by hand, so such a figure is an illustration, not a result. A tab per image lists
+the recognition and all 20 candidates with their verification scores.
 
 ## Listening test
 
