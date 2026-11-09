@@ -40,6 +40,9 @@ docs/                 target figure layout
 notebooks/            exploratory Colab notebooks
 legacy/               earlier code; synthetic outputs, not results (see legacy/README.md)
 app.py                Streamlit comparison board of the real pipeline, laid out like docs/target_figure.png
+app_gradio.py         the same board in Gradio, for a free Hugging Face Space (ZeroGPU)
+board.py              helpers shared by both boards (columns, clip cache, figure export)
+space/                Hugging Face Space settings (README.md header, requirements.txt)
 demo_app.py           single-image Streamlit demo of the same pipeline
 evaluation/            blind listening-test package for raters
 ```
@@ -96,9 +99,9 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 ## Development
 
 ```
-py -m pytest                         # 38 tests, ~10 s, no model downloads
-py -m ruff check casv scripts tests app.py  # lint
-py -m ruff format casv scripts tests app.py # format
+py -m pytest                         # 42 tests, ~15 s, no model downloads
+py -m ruff check casv scripts tests app.py app_gradio.py board.py  # lint
+py -m ruff format casv scripts tests app.py app_gradio.py board.py # format
 ```
 
 ## Demo
@@ -120,6 +123,30 @@ CPU) with the same seed for both prompts, and cached by prompt and settings in
 `app_data/runs/figure_<timestamp>/`; its caption file says the images were picked
 by hand, so such a figure is an illustration, not a result. A tab per image lists
 the recognition and all 20 candidates with their verification scores.
+
+## Hosting
+
+**Permanent, free: Hugging Face Space on ZeroGPU.** Free ZeroGPU Spaces run Gradio
+apps only, so the Space runs `app_gradio.py`: the same board, with recognition on
+CPU and AudioLDM on a shared GPU charged to each visitor's daily ZeroGPU quota.
+Uploads only; the Figure 5 recordings (YouTube audio) are not published.
+
+1. Hugging Face account with a verified email, older than 30 days (needed for free ZeroGPU).
+2. Create the Space at https://huggingface.co/new-space: SDK **Gradio**, hardware **ZeroGPU**, public.
+3. Build and upload the bundle (only the files the Space needs, never git-ignored ones):
+   ```
+   py -m scripts.build_space                  # -> dist/hf_space/ (~96 MB)
+   hf auth login                              # write token from https://huggingface.co/settings/tokens
+   hf upload <user>/<space> dist/hf_space . --repo-type space
+   ```
+4. The first build takes a few minutes; the Space is then at `https://huggingface.co/spaces/<user>/<space>`.
+
+Rebuild and upload again after changing `app_gradio.py`, `board.py`, `casv/` or `space/`.
+To try the Gradio app locally: `py -m pip install gradio==6.31.0 spaces` then `py app_gradio.py`.
+
+**Temporary, from your PC.** `streamlit run app.py`, then in a second terminal
+`cloudflared tunnel --url http://localhost:8501`; it prints a public
+`https://….trycloudflare.com` link that works while both terminals run.
 
 ## Listening test
 

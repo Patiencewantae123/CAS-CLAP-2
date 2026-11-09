@@ -12,6 +12,9 @@ pillow==12.3.0
 yt-dlp==2026.10.26
 imageio-ffmpeg==0.7.0
 
+# apps (app.py, demo_app.py)
+streamlit==1.61.1
+
 # development
 pytest==9.2.0
 ruff==0.17.3

@@ -18,25 +18,22 @@
 #   py -m streamlit run app.py
 # =============================================================================
 
-import hashlib
 import html
 import json
-import shutil
-import tempfile
 import time
-from dataclasses import asdict
 from datetime import datetime
 from io import BytesIO
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 import streamlit as st
-from PIL import Image, ImageOps
+from PIL import ImageOps
 
-from casv.audio import AUDIOLDM_MODEL_ID, GENERATOR_SAMPLE_RATE, load_audio, save_audio
+import board
+from casv.audio import AUDIOLDM_MODEL_ID
 from casv.text import sound_type, verified_concepts
 from casv.verifier import CLIP_MODEL_ID, CASVerifier, CLIPRecognizer, VerifierConfig
-from scripts.figures import GT_WINDOW, draw_spectrogram, render_page
+from scripts.figures import GT_WINDOW, draw_spectrogram
 
 ROOT = Path(__file__).resolve().parent
 RUNS_DIR = ROOT / "app_data" / "runs"
@@ -54,20 +51,30 @@ st.html(
     f"""<style>
     .st-key-ours {{ border: 1.5px solid {BLUE}; border-radius: 0.7rem; padding: 0.6rem;
                     margin: 0.2rem -0.6rem; background: rgba(74, 114, 214, 0.05); }}
+    /* Board rows: cells top-aligned so panels line up across columns; the row label centred */
+    div[class*="st-key-casvrow-"] [data-testid="stColumn"]:first-child {{ margin-top: auto; margin-bottom: auto; }}
+    /* Streamlit pulls each markdown block up 1rem (it expects a paragraph margin); without this
+       margin the tallest cell of a row spills 1rem past it */
+    .casv-label, .casv-box, .casv-empty, .casv-note {{ margin-bottom: 1rem; }}
     .casv-label {{ text-align: center; font-weight: 700; line-height: 1.25; font-size: 0.92rem; }}
     .casv-label small {{ display: block; font-weight: 600; font-size: 0.78rem; }}
     .casv-label .ours {{ display: block; font-size: 1.05rem; margin-bottom: 0.6rem; }}
     .casv-title {{ text-align: center; font-weight: 700; white-space: nowrap; overflow: hidden;
                    text-overflow: ellipsis; margin-bottom: 0.25rem; }}
-    .casv-box {{ border-radius: 6px; padding: 0.35rem 0.45rem; text-align: center; color: #1f3a93;
-                 font-size: 0.8rem; line-height: 1.3; display: flex; align-items: center;
+    /* Text boxes: fixed height and clamped lines (full text on hover), as in the paper figures */
+    .casv-box {{ box-sizing: border-box; border-radius: 6px; padding: 0.35rem 0.45rem; text-align: center;
+                 color: #1f3a93; font-size: 0.8rem; line-height: 1.3; display: flex; align-items: center;
                  justify-content: center; }}
-    .casv-concepts {{ background: #edf5ea; border: 1px solid #8fbf7f; min-height: 5.4em; }}
-    .casv-type {{ background: #eaf0fb; border: 1px solid #8aa6d6; min-height: 2.9em; font-weight: 600; }}
+    .casv-box span {{ display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }}
+    .casv-concepts {{ background: #edf5ea; border: 1px solid #8fbf7f; height: calc(3 * 1.3em + 0.7rem + 2px); }}
+    .casv-concepts span {{ -webkit-line-clamp: 3; }}
+    .casv-type {{ background: #eaf0fb; border: 1px solid #8aa6d6; height: calc(2 * 1.3em + 0.7rem + 2px);
+                  font-weight: 600; }}
+    .casv-type span {{ -webkit-line-clamp: 2; }}
     .casv-empty {{ aspect-ratio: 2.4; border-radius: 4px; background: rgba(128, 128, 128, 0.13);
                    color: rgba(128, 128, 128, 0.95); font-size: 0.75rem; display: flex; align-items: center;
                    justify-content: center; text-align: center; padding: 0 0.5rem; }}
-    .casv-note {{ font-size: 0.72rem; opacity: 0.8; line-height: 1.3; margin-top: 0.1rem; }}
+    .casv-note {{ font-size: 0.72rem; opacity: 0.8; line-height: 1.3; margin-top: -0.55rem; }}
     .casv-dot {{ font-size: 0.9em; }}
     </style>"""
 )
@@ -92,22 +99,17 @@ def load_generator():
     return AudioGenerator()
 
 
-def open_image(image_bytes: bytes) -> Image.Image:
-    """RGB image, upright for phone photos with an EXIF rotation."""
-    return ImageOps.exif_transpose(Image.open(BytesIO(image_bytes))).convert("RGB")
-
-
 @st.cache_data(show_spinner=False, max_entries=64)
 def measure_image(image_bytes: bytes, _verifier: CASVerifier) -> dict:
     """Config-independent recognition and candidate scores, cached by image content."""
-    return _verifier.measure(open_image(image_bytes))
+    return _verifier.measure(board.open_image(image_bytes))
 
 
 @st.cache_data(show_spinner=False, max_entries=64)
 def thumbnail(image_bytes: bytes) -> bytes:
     """4:3 centre crop so every column's input image has the same height."""
     buffer = BytesIO()
-    ImageOps.fit(open_image(image_bytes), (480, 360)).save(buffer, format="JPEG", quality=90)
+    ImageOps.fit(board.open_image(image_bytes), (480, 360)).save(buffer, format="JPEG", quality=90)
     return buffer.getvalue()
 
 
@@ -122,45 +124,20 @@ def spectrogram_png(path: str, mtime: float, window: tuple | None) -> bytes:
     return buffer.getvalue()
 
 
-def clip_path(prompt: str, settings: dict) -> Path:
-    """Cache file of a generated clip: same model, prompt and settings give the same audio."""
-    key = json.dumps([AUDIOLDM_MODEL_ID, prompt, settings["seed"], settings["duration"], settings["steps"]])
-    return CLIPS_DIR / f"{hashlib.sha1(key.encode()).hexdigest()[:16]}.wav"
-
-
 def generate_clip(generator, prompt: str, settings: dict, path: Path) -> None:
     """Generate one clip and save it with a JSON note of what produced it."""
     start = time.time()
     audio = generator.generate(prompt, seed=settings["seed"], duration=settings["duration"], steps=settings["steps"])
-    path.parent.mkdir(parents=True, exist_ok=True)
-    save_audio(path, audio, GENERATOR_SAMPLE_RATE)
-    note = {
-        "model": AUDIOLDM_MODEL_ID,
-        "prompt": prompt,
-        **settings,
-        "generation_seconds": round(time.time() - start, 1),
-        "created": datetime.now().isoformat(timespec="seconds"),
-    }
-    path.with_suffix(".json").write_text(json.dumps(note, indent=2), encoding="utf-8")
+    board.save_clip(path, audio, prompt, settings, time.time() - start)
 
 
 def store_recording(upload) -> Path | None:
     """Uploaded ground-truth recording as 16 kHz mono WAV (the rate every spectrogram uses)."""
-    data = upload.getvalue()
-    path = RECORDINGS_DIR / f"{hashlib.sha1(data).hexdigest()[:16]}.wav"
-    if path.exists():
-        return path
-    RECORDINGS_DIR.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory() as tmp:
-        raw = Path(tmp) / f"recording{Path(upload.name).suffix.lower()}"
-        raw.write_bytes(data)
-        try:
-            audio = load_audio(raw, GENERATOR_SAMPLE_RATE)
-        except RuntimeError as error:  # soundfile cannot decode it
-            st.sidebar.error(f"Could not read {upload.name}: {error}")
-            return None
-    save_audio(path, audio, GENERATOR_SAMPLE_RATE)
-    return path
+    try:
+        return board.convert_recording(upload.getvalue(), upload.name, RECORDINGS_DIR)
+    except RuntimeError as error:  # soundfile cannot decode it
+        st.sidebar.error(f"Could not read {upload.name}: {error}")
+        return None
 
 
 # -----------------------------------------------------------------------------
@@ -186,20 +163,6 @@ def example_item(entry: dict) -> dict:
     }
 
 
-def upload_item(upload, recording: Path | None, caption: str) -> dict:
-    image = upload.getvalue()
-    stem = Path(upload.name).stem.replace("_", " ").replace("-", " ").strip()
-    return {
-        "id": f"upload-{hashlib.sha1(image).hexdigest()[:10]}",
-        "title": stem.title() or "Upload",
-        "image": image,
-        "source": f"uploaded image '{upload.name}'",
-        "gt_audio": recording,
-        "gt_window": None,  # the whole recording
-        "gt_captions": [caption] if caption else [],
-    }
-
-
 # -----------------------------------------------------------------------------
 # Board cells
 # -----------------------------------------------------------------------------
@@ -209,10 +172,10 @@ def esc(text: str) -> str:
     return html.escape(text, quote=True)
 
 
-def board_row(label_html: str, n: int) -> list:
+def board_row(key: str, label_html: str, n: int) -> list:
     """One row: label column plus one cell per image (padded so few images stay narrow)."""
     spec = [1.15] + [1] * n + ([MIN_GRID_UNITS - n] if n < MIN_GRID_UNITS else [])
-    columns = st.columns(spec, gap="small", vertical_alignment="center")
+    columns = st.container(key=f"casvrow-{key}").columns(spec, gap="small")  # key: target of the row CSS
     columns[0].markdown(label_html, unsafe_allow_html=True)
     return columns[1 : n + 1]
 
@@ -238,54 +201,6 @@ def audio_panel(cell, path: Path | None, empty_text: str, window: tuple | None =
         cell.audio(str(path), start_time=window[0], end_time=window[1])
     else:
         cell.audio(str(path))
-
-
-def export_figure(items: list[dict], config_name: str, config: VerifierConfig, settings: dict) -> Path:
-    """Copy each column into a run folder in test.py's layout and render it with scripts/figures.py."""
-    run_dir = RUNS_DIR / f"figure_{datetime.now():%Y%m%d_%H%M%S}"
-    records = []
-    for item in items:
-        item_dir = run_dir / item["id"]
-        item_dir.mkdir(parents=True, exist_ok=True)
-        open_image(item["image"]).save(item_dir / "input.png")
-        shutil.copyfile(item["wav"]["baseline"], item_dir / "baseline.wav")
-        shutil.copyfile(item["wav"]["casv"], item_dir / "casv.wav")
-        if item["gt_audio"] is not None:
-            shutil.copyfile(item["gt_audio"], item_dir / "gt.wav")
-        result = item["result"]
-        record = {
-            "id": item["id"],
-            "label": item["title"],
-            "source": item["source"],
-            "gt_captions": item["gt_captions"],
-            "gt_window": item["gt_window"],
-            "top_scene": list(result["top_scenes"][0]),
-            "top_object": list(result["top_objects"][0]),
-            "env_probs": result["env_probs"],
-            "status": result["status"],
-            "n_rejected": result["n_rejected"],
-            "prompts": {"baseline": result["baseline_prompt"], "casv": result["casv_prompt"]},
-            "verdicts": result["verdicts"],
-            "config_name": config_name,
-            "config": asdict(config),
-            "settings": settings,
-        }
-        (item_dir / "record.json").write_text(json.dumps(record, indent=2), encoding="utf-8")
-        records.append(record)
-
-    provenance = (
-        f"CAS-V comparison built in app.py on {datetime.now():%Y-%m-%d}. The images were chosen by hand in "
-        f"the app, not sampled: this figure is an illustration, not a result. Existing research: "
-        f"{AUDIOLDM_MODEL_ID} prompted with the top-1 retrieved AudioCaps train caption, unverified. Ours: "
-        f"the same generator and seed ({settings['seed']}; {settings['duration']} s, {settings['steps']} "
-        f"steps) prompted with the CAS-V-verified caption ({config_name} verifier configuration); verified "
-        f"concepts and sound type are phrases of that caption. Recognition: {CLIP_MODEL_ID} zero-shot over "
-        f"Places365 scenes and ImageNet objects. Target sound: the real recording where one exists (AudioCaps "
-        f"examples: 5 s window centred on the input frame; uploads: the whole recording), otherwise marked "
-        f"'not provided'. Spectrograms as in scripts/figures.py."
-    )
-    render_page(run_dir, records, run_dir / "casv_comparison.png", provenance)
-    return run_dir
 
 
 # -----------------------------------------------------------------------------
@@ -318,7 +233,7 @@ with st.sidebar:
                     "Its caption", key=f"caption_{upload.file_id}", placeholder="e.g. Waves crash on a beach"
                 ).strip()
                 recording = store_recording(recording_file) if recording_file else None
-                items.append(upload_item(upload, recording, caption))
+                items.append(board.upload_item(upload.name, upload.getvalue(), recording, caption))
 
     items = list({item["id"]: item for item in items}.values())  # the same image twice is one column
     if len(items) > MAX_COLUMNS:
@@ -363,7 +278,9 @@ with st.spinner("Recognising images..."):
     for item in items:
         item["result"] = verifier.decide(measure_image(item["image"], verifier), config)
         item["concepts"] = verified_concepts(item["result"]["casv_prompt"])
-        item["wav"] = {arm: clip_path(item["result"][f"{arm}_prompt"], settings) for arm in ("baseline", "casv")}
+        item["wav"] = {
+            arm: board.clip_path(CLIPS_DIR, item["result"][f"{arm}_prompt"], settings) for arm in ("baseline", "casv")
+        }
 
 clips = {item["wav"][arm]: item["result"][f"{arm}_prompt"] for item in items for arm in ("baseline", "casv")}
 todo = {path: prompt for path, prompt in clips.items() if not path.exists()}
@@ -387,35 +304,41 @@ info_col.caption(
 
 n = len(items)
 
-for cell, item in zip(board_row(label("Input Image"), n), items, strict=True):
+for cell, item in zip(board_row("input", label("Input Image"), n), items, strict=True):
     cell.markdown(
         f"<div class='casv-title' title='{esc(item['title'])}'>{esc(item['title'])}</div>", unsafe_allow_html=True
     )
     cell.image(thumbnail(item["image"]), width="stretch")
 
-for cell, item in zip(board_row(label("Existing Research", "(Without CAS-V)", RED), n), items, strict=True):
+for cell, item in zip(board_row("baseline", label("Existing Research", "(Without CAS-V)", RED), n), items, strict=True):
     audio_panel(cell, item["wav"]["baseline"], "not generated yet")
     note(cell, f"Prompt: “{esc(item['result']['baseline_prompt'])}”")
 
 with st.container(key="ours"):
     concepts_label = label("Semantic Text", "(Verified Concepts)", BLUE, lead="Ours (CAS-V)")
-    for cell, item in zip(board_row(concepts_label, n), items, strict=True):
+    for cell, item in zip(board_row("concepts", concepts_label, n), items, strict=True):
         result = item["result"]
         prompt = esc(f"CAS-V prompt: {result['casv_prompt']}")
         concepts = esc(", ".join(item["concepts"]))
-        cell.markdown(f"<div class='casv-box casv-concepts' title='{prompt}'>{concepts}</div>", unsafe_allow_html=True)
+        cell.markdown(
+            f"<div class='casv-box casv-concepts' title='{prompt}'><span>{concepts}</span></div>",
+            unsafe_allow_html=True,
+        )
         dot = f"<span class='casv-dot' style='color:{STATUS_COLOURS[result['status']]}'>●</span>"
         note(cell, f"{dot} {result['status']} · {result['n_rejected']} of {len(result['verdicts'])} rejected")
 
-    for cell, item in zip(board_row(label("Spectrogram", "(Generated Audio)", BLUE), n), items, strict=True):
+    for cell, item in zip(
+        board_row("generated", label("Spectrogram", "(Generated Audio)", BLUE), n), items, strict=True
+    ):
         audio_panel(cell, item["wav"]["casv"], "not generated yet")
 
-    for cell, item in zip(board_row(label("Caption", "(Sound Type)", BLUE), n), items, strict=True):
+    for cell, item in zip(board_row("type", label("Caption", "(Sound Type)", BLUE), n), items, strict=True):
+        kind = esc(sound_type(item["concepts"]))
         cell.markdown(
-            f"<div class='casv-box casv-type'>{esc(sound_type(item['concepts']))}</div>", unsafe_allow_html=True
+            f"<div class='casv-box casv-type' title='{kind}'><span>{kind}</span></div>", unsafe_allow_html=True
         )
 
-for cell, item in zip(board_row(label("Target Sound", "(Ground Truth)"), n), items, strict=True):
+for cell, item in zip(board_row("target", label("Target Sound", "(Ground Truth)"), n), items, strict=True):
     empty = "not provided" + ("<br>(add a recording in the sidebar)" if item["id"].startswith("upload-") else "")
     audio_panel(cell, item["gt_audio"], empty, item["gt_window"])
     if item["gt_captions"]:
@@ -430,7 +353,9 @@ st.subheader("Figure")
 ready = not todo
 if st.button("Build figure from this board", disabled=not ready, help=None if ready else "Generate the audio first."):
     with st.spinner("Rendering..."):
-        st.session_state["figure_dir"] = str(export_figure(items, config_name, config, settings))
+        run_dir = RUNS_DIR / f"figure_{datetime.now():%Y%m%d_%H%M%S}"
+        board.export_figure(items, run_dir, config_name, config, settings, made_in="app.py")
+        st.session_state["figure_dir"] = str(run_dir)
 
 if "figure_dir" in st.session_state:
     figure_dir = Path(st.session_state["figure_dir"])
