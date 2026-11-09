@@ -101,7 +101,7 @@ Places365 val is downloaded from `http://data.csail.mit.edu/places/places365/`
 ## Development
 
 ```
-py -m pytest                         # 48 tests, ~15 s, no model downloads
+py -m pytest                         # 52 tests, ~15 s, no model downloads
 py -m ruff check casv scripts tests app.py app_gradio.py board.py  # lint
 py -m ruff format casv scripts tests app.py app_gradio.py board.py # format
 ```
