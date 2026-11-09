@@ -2,11 +2,13 @@
 
 from types import SimpleNamespace
 
-import httpx
 import pytest
-from huggingface_hub.errors import HfHubHTTPError
 
 from scripts import deploy_space
+
+
+class Rejected(Exception):
+    """Stands in for HfHubHTTPError, whose constructor differs between huggingface_hub versions."""
 
 
 def test_space_id_accepts_id_or_url():
@@ -31,10 +33,10 @@ def test_token_prompt_refuses_partial_invalid_and_read_only_tokens(monkeypatch, 
         def whoami(self):
             checked.append(self.token)
             if self.token not in users:
-                request = httpx.Request("GET", "https://huggingface.co/api/whoami-v2")
-                raise HfHubHTTPError("401 Unauthorized", response=httpx.Response(401, request=request))
+                raise Rejected("401 Unauthorized")
             return users[self.token]
 
+    monkeypatch.setattr(deploy_space, "HfHubHTTPError", Rejected)
     monkeypatch.setattr(deploy_space.getpass, "getpass", lambda prompt: next(typed))
     monkeypatch.setattr(deploy_space, "HfApi", FakeApi)
     monkeypatch.setattr(deploy_space, "login", lambda token, add_to_git_credential: saved.append(token))
