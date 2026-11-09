@@ -69,6 +69,9 @@ def test_export_figure_renders_board_with_honest_caption(tmp_path):
     assert "uploaded image 'beach.png'" in caption and "AudioCaps upload-" not in caption
     assert not (figure.parent / item["id"] / "gt.wav").exists()  # no recording: the panel says 'not provided'
     assert Image.open(figure.parent / item["id"] / "verification.png").width > 1000  # the why-this-caption graph
+    audio = sorted(p.name for p in (figure.parent / "audio").iterdir())
+    assert audio == ["01 Beach - existing research (without CAS-V).wav", "01 Beach - ours (CAS-V).wav", "prompts.txt"]
+    assert '"Waves crash on a shore"' in (figure.parent / "audio" / "prompts.txt").read_text(encoding="utf-8")
 
 
 def verdict(caption, score, decision, conflicts=()):

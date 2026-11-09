@@ -8,6 +8,7 @@ An item is one board column, a dict with:
 
 import hashlib
 import json
+import re
 import shutil
 import tempfile
 from dataclasses import asdict
@@ -372,4 +373,45 @@ def export_figure(items: list[dict], run_dir: Path, config_name: str, config, se
     )
     figure = run_dir / "casv_comparison.png"
     render_page(run_dir, records, figure, provenance)
+    collect_audio(run_dir, records)
     return figure
+
+
+AUDIO_FILES = (
+    ("baseline.wav", "existing research (without CAS-V)"),
+    ("casv.wav", "ours (CAS-V)"),
+    ("gt.wav", "target (real recording)"),
+)
+
+
+def collect_audio(run_dir: Path, records: list[dict] | None = None) -> Path:
+    """run_dir/audio/: every clip of a run under a readable name ("01 Beach - ours (CAS-V).wav"), with
+    prompts.txt saying which prompt made each one. Records default to the run's record.json files."""
+    if records is None:
+        records = sorted(
+            (json.loads(path.read_text(encoding="utf-8")) for path in run_dir.glob("*/record.json")),
+            key=lambda record: record["label"],
+        )
+    audio_dir = run_dir / "audio"
+    audio_dir.mkdir(exist_ok=True)
+    settings = records[0]["settings"] if records else {}
+    lines = [
+        f"CAS-V audio: {len(records)} image{'s' * (len(records) != 1)}, AudioLDM with the same seed for both prompts "
+        f"(seed {settings.get('seed')}, {settings.get('duration')} s, {settings.get('steps')} diffusion steps).",
+        "",
+    ]
+    for number, record in enumerate(records, 1):
+        stem = f"{number:02d} " + re.sub(r'[<>:"/\\|?*]+', "-", record["label"]).strip(" .-")
+        for source, role in AUDIO_FILES:
+            if (run_dir / record["id"] / source).exists():
+                shutil.copyfile(run_dir / record["id"] / source, audio_dir / f"{stem} - {role}.wav")
+        has_gt = (run_dir / record["id"] / "gt.wav").exists()
+        lines += [
+            f"{stem}  ({record['source']})" if "source" in record else stem,
+            f'   existing research (without CAS-V): "{record["prompts"]["baseline"]}"',
+            f'   ours (CAS-V, {record["status"]}): "{record["prompts"]["casv"]}"',
+            f"   target: {'real recording' if has_gt else 'not provided'}",
+            "",
+        ]
+    (audio_dir / "prompts.txt").write_text("\n".join(lines), encoding="utf-8")
+    return audio_dir
