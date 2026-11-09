@@ -31,7 +31,7 @@ from casv.verifier import CLIP_MODEL_ID, CASVerifier, CLIPRecognizer, VerifierCo
 ROOT = Path(__file__).resolve().parent
 RUNS_DIR = ROOT / "app_data" / "runs"
 EXAMPLES_DIR = ROOT / "data" / "audiocaps" / "pairs" / "categories"
-TUNED_CONFIG = ROOT / "results" / "tuning" / "casv_tuned_config.json"
+TUNED_CONFIG = ROOT / "results" / "tuning_test400" / "casv_tuned_config.json"  # current tuning run (val-tuned ablation)
 DECISION_COLOURS = {"ACCEPT": "#1baf7a", "REPAIR": "#eda100", "REJECT": "#e34948", "UNCERTAIN": "#6250d6"}
 
 st.set_page_config(page_title="CAS-V demo", page_icon="🔊", layout="wide")
