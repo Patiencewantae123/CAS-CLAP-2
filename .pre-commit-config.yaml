@@ -1,0 +1,13 @@
+# Optional: lint and format with ruff before every commit (the ruff version pinned in requirements.txt).
+# Set up once per clone:
+#   py -m pip install pre-commit
+#   pre-commit install
+# Run on everything: pre-commit run --all-files
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.3
+    hooks:
+      - id: ruff-check
+        files: ^(casv|scripts|tests)/|^(app|app_gradio|board)\.py$
+      - id: ruff-format
+        files: ^(casv|scripts|tests)/|^(app|app_gradio|board)\.py$
