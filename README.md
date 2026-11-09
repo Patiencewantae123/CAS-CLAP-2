@@ -2,6 +2,8 @@
 
 # CAS-V: Conflict-Aware Semantic Verification for Image-to-Audio Generation
 
+[![tests](https://github.com/Patiencewantae123/CAS-CLAP-2/actions/workflows/tests.yml/badge.svg)](https://github.com/Patiencewantae123/CAS-CLAP-2/actions/workflows/tests.yml)
+
 CAS-V recognises the scene and objects in an image, retrieves candidate sound
 descriptions, **verifies** each candidate against the visual evidence (rejecting
 indoor/outdoor contradictions and sound sources that are not in the image), and
