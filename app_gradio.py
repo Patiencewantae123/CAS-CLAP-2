@@ -12,12 +12,14 @@
 # deleted when it restarts.
 #
 # Usage:
-#   py app_gradio.py              # local: http://127.0.0.1:7860
+#   python app_gradio.py          # local: http://127.0.0.1:7860
+#   python app_gradio.py --share  # plus a public https://....gradio.live link from this PC
 #   py -m scripts.build_space     # bundle for the Space (README: "Hosting")
 # =============================================================================
 
 import spaces  # noqa: I001  (first: on ZeroGPU it must be imported before torch initialises CUDA)
 
+import argparse
 import json
 import shutil
 import tempfile
@@ -263,4 +265,10 @@ with gr.Blocks(title="CAS-V comparison board", fill_width=True) as demo:
 
 
 if __name__ == "__main__":
-    demo.queue().launch(allowed_paths=[str(WORK_DIR)])
+    parser = argparse.ArgumentParser(description="CAS-V comparison board (Gradio).")
+    parser.add_argument(
+        "--share",
+        action="store_true",
+        help="also print a public https://....gradio.live link, served from this PC while it runs (about a week)",
+    )
+    demo.queue().launch(allowed_paths=[str(WORK_DIR)], share=parser.parse_args().share)

@@ -20,3 +20,5 @@ evaluation/ratings/
 
 # Hugging Face Space bundle (py -m scripts.build_space)
 dist/
+# Local clone of the Hugging Face Space (has its own git remote)
+cas-v-board/
